@@ -1,0 +1,26 @@
+{
+  "name": "@digital4better/data",
+  "version": "1.0.0",
+  "description": "Digital4Better Environmental Data",
+  "license": "ODbL-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digital4better/data.git"
+  },
+  "author": "Stefan <stefan@digital4better.com>",
+  "scripts": {
+    "start": "ts-node ."
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.3",
+    "ts-node": "^10.9.1"
+  },
+  "files": [
+    "data/*",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ]
+}
