@@ -2,7 +2,7 @@ import { get } from "https";
 import { createInterface } from "readline";
 import * as countries from "./data/country/countries.json";
 import * as impacts from "./data/energy/energy-impacts.json";
-import { writeFileSync } from "fs";
+import { appendFileSync, writeFileSync } from "fs";
 
 const MIN_YEAR = 2021;
 const CURRENT_YEAR = new Date().getUTCFullYear();
@@ -82,8 +82,6 @@ type Impacts = {
   wu: number; // Water use
 };
 
-type ImpactEntry = [k: keyof Impacts, v: number];
-
 const EMPTY_IMPACTS: Impacts = { adpe: 0, ap: 0, ctue: 0, "ctuh-c": 0, "ctuh-nc": 0, gwp: 0, ir: 0, pm: 0, wu: 0 };
 
 const combineImpacts = ({
@@ -127,10 +125,11 @@ const cloneAggregate = (impacts: Aggregate): Aggregate => ({
   } = {};
   // Last month of available data
   let lastAvailableMonth = 0;
+  process.stdout.write(`Fetching energy data\n`);
   for (const page of [EMBER_YEARLY_DATA, EMBER_MONTHLY_DATA]) {
     const url = EMBER_DOMAIN + (await fetchAndScrap(page, /\/app\/uploads\/[^/]+\/[^/]+\/[^.]+.csv/));
     let lines = 0;
-    process.stdout.write(`Fetching energy data from ${url}... `);
+    process.stdout.write(`- from ${url}... `);
     await fetchAndProcess(url, (data) => {
       const { country_code, ember_region, area, area_type, year, date, category, subcategory, variable, unit, value } =
         data as {
@@ -206,9 +205,10 @@ const cloneAggregate = (impacts: Aggregate): Aggregate => ({
     { yearly: false, scope: "continent" },
     { yearly: false, scope: "country" },
   ];
+  process.stdout.write(`Filling missing data\n`);
   for (const { yearly, scope } of passes) {
-    let misses = 0;
-    process.stdout.write(`Filling missing ${yearly ? "yearly" : "monthly"} ${scope} data... `);
+    let additions = 0;
+    process.stdout.write(`- ${yearly ? "yearly" : "monthly"} ${scope} data... `);
     for (const region of Object.keys(aggregates).filter((region) => REGION_FILTERS[scope](region))) {
       let last: Aggregate;
       const fill = (period: string): Aggregate => {
@@ -218,7 +218,7 @@ const cloneAggregate = (impacts: Aggregate): Aggregate => ({
           else if (scope === "country")
             aggregates[region][period] = cloneAggregate(aggregates[COUNTRY_EMBER_REGIONS[region]][period]);
           else throw new Error(`Cannot fill missing ${scope} data for region ${region} and period ${period}`);
-          misses++;
+          additions++;
         }
         return aggregates[region][period];
       };
@@ -232,7 +232,7 @@ const cloneAggregate = (impacts: Aggregate): Aggregate => ({
         }
       }
     }
-    process.stdout.write(`${misses} additions\n`);
+    process.stdout.write(`${additions} additions\n`);
   }
   process.stdout.write(`Applying green energy ratio correction...\n`);
   for (const [region, periods] of Object.entries(aggregates)) {
@@ -242,8 +242,6 @@ const cloneAggregate = (impacts: Aggregate): Aggregate => ({
           target: aggregates[region][period].green,
           targetCoeff: 1 / greenRatio,
         });
-      } else {
-        //TODO handle no green energy... or not
       }
     }
   }
@@ -273,40 +271,99 @@ const cloneAggregate = (impacts: Aggregate): Aggregate => ({
     }
   }
   process.stdout.write(`${updates} updates\n`);
-  process.stdout.write(`Exporting data...\n`);
-  const yearlyWorld: Record<string, Impacts> = {};
-  const yearlyContinent: Record<string, Impacts> = {};
-  const yearlyCountry: Record<string, Impacts> = {};
-  const monthlyWorld: Record<string, Impacts> = {};
-  const monthlyContinent: Record<string, Impacts> = {};
-  const monthlyCountry: Record<string, Impacts> = {};
-  let globals = 0;
-  let greens = 0;
-  for (let year = MIN_YEAR; year <= CURRENT_YEAR; year++) {
-    const lastMonth = year === CURRENT_YEAR ? lastAvailableMonth : 11;
-    for (let month = 0; month <= lastMonth; month++) {
-      const period = new Date(Date.UTC(year, month, 1)).toISOString().substring(0, 7);
-      for (const region of Object.keys(aggregates).filter(isCountry)) {
-        const { continent } = countries.find(({ "alpha-2": alpha2 }) => alpha2 === region);
-        yearlyWorld[`${year}`] = combineImpacts({
-          target: yearlyWorld[`${year}`],
-          source: aggregates[region][period].global,
-        });
-        globals++;
-        if (aggregates[region][period].greenRatio) {
-          yearlyWorld[`${year}-green`] = combineImpacts({
-            target: yearlyWorld[`${year}-green`],
-            source: aggregates[region][period].green,
-          });
-          greens++;
+  let additions = 0;
+  process.stdout.write(`Filling missing green data...`);
+  for (const [region, periods] of Object.entries(aggregates).filter(([region, _]) => isCountry(region))) {
+    let last: Impacts;
+    for (let year = MIN_YEAR; year <= CURRENT_YEAR; year++) {
+      for (let month = 0; month <= 11; month++) {
+        const period = new Date(Date.UTC(year, month, 1)).toISOString().substring(0, 7);
+        if (aggregates[region][period].green.gwp === 0) {
+          // Taking previous green energy impacts
+          if (last && last.gwp > 0) aggregates[region][period].green = { ...last };
+          // Or yearly country green energy impacts
+          else aggregates[region][period].green = { ...aggregates[region][`${year}`].green };
+          additions++;
         }
-        //yearlyContinent[`${continent}-${year}`] = { ...EMPTY_IMPACTS };
-        //yearlyContinent[`${continent}-${year}-green`] = { ...EMPTY_IMPACTS };
+        last = aggregates[region][period].green;
       }
     }
   }
-  console.log(Object.keys(aggregates).length, globals, greens);
-  //console.log(yearlyWorld);
-  //console.log(aggregates["FR"]);
-  //writeFileSync(".factor/world-yearly.json", JSON.stringify(factors, null, 2));
+  process.stdout.write(`${additions} additions\n`);
+  for (const kind of ["global", "green"]) {
+    process.stdout.write(`Exporting ${kind} data...\n`);
+    const exports: {
+      name: string;
+      group: (data: { year: number; period: string; continent: string; country: string }) => object;
+      data: Record<string, Impacts & { count: number } & any>;
+    }[] = [];
+    exports.push({
+      name: "world-yearly",
+      group: ({ year }) => ({ year }),
+      data: {},
+    });
+    exports.push({
+      name: "continent-yearly",
+      group: ({ year, continent }) => ({ year, continent }),
+      data: {},
+    });
+    exports.push({
+      name: "country-yearly",
+      group: ({ year, country }) => ({ year, country }),
+      data: {},
+    });
+    exports.push({
+      name: "world-monthly",
+      group: ({ period }) => ({ period }),
+      data: {},
+    });
+    exports.push({
+      name: "continent-monthly",
+      group: ({ period, continent }) => ({ period, continent }),
+      data: {},
+    });
+    exports.push({
+      name: "country-monthly",
+      group: ({ period, country }) => ({ period, country }),
+      data: {},
+    });
+    for (let year = MIN_YEAR; year <= CURRENT_YEAR; year++) {
+      const lastMonth = year === CURRENT_YEAR ? lastAvailableMonth : 11;
+      for (let month = 0; month <= lastMonth; month++) {
+        const period = new Date(Date.UTC(year, month, 1)).toISOString().substring(0, 7);
+        for (const country of Object.keys(aggregates).filter(isCountry)) {
+          const { continent } = countries.find(({ "alpha-2": alpha2 }) => alpha2 === country);
+          for (const exp of exports) {
+            const group = exp.group({ year, period, continent, country });
+            const key = Object.entries(group)
+              .sort(([a, _], [b, __]) => a.localeCompare(b))
+              .map(([_, v]) => v)
+              .join("-");
+            exp.data[key] = {
+              ...group,
+              ...combineImpacts({
+                target: exp.data[key],
+                source: aggregates[country][period][kind as keyof Aggregate] as Impacts,
+              }),
+              count: (exp.data[key]?.count ?? 0) + 1,
+            };
+          }
+        }
+      }
+    }
+    for (const exp of exports) {
+      const data = Object.values(exp.data).map(({ count, ...data }) => {
+        for (const impact of Object.keys(EMPTY_IMPACTS)) data[impact] /= count;
+        return data;
+      });
+      writeFileSync(`./data/factor/${exp.name}${kind === "green" ? "-green" : ""}.json`, JSON.stringify(data, null, 2));
+      const headers = Object.keys(Object.values(data)[0]);
+      writeFileSync(`./data/factor/${exp.name}${kind === "green" ? "-green" : ""}.csv`, headers.join(",") + "\r\n");
+      for (const line of Object.values(data))
+        appendFileSync(
+          `./data/factor/${exp.name}${kind === "green" ? "-green" : ""}.csv`,
+          headers.map((header) => line[header]).join(",") + "\r\n"
+        );
+    }
+  }
 })();
