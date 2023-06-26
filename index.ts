@@ -118,7 +118,8 @@ const cloneAggregate = (impacts: Aggregate): Aggregate => ({
 const groupBy = (values: any[], fields: string[]) => {
   const field = fields.shift();
   if (!field) return values;
-  const result: any[] = values.reduce((obj, current) => {
+  const result: any[] = values.reduce((obj, value) => {
+    const current = { ...value };
     if (fields.length) {
       if (!obj[current[field]]) obj[current[field]] = [];
       obj[current[field]].push(current);
