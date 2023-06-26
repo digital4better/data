@@ -4,7 +4,7 @@ import { appendFileSync, writeFileSync } from "fs";
 import * as countries from "./data/country/countries.json";
 import * as impacts from "./data/energy/energy-impacts.json";
 
-const MIN_YEAR = 2021;
+const MIN_YEAR = 2019;
 const CURRENT_YEAR = new Date().getUTCFullYear();
 const GREEN_ENERGIES = ["Bioenergy", "Hydro", "Solar", "Wind"];
 
