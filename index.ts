@@ -1,8 +1,8 @@
 import { get } from "https";
 import { createInterface } from "readline";
+import { appendFileSync, writeFileSync } from "fs";
 import * as countries from "./data/country/countries.json";
 import * as impacts from "./data/energy/energy-impacts.json";
-import { appendFileSync, writeFileSync } from "fs";
 
 const MIN_YEAR = 2021;
 const CURRENT_YEAR = new Date().getUTCFullYear();
