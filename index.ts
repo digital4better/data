@@ -6,6 +6,7 @@ import { appendFileSync, writeFileSync } from "fs";
 
 const MIN_YEAR = 2021;
 const CURRENT_YEAR = new Date().getUTCFullYear();
+const GREEN_ENERGIES = ["Bioenergy", "Hydro", "Solar", "Wind"];
 
 const EMBER_DOMAIN = "https://ember-climate.org";
 const EMBER_MONTHLY_DATA = `${EMBER_DOMAIN}/data-catalogue/monthly-electricity-data/`;
@@ -21,8 +22,6 @@ const EMBER_REGIONS = [
   "Oceania",
 ];
 const COUNTRY_EMBER_REGIONS: Record<string, (typeof EMBER_REGIONS)[number]> = {};
-
-const GREEN_ENERGIES = ["Bioenergy", "Hydro", "Solar", "Wind"];
 
 const isWorld = (region: string) => region === EMBER_WORLD;
 const isContinent = (region: string) => EMBER_REGIONS.indexOf(region) >= 0;
@@ -115,6 +114,27 @@ const cloneAggregate = (impacts: Aggregate): Aggregate => ({
   global: { ...impacts.global },
   green: { ...impacts.green },
 });
+
+const groupBy = (values: any[], fields: string[]) => {
+  const field = fields.shift();
+  if (!field) return values;
+  const result: any[] = values.reduce((obj, current) => {
+    if (fields.length) {
+      if (!obj[current[field]]) obj[current[field]] = [];
+      obj[current[field]].push(current);
+    } else {
+      obj[current[field]] = current;
+    }
+    delete current[field];
+    return obj;
+  }, {});
+  if (fields.length) {
+    for (const key in result) {
+      result[key] = groupBy(result[key], fields.slice());
+    }
+  }
+  return result;
+};
 
 (async () => {
   // Data aggregation
@@ -294,39 +314,16 @@ const cloneAggregate = (impacts: Aggregate): Aggregate => ({
     process.stdout.write(`Exporting ${kind} data...\n`);
     const exports: {
       name: string;
-      group: (data: { year: number; period: string; continent: string; country: string }) => object;
+      group: string[];
       data: Record<string, Impacts & { count: number } & any>;
-    }[] = [];
-    exports.push({
-      name: "world-yearly",
-      group: ({ year }) => ({ year }),
-      data: {},
-    });
-    exports.push({
-      name: "continent-yearly",
-      group: ({ year, continent }) => ({ year, continent }),
-      data: {},
-    });
-    exports.push({
-      name: "country-yearly",
-      group: ({ year, country }) => ({ year, country }),
-      data: {},
-    });
-    exports.push({
-      name: "world-monthly",
-      group: ({ period }) => ({ period }),
-      data: {},
-    });
-    exports.push({
-      name: "continent-monthly",
-      group: ({ period, continent }) => ({ period, continent }),
-      data: {},
-    });
-    exports.push({
-      name: "country-monthly",
-      group: ({ period, country }) => ({ period, country }),
-      data: {},
-    });
+    }[] = [
+      { name: "world-yearly", group: ["year"], data: {} },
+      { name: "continent-yearly", group: ["continent", "year"], data: {} },
+      { name: "country-yearly", group: ["country", "year"], data: {} },
+      { name: "world-monthly", group: ["period"], data: {} },
+      { name: "continent-monthly", group: ["continent", "period"], data: {} },
+      { name: "country-monthly", group: ["country", "period"], data: {} },
+    ];
     for (let year = MIN_YEAR; year <= CURRENT_YEAR; year++) {
       const lastMonth = year === CURRENT_YEAR ? lastAvailableMonth : 11;
       for (let month = 0; month <= lastMonth; month++) {
@@ -334,7 +331,10 @@ const cloneAggregate = (impacts: Aggregate): Aggregate => ({
         for (const country of Object.keys(aggregates).filter(isCountry)) {
           const { continent } = countries.find(({ "alpha-2": alpha2 }) => alpha2 === country);
           for (const exp of exports) {
-            const group = exp.group({ year, period, continent, country });
+            const group = exp.group.reduce(
+              (acc, key) => ({ ...acc, [key]: { year, period, continent, country }[key] }),
+              {}
+            );
             const key = Object.entries(group)
               .sort(([a, _], [b, __]) => a.localeCompare(b))
               .map(([_, v]) => v)
@@ -352,11 +352,16 @@ const cloneAggregate = (impacts: Aggregate): Aggregate => ({
       }
     }
     for (const exp of exports) {
+      // Exporting to json file
       const data = Object.values(exp.data).map(({ count, ...data }) => {
         for (const impact of Object.keys(EMPTY_IMPACTS)) data[impact] /= count;
         return data;
       });
-      writeFileSync(`./data/factor/${exp.name}${kind === "green" ? "-green" : ""}.json`, JSON.stringify(data, null, 2));
+      writeFileSync(
+        `./data/factor/${exp.name}${kind === "green" ? "-green" : ""}.json`,
+        JSON.stringify(groupBy(data, exp.group), null, 2)
+      );
+      // Exporting to csv file
       const headers = Object.keys(Object.values(data)[0]);
       writeFileSync(`./data/factor/${exp.name}${kind === "green" ? "-green" : ""}.csv`, headers.join(",") + "\r\n");
       for (const line of Object.values(data))
