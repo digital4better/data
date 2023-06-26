@@ -364,11 +364,14 @@ const groupBy = (values: any[], fields: string[]) => {
       );
       // Exporting to csv file
       const headers = Object.keys(Object.values(data)[0]);
-      writeFileSync(`./data/factor/${exp.name}${kind === "green" ? "-green" : ""}.csv`, headers.join(",") + "\r\n");
+      writeFileSync(
+        `./data/factor/${exp.name}${kind === "green" ? "-green" : ""}.csv`,
+        headers.map((header) => '"' + header + '"').join(",") + "\r\n"
+      );
       for (const line of Object.values(data))
         appendFileSync(
           `./data/factor/${exp.name}${kind === "green" ? "-green" : ""}.csv`,
-          headers.map((header) => line[header]).join(",") + "\r\n"
+          headers.map((header) => '"' + line[header].toString().replace(".", ",") + '"').join(",") + "\r\n"
         );
     }
   }
