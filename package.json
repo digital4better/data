@@ -10,7 +10,7 @@
   "author": "Stefan <stefan@digital4better.com>",
   "scripts": {
     "build": "ts-node .",
-    "preversion": "git add --all && git commit -m \"Data update\"",
+    "preversion": "git add --all",
     "postversion": "git push --tags && yarn publish --access=public --tag $npm_package_version && git push"
   },
   "devDependencies": {
