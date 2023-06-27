@@ -16,6 +16,8 @@ jobs:
         with:
           node-version: 18.x
           cache: 'yarn'
+      - run: git config user.name "GitHub Actions Bot"
+      - run: git config user.email "<>"
       - run: yarn --frozen-lockfile
       - run: yarn build
       - run: yarn version --patch
