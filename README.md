@@ -6,7 +6,7 @@ This data is also used by the calculation engine of fruggr (www.fruggr.io), a se
 
 Each file is produced/generated in CSV and JSON format.
 
-## Données de pays (country)
+## Country data (country)
 
 ### Administrative data (countries.csv)
 
