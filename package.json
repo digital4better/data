@@ -1,6 +1,6 @@
 {
   "name": "@digital4better/data",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Digital4Better Environmental Data",
   "license": "ODbL-1.0",
   "repository": {
@@ -11,7 +11,7 @@
   "scripts": {
     "build": "ts-node .",
     "preversion": "git add --all && git commit -m \"Data update\"",
-    "postversion": "git push --tags && git push"
+    "postversion": "git push --tags && yarn publish --tag $npm_package_version && git push"
   },
   "devDependencies": {
     "@types/node": "^20.3.1",
