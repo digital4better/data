@@ -22,10 +22,5 @@ jobs:
       - run: yarn --frozen-lockfile
       - run: yarn build
       - run: yarn version --patch
-      - run: git add --all
-      - run: git commit -m "Data update"
-      - run: yarn publish --access=public --tag $npm_package_version
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-      - run: git push --tags
-      - run: git push
