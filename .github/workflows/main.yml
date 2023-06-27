@@ -17,4 +17,6 @@ jobs:
           cache: 'yarn'
       - run: yarn --frozen-lockfile
       - run: yarn build
-
+      - run: yarn version --patch
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
