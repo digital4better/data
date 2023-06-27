@@ -1,61 +1,85 @@
 # Digital4Better Environmental Data
 
-Ce document présente la méthodologie appliquée pour déterminer les facteurs d’impact environnementaux de la production de 1kwh d'électricité. Ces données sont utilisées par le moteur fruggr pour évaluer les impacts environnementaux induits par l’utilisation d’un service web.
+This repository contains the geographic and environmental data used by Digital4Better to calculate the footprints of digital services.
 
-Zone de texte
+This data is also used by the calculation engine of fruggr (www.fruggr.io), a service that automates the evaluation of the footprints of digital services.
 
+Each file is produced/generated in CSV and JSON format.
 
+## Données de pays (country)
 
-Les facteurs sont déterminés pour cet ensemble d’indicateur d’impact environnementaux :
+### Administrative data (countries.csv)
 
-- climate change total
-- freshwater and terrestrial acidification
-- freshwater ecotoxicity
-- freshwater eutrophication
-- marine eutrophication
-- terrestrial eutrophication
-- carcinogenic effects
-- ionising radiation
-- non-carcinogenic effects
-- ozone layer depletion
-- photochemical ozone creation
-- respiratory effects, inorganics
-- dissipated water
-- land use
-- minerals and metals
+This data is used to map data and to distribute impact factors (see Impact factors) by continent.
 
-Ils sont déterminés par pays en fonction du mix énergétique national ainsi que les impacts environnementaux associée à chacune de ces sources de production d’énergie, découpé en 9 technologies de production d’énergie :
+| Field     | Description                     |
+|-----------|---------------------------------|
+| name      | Country name                    |
+| alpha-2   | ISO 3166-1 alpha-2 country code |
+| alpha-3   | ISO 3166-1 alpha-3 country code |
+| continent | Country continent               |
 
-- coal (1)
-- gas (1)
-- other fossil (2)
-- wind (1)
-- solar (1)
-- bioenergy (2)
-- hydro (1)
-- other renewables (2)
-- nuclear (1)
+### Distances from country to country (country-to-country-distances)
 
-Nos données de mix énergétique pour tous les pays annuel (et mensuel pour 85 pays/régions) sont extraites de https://ember-climate.org/.
+This data can be used to determine the distance traveled by data on the network between a user and a datacenter located in different countries.
 
-Mix énergétique mensuel par pays : https://ember-climate.org/data-catalogue/monthly-electricity-data/
-Mix énergétique annuel par pays : https://ember-climate.org/data-catalogue/yearly-electricity-data/
+The distance is calculated between the baricenters in each country.
 
-Les données d’impacts de chaque technologie de production d’électricité par kWh proviennent de diverses sources bibliographiques. Ces données sont relatives à l’Europe, dû à la rareté de ces données dans un scope mondiale, une extrapolation est réalisée et ces valeurs sont généralisées dans notre modèle.
+| Field       | Description         |
+|-------------|---------------------|
+| origin      | Origin country      |
+| destination | Destination country |
+| distance    | Distance (km)       |
+
+### Average distance from a user to a datacenter (user-to datacenter-distances.csv)
+
+These data represent a rough estimate for each country of the average distance traveled by data on a network between a user and a datacenter.
+
+| Field    | Description                     |
+|----------|---------------------------------|
+| alpha-2  | ISO 3166-1 alpha-2 country code |
+| distance | Distance (km)                   |
+
+## Impacts liés à la production d'énergie (energy)
+
+The environmental impacts associated with each of these energy production sources, broken down into 9 energy production technologies: coal, gas, other fossil, wind, solar, bioenergy, hydro, other renewables, nuclear.
+
+### Environmental impact (energy-impacts)
+
+| Impact  | Unit       | Description                                                     |
+|---------|------------|-----------------------------------------------------------------|
+| ADPe    | kg Sb-Eq   | Abiotic Depletion Potential (Resource use, minerals and metals) |
+| AP      | kg SO2-Eq  | Acidification Power                                             |
+| CTUe    | CTUe       | Comparative Toxic Unit (Ecotoxicity, freshwater)                |
+| CTUh-c  | CTUh       | Comparative Toxic Unit (Human, cancer)                          |
+| CTUh-nc | CTUh       | Comparative Toxic Unit (Human, non-cancer)                      |
+| GWP     | kg CO2-Eq  | Global Warming Potential (Climate change)                       |
+| IR      | kg U235-Eq | Ionising Radiation (human health)                               |
+| PM      | Disease    | Particulate Matter emission                                     |
+| WU      | m3 Water   | Water use                                                       |
+
+### Source 
+
+The impact data for each electricity generation technology per kWh come from various bibliographical sources. Due to the scarcity of such data in a global scope, an extrapolation is made and these values are generalized in our model.
 
 Source : Life cycle assessment of electricity generation options, UNECE 2021 (1) et https://www.sciencedirect.com/science/article/pii/S0196890422008159#b0530 (2)
 
-Cas particulier de l’énergie renouvelable : Nous sommes en mesure de fournir un facteur d’impact énergie renouvelable en prenant en compte les technologies de productions d’énergie dites renouvelable (wind, solar, bioenergy, other renewable, hydro).
+## Impact factors (factor)
 
-Méthodologie pour le calcul des facteurs d’impacts environnementaux:
+These data represent the environmental impact factors of producing 1kwh of electricity by country, by continent and for the whole world.
 
-1. Récupérer les extracts de Ember https://ember-climate.org/data-catalogue/yearly-electricity-data/
-1. Filtrer sur l'année voulue et la pays voulu
-1. Filtrer sur la category = Electricity generation + Electricity imports
-1. Filtrer sur subcategory = Fuel + Total + Electricity imports
-1. Récupérer les % des différentes technologies de production + Total generation + Net Imports
-1. Faire la somme de Total generation + Net imports = c'est le total d'électricité utilisé dans le pays xx pour l'année xx
-1. Pour chaque technologies de production, calculer le nombre de Twh d'électricité produits (avec le % de chaque techno) et le convertir en kWh
-1. Récupérer les facteurs d'émission de chaque technologies de production, disponible dans le fichier ici
-1. Multiplier les kWh calculés en étape 7 par les facteurs d'émission de l'étape 8 pour obtenir des kgCO2eq pour l'ensemble des kWh produits par chaque techno sur le temps d'intérêt dans le pays d'intérêt
-1. Diviser la somme des kgCO2eq par le Total génération + Net imports en kWh pour obtenir des kgCO2eq/kwh correspondant au mix énergétique du pays considéré 
+### Data generation
+
+Impact factors are determined by country according to the national energy mix, as well as the environmental impacts associated with each of energy production sources (see Environmental impacts).
+
+Factors are generated on an annual and monthly basis starting in January 2019.
+
+Files ending with the suffix `-green` contain impact factors for green energies only (bioenergy, hydro, solar and wind).
+
+### Source
+
+Our energy mix data for all countries are taken from https://ember-climate.org/.
+
+- Monthly : https://ember-climate.org/data-catalogue/monthly-electricity-data/
+- Yearly : https://ember-climate.org/data-catalogue/yearly-electricity-data/
+
