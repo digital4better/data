@@ -22,7 +22,7 @@ jobs:
       - run: yarn --frozen-lockfile
       - run: yarn build
       - run: git add --all
-      - run: commit -m "Data update"
+      - run: git commit -m "Data update"
       - run: yarn version --patch
       - run: yarn publish --access=public --tag $npm_package_version
         env:
