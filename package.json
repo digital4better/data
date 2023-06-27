@@ -11,7 +11,7 @@
   "scripts": {
     "build": "ts-node .",
     "preversion": "git add --all",
-    "postversion": "git push --tags && yarn publish --access=public --tag $npm_package_version && git push"
+    "postversion": "git push --tags && yarn publish --access=public && git push"
   },
   "devDependencies": {
     "@types/node": "^20.3.1",
