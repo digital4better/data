@@ -9,7 +9,7 @@
   },
   "author": "Stefan <stefan@digital4better.com>",
   "scripts": {
-    "start": "ts-node ."
+    "build": "ts-node ."
   },
   "devDependencies": {
     "@types/node": "^20.3.1",
