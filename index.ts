@@ -232,9 +232,10 @@ const groupBy = (values: any[], fields: string[]) => {
     process.stdout.write(`- ${yearly ? "yearly" : "monthly"} ${scope} data... `);
     for (const region of Object.keys(aggregates).filter((region) => REGION_FILTERS[scope](region))) {
       let last: Aggregate;
-      const fill = (period: string): Aggregate => {
+      const fill = (period: string, year: string): Aggregate => {
         if (!aggregates[region][period]) {
           if (last) aggregates[region][period] = cloneAggregate(last);
+          else if (!yearly) aggregates[region][period] = cloneAggregate(aggregates[region][year]);
           else if (scope === "continent") aggregates[region][period] = cloneAggregate(aggregates[EMBER_WORLD][period]);
           else if (scope === "country")
             aggregates[region][period] = cloneAggregate(aggregates[COUNTRY_EMBER_REGIONS[region]][period]);
@@ -245,10 +246,10 @@ const groupBy = (values: any[], fields: string[]) => {
       };
       for (let year = MIN_YEAR; year <= CURRENT_YEAR; year++) {
         if (yearly) {
-          last = fill(`${year}`);
+          last = fill(`${year}`, `${year}`);
         } else {
           for (let month = 0; month <= 11; month++) {
-            last = fill(new Date(Date.UTC(year, month, 1)).toISOString().substring(0, 7));
+            last = fill(new Date(Date.UTC(year, month, 1)).toISOString().substring(0, 7), `${year}`);
           }
         }
       }
@@ -340,13 +341,15 @@ const groupBy = (values: any[], fields: string[]) => {
               .sort(([a, _], [b, __]) => a.localeCompare(b))
               .map(([_, v]) => v)
               .join("-");
+            const weight = aggregates[country][period].generatedKWh + aggregates[country][period].importedKWh;
             exp.data[key] = {
               ...group,
               ...combineImpacts({
                 target: exp.data[key],
                 source: aggregates[country][period][kind as keyof Aggregate] as Impacts,
+                sourceCoeff: weight,
               }),
-              count: (exp.data[key]?.count ?? 0) + 1,
+              weight: (exp.data[key]?.weight ?? 0) + weight,
             };
           }
         }
@@ -354,8 +357,8 @@ const groupBy = (values: any[], fields: string[]) => {
     }
     for (const exp of exports) {
       // Exporting to json file
-      const data = Object.values(exp.data).map(({ count, ...data }) => {
-        for (const impact of Object.keys(EMPTY_IMPACTS)) data[impact] /= count;
+      const data = Object.values(exp.data).map(({ weight, ...data }) => {
+        for (const impact of Object.keys(EMPTY_IMPACTS)) data[impact] /= weight;
         return data;
       });
       writeFileSync(
