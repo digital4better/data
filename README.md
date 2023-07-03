@@ -66,7 +66,8 @@ Source : Life cycle assessment of electricity generation options, UNECE 2021 (1)
 
 ## Impact factors (factor)
 
-These data represent the environmental impact factors of producing 1kwh of electricity by country, by continent and for the whole world.
+These data represent the environmental impact factors of one kWh of electricity consumption (not production) in each country, continent or worldwide.
+The amount of energy imported by each country is taken into account to adjust these factors.
 
 ### Data generation
 
