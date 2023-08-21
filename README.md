@@ -40,9 +40,27 @@ These data represent a rough estimate for each country of the average distance t
 | alpha-2  | ISO 3166-1 alpha-2 country code |
 | distance | Distance (km)                   |
 
-## Impacts liés à la production d'énergie (energy)
+## Impacts of ICT equipment manufacturing (embodied)
 
-The environmental impacts associated with each of these energy production sources, broken down into 9 energy production technologies: coal, gas, other fossil, wind, solar, bioenergy, hydro, other renewables, nuclear.
+The environmental impacts associated with the manufacture of each of these equipment categories : mobile, desktop, network mobile, network fixed, vm small, vm medium, vm large. 
+
+### Environmental impact (equipment-impacts)
+
+| Impact  | Unit       | Description                                                     |
+|---------|------------|-----------------------------------------------------------------|
+| ADPe    | kg Sb-Eq   | Abiotic Depletion Potential (Resource use, minerals and metals) |
+| AP      | kg SO2-Eq  | Acidification Power                                             |
+| CTUe    | CTUe       | Comparative Toxic Unit (Ecotoxicity, freshwater)                |
+| CTUh-c  | CTUh       | Comparative Toxic Unit (Human, cancer)                          |
+| CTUh-nc | CTUh       | Comparative Toxic Unit (Human, non-cancer)                      |
+| GWP     | kg CO2-Eq  | Global Warming Potential (Climate change)                       |
+| IR      | kg U235-Eq | Ionising Radiation (human health)                               |
+| PM      | Disease    | Particulate Matter emission                                     |
+| WU      | m3 Water   | Water use                                                       |
+
+## Impacts of energy production (energy)
+
+The environmental impacts associated with each of these energy production technologies: coal, gas, other fossil fuels, wind, solar, bioenergy, hydropower, other renewables, nuclear.
 
 ### Environmental impact (energy-impacts)
 
