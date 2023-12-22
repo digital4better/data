@@ -226,6 +226,18 @@ const groupBy = (values: any[], fields: string[]) => {
     { yearly: false, scope: "continent" },
     { yearly: false, scope: "country" },
   ];
+  process.stdout.write(`Removing empty data...`);
+  let deletions = 0;
+  for (const region of Object.keys(aggregates)) {
+    for (const period of Object.keys(aggregates[region])) {
+      const { generatedKWh, importedKWh } = aggregates[region][period];
+      if (generatedKWh + importedKWh === 0) {
+        deletions++;
+        delete aggregates[region][period];
+      }
+    }
+  }
+  process.stdout.write(`${deletions} deletions\n`);
   process.stdout.write(`Filling missing data\n`);
   for (const { yearly, scope } of passes) {
     let additions = 0;
@@ -235,11 +247,17 @@ const groupBy = (values: any[], fields: string[]) => {
       const fill = (period: string, year: string): Aggregate => {
         if (!aggregates[region][period]) {
           if (last) aggregates[region][period] = cloneAggregate(last);
-          else if (!yearly) aggregates[region][period] = cloneAggregate(aggregates[region][year]);
-          else if (scope === "continent") aggregates[region][period] = cloneAggregate(aggregates[EMBER_WORLD][period]);
-          else if (scope === "country")
+          else if (!yearly) {
+            aggregates[region][period] = cloneAggregate(aggregates[region][year]);
+          } else if (scope === "continent") {
+            aggregates[region][period] = cloneAggregate(aggregates[EMBER_WORLD][period]);
+            aggregates[region][period].generatedKWh = 1e-12; // 1Wh
+            aggregates[region][period].importedKWh = 0;
+          } else if (scope === "country") {
             aggregates[region][period] = cloneAggregate(aggregates[COUNTRY_EMBER_REGIONS[region]][period]);
-          else throw new Error(`Cannot fill missing ${scope} data for region ${region} and period ${period}`);
+            aggregates[region][period].generatedKWh = 1e-12; // 1Wh
+            aggregates[region][period].importedKWh = 0;
+          } else throw new Error(`Cannot fill missing ${scope} data for region ${region} and period ${period}`);
           additions++;
         }
         return aggregates[region][period];
@@ -341,7 +359,8 @@ const groupBy = (values: any[], fields: string[]) => {
               .sort(([a, _], [b, __]) => a.localeCompare(b))
               .map(([_, v]) => v)
               .join("-");
-            const weight = aggregates[country][period].generatedKWh + aggregates[country][period].importedKWh;
+            const { generatedKWh, importedKWh } = aggregates[country][period];
+            const weight = generatedKWh + importedKWh;
             exp.data[key] = {
               ...group,
               ...combineImpacts({
