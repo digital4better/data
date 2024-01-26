@@ -1,4 +1,4 @@
-# Digital4Better Environmental Data
+# Digital4Better Open Data
 
 This repository contains the geographic and environmental data used by Digital4Better to calculate the footprints of digital services.
 
@@ -7,6 +7,22 @@ This data is also used by the calculation engine of fruggr (www.fruggr.io), a se
 Each file is produced/generated in CSV and JSON format.
 
 ## Country data (country)
+
+### Geographical regions (regions.csv)
+
+This data is used to generate administrative data and to compute distances between regions.
+
+| Field       | Description                       |
+|-------------|-----------------------------------|
+| name        | Country name                      |
+| alpha-2     | ISO 3166-1 alpha-2 country code   |
+| alpha-3     | ISO 3166-1 alpha-3 country code   |
+| continent   | Region continent                  |
+| subdivision | ISO 3166-2 country subdivision    |
+| type        | continent, country or subdivision |
+| area        | Area                              |
+| lat         | Latitude                          |
+| lon         | Longitude                         |
 
 ### Administrative data (countries.csv)
 
@@ -31,7 +47,19 @@ The distance is calculated between the baricenters in each country.
 | destination | Destination country |
 | distance    | Distance (km)       |
 
-### Average distance from a user to a datacenter (user-to datacenter-distances.csv)
+### Distances from region to region (region-to-region-distances)
+
+This data can be used to determine the distance traveled by data on the network between a user and a datacenter located in different countries or country subdivisions.
+
+The distance is calculated between the baricenters in each country / subdivision.
+
+| Field       | Description                       |
+|-------------|-----------------------------------|
+| origin      | Origin country / subdivision      |
+| destination | Destination country / subdivision |
+| distance    | Distance (km)                     |
+
+### Average distance from a user to a datacenter (user-to-datacenter-distances.csv)
 
 These data represent a rough estimate for each country of the average distance traveled by data on a network between a user and a datacenter.
 

@@ -1,0 +1,3188 @@
+[
+  {
+    "continent": "AF",
+    "name": "Africa",
+    "type": "continent",
+    "area": 30415873,
+    "lat": -8.783195,
+    "lon": 34.508523
+  },
+  {
+    "continent": "AN",
+    "name": "Antartica",
+    "type": "continent",
+    "area": 14107637,
+    "lat": -82.8627519,
+    "lon": 135
+  },
+  {
+    "continent": "AS",
+    "name": "Asia",
+    "type": "continent",
+    "area": 43810582,
+    "lat": 34.047863,
+    "lon": 100.6196553
+  },
+  {
+    "continent": "EU",
+    "name": "Europe",
+    "type": "continent",
+    "area": 10180000,
+    "lat": 54.5259614,
+    "lon": 15.2551187
+  },
+  {
+    "continent": "NA",
+    "name": "North America",
+    "type": "continent",
+    "area": 24930000,
+    "lat": 54.5259614,
+    "lon": -105.2551187
+  },
+  {
+    "continent": "OC",
+    "name": "Oceania",
+    "type": "continent",
+    "area": 8525989,
+    "lat": -22.7359095,
+    "lon": 140.0187653
+  },
+  {
+    "continent": "SA",
+    "name": "South America",
+    "type": "continent",
+    "area": 17840000,
+    "lat": -8.783195,
+    "lon": -55.491477
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "AD",
+    "alpha-3": "AND",
+    "name": "Andorra",
+    "type": "country",
+    "area": 453,
+    "lat": 42.546245,
+    "lon": 1.601554
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "AE",
+    "alpha-3": "ARE",
+    "name": "United Arab Emirates",
+    "type": "country",
+    "area": 83657,
+    "lat": 23.424076,
+    "lon": 53.847818
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "AF",
+    "alpha-3": "AFG",
+    "name": "Afghanistan",
+    "type": "country",
+    "area": 652225,
+    "lat": 33.93911,
+    "lon": 67.709953
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "AG",
+    "alpha-3": "ATG",
+    "name": "Antigua and Barbuda",
+    "type": "country",
+    "area": 442,
+    "lat": 17.060816,
+    "lon": -61.796428
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "AI",
+    "alpha-3": "AIA",
+    "name": "Anguilla",
+    "type": "country",
+    "area": 102,
+    "lat": 18.220554,
+    "lon": -63.068615
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "AL",
+    "alpha-3": "ALB",
+    "name": "Albania",
+    "type": "country",
+    "area": 28748,
+    "lat": 41.153332,
+    "lon": 20.168331
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "AM",
+    "alpha-3": "ARM",
+    "name": "Armenia",
+    "type": "country",
+    "area": 29800,
+    "lat": 40.069099,
+    "lon": 45.038189
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "AO",
+    "alpha-3": "AGO",
+    "name": "Angola",
+    "type": "country",
+    "area": 1246700,
+    "lat": -11.202692,
+    "lon": 17.873887
+  },
+  {
+    "continent": "AN",
+    "alpha-2": "AQ",
+    "alpha-3": "ATA",
+    "name": "Antarctica",
+    "type": "country",
+    "area": 14107637,
+    "lat": -82.8627519,
+    "lon": 135
+  },
+  {
+    "continent": "SA",
+    "alpha-2": "AR",
+    "alpha-3": "ARG",
+    "name": "Argentina",
+    "type": "country",
+    "area": 2766889,
+    "lat": -38.416097,
+    "lon": -63.616672
+  },
+  {
+    "continent": "SA",
+    "alpha-2": "AS",
+    "alpha-3": "ASM",
+    "name": "American Samoa",
+    "type": "country",
+    "area": 199,
+    "lat": -12.8750976,
+    "lon": -170.9301783
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "AT",
+    "alpha-3": "AUT",
+    "name": "Austria",
+    "type": "country",
+    "area": 83858,
+    "lat": 47.516231,
+    "lon": 14.550072
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "AU",
+    "alpha-3": "AUS",
+    "name": "Australia",
+    "type": "country",
+    "area": 7686848,
+    "lat": -25.274398,
+    "lon": 133.775136
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "AW",
+    "alpha-3": "ABW",
+    "name": "Aruba",
+    "type": "country",
+    "area": 193,
+    "lat": 12.52111,
+    "lon": -69.968338
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "AX",
+    "alpha-3": "ALA",
+    "name": "Åland Islands",
+    "type": "country",
+    "area": 1582,
+    "lat": 60.1588973,
+    "lon": 18.8955611
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "AZ",
+    "alpha-3": "AZE",
+    "name": "Azerbaijan",
+    "type": "country",
+    "area": 86600,
+    "lat": 40.143105,
+    "lon": 47.576927
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "BA",
+    "alpha-3": "BIH",
+    "name": "Bosnia and Herzegovina",
+    "type": "country",
+    "area": 51233,
+    "lat": 43.915886,
+    "lon": 17.679076
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "BB",
+    "alpha-3": "BRB",
+    "name": "Barbados",
+    "type": "country",
+    "area": 431,
+    "lat": 13.193887,
+    "lon": -59.543198
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "BD",
+    "alpha-3": "BGD",
+    "name": "Bangladesh",
+    "type": "country",
+    "area": 143998,
+    "lat": 23.684994,
+    "lon": 90.356331
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "BE",
+    "alpha-3": "BEL",
+    "name": "Belgium",
+    "type": "country",
+    "area": 33114,
+    "lat": 50.503887,
+    "lon": 4.469936
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "BF",
+    "alpha-3": "BFA",
+    "name": "Burkina Faso",
+    "type": "country",
+    "area": 274200,
+    "lat": 12.238333,
+    "lon": -1.561593
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "BG",
+    "alpha-3": "BGR",
+    "name": "Bulgaria",
+    "type": "country",
+    "area": 110994,
+    "lat": 42.733883,
+    "lon": 25.48583
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "BH",
+    "alpha-3": "BHR",
+    "name": "Bahrain",
+    "type": "country",
+    "area": 678,
+    "lat": 25.930414,
+    "lon": 50.637772
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "BI",
+    "alpha-3": "BDI",
+    "name": "Burundi",
+    "type": "country",
+    "area": 27834,
+    "lat": -3.373056,
+    "lon": 29.918886
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "BJ",
+    "alpha-3": "BEN",
+    "name": "Benin",
+    "type": "country",
+    "area": 112622,
+    "lat": 9.30769,
+    "lon": 2.315834
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "BL",
+    "alpha-3": "BLM",
+    "name": "Saint Barthélemy",
+    "type": "country",
+    "area": 24,
+    "lat": 17.9221457,
+    "lon": -62.9126496
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "BM",
+    "alpha-3": "BMU",
+    "name": "Bermuda",
+    "type": "country",
+    "area": 53,
+    "lat": 32.321384,
+    "lon": -64.75737
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "BN",
+    "alpha-3": "BRN",
+    "name": "Brunei Darussalam",
+    "type": "country",
+    "area": 5765,
+    "lat": 4.535277,
+    "lon": 114.727669
+  },
+  {
+    "continent": "SA",
+    "alpha-2": "BO",
+    "alpha-3": "BOL",
+    "name": "Bolivia",
+    "type": "country",
+    "area": 1098581,
+    "lat": -16.290154,
+    "lon": -63.588653
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "BQ",
+    "alpha-3": "BES",
+    "name": "Bonaire, Sint Eustatius and Saba",
+    "type": "country",
+    "area": 328,
+    "lat": 12.1339772,
+    "lon": -68.4090471
+  },
+  {
+    "continent": "SA",
+    "alpha-2": "BR",
+    "alpha-3": "BRA",
+    "name": "Brazil",
+    "type": "country",
+    "area": 8511920,
+    "lat": -14.235004,
+    "lon": -51.92528
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "BS",
+    "alpha-3": "BHS",
+    "name": "Bahamas",
+    "type": "country",
+    "area": 13939,
+    "lat": 25.03428,
+    "lon": -77.39628
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "BT",
+    "alpha-3": "BTN",
+    "name": "Bhutan",
+    "type": "country",
+    "area": 46620,
+    "lat": 27.514162,
+    "lon": 90.433601
+  },
+  {
+    "continent": "AN",
+    "alpha-2": "BV",
+    "alpha-3": "BVT",
+    "name": "Bouvet Island",
+    "type": "country",
+    "area": 49,
+    "lat": -54.4233017,
+    "lon": 3.3165831
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "BW",
+    "alpha-3": "BWA",
+    "name": "Botswana",
+    "type": "country",
+    "area": 600372,
+    "lat": -22.328474,
+    "lon": 24.684866
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "BY",
+    "alpha-3": "BLR",
+    "name": "Belarus",
+    "type": "country",
+    "area": 207595,
+    "lat": 53.709807,
+    "lon": 27.953389
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "BZ",
+    "alpha-3": "BLZ",
+    "name": "Belize",
+    "type": "country",
+    "area": 22963,
+    "lat": 17.189877,
+    "lon": -88.49765
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "CA",
+    "alpha-3": "CAN",
+    "name": "Canada",
+    "type": "country",
+    "area": 9984670,
+    "lat": 56.130366,
+    "lon": -106.346771
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "CA",
+    "subdivision": "AB",
+    "name": "Alberta",
+    "type": "subdivision",
+    "area": 661848,
+    "lat": 55.001251,
+    "lon": -115.002136
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "CA",
+    "subdivision": "BC",
+    "name": "British Columbia",
+    "type": "subdivision",
+    "area": 944735,
+    "lat": 55.001251,
+    "lon": -125.002441
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "CA",
+    "subdivision": "MB",
+    "name": "Manitoba",
+    "type": "subdivision",
+    "area": 647797,
+    "lat": 55.001251,
+    "lon": -97.001038
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "CA",
+    "subdivision": "NB",
+    "name": "New Brunswick",
+    "type": "subdivision",
+    "area": 72908,
+    "lat": 46.500283,
+    "lon": -66.750183
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "CA",
+    "subdivision": "NL",
+    "name": "Newfoundland and Labrador",
+    "type": "subdivision",
+    "area": 405212,
+    "lat": 53.8217327,
+    "lon": -61.2295532
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "CA",
+    "subdivision": "NS",
+    "name": "Nova Scotia",
+    "type": "subdivision",
+    "area": 55284,
+    "lat": 45.1960403,
+    "lon": -63.1653789
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "CA",
+    "subdivision": "NT",
+    "name": "Northwest Territories",
+    "type": "subdivision",
+    "area": 1346106,
+    "lat": 65.0000004,
+    "lon": -118
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "CA",
+    "subdivision": "NU",
+    "name": "Nunavut",
+    "type": "subdivision",
+    "area": 2093190,
+    "lat": 65.0377727,
+    "lon": -92.5540791
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "CA",
+    "subdivision": "ON",
+    "name": "Ontario",
+    "type": "subdivision",
+    "area": 1076395,
+    "lat": 51.253775,
+    "lon": -85.323214
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "CA",
+    "subdivision": "PE",
+    "name": "Prince Edward Island",
+    "type": "subdivision",
+    "area": 5660,
+    "lat": 46.3355508,
+    "lon": -63.1466676
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "CA",
+    "subdivision": "QC",
+    "name": "Quebec",
+    "type": "subdivision",
+    "area": 1542056,
+    "lat": 52.4760892,
+    "lon": -71.8258668
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "CA",
+    "subdivision": "SK",
+    "name": "Saskatchewan",
+    "type": "subdivision",
+    "area": 651036,
+    "lat": 55.5321257,
+    "lon": -106.1412243
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "CA",
+    "subdivision": "YT",
+    "name": "Yukon",
+    "type": "subdivision",
+    "area": 482443,
+    "lat": 64.2823274,
+    "lon": -135
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "CC",
+    "alpha-3": "CCK",
+    "name": "Cocos Islands",
+    "type": "country",
+    "area": 14,
+    "lat": -12.164165,
+    "lon": 96.870956
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "CD",
+    "alpha-3": "COD",
+    "name": "Congo Democratic Republic",
+    "type": "country",
+    "area": 342000,
+    "lat": -0.228021,
+    "lon": 15.827659
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "CF",
+    "alpha-3": "CAF",
+    "name": "Central African Republic",
+    "type": "country",
+    "area": 622984,
+    "lat": 6.611111,
+    "lon": 20.939444
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "CG",
+    "alpha-3": "COG",
+    "name": "Congo",
+    "type": "country",
+    "area": 342000,
+    "lat": -0.7264327,
+    "lon": 15.6419155
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "CH",
+    "alpha-3": "CHE",
+    "name": "Switzerland",
+    "type": "country",
+    "area": 41288,
+    "lat": 46.818188,
+    "lon": 8.227512
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "CI",
+    "alpha-3": "CIV",
+    "name": "Côte d'Ivoire",
+    "type": "country",
+    "area": 322463,
+    "lat": 7.539989,
+    "lon": -5.54708
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "CK",
+    "alpha-3": "COK",
+    "name": "Cook Islands",
+    "type": "country",
+    "area": 240,
+    "lat": -21.236736,
+    "lon": -159.777671
+  },
+  {
+    "continent": "SA",
+    "alpha-2": "CL",
+    "alpha-3": "CHL",
+    "name": "Chile",
+    "type": "country",
+    "area": 756945,
+    "lat": -35.675147,
+    "lon": -71.542969
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "CM",
+    "alpha-3": "CMR",
+    "name": "Cameroon",
+    "type": "country",
+    "area": 475442,
+    "lat": 7.369722,
+    "lon": 12.354722
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "CN",
+    "alpha-3": "CHN",
+    "name": "China",
+    "type": "country",
+    "area": 9572378,
+    "lat": 35.86166,
+    "lon": 104.195397
+  },
+  {
+    "continent": "SA",
+    "alpha-2": "CO",
+    "alpha-3": "COL",
+    "name": "Colombia",
+    "type": "country",
+    "area": 1141748,
+    "lat": 4.570868,
+    "lon": -74.297333
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "CR",
+    "alpha-3": "CRI",
+    "name": "Costa Rica",
+    "type": "country",
+    "area": 51076,
+    "lat": 9.748917,
+    "lon": -83.753428
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "CU",
+    "alpha-3": "CUB",
+    "name": "Cuba",
+    "type": "country",
+    "area": 110861,
+    "lat": 21.521757,
+    "lon": -77.781167
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "CV",
+    "alpha-3": "CPV",
+    "name": "Cap-Vert",
+    "type": "country",
+    "area": 4033,
+    "lat": 16.002082,
+    "lon": -24.013197
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "CW",
+    "alpha-3": "CUW",
+    "name": "Curaçao",
+    "type": "country",
+    "area": 444,
+    "lat": 12.1845,
+    "lon": -68.9640875
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "CX",
+    "alpha-3": "CXR",
+    "name": "Christmas Island",
+    "type": "country",
+    "area": 135,
+    "lat": -10.447525,
+    "lon": 105.690449
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "CY",
+    "alpha-3": "CYP",
+    "name": "Cyprus",
+    "type": "country",
+    "area": 9251,
+    "lat": 35.126413,
+    "lon": 33.429859
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "CZ",
+    "alpha-3": "CZE",
+    "name": "Czech Republic",
+    "type": "country",
+    "area": 78864,
+    "lat": 49.817492,
+    "lon": 15.472962
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "DE",
+    "alpha-3": "DEU",
+    "name": "Germany",
+    "type": "country",
+    "area": 357325,
+    "lat": 51.165691,
+    "lon": 10.451526
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "DJ",
+    "alpha-3": "DJI",
+    "name": "Djibouti",
+    "type": "country",
+    "area": 23200,
+    "lat": 11.825138,
+    "lon": 42.590275
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "DK",
+    "alpha-3": "DNK",
+    "name": "Denmark",
+    "type": "country",
+    "area": 43094,
+    "lat": 56.26392,
+    "lon": 9.501785
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "DM",
+    "alpha-3": "DMA",
+    "name": "Dominica",
+    "type": "country",
+    "area": 751,
+    "lat": 15.414999,
+    "lon": -61.370976
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "DO",
+    "alpha-3": "DOM",
+    "name": "Dominican Republic",
+    "type": "country",
+    "area": 48734,
+    "lat": 18.735693,
+    "lon": -70.162651
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "DZ",
+    "alpha-3": "DZA",
+    "name": "Algeria",
+    "type": "country",
+    "area": 2381741,
+    "lat": 28.033886,
+    "lon": 1.659626
+  },
+  {
+    "continent": "SA",
+    "alpha-2": "EC",
+    "alpha-3": "ECU",
+    "name": "Ecuador",
+    "type": "country",
+    "area": 275716,
+    "lat": -1.831239,
+    "lon": -78.183406
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "EE",
+    "alpha-3": "EST",
+    "name": "Estonia",
+    "type": "country",
+    "area": 45227,
+    "lat": 58.595272,
+    "lon": 25.013607
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "EG",
+    "alpha-3": "EGY",
+    "name": "Egypt",
+    "type": "country",
+    "area": 1001449,
+    "lat": 26.820553,
+    "lon": 30.802498
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "EH",
+    "alpha-3": "ESH",
+    "name": "Western Sahara",
+    "type": "country",
+    "area": 266000,
+    "lat": 24.215527,
+    "lon": -12.885834
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "ER",
+    "alpha-3": "ERI",
+    "name": "Eritrea",
+    "type": "country",
+    "area": 121320,
+    "lat": 15.179384,
+    "lon": 39.782334
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "ES",
+    "alpha-3": "ESP",
+    "name": "Spain",
+    "type": "country",
+    "area": 505954,
+    "lat": 40.463667,
+    "lon": -3.74922
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "ET",
+    "alpha-3": "ETH",
+    "name": "Ethiopia",
+    "type": "country",
+    "area": 1127127,
+    "lat": 9.145,
+    "lon": 40.489673
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "FI",
+    "alpha-3": "FIN",
+    "name": "Finland",
+    "type": "country",
+    "area": 336593,
+    "lat": 61.92411,
+    "lon": 25.748151
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "FJ",
+    "alpha-3": "FJI",
+    "name": "Fiji",
+    "type": "country",
+    "area": 18333,
+    "lat": -16.578193,
+    "lon": 179.414413
+  },
+  {
+    "continent": "SA",
+    "alpha-2": "FK",
+    "alpha-3": "FLK",
+    "name": "Falkland Islands",
+    "type": "country",
+    "area": 12173,
+    "lat": -51.796253,
+    "lon": -59.523613
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "FM",
+    "alpha-3": "FSM",
+    "name": "Micronesia",
+    "type": "country",
+    "area": 707,
+    "lat": 7.425554,
+    "lon": 150.550812
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "FO",
+    "alpha-3": "FRO",
+    "name": "Faroe Islands",
+    "type": "country",
+    "area": 1399,
+    "lat": 61.892635,
+    "lon": -6.911806
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "FR",
+    "alpha-3": "FRA",
+    "name": "France",
+    "type": "country",
+    "area": 547026,
+    "lat": 46.227638,
+    "lon": 2.213749
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "GA",
+    "alpha-3": "GAB",
+    "name": "Gabon",
+    "type": "country",
+    "area": 267667,
+    "lat": -0.803689,
+    "lon": 11.609444
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "GB",
+    "alpha-3": "GBR",
+    "name": "United Kingdom",
+    "type": "country",
+    "area": 244110,
+    "lat": 55.378051,
+    "lon": -3.435973
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "GD",
+    "alpha-3": "GRD",
+    "name": "Grenada",
+    "type": "country",
+    "area": 345,
+    "lat": 12.262776,
+    "lon": -61.604171
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "GE",
+    "alpha-3": "GEO",
+    "name": "Georgia",
+    "type": "country",
+    "area": 69700,
+    "lat": 42.315407,
+    "lon": 43.356892
+  },
+  {
+    "continent": "SA",
+    "alpha-2": "GF",
+    "alpha-3": "GUF",
+    "name": "French Guiana",
+    "type": "country",
+    "area": 91000,
+    "lat": 3.933889,
+    "lon": -53.125782
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "GG",
+    "alpha-3": "GGY",
+    "name": "Guernsey",
+    "type": "country",
+    "area": 64,
+    "lat": 49.4566233,
+    "lon": -2.5822348
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "GH",
+    "alpha-3": "GHA",
+    "name": "Ghana",
+    "type": "country",
+    "area": 238538,
+    "lat": 7.946527,
+    "lon": -1.023194
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "GI",
+    "alpha-3": "GIB",
+    "name": "Gibraltar",
+    "type": "country",
+    "area": 7,
+    "lat": 36.137741,
+    "lon": -5.345374
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "GL",
+    "alpha-3": "GRL",
+    "name": "Greenland",
+    "type": "country",
+    "area": 2166086,
+    "lat": 71.706936,
+    "lon": -42.604303
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "GM",
+    "alpha-3": "GMB",
+    "name": "Gambia",
+    "type": "country",
+    "area": 11295,
+    "lat": 13.443182,
+    "lon": -15.310139
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "GN",
+    "alpha-3": "GIN",
+    "name": "Guinea",
+    "type": "country",
+    "area": 245857,
+    "lat": 9.945587,
+    "lon": -9.696645
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "GP",
+    "alpha-3": "GLP",
+    "name": "Guadeloupe",
+    "type": "country",
+    "area": 1780,
+    "lat": 16.995971,
+    "lon": -62.067641
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "GQ",
+    "alpha-3": "GNQ",
+    "name": "Equatorial Guinea",
+    "type": "country",
+    "area": 28051,
+    "lat": 1.650801,
+    "lon": 10.267895
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "GR",
+    "alpha-3": "GRC",
+    "name": "Greece",
+    "type": "country",
+    "area": 131621,
+    "lat": 39.074208,
+    "lon": 21.824312
+  },
+  {
+    "continent": "AN",
+    "alpha-2": "GS",
+    "alpha-3": "SGS",
+    "name": "South Georgia and the South Sandwich Islands",
+    "type": "country",
+    "area": 3903,
+    "lat": -54.8432857,
+    "lon": -35.8090698
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "GT",
+    "alpha-3": "GTM",
+    "name": "Guatemala",
+    "type": "country",
+    "area": 108889,
+    "lat": 15.783471,
+    "lon": -90.230759
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "GU",
+    "alpha-3": "GUM",
+    "name": "Guam",
+    "type": "country",
+    "area": 549,
+    "lat": 13.444304,
+    "lon": 144.793731
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "GW",
+    "alpha-3": "GNB",
+    "name": "Guinea-Bissau",
+    "type": "country",
+    "area": 36125,
+    "lat": 11.803749,
+    "lon": -15.180413
+  },
+  {
+    "continent": "SA",
+    "alpha-2": "GY",
+    "alpha-3": "GUY",
+    "name": "Guyana",
+    "type": "country",
+    "area": 214970,
+    "lat": 4.860416,
+    "lon": -58.93018
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "HK",
+    "alpha-3": "HKG",
+    "name": "Hong Kong",
+    "type": "country",
+    "area": 1092,
+    "lat": 22.396428,
+    "lon": 114.109497
+  },
+  {
+    "continent": "AN",
+    "alpha-2": "HM",
+    "alpha-3": "HMD",
+    "name": "Heard Island and McDonald Islands",
+    "type": "country",
+    "area": 368,
+    "lat": -53.08307055,
+    "lon": 73.5325035
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "HN",
+    "alpha-3": "HND",
+    "name": "Honduras",
+    "type": "country",
+    "area": 112088,
+    "lat": 15.199999,
+    "lon": -86.241905
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "HR",
+    "alpha-3": "HRV",
+    "name": "Croatia",
+    "type": "country",
+    "area": 56538,
+    "lat": 45.1,
+    "lon": 15.2
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "HT",
+    "alpha-3": "HTI",
+    "name": "Haiti",
+    "type": "country",
+    "area": 27750,
+    "lat": 18.971187,
+    "lon": -72.285215
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "HU",
+    "alpha-3": "HUN",
+    "name": "Hungary",
+    "type": "country",
+    "area": 93032,
+    "lat": 47.162494,
+    "lon": 19.503304
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "ID",
+    "alpha-3": "IDN",
+    "name": "Indonesia",
+    "type": "country",
+    "area": 1933658,
+    "lat": -0.789275,
+    "lon": 113.921327
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "IE",
+    "alpha-3": "IRL",
+    "name": "Ireland",
+    "type": "country",
+    "area": 70285,
+    "lat": 53.41291,
+    "lon": -8.24389
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "IL",
+    "alpha-3": "ISR",
+    "name": "Israel",
+    "type": "country",
+    "area": 21621,
+    "lat": 31.046051,
+    "lon": 34.851612
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "IM",
+    "alpha-3": "IMN",
+    "name": "Isle of Man",
+    "type": "country",
+    "area": 572,
+    "lat": 54.236107,
+    "lon": -4.548056
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "IN",
+    "alpha-3": "IND",
+    "name": "India",
+    "type": "country",
+    "area": 3287590,
+    "lat": 20.593684,
+    "lon": 78.96288
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "IO",
+    "alpha-3": "IOT",
+    "name": "British Indian Ocean Territory",
+    "type": "country",
+    "area": 60,
+    "lat": -6.343194,
+    "lon": 71.876519
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "IQ",
+    "alpha-3": "IRQ",
+    "name": "Iraq",
+    "type": "country",
+    "area": 437072,
+    "lat": 33.223191,
+    "lon": 43.679291
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "IR",
+    "alpha-3": "IRN",
+    "name": "Iran",
+    "type": "country",
+    "area": 1648100,
+    "lat": 32.427908,
+    "lon": 53.688046
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "IS",
+    "alpha-3": "ISL",
+    "name": "Iceland",
+    "type": "country",
+    "area": 102819,
+    "lat": 64.963051,
+    "lon": -19.020835
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "IT",
+    "alpha-3": "ITA",
+    "name": "Italy",
+    "type": "country",
+    "area": 301323,
+    "lat": 41.87194,
+    "lon": 12.56738
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "JE",
+    "alpha-3": "JEY",
+    "name": "Jersey",
+    "type": "country",
+    "area": 120,
+    "lat": 49.2137711,
+    "lon": -2.1357662
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "JM",
+    "alpha-3": "JAM",
+    "name": "Jamaica",
+    "type": "country",
+    "area": 10991,
+    "lat": 18.109581,
+    "lon": -77.297508
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "JO",
+    "alpha-3": "JOR",
+    "name": "Jordan",
+    "type": "country",
+    "area": 91862,
+    "lat": 30.585164,
+    "lon": 36.238414
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "JP",
+    "alpha-3": "JPN",
+    "name": "Japan",
+    "type": "country",
+    "area": 377801,
+    "lat": 36.204824,
+    "lon": 138.252924
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "KE",
+    "alpha-3": "KEN",
+    "name": "Kenya",
+    "type": "country",
+    "area": 582646,
+    "lat": -0.023559,
+    "lon": 37.906193
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "KG",
+    "alpha-3": "KGZ",
+    "name": "Kyrgyzstan",
+    "type": "country",
+    "area": 198500,
+    "lat": 41.20438,
+    "lon": 74.766098
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "KH",
+    "alpha-3": "KHM",
+    "name": "Cambodia",
+    "type": "country",
+    "area": 181035,
+    "lat": 12.565679,
+    "lon": 104.990963
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "KI",
+    "alpha-3": "KIR",
+    "name": "Kiribati",
+    "type": "country",
+    "area": 717,
+    "lat": -3.370417,
+    "lon": -168.734039
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "KM",
+    "alpha-3": "COM",
+    "name": "Comoros",
+    "type": "country",
+    "area": 1862,
+    "lat": -11.875001,
+    "lon": 43.872219
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "KN",
+    "alpha-3": "KNA",
+    "name": "Saint Kitts and Nevis",
+    "type": "country",
+    "area": 269,
+    "lat": 17.357822,
+    "lon": -62.782998
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "KP",
+    "alpha-3": "PRK",
+    "name": "North Korea",
+    "type": "country",
+    "area": 120538,
+    "lat": 40.339852,
+    "lon": 127.510093
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "KR",
+    "alpha-3": "KOR",
+    "name": "South Korea",
+    "type": "country",
+    "area": 99484,
+    "lat": 35.907757,
+    "lon": 127.766922
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "KW",
+    "alpha-3": "KWT",
+    "name": "Kuwait",
+    "type": "country",
+    "area": 17818,
+    "lat": 29.31166,
+    "lon": 47.481766
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "KY",
+    "alpha-3": "CYM",
+    "name": "Cayman Islands",
+    "type": "country",
+    "area": 262,
+    "lat": 19.513469,
+    "lon": -80.566956
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "KZ",
+    "alpha-3": "KAZ",
+    "name": "Kazakhstan",
+    "type": "country",
+    "area": 2717300,
+    "lat": 48.019573,
+    "lon": 66.923684
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "LA",
+    "alpha-3": "LAO",
+    "name": "Laos",
+    "type": "country",
+    "area": 236800,
+    "lat": 19.85627,
+    "lon": 102.495496
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "LB",
+    "alpha-3": "LBN",
+    "name": "Lebanon",
+    "type": "country",
+    "area": 10452,
+    "lat": 33.854721,
+    "lon": 35.862285
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "LC",
+    "alpha-3": "LCA",
+    "name": "Saint Lucia",
+    "type": "country",
+    "area": 617,
+    "lat": 13.909444,
+    "lon": -60.978893
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "LI",
+    "alpha-3": "LIE",
+    "name": "Liechtenstein",
+    "type": "country",
+    "area": 160,
+    "lat": 47.1410392,
+    "lon": 9.520935
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "LK",
+    "alpha-3": "LKA",
+    "name": "Sri Lanka",
+    "type": "country",
+    "area": 65610,
+    "lat": 7.873054,
+    "lon": 80.771797
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "LR",
+    "alpha-3": "LBR",
+    "name": "Liberia",
+    "type": "country",
+    "area": 111369,
+    "lat": 6.428055,
+    "lon": -9.429499
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "LS",
+    "alpha-3": "LSO",
+    "name": "Lesotho",
+    "type": "country",
+    "area": 30355,
+    "lat": -29.609988,
+    "lon": 28.233608
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "LT",
+    "alpha-3": "LTU",
+    "name": "Lithuania",
+    "type": "country",
+    "area": 65300,
+    "lat": 55.169438,
+    "lon": 23.881275
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "LU",
+    "alpha-3": "LUX",
+    "name": "Luxembourg",
+    "type": "country",
+    "area": 2586,
+    "lat": 49.815273,
+    "lon": 6.129583
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "LV",
+    "alpha-3": "LVA",
+    "name": "Latvia",
+    "type": "country",
+    "area": 64589,
+    "lat": 56.879635,
+    "lon": 24.603189
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "LY",
+    "alpha-3": "LBY",
+    "name": "Libya",
+    "type": "country",
+    "area": 1759540,
+    "lat": 26.3351,
+    "lon": 17.228331
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "MA",
+    "alpha-3": "MAR",
+    "name": "Morocco",
+    "type": "country",
+    "area": 710850,
+    "lat": 31.791702,
+    "lon": -7.09262
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "MC",
+    "alpha-3": "MCO",
+    "name": "Monaco",
+    "type": "country",
+    "area": 208,
+    "lat": 43.7384176,
+    "lon": 7.4246158
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "MD",
+    "alpha-3": "MDA",
+    "name": "Moldova",
+    "type": "country",
+    "area": 33700,
+    "lat": 47.411631,
+    "lon": 28.369885
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "ME",
+    "alpha-3": "MNE",
+    "name": "Montenegro",
+    "type": "country",
+    "area": 13812,
+    "lat": 42.708678,
+    "lon": 19.37439
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "MF",
+    "alpha-3": "MAF",
+    "name": "Saint Martin",
+    "type": "country",
+    "area": 53,
+    "lat": 18.08255,
+    "lon": -63.052251
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "MG",
+    "alpha-3": "MDG",
+    "name": "Madagascar",
+    "type": "country",
+    "area": 587041,
+    "lat": -18.766947,
+    "lon": 46.869107
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "MH",
+    "alpha-3": "MHL",
+    "name": "Marshall Islands",
+    "type": "country",
+    "area": 181,
+    "lat": 7.131474,
+    "lon": 171.184478
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "MK",
+    "alpha-3": "MKD",
+    "name": "North Macedonia",
+    "type": "country",
+    "area": 25713,
+    "lat": 41.608635,
+    "lon": 21.745275
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "ML",
+    "alpha-3": "MLI",
+    "name": "Mali",
+    "type": "country",
+    "area": 1240142,
+    "lat": 17.570692,
+    "lon": -3.996166
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "MM",
+    "alpha-3": "MMR",
+    "name": "Myanmar",
+    "type": "country",
+    "area": 678500,
+    "lat": 21.913965,
+    "lon": 95.956223
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "MN",
+    "alpha-3": "MNG",
+    "name": "Mongolia",
+    "type": "country",
+    "area": 1565500,
+    "lat": 46.862496,
+    "lon": 103.846656
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "MO",
+    "alpha-3": "MAC",
+    "name": "Macao",
+    "type": "country",
+    "area": 25,
+    "lat": 22.198745,
+    "lon": 113.543873
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "MP",
+    "alpha-3": "MNP",
+    "name": "Northern Mariana Islands",
+    "type": "country",
+    "area": 477,
+    "lat": 17.33083,
+    "lon": 145.38469
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "MQ",
+    "alpha-3": "MTQ",
+    "name": "Martinique",
+    "type": "country",
+    "area": 1100,
+    "lat": 14.641528,
+    "lon": -61.024174
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "MR",
+    "alpha-3": "MRT",
+    "name": "Mauritania",
+    "type": "country",
+    "area": 1030700,
+    "lat": 21.00789,
+    "lon": -10.940835
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "MS",
+    "alpha-3": "MSR",
+    "name": "Montserrat",
+    "type": "country",
+    "area": 102,
+    "lat": 16.742498,
+    "lon": -62.187366
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "MT",
+    "alpha-3": "MLT",
+    "name": "Malta",
+    "type": "country",
+    "area": 316,
+    "lat": 35.937496,
+    "lon": 14.375416
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "MU",
+    "alpha-3": "MUS",
+    "name": "Mauritius",
+    "type": "country",
+    "area": 2045,
+    "lat": -20.348404,
+    "lon": 57.552152
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "MV",
+    "alpha-3": "MDV",
+    "name": "Maldives",
+    "type": "country",
+    "area": 298,
+    "lat": 3.202778,
+    "lon": 73.22068
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "MW",
+    "alpha-3": "MWI",
+    "name": "Malawi",
+    "type": "country",
+    "area": 118484,
+    "lat": -13.254308,
+    "lon": 34.301525
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "MX",
+    "alpha-3": "MEX",
+    "name": "Mexico",
+    "type": "country",
+    "area": 1967210,
+    "lat": 23.634501,
+    "lon": -102.552784
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "MY",
+    "alpha-3": "MYS",
+    "name": "Malaysia",
+    "type": "country",
+    "area": 329758,
+    "lat": 4.210484,
+    "lon": 101.975766
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "MZ",
+    "alpha-3": "MOZ",
+    "name": "Mozambique",
+    "type": "country",
+    "area": 801590,
+    "lat": -18.665695,
+    "lon": 35.529562
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "NA",
+    "alpha-3": "NAM",
+    "name": "Namibia",
+    "type": "country",
+    "area": 825518,
+    "lat": -22.95764,
+    "lon": 18.49041
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "NC",
+    "alpha-3": "NCL",
+    "name": "New Caledonia",
+    "type": "country",
+    "area": 19060,
+    "lat": -20.904305,
+    "lon": 165.618042
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "NE",
+    "alpha-3": "NER",
+    "name": "Niger",
+    "type": "country",
+    "area": 1267000,
+    "lat": 17.607789,
+    "lon": 8.081666
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "NF",
+    "alpha-3": "NFK",
+    "name": "Norfolk Island",
+    "type": "country",
+    "area": 35,
+    "lat": -29.040835,
+    "lon": 167.954712
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "NG",
+    "alpha-3": "NGA",
+    "name": "Nigeria",
+    "type": "country",
+    "area": 923768,
+    "lat": 9.081999,
+    "lon": 8.675277
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "NI",
+    "alpha-3": "NIC",
+    "name": "Nicaragua",
+    "type": "country",
+    "area": 130670,
+    "lat": 12.865416,
+    "lon": -85.207229
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "NL",
+    "alpha-3": "NLD",
+    "name": "Netherlands",
+    "type": "country",
+    "area": 41863,
+    "lat": 52.132633,
+    "lon": 5.291266
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "NO",
+    "alpha-3": "NOR",
+    "name": "Norway",
+    "type": "country",
+    "area": 323752,
+    "lat": 60.472024,
+    "lon": 8.468946
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "NP",
+    "alpha-3": "NPL",
+    "name": "Nepal",
+    "type": "country",
+    "area": 147181,
+    "lat": 28.394857,
+    "lon": 84.124008
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "NR",
+    "alpha-3": "NRU",
+    "name": "Nauru",
+    "type": "country",
+    "area": 21,
+    "lat": -0.522778,
+    "lon": 166.931503
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "NU",
+    "alpha-3": "NIU",
+    "name": "Niue",
+    "type": "country",
+    "area": 260,
+    "lat": -19.054445,
+    "lon": -169.867233
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "NZ",
+    "alpha-3": "NZL",
+    "name": "New Zealand",
+    "type": "country",
+    "area": 268676,
+    "lat": -40.900557,
+    "lon": 174.885971
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "OM",
+    "alpha-3": "OMN",
+    "name": "Oman",
+    "type": "country",
+    "area": 212379,
+    "lat": 21.512583,
+    "lon": 55.923255
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "PA",
+    "alpha-3": "PAN",
+    "name": "Panama",
+    "type": "country",
+    "area": 75648,
+    "lat": 8.537981,
+    "lon": -80.782127
+  },
+  {
+    "continent": "SA",
+    "alpha-2": "PE",
+    "alpha-3": "PER",
+    "name": "Peru",
+    "type": "country",
+    "area": 1285216,
+    "lat": -9.189967,
+    "lon": -75.015152
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "PF",
+    "alpha-3": "PYF",
+    "name": "French Polynesia",
+    "type": "country",
+    "area": 4167,
+    "lat": -17.679742,
+    "lon": -149.406843
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "PG",
+    "alpha-3": "PNG",
+    "name": "Papua New Guinea",
+    "type": "country",
+    "area": 462840,
+    "lat": -6.314993,
+    "lon": 143.95555
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "PH",
+    "alpha-3": "PHL",
+    "name": "Philippines",
+    "type": "country",
+    "area": 300000,
+    "lat": 12.879721,
+    "lon": 121.774017
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "PK",
+    "alpha-3": "PAK",
+    "name": "Pakistan",
+    "type": "country",
+    "area": 882872,
+    "lat": 30.375321,
+    "lon": 69.345116
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "PL",
+    "alpha-3": "POL",
+    "name": "Poland",
+    "type": "country",
+    "area": 312685,
+    "lat": 51.919438,
+    "lon": 19.145136
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "PM",
+    "alpha-3": "SPM",
+    "name": "Saint Pierre and Miquelon",
+    "type": "country",
+    "area": 242,
+    "lat": 46.941936,
+    "lon": -56.27111
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "PN",
+    "alpha-3": "PCN",
+    "name": "Pitcairn",
+    "type": "country",
+    "area": 47,
+    "lat": -24.703615,
+    "lon": -127.439308
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "PR",
+    "alpha-3": "PRI",
+    "name": "Puerto Rico",
+    "type": "country",
+    "area": 9104,
+    "lat": 18.220833,
+    "lon": -66.590149
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "PS",
+    "alpha-3": "PSE",
+    "name": "Palestine",
+    "type": "country",
+    "area": 6256,
+    "lat": 31.952162,
+    "lon": 35.233154
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "PT",
+    "alpha-3": "PRT",
+    "name": "Portugal",
+    "type": "country",
+    "area": 92389,
+    "lat": 39.399872,
+    "lon": -8.224454
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "PW",
+    "alpha-3": "PLW",
+    "name": "Palau",
+    "type": "country",
+    "area": 487,
+    "lat": 7.51498,
+    "lon": 134.58252
+  },
+  {
+    "continent": "SA",
+    "alpha-2": "PY",
+    "alpha-3": "PRY",
+    "name": "Paraguay",
+    "type": "country",
+    "area": 406752,
+    "lat": -23.442503,
+    "lon": -58.443832
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "QA",
+    "alpha-3": "QAT",
+    "name": "Qatar",
+    "type": "country",
+    "area": 11437,
+    "lat": 25.354826,
+    "lon": 51.183884
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "RE",
+    "alpha-3": "REU",
+    "name": "Réunion",
+    "type": "country",
+    "area": 2517,
+    "lat": -21.115141,
+    "lon": 55.536384
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "RO",
+    "alpha-3": "ROU",
+    "name": "Romania",
+    "type": "country",
+    "area": 238391,
+    "lat": 45.943161,
+    "lon": 24.96676
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "RS",
+    "alpha-3": "SRB",
+    "name": "Serbia",
+    "type": "country",
+    "area": 88499,
+    "lat": 44.016521,
+    "lon": 21.005859
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "RU",
+    "alpha-3": "RUS",
+    "name": "Russian Federation",
+    "type": "country",
+    "area": 17075400,
+    "lat": 61.52401,
+    "lon": 105.318756
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "RW",
+    "alpha-3": "RWA",
+    "name": "Rwanda",
+    "type": "country",
+    "area": 26338,
+    "lat": -1.940278,
+    "lon": 29.873888
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "SA",
+    "alpha-3": "SAU",
+    "name": "Saudi Arabia",
+    "type": "country",
+    "area": 2153168,
+    "lat": 23.885942,
+    "lon": 45.079162
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "SB",
+    "alpha-3": "SLB",
+    "name": "Solomon Islands",
+    "type": "country",
+    "area": 29785,
+    "lat": -9.64571,
+    "lon": 160.156194
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "SC",
+    "alpha-3": "SYC",
+    "name": "Seychelles",
+    "type": "country",
+    "area": 455,
+    "lat": -4.679574,
+    "lon": 55.491977
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "SD",
+    "alpha-3": "SDN",
+    "name": "Sudan",
+    "type": "country",
+    "area": 2505813,
+    "lat": 12.862807,
+    "lon": 30.217636
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "SE",
+    "alpha-3": "SWE",
+    "name": "Sweden",
+    "type": "country",
+    "area": 449964,
+    "lat": 60.128161,
+    "lon": 18.643501
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "SG",
+    "alpha-3": "SGP",
+    "name": "Singapore",
+    "type": "country",
+    "area": 646,
+    "lat": 1.352083,
+    "lon": 103.819836
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "SH",
+    "alpha-3": "SHN",
+    "name": "Saint Helena",
+    "type": "country",
+    "area": 410,
+    "lat": -24.143474,
+    "lon": -10.030696
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "SI",
+    "alpha-3": "SVN",
+    "name": "Slovenia",
+    "type": "country",
+    "area": 20256,
+    "lat": 46.151241,
+    "lon": 14.995463
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "SJ",
+    "alpha-3": "SJM",
+    "name": "Svalbard and Jan Mayen",
+    "type": "country",
+    "area": 61022,
+    "lat": 77.8749725,
+    "lon": 20.9751822
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "SK",
+    "alpha-3": "SVK",
+    "name": "Slovakia",
+    "type": "country",
+    "area": 49036,
+    "lat": 48.669026,
+    "lon": 19.699024
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "SL",
+    "alpha-3": "SLE",
+    "name": "Sierra Leone",
+    "type": "country",
+    "area": 73326,
+    "lat": 8.460555,
+    "lon": -11.779889
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "SM",
+    "alpha-3": "SMR",
+    "name": "San Marino",
+    "type": "country",
+    "area": 61,
+    "lat": 43.94236,
+    "lon": 12.457777
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "SN",
+    "alpha-3": "SEN",
+    "name": "Senegal",
+    "type": "country",
+    "area": 196722,
+    "lat": 14.497401,
+    "lon": -14.452362
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "SO",
+    "alpha-3": "SOM",
+    "name": "Somalia",
+    "type": "country",
+    "area": 637657,
+    "lat": 5.152149,
+    "lon": 46.199616
+  },
+  {
+    "continent": "SA",
+    "alpha-2": "SR",
+    "alpha-3": "SUR",
+    "name": "Suriname",
+    "type": "country",
+    "area": 163820,
+    "lat": 3.919305,
+    "lon": -56.027783
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "SS",
+    "alpha-3": "SSD",
+    "name": "South Sudan",
+    "type": "country",
+    "area": 619745,
+    "lat": 6.8769919,
+    "lon": 31.3069788
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "ST",
+    "alpha-3": "STP",
+    "name": "Sao Tome and Principe",
+    "type": "country",
+    "area": 964,
+    "lat": 0.18636,
+    "lon": 6.613081
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "SV",
+    "alpha-3": "SLV",
+    "name": "El Salvador",
+    "type": "country",
+    "area": 21041,
+    "lat": 13.794185,
+    "lon": -88.89653
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "SX",
+    "alpha-3": "SXM",
+    "name": "Sint Maarten",
+    "type": "country",
+    "area": 88,
+    "lat": 18.04248,
+    "lon": -63.05483
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "SY",
+    "alpha-3": "SYR",
+    "name": "Syrian Arab Republic",
+    "type": "country",
+    "area": 184004,
+    "lat": 34.802075,
+    "lon": 38.996815
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "SZ",
+    "alpha-3": "SWZ",
+    "name": "Eswatini",
+    "type": "country",
+    "area": 17364,
+    "lat": -26.522503,
+    "lon": 31.465866
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "TC",
+    "alpha-3": "TCA",
+    "name": "Turks and Caicos Islands",
+    "type": "country",
+    "area": 430,
+    "lat": 21.694025,
+    "lon": -71.797928
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "TD",
+    "alpha-3": "TCD",
+    "name": "Chad",
+    "type": "country",
+    "area": 1284005,
+    "lat": 15.454166,
+    "lon": 18.732207
+  },
+  {
+    "continent": "AN",
+    "alpha-2": "TF",
+    "alpha-3": "ATF",
+    "name": "French Southern Territories",
+    "type": "country",
+    "area": 7829,
+    "lat": -49.280366,
+    "lon": 69.348557
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "TG",
+    "alpha-3": "TGO",
+    "name": "Togo",
+    "type": "country",
+    "area": 56785,
+    "lat": 8.619543,
+    "lon": 0.824782
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "TH",
+    "alpha-3": "THA",
+    "name": "Thailand",
+    "type": "country",
+    "area": 513115,
+    "lat": 15.870032,
+    "lon": 100.992541
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "TJ",
+    "alpha-3": "TJK",
+    "name": "Tajikistan",
+    "type": "country",
+    "area": 143095,
+    "lat": 38.861034,
+    "lon": 71.276093
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "TK",
+    "alpha-3": "TKL",
+    "name": "Tokelau",
+    "type": "country",
+    "area": 10,
+    "lat": -8.967363,
+    "lon": -171.855881
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "TL",
+    "alpha-3": "TLS",
+    "name": "Timor-Leste",
+    "type": "country",
+    "area": 14874,
+    "lat": -21.178986,
+    "lon": -175.198242
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "TM",
+    "alpha-3": "TKM",
+    "name": "Turkmenistan",
+    "type": "country",
+    "area": 488100,
+    "lat": 38.969719,
+    "lon": 59.556278
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "TN",
+    "alpha-3": "TUN",
+    "name": "Tunisia",
+    "type": "country",
+    "area": 164150,
+    "lat": 33.886917,
+    "lon": 9.537499
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "TO",
+    "alpha-3": "TON",
+    "name": "Tonga",
+    "type": "country",
+    "area": 748,
+    "lat": -21.178986,
+    "lon": -175.198242
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "TR",
+    "alpha-3": "TUR",
+    "name": "Türkiye",
+    "type": "country",
+    "area": 780576,
+    "lat": 38.963745,
+    "lon": 35.243322
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "TT",
+    "alpha-3": "TTO",
+    "name": "Trinidad and Tobago",
+    "type": "country",
+    "area": 5130,
+    "lat": 10.691803,
+    "lon": -61.222503
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "TV",
+    "alpha-3": "TUV",
+    "name": "Tuvalu",
+    "type": "country",
+    "area": 26,
+    "lat": -7.109535,
+    "lon": 177.64933
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "TW",
+    "alpha-3": "TWN",
+    "name": "Taiwan",
+    "type": "country",
+    "area": 35875,
+    "lat": 23.69781,
+    "lon": 120.960515
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "TZ",
+    "alpha-3": "TZA",
+    "name": "Tanzania",
+    "type": "country",
+    "area": 945090,
+    "lat": -6.369028,
+    "lon": 34.888822
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "UA",
+    "alpha-3": "UKR",
+    "name": "Ukraine",
+    "type": "country",
+    "area": 603677,
+    "lat": 48.379433,
+    "lon": 31.16558
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "UG",
+    "alpha-3": "UGA",
+    "name": "Uganda",
+    "type": "country",
+    "area": 241038,
+    "lat": 1.373333,
+    "lon": 32.290275
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "UM",
+    "alpha-3": "UMI",
+    "name": "United States Minor Outlying Islands",
+    "type": "country",
+    "area": 49,
+    "lat": 19.2823192,
+    "lon": 166.647047
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "alpha-3": "USA",
+    "name": "United States of America",
+    "type": "country",
+    "area": 9827451,
+    "lat": 37.09024,
+    "lon": -95.712891
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "AK",
+    "name": "Alaska",
+    "type": "subdivision",
+    "area": 1717854,
+    "lat": 63.588753,
+    "lon": -154.4930619
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "AL",
+    "name": "Alabama",
+    "type": "subdivision",
+    "area": 135765,
+    "lat": 32.3182314,
+    "lon": -86.902298
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "AZ",
+    "name": "Arizona",
+    "type": "subdivision",
+    "area": 295254,
+    "lat": 34.0489281,
+    "lon": -111.0937311
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "AR",
+    "name": "Arkansas",
+    "type": "subdivision",
+    "area": 137732,
+    "lat": 35.20105,
+    "lon": -91.8318334
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "CA",
+    "name": "California",
+    "type": "subdivision",
+    "area": 423970,
+    "lat": 36.778261,
+    "lon": -119.4179324
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "CO",
+    "name": "Colorado",
+    "type": "subdivision",
+    "area": 269601,
+    "lat": 39.5500507,
+    "lon": -105.7820674
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "CT",
+    "name": "Connecticut",
+    "type": "subdivision",
+    "area": 14357,
+    "lat": 41.6032207,
+    "lon": -73.087749
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "DE",
+    "name": "Delaware",
+    "type": "subdivision",
+    "area": 6447,
+    "lat": 38.9108325,
+    "lon": -75.5276699
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "FL",
+    "name": "Florida",
+    "type": "subdivision",
+    "area": 170304,
+    "lat": 27.6648274,
+    "lon": -81.4639835
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "GA",
+    "name": "Georgia",
+    "type": "subdivision",
+    "area": 153909,
+    "lat": 32.3293809,
+    "lon": -83.1137366
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "HI",
+    "name": "Hawaii",
+    "type": "subdivision",
+    "area": 28311,
+    "lat": 19.5938015,
+    "lon": -155.4283701
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "ID",
+    "name": "Idaho",
+    "type": "subdivision",
+    "area": 216446,
+    "lat": 44.0682019,
+    "lon": -114.7420408
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "IL",
+    "name": "Illinois",
+    "type": "subdivision",
+    "area": 149998,
+    "lat": 40.6331249,
+    "lon": -89.3985283
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "IN",
+    "name": "Indiana",
+    "type": "subdivision",
+    "area": 94321,
+    "lat": 40.2671941,
+    "lon": -86.1349019
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "IA",
+    "name": "Iowa",
+    "type": "subdivision",
+    "area": 145743,
+    "lat": 41.8780025,
+    "lon": -93.097702
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "KS",
+    "name": "Kansas",
+    "type": "subdivision",
+    "area": 213096,
+    "lat": 39.011902,
+    "lon": -98.4842465
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "KY",
+    "name": "Kentucky",
+    "type": "subdivision",
+    "area": 104659,
+    "lat": 37.8393332,
+    "lon": -84.2700179
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "LA",
+    "name": "Louisiana",
+    "type": "subdivision",
+    "area": 134264,
+    "lat": 30.8703881,
+    "lon": -92.007126
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "ME",
+    "name": "Maine",
+    "type": "subdivision",
+    "area": 91646,
+    "lat": 45.253783,
+    "lon": -69.4454689
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "MD",
+    "name": "Maryland",
+    "type": "subdivision",
+    "area": 32133,
+    "lat": 39.0457549,
+    "lon": -76.6412712
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "MA",
+    "name": "Massachusetts",
+    "type": "subdivision",
+    "area": 27336,
+    "lat": 42.4072107,
+    "lon": -71.3824374
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "MI",
+    "name": "Michigan",
+    "type": "subdivision",
+    "area": 250494,
+    "lat": 44.3148443,
+    "lon": -85.6023643
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "MN",
+    "name": "Minnesota",
+    "type": "subdivision",
+    "area": 225171,
+    "lat": 46.729553,
+    "lon": -94.6858998
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "MS",
+    "name": "Mississippi",
+    "type": "subdivision",
+    "area": 125434,
+    "lat": 32.3546679,
+    "lon": -89.3985283
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "MO",
+    "name": "Missouri",
+    "type": "subdivision",
+    "area": 180533,
+    "lat": 37.9642529,
+    "lon": -91.8318334
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "MT",
+    "name": "Montana",
+    "type": "subdivision",
+    "area": 380834,
+    "lat": 46.8796822,
+    "lon": -110.3625658
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "NE",
+    "name": "Nebraska",
+    "type": "subdivision",
+    "area": 200345,
+    "lat": 41.4925374,
+    "lon": -99.9018131
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "NV",
+    "name": "Nevada",
+    "type": "subdivision",
+    "area": 286351,
+    "lat": 38.8026097,
+    "lon": -116.419389
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "NH",
+    "name": "New Hampshire",
+    "type": "subdivision",
+    "area": 24216,
+    "lat": 43.1938516,
+    "lon": -71.5723953
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "NJ",
+    "name": "New Jersey",
+    "type": "subdivision",
+    "area": 22588,
+    "lat": 40.0583238,
+    "lon": -74.4056612
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "NM",
+    "name": "New Mexico",
+    "type": "subdivision",
+    "area": 314915,
+    "lat": 34.5802074,
+    "lon": -105.996047
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "NY",
+    "name": "New York",
+    "type": "subdivision",
+    "area": 141299,
+    "lat": 40.7127281,
+    "lon": -74.0060152
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "NC",
+    "name": "North Carolina",
+    "type": "subdivision",
+    "area": 139389,
+    "lat": 35.6729639,
+    "lon": -79.0392919
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "ND",
+    "name": "North Dakota",
+    "type": "subdivision",
+    "area": 183112,
+    "lat": 47.6201461,
+    "lon": -100.540737
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "OH",
+    "name": "Ohio",
+    "type": "subdivision",
+    "area": 116096,
+    "lat": 40.4172871,
+    "lon": -82.907123
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "OK",
+    "name": "Oklahoma",
+    "type": "subdivision",
+    "area": 181035,
+    "lat": 35.0077519,
+    "lon": -97.092877
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "OR",
+    "name": "Oregon",
+    "type": "subdivision",
+    "area": 254805,
+    "lat": 43.8041334,
+    "lon": -120.5542012
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "PA",
+    "name": "Pennsylvania",
+    "type": "subdivision",
+    "area": 119283,
+    "lat": 40.9699889,
+    "lon": -77.7278831
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "RI",
+    "name": "Rhode Island",
+    "type": "subdivision",
+    "area": 4002,
+    "lat": 41.5800945,
+    "lon": -71.4774291
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "SC",
+    "name": "South Carolina",
+    "type": "subdivision",
+    "area": 82932,
+    "lat": 33.6874388,
+    "lon": -80.4363743
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "SD",
+    "name": "South Dakota",
+    "type": "subdivision",
+    "area": 199731,
+    "lat": 44.6471761,
+    "lon": -100.348761
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "TN",
+    "name": "Tennessee",
+    "type": "subdivision",
+    "area": 109151,
+    "lat": 35.5174913,
+    "lon": -86.5804473
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "TX",
+    "name": "Texas",
+    "type": "subdivision",
+    "area": 696621,
+    "lat": 31.9685988,
+    "lon": -99.9018131
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "UT",
+    "name": "Utah",
+    "type": "subdivision",
+    "area": 219887,
+    "lat": 39.3209801,
+    "lon": -111.0937311
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "VT",
+    "name": "Vermont",
+    "type": "subdivision",
+    "area": 24901,
+    "lat": 44.5588028,
+    "lon": -72.5778415
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "VA",
+    "name": "Virginia",
+    "type": "subdivision",
+    "area": 110785,
+    "lat": 37.1232245,
+    "lon": -78.4927721
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "WA",
+    "name": "Washington",
+    "type": "subdivision",
+    "area": 184665,
+    "lat": 47.7510741,
+    "lon": -120.7401386
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "WV",
+    "name": "West Virginia",
+    "type": "subdivision",
+    "area": 62755,
+    "lat": 38.4758406,
+    "lon": -80.8408415
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "WI",
+    "name": "Wisconsin",
+    "type": "subdivision",
+    "area": 169639,
+    "lat": 43.7844397,
+    "lon": -88.7878678
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "US",
+    "subdivision": "WY",
+    "name": "Wyoming",
+    "type": "subdivision",
+    "area": 253336,
+    "lat": 43.0759678,
+    "lon": -107.2902839
+  },
+  {
+    "continent": "SA",
+    "alpha-2": "UY",
+    "alpha-3": "URY",
+    "name": "Uruguay",
+    "type": "country",
+    "area": 176215,
+    "lat": -32.522779,
+    "lon": -55.765835
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "UZ",
+    "alpha-3": "UZB",
+    "name": "Uzbekistan",
+    "type": "country",
+    "area": 447400,
+    "lat": 41.377491,
+    "lon": 64.585262
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "VA",
+    "alpha-3": "VAT",
+    "name": "Holy See",
+    "type": "country",
+    "area": 1,
+    "lat": 41.902916,
+    "lon": 12.453389
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "VC",
+    "alpha-3": "VCT",
+    "name": "Saint Vincent and the Grenadines",
+    "type": "country",
+    "area": 389,
+    "lat": 12.984305,
+    "lon": -61.287228
+  },
+  {
+    "continent": "SA",
+    "alpha-2": "VE",
+    "alpha-3": "VEN",
+    "name": "Venezuela",
+    "type": "country",
+    "area": 911930,
+    "lat": 6.42375,
+    "lon": -66.58973
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "VG",
+    "alpha-3": "VGB",
+    "name": "British Virgin Islands",
+    "type": "country",
+    "area": 153,
+    "lat": 18.420695,
+    "lon": -64.639968
+  },
+  {
+    "continent": "NA",
+    "alpha-2": "VI",
+    "alpha-3": "VIR",
+    "name": "United States Virgin Islands",
+    "type": "country",
+    "area": 346,
+    "lat": 18.335765,
+    "lon": -64.896335
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "VN",
+    "alpha-3": "VNM",
+    "name": "Viet Nam",
+    "type": "country",
+    "area": 331114,
+    "lat": 14.058324,
+    "lon": 108.277199
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "VU",
+    "alpha-3": "VUT",
+    "name": "Vanuatu",
+    "type": "country",
+    "area": 14763,
+    "lat": -15.376706,
+    "lon": 166.959158
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "WF",
+    "alpha-3": "WLF",
+    "name": "Wallis and Futuna",
+    "type": "country",
+    "area": 274,
+    "lat": -13.768752,
+    "lon": -177.156097
+  },
+  {
+    "continent": "OC",
+    "alpha-2": "WS",
+    "alpha-3": "WSM",
+    "name": "Samoa",
+    "type": "country",
+    "area": 2842,
+    "lat": -13.759029,
+    "lon": -172.104629
+  },
+  {
+    "continent": "EU",
+    "alpha-2": "XK",
+    "alpha-3": "XKX",
+    "name": "Kosovo",
+    "type": "country",
+    "area": 10908,
+    "lat": 42.6026359,
+    "lon": 20.902977
+  },
+  {
+    "continent": "AS",
+    "alpha-2": "YE",
+    "alpha-3": "YEM",
+    "name": "Yemen",
+    "type": "country",
+    "area": 547244,
+    "lat": 15.552727,
+    "lon": 48.516388
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "YT",
+    "alpha-3": "MYT",
+    "name": "Mayotte",
+    "type": "country",
+    "area": 374,
+    "lat": -12.8275,
+    "lon": 45.166244
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "ZA",
+    "alpha-3": "ZAF",
+    "name": "South Africa",
+    "type": "country",
+    "area": 1219912,
+    "lat": -30.559482,
+    "lon": 22.937506
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "ZM",
+    "alpha-3": "ZMB",
+    "name": "Zambia",
+    "type": "country",
+    "area": 752614,
+    "lat": -13.133897,
+    "lon": 27.849332
+  },
+  {
+    "continent": "AF",
+    "alpha-2": "ZW",
+    "alpha-3": "ZWE",
+    "name": "Zimbabwe",
+    "type": "country",
+    "area": 390759,
+    "lat": -19.015438,
+    "lon": 29.154857
+  }
+]

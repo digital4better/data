@@ -1,7 +1,7 @@
 import { get } from "https";
 import { createInterface } from "readline";
 import { appendFileSync, writeFileSync } from "fs";
-import * as countries from "./data/country/countries.json";
+import * as regions from "./data/country/regions.json";
 import * as impacts from "./data/energy/energy-impacts.json";
 
 const MIN_YEAR = 2019;
@@ -137,7 +137,37 @@ const groupBy = (values: any[], fields: string[]) => {
   return result;
 };
 
-(async () => {
+const exportToCsv = (file: string, values: Record<string, string | number>[], headers?: string[]) => {
+  headers = headers ?? Object.keys(values[0]);
+  writeFileSync(file, headers.join(",") + "\r\n");
+  for (const line of values)
+    appendFileSync(
+      file,
+      headers.map((header) => (/,/.test(String(line[header])) ? `"${line[header]}"` : line[header])).join(",") + "\r\n"
+    );
+};
+
+const degToRad = (deg: number) => deg * (Math.PI / 180.0);
+const computeDistance = (
+  origin: { lat: number; lon: number },
+  destination: { lat: number; lon: number },
+  precision = 3
+) => {
+  return (
+    Math.round(
+      Math.acos(
+        Math.cos(degToRad(90 - origin.lat)) * Math.cos(degToRad(90 - destination.lat)) +
+          Math.sin(degToRad(90 - origin.lat)) *
+            Math.sin(degToRad(90 - destination.lat)) *
+            Math.cos(degToRad(origin.lon - destination.lon))
+      ) *
+        6371 *
+        Math.pow(10, precision)
+    ) / Math.pow(10, precision)
+  );
+};
+
+const generateFactors = async () => {
   // Data aggregation
   const aggregates: {
     [region: string]: {
@@ -169,7 +199,7 @@ const groupBy = (values: any[], fields: string[]) => {
       const yearly = !!year;
       const period = yearly ? `${year}` : date.toISOString().substring(0, 7);
       const country = area_type === "Country";
-      const region = country ? countries.find(({ "alpha-3": alpha3 }) => alpha3 === country_code)?.["alpha-2"] : area;
+      const region = country ? regions.find(({ "alpha-3": alpha3 }) => alpha3 === country_code)?.["alpha-2"] : area;
       // Unknown area, stopping process
       if (!region) throw new Error(`Unknown area: ${country_code ?? area}`);
       // Dropping early years
@@ -349,7 +379,10 @@ const groupBy = (values: any[], fields: string[]) => {
       for (let month = 0; month <= lastMonth; month++) {
         const period = new Date(Date.UTC(year, month, 1)).toISOString().substring(0, 7);
         for (const country of Object.keys(aggregates).filter(isCountry)) {
-          const { continent } = countries.find(({ "alpha-2": alpha2 }) => alpha2 === country);
+          const { continent: code } = regions.find(({ "alpha-2": alpha2 }) => alpha2 === country);
+          const continent = regions
+            .filter(({ type }) => type === "continent")
+            .find(({ continent }) => continent === code)?.name;
           for (const exp of exports) {
             const group = exp.group.reduce(
               (acc, key) => ({ ...acc, [key]: { year, period, continent, country }[key] }),
@@ -394,4 +427,112 @@ const groupBy = (values: any[], fields: string[]) => {
         );
     }
   }
+};
+
+const generateCountries = async () => {
+  process.stdout.write(`Computing geographic data...\n`);
+  // Continents
+  const continents = regions
+    .filter(({ type }) => type === "continent")
+    .map(({ continent: code, name }) => ({ code, name }))
+    .sort((a, b) => a.code.localeCompare(b.code));
+  // Countries
+  const countries = regions
+    .filter(({ type }) => type === "country")
+    .map(({ "alpha-3": a3, "alpha-2": a2, name, continent }) => ({
+      name,
+      "alpha-3": a3,
+      "alpha-2": a2,
+      continent: continents.find(({ code }) => code === continent)?.name,
+    }))
+    .sort((a, b) => a["alpha-2"].localeCompare(b["alpha-2"]));
+  // Distances
+  const countryToCountry = [];
+  const regionToRegion = [];
+  const userToDatacenter = [];
+  for (const origin of regions) {
+    for (const destination of regions) {
+      const distance = computeDistance(origin, destination);
+      // country to country distance
+      if (origin.type === destination.type && origin.type === "country") {
+        countryToCountry.push({ origin: origin["alpha-2"], destination: destination["alpha-2"], distance });
+      }
+      // region to region distance
+      if (origin.type !== "continent" && destination.type !== "continent") {
+        regionToRegion.push({
+          origin: origin.type === "country" ? origin["alpha-2"] : `${origin["alpha-2"]}-${origin.subdivision}`,
+          destination:
+            destination.type === "country"
+              ? destination["alpha-2"]
+              : `${destination["alpha-2"]}-${destination.subdivision}`,
+          distance,
+        });
+      }
+    }
+    // user to datacenter distance
+    if (origin.type !== "continent") {
+      const distance = Math.round(Math.sqrt(origin.area / Math.PI) * Math.pow(10, 3)) / Math.pow(10, 3);
+      userToDatacenter.push({
+        "alpha-2": origin.type === "country" ? origin["alpha-2"] : `${origin["alpha-2"]}-${origin.subdivision}`,
+        distance,
+      });
+    }
+  }
+  process.stdout.write(`Exporting geographic data...\n`);
+  exportToCsv(`./data/country/regions.csv`, regions, [
+    "continent",
+    "alpha-2",
+    "alpha-3",
+    "subdivision",
+    "name",
+    "type",
+    "area",
+    "lat",
+    "lon",
+  ]);
+  writeFileSync(`./data/country/continents.json`, JSON.stringify(continents, null, 2));
+  exportToCsv(`./data/country/continents.csv`, continents);
+  writeFileSync(`./data/country/countries.json`, JSON.stringify(countries, null, 2));
+  exportToCsv(`./data/country/countries.csv`, countries);
+  writeFileSync(
+    `./data/country/country-to-country-distances.json`,
+    JSON.stringify(
+      countryToCountry.reduce<Record<string, number>>((a, { origin, destination, distance }) => {
+        a[`${origin}${destination}`] = distance;
+        return a;
+      }, {}),
+      null,
+      2
+    )
+  );
+  exportToCsv(`./data/country/country-to-country-distances.csv`, countryToCountry);
+  writeFileSync(
+    `./data/country/region-to-region-distances.json`,
+    JSON.stringify(
+      regionToRegion.reduce<Record<string, number>>((a, { origin, destination, distance }) => {
+        a[`${origin}${destination}`] = distance;
+        return a;
+      }, {}),
+      null,
+      2
+    )
+  );
+  exportToCsv(`./data/country/region-to-region-distances.csv`, regionToRegion);
+  writeFileSync(
+    `./data/country/user-to-datacenter-distances.json`,
+    JSON.stringify(
+      userToDatacenter.reduce<Record<string, number>>((a, { "alpha-2": a2, distance }) => {
+        a[a2] = distance;
+        return a;
+      }, {}),
+      null,
+      2
+    )
+  );
+  exportToCsv(`./data/country/user-to-datacenter-distances.csv`, userToDatacenter);
+};
+
+(async () => {
+  await generateCountries();
+  await generateFactors();
 })();
