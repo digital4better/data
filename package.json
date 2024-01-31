@@ -17,7 +17,7 @@
     "start": "vite",
     "build": "yarn build:data && yarn build:site",
     "build:data": "ts-node .",
-    "build:site": "vite build",
+    "build:site": "vite build --base=/data/",
     "preversion": "git add --all",
     "postversion": "git push --tags && yarn publish --access=public && git push"
   },

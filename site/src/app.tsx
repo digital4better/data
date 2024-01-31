@@ -41,8 +41,10 @@ export const App: FC = () => {
   const [zoom, setZoom] = useState("WO");
   useEffect(() => {
     (async () => {
-      setFactors(await (await fetch("/factor/country-yearly.json")).json());
-      setPaths(await (await fetch("/country/regions-paths.json")).json());
+      // @ts-ignore
+      const base = import.meta.env.BASE_URL;
+      setFactors(await (await fetch(`${base}factor/country-yearly.json`)).json());
+      setPaths(await (await fetch(`${base}country/regions-paths.json`)).json());
     })();
   }, []);
   useEffect(() => {
