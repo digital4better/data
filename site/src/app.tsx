@@ -83,7 +83,7 @@ export const App: FC = () => {
     <ThemeProvider theme={theme}>
       <GlobalStyles styles={{ "*": { padding: 0, margin: 0 } }} />
       <Header />
-      <Box sx={{ bgcolor: "background.primary", p: 4 }}>
+      <Box sx={{ bgcolor: "background.primary", px: { xs: 2, sm: 4 }, py: 4 }}>
         <Container maxWidth="lg" disableGutters>
           <Stack spacing={2}>
             <Box sx={{ typography: "subtitle" }} component="h2">
@@ -124,7 +124,10 @@ export const App: FC = () => {
                   name="period"
                   value={year}
                   onChange={setYear}
-                  options={["2024", "2023", "2022", "2021", "2020"].map((year) => ({ label: year, value: year }))}
+                  options={["2024", "2023", "2022", "2021", "2020", "2019"].map((year) => ({
+                    label: year,
+                    value: year,
+                  }))}
                 />
               </Box>
               <Box>

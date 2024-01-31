@@ -17,11 +17,20 @@ export const theme = createTheme({
       fontFamily,
       fontSize: "1.25rem",
       lineHeight: "1.75rem",
+      "@media (max-width:600px)": {
+        fontSize: "1rem",
+        lineHeight: "1.5rem",
+      },
     },
     title: {
       fontWeight: "bold",
       fontSize: "2.25rem",
+      lineHeight: "2.5rem",
       fontFamily,
+      "@media (max-width:600px)": {
+        fontSize: "1.25rem",
+        lineHeight: "1.75rem",
+      },
     },
     subtitle: {
       color: "#444444",

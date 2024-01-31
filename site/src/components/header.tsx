@@ -4,7 +4,7 @@ import { Logo } from "../assets/logo";
 import { GitHub } from "../assets/github";
 
 export const Header: FC = () => (
-  <Box sx={{ typography: "header", bgcolor: "background.secondary", p: 4 }}>
+  <Box sx={{ typography: "header", bgcolor: "background.secondary", px: { xs: 2, sm: 4 }, py: 4 }}>
     <Container
       sx={{
         a: { typography: "header" },
@@ -26,7 +26,7 @@ export const Header: FC = () => (
       <a className="github-link" href="https://github.com/digital4better/data" target="_blank" title="GitHub">
         <GitHub />
       </a>
-      <Stack spacing={4}>
+      <Stack spacing={{ xs: 2, sm: 4 }}>
         <Logo />
         <Box
           sx={{
@@ -59,7 +59,8 @@ export const Header: FC = () => (
             </svg>
             <Box sx={{ display: "inline-block", zIndex: 1, position: "relative" }}>Open Data</Box>
           </Box>
-          <Box sx={{ display: "inline-block" }}>&nbsp;@Digital4Better</Box>
+          &nbsp;
+          <Box sx={{ display: "inline-block" }}>@Digital4Better</Box>
         </Box>
         <Box sx={{ display: "inline-block" }}>
           Geographical and environmental data produced and used by Digital4Better to calculate the footprint of digital
