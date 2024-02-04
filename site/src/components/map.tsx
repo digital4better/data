@@ -53,6 +53,7 @@ export const Map = ({
             vectorEffect: "non-scaling-stroke",
           },
           g: {
+            transform: `translate(${zoom.x}px, ${zoom.y}px) scale(${zoom.scale})`,
             transition: "transform 1000ms ease",
           },
         },
@@ -60,7 +61,7 @@ export const Map = ({
       }}
     >
       <svg version="1.1" viewBox={viewBox.join(" ")} xmlns="http://www.w3.org/2000/svg">
-        <g transform={`translate(${zoom.x}, ${zoom.y}) scale(${zoom.scale})`}>
+        <g>
           {Object.entries(paths).map(([k, v]) => (
             <path
               key={k}
