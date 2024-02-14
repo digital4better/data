@@ -144,6 +144,24 @@ const combineImpacts = ({
   return impacts;
 };
 
+const combineMixes = ({
+  target = { ...EMPTY_MIX },
+  source = { ...EMPTY_MIX },
+  targetCoeff = 1,
+  sourceCoeff = 1,
+}: {
+  target?: Mix;
+  source?: Mix;
+  targetCoeff?: number;
+  sourceCoeff?: number;
+}): Mix => {
+  const mix = { ...EMPTY_MIX };
+  for (const k of Object.keys(source) as (keyof Mix)[]) {
+    mix[k] = target[k] * targetCoeff + source[k] * sourceCoeff;
+  }
+  return mix;
+};
+
 type Aggregate = {
   global: Impacts;
   green: Impacts;
@@ -153,13 +171,14 @@ type Aggregate = {
   generatedTWh: number;
 };
 
-const cloneAggregate = (impacts: Aggregate): Aggregate => ({
-  ...impacts,
-  global: { ...impacts.global },
-  green: { ...impacts.green },
+const cloneAggregate = (aggregate: Aggregate): Aggregate => ({
+  ...aggregate,
+  global: { ...aggregate.global },
+  green: { ...aggregate.green },
 });
 
 const groupBy = (values: any[], fields: string[]) => {
+  fields = [...fields];
   const field = fields.shift();
   if (!field) return values;
   const result: any[] = values.reduce((obj, value) => {
@@ -460,6 +479,103 @@ const fetchCanadianFactors = async (aggregates: {
   }
 };
 
+const exportFactorsAndMixes = (aggregates: {
+  [region: string]: {
+    [period: string]: Aggregate;
+  };
+}) => {
+  for (const kind of ["global", "green"]) {
+    process.stdout.write(`Exporting ${kind} factors...\n`);
+    const exports: {
+      name: string;
+      group: string[];
+      filter: (region: string) => boolean;
+      impacts: Record<string, Impacts & { count: number } & any>;
+      mixes: Record<string, any>;
+    }[] = [
+      { name: "world-yearly", group: ["year"], filter: isCountry, impacts: {}, mixes: {} },
+      { name: "continent-yearly", group: ["continent", "year"], filter: isCountry, impacts: {}, mixes: {} },
+      { name: "country-yearly", group: ["country", "year"], filter: isCountry, impacts: {}, mixes: {} },
+      { name: "subdivision-yearly", group: ["subdivision", "year"], filter: isSubdivision, impacts: {}, mixes: {} },
+      { name: "world-monthly", group: ["period"], filter: isCountry, impacts: {}, mixes: {} },
+      { name: "continent-monthly", group: ["continent", "period"], filter: isCountry, impacts: {}, mixes: {} },
+      { name: "country-monthly", group: ["country", "period"], filter: isCountry, impacts: {}, mixes: {} },
+      { name: "subdivision-monthly", group: ["subdivision", "period"], filter: isSubdivision, impacts: {}, mixes: {} },
+    ];
+    for (let year = MIN_YEAR; year <= CURRENT_YEAR; year++) {
+      const lastMonth = year === CURRENT_YEAR ? CURRENT_MONTH - 1 : 11;
+      for (let month = 0; month <= lastMonth; month++) {
+        const period = new Date(Date.UTC(year, month, 1)).toISOString().substring(0, 7);
+        for (const exp of exports) {
+          for (const region of Object.keys(aggregates).filter(exp.filter)) {
+            const { continent: code } = regions.find(({ "alpha-2": alpha2 }) => alpha2 === region) ?? {};
+            const continent = regions
+              .filter(({ type }) => type === "continent")
+              .find(({ continent }) => continent === code)?.name;
+            const group = exp.group.reduce(
+              (acc, key) => ({ ...acc, [key]: { year, period, continent, country: region, subdivision: region }[key] }),
+              {}
+            );
+            const key = Object.entries(group)
+              .sort(([a, _], [b, __]) => a.localeCompare(b))
+              .map(([_, v]) => v)
+              .join("-");
+            const { generatedTWh, importedTWh } = aggregates[region][period];
+            const weight = generatedTWh + importedTWh;
+            exp.impacts[key] = {
+              ...group,
+              ...combineImpacts({
+                target: exp.impacts[key],
+                source: aggregates[region][period][kind as keyof Aggregate] as Impacts,
+                sourceCoeff: weight,
+              }),
+              weight: (exp.impacts[key]?.weight ?? 0) + weight,
+            };
+            exp.mixes[key] = {
+              ...group,
+              ...combineMixes({
+                target: exp.mixes[key],
+                source: aggregates[region][period].mix,
+                sourceCoeff: weight,
+              }),
+              weight: (exp.mixes[key]?.weight ?? 0) + weight,
+            };
+          }
+        }
+      }
+    }
+    for (const exp of exports) {
+      const impacts = Object.values(exp.impacts).map(({ weight, ...impacts }) => {
+        for (const impact of Object.keys(EMPTY_IMPACTS)) impacts[impact] /= weight;
+        return impacts;
+      });
+      const mixes = Object.values(exp.mixes).map(({ weight, ...mixes }) => {
+        for (const energy of Object.keys(EMPTY_MIX))
+          mixes[energy] = Math.round((mixes[energy] / weight) * 10000) / 10000;
+        return mixes;
+      });
+      // Exporting to json file
+      writeFileSync(
+        `./data/factor/${exp.name}${kind === "green" ? "-green" : ""}.json`,
+        JSON.stringify(groupBy(impacts, exp.group), null, 2)
+      );
+      writeFileSync(`./data/mix/${exp.name}.json`, JSON.stringify(groupBy(mixes, exp.group), null, 2));
+      // Exporting to csv file
+      let headers = Object.keys(Object.values(impacts)[0]);
+      writeFileSync(`./data/factor/${exp.name}${kind === "green" ? "-green" : ""}.csv`, headers.join(",") + "\r\n");
+      for (const line of Object.values(impacts))
+        appendFileSync(
+          `./data/factor/${exp.name}${kind === "green" ? "-green" : ""}.csv`,
+          headers.map((header) => line[header]).join(",") + "\r\n"
+        );
+      headers = Object.keys(Object.values(mixes)[0]);
+      writeFileSync(`./data/mix/${exp.name}.csv`, headers.join(",") + "\r\n");
+      for (const line of Object.values(mixes))
+        appendFileSync(`./data/mix/${exp.name}.csv`, headers.map((header) => line[header]).join(",") + "\r\n");
+    }
+  }
+};
+
 const generateFactors = async () => {
   // Data aggregation
   const aggregates: {
@@ -518,76 +634,7 @@ const generateFactors = async () => {
     }
   }
   process.stdout.write(`${additions} additions\n`);
-  for (const kind of ["global", "green"]) {
-    process.stdout.write(`Exporting ${kind} data...\n`);
-    const exports: {
-      name: string;
-      group: string[];
-      filter: (region: string) => boolean;
-      data: Record<string, Impacts & { count: number } & any>;
-    }[] = [
-      { name: "world-yearly", group: ["year"], filter: isCountry, data: {} },
-      { name: "continent-yearly", group: ["continent", "year"], filter: isCountry, data: {} },
-      { name: "country-yearly", group: ["country", "year"], filter: isCountry, data: {} },
-      { name: "subdivision-yearly", group: ["subdivision", "year"], filter: isSubdivision, data: {} },
-      { name: "world-monthly", group: ["period"], filter: isCountry, data: {} },
-      { name: "continent-monthly", group: ["continent", "period"], filter: isCountry, data: {} },
-      { name: "country-monthly", group: ["country", "period"], filter: isCountry, data: {} },
-      { name: "subdivision-monthly", group: ["subdivision", "period"], filter: isSubdivision, data: {} },
-    ];
-    for (let year = MIN_YEAR; year <= CURRENT_YEAR; year++) {
-      const lastMonth = year === CURRENT_YEAR ? CURRENT_MONTH - 1 : 11;
-      for (let month = 0; month <= lastMonth; month++) {
-        const period = new Date(Date.UTC(year, month, 1)).toISOString().substring(0, 7);
-        for (const exp of exports) {
-          for (const region of Object.keys(aggregates).filter(exp.filter)) {
-            const { continent: code } = regions.find(({ "alpha-2": alpha2 }) => alpha2 === region) ?? {};
-            const continent = regions
-              .filter(({ type }) => type === "continent")
-              .find(({ continent }) => continent === code)?.name;
-            const group = exp.group.reduce(
-              (acc, key) => ({ ...acc, [key]: { year, period, continent, country: region, subdivision: region }[key] }),
-              {}
-            );
-            const key = Object.entries(group)
-              .sort(([a, _], [b, __]) => a.localeCompare(b))
-              .map(([_, v]) => v)
-              .join("-");
-            const { generatedTWh, importedTWh } = aggregates[region][period];
-            const weight = generatedTWh + importedTWh;
-            exp.data[key] = {
-              ...group,
-              ...combineImpacts({
-                target: exp.data[key],
-                source: aggregates[region][period][kind as keyof Aggregate] as Impacts,
-                sourceCoeff: weight,
-              }),
-              weight: (exp.data[key]?.weight ?? 0) + weight,
-            };
-          }
-        }
-      }
-    }
-    for (const exp of exports) {
-      // Exporting to json file
-      const data = Object.values(exp.data).map(({ weight, ...data }) => {
-        for (const impact of Object.keys(EMPTY_IMPACTS)) data[impact] /= weight;
-        return data;
-      });
-      writeFileSync(
-        `./data/factor/${exp.name}${kind === "green" ? "-green" : ""}.json`,
-        JSON.stringify(groupBy(data, exp.group), null, 2)
-      );
-      // Exporting to csv file
-      const headers = Object.keys(Object.values(data)[0]);
-      writeFileSync(`./data/factor/${exp.name}${kind === "green" ? "-green" : ""}.csv`, headers.join(",") + "\r\n");
-      for (const line of Object.values(data))
-        appendFileSync(
-          `./data/factor/${exp.name}${kind === "green" ? "-green" : ""}.csv`,
-          headers.map((header) => line[header]).join(",") + "\r\n"
-        );
-    }
-  }
+  exportFactorsAndMixes(aggregates);
 };
 
 const generateCountries = async () => {
@@ -694,5 +741,6 @@ const generateCountries = async () => {
 };
 
 (async () => {
+  await generateCountries();
   await generateFactors();
 })();

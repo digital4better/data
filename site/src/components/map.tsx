@@ -73,7 +73,7 @@ export const Map = ({
                 stroke="#fff"
                 strokeWidth="0.5"
                 vectorEffect="non-scaling-stroke"
-                onClick={() => alert(`${k} : ${Math.round(emissions[k] * 1000) / 1000} kgCO2e`)}
+                onClick={() => alert(`${k} : ${emissions[k]}`)}
               />
             );
           })}
