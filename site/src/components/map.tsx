@@ -62,22 +62,21 @@ export const Map = ({
     >
       <svg version="1.1" viewBox={viewBox.join(" ")} xmlns="http://www.w3.org/2000/svg">
         <g>
-          {Object.entries(paths).map(([k, v]) => (
-            <path
-              key={k}
-              id={k}
-              d={v}
-              fill={
-                emissions[k.slice(0, 2)] >= 0
-                  ? intensity[Math.round((intensity.length * emissions[k.slice(0, 2)]) / max)]
-                  : "#ddd"
-              }
-              stroke="#fff"
-              strokeWidth="0.5"
-              vectorEffect="non-scaling-stroke"
-              onClick={() => alert(`${k} : ${emissions[k]}`)}
-            />
-          ))}
+          {Object.entries(paths).map(([k, v]) => {
+            const emission = emissions[k] ?? emissions[k.slice(0, 2)];
+            return (
+              <path
+                key={k}
+                id={k}
+                d={v}
+                fill={emission >= 0 ? intensity[Math.round((intensity.length * emission) / max)] : "#ddd"}
+                stroke="#fff"
+                strokeWidth="0.5"
+                vectorEffect="non-scaling-stroke"
+                onClick={() => alert(`${k} : ${Math.round(emissions[k] * 1000) / 1000} kgCO2e`)}
+              />
+            );
+          })}
         </g>
       </svg>
     </Box>

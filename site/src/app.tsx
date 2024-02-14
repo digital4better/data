@@ -1,6 +1,5 @@
 import React, { FC, useEffect, useState } from "react";
 import { Box, Container, GlobalStyles, Stack, ThemeProvider } from "@mui/system";
-import regions from "../../data/country/regions.json";
 import { Map } from "./components/map";
 import { Header } from "./components/header";
 import { Table } from "./components/table";
@@ -25,7 +24,7 @@ const IMPACTS: Record<string, string> = {
   "ctuh-nc": "Human toxicity, non-cancer (CTUh)",
   gwp: "Global Warming Potential (kgCO\u2082e)",
   ir: "Ionising Radiation (kgU235e)",
-  pm: "Particulate Matter",
+  pm: "Particulate Matter (kgPM2.5e)",
   wu: "Water use (m\u00B3)",
 };
 
@@ -35,6 +34,7 @@ export const App: FC = () => {
   }>({});
   const [paths, setPaths] = useState<{ [country: string]: string }>({});
   const [emissions, setEmissions] = useState({});
+  const [regions, setRegions] = useState([]);
   const [data, setData] = useState([]);
   const [year, setYear] = useState("2024");
   const [impact, setImpact] = useState("gwp");
@@ -43,7 +43,16 @@ export const App: FC = () => {
     (async () => {
       // @ts-ignore
       const base = import.meta.env.BASE_URL;
-      setFactors(await (await fetch(`${base}factor/country-yearly.json`)).json());
+      setFactors(
+        Object.assign(
+          {},
+          ...(await Promise.all([
+            (await fetch(`${base}factor/country-yearly.json`)).json(),
+            (await fetch(`${base}factor/subdivision-yearly.json`)).json(),
+          ]))
+        )
+      );
+      setRegions(await (await fetch(`${base}country/regions.json`)).json());
       setPaths(await (await fetch(`${base}country/regions-paths.json`)).json());
     })();
   }, []);
@@ -52,9 +61,11 @@ export const App: FC = () => {
       Object.fromEntries(
         Object.entries(factors)
           .filter(([iso]) => {
-            const country = regions.find(({ "alpha-2": a2 }) => a2 === iso);
+            const region = regions.find(
+              ({ "alpha-2": a2, subdivision }) => iso === a2 || iso === `${a2}-${subdivision}`
+            );
             const continent = regions.find(
-              ({ continent, type }) => type === "continent" && continent === country.continent
+              ({ continent, type }) => type === "continent" && continent === region.continent
             );
             return zoom === "WO" || continent.continent === zoom;
           })
@@ -64,13 +75,13 @@ export const App: FC = () => {
     setData(
       Object.entries(factors)
         .map(([iso, yearly]) => {
-          const country = regions.find(({ "alpha-2": a2 }) => a2 === iso);
+          const region = regions.find(({ "alpha-2": a2, subdivision }) => iso === a2 || iso === `${a2}-${subdivision}`);
           const continent = regions.find(
-            ({ continent, type }) => type === "continent" && continent === country.continent
+            ({ continent, type }) => type === "continent" && continent === region.continent
           );
           return {
             iso,
-            name: country?.name,
+            name: region?.name,
             continent: continent?.name,
             visible: zoom === "WO" || continent.continent === zoom,
             ...yearly[year],
@@ -78,7 +89,7 @@ export const App: FC = () => {
         })
         .filter(({ visible }) => visible)
     );
-  }, [factors, year, impact, zoom]);
+  }, [factors, regions, year, impact, zoom]);
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles styles={{ "*": { padding: 0, margin: 0 } }} />
