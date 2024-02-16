@@ -21,8 +21,9 @@ const ENERGIES = [
   "Solar",
   "Wind",
 ] as const;
-const GREEN_ENERGIES = ["Bioenergy", "Hydro", "Solar", "Wind"];
-const FOSSIL_FUELS: (typeof ENERGIES)[number][] = ["Bioenergy", "Coal", "Gas", "Other Fossil", "Other Renewables"];
+type Energy = (typeof ENERGIES)[number];
+const GREEN_ENERGIES: Energy[] = ["Bioenergy", "Hydro", "Solar", "Wind"];
+const FOSSIL_FUELS: Energy[] = ["Bioenergy", "Coal", "Gas", "Other Fossil", "Other Renewables"];
 
 const EMBER_DOMAIN = "https://ember-climate.org";
 const EMBER_MONTHLY_DATA = `${EMBER_DOMAIN}/data-catalogue/monthly-electricity-data/`;
@@ -99,7 +100,7 @@ const fetchAndProcess = async (url: string, onProcess: (values: Record<string, s
     });
   });
 
-type Mix = { [energy in (typeof ENERGIES)[number]]: number };
+type Mix = { [energy in Energy]: number };
 
 type Impacts = {
   adpe: number; // Abiotic Depletion Potential (Resource use, minerals and metals)
@@ -163,12 +164,15 @@ const combineMixes = ({
 };
 
 type Aggregate = {
-  global: Impacts;
-  green: Impacts;
+  global: Impacts; // TODO remove this, compute with mix
+  green: Impacts; // TODO remove this, compute with mix
   mix: Mix;
   greenRatio: number;
   importedTWh: number;
   generatedTWh: number;
+  accuracy?: "world" | "continent" | "country" | "subdivision";
+  freshness?: number;
+  source?: "eia" | "ember" | "statcan";
 };
 
 const cloneAggregate = (aggregate: Aggregate): Aggregate => ({
@@ -434,22 +438,8 @@ const fetchCanadianFactors = async (aggregates: {
         }
         for (let [variable, value] of Object.entries(generations)) {
           value /= 1000000; // MWh -> TWh
-          // TODO compute mix
           aggregates[region][period].mix[variable as keyof Mix] += value;
-          aggregates[region][period].global = combineImpacts({
-            target: aggregates[region][period].global,
-            source: impacts[variable as keyof typeof impacts],
-            sourceCoeff: value,
-          });
           aggregates[region][period].generatedTWh += +value;
-          if (GREEN_ENERGIES.indexOf(variable) >= 0) {
-            aggregates[region][period].green = combineImpacts({
-              target: aggregates[region][period].green,
-              source: impacts[variable as keyof typeof impacts],
-              sourceCoeff: value,
-            });
-            aggregates[region][period].greenRatio += value;
-          }
         }
       }
     }
@@ -457,24 +447,123 @@ const fetchCanadianFactors = async (aggregates: {
   for (const [region, periods] of Object.entries(aggregates).filter(([region]) => region.startsWith("CA-"))) {
     for (const [period, { generatedTWh, greenRatio }] of Object.entries(periods)) {
       if (generatedTWh > 0) {
-        Object.keys(aggregates[region][period].mix).forEach(
-          (energy: (typeof ENERGIES)[number]) => (aggregates[region][period].mix[energy] /= generatedTWh)
+        Object.keys(aggregates[region][period].mix).forEach((energy: Energy) => {
+          aggregates[region][period].mix[energy] /= generatedTWh;
+          aggregates[region][period].global = combineImpacts({
+            target: aggregates[region][period].global,
+            source: impacts[energy as keyof typeof impacts],
+            sourceCoeff: aggregates[region][period].mix[energy],
+          });
+          if (GREEN_ENERGIES.indexOf(energy) >= 0) {
+            aggregates[region][period].green = combineImpacts({
+              target: aggregates[region][period].green,
+              source: impacts[energy as keyof typeof impacts],
+              sourceCoeff: aggregates[region][period].mix[energy],
+            });
+          }
+        });
+        aggregates[region][period].greenRatio = GREEN_ENERGIES.reduce(
+          (a, v) => a + aggregates[region][period].mix[v],
+          0
         );
-        aggregates[region][period].global = combineImpacts({
-          target: aggregates[region][period].global,
-          targetCoeff: 1 / generatedTWh,
-        });
         // Approximating imported TWh using a ratio to total energy generated
-        aggregates[region][period].importedTWh =
-          aggregates["CA"][period].importedTWh * (generatedTWh / aggregates["CA"][period].generatedTWh);
+        aggregates[region][period].importedTWh = aggregates["CA"]?.[period]
+          ? aggregates["CA"][period].importedTWh * (generatedTWh / aggregates["CA"][period].generatedTWh)
+          : 0;
       }
-      if (greenRatio > 0) {
-        aggregates[region][period].green = combineImpacts({
-          target: aggregates[region][period].green,
-          targetCoeff: 1 / greenRatio,
+    }
+  }
+};
+
+const fetchUSFactors = async (aggregates: {
+  [region: string]: {
+    [period: string]: Aggregate;
+  };
+}) => {
+  const FUEL_TYPES: Record<string, Energy> = {
+    BIO: "Bioenergy",
+    COW: "Coal",
+    NGO: "Gas",
+    HYC: "Hydro",
+    HPS: "Hydro",
+    NUC: "Nuclear",
+    PET: "Other Fossil",
+    OTH: "Other Fossil",
+    GEO: "Other Renewables",
+    SUN: "Solar",
+    WND: "Wind",
+  };
+  const API_KEY = "sEvGqi4nirqeQq5PUiwD5fk4aUm6U5ljGt6cuGZO";
+  let data;
+  let offset = 0;
+  do {
+    ({
+      response: { data },
+    } = await (
+      await fetch(`https://api.eia.gov/v2/electricity/electric-power-operational-data/data/?api_key=${API_KEY}`, {
+        headers: {
+          "x-params": JSON.stringify({
+            frequency: "monthly",
+            data: ["generation"],
+            facets: {
+              sectorid: ["99"],
+              fueltypeid: Object.keys(FUEL_TYPES),
+              location: regions
+                .filter(({ "alpha-2": a2, type }) => a2 === "US" && type === "subdivision")
+                .map(({ subdivision }) => subdivision),
+            },
+            sort: [{ column: "period", direction: "asc" }],
+            start: "2019-01",
+            offset,
+            length: 5000,
+          }),
+        },
+      })
+    ).json());
+    offset += data.length;
+    for (const { period, location, fueltypeid, generation } of data) {
+      const region = `US-${location}`;
+      if (!aggregates[region]) aggregates[region] = {};
+      if (!aggregates[region][period])
+        aggregates[region][period] = {
+          global: { ...EMPTY_IMPACTS },
+          green: { ...EMPTY_IMPACTS },
+          mix: { ...EMPTY_MIX },
+          greenRatio: 0,
+          importedTWh: 0,
+          generatedTWh: 0,
+        };
+      aggregates[region][period].mix[FUEL_TYPES[fueltypeid]] += generation / 1000;
+      aggregates[region][period].generatedTWh += generation / 1000;
+    }
+  } while (data.length);
+  for (const [region, periods] of Object.entries(aggregates).filter(([region]) => region.startsWith("US-"))) {
+    for (const [period, { generatedTWh, greenRatio }] of Object.entries(periods)) {
+      if (generatedTWh > 0) {
+        Object.keys(aggregates[region][period].mix).forEach((energy: Energy) => {
+          aggregates[region][period].mix[energy] /= generatedTWh;
+          aggregates[region][period].global = combineImpacts({
+            target: aggregates[region][period].global,
+            source: impacts[energy as keyof typeof impacts],
+            sourceCoeff: aggregates[region][period].mix[energy],
+          });
+          if (GREEN_ENERGIES.indexOf(energy) >= 0) {
+            aggregates[region][period].green = combineImpacts({
+              target: aggregates[region][period].green,
+              source: impacts[energy as keyof typeof impacts],
+              sourceCoeff: aggregates[region][period].mix[energy],
+            });
+          }
         });
+        aggregates[region][period].greenRatio = GREEN_ENERGIES.reduce(
+          (a, v) => a + aggregates[region][period].mix[v],
+          0
+        );
+        // Approximating imported TWh using a ratio to total energy generated
+        aggregates[region][period].importedTWh = aggregates["US"]?.[period]
+          ? aggregates["US"][period].importedTWh * (generatedTWh / aggregates["US"][period].generatedTWh)
+          : 0;
       }
-      aggregates[region][period].greenRatio /= generatedTWh;
     }
   }
 };
@@ -588,6 +677,8 @@ const generateFactors = async () => {
   await sanitizeData(aggregates);
   process.stdout.write(`Generating canada province factors...`);
   await fetchCanadianFactors(aggregates);
+  process.stdout.write(`Generating US states factors...`);
+  await fetchUSFactors(aggregates);
   await sanitizeData(aggregates);
   let updates = 0;
   process.stdout.write(`Taking energy imports into account... `);
@@ -741,6 +832,15 @@ const generateCountries = async () => {
 };
 
 (async () => {
-  await generateCountries();
+  /*
+  const aggregates: {
+    [region: string]: {
+      [period: string]: Aggregate;
+    };
+  } = {};
+  await fetchUSFactors(aggregates);
+
+   */
+  //await generateCountries();
   await generateFactors();
 })();
