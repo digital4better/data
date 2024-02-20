@@ -299,7 +299,7 @@ const sanitizeData = async (aggregates: Aggregates) => {
   }
 };
 
-const fetchWorldFactors = async (aggregates: Aggregates) => {
+const fetchWorldMix = async (aggregates: Aggregates) => {
   process.stdout.write(`Fetching energy data\n`);
   for (const page of [EMBER_YEARLY_DATA, EMBER_MONTHLY_DATA]) {
     const url = EMBER_DOMAIN + (await fetchAndScrap(page, /\/app\/uploads\/[^/]+\/[^/]+\/[^.]+.csv/));
@@ -359,21 +359,27 @@ const fetchWorldFactors = async (aggregates: Aggregates) => {
 
 const finalizeSubdivisionMix = (aggregates: Aggregates, country: string) => {
   for (const [region, periods] of Object.entries(aggregates).filter(([region]) => region.startsWith(`${country}-`))) {
-    for (const [period, { generatedTWh }] of Object.entries(periods)) {
-      if (generatedTWh > 0) {
+    for (const [period] of Object.entries(periods)) {
+      // Remove negative energy generations
+      Object.keys(aggregates[region][period].mix).forEach((energy: Energy) => {
+        aggregates[region][period].mix[energy] = Math.max(0, aggregates[region][period].mix[energy]);
+        aggregates[region][period].generatedTWh += aggregates[region][period].mix[energy];
+      });
+      if (aggregates[region][period].generatedTWh > 0) {
+        // Normalization
         Object.keys(aggregates[region][period].mix).forEach(
-          (energy: Energy) => (aggregates[region][period].mix[energy] /= generatedTWh)
+          (energy: Energy) => (aggregates[region][period].mix[energy] /= aggregates[region][period].generatedTWh)
         );
         // Approximating imported TWh using a ratio to total energy generated
-        aggregates[region][period].importedTWh = aggregates[country]?.[period]
-          ? aggregates[country][period].importedTWh * (generatedTWh / aggregates[country][period].generatedTWh)
-          : 0;
+        aggregates[region][period].importedTWh =
+          aggregates[country][period].importedTWh *
+          (aggregates[region][period].generatedTWh / aggregates[country][period].generatedTWh);
       }
     }
   }
 };
 
-const Mix = async (aggregates: Aggregates) => {
+const fetchCanadianMix = async (aggregates: Aggregates) => {
   const data = await (await fetch("https://www150.statcan.gc.ca/n1/tbl/csv/25100015-eng.zip")).arrayBuffer();
   const zip = new AdmZip(Buffer.from(data));
   const content = zip.getEntries().find(({ name }) => name === "25100015.csv");
@@ -414,7 +420,6 @@ const Mix = async (aggregates: Aggregates) => {
         for (let [variable, value] of Object.entries(generations)) {
           value /= 1000000; // MWh -> TWh
           aggregates[region][period].mix[variable as keyof Mix<Energy>] += value;
-          aggregates[region][period].generatedTWh += +value;
         }
         lines++;
       }
@@ -439,6 +444,10 @@ const fetchUSMix = async (aggregates: Aggregates) => {
     WND: "Wind",
   };
   const API_KEY = "sEvGqi4nirqeQq5PUiwD5fk4aUm6U5ljGt6cuGZO";
+  const fueltypeid = Object.keys(FUEL_TYPES);
+  const location = REGIONS.filter(({ "alpha-2": a2, type }) => a2 === "US" && type === "subdivision").map(
+    ({ subdivision }) => subdivision
+  );
   let data;
   let offset = 0;
   do {
@@ -452,13 +461,16 @@ const fetchUSMix = async (aggregates: Aggregates) => {
             data: ["generation"],
             facets: {
               sectorid: ["99"],
-              fueltypeid: Object.keys(FUEL_TYPES),
-              location: REGIONS.filter(({ "alpha-2": a2, type }) => a2 === "US" && type === "subdivision").map(
-                ({ subdivision }) => subdivision
-              ),
+              fueltypeid,
+              location,
             },
-            sort: [{ column: "period", direction: "asc" }],
+            sort: [
+              { column: "period", direction: "asc" },
+              { column: "location", direction: "asc" },
+              { column: "fueltypeid", direction: "asc" },
+            ],
             start: "2019-01",
+            end: null,
             offset,
             length: 5000,
           }),
@@ -476,7 +488,6 @@ const fetchUSMix = async (aggregates: Aggregates) => {
           generatedTWh: 0,
         };
       aggregates[region][period].mix[FUEL_TYPES[fueltypeid]] += generation / 1000;
-      aggregates[region][period].generatedTWh += generation / 1000;
     }
   } while (data.length);
   finalizeSubdivisionMix(aggregates, "US");
@@ -628,10 +639,10 @@ const generateFactors = async () => {
   // Data aggregation
   const aggregates: Aggregates = {};
   process.stdout.write(`Generating world, continent and country energy mix...\n`);
-  await fetchWorldFactors(aggregates);
+  await fetchWorldMix(aggregates);
   await sanitizeData(aggregates);
   process.stdout.write(`Generating canada province energy mix...`);
-  await Mix(aggregates);
+  await fetchCanadianMix(aggregates);
   process.stdout.write(`Generating US states energy mix...`);
   await fetchUSMix(aggregates);
   await sanitizeData(aggregates);
