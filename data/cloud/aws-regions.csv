@@ -1,24 +1,24 @@
-id,name,provider,lat,lon,location,country,pue,wue,ref
-af-south-1,af-south-1,aws,-33.93,18.42,Cape Town,za,1.135,0.19,0
-ap-east-1,ap-east-1,aws,22.27,114.16,Hong Kong,hk,1.135,0.19,0
-ap-south-1,ap-south-1,aws,19.08,72.88,Mumbai,in,1.135,0.19,0
-ap-northeast-1,ap-south-1,aws,35.41,139.42,Tokyo,jp,1.135,0.19,0
-ap-northeast-2,ap-northeast-2,aws,37.56,126.98,Seoul,kr,1.135,0.19,0
-ap-northeast-3,ap-northeast-3,aws,34.69,135.49,Osaka,jp,1.135,0.19,0
-ap-southeast-1,ap-southeast-1,aws,1.37,103.8,Singapore,sg,1.135,0.19,0
-ap-southeast-2,ap-southeast-2,aws,-33.86,151.2,Sydney,au,1.135,0.19,0
-ca-central-1,ca-central-1,aws,45.5,-73.6,Montreal,ca,1.135,0.19,0
-cn-north-1,cn-north-1,aws,40,116.4,Beijing,cn,1.135,0.19,0
-cn-northwest-1,cn-northwest-1,aws,37,106,Ningxia,cn,1.135,0.19,0
-eu-central-1,eu-central-1,aws,50,8,Frankfurt,de,1.135,0.19,0
-eu-north-1,eu-north-1,aws,59.25,17.81,Stockholm,se,1.135,0.19,0
-eu-south-1,eu-south-1,aws,45.43,9.29,Milan,it,1.135,0.19,0
-eu-west-1,eu-west-1,aws,53,-8,Dublin,ie,1.135,0.19,0
-eu-west-2,eu-west-2,aws,51,-0.1,London,gb,1.135,0.19,0
-eu-west-3,eu-west-3,aws,48.86,2.35,Paris,fr,1.135,0.19,0
-me-south-1,me-south-1,aws,26.1,50.46,Bahrain,bh,1.135,0.19,0
-sa-east-1,sa-east-1,aws,-23.34,-46.38,Sao Paulo,br,1.135,0.19,0
-us-east-1,us-east-1,aws,38.13,-78.45,Ashburn,us,1.135,0.19,0
-us-east-2,us-east-2,aws,39.96,-83,Hilliard,us,1.135,0.19,0
-us-west-1,us-west-1,aws,37.35,-121.96,San Jose,us,1.135,0.19,0
-us-west-2,us-west-2,aws,46.15,-123.88,Madras,us,1.135,0.19,0
+id,name,provider,lat,lon,location,country,subdivision,pue,wue,ref
+af-south-1,af-south-1,aws,-33.93,18.42,Cape Town,za,,1.135,0.19,0
+ap-east-1,ap-east-1,aws,22.27,114.16,Hong Kong,hk,,1.135,0.19,0
+ap-south-1,ap-south-1,aws,19.08,72.88,Mumbai,in,,1.135,0.19,0
+ap-northeast-1,ap-south-1,aws,35.41,139.42,Tokyo,jp,,1.135,0.19,0
+ap-northeast-2,ap-northeast-2,aws,37.56,126.98,Seoul,kr,,1.135,0.19,0
+ap-northeast-3,ap-northeast-3,aws,34.69,135.49,Osaka,jp,,1.135,0.19,0
+ap-southeast-1,ap-southeast-1,aws,1.37,103.8,Singapore,sg,,1.135,0.19,0
+ap-southeast-2,ap-southeast-2,aws,-33.86,151.2,Sydney,au,,1.135,0.19,0
+ca-central-1,ca-central-1,aws,45.5,-73.6,Montreal,ca,qc,1.135,0.19,0
+cn-north-1,cn-north-1,aws,40,116.4,Beijing,cn,,1.135,0.19,0
+cn-northwest-1,cn-northwest-1,aws,37,106,Ningxia,cn,,1.135,0.19,0
+eu-central-1,eu-central-1,aws,50,8,Frankfurt,de,,1.135,0.19,0
+eu-north-1,eu-north-1,aws,59.25,17.81,Stockholm,se,,1.135,0.19,0
+eu-south-1,eu-south-1,aws,45.43,9.29,Milan,it,,1.135,0.19,0
+eu-west-1,eu-west-1,aws,53,-8,Dublin,ie,,1.135,0.19,0
+eu-west-2,eu-west-2,aws,51,-0.1,London,gb,,1.135,0.19,0
+eu-west-3,eu-west-3,aws,48.86,2.35,Paris,fr,,1.135,0.19,0
+me-south-1,me-south-1,aws,26.1,50.46,Bahrain,bh,,1.135,0.19,0
+sa-east-1,sa-east-1,aws,-23.34,-46.38,Sao Paulo,br,,1.135,0.19,0
+us-east-1,us-east-1,aws,38.13,-78.45,Ashburn,us,va,1.135,0.19,0
+us-east-2,us-east-2,aws,39.96,-83,Hilliard,us,oh,1.135,0.19,0
+us-west-1,us-west-1,aws,37.35,-121.96,San Jose,us,ca,1.135,0.19,0
+us-west-2,us-west-2,aws,46.15,-123.88,Madras,us,or,1.135,0.19,0

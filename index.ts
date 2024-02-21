@@ -775,7 +775,19 @@ const generateClouds = async () => {
   process.stdout.write(`Exporting cloud data...\n`);
   for (const cloud of CLOUDS) {
     const data = JSON.parse(readFileSync(`./data/cloud/${cloud}-regions.json`, "utf-8"));
-    exportToCsv(`./data/cloud/${cloud}-regions.csv`, data);
+    exportToCsv(`./data/cloud/${cloud}-regions.csv`, data, [
+      "id",
+      "name",
+      "provider",
+      "lat",
+      "lon",
+      "location",
+      "country",
+      "subdivision",
+      "pue",
+      "wue",
+      "ref",
+    ]);
   }
 };
 

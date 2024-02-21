@@ -1,38 +1,38 @@
-id,name,provider,lat,lon,location,country,pue,wue,ref
-asia-east1,asia-east1,gcp,23.9919519,120.3300829,Taiwan,tw,1.12,0.785,0.18
-asia-east2,asia-east2,gcp,22.319304,114.169361,Hong Kong,hk,1.1,0.785,0.28
-asia-northeast1,asia-northeast1,gcp,35.689488,139.691706,Tokyo,jp,1.1,0.785,0.16
-asia-northeast2,asia-northeast2,gcp,34.693725,135.502254,Osaka,jp,1.1,0.785,0.32
-asia-northeast3,asia-northeast3,gcp,37.566535,126.977969,Seoul,kr,1.1,0.785,0.31
-asia-south1,asia-south1,gcp,19.0825223,72.7411014,Mumbai,in,1.1,0.785,0.24
-asia-south2,asia-south2,gcp,28.704059,77.10249,Delhi,in,1.1,0.785,0.23
-asia-southeast1,asia-southeast1,gcp,1.352083,103.819836,Singapore,sg,1.13,0.785,0.04
-asia-southeast2,asia-southeast2,gcp,-6.208763,106.845599,Jakarta,id,1.1,0.785,0.13
-australia-southeast1,australia-southeast1,gcp,-33.867139,151.207114,Sydney,au,1.1,0.785,0.27
-australia-southeast2,australia-southeast1,gcp,-37.813628,144.963058,Melbourne,au,1.1,0.785,0.34
-europe-central2,europe-central2,gcp,52.229676,21.012229,Warsaw,pl,1.1,0.785,0.24
-europe-north1,europe-north1,gcp,60.5695912,27.2097431,Finland,fi,1.09,0.785,0.97
-europe-southwest1,europe-southwest1,gcp,40.4167754,-3.7037902,Madrid,es,1.1,0.785,0.67
-europe-west1,europe-west1,gcp,50.489824,3.7378805,Belgium,be,1.09,0.785,0.8
-europe-west2,europe-west2,gcp,51.500152,-0.126236,London,gb,1.1,0.785,0.85
-europe-west3,europe-west3,gcp,50.111512,8.680506,Frankfurt,de,1.1,0.785,0.96
-europe-west4,europe-west4,gcp,53.4356948,6.7980783,Netherlands,nl,1.07,0.785,0.57
-europe-west6,europe-west6,gcp,47.376887,8.541694,Zurich,ch,1.1,0.785,0.85
-europe-west8,europe-west8,gcp,45.4654219,9.1859243,Milan,it,1.1,0.785,0.42
-europe-west9,europe-west9,gcp,48.856614,2.3522219,Paris,fr,1.1,0.785,0.87
-europe-west12,europe-west12,gcp,45.070312,7.6868565,Turin,it,1.1,0.785,0.42
-me-west1,me-west1,gcp,32.0852999,34.7817676,Tel Aviv,il,1.1,0.785,0.02
-me-central1,me-central1,gcp,25.2916097,51.5304368,Doha,qa,1.1,0.785,0
-northamerica-northeast1,northamerica-northeast1,gcp,45.5581968,-73.8703852,Montréal,ca,1.1,0.785,1
-northamerica-northeast2,northamerica-northeast2,gcp,43.653226,-79.383184,Toronto,ca,1.1,0.785,0.9
-southamerica-east1,southamerica-east1,gcp,-23.286926,-46.627497,São Paulo,br,1.1,0.785,0.89
-southamerica-west1,southamerica-west1,gcp,-33.4691199,-70.641997,Santiago,cl,1.09,0.785,0.9
-us-central1,us-central1,gcp,41.2326957,-95.9167207,Iowa,us,1.11,0.785,0.92
-us-east1,us-east1,gcp,33.1637261,-80.1845003,South Carolina,us,1.1,0.785,0.26
-us-east4,us-east4,gcp,39.0300218,-77.5121424,Northern Virginia,us,1.08,0.785,0.6
-us-east5,us-east5,gcp,39.983334,-82.98333,Columbus,us,1.1,0.785,0.6
-us-south1,us-south1,gcp,32.779167,-96.808891,Dallas,us,1.14,0.785,0.41
-us-west1,us-west1,gcp,45.6094756,-121.2088799,Oregon,us,1.1,0.785,0.89
-us-west2,us-west2,gcp,34.052235,-118.243683,Los Angeles,us,1.1,0.785,0.56
-us-west3,us-west3,gcp,40.7608,-111.891,Salt Lake City,us,1.1,0.785,0.31
-us-west4,us-west4,gcp,36.1699,-115.1398,Las Vegas,us,1.1,0.785,0.27
+id,name,provider,lat,lon,location,country,subdivision,pue,wue,ref
+asia-east1,asia-east1,gcp,23.9919519,120.3300829,Taiwan,tw,,1.12,0.785,0.18
+asia-east2,asia-east2,gcp,22.319304,114.169361,Hong Kong,hk,,1.1,0.785,0.28
+asia-northeast1,asia-northeast1,gcp,35.689488,139.691706,Tokyo,jp,,1.1,0.785,0.16
+asia-northeast2,asia-northeast2,gcp,34.693725,135.502254,Osaka,jp,,1.1,0.785,0.32
+asia-northeast3,asia-northeast3,gcp,37.566535,126.977969,Seoul,kr,,1.1,0.785,0.31
+asia-south1,asia-south1,gcp,19.0825223,72.7411014,Mumbai,in,,1.1,0.785,0.24
+asia-south2,asia-south2,gcp,28.704059,77.10249,Delhi,in,,1.1,0.785,0.23
+asia-southeast1,asia-southeast1,gcp,1.352083,103.819836,Singapore,sg,,1.13,0.785,0.04
+asia-southeast2,asia-southeast2,gcp,-6.208763,106.845599,Jakarta,id,,1.1,0.785,0.13
+australia-southeast1,australia-southeast1,gcp,-33.867139,151.207114,Sydney,au,,1.1,0.785,0.27
+australia-southeast2,australia-southeast1,gcp,-37.813628,144.963058,Melbourne,au,,1.1,0.785,0.34
+europe-central2,europe-central2,gcp,52.229676,21.012229,Warsaw,pl,,1.1,0.785,0.24
+europe-north1,europe-north1,gcp,60.5695912,27.2097431,Finland,fi,,1.09,0.785,0.97
+europe-southwest1,europe-southwest1,gcp,40.4167754,-3.7037902,Madrid,es,,1.1,0.785,0.67
+europe-west1,europe-west1,gcp,50.489824,3.7378805,Belgium,be,,1.09,0.785,0.8
+europe-west2,europe-west2,gcp,51.500152,-0.126236,London,gb,,1.1,0.785,0.85
+europe-west3,europe-west3,gcp,50.111512,8.680506,Frankfurt,de,,1.1,0.785,0.96
+europe-west4,europe-west4,gcp,53.4356948,6.7980783,Netherlands,nl,,1.07,0.785,0.57
+europe-west6,europe-west6,gcp,47.376887,8.541694,Zurich,ch,,1.1,0.785,0.85
+europe-west8,europe-west8,gcp,45.4654219,9.1859243,Milan,it,,1.1,0.785,0.42
+europe-west9,europe-west9,gcp,48.856614,2.3522219,Paris,fr,,1.1,0.785,0.87
+europe-west12,europe-west12,gcp,45.070312,7.6868565,Turin,it,,1.1,0.785,0.42
+me-west1,me-west1,gcp,32.0852999,34.7817676,Tel Aviv,il,,1.1,0.785,0.02
+me-central1,me-central1,gcp,25.2916097,51.5304368,Doha,qa,,1.1,0.785,0
+northamerica-northeast1,northamerica-northeast1,gcp,45.5581968,-73.8703852,Montréal,ca,qc,1.1,0.785,1
+northamerica-northeast2,northamerica-northeast2,gcp,43.653226,-79.383184,Toronto,ca,on,1.1,0.785,0.9
+southamerica-east1,southamerica-east1,gcp,-23.286926,-46.627497,São Paulo,br,,1.1,0.785,0.89
+southamerica-west1,southamerica-west1,gcp,-33.4691199,-70.641997,Santiago,cl,,1.09,0.785,0.9
+us-central1,us-central1,gcp,41.2326957,-95.9167207,Iowa,us,ia,1.11,0.785,0.92
+us-east1,us-east1,gcp,33.1637261,-80.1845003,South Carolina,us,sc,1.1,0.785,0.26
+us-east4,us-east4,gcp,39.0300218,-77.5121424,Northern Virginia,us,va,1.08,0.785,0.6
+us-east5,us-east5,gcp,39.983334,-82.98333,Columbus,us,oh,1.1,0.785,0.6
+us-south1,us-south1,gcp,32.779167,-96.808891,Dallas,us,tx,1.14,0.785,0.41
+us-west1,us-west1,gcp,45.6094756,-121.2088799,Oregon,us,or,1.1,0.785,0.89
+us-west2,us-west2,gcp,34.052235,-118.243683,Los Angeles,us,ca,1.1,0.785,0.56
+us-west3,us-west3,gcp,40.7608,-111.891,Salt Lake City,us,ut,1.1,0.785,0.31
+us-west4,us-west4,gcp,36.1699,-115.1398,Las Vegas,us,nv,1.1,0.785,0.27
