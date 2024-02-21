@@ -98,7 +98,7 @@ export const App: FC = () => {
         <Container maxWidth="lg" disableGutters>
           <Stack spacing={2}>
             <Box sx={{ typography: "subtitle" }} component="h2">
-              Electricity consumption impacts per kWh
+              Electricity consumption impacts
             </Box>
             <Box sx={{ borderRadius: 4, bgcolor: "background.paper", overflow: "hidden" }}>
               <Map paths={paths} emissions={emissions} zoom={ZOOMS[zoom]} />

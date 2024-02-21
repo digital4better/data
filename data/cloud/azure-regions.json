@@ -1,0 +1,897 @@
+[
+  {
+    "id": "asia-east",
+    "aliases": [
+      "eastasia",
+      "asiaeast",
+      "ea"
+    ],
+    "name": "East Asia",
+    "provider": "azure",
+    "lat": 22.267,
+    "lon": 114.188,
+    "location": "Hong Kong",
+    "country": "hk",
+    "pue": 1.405,
+    "wue": 1.65,
+    "ref": 0
+  },
+  {
+    "id": "asia-south-east",
+    "aliases": [
+      "southeastasia",
+      "AsiaSouthEast",
+      "asiasoutheast",
+      "sea"
+    ],
+    "name": "Southeast Asia",
+    "provider": "azure",
+    "lat": 1.283,
+    "lon": 103.833,
+    "location": "Singapore",
+    "country": "sg",
+    "pue": 1.358,
+    "wue": 2.06,
+    "ref": 0.13
+  },
+  {
+    "id": "at-central",
+    "aliases": ["austriaeast"],
+    "name": "Austria East",
+    "provider": "azure",
+    "lat": 48.20849,
+    "lon": 16.37208,
+    "location": "Vienna",
+    "country": "at",
+    "pue": 1.12,
+    "wue": 0.023,
+    "ref": 0.79
+  },
+  {
+    "id": "aus-central",
+    "aliases": [
+      "australiacentral",
+      "ac"
+    ],
+    "name": "Australia Central",
+    "provider": "azure",
+    "lat": -35.3075,
+    "lon": 149.1244,
+    "location": "Canberra",
+    "country": "au",
+    "pue": 1.405,
+    "wue": 1.65,
+    "ref": 0
+  },
+  {
+    "id": "aus-central-2",
+    "aliases": [
+      "australiacentral2",
+      "ac2"
+    ],
+    "name": "Australia Central 2",
+    "provider": "azure",
+    "lat": -35.3075,
+    "lon": 149.1244,
+    "location": "Canberra",
+    "country": "au",
+    "pue": 1.405,
+    "wue": 1.65,
+    "ref": 0
+  },
+  {
+    "id": "aus-east",
+    "aliases": [
+      "australiaeast",
+      "ae"
+    ],
+    "name": "Australia East",
+    "provider": "azure",
+    "lat": -33.86,
+    "lon": 151.2094,
+    "location": "New South Wales",
+    "country": "au",
+    "pue": 1.12,
+    "wue": 0.012,
+    "ref": 0.28
+  },
+  {
+    "id": "aus-south-east",
+    "aliases": [
+      "australiasoutheast",
+      "ase"
+    ],
+    "name": "Australia Southeast",
+    "provider": "azure",
+    "lat": -37.8136,
+    "lon": 144.9631,
+    "location": "Victoria",
+    "country": "au",
+    "pue": 1.12,
+    "wue": 0.012,
+    "ref": 0.28
+  },
+  {
+    "id": "bra-south",
+    "aliases": [
+      "brazilsouth",
+      "bs"
+    ],
+    "name": "Brazil South",
+    "provider": "azure",
+    "lat": -23.55,
+    "lon": -46.633,
+    "location": "Sao Paulo State",
+    "country": "br",
+    "pue": 1.12,
+    "wue": 0.039,
+    "ref": 0.05
+  },
+  {
+    "id": "bra-south-east",
+    "aliases": [
+      "brazilsoutheast",
+      "bse"
+    ],
+    "name": "Brazil Southeast",
+    "provider": "azure",
+    "lat": -22.90278,
+    "lon": -43.2075,
+    "location": "Rio",
+    "country": "br",
+    "pue": 1.17,
+    "wue": 0.55,
+    "ref": 0
+  },
+  {
+    "id": "can-central",
+    "aliases": [
+      "canadacentral",
+      "cacentral",
+      "cc"
+    ],
+    "name": "Canada Central",
+    "provider": "azure",
+    "lat": 43.653,
+    "lon": -79.383,
+    "location": "Toronto",
+    "country": "ca",
+    "subdivision": "on",
+    "pue": 1.17,
+    "wue": 0.55,
+    "ref": 0
+  },
+  {
+    "id": "can-east",
+    "aliases": [
+      "canadaeast",
+      "caeast",
+      "ce"
+    ],
+    "name": "Canada East",
+    "provider": "azure",
+    "lat": 46.817,
+    "lon": -71.217,
+    "location": "Quebec",
+    "country": "ca",
+    "subdivision": "qc",
+    "pue": 1.17,
+    "wue": 0.55,
+    "ref": 0
+  },
+  {
+    "id": "dk-east",
+    "aliases": ["denmarkeast"],
+    "name": "Denmark East",
+    "provider": "azure",
+    "lat": 55.676098,
+    "lon": 12.568337,
+    "location": "Copenhagen",
+    "country": "dk",
+    "pue": 1.16,
+    "wue": 0.01,
+    "ref": 0.1
+  },
+  {
+    "id": "es-central",
+    "aliases": [
+      "spaincentral"
+    ],
+    "name": "Spain Central",
+    "provider": "azure",
+    "lat": 40.416775,
+    "lon": -3.703790,
+    "location": "Madrid",
+    "country": "es",
+    "pue": 1.12,
+    "wue": 0.06,
+    "ref": 0.15
+  },
+  {
+    "id": "eu-north",
+    "aliases": [
+      "northeurope",
+      "neu"
+    ],
+    "name": "North Europe",
+    "provider": "azure",
+    "lat": 53.3478,
+    "lon": -6.2597,
+    "location": "Ireland",
+    "country": "ie",
+    "pue": 1.197,
+    "wue": 0.03,
+    "ref": 0.49
+  },
+  {
+    "id": "eu-west",
+    "aliases": [
+      "westeurope",
+      "euwest",
+      "we"
+    ],
+    "name": "West Europe",
+    "provider": "azure",
+    "lat": 52.3667,
+    "lon": 4.9,
+    "location": "Netherlands",
+    "country": "nl",
+    "pue": 1.158,
+    "wue": 0.08,
+    "ref": 0.79
+  },
+  {
+    "id": "fi-central",
+    "aliases": ["finlandcentral"],
+    "name": "Finland Central",
+    "provider": "azure",
+    "lat": 60.192059,
+    "lon": 24.945831,
+    "location": "Helsinki",
+    "country": "fi",
+    "pue": 1.112,
+    "wue": 0.01,
+    "ref": 0.1
+  },
+  {
+    "id": "fr-central",
+    "aliases": [
+      "frcentral",
+      "francecentral",
+      "francec",
+      "fc"
+    ],
+    "name": "France Central",
+    "provider": "azure",
+    "lat": 46.3772,
+    "lon": 2.373,
+    "location": "Paris",
+    "country": "fr",
+    "pue": 1.185,
+    "wue": 0.1,
+    "ref": 0
+  },
+  {
+    "id": "fr-south",
+    "aliases": [
+      "frsouth",
+      "francesouth",
+      "fs"
+    ],
+    "name": "France South",
+    "provider": "azure",
+    "lat": 43.8345,
+    "lon": 2.1972,
+    "location": "Marseille",
+    "country": "fr",
+    "pue": 1.185,
+    "wue": 0.1,
+    "ref": 0
+  },
+  {
+    "id": "ger-north",
+    "aliases": [
+      "germanynorth"
+    ],
+    "name": "Germany North",
+    "provider": "azure",
+    "lat": 53.073635,
+    "lon": 8.806422,
+    "location": "Berlin",
+    "country": "de",
+    "pue": 1.185,
+    "wue": 0.1,
+    "ref": 0
+  },
+  {
+    "id": "ger-west-central",
+    "aliases": [
+      "germanywestcentral",
+      "de west central",
+      "gwc"
+    ],
+    "name": "Germany West Central",
+    "provider": "azure",
+    "lat": 50.110924,
+    "lon": 8.682127,
+    "location": "Frankfurt",
+    "country": "de",
+    "pue": 1.185,
+    "wue": 0.1,
+    "ref": 0
+  },
+  {
+    "id": "gr-central",
+    "aliases": ["greececentral"],
+    "name": "Greece Central",
+    "provider": "azure",
+    "lat": 37.983810,
+    "lon": 23.727539,
+    "location": "Athens",
+    "country": "gr",
+    "pue": 1.12,
+    "wue": 0.102,
+    "ref": 0
+  },
+  {
+    "id": "id-central",
+    "aliases": [
+      "indonesiacentral"
+    ],
+    "name": "Indonesia Central",
+    "provider": "azure",
+    "lat": -6.21462,
+    "lon": 106.84513,
+    "location": "Jakarta",
+    "country": "id",
+    "pue": 1.32,
+    "wue": 1.90,
+    "ref": 0.13
+  },
+  {
+    "id": "ind-central",
+    "aliases": [
+      "centralindia",
+      "indiacentral",
+      "in central",
+      "ci"
+    ],
+    "name": "Central India",
+    "provider": "azure",
+    "lat": 18.5822,
+    "lon": 73.9197,
+    "location": "Pune",
+    "country": "in",
+    "pue": 1.405,
+    "wue": 1.65,
+    "ref": 0
+  },
+  {
+    "id": "ind-south",
+    "aliases": [
+      "southindia",
+      "si"
+    ],
+    "name": "South India",
+    "provider": "azure",
+    "lat": 12.9822,
+    "lon": 80.1636,
+    "location": "Chennai",
+    "country": "in",
+    "pue": 1.405,
+    "wue": 1.65,
+    "ref": 0
+  },
+  {
+    "id": "ind-southcentral",
+    "aliases": ["indiasouthcentral"],
+    "name": "India South Central",
+    "provider": "azure",
+    "lat": 17.387140,
+    "lon": 78.491684,
+    "location": "Hyderabad",
+    "country": "in",
+    "pue": 1.43,
+    "wue": 0.0,
+    "ref": 0.46
+  },
+  {
+    "id": "ind-west",
+    "aliases": [
+      "westindia"
+    ],
+    "name": "West India",
+    "provider": "azure",
+    "lat": 19.088,
+    "lon": 72.868,
+    "location": "Mumbai",
+    "country": "in",
+    "pue": 1.405,
+    "wue": 1.65,
+    "ref": 0
+  },
+  {
+    "id": "it-central",
+    "aliases": ["italynorth"],
+    "name": "Italy North",
+    "provider": "azure",
+    "lat": 45.464664,
+    "lon": 9.188540,
+    "location": "Milan",
+    "country": "it",
+    "pue": 1.12,
+    "wue": 0.023,
+    "ref": 0.15
+  },
+  {
+    "id": "jap-east",
+    "aliases": [
+      "japaneast",
+      "ja east",
+      "je"
+    ],
+    "name": "Japan East",
+    "provider": "azure",
+    "lat": 35.68,
+    "lon": 139.77,
+    "location": "Tokyo, Saitama",
+    "country": "jp",
+    "pue": 1.405,
+    "wue": 1.65,
+    "ref": 0
+  },
+  {
+    "id": "jap-west",
+    "aliases": [
+      "japanwest",
+      "ja west",
+      "jw"
+    ],
+    "name": "Japan West",
+    "provider": "azure",
+    "lat": 34.6939,
+    "lon": 135.5022,
+    "location": "Osaka",
+    "country": "jp",
+    "pue": 1.405,
+    "wue": 1.65,
+    "ref": 0
+  },
+  {
+    "id": "kor-central",
+    "aliases": [
+      "koreacentral",
+      "kr central",
+      "kc"
+    ],
+    "name": "Korea Central",
+    "provider": "azure",
+    "lat": 37.5665,
+    "lon": 126.978,
+    "location": "Seoul",
+    "country": "kr",
+    "pue": 1.405,
+    "wue": 1.65,
+    "ref": 0
+  },
+  {
+    "id": "kor-south",
+    "aliases": [
+      "koreasouth",
+      "ks"
+    ],
+    "name": "Korea South",
+    "provider": "azure",
+    "lat": 35.1796,
+    "lon": 129.0756,
+    "location": "Busan",
+    "country": "kr",
+    "pue": 1.12,
+    "wue": 0.34,
+    "ref": 0.11
+  },
+  {
+    "id": "mx-central",
+    "aliases": ["mexicocentral"],
+    "name": "Mexico Central",
+    "provider": "azure",
+    "lat": 20.835996656,
+    "lon": -99.85082993,
+    "location": "Querétaro State",
+    "country": "mx",
+    "pue": 1.12,
+    "wue": 0.056,
+    "ref": 0
+  },
+  {
+    "id": "norw-east",
+    "aliases": [
+      "norwayeast",
+      "ne"
+    ],
+    "name": "Norway East",
+    "provider": "azure",
+    "lat": 59.913868,
+    "lon": 10.752245,
+    "location": "Norway",
+    "country": "no",
+    "pue": 1.185,
+    "wue": 0.1,
+    "ref": 0
+  },
+  {
+    "id": "norw-west",
+    "aliases": [
+      "norwaywest",
+      "nw"
+    ],
+    "name": "Norway West",
+    "provider": "azure",
+    "lat": 58.969975,
+    "lon": 5.733107,
+    "location": "Norway",
+    "country": "no",
+    "pue": 1.185,
+    "wue": 0.1,
+    "ref": 0
+  },
+  {
+    "id": "nz-north",
+    "aliases": ["newzealandnorth"],
+    "name": "New Zealand North",
+    "provider": "azure",
+    "lat": -36.848461,
+    "lon": 174.763336,
+    "location": "Auckland",
+    "country": "nz",
+    "pue": 1.12,
+    "wue": 0,
+    "ref": 0
+  },
+  {
+    "id": "pl-central",
+    "aliases": ["polandcentral"],
+    "name": "Poland Central",
+    "provider": "azure",
+    "lat": 52.237049,
+    "lon": 21.017532,
+    "location": "Warsaw",
+    "country": "pl",
+    "pue": 1.12,
+    "wue": 0.023,
+    "ref": 0
+  },
+  {
+    "id": "saf-north",
+    "aliases": [
+      "southafricanorth",
+      "san"
+    ],
+    "name": "South Africa North",
+    "provider": "azure",
+    "lat": -25.73134,
+    "lon": 28.21837,
+    "location": "Johannesburg",
+    "country": "za",
+    "pue": 1.185,
+    "wue": 0.1,
+    "ref": 0
+  },
+  {
+    "id": "saf-west",
+    "aliases": [
+      "southafricawest",
+      "saw"
+    ],
+    "name": "South Africa West",
+    "provider": "azure",
+    "lat": -34.075691,
+    "lon": 18.843266,
+    "location": "Cape Town",
+    "country": "za",
+    "pue": 1.185,
+    "wue": 0.1,
+    "ref": 0
+  },
+  {
+    "id": "se-central",
+    "aliases": ["swedencentral"],
+    "name": "Sweden Central",
+    "provider": "azure",
+    "lat": 60.67452,
+    "lon": 17.14174,
+    "location": "Gävle",
+    "country": "se",
+    "pue": 1.172,
+    "wue": 0.16,
+    "ref": 0
+  },
+  {
+    "id": "swz-north",
+    "aliases": [
+      "switzerlandnorth",
+      "sn"
+    ],
+    "name": "Switzerland North",
+    "provider": "azure",
+    "lat": 47.451542,
+    "lon": 8.564572,
+    "location": "Zurich",
+    "country": "ch",
+    "pue": 1.185,
+    "wue": 0.1,
+    "ref": 0
+  },
+  {
+    "id": "swz-west",
+    "aliases": [
+      "switzerlandwest",
+      "sw"
+    ],
+    "name": "Switzerland West",
+    "provider": "azure",
+    "lat": 46.204391,
+    "lon": 6.143158,
+    "location": "Geneva",
+    "country": "ch",
+    "pue": 1.185,
+    "wue": 0.1,
+    "ref": 0
+  },
+  {
+    "id": "tw-north",
+    "aliases": [
+      "taiwannorth"
+    ],
+    "name": "Taiwan North",
+    "provider": "azure",
+    "lat": 25.105497,
+    "lon": 121.597366,
+    "location": "Taipei",
+    "country": "tw",
+    "pue": 1.20,
+    "wue": 1.00,
+    "ref": 0
+  },
+  {
+    "id": "uae-central",
+    "aliases": [
+      "uaecentral",
+      "uc"
+    ],
+    "name": "UAE Central",
+    "provider": "azure",
+    "lat": 24.466667,
+    "lon": 54.366669,
+    "location": "Abu Dhabi",
+    "country": "ae",
+    "pue": 1.185,
+    "wue": 0.1,
+    "ref": 0
+  },
+  {
+    "id": "uae-north",
+    "aliases": [
+      "uaenorth",
+      "uaen",
+      "un"
+    ],
+    "name": "UAE North",
+    "provider": "azure",
+    "lat": 25.266666,
+    "lon": 55.316666,
+    "location": "Dubai",
+    "country": "ae",
+    "pue": 1.185,
+    "wue": 0.1,
+    "ref": 0
+  },
+  {
+    "id": "uk-south",
+    "aliases": [
+      "uksouth",
+      "us"
+    ],
+    "name": "UK South",
+    "provider": "azure",
+    "lat": 50.941,
+    "lon": -0.799,
+    "location": "London",
+    "country": "gb",
+    "pue": 1.185,
+    "wue": 0.1,
+    "ref": 0
+  },
+  {
+    "id": "uk-west",
+    "aliases": [
+      "ukwest",
+      "uw"
+    ],
+    "name": "UK West",
+    "provider": "azure",
+    "lat": 53.427,
+    "lon": -3.084,
+    "location": "Cardiff",
+    "country": "gb",
+    "pue": 1.185,
+    "wue": 0.1,
+    "ref": 0
+  },
+  {
+    "id": "us-central",
+    "aliases": [
+      "centralus",
+      "cu"
+    ],
+    "name": "Central US",
+    "provider": "azure",
+    "lat": 41.5908,
+    "lon": -93.6208,
+    "location": "Des Moines",
+    "country": "us",
+    "subdivision": "ia",
+    "pue": 1.16,
+    "wue": 0.19,
+    "ref": 1
+  },
+  {
+    "id": "us-east",
+    "aliases": [
+      "eastus",
+      "useast",
+      "eu"
+    ],
+    "name": "East US",
+    "provider": "azure",
+    "lat": 37.3719,
+    "lon": -79.8164,
+    "location": "Virginia",
+    "country": "us",
+    "subdivision": "va",
+    "pue": 1.144,
+    "wue": 0.17,
+    "ref": 0.7
+  },
+  {
+    "id": "us-east-2",
+    "aliases": [
+      "eastus2",
+      "useast2",
+      "eu2"
+    ],
+    "name": "East US 2",
+    "provider": "azure",
+    "lat": 36.6681,
+    "lon": -78.3889,
+    "location": "Virginia",
+    "country": "us",
+    "subdivision": "va",
+    "pue": 1.144,
+    "wue": 0.17,
+    "ref": 0.7
+  },
+  {
+    "id": "us-east-3",
+    "aliases": [
+      "eastus3",
+      "useast3",
+      "eu3"
+    ],
+    "name": "East US 3",
+    "provider": "azure",
+    "lat": 33.753746,
+    "lon": -84.386330,
+    "location": "Atlanta",
+    "country": "us",
+    "subdivision": "ga",
+    "pue": 1.12,
+    "wue": 0.06,
+    "ref": 0.08
+  },
+  {
+    "id": "us-north-central",
+    "aliases": [
+      "northcentralus",
+      "usnorth",
+      "ncu"
+    ],
+    "name": "North Central US",
+    "provider": "azure",
+    "lat": 41.8819,
+    "lon": -87.6278,
+    "location": "Illinois",
+    "country": "us",
+    "subdivision": "il",
+    "pue": 1.346,
+    "wue": 0.79,
+    "ref": 0.7
+  },
+  {
+    "id": "us-south-central",
+    "aliases": [
+      "southcentralus",
+      "ussouthcentral",
+      "scu"
+    ],
+    "name": "South Central US",
+    "provider": "azure",
+    "lat": 29.4167,
+    "lon": -98.5,
+    "location": "San Antonio",
+    "country": "us",
+    "subdivision": "tx",
+    "pue": 1.307,
+    "wue": 1.82,
+    "ref": 1
+  },
+  {
+    "id": "us-west",
+    "aliases": [
+      "westus",
+      "wu"
+    ],
+    "name": "West US",
+    "provider": "azure",
+    "lat": 37.783,
+    "lon": -122.417,
+    "location": "California",
+    "country": "us",
+    "subdivision": "ca",
+    "pue": 1.55,
+    "wue": 0,
+    "ref": 0.55
+  },
+  {
+    "id": "us-west-2",
+    "aliases": [
+      "westus2",
+      "uswest2",
+      "wu2"
+    ],
+    "name": "West US 2",
+    "provider": "azure",
+    "lat": 47.233,
+    "lon": -119.852,
+    "location": "Washington",
+    "country": "us",
+    "subdivision": "wa",
+    "pue": 1.156,
+    "wue": 0.47,
+    "ref": 1.09
+  },
+  {
+    "id": "us-west-3",
+    "aliases": [
+      "westus3",
+      "uswest3",
+      "wu3"
+    ],
+    "name": "West US 3",
+    "provider": "azure",
+    "lat": 33.448376,
+    "lon": -112.074036,
+    "location": "Phoenix",
+    "country": "us",
+    "subdivision": "az",
+    "pue": 1.223,
+    "wue": 2.24,
+    "ref": 0.47
+  },
+  {
+    "id": "us-west-central",
+    "aliases": [
+      "westcentralus"
+    ],
+    "name": "West Central US",
+    "provider": "azure",
+    "lat": 40.89,
+    "lon": -110.234,
+    "location": "Wyoming",
+    "country": "us",
+    "subdivision": "wy",
+    "pue": 1.125,
+    "wue": 0.23,
+    "ref": 0.47
+  }
+]

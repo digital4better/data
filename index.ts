@@ -1,6 +1,6 @@
 import { get } from "https";
 import { createInterface } from "readline";
-import { appendFileSync, writeFileSync } from "fs";
+import { appendFileSync, readFileSync, writeFileSync } from "fs";
 import * as AdmZip from "adm-zip";
 import * as REGIONS from "./data/country/regions.json";
 import * as IMPACTS from "./data/energy/energy-impacts.json";
@@ -40,6 +40,7 @@ const EMBER_REGIONS = [
   "Oceania",
 ];
 const COUNTRY_EMBER_REGIONS: Record<string, (typeof EMBER_REGIONS)[number]> = {};
+const CLOUDS = ["aws", "azure", "gcp"];
 
 const isWorld = (region: string) => region === EMBER_WORLD;
 const isContinent = (region: string) => EMBER_REGIONS.indexOf(region) >= 0;
@@ -770,7 +771,16 @@ const generateCountries = async () => {
   exportToCsv(`./data/country/user-to-datacenter-distances.csv`, userToDatacenter);
 };
 
+const generateClouds = async () => {
+  process.stdout.write(`Exporting cloud data...\n`);
+  for (const cloud of CLOUDS) {
+    const data = JSON.parse(readFileSync(`./data/cloud/${cloud}-regions.json`, "utf-8"));
+    exportToCsv(`./data/cloud/${cloud}-regions.csv`, data);
+  }
+};
+
 (async () => {
+  await generateClouds();
   await generateCountries();
   await generateFactors();
 })();

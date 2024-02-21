@@ -1,5 +1,7 @@
 import { FC, useState } from "react";
 import { Box, Stack } from "@mui/system";
+import { type } from "os";
+import { isNumber } from "util";
 
 const Arrow = () => (
   <svg xmlns="http://www.w3.org/2000/svg" height="12" viewBox="0 0 384 512">
@@ -70,7 +72,9 @@ export const Table: FC<{ headers: Record<string, string>; values: Record<string,
               const idx = Math.abs(sort) - 1;
               const direction = sort / Math.abs(sort);
               const keys = Object.keys(headers);
-              return direction * String(a[keys[idx]]).localeCompare(String(b[keys[idx]]));
+              if (typeof a[keys[idx]] === "number" && typeof b[keys[idx]] === "number")
+                return direction * (Number(a[keys[idx]]) - Number(b[keys[idx]]));
+              else return direction * String(a[keys[idx]]).localeCompare(String(b[keys[idx]]));
             })
             .map((value, index) => (
               <tr key={index}>
