@@ -193,14 +193,14 @@
     },
     "2024": {
       "Bioenergy": 0.0229,
-      "Coal": 0.1311,
-      "Gas": 0.318,
-      "Hydro": 0.1847,
-      "Nuclear": 0.1593,
-      "Other Fossil": 0.016,
-      "Other Renewables": 0.0142,
-      "Solar": 0.0234,
-      "Wind": 0.1303
+      "Coal": 0.1313,
+      "Gas": 0.3174,
+      "Hydro": 0.1846,
+      "Nuclear": 0.1584,
+      "Other Fossil": 0.0159,
+      "Other Renewables": 0.0144,
+      "Solar": 0.025,
+      "Wind": 0.1302
     }
   },
   "North America": {
@@ -260,15 +260,15 @@
       "Wind": 0.0802
     },
     "2024": {
-      "Bioenergy": 0.02,
-      "Coal": 0.1388,
-      "Gas": 0.3458,
-      "Hydro": 0.1229,
-      "Nuclear": 0.1348,
-      "Other Fossil": 0.1094,
-      "Other Renewables": 0.0064,
-      "Solar": 0.0351,
-      "Wind": 0.0867
+      "Bioenergy": 0.0202,
+      "Coal": 0.132,
+      "Gas": 0.3435,
+      "Hydro": 0.125,
+      "Nuclear": 0.1358,
+      "Other Fossil": 0.1105,
+      "Other Renewables": 0.0065,
+      "Solar": 0.0366,
+      "Wind": 0.0899
     }
   },
   "Oceania": {
@@ -328,15 +328,15 @@
       "Wind": 0.0842
     },
     "2024": {
-      "Bioenergy": 0.0075,
-      "Coal": 0.3155,
-      "Gas": 0.0481,
-      "Hydro": 0.1389,
+      "Bioenergy": 0.0076,
+      "Coal": 0.3143,
+      "Gas": 0.0493,
+      "Hydro": 0.1399,
       "Nuclear": 0,
-      "Other Fossil": 0.2472,
+      "Other Fossil": 0.248,
       "Other Renewables": 0.0286,
-      "Solar": 0.1355,
-      "Wind": 0.0787
+      "Solar": 0.1346,
+      "Wind": 0.0778
     }
   },
   "South America": {
@@ -397,14 +397,14 @@
     },
     "2024": {
       "Bioenergy": 0.0054,
-      "Coal": 0.0152,
-      "Gas": 0.1932,
-      "Hydro": 0.5983,
-      "Nuclear": 0.0138,
-      "Other Fossil": 0.0815,
+      "Coal": 0.0157,
+      "Gas": 0.1926,
+      "Hydro": 0.598,
+      "Nuclear": 0.0137,
+      "Other Fossil": 0.0816,
       "Other Renewables": 0.0002,
-      "Solar": 0.0451,
-      "Wind": 0.0474
+      "Solar": 0.0448,
+      "Wind": 0.0479
     }
   }
 }
