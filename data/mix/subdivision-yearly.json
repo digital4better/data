@@ -56,15 +56,15 @@
       "Wind": 0.1348
     },
     "2024": {
-      "Bioenergy": 0.0564,
-      "Coal": 0.1641,
-      "Gas": 0.5156,
-      "Hydro": 0.0196,
+      "Bioenergy": 0.0562,
+      "Coal": 0.1636,
+      "Gas": 0.514,
+      "Hydro": 0.0201,
       "Nuclear": 0,
-      "Other Fossil": 0.0372,
+      "Other Fossil": 0.0371,
       "Other Renewables": 0.0019,
-      "Solar": 0.0378,
-      "Wind": 0.1674
+      "Solar": 0.0393,
+      "Wind": 0.1678
     }
   },
   "CA-BC": {
@@ -126,13 +126,13 @@
     "2024": {
       "Bioenergy": 0.0072,
       "Coal": 0.021,
-      "Gas": 0.066,
-      "Hydro": 0.8668,
+      "Gas": 0.0659,
+      "Hydro": 0.8665,
       "Nuclear": 0,
       "Other Fossil": 0.0048,
       "Other Renewables": 0.0002,
       "Solar": 0.0001,
-      "Wind": 0.034
+      "Wind": 0.0343
     }
   },
   "CA-MB": {
@@ -194,13 +194,13 @@
     "2024": {
       "Bioenergy": 0.0003,
       "Coal": 0.001,
-      "Gas": 0.0031,
-      "Hydro": 0.9588,
+      "Gas": 0.003,
+      "Hydro": 0.9587,
       "Nuclear": 0,
       "Other Fossil": 0.0002,
       "Other Renewables": 0,
       "Solar": 0.0001,
-      "Wind": 0.0365
+      "Wind": 0.0367
     }
   },
   "CA-NB": {
@@ -260,15 +260,15 @@
       "Wind": 0.0392
     },
     "2024": {
-      "Bioenergy": 0.034,
-      "Coal": 0.0991,
-      "Gas": 0.3114,
-      "Hydro": 0.2637,
-      "Nuclear": 0.1962,
-      "Other Fossil": 0.0225,
-      "Other Renewables": 0.0012,
+      "Bioenergy": 0.0352,
+      "Coal": 0.1026,
+      "Gas": 0.3223,
+      "Hydro": 0.267,
+      "Nuclear": 0.1759,
+      "Other Fossil": 0.0233,
+      "Other Renewables": 0.0013,
       "Solar": 0.0002,
-      "Wind": 0.0718
+      "Wind": 0.0722
     }
   },
   "CA-NL": {
@@ -328,10 +328,10 @@
       "Wind": 0.0037
     },
     "2024": {
-      "Bioenergy": 0.0019,
-      "Coal": 0.0054,
-      "Gas": 0.0169,
-      "Hydro": 0.9709,
+      "Bioenergy": 0.0018,
+      "Coal": 0.0053,
+      "Gas": 0.0167,
+      "Hydro": 0.9713,
       "Nuclear": 0,
       "Other Fossil": 0.0012,
       "Other Renewables": 0.0001,
@@ -398,13 +398,13 @@
     "2024": {
       "Bioenergy": 0.0512,
       "Coal": 0.1489,
-      "Gas": 0.4679,
-      "Hydro": 0.1305,
+      "Gas": 0.4678,
+      "Hydro": 0.1318,
       "Nuclear": 0,
       "Other Fossil": 0.0338,
       "Other Renewables": 0.0017,
       "Solar": 0.0003,
-      "Wind": 0.1657
+      "Wind": 0.1646
     }
   },
   "CA-NT": {
@@ -464,15 +464,15 @@
       "Wind": 0.0243
     },
     "2024": {
-      "Bioenergy": 0.0588,
-      "Coal": 0.1708,
-      "Gas": 0.5368,
-      "Hydro": 0.1636,
+      "Bioenergy": 0.0582,
+      "Coal": 0.1693,
+      "Gas": 0.5319,
+      "Hydro": 0.1695,
       "Nuclear": 0,
-      "Other Fossil": 0.0387,
-      "Other Renewables": 0.0019,
-      "Solar": 0.0046,
-      "Wind": 0.0248
+      "Other Fossil": 0.0384,
+      "Other Renewables": 0.002,
+      "Solar": 0.0048,
+      "Wind": 0.0258
     }
   },
   "CA-NU": {
@@ -534,11 +534,11 @@
     "2024": {
       "Bioenergy": 0.0727,
       "Coal": 0.2115,
-      "Gas": 0.6647,
+      "Gas": 0.6646,
       "Hydro": 0,
       "Nuclear": 0,
       "Other Fossil": 0.048,
-      "Other Renewables": 0.0024,
+      "Other Renewables": 0.0025,
       "Solar": 0.0006,
       "Wind": 0
     }
@@ -601,14 +601,14 @@
     },
     "2024": {
       "Bioenergy": 0.0125,
-      "Coal": 0.0365,
-      "Gas": 0.1146,
-      "Hydro": 0.2747,
-      "Nuclear": 0.4424,
+      "Coal": 0.0364,
+      "Gas": 0.1143,
+      "Hydro": 0.2787,
+      "Nuclear": 0.4401,
       "Other Fossil": 0.0083,
       "Other Renewables": 0.0004,
-      "Solar": 0.0163,
-      "Wind": 0.0943
+      "Solar": 0.0171,
+      "Wind": 0.0921
     }
   },
   "CA-PE": {
@@ -670,13 +670,13 @@
     "2024": {
       "Bioenergy": 0.0007,
       "Coal": 0.0019,
-      "Gas": 0.006,
+      "Gas": 0.0061,
       "Hydro": 0,
       "Nuclear": 0,
       "Other Fossil": 0.0004,
       "Other Renewables": 0,
-      "Solar": 0.0412,
-      "Wind": 0.9497
+      "Solar": 0.0458,
+      "Wind": 0.9451
     }
   },
   "CA-QC": {
@@ -737,14 +737,14 @@
     },
     "2024": {
       "Bioenergy": 0.0009,
-      "Coal": 0.0027,
-      "Gas": 0.0085,
-      "Hydro": 0.924,
+      "Coal": 0.0028,
+      "Gas": 0.0086,
+      "Hydro": 0.9244,
       "Nuclear": 0,
       "Other Fossil": 0.0006,
       "Other Renewables": 0,
       "Solar": 0.0001,
-      "Wind": 0.0631
+      "Wind": 0.0625
     }
   },
   "CA-SK": {
@@ -804,15 +804,15 @@
       "Wind": 0.0806
     },
     "2024": {
-      "Bioenergy": 0.0599,
-      "Coal": 0.1741,
-      "Gas": 0.5472,
-      "Hydro": 0.0932,
+      "Bioenergy": 0.0596,
+      "Coal": 0.1735,
+      "Gas": 0.5453,
+      "Hydro": 0.0961,
       "Nuclear": 0,
-      "Other Fossil": 0.0395,
-      "Other Renewables": 0.002,
-      "Solar": 0.0024,
-      "Wind": 0.0816
+      "Other Fossil": 0.0394,
+      "Other Renewables": 0.0021,
+      "Solar": 0.0025,
+      "Wind": 0.0815
     }
   },
   "CA-YT": {
@@ -872,15 +872,15 @@
       "Wind": 0.0011
     },
     "2024": {
-      "Bioenergy": 0.0126,
-      "Coal": 0.0365,
-      "Gas": 0.1148,
-      "Hydro": 0.817,
+      "Bioenergy": 0.0119,
+      "Coal": 0.0345,
+      "Gas": 0.1083,
+      "Hydro": 0.826,
       "Nuclear": 0,
-      "Other Fossil": 0.0083,
+      "Other Fossil": 0.0078,
       "Other Renewables": 0.0004,
-      "Solar": 0.0016,
-      "Wind": 0.009
+      "Solar": 0.0017,
+      "Wind": 0.0094
     }
   },
   "US-AK": {
@@ -940,10 +940,10 @@
       "Wind": 0.0176
     },
     "2024": {
-      "Bioenergy": 0.0065,
-      "Coal": 0.117,
-      "Gas": 0.4598,
-      "Hydro": 0.2305,
+      "Bioenergy": 0.0063,
+      "Coal": 0.1134,
+      "Gas": 0.461,
+      "Hydro": 0.2331,
       "Nuclear": 0,
       "Other Fossil": 0.1649,
       "Other Renewables": 0,
@@ -1008,14 +1008,14 @@
       "Wind": 0
     },
     "2024": {
-      "Bioenergy": 0.0226,
-      "Coal": 0.1518,
-      "Gas": 0.4293,
-      "Hydro": 0.0784,
-      "Nuclear": 0.3088,
-      "Other Fossil": 0.0001,
+      "Bioenergy": 0.0223,
+      "Coal": 0.1532,
+      "Gas": 0.4334,
+      "Hydro": 0.0747,
+      "Nuclear": 0.3071,
+      "Other Fossil": 0,
       "Other Renewables": 0,
-      "Solar": 0.009,
+      "Solar": 0.0092,
       "Wind": 0
     }
   },
@@ -1076,14 +1076,14 @@
       "Wind": 0
     },
     "2024": {
-      "Bioenergy": 0.0142,
-      "Coal": 0.2691,
-      "Gas": 0.3628,
-      "Hydro": 0.0662,
-      "Nuclear": 0.2545,
-      "Other Fossil": 0.0008,
+      "Bioenergy": 0.0138,
+      "Coal": 0.2723,
+      "Gas": 0.3683,
+      "Hydro": 0.0624,
+      "Nuclear": 0.2488,
+      "Other Fossil": 0.0007,
       "Other Renewables": 0,
-      "Solar": 0.0326,
+      "Solar": 0.0335,
       "Wind": 0
     }
   },
@@ -1144,14 +1144,14 @@
       "Wind": 0.0156
     },
     "2024": {
-      "Bioenergy": 0.0008,
-      "Coal": 0.0841,
-      "Gas": 0.4373,
-      "Hydro": 0.0551,
-      "Nuclear": 0.3026,
-      "Other Fossil": 0.0002,
+      "Bioenergy": 0.0009,
+      "Coal": 0.0825,
+      "Gas": 0.4435,
+      "Hydro": 0.0546,
+      "Nuclear": 0.2969,
+      "Other Fossil": 0.0003,
       "Other Renewables": 0,
-      "Solar": 0.0952,
+      "Solar": 0.0968,
       "Wind": 0.0246
     }
   },
@@ -1212,15 +1212,15 @@
       "Wind": 0.0688
     },
     "2024": {
-      "Bioenergy": 0.0227,
+      "Bioenergy": 0.0224,
       "Coal": 0.0012,
-      "Gas": 0.3454,
-      "Hydro": 0.1714,
-      "Nuclear": 0.086,
+      "Gas": 0.34,
+      "Hydro": 0.1705,
+      "Nuclear": 0.0862,
       "Other Fossil": 0,
-      "Other Renewables": 0.0508,
-      "Solar": 0.2384,
-      "Wind": 0.0841
+      "Other Renewables": 0.0503,
+      "Solar": 0.2457,
+      "Wind": 0.0837
     }
   },
   "US-CO": {
@@ -1281,14 +1281,14 @@
     },
     "2024": {
       "Bioenergy": 0.0016,
-      "Coal": 0.2671,
-      "Gas": 0.3033,
-      "Hydro": 0.0256,
+      "Coal": 0.2706,
+      "Gas": 0.3011,
+      "Hydro": 0.0259,
       "Nuclear": 0,
-      "Other Fossil": 0.0009,
+      "Other Fossil": 0.0008,
       "Other Renewables": 0,
-      "Solar": 0.0899,
-      "Wind": 0.3116
+      "Solar": 0.0913,
+      "Wind": 0.3087
     }
   },
   "US-CT": {
@@ -1348,14 +1348,14 @@
       "Wind": 0.0002
     },
     "2024": {
-      "Bioenergy": 0.0097,
+      "Bioenergy": 0.0098,
       "Coal": 0,
-      "Gas": 0.5429,
-      "Hydro": 0.0087,
-      "Nuclear": 0.4145,
+      "Gas": 0.5464,
+      "Hydro": 0.0083,
+      "Nuclear": 0.411,
       "Other Fossil": 0.0119,
       "Other Renewables": 0,
-      "Solar": 0.0121,
+      "Solar": 0.0124,
       "Wind": 0.0002
     }
   },
@@ -1416,15 +1416,15 @@
       "Wind": 0.0009
     },
     "2024": {
-      "Bioenergy": 0.014,
-      "Coal": 0.0209,
-      "Gas": 0.9236,
+      "Bioenergy": 0.0135,
+      "Coal": 0.0204,
+      "Gas": 0.9257,
       "Hydro": 0,
       "Nuclear": 0,
-      "Other Fossil": 0.003,
+      "Other Fossil": 0.0025,
       "Other Renewables": 0,
-      "Solar": 0.0381,
-      "Wind": 0.0004
+      "Solar": 0.0376,
+      "Wind": 0.0003
     }
   },
   "US-FL": {
@@ -1484,14 +1484,14 @@
       "Wind": 0
     },
     "2024": {
-      "Bioenergy": 0.012,
-      "Coal": 0.032,
-      "Gas": 0.7478,
+      "Bioenergy": 0.0117,
+      "Coal": 0.0339,
+      "Gas": 0.7474,
       "Hydro": 0.0008,
-      "Nuclear": 0.1147,
-      "Other Fossil": 0.0178,
+      "Nuclear": 0.1119,
+      "Other Fossil": 0.0199,
       "Other Renewables": 0,
-      "Solar": 0.0749,
+      "Solar": 0.0745,
       "Wind": 0
     }
   },
@@ -1552,14 +1552,14 @@
       "Wind": 0
     },
     "2024": {
-      "Bioenergy": 0.037,
-      "Coal": 0.131,
-      "Gas": 0.4096,
-      "Hydro": 0.0212,
-      "Nuclear": 0.3329,
-      "Other Fossil": 0.0023,
+      "Bioenergy": 0.0363,
+      "Coal": 0.1347,
+      "Gas": 0.4094,
+      "Hydro": 0.0197,
+      "Nuclear": 0.3308,
+      "Other Fossil": 0.0022,
       "Other Renewables": 0,
-      "Solar": 0.066,
+      "Solar": 0.0669,
       "Wind": 0
     }
   },
@@ -1625,10 +1625,10 @@
       "Gas": 0,
       "Hydro": 0,
       "Nuclear": 0,
-      "Other Fossil": 0.7943,
-      "Other Renewables": 0.0184,
-      "Solar": 0.0794,
-      "Wind": 0.0825
+      "Other Fossil": 0.7892,
+      "Other Renewables": 0.0198,
+      "Solar": 0.082,
+      "Wind": 0.0834
     }
   },
   "US-IA": {
@@ -1689,14 +1689,14 @@
     },
     "2024": {
       "Bioenergy": 0.0029,
-      "Coal": 0.1591,
-      "Gas": 0.1306,
-      "Hydro": 0.0106,
+      "Coal": 0.1669,
+      "Gas": 0.1341,
+      "Hydro": 0.0111,
       "Nuclear": 0,
-      "Other Fossil": 0.0007,
+      "Other Fossil": 0.0006,
       "Other Renewables": 0,
-      "Solar": 0.0091,
-      "Wind": 0.6871
+      "Solar": 0.0094,
+      "Wind": 0.675
     }
   },
   "US-ID": {
@@ -1756,15 +1756,15 @@
       "Wind": 0.1502
     },
     "2024": {
-      "Bioenergy": 0.0213,
+      "Bioenergy": 0.0197,
       "Coal": 0,
-      "Gas": 0.2803,
-      "Hydro": 0.4392,
+      "Gas": 0.2798,
+      "Hydro": 0.4398,
       "Nuclear": 0,
       "Other Fossil": 0.004,
-      "Other Renewables": 0.0012,
-      "Solar": 0.0676,
-      "Wind": 0.1864
+      "Other Renewables": 0.0016,
+      "Solar": 0.0718,
+      "Wind": 0.1833
     }
   },
   "US-IL": {
@@ -1825,14 +1825,14 @@
     },
     "2024": {
       "Bioenergy": 0.0014,
-      "Coal": 0.1467,
-      "Gas": 0.1435,
+      "Coal": 0.149,
+      "Gas": 0.1481,
       "Hydro": 0,
-      "Nuclear": 0.543,
+      "Nuclear": 0.5399,
       "Other Fossil": 0.0015,
       "Other Renewables": 0,
-      "Solar": 0.0142,
-      "Wind": 0.1497
+      "Solar": 0.0146,
+      "Wind": 0.1454
     }
   },
   "US-IN": {
@@ -1892,15 +1892,15 @@
       "Wind": 0.1043
     },
     "2024": {
-      "Bioenergy": 0.0037,
-      "Coal": 0.4244,
-      "Gas": 0.4155,
-      "Hydro": 0.0044,
+      "Bioenergy": 0.0036,
+      "Coal": 0.4289,
+      "Gas": 0.4137,
+      "Hydro": 0.0042,
       "Nuclear": 0,
       "Other Fossil": 0.0055,
       "Other Renewables": 0,
-      "Solar": 0.0292,
-      "Wind": 0.1174
+      "Solar": 0.0305,
+      "Wind": 0.1134
     }
   },
   "US-KS": {
@@ -1960,15 +1960,15 @@
       "Wind": 0.4635
     },
     "2024": {
-      "Bioenergy": 0.0002,
-      "Coal": 0.1916,
-      "Gas": 0.0983,
+      "Bioenergy": 0.0001,
+      "Coal": 0.1958,
+      "Gas": 0.0999,
       "Hydro": 0.0005,
-      "Nuclear": 0.1441,
-      "Other Fossil": 0.002,
+      "Nuclear": 0.1462,
+      "Other Fossil": 0.0019,
       "Other Renewables": 0,
       "Solar": 0.0015,
-      "Wind": 0.5619
+      "Wind": 0.5541
     }
   },
   "US-KY": {
@@ -2028,14 +2028,14 @@
       "Wind": 0
     },
     "2024": {
-      "Bioenergy": 0.0064,
-      "Coal": 0.6834,
-      "Gas": 0.2335,
-      "Hydro": 0.0727,
+      "Bioenergy": 0.0062,
+      "Coal": 0.6794,
+      "Gas": 0.2399,
+      "Hydro": 0.0703,
       "Nuclear": 0,
-      "Other Fossil": 0.0013,
+      "Other Fossil": 0.0012,
       "Other Renewables": 0,
-      "Solar": 0.0028,
+      "Solar": 0.0029,
       "Wind": 0
     }
   },
@@ -2096,14 +2096,14 @@
       "Wind": 0
     },
     "2024": {
-      "Bioenergy": 0.0206,
-      "Coal": 0.0492,
-      "Gas": 0.7826,
-      "Hydro": 0.0104,
-      "Nuclear": 0.1261,
+      "Bioenergy": 0.0203,
+      "Coal": 0.05,
+      "Gas": 0.7824,
+      "Hydro": 0.0101,
+      "Nuclear": 0.1259,
       "Other Fossil": 0.0032,
       "Other Renewables": 0,
-      "Solar": 0.0079,
+      "Solar": 0.0081,
       "Wind": 0
     }
   },
@@ -2164,14 +2164,14 @@
       "Wind": 0.0102
     },
     "2024": {
-      "Bioenergy": 0.0464,
+      "Bioenergy": 0.0468,
       "Coal": 0,
-      "Gas": 0.7493,
-      "Hydro": 0.0254,
+      "Gas": 0.7455,
+      "Hydro": 0.0245,
       "Nuclear": 0,
-      "Other Fossil": 0.0523,
+      "Other Fossil": 0.053,
       "Other Renewables": 0,
-      "Solar": 0.1167,
+      "Solar": 0.1204,
       "Wind": 0.0099
     }
   },
@@ -2232,15 +2232,15 @@
       "Wind": 0.0133
     },
     "2024": {
-      "Bioenergy": 0.0092,
-      "Coal": 0.0721,
-      "Gas": 0.3714,
-      "Hydro": 0.0694,
-      "Nuclear": 0.4144,
-      "Other Fossil": 0.0137,
+      "Bioenergy": 0.009,
+      "Coal": 0.0731,
+      "Gas": 0.3765,
+      "Hydro": 0.0637,
+      "Nuclear": 0.4142,
+      "Other Fossil": 0.0133,
       "Other Renewables": 0,
-      "Solar": 0.0331,
-      "Wind": 0.0166
+      "Solar": 0.0342,
+      "Wind": 0.0159
     }
   },
   "US-ME": {
@@ -2300,15 +2300,15 @@
       "Wind": 0.2156
     },
     "2024": {
-      "Bioenergy": 0.1164,
-      "Coal": 0.0023,
-      "Gas": 0.3106,
-      "Hydro": 0.2581,
+      "Bioenergy": 0.1147,
+      "Coal": 0.0022,
+      "Gas": 0.3196,
+      "Hydro": 0.2534,
       "Nuclear": 0,
-      "Other Fossil": 0.0278,
+      "Other Fossil": 0.0279,
       "Other Renewables": 0,
-      "Solar": 0.0761,
-      "Wind": 0.2088
+      "Solar": 0.0791,
+      "Wind": 0.2031
     }
   },
   "US-MI": {
@@ -2368,15 +2368,15 @@
       "Wind": 0.0689
     },
     "2024": {
-      "Bioenergy": 0.0168,
-      "Coal": 0.1849,
-      "Gas": 0.4791,
-      "Hydro": 0.0023,
-      "Nuclear": 0.1978,
-      "Other Fossil": 0.0126,
+      "Bioenergy": 0.0167,
+      "Coal": 0.1909,
+      "Gas": 0.4744,
+      "Hydro": 0.002,
+      "Nuclear": 0.1985,
+      "Other Fossil": 0.0129,
       "Other Renewables": 0,
-      "Solar": 0.0166,
-      "Wind": 0.09
+      "Solar": 0.0171,
+      "Wind": 0.0875
     }
   },
   "US-MN": {
@@ -2436,15 +2436,15 @@
       "Wind": 0.2543
     },
     "2024": {
-      "Bioenergy": 0.02,
-      "Coal": 0.1901,
-      "Gas": 0.2502,
-      "Hydro": 0.0132,
-      "Nuclear": 0.2036,
-      "Other Fossil": 0.0051,
+      "Bioenergy": 0.0201,
+      "Coal": 0.1908,
+      "Gas": 0.2494,
+      "Hydro": 0.0136,
+      "Nuclear": 0.2077,
+      "Other Fossil": 0.0052,
       "Other Renewables": 0,
-      "Solar": 0.0397,
-      "Wind": 0.278
+      "Solar": 0.0408,
+      "Wind": 0.2725
     }
   },
   "US-MO": {
@@ -2505,14 +2505,14 @@
     },
     "2024": {
       "Bioenergy": 0.0017,
-      "Coal": 0.5673,
-      "Gas": 0.1319,
-      "Hydro": 0.0281,
-      "Nuclear": 0.1522,
+      "Coal": 0.5696,
+      "Gas": 0.1372,
+      "Hydro": 0.0274,
+      "Nuclear": 0.1498,
       "Other Fossil": 0.0019,
       "Other Renewables": 0,
-      "Solar": 0.0027,
-      "Wind": 0.1141
+      "Solar": 0.0028,
+      "Wind": 0.1097
     }
   },
   "US-MS": {
@@ -2572,15 +2572,15 @@
       "Wind": 0
     },
     "2024": {
-      "Bioenergy": 0.0164,
-      "Coal": 0.0393,
-      "Gas": 0.7869,
+      "Bioenergy": 0.0161,
+      "Coal": 0.0395,
+      "Gas": 0.7852,
       "Hydro": 0,
-      "Nuclear": 0.1378,
+      "Nuclear": 0.1386,
       "Other Fossil": 0.0001,
       "Other Renewables": 0,
-      "Solar": 0.0161,
-      "Wind": 0.0035
+      "Solar": 0.0171,
+      "Wind": 0.0034
     }
   },
   "US-MT": {
@@ -2640,15 +2640,15 @@
       "Wind": 0.1769
     },
     "2024": {
-      "Bioenergy": 0.0006,
-      "Coal": 0.3225,
-      "Gas": 0.0227,
-      "Hydro": 0.3432,
+      "Bioenergy": 0.0007,
+      "Coal": 0.3087,
+      "Gas": 0.0202,
+      "Hydro": 0.3552,
       "Nuclear": 0,
-      "Other Fossil": 0.0308,
+      "Other Fossil": 0.0315,
       "Other Renewables": 0,
-      "Solar": 0.0168,
-      "Wind": 0.2633
+      "Solar": 0.0182,
+      "Wind": 0.2654
     }
   },
   "US-NC": {
@@ -2708,15 +2708,15 @@
       "Wind": 0.004
     },
     "2024": {
-      "Bioenergy": 0.0118,
-      "Coal": 0.1428,
-      "Gas": 0.3915,
-      "Hydro": 0.0383,
-      "Nuclear": 0.314,
-      "Other Fossil": 0.0032,
+      "Bioenergy": 0.0115,
+      "Coal": 0.1442,
+      "Gas": 0.3962,
+      "Hydro": 0.0364,
+      "Nuclear": 0.3095,
+      "Other Fossil": 0.0029,
       "Other Renewables": 0,
-      "Solar": 0.0944,
-      "Wind": 0.004
+      "Solar": 0.0956,
+      "Wind": 0.0037
     }
   },
   "US-ND": {
@@ -2777,14 +2777,14 @@
     },
     "2024": {
       "Bioenergy": 0,
-      "Coal": 0.5439,
-      "Gas": 0.0283,
-      "Hydro": 0.0372,
+      "Coal": 0.5463,
+      "Gas": 0.025,
+      "Hydro": 0.0381,
       "Nuclear": 0,
-      "Other Fossil": 0.0011,
+      "Other Fossil": 0.0009,
       "Other Renewables": 0,
       "Solar": 0,
-      "Wind": 0.3895
+      "Wind": 0.3897
     }
   },
   "US-NE": {
@@ -2844,15 +2844,15 @@
       "Wind": 0.2975
     },
     "2024": {
-      "Bioenergy": 0.0021,
-      "Coal": 0.3782,
-      "Gas": 0.0306,
-      "Hydro": 0.0248,
-      "Nuclear": 0.1933,
-      "Other Fossil": 0.0006,
+      "Bioenergy": 0.0022,
+      "Coal": 0.3805,
+      "Gas": 0.027,
+      "Hydro": 0.0254,
+      "Nuclear": 0.1948,
+      "Other Fossil": 0.0005,
       "Other Renewables": 0,
-      "Solar": 0.0051,
-      "Wind": 0.3653
+      "Solar": 0.0057,
+      "Wind": 0.3638
     }
   },
   "US-NH": {
@@ -2912,15 +2912,15 @@
       "Wind": 0.0255
     },
     "2024": {
-      "Bioenergy": 0.0429,
-      "Coal": 0.0034,
-      "Gas": 0.2413,
-      "Hydro": 0.0745,
-      "Nuclear": 0.6082,
-      "Other Fossil": 0.0037,
+      "Bioenergy": 0.0425,
+      "Coal": 0.0029,
+      "Gas": 0.2531,
+      "Hydro": 0.0713,
+      "Nuclear": 0.6012,
+      "Other Fossil": 0.0038,
       "Other Renewables": 0,
       "Solar": 0,
-      "Wind": 0.0259
+      "Wind": 0.0251
     }
   },
   "US-NJ": {
@@ -2980,15 +2980,15 @@
       "Wind": 0.0003
     },
     "2024": {
-      "Bioenergy": 0.0109,
+      "Bioenergy": 0.0107,
       "Coal": 0,
-      "Gas": 0.4903,
+      "Gas": 0.4942,
       "Hydro": 0,
-      "Nuclear": 0.4572,
-      "Other Fossil": 0.0105,
+      "Nuclear": 0.4533,
+      "Other Fossil": 0.0104,
       "Other Renewables": 0,
-      "Solar": 0.0307,
-      "Wind": 0.0004
+      "Solar": 0.0311,
+      "Wind": 0.0003
     }
   },
   "US-NM": {
@@ -3049,14 +3049,14 @@
     },
     "2024": {
       "Bioenergy": 0.0003,
-      "Coal": 0.2236,
-      "Gas": 0.292,
+      "Coal": 0.2268,
+      "Gas": 0.2957,
       "Hydro": 0,
       "Nuclear": 0,
       "Other Fossil": 0,
       "Other Renewables": 0.0007,
-      "Solar": 0.0944,
-      "Wind": 0.389
+      "Solar": 0.097,
+      "Wind": 0.3795
     }
   },
   "US-NV": {
@@ -3117,14 +3117,14 @@
     },
     "2024": {
       "Bioenergy": 0.0003,
-      "Coal": 0.0477,
-      "Gas": 0.5283,
-      "Hydro": 0.0395,
+      "Coal": 0.0476,
+      "Gas": 0.5252,
+      "Hydro": 0.0398,
       "Nuclear": 0,
       "Other Fossil": 0,
-      "Other Renewables": 0.088,
-      "Solar": 0.2886,
-      "Wind": 0.0075
+      "Other Renewables": 0.0844,
+      "Solar": 0.2956,
+      "Wind": 0.0072
     }
   },
   "US-NY": {
@@ -3184,15 +3184,15 @@
       "Wind": 0.0393
     },
     "2024": {
-      "Bioenergy": 0.012,
+      "Bioenergy": 0.0119,
       "Coal": 0,
-      "Gas": 0.471,
-      "Hydro": 0.2195,
-      "Nuclear": 0.2128,
-      "Other Fossil": 0.0103,
+      "Gas": 0.4765,
+      "Hydro": 0.2157,
+      "Nuclear": 0.2114,
+      "Other Fossil": 0.0101,
       "Other Renewables": 0,
-      "Solar": 0.0259,
-      "Wind": 0.0485
+      "Solar": 0.0268,
+      "Wind": 0.0476
     }
   },
   "US-OH": {
@@ -3253,14 +3253,14 @@
     },
     "2024": {
       "Bioenergy": 0.0018,
-      "Coal": 0.2191,
-      "Gas": 0.5958,
-      "Hydro": 0.0041,
-      "Nuclear": 0.1248,
-      "Other Fossil": 0.0036,
+      "Coal": 0.2222,
+      "Gas": 0.5934,
+      "Hydro": 0.0039,
+      "Nuclear": 0.1243,
+      "Other Fossil": 0.0031,
       "Other Renewables": 0,
-      "Solar": 0.0275,
-      "Wind": 0.0233
+      "Solar": 0.0289,
+      "Wind": 0.0225
     }
   },
   "US-OK": {
@@ -3320,15 +3320,15 @@
       "Wind": 0.4198
     },
     "2024": {
-      "Bioenergy": 0.0035,
-      "Coal": 0.0565,
-      "Gas": 0.4819,
-      "Hydro": 0.0198,
+      "Bioenergy": 0.0034,
+      "Coal": 0.0581,
+      "Gas": 0.4891,
+      "Hydro": 0.0188,
       "Nuclear": 0,
       "Other Fossil": 0.0004,
       "Other Renewables": 0,
-      "Solar": 0.0025,
-      "Wind": 0.4353
+      "Solar": 0.0028,
+      "Wind": 0.4274
     }
   },
   "US-OR": {
@@ -3390,13 +3390,13 @@
     "2024": {
       "Bioenergy": 0.0158,
       "Coal": 0,
-      "Gas": 0.3508,
-      "Hydro": 0.4281,
+      "Gas": 0.3474,
+      "Hydro": 0.4284,
       "Nuclear": 0,
       "Other Fossil": 0.0003,
-      "Other Renewables": 0.0015,
-      "Solar": 0.0367,
-      "Wind": 0.1667
+      "Other Renewables": 0.0017,
+      "Solar": 0.0386,
+      "Wind": 0.1679
     }
   },
   "US-PA": {
@@ -3456,15 +3456,15 @@
       "Wind": 0.0139
     },
     "2024": {
-      "Bioenergy": 0.0063,
-      "Coal": 0.0565,
-      "Gas": 0.5955,
-      "Hydro": 0.0089,
-      "Nuclear": 0.3083,
+      "Bioenergy": 0.0062,
+      "Coal": 0.0566,
+      "Gas": 0.5982,
+      "Hydro": 0.0084,
+      "Nuclear": 0.3063,
       "Other Fossil": 0.004,
       "Other Renewables": 0,
-      "Solar": 0.005,
-      "Wind": 0.0155
+      "Solar": 0.0053,
+      "Wind": 0.015
     }
   },
   "US-RI": {
@@ -3524,15 +3524,15 @@
       "Wind": 0.0207
     },
     "2024": {
-      "Bioenergy": 0.0319,
+      "Bioenergy": 0.0309,
       "Coal": 0,
-      "Gas": 0.8505,
+      "Gas": 0.8529,
       "Hydro": 0,
       "Nuclear": 0,
-      "Other Fossil": 0.001,
+      "Other Fossil": 0.0008,
       "Other Renewables": 0,
-      "Solar": 0.0896,
-      "Wind": 0.0269
+      "Solar": 0.0899,
+      "Wind": 0.0255
     }
   },
   "US-SC": {
@@ -3593,13 +3593,13 @@
     },
     "2024": {
       "Bioenergy": 0.0199,
-      "Coal": 0.1632,
-      "Gas": 0.2116,
-      "Hydro": 0.0226,
-      "Nuclear": 0.5489,
-      "Other Fossil": 0.0017,
+      "Coal": 0.1687,
+      "Gas": 0.2129,
+      "Hydro": 0.0209,
+      "Nuclear": 0.5432,
+      "Other Fossil": 0.0016,
       "Other Renewables": 0,
-      "Solar": 0.0321,
+      "Solar": 0.0329,
       "Wind": 0
     }
   },
@@ -3661,14 +3661,14 @@
     },
     "2024": {
       "Bioenergy": 0,
-      "Coal": 0.0831,
-      "Gas": 0.0674,
-      "Hydro": 0.2031,
+      "Coal": 0.0849,
+      "Gas": 0.0596,
+      "Hydro": 0.2083,
       "Nuclear": 0,
       "Other Fossil": 0,
       "Other Renewables": 0,
-      "Solar": 0.0162,
-      "Wind": 0.6302
+      "Solar": 0.0187,
+      "Wind": 0.6285
     }
   },
   "US-TN": {
@@ -3729,13 +3729,13 @@
     },
     "2024": {
       "Bioenergy": 0.0054,
-      "Coal": 0.2102,
-      "Gas": 0.1875,
-      "Hydro": 0.1146,
-      "Nuclear": 0.467,
-      "Other Fossil": 0.001,
+      "Coal": 0.2174,
+      "Gas": 0.1885,
+      "Hydro": 0.11,
+      "Nuclear": 0.4632,
+      "Other Fossil": 0.0009,
       "Other Renewables": 0,
-      "Solar": 0.0143,
+      "Solar": 0.0145,
       "Wind": 0
     }
   },
@@ -3797,14 +3797,14 @@
     },
     "2024": {
       "Bioenergy": 0.0021,
-      "Coal": 0.1055,
-      "Gas": 0.5015,
-      "Hydro": 0.0015,
-      "Nuclear": 0.0713,
+      "Coal": 0.1056,
+      "Gas": 0.5054,
+      "Hydro": 0.0014,
+      "Nuclear": 0.0709,
       "Other Fossil": 0.0007,
       "Other Renewables": 0,
-      "Solar": 0.0671,
-      "Wind": 0.2503
+      "Solar": 0.0686,
+      "Wind": 0.2453
     }
   },
   "US-UT": {
@@ -3864,15 +3864,15 @@
       "Wind": 0.0204
     },
     "2024": {
-      "Bioenergy": 0.001,
-      "Coal": 0.3833,
-      "Gas": 0.3806,
-      "Hydro": 0.0143,
+      "Bioenergy": 0.0009,
+      "Coal": 0.3834,
+      "Gas": 0.3756,
+      "Hydro": 0.0149,
       "Nuclear": 0,
-      "Other Fossil": 0.0068,
-      "Other Renewables": 0.0125,
-      "Solar": 0.1746,
-      "Wind": 0.0269
+      "Other Fossil": 0.0069,
+      "Other Renewables": 0.0124,
+      "Solar": 0.1793,
+      "Wind": 0.0266
     }
   },
   "US-VA": {
@@ -3932,14 +3932,14 @@
       "Wind": 0.0005
     },
     "2024": {
-      "Bioenergy": 0.0315,
-      "Coal": 0.0199,
-      "Gas": 0.5914,
-      "Hydro": 0.0016,
-      "Nuclear": 0.276,
-      "Other Fossil": 0.0069,
+      "Bioenergy": 0.0312,
+      "Coal": 0.0206,
+      "Gas": 0.5912,
+      "Hydro": 0.0013,
+      "Nuclear": 0.2735,
+      "Other Fossil": 0.0067,
       "Other Renewables": 0,
-      "Solar": 0.0723,
+      "Solar": 0.075,
       "Wind": 0.0005
     }
   },
@@ -4000,15 +4000,15 @@
       "Wind": 0.176
     },
     "2024": {
-      "Bioenergy": 0.1516,
+      "Bioenergy": 0.1529,
       "Coal": 0,
-      "Gas": 0.0007,
-      "Hydro": 0.5741,
+      "Gas": 0.0008,
+      "Hydro": 0.5672,
       "Nuclear": 0,
       "Other Fossil": 0.0014,
       "Other Renewables": 0,
-      "Solar": 0.1076,
-      "Wind": 0.1646
+      "Solar": 0.1128,
+      "Wind": 0.165
     }
   },
   "US-WA": {
@@ -4068,15 +4068,15 @@
       "Wind": 0.0755
     },
     "2024": {
-      "Bioenergy": 0.0104,
-      "Coal": 0.0143,
-      "Gas": 0.1482,
-      "Hydro": 0.6285,
-      "Nuclear": 0.0999,
-      "Other Fossil": 0.001,
+      "Bioenergy": 0.0103,
+      "Coal": 0.0124,
+      "Gas": 0.1421,
+      "Hydro": 0.6388,
+      "Nuclear": 0.0989,
+      "Other Fossil": 0.0009,
       "Other Renewables": 0,
-      "Solar": 0.0049,
-      "Wind": 0.0929
+      "Solar": 0.0051,
+      "Wind": 0.0915
     }
   },
   "US-WI": {
@@ -4136,15 +4136,15 @@
       "Wind": 0.0272
     },
     "2024": {
-      "Bioenergy": 0.0148,
-      "Coal": 0.2907,
-      "Gas": 0.4317,
-      "Hydro": 0.025,
-      "Nuclear": 0.1593,
+      "Bioenergy": 0.015,
+      "Coal": 0.2902,
+      "Gas": 0.4334,
+      "Hydro": 0.0251,
+      "Nuclear": 0.1573,
       "Other Fossil": 0.0006,
       "Other Renewables": 0,
-      "Solar": 0.0442,
-      "Wind": 0.0337
+      "Solar": 0.0458,
+      "Wind": 0.0327
     }
   },
   "US-WV": {
@@ -4205,14 +4205,14 @@
     },
     "2024": {
       "Bioenergy": 0,
-      "Coal": 0.8594,
-      "Gas": 0.0651,
-      "Hydro": 0.0318,
+      "Coal": 0.8632,
+      "Gas": 0.0652,
+      "Hydro": 0.0303,
       "Nuclear": 0,
-      "Other Fossil": 0.0019,
+      "Other Fossil": 0.0018,
       "Other Renewables": 0,
-      "Solar": 0.0033,
-      "Wind": 0.0385
+      "Solar": 0.0035,
+      "Wind": 0.036
     }
   },
   "US-WY": {
@@ -4273,14 +4273,14 @@
     },
     "2024": {
       "Bioenergy": 0,
-      "Coal": 0.5763,
-      "Gas": 0.1227,
-      "Hydro": 0.0158,
+      "Coal": 0.5687,
+      "Gas": 0.1298,
+      "Hydro": 0.0164,
       "Nuclear": 0,
-      "Other Fossil": 0.0034,
+      "Other Fossil": 0.0035,
       "Other Renewables": 0,
-      "Solar": 0.0102,
-      "Wind": 0.2717
+      "Solar": 0.0112,
+      "Wind": 0.2705
     }
   }
 }
