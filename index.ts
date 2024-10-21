@@ -26,9 +26,9 @@ type Energy = (typeof ENERGIES)[number];
 type GreenEnergy = (typeof GREEN_ENERGIES)[number];
 const FOSSIL_FUELS: Energy[] = ["Bioenergy", "Coal", "Gas", "Other Fossil", "Other Renewables"];
 
-const EMBER_DOMAIN = "https://ember-climate.org";
-const EMBER_MONTHLY_DATA = `${EMBER_DOMAIN}/data-catalogue/monthly-electricity-data/`;
-const EMBER_YEARLY_DATA = `${EMBER_DOMAIN}/data-catalogue/yearly-electricity-data/`;
+const EMBER_DOMAIN = "https://ember-energy.org";
+const EMBER_MONTHLY_DATA = `${EMBER_DOMAIN}/data/monthly-electricity-data/`;
+const EMBER_YEARLY_DATA = `${EMBER_DOMAIN}/data/yearly-electricity-data/`;
 const EMBER_WORLD = "World";
 const EMBER_REGIONS = [
   "Africa",
@@ -55,7 +55,7 @@ const REGION_FILTERS = {
   subdivision: isSubdivision,
 };
 
-const fetchAndScrap = async (url: string, regex: RegExp) =>
+const fetchAndScrap = async (url: string, regex: RegExp): Promise<string> =>
   new Promise((resolve) =>
     get(url, (response) => {
       let body = "";
@@ -303,7 +303,7 @@ const sanitizeData = async (aggregates: Aggregates) => {
 const fetchWorldMix = async (aggregates: Aggregates) => {
   process.stdout.write(`Fetching energy data\n`);
   for (const page of [EMBER_YEARLY_DATA, EMBER_MONTHLY_DATA]) {
-    const url = EMBER_DOMAIN + (await fetchAndScrap(page, /\/app\/uploads\/[^/]+\/[^/]+\/[^.]+.csv/));
+    const url = await fetchAndScrap(page, /https:\/\/[^"]*.csv/);
     let lines = 0;
     process.stdout.write(`- from ${url}... `);
     await fetchAndProcess(url, (data) => {
