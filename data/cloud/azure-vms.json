@@ -1,7 +1,7 @@
 [
   {
     "id": "a0",
-    "family": "a0",
+    "family": "av1",
     "category": "general",
     "vcpus": 1,
     "memory": 0.75,
@@ -13,7 +13,7 @@
   },
   {
     "id": "a1",
-    "family": "a1",
+    "family": "av1",
     "category": "general",
     "vcpus": 1,
     "memory": 1.75,
@@ -25,7 +25,7 @@
   },
   {
     "id": "a1-v2",
-    "family": "a1-v2",
+    "family": "av2",
     "category": "general",
     "vcpus": 1,
     "memory": 2,
@@ -41,7 +41,7 @@
   },
   {
     "id": "a2",
-    "family": "a2",
+    "family": "av1",
     "category": "general",
     "vcpus": 2,
     "memory": 3.5,
@@ -53,7 +53,7 @@
   },
   {
     "id": "a2-v2",
-    "family": "a2-v2",
+    "family": "av2",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -69,7 +69,7 @@
   },
   {
     "id": "a2m-v2",
-    "family": "a2m-v2",
+    "family": "av2",
     "category": "general",
     "vcpus": 2,
     "memory": 16,
@@ -85,7 +85,7 @@
   },
   {
     "id": "a3",
-    "family": "a3",
+    "family": "av1",
     "category": "general",
     "vcpus": 4,
     "memory": 7,
@@ -97,7 +97,7 @@
   },
   {
     "id": "a4",
-    "family": "a4",
+    "family": "av1",
     "category": "general",
     "vcpus": 8,
     "memory": 14,
@@ -109,7 +109,7 @@
   },
   {
     "id": "a4-v2",
-    "family": "a4-v2",
+    "family": "av2",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -125,7 +125,7 @@
   },
   {
     "id": "a4m-v2",
-    "family": "a4m-v2",
+    "family": "av2",
     "category": "general",
     "vcpus": 4,
     "memory": 32,
@@ -141,7 +141,7 @@
   },
   {
     "id": "a5",
-    "family": "a5",
+    "family": "av1",
     "category": "general",
     "vcpus": 2,
     "memory": 14,
@@ -153,7 +153,7 @@
   },
   {
     "id": "a6",
-    "family": "a6",
+    "family": "av1",
     "category": "general",
     "vcpus": 4,
     "memory": 28,
@@ -165,7 +165,7 @@
   },
   {
     "id": "a7",
-    "family": "a7",
+    "family": "av1",
     "category": "general",
     "vcpus": 8,
     "memory": 56,
@@ -177,7 +177,7 @@
   },
   {
     "id": "a8-v2",
-    "family": "a8-v2",
+    "family": "av2",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -193,7 +193,7 @@
   },
   {
     "id": "a8m-v2",
-    "family": "a8m-v2",
+    "family": "av2",
     "category": "general",
     "vcpus": 8,
     "memory": 64,
@@ -209,7 +209,7 @@
   },
   {
     "id": "b12ms",
-    "family": "b12ms",
+    "family": "bv1",
     "category": "general",
     "vcpus": 12,
     "memory": 48,
@@ -225,7 +225,7 @@
   },
   {
     "id": "b16als-v2",
-    "family": "b16als-v2",
+    "family": "basv2",
     "category": "general",
     "vcpus": 16,
     "memory": 32,
@@ -237,7 +237,7 @@
   },
   {
     "id": "b16as-v2",
-    "family": "b16as-v2",
+    "family": "basv2",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -249,7 +249,7 @@
   },
   {
     "id": "b16ls-v2",
-    "family": "b16ls-v2",
+    "family": "bsv2",
     "category": "general",
     "vcpus": 16,
     "memory": 32,
@@ -262,7 +262,7 @@
   },
   {
     "id": "b16ms",
-    "family": "b16ms",
+    "family": "bv1",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -278,7 +278,7 @@
   },
   {
     "id": "b16pls-v2",
-    "family": "b16pls-v2",
+    "family": "bpsv2",
     "category": "general",
     "vcpus": 16,
     "memory": 32,
@@ -290,7 +290,7 @@
   },
   {
     "id": "b16ps-v2",
-    "family": "b16ps-v2",
+    "family": "bpsv2",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -302,7 +302,7 @@
   },
   {
     "id": "b16s-v2",
-    "family": "b16s-v2",
+    "family": "bsv2",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -315,7 +315,7 @@
   },
   {
     "id": "b1ls",
-    "family": "b1ls",
+    "family": "bv1",
     "category": "general",
     "vcpus": 1,
     "memory": 0.5,
@@ -331,7 +331,7 @@
   },
   {
     "id": "b1ms",
-    "family": "b1ms",
+    "family": "bv1",
     "category": "general",
     "vcpus": 1,
     "memory": 2,
@@ -347,7 +347,7 @@
   },
   {
     "id": "b1s",
-    "family": "b1s",
+    "family": "bv1",
     "category": "general",
     "vcpus": 1,
     "memory": 1,
@@ -363,7 +363,7 @@
   },
   {
     "id": "b20ms",
-    "family": "b20ms",
+    "family": "bv1",
     "category": "general",
     "vcpus": 20,
     "memory": 80,
@@ -379,7 +379,7 @@
   },
   {
     "id": "b2als-v2",
-    "family": "b2als-v2",
+    "family": "basv2",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -391,7 +391,7 @@
   },
   {
     "id": "b2as-v2",
-    "family": "b2as-v2",
+    "family": "basv2",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -403,7 +403,7 @@
   },
   {
     "id": "b2ats-v2",
-    "family": "b2ats-v2",
+    "family": "basv2",
     "category": "general",
     "vcpus": 2,
     "memory": 1,
@@ -415,7 +415,7 @@
   },
   {
     "id": "b2ls-v2",
-    "family": "b2ls-v2",
+    "family": "bsv2",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -428,7 +428,7 @@
   },
   {
     "id": "b2ms",
-    "family": "b2ms",
+    "family": "bv1",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -444,7 +444,7 @@
   },
   {
     "id": "b2pls-v2",
-    "family": "b2pls-v2",
+    "family": "bpsv2",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -456,7 +456,7 @@
   },
   {
     "id": "b2ps-v2",
-    "family": "b2ps-v2",
+    "family": "bpsv2",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -468,7 +468,7 @@
   },
   {
     "id": "b2pts-v2",
-    "family": "b2pts-v2",
+    "family": "bpsv2",
     "category": "general",
     "vcpus": 2,
     "memory": 1,
@@ -480,7 +480,7 @@
   },
   {
     "id": "b2s",
-    "family": "b2s",
+    "family": "bv1",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -496,7 +496,7 @@
   },
   {
     "id": "b2s-v2",
-    "family": "b2s-v2",
+    "family": "bsv2",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -509,7 +509,7 @@
   },
   {
     "id": "b2ts-v2",
-    "family": "b2ts-v2",
+    "family": "bsv2",
     "category": "general",
     "vcpus": 2,
     "memory": 1,
@@ -522,7 +522,7 @@
   },
   {
     "id": "b32als-v2",
-    "family": "b32als-v2",
+    "family": "basv2",
     "category": "general",
     "vcpus": 32,
     "memory": 64,
@@ -534,7 +534,7 @@
   },
   {
     "id": "b32as-v2",
-    "family": "b32as-v2",
+    "family": "basv2",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -546,7 +546,7 @@
   },
   {
     "id": "b32ls-v2",
-    "family": "b32ls-v2",
+    "family": "bsv2",
     "category": "general",
     "vcpus": 32,
     "memory": 64,
@@ -559,7 +559,7 @@
   },
   {
     "id": "b32s-v2",
-    "family": "b32s-v2",
+    "family": "bsv2",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -572,7 +572,7 @@
   },
   {
     "id": "b4als-v2",
-    "family": "b4als-v2",
+    "family": "basv2",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -584,7 +584,7 @@
   },
   {
     "id": "b4as-v2",
-    "family": "b4as-v2",
+    "family": "basv2",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -596,7 +596,7 @@
   },
   {
     "id": "b4ls-v2",
-    "family": "b4ls-v2",
+    "family": "bsv2",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -609,7 +609,7 @@
   },
   {
     "id": "b4ms",
-    "family": "b4ms",
+    "family": "bv1",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -625,7 +625,7 @@
   },
   {
     "id": "b4pls-v2",
-    "family": "b4pls-v2",
+    "family": "bpsv2",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -637,7 +637,7 @@
   },
   {
     "id": "b4ps-v2",
-    "family": "b4ps-v2",
+    "family": "bpsv2",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -649,7 +649,7 @@
   },
   {
     "id": "b4s-v2",
-    "family": "b4s-v2",
+    "family": "bsv2",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -662,7 +662,7 @@
   },
   {
     "id": "b8als-v2",
-    "family": "b8als-v2",
+    "family": "basv2",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -674,7 +674,7 @@
   },
   {
     "id": "b8as-v2",
-    "family": "b8as-v2",
+    "family": "basv2",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -686,7 +686,7 @@
   },
   {
     "id": "b8ls-v2",
-    "family": "b8ls-v2",
+    "family": "bsv2",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -699,7 +699,7 @@
   },
   {
     "id": "b8ms",
-    "family": "b8ms",
+    "family": "bv1",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -715,7 +715,7 @@
   },
   {
     "id": "b8pls-v2",
-    "family": "b8pls-v2",
+    "family": "bpsv2",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -727,7 +727,7 @@
   },
   {
     "id": "b8ps-v2",
-    "family": "b8ps-v2",
+    "family": "bpsv2",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -739,7 +739,7 @@
   },
   {
     "id": "b8s-v2",
-    "family": "b8s-v2",
+    "family": "bsv2",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -752,7 +752,7 @@
   },
   {
     "id": "d1",
-    "family": "d1",
+    "family": "dv1",
     "category": "general",
     "vcpus": 1,
     "memory": 3.5,
@@ -764,7 +764,7 @@
   },
   {
     "id": "d1-v2",
-    "family": "d1-v2",
+    "family": "dv2",
     "category": "general",
     "vcpus": 1,
     "memory": 3.5,
@@ -780,7 +780,7 @@
   },
   {
     "id": "d11",
-    "family": "d11",
+    "family": "dv1",
     "category": "general",
     "vcpus": 2,
     "memory": 14,
@@ -792,7 +792,7 @@
   },
   {
     "id": "d11-v2",
-    "family": "d11-v2",
+    "family": "dv2-11-15",
     "category": "general",
     "vcpus": 2,
     "memory": 14,
@@ -808,7 +808,7 @@
   },
   {
     "id": "d11s",
-    "family": "d11s",
+    "family": "dsv1",
     "category": "general",
     "vcpus": 2,
     "memory": 14,
@@ -820,7 +820,7 @@
   },
   {
     "id": "d12",
-    "family": "d12",
+    "family": "dv1",
     "category": "general",
     "vcpus": 4,
     "memory": 28,
@@ -832,7 +832,7 @@
   },
   {
     "id": "d12-v2",
-    "family": "d12-v2",
+    "family": "dv2-11-15",
     "category": "general",
     "vcpus": 4,
     "memory": 28,
@@ -848,7 +848,7 @@
   },
   {
     "id": "d128ds-v6",
-    "family": "d128ds-v6",
+    "family": "ddsv6",
     "category": "general",
     "vcpus": 128,
     "memory": 512,
@@ -860,7 +860,7 @@
   },
   {
     "id": "d128lds-v6",
-    "family": "d128lds-v6",
+    "family": "dldsv6",
     "category": "general",
     "vcpus": 128,
     "memory": 256,
@@ -872,7 +872,7 @@
   },
   {
     "id": "d128ls-v6",
-    "family": "d128ls-v6",
+    "family": "dlsv6",
     "category": "general",
     "vcpus": 128,
     "memory": 256,
@@ -884,7 +884,7 @@
   },
   {
     "id": "d128s-v6",
-    "family": "d128s-v6",
+    "family": "dsv6",
     "category": "general",
     "vcpus": 128,
     "memory": 512,
@@ -896,7 +896,7 @@
   },
   {
     "id": "d12s",
-    "family": "d12s",
+    "family": "dsv1",
     "category": "general",
     "vcpus": 4,
     "memory": 28,
@@ -908,7 +908,7 @@
   },
   {
     "id": "d13",
-    "family": "d13",
+    "family": "dv1",
     "category": "general",
     "vcpus": 8,
     "memory": 56,
@@ -920,7 +920,7 @@
   },
   {
     "id": "d13-v2",
-    "family": "d13-v2",
+    "family": "dv2-11-15",
     "category": "general",
     "vcpus": 8,
     "memory": 56,
@@ -936,7 +936,7 @@
   },
   {
     "id": "d13s",
-    "family": "d13s",
+    "family": "dsv1",
     "category": "general",
     "vcpus": 8,
     "memory": 56,
@@ -948,7 +948,7 @@
   },
   {
     "id": "d14",
-    "family": "d14",
+    "family": "dv1",
     "category": "general",
     "vcpus": 16,
     "memory": 112,
@@ -960,7 +960,7 @@
   },
   {
     "id": "d14-v2",
-    "family": "d14-v2",
+    "family": "dv2-11-15",
     "category": "general",
     "vcpus": 16,
     "memory": 112,
@@ -976,7 +976,7 @@
   },
   {
     "id": "d14s",
-    "family": "d14s",
+    "family": "dsv1",
     "category": "general",
     "vcpus": 16,
     "memory": 112,
@@ -988,7 +988,7 @@
   },
   {
     "id": "d15-v2",
-    "family": "d15-v2",
+    "family": "dv2-11-15",
     "category": "general",
     "vcpus": 20,
     "memory": 140,
@@ -1004,7 +1004,7 @@
   },
   {
     "id": "d16-v3",
-    "family": "d16-v3",
+    "family": "dv3",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1020,7 +1020,7 @@
   },
   {
     "id": "d16-v4",
-    "family": "d16-v4",
+    "family": "dv4",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1034,7 +1034,7 @@
   },
   {
     "id": "d16-v5",
-    "family": "d16-v5",
+    "family": "dv5",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1047,7 +1047,7 @@
   },
   {
     "id": "d16a-v4",
-    "family": "d16a-v4",
+    "family": "dav4",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1060,7 +1060,7 @@
   },
   {
     "id": "d16ads-v5",
-    "family": "d16ads-v5",
+    "family": "dadsv5",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1072,7 +1072,7 @@
   },
   {
     "id": "d16ads-v6",
-    "family": "d16ads-v6",
+    "family": "dadsv6",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1084,7 +1084,7 @@
   },
   {
     "id": "d16alds-v6",
-    "family": "d16alds-v6",
+    "family": "daldsv6",
     "category": "general",
     "vcpus": 16,
     "memory": 32,
@@ -1096,7 +1096,7 @@
   },
   {
     "id": "d16als-v6",
-    "family": "d16als-v6",
+    "family": "dalsv6",
     "category": "general",
     "vcpus": 16,
     "memory": 32,
@@ -1108,7 +1108,7 @@
   },
   {
     "id": "d16as-v4",
-    "family": "d16as-v4",
+    "family": "dasv4",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1121,7 +1121,7 @@
   },
   {
     "id": "d16as-v5",
-    "family": "d16as-v5",
+    "family": "dasv5",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1133,7 +1133,7 @@
   },
   {
     "id": "d16as-v6",
-    "family": "d16as-v6",
+    "family": "dasv6",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1145,7 +1145,7 @@
   },
   {
     "id": "d16d-v4",
-    "family": "d16d-v4",
+    "family": "ddv4",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1158,7 +1158,7 @@
   },
   {
     "id": "d16d-v5",
-    "family": "d16d-v5",
+    "family": "ddv5",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1170,7 +1170,7 @@
   },
   {
     "id": "d16ds-v4",
-    "family": "d16ds-v4",
+    "family": "ddsv4",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1183,7 +1183,7 @@
   },
   {
     "id": "d16ds-v5",
-    "family": "d16ds-v5",
+    "family": "ddsv5",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1195,7 +1195,7 @@
   },
   {
     "id": "d16ds-v6",
-    "family": "d16ds-v6",
+    "family": "ddsv6",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1207,7 +1207,7 @@
   },
   {
     "id": "d16lds-v5",
-    "family": "d16lds-v5",
+    "family": "dldsv5",
     "category": "general",
     "vcpus": 16,
     "memory": 32,
@@ -1220,7 +1220,7 @@
   },
   {
     "id": "d16lds-v6",
-    "family": "d16lds-v6",
+    "family": "dldsv6",
     "category": "general",
     "vcpus": 16,
     "memory": 32,
@@ -1232,7 +1232,7 @@
   },
   {
     "id": "d16ls-v5",
-    "family": "d16ls-v5",
+    "family": "dlsv5",
     "category": "general",
     "vcpus": 16,
     "memory": 32,
@@ -1245,7 +1245,7 @@
   },
   {
     "id": "d16ls-v6",
-    "family": "d16ls-v6",
+    "family": "dlsv6",
     "category": "general",
     "vcpus": 16,
     "memory": 32,
@@ -1257,7 +1257,7 @@
   },
   {
     "id": "d16pds-v5",
-    "family": "d16pds-v5",
+    "family": "dpdsv5",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1269,7 +1269,7 @@
   },
   {
     "id": "d16pds-v6",
-    "family": "d16pds-v6",
+    "family": "dpdsv6",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1281,7 +1281,7 @@
   },
   {
     "id": "d16plds-v5",
-    "family": "d16plds-v5",
+    "family": "dpldsv5",
     "category": "general",
     "vcpus": 16,
     "memory": 32,
@@ -1293,7 +1293,7 @@
   },
   {
     "id": "d16plds-v6",
-    "family": "d16plds-v6",
+    "family": "dpldsv6",
     "category": "general",
     "vcpus": 16,
     "memory": 32,
@@ -1305,7 +1305,7 @@
   },
   {
     "id": "d16pls-v5",
-    "family": "d16pls-v5",
+    "family": "dplsv5",
     "category": "general",
     "vcpus": 16,
     "memory": 32,
@@ -1317,7 +1317,7 @@
   },
   {
     "id": "d16pls-v6",
-    "family": "d16pls-v6",
+    "family": "dplsv6",
     "category": "general",
     "vcpus": 16,
     "memory": 32,
@@ -1329,7 +1329,7 @@
   },
   {
     "id": "d16ps-v5",
-    "family": "d16ps-v5",
+    "family": "dpsv5",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1341,7 +1341,7 @@
   },
   {
     "id": "d16ps-v6",
-    "family": "d16ps-v6",
+    "family": "dpsv6",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1353,7 +1353,7 @@
   },
   {
     "id": "d16s-v3",
-    "family": "d16s-v3",
+    "family": "dsv3",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1369,7 +1369,7 @@
   },
   {
     "id": "d16s-v4",
-    "family": "d16s-v4",
+    "family": "dsv4",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1383,7 +1383,7 @@
   },
   {
     "id": "d16s-v5",
-    "family": "d16s-v5",
+    "family": "dsv5",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1396,7 +1396,7 @@
   },
   {
     "id": "d16s-v6",
-    "family": "d16s-v6",
+    "family": "dsv6",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1408,7 +1408,7 @@
   },
   {
     "id": "d1s",
-    "family": "d1s",
+    "family": "dsv1",
     "category": "general",
     "vcpus": 1,
     "memory": 3.5,
@@ -1420,7 +1420,7 @@
   },
   {
     "id": "d2",
-    "family": "d2",
+    "family": "dv1",
     "category": "general",
     "vcpus": 2,
     "memory": 7,
@@ -1432,7 +1432,7 @@
   },
   {
     "id": "d2-v2",
-    "family": "d2-v2",
+    "family": "dv2",
     "category": "general",
     "vcpus": 2,
     "memory": 7,
@@ -1448,7 +1448,7 @@
   },
   {
     "id": "d2-v3",
-    "family": "d2-v3",
+    "family": "dv3",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1464,7 +1464,7 @@
   },
   {
     "id": "d2-v4",
-    "family": "d2-v4",
+    "family": "dv4",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1478,7 +1478,7 @@
   },
   {
     "id": "d2-v5",
-    "family": "d2-v5",
+    "family": "dv5",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1491,7 +1491,7 @@
   },
   {
     "id": "d2a-v4",
-    "family": "d2a-v4",
+    "family": "dav4",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1504,7 +1504,7 @@
   },
   {
     "id": "d2ads-v5",
-    "family": "d2ads-v5",
+    "family": "dadsv5",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1516,7 +1516,7 @@
   },
   {
     "id": "d2ads-v6",
-    "family": "d2ads-v6",
+    "family": "dadsv6",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1528,7 +1528,7 @@
   },
   {
     "id": "d2alds-v6",
-    "family": "d2alds-v6",
+    "family": "daldsv6",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -1540,7 +1540,7 @@
   },
   {
     "id": "d2als-v6",
-    "family": "d2als-v6",
+    "family": "dalsv6",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -1552,7 +1552,7 @@
   },
   {
     "id": "d2as-v4",
-    "family": "d2as-v4",
+    "family": "dasv4",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1565,7 +1565,7 @@
   },
   {
     "id": "d2as-v5",
-    "family": "d2as-v5",
+    "family": "dasv5",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1577,7 +1577,7 @@
   },
   {
     "id": "d2as-v6",
-    "family": "d2as-v6",
+    "family": "dasv6",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1589,7 +1589,7 @@
   },
   {
     "id": "d2d-v4",
-    "family": "d2d-v4",
+    "family": "ddv4",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1602,7 +1602,7 @@
   },
   {
     "id": "d2d-v5",
-    "family": "d2d-v5",
+    "family": "ddv5",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1614,7 +1614,7 @@
   },
   {
     "id": "d2ds-v4",
-    "family": "d2ds-v4",
+    "family": "ddsv4",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1627,7 +1627,7 @@
   },
   {
     "id": "d2ds-v5",
-    "family": "d2ds-v5",
+    "family": "ddsv5",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1639,7 +1639,7 @@
   },
   {
     "id": "d2ds-v6",
-    "family": "d2ds-v6",
+    "family": "ddsv6",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1651,7 +1651,7 @@
   },
   {
     "id": "d2lds-v5",
-    "family": "d2lds-v5",
+    "family": "dldsv5",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -1664,7 +1664,7 @@
   },
   {
     "id": "d2lds-v6",
-    "family": "d2lds-v6",
+    "family": "dldsv6",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -1676,7 +1676,7 @@
   },
   {
     "id": "d2ls-v5",
-    "family": "d2ls-v5",
+    "family": "dlsv5",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -1689,7 +1689,7 @@
   },
   {
     "id": "d2ls-v6",
-    "family": "d2ls-v6",
+    "family": "dlsv6",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -1701,7 +1701,7 @@
   },
   {
     "id": "d2pds-v5",
-    "family": "d2pds-v5",
+    "family": "dpdsv5",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1713,7 +1713,7 @@
   },
   {
     "id": "d2pds-v6",
-    "family": "d2pds-v6",
+    "family": "dpdsv6",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1725,7 +1725,7 @@
   },
   {
     "id": "d2plds-v5",
-    "family": "d2plds-v5",
+    "family": "dpldsv5",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -1737,7 +1737,7 @@
   },
   {
     "id": "d2plds-v6",
-    "family": "d2plds-v6",
+    "family": "dpldsv6",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -1749,7 +1749,7 @@
   },
   {
     "id": "d2pls-v5",
-    "family": "d2pls-v5",
+    "family": "dplsv5",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -1761,7 +1761,7 @@
   },
   {
     "id": "d2pls-v6",
-    "family": "d2pls-v6",
+    "family": "dplsv6",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -1773,7 +1773,7 @@
   },
   {
     "id": "d2ps-v5",
-    "family": "d2ps-v5",
+    "family": "dpsv5",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1785,7 +1785,7 @@
   },
   {
     "id": "d2ps-v6",
-    "family": "d2ps-v6",
+    "family": "dpsv6",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1797,7 +1797,7 @@
   },
   {
     "id": "d2s",
-    "family": "d2s",
+    "family": "dsv1",
     "category": "general",
     "vcpus": 2,
     "memory": 7,
@@ -1809,7 +1809,7 @@
   },
   {
     "id": "d2s-v3",
-    "family": "d2s-v3",
+    "family": "dsv3",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1825,7 +1825,7 @@
   },
   {
     "id": "d2s-v4",
-    "family": "d2s-v4",
+    "family": "dsv4",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1839,7 +1839,7 @@
   },
   {
     "id": "d2s-v5",
-    "family": "d2s-v5",
+    "family": "dsv5",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1852,7 +1852,7 @@
   },
   {
     "id": "d2s-v6",
-    "family": "d2s-v6",
+    "family": "dsv6",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1864,7 +1864,7 @@
   },
   {
     "id": "d3",
-    "family": "d3",
+    "family": "dv1",
     "category": "general",
     "vcpus": 4,
     "memory": 14,
@@ -1876,7 +1876,7 @@
   },
   {
     "id": "d3-v2",
-    "family": "d3-v2",
+    "family": "dv2",
     "category": "general",
     "vcpus": 4,
     "memory": 14,
@@ -1892,7 +1892,7 @@
   },
   {
     "id": "d32-v3",
-    "family": "d32-v3",
+    "family": "dv3",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -1908,7 +1908,7 @@
   },
   {
     "id": "d32-v4",
-    "family": "d32-v4",
+    "family": "dv4",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -1922,7 +1922,7 @@
   },
   {
     "id": "d32-v5",
-    "family": "d32-v5",
+    "family": "dv5",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -1935,7 +1935,7 @@
   },
   {
     "id": "d32a-v4",
-    "family": "d32a-v4",
+    "family": "dav4",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -1948,7 +1948,7 @@
   },
   {
     "id": "d32ads-v5",
-    "family": "d32ads-v5",
+    "family": "dadsv5",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -1960,7 +1960,7 @@
   },
   {
     "id": "d32ads-v6",
-    "family": "d32ads-v6",
+    "family": "dadsv6",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -1972,7 +1972,7 @@
   },
   {
     "id": "d32alds-v6",
-    "family": "d32alds-v6",
+    "family": "daldsv6",
     "category": "general",
     "vcpus": 32,
     "memory": 64,
@@ -1984,7 +1984,7 @@
   },
   {
     "id": "d32als-v6",
-    "family": "d32als-v6",
+    "family": "dalsv6",
     "category": "general",
     "vcpus": 32,
     "memory": 64,
@@ -1996,7 +1996,7 @@
   },
   {
     "id": "d32as-v4",
-    "family": "d32as-v4",
+    "family": "dasv4",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -2009,7 +2009,7 @@
   },
   {
     "id": "d32as-v5",
-    "family": "d32as-v5",
+    "family": "dasv5",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -2021,7 +2021,7 @@
   },
   {
     "id": "d32as-v6",
-    "family": "d32as-v6",
+    "family": "dasv6",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -2033,7 +2033,7 @@
   },
   {
     "id": "d32d-v4",
-    "family": "d32d-v4",
+    "family": "ddv4",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -2046,7 +2046,7 @@
   },
   {
     "id": "d32d-v5",
-    "family": "d32d-v5",
+    "family": "ddv5",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -2058,7 +2058,7 @@
   },
   {
     "id": "d32ds-v4",
-    "family": "d32ds-v4",
+    "family": "ddsv4",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -2071,7 +2071,7 @@
   },
   {
     "id": "d32ds-v5",
-    "family": "d32ds-v5",
+    "family": "ddsv5",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -2083,7 +2083,7 @@
   },
   {
     "id": "d32ds-v6",
-    "family": "d32ds-v6",
+    "family": "ddsv6",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -2095,7 +2095,7 @@
   },
   {
     "id": "d32lds-v5",
-    "family": "d32lds-v5",
+    "family": "dldsv5",
     "category": "general",
     "vcpus": 32,
     "memory": 64,
@@ -2108,7 +2108,7 @@
   },
   {
     "id": "d32lds-v6",
-    "family": "d32lds-v6",
+    "family": "dldsv6",
     "category": "general",
     "vcpus": 32,
     "memory": 64,
@@ -2120,7 +2120,7 @@
   },
   {
     "id": "d32ls-v5",
-    "family": "d32ls-v5",
+    "family": "dlsv5",
     "category": "general",
     "vcpus": 32,
     "memory": 64,
@@ -2133,7 +2133,7 @@
   },
   {
     "id": "d32ls-v6",
-    "family": "d32ls-v6",
+    "family": "dlsv6",
     "category": "general",
     "vcpus": 32,
     "memory": 64,
@@ -2145,7 +2145,7 @@
   },
   {
     "id": "d32pds-v5",
-    "family": "d32pds-v5",
+    "family": "dpdsv5",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -2157,7 +2157,7 @@
   },
   {
     "id": "d32pds-v6",
-    "family": "d32pds-v6",
+    "family": "dpdsv6",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -2169,7 +2169,7 @@
   },
   {
     "id": "d32plds-v5",
-    "family": "d32plds-v5",
+    "family": "dpldsv5",
     "category": "general",
     "vcpus": 32,
     "memory": 64,
@@ -2181,7 +2181,7 @@
   },
   {
     "id": "d32plds-v6",
-    "family": "d32plds-v6",
+    "family": "dpldsv6",
     "category": "general",
     "vcpus": 32,
     "memory": 64,
@@ -2193,7 +2193,7 @@
   },
   {
     "id": "d32pls-v5",
-    "family": "d32pls-v5",
+    "family": "dplsv5",
     "category": "general",
     "vcpus": 32,
     "memory": 64,
@@ -2205,7 +2205,7 @@
   },
   {
     "id": "d32pls-v6",
-    "family": "d32pls-v6",
+    "family": "dplsv6",
     "category": "general",
     "vcpus": 32,
     "memory": 64,
@@ -2217,7 +2217,7 @@
   },
   {
     "id": "d32ps-v5",
-    "family": "d32ps-v5",
+    "family": "dpsv5",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -2229,7 +2229,7 @@
   },
   {
     "id": "d32ps-v6",
-    "family": "d32ps-v6",
+    "family": "dpsv6",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -2241,7 +2241,7 @@
   },
   {
     "id": "d32s-v3",
-    "family": "d32s-v3",
+    "family": "dsv3",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -2257,7 +2257,7 @@
   },
   {
     "id": "d32s-v4",
-    "family": "d32s-v4",
+    "family": "dsv4",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -2271,7 +2271,7 @@
   },
   {
     "id": "d32s-v5",
-    "family": "d32s-v5",
+    "family": "dsv5",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -2284,7 +2284,7 @@
   },
   {
     "id": "d32s-v6",
-    "family": "d32s-v6",
+    "family": "dsv6",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -2296,7 +2296,7 @@
   },
   {
     "id": "d3s",
-    "family": "d3s",
+    "family": "dsv1",
     "category": "general",
     "vcpus": 4,
     "memory": 14,
@@ -2308,7 +2308,7 @@
   },
   {
     "id": "d4",
-    "family": "d4",
+    "family": "dv1",
     "category": "general",
     "vcpus": 8,
     "memory": 28,
@@ -2320,7 +2320,7 @@
   },
   {
     "id": "d4-v2",
-    "family": "d4-v2",
+    "family": "dv2",
     "category": "general",
     "vcpus": 8,
     "memory": 28,
@@ -2336,7 +2336,7 @@
   },
   {
     "id": "d4-v3",
-    "family": "d4-v3",
+    "family": "dv3",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -2352,7 +2352,7 @@
   },
   {
     "id": "d4-v4",
-    "family": "d4-v4",
+    "family": "dv4",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -2366,7 +2366,7 @@
   },
   {
     "id": "d4-v5",
-    "family": "d4-v5",
+    "family": "dv5",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -2379,7 +2379,7 @@
   },
   {
     "id": "d48-v3",
-    "family": "d48-v3",
+    "family": "dv3",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2395,7 +2395,7 @@
   },
   {
     "id": "d48-v4",
-    "family": "d48-v4",
+    "family": "dv4",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2409,7 +2409,7 @@
   },
   {
     "id": "d48-v5",
-    "family": "d48-v5",
+    "family": "dv5",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2422,7 +2422,7 @@
   },
   {
     "id": "d48a-v4",
-    "family": "d48a-v4",
+    "family": "dav4",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2435,7 +2435,7 @@
   },
   {
     "id": "d48ads-v5",
-    "family": "d48ads-v5",
+    "family": "dadsv5",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2447,7 +2447,7 @@
   },
   {
     "id": "d48ads-v6",
-    "family": "d48ads-v6",
+    "family": "dadsv6",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2459,7 +2459,7 @@
   },
   {
     "id": "d48alds-v6",
-    "family": "d48alds-v6",
+    "family": "daldsv6",
     "category": "general",
     "vcpus": 48,
     "memory": 96,
@@ -2471,7 +2471,7 @@
   },
   {
     "id": "d48als-v6",
-    "family": "d48als-v6",
+    "family": "dalsv6",
     "category": "general",
     "vcpus": 48,
     "memory": 96,
@@ -2483,7 +2483,7 @@
   },
   {
     "id": "d48as-v4",
-    "family": "d48as-v4",
+    "family": "dasv4",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2496,7 +2496,7 @@
   },
   {
     "id": "d48as-v5",
-    "family": "d48as-v5",
+    "family": "dasv5",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2508,7 +2508,7 @@
   },
   {
     "id": "d48as-v6",
-    "family": "d48as-v6",
+    "family": "dasv6",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2520,7 +2520,7 @@
   },
   {
     "id": "d48d-v4",
-    "family": "d48d-v4",
+    "family": "ddv4",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2533,7 +2533,7 @@
   },
   {
     "id": "d48d-v5",
-    "family": "d48d-v5",
+    "family": "ddv5",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2545,7 +2545,7 @@
   },
   {
     "id": "d48ds-v4",
-    "family": "d48ds-v4",
+    "family": "ddsv4",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2558,7 +2558,7 @@
   },
   {
     "id": "d48ds-v5",
-    "family": "d48ds-v5",
+    "family": "ddsv5",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2570,7 +2570,7 @@
   },
   {
     "id": "d48ds-v6",
-    "family": "d48ds-v6",
+    "family": "ddsv6",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2582,7 +2582,7 @@
   },
   {
     "id": "d48lds-v5",
-    "family": "d48lds-v5",
+    "family": "dldsv5",
     "category": "general",
     "vcpus": 48,
     "memory": 96,
@@ -2595,7 +2595,7 @@
   },
   {
     "id": "d48lds-v6",
-    "family": "d48lds-v6",
+    "family": "dldsv6",
     "category": "general",
     "vcpus": 48,
     "memory": 96,
@@ -2607,7 +2607,7 @@
   },
   {
     "id": "d48ls-v5",
-    "family": "d48ls-v5",
+    "family": "dlsv5",
     "category": "general",
     "vcpus": 48,
     "memory": 96,
@@ -2620,7 +2620,7 @@
   },
   {
     "id": "d48ls-v6",
-    "family": "d48ls-v6",
+    "family": "dlsv6",
     "category": "general",
     "vcpus": 48,
     "memory": 96,
@@ -2632,7 +2632,7 @@
   },
   {
     "id": "d48pds-v5",
-    "family": "d48pds-v5",
+    "family": "dpdsv5",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2644,7 +2644,7 @@
   },
   {
     "id": "d48pds-v6",
-    "family": "d48pds-v6",
+    "family": "dpdsv6",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2656,7 +2656,7 @@
   },
   {
     "id": "d48plds-v5",
-    "family": "d48plds-v5",
+    "family": "dpldsv5",
     "category": "general",
     "vcpus": 48,
     "memory": 96,
@@ -2668,7 +2668,7 @@
   },
   {
     "id": "d48plds-v6",
-    "family": "d48plds-v6",
+    "family": "dpldsv6",
     "category": "general",
     "vcpus": 48,
     "memory": 96,
@@ -2680,7 +2680,7 @@
   },
   {
     "id": "d48pls-v5",
-    "family": "d48pls-v5",
+    "family": "dplsv5",
     "category": "general",
     "vcpus": 48,
     "memory": 96,
@@ -2692,7 +2692,7 @@
   },
   {
     "id": "d48pls-v6",
-    "family": "d48pls-v6",
+    "family": "dplsv6",
     "category": "general",
     "vcpus": 48,
     "memory": 96,
@@ -2704,7 +2704,7 @@
   },
   {
     "id": "d48ps-v5",
-    "family": "d48ps-v5",
+    "family": "dpsv5",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2716,7 +2716,7 @@
   },
   {
     "id": "d48ps-v6",
-    "family": "d48ps-v6",
+    "family": "dpsv6",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2728,7 +2728,7 @@
   },
   {
     "id": "d48s-v3",
-    "family": "d48s-v3",
+    "family": "dsv3",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2744,7 +2744,7 @@
   },
   {
     "id": "d48s-v4",
-    "family": "d48s-v4",
+    "family": "dsv4",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2758,7 +2758,7 @@
   },
   {
     "id": "d48s-v5",
-    "family": "d48s-v5",
+    "family": "dsv5",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2771,7 +2771,7 @@
   },
   {
     "id": "d48s-v6",
-    "family": "d48s-v6",
+    "family": "dsv6",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2783,7 +2783,7 @@
   },
   {
     "id": "d4a-v4",
-    "family": "d4a-v4",
+    "family": "dav4",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -2796,7 +2796,7 @@
   },
   {
     "id": "d4ads-v5",
-    "family": "d4ads-v5",
+    "family": "dadsv5",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -2808,7 +2808,7 @@
   },
   {
     "id": "d4ads-v6",
-    "family": "d4ads-v6",
+    "family": "dadsv6",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -2820,7 +2820,7 @@
   },
   {
     "id": "d4alds-v6",
-    "family": "d4alds-v6",
+    "family": "daldsv6",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -2832,7 +2832,7 @@
   },
   {
     "id": "d4als-v6",
-    "family": "d4als-v6",
+    "family": "dalsv6",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -2844,7 +2844,7 @@
   },
   {
     "id": "d4as-v4",
-    "family": "d4as-v4",
+    "family": "dasv4",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -2857,7 +2857,7 @@
   },
   {
     "id": "d4as-v5",
-    "family": "d4as-v5",
+    "family": "dasv5",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -2869,7 +2869,7 @@
   },
   {
     "id": "d4as-v6",
-    "family": "d4as-v6",
+    "family": "dasv6",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -2881,7 +2881,7 @@
   },
   {
     "id": "d4d-v4",
-    "family": "d4d-v4",
+    "family": "ddv4",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -2894,7 +2894,7 @@
   },
   {
     "id": "d4d-v5",
-    "family": "d4d-v5",
+    "family": "ddv5",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -2906,7 +2906,7 @@
   },
   {
     "id": "d4ds-v4",
-    "family": "d4ds-v4",
+    "family": "ddsv4",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -2919,7 +2919,7 @@
   },
   {
     "id": "d4ds-v5",
-    "family": "d4ds-v5",
+    "family": "ddsv5",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -2931,7 +2931,7 @@
   },
   {
     "id": "d4ds-v6",
-    "family": "d4ds-v6",
+    "family": "ddsv6",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -2943,7 +2943,7 @@
   },
   {
     "id": "d4lds-v5",
-    "family": "d4lds-v5",
+    "family": "dldsv5",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -2956,7 +2956,7 @@
   },
   {
     "id": "d4lds-v6",
-    "family": "d4lds-v6",
+    "family": "dldsv6",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -2968,7 +2968,7 @@
   },
   {
     "id": "d4ls-v5",
-    "family": "d4ls-v5",
+    "family": "dlsv5",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -2981,7 +2981,7 @@
   },
   {
     "id": "d4ls-v6",
-    "family": "d4ls-v6",
+    "family": "dlsv6",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -2993,7 +2993,7 @@
   },
   {
     "id": "d4pds-v5",
-    "family": "d4pds-v5",
+    "family": "dpdsv5",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -3005,7 +3005,7 @@
   },
   {
     "id": "d4pds-v6",
-    "family": "d4pds-v6",
+    "family": "dpdsv6",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -3017,7 +3017,7 @@
   },
   {
     "id": "d4plds-v5",
-    "family": "d4plds-v5",
+    "family": "dpldsv5",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -3029,7 +3029,7 @@
   },
   {
     "id": "d4plds-v6",
-    "family": "d4plds-v6",
+    "family": "dpldsv6",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -3041,7 +3041,7 @@
   },
   {
     "id": "d4pls-v5",
-    "family": "d4pls-v5",
+    "family": "dplsv5",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -3053,7 +3053,7 @@
   },
   {
     "id": "d4pls-v6",
-    "family": "d4pls-v6",
+    "family": "dplsv6",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -3065,7 +3065,7 @@
   },
   {
     "id": "d4ps-v5",
-    "family": "d4ps-v5",
+    "family": "dpsv5",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -3077,7 +3077,7 @@
   },
   {
     "id": "d4ps-v6",
-    "family": "d4ps-v6",
+    "family": "dpsv6",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -3089,7 +3089,7 @@
   },
   {
     "id": "d4s",
-    "family": "d4s",
+    "family": "dsv1",
     "category": "general",
     "vcpus": 8,
     "memory": 28,
@@ -3101,7 +3101,7 @@
   },
   {
     "id": "d4s-v3",
-    "family": "d4s-v3",
+    "family": "dsv3",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -3117,7 +3117,7 @@
   },
   {
     "id": "d4s-v4",
-    "family": "d4s-v4",
+    "family": "dsv4",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -3131,7 +3131,7 @@
   },
   {
     "id": "d4s-v5",
-    "family": "d4s-v5",
+    "family": "dsv5",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -3144,7 +3144,7 @@
   },
   {
     "id": "d4s-v6",
-    "family": "d4s-v6",
+    "family": "dsv6",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -3156,7 +3156,7 @@
   },
   {
     "id": "d5-v2",
-    "family": "d5-v2",
+    "family": "dv2",
     "category": "general",
     "vcpus": 16,
     "memory": 56,
@@ -3172,7 +3172,7 @@
   },
   {
     "id": "d64-v3",
-    "family": "d64-v3",
+    "family": "dv3",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3188,7 +3188,7 @@
   },
   {
     "id": "d64-v4",
-    "family": "d64-v4",
+    "family": "dv4",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3202,7 +3202,7 @@
   },
   {
     "id": "d64-v5",
-    "family": "d64-v5",
+    "family": "dsv5",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3215,7 +3215,7 @@
   },
   {
     "id": "d64a-v4",
-    "family": "d64a-v4",
+    "family": "dav4",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3228,7 +3228,7 @@
   },
   {
     "id": "d64ads-v5",
-    "family": "d64ads-v5",
+    "family": "dadsv5",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3240,7 +3240,7 @@
   },
   {
     "id": "d64ads-v6",
-    "family": "d64ads-v6",
+    "family": "dadsv6",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3252,7 +3252,7 @@
   },
   {
     "id": "d64alds-v6",
-    "family": "d64alds-v6",
+    "family": "daldsv6",
     "category": "general",
     "vcpus": 64,
     "memory": 128,
@@ -3264,7 +3264,7 @@
   },
   {
     "id": "d64als-v6",
-    "family": "d64als-v6",
+    "family": "dalsv6",
     "category": "general",
     "vcpus": 64,
     "memory": 128,
@@ -3276,7 +3276,7 @@
   },
   {
     "id": "d64as-v4",
-    "family": "d64as-v4",
+    "family": "dasv4",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3289,7 +3289,7 @@
   },
   {
     "id": "d64as-v5",
-    "family": "d64as-v5",
+    "family": "dasv5",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3301,7 +3301,7 @@
   },
   {
     "id": "d64as-v6",
-    "family": "d64as-v6",
+    "family": "dasv6",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3313,7 +3313,7 @@
   },
   {
     "id": "d64d-v4",
-    "family": "d64d-v4",
+    "family": "ddv4",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3326,7 +3326,7 @@
   },
   {
     "id": "d64d-v5",
-    "family": "d64d-v5",
+    "family": "ddv5",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3338,7 +3338,7 @@
   },
   {
     "id": "d64ds-v4",
-    "family": "d64ds-v4",
+    "family": "ddsv4",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3351,7 +3351,7 @@
   },
   {
     "id": "d64ds-v5",
-    "family": "d64ds-v5",
+    "family": "ddsv5",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3363,7 +3363,7 @@
   },
   {
     "id": "d64ds-v6",
-    "family": "d64ds-v6",
+    "family": "ddsv6",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3375,7 +3375,7 @@
   },
   {
     "id": "d64lds-v5",
-    "family": "d64lds-v5",
+    "family": "dldsv5",
     "category": "general",
     "vcpus": 64,
     "memory": 128,
@@ -3388,7 +3388,7 @@
   },
   {
     "id": "d64lds-v6",
-    "family": "d64lds-v6",
+    "family": "dldsv6",
     "category": "general",
     "vcpus": 64,
     "memory": 128,
@@ -3400,7 +3400,7 @@
   },
   {
     "id": "d64ls-v5",
-    "family": "d64ls-v5",
+    "family": "dlsv5",
     "category": "general",
     "vcpus": 64,
     "memory": 128,
@@ -3413,7 +3413,7 @@
   },
   {
     "id": "d64ls-v6",
-    "family": "d64ls-v6",
+    "family": "dlsv6",
     "category": "general",
     "vcpus": 64,
     "memory": 128,
@@ -3425,7 +3425,7 @@
   },
   {
     "id": "d64pds-v5",
-    "family": "d64pds-v5",
+    "family": "dpdsv5",
     "category": "general",
     "vcpus": 64,
     "memory": 208,
@@ -3437,7 +3437,7 @@
   },
   {
     "id": "d64pds-v6",
-    "family": "d64pds-v6",
+    "family": "dpdsv6",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3449,7 +3449,7 @@
   },
   {
     "id": "d64plds-v5",
-    "family": "d64plds-v5",
+    "family": "dpldsv5",
     "category": "general",
     "vcpus": 64,
     "memory": 128,
@@ -3461,7 +3461,7 @@
   },
   {
     "id": "d64plds-v6",
-    "family": "d64plds-v6",
+    "family": "dpldsv6",
     "category": "general",
     "vcpus": 64,
     "memory": 128,
@@ -3473,7 +3473,7 @@
   },
   {
     "id": "d64pls-v5",
-    "family": "d64pls-v5",
+    "family": "dplsv5",
     "category": "general",
     "vcpus": 64,
     "memory": 128,
@@ -3485,7 +3485,7 @@
   },
   {
     "id": "d64pls-v6",
-    "family": "d64pls-v6",
+    "family": "dplsv6",
     "category": "general",
     "vcpus": 64,
     "memory": 128,
@@ -3497,7 +3497,7 @@
   },
   {
     "id": "d64ps-v5",
-    "family": "d64ps-v5",
+    "family": "dpsv5",
     "category": "general",
     "vcpus": 64,
     "memory": 208,
@@ -3509,7 +3509,7 @@
   },
   {
     "id": "d64ps-v6",
-    "family": "d64ps-v6",
+    "family": "dpsv6",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3521,7 +3521,7 @@
   },
   {
     "id": "d64s-v3",
-    "family": "d64s-v3",
+    "family": "dsv3",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3537,7 +3537,7 @@
   },
   {
     "id": "d64s-v4",
-    "family": "d64s-v4",
+    "family": "dsv4",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3551,7 +3551,7 @@
   },
   {
     "id": "d64s-v5",
-    "family": "d64s-v5",
+    "family": "dsv5",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3564,7 +3564,7 @@
   },
   {
     "id": "d64s-v6",
-    "family": "d64s-v6",
+    "family": "dsv6",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3576,7 +3576,7 @@
   },
   {
     "id": "d8-v3",
-    "family": "d8-v3",
+    "family": "dv3",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3592,7 +3592,7 @@
   },
   {
     "id": "d8-v4",
-    "family": "d8-v4",
+    "family": "dv4",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3606,7 +3606,7 @@
   },
   {
     "id": "d8-v5",
-    "family": "d8-v5",
+    "family": "dv5",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3619,7 +3619,7 @@
   },
   {
     "id": "d8a-v4",
-    "family": "d8a-v4",
+    "family": "dav4",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3632,7 +3632,7 @@
   },
   {
     "id": "d8ads-v5",
-    "family": "d8ads-v5",
+    "family": "dadsv5",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3644,7 +3644,7 @@
   },
   {
     "id": "d8ads-v6",
-    "family": "d8ads-v6",
+    "family": "dadsv6",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3656,7 +3656,7 @@
   },
   {
     "id": "d8alds-v6",
-    "family": "d8alds-v6",
+    "family": "daldsv6",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -3668,7 +3668,7 @@
   },
   {
     "id": "d8als-v6",
-    "family": "d8als-v6",
+    "family": "dalsv6",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -3680,7 +3680,7 @@
   },
   {
     "id": "d8as-v4",
-    "family": "d8as-v4",
+    "family": "dasv4",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3693,7 +3693,7 @@
   },
   {
     "id": "d8as-v5",
-    "family": "d8as-v5",
+    "family": "dasv5",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3705,7 +3705,7 @@
   },
   {
     "id": "d8as-v6",
-    "family": "d8as-v6",
+    "family": "dasv6",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3717,7 +3717,7 @@
   },
   {
     "id": "d8d-v4",
-    "family": "d8d-v4",
+    "family": "ddv4",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3730,7 +3730,7 @@
   },
   {
     "id": "d8d-v5",
-    "family": "d8d-v5",
+    "family": "ddv5",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3742,7 +3742,7 @@
   },
   {
     "id": "d8ds-v4",
-    "family": "d8ds-v4",
+    "family": "ddsv4",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3755,7 +3755,7 @@
   },
   {
     "id": "d8ds-v5",
-    "family": "d8ds-v5",
+    "family": "ddsv5",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3767,7 +3767,7 @@
   },
   {
     "id": "d8ds-v6",
-    "family": "d8ds-v6",
+    "family": "ddsv6",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3779,7 +3779,7 @@
   },
   {
     "id": "d8lds-v5",
-    "family": "d8lds-v5",
+    "family": "dldsv5",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -3792,7 +3792,7 @@
   },
   {
     "id": "d8lds-v6",
-    "family": "d8lds-v6",
+    "family": "dldsv6",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -3804,7 +3804,7 @@
   },
   {
     "id": "d8ls-v5",
-    "family": "d8ls-v5",
+    "family": "dlsv5",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -3817,7 +3817,7 @@
   },
   {
     "id": "d8ls-v6",
-    "family": "d8ls-v6",
+    "family": "dlsv6",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -3829,7 +3829,7 @@
   },
   {
     "id": "d8pds-v5",
-    "family": "d8pds-v5",
+    "family": "dpdsv5",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3841,7 +3841,7 @@
   },
   {
     "id": "d8pds-v6",
-    "family": "d8pds-v6",
+    "family": "dpdsv6",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3853,7 +3853,7 @@
   },
   {
     "id": "d8plds-v5",
-    "family": "d8plds-v5",
+    "family": "dpldsv5",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -3865,7 +3865,7 @@
   },
   {
     "id": "d8plds-v6",
-    "family": "d8plds-v6",
+    "family": "dpldsv6",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -3877,7 +3877,7 @@
   },
   {
     "id": "d8pls-v5",
-    "family": "d8pls-v5",
+    "family": "dplsv5",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -3889,7 +3889,7 @@
   },
   {
     "id": "d8pls-v6",
-    "family": "d8pls-v6",
+    "family": "dplsv6",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -3901,7 +3901,7 @@
   },
   {
     "id": "d8ps-v5",
-    "family": "d8ps-v5",
+    "family": "dpsv5",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3913,7 +3913,7 @@
   },
   {
     "id": "d8ps-v6",
-    "family": "d8ps-v6",
+    "family": "dpsv6",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3925,7 +3925,7 @@
   },
   {
     "id": "d8s-v3",
-    "family": "d8s-v3",
+    "family": "dsv3",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3941,7 +3941,7 @@
   },
   {
     "id": "d8s-v4",
-    "family": "d8s-v4",
+    "family": "dsv4",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3955,7 +3955,7 @@
   },
   {
     "id": "d8s-v5",
-    "family": "d8s-v5",
+    "family": "dsv5",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3968,7 +3968,7 @@
   },
   {
     "id": "d8s-v6",
-    "family": "d8s-v6",
+    "family": "dsv6",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3980,7 +3980,7 @@
   },
   {
     "id": "d96-v5",
-    "family": "d96-v5",
+    "family": "dv5",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -3993,7 +3993,7 @@
   },
   {
     "id": "d96a-v4",
-    "family": "d96a-v4",
+    "family": "dav4",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -4006,7 +4006,7 @@
   },
   {
     "id": "d96ads-v5",
-    "family": "d96ads-v5",
+    "family": "dadsv5",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -4018,7 +4018,7 @@
   },
   {
     "id": "d96ads-v6",
-    "family": "d96ads-v6",
+    "family": "dadsv6",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -4030,7 +4030,7 @@
   },
   {
     "id": "d96alds-v6",
-    "family": "d96alds-v6",
+    "family": "daldsv6",
     "category": "general",
     "vcpus": 96,
     "memory": 192,
@@ -4042,7 +4042,7 @@
   },
   {
     "id": "d96als-v6",
-    "family": "d96als-v6",
+    "family": "dalsv6",
     "category": "general",
     "vcpus": 96,
     "memory": 192,
@@ -4054,7 +4054,7 @@
   },
   {
     "id": "d96as-v4",
-    "family": "d96as-v4",
+    "family": "dasv4",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -4067,7 +4067,7 @@
   },
   {
     "id": "d96as-v5",
-    "family": "d96as-v5",
+    "family": "dasv5",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -4079,7 +4079,7 @@
   },
   {
     "id": "d96as-v6",
-    "family": "d96as-v6",
+    "family": "dasv6",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -4091,7 +4091,7 @@
   },
   {
     "id": "d96d-v5",
-    "family": "d96d-v5",
+    "family": "ddv5",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -4103,7 +4103,7 @@
   },
   {
     "id": "d96ds-v5",
-    "family": "d96ds-v5",
+    "family": "ddsv5",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -4115,7 +4115,7 @@
   },
   {
     "id": "d96ds-v6",
-    "family": "d96ds-v6",
+    "family": "ddsv6",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -4127,7 +4127,7 @@
   },
   {
     "id": "d96lds-v5",
-    "family": "d96lds-v5",
+    "family": "dldsv5",
     "category": "general",
     "vcpus": 96,
     "memory": 192,
@@ -4140,7 +4140,7 @@
   },
   {
     "id": "d96lds-v6",
-    "family": "d96lds-v6",
+    "family": "dldsv6",
     "category": "general",
     "vcpus": 96,
     "memory": 192,
@@ -4152,7 +4152,7 @@
   },
   {
     "id": "d96ls-v5",
-    "family": "d96ls-v5",
+    "family": "dlsv5",
     "category": "general",
     "vcpus": 96,
     "memory": 192,
@@ -4165,7 +4165,7 @@
   },
   {
     "id": "d96ls-v6",
-    "family": "d96ls-v6",
+    "family": "dlsv6",
     "category": "general",
     "vcpus": 96,
     "memory": 192,
@@ -4177,7 +4177,7 @@
   },
   {
     "id": "d96pds-v6",
-    "family": "d96pds-v6",
+    "family": "dpdsv6",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -4189,7 +4189,7 @@
   },
   {
     "id": "d96plds-v6",
-    "family": "d96plds-v6",
+    "family": "dpldsv6",
     "category": "general",
     "vcpus": 96,
     "memory": 192,
@@ -4201,7 +4201,7 @@
   },
   {
     "id": "d96pls-v6",
-    "family": "d96pls-v6",
+    "family": "dplsv6",
     "category": "general",
     "vcpus": 96,
     "memory": 192,
@@ -4213,7 +4213,7 @@
   },
   {
     "id": "d96ps-v6",
-    "family": "d96ps-v6",
+    "family": "dpsv6",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -4225,7 +4225,7 @@
   },
   {
     "id": "d96s-v5",
-    "family": "d96s-v5",
+    "family": "dsv5",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -4238,7 +4238,7 @@
   },
   {
     "id": "d96s-v6",
-    "family": "d96s-v6",
+    "family": "dsv6",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -4250,7 +4250,7 @@
   },
   {
     "id": "dc16ads-cc-v5",
-    "family": "dc16ads-cc-v5",
+    "family": "dcads_cc_v5",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -4262,7 +4262,7 @@
   },
   {
     "id": "dc16ads-v5",
-    "family": "dc16ads-v5",
+    "family": "dcadsv5",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -4274,7 +4274,7 @@
   },
   {
     "id": "dc16as-cc-v5",
-    "family": "dc16as-cc-v5",
+    "family": "dcas_cc_v5",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -4286,7 +4286,7 @@
   },
   {
     "id": "dc16as-v5",
-    "family": "dc16as-v5",
+    "family": "dcasv5",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -4298,7 +4298,7 @@
   },
   {
     "id": "dc16ds-v3",
-    "family": "dc16ds-v3",
+    "family": "dcdsv3",
     "category": "general",
     "vcpus": 16,
     "memory": 128,
@@ -4310,7 +4310,7 @@
   },
   {
     "id": "dc16eds-v5",
-    "family": "dc16eds-v5",
+    "family": "dcedsv5",
     "category": "general",
     "vcpus": 64,
     "memory": 16,
@@ -4322,7 +4322,7 @@
   },
   {
     "id": "dc16es-v5",
-    "family": "dc16es-v5",
+    "family": "dcesv5",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -4334,7 +4334,7 @@
   },
   {
     "id": "dc16s-v3",
-    "family": "dc16s-v3",
+    "family": "dcsv3",
     "category": "general",
     "vcpus": 16,
     "memory": 128,
@@ -4346,7 +4346,7 @@
   },
   {
     "id": "dc1ds-v3",
-    "family": "dc1ds-v3",
+    "family": "dcdsv3",
     "category": "general",
     "vcpus": 1,
     "memory": 8,
@@ -4358,7 +4358,7 @@
   },
   {
     "id": "dc1s-v2",
-    "family": "dc1s-v2",
+    "family": "dcsv2",
     "category": "general",
     "vcpus": 1,
     "memory": 4,
@@ -4370,7 +4370,7 @@
   },
   {
     "id": "dc1s-v3",
-    "family": "dc1s-v3",
+    "family": "dcsv3",
     "category": "general",
     "vcpus": 1,
     "memory": 8,
@@ -4382,7 +4382,7 @@
   },
   {
     "id": "dc24ds-v3",
-    "family": "dc24ds-v3",
+    "family": "dcdsv3",
     "category": "general",
     "vcpus": 24,
     "memory": 192,
@@ -4394,7 +4394,7 @@
   },
   {
     "id": "dc24s-v3",
-    "family": "dc24s-v3",
+    "family": "dcsv3",
     "category": "general",
     "vcpus": 24,
     "memory": 192,
@@ -4406,7 +4406,7 @@
   },
   {
     "id": "dc2ads-v5",
-    "family": "dc2ads-v5",
+    "family": "dcadsv5",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -4418,7 +4418,7 @@
   },
   {
     "id": "dc2as-v5",
-    "family": "dc2as-v5",
+    "family": "dcasv5",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -4430,7 +4430,7 @@
   },
   {
     "id": "dc2ds-v3",
-    "family": "dc2ds-v3",
+    "family": "dcdsv3",
     "category": "general",
     "vcpus": 2,
     "memory": 16,
@@ -4442,7 +4442,7 @@
   },
   {
     "id": "dc2eds-v5",
-    "family": "dc2eds-v5",
+    "family": "dcedsv5",
     "category": "general",
     "vcpus": 8,
     "memory": 2,
@@ -4454,7 +4454,7 @@
   },
   {
     "id": "dc2es-v5",
-    "family": "dc2es-v5",
+    "family": "dcesv5",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -4466,7 +4466,7 @@
   },
   {
     "id": "dc2s-v2",
-    "family": "dc2s-v2",
+    "family": "dcsv2",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -4478,7 +4478,7 @@
   },
   {
     "id": "dc2s-v3",
-    "family": "dc2s-v3",
+    "family": "dcsv3",
     "category": "general",
     "vcpus": 2,
     "memory": 16,
@@ -4490,7 +4490,7 @@
   },
   {
     "id": "dc32ads-cc-v5",
-    "family": "dc32ads-cc-v5",
+    "family": "dcads_cc_v5",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -4502,7 +4502,7 @@
   },
   {
     "id": "dc32ads-v5",
-    "family": "dc32ads-v5",
+    "family": "dcadsv5",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -4514,7 +4514,7 @@
   },
   {
     "id": "dc32as-cc-v5",
-    "family": "dc32as-cc-v5",
+    "family": "dcas_cc_v5",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -4526,7 +4526,7 @@
   },
   {
     "id": "dc32as-v5",
-    "family": "dc32as-v5",
+    "family": "dcasv5",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -4538,7 +4538,7 @@
   },
   {
     "id": "dc32ds-v3",
-    "family": "dc32ds-v3",
+    "family": "dcdsv3",
     "category": "general",
     "vcpus": 32,
     "memory": 256,
@@ -4550,7 +4550,7 @@
   },
   {
     "id": "dc32eds-v5",
-    "family": "dc32eds-v5",
+    "family": "dcedsv5",
     "category": "general",
     "vcpus": 128,
     "memory": 32,
@@ -4562,7 +4562,7 @@
   },
   {
     "id": "dc32es-v5",
-    "family": "dc32es-v5",
+    "family": "dcesv5",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -4574,7 +4574,7 @@
   },
   {
     "id": "dc32s-v3",
-    "family": "dc32s-v3",
+    "family": "dcsv3",
     "category": "general",
     "vcpus": 32,
     "memory": 256,
@@ -4586,7 +4586,7 @@
   },
   {
     "id": "dc48ads-cc-v5",
-    "family": "dc48ads-cc-v5",
+    "family": "dcads_cc_v5",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -4598,7 +4598,7 @@
   },
   {
     "id": "dc48ads-v5",
-    "family": "dc48ads-v5",
+    "family": "dcadsv5",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -4610,7 +4610,7 @@
   },
   {
     "id": "dc48as-cc-v5",
-    "family": "dc48as-cc-v5",
+    "family": "dcas_cc_v5",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -4622,7 +4622,7 @@
   },
   {
     "id": "dc48as-v5",
-    "family": "dc48as-v5",
+    "family": "dcasv5",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -4634,7 +4634,7 @@
   },
   {
     "id": "dc48ds-v3",
-    "family": "dc48ds-v3",
+    "family": "dcdsv3",
     "category": "general",
     "vcpus": 48,
     "memory": 384,
@@ -4646,7 +4646,7 @@
   },
   {
     "id": "dc48eds-v5",
-    "family": "dc48eds-v5",
+    "family": "dcedsv5",
     "category": "general",
     "vcpus": 192,
     "memory": 48,
@@ -4658,7 +4658,7 @@
   },
   {
     "id": "dc48es-v5",
-    "family": "dc48es-v5",
+    "family": "dcesv5",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -4670,7 +4670,7 @@
   },
   {
     "id": "dc48s-v3",
-    "family": "dc48s-v3",
+    "family": "dcsv3",
     "category": "general",
     "vcpus": 48,
     "memory": 384,
@@ -4682,7 +4682,7 @@
   },
   {
     "id": "dc4ads-cc-v5",
-    "family": "dc4ads-cc-v5",
+    "family": "dcads_cc_v5",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -4694,7 +4694,7 @@
   },
   {
     "id": "dc4ads-v5",
-    "family": "dc4ads-v5",
+    "family": "dcadsv5",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -4706,7 +4706,7 @@
   },
   {
     "id": "dc4as-cc-v5",
-    "family": "dc4as-cc-v5",
+    "family": "dcas_cc_v5",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -4718,7 +4718,7 @@
   },
   {
     "id": "dc4as-v5",
-    "family": "dc4as-v5",
+    "family": "dcasv5",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -4730,7 +4730,7 @@
   },
   {
     "id": "dc4ds-v3",
-    "family": "dc4ds-v3",
+    "family": "dcdsv3",
     "category": "general",
     "vcpus": 4,
     "memory": 32,
@@ -4742,7 +4742,7 @@
   },
   {
     "id": "dc4eds-v5",
-    "family": "dc4eds-v5",
+    "family": "dcedsv5",
     "category": "general",
     "vcpus": 16,
     "memory": 4,
@@ -4754,7 +4754,7 @@
   },
   {
     "id": "dc4es-v5",
-    "family": "dc4es-v5",
+    "family": "dcesv5",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -4766,7 +4766,7 @@
   },
   {
     "id": "dc4s-v2",
-    "family": "dc4s-v2",
+    "family": "dcsv2",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -4778,7 +4778,7 @@
   },
   {
     "id": "dc4s-v3",
-    "family": "dc4s-v3",
+    "family": "dcsv3",
     "category": "general",
     "vcpus": 4,
     "memory": 32,
@@ -4790,7 +4790,7 @@
   },
   {
     "id": "dc64ads-cc-v5",
-    "family": "dc64ads-cc-v5",
+    "family": "dcads_cc_v5",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -4802,7 +4802,7 @@
   },
   {
     "id": "dc64ads-v5",
-    "family": "dc64ads-v5",
+    "family": "dcadsv5",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -4814,7 +4814,7 @@
   },
   {
     "id": "dc64as-cc-v5",
-    "family": "dc64as-cc-v5",
+    "family": "dcas_cc_v5",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -4826,7 +4826,7 @@
   },
   {
     "id": "dc64as-v5",
-    "family": "dc64as-v5",
+    "family": "dcasv5",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -4838,7 +4838,7 @@
   },
   {
     "id": "dc64eds-v5",
-    "family": "dc64eds-v5",
+    "family": "dcedsv5",
     "category": "general",
     "vcpus": 256,
     "memory": 64,
@@ -4850,7 +4850,7 @@
   },
   {
     "id": "dc64es-v5",
-    "family": "dc64es-v5",
+    "family": "dcesv5",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -4862,7 +4862,7 @@
   },
   {
     "id": "dc8ads-cc-v5",
-    "family": "dc8ads-cc-v5",
+    "family": "dcads_cc_v5",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -4874,7 +4874,7 @@
   },
   {
     "id": "dc8ads-v5",
-    "family": "dc8ads-v5",
+    "family": "dcadsv5",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -4886,7 +4886,7 @@
   },
   {
     "id": "dc8as-cc-v5",
-    "family": "dc8as-cc-v5",
+    "family": "dcas_cc_v5",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -4898,7 +4898,7 @@
   },
   {
     "id": "dc8as-v5",
-    "family": "dc8as-v5",
+    "family": "dcasv5",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -4910,7 +4910,7 @@
   },
   {
     "id": "dc8ds-v3",
-    "family": "dc8ds-v3",
+    "family": "dcdsv3",
     "category": "general",
     "vcpus": 8,
     "memory": 64,
@@ -4922,7 +4922,7 @@
   },
   {
     "id": "dc8eds-v5",
-    "family": "dc8eds-v5",
+    "family": "dcedsv5",
     "category": "general",
     "vcpus": 32,
     "memory": 8,
@@ -4934,7 +4934,7 @@
   },
   {
     "id": "dc8es-v5",
-    "family": "dc8es-v5",
+    "family": "dcesv5",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -4946,7 +4946,7 @@
   },
   {
     "id": "dc8s-v2",
-    "family": "dc8s-v2",
+    "family": "dcsv2",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -4958,7 +4958,7 @@
   },
   {
     "id": "dc8s-v3",
-    "family": "dc8s-v3",
+    "family": "dcsv3",
     "category": "general",
     "vcpus": 8,
     "memory": 64,
@@ -4970,7 +4970,7 @@
   },
   {
     "id": "dc96ads-cc-v5",
-    "family": "dc96ads-cc-v5",
+    "family": "dcads_cc_v5",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -4982,7 +4982,7 @@
   },
   {
     "id": "dc96ads-v5",
-    "family": "dc96ads-v5",
+    "family": "dcadsv5",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -4994,7 +4994,7 @@
   },
   {
     "id": "dc96as-cc-v5",
-    "family": "dc96as-cc-v5",
+    "family": "dcas_cc_v5",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -5006,7 +5006,7 @@
   },
   {
     "id": "dc96as-v5",
-    "family": "dc96as-v5",
+    "family": "dcasv5",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -5018,7 +5018,7 @@
   },
   {
     "id": "dc96eds-v5",
-    "family": "dc96eds-v5",
+    "family": "dcedsv5",
     "category": "general",
     "vcpus": 384,
     "memory": 96,
@@ -5030,7 +5030,7 @@
   },
   {
     "id": "dc96es-v5",
-    "family": "dc96es-v5",
+    "family": "dcesv5",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -5042,7 +5042,7 @@
   },
   {
     "id": "ds1-v2",
-    "family": "ds1-v2",
+    "family": "dsv2",
     "category": "general",
     "vcpus": 1,
     "memory": 3.5,
@@ -5058,7 +5058,7 @@
   },
   {
     "id": "ds11-v2",
-    "family": "ds11-v2",
+    "family": "dsv2-11-15",
     "category": "general",
     "vcpus": 2,
     "memory": 14,
@@ -5074,7 +5074,7 @@
   },
   {
     "id": "ds12-v2",
-    "family": "ds12-v2",
+    "family": "dsv2-11-15",
     "category": "general",
     "vcpus": 4,
     "memory": 28,
@@ -5090,7 +5090,7 @@
   },
   {
     "id": "ds13-v2",
-    "family": "ds13-v2",
+    "family": "dsv2-11-15",
     "category": "general",
     "vcpus": 8,
     "memory": 56,
@@ -5106,7 +5106,7 @@
   },
   {
     "id": "ds14-v2",
-    "family": "ds14-v2",
+    "family": "dsv2-11-15",
     "category": "general",
     "vcpus": 16,
     "memory": 112,
@@ -5122,7 +5122,7 @@
   },
   {
     "id": "ds15-v2",
-    "family": "ds15-v2",
+    "family": "dsv2-11-15",
     "category": "general",
     "vcpus": 20,
     "memory": 140,
@@ -5138,7 +5138,7 @@
   },
   {
     "id": "ds2-v2",
-    "family": "ds2-v2",
+    "family": "dsv2",
     "category": "general",
     "vcpus": 2,
     "memory": 7,
@@ -5154,7 +5154,7 @@
   },
   {
     "id": "ds3-v2",
-    "family": "ds3-v2",
+    "family": "dsv2",
     "category": "general",
     "vcpus": 4,
     "memory": 14,
@@ -5170,7 +5170,7 @@
   },
   {
     "id": "ds4-v2",
-    "family": "ds4-v2",
+    "family": "dsv2",
     "category": "general",
     "vcpus": 8,
     "memory": 28,
@@ -5186,7 +5186,7 @@
   },
   {
     "id": "ds5-v2",
-    "family": "ds5-v2",
+    "family": "dsv2",
     "category": "general",
     "vcpus": 16,
     "memory": 56,
@@ -5202,7 +5202,7 @@
   },
   {
     "id": "e104i-v5",
-    "family": "e104i-v5",
+    "family": "ev5",
     "category": "memory",
     "vcpus": 104,
     "memory": 672,
@@ -5215,7 +5215,7 @@
   },
   {
     "id": "e104id-v5",
-    "family": "e104id-v5",
+    "family": "edv5",
     "category": "memory",
     "vcpus": 104,
     "memory": 672,
@@ -5227,7 +5227,7 @@
   },
   {
     "id": "e104ids-v5",
-    "family": "e104ids-v5",
+    "family": "edsv5",
     "category": "memory",
     "vcpus": 104,
     "memory": 672,
@@ -5239,7 +5239,7 @@
   },
   {
     "id": "e104is-v5",
-    "family": "e104is-v5",
+    "family": "esv5",
     "category": "memory",
     "vcpus": 104,
     "memory": 672,
@@ -5252,7 +5252,7 @@
   },
   {
     "id": "e112iads-v5",
-    "family": "e112iads-v5",
+    "family": "eadsv5",
     "category": "memory",
     "vcpus": 112,
     "memory": 672,
@@ -5264,7 +5264,7 @@
   },
   {
     "id": "e112ias-v5",
-    "family": "e112ias-v5",
+    "family": "easv5",
     "category": "memory",
     "vcpus": 112,
     "memory": 672,
@@ -5276,7 +5276,7 @@
   },
   {
     "id": "e112ibds-v5",
-    "family": "e112ibds-v5",
+    "family": "ebdsv5",
     "category": "memory",
     "vcpus": 112,
     "memory": 672,
@@ -5288,7 +5288,7 @@
   },
   {
     "id": "e112ibs-v5",
-    "family": "e112ibs-v5",
+    "family": "ebsv5",
     "category": "memory",
     "vcpus": 112,
     "memory": 672,
@@ -5300,7 +5300,7 @@
   },
   {
     "id": "e128ds-v6",
-    "family": "e128ds-v6",
+    "family": "edsv6",
     "category": "memory",
     "vcpus": 128,
     "memory": 1024,
@@ -5312,7 +5312,7 @@
   },
   {
     "id": "e128s-v6",
-    "family": "e128s-v6",
+    "family": "esv6",
     "category": "memory",
     "vcpus": 128,
     "memory": 1024,
@@ -5324,7 +5324,7 @@
   },
   {
     "id": "e16-v3",
-    "family": "e16-v3",
+    "family": "ev3",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5339,7 +5339,7 @@
   },
   {
     "id": "e16-v4",
-    "family": "e16-v4",
+    "family": "ev4",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5353,7 +5353,7 @@
   },
   {
     "id": "e16-v5",
-    "family": "e16-v5",
+    "family": "ev5",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5366,7 +5366,7 @@
   },
   {
     "id": "e16a-v4",
-    "family": "e16a-v4",
+    "family": "eav4",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5379,7 +5379,7 @@
   },
   {
     "id": "e16ads-v5",
-    "family": "e16ads-v5",
+    "family": "eadsv5",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5391,7 +5391,7 @@
   },
   {
     "id": "e16ads-v6",
-    "family": "e16ads-v6",
+    "family": "eadsv6",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5403,7 +5403,7 @@
   },
   {
     "id": "e16as-v4",
-    "family": "e16as-v4",
+    "family": "easv4",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5416,7 +5416,7 @@
   },
   {
     "id": "e16as-v5",
-    "family": "e16as-v5",
+    "family": "easv5",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5428,7 +5428,7 @@
   },
   {
     "id": "e16as-v6",
-    "family": "e16as-v6",
+    "family": "easv6",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5440,7 +5440,7 @@
   },
   {
     "id": "e16bds-v5",
-    "family": "e16bds-v5",
+    "family": "ebdsv5",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5452,7 +5452,7 @@
   },
   {
     "id": "e16bs-v5",
-    "family": "e16bs-v5",
+    "family": "ebsv5",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5464,7 +5464,7 @@
   },
   {
     "id": "e16d-v4",
-    "family": "e16d-v4",
+    "family": "edv4",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5477,7 +5477,7 @@
   },
   {
     "id": "e16d-v5",
-    "family": "e16d-v5",
+    "family": "edv5",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5489,7 +5489,7 @@
   },
   {
     "id": "e16ds-v4",
-    "family": "e16ds-v4",
+    "family": "edsv4",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5502,7 +5502,7 @@
   },
   {
     "id": "e16ds-v5",
-    "family": "e16ds-v5",
+    "family": "edsv5",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5514,7 +5514,7 @@
   },
   {
     "id": "e16ds-v6",
-    "family": "e16ds-v6",
+    "family": "edsv6",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5526,7 +5526,7 @@
   },
   {
     "id": "e16pds-v5",
-    "family": "e16pds-v5",
+    "family": "epdsv5",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5538,7 +5538,7 @@
   },
   {
     "id": "e16pds-v6",
-    "family": "e16pds-v6",
+    "family": "epdsv6",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5550,7 +5550,7 @@
   },
   {
     "id": "e16ps-v5",
-    "family": "e16ps-v5",
+    "family": "epsv5",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5562,7 +5562,7 @@
   },
   {
     "id": "e16ps-v6",
-    "family": "e16ps-v6",
+    "family": "epsv6",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5574,7 +5574,7 @@
   },
   {
     "id": "e16s-v3",
-    "family": "e16s-v3",
+    "family": "esv3",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5589,7 +5589,7 @@
   },
   {
     "id": "e16s-v4",
-    "family": "e16s-v4",
+    "family": "esv4",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5603,7 +5603,7 @@
   },
   {
     "id": "e16s-v5",
-    "family": "e16s-v5",
+    "family": "esv5",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5616,7 +5616,7 @@
   },
   {
     "id": "e16s-v6",
-    "family": "e16s-v6",
+    "family": "esv6",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -5628,7 +5628,7 @@
   },
   {
     "id": "e2-v3",
-    "family": "e2-v3",
+    "family": "ev3",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -5643,7 +5643,7 @@
   },
   {
     "id": "e2-v4",
-    "family": "e2-v4",
+    "family": "ev4",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -5657,7 +5657,7 @@
   },
   {
     "id": "e2-v5",
-    "family": "e2-v5",
+    "family": "ev5",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -5670,7 +5670,7 @@
   },
   {
     "id": "e20-v3",
-    "family": "e20-v3",
+    "family": "ev3",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5685,7 +5685,7 @@
   },
   {
     "id": "e20-v4",
-    "family": "e20-v4",
+    "family": "ev4",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5699,7 +5699,7 @@
   },
   {
     "id": "e20-v5",
-    "family": "e20-v5",
+    "family": "ev5",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5712,7 +5712,7 @@
   },
   {
     "id": "e20a-v4",
-    "family": "e20a-v4",
+    "family": "eav4",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5725,7 +5725,7 @@
   },
   {
     "id": "e20ads-v5",
-    "family": "e20ads-v5",
+    "family": "eadsv5",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5737,7 +5737,7 @@
   },
   {
     "id": "e20ads-v6",
-    "family": "e20ads-v6",
+    "family": "eadsv6",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5749,7 +5749,7 @@
   },
   {
     "id": "e20as-v4",
-    "family": "e20as-v4",
+    "family": "easv4",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5762,7 +5762,7 @@
   },
   {
     "id": "e20as-v5",
-    "family": "e20as-v5",
+    "family": "easv5",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5774,7 +5774,7 @@
   },
   {
     "id": "e20as-v6",
-    "family": "e20as-v6",
+    "family": "easv6",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5786,7 +5786,7 @@
   },
   {
     "id": "e20d-v4",
-    "family": "e20d-v4",
+    "family": "edv4",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5799,7 +5799,7 @@
   },
   {
     "id": "e20d-v5",
-    "family": "e20d-v5",
+    "family": "edv5",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5811,7 +5811,7 @@
   },
   {
     "id": "e20ds-v4",
-    "family": "e20ds-v4",
+    "family": "edsv4",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5824,7 +5824,7 @@
   },
   {
     "id": "e20ds-v5",
-    "family": "e20ds-v5",
+    "family": "edsv5",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5836,7 +5836,7 @@
   },
   {
     "id": "e20ds-v6",
-    "family": "e20ds-v6",
+    "family": "edsv6",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5848,7 +5848,7 @@
   },
   {
     "id": "e20pds-v5",
-    "family": "e20pds-v5",
+    "family": "epdsv5",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5860,7 +5860,7 @@
   },
   {
     "id": "e20ps-v5",
-    "family": "e20ps-v5",
+    "family": "epsv5",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5872,7 +5872,7 @@
   },
   {
     "id": "e20s-v3",
-    "family": "e20s-v3",
+    "family": "esv3",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5887,7 +5887,7 @@
   },
   {
     "id": "e20s-v4",
-    "family": "e20s-v4",
+    "family": "esv4",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5901,7 +5901,7 @@
   },
   {
     "id": "e20s-v5",
-    "family": "e20s-v5",
+    "family": "esv5",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5914,7 +5914,7 @@
   },
   {
     "id": "e20s-v6",
-    "family": "e20s-v6",
+    "family": "esv6",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -5926,7 +5926,7 @@
   },
   {
     "id": "e2a-v4",
-    "family": "e2a-v4",
+    "family": "eav4",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -5939,7 +5939,7 @@
   },
   {
     "id": "e2ads-v5",
-    "family": "e2ads-v5",
+    "family": "eadsv5",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -5951,7 +5951,7 @@
   },
   {
     "id": "e2ads-v6",
-    "family": "e2ads-v6",
+    "family": "eadsv6",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -5963,7 +5963,7 @@
   },
   {
     "id": "e2as-v4",
-    "family": "e2as-v4",
+    "family": "easv4",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -5976,7 +5976,7 @@
   },
   {
     "id": "e2as-v5",
-    "family": "e2as-v5",
+    "family": "easv5",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -5988,7 +5988,7 @@
   },
   {
     "id": "e2as-v6",
-    "family": "e2as-v6",
+    "family": "easv6",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -6000,7 +6000,7 @@
   },
   {
     "id": "e2bds-v5",
-    "family": "e2bds-v5",
+    "family": "ebdsv5",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -6012,7 +6012,7 @@
   },
   {
     "id": "e2bs-v5",
-    "family": "e2bs-v5",
+    "family": "ebsv5",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -6024,7 +6024,7 @@
   },
   {
     "id": "e2d-v4",
-    "family": "e2d-v4",
+    "family": "edv4",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -6037,7 +6037,7 @@
   },
   {
     "id": "e2d-v5",
-    "family": "e2d-v5",
+    "family": "edv5",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -6049,7 +6049,7 @@
   },
   {
     "id": "e2ds-v4",
-    "family": "e2ds-v4",
+    "family": "edsv4",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -6062,7 +6062,7 @@
   },
   {
     "id": "e2ds-v5",
-    "family": "e2ds-v5",
+    "family": "edsv5",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -6074,7 +6074,7 @@
   },
   {
     "id": "e2ds-v6",
-    "family": "e2ds-v6",
+    "family": "edsv6",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -6086,7 +6086,7 @@
   },
   {
     "id": "e2pds-v5",
-    "family": "e2pds-v5",
+    "family": "epdsv5",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -6098,7 +6098,7 @@
   },
   {
     "id": "e2pds-v6",
-    "family": "e2pds-v6",
+    "family": "epdsv6",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -6110,7 +6110,7 @@
   },
   {
     "id": "e2ps-v5",
-    "family": "e2ps-v5",
+    "family": "epsv5",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -6122,7 +6122,7 @@
   },
   {
     "id": "e2ps-v6",
-    "family": "e2ps-v6",
+    "family": "epsv6",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -6134,7 +6134,7 @@
   },
   {
     "id": "e2s-v3",
-    "family": "e2s-v3",
+    "family": "esv3",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -6149,7 +6149,7 @@
   },
   {
     "id": "e2s-v4",
-    "family": "e2s-v4",
+    "family": "esv4",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -6163,7 +6163,7 @@
   },
   {
     "id": "e2s-v5",
-    "family": "e2s-v5",
+    "family": "esv5",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -6176,7 +6176,7 @@
   },
   {
     "id": "e2s-v6",
-    "family": "e2s-v6",
+    "family": "esv6",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -6188,7 +6188,7 @@
   },
   {
     "id": "e32-v3",
-    "family": "e32-v3",
+    "family": "ev3",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6203,7 +6203,7 @@
   },
   {
     "id": "e32-v4",
-    "family": "e32-v4",
+    "family": "ev4",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6217,7 +6217,7 @@
   },
   {
     "id": "e32-v5",
-    "family": "e32-v5",
+    "family": "ev5",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6230,7 +6230,7 @@
   },
   {
     "id": "e32a-v4",
-    "family": "e32a-v4",
+    "family": "eav4",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6243,7 +6243,7 @@
   },
   {
     "id": "e32ads-v5",
-    "family": "e32ads-v5",
+    "family": "eadsv5",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6255,7 +6255,7 @@
   },
   {
     "id": "e32ads-v6",
-    "family": "e32ads-v6",
+    "family": "eadsv6",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6267,7 +6267,7 @@
   },
   {
     "id": "e32as-v4",
-    "family": "e32as-v4",
+    "family": "easv4",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6280,7 +6280,7 @@
   },
   {
     "id": "e32as-v5",
-    "family": "e32as-v5",
+    "family": "easv5",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6292,7 +6292,7 @@
   },
   {
     "id": "e32as-v6",
-    "family": "e32as-v6",
+    "family": "easv6",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6304,7 +6304,7 @@
   },
   {
     "id": "e32bds-v5",
-    "family": "e32bds-v5",
+    "family": "ebdsv5",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6316,7 +6316,7 @@
   },
   {
     "id": "e32bs-v5",
-    "family": "e32bs-v5",
+    "family": "ebsv5",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6328,7 +6328,7 @@
   },
   {
     "id": "e32d-v4",
-    "family": "e32d-v4",
+    "family": "edv4",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6341,7 +6341,7 @@
   },
   {
     "id": "e32d-v5",
-    "family": "e32d-v5",
+    "family": "edv5",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6353,7 +6353,7 @@
   },
   {
     "id": "e32ds-v4",
-    "family": "e32ds-v4",
+    "family": "edsv4",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6366,7 +6366,7 @@
   },
   {
     "id": "e32ds-v5",
-    "family": "e32ds-v5",
+    "family": "edsv5",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6378,7 +6378,7 @@
   },
   {
     "id": "e32ds-v6",
-    "family": "e32ds-v6",
+    "family": "edsv6",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6390,7 +6390,7 @@
   },
   {
     "id": "e32pds-v5",
-    "family": "e32pds-v5",
+    "family": "epdsv5",
     "category": "memory",
     "vcpus": 32,
     "memory": 208,
@@ -6402,7 +6402,7 @@
   },
   {
     "id": "e32pds-v6",
-    "family": "e32pds-v6",
+    "family": "epdsv6",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6414,7 +6414,7 @@
   },
   {
     "id": "e32ps-v5",
-    "family": "e32ps-v5",
+    "family": "epsv5",
     "category": "memory",
     "vcpus": 32,
     "memory": 208,
@@ -6426,7 +6426,7 @@
   },
   {
     "id": "e32ps-v6",
-    "family": "e32ps-v6",
+    "family": "epsv6",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6438,7 +6438,7 @@
   },
   {
     "id": "e32s-v3",
-    "family": "e32s-v3",
+    "family": "esv3",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6453,7 +6453,7 @@
   },
   {
     "id": "e32s-v4",
-    "family": "e32s-v4",
+    "family": "esv4",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6467,7 +6467,7 @@
   },
   {
     "id": "e32s-v5",
-    "family": "e32s-v5",
+    "family": "esv5",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6480,7 +6480,7 @@
   },
   {
     "id": "e32s-v6",
-    "family": "e32s-v6",
+    "family": "esv6",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -6492,7 +6492,7 @@
   },
   {
     "id": "e4-v3",
-    "family": "e4-v3",
+    "family": "ev3",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -6507,7 +6507,7 @@
   },
   {
     "id": "e4-v4",
-    "family": "e4-v4",
+    "family": "ev4",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -6521,7 +6521,7 @@
   },
   {
     "id": "e4-v5",
-    "family": "e4-v5",
+    "family": "ev5",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -6534,7 +6534,7 @@
   },
   {
     "id": "e48-v3",
-    "family": "e48-v3",
+    "family": "ev3",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6549,7 +6549,7 @@
   },
   {
     "id": "e48-v4",
-    "family": "e48-v4",
+    "family": "ev4",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6563,7 +6563,7 @@
   },
   {
     "id": "e48-v5",
-    "family": "e48-v5",
+    "family": "ev5",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6576,7 +6576,7 @@
   },
   {
     "id": "e48a-v4",
-    "family": "e48a-v4",
+    "family": "eav4",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6589,7 +6589,7 @@
   },
   {
     "id": "e48ads-v5",
-    "family": "e48ads-v5",
+    "family": "eadsv5",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6601,7 +6601,7 @@
   },
   {
     "id": "e48ads-v6",
-    "family": "e48ads-v6",
+    "family": "eadsv6",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6613,7 +6613,7 @@
   },
   {
     "id": "e48as-v4",
-    "family": "e48as-v4",
+    "family": "easv4",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6626,7 +6626,7 @@
   },
   {
     "id": "e48as-v5",
-    "family": "e48as-v5",
+    "family": "easv5",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6638,7 +6638,7 @@
   },
   {
     "id": "e48as-v6",
-    "family": "e48as-v6",
+    "family": "easv6",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6650,7 +6650,7 @@
   },
   {
     "id": "e48bds-v5",
-    "family": "e48bds-v5",
+    "family": "ebdsv5",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6662,7 +6662,7 @@
   },
   {
     "id": "e48bs-v5",
-    "family": "e48bs-v5",
+    "family": "ebsv5",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6674,7 +6674,7 @@
   },
   {
     "id": "e48d-v4",
-    "family": "e48d-v4",
+    "family": "edv4",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6687,7 +6687,7 @@
   },
   {
     "id": "e48d-v5",
-    "family": "e48d-v5",
+    "family": "edv5",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6699,7 +6699,7 @@
   },
   {
     "id": "e48ds-v4",
-    "family": "e48ds-v4",
+    "family": "edsv4",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6712,7 +6712,7 @@
   },
   {
     "id": "e48ds-v5",
-    "family": "e48ds-v5",
+    "family": "edsv5",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6724,7 +6724,7 @@
   },
   {
     "id": "e48ds-v6",
-    "family": "e48ds-v6",
+    "family": "edsv6",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6736,7 +6736,7 @@
   },
   {
     "id": "e48pds-v6",
-    "family": "e48pds-v6",
+    "family": "epdsv6",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6748,7 +6748,7 @@
   },
   {
     "id": "e48ps-v6",
-    "family": "e48ps-v6",
+    "family": "epsv6",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6760,7 +6760,7 @@
   },
   {
     "id": "e48s-v3",
-    "family": "e48s-v3",
+    "family": "esv3",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6775,7 +6775,7 @@
   },
   {
     "id": "e48s-v4",
-    "family": "e48s-v4",
+    "family": "esv4",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6789,7 +6789,7 @@
   },
   {
     "id": "e48s-v5",
-    "family": "e48s-v5",
+    "family": "esv5",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6802,7 +6802,7 @@
   },
   {
     "id": "e48s-v6",
-    "family": "e48s-v6",
+    "family": "esv6",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -6814,7 +6814,7 @@
   },
   {
     "id": "e4a-v4",
-    "family": "e4a-v4",
+    "family": "eav4",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -6827,7 +6827,7 @@
   },
   {
     "id": "e4ads-v5",
-    "family": "e4ads-v5",
+    "family": "eadsv5",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -6839,7 +6839,7 @@
   },
   {
     "id": "e4ads-v6",
-    "family": "e4ads-v6",
+    "family": "eadsv6",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -6851,7 +6851,7 @@
   },
   {
     "id": "e4as-v4",
-    "family": "e4as-v4",
+    "family": "easv4",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -6864,7 +6864,7 @@
   },
   {
     "id": "e4as-v5",
-    "family": "e4as-v5",
+    "family": "easv5",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -6876,7 +6876,7 @@
   },
   {
     "id": "e4as-v6",
-    "family": "e4as-v6",
+    "family": "easv6",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -6888,7 +6888,7 @@
   },
   {
     "id": "e4bds-v5",
-    "family": "e4bds-v5",
+    "family": "ebdsv5",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -6900,7 +6900,7 @@
   },
   {
     "id": "e4bs-v5",
-    "family": "e4bs-v5",
+    "family": "ebsv5",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -6912,7 +6912,7 @@
   },
   {
     "id": "e4d-v4",
-    "family": "e4d-v4",
+    "family": "edv4",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -6925,7 +6925,7 @@
   },
   {
     "id": "e4d-v5",
-    "family": "e4d-v5",
+    "family": "edv5",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -6937,7 +6937,7 @@
   },
   {
     "id": "e4ds-v4",
-    "family": "e4ds-v4",
+    "family": "edsv4",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -6950,7 +6950,7 @@
   },
   {
     "id": "e4ds-v5",
-    "family": "e4ds-v5",
+    "family": "edsv5",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -6962,7 +6962,7 @@
   },
   {
     "id": "e4ds-v6",
-    "family": "e4ds-v6",
+    "family": "edsv6",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -6974,7 +6974,7 @@
   },
   {
     "id": "e4pds-v5",
-    "family": "e4pds-v5",
+    "family": "epdsv5",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -6986,7 +6986,7 @@
   },
   {
     "id": "e4pds-v6",
-    "family": "e4pds-v6",
+    "family": "epdsv6",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -6998,7 +6998,7 @@
   },
   {
     "id": "e4ps-v5",
-    "family": "e4ps-v5",
+    "family": "epsv5",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -7010,7 +7010,7 @@
   },
   {
     "id": "e4ps-v6",
-    "family": "e4ps-v6",
+    "family": "epsv6",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -7022,7 +7022,7 @@
   },
   {
     "id": "e4s-v3",
-    "family": "e4s-v3",
+    "family": "esv3",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -7037,7 +7037,7 @@
   },
   {
     "id": "e4s-v4",
-    "family": "e4s-v4",
+    "family": "esv4",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -7051,7 +7051,7 @@
   },
   {
     "id": "e4s-v5",
-    "family": "e4s-v5",
+    "family": "esv5",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -7064,7 +7064,7 @@
   },
   {
     "id": "e4s-v6",
-    "family": "e4s-v6",
+    "family": "esv6",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -7076,7 +7076,7 @@
   },
   {
     "id": "e64-v3",
-    "family": "e64-v3",
+    "family": "ev3",
     "category": "memory",
     "vcpus": 64,
     "memory": 432,
@@ -7091,7 +7091,7 @@
   },
   {
     "id": "e64-v4",
-    "family": "e64-v4",
+    "family": "ev4",
     "category": "memory",
     "vcpus": 64,
     "memory": 504,
@@ -7105,7 +7105,7 @@
   },
   {
     "id": "e64-v5",
-    "family": "e64-v5",
+    "family": "ev5",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -7118,7 +7118,7 @@
   },
   {
     "id": "e64a-v4",
-    "family": "e64a-v4",
+    "family": "eav4",
     "category": "memory",
     "vcpus": 64,
     "memory": 432,
@@ -7131,7 +7131,7 @@
   },
   {
     "id": "e64ads-v5",
-    "family": "e64ads-v5",
+    "family": "eadsv5",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -7143,7 +7143,7 @@
   },
   {
     "id": "e64ads-v6",
-    "family": "e64ads-v6",
+    "family": "eadsv6",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -7155,7 +7155,7 @@
   },
   {
     "id": "e64as-v4",
-    "family": "e64as-v4",
+    "family": "easv4",
     "category": "memory",
     "vcpus": 64,
     "memory": 432,
@@ -7168,7 +7168,7 @@
   },
   {
     "id": "e64as-v5",
-    "family": "e64as-v5",
+    "family": "easv5",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -7180,7 +7180,7 @@
   },
   {
     "id": "e64as-v6",
-    "family": "e64as-v6",
+    "family": "easv6",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -7192,7 +7192,7 @@
   },
   {
     "id": "e64bds-v5",
-    "family": "e64bds-v5",
+    "family": "ebdsv5",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -7204,7 +7204,7 @@
   },
   {
     "id": "e64bs-v5",
-    "family": "e64bs-v5",
+    "family": "ebsv5",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -7216,7 +7216,7 @@
   },
   {
     "id": "e64d-v4",
-    "family": "e64d-v4",
+    "family": "edv4",
     "category": "memory",
     "vcpus": 64,
     "memory": 504,
@@ -7229,7 +7229,7 @@
   },
   {
     "id": "e64d-v5",
-    "family": "e64d-v5",
+    "family": "edv5",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -7241,7 +7241,7 @@
   },
   {
     "id": "e64ds-v4",
-    "family": "e64ds-v4",
+    "family": "edsv4",
     "category": "memory",
     "vcpus": 64,
     "memory": 504,
@@ -7254,7 +7254,7 @@
   },
   {
     "id": "e64ds-v5",
-    "family": "e64ds-v5",
+    "family": "edsv5",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -7266,7 +7266,7 @@
   },
   {
     "id": "e64ds-v6",
-    "family": "e64ds-v6",
+    "family": "edsv6",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -7278,7 +7278,7 @@
   },
   {
     "id": "e64pds-v6",
-    "family": "e64pds-v6",
+    "family": "epdsv6",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -7290,7 +7290,7 @@
   },
   {
     "id": "e64ps-v6",
-    "family": "e64ps-v6",
+    "family": "epsv6",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -7302,7 +7302,7 @@
   },
   {
     "id": "e64s-v3",
-    "family": "e64s-v3",
+    "family": "esv3",
     "category": "memory",
     "vcpus": 64,
     "memory": 432,
@@ -7317,7 +7317,7 @@
   },
   {
     "id": "e64s-v4",
-    "family": "e64s-v4",
+    "family": "esv4",
     "category": "memory",
     "vcpus": 64,
     "memory": 504,
@@ -7331,7 +7331,7 @@
   },
   {
     "id": "e64s-v5",
-    "family": "e64s-v5",
+    "family": "esv5",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -7344,7 +7344,7 @@
   },
   {
     "id": "e64s-v6",
-    "family": "e64s-v6",
+    "family": "esv6",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -7356,7 +7356,7 @@
   },
   {
     "id": "e8-v3",
-    "family": "e8-v3",
+    "family": "ev3",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7371,7 +7371,7 @@
   },
   {
     "id": "e8-v4",
-    "family": "e8-v4",
+    "family": "ev4",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7385,7 +7385,7 @@
   },
   {
     "id": "e8-v5",
-    "family": "e8-v5",
+    "family": "ev5",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7398,7 +7398,7 @@
   },
   {
     "id": "e80ids-v4",
-    "family": "e80ids-v4",
+    "family": "edsv4",
     "category": "memory",
     "vcpus": 80,
     "memory": 504,
@@ -7411,7 +7411,7 @@
   },
   {
     "id": "e80is-v4",
-    "family": "e80is-v4",
+    "family": "esv4",
     "category": "memory",
     "vcpus": 80,
     "memory": 504,
@@ -7425,7 +7425,7 @@
   },
   {
     "id": "e8a-v4",
-    "family": "e8a-v4",
+    "family": "eav4",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7438,7 +7438,7 @@
   },
   {
     "id": "e8ads-v5",
-    "family": "e8ads-v5",
+    "family": "eadsv5",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7450,7 +7450,7 @@
   },
   {
     "id": "e8ads-v6",
-    "family": "e8ads-v6",
+    "family": "eadsv6",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7462,7 +7462,7 @@
   },
   {
     "id": "e8as-v4",
-    "family": "e8as-v4",
+    "family": "easv4",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7475,7 +7475,7 @@
   },
   {
     "id": "e8as-v5",
-    "family": "e8as-v5",
+    "family": "easv5",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7487,7 +7487,7 @@
   },
   {
     "id": "e8as-v6",
-    "family": "e8as-v6",
+    "family": "easv6",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7499,7 +7499,7 @@
   },
   {
     "id": "e8bds-v5",
-    "family": "e8bds-v5",
+    "family": "ebdsv5",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7511,7 +7511,7 @@
   },
   {
     "id": "e8bs-v5",
-    "family": "e8bs-v5",
+    "family": "ebsv5",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7523,7 +7523,7 @@
   },
   {
     "id": "e8d-v4",
-    "family": "e8d-v4",
+    "family": "edv4",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7536,7 +7536,7 @@
   },
   {
     "id": "e8d-v5",
-    "family": "e8d-v5",
+    "family": "edv5",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7548,7 +7548,7 @@
   },
   {
     "id": "e8ds-v4",
-    "family": "e8ds-v4",
+    "family": "edsv4",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7561,7 +7561,7 @@
   },
   {
     "id": "e8ds-v5",
-    "family": "e8ds-v5",
+    "family": "edsv5",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7573,7 +7573,7 @@
   },
   {
     "id": "e8ds-v6",
-    "family": "e8ds-v6",
+    "family": "edsv6",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7585,7 +7585,7 @@
   },
   {
     "id": "e8pds-v5",
-    "family": "e8pds-v5",
+    "family": "epdsv5",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7597,7 +7597,7 @@
   },
   {
     "id": "e8pds-v6",
-    "family": "e8pds-v6",
+    "family": "epdsv6",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7609,7 +7609,7 @@
   },
   {
     "id": "e8ps-v5",
-    "family": "e8ps-v5",
+    "family": "epsv5",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7621,7 +7621,7 @@
   },
   {
     "id": "e8ps-v6",
-    "family": "e8ps-v6",
+    "family": "epsv6",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7633,7 +7633,7 @@
   },
   {
     "id": "e8s-v3",
-    "family": "e8s-v3",
+    "family": "esv3",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7648,7 +7648,7 @@
   },
   {
     "id": "e8s-v4",
-    "family": "e8s-v4",
+    "family": "esv4",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7662,7 +7662,7 @@
   },
   {
     "id": "e8s-v5",
-    "family": "e8s-v5",
+    "family": "esv5",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7675,7 +7675,7 @@
   },
   {
     "id": "e8s-v6",
-    "family": "e8s-v6",
+    "family": "esv6",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -7687,7 +7687,7 @@
   },
   {
     "id": "e96-v5",
-    "family": "e96-v5",
+    "family": "ev5",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -7700,7 +7700,7 @@
   },
   {
     "id": "e96a-v4",
-    "family": "e96a-v4",
+    "family": "eav4",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -7713,7 +7713,7 @@
   },
   {
     "id": "e96ads-v5",
-    "family": "e96ads-v5",
+    "family": "eadsv5",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -7725,7 +7725,7 @@
   },
   {
     "id": "e96ads-v6",
-    "family": "e96ads-v6",
+    "family": "eadsv6",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -7737,7 +7737,7 @@
   },
   {
     "id": "e96as-v4",
-    "family": "e96as-v4",
+    "family": "easv4",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -7750,7 +7750,7 @@
   },
   {
     "id": "e96as-v5",
-    "family": "e96as-v5",
+    "family": "easv5",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -7762,7 +7762,7 @@
   },
   {
     "id": "e96as-v6",
-    "family": "e96as-v6",
+    "family": "easv6",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -7774,7 +7774,7 @@
   },
   {
     "id": "e96bds-v5",
-    "family": "e96bds-v5",
+    "family": "ebdsv5",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -7786,7 +7786,7 @@
   },
   {
     "id": "e96bs-v5",
-    "family": "e96bs-v5",
+    "family": "ebsv5",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -7798,7 +7798,7 @@
   },
   {
     "id": "e96d-v5",
-    "family": "e96d-v5",
+    "family": "edv5",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -7810,7 +7810,7 @@
   },
   {
     "id": "e96ds-v5",
-    "family": "e96ds-v5",
+    "family": "edsv5",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -7822,7 +7822,7 @@
   },
   {
     "id": "e96ds-v6",
-    "family": "e96ds-v6",
+    "family": "edsv6",
     "category": "memory",
     "vcpus": 96,
     "memory": 768,
@@ -7834,7 +7834,7 @@
   },
   {
     "id": "e96pds-v6",
-    "family": "e96pds-v6",
+    "family": "epdsv6",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -7846,7 +7846,7 @@
   },
   {
     "id": "e96ps-v6",
-    "family": "e96ps-v6",
+    "family": "epsv6",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -7858,7 +7858,7 @@
   },
   {
     "id": "e96s-v5",
-    "family": "e96s-v5",
+    "family": "esv5",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -7871,7 +7871,7 @@
   },
   {
     "id": "e96s-v6",
-    "family": "e96s-v6",
+    "family": "esv6",
     "category": "memory",
     "vcpus": 96,
     "memory": 768,
@@ -7883,7 +7883,7 @@
   },
   {
     "id": "ec128eds-v5",
-    "family": "ec128eds-v5",
+    "family": "ecedsv5",
     "category": "memory",
     "vcpus": 128,
     "memory": 768,
@@ -7895,7 +7895,7 @@
   },
   {
     "id": "ec128es-v5",
-    "family": "ec128es-v5",
+    "family": "ecesv5",
     "category": "memory",
     "vcpus": 128,
     "memory": 768,
@@ -7907,7 +7907,7 @@
   },
   {
     "id": "ec16ads-cc-v5",
-    "family": "ec16ads-cc-v5",
+    "family": "ecads_cc_v5",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -7919,7 +7919,7 @@
   },
   {
     "id": "ec16ads-v5",
-    "family": "ec16ads-v5",
+    "family": "ecadsv5",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -7931,7 +7931,7 @@
   },
   {
     "id": "ec16as-cc-v5",
-    "family": "ec16as-cc-v5",
+    "family": "ecas_cc_v5",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -7943,7 +7943,7 @@
   },
   {
     "id": "ec16as-v5",
-    "family": "ec16as-v5",
+    "family": "ecasv5",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -7955,7 +7955,7 @@
   },
   {
     "id": "ec16eds-v5",
-    "family": "ec16eds-v5",
+    "family": "ecedsv5",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -7967,7 +7967,7 @@
   },
   {
     "id": "ec16es-v5",
-    "family": "ec16es-v5",
+    "family": "ecesv5",
     "category": "memory",
     "vcpus": 16,
     "memory": 64,
@@ -7979,7 +7979,7 @@
   },
   {
     "id": "ec20ads-cc-v5",
-    "family": "ec20ads-cc-v5",
+    "family": "ecads_cc_v5",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -7991,7 +7991,7 @@
   },
   {
     "id": "ec20ads-v5",
-    "family": "ec20ads-v5",
+    "family": "ecadsv5",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -8003,7 +8003,7 @@
   },
   {
     "id": "ec20as-cc-v5",
-    "family": "ec20as-cc-v5",
+    "family": "ecas_cc_v5",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -8015,7 +8015,7 @@
   },
   {
     "id": "ec20as-v5",
-    "family": "ec20as-v5",
+    "family": "ecasv5",
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
@@ -8027,7 +8027,7 @@
   },
   {
     "id": "ec2ads-v5",
-    "family": "ec2ads-v5",
+    "family": "ecadsv5",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -8039,7 +8039,7 @@
   },
   {
     "id": "ec2as-v5",
-    "family": "ec2as-v5",
+    "family": "ecasv5",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -8051,7 +8051,7 @@
   },
   {
     "id": "ec2eds-v5",
-    "family": "ec2eds-v5",
+    "family": "ecedsv5",
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
@@ -8063,7 +8063,7 @@
   },
   {
     "id": "ec2es-v5",
-    "family": "ec2es-v5",
+    "family": "ecesv5",
     "category": "memory",
     "vcpus": 2,
     "memory": 8,
@@ -8075,7 +8075,7 @@
   },
   {
     "id": "ec32ads-cc-v5",
-    "family": "ec32ads-cc-v5",
+    "family": "ecads_cc_v5",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -8087,7 +8087,7 @@
   },
   {
     "id": "ec32ads-v5",
-    "family": "ec32ads-v5",
+    "family": "ecadsv5",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -8099,7 +8099,7 @@
   },
   {
     "id": "ec32as-cc-v5",
-    "family": "ec32as-cc-v5",
+    "family": "ecas_cc_v5",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -8111,7 +8111,7 @@
   },
   {
     "id": "ec32as-v5",
-    "family": "ec32as-v5",
+    "family": "ecasv5",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -8123,7 +8123,7 @@
   },
   {
     "id": "ec32eds-v5",
-    "family": "ec32eds-v5",
+    "family": "ecedsv5",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -8135,7 +8135,7 @@
   },
   {
     "id": "ec32es-v5",
-    "family": "ec32es-v5",
+    "family": "ecesv5",
     "category": "memory",
     "vcpus": 32,
     "memory": 128,
@@ -8147,7 +8147,7 @@
   },
   {
     "id": "ec48ads-cc-v5",
-    "family": "ec48ads-cc-v5",
+    "family": "ecads_cc_v5",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -8159,7 +8159,7 @@
   },
   {
     "id": "ec48ads-v5",
-    "family": "ec48ads-v5",
+    "family": "ecadsv5",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -8171,7 +8171,7 @@
   },
   {
     "id": "ec48as-cc-v5",
-    "family": "ec48as-cc-v5",
+    "family": "ecas_cc_v5",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -8183,7 +8183,7 @@
   },
   {
     "id": "ec48as-v5",
-    "family": "ec48as-v5",
+    "family": "ecasv5",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -8195,7 +8195,7 @@
   },
   {
     "id": "ec48eds-v5",
-    "family": "ec48eds-v5",
+    "family": "ecedsv5",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -8207,7 +8207,7 @@
   },
   {
     "id": "ec48es-v5",
-    "family": "ec48es-v5",
+    "family": "ecesv5",
     "category": "memory",
     "vcpus": 48,
     "memory": 192,
@@ -8219,7 +8219,7 @@
   },
   {
     "id": "ec4ads-cc-v5",
-    "family": "ec4ads-cc-v5",
+    "family": "ecads_cc_v5",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -8231,7 +8231,7 @@
   },
   {
     "id": "ec4ads-v5",
-    "family": "ec4ads-v5",
+    "family": "ecadsv5",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -8243,7 +8243,7 @@
   },
   {
     "id": "ec4as-cc-v5",
-    "family": "ec4as-cc-v5",
+    "family": "ecas_cc_v5",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -8255,7 +8255,7 @@
   },
   {
     "id": "ec4as-v5",
-    "family": "ec4as-v5",
+    "family": "ecasv5",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -8267,7 +8267,7 @@
   },
   {
     "id": "ec4eds-v5",
-    "family": "ec4eds-v5",
+    "family": "ecedsv5",
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
@@ -8279,7 +8279,7 @@
   },
   {
     "id": "ec4es-v5",
-    "family": "ec4es-v5",
+    "family": "ecesv5",
     "category": "memory",
     "vcpus": 4,
     "memory": 16,
@@ -8291,7 +8291,7 @@
   },
   {
     "id": "ec64ads-cc-v5",
-    "family": "ec64ads-cc-v5",
+    "family": "ecads_cc_v5",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -8303,7 +8303,7 @@
   },
   {
     "id": "ec64ads-v5",
-    "family": "ec64ads-v5",
+    "family": "ecadsv5",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -8315,7 +8315,7 @@
   },
   {
     "id": "ec64as-cc-v5",
-    "family": "ec64as-cc-v5",
+    "family": "ecas_cc_v5",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -8327,7 +8327,7 @@
   },
   {
     "id": "ec64as-v5",
-    "family": "ec64as-v5",
+    "family": "ecasv5",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -8339,7 +8339,7 @@
   },
   {
     "id": "ec64eds-v5",
-    "family": "ec64eds-v5",
+    "family": "ecedsv5",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -8351,7 +8351,7 @@
   },
   {
     "id": "ec64es-v5",
-    "family": "ec64es-v5",
+    "family": "ecesv5",
     "category": "memory",
     "vcpus": 64,
     "memory": 256,
@@ -8363,7 +8363,7 @@
   },
   {
     "id": "ec8ads-cc-v5",
-    "family": "ec8ads-cc-v5",
+    "family": "ecads_cc_v5",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -8375,7 +8375,7 @@
   },
   {
     "id": "ec8ads-v5",
-    "family": "ec8ads-v5",
+    "family": "ecadsv5",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -8387,7 +8387,7 @@
   },
   {
     "id": "ec8as-cc-v5",
-    "family": "ec8as-cc-v5",
+    "family": "ecas_cc_v5",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -8399,7 +8399,7 @@
   },
   {
     "id": "ec8as-v5",
-    "family": "ec8as-v5",
+    "family": "ecasv5",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -8411,7 +8411,7 @@
   },
   {
     "id": "ec8eds-v5",
-    "family": "ec8eds-v5",
+    "family": "ecedsv5",
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
@@ -8423,7 +8423,7 @@
   },
   {
     "id": "ec8es-v5",
-    "family": "ec8es-v5",
+    "family": "ecesv5",
     "category": "memory",
     "vcpus": 8,
     "memory": 32,
@@ -8435,7 +8435,7 @@
   },
   {
     "id": "ec96ads-cc-v5",
-    "family": "ec96ads-cc-v5",
+    "family": "ecads_cc_v5",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -8447,7 +8447,7 @@
   },
   {
     "id": "ec96ads-v5",
-    "family": "ec96ads-v5",
+    "family": "ecadsv5",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -8459,7 +8459,7 @@
   },
   {
     "id": "ec96as-cc-v5",
-    "family": "ec96as-cc-v5",
+    "family": "ecas_cc_v5",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -8471,7 +8471,7 @@
   },
   {
     "id": "ec96as-v5",
-    "family": "ec96as-v5",
+    "family": "ecasv5",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -8483,7 +8483,7 @@
   },
   {
     "id": "ec96iads-v5",
-    "family": "ec96iads-v5",
+    "family": "ecadsv5",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -8495,7 +8495,7 @@
   },
   {
     "id": "ec96ias-v5",
-    "family": "ec96ias-v5",
+    "family": "ecasv5",
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
@@ -8507,7 +8507,7 @@
   },
   {
     "id": "f1",
-    "family": "f1",
+    "family": "fv1",
     "category": "compute",
     "vcpus": 1,
     "memory": 2,
@@ -8519,7 +8519,7 @@
   },
   {
     "id": "f16",
-    "family": "f16",
+    "family": "fv1",
     "category": "compute",
     "vcpus": 16,
     "memory": 32,
@@ -8531,7 +8531,7 @@
   },
   {
     "id": "f16als-v6",
-    "family": "f16als-v6",
+    "family": "falsv6",
     "category": "compute",
     "vcpus": 16,
     "memory": 32,
@@ -8543,7 +8543,7 @@
   },
   {
     "id": "f16ams-v6",
-    "family": "f16ams-v6",
+    "family": "famsv6",
     "category": "compute",
     "vcpus": 16,
     "memory": 128,
@@ -8555,7 +8555,7 @@
   },
   {
     "id": "f16as-v6",
-    "family": "f16as-v6",
+    "family": "fasv6",
     "category": "compute",
     "vcpus": 16,
     "memory": 64,
@@ -8567,7 +8567,7 @@
   },
   {
     "id": "f16s",
-    "family": "f16s",
+    "family": "fsv1",
     "category": "compute",
     "vcpus": 16,
     "memory": 32,
@@ -8579,7 +8579,7 @@
   },
   {
     "id": "f16s-v2",
-    "family": "f16s-v2",
+    "family": "fsv2",
     "category": "compute",
     "vcpus": 16,
     "memory": 32,
@@ -8593,7 +8593,7 @@
   },
   {
     "id": "f1s",
-    "family": "f1s",
+    "family": "fsv1",
     "category": "compute",
     "vcpus": 1,
     "memory": 2,
@@ -8605,7 +8605,7 @@
   },
   {
     "id": "f2",
-    "family": "f2",
+    "family": "fv1",
     "category": "compute",
     "vcpus": 2,
     "memory": 4,
@@ -8617,7 +8617,7 @@
   },
   {
     "id": "f2als-v6",
-    "family": "f2als-v6",
+    "family": "falsv6",
     "category": "compute",
     "vcpus": 2,
     "memory": 4,
@@ -8629,7 +8629,7 @@
   },
   {
     "id": "f2ams-v6",
-    "family": "f2ams-v6",
+    "family": "famsv6",
     "category": "compute",
     "vcpus": 2,
     "memory": 16,
@@ -8641,7 +8641,7 @@
   },
   {
     "id": "f2as-v6",
-    "family": "f2as-v6",
+    "family": "fasv6",
     "category": "compute",
     "vcpus": 2,
     "memory": 8,
@@ -8653,7 +8653,7 @@
   },
   {
     "id": "f2s",
-    "family": "f2s",
+    "family": "fsv1",
     "category": "compute",
     "vcpus": 2,
     "memory": 4,
@@ -8665,7 +8665,7 @@
   },
   {
     "id": "f2s-v2",
-    "family": "f2s-v2",
+    "family": "fsv2",
     "category": "compute",
     "vcpus": 2,
     "memory": 4,
@@ -8679,7 +8679,7 @@
   },
   {
     "id": "f32als-v6",
-    "family": "f32als-v6",
+    "family": "falsv6",
     "category": "compute",
     "vcpus": 32,
     "memory": 64,
@@ -8691,7 +8691,7 @@
   },
   {
     "id": "f32ams-v6",
-    "family": "f32ams-v6",
+    "family": "famsv6",
     "category": "compute",
     "vcpus": 32,
     "memory": 256,
@@ -8703,7 +8703,7 @@
   },
   {
     "id": "f32as-v6",
-    "family": "f32as-v6",
+    "family": "fasv6",
     "category": "compute",
     "vcpus": 32,
     "memory": 128,
@@ -8715,7 +8715,7 @@
   },
   {
     "id": "f32s-v2",
-    "family": "f32s-v2",
+    "family": "fsv2",
     "category": "compute",
     "vcpus": 32,
     "memory": 64,
@@ -8729,7 +8729,7 @@
   },
   {
     "id": "f4",
-    "family": "f4",
+    "family": "fv1",
     "category": "compute",
     "vcpus": 4,
     "memory": 8,
@@ -8741,7 +8741,7 @@
   },
   {
     "id": "f48als-v6",
-    "family": "f48als-v6",
+    "family": "falsv6",
     "category": "compute",
     "vcpus": 48,
     "memory": 96,
@@ -8753,7 +8753,7 @@
   },
   {
     "id": "f48ams-v6",
-    "family": "f48ams-v6",
+    "family": "famsv6",
     "category": "compute",
     "vcpus": 48,
     "memory": 384,
@@ -8765,7 +8765,7 @@
   },
   {
     "id": "f48as-v6",
-    "family": "f48as-v6",
+    "family": "fasv6",
     "category": "compute",
     "vcpus": 48,
     "memory": 192,
@@ -8777,7 +8777,7 @@
   },
   {
     "id": "f48s-v2",
-    "family": "f48s-v2",
+    "family": "fsv2",
     "category": "compute",
     "vcpus": 48,
     "memory": 96,
@@ -8791,7 +8791,7 @@
   },
   {
     "id": "f4als-v6",
-    "family": "f4als-v6",
+    "family": "falsv6",
     "category": "compute",
     "vcpus": 4,
     "memory": 8,
@@ -8803,7 +8803,7 @@
   },
   {
     "id": "f4ams-v6",
-    "family": "f4ams-v6",
+    "family": "famsv6",
     "category": "compute",
     "vcpus": 4,
     "memory": 32,
@@ -8815,7 +8815,7 @@
   },
   {
     "id": "f4as-v6",
-    "family": "f4as-v6",
+    "family": "fasv6",
     "category": "compute",
     "vcpus": 4,
     "memory": 16,
@@ -8827,7 +8827,7 @@
   },
   {
     "id": "f4s",
-    "family": "f4s",
+    "family": "fsv1",
     "category": "compute",
     "vcpus": 4,
     "memory": 8,
@@ -8839,7 +8839,7 @@
   },
   {
     "id": "f4s-v2",
-    "family": "f4s-v2",
+    "family": "fsv2",
     "category": "compute",
     "vcpus": 4,
     "memory": 8,
@@ -8853,7 +8853,7 @@
   },
   {
     "id": "f64als-v6",
-    "family": "f64als-v6",
+    "family": "falsv6",
     "category": "compute",
     "vcpus": 64,
     "memory": 128,
@@ -8865,7 +8865,7 @@
   },
   {
     "id": "f64ams-v6",
-    "family": "f64ams-v6",
+    "family": "famsv6",
     "category": "compute",
     "vcpus": 64,
     "memory": 512,
@@ -8877,7 +8877,7 @@
   },
   {
     "id": "f64as-v6",
-    "family": "f64as-v6",
+    "family": "fasv6",
     "category": "compute",
     "vcpus": 64,
     "memory": 256,
@@ -8889,7 +8889,7 @@
   },
   {
     "id": "f64s-v2",
-    "family": "f64s-v2",
+    "family": "fsv2",
     "category": "compute",
     "vcpus": 64,
     "memory": 128,
@@ -8903,7 +8903,7 @@
   },
   {
     "id": "f72s-v2",
-    "family": "f72s-v2",
+    "family": "fsv2",
     "category": "compute",
     "vcpus": 72,
     "memory": 144,
@@ -8917,7 +8917,7 @@
   },
   {
     "id": "f8",
-    "family": "f8",
+    "family": "fv1",
     "category": "compute",
     "vcpus": 8,
     "memory": 16,
@@ -8929,7 +8929,7 @@
   },
   {
     "id": "f8als-v6",
-    "family": "f8als-v6",
+    "family": "falsv6",
     "category": "compute",
     "vcpus": 8,
     "memory": 16,
@@ -8941,7 +8941,7 @@
   },
   {
     "id": "f8ams-v6",
-    "family": "f8ams-v6",
+    "family": "famsv6",
     "category": "compute",
     "vcpus": 8,
     "memory": 64,
@@ -8953,7 +8953,7 @@
   },
   {
     "id": "f8as-v6",
-    "family": "f8as-v6",
+    "family": "fasv6",
     "category": "compute",
     "vcpus": 8,
     "memory": 32,
@@ -8965,7 +8965,7 @@
   },
   {
     "id": "f8s",
-    "family": "f8s",
+    "family": "fsv1",
     "category": "compute",
     "vcpus": 8,
     "memory": 16,
@@ -8977,7 +8977,7 @@
   },
   {
     "id": "f8s-v2",
-    "family": "f8s-v2",
+    "family": "fsv2",
     "category": "compute",
     "vcpus": 8,
     "memory": 16,
@@ -8991,7 +8991,7 @@
   },
   {
     "id": "fx12mds",
-    "family": "fx12mds",
+    "family": "fx",
     "category": "compute",
     "vcpus": 12,
     "memory": 252,
@@ -9003,7 +9003,7 @@
   },
   {
     "id": "fx16-4mds-v2",
-    "family": "fx16-4mds-v2",
+    "family": "fxmdsv2",
     "category": "compute",
     "vcpus": 16,
     "memory": 336,
@@ -9015,7 +9015,7 @@
   },
   {
     "id": "fx16mds-v2",
-    "family": "fx16mds-v2",
+    "family": "fxmdsv2",
     "category": "compute",
     "vcpus": 16,
     "memory": 336,
@@ -9027,7 +9027,7 @@
   },
   {
     "id": "fx16ms-v2",
-    "family": "fx16ms-v2",
+    "family": "fxmsv2",
     "category": "compute",
     "vcpus": 16,
     "memory": 336,
@@ -9039,7 +9039,7 @@
   },
   {
     "id": "fx24mds",
-    "family": "fx24mds",
+    "family": "fx",
     "category": "compute",
     "vcpus": 24,
     "memory": 504,
@@ -9051,7 +9051,7 @@
   },
   {
     "id": "fx2mds-v2",
-    "family": "fx2mds-v2",
+    "family": "fxmdsv2",
     "category": "compute",
     "vcpus": 2,
     "memory": 42,
@@ -9063,7 +9063,7 @@
   },
   {
     "id": "fx2ms-v2",
-    "family": "fx2ms-v2",
+    "family": "fxmsv2",
     "category": "compute",
     "vcpus": 2,
     "memory": 42,
@@ -9075,7 +9075,7 @@
   },
   {
     "id": "fx32-16mds-v2",
-    "family": "fx32-16mds-v2",
+    "family": "fxmdsv2",
     "category": "compute",
     "vcpus": 32,
     "memory": 672,
@@ -9087,7 +9087,7 @@
   },
   {
     "id": "fx32mds-v2",
-    "family": "fx32mds-v2",
+    "family": "fxmdsv2",
     "category": "compute",
     "vcpus": 32,
     "memory": 672,
@@ -9099,7 +9099,7 @@
   },
   {
     "id": "fx32ms-v2",
-    "family": "fx32ms-v2",
+    "family": "fxmsv2",
     "category": "compute",
     "vcpus": 32,
     "memory": 672,
@@ -9111,7 +9111,7 @@
   },
   {
     "id": "fx36mds",
-    "family": "fx36mds",
+    "family": "fx",
     "category": "compute",
     "vcpus": 36,
     "memory": 756,
@@ -9123,7 +9123,7 @@
   },
   {
     "id": "fx4-2mds-v2",
-    "family": "fx4-2mds-v2",
+    "family": "fxmdsv2",
     "category": "compute",
     "vcpus": 4,
     "memory": 84,
@@ -9135,7 +9135,7 @@
   },
   {
     "id": "fx48-12mds-v2",
-    "family": "fx48-12mds-v2",
+    "family": "fxmdsv2",
     "category": "compute",
     "vcpus": 48,
     "memory": 1008,
@@ -9147,7 +9147,7 @@
   },
   {
     "id": "fx48mds",
-    "family": "fx48mds",
+    "family": "fx",
     "category": "compute",
     "vcpus": 48,
     "memory": 1008,
@@ -9159,7 +9159,7 @@
   },
   {
     "id": "fx48mds-v2",
-    "family": "fx48mds-v2",
+    "family": "fxmdsv2",
     "category": "compute",
     "vcpus": 48,
     "memory": 1008,
@@ -9171,7 +9171,7 @@
   },
   {
     "id": "fx48ms-v2",
-    "family": "fx48ms-v2",
+    "family": "fxmsv2",
     "category": "compute",
     "vcpus": 48,
     "memory": 1008,
@@ -9183,7 +9183,7 @@
   },
   {
     "id": "fx4mds",
-    "family": "fx4mds",
+    "family": "fx",
     "category": "compute",
     "vcpus": 4,
     "memory": 84,
@@ -9195,7 +9195,7 @@
   },
   {
     "id": "fx4mds-v2",
-    "family": "fx4mds-v2",
+    "family": "fxmdsv2",
     "category": "compute",
     "vcpus": 4,
     "memory": 84,
@@ -9207,7 +9207,7 @@
   },
   {
     "id": "fx4ms-v2",
-    "family": "fx4ms-v2",
+    "family": "fxmsv2",
     "category": "compute",
     "vcpus": 4,
     "memory": 84,
@@ -9219,7 +9219,7 @@
   },
   {
     "id": "fx64-16mds-v2",
-    "family": "fx64-16mds-v2",
+    "family": "fxmdsv2",
     "category": "compute",
     "vcpus": 64,
     "memory": 1344,
@@ -9231,7 +9231,7 @@
   },
   {
     "id": "fx64mds-v2",
-    "family": "fx64mds-v2",
+    "family": "fxmdsv2",
     "category": "compute",
     "vcpus": 64,
     "memory": 1344,
@@ -9243,7 +9243,7 @@
   },
   {
     "id": "fx64ms-v2",
-    "family": "fx64ms-v2",
+    "family": "fxmsv2",
     "category": "compute",
     "vcpus": 64,
     "memory": 1344,
@@ -9255,7 +9255,7 @@
   },
   {
     "id": "fx8-2mds-v2",
-    "family": "fx8-2mds-v2",
+    "family": "fxmdsv2",
     "category": "compute",
     "vcpus": 8,
     "memory": 168,
@@ -9267,7 +9267,7 @@
   },
   {
     "id": "fx8mds-v2",
-    "family": "fx8mds-v2",
+    "family": "fxmdsv2",
     "category": "compute",
     "vcpus": 8,
     "memory": 168,
@@ -9279,7 +9279,7 @@
   },
   {
     "id": "fx8ms-v2",
-    "family": "fx8ms-v2",
+    "family": "fxmsv2",
     "category": "compute",
     "vcpus": 8,
     "memory": 168,
@@ -9291,7 +9291,7 @@
   },
   {
     "id": "fx96mds-v2",
-    "family": "fx96mds-v2",
+    "family": "fxmdsv2",
     "category": "compute",
     "vcpus": 96,
     "memory": 1832,
@@ -9303,7 +9303,7 @@
   },
   {
     "id": "fx96ms-v2",
-    "family": "fx96ms-v2",
+    "family": "fxmsv2",
     "category": "compute",
     "vcpus": 96,
     "memory": 1832,
@@ -9315,7 +9315,7 @@
   },
   {
     "id": "g1",
-    "family": "g1",
+    "family": "gv1",
     "category": "compute",
     "vcpus": 2,
     "memory": 28,
@@ -9327,7 +9327,7 @@
   },
   {
     "id": "g2",
-    "family": "g2",
+    "family": "gv1",
     "category": "compute",
     "vcpus": 4,
     "memory": 56,
@@ -9339,7 +9339,7 @@
   },
   {
     "id": "g3",
-    "family": "g3",
+    "family": "gv1",
     "category": "compute",
     "vcpus": 8,
     "memory": 112,
@@ -9351,7 +9351,7 @@
   },
   {
     "id": "g4",
-    "family": "g4",
+    "family": "gv1",
     "category": "compute",
     "vcpus": 16,
     "memory": 224,
@@ -9363,7 +9363,7 @@
   },
   {
     "id": "g5",
-    "family": "g5",
+    "family": "gv1",
     "category": "compute",
     "vcpus": 32,
     "memory": 448,
@@ -9375,7 +9375,7 @@
   },
   {
     "id": "gs1",
-    "family": "gs1",
+    "family": "gsv1",
     "category": "compute",
     "vcpus": 2,
     "memory": 28,
@@ -9387,7 +9387,7 @@
   },
   {
     "id": "gs2",
-    "family": "gs2",
+    "family": "gsv1",
     "category": "compute",
     "vcpus": 4,
     "memory": 56,
@@ -9399,7 +9399,7 @@
   },
   {
     "id": "gs3",
-    "family": "gs3",
+    "family": "gsv1",
     "category": "compute",
     "vcpus": 8,
     "memory": 112,
@@ -9411,7 +9411,7 @@
   },
   {
     "id": "gs4-4",
-    "family": "gs4-4",
+    "family": "gsv1",
     "category": "compute",
     "vcpus": 16,
     "memory": 224,
@@ -9423,7 +9423,7 @@
   },
   {
     "id": "gs5-16",
-    "family": "gs5-16",
+    "family": "gsv1",
     "category": "compute",
     "vcpus": 32,
     "memory": 448,
@@ -9435,7 +9435,7 @@
   },
   {
     "id": "hb120-16rs-v2",
-    "family": "hb120-16rs-v2",
+    "family": "hbv2",
     "category": "performance",
     "vcpus": 16,
     "memory": 456,
@@ -9447,7 +9447,7 @@
   },
   {
     "id": "hb120-16rs-v3",
-    "family": "hb120-16rs-v3",
+    "family": "hbv3",
     "category": "performance",
     "vcpus": 16,
     "memory": 448,
@@ -9459,7 +9459,7 @@
   },
   {
     "id": "hb120-32rs-v2",
-    "family": "hb120-32rs-v2",
+    "family": "hbv2",
     "category": "performance",
     "vcpus": 32,
     "memory": 456,
@@ -9471,7 +9471,7 @@
   },
   {
     "id": "hb120-32rs-v3",
-    "family": "hb120-32rs-v3",
+    "family": "hbv3",
     "category": "performance",
     "vcpus": 32,
     "memory": 448,
@@ -9483,7 +9483,7 @@
   },
   {
     "id": "hb120-64rs-v2",
-    "family": "hb120-64rs-v2",
+    "family": "hbv2",
     "category": "performance",
     "vcpus": 64,
     "memory": 456,
@@ -9495,7 +9495,7 @@
   },
   {
     "id": "hb120-64rs-v3",
-    "family": "hb120-64rs-v3",
+    "family": "hbv3",
     "category": "performance",
     "vcpus": 64,
     "memory": 448,
@@ -9507,7 +9507,7 @@
   },
   {
     "id": "hb120-96rs-v2",
-    "family": "hb120-96rs-v2",
+    "family": "hbv2",
     "category": "performance",
     "vcpus": 96,
     "memory": 456,
@@ -9519,7 +9519,7 @@
   },
   {
     "id": "hb120-96rs-v3",
-    "family": "hb120-96rs-v3",
+    "family": "hbv3",
     "category": "performance",
     "vcpus": 96,
     "memory": 448,
@@ -9531,7 +9531,7 @@
   },
   {
     "id": "hb120rs-v2",
-    "family": "hb120rs-v2",
+    "family": "hbv2",
     "category": "performance",
     "vcpus": 120,
     "memory": 456,
@@ -9543,7 +9543,7 @@
   },
   {
     "id": "hb120rs-v3",
-    "family": "hb120rs-v3",
+    "family": "hbv3",
     "category": "performance",
     "vcpus": 120,
     "memory": 448,
@@ -9555,7 +9555,7 @@
   },
   {
     "id": "hb176-144rs-v4",
-    "family": "hb176-144rs-v4",
+    "family": "hbv4",
     "category": "performance",
     "vcpus": 144,
     "memory": 768,
@@ -9567,7 +9567,7 @@
   },
   {
     "id": "hb176-24rs-v4",
-    "family": "hb176-24rs-v4",
+    "family": "hbv4",
     "category": "performance",
     "vcpus": 24,
     "memory": 768,
@@ -9579,7 +9579,7 @@
   },
   {
     "id": "hb176-48rs-v4",
-    "family": "hb176-48rs-v4",
+    "family": "hbv4",
     "category": "performance",
     "vcpus": 48,
     "memory": 768,
@@ -9591,7 +9591,7 @@
   },
   {
     "id": "hb176-96rs-v4",
-    "family": "hb176-96rs-v4",
+    "family": "hbv4",
     "category": "performance",
     "vcpus": 96,
     "memory": 768,
@@ -9603,7 +9603,7 @@
   },
   {
     "id": "hb176rs-v4",
-    "family": "hb176rs-v4",
+    "family": "hbv4",
     "category": "performance",
     "vcpus": 176,
     "memory": 768,
@@ -9615,7 +9615,7 @@
   },
   {
     "id": "hb60-15rs",
-    "family": "hb60-15rs",
+    "family": "hbv1",
     "category": "performance",
     "vcpus": 15,
     "memory": 263,
@@ -9627,7 +9627,7 @@
   },
   {
     "id": "hb60-30rs",
-    "family": "hb60-30rs",
+    "family": "hbv1",
     "category": "performance",
     "vcpus": 30,
     "memory": 263,
@@ -9639,7 +9639,7 @@
   },
   {
     "id": "hb60-45rs",
-    "family": "hb60-45rs",
+    "family": "hbv1",
     "category": "performance",
     "vcpus": 45,
     "memory": 263,
@@ -9651,7 +9651,7 @@
   },
   {
     "id": "hb60rs",
-    "family": "hb60rs",
+    "family": "hbv1",
     "category": "performance",
     "vcpus": 60,
     "memory": 263,
@@ -9663,7 +9663,7 @@
   },
   {
     "id": "hc44-16rs",
-    "family": "hc44-16rs",
+    "family": "hcv1",
     "category": "performance",
     "vcpus": 16,
     "memory": 352,
@@ -9675,7 +9675,7 @@
   },
   {
     "id": "hc44-32rs",
-    "family": "hc44-32rs",
+    "family": "hcv1",
     "category": "performance",
     "vcpus": 32,
     "memory": 352,
@@ -9687,7 +9687,7 @@
   },
   {
     "id": "hc44rs",
-    "family": "hc44rs",
+    "family": "hcv1",
     "category": "performance",
     "vcpus": 44,
     "memory": 352,
@@ -9699,7 +9699,7 @@
   },
   {
     "id": "hx176-144rs",
-    "family": "hx176-144rs",
+    "family": "hxv1",
     "category": "performance",
     "vcpus": 144,
     "memory": 1408,
@@ -9711,7 +9711,7 @@
   },
   {
     "id": "hx176-24rs",
-    "family": "hx176-24rs",
+    "family": "hxv1",
     "category": "performance",
     "vcpus": 24,
     "memory": 1408,
@@ -9723,7 +9723,7 @@
   },
   {
     "id": "hx176-48rs",
-    "family": "hx176-48rs",
+    "family": "hxv1",
     "category": "performance",
     "vcpus": 48,
     "memory": 1408,
@@ -9735,7 +9735,7 @@
   },
   {
     "id": "hx176-96rs",
-    "family": "hx176-96rs",
+    "family": "hxv1",
     "category": "performance",
     "vcpus": 96,
     "memory": 1408,
@@ -9747,7 +9747,7 @@
   },
   {
     "id": "hx176rs",
-    "family": "hx176rs",
+    "family": "hxv1",
     "category": "performance",
     "vcpus": 176,
     "memory": 1408,
@@ -9759,7 +9759,7 @@
   },
   {
     "id": "l16as-v3",
-    "family": "l16as-v3",
+    "family": "lasv3",
     "category": "storage",
     "vcpus": 16,
     "memory": 128,
@@ -9771,7 +9771,7 @@
   },
   {
     "id": "l16s",
-    "family": "l16s",
+    "family": "lsv1",
     "category": "storage",
     "vcpus": 16,
     "memory": 128,
@@ -9783,7 +9783,7 @@
   },
   {
     "id": "l16s-v2",
-    "family": "l16s-v2",
+    "family": "lsv2",
     "category": "storage",
     "vcpus": 16,
     "memory": 128,
@@ -9795,7 +9795,7 @@
   },
   {
     "id": "l16s-v3",
-    "family": "l16s-v3",
+    "family": "lsv3",
     "category": "storage",
     "vcpus": 16,
     "memory": 128,
@@ -9807,7 +9807,7 @@
   },
   {
     "id": "l32as-v3",
-    "family": "l32as-v3",
+    "family": "lasv3",
     "category": "storage",
     "vcpus": 32,
     "memory": 256,
@@ -9819,7 +9819,7 @@
   },
   {
     "id": "l32s",
-    "family": "l32s",
+    "family": "lsv1",
     "category": "storage",
     "vcpus": 32,
     "memory": 256,
@@ -9831,7 +9831,7 @@
   },
   {
     "id": "l32s-v2",
-    "family": "l32s-v2",
+    "family": "lsv2",
     "category": "storage",
     "vcpus": 32,
     "memory": 256,
@@ -9843,7 +9843,7 @@
   },
   {
     "id": "l32s-v3",
-    "family": "l32s-v3",
+    "family": "lsv3",
     "category": "storage",
     "vcpus": 32,
     "memory": 256,
@@ -9855,7 +9855,7 @@
   },
   {
     "id": "l48as-v3",
-    "family": "l48as-v3",
+    "family": "lasv3",
     "category": "storage",
     "vcpus": 48,
     "memory": 384,
@@ -9867,7 +9867,7 @@
   },
   {
     "id": "l48s-v2",
-    "family": "l48s-v2",
+    "family": "lsv2",
     "category": "storage",
     "vcpus": 48,
     "memory": 384,
@@ -9879,7 +9879,7 @@
   },
   {
     "id": "l48s-v3",
-    "family": "l48s-v3",
+    "family": "lsv3",
     "category": "storage",
     "vcpus": 48,
     "memory": 384,
@@ -9891,7 +9891,7 @@
   },
   {
     "id": "l4s",
-    "family": "l4s",
+    "family": "lsv1",
     "category": "storage",
     "vcpus": 4,
     "memory": 32,
@@ -9903,7 +9903,7 @@
   },
   {
     "id": "l64as-v3",
-    "family": "l64as-v3",
+    "family": "lasv3",
     "category": "storage",
     "vcpus": 64,
     "memory": 512,
@@ -9915,7 +9915,7 @@
   },
   {
     "id": "l64s-v2",
-    "family": "l64s-v2",
+    "family": "lsv2",
     "category": "storage",
     "vcpus": 64,
     "memory": 512,
@@ -9927,7 +9927,7 @@
   },
   {
     "id": "l64s-v3",
-    "family": "l64s-v3",
+    "family": "lsv3",
     "category": "storage",
     "vcpus": 64,
     "memory": 512,
@@ -9939,7 +9939,7 @@
   },
   {
     "id": "l80as-v3",
-    "family": "l80as-v3",
+    "family": "lasv3",
     "category": "storage",
     "vcpus": 80,
     "memory": 640,
@@ -9951,7 +9951,7 @@
   },
   {
     "id": "l80s-v2",
-    "family": "l80s-v2",
+    "family": "lsv2",
     "category": "storage",
     "vcpus": 80,
     "memory": 640,
@@ -9963,7 +9963,7 @@
   },
   {
     "id": "l80s-v3",
-    "family": "l80s-v3",
+    "family": "lsv3",
     "category": "storage",
     "vcpus": 80,
     "memory": 640,
@@ -9975,7 +9975,7 @@
   },
   {
     "id": "l8as-v3",
-    "family": "l8as-v3",
+    "family": "lasv3",
     "category": "storage",
     "vcpus": 8,
     "memory": 64,
@@ -9987,7 +9987,7 @@
   },
   {
     "id": "l8s",
-    "family": "l8s",
+    "family": "lsv1",
     "category": "storage",
     "vcpus": 8,
     "memory": 64,
@@ -9999,7 +9999,7 @@
   },
   {
     "id": "l8s-v2",
-    "family": "l8s-v2",
+    "family": "lsv2",
     "category": "storage",
     "vcpus": 8,
     "memory": 64,
@@ -10011,7 +10011,7 @@
   },
   {
     "id": "l8s-v3",
-    "family": "l8s-v3",
+    "family": "lsv3",
     "category": "storage",
     "vcpus": 8,
     "memory": 64,
@@ -10023,7 +10023,7 @@
   },
   {
     "id": "m128bds-v3",
-    "family": "m128bds-v3",
+    "family": "mbdsv3",
     "category": "memory",
     "vcpus": 128,
     "memory": 1024,
@@ -10035,7 +10035,7 @@
   },
   {
     "id": "m128bds3-v3",
-    "family": "m128bds3-v3",
+    "family": "mbdsv3",
     "category": "memory",
     "vcpus": 128,
     "memory": 2794,
@@ -10047,7 +10047,7 @@
   },
   {
     "id": "m128bs-v3",
-    "family": "m128bs-v3",
+    "family": "mbsv3",
     "category": "memory",
     "vcpus": 128,
     "memory": 1024,
@@ -10059,7 +10059,7 @@
   },
   {
     "id": "m128dms-v2",
-    "family": "m128dms-v2",
+    "family": "mdsv2",
     "category": "memory",
     "vcpus": 128,
     "memory": 3892,
@@ -10071,7 +10071,7 @@
   },
   {
     "id": "m128ds-v2",
-    "family": "m128ds-v2",
+    "family": "mdsv2",
     "category": "memory",
     "vcpus": 128,
     "memory": 2048,
@@ -10083,7 +10083,7 @@
   },
   {
     "id": "m128m",
-    "family": "m128m",
+    "family": "mv1",
     "category": "memory",
     "vcpus": 128,
     "memory": 3892,
@@ -10096,7 +10096,7 @@
   },
   {
     "id": "m128ms",
-    "family": "m128ms",
+    "family": "mv1",
     "category": "memory",
     "vcpus": 128,
     "memory": 3892,
@@ -10109,7 +10109,7 @@
   },
   {
     "id": "m128ms-v2",
-    "family": "m128ms-v2",
+    "family": "msv2",
     "category": "memory",
     "vcpus": 128,
     "memory": 3892,
@@ -10121,7 +10121,7 @@
   },
   {
     "id": "m128s",
-    "family": "m128s",
+    "family": "mv1",
     "category": "memory",
     "vcpus": 128,
     "memory": 2048,
@@ -10134,7 +10134,7 @@
   },
   {
     "id": "m128s-v2",
-    "family": "m128s-v2",
+    "family": "msv2",
     "category": "memory",
     "vcpus": 128,
     "memory": 2048,
@@ -10146,7 +10146,7 @@
   },
   {
     "id": "m12ds-v3",
-    "family": "m12ds-v3",
+    "family": "mdsv3",
     "category": "memory",
     "vcpus": 12,
     "memory": 240,
@@ -10158,7 +10158,7 @@
   },
   {
     "id": "m12s-v3",
-    "family": "m12s-v3",
+    "family": "msv3",
     "category": "memory",
     "vcpus": 12,
     "memory": 240,
@@ -10170,7 +10170,7 @@
   },
   {
     "id": "m16bds-v3",
-    "family": "m16bds-v3",
+    "family": "mbdsv3",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -10182,7 +10182,7 @@
   },
   {
     "id": "m16bs-v3",
-    "family": "m16bs-v3",
+    "family": "mbsv3",
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
@@ -10194,7 +10194,7 @@
   },
   {
     "id": "m16ms",
-    "family": "m16ms",
+    "family": "mv1",
     "category": "memory",
     "vcpus": 16,
     "memory": 438,
@@ -10207,7 +10207,7 @@
   },
   {
     "id": "m176bds-v3",
-    "family": "m176bds-v3",
+    "family": "mbdsv3",
     "category": "memory",
     "vcpus": 176,
     "memory": 1536,
@@ -10219,7 +10219,7 @@
   },
   {
     "id": "m176bds4-v3",
-    "family": "m176bds4-v3",
+    "family": "mbdsv3",
     "category": "memory",
     "vcpus": 176,
     "memory": 3892,
@@ -10231,7 +10231,7 @@
   },
   {
     "id": "m176bs-v3",
-    "family": "m176bs-v3",
+    "family": "mbsv3",
     "category": "memory",
     "vcpus": 176,
     "memory": 1536,
@@ -10243,7 +10243,7 @@
   },
   {
     "id": "m176ds3-v3",
-    "family": "m176ds3-v3",
+    "family": "mdsv3",
     "category": "memory",
     "vcpus": 176,
     "memory": 2794,
@@ -10255,7 +10255,7 @@
   },
   {
     "id": "m176ds4-v3",
-    "family": "m176ds4-v3",
+    "family": "mdsv3",
     "category": "memory",
     "vcpus": 176,
     "memory": 3892,
@@ -10267,7 +10267,7 @@
   },
   {
     "id": "m176s3-v3",
-    "family": "m176s3-v3",
+    "family": "msv3",
     "category": "memory",
     "vcpus": 176,
     "memory": 2794,
@@ -10279,7 +10279,7 @@
   },
   {
     "id": "m176s4-v3",
-    "family": "m176s4-v3",
+    "family": "msv3",
     "category": "memory",
     "vcpus": 176,
     "memory": 3892,
@@ -10291,7 +10291,7 @@
   },
   {
     "id": "m1792ixds32-v3",
-    "family": "m1792ixds32-v3",
+    "family": "mdsv3",
     "category": "memory",
     "vcpus": 1792,
     "memory": 30400,
@@ -10303,7 +10303,7 @@
   },
   {
     "id": "m192idms-v2",
-    "family": "m192idms-v2",
+    "family": "mdsv2",
     "category": "memory",
     "vcpus": 192,
     "memory": 4096,
@@ -10315,7 +10315,7 @@
   },
   {
     "id": "m192ids-v2",
-    "family": "m192ids-v2",
+    "family": "mdsv2",
     "category": "memory",
     "vcpus": 192,
     "memory": 2048,
@@ -10327,7 +10327,7 @@
   },
   {
     "id": "m192ims-v2",
-    "family": "m192ims-v2",
+    "family": "msv2",
     "category": "memory",
     "vcpus": 192,
     "memory": 4096,
@@ -10339,7 +10339,7 @@
   },
   {
     "id": "m192is-v2",
-    "family": "m192is-v2",
+    "family": "msv2",
     "category": "memory",
     "vcpus": 192,
     "memory": 2048,
@@ -10351,7 +10351,7 @@
   },
   {
     "id": "m208ms-v2",
-    "family": "m208ms-v2",
+    "family": "mv2",
     "category": "memory",
     "vcpus": 208,
     "memory": 5700,
@@ -10363,7 +10363,7 @@
   },
   {
     "id": "m208s-v2",
-    "family": "m208s-v2",
+    "family": "mv2",
     "category": "memory",
     "vcpus": 208,
     "memory": 2850,
@@ -10375,7 +10375,7 @@
   },
   {
     "id": "m24ds-v3",
-    "family": "m24ds-v3",
+    "family": "mdsv3",
     "category": "memory",
     "vcpus": 24,
     "memory": 480,
@@ -10387,7 +10387,7 @@
   },
   {
     "id": "m24s-v3",
-    "family": "m24s-v3",
+    "family": "msv3",
     "category": "memory",
     "vcpus": 24,
     "memory": 480,
@@ -10399,7 +10399,7 @@
   },
   {
     "id": "m32bds-v3",
-    "family": "m32bds-v3",
+    "family": "mbdsv3",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -10411,7 +10411,7 @@
   },
   {
     "id": "m32bs-v3",
-    "family": "m32bs-v3",
+    "family": "mbsv3",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -10423,7 +10423,7 @@
   },
   {
     "id": "m32dms-v2",
-    "family": "m32dms-v2",
+    "family": "mdsv2",
     "category": "memory",
     "vcpus": 32,
     "memory": 875,
@@ -10435,7 +10435,7 @@
   },
   {
     "id": "m32ls",
-    "family": "m32ls",
+    "family": "mv1",
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
@@ -10448,7 +10448,7 @@
   },
   {
     "id": "m32ms",
-    "family": "m32ms",
+    "family": "mv1",
     "category": "memory",
     "vcpus": 32,
     "memory": 875,
@@ -10461,7 +10461,7 @@
   },
   {
     "id": "m32ms-v2",
-    "family": "m32ms-v2",
+    "family": "msv2",
     "category": "memory",
     "vcpus": 32,
     "memory": 875,
@@ -10473,7 +10473,7 @@
   },
   {
     "id": "m32ts",
-    "family": "m32ts",
+    "family": "mv1",
     "category": "memory",
     "vcpus": 32,
     "memory": 192,
@@ -10486,7 +10486,7 @@
   },
   {
     "id": "m416ds6-v3",
-    "family": "m416ds6-v3",
+    "family": "mdsv3",
     "category": "memory",
     "vcpus": 416,
     "memory": 5700,
@@ -10498,7 +10498,7 @@
   },
   {
     "id": "m416ds8-v3",
-    "family": "m416ds8-v3",
+    "family": "mdsv3",
     "category": "memory",
     "vcpus": 416,
     "memory": 7600,
@@ -10510,7 +10510,7 @@
   },
   {
     "id": "m416ms-v2",
-    "family": "m416ms-v2",
+    "family": "mv2",
     "category": "memory",
     "vcpus": 416,
     "memory": 11400,
@@ -10522,7 +10522,7 @@
   },
   {
     "id": "m416s-v2",
-    "family": "m416s-v2",
+    "family": "mv2",
     "category": "memory",
     "vcpus": 416,
     "memory": 5700,
@@ -10534,7 +10534,7 @@
   },
   {
     "id": "m416s6-v3",
-    "family": "m416s6-v3",
+    "family": "msv3",
     "category": "memory",
     "vcpus": 416,
     "memory": 5700,
@@ -10546,7 +10546,7 @@
   },
   {
     "id": "m416s8-v3",
-    "family": "m416s8-v3",
+    "family": "msv3",
     "category": "memory",
     "vcpus": 416,
     "memory": 7600,
@@ -10558,7 +10558,7 @@
   },
   {
     "id": "m48bds-v3",
-    "family": "m48bds-v3",
+    "family": "mbdsv3",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -10570,7 +10570,7 @@
   },
   {
     "id": "m48bs-v3",
-    "family": "m48bs-v3",
+    "family": "mbsv3",
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
@@ -10582,7 +10582,7 @@
   },
   {
     "id": "m48ds1-v3",
-    "family": "m48ds1-v3",
+    "family": "mdsv3",
     "category": "memory",
     "vcpus": 48,
     "memory": 974,
@@ -10594,7 +10594,7 @@
   },
   {
     "id": "m48s1-v3",
-    "family": "m48s1-v3",
+    "family": "msv3",
     "category": "memory",
     "vcpus": 48,
     "memory": 974,
@@ -10606,7 +10606,7 @@
   },
   {
     "id": "m624ds12-v3",
-    "family": "m624ds12-v3",
+    "family": "mdsv3",
     "category": "memory",
     "vcpus": 624,
     "memory": 11400,
@@ -10618,7 +10618,7 @@
   },
   {
     "id": "m624s12-v3",
-    "family": "m624s12-v3",
+    "family": "msv3",
     "category": "memory",
     "vcpus": 624,
     "memory": 11400,
@@ -10630,7 +10630,7 @@
   },
   {
     "id": "m624s12-v3",
-    "family": "m624s12-v3",
+    "family": "msv3",
     "category": "memory",
     "vcpus": 624,
     "memory": 11400,
@@ -10642,7 +10642,7 @@
   },
   {
     "id": "m64bds-v3",
-    "family": "m64bds-v3",
+    "family": "mbdsv3",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -10654,7 +10654,7 @@
   },
   {
     "id": "m64bds1-v3",
-    "family": "m64bds1-v3",
+    "family": "mbdsv3",
     "category": "memory",
     "vcpus": 64,
     "memory": 1397,
@@ -10666,7 +10666,7 @@
   },
   {
     "id": "m64bs-v3",
-    "family": "m64bs-v3",
+    "family": "mbsv3",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -10678,7 +10678,7 @@
   },
   {
     "id": "m64dms-v2",
-    "family": "m64dms-v2",
+    "family": "mdsv2",
     "category": "memory",
     "vcpus": 64,
     "memory": 1792,
@@ -10690,7 +10690,7 @@
   },
   {
     "id": "m64ds-v2",
-    "family": "m64ds-v2",
+    "family": "mdsv2",
     "category": "memory",
     "vcpus": 64,
     "memory": 1024,
@@ -10702,7 +10702,7 @@
   },
   {
     "id": "m64ls",
-    "family": "m64ls",
+    "family": "mv1",
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
@@ -10715,7 +10715,7 @@
   },
   {
     "id": "m64m",
-    "family": "m64m",
+    "family": "mv1",
     "category": "memory",
     "vcpus": 64,
     "memory": 1792,
@@ -10728,7 +10728,7 @@
   },
   {
     "id": "m64ms",
-    "family": "m64ms",
+    "family": "mv1",
     "category": "memory",
     "vcpus": 64,
     "memory": 1792,
@@ -10741,7 +10741,7 @@
   },
   {
     "id": "m64ms-v2",
-    "family": "m64ms-v2",
+    "family": "msv2",
     "category": "memory",
     "vcpus": 64,
     "memory": 1792,
@@ -10753,7 +10753,7 @@
   },
   {
     "id": "m64s",
-    "family": "m64s",
+    "family": "mv1",
     "category": "memory",
     "vcpus": 64,
     "memory": 1024,
@@ -10766,7 +10766,7 @@
   },
   {
     "id": "m64s-v2",
-    "family": "m64s-v2",
+    "family": "msv2",
     "category": "memory",
     "vcpus": 64,
     "memory": 1024,
@@ -10778,7 +10778,7 @@
   },
   {
     "id": "m832ds12-v3",
-    "family": "m832ds12-v3",
+    "family": "mdsv3",
     "category": "memory",
     "vcpus": 832,
     "memory": 15200,
@@ -10790,7 +10790,7 @@
   },
   {
     "id": "m832ids16-v3",
-    "family": "m832ids16-v3",
+    "family": "mdsv3",
     "category": "memory",
     "vcpus": 832,
     "memory": 11400,
@@ -10802,7 +10802,7 @@
   },
   {
     "id": "m832is16-v3",
-    "family": "m832is16-v3",
+    "family": "msv3",
     "category": "memory",
     "vcpus": 832,
     "memory": 15200,
@@ -10814,7 +10814,7 @@
   },
   {
     "id": "m832is168-v3",
-    "family": "m832is168-v3",
+    "family": "msv3",
     "category": "memory",
     "vcpus": 832,
     "memory": 15200,
@@ -10826,7 +10826,7 @@
   },
   {
     "id": "m832s12-v3",
-    "family": "m832s12-v3",
+    "family": "msv3",
     "category": "memory",
     "vcpus": 832,
     "memory": 11400,
@@ -10838,7 +10838,7 @@
   },
   {
     "id": "m832s12-v3",
-    "family": "m832s12-v3",
+    "family": "msv3",
     "category": "memory",
     "vcpus": 832,
     "memory": 11400,
@@ -10850,7 +10850,7 @@
   },
   {
     "id": "m896ixds32-v3",
-    "family": "m896ixds32-v3",
+    "family": "mdsv3",
     "category": "memory",
     "vcpus": 896,
     "memory": 30400,
@@ -10862,7 +10862,7 @@
   },
   {
     "id": "m8ms",
-    "family": "m8ms",
+    "family": "mv1",
     "category": "memory",
     "vcpus": 8,
     "memory": 219,
@@ -10875,7 +10875,7 @@
   },
   {
     "id": "m96bds-v3",
-    "family": "m96bds-v3",
+    "family": "mbdsv3",
     "category": "memory",
     "vcpus": 96,
     "memory": 768,
@@ -10887,7 +10887,7 @@
   },
   {
     "id": "m96bds2-v3",
-    "family": "m96bds2-v3",
+    "family": "mbdsv3",
     "category": "memory",
     "vcpus": 96,
     "memory": 1946,
@@ -10899,7 +10899,7 @@
   },
   {
     "id": "m96bs-v3",
-    "family": "m96bs-v3",
+    "family": "mbsv3",
     "category": "memory",
     "vcpus": 96,
     "memory": 768,
@@ -10911,7 +10911,7 @@
   },
   {
     "id": "m96ds1-v3",
-    "family": "m96ds1-v3",
+    "family": "mdsv3",
     "category": "memory",
     "vcpus": 96,
     "memory": 974,
@@ -10923,7 +10923,7 @@
   },
   {
     "id": "m96ds2-v3",
-    "family": "m96ds2-v3",
+    "family": "mdsv3",
     "category": "memory",
     "vcpus": 96,
     "memory": 1946,
@@ -10935,7 +10935,7 @@
   },
   {
     "id": "m96s1-v3",
-    "family": "m96s1-v3",
+    "family": "msv3",
     "category": "memory",
     "vcpus": 96,
     "memory": 974,
@@ -10947,7 +10947,7 @@
   },
   {
     "id": "m96s2-v3",
-    "family": "m96s2-v3",
+    "family": "msv3",
     "category": "memory",
     "vcpus": 96,
     "memory": 1946,
@@ -10959,7 +10959,7 @@
   },
   {
     "id": "nc12",
-    "family": "nc12",
+    "family": "ncv1",
     "category": "accelerated",
     "vcpus": 12,
     "memory": 112,
@@ -10971,7 +10971,7 @@
   },
   {
     "id": "nc12s-v2",
-    "family": "nc12s-v2",
+    "family": "ncv2",
     "category": "accelerated",
     "vcpus": 12,
     "memory": 224,
@@ -10983,7 +10983,7 @@
   },
   {
     "id": "nc12s-v3",
-    "family": "nc12s-v3",
+    "family": "ncv3",
     "category": "accelerated",
     "vcpus": 12,
     "memory": 224,
@@ -10995,7 +10995,7 @@
   },
   {
     "id": "nc16as-t4-v3",
-    "family": "nc16as-t4-v3",
+    "family": "ncast4v3",
     "category": "accelerated",
     "vcpus": 16,
     "memory": 110,
@@ -11007,7 +11007,7 @@
   },
   {
     "id": "nc24",
-    "family": "nc24",
+    "family": "ncv1",
     "category": "accelerated",
     "vcpus": 24,
     "memory": 224,
@@ -11019,7 +11019,7 @@
   },
   {
     "id": "nc24ads-a100-v4",
-    "family": "nc24ads-a100-v4",
+    "family": "nca100v4",
     "category": "accelerated",
     "vcpus": 24,
     "memory": 220,
@@ -11031,7 +11031,7 @@
   },
   {
     "id": "nc24r",
-    "family": "nc24r",
+    "family": "ncv1",
     "category": "accelerated",
     "vcpus": 24,
     "memory": 224,
@@ -11043,7 +11043,7 @@
   },
   {
     "id": "nc24rs-v2",
-    "family": "nc24rs-v2",
+    "family": "ncv2",
     "category": "accelerated",
     "vcpus": 24,
     "memory": 448,
@@ -11055,7 +11055,7 @@
   },
   {
     "id": "nc24rs-v3",
-    "family": "nc24rs-v3",
+    "family": "ncv3",
     "category": "accelerated",
     "vcpus": 24,
     "memory": 448,
@@ -11067,7 +11067,7 @@
   },
   {
     "id": "nc24s-v2",
-    "family": "nc24s-v2",
+    "family": "ncv2",
     "category": "accelerated",
     "vcpus": 24,
     "memory": 448,
@@ -11079,7 +11079,7 @@
   },
   {
     "id": "nc24s-v3",
-    "family": "nc24s-v3",
+    "family": "ncv3",
     "category": "accelerated",
     "vcpus": 24,
     "memory": 448,
@@ -11091,7 +11091,7 @@
   },
   {
     "id": "nc40ads-h100-v5",
-    "family": "nc40ads-h100-v5",
+    "family": "ncadsh100v5",
     "category": "accelerated",
     "vcpus": 40,
     "memory": 320,
@@ -11103,7 +11103,7 @@
   },
   {
     "id": "nc48ads-a100-v4",
-    "family": "nc48ads-a100-v4",
+    "family": "nca100v4",
     "category": "accelerated",
     "vcpus": 48,
     "memory": 440,
@@ -11115,7 +11115,7 @@
   },
   {
     "id": "nc4as-t4-v3",
-    "family": "nc4as-t4-v3",
+    "family": "ncast4v3",
     "category": "accelerated",
     "vcpus": 4,
     "memory": 28,
@@ -11127,7 +11127,7 @@
   },
   {
     "id": "nc6",
-    "family": "nc6",
+    "family": "ncv1",
     "category": "accelerated",
     "vcpus": 6,
     "memory": 56,
@@ -11139,7 +11139,7 @@
   },
   {
     "id": "nc64as-t4-v3",
-    "family": "nc64as-t4-v3",
+    "family": "ncast4v3",
     "category": "accelerated",
     "vcpus": 64,
     "memory": 448,
@@ -11151,7 +11151,7 @@
   },
   {
     "id": "nc6s-v2",
-    "family": "nc6s-v2",
+    "family": "ncv2",
     "category": "accelerated",
     "vcpus": 6,
     "memory": 112,
@@ -11163,7 +11163,7 @@
   },
   {
     "id": "nc6s-v3",
-    "family": "nc6s-v3",
+    "family": "ncv3",
     "category": "accelerated",
     "vcpus": 6,
     "memory": 112,
@@ -11175,7 +11175,7 @@
   },
   {
     "id": "nc80adis-h100-v5",
-    "family": "nc80adis-h100-v5",
+    "family": "ncadsh100v5",
     "category": "accelerated",
     "vcpus": 80,
     "memory": 640,
@@ -11187,7 +11187,7 @@
   },
   {
     "id": "nc8as-t4-v3",
-    "family": "nc8as-t4-v3",
+    "family": "ncast4v3",
     "category": "accelerated",
     "vcpus": 8,
     "memory": 56,
@@ -11199,7 +11199,7 @@
   },
   {
     "id": "nc96ads-a100-v4",
-    "family": "nc96ads-a100-v4",
+    "family": "nca100v4",
     "category": "accelerated",
     "vcpus": 96,
     "memory": 880,
@@ -11211,7 +11211,7 @@
   },
   {
     "id": "ncc40ads-h100-v5",
-    "family": "ncc40ads-h100-v5",
+    "family": "nccadsh100v5",
     "category": "accelerated",
     "vcpus": 40,
     "memory": 320,
@@ -11223,7 +11223,7 @@
   },
   {
     "id": "nd12s",
-    "family": "nd12s",
+    "family": "ndv1",
     "category": "accelerated",
     "vcpus": 12,
     "memory": 224,
@@ -11235,7 +11235,7 @@
   },
   {
     "id": "nd24rs",
-    "family": "nd24rs",
+    "family": "ndv1",
     "category": "accelerated",
     "vcpus": 24,
     "memory": 448,
@@ -11247,7 +11247,7 @@
   },
   {
     "id": "nd24s",
-    "family": "nd24s",
+    "family": "ndv1",
     "category": "accelerated",
     "vcpus": 24,
     "memory": 448,
@@ -11259,7 +11259,7 @@
   },
   {
     "id": "nd40rs-v2",
-    "family": "nd40rs-v2",
+    "family": "ndv2",
     "category": "accelerated",
     "vcpus": 40,
     "memory": 672,
@@ -11271,7 +11271,7 @@
   },
   {
     "id": "nd6s",
-    "family": "nd6s",
+    "family": "ndv1",
     "category": "accelerated",
     "vcpus": 6,
     "memory": 112,
@@ -11283,7 +11283,7 @@
   },
   {
     "id": "nd96amsr-a100-v4",
-    "family": "nd96amsr-a100-v4",
+    "family": "ndma100v4",
     "category": "accelerated",
     "vcpus": 96,
     "memory": 1923,
@@ -11295,7 +11295,7 @@
   },
   {
     "id": "nd96asr-a100-v4",
-    "family": "nd96asr-a100-v4",
+    "family": "ndasra100v4",
     "category": "accelerated",
     "vcpus": 96,
     "memory": 900,
@@ -11307,7 +11307,7 @@
   },
   {
     "id": "nd96isr-h100-v5",
-    "family": "nd96isr-h100-v5",
+    "family": "ndh100v5",
     "category": "accelerated",
     "vcpus": 96,
     "memory": 1900,
@@ -11319,7 +11319,7 @@
   },
   {
     "id": "nd96isr-h200-v5",
-    "family": "nd96isr-h200-v5",
+    "family": "ndh200v5",
     "category": "accelerated",
     "vcpus": 96,
     "memory": 1900,
@@ -11331,7 +11331,7 @@
   },
   {
     "id": "nd96isr-mi300x-v5",
-    "family": "nd96isr-mi300x-v5",
+    "family": "ndmi300xv5",
     "category": "accelerated",
     "vcpus": 96,
     "memory": 1900,
@@ -11343,7 +11343,7 @@
   },
   {
     "id": "ng16ads-v620-v1",
-    "family": "ng16ads-v620-v1",
+    "family": "ngadsv620",
     "category": "accelerated",
     "vcpus": 16,
     "memory": 32,
@@ -11355,7 +11355,7 @@
   },
   {
     "id": "ng32adms-v620-v1",
-    "family": "ng32adms-v620-v1",
+    "family": "ngadsv620",
     "category": "accelerated",
     "vcpus": 32,
     "memory": 176,
@@ -11367,7 +11367,7 @@
   },
   {
     "id": "ng32ads-v620-v1",
-    "family": "ng32ads-v620-v1",
+    "family": "ngadsv620",
     "category": "accelerated",
     "vcpus": 32,
     "memory": 64,
@@ -11379,7 +11379,7 @@
   },
   {
     "id": "ng8ads-v620-v1",
-    "family": "ng8ads-v620-v1",
+    "family": "ngadsv620",
     "category": "accelerated",
     "vcpus": 8,
     "memory": 16,
@@ -11391,7 +11391,7 @@
   },
   {
     "id": "nm16ads-ma35d",
-    "family": "nm16ads-ma35d",
+    "family": "nmadsma35d",
     "category": "accelerated",
     "vcpus": 16,
     "memory": 30,
@@ -11403,7 +11403,7 @@
   },
   {
     "id": "np10s",
-    "family": "np10s",
+    "family": "np",
     "category": "accelerated",
     "vcpus": 10,
     "memory": 192,
@@ -11415,7 +11415,7 @@
   },
   {
     "id": "np20s",
-    "family": "np20s",
+    "family": "np",
     "category": "accelerated",
     "vcpus": 20,
     "memory": 384,
@@ -11427,7 +11427,7 @@
   },
   {
     "id": "np40s",
-    "family": "np40s",
+    "family": "np",
     "category": "accelerated",
     "vcpus": 40,
     "memory": 768,
@@ -11439,7 +11439,7 @@
   },
   {
     "id": "nv12",
-    "family": "nv12",
+    "family": "nvv1",
     "category": "accelerated",
     "vcpus": 12,
     "memory": 112,
@@ -11451,7 +11451,7 @@
   },
   {
     "id": "nv12ads-a10-v5",
-    "family": "nv12ads-a10-v5",
+    "family": "nvadsa10v5",
     "category": "accelerated",
     "vcpus": 12,
     "memory": 110,
@@ -11463,7 +11463,7 @@
   },
   {
     "id": "nv12ads-v710-v5",
-    "family": "nv12ads-v710-v5",
+    "family": "nvadsv710v5",
     "category": "accelerated",
     "vcpus": 12,
     "memory": 64,
@@ -11475,7 +11475,7 @@
   },
   {
     "id": "nv12s-v3",
-    "family": "nv12s-v3",
+    "family": "nvv3",
     "category": "accelerated",
     "vcpus": 12,
     "memory": 112,
@@ -11487,7 +11487,7 @@
   },
   {
     "id": "nv16as-v4",
-    "family": "nv16as-v4",
+    "family": "nvv4",
     "category": "accelerated",
     "vcpus": 16,
     "memory": 56,
@@ -11499,7 +11499,7 @@
   },
   {
     "id": "nv18ads-a10-v5",
-    "family": "nv18ads-a10-v5",
+    "family": "nvadsa10v5",
     "category": "accelerated",
     "vcpus": 18,
     "memory": 220,
@@ -11511,7 +11511,7 @@
   },
   {
     "id": "nv24",
-    "family": "nv24",
+    "family": "nvv1",
     "category": "accelerated",
     "vcpus": 24,
     "memory": 224,
@@ -11523,7 +11523,7 @@
   },
   {
     "id": "nv24ads-v710-v5",
-    "family": "nv24ads-v710-v5",
+    "family": "nvadsv710v5",
     "category": "accelerated",
     "vcpus": 24,
     "memory": 128,
@@ -11535,7 +11535,7 @@
   },
   {
     "id": "nv24s-v3",
-    "family": "nv24s-v3",
+    "family": "nvv3",
     "category": "accelerated",
     "vcpus": 24,
     "memory": 224,
@@ -11547,7 +11547,7 @@
   },
   {
     "id": "nv28ads-v710-v5",
-    "family": "nv28ads-v710-v5",
+    "family": "nvadsv710v5",
     "category": "accelerated",
     "vcpus": 28,
     "memory": 160,
@@ -11559,7 +11559,7 @@
   },
   {
     "id": "nv32as-v4",
-    "family": "nv32as-v4",
+    "family": "nvv4",
     "category": "accelerated",
     "vcpus": 32,
     "memory": 112,
@@ -11571,7 +11571,7 @@
   },
   {
     "id": "nv36adms-a10-v5",
-    "family": "nv36adms-a10-v5",
+    "family": "nvadsa10v5",
     "category": "accelerated",
     "vcpus": 36,
     "memory": 880,
@@ -11583,7 +11583,7 @@
   },
   {
     "id": "nv36ads-a10-v5",
-    "family": "nv36ads-a10-v5",
+    "family": "nvadsa10v5",
     "category": "accelerated",
     "vcpus": 36,
     "memory": 440,
@@ -11595,7 +11595,7 @@
   },
   {
     "id": "nv48s-v3",
-    "family": "nv48s-v3",
+    "family": "nvv3",
     "category": "accelerated",
     "vcpus": 48,
     "memory": 448,
@@ -11607,7 +11607,7 @@
   },
   {
     "id": "nv4ads-v710-v5",
-    "family": "nv4ads-v710-v5",
+    "family": "nvadsv710v5",
     "category": "accelerated",
     "vcpus": 4,
     "memory": 16,
@@ -11619,7 +11619,7 @@
   },
   {
     "id": "nv4as-v4",
-    "family": "nv4as-v4",
+    "family": "nvv4",
     "category": "accelerated",
     "vcpus": 4,
     "memory": 14,
@@ -11631,7 +11631,7 @@
   },
   {
     "id": "nv6",
-    "family": "nv6",
+    "family": "nvv1",
     "category": "accelerated",
     "vcpus": 6,
     "memory": 56,
@@ -11643,7 +11643,7 @@
   },
   {
     "id": "nv6adsv5",
-    "family": "nv6adsv5",
+    "family": "nvadsa10v5",
     "category": "accelerated",
     "vcpus": 6,
     "memory": 55,
@@ -11655,7 +11655,7 @@
   },
   {
     "id": "nv72ads-a10-v5",
-    "family": "nv72ads-a10-v5",
+    "family": "nvadsa10v5",
     "category": "accelerated",
     "vcpus": 72,
     "memory": 880,
@@ -11667,7 +11667,7 @@
   },
   {
     "id": "nv8ads-v710-v5",
-    "family": "nv8ads-v710-v5",
+    "family": "nvadsv710v5",
     "category": "accelerated",
     "vcpus": 8,
     "memory": 32,
@@ -11679,7 +11679,7 @@
   },
   {
     "id": "nv8as-v4",
-    "family": "nv8as-v4",
+    "family": "nvv4",
     "category": "accelerated",
     "vcpus": 8,
     "memory": 28,
@@ -11691,7 +11691,7 @@
   },
   {
     "id": "s144",
-    "family": "s144",
+    "family": "sv1",
     "category": "performance",
     "vcpus": 144,
     "memory": 1536,
@@ -11703,7 +11703,7 @@
   },
   {
     "id": "s144m",
-    "family": "s144m",
+    "family": "sv1",
     "category": "performance",
     "vcpus": 144,
     "memory": 3072,
@@ -11715,7 +11715,7 @@
   },
   {
     "id": "s192",
-    "family": "s192",
+    "family": "sv1",
     "category": "performance",
     "vcpus": 192,
     "memory": 2048,
@@ -11727,7 +11727,7 @@
   },
   {
     "id": "s192m",
-    "family": "s192m",
+    "family": "sv1",
     "category": "performance",
     "vcpus": 192,
     "memory": 4096,
@@ -11739,7 +11739,7 @@
   },
   {
     "id": "s192xm",
-    "family": "s192xm",
+    "family": "sv1",
     "category": "performance",
     "vcpus": 192,
     "memory": 6144,
@@ -11751,7 +11751,7 @@
   },
   {
     "id": "s224",
-    "family": "s224",
+    "family": "sv1",
     "category": "performance",
     "vcpus": 224,
     "memory": 3072,
@@ -11763,7 +11763,7 @@
   },
   {
     "id": "s224m",
-    "family": "s224m",
+    "family": "sv1",
     "category": "performance",
     "vcpus": 224,
     "memory": 6144,
@@ -11775,7 +11775,7 @@
   },
   {
     "id": "s224om",
-    "family": "s224om",
+    "family": "sv1",
     "category": "performance",
     "vcpus": 224,
     "memory": 6144,
@@ -11787,7 +11787,7 @@
   },
   {
     "id": "s224oo",
-    "family": "s224oo",
+    "family": "sv1",
     "category": "performance",
     "vcpus": 224,
     "memory": 4608,
@@ -11799,7 +11799,7 @@
   },
   {
     "id": "s224oom",
-    "family": "s224oom",
+    "family": "sv1",
     "category": "performance",
     "vcpus": 224,
     "memory": 9216,
@@ -11811,7 +11811,7 @@
   },
   {
     "id": "s224ooo",
-    "family": "s224ooo",
+    "family": "sv1",
     "category": "performance",
     "vcpus": 224,
     "memory": 7680,
@@ -11823,7 +11823,7 @@
   },
   {
     "id": "s384",
-    "family": "s384",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 384,
     "memory": 4096,
@@ -11835,7 +11835,7 @@
   },
   {
     "id": "s384m",
-    "family": "s384m",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 384,
     "memory": 6144,
@@ -11847,7 +11847,7 @@
   },
   {
     "id": "s384xm",
-    "family": "s384xm",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 384,
     "memory": 8192,
@@ -11859,7 +11859,7 @@
   },
   {
     "id": "s384xxm",
-    "family": "s384xxm",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 384,
     "memory": 12000,
@@ -11871,7 +11871,7 @@
   },
   {
     "id": "s448",
-    "family": "s448",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 448,
     "memory": 6144,
@@ -11883,7 +11883,7 @@
   },
   {
     "id": "s448m",
-    "family": "s448m",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 448,
     "memory": 12288,
@@ -11895,7 +11895,7 @@
   },
   {
     "id": "s448om",
-    "family": "s448om",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 448,
     "memory": 12288,
@@ -11907,7 +11907,7 @@
   },
   {
     "id": "s448oo",
-    "family": "s448oo",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 448,
     "memory": 9216,
@@ -11919,7 +11919,7 @@
   },
   {
     "id": "s448oom",
-    "family": "s448oom",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 448,
     "memory": 18432,
@@ -11931,7 +11931,7 @@
   },
   {
     "id": "s448ooo",
-    "family": "s448ooo",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 448,
     "memory": 15360,
@@ -11943,7 +11943,7 @@
   },
   {
     "id": "s576m",
-    "family": "s576m",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 576,
     "memory": 12000,
@@ -11955,7 +11955,7 @@
   },
   {
     "id": "s576xm",
-    "family": "s576xm",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 576,
     "memory": 18432,
@@ -11967,7 +11967,7 @@
   },
   {
     "id": "s672",
-    "family": "s672",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 672,
     "memory": 9216,
@@ -11979,7 +11979,7 @@
   },
   {
     "id": "s672m",
-    "family": "s672m",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 672,
     "memory": 18432,
@@ -11991,7 +11991,7 @@
   },
   {
     "id": "s672om",
-    "family": "s672om",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 672,
     "memory": 18432,
@@ -12003,7 +12003,7 @@
   },
   {
     "id": "s672oo",
-    "family": "s672oo",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 672,
     "memory": 13824,
@@ -12015,7 +12015,7 @@
   },
   {
     "id": "s672oom",
-    "family": "s672oom",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 672,
     "memory": 27648,
@@ -12027,7 +12027,7 @@
   },
   {
     "id": "s672ooo",
-    "family": "s672ooo",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 672,
     "memory": 23040,
@@ -12039,7 +12039,7 @@
   },
   {
     "id": "s72",
-    "family": "s72",
+    "family": "sv1",
     "category": "performance",
     "vcpus": 72,
     "memory": 768,
@@ -12051,7 +12051,7 @@
   },
   {
     "id": "s72m",
-    "family": "s72m",
+    "family": "sv1",
     "category": "performance",
     "vcpus": 72,
     "memory": 1536,
@@ -12063,7 +12063,7 @@
   },
   {
     "id": "s768m",
-    "family": "s768m",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 768,
     "memory": 16384,
@@ -12075,7 +12075,7 @@
   },
   {
     "id": "s768xm",
-    "family": "s768xm",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 768,
     "memory": 24576,
@@ -12087,7 +12087,7 @@
   },
   {
     "id": "s896",
-    "family": "s896",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 896,
     "memory": 12288,
@@ -12099,7 +12099,7 @@
   },
   {
     "id": "s896m",
-    "family": "s896m",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 896,
     "memory": 24576,
@@ -12111,7 +12111,7 @@
   },
   {
     "id": "s896om",
-    "family": "s896om",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 896,
     "memory": 24576,
@@ -12123,7 +12123,7 @@
   },
   {
     "id": "s896oo",
-    "family": "s896oo",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 896,
     "memory": 18432,
@@ -12135,7 +12135,7 @@
   },
   {
     "id": "s896oom",
-    "family": "s896oom",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 896,
     "memory": 36864,
@@ -12147,7 +12147,7 @@
   },
   {
     "id": "s896ooo",
-    "family": "s896ooo",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 896,
     "memory": 30720,
@@ -12159,7 +12159,7 @@
   },
   {
     "id": "s96",
-    "family": "s96",
+    "family": "sv1",
     "category": "performance",
     "vcpus": 96,
     "memory": 768,
@@ -12171,7 +12171,7 @@
   },
   {
     "id": "s960m",
-    "family": "s960m",
+    "family": "sv2",
     "category": "performance",
     "vcpus": 896,
     "memory": 20480,
