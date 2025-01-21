@@ -1,0 +1,4073 @@
+[
+  {
+    "id": "a2-highgpu-1g",
+    "family": "a2-highgpu-1g",
+    "category": "accelerated",
+    "vcpus": 12,
+    "memory": 85,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8273cl"
+    ]
+  },
+  {
+    "id": "a2-highgpu-2g",
+    "family": "a2-highgpu-2g",
+    "category": "accelerated",
+    "vcpus": 24,
+    "memory": 170,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8273cl"
+    ]
+  },
+  {
+    "id": "a2-highgpu-4g",
+    "family": "a2-highgpu-4g",
+    "category": "accelerated",
+    "vcpus": 48,
+    "memory": 340,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8273cl"
+    ]
+  },
+  {
+    "id": "a2-highgpu-8g",
+    "family": "a2-highgpu-8g",
+    "category": "accelerated",
+    "vcpus": 96,
+    "memory": 680,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8273cl"
+    ]
+  },
+  {
+    "id": "a2-megagpu-16g",
+    "family": "a2-megagpu-16g",
+    "category": "accelerated",
+    "vcpus": 96,
+    "memory": 1360,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8273cl"
+    ]
+  },
+  {
+    "id": "a2-ultragpu-1g",
+    "family": "a2-ultragpu-1g",
+    "category": "accelerated",
+    "vcpus": 12,
+    "memory": 170,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8273cl"
+    ]
+  },
+  {
+    "id": "a2-ultragpu-2g",
+    "family": "a2-ultragpu-2g",
+    "category": "accelerated",
+    "vcpus": 24,
+    "memory": 340,
+    "ssd": 750,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8273cl"
+    ]
+  },
+  {
+    "id": "a2-ultragpu-4g",
+    "family": "a2-ultragpu-4g",
+    "category": "accelerated",
+    "vcpus": 48,
+    "memory": 680,
+    "ssd": 1500,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8273cl"
+    ]
+  },
+  {
+    "id": "a2-ultragpu-8g",
+    "family": "a2-ultragpu-8g",
+    "category": "accelerated",
+    "vcpus": 96,
+    "memory": 1360,
+    "ssd": 3000,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8273cl"
+    ]
+  },
+  {
+    "id": "a3-edgegpu-8g",
+    "family": "a3-edgegpu-8g",
+    "category": "accelerated",
+    "vcpus": 208,
+    "memory": 1872,
+    "ssd": 6000,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "a3-highgpu-1g",
+    "family": "a3-highgpu-1g",
+    "category": "accelerated",
+    "vcpus": 26,
+    "memory": 234,
+    "ssd": 750,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "a3-highgpu-2g",
+    "family": "a3-highgpu-2g",
+    "category": "accelerated",
+    "vcpus": 52,
+    "memory": 468,
+    "ssd": 1500,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "a3-highgpu-4g",
+    "family": "a3-highgpu-4g",
+    "category": "accelerated",
+    "vcpus": 104,
+    "memory": 936,
+    "ssd": 3000,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "a3-highgpu-8g",
+    "family": "a3-highgpu-8g",
+    "category": "accelerated",
+    "vcpus": 208,
+    "memory": 1872,
+    "ssd": 6000,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "a3-megagpu-8g",
+    "family": "a3-megagpu-8g",
+    "category": "accelerated",
+    "vcpus": 208,
+    "memory": 1872,
+    "ssd": 6000,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "a3-ultra-8g",
+    "family": "a3-ultra-8g",
+    "category": "accelerated",
+    "vcpus": 224,
+    "memory": 2952,
+    "ssd": 12000,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c2-standard-16",
+    "family": "c2-standard-16",
+    "category": "compute",
+    "vcpus": 16,
+    "memory": 64,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-6253cl"
+    ]
+  },
+  {
+    "id": "c2-standard-30",
+    "family": "c2-standard-30",
+    "category": "compute",
+    "vcpus": 30,
+    "memory": 120,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-6253cl"
+    ]
+  },
+  {
+    "id": "c2-standard-4",
+    "family": "c2-standard-4",
+    "category": "compute",
+    "vcpus": 4,
+    "memory": 16,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-6253cl"
+    ]
+  },
+  {
+    "id": "c2-standard-60",
+    "family": "c2-standard-60",
+    "category": "compute",
+    "vcpus": 60,
+    "memory": 240,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-6253cl"
+    ]
+  },
+  {
+    "id": "c2-standard-8",
+    "family": "c2-standard-8",
+    "category": "compute",
+    "vcpus": 8,
+    "memory": 32,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-6253cl"
+    ]
+  },
+  {
+    "id": "c2d-highcpu-112",
+    "family": "c2d-highcpu-112",
+    "category": "compute",
+    "vcpus": 112,
+    "memory": 224,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-highcpu-16",
+    "family": "c2d-highcpu-16",
+    "category": "compute",
+    "vcpus": 16,
+    "memory": 32,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-highcpu-2",
+    "family": "c2d-highcpu-2",
+    "category": "compute",
+    "vcpus": 2,
+    "memory": 4,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-highcpu-32",
+    "family": "c2d-highcpu-32",
+    "category": "compute",
+    "vcpus": 32,
+    "memory": 64,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-highcpu-4",
+    "family": "c2d-highcpu-4",
+    "category": "compute",
+    "vcpus": 4,
+    "memory": 8,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-highcpu-56",
+    "family": "c2d-highcpu-56",
+    "category": "compute",
+    "vcpus": 56,
+    "memory": 112,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-highcpu-8",
+    "family": "c2d-highcpu-8",
+    "category": "compute",
+    "vcpus": 8,
+    "memory": 16,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-highmem-112",
+    "family": "c2d-highmem-112",
+    "category": "compute",
+    "vcpus": 112,
+    "memory": 896,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-highmem-16",
+    "family": "c2d-highmem-16",
+    "category": "compute",
+    "vcpus": 16,
+    "memory": 128,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-highmem-2",
+    "family": "c2d-highmem-2",
+    "category": "compute",
+    "vcpus": 2,
+    "memory": 16,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-highmem-32",
+    "family": "c2d-highmem-32",
+    "category": "compute",
+    "vcpus": 32,
+    "memory": 256,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-highmem-4",
+    "family": "c2d-highmem-4",
+    "category": "compute",
+    "vcpus": 4,
+    "memory": 32,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-highmem-56",
+    "family": "c2d-highmem-56",
+    "category": "compute",
+    "vcpus": 56,
+    "memory": 448,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-highmem-8",
+    "family": "c2d-highmem-8",
+    "category": "compute",
+    "vcpus": 8,
+    "memory": 64,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-standard-112",
+    "family": "c2d-standard-112",
+    "category": "compute",
+    "vcpus": 112,
+    "memory": 448,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-standard-16",
+    "family": "c2d-standard-16",
+    "category": "compute",
+    "vcpus": 16,
+    "memory": 64,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-standard-2",
+    "family": "c2d-standard-2",
+    "category": "compute",
+    "vcpus": 2,
+    "memory": 8,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-standard-32",
+    "family": "c2d-standard-32",
+    "category": "compute",
+    "vcpus": 32,
+    "memory": 128,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-standard-4",
+    "family": "c2d-standard-4",
+    "category": "compute",
+    "vcpus": 4,
+    "memory": 16,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-standard-56",
+    "family": "c2d-standard-56",
+    "category": "compute",
+    "vcpus": 56,
+    "memory": 224,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c2d-standard-8",
+    "family": "c2d-standard-8",
+    "category": "compute",
+    "vcpus": 8,
+    "memory": 32,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "c3-highcpu-176",
+    "family": "c3-highcpu-176",
+    "category": "general",
+    "vcpus": 176,
+    "memory": 352,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-highcpu-192-metal",
+    "family": "c3-highcpu-192-metal",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 512,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-highcpu-22",
+    "family": "c3-highcpu-22",
+    "category": "general",
+    "vcpus": 22,
+    "memory": 44,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-highcpu-4",
+    "family": "c3-highcpu-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 8,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-highcpu-44",
+    "family": "c3-highcpu-44",
+    "category": "general",
+    "vcpus": 44,
+    "memory": 88,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-highcpu-8",
+    "family": "c3-highcpu-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-highcpu-88",
+    "family": "c3-highcpu-88",
+    "category": "general",
+    "vcpus": 88,
+    "memory": 176,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-highmem-176",
+    "family": "c3-highmem-176",
+    "category": "general",
+    "vcpus": 176,
+    "memory": 1408,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-highmem-192-metal",
+    "family": "c3-highmem-192-metal",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 1536,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-highmem-22",
+    "family": "c3-highmem-22",
+    "category": "general",
+    "vcpus": 22,
+    "memory": 176,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-highmem-4",
+    "family": "c3-highmem-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-highmem-44",
+    "family": "c3-highmem-44",
+    "category": "general",
+    "vcpus": 44,
+    "memory": 352,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-highmem-8",
+    "family": "c3-highmem-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-highmem-88",
+    "family": "c3-highmem-88",
+    "category": "general",
+    "vcpus": 88,
+    "memory": 704,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-standard-176",
+    "family": "c3-standard-176",
+    "category": "general",
+    "vcpus": 176,
+    "memory": 704,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-standard-176-lssd",
+    "family": "c3-standard-176-lssd",
+    "category": "general",
+    "vcpus": 176,
+    "memory": 704,
+    "ssd": 12000,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-standard-192-metal",
+    "family": "c3-standard-192-metal",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 768,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-standard-22",
+    "family": "c3-standard-22",
+    "category": "general",
+    "vcpus": 22,
+    "memory": 88,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-standard-22-lssd",
+    "family": "c3-standard-22-lssd",
+    "category": "general",
+    "vcpus": 22,
+    "memory": 88,
+    "ssd": 1500,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-standard-4",
+    "family": "c3-standard-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-standard-4-lssd",
+    "family": "c3-standard-4-lssd",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-standard-44",
+    "family": "c3-standard-44",
+    "category": "general",
+    "vcpus": 44,
+    "memory": 176,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-standard-44-lssd",
+    "family": "c3-standard-44-lssd",
+    "category": "general",
+    "vcpus": 44,
+    "memory": 176,
+    "ssd": 3000,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-standard-8",
+    "family": "c3-standard-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-standard-8-lssd",
+    "family": "c3-standard-8-lssd",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "ssd": 750,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-standard-88",
+    "family": "c3-standard-88",
+    "category": "general",
+    "vcpus": 88,
+    "memory": 352,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3-standard-88-lssd",
+    "family": "c3-standard-88-lssd",
+    "category": "general",
+    "vcpus": 88,
+    "memory": 352,
+    "ssd": 6000,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "c3d-highcpu-16",
+    "family": "c3d-highcpu-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highcpu-180",
+    "family": "c3d-highcpu-180",
+    "category": "general",
+    "vcpus": 180,
+    "memory": 354,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highcpu-30",
+    "family": "c3d-highcpu-30",
+    "category": "general",
+    "vcpus": 30,
+    "memory": 59,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highcpu-360",
+    "family": "c3d-highcpu-360",
+    "category": "general",
+    "vcpus": 360,
+    "memory": 708,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highcpu-4",
+    "family": "c3d-highcpu-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 8,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highcpu-60",
+    "family": "c3d-highcpu-60",
+    "category": "general",
+    "vcpus": 60,
+    "memory": 118,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highcpu-8",
+    "family": "c3d-highcpu-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highcpu-90",
+    "family": "c3d-highcpu-90",
+    "category": "general",
+    "vcpus": 90,
+    "memory": 177,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highmem-16",
+    "family": "c3d-highmem-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 128,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highmem-16-lssd",
+    "family": "c3d-highmem-16-lssd",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 128,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highmem-180",
+    "family": "c3d-highmem-180",
+    "category": "general",
+    "vcpus": 180,
+    "memory": 1440,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highmem-180-lssd",
+    "family": "c3d-highmem-180-lssd",
+    "category": "general",
+    "vcpus": 180,
+    "memory": 1440,
+    "ssd": 6000,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highmem-30",
+    "family": "c3d-highmem-30",
+    "category": "general",
+    "vcpus": 30,
+    "memory": 240,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highmem-30-lssd",
+    "family": "c3d-highmem-30-lssd",
+    "category": "general",
+    "vcpus": 30,
+    "memory": 240,
+    "ssd": 750,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highmem-360",
+    "family": "c3d-highmem-360",
+    "category": "general",
+    "vcpus": 360,
+    "memory": 2880,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highmem-360-lssd",
+    "family": "c3d-highmem-360-lssd",
+    "category": "general",
+    "vcpus": 360,
+    "memory": 2880,
+    "ssd": 12000,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highmem-4",
+    "family": "c3d-highmem-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highmem-60",
+    "family": "c3d-highmem-60",
+    "category": "general",
+    "vcpus": 60,
+    "memory": 480,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highmem-60-lssd",
+    "family": "c3d-highmem-60-lssd",
+    "category": "general",
+    "vcpus": 60,
+    "memory": 480,
+    "ssd": 1500,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highmem-8",
+    "family": "c3d-highmem-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highmem-8-lssd",
+    "family": "c3d-highmem-8-lssd",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 64,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highmem-90",
+    "family": "c3d-highmem-90",
+    "category": "general",
+    "vcpus": 90,
+    "memory": 720,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-highmem-90-lssd",
+    "family": "c3d-highmem-90-lssd",
+    "category": "general",
+    "vcpus": 90,
+    "memory": 720,
+    "ssd": 3000,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-standard-16",
+    "family": "c3d-standard-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-standard-16-lssd",
+    "family": "c3d-standard-16-lssd",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-standard-180",
+    "family": "c3d-standard-180",
+    "category": "general",
+    "vcpus": 180,
+    "memory": 720,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-standard-180-lssd",
+    "family": "c3d-standard-180-lssd",
+    "category": "general",
+    "vcpus": 180,
+    "memory": 720,
+    "ssd": 6000,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-standard-30",
+    "family": "c3d-standard-30",
+    "category": "general",
+    "vcpus": 30,
+    "memory": 120,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-standard-30-lssd",
+    "family": "c3d-standard-30-lssd",
+    "category": "general",
+    "vcpus": 30,
+    "memory": 120,
+    "ssd": 750,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-standard-360",
+    "family": "c3d-standard-360",
+    "category": "general",
+    "vcpus": 360,
+    "memory": 1440,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-standard-360-lssd",
+    "family": "c3d-standard-360-lssd",
+    "category": "general",
+    "vcpus": 360,
+    "memory": 1440,
+    "ssd": 12000,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-standard-4",
+    "family": "c3d-standard-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-standard-60",
+    "family": "c3d-standard-60",
+    "category": "general",
+    "vcpus": 60,
+    "memory": 240,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-standard-60-lssd",
+    "family": "c3d-standard-60-lssd",
+    "category": "general",
+    "vcpus": 60,
+    "memory": 240,
+    "ssd": 1500,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-standard-8",
+    "family": "c3d-standard-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-standard-8-lssd",
+    "family": "c3d-standard-8-lssd",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-standard-90",
+    "family": "c3d-standard-90",
+    "category": "general",
+    "vcpus": 90,
+    "memory": 360,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c3d-standard-90-lssd",
+    "family": "c3d-standard-90-lssd",
+    "category": "general",
+    "vcpus": 90,
+    "memory": 360,
+    "ssd": 3000,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-9b14"
+    ]
+  },
+  {
+    "id": "c4-highcpu-16",
+    "family": "c4-highcpu-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-highcpu-192",
+    "family": "c4-highcpu-192",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 384,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-highcpu-2",
+    "family": "c4-highcpu-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 4,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-highcpu-32",
+    "family": "c4-highcpu-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-highcpu-4",
+    "family": "c4-highcpu-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 8,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-highcpu-48",
+    "family": "c4-highcpu-48",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 96,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-highcpu-8",
+    "family": "c4-highcpu-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-highcpu-96",
+    "family": "c4-highcpu-96",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 192,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-highmem-16",
+    "family": "c4-highmem-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 124,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-highmem-192",
+    "family": "c4-highmem-192",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 1488,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-highmem-2",
+    "family": "c4-highmem-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 15,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-highmem-32",
+    "family": "c4-highmem-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 248,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-highmem-4",
+    "family": "c4-highmem-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 31,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-highmem-48",
+    "family": "c4-highmem-48",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 372,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-highmem-8",
+    "family": "c4-highmem-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 62,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-highmem-96",
+    "family": "c4-highmem-96",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 744,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-standard-16",
+    "family": "c4-standard-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 60,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-standard-192",
+    "family": "c4-standard-192",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 720,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-standard-2",
+    "family": "c4-standard-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 7,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-standard-32",
+    "family": "c4-standard-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 120,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-standard-4",
+    "family": "c4-standard-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 15,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-standard-48",
+    "family": "c4-standard-48",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 180,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-standard-8",
+    "family": "c4-standard-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 30,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4-standard-96",
+    "family": "c4-standard-96",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 360,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "c4a-highcpu-1",
+    "family": "c4a-highcpu-1",
+    "category": "general",
+    "vcpus": 1,
+    "memory": 2,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-highcpu-16",
+    "family": "c4a-highcpu-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-highcpu-2",
+    "family": "c4a-highcpu-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 4,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-highcpu-32",
+    "family": "c4a-highcpu-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-highcpu-4",
+    "family": "c4a-highcpu-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 8,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-highcpu-48",
+    "family": "c4a-highcpu-48",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 96,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-highcpu-64",
+    "family": "c4a-highcpu-64",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 128,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-highcpu-72",
+    "family": "c4a-highcpu-72",
+    "category": "general",
+    "vcpus": 72,
+    "memory": 144,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-highcpu-8",
+    "family": "c4a-highcpu-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-highmem-1",
+    "family": "c4a-highmem-1",
+    "category": "general",
+    "vcpus": 1,
+    "memory": 8,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-highmem-16",
+    "family": "c4a-highmem-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 128,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-highmem-2",
+    "family": "c4a-highmem-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-highmem-32",
+    "family": "c4a-highmem-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 256,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-highmem-4",
+    "family": "c4a-highmem-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-highmem-48",
+    "family": "c4a-highmem-48",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 384,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-highmem-64",
+    "family": "c4a-highmem-64",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 512,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-highmem-72",
+    "family": "c4a-highmem-72",
+    "category": "general",
+    "vcpus": 72,
+    "memory": 576,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-highmem-8",
+    "family": "c4a-highmem-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-standard-1",
+    "family": "c4a-standard-1",
+    "category": "general",
+    "vcpus": 1,
+    "memory": 4,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-standard-16",
+    "family": "c4a-standard-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-standard-2",
+    "family": "c4a-standard-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-standard-32",
+    "family": "c4a-standard-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-standard-4",
+    "family": "c4a-standard-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-standard-48",
+    "family": "c4a-standard-48",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-standard-64",
+    "family": "c4a-standard-64",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 256,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-standard-72",
+    "family": "c4a-standard-72",
+    "category": "general",
+    "vcpus": 72,
+    "memory": 288,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "c4a-standard-8",
+    "family": "c4a-standard-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "google-axion"
+    ]
+  },
+  {
+    "id": "e2-highcpu-16",
+    "family": "e2-highcpu-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "e2-highcpu-2",
+    "family": "e2-highcpu-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 2,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "e2-highcpu-32",
+    "family": "e2-highcpu-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "e2-highcpu-4",
+    "family": "e2-highcpu-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 4,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "e2-highcpu-8",
+    "family": "e2-highcpu-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 8,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "e2-highmem-16",
+    "family": "e2-highmem-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 128,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "e2-highmem-2",
+    "family": "e2-highmem-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "e2-highmem-4",
+    "family": "e2-highmem-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "e2-highmem-8",
+    "family": "e2-highmem-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "e2-medium",
+    "family": "e2-medium",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 4,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "e2-micro",
+    "family": "e2-micro",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 1,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "e2-small",
+    "family": "e2-small",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 2,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "e2-standard-16",
+    "family": "e2-standard-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "e2-standard-2",
+    "family": "e2-standard-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "e2-standard-32",
+    "family": "e2-standard-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "e2-standard-4",
+    "family": "e2-standard-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "e2-standard-8",
+    "family": "e2-standard-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "f1-micro",
+    "family": "f1-micro",
+    "category": "general",
+    "vcpus": 1,
+    "memory": 0.6,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "g1-small",
+    "family": "g1-small",
+    "category": "general",
+    "vcpus": 1,
+    "memory": 1.7,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "g2-standard-12",
+    "family": "g2-standard-12",
+    "category": "accelerated",
+    "vcpus": 12,
+    "memory": 48,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8273cl"
+    ]
+  },
+  {
+    "id": "g2-standard-16",
+    "family": "g2-standard-16",
+    "category": "accelerated",
+    "vcpus": 16,
+    "memory": 64,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8273cl"
+    ]
+  },
+  {
+    "id": "g2-standard-24",
+    "family": "g2-standard-24",
+    "category": "accelerated",
+    "vcpus": 24,
+    "memory": 96,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8273cl"
+    ]
+  },
+  {
+    "id": "g2-standard-32",
+    "family": "g2-standard-32",
+    "category": "accelerated",
+    "vcpus": 32,
+    "memory": 128,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8273cl"
+    ]
+  },
+  {
+    "id": "g2-standard-4",
+    "family": "g2-standard-4",
+    "category": "accelerated",
+    "vcpus": 4,
+    "memory": 16,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8273cl"
+    ]
+  },
+  {
+    "id": "g2-standard-48",
+    "family": "g2-standard-48",
+    "category": "accelerated",
+    "vcpus": 48,
+    "memory": 192,
+    "ssd": 1500,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8273cl"
+    ]
+  },
+  {
+    "id": "g2-standard-8",
+    "family": "g2-standard-8",
+    "category": "accelerated",
+    "vcpus": 8,
+    "memory": 32,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8273cl"
+    ]
+  },
+  {
+    "id": "g2-standard-96",
+    "family": "g2-standard-96",
+    "category": "accelerated",
+    "vcpus": 96,
+    "memory": 384,
+    "ssd": 3000,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8273cl"
+    ]
+  },
+  {
+    "id": "h3-standard-88",
+    "family": "h3-standard-88",
+    "category": "compute",
+    "vcpus": 88,
+    "memory": 352,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "m1-megamem-96",
+    "family": "m1-megamem-96",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 1433.6,
+    "ssd": 3000,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m"
+    ]
+  },
+  {
+    "id": "m1-ultramem-160",
+    "family": "m1-ultramem-160",
+    "category": "memory",
+    "vcpus": 160,
+    "memory": 3844,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-e78880v4"
+    ]
+  },
+  {
+    "id": "m1-ultramem-40",
+    "family": "m1-ultramem-40",
+    "category": "memory",
+    "vcpus": 40,
+    "memory": 961,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-e78880v4"
+    ]
+  },
+  {
+    "id": "m1-ultramem-80",
+    "family": "m1-ultramem-80",
+    "category": "memory",
+    "vcpus": 80,
+    "memory": 1922,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-e78880v4"
+    ]
+  },
+  {
+    "id": "m2-hypermem-416",
+    "family": "m2-hypermem-416",
+    "category": "memory",
+    "vcpus": 416,
+    "memory": 8832,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8280l"
+    ]
+  },
+  {
+    "id": "m2-megamem-416",
+    "family": "m2-megamem-416",
+    "category": "memory",
+    "vcpus": 416,
+    "memory": 5888,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8280l"
+    ]
+  },
+  {
+    "id": "m2-ultramem-208",
+    "family": "m2-ultramem-208",
+    "category": "memory",
+    "vcpus": 208,
+    "memory": 5888,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8280l"
+    ]
+  },
+  {
+    "id": "m2-ultramem-416",
+    "family": "m2-ultramem-416",
+    "category": "memory",
+    "vcpus": 416,
+    "memory": 11776,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8280l"
+    ]
+  },
+  {
+    "id": "m3-megamem-128",
+    "family": "m3-megamem-128",
+    "category": "memory",
+    "vcpus": 128,
+    "memory": 1952,
+    "ssd": 3000,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c"
+    ]
+  },
+  {
+    "id": "m3-megamem-64",
+    "family": "m3-megamem-64",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 976,
+    "ssd": 1500,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c"
+    ]
+  },
+  {
+    "id": "m3-ultramem-128",
+    "family": "m3-ultramem-128",
+    "category": "memory",
+    "vcpus": 128,
+    "memory": 3904,
+    "ssd": 3000,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c"
+    ]
+  },
+  {
+    "id": "m3-ultramem-32",
+    "family": "m3-ultramem-32",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 976,
+    "ssd": 1500,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c"
+    ]
+  },
+  {
+    "id": "m3-ultramem-64",
+    "family": "m3-ultramem-64",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 1952,
+    "ssd": 1500,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c"
+    ]
+  },
+  {
+    "id": "n1-highcpu-16",
+    "family": "n1-highcpu-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 14.4,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-highcpu-2",
+    "family": "n1-highcpu-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 1.8,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-highcpu-32",
+    "family": "n1-highcpu-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 28.8,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-highcpu-4",
+    "family": "n1-highcpu-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 3.6,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-highcpu-64",
+    "family": "n1-highcpu-64",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 57.6,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-highcpu-8",
+    "family": "n1-highcpu-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 7.2,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-highcpu-96",
+    "family": "n1-highcpu-96",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 86.4,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-highmem-16",
+    "family": "n1-highmem-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 104,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-highmem-2",
+    "family": "n1-highmem-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 13,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-highmem-32",
+    "family": "n1-highmem-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 208,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-highmem-4",
+    "family": "n1-highmem-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 26,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-highmem-64",
+    "family": "n1-highmem-64",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 416,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-highmem-8",
+    "family": "n1-highmem-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 52,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-highmem-96",
+    "family": "n1-highmem-96",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 624,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-standard-1",
+    "family": "n1-standard-1",
+    "category": "general",
+    "vcpus": 1,
+    "memory": 3.75,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-standard-16",
+    "family": "n1-standard-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 60,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-standard-2",
+    "family": "n1-standard-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 7.5,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-standard-32",
+    "family": "n1-standard-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 120,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-standard-4",
+    "family": "n1-standard-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 15,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-standard-64",
+    "family": "n1-standard-64",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 240,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-standard-8",
+    "family": "n1-standard-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 30,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n1-standard-96",
+    "family": "n1-standard-96",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 360,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ]
+  },
+  {
+    "id": "n2-highcpu-16",
+    "family": "n2-highcpu-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 16,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-highcpu-2",
+    "family": "n2-highcpu-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 2,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-highcpu-32",
+    "family": "n2-highcpu-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 32,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-highcpu-4",
+    "family": "n2-highcpu-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 4,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-highcpu-48",
+    "family": "n2-highcpu-48",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 48,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-highcpu-64",
+    "family": "n2-highcpu-64",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 64,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-highcpu-8",
+    "family": "n2-highcpu-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 8,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-highcpu-80",
+    "family": "n2-highcpu-80",
+    "category": "general",
+    "vcpus": 80,
+    "memory": 80,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-highcpu-96",
+    "family": "n2-highcpu-96",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 96,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-highmem-128",
+    "family": "n2-highmem-128",
+    "category": "general",
+    "vcpus": 128,
+    "memory": 864,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-highmem-16",
+    "family": "n2-highmem-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 128,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-highmem-2",
+    "family": "n2-highmem-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 16,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-highmem-32",
+    "family": "n2-highmem-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 256,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-highmem-4",
+    "family": "n2-highmem-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 32,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-highmem-48",
+    "family": "n2-highmem-48",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 384,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-highmem-64",
+    "family": "n2-highmem-64",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 512,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-highmem-8",
+    "family": "n2-highmem-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 64,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-highmem-80",
+    "family": "n2-highmem-80",
+    "category": "general",
+    "vcpus": 80,
+    "memory": 640,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-highmem-96",
+    "family": "n2-highmem-96",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 768,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-standard-128",
+    "family": "n2-standard-128",
+    "category": "general",
+    "vcpus": 128,
+    "memory": 512,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-standard-16",
+    "family": "n2-standard-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-standard-2",
+    "family": "n2-standard-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-standard-32",
+    "family": "n2-standard-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-standard-4",
+    "family": "n2-standard-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-standard-48",
+    "family": "n2-standard-48",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-standard-64",
+    "family": "n2-standard-64",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 256,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-standard-8",
+    "family": "n2-standard-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-standard-80",
+    "family": "n2-standard-80",
+    "category": "general",
+    "vcpus": 80,
+    "memory": 320,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2-standard-96",
+    "family": "n2-standard-96",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ]
+  },
+  {
+    "id": "n2d-highcpu-128",
+    "family": "n2d-highcpu-128",
+    "category": "general",
+    "vcpus": 128,
+    "memory": 128,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highcpu-16",
+    "family": "n2d-highcpu-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 16,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highcpu-2",
+    "family": "n2d-highcpu-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 2,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highcpu-224",
+    "family": "n2d-highcpu-224",
+    "category": "general",
+    "vcpus": 224,
+    "memory": 224,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highcpu-32",
+    "family": "n2d-highcpu-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 32,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highcpu-4",
+    "family": "n2d-highcpu-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 4,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highcpu-48",
+    "family": "n2d-highcpu-48",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 48,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highcpu-64",
+    "family": "n2d-highcpu-64",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 64,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highcpu-8",
+    "family": "n2d-highcpu-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 8,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highcpu-80",
+    "family": "n2d-highcpu-80",
+    "category": "general",
+    "vcpus": 80,
+    "memory": 80,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highcpu-96",
+    "family": "n2d-highcpu-96",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 96,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highmem-16",
+    "family": "n2d-highmem-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 128,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highmem-2",
+    "family": "n2d-highmem-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 16,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highmem-32",
+    "family": "n2d-highmem-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 256,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highmem-4",
+    "family": "n2d-highmem-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 32,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highmem-48",
+    "family": "n2d-highmem-48",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 384,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highmem-64",
+    "family": "n2d-highmem-64",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 512,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highmem-8",
+    "family": "n2d-highmem-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 64,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highmem-80",
+    "family": "n2d-highmem-80",
+    "category": "general",
+    "vcpus": 80,
+    "memory": 640,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-highmem-96",
+    "family": "n2d-highmem-96",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 768,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-standard-128",
+    "family": "n2d-standard-128",
+    "category": "general",
+    "vcpus": 128,
+    "memory": 512,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-standard-16",
+    "family": "n2d-standard-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-standard-2",
+    "family": "n2d-standard-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-standard-224",
+    "family": "n2d-standard-224",
+    "category": "general",
+    "vcpus": 224,
+    "memory": 896,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-standard-32",
+    "family": "n2d-standard-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-standard-4",
+    "family": "n2d-standard-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-standard-48",
+    "family": "n2d-standard-48",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-standard-64",
+    "family": "n2d-standard-64",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 256,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-standard-8",
+    "family": "n2d-standard-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-standard-80",
+    "family": "n2d-standard-80",
+    "category": "general",
+    "vcpus": 80,
+    "memory": 320,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n2d-standard-96",
+    "family": "n2d-standard-96",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "ssd": 375,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ]
+  },
+  {
+    "id": "n4-highcpu-16",
+    "family": "n4-highcpu-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-highcpu-2",
+    "family": "n4-highcpu-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 4,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-highcpu-32",
+    "family": "n4-highcpu-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-highcpu-4",
+    "family": "n4-highcpu-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 8,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-highcpu-48",
+    "family": "n4-highcpu-48",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 96,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-highcpu-64",
+    "family": "n4-highcpu-64",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 128,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-highcpu-8",
+    "family": "n4-highcpu-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-highcpu-80",
+    "family": "n4-highcpu-80",
+    "category": "general",
+    "vcpus": 80,
+    "memory": 160,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-highmem-16",
+    "family": "n4-highmem-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 128,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-highmem-2",
+    "family": "n4-highmem-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-highmem-32",
+    "family": "n4-highmem-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 256,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-highmem-4",
+    "family": "n4-highmem-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-highmem-48",
+    "family": "n4-highmem-48",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 384,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-highmem-64",
+    "family": "n4-highmem-64",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 512,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-highmem-8",
+    "family": "n4-highmem-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-highmem-80",
+    "family": "n4-highmem-80",
+    "category": "general",
+    "vcpus": 80,
+    "memory": 640,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-standard-16",
+    "family": "n4-standard-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-standard-2",
+    "family": "n4-standard-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-standard-32",
+    "family": "n4-standard-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-standard-4",
+    "family": "n4-standard-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-standard-48",
+    "family": "n4-standard-48",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-standard-64",
+    "family": "n4-standard-64",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 256,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-standard-8",
+    "family": "n4-standard-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "n4-standard-80",
+    "family": "n4-standard-80",
+    "category": "general",
+    "vcpus": 80,
+    "memory": 320,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8581c"
+    ]
+  },
+  {
+    "id": "t2a-standard-1",
+    "family": "t2a-standard-1",
+    "category": "general",
+    "vcpus": 1,
+    "memory": 4,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "ampere-altra-q6430"
+    ]
+  },
+  {
+    "id": "t2a-standard-16",
+    "family": "t2a-standard-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "ampere-altra-q6430"
+    ]
+  },
+  {
+    "id": "t2a-standard-2",
+    "family": "t2a-standard-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "ampere-altra-q6430"
+    ]
+  },
+  {
+    "id": "t2a-standard-32",
+    "family": "t2a-standard-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "ampere-altra-q6430"
+    ]
+  },
+  {
+    "id": "t2a-standard-4",
+    "family": "t2a-standard-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "ampere-altra-q6430"
+    ]
+  },
+  {
+    "id": "t2a-standard-48",
+    "family": "t2a-standard-48",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "ampere-altra-q6430"
+    ]
+  },
+  {
+    "id": "t2a-standard-8",
+    "family": "t2a-standard-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "ampere-altra-q6430"
+    ]
+  },
+  {
+    "id": "t2d-standard-1",
+    "family": "t2d-standard-1",
+    "category": "general",
+    "vcpus": 1,
+    "memory": 4,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "t2d-standard-16",
+    "family": "t2d-standard-16",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "t2d-standard-2",
+    "family": "t2d-standard-2",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "t2d-standard-32",
+    "family": "t2d-standard-32",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "t2d-standard-4",
+    "family": "t2d-standard-4",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "t2d-standard-48",
+    "family": "t2d-standard-48",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "t2d-standard-60",
+    "family": "t2d-standard-60",
+    "category": "general",
+    "vcpus": 60,
+    "memory": 240,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "t2d-standard-8",
+    "family": "t2d-standard-8",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": "",
+    "cpu": [
+      "amd-epyc-7b13"
+    ]
+  },
+  {
+    "id": "z3-highmem-176",
+    "family": "z3-highmem-176",
+    "category": "storage",
+    "vcpus": 176,
+    "memory": 1408,
+    "ssd": 36000,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  },
+  {
+    "id": "z3-highmem-88",
+    "family": "z3-highmem-88",
+    "category": "storage",
+    "vcpus": 88,
+    "memory": 704,
+    "ssd": 36000,
+    "hdd": "",
+    "cpu": [
+      "intel-xeon-8481c"
+    ]
+  }
+]

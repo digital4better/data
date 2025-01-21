@@ -30,8 +30,8 @@
     "lon": 103.833,
     "location": "Singapore",
     "country": "sg",
-    "pue": 1.358,
-    "wue": 2.06,
+    "pue": 1.34,
+    "wue": 0.01,
     "ref": 0.13
   },
   {
@@ -180,6 +180,96 @@
     "ref": 0
   },
   {
+    "id": "cn-east",
+    "aliases": [
+      "chinaeast"
+    ],
+    "name": "China East",
+    "provider": "azure",
+    "lat": 31.321,
+    "lon": 121.589,
+    "location": "Shanghai",
+    "country": "cn",
+    "pue": 1.405,
+    "wue": 1.65,
+    "ref": 0
+  },
+  {
+    "id": "cn-east-2",
+    "aliases": [
+      "chinaeast2"
+    ],
+    "name": "China East 2",
+    "provider": "azure",
+    "lat": 31.321,
+    "lon": 121.589,
+    "location": "Shanghai",
+    "country": "cn",
+    "pue": 1.405,
+    "wue": 1.65,
+    "ref": 0
+  },
+  {
+    "id": "cn-east-3",
+    "aliases": [
+      "chinaeast3"
+    ],
+    "name": "China East 3",
+    "provider": "azure",
+    "lat": 31.980,
+    "lon": 120.894,
+    "location": "Nantong",
+    "country": "cn",
+    "pue": 1.405,
+    "wue": 1.65,
+    "ref": 0
+  },
+  {
+    "id": "cn-north",
+    "aliases": [
+      "chinanorth"
+    ],
+    "name": "China North",
+    "provider": "azure",
+    "lat": 39.979,
+    "lon": 116.496,
+    "location": "Beijing",
+    "country": "cn",
+    "pue": 1.405,
+    "wue": 1.65,
+    "ref": 0
+  },
+  {
+    "id": "cn-north-2",
+    "aliases": [
+      "chinanorth2"
+    ],
+    "name": "China North 2",
+    "provider": "azure",
+    "lat": 39.979,
+    "lon": 116.496,
+    "location": "Beijing",
+    "country": "cn",
+    "pue": 1.405,
+    "wue": 1.65,
+    "ref": 0
+  },
+  {
+    "id": "cn-north-3",
+    "aliases": [
+      "chinanorth3"
+    ],
+    "name": "China North 3",
+    "provider": "azure",
+    "lat": 40.7675,
+    "lon": 114.8863,
+    "location": "Zhangjiakou",
+    "country": "cn",
+    "pue": 1.405,
+    "wue": 1.65,
+    "ref": 0
+  },
+  {
     "id": "dk-east",
     "aliases": ["denmarkeast"],
     "name": "Denmark East",
@@ -236,8 +326,8 @@
     "lon": 4.9,
     "location": "Netherlands",
     "country": "nl",
-    "pue": 1.158,
-    "wue": 0.08,
+    "pue": 1.14,
+    "wue": 0.06,
     "ref": 0.79
   },
   {
@@ -411,6 +501,21 @@
     "ref": 0
   },
   {
+    "id": "isr-central",
+    "aliases": [
+      "israelcentral"
+    ],
+    "name": "Israel Central",
+    "provider": "azure",
+    "lat": 32.085,
+    "lon": 34.782,
+    "location": "Tel Aviv",
+    "country": "il",
+    "pue": 1.405,
+    "wue": 1.65,
+    "ref": 0
+  },
+  {
     "id": "it-central",
     "aliases": ["italynorth"],
     "name": "Italy North",
@@ -562,6 +667,21 @@
     "ref": 0
   },
   {
+    "id": "qat-central",
+    "aliases": [
+      "qatarcentral"
+    ],
+    "name": "Qatar Central",
+    "provider": "azure",
+    "lat": 25.551,
+    "lon": 51.439,
+    "location": "Doha",
+    "country": "qa",
+    "pue": 1.405,
+    "wue": 1.65,
+    "ref": 0
+  },
+  {
     "id": "saf-north",
     "aliases": [
       "southafricanorth",
@@ -595,15 +715,28 @@
   },
   {
     "id": "se-central",
-    "aliases": ["swedencentral"],
+    "aliases": ["swedencentral", "swe-central" ],
     "name": "Sweden Central",
     "provider": "azure",
     "lat": 60.67452,
     "lon": 17.14174,
     "location": "Gävle",
     "country": "se",
-    "pue": 1.172,
-    "wue": 0.16,
+    "pue": 1.16,
+    "wue": 0.09,
+    "ref": 0
+  },
+  {
+    "id": "se-south",
+    "aliases": ["swedensouth", "swe-south" ],
+    "name": "Sweden South",
+    "provider": "azure",
+    "lat": 55.605,
+    "lon": 13.004,
+    "location": "Malmö",
+    "country": "se",
+    "pue": 1.16,
+    "wue": 0.09,
     "ref": 0
   },
   {
@@ -732,7 +865,7 @@
     "country": "us",
     "subdivision": "ia",
     "pue": 1.16,
-    "wue": 0.19,
+    "wue": 0.14,
     "ref": 1
   },
   {
@@ -750,7 +883,7 @@
     "country": "us",
     "subdivision": "va",
     "pue": 1.144,
-    "wue": 0.17,
+    "wue": 0.14,
     "ref": 0.7
   },
   {
@@ -803,8 +936,8 @@
     "location": "Illinois",
     "country": "us",
     "subdivision": "il",
-    "pue": 1.346,
-    "wue": 0.79,
+    "pue": 1.35,
+    "wue": 0.74,
     "ref": 0.7
   },
   {
@@ -821,8 +954,8 @@
     "location": "San Antonio",
     "country": "us",
     "subdivision": "tx",
-    "pue": 1.307,
-    "wue": 1.82,
+    "pue": 1.28,
+    "wue": 0.25,
     "ref": 1
   },
   {
@@ -857,7 +990,7 @@
     "country": "us",
     "subdivision": "wa",
     "pue": 1.156,
-    "wue": 1.09,
+    "wue": 0.95,
     "ref": 0.47
   },
   {
@@ -874,8 +1007,8 @@
     "location": "Phoenix",
     "country": "us",
     "subdivision": "az",
-    "pue": 1.223,
-    "wue": 2.24,
+    "pue": 1.18,
+    "wue": 1.63,
     "ref": 0.47
   },
   {
@@ -890,8 +1023,8 @@
     "location": "Wyoming",
     "country": "us",
     "subdivision": "wy",
-    "pue": 1.125,
-    "wue": 0.23,
+    "pue": 1.11,
+    "wue": 0.13,
     "ref": 0.47
   }
 ]

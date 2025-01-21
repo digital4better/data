@@ -1,9 +1,9 @@
 import { get } from "https";
 import { createInterface } from "readline";
 import { appendFileSync, readFileSync, writeFileSync } from "fs";
-import * as AdmZip from "adm-zip";
-import * as REGIONS from "./data/country/regions.json";
-import * as IMPACTS from "./data/energy/energy-impacts.json";
+import AdmZip from "adm-zip";
+import REGIONS from "./data/country/regions.json";
+import IMPACTS from "./data/energy/energy-impacts.json";
 import { PassThrough } from "stream";
 import ReadableStream = NodeJS.ReadableStream;
 
@@ -788,11 +788,24 @@ const generateClouds = async () => {
       "wue",
       "ref",
     ]);
+    const vms = JSON.parse(readFileSync(`./data/cloud/${cloud}-vms.json`, "utf-8"));
+    exportToCsv(`./data/cloud/${cloud}-vms.csv`, vms, [
+      "id",
+      "family",
+      "category",
+      "vcpus",
+      "memory",
+      "ssd",
+      "hdd",
+      "cpu",
+    ]);
   }
 };
 
 (async () => {
+  const start = Date.now();
   await generateClouds();
   await generateCountries();
   await generateFactors();
+  console.log(`Done in ${Math.round((Date.now() - start) / 1000)}s`);
 })();

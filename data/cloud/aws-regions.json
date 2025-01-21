@@ -8,7 +8,7 @@
     "location": "Cape Town",
     "country": "za",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -20,7 +20,7 @@
     "location": "Hong Kong",
     "country": "hk",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -32,7 +32,19 @@
     "location": "Mumbai",
     "country": "in",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
+    "ref": 0
+  },
+  {
+    "id": "ap-south-2",
+    "name": "ap-south-2",
+    "provider": "aws",
+    "lat": 17.387,
+    "lon": 78.492,
+    "location": "Hyderabad",
+    "country": "in",
+    "pue": 1.135,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -44,7 +56,7 @@
     "location": "Tokyo",
     "country": "jp",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -56,7 +68,7 @@
     "location": "Seoul",
     "country": "kr",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -68,7 +80,7 @@
     "location": "Osaka",
     "country": "jp",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -80,7 +92,7 @@
     "location": "Singapore",
     "country": "sg",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -92,7 +104,43 @@
     "location": "Sydney",
     "country": "au",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
+    "ref": 0
+  },
+  {
+    "id": "ap-southeast-3",
+    "name": "ap-southeast-3",
+    "provider": "aws",
+    "lat": -6.2,
+    "lon": 106.817,
+    "location": "Jakarta",
+    "country": "id",
+    "pue": 1.135,
+    "wue": 0.18,
+    "ref": 0
+  },
+  {
+    "id": "ap-southeast-4",
+    "name": "ap-southeast-4",
+    "provider": "aws",
+    "lat": -37.841,
+    "lon": 144.946,
+    "location": "Melbourne",
+    "country": "au",
+    "pue": 1.135,
+    "wue": 0.18,
+    "ref": 0
+  },
+  {
+    "id": "ap-southeast-5",
+    "name": "ap-southeast-5",
+    "provider": "aws",
+    "lat": 3.141,
+    "lon": 101.693,
+    "location": "Malaysia",
+    "country": "my",
+    "pue": 1.135,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -105,7 +153,20 @@
     "country": "ca",
     "subdivision": "qc",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
+    "ref": 0
+  },
+  {
+    "id": "ca-west-1",
+    "name": "ca-west-1",
+    "provider": "aws",
+    "lat": 51.05,
+    "lon": -114.067,
+    "location": "Calgary",
+    "country": "ca",
+    "subdivision": "ab",
+    "pue": 1.135,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -117,7 +178,7 @@
     "location": "Beijing",
     "country": "cn",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -129,7 +190,7 @@
     "location": "Ningxia",
     "country": "cn",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -141,7 +202,19 @@
     "location": "Frankfurt",
     "country": "de",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
+    "ref": 0
+  },
+  {
+    "id": "eu-central-2",
+    "name": "eu-central-2",
+    "provider": "aws",
+    "lat": 47.451542,
+    "lon": 8.564572,
+    "location": "Zurich",
+    "country": "ch",
+    "pue": 1.135,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -153,7 +226,7 @@
     "location": "Stockholm",
     "country": "se",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -165,7 +238,19 @@
     "location": "Milan",
     "country": "it",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
+    "ref": 0
+  },
+  {
+    "id": "eu-south-2",
+    "name": "eu-south-2",
+    "provider": "aws",
+    "lat": 41.65,
+    "lon": -0.89,
+    "location": "Zaragoza",
+    "country": "es",
+    "pue": 1.135,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -177,7 +262,7 @@
     "location": "Dublin",
     "country": "ie",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -189,7 +274,7 @@
     "location": "London",
     "country": "gb",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -201,7 +286,31 @@
     "location": "Paris",
     "country": "fr",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
+    "ref": 0
+  },
+  {
+    "id": "il-central-1",
+    "name": "il-central-1",
+    "provider": "aws",
+    "lat": 32.085,
+    "lon": 34.782,
+    "location": "Tel Aviv",
+    "country": "il",
+    "pue": 1.135,
+    "wue": 0.18,
+    "ref": 0
+  },
+  {
+    "id": "me-central-1",
+    "name": "me-central-1",
+    "provider": "aws",
+    "lat": 24.466667,
+    "lon": 54.366669,
+    "location": "Abu Dhabi",
+    "country": "ae",
+    "pue": 1.135,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -213,7 +322,7 @@
     "location": "Bahrain",
     "country": "bh",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -225,7 +334,7 @@
     "location": "Sao Paulo",
     "country": "br",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -238,7 +347,7 @@
     "country": "us",
     "subdivision": "va",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -251,7 +360,7 @@
     "country": "us",
     "subdivision": "oh",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -264,7 +373,7 @@
     "country": "us",
     "subdivision": "ca",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
     "ref": 0
   },
   {
@@ -277,7 +386,7 @@
     "country": "us",
     "subdivision": "or",
     "pue": 1.135,
-    "wue": 0.19,
+    "wue": 0.18,
     "ref": 0
   }
 ]

@@ -1,5 +1,17 @@
 [
   {
+    "id": "africa-south1",
+    "name": "africa-south1",
+    "provider": "gcp",
+    "lat": -25.73134,
+    "lon": 28.21837,
+    "location": "Johannesburg",
+    "country": "za",
+    "pue": 1.10,
+    "wue": 0.785,
+    "ref": 0.16
+  },
+  {
     "id": "asia-east1",
     "name": "asia-east1",
     "provider": "gcp",
@@ -45,7 +57,7 @@
     "country": "jp",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.32
+    "ref": 0.3
   },
   {
     "id": "asia-northeast3",
@@ -57,7 +69,7 @@
     "country": "kr",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.31
+    "ref": 0.35
   },
   {
     "id": "asia-south1",
@@ -69,7 +81,7 @@
     "country": "in",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.24
+    "ref": 0.14
   },
   {
     "id": "asia-south2",
@@ -81,7 +93,7 @@
     "country": "in",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.23
+    "ref": 0.29
   },
   {
     "id": "asia-southeast1",
@@ -117,7 +129,7 @@
     "country": "au",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.27
+    "ref": 0.33
   },
   {
     "id": "australia-southeast2",
@@ -129,7 +141,7 @@
     "country": "au",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.34
+    "ref": 0.4
   },
   {
     "id": "europe-central2",
@@ -141,7 +153,7 @@
     "country": "pl",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.24
+    "ref": 0.31
   },
   {
     "id": "europe-north1",
@@ -151,9 +163,9 @@
     "lon": 27.2097431,
     "location": "Finland",
     "country": "fi",
-    "pue": 1.09,
+    "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.97
+    "ref": 0.98
   },
   {
     "id": "europe-southwest1",
@@ -165,7 +177,7 @@
     "country": "es",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.67
+    "ref": 0.76
   },
   {
     "id": "europe-west1",
@@ -173,11 +185,11 @@
     "provider": "gcp",
     "lat": 50.489824,
     "lon": 3.7378805,
-    "location": "Belgium",
+    "location": "St. Ghislain",
     "country": "be",
-    "pue": 1.09,
+    "pue": 1.08,
     "wue": 0.785,
-    "ref": 0.8
+    "ref": 0.82
   },
   {
     "id": "europe-west2",
@@ -189,7 +201,7 @@
     "country": "gb",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.85
+    "ref": 0.92
   },
   {
     "id": "europe-west3",
@@ -201,7 +213,7 @@
     "country": "de",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.96
+    "ref": 0.9
   },
   {
     "id": "europe-west4",
@@ -209,11 +221,11 @@
     "provider": "gcp",
     "lat": 53.4356948,
     "lon": 6.7980783,
-    "location": "Netherlands",
+    "location": "Eemshaven",
     "country": "nl",
-    "pue": 1.07,
+    "pue": 1.08,
     "wue": 0.785,
-    "ref": 0.57
+    "ref": 0.8
   },
   {
     "id": "europe-west6",
@@ -225,7 +237,7 @@
     "country": "ch",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.85
+    "ref": 0.92
   },
   {
     "id": "europe-west8",
@@ -237,7 +249,7 @@
     "country": "it",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.42
+    "ref": 0.52
   },
   {
     "id": "europe-west9",
@@ -249,7 +261,19 @@
     "country": "fr",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.87
+    "ref": 0.94
+  },
+  {
+    "id": "europe-west10",
+    "name": "europe-west10",
+    "provider": "gcp",
+    "lat": 53.073635,
+    "lon": 8.806422,
+    "location": "Berlin",
+    "country": "de",
+    "pue": 1.1,
+    "wue": 0.785,
+    "ref": 0.9
   },
   {
     "id": "europe-west12",
@@ -261,19 +285,7 @@
     "country": "it",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.42
-  },
-  {
-    "id": "me-west1",
-    "name": "me-west1",
-    "provider": "gcp",
-    "lat": 32.0852999,
-    "lon": 34.7817676,
-    "location": "Tel Aviv",
-    "country": "il",
-    "pue": 1.1,
-    "wue": 0.785,
-    "ref": 0.02
+    "ref": 0.52
   },
   {
     "id": "me-central1",
@@ -286,6 +298,30 @@
     "pue": 1.1,
     "wue": 0.785,
     "ref": 0
+  },
+  {
+    "id": "me-central2",
+    "name": "me-central2",
+    "provider": "gcp",
+    "lat": 26.426,
+    "lon": 50.055,
+    "location": "Dammam",
+    "country": "sa",
+    "pue": 1.1,
+    "wue": 0.785,
+    "ref": 0
+  },
+  {
+    "id": "me-west1",
+    "name": "me-west1",
+    "provider": "gcp",
+    "lat": 32.0852999,
+    "lon": 34.7817676,
+    "location": "Tel Aviv",
+    "country": "il",
+    "pue": 1.1,
+    "wue": 0.785,
+    "ref": 0.05
   },
   {
     "id": "northamerica-northeast1",
@@ -311,7 +347,7 @@
     "subdivision": "on",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.9
+    "ref": 0.87
   },
   {
     "id": "southamerica-east1",
@@ -323,7 +359,7 @@
     "country": "br",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.89
+    "ref": 0.9
   },
   {
     "id": "southamerica-west1",
@@ -333,9 +369,9 @@
     "lon": -70.641997,
     "location": "Santiago",
     "country": "cl",
-    "pue": 1.09,
+    "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.9
+    "ref": 0.91
   },
   {
     "id": "us-central1",
@@ -348,7 +384,7 @@
     "subdivision": "ia",
     "pue": 1.11,
     "wue": 0.785,
-    "ref": 0.92
+    "ref": 0.95
   },
   {
     "id": "us-east1",
@@ -361,7 +397,7 @@
     "subdivision": "sc",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.26
+    "ref": 0.29
   },
   {
     "id": "us-east4",
@@ -372,9 +408,9 @@
     "location": "Northern Virginia",
     "country": "us",
     "subdivision": "va",
-    "pue": 1.08,
+    "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.6
+    "ref": 0.52
   },
   {
     "id": "us-east5",
@@ -385,9 +421,9 @@
     "location": "Columbus",
     "country": "us",
     "subdivision": "oh",
-    "pue": 1.1,
+    "pue": 1.05,
     "wue": 0.785,
-    "ref": 0.6
+    "ref": 0.52
   },
   {
     "id": "us-south1",
@@ -398,9 +434,9 @@
     "location": "Dallas",
     "country": "us",
     "subdivision": "tx",
-    "pue": 1.14,
+    "pue": 1.11,
     "wue": 0.785,
-    "ref": 0.41
+    "ref": 0.79
   },
   {
     "id": "us-west1",
@@ -413,7 +449,7 @@
     "subdivision": "or",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.89
+    "ref": 0.84
   },
   {
     "id": "us-west2",
@@ -426,7 +462,7 @@
     "subdivision": "ca",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.56
+    "ref": 0.84
   },
   {
     "id": "us-west3",
@@ -439,7 +475,7 @@
     "subdivision": "ut",
     "pue": 1.1,
     "wue": 0.785,
-    "ref": 0.31
+    "ref": 0.29
   },
   {
     "id": "us-west4",
@@ -450,8 +486,8 @@
     "location": "Las Vegas",
     "country": "us",
     "subdivision": "nv",
-    "pue": 1.1,
+    "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.27
+    "ref": 0.26
   }
 ]
