@@ -5,8 +5,10 @@
     "category": "accelerated",
     "vcpus": 12,
     "memory": 85,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-a10040",
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8273cl"
     ]
@@ -17,8 +19,10 @@
     "category": "accelerated",
     "vcpus": 24,
     "memory": 170,
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-a10040",
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8273cl"
     ]
@@ -29,8 +33,10 @@
     "category": "accelerated",
     "vcpus": 48,
     "memory": 340,
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-a10040",
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8273cl"
     ]
@@ -41,8 +47,10 @@
     "category": "accelerated",
     "vcpus": 96,
     "memory": 680,
+    "accelerators": 8,
+    "accelerator": "nvidia-tesla-a10040",
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8273cl"
     ]
@@ -53,8 +61,10 @@
     "category": "accelerated",
     "vcpus": 96,
     "memory": 1360,
+    "accelerators": 16,
+    "accelerator": "nvidia-tesla-a10040",
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8273cl"
     ]
@@ -65,8 +75,10 @@
     "category": "accelerated",
     "vcpus": 12,
     "memory": 170,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-a10080",
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8273cl"
     ]
@@ -77,8 +89,10 @@
     "category": "accelerated",
     "vcpus": 24,
     "memory": 340,
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-a10080",
     "ssd": 750,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8273cl"
     ]
@@ -89,8 +103,10 @@
     "category": "accelerated",
     "vcpus": 48,
     "memory": 680,
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-a10080",
     "ssd": 1500,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8273cl"
     ]
@@ -101,8 +117,10 @@
     "category": "accelerated",
     "vcpus": 96,
     "memory": 1360,
+    "accelerators": 8,
+    "accelerator": "nvidia-tesla-a10080",
     "ssd": 3000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8273cl"
     ]
@@ -113,8 +131,10 @@
     "category": "accelerated",
     "vcpus": 208,
     "memory": 1872,
+    "accelerators": 8,
+    "accelerator": "nvidia-tesla-h10080",
     "ssd": 6000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -125,8 +145,10 @@
     "category": "accelerated",
     "vcpus": 26,
     "memory": 234,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-h10080",
     "ssd": 750,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -137,8 +159,10 @@
     "category": "accelerated",
     "vcpus": 52,
     "memory": 468,
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-h10080",
     "ssd": 1500,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -149,8 +173,10 @@
     "category": "accelerated",
     "vcpus": 104,
     "memory": 936,
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-h10080",
     "ssd": 3000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -161,8 +187,10 @@
     "category": "accelerated",
     "vcpus": 208,
     "memory": 1872,
+    "accelerators": 8,
+    "accelerator": "nvidia-tesla-h10080",
     "ssd": 6000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -173,8 +201,10 @@
     "category": "accelerated",
     "vcpus": 208,
     "memory": 1872,
+    "accelerators": 8,
+    "accelerator": "nvidia-tesla-h10080",
     "ssd": 6000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -185,8 +215,10 @@
     "category": "accelerated",
     "vcpus": 224,
     "memory": 2952,
+    "accelerators": 8,
+    "accelerator": "nvidia-tesla-h200",
     "ssd": 12000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -197,8 +229,9 @@
     "category": "compute",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-6253cl"
     ]
@@ -209,8 +242,9 @@
     "category": "compute",
     "vcpus": 30,
     "memory": 120,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-6253cl"
     ]
@@ -221,8 +255,9 @@
     "category": "compute",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-6253cl"
     ]
@@ -233,8 +268,9 @@
     "category": "compute",
     "vcpus": 60,
     "memory": 240,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-6253cl"
     ]
@@ -245,8 +281,9 @@
     "category": "compute",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-6253cl"
     ]
@@ -257,8 +294,9 @@
     "category": "compute",
     "vcpus": 112,
     "memory": 224,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -269,8 +307,9 @@
     "category": "compute",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -281,8 +320,9 @@
     "category": "compute",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -293,8 +333,9 @@
     "category": "compute",
     "vcpus": 32,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -305,8 +346,9 @@
     "category": "compute",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -317,8 +359,9 @@
     "category": "compute",
     "vcpus": 56,
     "memory": 112,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -329,8 +372,9 @@
     "category": "compute",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -341,8 +385,9 @@
     "category": "compute",
     "vcpus": 112,
     "memory": 896,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -353,8 +398,9 @@
     "category": "compute",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -365,8 +411,9 @@
     "category": "compute",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -377,8 +424,9 @@
     "category": "compute",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -389,8 +437,9 @@
     "category": "compute",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -401,8 +450,9 @@
     "category": "compute",
     "vcpus": 56,
     "memory": 448,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -413,8 +463,9 @@
     "category": "compute",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -425,8 +476,9 @@
     "category": "compute",
     "vcpus": 112,
     "memory": 448,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -437,8 +489,9 @@
     "category": "compute",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -449,8 +502,9 @@
     "category": "compute",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -461,8 +515,9 @@
     "category": "compute",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -473,8 +528,9 @@
     "category": "compute",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -485,8 +541,9 @@
     "category": "compute",
     "vcpus": 56,
     "memory": 224,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -497,8 +554,9 @@
     "category": "compute",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -509,8 +567,9 @@
     "category": "general",
     "vcpus": 176,
     "memory": 352,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -521,8 +580,9 @@
     "category": "general",
     "vcpus": 192,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -533,8 +593,9 @@
     "category": "general",
     "vcpus": 22,
     "memory": 44,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -545,8 +606,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -557,8 +619,9 @@
     "category": "general",
     "vcpus": 44,
     "memory": 88,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -569,8 +632,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -581,8 +645,9 @@
     "category": "general",
     "vcpus": 88,
     "memory": 176,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -593,8 +658,9 @@
     "category": "general",
     "vcpus": 176,
     "memory": 1408,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -605,8 +671,9 @@
     "category": "general",
     "vcpus": 192,
     "memory": 1536,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -617,8 +684,9 @@
     "category": "general",
     "vcpus": 22,
     "memory": 176,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -629,8 +697,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -641,8 +710,9 @@
     "category": "general",
     "vcpus": 44,
     "memory": 352,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -653,8 +723,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -665,8 +736,9 @@
     "category": "general",
     "vcpus": 88,
     "memory": 704,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -677,8 +749,9 @@
     "category": "general",
     "vcpus": 176,
     "memory": 704,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -689,8 +762,9 @@
     "category": "general",
     "vcpus": 176,
     "memory": 704,
+    "accelerators": 0,
     "ssd": 12000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -701,8 +775,9 @@
     "category": "general",
     "vcpus": 192,
     "memory": 768,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -713,8 +788,9 @@
     "category": "general",
     "vcpus": 22,
     "memory": 88,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -725,8 +801,9 @@
     "category": "general",
     "vcpus": 22,
     "memory": 88,
+    "accelerators": 0,
     "ssd": 1500,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -737,8 +814,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -749,8 +827,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -761,8 +840,9 @@
     "category": "general",
     "vcpus": 44,
     "memory": 176,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -773,8 +853,9 @@
     "category": "general",
     "vcpus": 44,
     "memory": 176,
+    "accelerators": 0,
     "ssd": 3000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -785,8 +866,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -797,8 +879,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 750,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -809,8 +892,9 @@
     "category": "general",
     "vcpus": 88,
     "memory": 352,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -821,8 +905,9 @@
     "category": "general",
     "vcpus": 88,
     "memory": 352,
+    "accelerators": 0,
     "ssd": 6000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -833,8 +918,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -845,8 +931,9 @@
     "category": "general",
     "vcpus": 180,
     "memory": 354,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -857,8 +944,9 @@
     "category": "general",
     "vcpus": 30,
     "memory": 59,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -869,8 +957,9 @@
     "category": "general",
     "vcpus": 360,
     "memory": 708,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -881,8 +970,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -893,8 +983,9 @@
     "category": "general",
     "vcpus": 60,
     "memory": 118,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -905,8 +996,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -917,8 +1009,9 @@
     "category": "general",
     "vcpus": 90,
     "memory": 177,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -929,8 +1022,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -941,8 +1035,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -953,8 +1048,9 @@
     "category": "general",
     "vcpus": 180,
     "memory": 1440,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -965,8 +1061,9 @@
     "category": "general",
     "vcpus": 180,
     "memory": 1440,
+    "accelerators": 0,
     "ssd": 6000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -977,8 +1074,9 @@
     "category": "general",
     "vcpus": 30,
     "memory": 240,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -989,8 +1087,9 @@
     "category": "general",
     "vcpus": 30,
     "memory": 240,
+    "accelerators": 0,
     "ssd": 750,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1001,8 +1100,9 @@
     "category": "general",
     "vcpus": 360,
     "memory": 2880,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1013,8 +1113,9 @@
     "category": "general",
     "vcpus": 360,
     "memory": 2880,
+    "accelerators": 0,
     "ssd": 12000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1025,8 +1126,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1037,8 +1139,9 @@
     "category": "general",
     "vcpus": 60,
     "memory": 480,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1049,8 +1152,9 @@
     "category": "general",
     "vcpus": 60,
     "memory": 480,
+    "accelerators": 0,
     "ssd": 1500,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1061,8 +1165,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1073,8 +1178,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1085,8 +1191,9 @@
     "category": "general",
     "vcpus": 90,
     "memory": 720,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1097,8 +1204,9 @@
     "category": "general",
     "vcpus": 90,
     "memory": 720,
+    "accelerators": 0,
     "ssd": 3000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1109,8 +1217,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1121,8 +1230,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1133,8 +1243,9 @@
     "category": "general",
     "vcpus": 180,
     "memory": 720,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1145,8 +1256,9 @@
     "category": "general",
     "vcpus": 180,
     "memory": 720,
+    "accelerators": 0,
     "ssd": 6000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1157,8 +1269,9 @@
     "category": "general",
     "vcpus": 30,
     "memory": 120,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1169,8 +1282,9 @@
     "category": "general",
     "vcpus": 30,
     "memory": 120,
+    "accelerators": 0,
     "ssd": 750,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1181,8 +1295,9 @@
     "category": "general",
     "vcpus": 360,
     "memory": 1440,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1193,8 +1308,9 @@
     "category": "general",
     "vcpus": 360,
     "memory": 1440,
+    "accelerators": 0,
     "ssd": 12000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1205,8 +1321,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1217,8 +1334,9 @@
     "category": "general",
     "vcpus": 60,
     "memory": 240,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1229,8 +1347,9 @@
     "category": "general",
     "vcpus": 60,
     "memory": 240,
+    "accelerators": 0,
     "ssd": 1500,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1241,8 +1360,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1253,8 +1373,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1265,8 +1386,9 @@
     "category": "general",
     "vcpus": 90,
     "memory": 360,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1277,8 +1399,9 @@
     "category": "general",
     "vcpus": 90,
     "memory": 360,
+    "accelerators": 0,
     "ssd": 3000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-9b14"
     ]
@@ -1289,8 +1412,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1301,8 +1425,9 @@
     "category": "general",
     "vcpus": 192,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1313,8 +1438,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1325,8 +1451,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1337,8 +1464,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1349,8 +1477,9 @@
     "category": "general",
     "vcpus": 48,
     "memory": 96,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1361,8 +1490,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1373,8 +1503,9 @@
     "category": "general",
     "vcpus": 96,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1385,8 +1516,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 124,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1397,8 +1529,9 @@
     "category": "general",
     "vcpus": 192,
     "memory": 1488,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1409,8 +1542,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 15,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1421,8 +1555,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 248,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1433,8 +1568,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 31,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1445,8 +1581,9 @@
     "category": "general",
     "vcpus": 48,
     "memory": 372,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1457,8 +1594,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 62,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1469,8 +1607,9 @@
     "category": "general",
     "vcpus": 96,
     "memory": 744,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1481,8 +1620,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 60,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1493,8 +1633,9 @@
     "category": "general",
     "vcpus": 192,
     "memory": 720,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1505,8 +1646,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 7,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1517,8 +1659,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 120,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1529,8 +1672,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 15,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1541,8 +1685,9 @@
     "category": "general",
     "vcpus": 48,
     "memory": 180,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1553,8 +1698,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 30,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1565,8 +1711,9 @@
     "category": "general",
     "vcpus": 96,
     "memory": 360,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -1577,8 +1724,9 @@
     "category": "general",
     "vcpus": 1,
     "memory": 2,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1589,8 +1737,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1601,8 +1750,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1613,8 +1763,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1625,8 +1776,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1637,8 +1789,9 @@
     "category": "general",
     "vcpus": 48,
     "memory": 96,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1649,8 +1802,9 @@
     "category": "general",
     "vcpus": 64,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1661,8 +1815,9 @@
     "category": "general",
     "vcpus": 72,
     "memory": 144,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1673,8 +1828,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1685,8 +1841,9 @@
     "category": "general",
     "vcpus": 1,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1697,8 +1854,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1709,8 +1867,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1721,8 +1880,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1733,8 +1893,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1745,8 +1906,9 @@
     "category": "general",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1757,8 +1919,9 @@
     "category": "general",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1769,8 +1932,9 @@
     "category": "general",
     "vcpus": 72,
     "memory": 576,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1781,8 +1945,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1793,8 +1958,9 @@
     "category": "general",
     "vcpus": 1,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1805,8 +1971,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1817,8 +1984,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1829,8 +1997,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1841,8 +2010,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1853,8 +2023,9 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1865,8 +2036,9 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1877,8 +2049,9 @@
     "category": "general",
     "vcpus": 72,
     "memory": 288,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1889,8 +2062,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "google-axion"
     ]
@@ -1901,8 +2075,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -1916,8 +2091,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 2,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -1931,8 +2107,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -1946,8 +2123,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -1961,8 +2139,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -1976,8 +2155,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -1991,8 +2171,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2006,8 +2187,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2021,8 +2203,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2036,8 +2219,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2051,8 +2235,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 1,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2066,8 +2251,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 2,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2081,8 +2267,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2096,8 +2283,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2111,8 +2299,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2126,8 +2315,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2141,8 +2331,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2156,8 +2347,9 @@
     "category": "general",
     "vcpus": 1,
     "memory": 0.6,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2172,8 +2364,9 @@
     "category": "general",
     "vcpus": 1,
     "memory": 1.7,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2188,8 +2381,10 @@
     "category": "accelerated",
     "vcpus": 12,
     "memory": 48,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-l4",
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8273cl"
     ]
@@ -2200,8 +2395,10 @@
     "category": "accelerated",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-l4",
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8273cl"
     ]
@@ -2212,8 +2409,10 @@
     "category": "accelerated",
     "vcpus": 24,
     "memory": 96,
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-l4",
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8273cl"
     ]
@@ -2224,8 +2423,10 @@
     "category": "accelerated",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-l4",
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8273cl"
     ]
@@ -2236,8 +2437,10 @@
     "category": "accelerated",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-l4",
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8273cl"
     ]
@@ -2248,8 +2451,10 @@
     "category": "accelerated",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-l4",
     "ssd": 1500,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8273cl"
     ]
@@ -2260,8 +2465,10 @@
     "category": "accelerated",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-l4",
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8273cl"
     ]
@@ -2272,8 +2479,10 @@
     "category": "accelerated",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 8,
+    "accelerator": "nvidia-tesla-l4",
     "ssd": 3000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8273cl"
     ]
@@ -2284,8 +2493,9 @@
     "category": "compute",
     "vcpus": 88,
     "memory": 352,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -2296,8 +2506,9 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 1433.6,
+    "accelerators": 0,
     "ssd": 3000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m"
     ]
@@ -2308,8 +2519,9 @@
     "category": "memory",
     "vcpus": 160,
     "memory": 3844,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-e78880v4"
     ]
@@ -2320,8 +2532,9 @@
     "category": "memory",
     "vcpus": 40,
     "memory": 961,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-e78880v4"
     ]
@@ -2332,8 +2545,9 @@
     "category": "memory",
     "vcpus": 80,
     "memory": 1922,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-e78880v4"
     ]
@@ -2344,8 +2558,9 @@
     "category": "memory",
     "vcpus": 416,
     "memory": 8832,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8280l"
     ]
@@ -2356,8 +2571,9 @@
     "category": "memory",
     "vcpus": 416,
     "memory": 5888,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8280l"
     ]
@@ -2368,8 +2584,9 @@
     "category": "memory",
     "vcpus": 208,
     "memory": 5888,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8280l"
     ]
@@ -2380,8 +2597,9 @@
     "category": "memory",
     "vcpus": 416,
     "memory": 11776,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8280l"
     ]
@@ -2392,8 +2610,9 @@
     "category": "memory",
     "vcpus": 128,
     "memory": 1952,
+    "accelerators": 0,
     "ssd": 3000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c"
     ]
@@ -2404,8 +2623,9 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 976,
+    "accelerators": 0,
     "ssd": 1500,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c"
     ]
@@ -2416,8 +2636,9 @@
     "category": "memory",
     "vcpus": 128,
     "memory": 3904,
+    "accelerators": 0,
     "ssd": 3000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c"
     ]
@@ -2428,8 +2649,9 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 976,
+    "accelerators": 0,
     "ssd": 1500,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c"
     ]
@@ -2440,8 +2662,9 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 1952,
+    "accelerators": 0,
     "ssd": 1500,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c"
     ]
@@ -2452,8 +2675,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 14.4,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2468,8 +2692,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 1.8,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2484,8 +2709,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 28.8,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2500,8 +2726,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 3.6,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2516,8 +2743,9 @@
     "category": "general",
     "vcpus": 64,
     "memory": 57.6,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2532,8 +2760,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 7.2,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2548,8 +2777,9 @@
     "category": "general",
     "vcpus": 96,
     "memory": 86.4,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2564,8 +2794,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 104,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2580,8 +2811,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 13,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2596,8 +2828,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 208,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2612,8 +2845,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 26,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2628,8 +2862,9 @@
     "category": "general",
     "vcpus": 64,
     "memory": 416,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2644,8 +2879,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 52,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2660,8 +2896,9 @@
     "category": "general",
     "vcpus": 96,
     "memory": 624,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2676,8 +2913,9 @@
     "category": "general",
     "vcpus": 1,
     "memory": 3.75,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2692,8 +2930,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 60,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2708,8 +2947,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 7.5,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2724,8 +2964,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 120,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2740,8 +2981,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 15,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2756,8 +2998,9 @@
     "category": "general",
     "vcpus": 64,
     "memory": 240,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2772,8 +3015,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 30,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2788,8 +3032,9 @@
     "category": "general",
     "vcpus": 96,
     "memory": 360,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8173m",
       "intel-xeon-e52696v4",
@@ -2804,8 +3049,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -2817,8 +3063,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 2,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -2830,8 +3077,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -2843,8 +3091,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -2856,8 +3105,9 @@
     "category": "general",
     "vcpus": 48,
     "memory": 48,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -2869,8 +3119,9 @@
     "category": "general",
     "vcpus": 64,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -2882,8 +3133,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -2895,8 +3147,9 @@
     "category": "general",
     "vcpus": 80,
     "memory": 80,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -2908,8 +3161,9 @@
     "category": "general",
     "vcpus": 96,
     "memory": 96,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -2921,8 +3175,9 @@
     "category": "general",
     "vcpus": 128,
     "memory": 864,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -2934,8 +3189,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -2947,8 +3203,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -2960,8 +3217,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -2973,8 +3231,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -2986,8 +3245,9 @@
     "category": "general",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -2999,8 +3259,9 @@
     "category": "general",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -3012,8 +3273,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -3025,8 +3287,9 @@
     "category": "general",
     "vcpus": 80,
     "memory": 640,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -3038,8 +3301,9 @@
     "category": "general",
     "vcpus": 96,
     "memory": 768,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -3051,8 +3315,9 @@
     "category": "general",
     "vcpus": 128,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -3064,8 +3329,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -3077,8 +3343,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -3090,8 +3357,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -3103,8 +3371,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -3116,8 +3385,9 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -3129,8 +3399,9 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -3142,8 +3413,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -3155,8 +3427,9 @@
     "category": "general",
     "vcpus": 80,
     "memory": 320,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -3168,8 +3441,9 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
@@ -3181,8 +3455,9 @@
     "category": "general",
     "vcpus": 128,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3194,8 +3469,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3207,8 +3483,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 2,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3220,8 +3497,9 @@
     "category": "general",
     "vcpus": 224,
     "memory": 224,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3233,8 +3511,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3246,8 +3525,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3259,8 +3539,9 @@
     "category": "general",
     "vcpus": 48,
     "memory": 48,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3272,8 +3553,9 @@
     "category": "general",
     "vcpus": 64,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3285,8 +3567,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3298,8 +3581,9 @@
     "category": "general",
     "vcpus": 80,
     "memory": 80,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3311,8 +3595,9 @@
     "category": "general",
     "vcpus": 96,
     "memory": 96,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3324,8 +3609,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3337,8 +3623,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3350,8 +3637,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3363,8 +3651,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3376,8 +3665,9 @@
     "category": "general",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3389,8 +3679,9 @@
     "category": "general",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3402,8 +3693,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3415,8 +3707,9 @@
     "category": "general",
     "vcpus": 80,
     "memory": 640,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3428,8 +3721,9 @@
     "category": "general",
     "vcpus": 96,
     "memory": 768,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3441,8 +3735,9 @@
     "category": "general",
     "vcpus": 128,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3454,8 +3749,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3467,8 +3763,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3480,8 +3777,9 @@
     "category": "general",
     "vcpus": 224,
     "memory": 896,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3493,8 +3791,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3506,8 +3805,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3519,8 +3819,9 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3532,8 +3833,9 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3545,8 +3847,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3558,8 +3861,9 @@
     "category": "general",
     "vcpus": 80,
     "memory": 320,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3571,8 +3875,9 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 375,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13",
       "amd-epyc-7b12"
@@ -3584,8 +3889,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3596,8 +3902,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3608,8 +3915,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3620,8 +3928,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3632,8 +3941,9 @@
     "category": "general",
     "vcpus": 48,
     "memory": 96,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3644,8 +3954,9 @@
     "category": "general",
     "vcpus": 64,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3656,8 +3967,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3668,8 +3980,9 @@
     "category": "general",
     "vcpus": 80,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3680,8 +3993,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3692,8 +4006,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3704,8 +4019,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3716,8 +4032,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3728,8 +4045,9 @@
     "category": "general",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3740,8 +4058,9 @@
     "category": "general",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3752,8 +4071,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3764,8 +4084,9 @@
     "category": "general",
     "vcpus": 80,
     "memory": 640,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3776,8 +4097,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3788,8 +4110,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3800,8 +4123,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3812,8 +4136,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3824,8 +4149,9 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3836,8 +4162,9 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3848,8 +4175,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3860,8 +4188,9 @@
     "category": "general",
     "vcpus": 80,
     "memory": 320,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8581c"
     ]
@@ -3872,8 +4201,9 @@
     "category": "general",
     "vcpus": 1,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "ampere-altra-q6430"
     ]
@@ -3884,8 +4214,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "ampere-altra-q6430"
     ]
@@ -3896,8 +4227,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "ampere-altra-q6430"
     ]
@@ -3908,8 +4240,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "ampere-altra-q6430"
     ]
@@ -3920,8 +4253,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "ampere-altra-q6430"
     ]
@@ -3932,8 +4266,9 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "ampere-altra-q6430"
     ]
@@ -3944,8 +4279,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "ampere-altra-q6430"
     ]
@@ -3956,8 +4292,9 @@
     "category": "general",
     "vcpus": 1,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -3968,8 +4305,9 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -3980,8 +4318,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -3992,8 +4331,9 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -4004,8 +4344,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -4016,8 +4357,9 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -4028,8 +4370,9 @@
     "category": "general",
     "vcpus": 60,
     "memory": 240,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -4040,8 +4383,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "amd-epyc-7b13"
     ]
@@ -4052,8 +4396,9 @@
     "category": "storage",
     "vcpus": 176,
     "memory": 1408,
+    "accelerators": 0,
     "ssd": 36000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]
@@ -4064,8 +4409,9 @@
     "category": "storage",
     "vcpus": 88,
     "memory": 704,
+    "accelerators": 0,
     "ssd": 36000,
-    "hdd": "",
+    "hdd": 0,
     "cpu": [
       "intel-xeon-8481c"
     ]

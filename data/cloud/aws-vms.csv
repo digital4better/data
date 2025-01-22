@@ -1,10 +1,10 @@
 id,family,category,vcpus,memory,ssd,hdd,cpu
-a1-2xlarge,a1,metal,8,16,0,0,aws-graviton-1
-a1-4xlarge,a1,metal,16,32,0,0,aws-graviton-1
-a1-large,a1,metal,2,4,0,0,aws-graviton-1
-a1-medium,a1,metal,1,2,0,0,aws-graviton-1
-a1-metal,a1,metal,16,32,0,0,aws-graviton-1
-a1-xlarge,a1,metal,4,8,0,0,aws-graviton-1
+a1-2xlarge,a1,general,8,16,0,0,aws-graviton-1
+a1-4xlarge,a1,general,16,32,0,0,aws-graviton-1
+a1-large,a1,general,2,4,0,0,aws-graviton-1
+a1-medium,a1,general,1,2,0,0,aws-graviton-1
+a1-metal,a1,general,16,32,0,0,aws-graviton-1
+a1-xlarge,a1,general,4,8,0,0,aws-graviton-1
 c1-medium,c1,compute,2,1.7,0,350,intel-xeon-e52651v2
 c1-xlarge,c1,compute,8,7,0,1680,intel-xeon-e52651v2
 c3-2xlarge,c3,compute,8,15,160,0,intel-xeon-e52680v2

@@ -5,8 +5,9 @@
     "category": "general",
     "vcpus": 1,
     "memory": 0.75,
-    "ssd": 20,
-    "hdd": 0,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 20,
     "cpu": [
       "intel-xeon-e5-2660"
     ]
@@ -17,8 +18,9 @@
     "category": "general",
     "vcpus": 1,
     "memory": 1.75,
-    "ssd": 40,
-    "hdd": 0,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 40,
     "cpu": [
       "intel-xeon-e5-2660"
     ]
@@ -29,8 +31,9 @@
     "category": "general",
     "vcpus": 1,
     "memory": 2,
-    "ssd": 10,
-    "hdd": 0,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 10,
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
@@ -45,8 +48,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 3.5,
-    "ssd": 60,
-    "hdd": 0,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 60,
     "cpu": [
       "intel-xeon-e5-2660"
     ]
@@ -57,8 +61,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
-    "ssd": 20,
-    "hdd": 0,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 20,
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
@@ -73,8 +78,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 16,
-    "ssd": 20,
-    "hdd": 0,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 20,
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
@@ -89,8 +95,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 7,
-    "ssd": 120,
-    "hdd": 0,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 120,
     "cpu": [
       "intel-xeon-e5-2660"
     ]
@@ -101,8 +108,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 14,
-    "ssd": 240,
-    "hdd": 0,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 240,
     "cpu": [
       "intel-xeon-e5-2660"
     ]
@@ -113,8 +121,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
-    "ssd": 40,
-    "hdd": 0,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 40,
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
@@ -129,8 +138,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 32,
-    "ssd": 40,
-    "hdd": 0,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 40,
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
@@ -145,8 +155,9 @@
     "category": "general",
     "vcpus": 2,
     "memory": 14,
-    "ssd": 135,
-    "hdd": 0,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 135,
     "cpu": [
       "intel-xeon-e5-2660"
     ]
@@ -157,8 +168,9 @@
     "category": "general",
     "vcpus": 4,
     "memory": 28,
-    "ssd": 285,
-    "hdd": 0,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 285,
     "cpu": [
       "intel-xeon-e5-2660"
     ]
@@ -169,8 +181,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 56,
-    "ssd": 605,
-    "hdd": 0,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 605,
     "cpu": [
       "intel-xeon-e5-2660"
     ]
@@ -181,8 +194,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
-    "ssd": 80,
-    "hdd": 0,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 80,
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
@@ -197,8 +211,9 @@
     "category": "general",
     "vcpus": 8,
     "memory": 64,
-    "ssd": 80,
-    "hdd": 0,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 80,
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
@@ -213,6 +228,7 @@
     "category": "general",
     "vcpus": 12,
     "memory": 48,
+    "accelerators": 0,
     "ssd": 96,
     "hdd": 0,
     "cpu": [
@@ -229,6 +245,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -241,6 +258,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -253,6 +271,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -266,6 +285,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 128,
     "hdd": 0,
     "cpu": [
@@ -282,6 +302,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -294,6 +315,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -306,6 +328,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -319,6 +342,7 @@
     "category": "general",
     "vcpus": 1,
     "memory": 0.5,
+    "accelerators": 0,
     "ssd": 4,
     "hdd": 0,
     "cpu": [
@@ -335,6 +359,7 @@
     "category": "general",
     "vcpus": 1,
     "memory": 2,
+    "accelerators": 0,
     "ssd": 4,
     "hdd": 0,
     "cpu": [
@@ -351,6 +376,7 @@
     "category": "general",
     "vcpus": 1,
     "memory": 1,
+    "accelerators": 0,
     "ssd": 4,
     "hdd": 0,
     "cpu": [
@@ -367,6 +393,7 @@
     "category": "general",
     "vcpus": 20,
     "memory": 80,
+    "accelerators": 0,
     "ssd": 160,
     "hdd": 0,
     "cpu": [
@@ -383,6 +410,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -395,6 +423,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -407,6 +436,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 1,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -419,6 +449,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -432,6 +463,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 16,
     "hdd": 0,
     "cpu": [
@@ -448,6 +480,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -460,6 +493,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -472,6 +506,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 1,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -484,6 +519,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 8,
     "hdd": 0,
     "cpu": [
@@ -500,6 +536,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -513,6 +550,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 1,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -526,6 +564,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -538,6 +577,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -550,6 +590,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -563,6 +604,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -576,6 +618,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -588,6 +631,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -600,6 +644,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -613,6 +658,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 32,
     "hdd": 0,
     "cpu": [
@@ -629,6 +675,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -641,6 +688,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -653,6 +701,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -666,6 +715,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -678,6 +728,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -690,6 +741,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -703,6 +755,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 64,
     "hdd": 0,
     "cpu": [
@@ -719,6 +772,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -731,6 +785,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -743,6 +798,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -756,6 +812,7 @@
     "category": "general",
     "vcpus": 1,
     "memory": 3.5,
+    "accelerators": 0,
     "ssd": 50,
     "hdd": 0,
     "cpu": [
@@ -768,6 +825,7 @@
     "category": "general",
     "vcpus": 1,
     "memory": 3.5,
+    "accelerators": 0,
     "ssd": 50,
     "hdd": 0,
     "cpu": [
@@ -784,6 +842,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 14,
+    "accelerators": 0,
     "ssd": 100,
     "hdd": 0,
     "cpu": [
@@ -796,6 +855,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 14,
+    "accelerators": 0,
     "ssd": 100,
     "hdd": 0,
     "cpu": [
@@ -812,6 +872,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 14,
+    "accelerators": 0,
     "ssd": 28,
     "hdd": 0,
     "cpu": [
@@ -824,6 +885,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 28,
+    "accelerators": 0,
     "ssd": 200,
     "hdd": 0,
     "cpu": [
@@ -836,6 +898,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 28,
+    "accelerators": 0,
     "ssd": 200,
     "hdd": 0,
     "cpu": [
@@ -852,6 +915,7 @@
     "category": "general",
     "vcpus": 128,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 7040,
     "hdd": 0,
     "cpu": [
@@ -864,6 +928,7 @@
     "category": "general",
     "vcpus": 128,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 7040,
     "hdd": 0,
     "cpu": [
@@ -876,6 +941,7 @@
     "category": "general",
     "vcpus": 128,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -888,6 +954,7 @@
     "category": "general",
     "vcpus": 128,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -900,6 +967,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 28,
+    "accelerators": 0,
     "ssd": 56,
     "hdd": 0,
     "cpu": [
@@ -912,6 +980,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 56,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -924,6 +993,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 56,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -940,6 +1010,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 56,
+    "accelerators": 0,
     "ssd": 112,
     "hdd": 0,
     "cpu": [
@@ -952,6 +1023,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 112,
+    "accelerators": 0,
     "ssd": 800,
     "hdd": 0,
     "cpu": [
@@ -964,6 +1036,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 112,
+    "accelerators": 0,
     "ssd": 800,
     "hdd": 0,
     "cpu": [
@@ -980,6 +1053,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 112,
+    "accelerators": 0,
     "ssd": 224,
     "hdd": 0,
     "cpu": [
@@ -992,6 +1066,7 @@
     "category": "general",
     "vcpus": 20,
     "memory": 140,
+    "accelerators": 0,
     "ssd": 1000,
     "hdd": 0,
     "cpu": [
@@ -1008,6 +1083,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -1024,6 +1100,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1038,6 +1115,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1051,6 +1129,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -1064,6 +1143,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -1076,7 +1156,8 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
-    "ssd": 600,
+    "accelerators": 0,
+    "ssd": 880,
     "hdd": 0,
     "cpu": [
       "amd-epyc-9004"
@@ -1088,7 +1169,8 @@
     "category": "general",
     "vcpus": 16,
     "memory": 32,
-    "ssd": 600,
+    "accelerators": 0,
+    "ssd": 880,
     "hdd": 0,
     "cpu": [
       "amd-epyc-9004"
@@ -1100,6 +1182,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1112,6 +1195,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 128,
     "hdd": 0,
     "cpu": [
@@ -1125,6 +1209,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1137,6 +1222,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1149,6 +1235,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -1162,6 +1249,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -1174,6 +1262,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -1187,6 +1276,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -1199,6 +1289,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 880,
     "hdd": 0,
     "cpu": [
@@ -1211,6 +1302,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -1224,6 +1316,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 880,
     "hdd": 0,
     "cpu": [
@@ -1236,6 +1329,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1249,6 +1343,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1261,6 +1356,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -1273,6 +1369,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 880,
     "hdd": 0,
     "cpu": [
@@ -1285,6 +1382,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -1297,6 +1395,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 880,
     "hdd": 0,
     "cpu": [
@@ -1309,6 +1408,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1321,6 +1421,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1333,6 +1434,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1345,6 +1447,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1357,6 +1460,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 128,
     "hdd": 0,
     "cpu": [
@@ -1373,6 +1477,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1387,6 +1492,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1400,6 +1506,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1412,6 +1519,7 @@
     "category": "general",
     "vcpus": 1,
     "memory": 3.5,
+    "accelerators": 0,
     "ssd": 7,
     "hdd": 0,
     "cpu": [
@@ -1424,6 +1532,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 7,
+    "accelerators": 0,
     "ssd": 100,
     "hdd": 0,
     "cpu": [
@@ -1436,6 +1545,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 7,
+    "accelerators": 0,
     "ssd": 100,
     "hdd": 0,
     "cpu": [
@@ -1452,6 +1562,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 50,
     "hdd": 0,
     "cpu": [
@@ -1468,6 +1579,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1482,6 +1594,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1495,6 +1608,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 50,
     "hdd": 0,
     "cpu": [
@@ -1508,6 +1622,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -1520,7 +1635,8 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
-    "ssd": 75,
+    "accelerators": 0,
+    "ssd": 110,
     "hdd": 0,
     "cpu": [
       "amd-epyc-9004"
@@ -1532,7 +1648,8 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
-    "ssd": 75,
+    "accelerators": 0,
+    "ssd": 110,
     "hdd": 0,
     "cpu": [
       "amd-epyc-9004"
@@ -1544,6 +1661,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1556,6 +1674,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 16,
     "hdd": 0,
     "cpu": [
@@ -1569,6 +1688,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1581,6 +1701,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1593,6 +1714,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -1606,6 +1728,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -1618,6 +1741,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -1631,6 +1755,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -1643,6 +1768,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 110,
     "hdd": 0,
     "cpu": [
@@ -1655,6 +1781,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -1668,6 +1795,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 110,
     "hdd": 0,
     "cpu": [
@@ -1680,6 +1808,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1693,6 +1822,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1705,6 +1835,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -1717,6 +1848,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 110,
     "hdd": 0,
     "cpu": [
@@ -1729,6 +1861,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -1741,6 +1874,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 110,
     "hdd": 0,
     "cpu": [
@@ -1753,6 +1887,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1765,6 +1900,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1777,6 +1913,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1789,6 +1926,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1801,6 +1939,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 7,
+    "accelerators": 0,
     "ssd": 14,
     "hdd": 0,
     "cpu": [
@@ -1813,6 +1952,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 16,
     "hdd": 0,
     "cpu": [
@@ -1829,6 +1969,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1843,6 +1984,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1856,6 +1998,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1868,6 +2011,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 14,
+    "accelerators": 0,
     "ssd": 200,
     "hdd": 0,
     "cpu": [
@@ -1880,6 +2024,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 14,
+    "accelerators": 0,
     "ssd": 200,
     "hdd": 0,
     "cpu": [
@@ -1896,6 +2041,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 800,
     "hdd": 0,
     "cpu": [
@@ -1912,6 +2058,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1926,6 +2073,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -1939,6 +2087,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 800,
     "hdd": 0,
     "cpu": [
@@ -1952,6 +2101,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -1964,7 +2114,8 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
-    "ssd": 750,
+    "accelerators": 0,
+    "ssd": 1760,
     "hdd": 0,
     "cpu": [
       "amd-epyc-9004"
@@ -1976,7 +2127,8 @@
     "category": "general",
     "vcpus": 32,
     "memory": 64,
-    "ssd": 750,
+    "accelerators": 0,
+    "ssd": 1760,
     "hdd": 0,
     "cpu": [
       "amd-epyc-9004"
@@ -1988,6 +2140,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2000,6 +2153,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 256,
     "hdd": 0,
     "cpu": [
@@ -2013,6 +2167,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2025,6 +2180,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2037,6 +2193,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -2050,6 +2207,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -2062,6 +2220,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -2075,6 +2234,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -2087,6 +2247,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 1760,
     "hdd": 0,
     "cpu": [
@@ -2099,6 +2260,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -2112,6 +2274,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 1760,
     "hdd": 0,
     "cpu": [
@@ -2124,6 +2287,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2137,6 +2301,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2149,6 +2314,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -2161,6 +2327,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 1760,
     "hdd": 0,
     "cpu": [
@@ -2173,6 +2340,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -2185,6 +2353,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 1760,
     "hdd": 0,
     "cpu": [
@@ -2197,6 +2366,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2209,6 +2379,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2221,6 +2392,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2233,6 +2405,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2245,6 +2418,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 256,
     "hdd": 0,
     "cpu": [
@@ -2261,6 +2435,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2275,6 +2450,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2288,6 +2464,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2300,6 +2477,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 14,
+    "accelerators": 0,
     "ssd": 28,
     "hdd": 0,
     "cpu": [
@@ -2312,6 +2490,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 28,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -2324,6 +2503,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 28,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -2340,6 +2520,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 100,
     "hdd": 0,
     "cpu": [
@@ -2356,6 +2537,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2370,6 +2552,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2383,6 +2566,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -2399,6 +2583,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2413,6 +2598,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2426,6 +2612,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -2439,6 +2626,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -2451,7 +2639,8 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
-    "ssd": 1700,
+    "accelerators": 0,
+    "ssd": 2640,
     "hdd": 0,
     "cpu": [
       "amd-epyc-9004"
@@ -2463,7 +2652,8 @@
     "category": "general",
     "vcpus": 48,
     "memory": 96,
-    "ssd": 1700,
+    "accelerators": 0,
+    "ssd": 2640,
     "hdd": 0,
     "cpu": [
       "amd-epyc-9004"
@@ -2475,6 +2665,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 96,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2487,6 +2678,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 384,
     "hdd": 0,
     "cpu": [
@@ -2500,6 +2692,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2512,6 +2705,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2524,6 +2718,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -2537,6 +2732,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -2549,6 +2745,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -2562,6 +2759,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -2574,6 +2772,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 2640,
     "hdd": 0,
     "cpu": [
@@ -2586,6 +2785,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 96,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -2599,6 +2799,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 96,
+    "accelerators": 0,
     "ssd": 2640,
     "hdd": 0,
     "cpu": [
@@ -2611,6 +2812,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 96,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2624,6 +2826,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 96,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2636,6 +2839,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -2648,6 +2852,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 2640,
     "hdd": 0,
     "cpu": [
@@ -2660,6 +2865,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 96,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -2672,6 +2878,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 96,
+    "accelerators": 0,
     "ssd": 2640,
     "hdd": 0,
     "cpu": [
@@ -2684,6 +2891,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 96,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2696,6 +2904,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 96,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2708,6 +2917,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2720,6 +2930,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2732,6 +2943,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 384,
     "hdd": 0,
     "cpu": [
@@ -2748,6 +2960,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2762,6 +2975,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2775,6 +2989,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2787,6 +3002,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 100,
     "hdd": 0,
     "cpu": [
@@ -2800,6 +3016,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -2812,7 +3029,8 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
-    "ssd": 150,
+    "accelerators": 0,
+    "ssd": 220,
     "hdd": 0,
     "cpu": [
       "amd-epyc-9004"
@@ -2824,7 +3042,8 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
-    "ssd": 150,
+    "accelerators": 0,
+    "ssd": 220,
     "hdd": 0,
     "cpu": [
       "amd-epyc-9004"
@@ -2836,6 +3055,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2848,6 +3068,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 32,
     "hdd": 0,
     "cpu": [
@@ -2861,6 +3082,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2873,6 +3095,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2885,6 +3108,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -2898,6 +3122,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -2910,6 +3135,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -2923,6 +3149,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -2935,6 +3162,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 220,
     "hdd": 0,
     "cpu": [
@@ -2947,6 +3175,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -2960,6 +3189,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 220,
     "hdd": 0,
     "cpu": [
@@ -2972,6 +3202,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2985,6 +3216,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -2997,6 +3229,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -3009,6 +3242,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 220,
     "hdd": 0,
     "cpu": [
@@ -3021,6 +3255,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -3033,6 +3268,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 220,
     "hdd": 0,
     "cpu": [
@@ -3045,6 +3281,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3057,6 +3294,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3069,6 +3307,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3081,6 +3320,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3093,6 +3333,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 28,
+    "accelerators": 0,
     "ssd": 56,
     "hdd": 0,
     "cpu": [
@@ -3105,6 +3346,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 32,
     "hdd": 0,
     "cpu": [
@@ -3121,6 +3363,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3135,6 +3378,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3148,6 +3392,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3160,6 +3405,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 56,
+    "accelerators": 0,
     "ssd": 800,
     "hdd": 0,
     "cpu": [
@@ -3176,6 +3422,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 1600,
     "hdd": 0,
     "cpu": [
@@ -3192,6 +3439,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3206,6 +3454,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3219,6 +3468,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 1600,
     "hdd": 0,
     "cpu": [
@@ -3232,6 +3482,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -3244,7 +3495,8 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
-    "ssd": 2400,
+    "accelerators": 0,
+    "ssd": 3520,
     "hdd": 0,
     "cpu": [
       "amd-epyc-9004"
@@ -3256,7 +3508,8 @@
     "category": "general",
     "vcpus": 64,
     "memory": 128,
-    "ssd": 2400,
+    "accelerators": 0,
+    "ssd": 3520,
     "hdd": 0,
     "cpu": [
       "amd-epyc-9004"
@@ -3268,6 +3521,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3280,6 +3534,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 512,
     "hdd": 0,
     "cpu": [
@@ -3293,6 +3548,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3305,6 +3561,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3317,6 +3574,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -3330,6 +3588,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -3342,6 +3601,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -3355,6 +3615,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -3367,6 +3628,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 3520,
     "hdd": 0,
     "cpu": [
@@ -3379,6 +3641,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -3392,6 +3655,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 3520,
     "hdd": 0,
     "cpu": [
@@ -3404,6 +3668,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3417,6 +3682,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3429,6 +3695,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 208,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -3441,6 +3708,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 3520,
     "hdd": 0,
     "cpu": [
@@ -3453,6 +3721,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -3465,6 +3734,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 3520,
     "hdd": 0,
     "cpu": [
@@ -3477,6 +3747,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3489,6 +3760,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3501,6 +3773,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 208,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3513,6 +3786,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3525,6 +3799,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 512,
     "hdd": 0,
     "cpu": [
@@ -3541,6 +3816,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3555,6 +3831,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3568,6 +3845,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3580,6 +3858,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 200,
     "hdd": 0,
     "cpu": [
@@ -3596,6 +3875,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3610,6 +3890,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3623,6 +3904,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 200,
     "hdd": 0,
     "cpu": [
@@ -3636,6 +3918,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -3648,7 +3931,8 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
-    "ssd": 300,
+    "accelerators": 0,
+    "ssd": 440,
     "hdd": 0,
     "cpu": [
       "amd-epyc-9004"
@@ -3660,7 +3944,8 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
-    "ssd": 300,
+    "accelerators": 0,
+    "ssd": 440,
     "hdd": 0,
     "cpu": [
       "amd-epyc-9004"
@@ -3672,6 +3957,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3684,6 +3970,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 64,
     "hdd": 0,
     "cpu": [
@@ -3697,6 +3984,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3709,6 +3997,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3721,6 +4010,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -3734,6 +4024,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -3746,6 +4037,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -3759,6 +4051,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -3771,6 +4064,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 440,
     "hdd": 0,
     "cpu": [
@@ -3783,6 +4077,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -3796,6 +4091,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 440,
     "hdd": 0,
     "cpu": [
@@ -3808,6 +4104,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3821,6 +4118,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3833,6 +4131,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -3845,6 +4144,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 440,
     "hdd": 0,
     "cpu": [
@@ -3857,6 +4157,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -3869,6 +4170,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 440,
     "hdd": 0,
     "cpu": [
@@ -3881,6 +4183,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3893,6 +4196,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3905,6 +4209,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3917,6 +4222,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3929,6 +4235,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 64,
     "hdd": 0,
     "cpu": [
@@ -3945,6 +4252,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3959,6 +4267,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3972,6 +4281,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3984,6 +4294,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -3997,6 +4308,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -4010,6 +4322,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 3600,
     "hdd": 0,
     "cpu": [
@@ -4022,7 +4335,8 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
-    "ssd": 3400,
+    "accelerators": 0,
+    "ssd": 5280,
     "hdd": 0,
     "cpu": [
       "amd-epyc-9004"
@@ -4034,7 +4348,8 @@
     "category": "general",
     "vcpus": 96,
     "memory": 192,
-    "ssd": 3400,
+    "accelerators": 0,
+    "ssd": 5280,
     "hdd": 0,
     "cpu": [
       "amd-epyc-9004"
@@ -4046,6 +4361,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4058,6 +4374,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 768,
     "hdd": 0,
     "cpu": [
@@ -4071,6 +4388,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4083,6 +4401,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4095,6 +4414,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 3600,
     "hdd": 0,
     "cpu": [
@@ -4107,6 +4427,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 3600,
     "hdd": 0,
     "cpu": [
@@ -4119,6 +4440,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 5280,
     "hdd": 0,
     "cpu": [
@@ -4131,6 +4453,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 3600,
     "hdd": 0,
     "cpu": [
@@ -4144,6 +4467,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 5280,
     "hdd": 0,
     "cpu": [
@@ -4156,6 +4480,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4169,6 +4494,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4181,6 +4507,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 5280,
     "hdd": 0,
     "cpu": [
@@ -4193,6 +4520,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 5280,
     "hdd": 0,
     "cpu": [
@@ -4205,6 +4533,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4217,6 +4546,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4229,6 +4559,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4242,6 +4573,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4254,6 +4586,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -4266,6 +4599,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -4278,6 +4612,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4290,6 +4625,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4302,6 +4638,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -4314,6 +4651,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 463,
     "hdd": 0,
     "cpu": [
@@ -4326,6 +4664,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4338,6 +4677,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4350,6 +4690,7 @@
     "category": "general",
     "vcpus": 1,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -4362,6 +4703,7 @@
     "category": "general",
     "vcpus": 1,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 50,
     "hdd": 0,
     "cpu": [
@@ -4374,6 +4716,7 @@
     "category": "general",
     "vcpus": 1,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4386,6 +4729,7 @@
     "category": "general",
     "vcpus": 24,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -4398,6 +4742,7 @@
     "category": "general",
     "vcpus": 24,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4410,6 +4755,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -4422,6 +4768,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4434,6 +4781,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -4446,6 +4794,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 2,
+    "accelerators": 0,
     "ssd": 47,
     "hdd": 0,
     "cpu": [
@@ -4458,6 +4807,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4470,6 +4820,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 100,
     "hdd": 0,
     "cpu": [
@@ -4482,6 +4833,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4494,6 +4846,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -4506,6 +4859,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -4518,6 +4872,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4530,6 +4885,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4542,6 +4898,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -4554,6 +4911,7 @@
     "category": "general",
     "vcpus": 128,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 935,
     "hdd": 0,
     "cpu": [
@@ -4566,6 +4924,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4578,6 +4937,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4590,6 +4950,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -4602,6 +4963,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -4614,6 +4976,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4626,6 +4989,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4638,6 +5002,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -4650,6 +5015,7 @@
     "category": "general",
     "vcpus": 192,
     "memory": 48,
+    "accelerators": 0,
     "ssd": 1407,
     "hdd": 0,
     "cpu": [
@@ -4662,6 +5028,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4674,6 +5041,7 @@
     "category": "general",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4686,6 +5054,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -4698,6 +5067,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -4710,6 +5080,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4722,6 +5093,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4734,6 +5106,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -4746,6 +5119,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 105,
     "hdd": 0,
     "cpu": [
@@ -4758,6 +5132,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4770,6 +5145,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 200,
     "hdd": 0,
     "cpu": [
@@ -4782,6 +5158,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4794,6 +5171,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -4806,6 +5184,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -4818,6 +5197,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4830,6 +5210,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4842,6 +5223,7 @@
     "category": "general",
     "vcpus": 256,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 2823,
     "hdd": 0,
     "cpu": [
@@ -4854,6 +5236,7 @@
     "category": "general",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4866,6 +5249,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -4878,6 +5262,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -4890,6 +5275,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4902,6 +5288,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4914,6 +5301,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -4926,6 +5314,7 @@
     "category": "general",
     "vcpus": 32,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 227,
     "hdd": 0,
     "cpu": [
@@ -4938,6 +5327,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4950,6 +5340,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -4962,6 +5353,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -4974,6 +5366,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 3600,
     "hdd": 0,
     "cpu": [
@@ -4986,6 +5379,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 3600,
     "hdd": 0,
     "cpu": [
@@ -4998,6 +5392,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5010,6 +5405,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5022,6 +5418,7 @@
     "category": "general",
     "vcpus": 384,
     "memory": 96,
+    "accelerators": 0,
     "ssd": 2823,
     "hdd": 0,
     "cpu": [
@@ -5034,6 +5431,7 @@
     "category": "general",
     "vcpus": 96,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5046,6 +5444,7 @@
     "category": "general",
     "vcpus": 1,
     "memory": 3.5,
+    "accelerators": 0,
     "ssd": 7,
     "hdd": 0,
     "cpu": [
@@ -5062,6 +5461,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 14,
+    "accelerators": 0,
     "ssd": 28,
     "hdd": 0,
     "cpu": [
@@ -5078,6 +5478,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 28,
+    "accelerators": 0,
     "ssd": 56,
     "hdd": 0,
     "cpu": [
@@ -5094,6 +5495,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 56,
+    "accelerators": 0,
     "ssd": 112,
     "hdd": 0,
     "cpu": [
@@ -5110,6 +5512,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 112,
+    "accelerators": 0,
     "ssd": 224,
     "hdd": 0,
     "cpu": [
@@ -5126,6 +5529,7 @@
     "category": "general",
     "vcpus": 20,
     "memory": 140,
+    "accelerators": 0,
     "ssd": 280,
     "hdd": 0,
     "cpu": [
@@ -5142,6 +5546,7 @@
     "category": "general",
     "vcpus": 2,
     "memory": 7,
+    "accelerators": 0,
     "ssd": 14,
     "hdd": 0,
     "cpu": [
@@ -5158,6 +5563,7 @@
     "category": "general",
     "vcpus": 4,
     "memory": 14,
+    "accelerators": 0,
     "ssd": 28,
     "hdd": 0,
     "cpu": [
@@ -5174,6 +5580,7 @@
     "category": "general",
     "vcpus": 8,
     "memory": 28,
+    "accelerators": 0,
     "ssd": 56,
     "hdd": 0,
     "cpu": [
@@ -5190,6 +5597,7 @@
     "category": "general",
     "vcpus": 16,
     "memory": 56,
+    "accelerators": 0,
     "ssd": 112,
     "hdd": 0,
     "cpu": [
@@ -5206,6 +5614,7 @@
     "category": "memory",
     "vcpus": 104,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5219,6 +5628,7 @@
     "category": "memory",
     "vcpus": 104,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 3900,
     "hdd": 0,
     "cpu": [
@@ -5231,6 +5641,7 @@
     "category": "memory",
     "vcpus": 104,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 3900,
     "hdd": 0,
     "cpu": [
@@ -5243,6 +5654,7 @@
     "category": "memory",
     "vcpus": 104,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5256,6 +5668,7 @@
     "category": "memory",
     "vcpus": 112,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 3800,
     "hdd": 0,
     "cpu": [
@@ -5268,6 +5681,7 @@
     "category": "memory",
     "vcpus": 112,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5280,6 +5694,7 @@
     "category": "memory",
     "vcpus": 112,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 3800,
     "hdd": 0,
     "cpu": [
@@ -5292,6 +5707,7 @@
     "category": "memory",
     "vcpus": 112,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5304,6 +5720,7 @@
     "category": "memory",
     "vcpus": 128,
     "memory": 1024,
+    "accelerators": 0,
     "ssd": 7040,
     "hdd": 0,
     "cpu": [
@@ -5316,6 +5733,7 @@
     "category": "memory",
     "vcpus": 128,
     "memory": 1024,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5328,6 +5746,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 800,
     "hdd": 0,
     "cpu": [
@@ -5343,6 +5762,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5357,6 +5777,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5370,6 +5791,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -5383,6 +5805,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -5395,6 +5818,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -5407,6 +5831,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 256,
     "hdd": 0,
     "cpu": [
@@ -5420,6 +5845,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5432,6 +5858,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5444,6 +5871,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -5456,6 +5884,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5468,6 +5897,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -5481,6 +5911,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -5493,6 +5924,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -5506,6 +5938,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -5518,6 +5951,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 880,
     "hdd": 0,
     "cpu": [
@@ -5530,6 +5964,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -5542,6 +5977,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 880,
     "hdd": 0,
     "cpu": [
@@ -5554,6 +5990,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5566,6 +6003,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5578,6 +6016,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 256,
     "hdd": 0,
     "cpu": [
@@ -5593,6 +6032,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5607,6 +6047,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5620,6 +6061,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5632,6 +6074,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 50,
     "hdd": 0,
     "cpu": [
@@ -5647,6 +6090,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5661,6 +6105,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5674,6 +6119,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 500,
     "hdd": 0,
     "cpu": [
@@ -5689,6 +6135,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5703,6 +6150,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5716,6 +6164,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 500,
     "hdd": 0,
     "cpu": [
@@ -5729,6 +6178,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 750,
     "hdd": 0,
     "cpu": [
@@ -5741,6 +6191,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 750,
     "hdd": 0,
     "cpu": [
@@ -5753,6 +6204,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 320,
     "hdd": 0,
     "cpu": [
@@ -5766,6 +6218,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5778,6 +6231,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5790,6 +6244,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 750,
     "hdd": 0,
     "cpu": [
@@ -5803,6 +6258,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 750,
     "hdd": 0,
     "cpu": [
@@ -5815,6 +6271,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 750,
     "hdd": 0,
     "cpu": [
@@ -5828,6 +6285,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 750,
     "hdd": 0,
     "cpu": [
@@ -5840,6 +6298,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 1100,
     "hdd": 0,
     "cpu": [
@@ -5852,6 +6311,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 750,
     "hdd": 0,
     "cpu": [
@@ -5864,6 +6324,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5876,6 +6337,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 320,
     "hdd": 0,
     "cpu": [
@@ -5891,6 +6353,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5905,6 +6368,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5918,6 +6382,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5930,6 +6395,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 50,
     "hdd": 0,
     "cpu": [
@@ -5943,6 +6409,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -5955,6 +6422,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -5967,6 +6435,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 32,
     "hdd": 0,
     "cpu": [
@@ -5980,6 +6449,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -5992,6 +6462,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6004,6 +6475,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -6016,6 +6488,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6028,6 +6501,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -6041,6 +6515,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -6053,6 +6528,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -6066,6 +6542,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -6078,6 +6555,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 110,
     "hdd": 0,
     "cpu": [
@@ -6090,6 +6568,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -6102,6 +6581,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 110,
     "hdd": 0,
     "cpu": [
@@ -6114,6 +6594,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6126,6 +6607,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6138,6 +6620,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 32,
     "hdd": 0,
     "cpu": [
@@ -6153,6 +6636,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6167,6 +6651,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6180,6 +6665,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6192,6 +6678,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 800,
     "hdd": 0,
     "cpu": [
@@ -6207,6 +6694,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6221,6 +6709,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6234,6 +6723,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 800,
     "hdd": 0,
     "cpu": [
@@ -6247,6 +6737,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -6259,6 +6750,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -6271,6 +6763,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 512,
     "hdd": 0,
     "cpu": [
@@ -6284,6 +6777,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6296,6 +6790,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6308,6 +6803,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -6320,6 +6816,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6332,6 +6829,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -6345,6 +6843,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -6357,6 +6856,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -6370,6 +6870,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -6382,6 +6883,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 1760,
     "hdd": 0,
     "cpu": [
@@ -6394,6 +6896,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 208,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -6406,6 +6909,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 1760,
     "hdd": 0,
     "cpu": [
@@ -6418,6 +6922,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 208,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6430,6 +6935,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6442,6 +6948,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 512,
     "hdd": 0,
     "cpu": [
@@ -6457,6 +6964,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6471,6 +6979,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6484,6 +6993,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6496,6 +7006,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 100,
     "hdd": 0,
     "cpu": [
@@ -6511,6 +7022,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6525,6 +7037,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6538,6 +7051,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -6553,6 +7067,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6567,6 +7082,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6580,6 +7096,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -6593,6 +7110,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -6605,6 +7123,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 1700,
     "hdd": 0,
     "cpu": [
@@ -6617,6 +7136,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 768,
     "hdd": 0,
     "cpu": [
@@ -6630,6 +7150,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6642,6 +7163,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6654,6 +7176,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -6666,6 +7189,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6678,6 +7202,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -6691,6 +7216,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -6703,6 +7229,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -6716,6 +7243,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -6728,6 +7256,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 2640,
     "hdd": 0,
     "cpu": [
@@ -6740,6 +7269,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 2640,
     "hdd": 0,
     "cpu": [
@@ -6752,6 +7282,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6764,6 +7295,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 768,
     "hdd": 0,
     "cpu": [
@@ -6779,6 +7311,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6793,6 +7326,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6806,6 +7340,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6818,6 +7353,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 100,
     "hdd": 0,
     "cpu": [
@@ -6831,6 +7367,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -6843,6 +7380,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -6855,6 +7393,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 64,
     "hdd": 0,
     "cpu": [
@@ -6868,6 +7407,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6880,6 +7420,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6892,6 +7433,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -6904,6 +7446,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -6916,6 +7459,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -6929,6 +7473,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -6941,6 +7486,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -6954,6 +7500,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -6966,6 +7513,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 220,
     "hdd": 0,
     "cpu": [
@@ -6978,6 +7526,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -6990,6 +7539,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 220,
     "hdd": 0,
     "cpu": [
@@ -7002,6 +7552,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7014,6 +7565,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7026,6 +7578,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 64,
     "hdd": 0,
     "cpu": [
@@ -7041,6 +7594,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7055,6 +7609,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7068,6 +7623,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7080,6 +7636,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 432,
+    "accelerators": 0,
     "ssd": 1600,
     "hdd": 0,
     "cpu": [
@@ -7095,6 +7652,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 504,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7109,6 +7667,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7122,6 +7681,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 432,
+    "accelerators": 0,
     "ssd": 1600,
     "hdd": 0,
     "cpu": [
@@ -7135,6 +7695,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -7147,6 +7708,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -7159,6 +7721,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 432,
+    "accelerators": 0,
     "ssd": 864,
     "hdd": 0,
     "cpu": [
@@ -7172,6 +7735,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7184,6 +7748,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7196,6 +7761,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -7208,6 +7774,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7220,6 +7787,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 504,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -7233,6 +7801,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -7245,6 +7814,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 504,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -7258,6 +7828,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -7270,6 +7841,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 3520,
     "hdd": 0,
     "cpu": [
@@ -7282,6 +7854,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 3520,
     "hdd": 0,
     "cpu": [
@@ -7294,6 +7867,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7306,6 +7880,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 432,
+    "accelerators": 0,
     "ssd": 864,
     "hdd": 0,
     "cpu": [
@@ -7321,6 +7896,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 504,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7335,6 +7911,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7348,6 +7925,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7360,6 +7938,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 200,
     "hdd": 0,
     "cpu": [
@@ -7375,6 +7954,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7389,6 +7969,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7402,6 +7983,7 @@
     "category": "memory",
     "vcpus": 80,
     "memory": 504,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -7415,6 +7997,7 @@
     "category": "memory",
     "vcpus": 80,
     "memory": 504,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -7429,6 +8012,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 200,
     "hdd": 0,
     "cpu": [
@@ -7442,6 +8026,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -7454,6 +8039,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -7466,6 +8052,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 128,
     "hdd": 0,
     "cpu": [
@@ -7479,6 +8066,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7491,6 +8079,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7503,6 +8092,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -7515,6 +8105,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7527,6 +8118,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -7540,6 +8132,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -7552,6 +8145,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -7565,6 +8159,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -7577,6 +8172,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 440,
     "hdd": 0,
     "cpu": [
@@ -7589,6 +8185,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -7601,6 +8198,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 440,
     "hdd": 0,
     "cpu": [
@@ -7613,6 +8211,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7625,6 +8224,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7637,6 +8237,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 128,
     "hdd": 0,
     "cpu": [
@@ -7652,6 +8253,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7666,6 +8268,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7679,6 +8282,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7691,6 +8295,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7704,6 +8309,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -7717,6 +8323,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 3600,
     "hdd": 0,
     "cpu": [
@@ -7729,6 +8336,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 3400,
     "hdd": 0,
     "cpu": [
@@ -7741,6 +8349,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 1344,
     "hdd": 0,
     "cpu": [
@@ -7754,6 +8363,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7766,6 +8376,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7778,6 +8389,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 3600,
     "hdd": 0,
     "cpu": [
@@ -7790,6 +8402,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7802,6 +8415,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 3600,
     "hdd": 0,
     "cpu": [
@@ -7814,6 +8428,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 3600,
     "hdd": 0,
     "cpu": [
@@ -7826,6 +8441,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 768,
+    "accelerators": 0,
     "ssd": 5280,
     "hdd": 0,
     "cpu": [
@@ -7838,6 +8454,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 5280,
     "hdd": 0,
     "cpu": [
@@ -7850,6 +8467,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7862,6 +8480,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7875,6 +8494,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 768,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7887,6 +8507,7 @@
     "category": "memory",
     "vcpus": 128,
     "memory": 768,
+    "accelerators": 0,
     "ssd": 2832,
     "hdd": 0,
     "cpu": [
@@ -7899,6 +8520,7 @@
     "category": "memory",
     "vcpus": 128,
     "memory": 768,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7911,6 +8533,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -7923,6 +8546,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 600,
     "hdd": 0,
     "cpu": [
@@ -7935,6 +8559,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7947,6 +8572,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7959,6 +8585,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 463,
     "hdd": 0,
     "cpu": [
@@ -7971,6 +8598,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -7983,6 +8611,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 750,
     "hdd": 0,
     "cpu": [
@@ -7995,6 +8624,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 750,
     "hdd": 0,
     "cpu": [
@@ -8007,6 +8637,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8019,6 +8650,7 @@
     "category": "memory",
     "vcpus": 20,
     "memory": 160,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8031,6 +8663,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 75,
     "hdd": 0,
     "cpu": [
@@ -8043,6 +8676,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8055,6 +8689,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 47,
     "hdd": 0,
     "cpu": [
@@ -8067,6 +8702,7 @@
     "category": "memory",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8079,6 +8715,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -8091,6 +8728,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 1200,
     "hdd": 0,
     "cpu": [
@@ -8103,6 +8741,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8115,6 +8754,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8127,6 +8767,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 935,
     "hdd": 0,
     "cpu": [
@@ -8139,6 +8780,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8151,6 +8793,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -8163,6 +8806,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 1800,
     "hdd": 0,
     "cpu": [
@@ -8175,6 +8819,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8187,6 +8832,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8199,6 +8845,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 1407,
     "hdd": 0,
     "cpu": [
@@ -8211,6 +8858,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8223,6 +8871,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -8235,6 +8884,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 150,
     "hdd": 0,
     "cpu": [
@@ -8247,6 +8897,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8259,6 +8910,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8271,6 +8923,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 105,
     "hdd": 0,
     "cpu": [
@@ -8283,6 +8936,7 @@
     "category": "memory",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8295,6 +8949,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -8307,6 +8962,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -8319,6 +8975,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8331,6 +8988,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8343,6 +9001,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 2823,
     "hdd": 0,
     "cpu": [
@@ -8355,6 +9014,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8367,6 +9027,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -8379,6 +9040,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 300,
     "hdd": 0,
     "cpu": [
@@ -8391,6 +9053,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8403,6 +9066,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8415,6 +9079,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 227,
     "hdd": 0,
     "cpu": [
@@ -8427,6 +9092,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8439,6 +9105,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 3600,
     "hdd": 0,
     "cpu": [
@@ -8451,6 +9118,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -8463,6 +9131,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8475,6 +9144,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8487,6 +9157,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -8499,6 +9170,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8511,6 +9183,7 @@
     "category": "compute",
     "vcpus": 1,
     "memory": 2,
+    "accelerators": 0,
     "ssd": 16,
     "hdd": 0,
     "cpu": [
@@ -8523,6 +9196,7 @@
     "category": "compute",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 256,
     "hdd": 0,
     "cpu": [
@@ -8535,6 +9209,7 @@
     "category": "compute",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8547,6 +9222,7 @@
     "category": "compute",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8559,6 +9235,7 @@
     "category": "compute",
     "vcpus": 16,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8571,6 +9248,7 @@
     "category": "compute",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 64,
     "hdd": 0,
     "cpu": [
@@ -8583,6 +9261,7 @@
     "category": "compute",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 128,
     "hdd": 0,
     "cpu": [
@@ -8597,6 +9276,7 @@
     "category": "compute",
     "vcpus": 1,
     "memory": 2,
+    "accelerators": 0,
     "ssd": 4,
     "hdd": 0,
     "cpu": [
@@ -8609,6 +9289,7 @@
     "category": "compute",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 32,
     "hdd": 0,
     "cpu": [
@@ -8621,6 +9302,7 @@
     "category": "compute",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8633,6 +9315,7 @@
     "category": "compute",
     "vcpus": 2,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8645,6 +9328,7 @@
     "category": "compute",
     "vcpus": 2,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8657,6 +9341,7 @@
     "category": "compute",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 8,
     "hdd": 0,
     "cpu": [
@@ -8669,6 +9354,7 @@
     "category": "compute",
     "vcpus": 2,
     "memory": 4,
+    "accelerators": 0,
     "ssd": 16,
     "hdd": 0,
     "cpu": [
@@ -8683,6 +9369,7 @@
     "category": "compute",
     "vcpus": 32,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8695,6 +9382,7 @@
     "category": "compute",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8707,6 +9395,7 @@
     "category": "compute",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8719,6 +9408,7 @@
     "category": "compute",
     "vcpus": 32,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 256,
     "hdd": 0,
     "cpu": [
@@ -8733,6 +9423,7 @@
     "category": "compute",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 64,
     "hdd": 0,
     "cpu": [
@@ -8745,6 +9436,7 @@
     "category": "compute",
     "vcpus": 48,
     "memory": 96,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8757,6 +9449,7 @@
     "category": "compute",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8769,6 +9462,7 @@
     "category": "compute",
     "vcpus": 48,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8781,6 +9475,7 @@
     "category": "compute",
     "vcpus": 48,
     "memory": 96,
+    "accelerators": 0,
     "ssd": 384,
     "hdd": 0,
     "cpu": [
@@ -8795,6 +9490,7 @@
     "category": "compute",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8807,6 +9503,7 @@
     "category": "compute",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8819,6 +9516,7 @@
     "category": "compute",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8831,6 +9529,7 @@
     "category": "compute",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 16,
     "hdd": 0,
     "cpu": [
@@ -8843,6 +9542,7 @@
     "category": "compute",
     "vcpus": 4,
     "memory": 8,
+    "accelerators": 0,
     "ssd": 32,
     "hdd": 0,
     "cpu": [
@@ -8857,6 +9557,7 @@
     "category": "compute",
     "vcpus": 64,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8869,6 +9570,7 @@
     "category": "compute",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8881,6 +9583,7 @@
     "category": "compute",
     "vcpus": 64,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8893,6 +9596,7 @@
     "category": "compute",
     "vcpus": 64,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 512,
     "hdd": 0,
     "cpu": [
@@ -8907,6 +9611,7 @@
     "category": "compute",
     "vcpus": 72,
     "memory": 144,
+    "accelerators": 0,
     "ssd": 576,
     "hdd": 0,
     "cpu": [
@@ -8921,6 +9626,7 @@
     "category": "compute",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 128,
     "hdd": 0,
     "cpu": [
@@ -8933,6 +9639,7 @@
     "category": "compute",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8945,6 +9652,7 @@
     "category": "compute",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8957,6 +9665,7 @@
     "category": "compute",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -8969,6 +9678,7 @@
     "category": "compute",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 32,
     "hdd": 0,
     "cpu": [
@@ -8981,6 +9691,7 @@
     "category": "compute",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0,
     "ssd": 64,
     "hdd": 0,
     "cpu": [
@@ -8995,6 +9706,7 @@
     "category": "compute",
     "vcpus": 12,
     "memory": 252,
+    "accelerators": 0,
     "ssd": 504,
     "hdd": 0,
     "cpu": [
@@ -9007,6 +9719,7 @@
     "category": "compute",
     "vcpus": 16,
     "memory": 336,
+    "accelerators": 0,
     "ssd": 880,
     "hdd": 0,
     "cpu": [
@@ -9019,6 +9732,7 @@
     "category": "compute",
     "vcpus": 16,
     "memory": 336,
+    "accelerators": 0,
     "ssd": 880,
     "hdd": 0,
     "cpu": [
@@ -9031,6 +9745,7 @@
     "category": "compute",
     "vcpus": 16,
     "memory": 336,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -9043,6 +9758,7 @@
     "category": "compute",
     "vcpus": 24,
     "memory": 504,
+    "accelerators": 0,
     "ssd": 1008,
     "hdd": 0,
     "cpu": [
@@ -9055,6 +9771,7 @@
     "category": "compute",
     "vcpus": 2,
     "memory": 42,
+    "accelerators": 0,
     "ssd": 110,
     "hdd": 0,
     "cpu": [
@@ -9067,6 +9784,7 @@
     "category": "compute",
     "vcpus": 2,
     "memory": 42,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -9079,6 +9797,7 @@
     "category": "compute",
     "vcpus": 32,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 1760,
     "hdd": 0,
     "cpu": [
@@ -9091,6 +9810,7 @@
     "category": "compute",
     "vcpus": 32,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 1760,
     "hdd": 0,
     "cpu": [
@@ -9103,6 +9823,7 @@
     "category": "compute",
     "vcpus": 32,
     "memory": 672,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -9115,6 +9836,7 @@
     "category": "compute",
     "vcpus": 36,
     "memory": 756,
+    "accelerators": 0,
     "ssd": 1512,
     "hdd": 0,
     "cpu": [
@@ -9127,6 +9849,7 @@
     "category": "compute",
     "vcpus": 4,
     "memory": 84,
+    "accelerators": 0,
     "ssd": 220,
     "hdd": 0,
     "cpu": [
@@ -9139,6 +9862,7 @@
     "category": "compute",
     "vcpus": 48,
     "memory": 1008,
+    "accelerators": 0,
     "ssd": 2640,
     "hdd": 0,
     "cpu": [
@@ -9151,6 +9875,7 @@
     "category": "compute",
     "vcpus": 48,
     "memory": 1008,
+    "accelerators": 0,
     "ssd": 2016,
     "hdd": 0,
     "cpu": [
@@ -9163,6 +9888,7 @@
     "category": "compute",
     "vcpus": 48,
     "memory": 1008,
+    "accelerators": 0,
     "ssd": 2640,
     "hdd": 0,
     "cpu": [
@@ -9175,6 +9901,7 @@
     "category": "compute",
     "vcpus": 48,
     "memory": 1008,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -9187,6 +9914,7 @@
     "category": "compute",
     "vcpus": 4,
     "memory": 84,
+    "accelerators": 0,
     "ssd": 168,
     "hdd": 0,
     "cpu": [
@@ -9199,6 +9927,7 @@
     "category": "compute",
     "vcpus": 4,
     "memory": 84,
+    "accelerators": 0,
     "ssd": 220,
     "hdd": 0,
     "cpu": [
@@ -9211,7 +9940,8 @@
     "category": "compute",
     "vcpus": 4,
     "memory": 84,
-    "ssd": 220,
+    "accelerators": 0,
+    "ssd": 0,
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
@@ -9223,6 +9953,7 @@
     "category": "compute",
     "vcpus": 64,
     "memory": 1344,
+    "accelerators": 0,
     "ssd": 3520,
     "hdd": 0,
     "cpu": [
@@ -9235,6 +9966,7 @@
     "category": "compute",
     "vcpus": 64,
     "memory": 1344,
+    "accelerators": 0,
     "ssd": 3520,
     "hdd": 0,
     "cpu": [
@@ -9247,6 +9979,7 @@
     "category": "compute",
     "vcpus": 64,
     "memory": 1344,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -9259,6 +9992,7 @@
     "category": "compute",
     "vcpus": 8,
     "memory": 168,
+    "accelerators": 0,
     "ssd": 440,
     "hdd": 0,
     "cpu": [
@@ -9271,6 +10005,7 @@
     "category": "compute",
     "vcpus": 8,
     "memory": 168,
+    "accelerators": 0,
     "ssd": 440,
     "hdd": 0,
     "cpu": [
@@ -9283,7 +10018,8 @@
     "category": "compute",
     "vcpus": 8,
     "memory": 168,
-    "ssd": 440,
+    "accelerators": 0,
+    "ssd": 0,
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
@@ -9295,6 +10031,7 @@
     "category": "compute",
     "vcpus": 96,
     "memory": 1832,
+    "accelerators": 0,
     "ssd": 5280,
     "hdd": 0,
     "cpu": [
@@ -9307,6 +10044,7 @@
     "category": "compute",
     "vcpus": 96,
     "memory": 1832,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -9319,6 +10057,7 @@
     "category": "compute",
     "vcpus": 2,
     "memory": 28,
+    "accelerators": 0,
     "ssd": 384,
     "hdd": 0,
     "cpu": [
@@ -9331,6 +10070,7 @@
     "category": "compute",
     "vcpus": 4,
     "memory": 56,
+    "accelerators": 0,
     "ssd": 768,
     "hdd": 0,
     "cpu": [
@@ -9343,6 +10083,7 @@
     "category": "compute",
     "vcpus": 8,
     "memory": 112,
+    "accelerators": 0,
     "ssd": 1536,
     "hdd": 0,
     "cpu": [
@@ -9355,6 +10096,7 @@
     "category": "compute",
     "vcpus": 16,
     "memory": 224,
+    "accelerators": 0,
     "ssd": 3072,
     "hdd": 0,
     "cpu": [
@@ -9367,6 +10109,7 @@
     "category": "compute",
     "vcpus": 32,
     "memory": 448,
+    "accelerators": 0,
     "ssd": 6144,
     "hdd": 0,
     "cpu": [
@@ -9379,6 +10122,7 @@
     "category": "compute",
     "vcpus": 2,
     "memory": 28,
+    "accelerators": 0,
     "ssd": 56,
     "hdd": 0,
     "cpu": [
@@ -9391,6 +10135,7 @@
     "category": "compute",
     "vcpus": 4,
     "memory": 56,
+    "accelerators": 0,
     "ssd": 112,
     "hdd": 0,
     "cpu": [
@@ -9403,6 +10148,7 @@
     "category": "compute",
     "vcpus": 8,
     "memory": 112,
+    "accelerators": 0,
     "ssd": 224,
     "hdd": 0,
     "cpu": [
@@ -9415,6 +10161,7 @@
     "category": "compute",
     "vcpus": 16,
     "memory": 224,
+    "accelerators": 0,
     "ssd": 3072,
     "hdd": 0,
     "cpu": [
@@ -9427,6 +10174,7 @@
     "category": "compute",
     "vcpus": 32,
     "memory": 448,
+    "accelerators": 0,
     "ssd": 6144,
     "hdd": 0,
     "cpu": [
@@ -9439,6 +10187,7 @@
     "category": "performance",
     "vcpus": 16,
     "memory": 456,
+    "accelerators": 0,
     "ssd": 960,
     "hdd": 0,
     "cpu": [
@@ -9451,6 +10200,7 @@
     "category": "performance",
     "vcpus": 16,
     "memory": 448,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -9463,6 +10213,7 @@
     "category": "performance",
     "vcpus": 32,
     "memory": 456,
+    "accelerators": 0,
     "ssd": 960,
     "hdd": 0,
     "cpu": [
@@ -9475,6 +10226,7 @@
     "category": "performance",
     "vcpus": 32,
     "memory": 448,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -9487,6 +10239,7 @@
     "category": "performance",
     "vcpus": 64,
     "memory": 456,
+    "accelerators": 0,
     "ssd": 960,
     "hdd": 0,
     "cpu": [
@@ -9499,6 +10252,7 @@
     "category": "performance",
     "vcpus": 64,
     "memory": 448,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -9511,6 +10265,7 @@
     "category": "performance",
     "vcpus": 96,
     "memory": 456,
+    "accelerators": 0,
     "ssd": 960,
     "hdd": 0,
     "cpu": [
@@ -9523,6 +10278,7 @@
     "category": "performance",
     "vcpus": 96,
     "memory": 448,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -9535,6 +10291,7 @@
     "category": "performance",
     "vcpus": 120,
     "memory": 456,
+    "accelerators": 0,
     "ssd": 960,
     "hdd": 0,
     "cpu": [
@@ -9547,6 +10304,7 @@
     "category": "performance",
     "vcpus": 120,
     "memory": 448,
+    "accelerators": 0,
     "ssd": 2400,
     "hdd": 0,
     "cpu": [
@@ -9559,6 +10317,7 @@
     "category": "performance",
     "vcpus": 144,
     "memory": 768,
+    "accelerators": 0,
     "ssd": 4080,
     "hdd": 0,
     "cpu": [
@@ -9571,6 +10330,7 @@
     "category": "performance",
     "vcpus": 24,
     "memory": 768,
+    "accelerators": 0,
     "ssd": 4080,
     "hdd": 0,
     "cpu": [
@@ -9583,6 +10343,7 @@
     "category": "performance",
     "vcpus": 48,
     "memory": 768,
+    "accelerators": 0,
     "ssd": 4080,
     "hdd": 0,
     "cpu": [
@@ -9595,6 +10356,7 @@
     "category": "performance",
     "vcpus": 96,
     "memory": 768,
+    "accelerators": 0,
     "ssd": 4080,
     "hdd": 0,
     "cpu": [
@@ -9607,6 +10369,7 @@
     "category": "performance",
     "vcpus": 176,
     "memory": 768,
+    "accelerators": 0,
     "ssd": 4080,
     "hdd": 0,
     "cpu": [
@@ -9619,6 +10382,7 @@
     "category": "performance",
     "vcpus": 15,
     "memory": 263,
+    "accelerators": 0,
     "ssd": 700,
     "hdd": 0,
     "cpu": [
@@ -9631,6 +10395,7 @@
     "category": "performance",
     "vcpus": 30,
     "memory": 263,
+    "accelerators": 0,
     "ssd": 700,
     "hdd": 0,
     "cpu": [
@@ -9643,6 +10408,7 @@
     "category": "performance",
     "vcpus": 45,
     "memory": 263,
+    "accelerators": 0,
     "ssd": 700,
     "hdd": 0,
     "cpu": [
@@ -9655,6 +10421,7 @@
     "category": "performance",
     "vcpus": 60,
     "memory": 263,
+    "accelerators": 0,
     "ssd": 700,
     "hdd": 0,
     "cpu": [
@@ -9667,6 +10434,7 @@
     "category": "performance",
     "vcpus": 16,
     "memory": 352,
+    "accelerators": 0,
     "ssd": 700,
     "hdd": 0,
     "cpu": [
@@ -9679,6 +10447,7 @@
     "category": "performance",
     "vcpus": 32,
     "memory": 352,
+    "accelerators": 0,
     "ssd": 700,
     "hdd": 0,
     "cpu": [
@@ -9691,6 +10460,7 @@
     "category": "performance",
     "vcpus": 44,
     "memory": 352,
+    "accelerators": 0,
     "ssd": 700,
     "hdd": 0,
     "cpu": [
@@ -9703,6 +10473,7 @@
     "category": "performance",
     "vcpus": 144,
     "memory": 1408,
+    "accelerators": 0,
     "ssd": 4080,
     "hdd": 0,
     "cpu": [
@@ -9715,6 +10486,7 @@
     "category": "performance",
     "vcpus": 24,
     "memory": 1408,
+    "accelerators": 0,
     "ssd": 4080,
     "hdd": 0,
     "cpu": [
@@ -9727,6 +10499,7 @@
     "category": "performance",
     "vcpus": 48,
     "memory": 1408,
+    "accelerators": 0,
     "ssd": 4080,
     "hdd": 0,
     "cpu": [
@@ -9739,6 +10512,7 @@
     "category": "performance",
     "vcpus": 96,
     "memory": 1408,
+    "accelerators": 0,
     "ssd": 4080,
     "hdd": 0,
     "cpu": [
@@ -9751,6 +10525,7 @@
     "category": "performance",
     "vcpus": 176,
     "memory": 1408,
+    "accelerators": 0,
     "ssd": 4080,
     "hdd": 0,
     "cpu": [
@@ -9763,6 +10538,7 @@
     "category": "storage",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 160,
     "hdd": 0,
     "cpu": [
@@ -9775,6 +10551,7 @@
     "category": "storage",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 2807,
     "hdd": 0,
     "cpu": [
@@ -9787,6 +10564,7 @@
     "category": "storage",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 160,
     "hdd": 0,
     "cpu": [
@@ -9799,6 +10577,7 @@
     "category": "storage",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 160,
     "hdd": 0,
     "cpu": [
@@ -9811,6 +10590,7 @@
     "category": "storage",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 320,
     "hdd": 0,
     "cpu": [
@@ -9823,6 +10603,7 @@
     "category": "storage",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 5630,
     "hdd": 0,
     "cpu": [
@@ -9835,6 +10616,7 @@
     "category": "storage",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 320,
     "hdd": 0,
     "cpu": [
@@ -9847,6 +10629,7 @@
     "category": "storage",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 320,
     "hdd": 0,
     "cpu": [
@@ -9859,6 +10642,7 @@
     "category": "storage",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 480,
     "hdd": 0,
     "cpu": [
@@ -9871,6 +10655,7 @@
     "category": "storage",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 480,
     "hdd": 0,
     "cpu": [
@@ -9883,6 +10668,7 @@
     "category": "storage",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 480,
     "hdd": 0,
     "cpu": [
@@ -9895,6 +10681,7 @@
     "category": "storage",
     "vcpus": 4,
     "memory": 32,
+    "accelerators": 0,
     "ssd": 678,
     "hdd": 0,
     "cpu": [
@@ -9907,6 +10694,7 @@
     "category": "storage",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 640,
     "hdd": 0,
     "cpu": [
@@ -9919,6 +10707,7 @@
     "category": "storage",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 640,
     "hdd": 0,
     "cpu": [
@@ -9931,6 +10720,7 @@
     "category": "storage",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 640,
     "hdd": 0,
     "cpu": [
@@ -9943,6 +10733,7 @@
     "category": "storage",
     "vcpus": 80,
     "memory": 640,
+    "accelerators": 0,
     "ssd": 800,
     "hdd": 0,
     "cpu": [
@@ -9955,6 +10746,7 @@
     "category": "storage",
     "vcpus": 80,
     "memory": 640,
+    "accelerators": 0,
     "ssd": 800,
     "hdd": 0,
     "cpu": [
@@ -9967,6 +10759,7 @@
     "category": "storage",
     "vcpus": 80,
     "memory": 640,
+    "accelerators": 0,
     "ssd": 800,
     "hdd": 0,
     "cpu": [
@@ -9979,6 +10772,7 @@
     "category": "storage",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 80,
     "hdd": 0,
     "cpu": [
@@ -9991,6 +10785,7 @@
     "category": "storage",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 1388,
     "hdd": 0,
     "cpu": [
@@ -10003,6 +10798,7 @@
     "category": "storage",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 80,
     "hdd": 0,
     "cpu": [
@@ -10015,6 +10811,7 @@
     "category": "storage",
     "vcpus": 8,
     "memory": 64,
+    "accelerators": 0,
     "ssd": 80,
     "hdd": 0,
     "cpu": [
@@ -10027,6 +10824,7 @@
     "category": "memory",
     "vcpus": 128,
     "memory": 1024,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10039,6 +10837,7 @@
     "category": "memory",
     "vcpus": 128,
     "memory": 2794,
+    "accelerators": 0,
     "ssd": 6000,
     "hdd": 0,
     "cpu": [
@@ -10051,6 +10850,7 @@
     "category": "memory",
     "vcpus": 128,
     "memory": 1024,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10063,6 +10863,7 @@
     "category": "memory",
     "vcpus": 128,
     "memory": 3892,
+    "accelerators": 0,
     "ssd": 4096,
     "hdd": 0,
     "cpu": [
@@ -10075,6 +10876,7 @@
     "category": "memory",
     "vcpus": 128,
     "memory": 2048,
+    "accelerators": 0,
     "ssd": 4096,
     "hdd": 0,
     "cpu": [
@@ -10087,6 +10889,7 @@
     "category": "memory",
     "vcpus": 128,
     "memory": 3892,
+    "accelerators": 0,
     "ssd": 14336,
     "hdd": 0,
     "cpu": [
@@ -10100,6 +10903,7 @@
     "category": "memory",
     "vcpus": 128,
     "memory": 3892,
+    "accelerators": 0,
     "ssd": 4096,
     "hdd": 0,
     "cpu": [
@@ -10113,6 +10917,7 @@
     "category": "memory",
     "vcpus": 128,
     "memory": 3892,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10125,6 +10930,7 @@
     "category": "memory",
     "vcpus": 128,
     "memory": 2048,
+    "accelerators": 0,
     "ssd": 4096,
     "hdd": 0,
     "cpu": [
@@ -10138,6 +10944,7 @@
     "category": "memory",
     "vcpus": 128,
     "memory": 2048,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10150,6 +10957,7 @@
     "category": "memory",
     "vcpus": 12,
     "memory": 240,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10162,6 +10970,7 @@
     "category": "memory",
     "vcpus": 12,
     "memory": 240,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10174,6 +10983,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10186,6 +10996,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 128,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10198,6 +11009,7 @@
     "category": "memory",
     "vcpus": 16,
     "memory": 438,
+    "accelerators": 0,
     "ssd": 512,
     "hdd": 0,
     "cpu": [
@@ -10211,6 +11023,7 @@
     "category": "memory",
     "vcpus": 176,
     "memory": 1536,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10223,6 +11036,7 @@
     "category": "memory",
     "vcpus": 176,
     "memory": 3892,
+    "accelerators": 0,
     "ssd": 8000,
     "hdd": 0,
     "cpu": [
@@ -10235,6 +11049,7 @@
     "category": "memory",
     "vcpus": 176,
     "memory": 1536,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10247,6 +11062,7 @@
     "category": "memory",
     "vcpus": 176,
     "memory": 2794,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10259,6 +11075,7 @@
     "category": "memory",
     "vcpus": 176,
     "memory": 3892,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10271,6 +11088,7 @@
     "category": "memory",
     "vcpus": 176,
     "memory": 2794,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10283,6 +11101,7 @@
     "category": "memory",
     "vcpus": 176,
     "memory": 3892,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10295,6 +11114,7 @@
     "category": "memory",
     "vcpus": 1792,
     "memory": 30400,
+    "accelerators": 0,
     "ssd": 4096,
     "hdd": 0,
     "cpu": [
@@ -10307,6 +11127,7 @@
     "category": "memory",
     "vcpus": 192,
     "memory": 4096,
+    "accelerators": 0,
     "ssd": 4096,
     "hdd": 0,
     "cpu": [
@@ -10319,6 +11140,7 @@
     "category": "memory",
     "vcpus": 192,
     "memory": 2048,
+    "accelerators": 0,
     "ssd": 4096,
     "hdd": 0,
     "cpu": [
@@ -10331,6 +11153,7 @@
     "category": "memory",
     "vcpus": 192,
     "memory": 4096,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10343,6 +11166,7 @@
     "category": "memory",
     "vcpus": 192,
     "memory": 2048,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10355,6 +11179,7 @@
     "category": "memory",
     "vcpus": 208,
     "memory": 5700,
+    "accelerators": 0,
     "ssd": 4096,
     "hdd": 0,
     "cpu": [
@@ -10367,6 +11192,7 @@
     "category": "memory",
     "vcpus": 208,
     "memory": 2850,
+    "accelerators": 0,
     "ssd": 4096,
     "hdd": 0,
     "cpu": [
@@ -10379,6 +11205,7 @@
     "category": "memory",
     "vcpus": 24,
     "memory": 480,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10391,6 +11218,7 @@
     "category": "memory",
     "vcpus": 24,
     "memory": 480,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10403,6 +11231,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10415,6 +11244,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10427,6 +11257,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 875,
+    "accelerators": 0,
     "ssd": 1024,
     "hdd": 0,
     "cpu": [
@@ -10439,6 +11270,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 256,
+    "accelerators": 0,
     "ssd": 1024,
     "hdd": 0,
     "cpu": [
@@ -10452,6 +11284,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 875,
+    "accelerators": 0,
     "ssd": 1024,
     "hdd": 0,
     "cpu": [
@@ -10465,6 +11298,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 875,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10477,6 +11311,7 @@
     "category": "memory",
     "vcpus": 32,
     "memory": 192,
+    "accelerators": 0,
     "ssd": 1024,
     "hdd": 0,
     "cpu": [
@@ -10490,6 +11325,7 @@
     "category": "memory",
     "vcpus": 416,
     "memory": 5700,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10502,6 +11338,7 @@
     "category": "memory",
     "vcpus": 416,
     "memory": 7600,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10514,6 +11351,7 @@
     "category": "memory",
     "vcpus": 416,
     "memory": 11400,
+    "accelerators": 0,
     "ssd": 8192,
     "hdd": 0,
     "cpu": [
@@ -10526,6 +11364,7 @@
     "category": "memory",
     "vcpus": 416,
     "memory": 5700,
+    "accelerators": 0,
     "ssd": 8192,
     "hdd": 0,
     "cpu": [
@@ -10538,6 +11377,7 @@
     "category": "memory",
     "vcpus": 416,
     "memory": 5700,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10550,6 +11390,7 @@
     "category": "memory",
     "vcpus": 416,
     "memory": 7600,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10562,6 +11403,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10574,6 +11416,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 384,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10586,6 +11429,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 974,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10598,6 +11442,7 @@
     "category": "memory",
     "vcpus": 48,
     "memory": 974,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10610,6 +11455,7 @@
     "category": "memory",
     "vcpus": 624,
     "memory": 11400,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10622,6 +11468,7 @@
     "category": "memory",
     "vcpus": 624,
     "memory": 11400,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10634,6 +11481,7 @@
     "category": "memory",
     "vcpus": 624,
     "memory": 11400,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10646,6 +11494,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10658,6 +11507,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 1397,
+    "accelerators": 0,
     "ssd": 3000,
     "hdd": 0,
     "cpu": [
@@ -10670,6 +11520,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10682,6 +11533,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 1792,
+    "accelerators": 0,
     "ssd": 2048,
     "hdd": 0,
     "cpu": [
@@ -10694,6 +11546,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 1024,
+    "accelerators": 0,
     "ssd": 2048,
     "hdd": 0,
     "cpu": [
@@ -10706,6 +11559,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 512,
+    "accelerators": 0,
     "ssd": 2048,
     "hdd": 0,
     "cpu": [
@@ -10719,6 +11573,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 1792,
+    "accelerators": 0,
     "ssd": 7168,
     "hdd": 0,
     "cpu": [
@@ -10732,6 +11587,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 1792,
+    "accelerators": 0,
     "ssd": 2048,
     "hdd": 0,
     "cpu": [
@@ -10745,6 +11601,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 1792,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10757,6 +11614,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 1024,
+    "accelerators": 0,
     "ssd": 2048,
     "hdd": 0,
     "cpu": [
@@ -10770,6 +11628,7 @@
     "category": "memory",
     "vcpus": 64,
     "memory": 1024,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10782,6 +11641,7 @@
     "category": "memory",
     "vcpus": 832,
     "memory": 15200,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10794,6 +11654,7 @@
     "category": "memory",
     "vcpus": 832,
     "memory": 11400,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10806,6 +11667,7 @@
     "category": "memory",
     "vcpus": 832,
     "memory": 15200,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10818,6 +11680,7 @@
     "category": "memory",
     "vcpus": 832,
     "memory": 15200,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10830,6 +11693,7 @@
     "category": "memory",
     "vcpus": 832,
     "memory": 11400,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10842,6 +11706,7 @@
     "category": "memory",
     "vcpus": 832,
     "memory": 11400,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10854,6 +11719,7 @@
     "category": "memory",
     "vcpus": 896,
     "memory": 30400,
+    "accelerators": 0,
     "ssd": 4096,
     "hdd": 0,
     "cpu": [
@@ -10866,6 +11732,7 @@
     "category": "memory",
     "vcpus": 8,
     "memory": 219,
+    "accelerators": 0,
     "ssd": 256,
     "hdd": 0,
     "cpu": [
@@ -10879,6 +11746,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 768,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10891,6 +11759,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 1946,
+    "accelerators": 0,
     "ssd": 4500,
     "hdd": 0,
     "cpu": [
@@ -10903,6 +11772,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 768,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10915,6 +11785,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 974,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10927,6 +11798,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 1946,
+    "accelerators": 0,
     "ssd": 400,
     "hdd": 0,
     "cpu": [
@@ -10939,6 +11811,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 974,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10951,6 +11824,7 @@
     "category": "memory",
     "vcpus": 96,
     "memory": 1946,
+    "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
     "cpu": [
@@ -10963,6 +11837,8 @@
     "category": "accelerated",
     "vcpus": 12,
     "memory": 112,
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-k80",
     "ssd": 680,
     "hdd": 0,
     "cpu": [
@@ -10975,6 +11851,8 @@
     "category": "accelerated",
     "vcpus": 12,
     "memory": 224,
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-p10016",
     "ssd": 1474,
     "hdd": 0,
     "cpu": [
@@ -10987,6 +11865,8 @@
     "category": "accelerated",
     "vcpus": 12,
     "memory": 224,
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-v10016",
     "ssd": 1474,
     "hdd": 0,
     "cpu": [
@@ -10999,6 +11879,8 @@
     "category": "accelerated",
     "vcpus": 16,
     "memory": 110,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-t4",
     "ssd": 360,
     "hdd": 0,
     "cpu": [
@@ -11011,6 +11893,8 @@
     "category": "accelerated",
     "vcpus": 24,
     "memory": 224,
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-k80",
     "ssd": 1440,
     "hdd": 0,
     "cpu": [
@@ -11023,6 +11907,8 @@
     "category": "accelerated",
     "vcpus": 24,
     "memory": 220,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-a10080",
     "ssd": 958,
     "hdd": 0,
     "cpu": [
@@ -11035,6 +11921,8 @@
     "category": "accelerated",
     "vcpus": 24,
     "memory": 224,
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-k80",
     "ssd": 1440,
     "hdd": 0,
     "cpu": [
@@ -11047,6 +11935,8 @@
     "category": "accelerated",
     "vcpus": 24,
     "memory": 448,
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-p10016",
     "ssd": 2948,
     "hdd": 0,
     "cpu": [
@@ -11059,6 +11949,8 @@
     "category": "accelerated",
     "vcpus": 24,
     "memory": 448,
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-v10016",
     "ssd": 2948,
     "hdd": 0,
     "cpu": [
@@ -11071,6 +11963,8 @@
     "category": "accelerated",
     "vcpus": 24,
     "memory": 448,
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-p10016",
     "ssd": 2948,
     "hdd": 0,
     "cpu": [
@@ -11083,6 +11977,8 @@
     "category": "accelerated",
     "vcpus": 24,
     "memory": 448,
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-v10016",
     "ssd": 2948,
     "hdd": 0,
     "cpu": [
@@ -11095,6 +11991,8 @@
     "category": "accelerated",
     "vcpus": 40,
     "memory": 320,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-h10094",
     "ssd": 3576,
     "hdd": 0,
     "cpu": [
@@ -11107,6 +12005,8 @@
     "category": "accelerated",
     "vcpus": 48,
     "memory": 440,
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-a10080",
     "ssd": 1916,
     "hdd": 0,
     "cpu": [
@@ -11119,6 +12019,8 @@
     "category": "accelerated",
     "vcpus": 4,
     "memory": 28,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-t4",
     "ssd": 180,
     "hdd": 0,
     "cpu": [
@@ -11131,6 +12033,8 @@
     "category": "accelerated",
     "vcpus": 6,
     "memory": 56,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-k80",
     "ssd": 340,
     "hdd": 0,
     "cpu": [
@@ -11143,6 +12047,8 @@
     "category": "accelerated",
     "vcpus": 64,
     "memory": 448,
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-t4",
     "ssd": 2880,
     "hdd": 0,
     "cpu": [
@@ -11155,6 +12061,8 @@
     "category": "accelerated",
     "vcpus": 6,
     "memory": 112,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-p10016",
     "ssd": 736,
     "hdd": 0,
     "cpu": [
@@ -11167,6 +12075,8 @@
     "category": "accelerated",
     "vcpus": 6,
     "memory": 112,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-v10016",
     "ssd": 736,
     "hdd": 0,
     "cpu": [
@@ -11179,6 +12089,8 @@
     "category": "accelerated",
     "vcpus": 80,
     "memory": 640,
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-h10094",
     "ssd": 7152,
     "hdd": 0,
     "cpu": [
@@ -11191,6 +12103,8 @@
     "category": "accelerated",
     "vcpus": 8,
     "memory": 56,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-t4",
     "ssd": 360,
     "hdd": 0,
     "cpu": [
@@ -11203,6 +12117,8 @@
     "category": "accelerated",
     "vcpus": 96,
     "memory": 880,
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-a10080",
     "ssd": 3832,
     "hdd": 0,
     "cpu": [
@@ -11215,6 +12131,8 @@
     "category": "accelerated",
     "vcpus": 40,
     "memory": 320,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-h10094",
     "ssd": 3576,
     "hdd": 0,
     "cpu": [
@@ -11227,6 +12145,8 @@
     "category": "accelerated",
     "vcpus": 12,
     "memory": 224,
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-p40",
     "ssd": 1474,
     "hdd": 0,
     "cpu": [
@@ -11239,6 +12159,8 @@
     "category": "accelerated",
     "vcpus": 24,
     "memory": 448,
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-p40",
     "ssd": 2948,
     "hdd": 0,
     "cpu": [
@@ -11251,6 +12173,8 @@
     "category": "accelerated",
     "vcpus": 24,
     "memory": 448,
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-p40",
     "ssd": 2948,
     "hdd": 0,
     "cpu": [
@@ -11263,6 +12187,8 @@
     "category": "accelerated",
     "vcpus": 40,
     "memory": 672,
+    "accelerators": 8,
+    "accelerator": "nvidia-tesla-v10032",
     "ssd": 2900,
     "hdd": 0,
     "cpu": [
@@ -11275,6 +12201,8 @@
     "category": "accelerated",
     "vcpus": 6,
     "memory": 112,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-p40",
     "ssd": 736,
     "hdd": 0,
     "cpu": [
@@ -11287,6 +12215,8 @@
     "category": "accelerated",
     "vcpus": 96,
     "memory": 1923,
+    "accelerators": 8,
+    "accelerator": "nvidia-tesla-a10080",
     "ssd": 6553,
     "hdd": 0,
     "cpu": [
@@ -11299,6 +12229,8 @@
     "category": "accelerated",
     "vcpus": 96,
     "memory": 900,
+    "accelerators": 8,
+    "accelerator": "nvidia-tesla-a10040",
     "ssd": 6500,
     "hdd": 0,
     "cpu": [
@@ -11311,6 +12243,8 @@
     "category": "accelerated",
     "vcpus": 96,
     "memory": 1900,
+    "accelerators": 8,
+    "accelerator": "nvidia-tesla-h10080",
     "ssd": 28000,
     "hdd": 0,
     "cpu": [
@@ -11323,6 +12257,8 @@
     "category": "accelerated",
     "vcpus": 96,
     "memory": 1900,
+    "accelerators": 8,
+    "accelerator": "nvidia-tesla-h200",
     "ssd": 28000,
     "hdd": 0,
     "cpu": [
@@ -11335,6 +12271,8 @@
     "category": "accelerated",
     "vcpus": 96,
     "memory": 1900,
+    "accelerators": 8,
+    "accelerator": "amd-radeon-mi300x",
     "ssd": 28000,
     "hdd": 0,
     "cpu": [
@@ -11347,6 +12285,8 @@
     "category": "accelerated",
     "vcpus": 16,
     "memory": 32,
+    "accelerators": 0.5,
+    "accelerator": "amd-radeon-v620",
     "ssd": 512,
     "hdd": 0,
     "cpu": [
@@ -11359,6 +12299,8 @@
     "category": "accelerated",
     "vcpus": 32,
     "memory": 176,
+    "accelerators": 1,
+    "accelerator": "amd-radeon-v620",
     "ssd": 1024,
     "hdd": 0,
     "cpu": [
@@ -11371,6 +12313,8 @@
     "category": "accelerated",
     "vcpus": 32,
     "memory": 64,
+    "accelerators": 1,
+    "accelerator": "amd-radeon-v620",
     "ssd": 1024,
     "hdd": 0,
     "cpu": [
@@ -11383,6 +12327,8 @@
     "category": "accelerated",
     "vcpus": 8,
     "memory": 16,
+    "accelerators": 0.25,
+    "accelerator": "amd-radeon-v620",
     "ssd": 256,
     "hdd": 0,
     "cpu": [
@@ -11395,6 +12341,8 @@
     "category": "accelerated",
     "vcpus": 16,
     "memory": 30,
+    "accelerators": 1,
+    "accelerator": "amd-alveo-ma35d",
     "ssd": 71,
     "hdd": 0,
     "cpu": [
@@ -11407,6 +12355,8 @@
     "category": "accelerated",
     "vcpus": 10,
     "memory": 192,
+    "accelerators": 1,
+    "accelerator": "amd-alveo-u250",
     "ssd": 700,
     "hdd": 0,
     "cpu": [
@@ -11419,6 +12369,8 @@
     "category": "accelerated",
     "vcpus": 20,
     "memory": 384,
+    "accelerators": 2,
+    "accelerator": "amd-alveo-u250",
     "ssd": 1400,
     "hdd": 0,
     "cpu": [
@@ -11431,6 +12383,8 @@
     "category": "accelerated",
     "vcpus": 40,
     "memory": 768,
+    "accelerators": 4,
+    "accelerator": "amd-alveo-u250",
     "ssd": 2800,
     "hdd": 0,
     "cpu": [
@@ -11443,6 +12397,8 @@
     "category": "accelerated",
     "vcpus": 12,
     "memory": 112,
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-m60",
     "ssd": 680,
     "hdd": 0,
     "cpu": [
@@ -11455,6 +12411,8 @@
     "category": "accelerated",
     "vcpus": 12,
     "memory": 110,
+    "accelerators": 0.333333333,
+    "accelerator": "nvidia-tesla-a10",
     "ssd": 320,
     "hdd": 0,
     "cpu": [
@@ -11467,6 +12425,8 @@
     "category": "accelerated",
     "vcpus": 12,
     "memory": 64,
+    "accelerators": 0.5,
+    "accelerator": "amd-radeon-v710",
     "ssd": 768,
     "hdd": 0,
     "cpu": [
@@ -11479,6 +12439,8 @@
     "category": "accelerated",
     "vcpus": 12,
     "memory": 112,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-m60",
     "ssd": 736,
     "hdd": 0,
     "cpu": [
@@ -11491,6 +12453,8 @@
     "category": "accelerated",
     "vcpus": 16,
     "memory": 56,
+    "accelerators": 0.5,
+    "accelerator": "amd-radeon-mi25",
     "ssd": 352,
     "hdd": 0,
     "cpu": [
@@ -11503,6 +12467,8 @@
     "category": "accelerated",
     "vcpus": 18,
     "memory": 220,
+    "accelerators": 0.5,
+    "accelerator": "nvidia-tesla-a10",
     "ssd": 720,
     "hdd": 0,
     "cpu": [
@@ -11515,6 +12481,8 @@
     "category": "accelerated",
     "vcpus": 24,
     "memory": 224,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-m60",
     "ssd": 1440,
     "hdd": 0,
     "cpu": [
@@ -11527,6 +12495,8 @@
     "category": "accelerated",
     "vcpus": 24,
     "memory": 128,
+    "accelerators": 1,
+    "accelerator": "amd-radeon-v710",
     "ssd": 1536,
     "hdd": 0,
     "cpu": [
@@ -11539,6 +12509,8 @@
     "category": "accelerated",
     "vcpus": 24,
     "memory": 224,
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-m60",
     "ssd": 1474,
     "hdd": 0,
     "cpu": [
@@ -11551,6 +12523,8 @@
     "category": "accelerated",
     "vcpus": 28,
     "memory": 160,
+    "accelerators": 1,
+    "accelerator": "amd-radeon-v710",
     "ssd": 1536,
     "hdd": 0,
     "cpu": [
@@ -11563,6 +12537,8 @@
     "category": "accelerated",
     "vcpus": 32,
     "memory": 112,
+    "accelerators": 1,
+    "accelerator": "amd-radeon-mi25",
     "ssd": 700,
     "hdd": 0,
     "cpu": [
@@ -11575,6 +12551,8 @@
     "category": "accelerated",
     "vcpus": 36,
     "memory": 880,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-a10",
     "ssd": 720,
     "hdd": 0,
     "cpu": [
@@ -11587,6 +12565,8 @@
     "category": "accelerated",
     "vcpus": 36,
     "memory": 440,
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-a10",
     "ssd": 720,
     "hdd": 0,
     "cpu": [
@@ -11599,6 +12579,8 @@
     "category": "accelerated",
     "vcpus": 48,
     "memory": 448,
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-m60",
     "ssd": 2948,
     "hdd": 0,
     "cpu": [
@@ -11611,6 +12593,8 @@
     "category": "accelerated",
     "vcpus": 4,
     "memory": 16,
+    "accelerators": 0.166666667,
+    "accelerator": "amd-radeon-v710",
     "ssd": 256,
     "hdd": 0,
     "cpu": [
@@ -11623,6 +12607,8 @@
     "category": "accelerated",
     "vcpus": 4,
     "memory": 14,
+    "accelerators": 0.125,
+    "accelerator": "amd-radeon-mi25",
     "ssd": 88,
     "hdd": 0,
     "cpu": [
@@ -11635,6 +12621,8 @@
     "category": "accelerated",
     "vcpus": 6,
     "memory": 56,
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-m60",
     "ssd": 340,
     "hdd": 0,
     "cpu": [
@@ -11647,6 +12635,8 @@
     "category": "accelerated",
     "vcpus": 6,
     "memory": 55,
+    "accelerators": 0.166666667,
+    "accelerator": "nvidia-tesla-a10",
     "ssd": 180,
     "hdd": 0,
     "cpu": [
@@ -11659,6 +12649,8 @@
     "category": "accelerated",
     "vcpus": 72,
     "memory": 880,
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-a10",
     "ssd": 1400,
     "hdd": 0,
     "cpu": [
@@ -11671,6 +12663,8 @@
     "category": "accelerated",
     "vcpus": 8,
     "memory": 32,
+    "accelerators": 0.333333333,
+    "accelerator": "amd-radeon-v710",
     "ssd": 512,
     "hdd": 0,
     "cpu": [
@@ -11683,6 +12677,8 @@
     "category": "accelerated",
     "vcpus": 8,
     "memory": 28,
+    "accelerators": 0.25,
+    "accelerator": "amd-radeon-mi25",
     "ssd": 176,
     "hdd": 0,
     "cpu": [
@@ -11695,6 +12691,7 @@
     "category": "performance",
     "vcpus": 144,
     "memory": 1536,
+    "accelerators": 0,
     "ssd": 6144,
     "hdd": 0,
     "cpu": [
@@ -11707,6 +12704,7 @@
     "category": "performance",
     "vcpus": 144,
     "memory": 3072,
+    "accelerators": 0,
     "ssd": 12288,
     "hdd": 0,
     "cpu": [
@@ -11719,6 +12717,7 @@
     "category": "performance",
     "vcpus": 192,
     "memory": 2048,
+    "accelerators": 0,
     "ssd": 8192,
     "hdd": 0,
     "cpu": [
@@ -11731,6 +12730,7 @@
     "category": "performance",
     "vcpus": 192,
     "memory": 4096,
+    "accelerators": 0,
     "ssd": 16384,
     "hdd": 0,
     "cpu": [
@@ -11743,6 +12743,7 @@
     "category": "performance",
     "vcpus": 192,
     "memory": 6144,
+    "accelerators": 0,
     "ssd": 16384,
     "hdd": 0,
     "cpu": [
@@ -11755,6 +12756,7 @@
     "category": "performance",
     "vcpus": 224,
     "memory": 3072,
+    "accelerators": 0,
     "ssd": 6450,
     "hdd": 0,
     "cpu": [
@@ -11767,6 +12769,7 @@
     "category": "performance",
     "vcpus": 224,
     "memory": 6144,
+    "accelerators": 0,
     "ssd": 10752,
     "hdd": 0,
     "cpu": [
@@ -11779,6 +12782,7 @@
     "category": "performance",
     "vcpus": 224,
     "memory": 6144,
+    "accelerators": 0,
     "ssd": 10752,
     "hdd": 0,
     "cpu": [
@@ -11791,6 +12795,7 @@
     "category": "performance",
     "vcpus": 224,
     "memory": 4608,
+    "accelerators": 0,
     "ssd": 8600,
     "hdd": 0,
     "cpu": [
@@ -11803,6 +12808,7 @@
     "category": "performance",
     "vcpus": 224,
     "memory": 9216,
+    "accelerators": 0,
     "ssd": 14375,
     "hdd": 0,
     "cpu": [
@@ -11815,6 +12821,7 @@
     "category": "performance",
     "vcpus": 224,
     "memory": 7680,
+    "accelerators": 0,
     "ssd": 12312,
     "hdd": 0,
     "cpu": [
@@ -11827,6 +12834,7 @@
     "category": "performance",
     "vcpus": 384,
     "memory": 4096,
+    "accelerators": 0,
     "ssd": 16384,
     "hdd": 0,
     "cpu": [
@@ -11839,6 +12847,7 @@
     "category": "performance",
     "vcpus": 384,
     "memory": 6144,
+    "accelerators": 0,
     "ssd": 18432,
     "hdd": 0,
     "cpu": [
@@ -11851,6 +12860,7 @@
     "category": "performance",
     "vcpus": 384,
     "memory": 8192,
+    "accelerators": 0,
     "ssd": 22528,
     "hdd": 0,
     "cpu": [
@@ -11863,6 +12873,7 @@
     "category": "performance",
     "vcpus": 384,
     "memory": 12000,
+    "accelerators": 0,
     "ssd": 28250,
     "hdd": 0,
     "cpu": [
@@ -11875,6 +12886,7 @@
     "category": "performance",
     "vcpus": 448,
     "memory": 6144,
+    "accelerators": 0,
     "ssd": 10250,
     "hdd": 0,
     "cpu": [
@@ -11887,6 +12899,7 @@
     "category": "performance",
     "vcpus": 448,
     "memory": 12288,
+    "accelerators": 0,
     "ssd": 18500,
     "hdd": 0,
     "cpu": [
@@ -11899,6 +12912,7 @@
     "category": "performance",
     "vcpus": 448,
     "memory": 12288,
+    "accelerators": 0,
     "ssd": 18500,
     "hdd": 0,
     "cpu": [
@@ -11911,6 +12925,7 @@
     "category": "performance",
     "vcpus": 448,
     "memory": 9216,
+    "accelerators": 0,
     "ssd": 14375,
     "hdd": 0,
     "cpu": [
@@ -11923,6 +12938,7 @@
     "category": "performance",
     "vcpus": 448,
     "memory": 18432,
+    "accelerators": 0,
     "ssd": 26750,
     "hdd": 0,
     "cpu": [
@@ -11935,6 +12951,7 @@
     "category": "performance",
     "vcpus": 448,
     "memory": 15360,
+    "accelerators": 0,
     "ssd": 22625,
     "hdd": 0,
     "cpu": [
@@ -11947,6 +12964,7 @@
     "category": "performance",
     "vcpus": 576,
     "memory": 12000,
+    "accelerators": 0,
     "ssd": 28250,
     "hdd": 0,
     "cpu": [
@@ -11959,6 +12977,7 @@
     "category": "performance",
     "vcpus": 576,
     "memory": 18432,
+    "accelerators": 0,
     "ssd": 41984,
     "hdd": 0,
     "cpu": [
@@ -11971,6 +12990,7 @@
     "category": "performance",
     "vcpus": 672,
     "memory": 9216,
+    "accelerators": 0,
     "ssd": 14375,
     "hdd": 0,
     "cpu": [
@@ -11983,6 +13003,7 @@
     "category": "performance",
     "vcpus": 672,
     "memory": 18432,
+    "accelerators": 0,
     "ssd": 26750,
     "hdd": 0,
     "cpu": [
@@ -11995,6 +13016,7 @@
     "category": "performance",
     "vcpus": 672,
     "memory": 18432,
+    "accelerators": 0,
     "ssd": 26750,
     "hdd": 0,
     "cpu": [
@@ -12007,6 +13029,7 @@
     "category": "performance",
     "vcpus": 672,
     "memory": 13824,
+    "accelerators": 0,
     "ssd": 20563,
     "hdd": 0,
     "cpu": [
@@ -12019,6 +13042,7 @@
     "category": "performance",
     "vcpus": 672,
     "memory": 27648,
+    "accelerators": 0,
     "ssd": 39125,
     "hdd": 0,
     "cpu": [
@@ -12031,6 +13055,7 @@
     "category": "performance",
     "vcpus": 672,
     "memory": 23040,
+    "accelerators": 0,
     "ssd": 32938,
     "hdd": 0,
     "cpu": [
@@ -12043,6 +13068,7 @@
     "category": "performance",
     "vcpus": 72,
     "memory": 768,
+    "accelerators": 0,
     "ssd": 3072,
     "hdd": 0,
     "cpu": [
@@ -12055,6 +13081,7 @@
     "category": "performance",
     "vcpus": 72,
     "memory": 1536,
+    "accelerators": 0,
     "ssd": 6144,
     "hdd": 0,
     "cpu": [
@@ -12067,6 +13094,7 @@
     "category": "performance",
     "vcpus": 768,
     "memory": 16384,
+    "accelerators": 0,
     "ssd": 36864,
     "hdd": 0,
     "cpu": [
@@ -12079,6 +13107,7 @@
     "category": "performance",
     "vcpus": 768,
     "memory": 24576,
+    "accelerators": 0,
     "ssd": 57344,
     "hdd": 0,
     "cpu": [
@@ -12091,6 +13120,7 @@
     "category": "performance",
     "vcpus": 896,
     "memory": 12288,
+    "accelerators": 0,
     "ssd": 18500,
     "hdd": 0,
     "cpu": [
@@ -12103,6 +13133,7 @@
     "category": "performance",
     "vcpus": 896,
     "memory": 24576,
+    "accelerators": 0,
     "ssd": 35000,
     "hdd": 0,
     "cpu": [
@@ -12115,6 +13146,7 @@
     "category": "performance",
     "vcpus": 896,
     "memory": 24576,
+    "accelerators": 0,
     "ssd": 35000,
     "hdd": 0,
     "cpu": [
@@ -12127,6 +13159,7 @@
     "category": "performance",
     "vcpus": 896,
     "memory": 18432,
+    "accelerators": 0,
     "ssd": 26750,
     "hdd": 0,
     "cpu": [
@@ -12139,6 +13172,7 @@
     "category": "performance",
     "vcpus": 896,
     "memory": 36864,
+    "accelerators": 0,
     "ssd": 51500,
     "hdd": 0,
     "cpu": [
@@ -12151,6 +13185,7 @@
     "category": "performance",
     "vcpus": 896,
     "memory": 30720,
+    "accelerators": 0,
     "ssd": 43250,
     "hdd": 0,
     "cpu": [
@@ -12163,6 +13198,7 @@
     "category": "performance",
     "vcpus": 96,
     "memory": 768,
+    "accelerators": 0,
     "ssd": 3072,
     "hdd": 0,
     "cpu": [
@@ -12175,6 +13211,7 @@
     "category": "performance",
     "vcpus": 896,
     "memory": 20480,
+    "accelerators": 0,
     "ssd": 47104,
     "hdd": 0,
     "cpu": [

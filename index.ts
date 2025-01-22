@@ -800,6 +800,21 @@ const generateClouds = async () => {
       "cpu",
     ]);
   }
+  const accelerators = JSON.parse(readFileSync(`./data/cloud/accelerators.json`, "utf-8"));
+  exportToCsv(`./data/cloud/accelerators.csv`, accelerators, [
+    "id",
+    "type",
+    "manufacturer",
+    "serie",
+    "model",
+    "platform",
+    "cores",
+    "memory",
+    "tdp",
+    "process",
+    "die",
+    "transistors",
+  ]);
 };
 
 (async () => {
