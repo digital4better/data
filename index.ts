@@ -815,6 +815,22 @@ const generateClouds = async () => {
     "die",
     "transistors",
   ]);
+  const cpus = JSON.parse(readFileSync(`./data/cloud/cpus.json`, "utf-8"));
+  exportToCsv(`./data/cloud/cpus.csv`, cpus, [
+    "id",
+    "manufacturer",
+    "serie",
+    "model",
+    "architecture",
+    "platform",
+    "cores",
+    "threads",
+    "tdp",
+    "process",
+    "die",
+    "transistors",
+    "smp",
+  ]);
 };
 
 (async () => {

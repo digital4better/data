@@ -1,0 +1,87 @@
+id,manufacturer,serie,model,architecture,platform,cores,threads,tdp,process,die,transistors,smp
+amd-epyc-7452,amd,epyc,7452,x86-64,rome,32,64,155,7,74,3800,2
+amd-epyc-74f3v,amd,epyc,74f3v,x86-64,milan,24,48,240,7,324,16600,2
+amd-epyc-7551,amd,epyc,7551,x86-64,naples,32,64,180,14,852,19200,2
+amd-epyc-7571,amd,epyc,7571,x86-64,naples,32,64,200,14,852,19200,2
+amd-epyc-7763,amd,epyc,7763,x86-64,milan,64,128,280,7,648,33200,2
+amd-epyc-7763v,amd,epyc,7763v,x86-64,milan,64,128,280,7,648,33200,2
+amd-epyc-7b12,amd,epyc,7b13,x86-64,milan,64,128,280,7,648,33200,2
+amd-epyc-7r13,amd,epyc,7r13,x86-64,milan,48,96,225,7,648,33200,2
+amd-epyc-7r32,amd,epyc,7r32,x86-64,rome,48,96,280,7,648,33200,2
+amd-epyc-7v12,amd,epyc,7v12,x86-64,rome,64,128,240,7,648,33200,2
+amd-epyc-7v13,amd,epyc,7v13,x86-64,milan,64,128,240,7,648,33200,2
+amd-epyc-7v73x,amd,epyc,7v73x,x86-64,milan-x,64,128,280,7,648,33200,2
+amd-epyc-9b14,amd,epyc,9b14,x86-64,genoa,96,192,360,5,864,78840,2
+amd-epyc-9r14,amd,epyc,9r14,x86-64,genoa,96,192,360,5,864,78840,2
+amd-epyc-9v33x,amd,epyc,9v33x,x86-64,genoa-x,96,192,400,5,864,135240,2
+amd-epyc-9v64f,amd,epyc,9v64f,x86-64,genoa,16,32,320,5,576,52560,2
+amd-epyc-9v74,amd,epyc,9v74,x86-64,genoa,80,160,400,5,864,78840,2
+ampere-altra-q6430,ampere,altra,q64-30,arm-64,neoverse n1,64,64,124,7,574,52000,1
+ampere-altra-q8030,ampere,altra,q80-30,arm-64,neoverse n1,80,80,161,7,574,45000,1
+apple-m1,apple,m1,,arm-64,apple silicon,8,8,15,5,119,16000,1
+apple-m1-ultra,apple,m1,ultra,arm-64,apple silicon,20,20,110,5,854,114000,1
+apple-m2,apple,m2,,arm-64,apple silicon,8,8,15,5,153,20000,1
+apple-m2-pro,apple,m2,pro,arm-64,apple silicon,12,12,40,5,245,40000,1
+aws-graviton-1,aws,graviton,1,arm-64,cortex a72,16,16,40,16,200,5000,1
+aws-graviton-2,aws,graviton,2,arm-64,neoverse n1,64,64,120,7,400,30000,1
+aws-graviton-3,aws,graviton,3,arm-64,neoverse v1,64,64,150,7,600,55000,1
+aws-graviton-4,aws,graviton,4,arm-64,neoverse v2,96,96,180,7,800,85000,1
+azure-cobalt-100,azure,cobalt,100,arm-64,neoverse n2,96,96,180,7,800,85000,1
+google-axion,google,axion,,arm-64,neoverse n2,96,96,180,7,800,85000,1
+intel-core-i78700b,intel,core,i7-8700b,x86-64,coffee lake,6,12,65,14,154,3000,1
+intel-xeon-6246r,intel,xeon,6246r,x86-64,cascade lake,16,32,205,14,694,8000,2
+intel-xeon-6253cl,intel,xeon,6253cl,x86-64,cascade lake,16,32,205,14,694,8000,4
+intel-xeon-6268cl,intel,xeon,6268cl,x86-64,cascade lake,24,48,205,14,694,8000,2
+intel-xeon-6455b,intel,xeon,6455b,x86-64,sapphire rapids,32,64,350,10,954,28600,2
+intel-xeon-8124m,intel,xeon,8124m,x86-64,skylake,18,36,200,14,694,8000,8
+intel-xeon-8151,intel,xeon,8151,x86-64,skylake,12,24,240,14,694,8000,8
+intel-xeon-8168,intel,xeon,8168,x86-64,skylake,24,48,205,14,694,8000,8
+intel-xeon-8171m,intel,xeon,8171m,x86-64,skylake,26,52,205,14,694,8000,8
+intel-xeon-8175,intel,xeon,8175,x86-64,skylake,24,48,165,14,694,8000,8
+intel-xeon-8173m,intel,xeon,8173m,x86-64,skylake,28,56,165,14,694,8000,8
+intel-xeon-8176m,intel,xeon,8176m,x86-64,skylake,28,56,165,14,694,8000,8
+intel-xeon-8180m,intel,xeon,8180m,x86-64,skylake,28,56,205,14,694,8000,8
+intel-xeon-8252c,intel,xeon,8252c,x86-64,cascade lake,12,24,240,14,694,8000,8
+intel-xeon-8259cl,intel,xeon,8259cl,x86-64,cascade lake,24,48,210,14,694,8000,8
+intel-xeon-8272cl,intel,xeon,8272cl,x86-64,cascade lake,26,52,195,14,694,8000,8
+intel-xeon-8273cl,intel,xeon,8273cl,x86-64,cascade lake,28,56,165,14,694,8000,8
+intel-xeon-8275cl,intel,xeon,8275cl,x86-64,cascade lake,24,48,240,14,694,8000,8
+intel-xeon-8276,intel,xeon,8276,x86-64,cascade lake,28,56,165,14,694,8000,8
+intel-xeon-8280,intel,xeon,8280,x86-64,cascade lake,28,56,205,14,694,8000,8
+intel-xeon-8280l,intel,xeon,8280l,x86-64,cascade lake,28,56,205,14,694,8000,8
+intel-xeon-8280m,intel,xeon,8280m,x86-64,cascade lake,28,56,205,14,694,8000,8
+intel-xeon-8370c,intel,xeon,8370c,x86-64,ice lake,32,64,270,10,954,28600,2
+intel-xeon-8373c,intel,xeon,8373c,x86-64,ice lake,36,72,300,10,954,28600,2
+intel-xeon-8375c,intel,xeon,8375c,x86-64,ice lake,32,64,300,10,954,28600,2
+intel-xeon-8473c,intel,xeon,8473c,x86-64,sapphire rapids,52,104,350,10,1908,48000,2
+intel-xeon-8477c,intel,xeon,8477c,x86-64,sapphire rapids,56,112,350,10,1908,48000,2
+intel-xeon-8480c,intel,xeon,8480c,x86-64,sapphire rapids,56,112,350,10,1908,48000,2
+intel-xeon-8481c,intel,xeon,8481c,x86-64,sapphire rapids,56,112,350,10,1908,48000,2
+intel-xeon-8488c,intel,xeon,8488c,x86-64,sapphire rapids,48,96,350,10,1908,48000,8
+intel-xeon-8490h,intel,xeon,8490h,x86-64,sapphire rapids,60,120,350,10,1908,48000,8
+intel-xeon-8559c,intel,xeon,8559c,x86-64,emerald rapids,48,96,350,10,1526,57000,2
+intel-xeon-8573c,intel,xeon,8573c,x86-64,emerald rapids,52,104,350,10,1526,57000,2
+intel-xeon-8581c,intel,xeon,8581c,x86-64,emerald rapids,60,120,350,10,1526,57000,2
+intel-xeon-e2288g,intel,xeon,e-2288g,x86-64,coffee lake,8,16,95,14,180,2900,1
+intel-xeon-e52651v2,intel,xeon,e5-2651 v2,x86-64,ivy bridge,12,24,95,22,541,4310,2
+intel-xeon-e52660,intel,xeon,e5-2660,x86-64,sandy bridge,8,16,95,32,416,2270,2
+intel-xeon-e52665,intel,xeon,e5-2665,x86-64,sandy bridge,8,16,115,32,416,2270,2
+intel-xeon-e52666v3,intel,xeon,e5-2666 v3,x86-64,haswell,10,20,135,22,492,3840,2
+intel-xeon-e52670,intel,xeon,e5-2670,x86-64,sandy bridge,8,16,115,32,416,2270,2
+intel-xeon-e52670v2,intel,xeon,e5-2670 v2,x86-64,ivy bridge,10,20,115,22,341,2890,2
+intel-xeon-e52673v3,intel,xeon,e5-2673 v3,x86-64,haswell,12,24,105,22,492,3840,2
+intel-xeon-e52673v4,intel,xeon,e5-2673 v4,x86-64,broadwell,20,40,135,14,456,7200,2
+intel-xeon-e52676v3,intel,xeon,e5-2676 v3,x86-64,haswell,12,24,120,22,492,3840,2
+intel-xeon-e52680v2,intel,xeon,e5-2680 v2,x86-64,ivy bridge,10,20,115,22,341,2890,2
+intel-xeon-e52686v4,intel,xeon,e5-2686 v4,x86-64,broadwell,18,36,145,14,456,7200,2
+intel-xeon-e52689,intel,xeon,e5-2689,x86-64,sandy bridge,8,16,115,32,416,2270,2
+intel-xeon-e52690v3,intel,xeon,e5-2690 v3,x86-64,haswell,12,24,135,22,492,3840,2
+intel-xeon-e52690v4,intel,xeon,e5-2690 v4,x86-64,broadwell,14,28,135,14,306,4700,2
+intel-xeon-e52696v2,intel,xeon,e5-2696 v2,x86-64,ivy bridge,12,24,130,22,541,4310,2
+intel-xeon-e52696v3,intel,xeon,e5-2696 v3,x86-64,haswell,18,36,145,22,662,5690,2
+intel-xeon-e52696v4,intel,xeon,e5-2696 v4,x86-64,broadwell,22,44,150,14,456,7200,2
+intel-xeon-e52698bv3,intel,xeon,e5-2698b v3,x86-64,haswell,16,32,135,22,662,5690,2
+intel-xeon-e78880v3,intel,xeon,e7-8880 v3,x86-64,haswell,18,36,140,22,662,5690,8
+intel-xeon-e78880v4,intel,xeon,e7-8880 v4,x86-64,broadwell,22,44,150,14,456,7200,8
+intel-xeon-e78890v3,intel,xeon,e7-8890 v3,x86-64,haswell,18,36,165,22,662,5690,8
+intel-xeon-e78890v4,intel,xeon,e7-8890 v4,x86-64,broadwell,24,48,165,14,456,7200,8
