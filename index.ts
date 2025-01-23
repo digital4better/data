@@ -799,6 +799,8 @@ const generateClouds = async () => {
       "ssd",
       "hdd",
       "cpu",
+      "accelerators",
+      "accelerator",
     ]);
   }
   const accelerators = JSON.parse(readFileSync(`./data/cloud/accelerators.json`, "utf-8"));
