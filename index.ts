@@ -792,6 +792,7 @@ const generateClouds = async () => {
     exportToCsv(`./data/cloud/${cloud}-vms.csv`, vms, [
       "id",
       "family",
+      "name",
       "category",
       "vcpus",
       "memory",

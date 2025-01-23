@@ -2,6 +2,7 @@
   {
     "id": "a2-highgpu-1g",
     "family": "a2",
+    "name": "a2-highgpu-1g",
     "category": "accelerated",
     "vcpus": 12,
     "memory": 85,
@@ -16,6 +17,7 @@
   {
     "id": "a2-highgpu-2g",
     "family": "a2",
+    "name": "a2-highgpu-2g",
     "category": "accelerated",
     "vcpus": 24,
     "memory": 170,
@@ -30,6 +32,7 @@
   {
     "id": "a2-highgpu-4g",
     "family": "a2",
+    "name": "a2-highgpu-4g",
     "category": "accelerated",
     "vcpus": 48,
     "memory": 340,
@@ -44,6 +47,7 @@
   {
     "id": "a2-highgpu-8g",
     "family": "a2",
+    "name": "a2-highgpu-8g",
     "category": "accelerated",
     "vcpus": 96,
     "memory": 680,
@@ -58,6 +62,7 @@
   {
     "id": "a2-megagpu-16g",
     "family": "a2",
+    "name": "a2-megagpu-16g",
     "category": "accelerated",
     "vcpus": 96,
     "memory": 1360,
@@ -72,6 +77,7 @@
   {
     "id": "a2-ultragpu-1g",
     "family": "a2",
+    "name": "a2-ultragpu-1g",
     "category": "accelerated",
     "vcpus": 12,
     "memory": 170,
@@ -86,6 +92,7 @@
   {
     "id": "a2-ultragpu-2g",
     "family": "a2",
+    "name": "a2-ultragpu-2g",
     "category": "accelerated",
     "vcpus": 24,
     "memory": 340,
@@ -100,6 +107,7 @@
   {
     "id": "a2-ultragpu-4g",
     "family": "a2",
+    "name": "a2-ultragpu-4g",
     "category": "accelerated",
     "vcpus": 48,
     "memory": 680,
@@ -114,6 +122,7 @@
   {
     "id": "a2-ultragpu-8g",
     "family": "a2",
+    "name": "a2-ultragpu-8g",
     "category": "accelerated",
     "vcpus": 96,
     "memory": 1360,
@@ -128,6 +137,7 @@
   {
     "id": "a3-edgegpu-8g",
     "family": "a3",
+    "name": "a3-edgegpu-8g",
     "category": "accelerated",
     "vcpus": 208,
     "memory": 1872,
@@ -142,6 +152,7 @@
   {
     "id": "a3-highgpu-1g",
     "family": "a3",
+    "name": "a3-highgpu-1g",
     "category": "accelerated",
     "vcpus": 26,
     "memory": 234,
@@ -156,6 +167,7 @@
   {
     "id": "a3-highgpu-2g",
     "family": "a3",
+    "name": "a3-highgpu-2g",
     "category": "accelerated",
     "vcpus": 52,
     "memory": 468,
@@ -170,6 +182,7 @@
   {
     "id": "a3-highgpu-4g",
     "family": "a3",
+    "name": "a3-highgpu-4g",
     "category": "accelerated",
     "vcpus": 104,
     "memory": 936,
@@ -184,6 +197,7 @@
   {
     "id": "a3-highgpu-8g",
     "family": "a3",
+    "name": "a3-highgpu-8g",
     "category": "accelerated",
     "vcpus": 208,
     "memory": 1872,
@@ -198,6 +212,7 @@
   {
     "id": "a3-megagpu-8g",
     "family": "a3",
+    "name": "a3-megagpu-8g",
     "category": "accelerated",
     "vcpus": 208,
     "memory": 1872,
@@ -212,6 +227,7 @@
   {
     "id": "a3-ultra-8g",
     "family": "a3",
+    "name": "a3-ultra-8g",
     "category": "accelerated",
     "vcpus": 224,
     "memory": 2952,
@@ -226,6 +242,7 @@
   {
     "id": "c2-standard-16",
     "family": "c2",
+    "name": "c2-standard-16",
     "category": "compute",
     "vcpus": 16,
     "memory": 64,
@@ -239,6 +256,7 @@
   {
     "id": "c2-standard-30",
     "family": "c2",
+    "name": "c2-standard-30",
     "category": "compute",
     "vcpus": 30,
     "memory": 120,
@@ -252,6 +270,7 @@
   {
     "id": "c2-standard-4",
     "family": "c2",
+    "name": "c2-standard-4",
     "category": "compute",
     "vcpus": 4,
     "memory": 16,
@@ -265,6 +284,7 @@
   {
     "id": "c2-standard-60",
     "family": "c2",
+    "name": "c2-standard-60",
     "category": "compute",
     "vcpus": 60,
     "memory": 240,
@@ -278,6 +298,7 @@
   {
     "id": "c2-standard-8",
     "family": "c2",
+    "name": "c2-standard-8",
     "category": "compute",
     "vcpus": 8,
     "memory": 32,
@@ -291,6 +312,7 @@
   {
     "id": "c2d-highcpu-112",
     "family": "c2d",
+    "name": "c2d-highcpu-112",
     "category": "compute",
     "vcpus": 112,
     "memory": 224,
@@ -304,6 +326,7 @@
   {
     "id": "c2d-highcpu-16",
     "family": "c2d",
+    "name": "c2d-highcpu-16",
     "category": "compute",
     "vcpus": 16,
     "memory": 32,
@@ -317,6 +340,7 @@
   {
     "id": "c2d-highcpu-2",
     "family": "c2d",
+    "name": "c2d-highcpu-2",
     "category": "compute",
     "vcpus": 2,
     "memory": 4,
@@ -330,6 +354,7 @@
   {
     "id": "c2d-highcpu-32",
     "family": "c2d",
+    "name": "c2d-highcpu-32",
     "category": "compute",
     "vcpus": 32,
     "memory": 64,
@@ -343,6 +368,7 @@
   {
     "id": "c2d-highcpu-4",
     "family": "c2d",
+    "name": "c2d-highcpu-4",
     "category": "compute",
     "vcpus": 4,
     "memory": 8,
@@ -356,6 +382,7 @@
   {
     "id": "c2d-highcpu-56",
     "family": "c2d",
+    "name": "c2d-highcpu-56",
     "category": "compute",
     "vcpus": 56,
     "memory": 112,
@@ -369,6 +396,7 @@
   {
     "id": "c2d-highcpu-8",
     "family": "c2d",
+    "name": "c2d-highcpu-8",
     "category": "compute",
     "vcpus": 8,
     "memory": 16,
@@ -382,6 +410,7 @@
   {
     "id": "c2d-highmem-112",
     "family": "c2d",
+    "name": "c2d-highmem-112",
     "category": "compute",
     "vcpus": 112,
     "memory": 896,
@@ -395,6 +424,7 @@
   {
     "id": "c2d-highmem-16",
     "family": "c2d",
+    "name": "c2d-highmem-16",
     "category": "compute",
     "vcpus": 16,
     "memory": 128,
@@ -408,6 +438,7 @@
   {
     "id": "c2d-highmem-2",
     "family": "c2d",
+    "name": "c2d-highmem-2",
     "category": "compute",
     "vcpus": 2,
     "memory": 16,
@@ -421,6 +452,7 @@
   {
     "id": "c2d-highmem-32",
     "family": "c2d",
+    "name": "c2d-highmem-32",
     "category": "compute",
     "vcpus": 32,
     "memory": 256,
@@ -434,6 +466,7 @@
   {
     "id": "c2d-highmem-4",
     "family": "c2d",
+    "name": "c2d-highmem-4",
     "category": "compute",
     "vcpus": 4,
     "memory": 32,
@@ -447,6 +480,7 @@
   {
     "id": "c2d-highmem-56",
     "family": "c2d",
+    "name": "c2d-highmem-56",
     "category": "compute",
     "vcpus": 56,
     "memory": 448,
@@ -460,6 +494,7 @@
   {
     "id": "c2d-highmem-8",
     "family": "c2d",
+    "name": "c2d-highmem-8",
     "category": "compute",
     "vcpus": 8,
     "memory": 64,
@@ -473,6 +508,7 @@
   {
     "id": "c2d-standard-112",
     "family": "c2d",
+    "name": "c2d-standard-112",
     "category": "compute",
     "vcpus": 112,
     "memory": 448,
@@ -486,6 +522,7 @@
   {
     "id": "c2d-standard-16",
     "family": "c2d",
+    "name": "c2d-standard-16",
     "category": "compute",
     "vcpus": 16,
     "memory": 64,
@@ -499,6 +536,7 @@
   {
     "id": "c2d-standard-2",
     "family": "c2d",
+    "name": "c2d-standard-2",
     "category": "compute",
     "vcpus": 2,
     "memory": 8,
@@ -512,6 +550,7 @@
   {
     "id": "c2d-standard-32",
     "family": "c2d",
+    "name": "c2d-standard-32",
     "category": "compute",
     "vcpus": 32,
     "memory": 128,
@@ -525,6 +564,7 @@
   {
     "id": "c2d-standard-4",
     "family": "c2d",
+    "name": "c2d-standard-4",
     "category": "compute",
     "vcpus": 4,
     "memory": 16,
@@ -538,6 +578,7 @@
   {
     "id": "c2d-standard-56",
     "family": "c2d",
+    "name": "c2d-standard-56",
     "category": "compute",
     "vcpus": 56,
     "memory": 224,
@@ -551,6 +592,7 @@
   {
     "id": "c2d-standard-8",
     "family": "c2d",
+    "name": "c2d-standard-8",
     "category": "compute",
     "vcpus": 8,
     "memory": 32,
@@ -564,6 +606,7 @@
   {
     "id": "c3-highcpu-176",
     "family": "c3",
+    "name": "c3-highcpu-176",
     "category": "general",
     "vcpus": 176,
     "memory": 352,
@@ -577,6 +620,7 @@
   {
     "id": "c3-highcpu-192-metal",
     "family": "c3",
+    "name": "c3-highcpu-192-metal",
     "category": "general",
     "vcpus": 192,
     "memory": 512,
@@ -590,6 +634,7 @@
   {
     "id": "c3-highcpu-22",
     "family": "c3",
+    "name": "c3-highcpu-22",
     "category": "general",
     "vcpus": 22,
     "memory": 44,
@@ -603,6 +648,7 @@
   {
     "id": "c3-highcpu-4",
     "family": "c3",
+    "name": "c3-highcpu-4",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -616,6 +662,7 @@
   {
     "id": "c3-highcpu-44",
     "family": "c3",
+    "name": "c3-highcpu-44",
     "category": "general",
     "vcpus": 44,
     "memory": 88,
@@ -629,6 +676,7 @@
   {
     "id": "c3-highcpu-8",
     "family": "c3",
+    "name": "c3-highcpu-8",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -642,6 +690,7 @@
   {
     "id": "c3-highcpu-88",
     "family": "c3",
+    "name": "c3-highcpu-88",
     "category": "general",
     "vcpus": 88,
     "memory": 176,
@@ -655,6 +704,7 @@
   {
     "id": "c3-highmem-176",
     "family": "c3",
+    "name": "c3-highmem-176",
     "category": "general",
     "vcpus": 176,
     "memory": 1408,
@@ -668,6 +718,7 @@
   {
     "id": "c3-highmem-192-metal",
     "family": "c3",
+    "name": "c3-highmem-192-metal",
     "category": "general",
     "vcpus": 192,
     "memory": 1536,
@@ -681,6 +732,7 @@
   {
     "id": "c3-highmem-22",
     "family": "c3",
+    "name": "c3-highmem-22",
     "category": "general",
     "vcpus": 22,
     "memory": 176,
@@ -694,6 +746,7 @@
   {
     "id": "c3-highmem-4",
     "family": "c3",
+    "name": "c3-highmem-4",
     "category": "general",
     "vcpus": 4,
     "memory": 32,
@@ -707,6 +760,7 @@
   {
     "id": "c3-highmem-44",
     "family": "c3",
+    "name": "c3-highmem-44",
     "category": "general",
     "vcpus": 44,
     "memory": 352,
@@ -720,6 +774,7 @@
   {
     "id": "c3-highmem-8",
     "family": "c3",
+    "name": "c3-highmem-8",
     "category": "general",
     "vcpus": 8,
     "memory": 64,
@@ -733,6 +788,7 @@
   {
     "id": "c3-highmem-88",
     "family": "c3",
+    "name": "c3-highmem-88",
     "category": "general",
     "vcpus": 88,
     "memory": 704,
@@ -746,6 +802,7 @@
   {
     "id": "c3-standard-176",
     "family": "c3",
+    "name": "c3-standard-176",
     "category": "general",
     "vcpus": 176,
     "memory": 704,
@@ -759,6 +816,7 @@
   {
     "id": "c3-standard-176-lssd",
     "family": "c3",
+    "name": "c3-standard-176-lssd",
     "category": "general",
     "vcpus": 176,
     "memory": 704,
@@ -772,6 +830,7 @@
   {
     "id": "c3-standard-192-metal",
     "family": "c3",
+    "name": "c3-standard-192-metal",
     "category": "general",
     "vcpus": 192,
     "memory": 768,
@@ -785,6 +844,7 @@
   {
     "id": "c3-standard-22",
     "family": "c3",
+    "name": "c3-standard-22",
     "category": "general",
     "vcpus": 22,
     "memory": 88,
@@ -798,6 +858,7 @@
   {
     "id": "c3-standard-22-lssd",
     "family": "c3",
+    "name": "c3-standard-22-lssd",
     "category": "general",
     "vcpus": 22,
     "memory": 88,
@@ -811,6 +872,7 @@
   {
     "id": "c3-standard-4",
     "family": "c3",
+    "name": "c3-standard-4",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -824,6 +886,7 @@
   {
     "id": "c3-standard-4-lssd",
     "family": "c3",
+    "name": "c3-standard-4-lssd",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -837,6 +900,7 @@
   {
     "id": "c3-standard-44",
     "family": "c3",
+    "name": "c3-standard-44",
     "category": "general",
     "vcpus": 44,
     "memory": 176,
@@ -850,6 +914,7 @@
   {
     "id": "c3-standard-44-lssd",
     "family": "c3",
+    "name": "c3-standard-44-lssd",
     "category": "general",
     "vcpus": 44,
     "memory": 176,
@@ -863,6 +928,7 @@
   {
     "id": "c3-standard-8",
     "family": "c3",
+    "name": "c3-standard-8",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -876,6 +942,7 @@
   {
     "id": "c3-standard-8-lssd",
     "family": "c3",
+    "name": "c3-standard-8-lssd",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -889,6 +956,7 @@
   {
     "id": "c3-standard-88",
     "family": "c3",
+    "name": "c3-standard-88",
     "category": "general",
     "vcpus": 88,
     "memory": 352,
@@ -902,6 +970,7 @@
   {
     "id": "c3-standard-88-lssd",
     "family": "c3",
+    "name": "c3-standard-88-lssd",
     "category": "general",
     "vcpus": 88,
     "memory": 352,
@@ -915,6 +984,7 @@
   {
     "id": "c3d-highcpu-16",
     "family": "c3d",
+    "name": "c3d-highcpu-16",
     "category": "general",
     "vcpus": 16,
     "memory": 32,
@@ -928,6 +998,7 @@
   {
     "id": "c3d-highcpu-180",
     "family": "c3d",
+    "name": "c3d-highcpu-180",
     "category": "general",
     "vcpus": 180,
     "memory": 354,
@@ -941,6 +1012,7 @@
   {
     "id": "c3d-highcpu-30",
     "family": "c3d",
+    "name": "c3d-highcpu-30",
     "category": "general",
     "vcpus": 30,
     "memory": 59,
@@ -954,6 +1026,7 @@
   {
     "id": "c3d-highcpu-360",
     "family": "c3d",
+    "name": "c3d-highcpu-360",
     "category": "general",
     "vcpus": 360,
     "memory": 708,
@@ -967,6 +1040,7 @@
   {
     "id": "c3d-highcpu-4",
     "family": "c3d",
+    "name": "c3d-highcpu-4",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -980,6 +1054,7 @@
   {
     "id": "c3d-highcpu-60",
     "family": "c3d",
+    "name": "c3d-highcpu-60",
     "category": "general",
     "vcpus": 60,
     "memory": 118,
@@ -993,6 +1068,7 @@
   {
     "id": "c3d-highcpu-8",
     "family": "c3d",
+    "name": "c3d-highcpu-8",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -1006,6 +1082,7 @@
   {
     "id": "c3d-highcpu-90",
     "family": "c3d",
+    "name": "c3d-highcpu-90",
     "category": "general",
     "vcpus": 90,
     "memory": 177,
@@ -1019,6 +1096,7 @@
   {
     "id": "c3d-highmem-16",
     "family": "c3d",
+    "name": "c3d-highmem-16",
     "category": "general",
     "vcpus": 16,
     "memory": 128,
@@ -1032,6 +1110,7 @@
   {
     "id": "c3d-highmem-16-lssd",
     "family": "c3d",
+    "name": "c3d-highmem-16-lssd",
     "category": "general",
     "vcpus": 16,
     "memory": 128,
@@ -1045,6 +1124,7 @@
   {
     "id": "c3d-highmem-180",
     "family": "c3d",
+    "name": "c3d-highmem-180",
     "category": "general",
     "vcpus": 180,
     "memory": 1440,
@@ -1058,6 +1138,7 @@
   {
     "id": "c3d-highmem-180-lssd",
     "family": "c3d",
+    "name": "c3d-highmem-180-lssd",
     "category": "general",
     "vcpus": 180,
     "memory": 1440,
@@ -1071,6 +1152,7 @@
   {
     "id": "c3d-highmem-30",
     "family": "c3d",
+    "name": "c3d-highmem-30",
     "category": "general",
     "vcpus": 30,
     "memory": 240,
@@ -1084,6 +1166,7 @@
   {
     "id": "c3d-highmem-30-lssd",
     "family": "c3d",
+    "name": "c3d-highmem-30-lssd",
     "category": "general",
     "vcpus": 30,
     "memory": 240,
@@ -1097,6 +1180,7 @@
   {
     "id": "c3d-highmem-360",
     "family": "c3d",
+    "name": "c3d-highmem-360",
     "category": "general",
     "vcpus": 360,
     "memory": 2880,
@@ -1110,6 +1194,7 @@
   {
     "id": "c3d-highmem-360-lssd",
     "family": "c3d",
+    "name": "c3d-highmem-360-lssd",
     "category": "general",
     "vcpus": 360,
     "memory": 2880,
@@ -1123,6 +1208,7 @@
   {
     "id": "c3d-highmem-4",
     "family": "c3d",
+    "name": "c3d-highmem-4",
     "category": "general",
     "vcpus": 4,
     "memory": 32,
@@ -1136,6 +1222,7 @@
   {
     "id": "c3d-highmem-60",
     "family": "c3d",
+    "name": "c3d-highmem-60",
     "category": "general",
     "vcpus": 60,
     "memory": 480,
@@ -1149,6 +1236,7 @@
   {
     "id": "c3d-highmem-60-lssd",
     "family": "c3d",
+    "name": "c3d-highmem-60-lssd",
     "category": "general",
     "vcpus": 60,
     "memory": 480,
@@ -1162,6 +1250,7 @@
   {
     "id": "c3d-highmem-8",
     "family": "c3d",
+    "name": "c3d-highmem-8",
     "category": "general",
     "vcpus": 8,
     "memory": 64,
@@ -1175,6 +1264,7 @@
   {
     "id": "c3d-highmem-8-lssd",
     "family": "c3d",
+    "name": "c3d-highmem-8-lssd",
     "category": "general",
     "vcpus": 8,
     "memory": 64,
@@ -1188,6 +1278,7 @@
   {
     "id": "c3d-highmem-90",
     "family": "c3d",
+    "name": "c3d-highmem-90",
     "category": "general",
     "vcpus": 90,
     "memory": 720,
@@ -1201,6 +1292,7 @@
   {
     "id": "c3d-highmem-90-lssd",
     "family": "c3d",
+    "name": "c3d-highmem-90-lssd",
     "category": "general",
     "vcpus": 90,
     "memory": 720,
@@ -1214,6 +1306,7 @@
   {
     "id": "c3d-standard-16",
     "family": "c3d",
+    "name": "c3d-standard-16",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1227,6 +1320,7 @@
   {
     "id": "c3d-standard-16-lssd",
     "family": "c3d",
+    "name": "c3d-standard-16-lssd",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1240,6 +1334,7 @@
   {
     "id": "c3d-standard-180",
     "family": "c3d",
+    "name": "c3d-standard-180",
     "category": "general",
     "vcpus": 180,
     "memory": 720,
@@ -1253,6 +1348,7 @@
   {
     "id": "c3d-standard-180-lssd",
     "family": "c3d",
+    "name": "c3d-standard-180-lssd",
     "category": "general",
     "vcpus": 180,
     "memory": 720,
@@ -1266,6 +1362,7 @@
   {
     "id": "c3d-standard-30",
     "family": "c3d",
+    "name": "c3d-standard-30",
     "category": "general",
     "vcpus": 30,
     "memory": 120,
@@ -1279,6 +1376,7 @@
   {
     "id": "c3d-standard-30-lssd",
     "family": "c3d",
+    "name": "c3d-standard-30-lssd",
     "category": "general",
     "vcpus": 30,
     "memory": 120,
@@ -1292,6 +1390,7 @@
   {
     "id": "c3d-standard-360",
     "family": "c3d",
+    "name": "c3d-standard-360",
     "category": "general",
     "vcpus": 360,
     "memory": 1440,
@@ -1305,6 +1404,7 @@
   {
     "id": "c3d-standard-360-lssd",
     "family": "c3d",
+    "name": "c3d-standard-360-lssd",
     "category": "general",
     "vcpus": 360,
     "memory": 1440,
@@ -1318,6 +1418,7 @@
   {
     "id": "c3d-standard-4",
     "family": "c3d",
+    "name": "c3d-standard-4",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -1331,6 +1432,7 @@
   {
     "id": "c3d-standard-60",
     "family": "c3d",
+    "name": "c3d-standard-60",
     "category": "general",
     "vcpus": 60,
     "memory": 240,
@@ -1344,6 +1446,7 @@
   {
     "id": "c3d-standard-60-lssd",
     "family": "c3d",
+    "name": "c3d-standard-60-lssd",
     "category": "general",
     "vcpus": 60,
     "memory": 240,
@@ -1357,6 +1460,7 @@
   {
     "id": "c3d-standard-8",
     "family": "c3d",
+    "name": "c3d-standard-8",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -1370,6 +1474,7 @@
   {
     "id": "c3d-standard-8-lssd",
     "family": "c3d",
+    "name": "c3d-standard-8-lssd",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -1383,6 +1488,7 @@
   {
     "id": "c3d-standard-90",
     "family": "c3d",
+    "name": "c3d-standard-90",
     "category": "general",
     "vcpus": 90,
     "memory": 360,
@@ -1396,6 +1502,7 @@
   {
     "id": "c3d-standard-90-lssd",
     "family": "c3d",
+    "name": "c3d-standard-90-lssd",
     "category": "general",
     "vcpus": 90,
     "memory": 360,
@@ -1409,6 +1516,7 @@
   {
     "id": "c4-highcpu-16",
     "family": "c4",
+    "name": "c4-highcpu-16",
     "category": "general",
     "vcpus": 16,
     "memory": 32,
@@ -1422,6 +1530,7 @@
   {
     "id": "c4-highcpu-192",
     "family": "c4",
+    "name": "c4-highcpu-192",
     "category": "general",
     "vcpus": 192,
     "memory": 384,
@@ -1435,6 +1544,7 @@
   {
     "id": "c4-highcpu-2",
     "family": "c4",
+    "name": "c4-highcpu-2",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -1448,6 +1558,7 @@
   {
     "id": "c4-highcpu-32",
     "family": "c4",
+    "name": "c4-highcpu-32",
     "category": "general",
     "vcpus": 32,
     "memory": 64,
@@ -1461,6 +1572,7 @@
   {
     "id": "c4-highcpu-4",
     "family": "c4",
+    "name": "c4-highcpu-4",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -1474,6 +1586,7 @@
   {
     "id": "c4-highcpu-48",
     "family": "c4",
+    "name": "c4-highcpu-48",
     "category": "general",
     "vcpus": 48,
     "memory": 96,
@@ -1487,6 +1600,7 @@
   {
     "id": "c4-highcpu-8",
     "family": "c4",
+    "name": "c4-highcpu-8",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -1500,6 +1614,7 @@
   {
     "id": "c4-highcpu-96",
     "family": "c4",
+    "name": "c4-highcpu-96",
     "category": "general",
     "vcpus": 96,
     "memory": 192,
@@ -1513,6 +1628,7 @@
   {
     "id": "c4-highmem-16",
     "family": "c4",
+    "name": "c4-highmem-16",
     "category": "general",
     "vcpus": 16,
     "memory": 124,
@@ -1526,6 +1642,7 @@
   {
     "id": "c4-highmem-192",
     "family": "c4",
+    "name": "c4-highmem-192",
     "category": "general",
     "vcpus": 192,
     "memory": 1488,
@@ -1539,6 +1656,7 @@
   {
     "id": "c4-highmem-2",
     "family": "c4",
+    "name": "c4-highmem-2",
     "category": "general",
     "vcpus": 2,
     "memory": 15,
@@ -1552,6 +1670,7 @@
   {
     "id": "c4-highmem-32",
     "family": "c4",
+    "name": "c4-highmem-32",
     "category": "general",
     "vcpus": 32,
     "memory": 248,
@@ -1565,6 +1684,7 @@
   {
     "id": "c4-highmem-4",
     "family": "c4",
+    "name": "c4-highmem-4",
     "category": "general",
     "vcpus": 4,
     "memory": 31,
@@ -1578,6 +1698,7 @@
   {
     "id": "c4-highmem-48",
     "family": "c4",
+    "name": "c4-highmem-48",
     "category": "general",
     "vcpus": 48,
     "memory": 372,
@@ -1591,6 +1712,7 @@
   {
     "id": "c4-highmem-8",
     "family": "c4",
+    "name": "c4-highmem-8",
     "category": "general",
     "vcpus": 8,
     "memory": 62,
@@ -1604,6 +1726,7 @@
   {
     "id": "c4-highmem-96",
     "family": "c4",
+    "name": "c4-highmem-96",
     "category": "general",
     "vcpus": 96,
     "memory": 744,
@@ -1617,6 +1740,7 @@
   {
     "id": "c4-standard-16",
     "family": "c4",
+    "name": "c4-standard-16",
     "category": "general",
     "vcpus": 16,
     "memory": 60,
@@ -1630,6 +1754,7 @@
   {
     "id": "c4-standard-192",
     "family": "c4",
+    "name": "c4-standard-192",
     "category": "general",
     "vcpus": 192,
     "memory": 720,
@@ -1643,6 +1768,7 @@
   {
     "id": "c4-standard-2",
     "family": "c4",
+    "name": "c4-standard-2",
     "category": "general",
     "vcpus": 2,
     "memory": 7,
@@ -1656,6 +1782,7 @@
   {
     "id": "c4-standard-32",
     "family": "c4",
+    "name": "c4-standard-32",
     "category": "general",
     "vcpus": 32,
     "memory": 120,
@@ -1669,6 +1796,7 @@
   {
     "id": "c4-standard-4",
     "family": "c4",
+    "name": "c4-standard-4",
     "category": "general",
     "vcpus": 4,
     "memory": 15,
@@ -1682,6 +1810,7 @@
   {
     "id": "c4-standard-48",
     "family": "c4",
+    "name": "c4-standard-48",
     "category": "general",
     "vcpus": 48,
     "memory": 180,
@@ -1695,6 +1824,7 @@
   {
     "id": "c4-standard-8",
     "family": "c4",
+    "name": "c4-standard-8",
     "category": "general",
     "vcpus": 8,
     "memory": 30,
@@ -1708,6 +1838,7 @@
   {
     "id": "c4-standard-96",
     "family": "c4",
+    "name": "c4-standard-96",
     "category": "general",
     "vcpus": 96,
     "memory": 360,
@@ -1721,6 +1852,7 @@
   {
     "id": "c4a-highcpu-1",
     "family": "c4a",
+    "name": "c4a-highcpu-1",
     "category": "general",
     "vcpus": 1,
     "memory": 2,
@@ -1734,6 +1866,7 @@
   {
     "id": "c4a-highcpu-16",
     "family": "c4a",
+    "name": "c4a-highcpu-16",
     "category": "general",
     "vcpus": 16,
     "memory": 32,
@@ -1747,6 +1880,7 @@
   {
     "id": "c4a-highcpu-2",
     "family": "c4a",
+    "name": "c4a-highcpu-2",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -1760,6 +1894,7 @@
   {
     "id": "c4a-highcpu-32",
     "family": "c4a",
+    "name": "c4a-highcpu-32",
     "category": "general",
     "vcpus": 32,
     "memory": 64,
@@ -1773,6 +1908,7 @@
   {
     "id": "c4a-highcpu-4",
     "family": "c4a",
+    "name": "c4a-highcpu-4",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -1786,6 +1922,7 @@
   {
     "id": "c4a-highcpu-48",
     "family": "c4a",
+    "name": "c4a-highcpu-48",
     "category": "general",
     "vcpus": 48,
     "memory": 96,
@@ -1799,6 +1936,7 @@
   {
     "id": "c4a-highcpu-64",
     "family": "c4a",
+    "name": "c4a-highcpu-64",
     "category": "general",
     "vcpus": 64,
     "memory": 128,
@@ -1812,6 +1950,7 @@
   {
     "id": "c4a-highcpu-72",
     "family": "c4a",
+    "name": "c4a-highcpu-72",
     "category": "general",
     "vcpus": 72,
     "memory": 144,
@@ -1825,6 +1964,7 @@
   {
     "id": "c4a-highcpu-8",
     "family": "c4a",
+    "name": "c4a-highcpu-8",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -1838,6 +1978,7 @@
   {
     "id": "c4a-highmem-1",
     "family": "c4a",
+    "name": "c4a-highmem-1",
     "category": "general",
     "vcpus": 1,
     "memory": 8,
@@ -1851,6 +1992,7 @@
   {
     "id": "c4a-highmem-16",
     "family": "c4a",
+    "name": "c4a-highmem-16",
     "category": "general",
     "vcpus": 16,
     "memory": 128,
@@ -1864,6 +2006,7 @@
   {
     "id": "c4a-highmem-2",
     "family": "c4a",
+    "name": "c4a-highmem-2",
     "category": "general",
     "vcpus": 2,
     "memory": 16,
@@ -1877,6 +2020,7 @@
   {
     "id": "c4a-highmem-32",
     "family": "c4a",
+    "name": "c4a-highmem-32",
     "category": "general",
     "vcpus": 32,
     "memory": 256,
@@ -1890,6 +2034,7 @@
   {
     "id": "c4a-highmem-4",
     "family": "c4a",
+    "name": "c4a-highmem-4",
     "category": "general",
     "vcpus": 4,
     "memory": 32,
@@ -1903,6 +2048,7 @@
   {
     "id": "c4a-highmem-48",
     "family": "c4a",
+    "name": "c4a-highmem-48",
     "category": "general",
     "vcpus": 48,
     "memory": 384,
@@ -1916,6 +2062,7 @@
   {
     "id": "c4a-highmem-64",
     "family": "c4a",
+    "name": "c4a-highmem-64",
     "category": "general",
     "vcpus": 64,
     "memory": 512,
@@ -1929,6 +2076,7 @@
   {
     "id": "c4a-highmem-72",
     "family": "c4a",
+    "name": "c4a-highmem-72",
     "category": "general",
     "vcpus": 72,
     "memory": 576,
@@ -1942,6 +2090,7 @@
   {
     "id": "c4a-highmem-8",
     "family": "c4a",
+    "name": "c4a-highmem-8",
     "category": "general",
     "vcpus": 8,
     "memory": 64,
@@ -1955,6 +2104,7 @@
   {
     "id": "c4a-standard-1",
     "family": "c4a",
+    "name": "c4a-standard-1",
     "category": "general",
     "vcpus": 1,
     "memory": 4,
@@ -1968,6 +2118,7 @@
   {
     "id": "c4a-standard-16",
     "family": "c4a",
+    "name": "c4a-standard-16",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -1981,6 +2132,7 @@
   {
     "id": "c4a-standard-2",
     "family": "c4a",
+    "name": "c4a-standard-2",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -1994,6 +2146,7 @@
   {
     "id": "c4a-standard-32",
     "family": "c4a",
+    "name": "c4a-standard-32",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -2007,6 +2160,7 @@
   {
     "id": "c4a-standard-4",
     "family": "c4a",
+    "name": "c4a-standard-4",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -2020,6 +2174,7 @@
   {
     "id": "c4a-standard-48",
     "family": "c4a",
+    "name": "c4a-standard-48",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -2033,6 +2188,7 @@
   {
     "id": "c4a-standard-64",
     "family": "c4a",
+    "name": "c4a-standard-64",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -2046,6 +2202,7 @@
   {
     "id": "c4a-standard-72",
     "family": "c4a",
+    "name": "c4a-standard-72",
     "category": "general",
     "vcpus": 72,
     "memory": 288,
@@ -2059,6 +2216,7 @@
   {
     "id": "c4a-standard-8",
     "family": "c4a",
+    "name": "c4a-standard-8",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -2072,6 +2230,7 @@
   {
     "id": "e2-highcpu-16",
     "family": "e2",
+    "name": "e2-highcpu-16",
     "category": "general",
     "vcpus": 16,
     "memory": 16,
@@ -2088,6 +2247,7 @@
   {
     "id": "e2-highcpu-2",
     "family": "e2",
+    "name": "e2-highcpu-2",
     "category": "general",
     "vcpus": 2,
     "memory": 2,
@@ -2104,6 +2264,7 @@
   {
     "id": "e2-highcpu-32",
     "family": "e2",
+    "name": "e2-highcpu-32",
     "category": "general",
     "vcpus": 32,
     "memory": 32,
@@ -2120,6 +2281,7 @@
   {
     "id": "e2-highcpu-4",
     "family": "e2",
+    "name": "e2-highcpu-4",
     "category": "general",
     "vcpus": 4,
     "memory": 4,
@@ -2136,6 +2298,7 @@
   {
     "id": "e2-highcpu-8",
     "family": "e2",
+    "name": "e2-highcpu-8",
     "category": "general",
     "vcpus": 8,
     "memory": 8,
@@ -2152,6 +2315,7 @@
   {
     "id": "e2-highmem-16",
     "family": "e2",
+    "name": "e2-highmem-16",
     "category": "general",
     "vcpus": 16,
     "memory": 128,
@@ -2168,6 +2332,7 @@
   {
     "id": "e2-highmem-2",
     "family": "e2",
+    "name": "e2-highmem-2",
     "category": "general",
     "vcpus": 2,
     "memory": 16,
@@ -2184,6 +2349,7 @@
   {
     "id": "e2-highmem-4",
     "family": "e2",
+    "name": "e2-highmem-4",
     "category": "general",
     "vcpus": 4,
     "memory": 32,
@@ -2200,6 +2366,7 @@
   {
     "id": "e2-highmem-8",
     "family": "e2",
+    "name": "e2-highmem-8",
     "category": "general",
     "vcpus": 8,
     "memory": 64,
@@ -2216,6 +2383,7 @@
   {
     "id": "e2-medium",
     "family": "e2",
+    "name": "e2-medium",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -2232,6 +2400,7 @@
   {
     "id": "e2-micro",
     "family": "e2",
+    "name": "e2-micro",
     "category": "general",
     "vcpus": 2,
     "memory": 1,
@@ -2248,6 +2417,7 @@
   {
     "id": "e2-small",
     "family": "e2",
+    "name": "e2-small",
     "category": "general",
     "vcpus": 2,
     "memory": 2,
@@ -2264,6 +2434,7 @@
   {
     "id": "e2-standard-16",
     "family": "e2",
+    "name": "e2-standard-16",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -2280,6 +2451,7 @@
   {
     "id": "e2-standard-2",
     "family": "e2",
+    "name": "e2-standard-2",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -2296,6 +2468,7 @@
   {
     "id": "e2-standard-32",
     "family": "e2",
+    "name": "e2-standard-32",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -2312,6 +2485,7 @@
   {
     "id": "e2-standard-4",
     "family": "e2",
+    "name": "e2-standard-4",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -2328,6 +2502,7 @@
   {
     "id": "e2-standard-8",
     "family": "e2",
+    "name": "e2-standard-8",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -2344,6 +2519,7 @@
   {
     "id": "f1-micro",
     "family": "n1",
+    "name": "f1-micro",
     "category": "general",
     "vcpus": 1,
     "memory": 0.6,
@@ -2361,6 +2537,7 @@
   {
     "id": "g1-small",
     "family": "n1",
+    "name": "g1-small",
     "category": "general",
     "vcpus": 1,
     "memory": 1.7,
@@ -2378,6 +2555,7 @@
   {
     "id": "g2-standard-12",
     "family": "g2",
+    "name": "g2-standard-12",
     "category": "accelerated",
     "vcpus": 12,
     "memory": 48,
@@ -2392,6 +2570,7 @@
   {
     "id": "g2-standard-16",
     "family": "g2",
+    "name": "g2-standard-16",
     "category": "accelerated",
     "vcpus": 16,
     "memory": 64,
@@ -2406,6 +2585,7 @@
   {
     "id": "g2-standard-24",
     "family": "g2",
+    "name": "g2-standard-24",
     "category": "accelerated",
     "vcpus": 24,
     "memory": 96,
@@ -2420,6 +2600,7 @@
   {
     "id": "g2-standard-32",
     "family": "g2",
+    "name": "g2-standard-32",
     "category": "accelerated",
     "vcpus": 32,
     "memory": 128,
@@ -2434,6 +2615,7 @@
   {
     "id": "g2-standard-4",
     "family": "g2",
+    "name": "g2-standard-4",
     "category": "accelerated",
     "vcpus": 4,
     "memory": 16,
@@ -2448,6 +2630,7 @@
   {
     "id": "g2-standard-48",
     "family": "g2",
+    "name": "g2-standard-48",
     "category": "accelerated",
     "vcpus": 48,
     "memory": 192,
@@ -2462,6 +2645,7 @@
   {
     "id": "g2-standard-8",
     "family": "g2",
+    "name": "g2-standard-8",
     "category": "accelerated",
     "vcpus": 8,
     "memory": 32,
@@ -2476,6 +2660,7 @@
   {
     "id": "g2-standard-96",
     "family": "g2",
+    "name": "g2-standard-96",
     "category": "accelerated",
     "vcpus": 96,
     "memory": 384,
@@ -2490,6 +2675,7 @@
   {
     "id": "h3-standard-88",
     "family": "h3",
+    "name": "h3-standard-88",
     "category": "compute",
     "vcpus": 88,
     "memory": 352,
@@ -2503,6 +2689,7 @@
   {
     "id": "m1-megamem-96",
     "family": "m1",
+    "name": "m1-megamem-96",
     "category": "memory",
     "vcpus": 96,
     "memory": 1433.6,
@@ -2516,6 +2703,7 @@
   {
     "id": "m1-ultramem-160",
     "family": "m1",
+    "name": "m1-ultramem-160",
     "category": "memory",
     "vcpus": 160,
     "memory": 3844,
@@ -2529,6 +2717,7 @@
   {
     "id": "m1-ultramem-40",
     "family": "m1",
+    "name": "m1-ultramem-40",
     "category": "memory",
     "vcpus": 40,
     "memory": 961,
@@ -2542,6 +2731,7 @@
   {
     "id": "m1-ultramem-80",
     "family": "m1",
+    "name": "m1-ultramem-80",
     "category": "memory",
     "vcpus": 80,
     "memory": 1922,
@@ -2555,6 +2745,7 @@
   {
     "id": "m2-hypermem-416",
     "family": "m2",
+    "name": "m2-hypermem-416",
     "category": "memory",
     "vcpus": 416,
     "memory": 8832,
@@ -2568,6 +2759,7 @@
   {
     "id": "m2-megamem-416",
     "family": "m2",
+    "name": "m2-megamem-416",
     "category": "memory",
     "vcpus": 416,
     "memory": 5888,
@@ -2581,6 +2773,7 @@
   {
     "id": "m2-ultramem-208",
     "family": "m2",
+    "name": "m2-ultramem-208",
     "category": "memory",
     "vcpus": 208,
     "memory": 5888,
@@ -2594,6 +2787,7 @@
   {
     "id": "m2-ultramem-416",
     "family": "m2",
+    "name": "m2-ultramem-416",
     "category": "memory",
     "vcpus": 416,
     "memory": 11776,
@@ -2607,6 +2801,7 @@
   {
     "id": "m3-megamem-128",
     "family": "m3",
+    "name": "m3-megamem-128",
     "category": "memory",
     "vcpus": 128,
     "memory": 1952,
@@ -2620,6 +2815,7 @@
   {
     "id": "m3-megamem-64",
     "family": "m3",
+    "name": "m3-megamem-64",
     "category": "memory",
     "vcpus": 64,
     "memory": 976,
@@ -2633,6 +2829,7 @@
   {
     "id": "m3-ultramem-128",
     "family": "m3",
+    "name": "m3-ultramem-128",
     "category": "memory",
     "vcpus": 128,
     "memory": 3904,
@@ -2646,6 +2843,7 @@
   {
     "id": "m3-ultramem-32",
     "family": "m3",
+    "name": "m3-ultramem-32",
     "category": "memory",
     "vcpus": 32,
     "memory": 976,
@@ -2659,6 +2857,7 @@
   {
     "id": "m3-ultramem-64",
     "family": "m3",
+    "name": "m3-ultramem-64",
     "category": "memory",
     "vcpus": 64,
     "memory": 1952,
@@ -2672,6 +2871,7 @@
   {
     "id": "n1-highcpu-16",
     "family": "n1",
+    "name": "n1-highcpu-16",
     "category": "general",
     "vcpus": 16,
     "memory": 14.4,
@@ -2689,6 +2889,7 @@
   {
     "id": "n1-highcpu-2",
     "family": "n1",
+    "name": "n1-highcpu-2",
     "category": "general",
     "vcpus": 2,
     "memory": 1.8,
@@ -2706,6 +2907,7 @@
   {
     "id": "n1-highcpu-32",
     "family": "n1",
+    "name": "n1-highcpu-32",
     "category": "general",
     "vcpus": 32,
     "memory": 28.8,
@@ -2723,6 +2925,7 @@
   {
     "id": "n1-highcpu-4",
     "family": "n1",
+    "name": "n1-highcpu-4",
     "category": "general",
     "vcpus": 4,
     "memory": 3.6,
@@ -2740,6 +2943,7 @@
   {
     "id": "n1-highcpu-64",
     "family": "n1",
+    "name": "n1-highcpu-64",
     "category": "general",
     "vcpus": 64,
     "memory": 57.6,
@@ -2757,6 +2961,7 @@
   {
     "id": "n1-highcpu-8",
     "family": "n1",
+    "name": "n1-highcpu-8",
     "category": "general",
     "vcpus": 8,
     "memory": 7.2,
@@ -2774,6 +2979,7 @@
   {
     "id": "n1-highcpu-96",
     "family": "n1",
+    "name": "n1-highcpu-96",
     "category": "general",
     "vcpus": 96,
     "memory": 86.4,
@@ -2791,6 +2997,7 @@
   {
     "id": "n1-highmem-16",
     "family": "n1",
+    "name": "n1-highmem-16",
     "category": "general",
     "vcpus": 16,
     "memory": 104,
@@ -2808,6 +3015,7 @@
   {
     "id": "n1-highmem-2",
     "family": "n1",
+    "name": "n1-highmem-2",
     "category": "general",
     "vcpus": 2,
     "memory": 13,
@@ -2825,6 +3033,7 @@
   {
     "id": "n1-highmem-32",
     "family": "n1",
+    "name": "n1-highmem-32",
     "category": "general",
     "vcpus": 32,
     "memory": 208,
@@ -2842,6 +3051,7 @@
   {
     "id": "n1-highmem-4",
     "family": "n1",
+    "name": "n1-highmem-4",
     "category": "general",
     "vcpus": 4,
     "memory": 26,
@@ -2859,6 +3069,7 @@
   {
     "id": "n1-highmem-64",
     "family": "n1",
+    "name": "n1-highmem-64",
     "category": "general",
     "vcpus": 64,
     "memory": 416,
@@ -2876,6 +3087,7 @@
   {
     "id": "n1-highmem-8",
     "family": "n1",
+    "name": "n1-highmem-8",
     "category": "general",
     "vcpus": 8,
     "memory": 52,
@@ -2893,6 +3105,7 @@
   {
     "id": "n1-highmem-96",
     "family": "n1",
+    "name": "n1-highmem-96",
     "category": "general",
     "vcpus": 96,
     "memory": 624,
@@ -2910,6 +3123,7 @@
   {
     "id": "n1-standard-1",
     "family": "n1",
+    "name": "n1-standard-1",
     "category": "general",
     "vcpus": 1,
     "memory": 3.75,
@@ -2927,6 +3141,7 @@
   {
     "id": "n1-standard-16",
     "family": "n1",
+    "name": "n1-standard-16",
     "category": "general",
     "vcpus": 16,
     "memory": 60,
@@ -2944,6 +3159,7 @@
   {
     "id": "n1-standard-2",
     "family": "n1",
+    "name": "n1-standard-2",
     "category": "general",
     "vcpus": 2,
     "memory": 7.5,
@@ -2961,6 +3177,7 @@
   {
     "id": "n1-standard-32",
     "family": "n1",
+    "name": "n1-standard-32",
     "category": "general",
     "vcpus": 32,
     "memory": 120,
@@ -2978,6 +3195,7 @@
   {
     "id": "n1-standard-4",
     "family": "n1",
+    "name": "n1-standard-4",
     "category": "general",
     "vcpus": 4,
     "memory": 15,
@@ -2995,6 +3213,7 @@
   {
     "id": "n1-standard-64",
     "family": "n1",
+    "name": "n1-standard-64",
     "category": "general",
     "vcpus": 64,
     "memory": 240,
@@ -3012,6 +3231,7 @@
   {
     "id": "n1-standard-8",
     "family": "n1",
+    "name": "n1-standard-8",
     "category": "general",
     "vcpus": 8,
     "memory": 30,
@@ -3029,6 +3249,7 @@
   {
     "id": "n1-standard-96",
     "family": "n1",
+    "name": "n1-standard-96",
     "category": "general",
     "vcpus": 96,
     "memory": 360,
@@ -3046,6 +3267,7 @@
   {
     "id": "n2-highcpu-16",
     "family": "n2",
+    "name": "n2-highcpu-16",
     "category": "general",
     "vcpus": 16,
     "memory": 16,
@@ -3060,6 +3282,7 @@
   {
     "id": "n2-highcpu-2",
     "family": "n2",
+    "name": "n2-highcpu-2",
     "category": "general",
     "vcpus": 2,
     "memory": 2,
@@ -3074,6 +3297,7 @@
   {
     "id": "n2-highcpu-32",
     "family": "n2",
+    "name": "n2-highcpu-32",
     "category": "general",
     "vcpus": 32,
     "memory": 32,
@@ -3088,6 +3312,7 @@
   {
     "id": "n2-highcpu-4",
     "family": "n2",
+    "name": "n2-highcpu-4",
     "category": "general",
     "vcpus": 4,
     "memory": 4,
@@ -3102,6 +3327,7 @@
   {
     "id": "n2-highcpu-48",
     "family": "n2",
+    "name": "n2-highcpu-48",
     "category": "general",
     "vcpus": 48,
     "memory": 48,
@@ -3116,6 +3342,7 @@
   {
     "id": "n2-highcpu-64",
     "family": "n2",
+    "name": "n2-highcpu-64",
     "category": "general",
     "vcpus": 64,
     "memory": 64,
@@ -3130,6 +3357,7 @@
   {
     "id": "n2-highcpu-8",
     "family": "n2",
+    "name": "n2-highcpu-8",
     "category": "general",
     "vcpus": 8,
     "memory": 8,
@@ -3144,6 +3372,7 @@
   {
     "id": "n2-highcpu-80",
     "family": "n2",
+    "name": "n2-highcpu-80",
     "category": "general",
     "vcpus": 80,
     "memory": 80,
@@ -3158,6 +3387,7 @@
   {
     "id": "n2-highcpu-96",
     "family": "n2",
+    "name": "n2-highcpu-96",
     "category": "general",
     "vcpus": 96,
     "memory": 96,
@@ -3172,6 +3402,7 @@
   {
     "id": "n2-highmem-128",
     "family": "n2",
+    "name": "n2-highmem-128",
     "category": "general",
     "vcpus": 128,
     "memory": 864,
@@ -3186,6 +3417,7 @@
   {
     "id": "n2-highmem-16",
     "family": "n2",
+    "name": "n2-highmem-16",
     "category": "general",
     "vcpus": 16,
     "memory": 128,
@@ -3200,6 +3432,7 @@
   {
     "id": "n2-highmem-2",
     "family": "n2",
+    "name": "n2-highmem-2",
     "category": "general",
     "vcpus": 2,
     "memory": 16,
@@ -3214,6 +3447,7 @@
   {
     "id": "n2-highmem-32",
     "family": "n2",
+    "name": "n2-highmem-32",
     "category": "general",
     "vcpus": 32,
     "memory": 256,
@@ -3228,6 +3462,7 @@
   {
     "id": "n2-highmem-4",
     "family": "n2",
+    "name": "n2-highmem-4",
     "category": "general",
     "vcpus": 4,
     "memory": 32,
@@ -3242,6 +3477,7 @@
   {
     "id": "n2-highmem-48",
     "family": "n2",
+    "name": "n2-highmem-48",
     "category": "general",
     "vcpus": 48,
     "memory": 384,
@@ -3256,6 +3492,7 @@
   {
     "id": "n2-highmem-64",
     "family": "n2",
+    "name": "n2-highmem-64",
     "category": "general",
     "vcpus": 64,
     "memory": 512,
@@ -3270,6 +3507,7 @@
   {
     "id": "n2-highmem-8",
     "family": "n2",
+    "name": "n2-highmem-8",
     "category": "general",
     "vcpus": 8,
     "memory": 64,
@@ -3284,6 +3522,7 @@
   {
     "id": "n2-highmem-80",
     "family": "n2",
+    "name": "n2-highmem-80",
     "category": "general",
     "vcpus": 80,
     "memory": 640,
@@ -3298,6 +3537,7 @@
   {
     "id": "n2-highmem-96",
     "family": "n2",
+    "name": "n2-highmem-96",
     "category": "general",
     "vcpus": 96,
     "memory": 768,
@@ -3312,6 +3552,7 @@
   {
     "id": "n2-standard-128",
     "family": "n2",
+    "name": "n2-standard-128",
     "category": "general",
     "vcpus": 128,
     "memory": 512,
@@ -3326,6 +3567,7 @@
   {
     "id": "n2-standard-16",
     "family": "n2",
+    "name": "n2-standard-16",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -3340,6 +3582,7 @@
   {
     "id": "n2-standard-2",
     "family": "n2",
+    "name": "n2-standard-2",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -3354,6 +3597,7 @@
   {
     "id": "n2-standard-32",
     "family": "n2",
+    "name": "n2-standard-32",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -3368,6 +3612,7 @@
   {
     "id": "n2-standard-4",
     "family": "n2",
+    "name": "n2-standard-4",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -3382,6 +3627,7 @@
   {
     "id": "n2-standard-48",
     "family": "n2",
+    "name": "n2-standard-48",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -3396,6 +3642,7 @@
   {
     "id": "n2-standard-64",
     "family": "n2",
+    "name": "n2-standard-64",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3410,6 +3657,7 @@
   {
     "id": "n2-standard-8",
     "family": "n2",
+    "name": "n2-standard-8",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3424,6 +3672,7 @@
   {
     "id": "n2-standard-80",
     "family": "n2",
+    "name": "n2-standard-80",
     "category": "general",
     "vcpus": 80,
     "memory": 320,
@@ -3438,6 +3687,7 @@
   {
     "id": "n2-standard-96",
     "family": "n2",
+    "name": "n2-standard-96",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -3452,6 +3702,7 @@
   {
     "id": "n2d-highcpu-128",
     "family": "n2d",
+    "name": "n2d-highcpu-128",
     "category": "general",
     "vcpus": 128,
     "memory": 128,
@@ -3466,6 +3717,7 @@
   {
     "id": "n2d-highcpu-16",
     "family": "n2d",
+    "name": "n2d-highcpu-16",
     "category": "general",
     "vcpus": 16,
     "memory": 16,
@@ -3480,6 +3732,7 @@
   {
     "id": "n2d-highcpu-2",
     "family": "n2d",
+    "name": "n2d-highcpu-2",
     "category": "general",
     "vcpus": 2,
     "memory": 2,
@@ -3494,6 +3747,7 @@
   {
     "id": "n2d-highcpu-224",
     "family": "n2d",
+    "name": "n2d-highcpu-224",
     "category": "general",
     "vcpus": 224,
     "memory": 224,
@@ -3508,6 +3762,7 @@
   {
     "id": "n2d-highcpu-32",
     "family": "n2d",
+    "name": "n2d-highcpu-32",
     "category": "general",
     "vcpus": 32,
     "memory": 32,
@@ -3522,6 +3777,7 @@
   {
     "id": "n2d-highcpu-4",
     "family": "n2d",
+    "name": "n2d-highcpu-4",
     "category": "general",
     "vcpus": 4,
     "memory": 4,
@@ -3536,6 +3792,7 @@
   {
     "id": "n2d-highcpu-48",
     "family": "n2d",
+    "name": "n2d-highcpu-48",
     "category": "general",
     "vcpus": 48,
     "memory": 48,
@@ -3550,6 +3807,7 @@
   {
     "id": "n2d-highcpu-64",
     "family": "n2d",
+    "name": "n2d-highcpu-64",
     "category": "general",
     "vcpus": 64,
     "memory": 64,
@@ -3564,6 +3822,7 @@
   {
     "id": "n2d-highcpu-8",
     "family": "n2d",
+    "name": "n2d-highcpu-8",
     "category": "general",
     "vcpus": 8,
     "memory": 8,
@@ -3578,6 +3837,7 @@
   {
     "id": "n2d-highcpu-80",
     "family": "n2d",
+    "name": "n2d-highcpu-80",
     "category": "general",
     "vcpus": 80,
     "memory": 80,
@@ -3592,6 +3852,7 @@
   {
     "id": "n2d-highcpu-96",
     "family": "n2d",
+    "name": "n2d-highcpu-96",
     "category": "general",
     "vcpus": 96,
     "memory": 96,
@@ -3606,6 +3867,7 @@
   {
     "id": "n2d-highmem-16",
     "family": "n2d",
+    "name": "n2d-highmem-16",
     "category": "general",
     "vcpus": 16,
     "memory": 128,
@@ -3620,6 +3882,7 @@
   {
     "id": "n2d-highmem-2",
     "family": "n2d",
+    "name": "n2d-highmem-2",
     "category": "general",
     "vcpus": 2,
     "memory": 16,
@@ -3634,6 +3897,7 @@
   {
     "id": "n2d-highmem-32",
     "family": "n2d",
+    "name": "n2d-highmem-32",
     "category": "general",
     "vcpus": 32,
     "memory": 256,
@@ -3648,6 +3912,7 @@
   {
     "id": "n2d-highmem-4",
     "family": "n2d",
+    "name": "n2d-highmem-4",
     "category": "general",
     "vcpus": 4,
     "memory": 32,
@@ -3662,6 +3927,7 @@
   {
     "id": "n2d-highmem-48",
     "family": "n2d",
+    "name": "n2d-highmem-48",
     "category": "general",
     "vcpus": 48,
     "memory": 384,
@@ -3676,6 +3942,7 @@
   {
     "id": "n2d-highmem-64",
     "family": "n2d",
+    "name": "n2d-highmem-64",
     "category": "general",
     "vcpus": 64,
     "memory": 512,
@@ -3690,6 +3957,7 @@
   {
     "id": "n2d-highmem-8",
     "family": "n2d",
+    "name": "n2d-highmem-8",
     "category": "general",
     "vcpus": 8,
     "memory": 64,
@@ -3704,6 +3972,7 @@
   {
     "id": "n2d-highmem-80",
     "family": "n2d",
+    "name": "n2d-highmem-80",
     "category": "general",
     "vcpus": 80,
     "memory": 640,
@@ -3718,6 +3987,7 @@
   {
     "id": "n2d-highmem-96",
     "family": "n2d",
+    "name": "n2d-highmem-96",
     "category": "general",
     "vcpus": 96,
     "memory": 768,
@@ -3732,6 +4002,7 @@
   {
     "id": "n2d-standard-128",
     "family": "n2d",
+    "name": "n2d-standard-128",
     "category": "general",
     "vcpus": 128,
     "memory": 512,
@@ -3746,6 +4017,7 @@
   {
     "id": "n2d-standard-16",
     "family": "n2d",
+    "name": "n2d-standard-16",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -3760,6 +4032,7 @@
   {
     "id": "n2d-standard-2",
     "family": "n2d",
+    "name": "n2d-standard-2",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -3774,6 +4047,7 @@
   {
     "id": "n2d-standard-224",
     "family": "n2d",
+    "name": "n2d-standard-224",
     "category": "general",
     "vcpus": 224,
     "memory": 896,
@@ -3788,6 +4062,7 @@
   {
     "id": "n2d-standard-32",
     "family": "n2d",
+    "name": "n2d-standard-32",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -3802,6 +4077,7 @@
   {
     "id": "n2d-standard-4",
     "family": "n2d",
+    "name": "n2d-standard-4",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -3816,6 +4092,7 @@
   {
     "id": "n2d-standard-48",
     "family": "n2d",
+    "name": "n2d-standard-48",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -3830,6 +4107,7 @@
   {
     "id": "n2d-standard-64",
     "family": "n2d",
+    "name": "n2d-standard-64",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -3844,6 +4122,7 @@
   {
     "id": "n2d-standard-8",
     "family": "n2d",
+    "name": "n2d-standard-8",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -3858,6 +4137,7 @@
   {
     "id": "n2d-standard-80",
     "family": "n2d",
+    "name": "n2d-standard-80",
     "category": "general",
     "vcpus": 80,
     "memory": 320,
@@ -3872,6 +4152,7 @@
   {
     "id": "n2d-standard-96",
     "family": "n2d",
+    "name": "n2d-standard-96",
     "category": "general",
     "vcpus": 96,
     "memory": 384,
@@ -3886,6 +4167,7 @@
   {
     "id": "n4-highcpu-16",
     "family": "n4",
+    "name": "n4-highcpu-16",
     "category": "general",
     "vcpus": 16,
     "memory": 32,
@@ -3899,6 +4181,7 @@
   {
     "id": "n4-highcpu-2",
     "family": "n4",
+    "name": "n4-highcpu-2",
     "category": "general",
     "vcpus": 2,
     "memory": 4,
@@ -3912,6 +4195,7 @@
   {
     "id": "n4-highcpu-32",
     "family": "n4",
+    "name": "n4-highcpu-32",
     "category": "general",
     "vcpus": 32,
     "memory": 64,
@@ -3925,6 +4209,7 @@
   {
     "id": "n4-highcpu-4",
     "family": "n4",
+    "name": "n4-highcpu-4",
     "category": "general",
     "vcpus": 4,
     "memory": 8,
@@ -3938,6 +4223,7 @@
   {
     "id": "n4-highcpu-48",
     "family": "n4",
+    "name": "n4-highcpu-48",
     "category": "general",
     "vcpus": 48,
     "memory": 96,
@@ -3951,6 +4237,7 @@
   {
     "id": "n4-highcpu-64",
     "family": "n4",
+    "name": "n4-highcpu-64",
     "category": "general",
     "vcpus": 64,
     "memory": 128,
@@ -3964,6 +4251,7 @@
   {
     "id": "n4-highcpu-8",
     "family": "n4",
+    "name": "n4-highcpu-8",
     "category": "general",
     "vcpus": 8,
     "memory": 16,
@@ -3977,6 +4265,7 @@
   {
     "id": "n4-highcpu-80",
     "family": "n4",
+    "name": "n4-highcpu-80",
     "category": "general",
     "vcpus": 80,
     "memory": 160,
@@ -3990,6 +4279,7 @@
   {
     "id": "n4-highmem-16",
     "family": "n4",
+    "name": "n4-highmem-16",
     "category": "general",
     "vcpus": 16,
     "memory": 128,
@@ -4003,6 +4293,7 @@
   {
     "id": "n4-highmem-2",
     "family": "n4",
+    "name": "n4-highmem-2",
     "category": "general",
     "vcpus": 2,
     "memory": 16,
@@ -4016,6 +4307,7 @@
   {
     "id": "n4-highmem-32",
     "family": "n4",
+    "name": "n4-highmem-32",
     "category": "general",
     "vcpus": 32,
     "memory": 256,
@@ -4029,6 +4321,7 @@
   {
     "id": "n4-highmem-4",
     "family": "n4",
+    "name": "n4-highmem-4",
     "category": "general",
     "vcpus": 4,
     "memory": 32,
@@ -4042,6 +4335,7 @@
   {
     "id": "n4-highmem-48",
     "family": "n4",
+    "name": "n4-highmem-48",
     "category": "general",
     "vcpus": 48,
     "memory": 384,
@@ -4055,6 +4349,7 @@
   {
     "id": "n4-highmem-64",
     "family": "n4",
+    "name": "n4-highmem-64",
     "category": "general",
     "vcpus": 64,
     "memory": 512,
@@ -4068,6 +4363,7 @@
   {
     "id": "n4-highmem-8",
     "family": "n4",
+    "name": "n4-highmem-8",
     "category": "general",
     "vcpus": 8,
     "memory": 64,
@@ -4081,6 +4377,7 @@
   {
     "id": "n4-highmem-80",
     "family": "n4",
+    "name": "n4-highmem-80",
     "category": "general",
     "vcpus": 80,
     "memory": 640,
@@ -4094,6 +4391,7 @@
   {
     "id": "n4-standard-16",
     "family": "n4",
+    "name": "n4-standard-16",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -4107,6 +4405,7 @@
   {
     "id": "n4-standard-2",
     "family": "n4",
+    "name": "n4-standard-2",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -4120,6 +4419,7 @@
   {
     "id": "n4-standard-32",
     "family": "n4",
+    "name": "n4-standard-32",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -4133,6 +4433,7 @@
   {
     "id": "n4-standard-4",
     "family": "n4",
+    "name": "n4-standard-4",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -4146,6 +4447,7 @@
   {
     "id": "n4-standard-48",
     "family": "n4",
+    "name": "n4-standard-48",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -4159,6 +4461,7 @@
   {
     "id": "n4-standard-64",
     "family": "n4",
+    "name": "n4-standard-64",
     "category": "general",
     "vcpus": 64,
     "memory": 256,
@@ -4172,6 +4475,7 @@
   {
     "id": "n4-standard-8",
     "family": "n4",
+    "name": "n4-standard-8",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -4185,6 +4489,7 @@
   {
     "id": "n4-standard-80",
     "family": "n4",
+    "name": "n4-standard-80",
     "category": "general",
     "vcpus": 80,
     "memory": 320,
@@ -4198,6 +4503,7 @@
   {
     "id": "t2a-standard-1",
     "family": "t2a",
+    "name": "t2a-standard-1",
     "category": "general",
     "vcpus": 1,
     "memory": 4,
@@ -4211,6 +4517,7 @@
   {
     "id": "t2a-standard-16",
     "family": "t2a",
+    "name": "t2a-standard-16",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -4224,6 +4531,7 @@
   {
     "id": "t2a-standard-2",
     "family": "t2a",
+    "name": "t2a-standard-2",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -4237,6 +4545,7 @@
   {
     "id": "t2a-standard-32",
     "family": "t2a",
+    "name": "t2a-standard-32",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -4250,6 +4559,7 @@
   {
     "id": "t2a-standard-4",
     "family": "t2a",
+    "name": "t2a-standard-4",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -4263,6 +4573,7 @@
   {
     "id": "t2a-standard-48",
     "family": "t2a",
+    "name": "t2a-standard-48",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -4276,6 +4587,7 @@
   {
     "id": "t2a-standard-8",
     "family": "t2a",
+    "name": "t2a-standard-8",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -4289,6 +4601,7 @@
   {
     "id": "t2d-standard-1",
     "family": "t2d",
+    "name": "t2d-standard-1",
     "category": "general",
     "vcpus": 1,
     "memory": 4,
@@ -4302,6 +4615,7 @@
   {
     "id": "t2d-standard-16",
     "family": "t2d",
+    "name": "t2d-standard-16",
     "category": "general",
     "vcpus": 16,
     "memory": 64,
@@ -4315,6 +4629,7 @@
   {
     "id": "t2d-standard-2",
     "family": "t2d",
+    "name": "t2d-standard-2",
     "category": "general",
     "vcpus": 2,
     "memory": 8,
@@ -4328,6 +4643,7 @@
   {
     "id": "t2d-standard-32",
     "family": "t2d",
+    "name": "t2d-standard-32",
     "category": "general",
     "vcpus": 32,
     "memory": 128,
@@ -4341,6 +4657,7 @@
   {
     "id": "t2d-standard-4",
     "family": "t2d",
+    "name": "t2d-standard-4",
     "category": "general",
     "vcpus": 4,
     "memory": 16,
@@ -4354,6 +4671,7 @@
   {
     "id": "t2d-standard-48",
     "family": "t2d",
+    "name": "t2d-standard-48",
     "category": "general",
     "vcpus": 48,
     "memory": 192,
@@ -4367,6 +4685,7 @@
   {
     "id": "t2d-standard-60",
     "family": "t2d",
+    "name": "t2d-standard-60",
     "category": "general",
     "vcpus": 60,
     "memory": 240,
@@ -4380,6 +4699,7 @@
   {
     "id": "t2d-standard-8",
     "family": "t2d",
+    "name": "t2d-standard-8",
     "category": "general",
     "vcpus": 8,
     "memory": 32,
@@ -4393,6 +4713,7 @@
   {
     "id": "z3-highmem-176",
     "family": "z3",
+    "name": "z3-highmem-176",
     "category": "storage",
     "vcpus": 176,
     "memory": 1408,
@@ -4406,6 +4727,7 @@
   {
     "id": "z3-highmem-88",
     "family": "z3",
+    "name": "z3-highmem-88",
     "category": "storage",
     "vcpus": 88,
     "memory": 704,
