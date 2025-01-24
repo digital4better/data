@@ -11,7 +11,8 @@
     "hdd": 20,
     "cpu": [
       "intel-xeon-e52660"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "a1",
@@ -25,7 +26,8 @@
     "hdd": 40,
     "cpu": [
       "intel-xeon-e52660"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "a1-v2",
@@ -43,7 +45,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "a2",
@@ -57,7 +60,8 @@
     "hdd": 60,
     "cpu": [
       "intel-xeon-e52660"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "a2-v2",
@@ -75,7 +79,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "a2m-v2",
@@ -93,7 +98,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "a3",
@@ -107,7 +113,8 @@
     "hdd": 120,
     "cpu": [
       "intel-xeon-e52660"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "a4",
@@ -121,7 +128,8 @@
     "hdd": 240,
     "cpu": [
       "intel-xeon-e52660"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "a4-v2",
@@ -139,7 +147,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "a4m-v2",
@@ -157,7 +166,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "a5",
@@ -171,7 +181,8 @@
     "hdd": 135,
     "cpu": [
       "intel-xeon-e52660"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "a6",
@@ -185,7 +196,8 @@
     "hdd": 285,
     "cpu": [
       "intel-xeon-e52660"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "a7",
@@ -199,7 +211,8 @@
     "hdd": 605,
     "cpu": [
       "intel-xeon-e52660"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "a8-v2",
@@ -217,7 +230,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "a8m-v2",
@@ -235,7 +249,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b12ms",
@@ -253,7 +268,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b16als-v2",
@@ -267,7 +283,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b16as-v2",
@@ -281,7 +298,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b16ls-v2",
@@ -296,7 +314,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b16ms",
@@ -314,7 +333,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b16pls-v2",
@@ -328,7 +348,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b16ps-v2",
@@ -342,7 +363,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b16s-v2",
@@ -357,7 +379,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b1ls",
@@ -375,7 +398,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b1ms",
@@ -393,7 +417,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b1s",
@@ -411,7 +436,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b20ms",
@@ -429,7 +455,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b2als-v2",
@@ -443,7 +470,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b2as-v2",
@@ -457,7 +485,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b2ats-v2",
@@ -471,7 +500,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b2ls-v2",
@@ -486,7 +516,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b2ms",
@@ -504,7 +535,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b2pls-v2",
@@ -518,7 +550,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b2ps-v2",
@@ -532,7 +565,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b2pts-v2",
@@ -546,7 +580,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b2s",
@@ -564,7 +599,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b2s-v2",
@@ -579,7 +615,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b2ts-v2",
@@ -594,7 +631,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b32als-v2",
@@ -608,7 +646,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b32as-v2",
@@ -622,7 +661,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b32ls-v2",
@@ -637,7 +677,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b32s-v2",
@@ -652,7 +693,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b4als-v2",
@@ -666,7 +708,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b4as-v2",
@@ -680,7 +723,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b4ls-v2",
@@ -695,7 +739,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b4ms",
@@ -713,7 +758,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b4pls-v2",
@@ -727,7 +773,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b4ps-v2",
@@ -741,7 +788,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b4s-v2",
@@ -756,7 +804,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b8als-v2",
@@ -770,7 +819,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b8as-v2",
@@ -784,7 +834,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b8ls-v2",
@@ -799,7 +850,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b8ms",
@@ -817,7 +869,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b8pls-v2",
@@ -831,7 +884,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b8ps-v2",
@@ -845,7 +899,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "b8s-v2",
@@ -860,7 +915,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d1",
@@ -874,7 +930,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d1-v2",
@@ -892,7 +949,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d11",
@@ -906,7 +964,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8171m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d11-v2",
@@ -924,7 +983,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d11s",
@@ -938,7 +998,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8171m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d12",
@@ -952,7 +1013,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8171m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d12-v2",
@@ -970,7 +1032,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d128ds-v6",
@@ -984,7 +1047,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d128lds-v6",
@@ -998,7 +1062,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d128ls-v6",
@@ -1012,7 +1077,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d128s-v6",
@@ -1026,7 +1092,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d12s",
@@ -1040,7 +1107,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8171m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d13",
@@ -1054,7 +1122,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d13-v2",
@@ -1072,7 +1141,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d13s",
@@ -1086,7 +1156,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d14",
@@ -1100,7 +1171,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8171m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d14-v2",
@@ -1118,7 +1190,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d14s",
@@ -1132,7 +1205,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d15-v2",
@@ -1150,7 +1224,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16-v3",
@@ -1168,7 +1243,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16-v4",
@@ -1184,7 +1260,8 @@
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16-v5",
@@ -1199,7 +1276,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16a-v4",
@@ -1214,7 +1292,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16ads-v5",
@@ -1228,7 +1307,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16ads-v6",
@@ -1242,7 +1322,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16alds-v6",
@@ -1256,7 +1337,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16als-v6",
@@ -1270,7 +1352,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16as-v4",
@@ -1285,7 +1368,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16as-v5",
@@ -1299,7 +1383,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16as-v6",
@@ -1313,7 +1398,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16d-v4",
@@ -1328,7 +1414,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16d-v5",
@@ -1342,7 +1429,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16ds-v4",
@@ -1357,7 +1445,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16ds-v5",
@@ -1371,7 +1460,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16ds-v6",
@@ -1385,7 +1475,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16lds-v5",
@@ -1400,7 +1491,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16lds-v6",
@@ -1414,7 +1506,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16ls-v5",
@@ -1429,7 +1522,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16ls-v6",
@@ -1443,7 +1537,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16pds-v5",
@@ -1457,7 +1552,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16pds-v6",
@@ -1471,7 +1567,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16plds-v5",
@@ -1485,7 +1582,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16plds-v6",
@@ -1499,7 +1597,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16pls-v5",
@@ -1513,7 +1612,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16pls-v6",
@@ -1527,7 +1627,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16ps-v5",
@@ -1541,7 +1642,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16ps-v6",
@@ -1555,7 +1657,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16s-v3",
@@ -1573,7 +1676,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16s-v4",
@@ -1589,7 +1693,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16s-v5",
@@ -1604,7 +1709,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d16s-v6",
@@ -1618,7 +1724,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d1s",
@@ -1632,7 +1739,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2",
@@ -1646,7 +1754,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2-v2",
@@ -1664,7 +1773,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2-v3",
@@ -1682,7 +1792,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2-v4",
@@ -1698,7 +1809,8 @@
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2-v5",
@@ -1713,7 +1825,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2a-v4",
@@ -1728,7 +1841,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2ads-v5",
@@ -1742,7 +1856,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2ads-v6",
@@ -1756,7 +1871,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2alds-v6",
@@ -1770,7 +1886,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2als-v6",
@@ -1784,7 +1901,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2as-v4",
@@ -1799,7 +1917,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2as-v5",
@@ -1813,7 +1932,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2as-v6",
@@ -1827,7 +1947,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2d-v4",
@@ -1842,7 +1963,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2d-v5",
@@ -1856,7 +1978,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2ds-v4",
@@ -1871,7 +1994,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2ds-v5",
@@ -1885,7 +2009,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2ds-v6",
@@ -1899,7 +2024,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2lds-v5",
@@ -1914,7 +2040,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2lds-v6",
@@ -1928,7 +2055,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2ls-v5",
@@ -1943,7 +2071,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2ls-v6",
@@ -1957,7 +2086,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2pds-v5",
@@ -1971,7 +2101,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2pds-v6",
@@ -1985,7 +2116,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2plds-v5",
@@ -1999,7 +2131,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2plds-v6",
@@ -2013,7 +2146,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2pls-v5",
@@ -2027,7 +2161,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2pls-v6",
@@ -2041,7 +2176,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2ps-v5",
@@ -2055,7 +2191,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2ps-v6",
@@ -2069,7 +2206,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2s",
@@ -2083,7 +2221,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2s-v3",
@@ -2101,7 +2240,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2s-v4",
@@ -2117,7 +2257,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2s-v5",
@@ -2132,7 +2273,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d2s-v6",
@@ -2146,7 +2288,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d3",
@@ -2160,7 +2303,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8171m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d3-v2",
@@ -2178,7 +2322,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32-v3",
@@ -2196,7 +2341,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32-v4",
@@ -2212,7 +2358,8 @@
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32-v5",
@@ -2227,7 +2374,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32a-v4",
@@ -2242,7 +2390,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32ads-v5",
@@ -2256,7 +2405,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32ads-v6",
@@ -2270,7 +2420,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32alds-v6",
@@ -2284,7 +2435,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32als-v6",
@@ -2298,7 +2450,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32as-v4",
@@ -2313,7 +2466,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32as-v5",
@@ -2327,7 +2481,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32as-v6",
@@ -2341,7 +2496,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32d-v4",
@@ -2356,7 +2512,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32d-v5",
@@ -2370,7 +2527,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32ds-v4",
@@ -2385,7 +2543,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32ds-v5",
@@ -2399,7 +2558,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32ds-v6",
@@ -2413,7 +2573,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32lds-v5",
@@ -2428,7 +2589,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32lds-v6",
@@ -2442,7 +2604,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32ls-v5",
@@ -2457,7 +2620,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32ls-v6",
@@ -2471,7 +2635,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32pds-v5",
@@ -2485,7 +2650,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32pds-v6",
@@ -2499,7 +2665,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32plds-v5",
@@ -2513,7 +2680,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32plds-v6",
@@ -2527,7 +2695,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32pls-v5",
@@ -2541,7 +2710,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32pls-v6",
@@ -2555,7 +2725,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32ps-v5",
@@ -2569,7 +2740,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32ps-v6",
@@ -2583,7 +2755,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32s-v3",
@@ -2601,7 +2774,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32s-v4",
@@ -2617,7 +2791,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32s-v5",
@@ -2632,7 +2807,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d32s-v6",
@@ -2646,7 +2822,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d3s",
@@ -2660,7 +2837,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8171m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4",
@@ -2674,7 +2852,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4-v2",
@@ -2692,7 +2871,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4-v3",
@@ -2710,7 +2890,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4-v4",
@@ -2726,7 +2907,8 @@
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4-v5",
@@ -2741,7 +2923,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48-v3",
@@ -2759,7 +2942,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48-v4",
@@ -2775,7 +2959,8 @@
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48-v5",
@@ -2790,7 +2975,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48a-v4",
@@ -2805,7 +2991,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48ads-v5",
@@ -2819,7 +3006,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48ads-v6",
@@ -2833,7 +3021,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48alds-v6",
@@ -2847,7 +3036,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48als-v6",
@@ -2861,7 +3051,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48as-v4",
@@ -2876,7 +3067,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48as-v5",
@@ -2890,7 +3082,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48as-v6",
@@ -2904,7 +3097,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48d-v4",
@@ -2919,7 +3113,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48d-v5",
@@ -2933,7 +3128,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48ds-v4",
@@ -2948,7 +3144,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48ds-v5",
@@ -2962,7 +3159,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48ds-v6",
@@ -2976,7 +3174,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48lds-v5",
@@ -2991,7 +3190,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48lds-v6",
@@ -3005,7 +3205,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48ls-v5",
@@ -3020,7 +3221,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48ls-v6",
@@ -3034,7 +3236,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48pds-v5",
@@ -3048,7 +3251,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48pds-v6",
@@ -3062,7 +3266,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48plds-v5",
@@ -3076,7 +3281,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48plds-v6",
@@ -3090,7 +3296,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48pls-v5",
@@ -3104,7 +3311,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48pls-v6",
@@ -3118,7 +3326,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48ps-v5",
@@ -3132,7 +3341,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48ps-v6",
@@ -3146,7 +3356,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48s-v3",
@@ -3164,7 +3375,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48s-v4",
@@ -3180,7 +3392,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48s-v5",
@@ -3195,7 +3408,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d48s-v6",
@@ -3209,7 +3423,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4a-v4",
@@ -3224,7 +3439,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4ads-v5",
@@ -3238,7 +3454,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4ads-v6",
@@ -3252,7 +3469,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4alds-v6",
@@ -3266,7 +3484,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4als-v6",
@@ -3280,7 +3499,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4as-v4",
@@ -3295,7 +3515,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4as-v5",
@@ -3309,7 +3530,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4as-v6",
@@ -3323,7 +3545,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4d-v4",
@@ -3338,7 +3561,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4d-v5",
@@ -3352,7 +3576,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4ds-v4",
@@ -3367,7 +3592,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4ds-v5",
@@ -3381,7 +3607,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4ds-v6",
@@ -3395,7 +3622,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4lds-v5",
@@ -3410,7 +3638,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4lds-v6",
@@ -3424,7 +3653,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4ls-v5",
@@ -3439,7 +3669,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4ls-v6",
@@ -3453,7 +3684,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4pds-v5",
@@ -3467,7 +3699,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4pds-v6",
@@ -3481,7 +3714,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4plds-v5",
@@ -3495,7 +3729,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4plds-v6",
@@ -3509,7 +3744,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4pls-v5",
@@ -3523,7 +3759,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4pls-v6",
@@ -3537,7 +3774,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4ps-v5",
@@ -3551,7 +3789,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4ps-v6",
@@ -3565,7 +3804,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4s",
@@ -3579,7 +3819,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4s-v3",
@@ -3597,7 +3838,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4s-v4",
@@ -3613,7 +3855,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4s-v5",
@@ -3628,7 +3871,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d4s-v6",
@@ -3642,7 +3886,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d5-v2",
@@ -3660,7 +3905,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64-v3",
@@ -3678,7 +3924,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64-v4",
@@ -3694,7 +3941,8 @@
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64-v5",
@@ -3709,7 +3957,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64a-v4",
@@ -3724,7 +3973,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64ads-v5",
@@ -3738,7 +3988,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64ads-v6",
@@ -3752,7 +4003,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64alds-v6",
@@ -3766,7 +4018,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64als-v6",
@@ -3780,7 +4033,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64as-v4",
@@ -3795,7 +4049,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64as-v5",
@@ -3809,7 +4064,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64as-v6",
@@ -3823,7 +4079,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64d-v4",
@@ -3838,7 +4095,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64d-v5",
@@ -3852,7 +4110,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64ds-v4",
@@ -3867,7 +4126,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64ds-v5",
@@ -3881,7 +4141,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64ds-v6",
@@ -3895,7 +4156,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64lds-v5",
@@ -3910,7 +4172,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64lds-v6",
@@ -3924,7 +4187,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64ls-v5",
@@ -3939,7 +4203,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64ls-v6",
@@ -3953,7 +4218,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64pds-v5",
@@ -3967,7 +4233,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64pds-v6",
@@ -3981,7 +4248,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64plds-v5",
@@ -3995,7 +4263,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64plds-v6",
@@ -4009,7 +4278,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64pls-v5",
@@ -4023,7 +4293,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64pls-v6",
@@ -4037,7 +4308,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64ps-v5",
@@ -4051,7 +4323,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64ps-v6",
@@ -4065,7 +4338,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64s-v3",
@@ -4083,7 +4357,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64s-v4",
@@ -4099,7 +4374,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64s-v5",
@@ -4114,7 +4390,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d64s-v6",
@@ -4128,7 +4405,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8-v3",
@@ -4146,7 +4424,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8-v4",
@@ -4162,7 +4441,8 @@
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8-v5",
@@ -4177,7 +4457,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8a-v4",
@@ -4192,7 +4473,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8ads-v5",
@@ -4206,7 +4488,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8ads-v6",
@@ -4220,7 +4503,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8alds-v6",
@@ -4234,7 +4518,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8als-v6",
@@ -4248,7 +4533,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8as-v4",
@@ -4263,7 +4549,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8as-v5",
@@ -4277,7 +4564,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8as-v6",
@@ -4291,7 +4579,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8d-v4",
@@ -4306,7 +4595,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8d-v5",
@@ -4320,7 +4610,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8ds-v4",
@@ -4335,7 +4626,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8ds-v5",
@@ -4349,7 +4641,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8ds-v6",
@@ -4363,7 +4656,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8lds-v5",
@@ -4378,7 +4672,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8lds-v6",
@@ -4392,7 +4687,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8ls-v5",
@@ -4407,7 +4703,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8ls-v6",
@@ -4421,7 +4718,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8pds-v5",
@@ -4435,7 +4733,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8pds-v6",
@@ -4449,7 +4748,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8plds-v5",
@@ -4463,7 +4763,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8plds-v6",
@@ -4477,7 +4778,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8pls-v5",
@@ -4491,7 +4793,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8pls-v6",
@@ -4505,7 +4808,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8ps-v5",
@@ -4519,7 +4823,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8ps-v6",
@@ -4533,7 +4838,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8s-v3",
@@ -4551,7 +4857,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8s-v4",
@@ -4567,7 +4874,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8s-v5",
@@ -4582,7 +4890,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d8s-v6",
@@ -4596,7 +4905,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96-v5",
@@ -4611,7 +4921,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96a-v4",
@@ -4626,7 +4937,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96ads-v5",
@@ -4640,7 +4952,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96ads-v6",
@@ -4654,7 +4967,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96alds-v6",
@@ -4668,7 +4982,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96als-v6",
@@ -4682,7 +4997,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96as-v4",
@@ -4697,7 +5013,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96as-v5",
@@ -4711,7 +5028,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96as-v6",
@@ -4725,7 +5043,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96d-v5",
@@ -4739,7 +5058,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96ds-v5",
@@ -4753,7 +5073,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96ds-v6",
@@ -4767,7 +5088,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96lds-v5",
@@ -4782,7 +5104,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96lds-v6",
@@ -4796,7 +5119,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96ls-v5",
@@ -4811,7 +5135,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96ls-v6",
@@ -4825,7 +5150,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96pds-v6",
@@ -4839,7 +5165,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96plds-v6",
@@ -4853,7 +5180,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96pls-v6",
@@ -4867,7 +5195,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96ps-v6",
@@ -4881,7 +5210,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96s-v5",
@@ -4896,7 +5226,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "d96s-v6",
@@ -4910,7 +5241,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc16ads-cc-v5",
@@ -4924,7 +5256,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc16ads-v5",
@@ -4938,7 +5271,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc16as-cc-v5",
@@ -4952,7 +5286,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc16as-v5",
@@ -4966,7 +5301,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc16ds-v3",
@@ -4980,7 +5316,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc16eds-v5",
@@ -4994,7 +5331,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc16es-v5",
@@ -5008,7 +5346,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc16s-v3",
@@ -5022,7 +5361,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc1ds-v3",
@@ -5036,7 +5376,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc1s-v2",
@@ -5050,7 +5391,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e2288g"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc1s-v3",
@@ -5064,7 +5406,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc24ds-v3",
@@ -5078,7 +5421,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc24s-v3",
@@ -5092,7 +5436,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc2ads-v5",
@@ -5106,7 +5451,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc2as-v5",
@@ -5120,7 +5466,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc2ds-v3",
@@ -5134,7 +5481,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc2eds-v5",
@@ -5148,7 +5496,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc2es-v5",
@@ -5162,7 +5511,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc2s-v2",
@@ -5176,7 +5526,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e2288g"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc2s-v3",
@@ -5190,7 +5541,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc32ads-cc-v5",
@@ -5204,7 +5556,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc32ads-v5",
@@ -5218,7 +5571,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc32as-cc-v5",
@@ -5232,7 +5586,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc32as-v5",
@@ -5246,7 +5601,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc32ds-v3",
@@ -5260,7 +5616,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc32eds-v5",
@@ -5274,7 +5631,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc32es-v5",
@@ -5288,7 +5646,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc32s-v3",
@@ -5302,7 +5661,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc48ads-cc-v5",
@@ -5316,7 +5676,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc48ads-v5",
@@ -5330,7 +5691,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc48as-cc-v5",
@@ -5344,7 +5706,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc48as-v5",
@@ -5358,7 +5721,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc48ds-v3",
@@ -5372,7 +5736,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc48eds-v5",
@@ -5386,7 +5751,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc48es-v5",
@@ -5400,7 +5766,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc48s-v3",
@@ -5414,7 +5781,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc4ads-cc-v5",
@@ -5428,7 +5796,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc4ads-v5",
@@ -5442,7 +5811,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc4as-cc-v5",
@@ -5456,7 +5826,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc4as-v5",
@@ -5470,7 +5841,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc4ds-v3",
@@ -5484,7 +5856,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc4eds-v5",
@@ -5498,7 +5871,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc4es-v5",
@@ -5512,7 +5886,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc4s-v2",
@@ -5526,7 +5901,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e2288g"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc4s-v3",
@@ -5540,7 +5916,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc64ads-cc-v5",
@@ -5554,7 +5931,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc64ads-v5",
@@ -5568,7 +5946,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc64as-cc-v5",
@@ -5582,7 +5961,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc64as-v5",
@@ -5596,7 +5976,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc64eds-v5",
@@ -5610,7 +5991,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc64es-v5",
@@ -5624,7 +6006,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc8ads-cc-v5",
@@ -5638,7 +6021,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc8ads-v5",
@@ -5652,7 +6036,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc8as-cc-v5",
@@ -5666,7 +6051,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc8as-v5",
@@ -5680,7 +6066,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc8ds-v3",
@@ -5694,7 +6081,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc8eds-v5",
@@ -5708,7 +6096,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc8es-v5",
@@ -5722,7 +6111,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc8s-v2",
@@ -5736,7 +6126,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e2288g"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc8s-v3",
@@ -5750,7 +6141,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc96ads-cc-v5",
@@ -5764,7 +6156,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc96ads-v5",
@@ -5778,7 +6171,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc96as-cc-v5",
@@ -5792,7 +6186,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc96as-v5",
@@ -5806,7 +6201,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc96eds-v5",
@@ -5820,7 +6216,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "dc96es-v5",
@@ -5834,7 +6231,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ds1-v2",
@@ -5852,7 +6250,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ds11-v2",
@@ -5870,7 +6269,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ds12-v2",
@@ -5888,7 +6288,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ds13-v2",
@@ -5906,7 +6307,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ds14-v2",
@@ -5924,7 +6326,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ds15-v2",
@@ -5942,7 +6345,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ds2-v2",
@@ -5960,7 +6364,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ds3-v2",
@@ -5978,7 +6383,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ds4-v2",
@@ -5996,7 +6402,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ds5-v2",
@@ -6014,7 +6421,8 @@
       "intel-xeon-8171m",
       "intel-xeon-e52673v4",
       "intel-xeon-e52673v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e104i-v5",
@@ -6029,7 +6437,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e104id-v5",
@@ -6043,7 +6452,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e104ids-v5",
@@ -6057,7 +6467,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e104is-v5",
@@ -6072,7 +6483,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e112iads-v5",
@@ -6086,7 +6498,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e112ias-v5",
@@ -6100,7 +6513,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e112ibds-v5",
@@ -6114,7 +6528,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e112ibs-v5",
@@ -6127,8 +6542,9 @@
     "ssd": 0,
     "hdd": 0,
     "cpu": [
-      "intel-xeon-8272cl"
-    ]
+      "intel-xeon-8370c"
+    ],
+    "virtual": true
   },
   {
     "id": "e128ds-v6",
@@ -6142,7 +6558,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e128s-v6",
@@ -6156,7 +6573,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16-v3",
@@ -6173,7 +6591,8 @@
       "intel-xeon-8272cl",
       "intel-xeon-8171m",
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16-v4",
@@ -6189,7 +6608,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16-v5",
@@ -6204,7 +6624,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16a-v4",
@@ -6219,7 +6640,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16ads-v5",
@@ -6233,7 +6655,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16ads-v6",
@@ -6247,7 +6670,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16as-v4",
@@ -6262,7 +6686,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16as-v5",
@@ -6276,7 +6701,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16as-v6",
@@ -6290,7 +6716,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16bds-v5",
@@ -6304,7 +6731,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16bs-v5",
@@ -6318,7 +6746,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16d-v4",
@@ -6333,7 +6762,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16d-v5",
@@ -6347,7 +6777,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16ds-v4",
@@ -6362,7 +6793,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16ds-v5",
@@ -6376,7 +6808,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16ds-v6",
@@ -6390,7 +6823,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16pds-v5",
@@ -6404,7 +6838,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16pds-v6",
@@ -6418,7 +6853,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16ps-v5",
@@ -6432,7 +6868,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16ps-v6",
@@ -6446,7 +6883,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16s-v3",
@@ -6463,7 +6901,8 @@
       "intel-xeon-8272cl",
       "intel-xeon-8171m",
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16s-v4",
@@ -6479,7 +6918,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16s-v5",
@@ -6494,7 +6934,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e16s-v6",
@@ -6508,7 +6949,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2-v3",
@@ -6525,7 +6967,8 @@
       "intel-xeon-8272cl",
       "intel-xeon-8171m",
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2-v4",
@@ -6541,7 +6984,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2-v5",
@@ -6556,7 +7000,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20-v3",
@@ -6573,7 +7018,8 @@
       "intel-xeon-8272cl",
       "intel-xeon-8171m",
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20-v4",
@@ -6589,7 +7035,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20-v5",
@@ -6604,7 +7051,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20a-v4",
@@ -6619,7 +7067,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20ads-v5",
@@ -6633,7 +7082,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20ads-v6",
@@ -6647,7 +7097,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20as-v4",
@@ -6662,7 +7113,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20as-v5",
@@ -6676,7 +7128,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20as-v6",
@@ -6690,7 +7143,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20d-v4",
@@ -6705,7 +7159,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20d-v5",
@@ -6719,7 +7174,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20ds-v4",
@@ -6734,7 +7190,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20ds-v5",
@@ -6748,7 +7205,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20ds-v6",
@@ -6762,7 +7220,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20pds-v5",
@@ -6776,7 +7235,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20ps-v5",
@@ -6790,7 +7250,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20s-v3",
@@ -6807,7 +7268,8 @@
       "intel-xeon-8272cl",
       "intel-xeon-8171m",
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20s-v4",
@@ -6823,7 +7285,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20s-v5",
@@ -6838,7 +7301,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e20s-v6",
@@ -6852,7 +7316,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2a-v4",
@@ -6867,7 +7332,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2ads-v5",
@@ -6881,7 +7347,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2ads-v6",
@@ -6895,7 +7362,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2as-v4",
@@ -6910,7 +7378,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2as-v5",
@@ -6924,7 +7393,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2as-v6",
@@ -6938,7 +7408,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2bds-v5",
@@ -6952,7 +7423,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2bs-v5",
@@ -6966,7 +7438,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2d-v4",
@@ -6981,7 +7454,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2d-v5",
@@ -6995,7 +7469,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2ds-v4",
@@ -7010,7 +7485,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2ds-v5",
@@ -7024,7 +7500,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2ds-v6",
@@ -7038,7 +7515,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2pds-v5",
@@ -7052,7 +7530,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2pds-v6",
@@ -7066,7 +7545,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2ps-v5",
@@ -7080,7 +7560,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2ps-v6",
@@ -7094,7 +7575,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2s-v3",
@@ -7111,7 +7593,8 @@
       "intel-xeon-8272cl",
       "intel-xeon-8171m",
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2s-v4",
@@ -7127,7 +7610,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2s-v5",
@@ -7142,7 +7626,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e2s-v6",
@@ -7156,7 +7641,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32-v3",
@@ -7173,7 +7659,8 @@
       "intel-xeon-8272cl",
       "intel-xeon-8171m",
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32-v4",
@@ -7189,7 +7676,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32-v5",
@@ -7204,7 +7692,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32a-v4",
@@ -7219,7 +7708,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32ads-v5",
@@ -7233,7 +7723,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32ads-v6",
@@ -7247,7 +7738,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32as-v4",
@@ -7262,7 +7754,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32as-v5",
@@ -7276,7 +7769,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32as-v6",
@@ -7290,7 +7784,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32bds-v5",
@@ -7304,7 +7799,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32bs-v5",
@@ -7318,7 +7814,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32d-v4",
@@ -7333,7 +7830,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32d-v5",
@@ -7347,7 +7845,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32ds-v4",
@@ -7362,7 +7861,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32ds-v5",
@@ -7376,7 +7876,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32ds-v6",
@@ -7390,7 +7891,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32pds-v5",
@@ -7404,7 +7906,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32pds-v6",
@@ -7418,7 +7921,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32ps-v5",
@@ -7432,7 +7936,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32ps-v6",
@@ -7446,7 +7951,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32s-v3",
@@ -7463,7 +7969,8 @@
       "intel-xeon-8272cl",
       "intel-xeon-8171m",
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32s-v4",
@@ -7479,7 +7986,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32s-v5",
@@ -7494,7 +8002,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e32s-v6",
@@ -7508,7 +8017,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4-v3",
@@ -7525,7 +8035,8 @@
       "intel-xeon-8272cl",
       "intel-xeon-8171m",
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4-v4",
@@ -7541,7 +8052,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4-v5",
@@ -7556,7 +8068,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48-v3",
@@ -7573,7 +8086,8 @@
       "intel-xeon-8272cl",
       "intel-xeon-8171m",
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48-v4",
@@ -7589,7 +8103,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48-v5",
@@ -7604,7 +8119,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48a-v4",
@@ -7619,7 +8135,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48ads-v5",
@@ -7633,7 +8150,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48ads-v6",
@@ -7647,7 +8165,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48as-v4",
@@ -7662,7 +8181,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48as-v5",
@@ -7676,7 +8196,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48as-v6",
@@ -7690,7 +8211,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48bds-v5",
@@ -7704,7 +8226,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48bs-v5",
@@ -7718,7 +8241,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48d-v4",
@@ -7733,7 +8257,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48d-v5",
@@ -7747,7 +8272,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48ds-v4",
@@ -7762,7 +8288,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48ds-v5",
@@ -7776,7 +8303,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48ds-v6",
@@ -7790,7 +8318,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48pds-v6",
@@ -7804,7 +8333,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48ps-v6",
@@ -7818,7 +8348,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48s-v3",
@@ -7835,7 +8366,8 @@
       "intel-xeon-8272cl",
       "intel-xeon-8171m",
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48s-v4",
@@ -7851,7 +8383,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48s-v5",
@@ -7866,7 +8399,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e48s-v6",
@@ -7880,7 +8414,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4a-v4",
@@ -7895,7 +8430,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4ads-v5",
@@ -7909,7 +8445,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4ads-v6",
@@ -7923,7 +8460,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4as-v4",
@@ -7938,7 +8476,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4as-v5",
@@ -7952,7 +8491,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4as-v6",
@@ -7966,7 +8506,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4bds-v5",
@@ -7980,7 +8521,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4bs-v5",
@@ -7994,7 +8536,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4d-v4",
@@ -8009,7 +8552,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4d-v5",
@@ -8023,7 +8567,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4ds-v4",
@@ -8038,7 +8583,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4ds-v5",
@@ -8052,7 +8598,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4ds-v6",
@@ -8066,7 +8613,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4pds-v5",
@@ -8080,7 +8628,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4pds-v6",
@@ -8094,7 +8643,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4ps-v5",
@@ -8108,7 +8658,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4ps-v6",
@@ -8122,7 +8673,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4s-v3",
@@ -8139,7 +8691,8 @@
       "intel-xeon-8272cl",
       "intel-xeon-8171m",
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4s-v4",
@@ -8155,7 +8708,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4s-v5",
@@ -8170,7 +8724,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e4s-v6",
@@ -8184,7 +8739,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64-v3",
@@ -8201,7 +8757,8 @@
       "intel-xeon-8272cl",
       "intel-xeon-8171m",
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64-v4",
@@ -8217,7 +8774,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64-v5",
@@ -8232,7 +8790,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64a-v4",
@@ -8247,7 +8806,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64ads-v5",
@@ -8261,7 +8821,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64ads-v6",
@@ -8275,7 +8836,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64as-v4",
@@ -8290,7 +8852,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64as-v5",
@@ -8304,7 +8867,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64as-v6",
@@ -8318,7 +8882,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64bds-v5",
@@ -8332,7 +8897,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64bs-v5",
@@ -8346,7 +8912,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64d-v4",
@@ -8361,7 +8928,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64d-v5",
@@ -8375,7 +8943,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64ds-v4",
@@ -8390,7 +8959,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64ds-v5",
@@ -8404,7 +8974,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64ds-v6",
@@ -8418,7 +8989,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64pds-v6",
@@ -8432,7 +9004,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64ps-v6",
@@ -8446,7 +9019,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64s-v3",
@@ -8463,7 +9037,8 @@
       "intel-xeon-8272cl",
       "intel-xeon-8171m",
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64s-v4",
@@ -8479,7 +9054,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64s-v5",
@@ -8494,7 +9070,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e64s-v6",
@@ -8508,7 +9085,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8-v3",
@@ -8525,7 +9103,8 @@
       "intel-xeon-8272cl",
       "intel-xeon-8171m",
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8-v4",
@@ -8541,7 +9120,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8-v5",
@@ -8556,7 +9136,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e80ids-v4",
@@ -8571,7 +9152,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e80is-v4",
@@ -8587,7 +9169,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8a-v4",
@@ -8602,7 +9185,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8ads-v5",
@@ -8616,7 +9200,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8ads-v6",
@@ -8630,7 +9215,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8as-v4",
@@ -8645,7 +9231,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8as-v5",
@@ -8659,7 +9246,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8as-v6",
@@ -8673,7 +9261,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8bds-v5",
@@ -8687,7 +9276,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8bs-v5",
@@ -8701,7 +9291,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8d-v4",
@@ -8716,7 +9307,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8d-v5",
@@ -8730,7 +9322,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8ds-v4",
@@ -8745,7 +9338,8 @@
     "cpu": [
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8ds-v5",
@@ -8759,7 +9353,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8ds-v6",
@@ -8773,7 +9368,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8pds-v5",
@@ -8787,7 +9383,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8pds-v6",
@@ -8801,7 +9398,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8ps-v5",
@@ -8815,7 +9413,8 @@
     "hdd": 0,
     "cpu": [
       "ampere-altra-q8030"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8ps-v6",
@@ -8829,7 +9428,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8s-v3",
@@ -8846,7 +9446,8 @@
       "intel-xeon-8272cl",
       "intel-xeon-8171m",
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8s-v4",
@@ -8862,7 +9463,8 @@
       "intel-xeon-8473c",
       "intel-xeon-8370c",
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8s-v5",
@@ -8877,7 +9479,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e8s-v6",
@@ -8891,7 +9494,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e96-v5",
@@ -8906,7 +9510,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e96a-v4",
@@ -8921,7 +9526,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e96ads-v5",
@@ -8935,7 +9541,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e96ads-v6",
@@ -8949,7 +9556,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e96as-v4",
@@ -8964,7 +9572,8 @@
     "cpu": [
       "amd-epyc-7452",
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e96as-v5",
@@ -8978,7 +9587,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e96as-v6",
@@ -8992,7 +9602,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e96bds-v5",
@@ -9006,7 +9617,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e96bs-v5",
@@ -9020,7 +9632,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e96d-v5",
@@ -9034,7 +9647,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e96ds-v5",
@@ -9048,7 +9662,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e96ds-v6",
@@ -9062,7 +9677,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e96pds-v6",
@@ -9076,7 +9692,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e96ps-v6",
@@ -9090,7 +9707,8 @@
     "hdd": 0,
     "cpu": [
       "azure-cobalt-100"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e96s-v5",
@@ -9105,7 +9723,8 @@
     "cpu": [
       "intel-xeon-8473c",
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "e96s-v6",
@@ -9119,7 +9738,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec128eds-v5",
@@ -9133,7 +9753,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec128es-v5",
@@ -9147,7 +9768,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec16ads-cc-v5",
@@ -9161,7 +9783,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec16ads-v5",
@@ -9175,7 +9798,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec16as-cc-v5",
@@ -9189,7 +9813,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec16as-v5",
@@ -9203,7 +9828,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec16eds-v5",
@@ -9217,7 +9843,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec16es-v5",
@@ -9231,7 +9858,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec20ads-cc-v5",
@@ -9245,7 +9873,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec20ads-v5",
@@ -9259,7 +9888,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec20as-cc-v5",
@@ -9273,7 +9903,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec20as-v5",
@@ -9287,7 +9918,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec2ads-v5",
@@ -9301,7 +9933,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec2as-v5",
@@ -9315,7 +9948,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec2eds-v5",
@@ -9329,7 +9963,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec2es-v5",
@@ -9343,7 +9978,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec32ads-cc-v5",
@@ -9357,7 +9993,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec32ads-v5",
@@ -9371,7 +10008,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec32as-cc-v5",
@@ -9385,7 +10023,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec32as-v5",
@@ -9399,7 +10038,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec32eds-v5",
@@ -9413,7 +10053,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec32es-v5",
@@ -9427,7 +10068,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec48ads-cc-v5",
@@ -9441,7 +10083,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec48ads-v5",
@@ -9455,7 +10098,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec48as-cc-v5",
@@ -9469,7 +10113,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec48as-v5",
@@ -9483,7 +10128,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec48eds-v5",
@@ -9497,7 +10143,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec48es-v5",
@@ -9511,7 +10158,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec4ads-cc-v5",
@@ -9525,7 +10173,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec4ads-v5",
@@ -9539,7 +10188,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec4as-cc-v5",
@@ -9553,7 +10203,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec4as-v5",
@@ -9567,7 +10218,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec4eds-v5",
@@ -9581,7 +10233,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec4es-v5",
@@ -9595,7 +10248,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec64ads-cc-v5",
@@ -9609,7 +10263,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec64ads-v5",
@@ -9623,7 +10278,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec64as-cc-v5",
@@ -9637,7 +10293,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec64as-v5",
@@ -9651,7 +10308,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec64eds-v5",
@@ -9665,7 +10323,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec64es-v5",
@@ -9679,7 +10338,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec8ads-cc-v5",
@@ -9693,7 +10353,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec8ads-v5",
@@ -9707,7 +10368,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec8as-cc-v5",
@@ -9721,7 +10383,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec8as-v5",
@@ -9735,7 +10398,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec8eds-v5",
@@ -9749,7 +10413,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec8es-v5",
@@ -9763,7 +10428,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8473c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec96ads-cc-v5",
@@ -9777,7 +10443,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec96ads-v5",
@@ -9791,7 +10458,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec96as-cc-v5",
@@ -9805,7 +10473,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec96as-v5",
@@ -9819,7 +10488,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec96iads-v5",
@@ -9833,7 +10503,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ec96ias-v5",
@@ -9847,7 +10518,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f1",
@@ -9861,7 +10533,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f16",
@@ -9875,7 +10548,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f16als-v6",
@@ -9889,7 +10563,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f16ams-v6",
@@ -9903,7 +10578,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f16as-v6",
@@ -9917,7 +10593,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f16s",
@@ -9931,7 +10608,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f16s-v2",
@@ -9947,7 +10625,8 @@
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
       "intel-xeon-8168"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f1s",
@@ -9961,7 +10640,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8272cl"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f2",
@@ -9975,7 +10655,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f2als-v6",
@@ -9989,7 +10670,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f2ams-v6",
@@ -10003,7 +10685,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f2as-v6",
@@ -10017,7 +10700,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f2s",
@@ -10031,7 +10715,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f2s-v2",
@@ -10047,7 +10732,8 @@
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
       "intel-xeon-8168"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f32als-v6",
@@ -10061,7 +10747,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f32ams-v6",
@@ -10075,7 +10762,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f32as-v6",
@@ -10089,7 +10777,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f32s-v2",
@@ -10105,7 +10794,8 @@
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
       "intel-xeon-8168"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f4",
@@ -10119,7 +10809,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f48als-v6",
@@ -10133,7 +10824,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f48ams-v6",
@@ -10147,7 +10839,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f48as-v6",
@@ -10161,7 +10854,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f48s-v2",
@@ -10177,7 +10871,8 @@
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
       "intel-xeon-8168"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f4als-v6",
@@ -10191,7 +10886,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f4ams-v6",
@@ -10205,7 +10901,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f4as-v6",
@@ -10219,7 +10916,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f4s",
@@ -10233,7 +10931,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f4s-v2",
@@ -10249,7 +10948,8 @@
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
       "intel-xeon-8168"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f64als-v6",
@@ -10263,7 +10963,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f64ams-v6",
@@ -10277,7 +10978,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f64as-v6",
@@ -10291,7 +10993,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f64s-v2",
@@ -10307,7 +11010,8 @@
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
       "intel-xeon-8168"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f72s-v2",
@@ -10323,7 +11027,8 @@
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
       "intel-xeon-8168"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f8",
@@ -10337,7 +11042,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52673v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f8als-v6",
@@ -10351,7 +11057,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f8ams-v6",
@@ -10365,7 +11072,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f8as-v6",
@@ -10379,7 +11087,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f8s",
@@ -10393,7 +11102,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8171m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "f8s-v2",
@@ -10409,7 +11119,8 @@
       "intel-xeon-8370c",
       "intel-xeon-8272cl",
       "intel-xeon-8168"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx12mds",
@@ -10423,7 +11134,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-6246r"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx16-4mds-v2",
@@ -10437,7 +11149,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx16mds-v2",
@@ -10451,7 +11164,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx16ms-v2",
@@ -10465,7 +11179,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx24mds",
@@ -10479,7 +11194,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-6246r"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx2mds-v2",
@@ -10493,7 +11209,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx2ms-v2",
@@ -10507,7 +11224,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx32-16mds-v2",
@@ -10521,7 +11239,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx32mds-v2",
@@ -10535,7 +11254,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx32ms-v2",
@@ -10549,7 +11269,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx36mds",
@@ -10563,7 +11284,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-6246r"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx4-2mds-v2",
@@ -10577,7 +11299,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx48-12mds-v2",
@@ -10591,7 +11314,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx48mds",
@@ -10605,7 +11329,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-6246r"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx48mds-v2",
@@ -10619,7 +11344,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx48ms-v2",
@@ -10633,7 +11359,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx4mds",
@@ -10647,7 +11374,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-6246r"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx4mds-v2",
@@ -10661,7 +11389,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx4ms-v2",
@@ -10675,7 +11404,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx64-16mds-v2",
@@ -10689,7 +11419,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx64mds-v2",
@@ -10703,7 +11434,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx64ms-v2",
@@ -10717,7 +11449,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx8-2mds-v2",
@@ -10731,7 +11464,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx8mds-v2",
@@ -10745,7 +11479,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx8ms-v2",
@@ -10759,7 +11494,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx96mds-v2",
@@ -10773,7 +11509,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "fx96ms-v2",
@@ -10787,7 +11524,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8573c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "g1",
@@ -10801,7 +11539,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52698bv3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "g2",
@@ -10815,7 +11554,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52698bv3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "g3",
@@ -10829,7 +11569,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52698bv3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "g4",
@@ -10843,7 +11584,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52698bv3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "g5",
@@ -10857,7 +11599,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52698bv3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "gs1",
@@ -10871,7 +11614,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52698bv3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "gs2",
@@ -10885,7 +11629,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52698bv3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "gs3",
@@ -10899,7 +11644,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52698bv3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "gs4-4",
@@ -10913,7 +11659,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52698bv3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "gs5-16",
@@ -10927,7 +11674,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52698bv3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb120-16rs-v2",
@@ -10941,7 +11689,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v12"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb120-16rs-v3",
@@ -10955,7 +11704,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v73x"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb120-32rs-v2",
@@ -10969,7 +11719,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v12"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb120-32rs-v3",
@@ -10983,7 +11734,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v73x"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb120-64rs-v2",
@@ -10997,7 +11749,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v12"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb120-64rs-v3",
@@ -11011,7 +11764,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v73x"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb120-96rs-v2",
@@ -11025,7 +11779,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v12"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb120-96rs-v3",
@@ -11039,7 +11794,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v73x"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb120rs-v2",
@@ -11053,7 +11809,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v12"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb120rs-v3",
@@ -11067,7 +11824,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v73x"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb176-144rs-v4",
@@ -11081,7 +11839,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v33x"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb176-24rs-v4",
@@ -11095,7 +11854,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v33x"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb176-48rs-v4",
@@ -11109,7 +11869,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v33x"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb176-96rs-v4",
@@ -11123,7 +11884,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v33x"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb176rs-v4",
@@ -11137,7 +11899,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v33x"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb60-15rs",
@@ -11151,7 +11914,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7551"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb60-30rs",
@@ -11165,7 +11929,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7551"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb60-45rs",
@@ -11179,7 +11944,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7551"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hb60rs",
@@ -11193,7 +11959,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7551"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hc44-16rs",
@@ -11207,7 +11974,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8168"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hc44-32rs",
@@ -11221,7 +11989,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8168"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hc44rs",
@@ -11235,7 +12004,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8168"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hx176-144rs",
@@ -11249,7 +12019,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v33x"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hx176-24rs",
@@ -11263,7 +12034,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v33x"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hx176-48rs",
@@ -11277,7 +12049,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v33x"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hx176-96rs",
@@ -11291,7 +12064,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v33x"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "hx176rs",
@@ -11305,7 +12079,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v33x"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l16as-v3",
@@ -11319,7 +12094,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l16s",
@@ -11333,7 +12109,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52698bv3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l16s-v2",
@@ -11347,7 +12124,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7551"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l16s-v3",
@@ -11361,7 +12139,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l32as-v3",
@@ -11375,7 +12154,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l32s",
@@ -11389,7 +12169,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52698bv3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l32s-v2",
@@ -11403,7 +12184,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7551"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l32s-v3",
@@ -11417,7 +12199,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l48as-v3",
@@ -11431,7 +12214,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l48s-v2",
@@ -11445,7 +12229,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7551"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l48s-v3",
@@ -11459,7 +12244,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l4s",
@@ -11473,7 +12259,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52698bv3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l64as-v3",
@@ -11487,7 +12274,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l64s-v2",
@@ -11501,7 +12289,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7551"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l64s-v3",
@@ -11515,7 +12304,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l80as-v3",
@@ -11529,7 +12319,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l80s-v2",
@@ -11543,7 +12334,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7551"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l80s-v3",
@@ -11557,7 +12349,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l8as-v3",
@@ -11571,7 +12364,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l8s",
@@ -11585,7 +12379,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52698bv3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l8s-v2",
@@ -11599,7 +12394,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7551"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "l8s-v3",
@@ -11613,7 +12409,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8370c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m128bds-v3",
@@ -11627,7 +12424,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m128bds3-v3",
@@ -11641,7 +12439,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m128bs-v3",
@@ -11655,7 +12454,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m128dms-v2",
@@ -11669,7 +12469,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m128ds-v2",
@@ -11683,7 +12484,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m128m",
@@ -11698,7 +12500,8 @@
     "cpu": [
       "intel-xeon-e78890v3",
       "intel-xeon-8280m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m128ms",
@@ -11713,7 +12516,8 @@
     "cpu": [
       "intel-xeon-e78890v3",
       "intel-xeon-8280m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m128ms-v2",
@@ -11727,7 +12531,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8280"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m128s",
@@ -11742,7 +12547,8 @@
     "cpu": [
       "intel-xeon-e78890v3",
       "intel-xeon-8280m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m128s-v2",
@@ -11756,7 +12562,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8280"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m12ds-v3",
@@ -11770,7 +12577,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m12s-v3",
@@ -11784,7 +12592,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m16bds-v3",
@@ -11798,7 +12607,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m16bs-v3",
@@ -11812,7 +12622,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m16ms",
@@ -11827,7 +12638,8 @@
     "cpu": [
       "intel-xeon-e78890v3",
       "intel-xeon-8280m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m176bds-v3",
@@ -11841,7 +12653,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m176bds4-v3",
@@ -11855,7 +12668,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m176bs-v3",
@@ -11869,7 +12683,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m176ds3-v3",
@@ -11883,7 +12698,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m176ds4-v3",
@@ -11897,7 +12713,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m176s3-v3",
@@ -11911,7 +12728,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m176s4-v3",
@@ -11925,7 +12743,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m1792ixds32-v3",
@@ -11939,7 +12758,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8490h"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m192idms-v2",
@@ -11953,7 +12773,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m192ids-v2",
@@ -11967,7 +12788,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m192ims-v2",
@@ -11981,7 +12803,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8280"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m192is-v2",
@@ -11995,7 +12818,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8280"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m208ms-v2",
@@ -12009,7 +12833,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8180m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m208s-v2",
@@ -12023,7 +12848,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8180m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m24ds-v3",
@@ -12037,7 +12863,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m24s-v3",
@@ -12051,7 +12878,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m32bds-v3",
@@ -12065,7 +12893,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m32bs-v3",
@@ -12079,7 +12908,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m32dms-v2",
@@ -12093,7 +12923,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m32ls",
@@ -12108,7 +12939,8 @@
     "cpu": [
       "intel-xeon-e78890v3",
       "intel-xeon-8280m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m32ms",
@@ -12123,7 +12955,8 @@
     "cpu": [
       "intel-xeon-e78890v3",
       "intel-xeon-8280m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m32ms-v2",
@@ -12137,7 +12970,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8280"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m32ts",
@@ -12152,7 +12986,8 @@
     "cpu": [
       "intel-xeon-e78890v3",
       "intel-xeon-8280m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m416ds6-v3",
@@ -12166,7 +13001,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m416ds8-v3",
@@ -12180,7 +13016,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m416ms-v2",
@@ -12194,7 +13031,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8180m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m416s-v2",
@@ -12208,7 +13046,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8180m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m416s6-v3",
@@ -12222,7 +13061,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m416s8-v3",
@@ -12236,7 +13076,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m48bds-v3",
@@ -12250,7 +13091,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m48bs-v3",
@@ -12264,7 +13106,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m48ds1-v3",
@@ -12278,7 +13121,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m48s1-v3",
@@ -12292,7 +13136,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m624ds12-v3",
@@ -12306,7 +13151,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m624s12-v3",
@@ -12320,7 +13166,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m624s12-v3",
@@ -12334,7 +13181,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m64bds-v3",
@@ -12348,7 +13196,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m64bds1-v3",
@@ -12362,7 +13211,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m64bs-v3",
@@ -12376,7 +13226,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m64dms-v2",
@@ -12390,7 +13241,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m64ds-v2",
@@ -12404,7 +13256,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m64ls",
@@ -12419,7 +13272,8 @@
     "cpu": [
       "intel-xeon-e78890v3",
       "intel-xeon-8280m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m64m",
@@ -12434,7 +13288,8 @@
     "cpu": [
       "intel-xeon-e78890v3",
       "intel-xeon-8280m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m64ms",
@@ -12449,7 +13304,8 @@
     "cpu": [
       "intel-xeon-e78890v3",
       "intel-xeon-8280m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m64ms-v2",
@@ -12463,7 +13319,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8280"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m64s",
@@ -12478,7 +13335,8 @@
     "cpu": [
       "intel-xeon-e78890v3",
       "intel-xeon-8280m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m64s-v2",
@@ -12492,7 +13350,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8280"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m832ds12-v3",
@@ -12506,7 +13365,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m832ids16-v3",
@@ -12520,7 +13380,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m832is16-v3",
@@ -12534,7 +13395,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m832is168-v3",
@@ -12548,7 +13410,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m832s12-v3",
@@ -12562,7 +13425,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m832s12-v3",
@@ -12576,7 +13440,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m896ixds32-v3",
@@ -12590,7 +13455,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8490h"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m8ms",
@@ -12605,7 +13471,8 @@
     "cpu": [
       "intel-xeon-e78890v3",
       "intel-xeon-8280m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m96bds-v3",
@@ -12619,7 +13486,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m96bds2-v3",
@@ -12633,7 +13501,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m96bs-v3",
@@ -12647,7 +13516,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m96ds1-v3",
@@ -12661,7 +13531,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m96ds2-v3",
@@ -12675,7 +13546,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m96s1-v3",
@@ -12689,7 +13561,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "m96s2-v3",
@@ -12703,7 +13576,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc12",
@@ -12718,7 +13592,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc12s-v2",
@@ -12733,7 +13608,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc12s-v3",
@@ -12748,7 +13624,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc16as-t4-v3",
@@ -12763,7 +13640,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc24",
@@ -12778,7 +13656,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc24ads-a100-v4",
@@ -12793,7 +13672,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v13"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc24r",
@@ -12808,7 +13688,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc24rs-v2",
@@ -12823,7 +13704,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc24rs-v3",
@@ -12838,7 +13720,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc24s-v2",
@@ -12853,7 +13736,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc24s-v3",
@@ -12868,7 +13752,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc40ads-h100-v5",
@@ -12883,7 +13768,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc48ads-a100-v4",
@@ -12898,7 +13784,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v13"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc4as-t4-v3",
@@ -12913,7 +13800,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc6",
@@ -12928,7 +13816,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc64as-t4-v3",
@@ -12943,7 +13832,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc6s-v2",
@@ -12958,7 +13848,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc6s-v3",
@@ -12973,7 +13864,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc80adis-h100-v5",
@@ -12988,7 +13880,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc8as-t4-v3",
@@ -13003,7 +13896,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nc96ads-a100-v4",
@@ -13018,7 +13912,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v13"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ncc40ads-h100-v5",
@@ -13033,7 +13928,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v74"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nd12s",
@@ -13048,7 +13944,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nd24rs",
@@ -13063,7 +13960,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nd24s",
@@ -13078,7 +13976,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nd40rs-v2",
@@ -13093,7 +13992,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8168"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nd6s",
@@ -13108,7 +14008,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nd96amsr-a100-v4",
@@ -13123,7 +14024,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v12"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nd96asr-a100-v4",
@@ -13138,7 +14040,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v12"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nd96isr-h100-v5",
@@ -13153,7 +14056,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nd96isr-h200-v5",
@@ -13168,7 +14072,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nd96isr-mi300x-v5",
@@ -13183,7 +14088,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8480c"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ng16ads-v620-v1",
@@ -13198,7 +14104,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ng32adms-v620-v1",
@@ -13213,7 +14120,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ng32ads-v620-v1",
@@ -13228,7 +14136,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "ng8ads-v620-v1",
@@ -13243,7 +14152,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7763"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nm16ads-ma35d",
@@ -13258,7 +14168,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v64f"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "np10s",
@@ -13273,7 +14184,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8171m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "np20s",
@@ -13288,7 +14200,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8171m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "np40s",
@@ -13303,7 +14216,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8171m"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv12",
@@ -13318,7 +14232,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv12ads-a10-v5",
@@ -13333,7 +14248,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-74f3v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv12ads-v710-v5",
@@ -13348,7 +14264,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v64f"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv12s-v3",
@@ -13363,7 +14280,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv16as-v4",
@@ -13378,7 +14296,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v12"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv18ads-a10-v5",
@@ -13393,7 +14312,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-74f3v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv24",
@@ -13408,7 +14328,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv24ads-v710-v5",
@@ -13423,7 +14344,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v64f"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv24s-v3",
@@ -13438,7 +14360,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv28ads-v710-v5",
@@ -13453,7 +14376,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v64f"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv32as-v4",
@@ -13468,7 +14392,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v12"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv36adms-a10-v5",
@@ -13483,7 +14408,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-74f3v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv36ads-a10-v5",
@@ -13498,7 +14424,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-74f3v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv48s-v3",
@@ -13513,7 +14440,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v4"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv4ads-v710-v5",
@@ -13528,7 +14456,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v64f"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv4as-v4",
@@ -13543,7 +14472,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v12"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv6",
@@ -13558,7 +14488,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52690v3"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv6adsv5",
@@ -13573,7 +14504,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-74f3v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv72ads-a10-v5",
@@ -13588,7 +14520,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-74f3v"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv8ads-v710-v5",
@@ -13603,7 +14536,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-9v64f"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "nv8as-v4",
@@ -13618,7 +14552,8 @@
     "hdd": 0,
     "cpu": [
       "amd-epyc-7v12"
-    ]
+    ],
+    "virtual": true
   },
   {
     "id": "s144",
@@ -13632,7 +14567,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e78890v3"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s144m",
@@ -13646,7 +14582,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e78890v3"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s192",
@@ -13660,7 +14597,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e78890v4"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s192m",
@@ -13674,7 +14612,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e78890v4"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s192xm",
@@ -13688,7 +14627,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e78890v4"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s224",
@@ -13702,7 +14642,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s224m",
@@ -13716,7 +14657,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s224om",
@@ -13730,7 +14672,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s224oo",
@@ -13744,7 +14687,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s224oom",
@@ -13758,7 +14702,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s224ooo",
@@ -13772,7 +14717,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s384",
@@ -13786,7 +14732,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e78890v4"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s384m",
@@ -13800,7 +14747,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e78890v4"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s384xm",
@@ -13814,7 +14762,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e78890v4"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s384xxm",
@@ -13828,7 +14777,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e78890v4"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s448",
@@ -13842,7 +14792,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s448m",
@@ -13856,7 +14807,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s448om",
@@ -13870,7 +14822,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s448oo",
@@ -13884,7 +14837,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s448oom",
@@ -13898,7 +14852,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s448ooo",
@@ -13912,7 +14867,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s576m",
@@ -13926,7 +14882,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e78890v4"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s576xm",
@@ -13940,7 +14897,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e78890v4"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s672",
@@ -13954,7 +14912,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s672m",
@@ -13968,7 +14927,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s672om",
@@ -13982,7 +14942,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s672oo",
@@ -13996,7 +14957,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s672oom",
@@ -14010,7 +14972,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s672ooo",
@@ -14024,7 +14987,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s72",
@@ -14038,7 +15002,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e78890v3"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s72m",
@@ -14052,7 +15017,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e78890v3"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s768m",
@@ -14066,7 +15032,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e78890v4"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s768xm",
@@ -14080,7 +15047,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e78890v4"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s896",
@@ -14094,7 +15062,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s896m",
@@ -14108,7 +15077,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s896om",
@@ -14122,7 +15092,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s896oo",
@@ -14136,7 +15107,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s896oom",
@@ -14150,7 +15122,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s896ooo",
@@ -14164,7 +15137,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-8276"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s96",
@@ -14178,7 +15152,8 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e78890v4"
-    ]
+    ],
+    "virtual": false
   },
   {
     "id": "s960m",
@@ -14192,6 +15167,7 @@
     "hdd": 0,
     "cpu": [
       "intel-xeon-e78890v4"
-    ]
+    ],
+    "virtual": false
   }
 ]
