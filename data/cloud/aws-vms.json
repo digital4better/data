@@ -3490,7 +3490,7 @@
     "vcpus": 48,
     "memory": 192,
     "accelerators": 4,
-    "accelerator": "NVIDIA L4",
+    "accelerator": "nvidia-tesla-t4",
     "ssd": 3760,
     "hdd": 0,
     "cpu": [
@@ -3505,7 +3505,7 @@
     "vcpus": 64,
     "memory": 256,
     "accelerators": 1,
-    "accelerator": "NVIDIA L4",
+    "accelerator": "nvidia-tesla-t4",
     "ssd": 1880,
     "hdd": 0,
     "cpu": [
@@ -3520,7 +3520,7 @@
     "vcpus": 96,
     "memory": 384,
     "accelerators": 4,
-    "accelerator": "NVIDIA L4",
+    "accelerator": "nvidia-tesla-t4",
     "ssd": 3760,
     "hdd": 0,
     "cpu": [
