@@ -36,7 +36,7 @@ export const App: FC = () => {
   const [emissions, setEmissions] = useState({});
   const [regions, setRegions] = useState([]);
   const [data, setData] = useState([]);
-  const [year, setYear] = useState("2024");
+  const [year, setYear] = useState("2025");
   const [impact, setImpact] = useState("gwp");
   const [zoom, setZoom] = useState("WO");
   useEffect(() => {
@@ -135,7 +135,7 @@ export const App: FC = () => {
                   name="period"
                   value={year}
                   onChange={setYear}
-                  options={["2024", "2023", "2022", "2021", "2020", "2019"].map((year) => ({
+                  options={["2025", "2024", "2023", "2022", "2021", "2020", "2019"].map((year) => ({
                     label: year,
                     value: year,
                   }))}
