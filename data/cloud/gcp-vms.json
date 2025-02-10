@@ -13,7 +13,8 @@
     "cpu": [
       "intel-xeon-8273cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   },
   {
     "id": "a2-highgpu-2g",
@@ -29,7 +30,8 @@
     "cpu": [
       "intel-xeon-8273cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   },
   {
     "id": "a2-highgpu-4g",
@@ -45,7 +47,8 @@
     "cpu": [
       "intel-xeon-8273cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   },
   {
     "id": "a2-highgpu-8g",
@@ -61,7 +64,8 @@
     "cpu": [
       "intel-xeon-8273cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   },
   {
     "id": "a2-megagpu-16g",
@@ -77,7 +81,8 @@
     "cpu": [
       "intel-xeon-8273cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   },
   {
     "id": "a2-ultragpu-1g",
@@ -93,7 +98,8 @@
     "cpu": [
       "intel-xeon-8273cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   },
   {
     "id": "a2-ultragpu-2g",
@@ -109,7 +115,8 @@
     "cpu": [
       "intel-xeon-8273cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   },
   {
     "id": "a2-ultragpu-4g",
@@ -125,7 +132,8 @@
     "cpu": [
       "intel-xeon-8273cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "a2-ultragpu-8g",
@@ -141,7 +149,8 @@
     "cpu": [
       "intel-xeon-8273cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   },
   {
     "id": "a3-edgegpu-8g",
@@ -157,7 +166,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "a3-highgpu-1g",
@@ -173,7 +183,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   },
   {
     "id": "a3-highgpu-2g",
@@ -189,7 +200,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "a3-highgpu-4g",
@@ -205,7 +217,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "a3-highgpu-8g",
@@ -221,7 +234,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "a3-megagpu-8g",
@@ -237,7 +251,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "a3-ultragpu-8g",
@@ -253,7 +268,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "c2-standard-16",
@@ -268,7 +284,8 @@
     "cpu": [
       "intel-xeon-6253cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5107
   },
   {
     "id": "c2-standard-30",
@@ -283,7 +300,8 @@
     "cpu": [
       "intel-xeon-6253cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5107
   },
   {
     "id": "c2-standard-4",
@@ -298,7 +316,8 @@
     "cpu": [
       "intel-xeon-6253cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5107
   },
   {
     "id": "c2-standard-60",
@@ -313,7 +332,8 @@
     "cpu": [
       "intel-xeon-6253cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5107
   },
   {
     "id": "c2-standard-8",
@@ -328,7 +348,8 @@
     "cpu": [
       "intel-xeon-6253cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5107
   },
   {
     "id": "c2d-highcpu-112",
@@ -343,7 +364,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "c2d-highcpu-16",
@@ -358,7 +380,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "c2d-highcpu-2",
@@ -373,7 +396,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "c2d-highcpu-32",
@@ -388,7 +412,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "c2d-highcpu-4",
@@ -403,7 +428,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "c2d-highcpu-56",
@@ -418,7 +444,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "c2d-highcpu-8",
@@ -433,7 +460,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "c2d-highmem-112",
@@ -448,7 +476,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "c2d-highmem-16",
@@ -463,7 +492,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "c2d-highmem-2",
@@ -478,7 +508,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "c2d-highmem-32",
@@ -493,7 +524,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "c2d-highmem-4",
@@ -508,7 +540,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "c2d-highmem-56",
@@ -523,7 +556,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0432
   },
   {
     "id": "c2d-highmem-8",
@@ -538,7 +572,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "c2d-standard-112",
@@ -553,7 +588,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "c2d-standard-16",
@@ -568,7 +604,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "c2d-standard-2",
@@ -583,7 +620,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "c2d-standard-32",
@@ -598,7 +636,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "c2d-standard-4",
@@ -613,7 +652,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "c2d-standard-56",
@@ -628,7 +668,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "c2d-standard-8",
@@ -643,7 +684,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "c3-highcpu-176",
@@ -658,7 +700,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "c3-highcpu-192-metal",
@@ -673,7 +716,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.1
   },
   {
     "id": "c3-highcpu-22",
@@ -688,7 +732,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "c3-highcpu-4",
@@ -703,7 +748,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0972
   },
   {
     "id": "c3-highcpu-44",
@@ -718,7 +764,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "c3-highcpu-8",
@@ -733,7 +780,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0972
   },
   {
     "id": "c3-highcpu-88",
@@ -748,7 +796,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "c3-highmem-176",
@@ -763,7 +812,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "c3-highmem-192-metal",
@@ -778,7 +828,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 2.3205
   },
   {
     "id": "c3-highmem-22",
@@ -793,7 +844,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   },
   {
     "id": "c3-highmem-4",
@@ -808,7 +860,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "c3-highmem-44",
@@ -823,7 +876,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   },
   {
     "id": "c3-highmem-8",
@@ -838,7 +892,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "c3-highmem-88",
@@ -853,7 +908,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   },
   {
     "id": "c3-standard-176",
@@ -868,7 +924,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "c3-standard-176-lssd",
@@ -883,7 +940,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "c3-standard-192-metal",
@@ -898,7 +956,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 2.3205
   },
   {
     "id": "c3-standard-22",
@@ -913,7 +972,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   },
   {
     "id": "c3-standard-22-lssd",
@@ -928,7 +988,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   },
   {
     "id": "c3-standard-4",
@@ -943,7 +1004,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5107
   },
   {
     "id": "c3-standard-4-lssd",
@@ -958,7 +1020,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5107
   },
   {
     "id": "c3-standard-44",
@@ -973,7 +1036,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "c3-standard-44-lssd",
@@ -988,7 +1052,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "c3-standard-8",
@@ -1003,7 +1068,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5107
   },
   {
     "id": "c3-standard-8-lssd",
@@ -1018,7 +1084,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5107
   },
   {
     "id": "c3-standard-88",
@@ -1033,7 +1100,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "c3-standard-88-lssd",
@@ -1048,7 +1116,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "c3d-highcpu-16",
@@ -1063,7 +1132,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "c3d-highcpu-180",
@@ -1078,7 +1148,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "c3d-highcpu-30",
@@ -1093,7 +1164,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "c3d-highcpu-360",
@@ -1108,7 +1180,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "c3d-highcpu-4",
@@ -1123,7 +1196,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "c3d-highcpu-60",
@@ -1138,7 +1212,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "c3d-highcpu-8",
@@ -1153,7 +1228,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "c3d-highcpu-90",
@@ -1168,7 +1244,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "c3d-highmem-16",
@@ -1183,7 +1260,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "c3d-highmem-16-lssd",
@@ -1198,7 +1276,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "c3d-highmem-180",
@@ -1213,7 +1292,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "c3d-highmem-180-lssd",
@@ -1228,7 +1308,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "c3d-highmem-30",
@@ -1243,7 +1324,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "c3d-highmem-30-lssd",
@@ -1258,7 +1340,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "c3d-highmem-360",
@@ -1273,7 +1356,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "c3d-highmem-360-lssd",
@@ -1288,7 +1372,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "c3d-highmem-4",
@@ -1303,7 +1388,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "c3d-highmem-60",
@@ -1318,7 +1404,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "c3d-highmem-60-lssd",
@@ -1333,7 +1420,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "c3d-highmem-8",
@@ -1348,7 +1436,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "c3d-highmem-8-lssd",
@@ -1363,7 +1452,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "c3d-highmem-90",
@@ -1378,7 +1468,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   },
   {
     "id": "c3d-highmem-90-lssd",
@@ -1393,7 +1484,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   },
   {
     "id": "c3d-standard-16",
@@ -1408,7 +1500,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "c3d-standard-16-lssd",
@@ -1423,7 +1516,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "c3d-standard-180",
@@ -1438,7 +1532,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "c3d-standard-180-lssd",
@@ -1453,7 +1548,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "c3d-standard-30",
@@ -1468,7 +1564,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5107
   },
   {
     "id": "c3d-standard-30-lssd",
@@ -1483,7 +1580,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5107
   },
   {
     "id": "c3d-standard-360",
@@ -1498,7 +1596,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "c3d-standard-360-lssd",
@@ -1513,7 +1612,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "c3d-standard-4",
@@ -1528,7 +1628,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "c3d-standard-60",
@@ -1543,7 +1644,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "c3d-standard-60-lssd",
@@ -1558,7 +1660,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "c3d-standard-8",
@@ -1573,7 +1676,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "c3d-standard-8-lssd",
@@ -1588,7 +1692,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "c3d-standard-90",
@@ -1603,7 +1708,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "c3d-standard-90-lssd",
@@ -1618,7 +1724,8 @@
     "cpu": [
       "amd-epyc-9b14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "c4-highcpu-16",
@@ -1633,7 +1740,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0972
   },
   {
     "id": "c4-highcpu-192",
@@ -1648,7 +1756,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "c4-highcpu-2",
@@ -1663,7 +1772,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "c4-highcpu-32",
@@ -1678,7 +1788,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0972
   },
   {
     "id": "c4-highcpu-4",
@@ -1693,7 +1804,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0972
   },
   {
     "id": "c4-highcpu-48",
@@ -1708,7 +1820,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "c4-highcpu-8",
@@ -1723,7 +1836,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0972
   },
   {
     "id": "c4-highcpu-96",
@@ -1738,7 +1852,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "c4-highmem-16",
@@ -1753,7 +1868,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "c4-highmem-192",
@@ -1768,7 +1884,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "c4-highmem-2",
@@ -1783,7 +1900,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "c4-highmem-32",
@@ -1798,7 +1916,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "c4-highmem-4",
@@ -1813,7 +1932,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "c4-highmem-48",
@@ -1828,7 +1948,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "c4-highmem-8",
@@ -1843,7 +1964,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "c4-highmem-96",
@@ -1858,7 +1980,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "c4-standard-16",
@@ -1873,7 +1996,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "c4-standard-192",
@@ -1888,7 +2012,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "c4-standard-2",
@@ -1903,7 +2028,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "c4-standard-32",
@@ -1918,7 +2044,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "c4-standard-4",
@@ -1933,7 +2060,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "c4-standard-48",
@@ -1948,7 +2076,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "c4-standard-8",
@@ -1963,7 +2092,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "c4-standard-96",
@@ -1978,7 +2108,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "c4a-highcpu-1",
@@ -1993,7 +2124,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5771
   },
   {
     "id": "c4a-highcpu-16",
@@ -2008,7 +2140,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0972
   },
   {
     "id": "c4a-highcpu-2",
@@ -2023,7 +2156,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "c4a-highcpu-32",
@@ -2038,7 +2172,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0972
   },
   {
     "id": "c4a-highcpu-4",
@@ -2053,7 +2188,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0972
   },
   {
     "id": "c4a-highcpu-48",
@@ -2068,7 +2204,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "c4a-highcpu-64",
@@ -2083,7 +2220,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "c4a-highcpu-72",
@@ -2098,7 +2236,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "c4a-highcpu-8",
@@ -2113,7 +2252,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0972
   },
   {
     "id": "c4a-highmem-1",
@@ -2128,7 +2268,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "c4a-highmem-16",
@@ -2143,7 +2284,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "c4a-highmem-2",
@@ -2158,7 +2300,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "c4a-highmem-32",
@@ -2173,7 +2316,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "c4a-highmem-4",
@@ -2188,7 +2332,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "c4a-highmem-48",
@@ -2203,7 +2348,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "c4a-highmem-64",
@@ -2218,7 +2364,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "c4a-highmem-72",
@@ -2233,7 +2380,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "c4a-highmem-8",
@@ -2248,7 +2396,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "c4a-standard-1",
@@ -2263,7 +2412,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "c4a-standard-16",
@@ -2278,7 +2428,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5107
   },
   {
     "id": "c4a-standard-2",
@@ -2293,7 +2444,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "c4a-standard-32",
@@ -2308,7 +2460,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "c4a-standard-4",
@@ -2323,7 +2476,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5107
   },
   {
     "id": "c4a-standard-48",
@@ -2338,7 +2492,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "c4a-standard-64",
@@ -2353,7 +2508,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "c4a-standard-72",
@@ -2368,7 +2524,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "c4a-standard-8",
@@ -2383,7 +2540,8 @@
     "cpu": [
       "google-axion"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5107
   },
   {
     "id": "e2-highcpu-16",
@@ -2401,7 +2559,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0972
   },
   {
     "id": "e2-highcpu-2",
@@ -2419,7 +2578,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0972
   },
   {
     "id": "e2-highcpu-32",
@@ -2437,7 +2597,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0972
   },
   {
     "id": "e2-highcpu-4",
@@ -2455,7 +2616,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0972
   },
   {
     "id": "e2-highcpu-8",
@@ -2473,7 +2635,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0972
   },
   {
     "id": "e2-highmem-16",
@@ -2491,7 +2654,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "e2-highmem-2",
@@ -2509,7 +2673,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "e2-highmem-4",
@@ -2527,7 +2692,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "e2-highmem-8",
@@ -2545,7 +2711,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "e2-medium",
@@ -2563,7 +2730,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "e2-micro",
@@ -2581,7 +2749,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "e2-small",
@@ -2599,7 +2768,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "e2-standard-16",
@@ -2617,7 +2787,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "e2-standard-2",
@@ -2635,7 +2806,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "e2-standard-32",
@@ -2653,7 +2825,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "e2-standard-4",
@@ -2671,7 +2844,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "e2-standard-8",
@@ -2689,7 +2863,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "f1-micro",
@@ -2708,7 +2883,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5771
   },
   {
     "id": "g1-small",
@@ -2727,7 +2903,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5771
   },
   {
     "id": "g2-standard-12",
@@ -2743,7 +2920,8 @@
     "cpu": [
       "intel-xeon-8273cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   },
   {
     "id": "g2-standard-16",
@@ -2759,7 +2937,8 @@
     "cpu": [
       "intel-xeon-8273cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "g2-standard-24",
@@ -2775,7 +2954,8 @@
     "cpu": [
       "intel-xeon-8273cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   },
   {
     "id": "g2-standard-32",
@@ -2791,7 +2971,8 @@
     "cpu": [
       "intel-xeon-8273cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "g2-standard-4",
@@ -2807,7 +2988,8 @@
     "cpu": [
       "intel-xeon-8273cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "g2-standard-48",
@@ -2823,7 +3005,8 @@
     "cpu": [
       "intel-xeon-8273cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "g2-standard-8",
@@ -2839,7 +3022,8 @@
     "cpu": [
       "intel-xeon-8273cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "g2-standard-96",
@@ -2855,7 +3039,8 @@
     "cpu": [
       "intel-xeon-8273cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "h3-standard-88",
@@ -2870,7 +3055,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "m1-megamem-96",
@@ -2885,7 +3071,8 @@
     "cpu": [
       "intel-xeon-8173m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2
   },
   {
     "id": "m1-ultramem-160",
@@ -2900,7 +3087,8 @@
     "cpu": [
       "intel-xeon-e78880v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "m1-ultramem-40",
@@ -2915,7 +3103,8 @@
     "cpu": [
       "intel-xeon-e78880v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "m1-ultramem-80",
@@ -2930,7 +3119,8 @@
     "cpu": [
       "intel-xeon-e78880v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "m2-hypermem-416",
@@ -2945,7 +3135,8 @@
     "cpu": [
       "intel-xeon-8280l"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "m2-megamem-416",
@@ -2960,7 +3151,8 @@
     "cpu": [
       "intel-xeon-8280l"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "m2-ultramem-208",
@@ -2975,7 +3167,8 @@
     "cpu": [
       "intel-xeon-8280l"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "m2-ultramem-416",
@@ -2990,7 +3183,8 @@
     "cpu": [
       "intel-xeon-8280l"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "m3-megamem-128",
@@ -3005,7 +3199,8 @@
     "cpu": [
       "intel-xeon-8373c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2
   },
   {
     "id": "m3-megamem-64",
@@ -3020,7 +3215,8 @@
     "cpu": [
       "intel-xeon-8373c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "m3-ultramem-128",
@@ -3035,7 +3231,8 @@
     "cpu": [
       "intel-xeon-8373c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "m3-ultramem-32",
@@ -3050,7 +3247,8 @@
     "cpu": [
       "intel-xeon-8373c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "m3-ultramem-64",
@@ -3065,7 +3263,8 @@
     "cpu": [
       "intel-xeon-8373c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1
   },
   {
     "id": "n1-highcpu-16",
@@ -3084,7 +3283,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2976
   },
   {
     "id": "n1-highcpu-2",
@@ -3103,7 +3303,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2976
   },
   {
     "id": "n1-highcpu-32",
@@ -3122,7 +3323,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2976
   },
   {
     "id": "n1-highcpu-4",
@@ -3141,7 +3343,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2976
   },
   {
     "id": "n1-highcpu-64",
@@ -3160,7 +3363,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2976
   },
   {
     "id": "n1-highcpu-8",
@@ -3179,7 +3383,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2976
   },
   {
     "id": "n1-highcpu-96",
@@ -3198,7 +3403,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2976
   },
   {
     "id": "n1-highmem-16",
@@ -3217,7 +3423,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0432
   },
   {
     "id": "n1-highmem-2",
@@ -3236,7 +3443,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0432
   },
   {
     "id": "n1-highmem-32",
@@ -3255,7 +3463,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0432
   },
   {
     "id": "n1-highmem-4",
@@ -3274,7 +3483,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0432
   },
   {
     "id": "n1-highmem-64",
@@ -3293,7 +3503,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0432
   },
   {
     "id": "n1-highmem-8",
@@ -3312,7 +3523,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0432
   },
   {
     "id": "n1-highmem-96",
@@ -3331,7 +3543,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0432
   },
   {
     "id": "n1-standard-1",
@@ -3350,7 +3563,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "n1-standard-16",
@@ -3369,7 +3583,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "n1-standard-2",
@@ -3388,7 +3603,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "n1-standard-32",
@@ -3407,7 +3623,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "n1-standard-4",
@@ -3426,7 +3643,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "n1-standard-64",
@@ -3445,7 +3663,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "n1-standard-8",
@@ -3464,7 +3683,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "n1-standard-96",
@@ -3483,7 +3703,8 @@
       "intel-xeon-e52696v2",
       "intel-xeon-e52689"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6771
   },
   {
     "id": "n2-highcpu-16",
@@ -3499,7 +3720,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "n2-highcpu-2",
@@ -3515,7 +3737,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "n2-highcpu-32",
@@ -3531,7 +3754,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "n2-highcpu-4",
@@ -3547,7 +3771,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "n2-highcpu-48",
@@ -3563,7 +3788,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "n2-highcpu-64",
@@ -3579,7 +3805,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "n2-highcpu-8",
@@ -3595,7 +3822,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "n2-highcpu-80",
@@ -3611,7 +3839,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "n2-highcpu-96",
@@ -3627,7 +3856,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "n2-highmem-128",
@@ -3643,7 +3873,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "n2-highmem-16",
@@ -3659,7 +3890,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "n2-highmem-2",
@@ -3675,7 +3907,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "n2-highmem-32",
@@ -3691,7 +3924,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "n2-highmem-4",
@@ -3707,7 +3941,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "n2-highmem-48",
@@ -3723,7 +3958,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "n2-highmem-64",
@@ -3739,7 +3975,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "n2-highmem-8",
@@ -3755,7 +3992,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "n2-highmem-80",
@@ -3771,7 +4009,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "n2-highmem-96",
@@ -3787,7 +4026,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "n2-standard-128",
@@ -3803,7 +4043,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "n2-standard-16",
@@ -3819,7 +4060,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "n2-standard-2",
@@ -3835,7 +4077,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "n2-standard-32",
@@ -3851,7 +4094,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "n2-standard-4",
@@ -3867,7 +4111,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "n2-standard-48",
@@ -3883,7 +4128,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "n2-standard-64",
@@ -3899,7 +4145,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "n2-standard-8",
@@ -3915,7 +4162,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "n2-standard-80",
@@ -3931,7 +4179,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "n2-standard-96",
@@ -3947,7 +4196,8 @@
       "intel-xeon-8373c",
       "intel-xeon-6268cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "n2d-highcpu-128",
@@ -3963,7 +4213,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "n2d-highcpu-16",
@@ -3979,7 +4230,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "n2d-highcpu-2",
@@ -3995,7 +4247,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "n2d-highcpu-224",
@@ -4011,7 +4264,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "n2d-highcpu-32",
@@ -4027,7 +4281,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "n2d-highcpu-4",
@@ -4043,7 +4298,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "n2d-highcpu-48",
@@ -4059,7 +4315,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "n2d-highcpu-64",
@@ -4075,7 +4332,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "n2d-highcpu-8",
@@ -4091,7 +4349,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "n2d-highcpu-80",
@@ -4107,7 +4366,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "n2d-highcpu-96",
@@ -4123,7 +4383,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3885
   },
   {
     "id": "n2d-highmem-16",
@@ -4139,7 +4400,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "n2d-highmem-2",
@@ -4155,7 +4417,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "n2d-highmem-32",
@@ -4171,7 +4434,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "n2d-highmem-4",
@@ -4187,7 +4451,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "n2d-highmem-48",
@@ -4203,7 +4468,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "n2d-highmem-64",
@@ -4219,7 +4485,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "n2d-highmem-8",
@@ -4235,7 +4502,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "n2d-highmem-80",
@@ -4251,7 +4519,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "n2d-highmem-96",
@@ -4267,7 +4536,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429
   },
   {
     "id": "n2d-standard-128",
@@ -4283,7 +4553,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "n2d-standard-16",
@@ -4299,7 +4570,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "n2d-standard-2",
@@ -4315,7 +4587,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "n2d-standard-224",
@@ -4331,7 +4604,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "n2d-standard-32",
@@ -4347,7 +4621,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "n2d-standard-4",
@@ -4363,7 +4638,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "n2d-standard-48",
@@ -4379,7 +4655,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "n2d-standard-64",
@@ -4395,7 +4672,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "n2d-standard-8",
@@ -4411,7 +4689,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "n2d-standard-80",
@@ -4427,7 +4706,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "n2d-standard-96",
@@ -4443,7 +4723,8 @@
       "amd-epyc-7b13",
       "amd-epyc-7b12"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "n4-highcpu-16",
@@ -4458,7 +4739,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "n4-highcpu-2",
@@ -4473,7 +4755,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2303
   },
   {
     "id": "n4-highcpu-32",
@@ -4488,7 +4771,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "n4-highcpu-4",
@@ -4503,7 +4787,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "n4-highcpu-48",
@@ -4518,7 +4803,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "n4-highcpu-64",
@@ -4533,7 +4819,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "n4-highcpu-8",
@@ -4548,7 +4835,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "n4-highcpu-80",
@@ -4563,7 +4851,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.311
   },
   {
     "id": "n4-highmem-16",
@@ -4578,7 +4867,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "n4-highmem-2",
@@ -4593,7 +4883,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "n4-highmem-32",
@@ -4608,7 +4899,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "n4-highmem-4",
@@ -4623,7 +4915,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "n4-highmem-48",
@@ -4638,7 +4931,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "n4-highmem-64",
@@ -4653,7 +4947,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "n4-highmem-8",
@@ -4668,7 +4963,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "n4-highmem-80",
@@ -4683,7 +4979,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3761
   },
   {
     "id": "n4-standard-16",
@@ -4698,7 +4995,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "n4-standard-2",
@@ -4713,7 +5011,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "n4-standard-32",
@@ -4728,7 +5027,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "n4-standard-4",
@@ -4743,7 +5043,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "n4-standard-48",
@@ -4758,7 +5059,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "n4-standard-64",
@@ -4773,7 +5075,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "n4-standard-8",
@@ -4788,7 +5091,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "n4-standard-80",
@@ -4803,7 +5107,8 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879
   },
   {
     "id": "t2a-standard-1",
@@ -4818,7 +5123,8 @@
     "cpu": [
       "ampere-altra-q6430"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "t2a-standard-16",
@@ -4833,7 +5139,8 @@
     "cpu": [
       "ampere-altra-q6430"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "t2a-standard-2",
@@ -4848,7 +5155,8 @@
     "cpu": [
       "ampere-altra-q6430"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "t2a-standard-32",
@@ -4863,7 +5171,8 @@
     "cpu": [
       "ampere-altra-q6430"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "t2a-standard-4",
@@ -4878,7 +5187,8 @@
     "cpu": [
       "ampere-altra-q6430"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "t2a-standard-48",
@@ -4893,7 +5203,8 @@
     "cpu": [
       "ampere-altra-q6430"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "t2a-standard-8",
@@ -4908,7 +5219,8 @@
     "cpu": [
       "ampere-altra-q6430"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "t2d-standard-1",
@@ -4923,7 +5235,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "t2d-standard-16",
@@ -4938,7 +5251,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "t2d-standard-2",
@@ -4953,7 +5267,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "t2d-standard-32",
@@ -4968,7 +5283,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "t2d-standard-4",
@@ -4983,7 +5299,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "t2d-standard-48",
@@ -4998,7 +5315,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "t2d-standard-60",
@@ -5013,7 +5331,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "t2d-standard-8",
@@ -5028,7 +5347,8 @@
     "cpu": [
       "amd-epyc-7b13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3107
   },
   {
     "id": "z3-highmem-176",
@@ -5043,7 +5363,8 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3205
   },
   {
     "id": "z3-highmem-88",
@@ -5058,6 +5379,7 @@
     "cpu": [
       "intel-xeon-8481c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 5.464
   }
 ]

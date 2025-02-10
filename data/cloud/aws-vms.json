@@ -12,7 +12,8 @@
     "cpu": [
       "aws-graviton-1"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0221904
   },
   {
     "id": "a1-4xlarge",
@@ -27,7 +28,8 @@
     "cpu": [
       "aws-graviton-1"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0221904
   },
   {
     "id": "a1-large",
@@ -42,7 +44,8 @@
     "cpu": [
       "aws-graviton-1"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0221904
   },
   {
     "id": "a1-medium",
@@ -57,7 +60,8 @@
     "cpu": [
       "aws-graviton-1"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0221904
   },
   {
     "id": "a1-metal",
@@ -72,7 +76,8 @@
     "cpu": [
       "aws-graviton-1"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.0221904
   },
   {
     "id": "a1-xlarge",
@@ -87,7 +92,8 @@
     "cpu": [
       "aws-graviton-1"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0221904
   },
   {
     "id": "c1-medium",
@@ -102,7 +108,8 @@
     "cpu": [
       "intel-xeon-e52651v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5360594
   },
   {
     "id": "c1-xlarge",
@@ -117,7 +124,8 @@
     "cpu": [
       "intel-xeon-e52651v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5360594
   },
   {
     "id": "c3-2xlarge",
@@ -132,7 +140,8 @@
     "cpu": [
       "intel-xeon-e52680v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3610236
   },
   {
     "id": "c3-4xlarge",
@@ -147,7 +156,8 @@
     "cpu": [
       "intel-xeon-e52680v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3610236
   },
   {
     "id": "c3-8xlarge",
@@ -162,7 +172,8 @@
     "cpu": [
       "intel-xeon-e52680v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3610236
   },
   {
     "id": "c3-large",
@@ -177,7 +188,8 @@
     "cpu": [
       "intel-xeon-e52680v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3610236
   },
   {
     "id": "c3-xlarge",
@@ -192,7 +204,8 @@
     "cpu": [
       "intel-xeon-e52680v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3610236
   },
   {
     "id": "c4-2xlarge",
@@ -207,7 +220,8 @@
     "cpu": [
       "intel-xeon-e52666v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1610236
   },
   {
     "id": "c4-4xlarge",
@@ -222,7 +236,8 @@
     "cpu": [
       "intel-xeon-e52666v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1610236
   },
   {
     "id": "c4-8xlarge",
@@ -237,7 +252,8 @@
     "cpu": [
       "intel-xeon-e52666v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1610236
   },
   {
     "id": "c4-large",
@@ -252,7 +268,8 @@
     "cpu": [
       "intel-xeon-e52666v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1610236
   },
   {
     "id": "c4-xlarge",
@@ -267,7 +284,8 @@
     "cpu": [
       "intel-xeon-e52666v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1610236
   },
   {
     "id": "c5-12xlarge",
@@ -282,7 +300,8 @@
     "cpu": [
       "intel-xeon-8275cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c5-18xlarge",
@@ -297,7 +316,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c5-24xlarge",
@@ -312,7 +332,8 @@
     "cpu": [
       "intel-xeon-8275cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c5-2xlarge",
@@ -327,7 +348,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c5-4xlarge",
@@ -342,7 +364,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c5-9xlarge",
@@ -357,7 +380,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c5-large",
@@ -372,7 +396,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c5-metal",
@@ -387,7 +412,8 @@
     "cpu": [
       "intel-xeon-8275cl"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.3440944
   },
   {
     "id": "c5-xlarge",
@@ -402,7 +428,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c5a-12xlarge",
@@ -417,7 +444,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c5a-16xlarge",
@@ -432,7 +460,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c5a-24xlarge",
@@ -447,7 +476,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c5a-2xlarge",
@@ -462,7 +492,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c5a-4xlarge",
@@ -477,7 +508,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c5a-8xlarge",
@@ -492,7 +524,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c5a-large",
@@ -507,7 +540,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c5a-xlarge",
@@ -522,7 +556,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c5ad-12xlarge",
@@ -537,7 +572,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.4440944
   },
   {
     "id": "c5ad-16xlarge",
@@ -552,7 +588,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.4440944
   },
   {
     "id": "c5ad-24xlarge",
@@ -567,7 +604,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.4440944
   },
   {
     "id": "c5ad-2xlarge",
@@ -582,7 +620,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.4440944
   },
   {
     "id": "c5ad-4xlarge",
@@ -597,7 +636,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.4440944
   },
   {
     "id": "c5ad-8xlarge",
@@ -612,7 +652,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.4440944
   },
   {
     "id": "c5ad-large",
@@ -627,7 +668,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.4440944
   },
   {
     "id": "c5ad-xlarge",
@@ -642,7 +684,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.4440944
   },
   {
     "id": "c5d-12xlarge",
@@ -657,7 +700,8 @@
     "cpu": [
       "intel-xeon-8275cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7440944
   },
   {
     "id": "c5d-18xlarge",
@@ -672,7 +716,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5440944
   },
   {
     "id": "c5d-24xlarge",
@@ -687,7 +732,8 @@
     "cpu": [
       "intel-xeon-8275cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7440944
   },
   {
     "id": "c5d-2xlarge",
@@ -702,7 +748,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5440944
   },
   {
     "id": "c5d-4xlarge",
@@ -717,7 +764,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5440944
   },
   {
     "id": "c5d-9xlarge",
@@ -732,7 +780,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5440944
   },
   {
     "id": "c5d-large",
@@ -747,7 +796,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5440944
   },
   {
     "id": "c5d-metal",
@@ -762,7 +812,8 @@
     "cpu": [
       "intel-xeon-8275cl"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7440944
   },
   {
     "id": "c5d-xlarge",
@@ -777,7 +828,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.5440944
   },
   {
     "id": "c5n-18xlarge",
@@ -792,7 +844,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c5n-2xlarge",
@@ -807,7 +860,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c5n-4xlarge",
@@ -822,7 +876,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c5n-9xlarge",
@@ -837,7 +892,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c5n-large",
@@ -852,7 +908,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c5n-metal",
@@ -867,7 +924,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.3440944
   },
   {
     "id": "c5n-xlarge",
@@ -882,7 +940,8 @@
     "cpu": [
       "intel-xeon-8124m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c6a-12xlarge",
@@ -897,7 +956,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c6a-16xlarge",
@@ -912,7 +972,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c6a-24xlarge",
@@ -927,7 +988,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c6a-2xlarge",
@@ -942,7 +1004,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c6a-32xlarge",
@@ -957,7 +1020,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "c6a-48xlarge",
@@ -972,7 +1036,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "c6a-4xlarge",
@@ -987,7 +1052,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c6a-8xlarge",
@@ -1002,7 +1068,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c6a-large",
@@ -1017,7 +1084,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c6a-metal",
@@ -1032,7 +1100,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "c6a-xlarge",
@@ -1047,7 +1116,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c6g-12xlarge",
@@ -1062,7 +1132,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6g-16xlarge",
@@ -1077,7 +1148,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6g-2xlarge",
@@ -1092,7 +1164,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6g-4xlarge",
@@ -1107,7 +1180,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6g-8xlarge",
@@ -1122,7 +1196,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6g-large",
@@ -1137,7 +1212,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6g-medium",
@@ -1152,7 +1228,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6g-metal",
@@ -1167,7 +1244,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.1553328
   },
   {
     "id": "c6g-xlarge",
@@ -1182,7 +1260,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6gd-12xlarge",
@@ -1197,7 +1276,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c6gd-16xlarge",
@@ -1212,7 +1292,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c6gd-2xlarge",
@@ -1227,7 +1308,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c6gd-4xlarge",
@@ -1242,7 +1324,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c6gd-8xlarge",
@@ -1257,7 +1340,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c6gd-large",
@@ -1272,7 +1356,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c6gd-medium",
@@ -1287,7 +1372,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c6gd-metal",
@@ -1302,7 +1388,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.3553328
   },
   {
     "id": "c6gd-xlarge",
@@ -1317,7 +1404,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c6gn-12xlarge",
@@ -1332,7 +1420,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6gn-16xlarge",
@@ -1347,7 +1436,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6gn-2xlarge",
@@ -1362,7 +1452,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6gn-4xlarge",
@@ -1377,7 +1468,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6gn-8xlarge",
@@ -1392,7 +1484,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6gn-large",
@@ -1407,7 +1500,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6gn-medium",
@@ -1422,7 +1516,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6gn-xlarge",
@@ -1437,7 +1532,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6i-12xlarge",
@@ -1452,7 +1548,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6i-16xlarge",
@@ -1467,7 +1564,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6i-24xlarge",
@@ -1482,7 +1580,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c6i-2xlarge",
@@ -1497,7 +1596,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6i-32xlarge",
@@ -1512,7 +1612,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "c6i-4xlarge",
@@ -1527,7 +1628,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6i-8xlarge",
@@ -1542,7 +1644,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6i-large",
@@ -1557,7 +1660,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6i-metal",
@@ -1572,7 +1676,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "c6i-xlarge",
@@ -1587,7 +1692,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6id-12xlarge",
@@ -1602,7 +1708,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c6id-16xlarge",
@@ -1617,7 +1724,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c6id-24xlarge",
@@ -1632,7 +1740,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.4440944
   },
   {
     "id": "c6id-2xlarge",
@@ -1647,7 +1756,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c6id-32xlarge",
@@ -1662,7 +1772,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "c6id-4xlarge",
@@ -1677,7 +1788,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c6id-8xlarge",
@@ -1692,7 +1804,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c6id-large",
@@ -1707,7 +1820,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c6id-metal",
@@ -1722,7 +1836,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "c6id-xlarge",
@@ -1737,7 +1852,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c6in-12xlarge",
@@ -1752,7 +1868,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6in-16xlarge",
@@ -1767,7 +1884,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6in-24xlarge",
@@ -1782,7 +1900,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c6in-2xlarge",
@@ -1797,7 +1916,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6in-32xlarge",
@@ -1812,7 +1932,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "c6in-4xlarge",
@@ -1827,7 +1948,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6in-8xlarge",
@@ -1842,7 +1964,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6in-large",
@@ -1857,7 +1980,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c6in-metal",
@@ -1872,7 +1996,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "c6in-xlarge",
@@ -1887,7 +2012,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c7a-12xlarge",
@@ -1902,7 +2028,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c7a-16xlarge",
@@ -1917,7 +2044,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c7a-24xlarge",
@@ -1932,7 +2060,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c7a-2xlarge",
@@ -1947,7 +2076,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c7a-32xlarge",
@@ -1962,7 +2092,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "c7a-48xlarge",
@@ -1977,7 +2108,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "c7a-4xlarge",
@@ -1992,7 +2124,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c7a-8xlarge",
@@ -2007,7 +2140,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c7a-large",
@@ -2022,7 +2156,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c7a-medium",
@@ -2037,7 +2172,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c7a-metal-48xl",
@@ -2052,7 +2188,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "c7a-xlarge",
@@ -2067,7 +2204,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c7g-12xlarge",
@@ -2082,7 +2220,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c7g-16xlarge",
@@ -2097,7 +2236,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c7g-2xlarge",
@@ -2112,7 +2252,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c7g-4xlarge",
@@ -2127,7 +2268,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c7g-8xlarge",
@@ -2142,7 +2284,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c7g-large",
@@ -2157,7 +2300,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c7g-medium",
@@ -2172,7 +2316,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c7g-metal",
@@ -2187,7 +2332,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.1553328
   },
   {
     "id": "c7g-xlarge",
@@ -2202,7 +2348,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c7gd-12xlarge",
@@ -2217,7 +2364,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c7gd-16xlarge",
@@ -2232,7 +2380,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c7gd-2xlarge",
@@ -2247,7 +2396,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c7gd-4xlarge",
@@ -2262,7 +2412,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c7gd-8xlarge",
@@ -2277,7 +2428,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c7gd-large",
@@ -2292,7 +2444,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c7gd-medium",
@@ -2307,7 +2460,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c7gd-metal",
@@ -2322,7 +2476,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.3553328
   },
   {
     "id": "c7gd-xlarge",
@@ -2337,7 +2492,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3553328
   },
   {
     "id": "c7gn-12xlarge",
@@ -2352,7 +2508,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c7gn-16xlarge",
@@ -2367,7 +2524,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c7gn-2xlarge",
@@ -2382,7 +2540,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c7gn-4xlarge",
@@ -2397,7 +2556,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c7gn-8xlarge",
@@ -2412,7 +2572,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c7gn-large",
@@ -2427,7 +2588,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c7gn-medium",
@@ -2442,7 +2604,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c7gn-metal",
@@ -2457,7 +2620,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.1553328
   },
   {
     "id": "c7gn-xlarge",
@@ -2472,7 +2636,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c7i-12xlarge",
@@ -2487,7 +2652,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c7i-16xlarge",
@@ -2502,7 +2668,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c7i-24xlarge",
@@ -2517,7 +2684,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c7i-2xlarge",
@@ -2532,7 +2700,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c7i-48xlarge",
@@ -2547,7 +2716,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "c7i-4xlarge",
@@ -2562,7 +2732,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c7i-8xlarge",
@@ -2577,7 +2748,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c7i-flex-2xlarge",
@@ -2592,7 +2764,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c7i-flex-4xlarge",
@@ -2607,7 +2780,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c7i-flex-8xlarge",
@@ -2622,7 +2796,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "c7i-flex-large",
@@ -2637,7 +2812,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c7i-flex-xlarge",
@@ -2652,7 +2828,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c7i-large",
@@ -2667,7 +2844,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c7i-metal-24xl",
@@ -2682,7 +2860,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.3440944
   },
   {
     "id": "c7i-metal-48xl",
@@ -2697,7 +2876,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "c7i-xlarge",
@@ -2712,7 +2892,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c8g-12xlarge",
@@ -2727,7 +2908,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c8g-16xlarge",
@@ -2742,7 +2924,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c8g-24xlarge",
@@ -2757,7 +2940,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "c8g-2xlarge",
@@ -2772,7 +2956,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c8g-48xlarge",
@@ -2787,7 +2972,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "c8g-4xlarge",
@@ -2802,7 +2988,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c8g-8xlarge",
@@ -2817,7 +3004,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c8g-large",
@@ -2832,7 +3020,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c8g-medium",
@@ -2847,7 +3036,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "c8g-metal-24xl",
@@ -2862,7 +3052,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.3440944
   },
   {
     "id": "c8g-metal-48xl",
@@ -2877,7 +3068,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "c8g-xlarge",
@@ -2892,7 +3084,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "d2-2xlarge",
@@ -2907,7 +3100,8 @@
     "cpu": [
       "intel-xeon-e52676v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.6162132
   },
   {
     "id": "d2-4xlarge",
@@ -2922,7 +3116,8 @@
     "cpu": [
       "intel-xeon-e52676v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.6162132
   },
   {
     "id": "d2-8xlarge",
@@ -2937,7 +3132,8 @@
     "cpu": [
       "intel-xeon-e52676v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.6162132
   },
   {
     "id": "d2-xlarge",
@@ -2952,7 +3148,8 @@
     "cpu": [
       "intel-xeon-e52676v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.6162132
   },
   {
     "id": "d3-2xlarge",
@@ -2967,7 +3164,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.632856
   },
   {
     "id": "d3-4xlarge",
@@ -2982,7 +3180,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.632856
   },
   {
     "id": "d3-8xlarge",
@@ -2997,7 +3196,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.632856
   },
   {
     "id": "d3-xlarge",
@@ -3012,7 +3212,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.632856
   },
   {
     "id": "d3en-12xlarge",
@@ -3027,7 +3228,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5440944
   },
   {
     "id": "d3en-2xlarge",
@@ -3042,7 +3244,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5440944
   },
   {
     "id": "d3en-4xlarge",
@@ -3057,7 +3260,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5440944
   },
   {
     "id": "d3en-6xlarge",
@@ -3072,7 +3276,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5440944
   },
   {
     "id": "d3en-8xlarge",
@@ -3087,7 +3292,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5440944
   },
   {
     "id": "d3en-xlarge",
@@ -3102,7 +3308,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5440944
   },
   {
     "id": "dl1-24xlarge",
@@ -3118,7 +3325,8 @@
     "cpu": [
       "intel-xeon-8275cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "dl2q-24xlarge",
@@ -3134,7 +3342,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "f1-16xlarge",
@@ -3150,7 +3359,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.831424
   },
   {
     "id": "f1-2xlarge",
@@ -3166,7 +3376,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.831424
   },
   {
     "id": "f1-4xlarge",
@@ -3182,7 +3393,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.831424
   },
   {
     "id": "f2-12xlarge",
@@ -3198,7 +3410,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "f2-48xlarge",
@@ -3214,7 +3427,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.1850384
   },
   {
     "id": "g2-2xlarge",
@@ -3230,7 +3444,8 @@
     "cpu": [
       "intel-xeon-e52670"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.9610236
   },
   {
     "id": "g2-8xlarge",
@@ -3246,7 +3461,8 @@
     "cpu": [
       "intel-xeon-e52670"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.9610236
   },
   {
     "id": "g3-16xlarge",
@@ -3262,7 +3478,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3546168
   },
   {
     "id": "g3-4xlarge",
@@ -3278,7 +3495,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3546168
   },
   {
     "id": "g3-8xlarge",
@@ -3294,7 +3512,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3546168
   },
   {
     "id": "g3s-xlarge",
@@ -3310,7 +3529,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3546168
   },
   {
     "id": "g4ad-16xlarge",
@@ -3326,7 +3546,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3103792
   },
   {
     "id": "g4ad-2xlarge",
@@ -3342,7 +3563,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 3.0103792
   },
   {
     "id": "g4ad-4xlarge",
@@ -3358,7 +3580,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3103792
   },
   {
     "id": "g4ad-8xlarge",
@@ -3374,7 +3597,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.3103792
   },
   {
     "id": "g4ad-xlarge",
@@ -3390,7 +3614,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 3.0103792
   },
   {
     "id": "g4dn-12xlarge",
@@ -3406,7 +3631,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 3.0103792
   },
   {
     "id": "g4dn-16xlarge",
@@ -3422,7 +3648,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 3.0103792
   },
   {
     "id": "g4dn-2xlarge",
@@ -3438,7 +3665,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 3.0103792
   },
   {
     "id": "g4dn-4xlarge",
@@ -3454,7 +3682,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 3.0103792
   },
   {
     "id": "g4dn-8xlarge",
@@ -3470,7 +3699,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 3.0103792
   },
   {
     "id": "g4dn-metal",
@@ -3486,7 +3716,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 3.0103792
   },
   {
     "id": "g4dn-xlarge",
@@ -3502,7 +3733,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 3.0103792
   },
   {
     "id": "g5-12xlarge",
@@ -3518,7 +3750,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "g5-16xlarge",
@@ -3534,7 +3767,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "g5-24xlarge",
@@ -3550,7 +3784,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "g5-2xlarge",
@@ -3566,7 +3801,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "g5-48xlarge",
@@ -3582,7 +3818,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "g5-4xlarge",
@@ -3598,7 +3835,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "g5-8xlarge",
@@ -3614,7 +3852,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "g5-xlarge",
@@ -3630,7 +3869,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "g5g-16xlarge",
@@ -3646,7 +3886,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "g5g-2xlarge",
@@ -3662,7 +3903,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "g5g-4xlarge",
@@ -3678,7 +3920,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "g5g-8xlarge",
@@ -3694,7 +3937,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2440944
   },
   {
     "id": "g5g-metal",
@@ -3710,7 +3954,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.1553328
   },
   {
     "id": "g5g-xlarge",
@@ -3726,7 +3971,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "g6-12xlarge",
@@ -3742,7 +3988,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "g6-16xlarge",
@@ -3758,7 +4005,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "g6-24xlarge",
@@ -3774,7 +4022,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "g6-2xlarge",
@@ -3790,7 +4039,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "g6-48xlarge",
@@ -3806,7 +4056,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "g6-4xlarge",
@@ -3822,7 +4073,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "g6-8xlarge",
@@ -3838,7 +4090,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "g6-xlarge",
@@ -3854,7 +4107,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "g6e-12xlarge",
@@ -3870,7 +4124,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "g6e-16xlarge",
@@ -3886,7 +4141,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "g6e-24xlarge",
@@ -3902,7 +4158,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "g6e-2xlarge",
@@ -3918,7 +4175,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "g6e-48xlarge",
@@ -3934,7 +4192,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.1850384
   },
   {
     "id": "g6e-4xlarge",
@@ -3950,7 +4209,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "g6e-8xlarge",
@@ -3966,7 +4226,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "g6e-xlarge",
@@ -3982,7 +4243,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "gr6-4xlarge",
@@ -3998,7 +4260,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "gr6-8xlarge",
@@ -4014,7 +4277,8 @@
     "cpu": [
       "amd-epyc-7r32"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "h1-16xlarge",
@@ -4029,7 +4293,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.632856
   },
   {
     "id": "h1-2xlarge",
@@ -4044,7 +4309,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.632856
   },
   {
     "id": "h1-4xlarge",
@@ -4059,7 +4325,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.632856
   },
   {
     "id": "h1-8xlarge",
@@ -4074,7 +4341,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.632856
   },
   {
     "id": "hpc6a-48xlarge",
@@ -4089,7 +4357,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "hpc6id-32xlarge",
@@ -4104,7 +4373,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "hpc7a-12xlarge",
@@ -4119,7 +4389,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "hpc7a-24xlarge",
@@ -4134,7 +4405,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "hpc7a-48xlarge",
@@ -4149,7 +4421,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 3.5429488
   },
   {
     "id": "hpc7a-96xlarge",
@@ -4164,7 +4437,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "hpc7g-16xlarge",
@@ -4179,7 +4453,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.1553328
   },
   {
     "id": "hpc7g-4xlarge",
@@ -4194,7 +4469,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "hpc7g-8xlarge",
@@ -4209,7 +4485,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.632856
   },
   {
     "id": "i2-2xlarge",
@@ -4224,7 +4501,8 @@
     "cpu": [
       "intel-xeon-e52670v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.2162132
   },
   {
     "id": "i2-4xlarge",
@@ -4239,7 +4517,8 @@
     "cpu": [
       "intel-xeon-e52670v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.2162132
   },
   {
     "id": "i2-8xlarge",
@@ -4254,7 +4533,8 @@
     "cpu": [
       "intel-xeon-e52670v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.2162132
   },
   {
     "id": "i2-large",
@@ -4269,7 +4549,8 @@
     "cpu": [
       "intel-xeon-e52670v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8162132
   },
   {
     "id": "i2-xlarge",
@@ -4284,7 +4565,8 @@
     "cpu": [
       "intel-xeon-e52670v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.2162132
   },
   {
     "id": "i3-16xlarge",
@@ -4299,7 +4581,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5879024
   },
   {
     "id": "i3-2xlarge",
@@ -4314,7 +4597,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5879024
   },
   {
     "id": "i3-4xlarge",
@@ -4329,7 +4613,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5879024
   },
   {
     "id": "i3-8xlarge",
@@ -4344,7 +4629,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5879024
   },
   {
     "id": "i3-large",
@@ -4359,7 +4645,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5879024
   },
   {
     "id": "i3-metal",
@@ -4374,7 +4661,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 2.5879024
   },
   {
     "id": "i3-xlarge",
@@ -4389,7 +4677,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5879024
   },
   {
     "id": "i3en-12xlarge",
@@ -4404,7 +4693,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i3en-24xlarge",
@@ -4419,7 +4709,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i3en-2xlarge",
@@ -4434,7 +4725,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i3en-3xlarge",
@@ -4449,7 +4741,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i3en-6xlarge",
@@ -4464,7 +4757,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i3en-large",
@@ -4479,7 +4773,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i3en-metal",
@@ -4494,7 +4789,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 2.9429488
   },
   {
     "id": "i3en-xlarge",
@@ -4509,7 +4805,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i4g-16xlarge",
@@ -4524,7 +4821,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "i4g-2xlarge",
@@ -4539,7 +4837,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "i4g-4xlarge",
@@ -4554,7 +4853,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "i4g-8xlarge",
@@ -4569,7 +4869,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "i4g-large",
@@ -4584,7 +4885,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "i4g-xlarge",
@@ -4599,7 +4901,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "i4i-12xlarge",
@@ -4614,7 +4917,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i4i-16xlarge",
@@ -4629,7 +4933,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "i4i-24xlarge",
@@ -4644,7 +4949,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i4i-2xlarge",
@@ -4659,7 +4965,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i4i-32xlarge",
@@ -4674,7 +4981,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "i4i-4xlarge",
@@ -4689,7 +4997,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.632856
   },
   {
     "id": "i4i-8xlarge",
@@ -4704,7 +5013,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.632856
   },
   {
     "id": "i4i-large",
@@ -4719,7 +5029,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i4i-metal",
@@ -4734,7 +5045,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "i4i-xlarge",
@@ -4749,7 +5061,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i7ie-12xlarge",
@@ -4764,7 +5077,8 @@
     "cpu": [
       "intel-xeon-8559c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i7ie-18xlarge",
@@ -4779,7 +5093,8 @@
     "cpu": [
       "intel-xeon-8559c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5879024
   },
   {
     "id": "i7ie-24xlarge",
@@ -4794,7 +5109,8 @@
     "cpu": [
       "intel-xeon-8559c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i7ie-2xlarge",
@@ -4809,7 +5125,8 @@
     "cpu": [
       "intel-xeon-8559c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i7ie-3xlarge",
@@ -4824,7 +5141,8 @@
     "cpu": [
       "intel-xeon-8559c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i7ie-48xlarge",
@@ -4839,7 +5157,8 @@
     "cpu": [
       "intel-xeon-8559c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.1850384
   },
   {
     "id": "i7ie-6xlarge",
@@ -4854,7 +5173,8 @@
     "cpu": [
       "intel-xeon-8559c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i7ie-large",
@@ -4869,7 +5189,8 @@
     "cpu": [
       "intel-xeon-8559c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i7ie-xlarge",
@@ -4884,7 +5205,8 @@
     "cpu": [
       "intel-xeon-8559c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i8g-12xlarge",
@@ -4899,7 +5221,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "i8g-16xlarge",
@@ -4914,7 +5237,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "i8g-24xlarge",
@@ -4929,7 +5253,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "i8g-2xlarge",
@@ -4944,7 +5269,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "i8g-4xlarge",
@@ -4959,7 +5285,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "i8g-8xlarge",
@@ -4974,7 +5301,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "i8g-large",
@@ -4989,7 +5317,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "i8g-metal-24xl",
@@ -5004,7 +5333,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 2.9429488
   },
   {
     "id": "i8g-xlarge",
@@ -5019,7 +5349,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "im4gn-16xlarge",
@@ -5034,7 +5365,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 3.0103792
   },
   {
     "id": "im4gn-2xlarge",
@@ -5049,7 +5381,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 3.0103792
   },
   {
     "id": "im4gn-4xlarge",
@@ -5064,7 +5397,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 3.0103792
   },
   {
     "id": "im4gn-8xlarge",
@@ -5079,7 +5413,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 3.0103792
   },
   {
     "id": "im4gn-large",
@@ -5094,7 +5429,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.432856
   },
   {
     "id": "im4gn-xlarge",
@@ -5109,7 +5445,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 3.0103792
   },
   {
     "id": "inf1-24xlarge",
@@ -5125,7 +5462,8 @@
     "cpu": [
       "intel-xeon-8275cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "inf1-2xlarge",
@@ -5141,7 +5479,8 @@
     "cpu": [
       "intel-xeon-8275cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "inf1-6xlarge",
@@ -5157,7 +5496,8 @@
     "cpu": [
       "intel-xeon-8275cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "inf1-xlarge",
@@ -5173,7 +5513,8 @@
     "cpu": [
       "intel-xeon-8275cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "inf2-24xlarge",
@@ -5189,7 +5530,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "inf2-48xlarge",
@@ -5205,7 +5547,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "inf2-8xlarge",
@@ -5221,7 +5564,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5440944
   },
   {
     "id": "inf2-xlarge",
@@ -5237,7 +5581,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.4772368
   },
   {
     "id": "is4gen-2xlarge",
@@ -5252,7 +5597,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7546168
   },
   {
     "id": "is4gen-4xlarge",
@@ -5267,7 +5613,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7546168
   },
   {
     "id": "is4gen-8xlarge",
@@ -5282,7 +5629,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7546168
   },
   {
     "id": "is4gen-large",
@@ -5297,7 +5645,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7546168
   },
   {
     "id": "is4gen-medium",
@@ -5312,7 +5661,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "is4gen-xlarge",
@@ -5327,7 +5677,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7546168
   },
   {
     "id": "m1-large",
@@ -5342,7 +5693,8 @@
     "cpu": [
       "intel-xeon-e52651v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6442376
   },
   {
     "id": "m1-medium",
@@ -5357,7 +5709,8 @@
     "cpu": [
       "intel-xeon-e52651v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6442376
   },
   {
     "id": "m1-small",
@@ -5372,7 +5725,8 @@
     "cpu": [
       "intel-xeon-e52651v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6442376
   },
   {
     "id": "m1-xlarge",
@@ -5387,7 +5741,8 @@
     "cpu": [
       "intel-xeon-e52651v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6442376
   },
   {
     "id": "m2-2xlarge",
@@ -5402,7 +5757,8 @@
     "cpu": [
       "intel-xeon-e52665"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6661416
   },
   {
     "id": "m2-4xlarge",
@@ -5417,7 +5773,8 @@
     "cpu": [
       "intel-xeon-e52665"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6661416
   },
   {
     "id": "m2-xlarge",
@@ -5432,7 +5789,8 @@
     "cpu": [
       "intel-xeon-e52665"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6661416
   },
   {
     "id": "m3-2xlarge",
@@ -5447,7 +5805,8 @@
     "cpu": [
       "intel-xeon-e52670v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6106656
   },
   {
     "id": "m3-large",
@@ -5462,7 +5821,8 @@
     "cpu": [
       "intel-xeon-e52670v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6106656
   },
   {
     "id": "m3-medium",
@@ -5477,7 +5837,8 @@
     "cpu": [
       "intel-xeon-e52670v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6106656
   },
   {
     "id": "m3-xlarge",
@@ -5492,7 +5853,8 @@
     "cpu": [
       "intel-xeon-e52670v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6106656
   },
   {
     "id": "m4-10xlarge",
@@ -5507,7 +5869,8 @@
     "cpu": [
       "intel-xeon-e52676v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.432856
   },
   {
     "id": "m4-16xlarge",
@@ -5522,7 +5885,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.432856
   },
   {
     "id": "m4-2xlarge",
@@ -5537,7 +5901,8 @@
     "cpu": [
       "intel-xeon-e52676v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.432856
   },
   {
     "id": "m4-4xlarge",
@@ -5552,7 +5917,8 @@
     "cpu": [
       "intel-xeon-e52676v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.432856
   },
   {
     "id": "m4-large",
@@ -5567,7 +5933,8 @@
     "cpu": [
       "intel-xeon-e52676v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.432856
   },
   {
     "id": "m4-xlarge",
@@ -5582,7 +5949,8 @@
     "cpu": [
       "intel-xeon-e52676v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.432856
   },
   {
     "id": "m5-12xlarge",
@@ -5597,7 +5965,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5-16xlarge",
@@ -5612,7 +5981,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5-24xlarge",
@@ -5627,7 +5997,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5-2xlarge",
@@ -5642,7 +6013,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5-4xlarge",
@@ -5657,7 +6029,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5-8xlarge",
@@ -5672,7 +6045,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5-large",
@@ -5687,7 +6061,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5-metal",
@@ -5702,7 +6077,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.6103792
   },
   {
     "id": "m5-xlarge",
@@ -5717,7 +6093,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5a-12xlarge",
@@ -5732,7 +6109,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5a-16xlarge",
@@ -5747,7 +6125,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5a-24xlarge",
@@ -5762,7 +6141,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5a-2xlarge",
@@ -5777,7 +6157,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5a-4xlarge",
@@ -5792,7 +6173,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5a-8xlarge",
@@ -5807,7 +6189,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5a-large",
@@ -5822,7 +6205,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5a-xlarge",
@@ -5837,7 +6221,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5ad-12xlarge",
@@ -5852,7 +6237,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5ad-16xlarge",
@@ -5867,7 +6253,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5ad-24xlarge",
@@ -5882,7 +6269,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5ad-2xlarge",
@@ -5897,7 +6285,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5ad-4xlarge",
@@ -5912,7 +6301,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5ad-8xlarge",
@@ -5927,7 +6317,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5ad-large",
@@ -5942,7 +6333,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5ad-xlarge",
@@ -5957,7 +6349,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5d-12xlarge",
@@ -5972,7 +6365,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5d-16xlarge",
@@ -5987,7 +6381,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5d-24xlarge",
@@ -6002,7 +6397,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5d-2xlarge",
@@ -6017,7 +6413,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5d-4xlarge",
@@ -6032,7 +6429,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5d-8xlarge",
@@ -6047,7 +6445,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5d-large",
@@ -6062,7 +6461,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5d-metal",
@@ -6077,7 +6477,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 2.0103792
   },
   {
     "id": "m5d-xlarge",
@@ -6092,7 +6493,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5dn-12xlarge",
@@ -6107,7 +6509,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5dn-16xlarge",
@@ -6122,7 +6525,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5dn-24xlarge",
@@ -6137,7 +6541,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5dn-2xlarge",
@@ -6152,7 +6557,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5dn-4xlarge",
@@ -6167,7 +6573,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5dn-8xlarge",
@@ -6182,7 +6589,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5dn-large",
@@ -6197,7 +6605,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5dn-metal",
@@ -6212,7 +6621,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 2.0103792
   },
   {
     "id": "m5dn-xlarge",
@@ -6227,7 +6637,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m5n-12xlarge",
@@ -6242,7 +6653,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5n-16xlarge",
@@ -6257,7 +6669,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5n-24xlarge",
@@ -6272,7 +6685,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5n-2xlarge",
@@ -6287,7 +6701,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5n-4xlarge",
@@ -6302,7 +6717,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5n-8xlarge",
@@ -6317,7 +6733,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5n-large",
@@ -6332,7 +6749,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5n-metal",
@@ -6347,7 +6765,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.6103792
   },
   {
     "id": "m5n-xlarge",
@@ -6362,7 +6781,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m5zn-12xlarge",
@@ -6377,7 +6797,8 @@
     "cpu": [
       "intel-xeon-8252c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "m5zn-2xlarge",
@@ -6392,7 +6813,8 @@
     "cpu": [
       "intel-xeon-8252c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "m5zn-3xlarge",
@@ -6407,7 +6829,8 @@
     "cpu": [
       "intel-xeon-8252c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "m5zn-6xlarge",
@@ -6422,7 +6845,8 @@
     "cpu": [
       "intel-xeon-8252c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "m5zn-large",
@@ -6437,7 +6861,8 @@
     "cpu": [
       "intel-xeon-8252c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "m5zn-metal",
@@ -6452,7 +6877,8 @@
     "cpu": [
       "intel-xeon-8252c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.3440944
   },
   {
     "id": "m5zn-xlarge",
@@ -6467,7 +6893,8 @@
     "cpu": [
       "intel-xeon-8252c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "m6a-12xlarge",
@@ -6482,7 +6909,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m6a-16xlarge",
@@ -6497,7 +6925,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m6a-24xlarge",
@@ -6512,7 +6941,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m6a-2xlarge",
@@ -6527,7 +6957,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m6a-32xlarge",
@@ -6542,7 +6973,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6a-48xlarge",
@@ -6557,7 +6989,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6a-4xlarge",
@@ -6572,7 +7005,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m6a-8xlarge",
@@ -6587,7 +7021,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m6a-large",
@@ -6602,7 +7037,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m6a-metal",
@@ -6617,7 +7053,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "m6a-xlarge",
@@ -6632,7 +7069,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m6g-12xlarge",
@@ -6647,7 +7085,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m6g-16xlarge",
@@ -6662,7 +7101,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m6g-2xlarge",
@@ -6677,7 +7117,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m6g-4xlarge",
@@ -6692,7 +7133,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m6g-8xlarge",
@@ -6707,7 +7149,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m6g-large",
@@ -6722,7 +7165,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m6g-medium",
@@ -6737,7 +7181,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m6g-metal",
@@ -6752,7 +7197,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.332856
   },
   {
     "id": "m6g-xlarge",
@@ -6767,7 +7213,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m6gd-12xlarge",
@@ -6782,7 +7229,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m6gd-16xlarge",
@@ -6797,7 +7245,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m6gd-2xlarge",
@@ -6812,7 +7261,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m6gd-4xlarge",
@@ -6827,7 +7277,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m6gd-8xlarge",
@@ -6842,7 +7293,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m6gd-large",
@@ -6857,7 +7309,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m6gd-medium",
@@ -6872,7 +7325,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m6gd-metal",
@@ -6887,7 +7341,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.532856
   },
   {
     "id": "m6gd-xlarge",
@@ -6902,7 +7357,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m6i-12xlarge",
@@ -6917,7 +7373,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6i-16xlarge",
@@ -6932,7 +7389,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6i-24xlarge",
@@ -6947,7 +7405,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6i-2xlarge",
@@ -6962,7 +7421,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6i-32xlarge",
@@ -6977,7 +7437,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6i-4xlarge",
@@ -6992,7 +7453,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6i-8xlarge",
@@ -7007,7 +7469,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6i-large",
@@ -7022,7 +7485,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6i-metal",
@@ -7037,7 +7501,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "m6i-xlarge",
@@ -7052,7 +7517,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6id-12xlarge",
@@ -7067,7 +7533,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m6id-16xlarge",
@@ -7082,7 +7549,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m6id-24xlarge",
@@ -7097,7 +7565,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6id-2xlarge",
@@ -7112,7 +7581,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m6id-32xlarge",
@@ -7127,7 +7597,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6id-4xlarge",
@@ -7142,7 +7613,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m6id-8xlarge",
@@ -7157,7 +7629,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m6id-large",
@@ -7172,7 +7645,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m6id-metal",
@@ -7187,7 +7661,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "m6id-xlarge",
@@ -7202,7 +7677,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m6idn-12xlarge",
@@ -7217,7 +7693,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m6idn-16xlarge",
@@ -7232,7 +7709,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m6idn-24xlarge",
@@ -7247,7 +7725,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m6idn-2xlarge",
@@ -7262,7 +7741,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m6idn-32xlarge",
@@ -7277,7 +7757,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6idn-4xlarge",
@@ -7292,7 +7773,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m6idn-8xlarge",
@@ -7307,7 +7789,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m6idn-large",
@@ -7322,7 +7805,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m6idn-metal",
@@ -7337,7 +7821,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "m6idn-xlarge",
@@ -7352,7 +7837,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.0103792
   },
   {
     "id": "m6in-12xlarge",
@@ -7367,7 +7853,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6in-16xlarge",
@@ -7382,7 +7869,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6in-24xlarge",
@@ -7397,7 +7885,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6in-2xlarge",
@@ -7412,7 +7901,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6in-32xlarge",
@@ -7427,7 +7917,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6in-4xlarge",
@@ -7442,7 +7933,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6in-8xlarge",
@@ -7457,7 +7949,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6in-large",
@@ -7472,7 +7965,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m6in-metal",
@@ -7487,7 +7981,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "m6in-xlarge",
@@ -7502,7 +7997,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m7a-12xlarge",
@@ -7517,7 +8013,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m7a-16xlarge",
@@ -7532,7 +8029,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m7a-24xlarge",
@@ -7547,7 +8045,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m7a-2xlarge",
@@ -7562,7 +8061,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m7a-32xlarge",
@@ -7577,7 +8077,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m7a-48xlarge",
@@ -7592,7 +8093,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m7a-4xlarge",
@@ -7607,7 +8109,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m7a-8xlarge",
@@ -7622,7 +8125,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m7a-large",
@@ -7637,7 +8141,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m7a-medium",
@@ -7652,7 +8157,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m7a-metal-48xl",
@@ -7667,7 +8173,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "m7a-xlarge",
@@ -7682,7 +8189,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m7g-12xlarge",
@@ -7697,7 +8205,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m7g-16xlarge",
@@ -7712,7 +8221,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m7g-2xlarge",
@@ -7727,7 +8237,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m7g-4xlarge",
@@ -7742,7 +8253,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m7g-8xlarge",
@@ -7757,7 +8269,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m7g-large",
@@ -7772,7 +8285,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m7g-medium",
@@ -7787,7 +8301,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m7g-metal",
@@ -7802,7 +8317,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.332856
   },
   {
     "id": "m7g-xlarge",
@@ -7817,7 +8333,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m7gd-12xlarge",
@@ -7832,7 +8349,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m7gd-16xlarge",
@@ -7847,7 +8365,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m7gd-2xlarge",
@@ -7862,7 +8381,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m7gd-4xlarge",
@@ -7877,7 +8397,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m7gd-8xlarge",
@@ -7892,7 +8413,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m7gd-large",
@@ -7907,7 +8429,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m7gd-medium",
@@ -7922,7 +8445,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m7gd-metal",
@@ -7937,7 +8461,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.532856
   },
   {
     "id": "m7gd-xlarge",
@@ -7952,7 +8477,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.532856
   },
   {
     "id": "m7i-12xlarge",
@@ -7967,7 +8493,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m7i-16xlarge",
@@ -7982,7 +8509,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m7i-24xlarge",
@@ -7997,7 +8525,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m7i-2xlarge",
@@ -8012,7 +8541,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m7i-48xlarge",
@@ -8027,7 +8557,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m7i-4xlarge",
@@ -8042,7 +8573,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m7i-8xlarge",
@@ -8057,7 +8589,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m7i-flex-2xlarge",
@@ -8072,7 +8605,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m7i-flex-4xlarge",
@@ -8087,7 +8621,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m7i-flex-8xlarge",
@@ -8102,7 +8637,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m7i-flex-large",
@@ -8117,7 +8653,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m7i-flex-xlarge",
@@ -8132,7 +8669,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m7i-large",
@@ -8147,7 +8685,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m7i-metal-24xl",
@@ -8162,7 +8701,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.6103792
   },
   {
     "id": "m7i-metal-48xl",
@@ -8177,7 +8717,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "m7i-xlarge",
@@ -8192,7 +8733,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m8g-12xlarge",
@@ -8207,7 +8749,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m8g-16xlarge",
@@ -8222,7 +8765,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m8g-24xlarge",
@@ -8237,7 +8781,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m8g-2xlarge",
@@ -8252,7 +8797,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m8g-48xlarge",
@@ -8267,7 +8813,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "m8g-4xlarge",
@@ -8282,7 +8829,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m8g-8xlarge",
@@ -8297,7 +8845,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m8g-large",
@@ -8312,7 +8861,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m8g-medium",
@@ -8327,7 +8877,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "m8g-metal-24xl",
@@ -8342,7 +8893,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.6103792
   },
   {
     "id": "m8g-metal-48xl",
@@ -8357,7 +8909,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "m8g-xlarge",
@@ -8372,7 +8925,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "mac1-metal",
@@ -8387,7 +8941,8 @@
     "cpu": [
       "intel-core-i78700b"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.0221904
   },
   {
     "id": "mac2-m1ultra-metal",
@@ -8402,7 +8957,8 @@
     "cpu": [
       "apple-m1-ultra"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 2.632856
   },
   {
     "id": "mac2-m2-metal",
@@ -8417,7 +8973,8 @@
     "cpu": [
       "apple-m2"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.6103792
   },
   {
     "id": "mac2-m2pro-metal",
@@ -8432,7 +8989,8 @@
     "cpu": [
       "apple-m2-pro"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.0221904
   },
   {
     "id": "mac2-metal",
@@ -8447,7 +9005,8 @@
     "cpu": [
       "apple-m1"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.2440944
   },
   {
     "id": "p2-16xlarge",
@@ -8463,7 +9022,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.4930204
   },
   {
     "id": "p2-8xlarge",
@@ -8479,7 +9039,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.4930204
   },
   {
     "id": "p2-xlarge",
@@ -8495,7 +9056,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.4930204
   },
   {
     "id": "p3-16xlarge",
@@ -8511,7 +9073,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 3.5429488
   },
   {
     "id": "p3-2xlarge",
@@ -8527,7 +9090,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 3.5429488
   },
   {
     "id": "p3-8xlarge",
@@ -8543,7 +9107,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 3.5429488
   },
   {
     "id": "p3dn-24xlarge",
@@ -8559,7 +9124,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 3.5429488
   },
   {
     "id": "p4d-24xlarge",
@@ -8575,7 +9141,8 @@
     "cpu": [
       "intel-xeon-8275cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.6755184
   },
   {
     "id": "p4de-24xlarge",
@@ -8591,7 +9158,8 @@
     "cpu": [
       "intel-xeon-8275cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.6755184
   },
   {
     "id": "p5-48xlarge",
@@ -8607,7 +9175,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.1850384
   },
   {
     "id": "p5e-48xlarge",
@@ -8623,7 +9192,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.1850384
   },
   {
     "id": "p5en-48xlarge",
@@ -8639,7 +9209,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.1850384
   },
   {
     "id": "r3-2xlarge",
@@ -8654,7 +9225,8 @@
     "cpu": [
       "intel-xeon-e52670v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6162132
   },
   {
     "id": "r3-4xlarge",
@@ -8669,7 +9241,8 @@
     "cpu": [
       "intel-xeon-e52670v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6162132
   },
   {
     "id": "r3-8xlarge",
@@ -8684,7 +9257,8 @@
     "cpu": [
       "intel-xeon-e52670v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6162132
   },
   {
     "id": "r3-large",
@@ -8699,7 +9273,8 @@
     "cpu": [
       "intel-xeon-e52670v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6162132
   },
   {
     "id": "r3-xlarge",
@@ -8714,7 +9289,8 @@
     "cpu": [
       "intel-xeon-e52670v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6162132
   },
   {
     "id": "r4-16xlarge",
@@ -8729,7 +9305,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7546168
   },
   {
     "id": "r4-2xlarge",
@@ -8744,7 +9321,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7546168
   },
   {
     "id": "r4-4xlarge",
@@ -8759,7 +9337,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7546168
   },
   {
     "id": "r4-8xlarge",
@@ -8774,7 +9353,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7546168
   },
   {
     "id": "r4-large",
@@ -8789,7 +9369,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7546168
   },
   {
     "id": "r4-xlarge",
@@ -8804,7 +9385,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7546168
   },
   {
     "id": "r5-12xlarge",
@@ -8819,7 +9401,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5-16xlarge",
@@ -8834,7 +9417,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5-24xlarge",
@@ -8849,7 +9433,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5-2xlarge",
@@ -8864,7 +9449,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5-4xlarge",
@@ -8879,7 +9465,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5-8xlarge",
@@ -8894,7 +9481,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5-large",
@@ -8909,7 +9497,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5-metal",
@@ -8924,7 +9513,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 2.1429488
   },
   {
     "id": "r5-xlarge",
@@ -8939,7 +9529,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5a-12xlarge",
@@ -8954,7 +9545,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5a-16xlarge",
@@ -8969,7 +9561,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5a-24xlarge",
@@ -8984,7 +9577,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5a-2xlarge",
@@ -8999,7 +9593,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5a-4xlarge",
@@ -9014,7 +9609,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5a-8xlarge",
@@ -9029,7 +9625,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5a-large",
@@ -9044,7 +9641,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5a-xlarge",
@@ -9059,7 +9657,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5ad-12xlarge",
@@ -9074,7 +9673,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5ad-16xlarge",
@@ -9089,7 +9689,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5ad-24xlarge",
@@ -9104,7 +9705,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5ad-2xlarge",
@@ -9119,7 +9721,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5ad-4xlarge",
@@ -9134,7 +9737,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5ad-8xlarge",
@@ -9149,7 +9753,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5ad-large",
@@ -9164,7 +9769,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5ad-xlarge",
@@ -9179,7 +9785,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5b-12xlarge",
@@ -9194,7 +9801,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5b-16xlarge",
@@ -9209,7 +9817,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5b-24xlarge",
@@ -9224,7 +9833,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5b-2xlarge",
@@ -9239,7 +9849,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5b-4xlarge",
@@ -9254,7 +9865,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5b-8xlarge",
@@ -9269,7 +9881,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5b-large",
@@ -9284,7 +9897,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5b-metal",
@@ -9299,7 +9913,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 2.1429488
   },
   {
     "id": "r5b-xlarge",
@@ -9314,7 +9929,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5d-12xlarge",
@@ -9329,7 +9945,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5d-16xlarge",
@@ -9344,7 +9961,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5d-24xlarge",
@@ -9359,7 +9977,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5d-2xlarge",
@@ -9374,7 +9993,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5d-4xlarge",
@@ -9389,7 +10009,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5d-8xlarge",
@@ -9404,7 +10025,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5d-large",
@@ -9419,7 +10041,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5d-metal",
@@ -9434,7 +10057,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 2.5429488
   },
   {
     "id": "r5d-xlarge",
@@ -9449,7 +10073,8 @@
     "cpu": [
       "intel-xeon-8175"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5dn-12xlarge",
@@ -9464,7 +10089,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5dn-16xlarge",
@@ -9479,7 +10105,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5dn-24xlarge",
@@ -9494,7 +10121,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5dn-2xlarge",
@@ -9509,7 +10137,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5dn-4xlarge",
@@ -9524,7 +10153,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5dn-8xlarge",
@@ -9539,7 +10169,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5dn-large",
@@ -9554,7 +10185,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5dn-metal",
@@ -9569,7 +10201,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 2.5429488
   },
   {
     "id": "r5dn-xlarge",
@@ -9584,7 +10217,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r5n-12xlarge",
@@ -9599,7 +10233,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5n-16xlarge",
@@ -9614,7 +10249,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5n-24xlarge",
@@ -9629,7 +10265,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5n-2xlarge",
@@ -9644,7 +10281,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5n-4xlarge",
@@ -9659,7 +10297,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5n-8xlarge",
@@ -9674,7 +10313,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5n-large",
@@ -9689,7 +10329,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r5n-metal",
@@ -9704,7 +10345,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 2.1429488
   },
   {
     "id": "r5n-xlarge",
@@ -9719,7 +10361,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r6a-12xlarge",
@@ -9734,7 +10377,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r6a-16xlarge",
@@ -9749,7 +10393,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r6a-24xlarge",
@@ -9764,7 +10409,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r6a-2xlarge",
@@ -9779,7 +10425,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r6a-32xlarge",
@@ -9794,7 +10441,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "r6a-48xlarge",
@@ -9809,7 +10457,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.1850384
   },
   {
     "id": "r6a-4xlarge",
@@ -9824,7 +10473,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r6a-8xlarge",
@@ -9839,7 +10489,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r6a-large",
@@ -9854,7 +10505,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r6a-metal",
@@ -9869,7 +10521,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 3.9850384
   },
   {
     "id": "r6a-xlarge",
@@ -9884,7 +10537,8 @@
     "cpu": [
       "amd-epyc-7r13"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r6g-12xlarge",
@@ -9899,7 +10553,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r6g-16xlarge",
@@ -9914,7 +10569,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r6g-2xlarge",
@@ -9929,7 +10585,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r6g-4xlarge",
@@ -9944,7 +10601,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r6g-8xlarge",
@@ -9959,7 +10617,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r6g-large",
@@ -9974,7 +10633,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r6g-medium",
@@ -9989,7 +10649,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r6g-metal",
@@ -10004,7 +10665,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.6879024
   },
   {
     "id": "r6g-xlarge",
@@ -10019,7 +10681,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r6gd-12xlarge",
@@ -10034,7 +10697,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r6gd-16xlarge",
@@ -10049,7 +10713,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r6gd-2xlarge",
@@ -10064,7 +10729,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r6gd-4xlarge",
@@ -10079,7 +10745,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r6gd-8xlarge",
@@ -10094,7 +10761,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r6gd-large",
@@ -10109,7 +10777,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r6gd-medium",
@@ -10124,7 +10793,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r6gd-metal",
@@ -10139,7 +10809,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.8879024
   },
   {
     "id": "r6gd-xlarge",
@@ -10154,7 +10825,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r6i-12xlarge",
@@ -10169,7 +10841,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r6i-16xlarge",
@@ -10184,7 +10857,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r6i-24xlarge",
@@ -10199,7 +10873,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r6i-2xlarge",
@@ -10214,7 +10889,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r6i-32xlarge",
@@ -10229,7 +10905,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "r6i-4xlarge",
@@ -10244,7 +10921,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r6i-8xlarge",
@@ -10259,7 +10937,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r6i-large",
@@ -10274,7 +10953,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r6i-metal",
@@ -10289,7 +10969,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "r6i-xlarge",
@@ -10304,7 +10985,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r6id-12xlarge",
@@ -10319,7 +11001,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r6id-16xlarge",
@@ -10334,7 +11017,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r6id-24xlarge",
@@ -10349,7 +11033,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r6id-2xlarge",
@@ -10364,7 +11049,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r6id-32xlarge",
@@ -10379,7 +11065,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "r6id-4xlarge",
@@ -10394,7 +11081,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r6id-8xlarge",
@@ -10409,7 +11097,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r6id-large",
@@ -10424,7 +11113,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r6id-metal",
@@ -10439,7 +11129,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "r6id-xlarge",
@@ -10454,7 +11145,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r6idn-12xlarge",
@@ -10469,7 +11161,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r6idn-16xlarge",
@@ -10484,7 +11177,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r6idn-24xlarge",
@@ -10499,7 +11193,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r6idn-2xlarge",
@@ -10514,7 +11209,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r6idn-32xlarge",
@@ -10529,7 +11225,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "r6idn-4xlarge",
@@ -10544,7 +11241,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r6idn-8xlarge",
@@ -10559,7 +11257,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r6idn-large",
@@ -10574,7 +11273,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r6idn-metal",
@@ -10589,7 +11289,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "r6idn-xlarge",
@@ -10604,7 +11305,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r6in-12xlarge",
@@ -10619,7 +11321,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r6in-16xlarge",
@@ -10634,7 +11337,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r6in-24xlarge",
@@ -10649,7 +11353,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r6in-2xlarge",
@@ -10664,7 +11369,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r6in-32xlarge",
@@ -10679,7 +11385,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "r6in-4xlarge",
@@ -10694,7 +11401,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r6in-8xlarge",
@@ -10709,7 +11417,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r6in-large",
@@ -10724,7 +11433,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r6in-metal",
@@ -10739,7 +11449,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "r6in-xlarge",
@@ -10754,7 +11465,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5429488
   },
   {
     "id": "r7a-12xlarge",
@@ -10769,7 +11481,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7a-16xlarge",
@@ -10784,7 +11497,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7a-24xlarge",
@@ -10799,7 +11513,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7a-2xlarge",
@@ -10814,7 +11529,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7a-32xlarge",
@@ -10829,7 +11545,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "r7a-48xlarge",
@@ -10844,7 +11561,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.1850384
   },
   {
     "id": "r7a-4xlarge",
@@ -10859,7 +11577,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7a-8xlarge",
@@ -10874,7 +11593,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7a-large",
@@ -10889,7 +11609,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7a-medium",
@@ -10904,7 +11625,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r7a-metal-48xl",
@@ -10919,7 +11641,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 4.1850384
   },
   {
     "id": "r7a-xlarge",
@@ -10934,7 +11657,8 @@
     "cpu": [
       "amd-epyc-9r14"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7g-12xlarge",
@@ -10949,7 +11673,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r7g-16xlarge",
@@ -10964,7 +11689,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r7g-2xlarge",
@@ -10979,7 +11705,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r7g-4xlarge",
@@ -10994,7 +11721,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r7g-8xlarge",
@@ -11009,7 +11737,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r7g-large",
@@ -11024,7 +11753,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r7g-medium",
@@ -11039,7 +11769,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r7g-metal",
@@ -11054,7 +11785,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.6879024
   },
   {
     "id": "r7g-xlarge",
@@ -11069,7 +11801,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r7gd-12xlarge",
@@ -11084,7 +11817,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r7gd-16xlarge",
@@ -11099,7 +11833,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r7gd-2xlarge",
@@ -11114,7 +11849,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r7gd-4xlarge",
@@ -11129,7 +11865,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r7gd-8xlarge",
@@ -11144,7 +11881,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r7gd-large",
@@ -11159,7 +11897,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r7gd-medium",
@@ -11174,7 +11913,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r7gd-metal",
@@ -11189,7 +11929,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.8879024
   },
   {
     "id": "r7gd-xlarge",
@@ -11204,7 +11945,8 @@
     "cpu": [
       "aws-graviton-3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8879024
   },
   {
     "id": "r7i-12xlarge",
@@ -11219,7 +11961,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7i-16xlarge",
@@ -11234,7 +11977,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7i-24xlarge",
@@ -11249,7 +11993,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7i-2xlarge",
@@ -11264,7 +12009,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7i-48xlarge",
@@ -11279,7 +12025,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.1850384
   },
   {
     "id": "r7i-4xlarge",
@@ -11294,7 +12041,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7i-8xlarge",
@@ -11309,7 +12057,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7i-large",
@@ -11324,7 +12073,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7i-metal-24xl",
@@ -11339,7 +12089,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 2.1429488
   },
   {
     "id": "r7i-metal-48xl",
@@ -11354,7 +12105,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 4.1850384
   },
   {
     "id": "r7i-xlarge",
@@ -11369,7 +12121,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7iz-12xlarge",
@@ -11384,7 +12137,8 @@
     "cpu": [
       "intel-xeon-6455b"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7iz-16xlarge",
@@ -11399,7 +12153,8 @@
     "cpu": [
       "intel-xeon-6455b"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7iz-2xlarge",
@@ -11414,7 +12169,8 @@
     "cpu": [
       "intel-xeon-6455b"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7iz-32xlarge",
@@ -11429,7 +12185,8 @@
     "cpu": [
       "intel-xeon-6455b"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "r7iz-4xlarge",
@@ -11444,7 +12201,8 @@
     "cpu": [
       "intel-xeon-6455b"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7iz-8xlarge",
@@ -11459,7 +12217,8 @@
     "cpu": [
       "intel-xeon-6455b"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7iz-large",
@@ -11474,7 +12233,8 @@
     "cpu": [
       "intel-xeon-6455b"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r7iz-metal-16xl",
@@ -11489,7 +12249,8 @@
     "cpu": [
       "intel-xeon-6455b"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.6879024
   },
   {
     "id": "r7iz-metal-32xl",
@@ -11504,7 +12265,8 @@
     "cpu": [
       "intel-xeon-6455b"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.7879024
   },
   {
     "id": "r7iz-xlarge",
@@ -11519,7 +12281,8 @@
     "cpu": [
       "intel-xeon-6455b"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r8g-12xlarge",
@@ -11534,7 +12297,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r8g-16xlarge",
@@ -11549,7 +12313,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r8g-24xlarge",
@@ -11564,7 +12329,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "r8g-2xlarge",
@@ -11579,7 +12345,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r8g-48xlarge",
@@ -11594,7 +12361,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.1850384
   },
   {
     "id": "r8g-4xlarge",
@@ -11609,7 +12377,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r8g-8xlarge",
@@ -11624,7 +12393,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r8g-large",
@@ -11639,7 +12409,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r8g-medium",
@@ -11654,7 +12425,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "r8g-metal-24xl",
@@ -11669,7 +12441,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 2.1429488
   },
   {
     "id": "r8g-metal-48xl",
@@ -11684,7 +12457,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 4.1850384
   },
   {
     "id": "r8g-xlarge",
@@ -11699,7 +12473,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6879024
   },
   {
     "id": "t1-micro",
@@ -11714,7 +12489,8 @@
     "cpu": [
       "intel-xeon-e52670v2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.2775232
   },
   {
     "id": "t2-2xlarge",
@@ -11729,7 +12505,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.4772368
   },
   {
     "id": "t2-large",
@@ -11744,7 +12521,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.4772368
   },
   {
     "id": "t2-medium",
@@ -11759,7 +12537,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.4772368
   },
   {
     "id": "t2-micro",
@@ -11774,7 +12553,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.4772368
   },
   {
     "id": "t2-nano",
@@ -11789,7 +12569,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.4772368
   },
   {
     "id": "t2-small",
@@ -11804,7 +12585,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.4772368
   },
   {
     "id": "t2-xlarge",
@@ -11819,7 +12601,8 @@
     "cpu": [
       "intel-xeon-e52686v4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.4772368
   },
   {
     "id": "t3-2xlarge",
@@ -11834,7 +12617,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "t3-large",
@@ -11849,7 +12633,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "t3-medium",
@@ -11864,7 +12649,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "t3-micro",
@@ -11879,7 +12665,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "t3-nano",
@@ -11894,7 +12681,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "t3-small",
@@ -11909,7 +12697,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "t3-xlarge",
@@ -11924,7 +12713,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "t3a-2xlarge",
@@ -11939,7 +12729,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "t3a-large",
@@ -11954,7 +12745,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "t3a-medium",
@@ -11969,7 +12761,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "t3a-micro",
@@ -11984,7 +12777,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "t3a-nano",
@@ -11999,7 +12793,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "t3a-small",
@@ -12014,7 +12809,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "t3a-xlarge",
@@ -12029,7 +12825,8 @@
     "cpu": [
       "amd-epyc-7571"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "t4g-2xlarge",
@@ -12044,7 +12841,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "t4g-large",
@@ -12059,7 +12857,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "t4g-medium",
@@ -12074,7 +12873,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "t4g-micro",
@@ -12089,7 +12889,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "t4g-nano",
@@ -12104,7 +12905,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "t4g-small",
@@ -12119,7 +12921,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "t4g-xlarge",
@@ -12134,7 +12937,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.332856
   },
   {
     "id": "trn1-2xlarge",
@@ -12150,7 +12954,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.632856
   },
   {
     "id": "trn1-32xlarge",
@@ -12166,7 +12971,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "trn1n-32xlarge",
@@ -12182,7 +12988,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "trn2-48xlarge",
@@ -12198,7 +13005,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.1850384
   },
   {
     "id": "trn2u-48xlarge",
@@ -12214,7 +13022,8 @@
     "cpu": [
       "intel-xeon-8488c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.1850384
   },
   {
     "id": "u-12tb1-112xlarge",
@@ -12229,7 +13038,8 @@
     "cpu": [
       "intel-xeon-8176m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 35.762264
   },
   {
     "id": "u-12tb1-metal",
@@ -12244,7 +13054,8 @@
     "cpu": [
       "intel-xeon-8176m"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 35.762264
   },
   {
     "id": "u-18tb1-112xlarge",
@@ -12259,7 +13070,8 @@
     "cpu": [
       "intel-xeon-8280l"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 35.762264
   },
   {
     "id": "u-18tb1-metal",
@@ -12274,7 +13086,8 @@
     "cpu": [
       "intel-xeon-8280l"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 35.762264
   },
   {
     "id": "u-24tb1-112xlarge",
@@ -12289,7 +13102,8 @@
     "cpu": [
       "intel-xeon-8280l"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 35.762264
   },
   {
     "id": "u-24tb1-metal",
@@ -12304,7 +13118,8 @@
     "cpu": [
       "intel-xeon-8280l"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 35.762264
   },
   {
     "id": "u-3tb1-56xlarge",
@@ -12319,7 +13134,8 @@
     "cpu": [
       "intel-xeon-8176m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "u-6tb1-112xlarge",
@@ -12334,7 +13150,8 @@
     "cpu": [
       "intel-xeon-8176m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 35.762264
   },
   {
     "id": "u-6tb1-56xlarge",
@@ -12349,7 +13166,8 @@
     "cpu": [
       "intel-xeon-8176m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "u-6tb1-metal",
@@ -12364,7 +13182,8 @@
     "cpu": [
       "intel-xeon-8176m"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 35.762264
   },
   {
     "id": "u-9tb1-112xlarge",
@@ -12379,7 +13198,8 @@
     "cpu": [
       "intel-xeon-8176m"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 35.762264
   },
   {
     "id": "u-9tb1-metal",
@@ -12394,7 +13214,8 @@
     "cpu": [
       "intel-xeon-8176m"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 35.762264
   },
   {
     "id": "u7i-12tb-224xlarge",
@@ -12409,7 +13230,8 @@
     "cpu": [
       "intel-xeon-8477c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 35.762264
   },
   {
     "id": "u7i-6tb-112xlarge",
@@ -12424,7 +13246,8 @@
     "cpu": [
       "intel-xeon-8477c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 35.762264
   },
   {
     "id": "u7i-8tb-112xlarge",
@@ -12439,7 +13262,8 @@
     "cpu": [
       "intel-xeon-8477c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 35.762264
   },
   {
     "id": "u7in-16tb-224xlarge",
@@ -12454,7 +13278,8 @@
     "cpu": [
       "intel-xeon-8477c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 35.762264
   },
   {
     "id": "u7in-24tb-224xlarge",
@@ -12469,7 +13294,8 @@
     "cpu": [
       "intel-xeon-8477c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 35.762264
   },
   {
     "id": "u7in-32tb-224xlarge",
@@ -12484,7 +13310,8 @@
     "cpu": [
       "intel-xeon-8477c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 35.762264
   },
   {
     "id": "vt1-24xlarge",
@@ -12500,7 +13327,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "vt1-3xlarge",
@@ -12516,7 +13344,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.0221904
   },
   {
     "id": "vt1-6xlarge",
@@ -12532,7 +13361,8 @@
     "cpu": [
       "intel-xeon-8259cl"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "x1-16xlarge",
@@ -12547,7 +13377,8 @@
     "cpu": [
       "intel-xeon-e78880v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.1850384
   },
   {
     "id": "x1-32xlarge",
@@ -12562,7 +13393,8 @@
     "cpu": [
       "intel-xeon-e78880v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.1850384
   },
   {
     "id": "x1e-16xlarge",
@@ -12577,7 +13409,8 @@
     "cpu": [
       "intel-xeon-e78880v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x1e-2xlarge",
@@ -12592,7 +13425,8 @@
     "cpu": [
       "intel-xeon-e78880v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x1e-32xlarge",
@@ -12607,7 +13441,8 @@
     "cpu": [
       "intel-xeon-e78880v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x1e-4xlarge",
@@ -12622,7 +13457,8 @@
     "cpu": [
       "intel-xeon-e78880v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x1e-8xlarge",
@@ -12637,7 +13473,8 @@
     "cpu": [
       "intel-xeon-e78880v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x1e-xlarge",
@@ -12652,7 +13489,8 @@
     "cpu": [
       "intel-xeon-e78880v3"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x2gd-12xlarge",
@@ -12667,7 +13505,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "x2gd-16xlarge",
@@ -12682,7 +13521,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "x2gd-2xlarge",
@@ -12697,7 +13537,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "x2gd-4xlarge",
@@ -12712,7 +13553,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "x2gd-8xlarge",
@@ -12727,7 +13569,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "x2gd-large",
@@ -12742,7 +13585,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "x2gd-medium",
@@ -12757,7 +13601,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "x2gd-metal",
@@ -12772,7 +13617,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 2.5979952
   },
   {
     "id": "x2gd-xlarge",
@@ -12787,7 +13633,8 @@
     "cpu": [
       "aws-graviton-2"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "x2idn-16xlarge",
@@ -12802,7 +13649,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "x2idn-24xlarge",
@@ -12817,7 +13665,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.6755184
   },
   {
     "id": "x2idn-32xlarge",
@@ -12832,7 +13681,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.1850384
   },
   {
     "id": "x2idn-metal",
@@ -12847,7 +13697,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 3.9850384
   },
   {
     "id": "x2iedn-16xlarge",
@@ -12862,7 +13713,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x2iedn-24xlarge",
@@ -12877,7 +13729,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x2iedn-2xlarge",
@@ -12892,7 +13745,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x2iedn-32xlarge",
@@ -12907,7 +13761,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x2iedn-4xlarge",
@@ -12922,7 +13777,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x2iedn-8xlarge",
@@ -12937,7 +13793,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x2iedn-metal",
@@ -12952,7 +13809,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 6.6922672
   },
   {
     "id": "x2iedn-xlarge",
@@ -12967,7 +13825,8 @@
     "cpu": [
       "intel-xeon-8375c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x2iezn-12xlarge",
@@ -12982,7 +13841,8 @@
     "cpu": [
       "intel-xeon-8252c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x2iezn-2xlarge",
@@ -12997,7 +13857,8 @@
     "cpu": [
       "intel-xeon-8252c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x2iezn-4xlarge",
@@ -13012,7 +13873,8 @@
     "cpu": [
       "intel-xeon-8252c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x2iezn-6xlarge",
@@ -13027,7 +13889,8 @@
     "cpu": [
       "intel-xeon-8252c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x2iezn-8xlarge",
@@ -13042,7 +13905,8 @@
     "cpu": [
       "intel-xeon-8252c"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x2iezn-metal",
@@ -13057,7 +13921,8 @@
     "cpu": [
       "intel-xeon-8252c"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 6.6922672
   },
   {
     "id": "x8g-12xlarge",
@@ -13072,7 +13937,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "x8g-16xlarge",
@@ -13087,7 +13953,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "x8g-24xlarge",
@@ -13102,7 +13969,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 4.6755184
   },
   {
     "id": "x8g-2xlarge",
@@ -13117,7 +13985,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "x8g-48xlarge",
@@ -13132,7 +14001,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "x8g-4xlarge",
@@ -13147,7 +14017,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "x8g-8xlarge",
@@ -13162,7 +14033,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "x8g-large",
@@ -13177,7 +14049,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "x8g-medium",
@@ -13192,7 +14065,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "x8g-metal-24xl",
@@ -13207,7 +14081,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 4.6755184
   },
   {
     "id": "x8g-metal-48xl",
@@ -13222,7 +14097,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 6.8922672
   },
   {
     "id": "x8g-xlarge",
@@ -13237,7 +14113,8 @@
     "cpu": [
       "aws-graviton-4"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 2.5979952
   },
   {
     "id": "z1d-12xlarge",
@@ -13252,7 +14129,8 @@
     "cpu": [
       "intel-xeon-8151"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8103792
   },
   {
     "id": "z1d-2xlarge",
@@ -13267,7 +14145,8 @@
     "cpu": [
       "intel-xeon-8151"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8103792
   },
   {
     "id": "z1d-3xlarge",
@@ -13282,7 +14161,8 @@
     "cpu": [
       "intel-xeon-8151"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8103792
   },
   {
     "id": "z1d-6xlarge",
@@ -13297,7 +14177,8 @@
     "cpu": [
       "intel-xeon-8151"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8103792
   },
   {
     "id": "z1d-large",
@@ -13312,7 +14193,8 @@
     "cpu": [
       "intel-xeon-8151"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8103792
   },
   {
     "id": "z1d-metal",
@@ -13327,7 +14209,8 @@
     "cpu": [
       "intel-xeon-8151"
     ],
-    "virtual": false
+    "virtual": false,
+    "embodied": 1.8103792
   },
   {
     "id": "z1d-xlarge",
@@ -13342,6 +14225,7 @@
     "cpu": [
       "intel-xeon-8151"
     ],
-    "virtual": true
+    "virtual": true,
+    "embodied": 1.8103792
   }
 ]
