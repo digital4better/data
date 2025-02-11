@@ -747,6 +747,12 @@ gs2,gsv1,gs2,compute,4,56,112,0,intel-xeon-e52698bv3,0,,1.7491
 gs3,gsv1,gs3,compute,8,112,224,0,intel-xeon-e52698bv3,0,,1.7491
 gs4-4,gsv1,gs4-4,compute,16,224,3072,0,intel-xeon-e52698bv3,0,,1.4385
 gs5-16,gsv1,gs5-16,compute,32,448,6144,0,intel-xeon-e52698bv3,0,,1.7491
+h16,hv1,h16,performance,16,112,2000,0,intel-xeon-e52667v3,0,,1.4385
+h16m,hv1,h16m,performance,16,224,2000,0,intel-xeon-e52667v3,0,,1.4385
+h16mr,hv1,h16mr,performance,16,224,2000,0,intel-xeon-e52667v3,0,,1.4385
+h16r,hv1,h16r,performance,16,112,2000,0,intel-xeon-e52667v3,0,,1.4385
+h8,hv1,h8,performance,8,56,1000,0,intel-xeon-e52667v3,0,,1.4385
+h8m,hv1,h8m,performance,8,112,1000,0,intel-xeon-e52667v3,0,,1.4385
 hb120-16rs-v2,hbv2,hb120-16rs v2,performance,16,456,960,0,amd-epyc-7v12,0,,6.5256
 hb120-16rs-v3,hbv3,hb120-16rs v3,performance,16,448,2400,0,amd-epyc-7v73x,0,,1.6991
 hb120-32rs-v2,hbv2,hb120-32rs v2,performance,32,456,960,0,amd-epyc-7v12,0,,1.7491
