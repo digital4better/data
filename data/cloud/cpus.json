@@ -1035,6 +1035,21 @@
     "smp": 2
   },
   {
+    "id": "intel-xeon-e52667v3",
+    "manufacturer": "intel",
+    "serie": "xeon",
+    "model": "e5-2667 v3",
+    "architecture": "x86-64",
+    "platform": "haswell",
+    "cores": 8,
+    "threads": 16,
+    "tdp": 135,
+    "process": 22,
+    "die": 356,
+    "transistors": 2600,
+    "smp": 2
+  },
+  {
     "id": "intel-xeon-e52670",
     "manufacturer": "intel",
     "serie": "xeon",

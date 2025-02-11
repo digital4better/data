@@ -12426,6 +12426,102 @@
     "embodied": 1.7491
   },
   {
+    "id": "h16",
+    "family": "hv1",
+    "name": "h16",
+    "category": "performance",
+    "vcpus": 16,
+    "memory": 112,
+    "accelerators": 0,
+    "ssd": 2000,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52667v3"
+    ],
+    "virtual": true,
+    "embodied": 1.4385
+  },
+  {
+    "id": "h16m",
+    "family": "hv1",
+    "name": "h16m",
+    "category": "performance",
+    "vcpus": 16,
+    "memory": 224,
+    "accelerators": 0,
+    "ssd": 2000,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52667v3"
+    ],
+    "virtual": true,
+    "embodied": 1.4385
+  },
+  {
+    "id": "h16mr",
+    "family": "hv1",
+    "name": "h16mr",
+    "category": "performance",
+    "vcpus": 16,
+    "memory": 224,
+    "accelerators": 0,
+    "ssd": 2000,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52667v3"
+    ],
+    "virtual": true,
+    "embodied": 1.4385
+  },
+  {
+    "id": "h16r",
+    "family": "hv1",
+    "name": "h16r",
+    "category": "performance",
+    "vcpus": 16,
+    "memory": 112,
+    "accelerators": 0,
+    "ssd": 2000,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52667v3"
+    ],
+    "virtual": true,
+    "embodied": 1.4385
+  },
+  {
+    "id": "h8",
+    "family": "hv1",
+    "name": "h8",
+    "category": "performance",
+    "vcpus": 8,
+    "memory": 56,
+    "accelerators": 0,
+    "ssd": 1000,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52667v3"
+    ],
+    "virtual": true,
+    "embodied": 1.4385
+  },
+  {
+    "id": "h8m",
+    "family": "hv1",
+    "name": "h8m",
+    "category": "performance",
+    "vcpus": 8,
+    "memory": 112,
+    "accelerators": 0,
+    "ssd": 1000,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52667v3"
+    ],
+    "virtual": true,
+    "embodied": 1.4385
+  },
+  {
     "id": "hb120-16rs-v2",
     "family": "hbv2",
     "name": "hb120-16rs v2",
