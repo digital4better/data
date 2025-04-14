@@ -18,7 +18,7 @@
     "build": "yarn build:data && yarn build:site",
     "build:data": "ts-node .",
     "build:site": "vite build --base=/data/",
-    "preversion": "git add --all",
+    "preversion": "node .github/workflows/update-release-date.js && git add --all",
     "postversion": "git push --tags && yarn publish --access=public && git push"
   },
   "devDependencies": {
