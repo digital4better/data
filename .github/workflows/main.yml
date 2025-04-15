@@ -3,7 +3,7 @@ name: Data generation
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '50 * * * *'
 
 jobs:
   build:
@@ -21,7 +21,7 @@ jobs:
       - run: git config user.email "<>"
       - run: yarn --frozen-lockfile
       - run: yarn build
-      - run: "! git diff --quiet && yarn version --patch || echo 'No changes detected, versioning ignored'"
+      - run: "yarn version --patch || echo 'No changes detected, versioning ignored'"
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
       - name: Upload Pages artifact
