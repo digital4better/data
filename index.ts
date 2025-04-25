@@ -6,6 +6,11 @@ import REGIONS from "./data/country/regions.json";
 import IMPACTS from "./data/energy/energy-impacts.json";
 import { PassThrough } from "stream";
 import ReadableStream = NodeJS.ReadableStream;
+import { fetch, Agent } from "undici";
+
+const dispatcher = new Agent({
+  connect: { rejectUnauthorized: false },
+});
 
 const MIN_YEAR = 2019;
 const CURRENT_MONTH = new Date().getUTCMonth();
@@ -381,7 +386,9 @@ const finalizeSubdivisionMix = (aggregates: Aggregates, country: string) => {
 };
 
 const fetchCanadianMix = async (aggregates: Aggregates) => {
-  const data = await (await fetch("https://www150.statcan.gc.ca/n1/tbl/csv/25100015-eng.zip")).arrayBuffer();
+  const data = await (
+    await fetch("https://www150.statcan.gc.ca/n1/tbl/csv/25100015-eng.zip", { dispatcher })
+  ).arrayBuffer();
   const zip = new AdmZip(Buffer.from(data));
   const content = zip.getEntries().find(({ name }) => name === "25100015.csv");
   const stream = new PassThrough();
@@ -454,7 +461,7 @@ const fetchUSMix = async (aggregates: Aggregates) => {
   do {
     ({
       response: { data },
-    } = await (
+    } = (await (
       await fetch(`https://api.eia.gov/v2/electricity/electric-power-operational-data/data/?api_key=${API_KEY}`, {
         headers: {
           "x-params": JSON.stringify({
@@ -477,7 +484,7 @@ const fetchUSMix = async (aggregates: Aggregates) => {
           }),
         },
       })
-    ).json());
+    ).json()) as any);
     offset += data.length;
     for (const { period, location, fueltypeid, generation } of data) {
       const region = `US-${location}`;
