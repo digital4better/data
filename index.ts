@@ -6,11 +6,6 @@ import REGIONS from "./data/country/regions.json";
 import IMPACTS from "./data/energy/energy-impacts.json";
 import { PassThrough } from "stream";
 import ReadableStream = NodeJS.ReadableStream;
-import { fetch, Agent } from "undici";
-
-const dispatcher = new Agent({
-  connect: { rejectUnauthorized: false },
-});
 
 const MIN_YEAR = 2019;
 const CURRENT_MONTH = new Date().getUTCMonth();
@@ -68,6 +63,19 @@ const fetchAndScrap = async (url: string, regex: RegExp): Promise<string> =>
       response.on("end", () => resolve(regex.exec(body)?.[0]));
     })
   );
+
+const fechToBuffer = (url: string): Promise<Buffer> => {
+  return new Promise((resolve, reject) => {
+    get(url, { rejectUnauthorized: false }, (res) => {
+      if (res.statusCode && res.statusCode >= 400) {
+        return reject(new Error(`Request failed with status code ${res.statusCode}`));
+      }
+      const chunks: Buffer[] = [];
+      res.on("data", (chunk) => chunks.push(chunk));
+      res.on("end", () => resolve(Buffer.concat(chunks)));
+    }).on("error", reject);
+  });
+};
 
 const processData = async (
   input: ReadableStream,
@@ -386,10 +394,8 @@ const finalizeSubdivisionMix = (aggregates: Aggregates, country: string) => {
 };
 
 const fetchCanadianMix = async (aggregates: Aggregates) => {
-  const data = await (
-    await fetch("https://www150.statcan.gc.ca/n1/tbl/csv/25100015-eng.zip", { dispatcher })
-  ).arrayBuffer();
-  const zip = new AdmZip(Buffer.from(data));
+  const data = await fechToBuffer("https://www150.statcan.gc.ca/n1/tbl/csv/25100015-eng.zip");
+  const zip = new AdmZip(data);
   const content = zip.getEntries().find(({ name }) => name === "25100015.csv");
   const stream = new PassThrough();
   stream.end(content.getData());
