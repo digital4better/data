@@ -58,8 +58,8 @@
     "2024": {
       "Bioenergy": 0.0071,
       "Coal": 0.0931,
-      "Gas": 0.4362,
-      "Hydro": 0.3095,
+      "Gas": 0.4364,
+      "Hydro": 0.3094,
       "Nuclear": 0.0024,
       "Other Fossil": 0.1254,
       "Other Renewables": 0.0016,
@@ -68,14 +68,14 @@
     },
     "2025": {
       "Bioenergy": 0.0072,
-      "Coal": 0.0881,
-      "Gas": 0.435,
-      "Hydro": 0.3129,
-      "Nuclear": 0.0032,
+      "Coal": 0.0907,
+      "Gas": 0.4355,
+      "Hydro": 0.3113,
+      "Nuclear": 0.0027,
       "Other Fossil": 0.1269,
-      "Other Renewables": 0.0015,
-      "Solar": 0.0148,
-      "Wind": 0.0104
+      "Other Renewables": 0.0016,
+      "Solar": 0.0146,
+      "Wind": 0.0095
     }
   },
   "Asia": {
@@ -92,7 +92,7 @@
     },
     "2020": {
       "Bioenergy": 0.0128,
-      "Coal": 0.3532,
+      "Coal": 0.3533,
       "Gas": 0.3563,
       "Hydro": 0.0899,
       "Nuclear": 0.0241,
@@ -109,8 +109,8 @@
       "Nuclear": 0.0253,
       "Other Fossil": 0.1113,
       "Other Renewables": 0.0068,
-      "Solar": 0.0239,
-      "Wind": 0.0275
+      "Solar": 0.0238,
+      "Wind": 0.0274
     },
     "2022": {
       "Bioenergy": 0.0146,
@@ -121,11 +121,11 @@
       "Other Fossil": 0.1099,
       "Other Renewables": 0.0067,
       "Solar": 0.0286,
-      "Wind": 0.031
+      "Wind": 0.0311
     },
     "2023": {
-      "Bioenergy": 0.0149,
-      "Coal": 0.3643,
+      "Bioenergy": 0.0151,
+      "Coal": 0.3641,
       "Gas": 0.3317,
       "Hydro": 0.0806,
       "Nuclear": 0.0264,
@@ -135,26 +135,26 @@
       "Wind": 0.0351
     },
     "2024": {
-      "Bioenergy": 0.0147,
-      "Coal": 0.3603,
-      "Gas": 0.3239,
+      "Bioenergy": 0.0149,
+      "Coal": 0.3602,
+      "Gas": 0.324,
       "Hydro": 0.0837,
       "Nuclear": 0.0266,
-      "Other Fossil": 0.1034,
+      "Other Fossil": 0.1033,
       "Other Renewables": 0.0065,
-      "Solar": 0.0431,
+      "Solar": 0.043,
       "Wind": 0.0377
     },
     "2025": {
-      "Bioenergy": 0.0151,
-      "Coal": 0.358,
-      "Gas": 0.3212,
-      "Hydro": 0.0671,
-      "Nuclear": 0.0288,
-      "Other Fossil": 0.1053,
+      "Bioenergy": 0.0152,
+      "Coal": 0.3552,
+      "Gas": 0.3235,
+      "Hydro": 0.068,
+      "Nuclear": 0.0293,
+      "Other Fossil": 0.1058,
       "Other Renewables": 0.0066,
-      "Solar": 0.0511,
-      "Wind": 0.0468
+      "Solar": 0.05,
+      "Wind": 0.0462
     }
   },
   "Europe": {
@@ -226,14 +226,14 @@
     },
     "2025": {
       "Bioenergy": 0.0262,
-      "Coal": 0.1504,
+      "Coal": 0.1509,
       "Gas": 0.2541,
       "Hydro": 0.1822,
-      "Nuclear": 0.175,
-      "Other Fossil": 0.023,
+      "Nuclear": 0.1745,
+      "Other Fossil": 0.0231,
       "Other Renewables": 0.0173,
-      "Solar": 0.0581,
-      "Wind": 0.1137
+      "Solar": 0.0578,
+      "Wind": 0.1138
     }
   },
   "North America": {
@@ -384,14 +384,14 @@
     },
     "2025": {
       "Bioenergy": 0.0038,
-      "Coal": 0.3445,
-      "Gas": 0.0653,
-      "Hydro": 0.131,
+      "Coal": 0.3447,
+      "Gas": 0.0646,
+      "Hydro": 0.1315,
       "Nuclear": 0,
-      "Other Fossil": 0.2004,
-      "Other Renewables": 0.024,
-      "Solar": 0.1428,
-      "Wind": 0.0881
+      "Other Fossil": 0.2005,
+      "Other Renewables": 0.0238,
+      "Solar": 0.1429,
+      "Wind": 0.0882
     }
   },
   "South America": {
@@ -441,36 +441,36 @@
     },
     "2023": {
       "Bioenergy": 0.0063,
-      "Coal": 0.0131,
-      "Gas": 0.1767,
+      "Coal": 0.0135,
+      "Gas": 0.1763,
       "Hydro": 0.6131,
       "Nuclear": 0.01,
-      "Other Fossil": 0.0945,
+      "Other Fossil": 0.0944,
       "Other Renewables": 0.0002,
       "Solar": 0.0322,
       "Wind": 0.0539
     },
     "2024": {
       "Bioenergy": 0.0068,
-      "Coal": 0.0135,
-      "Gas": 0.1762,
+      "Coal": 0.0138,
+      "Gas": 0.1761,
       "Hydro": 0.5961,
       "Nuclear": 0.011,
-      "Other Fossil": 0.0931,
+      "Other Fossil": 0.093,
       "Other Renewables": 0.0001,
       "Solar": 0.0434,
       "Wind": 0.0598
     },
     "2025": {
-      "Bioenergy": 0.0041,
-      "Coal": 0.0099,
+      "Bioenergy": 0.0044,
+      "Coal": 0.0103,
       "Gas": 0.1681,
-      "Hydro": 0.6131,
-      "Nuclear": 0.011,
-      "Other Fossil": 0.0897,
+      "Hydro": 0.6136,
+      "Nuclear": 0.0106,
+      "Other Fossil": 0.0905,
       "Other Renewables": 0.0001,
-      "Solar": 0.0526,
-      "Wind": 0.0513
+      "Solar": 0.0515,
+      "Wind": 0.0508
     }
   }
 }
