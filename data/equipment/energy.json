@@ -1,0 +1,67 @@
+{
+  "computer": {
+    "description": "Computer (laptop + desktops w/ screen)",
+    "value": 137,
+    "unit": "W"
+  },
+  "desktop_personal": {
+    "description": "Desktop w/o screen (personal usage)",
+    "value": 175,
+    "unit": "W"
+  },
+  "desktop_professional": {
+    "description": "Desktop w/o screen (professional usage)",
+    "value": 175,
+    "unit": "W"
+  },
+  "laptop": {
+    "description": "Laptop",
+    "value": 75,
+    "unit": "W"
+  },
+  "mobile": {
+    "description": "Mobile (smartphone + tablet)",
+    "value": 1.325,
+    "unit": "W"
+  },
+  "network_fixed": {
+    "description": "Network fixed",
+    "value": 0.23,
+    "unit": "Wh/GB/km"
+  },
+  "network_mobile": {
+    "description": "Network mobile",
+    "value": 0.528,
+    "unit": "Wh/GB/km"
+  },
+  "screen": {
+    "description": "Desktop screen",
+    "value": 55,
+    "unit": "W"
+  },
+  "smartphone": {
+    "description": "Smartphone",
+    "value": 1,
+    "unit": "W"
+  },
+  "tablet": {
+    "description": "Tablet",
+    "value": 7.5,
+    "unit": "W"
+  },
+  "vm_large": {
+    "description": "VM large",
+    "value": 185.7,
+    "unit": "W"
+  },
+  "vm_medium": {
+    "description": "VM medium",
+    "value": 31.4,
+    "unit": "W"
+  },
+  "vm_small": {
+    "description": "VM small",
+    "value": 4,
+    "unit": "W"
+  }
+}

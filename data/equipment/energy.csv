@@ -1,0 +1,14 @@
+equipment,description,value,unit
+computer,Computer (laptop + desktops w/ screen),137,W
+desktop_personal,Desktop w/o screen (personal usage),175,W
+desktop_professional,Desktop w/o screen (professional usage),175,W
+laptop,Laptop,75,W
+mobile,Mobile (smartphone + tablet),1.325,W
+network_fixed,Network fixed,0.23,Wh/GB/km
+network_mobile,Network mobile,0.528,Wh/GB/km
+screen,Desktop screen,55,W
+smartphone,Smartphone,1,W
+tablet,Tablet,7.5,W
+vm_large,VM large,185.7,W
+vm_medium,VM medium,31.4,W
+vm_small,VM small,4,W
