@@ -1,0 +1,110 @@
+[
+  {
+    "id": "fr-par-1",
+    "name": "dc2-dc3",
+    "provider": "scaleway",
+    "lat": 48.794764,
+    "lon": 2.411816,
+    "location": "Vitry-sur-Seine",
+    "country": "fr",
+    "pue": 1.415,
+    "wue": 0.0075,
+    "ref": 1
+  },
+  {
+    "id": "fr-par-3",
+    "name": "dc4",
+    "provider": "scaleway",
+    "lat": 48.829544,
+    "lon": 2.296075,
+    "location": "Paris",
+    "country": "fr",
+    "pue": 1.440,
+    "wue": 0,
+    "ref": 1
+  },
+  {
+    "id": "fr-par-2",
+    "name": "dc5",
+    "provider": "scaleway",
+    "lat": 49.053707,
+    "lon": 2.137967,
+    "location": "Saint-Ouen-l'Aumone",
+    "country": "fr",
+    "pue": 1.16,
+    "wue": 0.214,
+    "ref": 1
+  },
+  {
+    "id": "nl-ams-1",
+    "name": "ams1",
+    "provider": "scaleway",
+    "lat": 52.377956,
+    "lon": 4.897070,
+    "location": "Amsterdam",
+    "country": "nl",
+    "pue": 1.40,
+    "wue": 0.850,
+    "ref": 1
+  },
+  {
+    "id": "nl-ams-2",
+    "name": "ams2",
+    "provider": "scaleway",
+    "lat": 52.377956,
+    "lon": 4.897070,
+    "location": "Amsterdam",
+    "country": "nl",
+    "pue": 1.40,
+    "wue": 0.216,
+    "ref": 1
+  },
+  {
+    "id": "nl-ams-3",
+    "name": "ams3",
+    "provider": "scaleway",
+    "lat": 52.377956,
+    "lon": 4.897070,
+    "location": "Amsterdam",
+    "country": "nl",
+    "pue": 1.20,
+    "wue": 0.216,
+    "ref": 1
+  },
+  {
+    "id": "pl-waw-1",
+    "name": "waw1",
+    "provider": "scaleway",
+    "lat": 52.237049,
+    "lon": 21.017532,
+    "location": "Warsaw",
+    "country": "pl",
+    "pue": 1.510,
+    "wue": 0.216,
+    "ref": 1
+  },
+  {
+    "id": "pl-waw-2",
+    "name": "waw2",
+    "provider": "scaleway",
+    "lat": 52.237049,
+    "lon": 21.017532,
+    "location": "Warsaw",
+    "country": "pl",
+    "pue": 1.320,
+    "wue": 0.216,
+    "ref": 1
+  },
+  {
+    "id": "pl-waw-3",
+    "name": "waw3",
+    "provider": "scaleway",
+    "lat": 52.237049,
+    "lon": 21.017532,
+    "location": "Warsaw",
+    "country": "pl",
+    "pue": 1.430,
+    "wue": 0.216,
+    "ref": 1
+  }
+]
