@@ -14,6 +14,7 @@ aws-trainium-1,asic,aws,trainium,1,neuroncore-2,2,32,400,7,0,0
 aws-trainium-2,asic,aws,trainium,2,neuroncore-3,8,96,500,7,0,0
 intel-gaudi-1,asic,intel,gaudi,1,gaudi,8,32,350,16,0,0
 nvidia-grid-k520,gpu,nvidia,grid,k520,kepler,3072,8,225,28,294,3540
+nvidia-rtx-3070,gpu,nvidia,rtx,3070,ampere,5888,8,220,8,392,17400
 nvidia-tesla-a10,gpu,nvidia,tesla,a10,ampere,9216,24,150,8,628,28300
 nvidia-tesla-a10040,gpu,nvidia,tesla,a100,ampere,6912,40,250,7,826,54200
 nvidia-tesla-a10080,gpu,nvidia,tesla,a100,ampere,6912,80,300,7,826,54200

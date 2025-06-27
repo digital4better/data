@@ -40,7 +40,7 @@ const EMBER_REGIONS = [
   "Oceania",
 ];
 const COUNTRY_EMBER_REGIONS: Record<string, (typeof EMBER_REGIONS)[number]> = {};
-const CLOUDS = ["aws", "azure", "gcp"];
+const CLOUDS = ["aws", "azure", "gcp", "scaleway"];
 
 const isWorld = (region: string) => region === EMBER_WORLD;
 const isContinent = (region: string) => EMBER_REGIONS.indexOf(region) >= 0;
@@ -320,24 +320,39 @@ const fetchWorldMix = async (aggregates: Aggregates) => {
     let lines = 0;
     process.stdout.write(`- from ${url}... `);
     await fetchAndProcess(url, (data) => {
-      const { country_code, ember_region, area, area_type, year, date, category, subcategory, variable, unit, value } =
-        data as {
-          country_code: string;
-          area: string;
-          ember_region: (typeof COUNTRY_EMBER_REGIONS)[string];
-          area_type: string;
-          year: number;
-          date: Date;
-          category: string;
-          subcategory: string;
-          variable: keyof typeof IMPACTS;
-          unit: string;
-          value: number;
-        };
+      const {
+        country_code,
+        iso_3_code,
+        ember_region,
+        area,
+        area_type,
+        year,
+        date,
+        category,
+        subcategory,
+        variable,
+        unit,
+        value,
+      } = data as {
+        country_code: string; // Deprecated
+        iso_3_code: string;
+        area: string;
+        ember_region: (typeof COUNTRY_EMBER_REGIONS)[string];
+        area_type: string;
+        year: number;
+        date: Date;
+        category: string;
+        subcategory: string;
+        variable: keyof typeof IMPACTS;
+        unit: string;
+        value: number;
+      };
       const yearly = !!year;
       const period = yearly ? `${year}` : date.toISOString().substring(0, 7);
-      const country = area_type === "Country";
-      const region = country ? REGIONS.find(({ "alpha-3": alpha3 }) => alpha3 === country_code)?.["alpha-2"] : area;
+      const country = area_type.startsWith("Country");
+      const region = country
+        ? REGIONS.find(({ "alpha-3": alpha3 }) => alpha3 === (iso_3_code ?? country_code))?.["alpha-2"]
+        : area;
       // Unknown area, stopping process
       if (!region) throw new Error(`Unknown area: ${country_code ?? area}`);
       // Dropping early years

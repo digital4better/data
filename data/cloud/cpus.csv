@@ -1,6 +1,13 @@
 id,manufacturer,serie,model,architecture,platform,cores,threads,tdp,process,die,transistors,smp
+amd-epyc-7232p,amd,epyc,7232p,x86-64,rome,8,16,120,7,74,3800,1
+amd-epyc-7272,amd,epyc,7272,x86-64,rome,12,24,120,7,74,3800,2
+amd-epyc-7281,amd,epyc,7281,x86-64,naples,16,32,170,14,213,4800,2
+amd-epyc-7313p,amd,epyc,7313p,x86-64,milan,16,32,155,7,324,16600,1
+amd-epyc-7401p,amd,epyc,7401p,x86-64,naples,24,48,170,14,213,4800,1
+amd-epyc-7413,amd,epyc,7413,x86-64,milan,24,48,180,7,324,16600,2
 amd-epyc-7452,amd,epyc,7452,x86-64,rome,32,64,155,7,74,3800,2
 amd-epyc-74f3v,amd,epyc,74f3v,x86-64,milan,24,48,240,7,324,16600,2
+amd-epyc-7543,amd,epyc,7543,x86-64,milan,32,64,225,7,648,33200,2
 amd-epyc-7551,amd,epyc,7551,x86-64,naples,32,64,180,14,852,19200,2
 amd-epyc-7571,amd,epyc,7571,x86-64,naples,32,64,200,14,852,19200,2
 amd-epyc-7763,amd,epyc,7763,x86-64,milan,64,128,280,7,648,33200,2
@@ -12,11 +19,20 @@ amd-epyc-7r32,amd,epyc,7r32,x86-64,rome,48,96,280,7,648,33200,2
 amd-epyc-7v12,amd,epyc,7v12,x86-64,rome,64,128,240,7,648,33200,2
 amd-epyc-7v13,amd,epyc,7v13,x86-64,milan,64,128,240,7,648,33200,2
 amd-epyc-7v73x,amd,epyc,7v73x,x86-64,milan-x,64,128,280,7,648,33200,2
+amd-epyc-8024p,amd,epyc,8024p,x86-64,siena,8,16,90,5,73,8875,1
+amd-epyc-8124p,amd,epyc,8124p,x86-64,siena,16,32,125,5,146,17750,1
+amd-epyc-8224p,amd,epyc,8224p,x86-64,siena,24,48,160,5,146,17750,1
+amd-epyc-8324p,amd,epyc,8324p,x86-64,siena,32,64,180,5,292,35500,1
+amd-epyc-8434p,amd,epyc,8434p,x86-64,siena,48,96,200,5,292,35500,1
+amd-epyc-8534p,amd,epyc,8534p,x86-64,siena,64,128,200,5,292,35500,1
+amd-epyc-9334,amd,epyc,9334,x86-64,genoa,32,64,210,5,288,52560,2
 amd-epyc-9b14,amd,epyc,9b14,x86-64,genoa,96,192,360,5,864,78840,2
 amd-epyc-9r14,amd,epyc,9r14,x86-64,genoa,96,192,360,5,864,78840,2
 amd-epyc-9v33x,amd,epyc,9v33x,x86-64,genoa-x,96,192,400,5,864,135240,2
 amd-epyc-9v64f,amd,epyc,9v64f,x86-64,genoa,16,32,320,5,576,52560,2
 amd-epyc-9v74,amd,epyc,9v74,x86-64,genoa,80,160,400,5,864,78840,2
+amd-ryzen-3600,amd,ryzen,3600,x86-64,matisse,6,12,65,7,74,3800,1
+ampere-altra-m12830,ampere,altra,m12830,arm-64,neoverse n1,128,128,250,7,650,65000,2
 ampere-altra-q6430,ampere,altra,q64-30,arm-64,neoverse n1,64,64,124,7,574,52000,1
 ampere-altra-q8030,ampere,altra,q80-30,arm-64,neoverse n1,80,80,161,7,574,45000,1
 apple-m1,apple,m1,,arm-64,apple silicon,8,8,15,5,119,16000,1
@@ -28,8 +44,10 @@ aws-graviton-2,aws,graviton,2,arm-64,neoverse n1,64,64,120,7,400,30000,1
 aws-graviton-3,aws,graviton,3,arm-64,neoverse v1,64,64,150,7,600,55000,1
 aws-graviton-4,aws,graviton,4,arm-64,neoverse v2,96,96,180,7,800,85000,1
 azure-cobalt-100,azure,cobalt,100,arm-64,neoverse n2,96,96,180,7,800,85000,1
+cavium-thunderx-cn8890,cavium,thunderx,cn8890,arm-64,thunderx1,48,48,125,28,375,562,2
 google-axion,google,axion,,arm-64,neoverse n2,96,96,180,7,800,85000,1
 intel-core-i78700b,intel,core,i7-8700b,x86-64,coffee lake,6,12,65,14,154,3000,1
+intel-xeon-6148,intel,xeon,6148,x86-64,skylake,20,40,150,14,694,8000,4
 intel-xeon-6246r,intel,xeon,6246r,x86-64,cascade lake,16,32,205,14,694,8000,2
 intel-xeon-6253cl,intel,xeon,6253cl,x86-64,cascade lake,16,32,205,14,694,8000,4
 intel-xeon-6268cl,intel,xeon,6268cl,x86-64,cascade lake,24,48,205,14,694,8000,2
@@ -64,6 +82,11 @@ intel-xeon-8559c,intel,xeon,8559c,x86-64,emerald rapids,48,96,350,10,1526,57000,
 intel-xeon-8573c,intel,xeon,8573c,x86-64,emerald rapids,52,104,350,10,1526,57000,2
 intel-xeon-8581c,intel,xeon,8581c,x86-64,emerald rapids,60,120,350,10,1526,57000,2
 intel-xeon-e2288g,intel,xeon,e-2288g,x86-64,coffee lake,8,16,95,14,180,2900,1
+intel-xeon-e31220,intel,xeon,e3-1220,x86-64,sandy bridge,4,4,80,32,216,1160,1
+intel-xeon-e51410v2,intel,xeon,e5-1410 v2,x86-64,ivy bridge,4,8,80,22,257,1860,1
+intel-xeon-e51650,intel,xeon,e5-1650,x86-64,sandy bridge,6,12,130,32,435,2270,1
+intel-xeon-e52620,intel,xeon,e5-2620,x86-64,sandy bridge,6,12,95,32,435,2270,2
+intel-xeon-e52650,intel,xeon,e5-2650,x86-64,sandy bridge,8,16,95,32,435,2270,2
 intel-xeon-e52651v2,intel,xeon,e5-2651 v2,x86-64,ivy bridge,12,24,95,22,541,4310,2
 intel-xeon-e52660,intel,xeon,e5-2660,x86-64,sandy bridge,8,16,95,32,416,2270,2
 intel-xeon-e52665,intel,xeon,e5-2665,x86-64,sandy bridge,8,16,115,32,416,2270,2

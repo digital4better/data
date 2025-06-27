@@ -210,6 +210,20 @@
     "transistors": 3540
   },
   {
+    "id": "nvidia-rtx-3070",
+    "type": "gpu",
+    "manufacturer": "nvidia",
+    "serie": "rtx",
+    "model": "3070",
+    "platform": "ampere",
+    "cores": 5888,
+    "memory": 8,
+    "tdp": 220,
+    "process": 8,
+    "die": 392,
+    "transistors": 17400
+  },
+  {
     "id": "nvidia-tesla-a10",
     "type": "gpu",
     "manufacturer": "nvidia",
