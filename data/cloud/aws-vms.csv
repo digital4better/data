@@ -206,6 +206,8 @@ d3en-4xlarge,d3en,d3en.4xlarge,storage,16,64,0,112000,intel-xeon-8259cl,0,,2.544
 d3en-6xlarge,d3en,d3en.6xlarge,storage,24,96,0,168000,intel-xeon-8259cl,0,,2.5440944
 d3en-8xlarge,d3en,d3en.8xlarge,storage,32,128,0,224000,intel-xeon-8259cl,0,,2.5440944
 d3en-xlarge,d3en,d3en.xlarge,storage,4,16,0,28000,intel-xeon-8259cl,0,,2.5440944
+dc2-large,dc2,dc2.large,compute,2,15,160,0,intel-xeon-e52670v2,0,,2.5440944
+dc2-8xlarge,dc2,dc2.8xlarge,compute,32,244,2560,0,intel-xeon-e52670v2,0,,2.5440944
 dl1-24xlarge,dl1,dl1.24xlarge,accelerated,96,768,4000,0,intel-xeon-8275cl,8,intel-gaudi-1,2.1429488
 dl2q-24xlarge,dl2,dl2q.24xlarge,accelerated,96,768,0,0,intel-xeon-8259cl,8,qualcomm-ai100-standard,2.1429488
 f1-16xlarge,f1,f1.16xlarge,accelerated,64,976,3760,0,intel-xeon-e52686v4,8,amd-virtex-vu47p,2.831424
@@ -526,6 +528,7 @@ m7gd-medium,m7gd,m7gd.medium,general,1,4,59,0,aws-graviton-3,0,,1.532856
 m7gd-metal,m7gd,m7gd.metal,general,64,256,3800,0,aws-graviton-3,0,,1.532856
 m7gd-xlarge,m7gd,m7gd.xlarge,general,4,16,237,0,aws-graviton-3,0,,1.532856
 m7i-12xlarge,m7i,m7i.12xlarge,general,48,192,0,0,intel-xeon-8488c,0,,1.7879024
+m7i-flex-12xlarge,m7i,m7i-flex.12xlarge,general,48,192,0,0,intel-xeon-8488c,0,,1.7879024
 m7i-16xlarge,m7i,m7i.16xlarge,general,64,256,0,0,intel-xeon-8488c,0,,1.7879024
 m7i-24xlarge,m7i,m7i.24xlarge,general,96,384,0,0,intel-xeon-8488c,0,,1.7879024
 m7i-2xlarge,m7i,m7i.2xlarge,general,8,32,0,0,intel-xeon-8488c,0,,1.7879024
@@ -826,6 +829,8 @@ u7i-8tb-112xlarge,u-1,u7i-8tb.112xlarge,memory,448,8192,0,0,intel-xeon-8477c,0,,
 u7in-16tb-224xlarge,u-1,u7in-16tb.224xlarge,memory,896,16384,0,0,intel-xeon-8477c,0,,35.762264
 u7in-24tb-224xlarge,u-1,u7in-24tb.224xlarge,memory,896,24576,0,0,intel-xeon-8477c,0,,35.762264
 u7in-32tb-224xlarge,u-1,u7in-32tb.224xlarge,memory,896,32768,0,0,intel-xeon-8477c,0,,35.762264
+ultrawarm1-medium,ultrawarm1,ultrawarm1.medium,memory,2,15.25,1500,0,aws-graviton-2,0,,2
+ultrawarm1-large,ultrawarm1,ultrawarm1.large,memory,16,122,20000,0,aws-graviton-2,0,,2
 vt1-24xlarge,vt1,vt1.24xlarge,encoding,96,192,0,0,intel-xeon-8259cl,8,amd-alveo-u30,1.3440944
 vt1-3xlarge,vt1,vt1.3xlarge,encoding,12,24,0,0,intel-xeon-8259cl,1,amd-alveo-u30,1.0221904
 vt1-6xlarge,vt1,vt1.6xlarge,encoding,24,48,0,0,intel-xeon-8259cl,2,amd-alveo-u30,1.3440944
