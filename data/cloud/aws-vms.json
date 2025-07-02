@@ -3312,6 +3312,38 @@
     "embodied": 2.5440944
   },
   {
+    "id": "dc2-large",
+    "family": "dc2",
+    "name": "dc2.large",
+    "category": "compute",
+    "vcpus": 2,
+    "memory": 15,
+    "accelerators": 0,
+    "ssd": 160,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52670v2"
+    ],
+    "virtual": true,
+    "embodied": 2.5440944
+  },
+  {
+    "id": "dc2-8xlarge",
+    "family": "dc2",
+    "name": "dc2.8xlarge",
+    "category": "compute",
+    "vcpus": 32,
+    "memory": 244,
+    "accelerators": 0,
+    "ssd": 2560,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52670v2"
+    ],
+    "virtual": true,
+    "embodied": 2.5440944
+  },
+  {
     "id": "dl1-24xlarge",
     "family": "dl1",
     "name": "dl1.24xlarge",
@@ -8497,6 +8529,22 @@
     "embodied": 1.7879024
   },
   {
+    "id": "m7i-flex-12xlarge",
+    "family": "m7i",
+    "name": "m7i-flex.12xlarge",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8488c"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
     "id": "m7i-16xlarge",
     "family": "m7i",
     "name": "m7i.16xlarge",
@@ -13312,6 +13360,38 @@
     ],
     "virtual": true,
     "embodied": 35.762264
+  },
+  {
+    "id": "ultrawarm1-medium",
+    "family": "ultrawarm1",
+    "name": "ultrawarm1.medium",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 15.25,
+    "accelerators": 0,
+    "ssd": 1500,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-2"
+    ],
+    "virtual": true,
+    "embodied": 2
+  },
+  {
+    "id": "ultrawarm1-large",
+    "family": "ultrawarm1",
+    "name": "ultrawarm1.large",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 122,
+    "accelerators": 0,
+    "ssd": 20000,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-2"
+    ],
+    "virtual": true,
+    "embodied": 2
   },
   {
     "id": "vt1-24xlarge",
