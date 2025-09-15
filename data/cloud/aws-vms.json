@@ -4279,6 +4279,74 @@
     "embodied": 1.6879024
   },
   {
+    "id": "g6f-large",
+    "family": "g6f",
+    "name": "g6f.large",
+    "category": "accelerated",
+    "vcpus": 2,
+    "memory": 8,
+    "accelerators": 0.125,
+    "accelerator": "nvidia-tesla-l4",
+    "ssd": 100,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r13"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "g6f-xlarge",
+    "family": "g6f",
+    "name": "g6f.xlarge",
+    "category": "accelerated",
+    "vcpus": 4,
+    "memory": 16,
+    "accelerators": 0.125,
+    "accelerator": "nvidia-tesla-l4",
+    "ssd": 100,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r13"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "g6f-2xlarge",
+    "family": "g6f",
+    "name": "g6f.2xlarge",
+    "category": "accelerated",
+    "vcpus": 8,
+    "memory": 32,
+    "accelerators": 0.25,
+    "accelerator": "nvidia-tesla-l4",
+    "ssd": 100,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r13"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "g6f-4xlarge",
+    "family": "g6f",
+    "name": "g6f.4xlarge",
+    "category": "accelerated",
+    "vcpus": 16,
+    "memory": 64,
+    "accelerators": 0.5,
+    "accelerator": "nvidia-tesla-l4",
+    "ssd": 100,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r13"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
     "id": "gr6-4xlarge",
     "family": "gr6",
     "name": "gr6.4xlarge",
