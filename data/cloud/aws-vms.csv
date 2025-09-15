@@ -263,6 +263,10 @@ g6e-48xlarge,g6e,g6e.48xlarge,accelerated,192,1536,7600,0,amd-epyc-7r13,8,nvidia
 g6e-4xlarge,g6e,g6e.4xlarge,accelerated,16,128,600,0,amd-epyc-7r13,1,nvidia-tesla-l40s,1.6879024
 g6e-8xlarge,g6e,g6e.8xlarge,accelerated,32,256,900,0,amd-epyc-7r13,1,nvidia-tesla-l40s,1.6879024
 g6e-xlarge,g6e,g6e.xlarge,accelerated,4,32,250,0,amd-epyc-7r13,1,nvidia-tesla-l40s,1.6879024
+g6f-large,g6f,g6f.large,accelerated,2,8,100,0,amd-epyc-7r13,0.125,nvidia-tesla-l4,1.6879024
+g6f-xlarge,g6f,g6f.xlarge,accelerated,4,16,100,0,amd-epyc-7r13,0.125,nvidia-tesla-l4,1.6879024
+g6f-2xlarge,g6f,g6f.2xlarge,accelerated,8,32,100,0,amd-epyc-7r13,0.25,nvidia-tesla-l4,1.6879024
+g6f-4xlarge,g6f,g6f.4xlarge,accelerated,16,64,100,0,amd-epyc-7r13,0.5,nvidia-tesla-l4,1.6879024
 gr6-4xlarge,gr6,gr6.4xlarge,accelerated,16,128,600,0,amd-epyc-7r32,1,nvidia-tesla-l4,2.1429488
 gr6-8xlarge,gr6,gr6.8xlarge,accelerated,32,256,900,0,amd-epyc-7r32,1,nvidia-tesla-l4,2.1429488
 h1-16xlarge,h1,h1.16xlarge,storage,64,256,16000,0,intel-xeon-e52686v4,0,,2.632856
