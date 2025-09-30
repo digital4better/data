@@ -1,4 +1,3 @@
-import { get } from "https";
 import { createInterface } from "readline";
 import { appendFileSync, readFileSync, writeFileSync } from "fs";
 import AdmZip from "adm-zip";
@@ -6,6 +5,7 @@ import REGIONS from "./data/country/regions.json";
 import IMPACTS from "./data/energy/energy-impacts.json";
 import { PassThrough } from "stream";
 import ReadableStream = NodeJS.ReadableStream;
+import { Readable } from "node:stream";
 
 const MIN_YEAR = 2019;
 const CURRENT_MONTH = new Date().getUTCMonth();
@@ -55,26 +55,24 @@ const REGION_FILTERS = {
   subdivision: isSubdivision,
 };
 
-const fetchAndScrap = async (url: string, regex: RegExp): Promise<string> =>
-  new Promise((resolve) =>
-    get(url, (response) => {
-      let body = "";
-      response.on("data", (response) => (body += response.toString()));
-      response.on("end", () => resolve(regex.exec(body)?.[0]));
-    })
-  );
+const fetchAndScrap = async (url: string, regex: RegExp): Promise<string | undefined> => {
+  process.stdout.write(`- scrapping ${url}...\n`);
+  const response = await fetch(url);
+  const body = await response.text();
+  return regex.exec(body)?.[0];
+};
 
-const fechToBuffer = (url: string): Promise<Buffer> => {
-  return new Promise((resolve, reject) => {
-    get(url, { rejectUnauthorized: false }, (res) => {
-      if (res.statusCode && res.statusCode >= 400) {
-        return reject(new Error(`Request failed with status code ${res.statusCode}`));
-      }
-      const chunks: Buffer[] = [];
-      res.on("data", (chunk) => chunks.push(chunk));
-      res.on("end", () => resolve(Buffer.concat(chunks)));
-    }).on("error", reject);
-  });
+const fetchToBuffer = async (url: string): Promise<Buffer> => {
+  const response = await fetch(url, {
+    agent: new (require("https").Agent)({ rejectUnauthorized: false }),
+  } as any);
+
+  if (!response.ok) {
+    throw new Error(`Request failed with status code ${response.status}`);
+  }
+
+  const arrayBuffer = await response.arrayBuffer();
+  return Buffer.from(arrayBuffer);
 };
 
 const processData = async (
@@ -107,13 +105,15 @@ const processData = async (
   }
 };
 
-const fetchAndProcess = async (url: string, onProcess: (values: Record<string, string | number | Date>) => void) =>
-  new Promise((resolve) => {
-    get(url, async (response) => {
-      await processData(response, onProcess);
-      resolve(true);
-    });
-  });
+const fetchAndProcess = async (
+  url: string,
+  onProcess: (values: Record<string, string | number | Date>) => void
+): Promise<boolean> => {
+  const response = await fetch(url);
+  const nodeStream = Readable.fromWeb(response.body as any);
+  await processData(nodeStream, onProcess);
+  return true;
+};
 
 type Mix<T extends string> = { [energy in T]: number };
 
@@ -318,7 +318,7 @@ const fetchWorldMix = async (aggregates: Aggregates) => {
   for (const page of [EMBER_YEARLY_DATA, EMBER_MONTHLY_DATA]) {
     const url = await fetchAndScrap(page, /https:\/\/[^"]*.csv/);
     let lines = 0;
-    process.stdout.write(`- from ${url}... `);
+    process.stdout.write(`- reading from ${url}... `);
     await fetchAndProcess(url, (data) => {
       const {
         country_code,
@@ -409,7 +409,7 @@ const finalizeSubdivisionMix = (aggregates: Aggregates, country: string) => {
 };
 
 const fetchCanadianMix = async (aggregates: Aggregates) => {
-  const data = await fechToBuffer("https://www150.statcan.gc.ca/n1/tbl/csv/25100015-eng.zip");
+  const data = await fetchToBuffer("https://www150.statcan.gc.ca/n1/tbl/csv/25100015-eng.zip");
   const zip = new AdmZip(data);
   const content = zip.getEntries().find(({ name }) => name === "25100015.csv");
   const stream = new PassThrough();
