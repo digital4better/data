@@ -57,7 +57,7 @@ const REGION_FILTERS = {
 
 const fetchAndScrap = async (url: string, regex: RegExp): Promise<string | undefined> => {
   process.stdout.write(`- scrapping ${url}...\n`);
-  const response = await fetch(url);
+  const response = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0" } });
   const body = await response.text();
   return regex.exec(body)?.[0];
 };
