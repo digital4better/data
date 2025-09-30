@@ -26,9 +26,8 @@ type Energy = (typeof ENERGIES)[number];
 type GreenEnergy = (typeof GREEN_ENERGIES)[number];
 const FOSSIL_FUELS: Energy[] = ["Bioenergy", "Coal", "Gas", "Other Fossil", "Other Renewables"];
 
-const EMBER_DOMAIN = "https://ember-energy.org";
-const EMBER_MONTHLY_DATA = `${EMBER_DOMAIN}/data/monthly-electricity-data/`;
-const EMBER_YEARLY_DATA = `${EMBER_DOMAIN}/data/yearly-electricity-data/`;
+const EMBER_MONTHLY_DATA = `https://storage.googleapis.com/emb-prod-bkt-publicdata/public-downloads/monthly_full_release_long_format.csv`;
+const EMBER_YEARLY_DATA = `https://storage.googleapis.com/emb-prod-bkt-publicdata/public-downloads/yearly_full_release_long_format.csv`;
 const EMBER_WORLD = "World";
 const EMBER_REGIONS = [
   "Africa",
@@ -53,21 +52,6 @@ const REGION_FILTERS = {
   continent: isContinent,
   country: isCountry,
   subdivision: isSubdivision,
-};
-
-const fetchAndScrap = async (url: string, regex: RegExp): Promise<string | undefined> => {
-  process.stdout.write(`- scrapping ${url}... `);
-  const response = await fetch(url, {
-    headers: {
-      "User-Agent":
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
-      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-      Referer: "https://ember-energy.org/",
-    },
-  });
-  process.stdout.write(`${response.status}\n`);
-  const body = await response.text();
-  return regex.exec(body)?.[0];
 };
 
 const fetchToBuffer = async (url: string): Promise<Buffer> => {
@@ -323,8 +307,7 @@ const sanitizeData = async (aggregates: Aggregates) => {
 
 const fetchWorldMix = async (aggregates: Aggregates) => {
   process.stdout.write(`Fetching energy data\n`);
-  for (const page of [EMBER_YEARLY_DATA, EMBER_MONTHLY_DATA]) {
-    const url = await fetchAndScrap(page, /https:\/\/[^"]*.csv/);
+  for (const url of [EMBER_YEARLY_DATA, EMBER_MONTHLY_DATA]) {
     let lines = 0;
     process.stdout.write(`- reading from ${url}... `);
     await fetchAndProcess(url, (data) => {
