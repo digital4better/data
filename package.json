@@ -19,7 +19,7 @@
     "build:data": "ts-node .",
     "build:site": "vite build --base=/data/",
     "preversion": "node .github/workflows/update-release-date.js && git add --all",
-    "postversion": "git push --tags && npm publish --access=public && git push"
+    "postversion": "git push --tags"
   },
   "devDependencies": {
     "@emotion/react": "^11.11.3",
