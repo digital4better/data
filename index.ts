@@ -658,7 +658,11 @@ const exportFactorsAndMixes = (aggregates: Aggregates) => {
 const generateFactors = async () => {
   // Data aggregation
   const aggregates: Aggregates = {};
-  process.stdout.write(`Generating world, continent and country energy mix...\n`);
+  process.stdout.write(
+    `Generating world, continent and country energy mix between ${MIN_YEAR}-01 and ${CURRENT_YEAR}-${(CURRENT_MONTH + 1)
+      .toString()
+      .padStart(2, "0")}...\n`
+  );
   await fetchWorldMix(aggregates);
   await sanitizeData(aggregates);
   process.stdout.write(`Generating canada province energy mix...`);
