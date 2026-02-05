@@ -21,6 +21,12 @@ jobs:
       - run: git config user.email "<>"
       - run: yarn --frozen-lockfile
       - run: yarn build
+      - name: Set npm registry for scoped package
+        run: |
+          echo "@digital4better:registry=https://registry.npmjs.org/" >> ~/.npmrc
+          echo "//registry.npmjs.org/:_authToken=${NODE_AUTH_TOKEN}" >> ~/.npmrc
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: "! git diff --quiet && yarn version --patch || echo 'No changes detected, versioning ignored'"
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
