@@ -482,27 +482,39 @@
     },
     "2025-09": {
       "Bioenergy": 0.0207,
-      "Hydro": 0.9041,
-      "Solar": 0.0439,
+      "Hydro": 0.904,
+      "Solar": 0.044,
       "Wind": 0.0314
     },
     "2025-10": {
       "Bioenergy": 0.0207,
-      "Hydro": 0.9041,
-      "Solar": 0.0439,
-      "Wind": 0.0313
+      "Hydro": 0.8996,
+      "Solar": 0.0476,
+      "Wind": 0.0322
     },
     "2025-11": {
-      "Bioenergy": 0.0207,
-      "Hydro": 0.9041,
-      "Solar": 0.0439,
-      "Wind": 0.0313
+      "Bioenergy": 0.0206,
+      "Hydro": 0.9004,
+      "Solar": 0.0467,
+      "Wind": 0.0323
+    },
+    "2025-12": {
+      "Bioenergy": 0.0206,
+      "Hydro": 0.9003,
+      "Solar": 0.0468,
+      "Wind": 0.0323
+    },
+    "2026-01": {
+      "Bioenergy": 0.0206,
+      "Hydro": 0.9003,
+      "Solar": 0.0468,
+      "Wind": 0.0323
     }
   },
   "Asia": {
     "2019-01": {
       "Bioenergy": 0.1152,
-      "Hydro": 0.6102,
+      "Hydro": 0.6101,
       "Solar": 0.1197,
       "Wind": 0.1549
     },
@@ -531,7 +543,7 @@
       "Wind": 0.1538
     },
     "2019-06": {
-      "Bioenergy": 0.0764,
+      "Bioenergy": 0.0765,
       "Hydro": 0.662,
       "Solar": 0.1343,
       "Wind": 0.1273
@@ -539,7 +551,7 @@
     "2019-07": {
       "Bioenergy": 0.0745,
       "Hydro": 0.6935,
-      "Solar": 0.1211,
+      "Solar": 0.1212,
       "Wind": 0.1108
     },
     "2019-08": {
@@ -556,7 +568,7 @@
     },
     "2019-10": {
       "Bioenergy": 0.0804,
-      "Hydro": 0.6644,
+      "Hydro": 0.6645,
       "Solar": 0.131,
       "Wind": 0.1241
     },
@@ -569,7 +581,7 @@
     "2019-12": {
       "Bioenergy": 0.1066,
       "Hydro": 0.5859,
-      "Solar": 0.1297,
+      "Solar": 0.1296,
       "Wind": 0.1778
     },
     "2020-01": {
@@ -588,13 +600,13 @@
       "Bioenergy": 0.0951,
       "Hydro": 0.5616,
       "Solar": 0.1562,
-      "Wind": 0.1872
+      "Wind": 0.1871
     },
     "2020-04": {
       "Bioenergy": 0.0934,
       "Hydro": 0.5713,
       "Solar": 0.1694,
-      "Wind": 0.1659
+      "Wind": 0.166
     },
     "2020-05": {
       "Bioenergy": 0.0869,
@@ -616,7 +628,7 @@
     },
     "2020-08": {
       "Bioenergy": 0.078,
-      "Hydro": 0.6721,
+      "Hydro": 0.6722,
       "Solar": 0.1351,
       "Wind": 0.1148
     },
@@ -639,7 +651,7 @@
       "Wind": 0.1681
     },
     "2020-12": {
-      "Bioenergy": 0.1113,
+      "Bioenergy": 0.1112,
       "Hydro": 0.5646,
       "Solar": 0.1351,
       "Wind": 0.189
@@ -681,16 +693,16 @@
       "Wind": 0.1618
     },
     "2021-07": {
-      "Bioenergy": 0.0825,
-      "Hydro": 0.6214,
-      "Solar": 0.1477,
+      "Bioenergy": 0.0824,
+      "Hydro": 0.6216,
+      "Solar": 0.1476,
       "Wind": 0.1484
     },
     "2021-08": {
-      "Bioenergy": 0.0829,
-      "Hydro": 0.6336,
-      "Solar": 0.1546,
-      "Wind": 0.1289
+      "Bioenergy": 0.0828,
+      "Hydro": 0.6338,
+      "Solar": 0.1545,
+      "Wind": 0.1288
     },
     "2021-09": {
       "Bioenergy": 0.0797,
@@ -699,7 +711,7 @@
       "Wind": 0.1314
     },
     "2021-10": {
-      "Bioenergy": 0.0821,
+      "Bioenergy": 0.082,
       "Hydro": 0.6031,
       "Solar": 0.1483,
       "Wind": 0.1665
@@ -707,7 +719,7 @@
     "2021-11": {
       "Bioenergy": 0.0933,
       "Hydro": 0.5508,
-      "Solar": 0.1539,
+      "Solar": 0.154,
       "Wind": 0.2019
     },
     "2021-12": {
@@ -754,19 +766,19 @@
     },
     "2022-07": {
       "Bioenergy": 0.0817,
-      "Hydro": 0.5982,
+      "Hydro": 0.5984,
       "Solar": 0.1739,
-      "Wind": 0.1461
+      "Wind": 0.146
     },
     "2022-08": {
-      "Bioenergy": 0.0896,
-      "Hydro": 0.5813,
+      "Bioenergy": 0.0895,
+      "Hydro": 0.5814,
       "Solar": 0.1816,
       "Wind": 0.1475
     },
     "2022-09": {
       "Bioenergy": 0.0872,
-      "Hydro": 0.5581,
+      "Hydro": 0.5582,
       "Solar": 0.1952,
       "Wind": 0.1595
     },
@@ -783,14 +795,14 @@
       "Wind": 0.2161
     },
     "2022-12": {
-      "Bioenergy": 0.1064,
+      "Bioenergy": 0.1063,
       "Hydro": 0.4771,
       "Solar": 0.1643,
       "Wind": 0.2522
     },
     "2023-01": {
       "Bioenergy": 0.1069,
-      "Hydro": 0.4609,
+      "Hydro": 0.461,
       "Solar": 0.1858,
       "Wind": 0.2463
     },
@@ -822,25 +834,25 @@
       "Bioenergy": 0.0878,
       "Hydro": 0.4984,
       "Solar": 0.2278,
-      "Wind": 0.186
+      "Wind": 0.1859
     },
     "2023-07": {
-      "Bioenergy": 0.0869,
-      "Hydro": 0.5235,
+      "Bioenergy": 0.0868,
+      "Hydro": 0.5237,
       "Solar": 0.207,
-      "Wind": 0.1826
+      "Wind": 0.1825
     },
     "2023-08": {
       "Bioenergy": 0.0825,
-      "Hydro": 0.5703,
-      "Solar": 0.2083,
-      "Wind": 0.1389
+      "Hydro": 0.5704,
+      "Solar": 0.2082,
+      "Wind": 0.1388
     },
     "2023-09": {
       "Bioenergy": 0.0809,
       "Hydro": 0.5636,
       "Solar": 0.2024,
-      "Wind": 0.1531
+      "Wind": 0.153
     },
     "2023-10": {
       "Bioenergy": 0.0821,
@@ -867,136 +879,148 @@
       "Wind": 0.2514
     },
     "2024-02": {
-      "Bioenergy": 0.1017,
-      "Hydro": 0.4244,
-      "Solar": 0.2264,
+      "Bioenergy": 0.1018,
+      "Hydro": 0.4245,
+      "Solar": 0.2263,
       "Wind": 0.2474
     },
     "2024-03": {
       "Bioenergy": 0.0922,
       "Hydro": 0.3953,
-      "Solar": 0.2508,
+      "Solar": 0.2507,
       "Wind": 0.2618
     },
     "2024-04": {
       "Bioenergy": 0.0824,
-      "Hydro": 0.428,
-      "Solar": 0.2595,
-      "Wind": 0.2301
+      "Hydro": 0.4278,
+      "Solar": 0.2596,
+      "Wind": 0.2302
     },
     "2024-05": {
       "Bioenergy": 0.0715,
-      "Hydro": 0.4603,
-      "Solar": 0.2619,
-      "Wind": 0.2063
+      "Hydro": 0.4601,
+      "Solar": 0.262,
+      "Wind": 0.2064
     },
     "2024-06": {
       "Bioenergy": 0.0697,
-      "Hydro": 0.5104,
-      "Solar": 0.2438,
+      "Hydro": 0.5106,
+      "Solar": 0.2436,
       "Wind": 0.1761
     },
     "2024-07": {
       "Bioenergy": 0.071,
-      "Hydro": 0.5341,
-      "Solar": 0.2258,
-      "Wind": 0.1691
+      "Hydro": 0.5348,
+      "Solar": 0.2251,
+      "Wind": 0.169
     },
     "2024-08": {
       "Bioenergy": 0.0753,
-      "Hydro": 0.5442,
-      "Solar": 0.2476,
-      "Wind": 0.1329
+      "Hydro": 0.5447,
+      "Solar": 0.2471,
+      "Wind": 0.1328
     },
     "2024-09": {
-      "Bioenergy": 0.0777,
-      "Hydro": 0.499,
-      "Solar": 0.2368,
-      "Wind": 0.1866
+      "Bioenergy": 0.0774,
+      "Hydro": 0.498,
+      "Solar": 0.238,
+      "Wind": 0.1867
     },
     "2024-10": {
-      "Bioenergy": 0.0788,
-      "Hydro": 0.4707,
-      "Solar": 0.2385,
-      "Wind": 0.212
+      "Bioenergy": 0.0783,
+      "Hydro": 0.4669,
+      "Solar": 0.2419,
+      "Wind": 0.2129
     },
     "2024-11": {
-      "Bioenergy": 0.0875,
-      "Hydro": 0.4332,
-      "Solar": 0.239,
-      "Wind": 0.2403
+      "Bioenergy": 0.0879,
+      "Hydro": 0.4345,
+      "Solar": 0.2369,
+      "Wind": 0.2407
     },
     "2024-12": {
-      "Bioenergy": 0.0944,
-      "Hydro": 0.4141,
-      "Solar": 0.2297,
-      "Wind": 0.2618
+      "Bioenergy": 0.0948,
+      "Hydro": 0.4155,
+      "Solar": 0.2286,
+      "Wind": 0.2611
     },
     "2025-01": {
-      "Bioenergy": 0.0932,
-      "Hydro": 0.3856,
-      "Solar": 0.2621,
-      "Wind": 0.2591
+      "Bioenergy": 0.093,
+      "Hydro": 0.3845,
+      "Solar": 0.2633,
+      "Wind": 0.2592
     },
     "2025-02": {
-      "Bioenergy": 0.0904,
-      "Hydro": 0.3893,
-      "Solar": 0.2657,
-      "Wind": 0.2546
+      "Bioenergy": 0.0905,
+      "Hydro": 0.3895,
+      "Solar": 0.2655,
+      "Wind": 0.2545
     },
     "2025-03": {
-      "Bioenergy": 0.081,
-      "Hydro": 0.3669,
-      "Solar": 0.2856,
-      "Wind": 0.2665
+      "Bioenergy": 0.0812,
+      "Hydro": 0.3675,
+      "Solar": 0.285,
+      "Wind": 0.2664
     },
     "2025-04": {
-      "Bioenergy": 0.0736,
-      "Hydro": 0.3693,
-      "Solar": 0.3113,
+      "Bioenergy": 0.0737,
+      "Hydro": 0.3694,
+      "Solar": 0.3111,
       "Wind": 0.2458
     },
     "2025-05": {
       "Bioenergy": 0.0684,
-      "Hydro": 0.4033,
-      "Solar": 0.3059,
-      "Wind": 0.2224
+      "Hydro": 0.403,
+      "Solar": 0.306,
+      "Wind": 0.2226
     },
     "2025-06": {
       "Bioenergy": 0.065,
-      "Hydro": 0.4604,
-      "Solar": 0.2943,
+      "Hydro": 0.4601,
+      "Solar": 0.2946,
       "Wind": 0.1804
     },
     "2025-07": {
-      "Bioenergy": 0.0696,
-      "Hydro": 0.4603,
-      "Solar": 0.2947,
+      "Bioenergy": 0.0695,
+      "Hydro": 0.4601,
+      "Solar": 0.2948,
       "Wind": 0.1755
     },
     "2025-08": {
-      "Bioenergy": 0.0726,
-      "Hydro": 0.477,
-      "Solar": 0.2959,
-      "Wind": 0.1546
+      "Bioenergy": 0.0728,
+      "Hydro": 0.4771,
+      "Solar": 0.2954,
+      "Wind": 0.1548
     },
     "2025-09": {
-      "Bioenergy": 0.0674,
-      "Hydro": 0.5037,
-      "Solar": 0.2692,
-      "Wind": 0.1596
+      "Bioenergy": 0.0675,
+      "Hydro": 0.5029,
+      "Solar": 0.2698,
+      "Wind": 0.1597
     },
     "2025-10": {
-      "Bioenergy": 0.0745,
-      "Hydro": 0.4925,
-      "Solar": 0.2515,
-      "Wind": 0.1815
+      "Bioenergy": 0.0738,
+      "Hydro": 0.4878,
+      "Solar": 0.256,
+      "Wind": 0.1824
     },
     "2025-11": {
-      "Bioenergy": 0.0745,
-      "Hydro": 0.4925,
-      "Solar": 0.2514,
-      "Wind": 0.1816
+      "Bioenergy": 0.0762,
+      "Hydro": 0.405,
+      "Solar": 0.2657,
+      "Wind": 0.2531
+    },
+    "2025-12": {
+      "Bioenergy": 0.0831,
+      "Hydro": 0.3929,
+      "Solar": 0.269,
+      "Wind": 0.255
+    },
+    "2026-01": {
+      "Bioenergy": 0.0831,
+      "Hydro": 0.3929,
+      "Solar": 0.269,
+      "Wind": 0.255
     }
   },
   "Europe": {
@@ -1117,7 +1141,7 @@
     "2020-08": {
       "Bioenergy": 0.0721,
       "Hydro": 0.5812,
-      "Solar": 0.1391,
+      "Solar": 0.139,
       "Wind": 0.2077
     },
     "2020-09": {
@@ -1361,142 +1385,154 @@
       "Wind": 0.3771
     },
     "2024-01": {
-      "Bioenergy": 0.0639,
-      "Hydro": 0.504,
-      "Solar": 0.0592,
-      "Wind": 0.3729
+      "Bioenergy": 0.064,
+      "Hydro": 0.5042,
+      "Solar": 0.0591,
+      "Wind": 0.3728
     },
     "2024-02": {
-      "Bioenergy": 0.0637,
+      "Bioenergy": 0.0638,
       "Hydro": 0.4836,
-      "Solar": 0.0854,
-      "Wind": 0.3673
+      "Solar": 0.0852,
+      "Wind": 0.3674
     },
     "2024-03": {
       "Bioenergy": 0.0635,
-      "Hydro": 0.505,
-      "Solar": 0.1371,
-      "Wind": 0.2944
+      "Hydro": 0.5052,
+      "Solar": 0.1368,
+      "Wind": 0.2945
     },
     "2024-04": {
-      "Bioenergy": 0.0569,
-      "Hydro": 0.4846,
-      "Solar": 0.178,
-      "Wind": 0.2805
+      "Bioenergy": 0.057,
+      "Hydro": 0.4849,
+      "Solar": 0.1778,
+      "Wind": 0.2804
     },
     "2024-05": {
       "Bioenergy": 0.0582,
-      "Hydro": 0.5197,
-      "Solar": 0.2282,
-      "Wind": 0.1939
+      "Hydro": 0.5198,
+      "Solar": 0.2278,
+      "Wind": 0.1942
     },
     "2024-06": {
       "Bioenergy": 0.0536,
-      "Hydro": 0.5052,
-      "Solar": 0.2431,
-      "Wind": 0.1981
+      "Hydro": 0.5051,
+      "Solar": 0.2428,
+      "Wind": 0.1985
     },
     "2024-07": {
       "Bioenergy": 0.0557,
-      "Hydro": 0.4801,
-      "Solar": 0.2631,
-      "Wind": 0.2012
+      "Hydro": 0.4803,
+      "Solar": 0.2627,
+      "Wind": 0.2014
     },
     "2024-08": {
       "Bioenergy": 0.0582,
-      "Hydro": 0.4547,
-      "Solar": 0.2637,
-      "Wind": 0.2234
+      "Hydro": 0.4549,
+      "Solar": 0.2633,
+      "Wind": 0.2236
     },
     "2024-09": {
       "Bioenergy": 0.0617,
-      "Hydro": 0.4619,
-      "Solar": 0.2016,
+      "Hydro": 0.4622,
+      "Solar": 0.2013,
       "Wind": 0.2748
     },
     "2024-10": {
-      "Bioenergy": 0.0651,
-      "Hydro": 0.4952,
-      "Solar": 0.1374,
-      "Wind": 0.3023
+      "Bioenergy": 0.0653,
+      "Hydro": 0.497,
+      "Solar": 0.1377,
+      "Wind": 0.3
     },
     "2024-11": {
-      "Bioenergy": 0.0734,
-      "Hydro": 0.4931,
-      "Solar": 0.0908,
-      "Wind": 0.3427
+      "Bioenergy": 0.0737,
+      "Hydro": 0.4953,
+      "Solar": 0.091,
+      "Wind": 0.34
     },
     "2024-12": {
-      "Bioenergy": 0.0694,
-      "Hydro": 0.4656,
-      "Solar": 0.0674,
-      "Wind": 0.3975
+      "Bioenergy": 0.0689,
+      "Hydro": 0.4623,
+      "Solar": 0.0669,
+      "Wind": 0.4019
     },
     "2025-01": {
-      "Bioenergy": 0.0705,
-      "Hydro": 0.4843,
-      "Solar": 0.0777,
-      "Wind": 0.3676
+      "Bioenergy": 0.0704,
+      "Hydro": 0.4839,
+      "Solar": 0.0788,
+      "Wind": 0.3669
     },
     "2025-02": {
-      "Bioenergy": 0.0733,
-      "Hydro": 0.5027,
-      "Solar": 0.1277,
-      "Wind": 0.2963
+      "Bioenergy": 0.0732,
+      "Hydro": 0.5026,
+      "Solar": 0.1283,
+      "Wind": 0.2959
     },
     "2025-03": {
       "Bioenergy": 0.0646,
-      "Hydro": 0.4517,
-      "Solar": 0.1953,
-      "Wind": 0.2884
+      "Hydro": 0.4516,
+      "Solar": 0.1959,
+      "Wind": 0.2879
     },
     "2025-04": {
-      "Bioenergy": 0.0616,
-      "Hydro": 0.4685,
-      "Solar": 0.2441,
-      "Wind": 0.2257
+      "Bioenergy": 0.0615,
+      "Hydro": 0.4682,
+      "Solar": 0.245,
+      "Wind": 0.2253
     },
     "2025-05": {
       "Bioenergy": 0.0533,
-      "Hydro": 0.4593,
-      "Solar": 0.2626,
-      "Wind": 0.2247
+      "Hydro": 0.4592,
+      "Solar": 0.2635,
+      "Wind": 0.224
     },
     "2025-06": {
-      "Bioenergy": 0.0495,
-      "Hydro": 0.4285,
-      "Solar": 0.2898,
-      "Wind": 0.2322
+      "Bioenergy": 0.0494,
+      "Hydro": 0.4278,
+      "Solar": 0.2912,
+      "Wind": 0.2317
     },
     "2025-07": {
-      "Bioenergy": 0.0539,
-      "Hydro": 0.4472,
-      "Solar": 0.2962,
-      "Wind": 0.2026
+      "Bioenergy": 0.054,
+      "Hydro": 0.4469,
+      "Solar": 0.296,
+      "Wind": 0.2031
     },
     "2025-08": {
-      "Bioenergy": 0.0557,
-      "Hydro": 0.4296,
-      "Solar": 0.2926,
-      "Wind": 0.2222
+      "Bioenergy": 0.056,
+      "Hydro": 0.4303,
+      "Solar": 0.2906,
+      "Wind": 0.2232
     },
     "2025-09": {
-      "Bioenergy": 0.0565,
-      "Hydro": 0.4243,
-      "Solar": 0.2286,
-      "Wind": 0.2906
+      "Bioenergy": 0.0568,
+      "Hydro": 0.4247,
+      "Solar": 0.2276,
+      "Wind": 0.2908
     },
     "2025-10": {
-      "Bioenergy": 0.0612,
-      "Hydro": 0.431,
-      "Solar": 0.1648,
-      "Wind": 0.343
+      "Bioenergy": 0.0608,
+      "Hydro": 0.4324,
+      "Solar": 0.159,
+      "Wind": 0.3478
     },
     "2025-11": {
-      "Bioenergy": 0.0696,
-      "Hydro": 0.4678,
-      "Solar": 0.1172,
-      "Wind": 0.3455
+      "Bioenergy": 0.0709,
+      "Hydro": 0.4664,
+      "Solar": 0.1127,
+      "Wind": 0.35
+    },
+    "2025-12": {
+      "Bioenergy": 0.0709,
+      "Hydro": 0.4765,
+      "Solar": 0.08,
+      "Wind": 0.3726
+    },
+    "2026-01": {
+      "Bioenergy": 0.0709,
+      "Hydro": 0.4765,
+      "Solar": 0.08,
+      "Wind": 0.3726
     }
   },
   "North America": {
@@ -1963,40 +1999,52 @@
       "Wind": 0.2759
     },
     "2025-06": {
-      "Bioenergy": 0.0649,
-      "Hydro": 0.3831,
-      "Solar": 0.282,
-      "Wind": 0.27
+      "Bioenergy": 0.065,
+      "Hydro": 0.3832,
+      "Solar": 0.2819,
+      "Wind": 0.2699
     },
     "2025-07": {
-      "Bioenergy": 0.0685,
-      "Hydro": 0.3871,
-      "Solar": 0.2972,
-      "Wind": 0.2472
+      "Bioenergy": 0.0686,
+      "Hydro": 0.3872,
+      "Solar": 0.297,
+      "Wind": 0.2471
     },
     "2025-08": {
-      "Bioenergy": 0.0721,
-      "Hydro": 0.3972,
-      "Solar": 0.3015,
+      "Bioenergy": 0.0722,
+      "Hydro": 0.3973,
+      "Solar": 0.3013,
       "Wind": 0.2292
     },
     "2025-09": {
-      "Bioenergy": 0.0768,
-      "Hydro": 0.3946,
-      "Solar": 0.2941,
-      "Wind": 0.2345
+      "Bioenergy": 0.0769,
+      "Hydro": 0.3947,
+      "Solar": 0.294,
+      "Wind": 0.2344
     },
     "2025-10": {
-      "Bioenergy": 0.0699,
-      "Hydro": 0.3698,
-      "Solar": 0.2482,
-      "Wind": 0.3121
+      "Bioenergy": 0.0688,
+      "Hydro": 0.375,
+      "Solar": 0.2388,
+      "Wind": 0.3174
     },
     "2025-11": {
-      "Bioenergy": 0.0741,
-      "Hydro": 0.3941,
-      "Solar": 0.1975,
-      "Wind": 0.3343
+      "Bioenergy": 0.073,
+      "Hydro": 0.3927,
+      "Solar": 0.1895,
+      "Wind": 0.3447
+    },
+    "2025-12": {
+      "Bioenergy": 0.0717,
+      "Hydro": 0.4047,
+      "Solar": 0.1539,
+      "Wind": 0.3697
+    },
+    "2026-01": {
+      "Bioenergy": 0.0717,
+      "Hydro": 0.4047,
+      "Solar": 0.1539,
+      "Wind": 0.3697
     }
   },
   "Oceania": {
@@ -2494,9 +2542,21 @@
     },
     "2025-11": {
       "Bioenergy": 0.0113,
-      "Hydro": 0.3453,
-      "Solar": 0.385,
-      "Wind": 0.2585
+      "Hydro": 0.3554,
+      "Solar": 0.3844,
+      "Wind": 0.2489
+    },
+    "2025-12": {
+      "Bioenergy": 0.0109,
+      "Hydro": 0.3282,
+      "Solar": 0.4278,
+      "Wind": 0.2331
+    },
+    "2026-01": {
+      "Bioenergy": 0.0109,
+      "Hydro": 0.3282,
+      "Solar": 0.4278,
+      "Wind": 0.2331
     }
   },
   "South America": {
@@ -2988,15 +3048,27 @@
     },
     "2025-10": {
       "Bioenergy": 0.0061,
-      "Hydro": 0.8024,
-      "Solar": 0.0833,
-      "Wind": 0.1083
+      "Hydro": 0.7999,
+      "Solar": 0.0837,
+      "Wind": 0.1104
     },
     "2025-11": {
-      "Bioenergy": 0.006,
-      "Hydro": 0.8015,
-      "Solar": 0.0842,
-      "Wind": 0.1083
+      "Bioenergy": 0.0056,
+      "Hydro": 0.8169,
+      "Solar": 0.0883,
+      "Wind": 0.0892
+    },
+    "2025-12": {
+      "Bioenergy": 0.0061,
+      "Hydro": 0.815,
+      "Solar": 0.0899,
+      "Wind": 0.089
+    },
+    "2026-01": {
+      "Bioenergy": 0.0061,
+      "Hydro": 0.815,
+      "Solar": 0.0899,
+      "Wind": 0.089
     }
   }
 }
