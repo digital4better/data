@@ -35,9 +35,12 @@ jobs:
             echo "No changes detected → no version bump, no publish"
             exit 0
           fi
-          echo "Changes detected → bump version"
+          echo "Changes detected → commit generated data"
+          git add data/
+          git commit -m "chore: update generated data"
+          echo "Bump version"
           npm version patch
-          echo "Push commit and tags"
+          echo "Push commits and tags"
           git push origin HEAD
           git push origin --tags
           echo "Publish to npm"
