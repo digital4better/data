@@ -68,6 +68,10 @@
     "platform": "naples",
     "cores": 16,
     "threads": 32,
+    "tdp": 170,
+    "process": 14,
+    "die": 213,
+    "transistors": 4800,
     "smp": 2
   },
   {
@@ -1249,6 +1253,10 @@
     "platform": "coffee lake",
     "cores": 4,
     "threads": 8,
+    "tdp": 83,
+    "process": 14,
+    "die": 126,
+    "transistors": 1400,
     "smp": 1
   },
   {
