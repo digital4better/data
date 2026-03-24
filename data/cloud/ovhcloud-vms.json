@@ -1,0 +1,1090 @@
+[
+  {
+    "id": "b3-8",
+    "family": "b3",
+    "name": "b3-8",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "ssd": 50,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "b3-16",
+    "family": "b3",
+    "name": "b3-16",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "ssd": 100,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "b3-32",
+    "family": "b3",
+    "name": "b3-32",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "ssd": 200,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "b3-64",
+    "family": "b3",
+    "name": "b3-64",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "b3-128",
+    "family": "b3",
+    "name": "b3-128",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "b3-256",
+    "family": "b3",
+    "name": "b3-256",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 256,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "b3-512",
+    "family": "b3",
+    "name": "b3-512",
+    "category": "general",
+    "vcpus": 128,
+    "memory": 512,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "b3-640",
+    "family": "b3",
+    "name": "b3-640",
+    "category": "general",
+    "vcpus": 160,
+    "memory": 640,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "b2-7",
+    "family": "b2",
+    "name": "b2-7",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 7,
+    "ssd": 50,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "b2-15",
+    "family": "b2",
+    "name": "b2-15",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 15,
+    "ssd": 100,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "b2-30",
+    "family": "b2",
+    "name": "b2-30",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 30,
+    "ssd": 200,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "b2-60",
+    "family": "b2",
+    "name": "b2-60",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 60,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "b2-120",
+    "family": "b2",
+    "name": "b2-120",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 120,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "c3-4",
+    "family": "c3",
+    "name": "c3-4",
+    "category": "compute",
+    "vcpus": 2,
+    "memory": 4,
+    "ssd": 50,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "c3-8",
+    "family": "c3",
+    "name": "c3-8",
+    "category": "compute",
+    "vcpus": 4,
+    "memory": 8,
+    "ssd": 100,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "c3-16",
+    "family": "c3",
+    "name": "c3-16",
+    "category": "compute",
+    "vcpus": 8,
+    "memory": 16,
+    "ssd": 200,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "c3-32",
+    "family": "c3",
+    "name": "c3-32",
+    "category": "compute",
+    "vcpus": 16,
+    "memory": 32,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "c3-64",
+    "family": "c3",
+    "name": "c3-64",
+    "category": "compute",
+    "vcpus": 32,
+    "memory": 64,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "c3-128",
+    "family": "c3",
+    "name": "c3-128",
+    "category": "compute",
+    "vcpus": 64,
+    "memory": 128,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "c3-256",
+    "family": "c3",
+    "name": "c3-256",
+    "category": "compute",
+    "vcpus": 128,
+    "memory": 256,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "c3-320",
+    "family": "c3",
+    "name": "c3-320",
+    "category": "compute",
+    "vcpus": 160,
+    "memory": 320,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "c2-7",
+    "family": "c2",
+    "name": "c2-7",
+    "category": "compute",
+    "vcpus": 2,
+    "memory": 7,
+    "ssd": 50,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "c2-15",
+    "family": "c2",
+    "name": "c2-15",
+    "category": "compute",
+    "vcpus": 4,
+    "memory": 15,
+    "ssd": 100,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "c2-30",
+    "family": "c2",
+    "name": "c2-30",
+    "category": "compute",
+    "vcpus": 8,
+    "memory": 30,
+    "ssd": 200,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "c2-60",
+    "family": "c2",
+    "name": "c2-60",
+    "category": "compute",
+    "vcpus": 16,
+    "memory": 60,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "c2-120",
+    "family": "c2",
+    "name": "c2-120",
+    "category": "compute",
+    "vcpus": 32,
+    "memory": 120,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "r3-16",
+    "family": "r3",
+    "name": "r3-16",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 16,
+    "ssd": 50,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "r3-32",
+    "family": "r3",
+    "name": "r3-32",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 32,
+    "ssd": 100,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "r3-64",
+    "family": "r3",
+    "name": "r3-64",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 64,
+    "ssd": 200,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "r3-128",
+    "family": "r3",
+    "name": "r3-128",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 128,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "r3-256",
+    "family": "r3",
+    "name": "r3-256",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 256,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "r3-512",
+    "family": "r3",
+    "name": "r3-512",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 512,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "r3-1024",
+    "family": "r3",
+    "name": "r3-1024",
+    "category": "memory",
+    "vcpus": 128,
+    "memory": 1024,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "r2-15",
+    "family": "r2",
+    "name": "r2-15",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 15,
+    "ssd": 50,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "r2-30",
+    "family": "r2",
+    "name": "r2-30",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 30,
+    "ssd": 50,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "r2-60",
+    "family": "r2",
+    "name": "r2-60",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 60,
+    "ssd": 100,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "r2-120",
+    "family": "r2",
+    "name": "r2-120",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 120,
+    "ssd": 200,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "r2-240",
+    "family": "r2",
+    "name": "r2-240",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 240,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "i1-45",
+    "family": "i1",
+    "name": "i1-45",
+    "category": "storage",
+    "vcpus": 8,
+    "memory": 45,
+    "ssd": 50,
+    "hdd": 1900,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "i1-90",
+    "family": "i1",
+    "name": "i1-90",
+    "category": "storage",
+    "vcpus": 16,
+    "memory": 90,
+    "ssd": 50,
+    "hdd": 3800,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "i1-180",
+    "family": "i1",
+    "name": "i1-180",
+    "category": "storage",
+    "vcpus": 32,
+    "memory": 180,
+    "ssd": 50,
+    "hdd": 7600,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "d2-2",
+    "family": "d2",
+    "name": "d2-2",
+    "category": "general",
+    "vcpus": 1,
+    "memory": 2,
+    "ssd": 0,
+    "hdd": 25,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "d2-4",
+    "family": "d2",
+    "name": "d2-4",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 4,
+    "ssd": 0,
+    "hdd": 50,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "d2-8",
+    "family": "d2",
+    "name": "d2-8",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 8,
+    "ssd": 0,
+    "hdd": 50,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "l40s-90",
+    "family": "l40s",
+    "name": "l40s-90",
+    "category": "accelerated",
+    "vcpus": 15,
+    "memory": 90,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-l40s",
+    "embodied": 1
+  },
+  {
+    "id": "l40s-180",
+    "family": "l40s",
+    "name": "l40s-180",
+    "category": "accelerated",
+    "vcpus": 30,
+    "memory": 180,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-l40s",
+    "embodied": 1
+  },
+  {
+    "id": "l40s-360",
+    "family": "l40s",
+    "name": "l40s-360",
+    "category": "accelerated",
+    "vcpus": 60,
+    "memory": 360,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-l40s",
+    "embodied": 1
+  },
+  {
+    "id": "a10-45",
+    "family": "a10",
+    "name": "a10-45",
+    "category": "accelerated",
+    "vcpus": 30,
+    "memory": 45,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-a10",
+    "embodied": 1
+  },
+  {
+    "id": "a10-90",
+    "family": "a10",
+    "name": "a10-90",
+    "category": "accelerated",
+    "vcpus": 60,
+    "memory": 90,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-a10",
+    "embodied": 1
+  },
+  {
+    "id": "a10-180",
+    "family": "a10",
+    "name": "a10-180",
+    "category": "accelerated",
+    "vcpus": 120,
+    "memory": 180,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-a10",
+    "embodied": 1
+  },
+  {
+    "id": "a100-180",
+    "family": "a100",
+    "name": "a100-180",
+    "category": "accelerated",
+    "vcpus": 15,
+    "memory": 180,
+    "ssd": 300,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-a10080",
+    "embodied": 1
+  },
+  {
+    "id": "a100-360",
+    "family": "a100",
+    "name": "a100-360",
+    "category": "accelerated",
+    "vcpus": 30,
+    "memory": 360,
+    "ssd": 500,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-a10080",
+    "embodied": 1
+  },
+  {
+    "id": "a100-720",
+    "family": "a100",
+    "name": "a100-720",
+    "category": "accelerated",
+    "vcpus": 60,
+    "memory": 720,
+    "ssd": 500,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-a10080",
+    "embodied": 1
+  },
+  {
+    "id": "h100-380",
+    "family": "h100",
+    "name": "h100-380",
+    "category": "accelerated",
+    "vcpus": 30,
+    "memory": 380,
+    "ssd": 4040,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-h10080",
+    "embodied": 1
+  },
+  {
+    "id": "h100-760",
+    "family": "h100",
+    "name": "h100-760",
+    "category": "accelerated",
+    "vcpus": 60,
+    "memory": 760,
+    "ssd": 7880,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-h10080",
+    "embodied": 1
+  },
+  {
+    "id": "h100-1520",
+    "family": "h100",
+    "name": "h100-1520",
+    "category": "accelerated",
+    "vcpus": 120,
+    "memory": 1520,
+    "ssd": 15560,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-h10080",
+    "embodied": 1
+  },
+  {
+    "id": "l4-90",
+    "family": "l4",
+    "name": "l4-90",
+    "category": "accelerated",
+    "vcpus": 22,
+    "memory": 90,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-l4",
+    "embodied": 1
+  },
+  {
+    "id": "l4-180",
+    "family": "l4",
+    "name": "l4-180",
+    "category": "accelerated",
+    "vcpus": 45,
+    "memory": 180,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-l4",
+    "embodied": 1
+  },
+  {
+    "id": "l4-360",
+    "family": "l4",
+    "name": "l4-360",
+    "category": "accelerated",
+    "vcpus": 90,
+    "memory": 360,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-l4",
+    "embodied": 1
+  },
+  {
+    "id": "rtx5000-28",
+    "family": "rtx5000",
+    "name": "rtx5000-28",
+    "category": "accelerated",
+    "vcpus": 4,
+    "memory": 28,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 1,
+    "accelerator": "nvidia-quadro-rtx5000",
+    "embodied": 1
+  },
+  {
+    "id": "rtx5000-56",
+    "family": "rtx5000",
+    "name": "rtx5000-56",
+    "category": "accelerated",
+    "vcpus": 8,
+    "memory": 56,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 2,
+    "accelerator": "nvidia-quadro-rtx5000",
+    "embodied": 1
+  },
+  {
+    "id": "rtx5000-84",
+    "family": "rtx5000",
+    "name": "rtx5000-84",
+    "category": "accelerated",
+    "vcpus": 16,
+    "memory": 84,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "accelerators": 3,
+    "accelerator": "nvidia-quadro-rtx5000",
+    "embodied": 1
+  },
+  {
+    "id": "t1-le-45",
+    "family": "t1-le",
+    "name": "t1-le-45",
+    "category": "accelerated",
+    "vcpus": 8,
+    "memory": 45,
+    "ssd": 300,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7371"
+    ],
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-v10016",
+    "embodied": 1
+  },
+  {
+    "id": "t1-le-90",
+    "family": "t1-le",
+    "name": "t1-le-90",
+    "category": "accelerated",
+    "vcpus": 16,
+    "memory": 90,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7371"
+    ],
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-v10016",
+    "embodied": 1
+  },
+  {
+    "id": "t1-le-180",
+    "family": "t1-le",
+    "name": "t1-le-180",
+    "category": "accelerated",
+    "vcpus": 32,
+    "memory": 180,
+    "ssd": 400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7371"
+    ],
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-v10016",
+    "embodied": 1
+  },
+  {
+    "id": "bm-s1",
+    "family": "bm",
+    "name": "bm-s1",
+    "category": "performance",
+    "vcpus": 4,
+    "memory": 32,
+    "ssd": 1920,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e2274g"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "bm-m1",
+    "family": "bm",
+    "name": "bm-m1",
+    "category": "performance",
+    "vcpus": 8,
+    "memory": 64,
+    "ssd": 1920,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e2288g"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  },
+  {
+    "id": "bm-l1",
+    "family": "bm",
+    "name": "bm-l1",
+    "category": "performance",
+    "vcpus": 16,
+    "memory": 128,
+    "ssd": 1920,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7371"
+    ],
+    "accelerators": 0,
+    "accelerator": "",
+    "embodied": 1
+  }
+]

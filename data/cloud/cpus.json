@@ -60,6 +60,17 @@
     "smp": 1
   },
   {
+    "id": "amd-epyc-7371",
+    "manufacturer": "amd",
+    "serie": "epyc",
+    "model": 7371,
+    "architecture": "x86-64",
+    "platform": "naples",
+    "cores": 16,
+    "threads": 32,
+    "smp": 2
+  },
+  {
     "id": "amd-epyc-7401p",
     "manufacturer": "amd",
     "serie": "epyc",
@@ -1228,6 +1239,17 @@
     "die": 1526,
     "transistors": 57000,
     "smp": 2
+  },
+  {
+    "id": "intel-xeon-e2274g",
+    "manufacturer": "intel",
+    "serie": "xeon",
+    "model": "e-2274g",
+    "architecture": "x86-64",
+    "platform": "coffee lake",
+    "cores": 4,
+    "threads": 8,
+    "smp": 1
   },
   {
     "id": "intel-xeon-e2288g",

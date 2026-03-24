@@ -448,6 +448,16 @@
     "transistors": 21100
   },
   {
+    "id": "nvidia-quadro-rtx5000",
+    "type": "gpu",
+    "manufacturer": "nvidia",
+    "serie": "quadro",
+    "model": "rtx 5000",
+    "platform": "turing",
+    "cores": 3072,
+    "memory": 16
+  },
+  {
     "id": "qualcomm-ai100-standard",
     "type": "asic",
     "manufacturer": "qualcomm",
