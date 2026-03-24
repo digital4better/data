@@ -455,7 +455,11 @@
     "model": "rtx 5000",
     "platform": "turing",
     "cores": 3072,
-    "memory": 16
+    "memory": 16,
+    "tdp": 230,
+    "process": 12,
+    "die": 545,
+    "transistors": 13600
   },
   {
     "id": "qualcomm-ai100-standard",
