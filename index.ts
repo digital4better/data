@@ -39,7 +39,7 @@ const EMBER_REGIONS = [
   "Oceania",
 ];
 const COUNTRY_EMBER_REGIONS: Record<string, (typeof EMBER_REGIONS)[number]> = {};
-const CLOUDS = ["aws", "azure", "gcp", "scaleway"];
+const CLOUDS = ["aws", "azure", "gcp", "ovhcloud", "scaleway"];
 
 const isWorld = (region: string) => region === EMBER_WORLD;
 const isContinent = (region: string) => EMBER_REGIONS.indexOf(region) >= 0;
