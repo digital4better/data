@@ -31,4 +31,5 @@ nvidia-tesla-p40,gpu,nvidia,tesla,p40,pascal,3840,24,250,16,471,11800
 nvidia-tesla-t4,gpu,nvidia,tesla,t4,turing,2560,16,70,12,545,13600
 nvidia-tesla-v10016,gpu,nvidia,tesla,v100,volta,5120,16,250,12,815,21100
 nvidia-tesla-v10032,gpu,nvidia,tesla,v100,volta,5120,32,250,12,815,21100
+nvidia-quadro-rtx5000,gpu,nvidia,quadro,rtx 5000,turing,3072,16,,,,
 qualcomm-ai100-standard,asic,qualcomm,ai100,standard,cloud ai,16,16,75,7,0,0
