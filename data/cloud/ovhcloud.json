@@ -137,7 +137,9 @@
   {
     "id": "vin",
     "name": "us-east-vin",
-    "aliases": ["vin-1"],
+    "aliases": [
+      "vin-1"
+    ],
     "provider": "ovhcloud",
     "lat": -77.67379,
     "lon": 38.7464553,
@@ -150,7 +152,9 @@
   {
     "id": "waw",
     "name": "eu-central-waw",
-    "aliases": ["waw-1"],
+    "aliases": [
+      "waw-1"
+    ],
     "provider": "ovhcloud",
     "lat": 52.237049,
     "lon": 21.017532,
@@ -162,7 +166,9 @@
   {
     "id": "mum",
     "name": "ap-south-mum",
-    "aliases": ["ynm-1"],
+    "aliases": [
+      "ynm-1"
+    ],
     "provider": "ovhcloud",
     "lat": 19.08,
     "lon": 72.88,
@@ -173,7 +179,10 @@
   {
     "id": "sgp",
     "name": "ap-southeast-sgp",
-    "aliases": ["sgp-1", "sgp-02"],
+    "aliases": [
+      "sgp-1",
+      "sgp-02"
+    ],
     "provider": "ovhcloud",
     "lat": 1.37,
     "lon": 103.8,
@@ -184,7 +193,11 @@
   {
     "id": "syd",
     "name": "ap-southeast-syd",
-    "aliases": ["syd-1","syd-2","syd-03"],
+    "aliases": [
+      "syd-1",
+      "syd-2",
+      "syd-03"
+    ],
     "provider": "ovhcloud",
     "lat": -33.86,
     "lon": 151.2,
@@ -195,7 +208,9 @@
   {
     "id": "yyz",
     "name": "ca-east-tor",
-    "aliases": ["yyz-01"],
+    "aliases": [
+      "yyz-01"
+    ],
     "provider": "ovhcloud",
     "lat": 43.653,
     "lon": -79.383,
@@ -207,7 +222,9 @@
   {
     "id": "ams",
     "name": "ams",
-    "aliases": ["ams-1"],
+    "aliases": [
+      "ams-1"
+    ],
     "provider": "ovhcloud",
     "lat": 52.377956,
     "lon": 4.897070,
@@ -218,7 +235,9 @@
   {
     "id": "blr",
     "name": "blr",
-    "aliases": ["blr-1"],
+    "aliases": [
+      "blr-1"
+    ],
     "provider": "ovhcloud",
     "lat": 12.971599,
     "lon": 77.594566,
@@ -229,7 +248,9 @@
   {
     "id": "mad",
     "name": "mad",
-    "aliases": ["mad-1"],
+    "aliases": [
+      "mad-1"
+    ],
     "provider": "ovhcloud",
     "lat": 40.4167754,
     "lon": -3.7037902,
@@ -240,7 +261,11 @@
   {
     "id": "mil",
     "name": "eu-south-mil",
-    "aliases": ["itbsi-01", "itmil-01", "itzvf-01"],
+    "aliases": [
+      "itbsi-01",
+      "itmil-01",
+      "itzvf-01"
+    ],
     "provider": "ovhcloud",
     "lat": 45.43,
     "lon": 9.29,
