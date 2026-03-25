@@ -3,7 +3,7 @@ amd-epyc-7232p,amd,epyc,7232p,x86-64,rome,8,16,120,7,74,3800,1
 amd-epyc-7272,amd,epyc,7272,x86-64,rome,12,24,120,7,74,3800,2
 amd-epyc-7281,amd,epyc,7281,x86-64,naples,16,32,170,14,213,4800,2
 amd-epyc-7313p,amd,epyc,7313p,x86-64,milan,16,32,155,7,324,16600,1
-amd-epyc-7371,amd,epyc,7371,x86-64,naples,16,32,,,,,2
+amd-epyc-7371,amd,epyc,7371,x86-64,naples,16,32,170,14,213,4800,2
 amd-epyc-7401p,amd,epyc,7401p,x86-64,naples,24,48,170,14,213,4800,1
 amd-epyc-7413,amd,epyc,7413,x86-64,milan,24,48,180,7,324,16600,2
 amd-epyc-7452,amd,epyc,7452,x86-64,rome,32,64,155,7,74,3800,2
@@ -82,7 +82,7 @@ intel-xeon-8490h,intel,xeon,8490h,x86-64,sapphire rapids,60,120,350,10,1908,4800
 intel-xeon-8559c,intel,xeon,8559c,x86-64,emerald rapids,48,96,350,10,1526,57000,2
 intel-xeon-8573c,intel,xeon,8573c,x86-64,emerald rapids,52,104,350,10,1526,57000,2
 intel-xeon-8581c,intel,xeon,8581c,x86-64,emerald rapids,60,120,350,10,1526,57000,2
-intel-xeon-e2274g,intel,xeon,e-2274g,x86-64,coffee lake,4,8,,,,,1
+intel-xeon-e2274g,intel,xeon,e-2274g,x86-64,coffee lake,4,8,83,14,126,1400,1
 intel-xeon-e2288g,intel,xeon,e-2288g,x86-64,coffee lake,8,16,95,14,180,2900,1
 intel-xeon-e31220,intel,xeon,e3-1220,x86-64,sandy bridge,4,4,80,32,216,1160,1
 intel-xeon-e51410v2,intel,xeon,e5-1410 v2,x86-64,ivy bridge,4,8,80,22,257,1860,1
