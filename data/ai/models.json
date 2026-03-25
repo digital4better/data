@@ -1,0 +1,8078 @@
+[
+  {
+    "name": "ada",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "(?<!text[\\s._-])ada$",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 0.35,
+      "total": 0.35
+    },
+    "context": 2049,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "ada"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "amazon-nova-canvas",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "(?:amazon[\\s._-]?)?nova[\\s._-]?canvas",
+    "type": "image",
+    "architecture": "dense",
+    "parameters": {
+      "active": 12,
+      "total": 12
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "amazon.nova-canvas-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "amazon-nova-lite",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "(?:amazon[\\s._-]?)?nova[\\s._-]?lite",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 32,
+      "total": 32
+    },
+    "context": 300000,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "amazon.nova-lite-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "amazon-nova-micro",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "(?:amazon[\\s._-]?)?nova[\\s._-]?micro",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 8,
+      "total": 8
+    },
+    "context": 128000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "amazon.nova-micro-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "amazon-nova-multimodal-embeddings",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "(?:amazon[\\s._-]?)?nova[\\s._-]?2[\\s._-]?multimodal[\\s._-]?embeddings",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 8,
+      "total": 8
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "amazon.nova-2-multimodal-embeddings-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "amazon-nova-premier",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "(?:amazon[\\s._-]?)?nova[\\s._-]?premier",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 470,
+      "total": 470
+    },
+    "context": 1000000,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "amazon.nova-premier-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "amazon-nova-pro",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "(?:amazon[\\s._-]?)?nova[\\s._-]?pro",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 90,
+      "total": 90
+    },
+    "context": 300000,
+    "corpus": 10000,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "amazon.nova-pro-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://lifearchitect.ai/models-table",
+      "https://www.amazon.science/publications/the-amazon-nova-family-of-models-technical-report-and-model-card"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "amazon-nova-reel",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "(?:amazon[\\s._-]?)?nova[\\s._-]?reel",
+    "type": "video",
+    "architecture": "dense",
+    "parameters": {
+      "active": 24,
+      "total": 24
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "video"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "amazon.nova-reel-v1:0",
+        "amazon.nova-reel-v1:1"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "amazon-nova-sonic",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "(?:amazon[\\s._-]?)?nova[\\s._-]?sonic",
+    "type": "speech",
+    "architecture": "dense",
+    "parameters": {
+      "active": 20,
+      "total": 20
+    },
+    "context": 300000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "amazon.nova-sonic-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "amazon-rerank-1.0",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "(?:amazon[\\s._-]?)?rerank[\\s._-]?1(?:\\.0|[\\s._-]?0)?",
+    "type": "ranking",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1,
+      "total": 1
+    },
+    "input": [
+      "text"
+    ],
+    "output": [
+      "score"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "amazon.rerank-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "amazon-titan-image-generator-g1-v2",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "(?:amazon[\\s._-]?)?titan[\\s._-]?image[\\s._-]?generator(?:[\\s._-]?g1)?(?:[\\s._-]?v?2)?",
+    "type": "image",
+    "architecture": "dense",
+    "parameters": {
+      "active": 5,
+      "total": 5
+    },
+    "input": [
+      "text"
+    ],
+    "output": [
+      "image"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "amazon.titan-image-generator-v2:0"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "amazon-titan-multimodal-embeddings-g1",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "(?:amazon[\\s._-]?)?titan[\\s._-]?multimodal[\\s._-]?embeddings?[\\s._-]?g1",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 2,
+      "total": 2
+    },
+    "context": 256,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "amazon.titan-embed-image-v1"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "amazon-titan-text-embeddings-v1",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "(?:amazon[\\s._-]?)?titan[\\s._-]?embeddings?[\\s._-]?g1[\\s._-]?text|(?:amazon[\\s._-]?)?titan[\\s._-]?embed[\\s._-]?text[\\s._-]?v1",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1.5,
+      "total": 1.5
+    },
+    "context": 8192,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "amazon.titan-embed-text-v1"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "amazon-titan-text-embeddings-v2",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "(?:amazon[\\s._-]?)?titan[\\s._-]?text[\\s._-]?embeddings?[\\s._-]?v?2",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1.5,
+      "total": 1.5
+    },
+    "context": 8192,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "amazon.titan-embed-text-v2:0",
+        "amazon.titan-embed-g1-text-02"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "amazon-titan-text-large",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "(?:amazon[\\s._-]?)?titan[\\s._-]?text[\\s._-]?large",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 13,
+      "total": 13
+    },
+    "context": 32000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "amazon.titan-tg1-large"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "babbage",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "(?<!text[\\s._-])babbage$",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1.3,
+      "total": 1.3
+    },
+    "context": 2049,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "babbage"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "babbage-002",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "babbage[\\s._-]?002",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1.3,
+      "total": 1.3
+    },
+    "context": 16384,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "babbage-002"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "bge-base-en-v1.5",
+    "vendor": "baai",
+    "open": true,
+    "pattern": "bge[\\s._-]?base[\\s._-]?en[\\s._-]?v?1(?:\\.5|[\\s._-]?5)",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 0.109,
+      "total": 0.109
+    },
+    "context": 512,
+    "dimension": 768,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "ovhcloud": [
+        "bge-base-en-v1.5"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/BAAI/bge-base-en-v1.5"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "bge-m3",
+    "vendor": "baai",
+    "open": true,
+    "pattern": "bge[\\s._-]?m3",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 0.567,
+      "total": 0.567
+    },
+    "context": 8192,
+    "dimension": 1024,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "ovhcloud": [
+        "bge-m3"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/BAAI/bge-m3"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "bge-multilingual-gemma2",
+    "vendor": "baai",
+    "open": true,
+    "pattern": "bge[\\s._-]?multilingual[\\s._-]?gemma2",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 9,
+      "total": 9
+    },
+    "context": 8192,
+    "dimension": 3584,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "ovhcloud": [
+        "bge-multilingual-gemma2"
+      ],
+      "scaleway": [
+        "bge-multilingual-gemma2"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/BAAI/bge-multilingual-gemma2"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "claude",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 175,
+      "total": 175
+    },
+    "context": 200000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {},
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "claude-3-haiku",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?3[\\s._-]?haiku",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 20,
+      "total": 20
+    },
+    "context": 200000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "anthropic.claude-3-haiku-20240307-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://lifearchitect.substack.com/p/the-memo-special-edition-claude-3"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "claude-3-opus",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?3[\\s._-]?opus",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 400,
+      "total": 2000
+    },
+    "context": 200000,
+    "corpus": 40000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Claude 3 Opus"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://lifearchitect.ai/models-table",
+      "https://www.anthropic.com/claude-3-model-card",
+      "https://lifearchitect.substack.com/p/the-memo-special-edition-claude-3"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "claude-3-sonnet",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude 3 sonnet",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 70,
+      "total": 70
+    },
+    "context": 200000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "anthropic.claude-3-sonnet-20240229-v1:0"
+      ],
+      "gcp": [
+        "Claude 3 Sonnet"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://lifearchitect.substack.com/p/the-memo-special-edition-claude-3"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "claude-3.5-haiku",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?3(?:\\.5|[\\s._-]?5)[\\s._-]?haiku",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 18,
+      "total": 18
+    },
+    "context": 200000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "anthropic.claude-3-5-haiku-20241022-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "claude-3.5-sonnet",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude 3.5 sonnet",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 70,
+      "total": 70
+    },
+    "context": 200000,
+    "corpus": 15000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Claude 3.5 Sonnet v2"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://lifearchitect.ai/models-table",
+      "https://www.anthropic.com/news/claude-3-5-sonnet"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "claude-3.5-sonnet-v2",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?3(?:\\.5|[\\s._-]?5)[\\s._-]?sonnet(?:[\\s._-]?v?2)?",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 70,
+      "total": 70
+    },
+    "context": 200000,
+    "corpus": 20000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Claude 3.5 Sonnet v2"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://lifearchitect.ai/models-table",
+      "https://assets.anthropic.com/m/61e7d27f8c8f5919/original/Claude-3-Model-Card.pdf#page=51"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "claude-3.7-sonnet",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?3(?:\\.7|[\\s._-]?7)[\\s._-]?sonnet",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 175,
+      "total": 175
+    },
+    "context": 200000,
+    "corpus": 20000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Claude 3.7 Sonnet"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://lifearchitect.ai/models-table",
+      "https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "claude-haiku-4.5",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?haiku[\\s._-]?4(?:\\.5|[\\s._-]?5)",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 23,
+      "total": 23
+    },
+    "context": 200000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "anthropic.claude-haiku-4-5-20251001-v1:0"
+      ],
+      "gcp": [
+        "Claude Haiku 4.5"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "claude-instant",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude instant",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 13,
+      "total": 13
+    },
+    "context": 100000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "anthropic.claude-instant-v1"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "claude-opus-4",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?opus[\\s._-]?4(?![\\s._-]?(?:\\.1|\\.5|\\.6|1|5|6))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 400,
+      "total": 2000
+    },
+    "context": 200000,
+    "corpus": 100000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Claude Opus 4"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://lifearchitect.ai/models-table",
+      "https://www-cdn.anthropic.com/6be99a52cb68eb70eb9572b4cafad13df32ed995.pdf"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "claude-opus-4.5",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?opus[\\s._-]?4(?:\\.5|[\\s._-]?5)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 135,
+      "total": 670
+    },
+    "context": 200000,
+    "corpus": 100000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "anthropic.claude-opus-4-5-20251101-v1:0"
+      ],
+      "gcp": [
+        "Claude Opus 4.5"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://lifearchitect.ai/models-table",
+      "https://assets.anthropic.com/m/64823ba7485345a7/Claude-Opus-4-5-System-Card.pdf"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "claude-opus-4.6",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?opus[\\s._-]?4(?:\\.6|[\\s._-]?6)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 135,
+      "total": 670
+    },
+    "context": 200000,
+    "corpus": 100000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "anthropic.claude-opus-4-6-v1"
+      ],
+      "gcp": [
+        "Claude Opus 4.6"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://lifearchitect.ai/models-table",
+      "https://www-cdn.anthropic.com/0dd865075ad3132672ee0ab40b05a53f14cf5288.pdf"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "claude-sonnet-4",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?sonnet[\\s._-]?4(?![\\s._-]?(?:\\.5|\\.6|5|6))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 88,
+      "total": 440
+    },
+    "context": 200000,
+    "corpus": 80000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "anthropic.claude-sonnet-4-20250514-v1:0"
+      ],
+      "gcp": [
+        "Claude Sonnet 4"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://lifearchitect.ai/models-table",
+      "https://www.anthropic.com/news/claude-4"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "claude-sonnet-4.5",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?sonnet[\\s._-]?4(?:\\.5|[\\s._-]?5)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 88,
+      "total": 440
+    },
+    "context": 200000,
+    "corpus": 80000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "anthropic.claude-sonnet-4-5-20250929-v1:0"
+      ],
+      "gcp": [
+        "Claude Sonnet 4.5"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://lifearchitect.ai/models-table",
+      "https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "claude-sonnet-4.6",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?sonnet[\\s._-]?4(?:\\.6|[\\s._-]?6)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 88,
+      "total": 440
+    },
+    "context": 1000000,
+    "corpus": 80000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "anthropic.claude-sonnet-4-6"
+      ],
+      "gcp": [
+        "Claude Sonnet 4.6"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://lifearchitect.ai/models-table",
+      "https://www-cdn.anthropic.com/78073f739564e986ff3e28522761a7a0b4484f84.pdf"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "code-davinci-002",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "code[\\s._-]?davinci[\\s._-]?002",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 175,
+      "total": 175
+    },
+    "context": 8001,
+    "input": [
+      "text",
+      "code"
+    ],
+    "output": [
+      "text",
+      "code"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "code-davinci-002"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "codestral-2",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "codestral[\\s._-]?2",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 22.2,
+      "total": 22.2
+    },
+    "context": 256000,
+    "input": [
+      "text",
+      "code"
+    ],
+    "output": [
+      "text",
+      "code"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Codestral 2"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/getting-started/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "cohere-command-a",
+    "vendor": "cohere",
+    "open": false,
+    "pattern": "(?:cohere[\\s._-]?)?command[\\s._-]?a",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 111,
+      "total": 111
+    },
+    "context": 256000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "Cohere-command-a"
+      ]
+    },
+    "sources": [
+      "https://docs.cohere.com/docs/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "cohere-command-r",
+    "vendor": "cohere",
+    "open": false,
+    "pattern": "command[\\s._-]?r(?![\\s._-]?plus|\\+)",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 35,
+      "total": 35
+    },
+    "context": 128000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "cohere.command-r-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.cohere.com/docs/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "cohere-command-r-plus",
+    "vendor": "cohere",
+    "open": false,
+    "pattern": "command[\\s._-]?r\\+|command[\\s._-]?r[\\s._-]?plus",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 104,
+      "total": 104
+    },
+    "context": 128000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "cohere.command-r-plus-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.cohere.com/docs/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "cohere-embed-english-v3",
+    "vendor": "cohere",
+    "open": false,
+    "pattern": "embed[\\s._-]?english(?:[\\s._-]?v?3)?",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 0.4,
+      "total": 0.4
+    },
+    "context": 512,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "cohere.embed-english-v3"
+      ]
+    },
+    "sources": [
+      "https://docs.cohere.com/docs/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "cohere-embed-multilingual-3",
+    "vendor": "cohere",
+    "open": false,
+    "pattern": "cohere embed model 3",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1,
+      "total": 1
+    },
+    "context": 512,
+    "dimension": 1024,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "cohere.embed-multilingual-v3"
+      ]
+    },
+    "sources": [
+      "https://docs.cohere.com/docs/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "cohere-embed-multilingual-v3",
+    "vendor": "cohere",
+    "open": false,
+    "pattern": "embed[\\s._-]?multilingual(?:[\\s._-]?v?3)?",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 0.8,
+      "total": 0.8
+    },
+    "context": 512,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "cohere.embed-multilingual-v3"
+      ]
+    },
+    "sources": [
+      "https://docs.cohere.com/docs/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "cohere-embed-v4",
+    "vendor": "cohere",
+    "open": false,
+    "pattern": "(?:cohere[\\s._-]?)?embed[\\s._-]?v?4(?:\\.0)?",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 7,
+      "total": 7
+    },
+    "context": 128000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "cohere.embed-v4:0"
+      ],
+      "azure": [
+        "embed-v-4-0"
+      ]
+    },
+    "sources": [
+      "https://docs.cohere.com/docs/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "cohere-rerank-3.5",
+    "vendor": "cohere",
+    "open": false,
+    "pattern": "rerank[\\s._-]?3(?:\\.5|[\\s._-]?5)",
+    "type": "ranking",
+    "architecture": "dense",
+    "parameters": {
+      "active": 0.6,
+      "total": 0.6
+    },
+    "context": 4096,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "score"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "cohere.rerank-v3-5:0"
+      ]
+    },
+    "sources": [
+      "https://docs.cohere.com/docs/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "cohere-rerank-v4.0-fast",
+    "vendor": "cohere",
+    "open": false,
+    "pattern": "(?:cohere[\\s._-]?)?rerank[\\s._-]?v?4(?:\\.0)?[\\s._-]?fast",
+    "type": "ranking",
+    "architecture": "dense",
+    "parameters": {
+      "active": 0.6,
+      "total": 0.6
+    },
+    "context": 32768,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "score"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "Cohere-rerank-v4.0-fast"
+      ]
+    },
+    "sources": [
+      "https://docs.cohere.com/docs/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "cohere-rerank-v4.0-pro",
+    "vendor": "cohere",
+    "open": false,
+    "pattern": "(?:cohere[\\s._-]?)?rerank[\\s._-]?v?4(?:\\.0)?[\\s._-]?pro",
+    "type": "ranking",
+    "architecture": "dense",
+    "parameters": {
+      "active": 7,
+      "total": 7
+    },
+    "context": 32768,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "score"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "Cohere-rerank-v4.0-pro"
+      ]
+    },
+    "sources": [
+      "https://docs.cohere.com/docs/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "curie",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "(?<!text[\\s._-])curie$",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 6.7,
+      "total": 6.7
+    },
+    "context": 2049,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "curie"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "davinci",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "(?<!text[\\s._-])davinci$",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 175,
+      "total": 175
+    },
+    "context": 2049,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "davinci"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "davinci-002",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "davinci[\\s._-]?002",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 175,
+      "total": 175
+    },
+    "context": 16384,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "davinci-002"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "deepseek-ocr",
+    "vendor": "deepseek",
+    "open": true,
+    "pattern": "deepseek[\\s._-]?ocr",
+    "type": "vision",
+    "architecture": "dense",
+    "parameters": {
+      "active": 3,
+      "total": 3
+    },
+    "input": [
+      "document",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "DeepSeek-OCR"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/deepseek-ai/DeepSeek-OCR"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "deepseek-r1",
+    "vendor": "deepseek",
+    "open": true,
+    "pattern": "deepseek[\\s._-]?r1(?![\\s._-]?0528|[\\s._-]?distill)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 37,
+      "total": 671
+    },
+    "context": 128000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "deepseek.r1-v1:0"
+      ],
+      "azure": [
+        "DeepSeek-R1"
+      ]
+    },
+    "sources": [
+      "https://api-docs.deepseek.com"
+    ],
+    "estimated": [
+      "context"
+    ]
+  },
+  {
+    "name": "deepseek-r1-0528",
+    "vendor": "deepseek",
+    "open": true,
+    "pattern": "deepseek[\\s._-]?r1[\\s._-]?0528",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 37,
+      "total": 671
+    },
+    "context": 128000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "DeepSeek-R1-0528"
+      ],
+      "gcp": [
+        "DeepSeek-R1-0528"
+      ]
+    },
+    "sources": [
+      "https://api-docs.deepseek.com"
+    ],
+    "estimated": [
+      "context"
+    ]
+  },
+  {
+    "name": "deepseek-r1-distill-llama-70b",
+    "vendor": "deepseek",
+    "open": true,
+    "pattern": "deepseek[\\s._-]?r1[\\s._-]?distill[\\s._-]?llama[\\s._-]?70b",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 70,
+      "total": 70
+    },
+    "context": 131000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "ovhcloud": [
+        "deepseek-r1-distill-llama-70b"
+      ],
+      "scaleway": [
+        "deepseek-r1-distill-llama-70b"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "deepseek-v3",
+    "vendor": "deepseek",
+    "open": true,
+    "pattern": "v3",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 37,
+      "total": 671
+    },
+    "context": 128000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "DeepSeek-V3-0324"
+      ]
+    },
+    "sources": [
+      "https://api-docs.deepseek.com"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "deepseek-v3.1",
+    "vendor": "deepseek",
+    "open": true,
+    "pattern": "deepseek[\\s._-]?v?3(?:\\.1|[\\s._-]?1)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 37,
+      "total": 671
+    },
+    "context": 128000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "deepseek.v3-v1:0"
+      ],
+      "azure": [
+        "DeepSeek-V3.1"
+      ],
+      "gcp": [
+        "DeepSeek-V3.1"
+      ]
+    },
+    "sources": [
+      "https://api-docs.deepseek.com"
+    ],
+    "estimated": [
+      "context"
+    ]
+  },
+  {
+    "name": "deepseek-v3.2",
+    "vendor": "deepseek",
+    "open": true,
+    "pattern": "deepseek[\\s._-]?v?3(?:\\.2|[\\s._-]?2)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 37,
+      "total": 671
+    },
+    "context": 128000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "deepseek.v3.2"
+      ],
+      "azure": [
+        "DeepSeek-V3.2"
+      ],
+      "gcp": [
+        "DeepSeek-V3.2"
+      ]
+    },
+    "sources": [
+      "https://api-docs.deepseek.com"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "deepseek-v3.2-speciale",
+    "vendor": "deepseek",
+    "open": true,
+    "pattern": "deepseek[\\s._-]?v?3(?:\\.2|[\\s._-]?2)[\\s._-]?speciale",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 37,
+      "total": 671
+    },
+    "context": 128000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "DeepSeek-V3.2-Speciale"
+      ]
+    },
+    "sources": [
+      "https://api-docs.deepseek.com"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "devstral-2-123b-instruct-2512",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "devstral[\\s._-]?2[\\s._-]?123b[\\s._-]?instruct[\\s._-]?2512",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 123,
+      "total": 123
+    },
+    "context": 200000,
+    "input": [
+      "text",
+      "code"
+    ],
+    "output": [
+      "text",
+      "code"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "mistral.devstral-2-123b"
+      ],
+      "scaleway": [
+        "devstral-2-123b-instruct-2512"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "devstral-small-2505",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "devstral[\\s._-]?small[\\s._-]?2505",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 24,
+      "total": 24
+    },
+    "context": 128000,
+    "input": [
+      "text",
+      "code"
+    ],
+    "output": [
+      "text",
+      "code"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "scaleway": [
+        "devstral-small-2505"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/getting-started/models",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "embedding-ada",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "embedding[\\s._-]?ada",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 0.35,
+      "total": 0.35
+    },
+    "context": 2046,
+    "dimension": 1024,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "text-embedding-ada-002"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "gemini-2.0-flash",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?2(?:\\.0|[\\s._-]?0)?[\\s._-]?flash(?![\\s._-]?lite)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 88,
+      "total": 440
+    },
+    "context": 1048576,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Gemini 2.0 Flash"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "gemini-2.0-flash-lite",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?2(?:\\.0|[\\s._-]?0)?[\\s._-]?flash[\\s._-]?lite",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 18,
+      "total": 18
+    },
+    "context": 1048576,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Gemini 2.0 Flash-Lite"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "gemini-2.5-flash",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?2(?:\\.5|[\\s._-]?5)[\\s._-]?flash(?![\\s._-]?lite)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 88,
+      "total": 440
+    },
+    "context": 1048576,
+    "corpus": 20000,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Gemini 2.5 Flash"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
+      "https://lifearchitect.ai/models-table",
+      "https://deepmind.google/technologies/gemini/flash"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gemini-2.5-flash-image",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?2(?:\\.5|[\\s._-]?5)[\\s._-]?flash[\\s._-]?image",
+    "type": "image",
+    "architecture": "moe",
+    "parameters": {
+      "active": 88,
+      "total": 440
+    },
+    "corpus": 20000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "image"
+    ],
+    "reasoning": true,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "Gemini 2.5 Flash Image"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
+      "https://lifearchitect.ai/models-table",
+      "https://deepmind.google/technologies/gemini/flash"
+    ],
+    "estimated": [
+      "parameters",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gemini-2.5-flash-lite",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?2(?:\\.5|[\\s._-]?5)[\\s._-]?flash[\\s._-]?lite",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 18,
+      "total": 18
+    },
+    "context": 1048576,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Gemini 2.5 Flash-Lite"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "gemini-2.5-flash-live-api",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?2(?:\\.5|[\\s._-]?5)[\\s._-]?flash[\\s._-]?live[\\s._-]?api",
+    "type": "speech",
+    "architecture": "moe",
+    "parameters": {
+      "active": 88,
+      "total": 440
+    },
+    "context": 128000,
+    "corpus": 20000,
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Gemini 2.5 Flash Live API"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
+      "https://lifearchitect.ai/models-table",
+      "https://deepmind.google/technologies/gemini/flash"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gemini-2.5-pro",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?2(?:\\.5|[\\s._-]?5)[\\s._-]?pro",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 400,
+      "total": 2000
+    },
+    "context": 1048576,
+    "corpus": 80000,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Gemini 2.5 Pro"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
+      "https://lifearchitect.ai/models-table",
+      "https://storage.googleapis.com/deepmind-media/gemini/gemini_v2_5_report.pdf"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gemini-3-flash",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?3[\\s._-]?flash",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 65,
+      "total": 300
+    },
+    "context": 1048576,
+    "corpus": 100000,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Gemini 3 Flash"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
+      "https://lifearchitect.ai/models-table",
+      "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Flash-Model-Card.pdf"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gemini-3-pro",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?3[\\s._-]?pro(?![\\s._-]?image)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 240,
+      "total": 1200
+    },
+    "context": 1048576,
+    "corpus": 100000,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Gemini 3 Pro"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
+      "https://lifearchitect.ai/models-table",
+      "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gemini-3-pro-image",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?3[\\s._-]?pro[\\s._-]?image",
+    "type": "image",
+    "architecture": "moe",
+    "parameters": {
+      "active": 240,
+      "total": 1200
+    },
+    "corpus": 100000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "image"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "Gemini 3 Pro Image"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
+      "https://lifearchitect.ai/models-table",
+      "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf"
+    ],
+    "estimated": [
+      "parameters",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gemini-3.1-flash-image",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?3(?:\\.1|[\\s._-]?1)[\\s._-]?flash[\\s._-]?image",
+    "type": "image",
+    "architecture": "moe",
+    "parameters": {
+      "active": 240,
+      "total": 1200
+    },
+    "input": [
+      "text"
+    ],
+    "output": [
+      "image"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "Gemini 3.1 Flash Image"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "gemini-3.1-flash-lite",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?3(?:\\.1|[\\s._-]?1)[\\s._-]?flash[\\s._-]?lite",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 68,
+      "total": 68
+    },
+    "context": 1048576,
+    "corpus": 100000,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Gemini 3.1 Flash-Lite"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
+      "https://lifearchitect.ai/models-table"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gemini-3.1-pro",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?3(?:\\.1|[\\s._-]?1)[\\s._-]?pro",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 240,
+      "total": 1200
+    },
+    "context": 1048576,
+    "corpus": 100000,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Gemini 3.1 Pro"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
+      "https://lifearchitect.ai/models-table",
+      "https://deepmind.google/models/model-cards/gemini-3-1-pro"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gemini-embedding-2",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?embedding[\\s._-]?2",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 0.7,
+      "total": 0.7
+    },
+    "context": 2048,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "Gemini Embedding 2"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "gemma-3-27b-it",
+    "vendor": "google",
+    "open": true,
+    "pattern": "gemma[\\s._-]?3[\\s._-]?27b[\\s._-]?it",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 27,
+      "total": 27
+    },
+    "context": 40000,
+    "corpus": 14000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "scaleway": [
+        "gemma-3-27b-it"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/google/gemma-3-27b-it",
+      "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-35-turbo",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?3(?:\\.5|5)?[\\s._-]?turbo",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 45,
+      "total": 45
+    },
+    "context": 16385,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-35-turbo"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/blog/chatgpt"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "gpt-35-turbo-16k",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?3(?:\\.5|5)?[\\s._-]?turbo[\\s._-]?16k",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 45,
+      "total": 45
+    },
+    "context": 16385,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-35-turbo-16k"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/blog/chatgpt"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "gpt-4",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?4(?![\\s._-]?(?:\\.|o|turbo|32k|1))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "total": 1760,
+      "active": 280
+    },
+    "context": 8192,
+    "corpus": 13000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://cdn.openai.com/papers/gpt-4.pdf",
+      "https://lifearchitect.ai/gpt-4"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4-32k",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?4[\\s._-]?32k",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "total": 1760,
+      "active": 280
+    },
+    "context": 32768,
+    "corpus": 13000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4-32k"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://cdn.openai.com/papers/gpt-4.pdf",
+      "https://lifearchitect.ai/gpt-4"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4-turbo",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s-]4[\\s-]turbo",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "total": 880,
+      "active": 140
+    },
+    "context": 128000,
+    "corpus": 13000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4-turbo"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://cdn.openai.com/papers/gpt-4.pdf",
+      "https://lifearchitect.ai/gpt-4"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4-turbo-vision",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s-]4[\\s-]turbo[\\s-]vision",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "total": 880,
+      "active": 140
+    },
+    "context": 128000,
+    "corpus": 13000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4-turbo-vision"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://cdn.openai.com/papers/gpt-4.pdf",
+      "https://lifearchitect.ai/gpt-4"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4.1",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?4(?:\\.1|[\\s._-]?1)(?![\\s._-]?(?:mini|nano))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 70,
+      "total": 352
+    },
+    "context": 1047576,
+    "corpus": 20000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4.1"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4-1"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4.1-mini",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?4(?:\\.1|[\\s._-]?1)[\\s._-]?mini",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 76,
+      "total": 76
+    },
+    "context": 1047576,
+    "corpus": 20000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4.1-mini"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4-1"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4.1-nano",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?4(?:\\.1|[\\s._-]?1)[\\s._-]?nano",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 24,
+      "total": 24
+    },
+    "context": 1047576,
+    "corpus": 20000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4.1-nano"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4-1"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4.5",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?4(?:\\.5|[\\s._-]?5)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 600,
+      "total": 2400
+    },
+    "context": 128000,
+    "corpus": 114000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4.5-preview"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4-5-system-card"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4o",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?4o(?![\\s._-]?mini)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 88,
+      "total": 440
+    },
+    "context": 128000,
+    "corpus": 20000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4o"
+      ]
+    },
+    "sources": [
+      "https://ai.azure.com/catalog/models",
+      "https://platform.openai.com/docs/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4o-system-card"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4o-audio",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s-]4o-aud",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 88,
+      "total": 440
+    },
+    "context": 128000,
+    "corpus": 20000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4o-audio-preview"
+      ]
+    },
+    "sources": [
+      "https://ai.azure.com/catalog/models",
+      "https://platform.openai.com/docs/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4o-system-card"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4o-audio-preview",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?4o[\\s._-]?audio[\\s._-]?preview",
+    "type": "speech",
+    "architecture": "moe",
+    "parameters": {
+      "active": 88,
+      "total": 440
+    },
+    "context": 128000,
+    "corpus": 20000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4o-audio-preview"
+      ]
+    },
+    "sources": [
+      "https://ai.azure.com/catalog/models",
+      "https://platform.openai.com/docs/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4o-system-card"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4o-mini",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?4o[\\s._-]?mini",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 18,
+      "total": 18
+    },
+    "context": 128000,
+    "corpus": 13000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4o-mini"
+      ]
+    },
+    "sources": [
+      "https://ai.azure.com/catalog/models",
+      "https://platform.openai.com/docs/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4o-mini-audio",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s-]?4o[\\s-]?mini[\\s-]aud",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 18,
+      "total": 18
+    },
+    "context": 128000,
+    "corpus": 13000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4o-mini-audio-preview"
+      ]
+    },
+    "sources": [
+      "https://ai.azure.com/catalog/models",
+      "https://platform.openai.com/docs/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4o-mini-audio-preview",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?4o[\\s._-]?mini[\\s._-]?audio[\\s._-]?preview",
+    "type": "speech",
+    "architecture": "dense",
+    "parameters": {
+      "active": 18,
+      "total": 18
+    },
+    "context": 128000,
+    "corpus": 13000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4o-mini-audio-preview"
+      ]
+    },
+    "sources": [
+      "https://ai.azure.com/catalog/models",
+      "https://platform.openai.com/docs/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4o-mini-realtime",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s-]?4o[\\s-]?mini[\\s-]?(?:rt|realtime|rtime)",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 18,
+      "total": 18
+    },
+    "context": 32000,
+    "corpus": 13000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4o-mini-realtime-preview"
+      ]
+    },
+    "sources": [
+      "https://ai.azure.com/catalog/models",
+      "https://platform.openai.com/docs/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4o-mini-realtime-audio",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s-]?4o[\\s-]?mini[\\s-]rt[\\s-]aud",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 18,
+      "total": 18
+    },
+    "context": 32000,
+    "corpus": 13000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4o-mini-realtime-audio"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4o-mini-realtime-preview",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?4o[\\s._-]?mini[\\s._-]?realtime[\\s._-]?preview",
+    "type": "speech",
+    "architecture": "dense",
+    "parameters": {
+      "active": 18,
+      "total": 18
+    },
+    "context": 32000,
+    "corpus": 13000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4o-mini-realtime-preview"
+      ]
+    },
+    "sources": [
+      "https://ai.azure.com/catalog/models",
+      "https://platform.openai.com/docs/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4o-mini-transcribe",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?4o[\\s._-]?mini[\\s._-]?transcribe",
+    "type": "transcription",
+    "architecture": "dense",
+    "parameters": {
+      "active": 18,
+      "total": 18
+    },
+    "context": 16000,
+    "corpus": 13000,
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "gpt-4o-mini-transcribe"
+      ]
+    },
+    "sources": [
+      "https://ai.azure.com/catalog/models",
+      "https://platform.openai.com/docs/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4o-mini-tts",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?4o[\\s._-]?mini[\\s._-]?tts",
+    "type": "speech",
+    "architecture": "dense",
+    "parameters": {
+      "active": 18,
+      "total": 18
+    },
+    "corpus": 13000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "gpt-4o-mini-tts"
+      ]
+    },
+    "sources": [
+      "https://ai.azure.com/catalog/models",
+      "https://platform.openai.com/docs/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence"
+    ],
+    "estimated": [
+      "parameters",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4o-realtime",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s-]?4o[\\s-](?:rt|realtime|rtime)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 55,
+      "total": 220
+    },
+    "context": 32000,
+    "corpus": 20000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4o-realtime-preview"
+      ]
+    },
+    "sources": [
+      "https://ai.azure.com/catalog/models",
+      "https://platform.openai.com/docs/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4o-system-card"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4o-realtime-audio",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s-]?4o[\\s-](?:rt|realtime|rtime).*(?:aud|audio)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 55,
+      "total": 220
+    },
+    "context": 32000,
+    "corpus": 20000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4o-realtime-audio"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4o-system-card"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4o-realtime-preview",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?4o[\\s._-]?realtime[\\s._-]?preview",
+    "type": "speech",
+    "architecture": "moe",
+    "parameters": {
+      "active": 88,
+      "total": 440
+    },
+    "context": 32000,
+    "corpus": 20000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-4o-realtime-preview"
+      ]
+    },
+    "sources": [
+      "https://ai.azure.com/catalog/models",
+      "https://platform.openai.com/docs/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4o-system-card"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4o-transcribe",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?4o[\\s._-]?transcribe",
+    "type": "transcription",
+    "architecture": "moe",
+    "parameters": {
+      "active": 88,
+      "total": 440
+    },
+    "context": 16000,
+    "corpus": 20000,
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "gpt-4o-transcribe"
+      ]
+    },
+    "sources": [
+      "https://ai.azure.com/catalog/models",
+      "https://platform.openai.com/docs/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4o-system-card"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-4o-transcribe-diarize",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?4o[\\s._-]?transcribe[\\s._-]?diarize",
+    "type": "transcription",
+    "architecture": "moe",
+    "parameters": {
+      "active": 88,
+      "total": 440
+    },
+    "context": 16000,
+    "corpus": 20000,
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "gpt-4o-transcribe-diarize"
+      ]
+    },
+    "sources": [
+      "https://ai.azure.com/catalog/models",
+      "https://platform.openai.com/docs/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-4o-system-card"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5(?![\\s._-]?(?:\\.|mini|nano|pro|chat|codex))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 60,
+      "total": 300
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-5-system-card",
+      "https://lifearchitect.ai/gpt-5",
+      "https://lifearchitect.substack.com/p/the-memo-special-edition-gpt-5-aug2025",
+      "https://arxiv.org/abs/2601.03267"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5-chat",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "(?:chatgpt|gpt)[\\s._-]?5[\\s._-]?chat",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 60,
+      "total": 300
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5-chat"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-5-system-card",
+      "https://lifearchitect.ai/gpt-5",
+      "https://lifearchitect.substack.com/p/the-memo-special-edition-gpt-5-aug2025",
+      "https://arxiv.org/abs/2601.03267"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5-codex",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5[\\s._-]?codex",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 60,
+      "total": 300
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text",
+      "code"
+    ],
+    "output": [
+      "text",
+      "code"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5-codex"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-5-system-card",
+      "https://lifearchitect.ai/gpt-5",
+      "https://lifearchitect.substack.com/p/the-memo-special-edition-gpt-5-aug2025",
+      "https://arxiv.org/abs/2601.03267"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5-mini",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5[\\s._-]?mini",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 48,
+      "total": 48
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5-mini"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-5-system-card",
+      "https://arxiv.org/abs/2601.03267"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5-nano",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5[\\s._-]?nano",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 12,
+      "total": 12
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5-nano"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-5-system-card",
+      "https://arxiv.org/abs/2601.03267"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5-pro",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5[\\s._-]?pro",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 720,
+      "total": 3600
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5-pro"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-5-system-card",
+      "https://arxiv.org/abs/2601.03267"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5.1",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5(?:\\.1|[\\s._-]?1)(?![\\s._-]?(?:chat|codex))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 400,
+      "total": 2000
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5.1"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-5-1"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5.1-chat",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "(?:chatgpt|gpt)[\\s._-]?5(?:\\.1|[\\s._-]?1)[\\s._-]?chat",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 400,
+      "total": 2000
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5.1-chat"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-5-1"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5.1-codex",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5(?:\\.1|[\\s._-]?1)[\\s._-]?codex",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 400,
+      "total": 2000
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text",
+      "code"
+    ],
+    "output": [
+      "text",
+      "code"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5.1-codex"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-5-1"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5.1-codex-max",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5(?:\\.1|[\\s._-]?1)[\\s._-]?codex[\\s._-]?max",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 480,
+      "total": 1920
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text",
+      "code"
+    ],
+    "output": [
+      "text",
+      "code"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5.1-codex-max"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-5-1"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5.1-codex-mini",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5(?:\\.1|[\\s._-]?1)[\\s._-]?codex[\\s._-]?mini",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 40,
+      "total": 160
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text",
+      "code"
+    ],
+    "output": [
+      "text",
+      "code"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5.1-codex-mini"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/gpt-5-1"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5.2",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5(?:\\.2|[\\s._-]?2)(?![\\s._-]?(?:chat|codex))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 600,
+      "total": 3000
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5.2"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://cdn.openai.com/pdf/3a4153c8-c748-4b71-8e31-aecbde944f8d/oai_5_2_system-card.pdf"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5.2-chat",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "(?:chatgpt|gpt)[\\s._-]?5(?:\\.2|[\\s._-]?2)[\\s._-]?chat",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 600,
+      "total": 3000
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5.2-chat"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://cdn.openai.com/pdf/3a4153c8-c748-4b71-8e31-aecbde944f8d/oai_5_2_system-card.pdf"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5.2-codex",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5(?:\\.2|[\\s._-]?2)[\\s._-]?codex",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 600,
+      "total": 3000
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text",
+      "code"
+    ],
+    "output": [
+      "text",
+      "code"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5.2-codex"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://cdn.openai.com/pdf/3a4153c8-c748-4b71-8e31-aecbde944f8d/oai_5_2_system-card.pdf"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5.3-chat",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "(?:chatgpt|gpt)[\\s._-]?5(?:\\.3|[\\s._-]?3)[\\s._-]?chat",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 600,
+      "total": 3000
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5.3-chat"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://deploymentsafety.openai.com/gpt-5-3-instant/introduction"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5.3-codex",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5(?:\\.3|[\\s._-]?3)[\\s._-]?codex",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 600,
+      "total": 3000
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text",
+      "code"
+    ],
+    "output": [
+      "text",
+      "code"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5.3-codex"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://deploymentsafety.openai.com/gpt-5-3-instant/introduction"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5.4",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5(?:\\.4|[\\s._-]?4)(?![\\s._-]?(?:mini|nano|pro))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 600,
+      "total": 3000
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5.4"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://deploymentsafety.openai.com/gpt-5-4-thinking"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5.4-mini",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5(?:\\.4|[\\s._-]?4)[\\s._-]?mini",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 107,
+      "total": 107
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5.4-mini"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://deploymentsafety.openai.com/gpt-5-4-thinking"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5.4-nano",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5(?:\\.4|[\\s._-]?4)[\\s._-]?nano",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 37,
+      "total": 37
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5.4-nano"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://deploymentsafety.openai.com/gpt-5-4-thinking"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5.4-pro",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5(?:\\.4|[\\s._-]?4)[\\s._-]?pro",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 1170,
+      "total": 5400
+    },
+    "context": 400000,
+    "corpus": 114000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5.4-pro"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://deploymentsafety.openai.com/gpt-5-4-thinking"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-audio",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?audio(?![\\s._-]?(?:mini|1\\.5))",
+    "type": "speech",
+    "architecture": "moe",
+    "parameters": {
+      "active": 40,
+      "total": 160
+    },
+    "context": 128000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-audio"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "gpt-audio-1.5",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?audio[\\s._-]?1(?:\\.5|[\\s._-]?5)",
+    "type": "speech",
+    "architecture": "moe",
+    "parameters": {
+      "active": 80,
+      "total": 320
+    },
+    "context": 128000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-audio-1.5"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "gpt-audio-mini",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?audio[\\s._-]?mini",
+    "type": "speech",
+    "architecture": "moe",
+    "parameters": {
+      "active": 12,
+      "total": 48
+    },
+    "context": 128000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-audio-mini"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "gpt-image-1",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?image[\\s._-]?1(?:\\.5)?",
+    "type": "image",
+    "architecture": "moe",
+    "parameters": {
+      "active": 40,
+      "total": 160
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "gpt-image-1"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "gpt-image-1-mini",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?image[\\s._-]?1[\\s._-]?mini",
+    "type": "image",
+    "architecture": "moe",
+    "parameters": {
+      "active": 12,
+      "total": 48
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "gpt-image-1-mini"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "gpt-image-1.5",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?image[\\s._-]?1(?:\\.5|[\\s._-]?5)",
+    "type": "image",
+    "architecture": "moe",
+    "parameters": {
+      "active": 64,
+      "total": 256
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "gpt-image-1.5"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "gpt-oss-120b",
+    "vendor": "openai",
+    "open": true,
+    "pattern": "gpt[\\s._-]?oss[\\s._-]?120b",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 5.1,
+      "total": 117
+    },
+    "context": 128000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "openai.gpt-oss-120b-1:0"
+      ],
+      "azure": [
+        "gpt-oss-120b"
+      ],
+      "gcp": [
+        "OpenAI gpt-oss-120b"
+      ],
+      "ovhcloud": [
+        "gpt-oss-120b"
+      ],
+      "scaleway": [
+        "gpt-oss-120b"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "gpt-oss-20b",
+    "vendor": "openai",
+    "open": true,
+    "pattern": "gpt[\\s._-]?oss[\\s._-]?20b",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 3.6,
+      "total": 21
+    },
+    "context": 128000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "openai.gpt-oss-20b-1:0"
+      ],
+      "azure": [
+        "gpt-oss-20b"
+      ],
+      "gcp": [
+        "OpenAI gpt-oss-20b"
+      ],
+      "ovhcloud": [
+        "gpt-oss-20b"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "gpt-realtime",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?realtime(?![\\s._-]?(?:mini|1\\.5))",
+    "type": "speech",
+    "architecture": "moe",
+    "parameters": {
+      "active": 40,
+      "total": 160
+    },
+    "context": 32000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-realtime"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "gpt-realtime-1.5",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?realtime[\\s._-]?1(?:\\.5|[\\s._-]?5)",
+    "type": "speech",
+    "architecture": "moe",
+    "parameters": {
+      "active": 80,
+      "total": 320
+    },
+    "context": 32000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-realtime-1.5"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "gpt-realtime-mini",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?realtime[\\s._-]?mini",
+    "type": "speech",
+    "architecture": "moe",
+    "parameters": {
+      "active": 12,
+      "total": 48
+    },
+    "context": 32000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-realtime-mini"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "holo2-30b-a3b",
+    "vendor": "hcompany",
+    "open": true,
+    "pattern": "holo2[\\s._-]?30b[\\s._-]?a3b",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 3,
+      "total": 30
+    },
+    "context": 22000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "scaleway": [
+        "holo2-30b-a3b"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/Hcompany/Holo2-30B-A3B",
+      "https://hub.hcompany.ai/models/Holo2/aboutholo2"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "imagen-3",
+    "vendor": "google",
+    "open": false,
+    "pattern": "imagen[\\s._-]?3",
+    "type": "image",
+    "architecture": "dense",
+    "parameters": {
+      "active": 10,
+      "total": 10
+    },
+    "input": [
+      "text"
+    ],
+    "output": [
+      "image"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "Imagen 3"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "imagen-4",
+    "vendor": "google",
+    "open": false,
+    "pattern": "imagen[\\s._-]?4",
+    "type": "image",
+    "architecture": "dense",
+    "parameters": {
+      "active": 16,
+      "total": 16
+    },
+    "input": [
+      "text"
+    ],
+    "output": [
+      "image"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "Imagen 4"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "jamba-1.5-large",
+    "vendor": "ai21",
+    "open": true,
+    "pattern": "jamba[\\s._-]?1(?:\\.5|[\\s._-]?5)[\\s._-]?large",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 94,
+      "total": 398
+    },
+    "context": 256000,
+    "corpus": 1200,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "ai21.jamba-1-5-large-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.ai21.com",
+      "https://lifearchitect.ai/models-table",
+      "https://arxiv.org/abs/2408.12570"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "jamba-1.5-mini",
+    "vendor": "ai21",
+    "open": true,
+    "pattern": "jamba[\\s._-]?1(?:\\.5|[\\s._-]?5)[\\s._-]?mini",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 12,
+      "total": 52
+    },
+    "context": 256000,
+    "corpus": 1200,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "ai21.jamba-1-5-mini-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.ai21.com",
+      "https://lifearchitect.ai/models-table",
+      "https://arxiv.org/abs/2408.12570"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "llama-3-70b-instruct",
+    "vendor": "meta",
+    "open": true,
+    "pattern": "llama[\\s._-]?3[\\s._-]?70b[\\s._-]?instruct",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 70,
+      "total": 70
+    },
+    "context": 8192,
+    "corpus": 15000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "meta.llama3-70b-instruct-v1:0"
+      ],
+      "azure": [
+        "Llama-3-70B-Instruct"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3/MODEL_CARD.md"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "llama-3-8b-instruct",
+    "vendor": "meta",
+    "open": true,
+    "pattern": "llama[\\s._-]?3[\\s._-]?8b[\\s._-]?instruct",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 8,
+      "total": 8
+    },
+    "context": 8192,
+    "corpus": 15000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "meta.llama3-8b-instruct-v1:0"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3/MODEL_CARD.md"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "llama-3.1-405b-instruct",
+    "vendor": "meta",
+    "open": true,
+    "pattern": "llama[\\s._-]?3(?:\\.1|[\\s._-]?1)[\\s._-]?405b[\\s._-]?instruct",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 405,
+      "total": 405
+    },
+    "context": 131072,
+    "corpus": 15000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "meta.llama3-1-405b-instruct-v1:0"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct",
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "llama-3.1-70b-instruct",
+    "vendor": "meta",
+    "open": true,
+    "pattern": "llama[\\s._-]?3(?:\\.1|[\\s._-]?1)[\\s._-]?70b[\\s._-]?instruct",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 70,
+      "total": 70
+    },
+    "context": 131072,
+    "corpus": 15000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "meta.llama3-1-70b-instruct-v1:0"
+      ],
+      "scaleway": [
+        "llama-3.1-70b-instruct"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "llama-3.1-8b-instruct",
+    "vendor": "meta",
+    "open": true,
+    "pattern": "llama[\\s._-]?3(?:\\.1|[\\s._-]?1)[\\s._-]?8b[\\s._-]?instruct",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 8,
+      "total": 8
+    },
+    "context": 128000,
+    "corpus": 15000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "meta.llama3-1-8b-instruct-v1:0"
+      ],
+      "scaleway": [
+        "llama-3.1-8b-instruct"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "llama-3.2-11b-instruct",
+    "vendor": "meta",
+    "open": true,
+    "pattern": "llama[\\s._-]?3(?:\\.2|[\\s._-]?2)[\\s._-]?11b[\\s._-]?instruct",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 11,
+      "total": 11
+    },
+    "context": 131072,
+    "corpus": 9000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "meta.llama3-2-11b-instruct-v1:0"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct",
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "llama-3.2-1b",
+    "vendor": "meta",
+    "open": true,
+    "pattern": "llama3-2-1b",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1.24,
+      "total": 1.24
+    },
+    "context": 131072,
+    "corpus": 9000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {},
+    "sources": [
+      "https://huggingface.co/meta-llama/Llama-3.2-1B",
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "llama-3.2-1b-instruct",
+    "vendor": "meta",
+    "open": true,
+    "pattern": "llama[\\s._-]?3(?:\\.2|[\\s._-]?2)[\\s._-]?1b[\\s._-]?instruct",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1,
+      "total": 1
+    },
+    "context": 131072,
+    "corpus": 9000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "meta.llama3-2-1b-instruct-v1:0"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct",
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "llama-3.2-3b",
+    "vendor": "meta",
+    "open": true,
+    "pattern": "llama3-2-3b",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 3.21,
+      "total": 3.21
+    },
+    "context": 131072,
+    "corpus": 9000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {},
+    "sources": [
+      "https://huggingface.co/meta-llama/Llama-3.2-3B",
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "llama-3.2-3b-instruct",
+    "vendor": "meta",
+    "open": true,
+    "pattern": "llama[\\s._-]?3(?:\\.2|[\\s._-]?2)[\\s._-]?3b[\\s._-]?instruct",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 3,
+      "total": 3
+    },
+    "context": 131072,
+    "corpus": 9000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "meta.llama3-2-3b-instruct-v1:0"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct",
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "llama-3.2-90b-instruct",
+    "vendor": "meta",
+    "open": true,
+    "pattern": "llama[\\s._-]?3(?:\\.2|[\\s._-]?2)[\\s._-]?90b[\\s._-]?instruct",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 90,
+      "total": 90
+    },
+    "context": 131072,
+    "corpus": 9000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "meta.llama3-2-90b-instruct-v1:0"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct",
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "llama-3.3-70b-instruct",
+    "vendor": "meta",
+    "open": true,
+    "pattern": "llama[\\s._-]?3(?:\\.3|[\\s._-]?3)[\\s._-]?70b[\\s._-]?instruct",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 70,
+      "total": 70
+    },
+    "context": 128000,
+    "corpus": 15000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "meta.llama3-3-70b-instruct-v1:0"
+      ],
+      "azure": [
+        "Llama-3.3-70B-Instruct"
+      ],
+      "gcp": [
+        "Llama 3.3"
+      ],
+      "ovhcloud": [
+        "llama-3-3-70b-instruct"
+      ],
+      "scaleway": [
+        "llama-3.3-70b-instruct"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/MODEL_CARD.md"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "llama-4-maverick-17b-instruct",
+    "vendor": "meta",
+    "open": true,
+    "pattern": "llama[\\s._-]?4[\\s._-]?maverick[\\s._-]?17b",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 17,
+      "total": 400
+    },
+    "context": 1000000,
+    "corpus": 22000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "meta.llama4-maverick-17b-instruct-v1:0"
+      ],
+      "azure": [
+        "Llama-4-Maverick-17B-128E-Instruct-FP8"
+      ],
+      "gcp": [
+        "Llama 4 Maverick"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+      "https://ai.meta.com/blog/llama-4-multimodal-intelligence"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "llama-4-scout-17b-instruct",
+    "vendor": "meta",
+    "open": true,
+    "pattern": "llama[\\s._-]?4[\\s._-]?scout[\\s._-]?17b",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 17,
+      "total": 109
+    },
+    "context": 10000000,
+    "corpus": 40000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "meta.llama4-scout-17b-instruct-v1:0"
+      ],
+      "gcp": [
+        "Llama 4 Scout"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+      "https://ai.meta.com/blog/llama-4-multimodal-intelligence"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "magistral-small-2509",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "magistral[\\s._-]?small[\\s._-]?2509",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 24,
+      "total": 24
+    },
+    "context": 128000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "mistral.magistral-small-2509"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/getting-started/models",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "ministral-3-14b",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "ministral[\\s._-]?3[\\s._-]?14b",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 14,
+      "total": 14
+    },
+    "context": 256000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "mistral.ministral-3-14b-instruct"
+      ]
+    },
+    "sources": [
+      "https://apxml.com/models",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "ministral-3-8b",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "ministral[\\s._-]?3[\\s._-]?8b",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 8,
+      "total": 8
+    },
+    "context": 256000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "mistral.ministral-3-8b-instruct"
+      ]
+    },
+    "sources": [
+      "https://apxml.com/models",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "ministral-3b",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "ministral[\\s._-]?3b",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 3,
+      "total": 3
+    },
+    "context": 256000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "mistral.ministral-3-3b-instruct"
+      ]
+    },
+    "sources": [
+      "https://apxml.com/models",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "mistral large",
+    "vendor": "mistral",
+    "open": false,
+    "pattern": "mistrallarge",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 123,
+      "total": 123
+    },
+    "context": 32000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {},
+    "sources": [
+      "https://docs.mistral.ai/getting-started/models"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "mistral-7b",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "mistral7b",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 7,
+      "total": 7
+    },
+    "context": 32000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {},
+    "sources": [
+      "https://docs.mistral.ai/getting-started/models"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "mistral-7b-instruct-v0.3",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "mistral[\\s._-]?7b[\\s._-]?instruct[\\s._-]?v?0(?:\\.3|[\\s._-]?3)",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 7,
+      "total": 7
+    },
+    "context": 32000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "mistral.mistral-7b-instruct-v0:2"
+      ],
+      "ovhcloud": [
+        "mistral-7b-instruct-v0-3"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "mistral-document-ai-2505",
+    "vendor": "mistral",
+    "open": false,
+    "pattern": "mistral[\\s._-]?document[\\s._-]?ai[\\s._-]?2505",
+    "type": "vision",
+    "architecture": "dense",
+    "parameters": {
+      "active": 24,
+      "total": 24
+    },
+    "input": [
+      "document",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "mistral-document-ai-2505"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/getting-started/models"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "mistral-document-ai-2512",
+    "vendor": "mistral",
+    "open": false,
+    "pattern": "mistral[\\s._-]?document[\\s._-]?ai[\\s._-]?2512",
+    "type": "vision",
+    "architecture": "dense",
+    "parameters": {
+      "active": 24,
+      "total": 24
+    },
+    "input": [
+      "document",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "mistral-document-ai-2512"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/getting-started/models"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "mistral-large-2402",
+    "vendor": "mistral",
+    "open": false,
+    "pattern": "mistral[\\s._-]?large(?:[\\s._-]?2402|\\s*\\(24\\.02\\))",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 123,
+      "total": 123
+    },
+    "context": 32000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "mistral.mistral-large-2402-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/getting-started/models",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "mistral-large-2407",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "mistral[\\s._-]?large(?:[\\s._-]?2407|\\s*\\(24\\.07\\))",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 123,
+      "total": 123
+    },
+    "context": 32000,
+    "corpus": 8000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "mistral.mistral-large-2407-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/getting-started/models",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://lifearchitect.ai/models-table",
+      "https://mistral.ai/news/mistral-large-2407"
+    ],
+    "estimated": [
+      "parameters",
+      "corpus"
+    ]
+  },
+  {
+    "name": "mistral-large-3",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "mistral[\\s._-]?large[\\s._-]?3",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 41,
+      "total": 675
+    },
+    "context": 256000,
+    "corpus": 20000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "mistral.mistral-large-3-675b-instruct"
+      ],
+      "azure": [
+        "Mistral-Large-3"
+      ]
+    },
+    "sources": [
+      "https://apxml.com/models",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://lifearchitect.ai/models-table",
+      "https://mistral.ai/news/mistral-3"
+    ],
+    "estimated": [
+      "parameters",
+      "corpus"
+    ]
+  },
+  {
+    "name": "mistral-medium-3",
+    "vendor": "mistral",
+    "open": false,
+    "pattern": "mistral[\\s._-]?medium[\\s._-]?3",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 95,
+      "total": 95
+    },
+    "context": 128000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Mistral Medium 3"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/getting-started/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "mistral-nemo-instruct-2407",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "mistral[\\s._-]?nemo[\\s._-]?instruct[\\s._-]?2407",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 12,
+      "total": 12
+    },
+    "context": 128000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "ovhcloud": [
+        "mistral-nemo-instruct-2407"
+      ],
+      "scaleway": [
+        "mistral-nemo-instruct-2407"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/getting-started/models",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "mistral-ocr-2505",
+    "vendor": "mistral",
+    "open": false,
+    "pattern": "mistral[\\s._-]?ocr(?:[\\s._-]?2505)?",
+    "type": "vision",
+    "architecture": "dense",
+    "parameters": {
+      "active": 24,
+      "total": 24
+    },
+    "input": [
+      "document",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "Mistral OCR (25.05)"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/getting-started/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "mistral-small-3.1",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "mistral[\\s._-]?small[\\s._-]?3(?:\\.1|[\\s._-]?1)",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 24,
+      "total": 24
+    },
+    "context": 128000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Mistral Small 3.1 (25.03)"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/getting-started/models",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "mistral-small-3.1-24b-instruct-2503",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "mistral[\\s._-]?small[\\s._-]?3(?:\\.1|[\\s._-]?1)[\\s._-]?24b[\\s._-]?instruct[\\s._-]?2503",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 24,
+      "total": 24
+    },
+    "context": 128000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "scaleway": [
+        "mistral-small-3.1-24b-instruct-2503"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "mistral-small-3.2-24b",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "mistral[\\s._-]?small[\\s._-]?3(?:\\.2|[\\s._-]?2)[\\s._-]?24b",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 24,
+      "total": 24
+    },
+    "context": 128000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "ovhcloud": [
+        "mistral-small-3-2-24b-instruct-2506"
+      ],
+      "scaleway": [
+        "mistral-small-3.2-24b-instruct-2506"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "mixtral-8x7b",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "mixtral8x7b",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 14,
+      "total": 56
+    },
+    "context": 32000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {},
+    "sources": [
+      "https://docs.mistral.ai/getting-started/models"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "mixtral-8x7b-instruct",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "mixtral[\\s._-]?8x7b[\\s._-]?instruct",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 13,
+      "total": 46.7
+    },
+    "context": 32000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "mistral.mixtral-8x7b-instruct-v0:1"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "nova-lite",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "novalite",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 40,
+      "total": 40
+    },
+    "context": 300000,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "amazon.nova-lite-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "nova-micro",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "novamicro",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1,
+      "total": 1
+    },
+    "context": 128000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "amazon.nova-micro-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "nova-pro",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "novapro",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 90,
+      "total": 90
+    },
+    "context": 300000,
+    "corpus": 10000,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "amazon.nova-pro-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://lifearchitect.ai/models-table",
+      "https://www.amazon.science/publications/the-amazon-nova-family-of-models-technical-report-and-model-card"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "nvr-tts-de-de",
+    "vendor": "nvidia",
+    "open": false,
+    "pattern": "nvr[\\s._-]?tts[\\s._-]?de[\\s._-]?de",
+    "type": "speech",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1.2,
+      "total": 1.2
+    },
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "ovhcloud": [
+        "nvr-tts-de-de"
+      ]
+    },
+    "sources": [
+      "https://build.nvidia.com"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "nvr-tts-en-us",
+    "vendor": "nvidia",
+    "open": false,
+    "pattern": "nvr[\\s._-]?tts[\\s._-]?en[\\s._-]?us",
+    "type": "speech",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1.2,
+      "total": 1.2
+    },
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "ovhcloud": [
+        "nvr-tts-en-us"
+      ]
+    },
+    "sources": [
+      "https://build.nvidia.com"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "nvr-tts-es-es",
+    "vendor": "nvidia",
+    "open": false,
+    "pattern": "nvr[\\s._-]?tts[\\s._-]?es[\\s._-]?es",
+    "type": "speech",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1.2,
+      "total": 1.2
+    },
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "ovhcloud": [
+        "nvr-tts-es-es"
+      ]
+    },
+    "sources": [
+      "https://build.nvidia.com"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "nvr-tts-it-it",
+    "vendor": "nvidia",
+    "open": false,
+    "pattern": "nvr[\\s._-]?tts[\\s._-]?it[\\s._-]?it",
+    "type": "speech",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1.2,
+      "total": 1.2
+    },
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "ovhcloud": [
+        "nvr-tts-it-it"
+      ]
+    },
+    "sources": [
+      "https://build.nvidia.com"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "o1",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "o1",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 88,
+      "total": 440
+    },
+    "context": 200000,
+    "corpus": 20000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "o1"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/introducing-chatgpt-pro",
+      "https://lifearchitect.substack.com/p/the-memo-1oct2024"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "o1-mini",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "o1[\\s-]mini",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 18,
+      "total": 18
+    },
+    "context": 128000,
+    "corpus": 13000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "o1-mini"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/o1-and-new-tools-for-developers"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "o1-pro",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "o1[\\s-]pro",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 88,
+      "total": 440
+    },
+    "context": 200000,
+    "corpus": 20000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "o1-pro"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/introducing-chatgpt-pro"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "o3-mini",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "o3[\\s-]mini",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 18,
+      "total": 18
+    },
+    "context": 200000,
+    "corpus": 13000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "o3-mini"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models",
+      "https://lifearchitect.ai/models-table",
+      "https://openai.com/index/o3-mini-system-card"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "phi-3-medium",
+    "vendor": "microsoft",
+    "open": true,
+    "pattern": "phi[\\s-]3[\\s-]medium",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 14,
+      "total": 14
+    },
+    "context": 128000,
+    "corpus": 4800,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "phi-3-medium"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/microsoft/Phi-3-medium-128k-instruct",
+      "https://arxiv.org/abs/2404.14219"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "phi-3-mini",
+    "vendor": "microsoft",
+    "open": true,
+    "pattern": "phi[\\s-]3[\\s-]mini",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 3.8,
+      "total": 3.8
+    },
+    "context": 128000,
+    "corpus": 3300,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "phi-3-mini"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
+      "https://arxiv.org/abs/2404.14219"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "phi-3-small",
+    "vendor": "microsoft",
+    "open": true,
+    "pattern": "phi[\\s-]3[\\s-]small",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 7,
+      "total": 7
+    },
+    "context": 128000,
+    "corpus": 4800,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "phi-3-small"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/microsoft/Phi-3-small-128k-instruct",
+      "https://arxiv.org/abs/2404.14219"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "phi-3.5-mini",
+    "vendor": "microsoft",
+    "open": true,
+    "pattern": "phi[\\s-]3\\.5[\\s-]mini",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 3.8,
+      "total": 3.8
+    },
+    "context": 128000,
+    "corpus": 3400,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "phi-3.5-mini"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
+      "https://arxiv.org/abs/2407.13833"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "phi-3.5-moe",
+    "vendor": "microsoft",
+    "open": true,
+    "pattern": "phi[\\s-]3\\.5[\\s-]moe",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 6.6,
+      "total": 41.9
+    },
+    "context": 128000,
+    "corpus": 4900,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "phi-3.5-moe"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct",
+      "https://arxiv.org/abs/2407.13833"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "phi-3.5-vision",
+    "vendor": "microsoft",
+    "open": true,
+    "pattern": "phi[\\s-]3\\.5[\\s-]v",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 4.2,
+      "total": 4.2
+    },
+    "context": 128000,
+    "corpus": 3400,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "phi-3.5-vision"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/microsoft/Phi-3.5-vision-instruct",
+      "https://arxiv.org/abs/2407.13833"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "phi-4",
+    "vendor": "microsoft",
+    "open": true,
+    "pattern": "phi[\\s-]4",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 14,
+      "total": 14
+    },
+    "context": 16384,
+    "corpus": 10000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "phi-4"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/microsoft/phi-4",
+      "https://arxiv.org/abs/2412.08905"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "phi-4-mini",
+    "vendor": "microsoft",
+    "open": true,
+    "pattern": "phi[\\s-]4[\\s-]mini",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 3.8,
+      "total": 3.8
+    },
+    "context": 128000,
+    "corpus": 5000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "phi-4-mini"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/microsoft/Phi-4-mini-instruct",
+      "https://huggingface.co/microsoft/Phi-4-multimodal-instruct/blob/main/phi_4_mm.tech_report.02252025.pdf"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "phi-4-mini-multimodal",
+    "vendor": "microsoft",
+    "open": true,
+    "pattern": "phi[\\s-]4[\\s-]mini[\\s-]mm",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 3.8,
+      "total": 3.8
+    },
+    "context": 128000,
+    "corpus": 6100,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "phi-4-mini-multimodal"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/microsoft/Phi-4-multimodal-instruct",
+      "https://huggingface.co/microsoft/Phi-4-multimodal-instruct/blob/main/phi_4_mm.tech_report.02252025.pdf"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "pixtral-12b-2409",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "pixtral[\\s._-]?12b[\\s._-]?2409",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 12,
+      "total": 12
+    },
+    "context": 128000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "scaleway": [
+        "pixtral-12b-2409"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/getting-started/models",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "pixtral-large-25.02",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "pixtrallarge2502",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 124,
+      "total": 124
+    },
+    "context": 128000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "mistral.pixtral-large-2502-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/getting-started/models",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "pixtral-large-2502",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "pixtral[\\s._-]?large(?:[\\s._-]?2502|\\s*\\(25\\.02\\))",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 124,
+      "total": 124
+    },
+    "context": 128000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "mistral.pixtral-large-2502-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/getting-started/models",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "qwen-guard-gen-0.6b",
+    "vendor": "qwen",
+    "open": true,
+    "pattern": "qwen[\\s._-]?guard[\\s._-]?gen[\\s._-]?(?:0\\.6|06)b",
+    "type": "safety",
+    "architecture": "dense",
+    "parameters": {
+      "active": 0.6,
+      "total": 0.6
+    },
+    "context": 32768,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "score"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "ovhcloud": [
+        "qwen-guard-gen-06b"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/Qwen/Qwen-Guard-Gen-0.6B"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "qwen-guard-gen-8b",
+    "vendor": "qwen",
+    "open": true,
+    "pattern": "qwen[\\s._-]?guard[\\s._-]?gen[\\s._-]?8b",
+    "type": "safety",
+    "architecture": "dense",
+    "parameters": {
+      "active": 8,
+      "total": 8
+    },
+    "context": 32768,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "score"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "ovhcloud": [
+        "qwen-guard-gen-8b"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/Qwen/Qwen-Guard-Gen-8B"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "qwen2.5-coder-32b-instruct",
+    "vendor": "qwen",
+    "open": true,
+    "pattern": "qwen[\\s._-]?2(?:\\.5|[\\s._-]?5)[\\s._-]?coder[\\s._-]?32b[\\s._-]?instruct",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 32,
+      "total": 32
+    },
+    "context": 32768,
+    "corpus": 18000,
+    "input": [
+      "text",
+      "code"
+    ],
+    "output": [
+      "text",
+      "code"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "scaleway": [
+        "qwen2.5-coder-32b-instruct"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
+      "https://arxiv.org/abs/2412.15115"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "qwen2.5-vl-72b-instruct",
+    "vendor": "qwen",
+    "open": true,
+    "pattern": "qwen[\\s._-]?2(?:\\.5|[\\s._-]?5)[\\s._-]?vl[\\s._-]?72b[\\s._-]?instruct",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 72,
+      "total": 72
+    },
+    "context": 32768,
+    "corpus": 18000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "ovhcloud": [
+        "qwen-2-5-vl-72b-instruct"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct",
+      "https://arxiv.org/abs/2412.15115",
+      "https://arxiv.org/abs/2502.13923"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "qwen3-235b-a22b-instruct-2507",
+    "vendor": "qwen",
+    "open": true,
+    "pattern": "qwen[\\s._-]?3[\\s._-]?235b[\\s._-]?a22b[\\s._-]?instruct[\\s._-]?2507",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 22,
+      "total": 235
+    },
+    "context": 250000,
+    "corpus": 36000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "Qwen 3 235B"
+      ],
+      "scaleway": [
+        "qwen3-235b-a22b-instruct-2507"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+      "https://arxiv.org/abs/2505.09388"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "qwen3-32b",
+    "vendor": "qwen",
+    "open": true,
+    "pattern": "qwen[\\s._-]?3[\\s._-]?32b",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 32,
+      "total": 32
+    },
+    "context": 32768,
+    "corpus": 36000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "ovhcloud": [
+        "qwen-3-32b"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/Qwen/Qwen3-32B",
+      "https://arxiv.org/abs/2505.09388"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "qwen3-coder-30b-a3b-instruct",
+    "vendor": "qwen",
+    "open": true,
+    "pattern": "qwen[\\s._-]?3[\\s._-]?coder[\\s._-]?30b[\\s._-]?a3b[\\s._-]?instruct",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 3,
+      "total": 30
+    },
+    "context": 128000,
+    "corpus": 36000,
+    "input": [
+      "text",
+      "code"
+    ],
+    "output": [
+      "text",
+      "code"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "Qwen 3 Coder"
+      ],
+      "ovhcloud": [
+        "qwen-3-coder-30b-a3b-instruct"
+      ],
+      "scaleway": [
+        "qwen3-coder-30b-a3b-instruct"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "https://qwenlm.github.io/blog/qwen3-coder"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "qwen3-embedding-8b",
+    "vendor": "qwen",
+    "open": true,
+    "pattern": "qwen[\\s._-]?3[\\s._-]?embedding[\\s._-]?8b",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 8,
+      "total": 8
+    },
+    "context": 32000,
+    "corpus": 36000,
+    "dimension": 4096,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "scaleway": [
+        "qwen3-embedding-8b"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/Qwen/Qwen3-Embedding-8B",
+      "https://arxiv.org/abs/2505.09388"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "qwen3-next-instruct-80b",
+    "vendor": "qwen",
+    "open": true,
+    "pattern": "qwen[\\s._-]?3[\\s._-]?next[\\s._-]?instruct[\\s._-]?80b",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 80,
+      "total": 80
+    },
+    "context": 262144,
+    "corpus": 15000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "Qwen 3 Next Instruct 80B"
+      ]
+    },
+    "sources": [
+      "https://qwenlm.github.io",
+      "https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "qwen3-next-thinking-80b",
+    "vendor": "qwen",
+    "open": true,
+    "pattern": "qwen[\\s._-]?3[\\s._-]?next[\\s._-]?thinking[\\s._-]?80b",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 80,
+      "total": 80
+    },
+    "context": 262144,
+    "corpus": 15000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "Qwen 3 Next Thinking 80B"
+      ]
+    },
+    "sources": [
+      "https://qwenlm.github.io",
+      "https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "qwen3.5-397b-a17b",
+    "vendor": "qwen",
+    "open": true,
+    "pattern": "qwen[\\s._-]?3(?:\\.5|[\\s._-]?5)[\\s._-]?397b[\\s._-]?a17b",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 17,
+      "total": 397
+    },
+    "context": 250000,
+    "corpus": 36000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "scaleway": [
+        "qwen3.5-397b-a17b"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/Qwen/Qwen3.5-397B-A17B",
+      "https://qwen.ai/blog?id=qwen3.5"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "sentence-t5-xxl",
+    "vendor": "google",
+    "open": true,
+    "pattern": "sentence[\\s._-]?t5[\\s._-]?xxl",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 11,
+      "total": 11
+    },
+    "context": 512,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "scaleway": [
+        "sentence-t5-xxl"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/sentence-transformers/sentence-t5-xxl"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "stable-diffusion-xl",
+    "vendor": "stability-ai",
+    "open": true,
+    "pattern": "sdxl",
+    "type": "image",
+    "architecture": "dense",
+    "parameters": {
+      "active": 2.6,
+      "total": 2.6
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "stability.stable-diffusion-xl-v1"
+      ]
+    },
+    "sources": [
+      "https://apxml.com/models"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "stable-diffusion-xl-base-v1.0",
+    "vendor": "stability-ai",
+    "open": true,
+    "pattern": "stable[\\s._-]?diffusion[\\s._-]?xl[\\s._-]?base[\\s._-]?v?1(?:\\.0|[\\s._-]?0)",
+    "type": "image",
+    "architecture": "dense",
+    "parameters": {
+      "active": 3.5,
+      "total": 3.5
+    },
+    "hidden_dimension": 1280,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "ovhcloud": [
+        "stable-diffusion-xl-base-v10",
+        "stable-diffusion-xl"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "text-ada-001",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "text[\\s._-]?ada[\\s._-]?001",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 0.35,
+      "total": 0.35
+    },
+    "context": 2049,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "text-ada-001"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "text-babbage-001",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "text[\\s._-]?babbage[\\s._-]?001",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1.3,
+      "total": 1.3
+    },
+    "context": 2049,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "text-babbage-001"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "text-curie-001",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "text[\\s._-]?curie[\\s._-]?001",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 6.7,
+      "total": 6.7
+    },
+    "context": 2049,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "text-curie-001"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "text-davinci-002",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "text[\\s._-]?davinci[\\s._-]?002",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 175,
+      "total": 175
+    },
+    "context": 4097,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "text-davinci-002"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "text-davinci-003",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "text[\\s._-]?davinci[\\s._-]?003",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 175,
+      "total": 175
+    },
+    "context": 4097,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "text-davinci-003"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "text-embedding-3",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "text[\\s-]embedding[\\s-]3",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 6.7,
+      "total": 6.7
+    },
+    "context": 8191,
+    "dimension": 3072,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "text-embedding-3-large"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "text-embedding-3-large",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "text[\\s._-]?embedding[\\s._-]?3[\\s._-]?large",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1.5,
+      "total": 1.5
+    },
+    "context": 8191,
+    "dimension": 3072,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "text-embedding-3-large"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "text-embedding-3-small",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "text[\\s._-]?embedding[\\s._-]?3[\\s._-]?small",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 0.35,
+      "total": 0.35
+    },
+    "context": 8191,
+    "dimension": 1536,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "text-embedding-3-small"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "text-embedding-ada-002",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "text[\\s._-]?embedding[\\s._-]?ada[\\s._-]?002",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 0.35,
+      "total": 0.35
+    },
+    "context": 8191,
+    "dimension": 1536,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "text-embedding-ada-002"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://ai.azure.com/catalog/models"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "titan-embeddings-g1",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "titanembeddingsg1-text",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1,
+      "total": 1
+    },
+    "context": 8192,
+    "dimension": 1536,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "amazon.titan-embed-text-v1"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "titan-embeddings-v2",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "titanembeddingv2-text",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1,
+      "total": 1
+    },
+    "context": 8192,
+    "dimension": 1536,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "amazon.titan-embed-text-v2:0",
+        "amazon.titan-embed-g1-text-02"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "titan-text-g1-express",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "titantextg1-express",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 15,
+      "total": 15
+    },
+    "context": 8000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "amazon.titan-text-express-v1"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "titan-text-g1-lite",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "titantextg1-lite",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 5,
+      "total": 5
+    },
+    "context": 4000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "amazon.titan-text-lite-v1"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters",
+      "context"
+    ]
+  },
+  {
+    "name": "voxtral-mini-3b-2507",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "voxtral[\\s._-]?mini[\\s._-]?3b[\\s._-]?2507",
+    "type": "speech",
+    "architecture": "dense",
+    "parameters": {
+      "active": 3,
+      "total": 3
+    },
+    "context": 32000,
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "mistral.voxtral-mini-3b-2507"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "voxtral-small-24b-2507",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "voxtral[\\s._-]?small[\\s._-]?24b[\\s._-]?2507",
+    "type": "speech",
+    "architecture": "dense",
+    "parameters": {
+      "active": 24.3,
+      "total": 24.3
+    },
+    "context": 32000,
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "mistral.voxtral-small-24b-2507"
+      ],
+      "scaleway": [
+        "voxtral-small-24b-2507"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/getting-started/models",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "whisper-large-v3",
+    "vendor": "openai",
+    "open": true,
+    "pattern": "whisper[\\s._-]?large[\\s._-]?v?3",
+    "type": "transcription",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1.55,
+      "total": 1.55
+    },
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "ovhcloud": [
+        "whisper-large-v3"
+      ],
+      "scaleway": [
+        "whisper-large-v3"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/openai/whisper-large-v3"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "whisper-large-v3-turbo",
+    "vendor": "openai",
+    "open": true,
+    "pattern": "whisper[\\s._-]?large[\\s._-]?v?3[\\s._-]?turbo",
+    "type": "transcription",
+    "architecture": "dense",
+    "parameters": {
+      "active": 0.81,
+      "total": 0.81
+    },
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "ovhcloud": [
+        "whisper-large-v3-turbo"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/openai/whisper-large-v3-turbo"
+    ],
+    "estimated": []
+  }
+]

@@ -201,14 +201,19 @@ const groupBy = (values: any[], fields: string[]) => {
   return result;
 };
 
-const exportToCsv = (file: string, values: Record<string, string | number>[], headers?: string[]) => {
+type CsvValue = string | number | boolean | null | undefined;
+
+const escapeCsvValue = (value: CsvValue): string => {
+  if (value == null) return "";
+  const stringValue = String(value);
+  return /[",\r\n]/.test(stringValue) ? `"${stringValue.replace(/"/g, '""')}"` : stringValue;
+};
+
+const exportToCsv = (file: string, values: Record<string, CsvValue>[], headers?: string[]) => {
   headers = headers ?? Object.keys(values[0]);
   writeFileSync(file, headers.join(",") + "\r\n");
   for (const line of values)
-    appendFileSync(
-      file,
-      headers.map((header) => (/,/.test(String(line[header])) ? `"${line[header]}"` : line[header])).join(",") + "\r\n"
-    );
+    appendFileSync(file, headers.map((header) => escapeCsvValue(line[header])).join(",") + "\r\n");
 };
 
 const degToRad = (deg: number) => deg * (Math.PI / 180.0);
@@ -860,8 +865,55 @@ const generateClouds = async () => {
   ]);
 };
 
+const generateAi = async () => {
+  process.stdout.write(`Exporting AI data...\n`);
+  const models = JSON.parse(readFileSync(`./data/ai/models.json`, "utf-8"));
+  const toCsvList = (values?: string[]) => (values?.length ? values.join("|") : "");
+
+  const rows = models.map((model: any) => ({
+    name: model.name,
+    vendor: model.vendor,
+    open: model.open,
+    type: model.type,
+    architecture: model.architecture,
+    parameters_active: model.parameters?.active,
+    parameters_total: model.parameters?.total,
+    context: model.context,
+    corpus: model.corpus,
+    dimension: model.dimension,
+    hidden_dimension: model.hidden_dimension,
+    input: toCsvList(model.input),
+    output: toCsvList(model.output),
+    reasoning: model.reasoning,
+    tools: model.tools,
+    sources: toCsvList(model.sources),
+    estimated: toCsvList(model.estimated),
+  }));
+
+  exportToCsv(`./data/ai/models.csv`, rows, [
+    "name",
+    "vendor",
+    "open",
+    "type",
+    "architecture",
+    "parameters_active",
+    "parameters_total",
+    "context",
+    "corpus",
+    "dimension",
+    "hidden_dimension",
+    "input",
+    "output",
+    "reasoning",
+    "tools",
+    "sources",
+    "estimated",
+  ]);
+};
+
 (async () => {
   const start = Date.now();
+  await generateAi();
   await generateClouds();
   await generateCountries();
   await generateFactors();
