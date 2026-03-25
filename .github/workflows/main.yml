@@ -31,12 +31,12 @@ jobs:
         if: github.ref == 'refs/heads/main'
         run: |
           set -e
-          if git diff --quiet; then
+          git add data/
+          if git diff --cached --quiet; then
             echo "No changes detected → no version bump, no publish"
             exit 0
           fi
           echo "Changes detected → commit generated data"
-          git add data/
           git commit -m "chore: update generated data"
           echo "Bump version"
           npm version patch
