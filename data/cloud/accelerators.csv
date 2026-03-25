@@ -1,7 +1,7 @@
 id,type,manufacturer,serie,model,platform,cores,memory,tdp,process,die,transistors
 amd-alveo-ma35d,asic,amd,alveo,ma35d,asic,0,16,40,5,0,0
-amd-alveo-u30,asic,amd,alveo,u30,ultrascale,0,8,25,16,0,0
 amd-alveo-u250,fpga,amd,alveo,u250,ultrascale,0,64,225,16,0,0
+amd-alveo-u30,asic,amd,alveo,u30,ultrascale,0,8,25,16,0,0
 amd-radeon-mi25,gpu,amd,radeon,mi25,instinct,4096,16,300,14,495,12500
 amd-radeon-mi300x,gpu,amd,radeon,mi300x,instinct,19456,192,750,5,1017,153000
 amd-radeon-v520,gpu,amd,radeon,v520,navi,2304,8,225,7,250,10300
@@ -13,8 +13,12 @@ aws-inferencia-2,asic,aws,inferencia,2,neuroncore-2,2,32,250,7,0,0
 aws-trainium-1,asic,aws,trainium,1,neuroncore-2,2,32,400,7,0,0
 aws-trainium-2,asic,aws,trainium,2,neuroncore-3,8,96,500,7,0,0
 intel-gaudi-1,asic,intel,gaudi,1,gaudi,8,32,350,16,0,0
+nvidia-blackwell-b200,gpu,nvidia,blackwell,b200,blackwell,18432,180,1000,4,0,0
+nvidia-blackwell-b300,gpu,nvidia,blackwell,b300,blackwell ultra,18432,288,1400,4,0,0
 nvidia-grid-k520,gpu,nvidia,grid,k520,kepler,3072,8,225,28,294,3540
+nvidia-quadro-rtx5000,gpu,nvidia,quadro,rtx 5000,turing,3072,16,230,12,545,13600
 nvidia-rtx-3070,gpu,nvidia,rtx,3070,ampere,5888,8,220,8,392,17400
+nvidia-rtx-pro-6000-blackwell-server,gpu,nvidia,rtx pro,6000 blackwell server,blackwell,24064,96,600,4,0,0
 nvidia-tesla-a10,gpu,nvidia,tesla,a10,ampere,9216,24,150,8,628,28300
 nvidia-tesla-a10040,gpu,nvidia,tesla,a100,ampere,6912,40,250,7,826,54200
 nvidia-tesla-a10080,gpu,nvidia,tesla,a100,ampere,6912,80,300,7,826,54200
@@ -31,5 +35,4 @@ nvidia-tesla-p40,gpu,nvidia,tesla,p40,pascal,3840,24,250,16,471,11800
 nvidia-tesla-t4,gpu,nvidia,tesla,t4,turing,2560,16,70,12,545,13600
 nvidia-tesla-v10016,gpu,nvidia,tesla,v100,volta,5120,16,250,12,815,21100
 nvidia-tesla-v10032,gpu,nvidia,tesla,v100,volta,5120,32,250,12,815,21100
-nvidia-quadro-rtx5000,gpu,nvidia,quadro,rtx 5000,turing,3072,16,230,12,545,13600
 qualcomm-ai100-standard,asic,qualcomm,ai100,standard,cloud ai,16,16,75,7,0,0

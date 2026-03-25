@@ -62,6 +62,8 @@ d11-v2,dv2-11-15,d11 v2,general,2,14,100,0,"intel-xeon-8370c,intel-xeon-8272cl,i
 d11s,dsv1,d11s,general,2,14,28,0,intel-xeon-8171m,0,,1.2346
 d12,dv1,d12,general,4,28,200,0,intel-xeon-8171m,0,,1.322
 d12-v2,dv2-11-15,d12 v2,general,4,28,200,0,"intel-xeon-8370c,intel-xeon-8272cl,intel-xeon-8171m,intel-xeon-e52673v4,intel-xeon-e52673v3",0,,1.322
+d128ads-v7,dadsv7,d128ads v7,general,128,512,1760,0,amd-epyc-9005,0,,1.5604
+d128as-v7,dasv7,d128as v7,general,128,512,0,0,amd-epyc-9005,0,,1.5604
 d128ds-v6,ddsv6,d128ds v6,general,128,512,7040,0,intel-xeon-8573c,0,,1.6935
 d128lds-v6,dldsv6,d128lds v6,general,128,256,7040,0,intel-xeon-8573c,0,,1.6991
 d128ls-v6,dlsv6,d128ls v6,general,128,256,0,0,intel-xeon-8573c,0,,1.6991
@@ -77,14 +79,18 @@ d15-v2,dv2-11-15,d15 v2,general,20,140,1000,0,"intel-xeon-8370c,intel-xeon-8272c
 d16-v3,dv3,d16 v3,general,16,64,400,0,"intel-xeon-8370c,intel-xeon-8272cl,intel-xeon-8171m,intel-xeon-e52673v4,intel-xeon-e52673v3",0,,1.4454
 d16-v4,dv4,d16 v4,general,16,64,0,0,"intel-xeon-8370c,intel-xeon-8272cl,intel-xeon-8473c",0,,1.4329
 d16-v5,dv5,d16 v5,general,16,64,0,0,"intel-xeon-8473c,intel-xeon-8370c",0,,1.4329
+d160ads-v7,dadsv7,d160ads v7,general,160,640,2200,0,amd-epyc-9005,0,,1.5604
+d160as-v7,dasv7,d160as v7,general,160,640,0,0,amd-epyc-9005,0,,1.5604
 d16a-v4,dav4,d16a v4,general,16,64,400,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.5604
 d16ads-v5,dadsv5,d16ads v5,general,16,64,600,0,amd-epyc-7763v,0,,1.5604
 d16ads-v6,dadsv6,d16ads v6,general,16,64,880,0,amd-epyc-9v74,0,,1.5604
+d16ads-v7,dadsv7,d16ads v7,general,16,64,440,0,amd-epyc-9005,0,,1.5604
 d16alds-v6,daldsv6,d16alds v6,general,16,32,880,0,amd-epyc-9v74,0,,1.2999
 d16als-v6,dalsv6,d16als v6,general,16,32,0,0,amd-epyc-9v74,0,,1.2999
 d16as-v4,dasv4,d16as v4,general,16,64,128,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.5604
 d16as-v5,dasv5,d16as v5,general,16,64,0,0,amd-epyc-7763v,0,,1.5604
 d16as-v6,dasv6,d16as v6,general,16,64,0,0,amd-epyc-9v74,0,,1.5604
+d16as-v7,dasv7,d16as v7,general,16,64,0,0,amd-epyc-9005,0,,1.5604
 d16d-v4,ddv4,d16d v4,general,16,64,600,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.4829
 d16d-v5,ddv5,d16d v5,general,16,64,600,0,intel-xeon-8370c,0,,1.4829
 d16ds-v4,ddsv4,d16ds v4,general,16,64,600,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.5329
@@ -115,11 +121,13 @@ d2-v5,dv5,d2 v5,general,2,8,0,0,"intel-xeon-8473c,intel-xeon-8370c",0,,1.4329
 d2a-v4,dav4,d2a v4,general,2,8,50,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.5604
 d2ads-v5,dadsv5,d2ads v5,general,2,8,75,0,amd-epyc-7763v,0,,1.5604
 d2ads-v6,dadsv6,d2ads v6,general,2,8,110,0,amd-epyc-9v74,0,,1.5604
+d2ads-v7,dadsv7,d2ads v7,general,2,8,110,0,amd-epyc-9005,0,,1.5604
 d2alds-v6,daldsv6,d2alds v6,general,2,4,110,0,amd-epyc-9v74,0,,1.3775
 d2als-v6,dalsv6,d2als v6,general,2,4,0,0,amd-epyc-9v74,0,,1.3775
 d2as-v4,dasv4,d2as v4,general,2,8,16,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.5604
 d2as-v5,dasv5,d2as v5,general,2,8,0,0,amd-epyc-7763v,0,,1.5604
 d2as-v6,dasv6,d2as v6,general,2,8,0,0,amd-epyc-9v74,0,,1.5604
+d2as-v7,dasv7,d2as v7,general,2,8,0,0,amd-epyc-9005,0,,1.5604
 d2d-v4,ddv4,d2d v4,general,2,8,75,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.4829
 d2d-v5,ddv5,d2d v5,general,2,8,75,0,intel-xeon-8370c,0,,1.4829
 d2ds-v4,ddsv4,d2ds v4,general,2,8,75,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.5329
@@ -150,11 +158,13 @@ d32-v5,dv5,d32 v5,general,32,128,0,0,"intel-xeon-8473c,intel-xeon-8370c",0,,1.43
 d32a-v4,dav4,d32a v4,general,32,128,800,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.5604
 d32ads-v5,dadsv5,d32ads v5,general,32,128,1200,0,amd-epyc-7763v,0,,1.5604
 d32ads-v6,dadsv6,d32ads v6,general,32,128,1760,0,amd-epyc-9v74,0,,1.5604
+d32ads-v7,dadsv7,d32ads v7,general,32,128,440,0,amd-epyc-9005,0,,1.5604
 d32alds-v6,daldsv6,d32alds v6,general,32,64,1760,0,amd-epyc-9v74,0,,1.3775
 d32als-v6,dalsv6,d32als v6,general,32,64,0,0,amd-epyc-9v74,0,,1.3775
 d32as-v4,dasv4,d32as v4,general,32,128,256,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.5604
 d32as-v5,dasv5,d32as v5,general,32,128,0,0,amd-epyc-7763v,0,,1.5604
 d32as-v6,dasv6,d32as v6,general,32,128,0,0,amd-epyc-9v74,0,,1.5604
+d32as-v7,dasv7,d32as v7,general,32,128,0,0,amd-epyc-9005,0,,1.5604
 d32d-v4,ddv4,d32d v4,general,32,128,1200,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.4829
 d32d-v5,ddv5,d32d v5,general,32,128,1200,0,intel-xeon-8370c,0,,1.4829
 d32ds-v4,ddsv4,d32ds v4,general,32,128,1200,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.5329
@@ -188,11 +198,13 @@ d48-v5,dv5,d48 v5,general,48,192,0,0,"intel-xeon-8473c,intel-xeon-8370c",0,,1.43
 d48a-v4,dav4,d48a v4,general,48,192,1200,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.5604
 d48ads-v5,dadsv5,d48ads v5,general,48,192,1800,0,amd-epyc-7763v,0,,1.5604
 d48ads-v6,dadsv6,d48ads v6,general,48,192,2640,0,amd-epyc-9v74,0,,1.5604
+d48ads-v7,dadsv7,d48ads v7,general,48,192,440,0,amd-epyc-9005,0,,1.5604
 d48alds-v6,daldsv6,d48alds v6,general,48,96,2640,0,amd-epyc-9v74,0,,1.3775
 d48als-v6,dalsv6,d48als v6,general,48,96,0,0,amd-epyc-9v74,0,,1.3775
 d48as-v4,dasv4,d48as v4,general,48,192,384,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.5604
 d48as-v5,dasv5,d48as v5,general,48,192,0,0,amd-epyc-7763v,0,,1.5604
 d48as-v6,dasv6,d48as v6,general,48,192,0,0,amd-epyc-9v74,0,,1.5604
+d48as-v7,dasv7,d48as v7,general,48,192,0,0,amd-epyc-9005,0,,1.5604
 d48d-v4,ddv4,d48d v4,general,48,192,1800,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.4829
 d48d-v5,ddv5,d48d v5,general,48,192,1800,0,intel-xeon-8370c,0,,1.4829
 d48ds-v4,ddsv4,d48ds v4,general,48,192,1800,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.5329
@@ -217,11 +229,13 @@ d48s-v6,dsv6,d48s v6,general,48,192,0,0,intel-xeon-8573c,0,,1.4329
 d4a-v4,dav4,d4a v4,general,4,16,100,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.5604
 d4ads-v5,dadsv5,d4ads v5,general,4,16,150,0,amd-epyc-7763v,0,,1.5604
 d4ads-v6,dadsv6,d4ads v6,general,4,16,220,0,amd-epyc-9v74,0,,1.5604
+d4ads-v7,dadsv7,d4ads v7,general,4,16,220,0,amd-epyc-9005,0,,1.5604
 d4alds-v6,daldsv6,d4alds v6,general,4,8,220,0,amd-epyc-9v74,0,,1.3775
 d4als-v6,dalsv6,d4als v6,general,4,8,0,0,amd-epyc-9v74,0,,1.3775
 d4as-v4,dasv4,d4as v4,general,4,16,32,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.5604
 d4as-v5,dasv5,d4as v5,general,4,16,0,0,amd-epyc-7763v,0,,1.5604
 d4as-v6,dasv6,d4as v6,general,4,16,0,0,amd-epyc-9v74,0,,1.5604
+d4as-v7,dasv7,d4as v7,general,4,16,0,0,amd-epyc-9005,0,,1.5604
 d4d-v4,ddv4,d4d v4,general,4,16,150,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.4829
 d4d-v5,ddv5,d4d v5,general,4,16,150,0,intel-xeon-8370c,0,,1.4829
 d4ds-v4,ddsv4,d4ds v4,general,4,16,150,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.5329
@@ -251,11 +265,13 @@ d64-v5,dsv5,d64 v5,general,64,256,0,0,"intel-xeon-8473c,intel-xeon-8370c",0,,1.4
 d64a-v4,dav4,d64a v4,general,64,256,1600,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.5604
 d64ads-v5,dadsv5,d64ads v5,general,64,256,2400,0,amd-epyc-7763v,0,,1.5604
 d64ads-v6,dadsv6,d64ads v6,general,64,256,3520,0,amd-epyc-9v74,0,,1.5604
+d64ads-v7,dadsv7,d64ads v7,general,64,256,880,0,amd-epyc-9005,0,,1.5604
 d64alds-v6,daldsv6,d64alds v6,general,64,128,3520,0,amd-epyc-9v74,0,,1.3775
 d64als-v6,dalsv6,d64als v6,general,64,128,0,0,amd-epyc-9v74,0,,1.3775
 d64as-v4,dasv4,d64as v4,general,64,256,512,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.5604
 d64as-v5,dasv5,d64as v5,general,64,256,0,0,amd-epyc-7763v,0,,1.5604
 d64as-v6,dasv6,d64as v6,general,64,256,0,0,amd-epyc-9v74,0,,1.5604
+d64as-v7,dasv7,d64as v7,general,64,256,0,0,amd-epyc-9005,0,,1.5604
 d64d-v4,ddv4,d64d v4,general,64,256,2400,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.4829
 d64d-v5,ddv5,d64d v5,general,64,256,2400,0,intel-xeon-8370c,0,,1.4829
 d64ds-v4,ddsv4,d64ds v4,general,64,256,2400,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.5329
@@ -283,11 +299,13 @@ d8-v5,dv5,d8 v5,general,8,32,0,0,"intel-xeon-8473c,intel-xeon-8370c",0,,1.4329
 d8a-v4,dav4,d8a v4,general,8,32,200,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.5604
 d8ads-v5,dadsv5,d8ads v5,general,8,32,300,0,amd-epyc-7763v,0,,1.5604
 d8ads-v6,dadsv6,d8ads v6,general,8,32,440,0,amd-epyc-9v74,0,,1.5604
+d8ads-v7,dadsv7,d8ads v7,general,8,32,440,0,amd-epyc-9005,0,,1.5604
 d8alds-v6,daldsv6,d8alds v6,general,8,16,440,0,amd-epyc-9v74,0,,1.5883
 d8als-v6,dalsv6,d8als v6,general,8,16,0,0,amd-epyc-9v74,0,,1.5883
 d8as-v4,dasv4,d8as v4,general,8,32,64,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.5604
 d8as-v5,dasv5,d8as v5,general,8,32,0,0,amd-epyc-7763v,0,,1.5604
 d8as-v6,dasv6,d8as v6,general,8,32,0,0,amd-epyc-9v74,0,,1.5604
+d8as-v7,dasv7,d8as v7,general,8,32,0,0,amd-epyc-9005,0,,1.5604
 d8d-v4,ddv4,d8d v4,general,8,32,300,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.4829
 d8d-v5,ddv5,d8d v5,general,8,32,300,0,intel-xeon-8370c,0,,1.4829
 d8ds-v4,ddsv4,d8ds v4,general,8,32,300,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.5329
@@ -313,11 +331,13 @@ d96-v5,dv5,d96 v5,general,96,384,0,0,"intel-xeon-8473c,intel-xeon-8370c",0,,1.56
 d96a-v4,dav4,d96a v4,general,96,384,2400,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.5604
 d96ads-v5,dadsv5,d96ads v5,general,96,384,3600,0,amd-epyc-7763v,0,,1.5604
 d96ads-v6,dadsv6,d96ads v6,general,96,384,5280,0,amd-epyc-9v74,0,,1.5604
+d96ads-v7,dadsv7,d96ads v7,general,96,384,880,0,amd-epyc-9005,0,,1.5604
 d96alds-v6,daldsv6,d96alds v6,general,96,192,5280,0,amd-epyc-9v74,0,,1.5604
 d96als-v6,dalsv6,d96als v6,general,96,192,0,0,amd-epyc-9v74,0,,1.5604
 d96as-v4,dasv4,d96as v4,general,96,384,768,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.5604
 d96as-v5,dasv5,d96as v5,general,96,384,0,0,amd-epyc-7763v,0,,1.5604
 d96as-v6,dasv6,d96as v6,general,96,384,0,0,amd-epyc-9v74,0,,1.5604
+d96as-v7,dasv7,d96as v7,general,96,384,0,0,amd-epyc-9005,0,,1.5604
 d96d-v5,ddv5,d96d v5,general,96,384,3600,0,intel-xeon-8370c,0,,1.5604
 d96ds-v5,ddsv5,d96ds v5,general,96,384,3600,0,intel-xeon-8370c,0,,1.5604
 d96ds-v6,ddsv6,d96ds v6,general,96,384,5280,0,intel-xeon-8573c,0,,1.5604
@@ -415,17 +435,23 @@ e112iads-v5,eadsv5,e112iads v5,memory,112,672,3800,0,amd-epyc-7763v,0,,1.6935
 e112ias-v5,easv5,e112ias v5,memory,112,672,0,0,amd-epyc-7763v,0,,1.6935
 e112ibds-v5,ebdsv5,e112ibds v5,memory,112,672,3800,0,intel-xeon-8370c,0,,1.6935
 e112ibs-v5,ebsv5,e112ibs v5,memory,112,672,0,0,intel-xeon-8370c,0,,1.6935
+e128ads-v7,eadsv7,e128ads v7,memory,128,1024,1760,0,amd-epyc-9005,0,,2.0098
+e128as-v7,easv7,e128as v7,memory,128,1024,0,0,amd-epyc-9005,0,,2.0098
 e128ds-v6,edsv6,e128ds v6,memory,128,1024,7040,0,intel-xeon-8573c,0,,1.6935
 e128s-v6,esv6,e128s v6,memory,128,1024,0,0,intel-xeon-8573c,0,,1.6935
 e16-v3,ev3,e16 v3,memory,16,128,800,0,"intel-xeon-8370c,intel-xeon-8272cl,intel-xeon-8171m,intel-xeon-e52673v4",0,,1.9155
 e16-v4,ev4,e16 v4,memory,16,128,0,0,"intel-xeon-8473c,intel-xeon-8370c,intel-xeon-8272cl",0,,2.0098
 e16-v5,ev5,e16 v5,memory,16,128,0,0,"intel-xeon-8473c,intel-xeon-8370c",0,,2.0098
+e160ads-v7,eadsv7,e160ads v7,memory,160,1280,2200,0,amd-epyc-9005,0,,2.0098
+e160as-v7,easv7,e160as v7,memory,160,1280,0,0,amd-epyc-9005,0,,2.0098
 e16a-v4,eav4,e16a v4,memory,16,128,400,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.9598
 e16ads-v5,eadsv5,e16ads v5,memory,16,128,600,0,amd-epyc-7763v,0,,2.0098
 e16ads-v6,eadsv6,e16ads v6,memory,16,128,600,0,amd-epyc-9v74,0,,2.0098
+e16ads-v7,eadsv7,e16ads v7,memory,16,128,440,0,amd-epyc-9005,0,,2.0098
 e16as-v4,easv4,e16as v4,memory,16,128,256,0,"amd-epyc-7452,amd-epyc-7763v",0,,2.0098
 e16as-v5,easv5,e16as v5,memory,16,128,0,0,amd-epyc-7763v,0,,2.0098
 e16as-v6,easv6,e16as v6,memory,16,128,0,0,amd-epyc-9v74,0,,2.0098
+e16as-v7,easv7,e16as v7,memory,16,128,0,0,amd-epyc-9005,0,,2.0098
 e16bds-v5,ebdsv5,e16bds v5,memory,16,128,600,0,intel-xeon-8370c,0,,1.8768
 e16bs-v5,ebsv5,e16bs v5,memory,16,128,0,0,intel-xeon-8272cl,0,,2.0098
 e16d-v4,edv4,e16d v4,memory,16,128,600,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.8768
@@ -467,9 +493,11 @@ e20s-v6,esv6,e20s v6,memory,20,160,0,0,intel-xeon-8573c,0,,1.7768
 e2a-v4,eav4,e2a v4,memory,2,16,50,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.9598
 e2ads-v5,eadsv5,e2ads v5,memory,2,16,75,0,amd-epyc-7763v,0,,2.0098
 e2ads-v6,eadsv6,e2ads v6,memory,2,16,75,0,amd-epyc-9v74,0,,2.0098
+e2ads-v7,eadsv7,e2ads v7,memory,2,16,110,0,amd-epyc-9005,0,,2.0098
 e2as-v4,easv4,e2as v4,memory,2,16,32,0,"amd-epyc-7452,amd-epyc-7763v",0,,2.0098
 e2as-v5,easv5,e2as v5,memory,2,16,0,0,amd-epyc-7763v,0,,2.0098
 e2as-v6,easv6,e2as v6,memory,2,16,0,0,amd-epyc-9v74,0,,2.0098
+e2as-v7,easv7,e2as v7,memory,2,16,0,0,amd-epyc-9005,0,,2.0098
 e2bds-v5,ebdsv5,e2bds v5,memory,2,16,75,0,intel-xeon-8370c,0,,1.8768
 e2bs-v5,ebsv5,e2bs v5,memory,2,16,0,0,intel-xeon-8272cl,0,,2.0098
 e2d-v4,edv4,e2d v4,memory,2,16,75,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.8768
@@ -491,9 +519,11 @@ e32-v5,ev5,e32 v5,memory,32,256,0,0,"intel-xeon-8473c,intel-xeon-8370c",0,,2.009
 e32a-v4,eav4,e32a v4,memory,32,256,800,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.9598
 e32ads-v5,eadsv5,e32ads v5,memory,32,256,1200,0,amd-epyc-7763v,0,,2.0098
 e32ads-v6,eadsv6,e32ads v6,memory,32,256,1200,0,amd-epyc-9v74,0,,2.0098
+e32ads-v7,eadsv7,e32ads v7,memory,32,256,440,0,amd-epyc-9005,0,,2.0098
 e32as-v4,easv4,e32as v4,memory,32,256,512,0,"amd-epyc-7452,amd-epyc-7763v",0,,2.0098
 e32as-v5,easv5,e32as v5,memory,32,256,0,0,amd-epyc-7763v,0,,2.0098
 e32as-v6,easv6,e32as v6,memory,32,256,0,0,amd-epyc-9v74,0,,2.0098
+e32as-v7,easv7,e32as v7,memory,32,256,0,0,amd-epyc-9005,0,,2.0098
 e32bds-v5,ebdsv5,e32bds v5,memory,32,256,1200,0,intel-xeon-8370c,0,,1.8768
 e32bs-v5,ebsv5,e32bs v5,memory,32,256,0,0,intel-xeon-8272cl,0,,2.0098
 e32d-v4,edv4,e32d v4,memory,32,256,1200,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.8768
@@ -518,9 +548,11 @@ e48-v5,ev5,e48 v5,memory,48,384,0,0,"intel-xeon-8473c,intel-xeon-8370c",0,,2.009
 e48a-v4,eav4,e48a v4,memory,48,384,1200,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.9598
 e48ads-v5,eadsv5,e48ads v5,memory,48,384,1800,0,amd-epyc-7763v,0,,2.0098
 e48ads-v6,eadsv6,e48ads v6,memory,48,384,1700,0,amd-epyc-9v74,0,,2.0098
+e48ads-v7,eadsv7,e48ads v7,memory,48,384,440,0,amd-epyc-9005,0,,2.0098
 e48as-v4,easv4,e48as v4,memory,48,384,768,0,"amd-epyc-7452,amd-epyc-7763v",0,,2.0098
 e48as-v5,easv5,e48as v5,memory,48,384,0,0,amd-epyc-7763v,0,,2.0098
 e48as-v6,easv6,e48as v6,memory,48,384,0,0,amd-epyc-9v74,0,,2.0098
+e48as-v7,easv7,e48as v7,memory,48,384,0,0,amd-epyc-9005,0,,2.0098
 e48bds-v5,ebdsv5,e48bds v5,memory,48,384,1800,0,intel-xeon-8370c,0,,1.8768
 e48bs-v5,ebsv5,e48bs v5,memory,48,384,0,0,intel-xeon-8272cl,0,,2.0098
 e48d-v4,edv4,e48d v4,memory,48,384,1800,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.8768
@@ -537,9 +569,11 @@ e48s-v6,esv6,e48s v6,memory,48,384,0,0,intel-xeon-8573c,0,,1.7768
 e4a-v4,eav4,e4a v4,memory,4,32,100,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.9598
 e4ads-v5,eadsv5,e4ads v5,memory,4,32,150,0,amd-epyc-7763v,0,,2.0098
 e4ads-v6,eadsv6,e4ads v6,memory,4,32,150,0,amd-epyc-9v74,0,,2.0098
+e4ads-v7,eadsv7,e4ads v7,memory,4,32,220,0,amd-epyc-9005,0,,2.0098
 e4as-v4,easv4,e4as v4,memory,4,32,64,0,"amd-epyc-7452,amd-epyc-7763v",0,,2.0098
 e4as-v5,easv5,e4as v5,memory,4,32,0,0,amd-epyc-7763v,0,,2.0098
 e4as-v6,easv6,e4as v6,memory,4,32,0,0,amd-epyc-9v74,0,,2.0098
+e4as-v7,easv7,e4as v7,memory,4,32,0,0,amd-epyc-9005,0,,2.0098
 e4bds-v5,ebdsv5,e4bds v5,memory,4,32,150,0,intel-xeon-8370c,0,,1.8768
 e4bs-v5,ebsv5,e4bs v5,memory,4,32,0,0,intel-xeon-8272cl,0,,2.0098
 e4d-v4,edv4,e4d v4,memory,4,32,150,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.8768
@@ -561,9 +595,11 @@ e64-v5,ev5,e64 v5,memory,64,512,0,0,"intel-xeon-8473c,intel-xeon-8370c",0,,2.009
 e64a-v4,eav4,e64a v4,memory,64,432,1600,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.9598
 e64ads-v5,eadsv5,e64ads v5,memory,64,512,2400,0,amd-epyc-7763v,0,,2.0098
 e64ads-v6,eadsv6,e64ads v6,memory,64,512,2400,0,amd-epyc-9v74,0,,2.0098
+e64ads-v7,eadsv7,e64ads v7,memory,64,512,880,0,amd-epyc-9005,0,,2.0098
 e64as-v4,easv4,e64as v4,memory,64,432,864,0,"amd-epyc-7452,amd-epyc-7763v",0,,2.0098
 e64as-v5,easv5,e64as v5,memory,64,512,0,0,amd-epyc-7763v,0,,2.0098
 e64as-v6,easv6,e64as v6,memory,64,512,0,0,amd-epyc-9v74,0,,2.0098
+e64as-v7,easv7,e64as v7,memory,64,512,0,0,amd-epyc-9005,0,,2.0098
 e64bds-v5,ebdsv5,e64bds v5,memory,64,512,2400,0,intel-xeon-8370c,0,,2.0098
 e64bs-v5,ebsv5,e64bs v5,memory,64,512,0,0,intel-xeon-8272cl,0,,2.0098
 e64d-v4,edv4,e64d v4,memory,64,504,2400,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.8768
@@ -585,9 +621,11 @@ e80is-v4,esv4,e80is v4,memory,80,504,2400,0,"intel-xeon-8473c,intel-xeon-8370c,i
 e8a-v4,eav4,e8a v4,memory,8,64,200,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.9598
 e8ads-v5,eadsv5,e8ads v5,memory,8,64,300,0,amd-epyc-7763v,0,,2.0098
 e8ads-v6,eadsv6,e8ads v6,memory,8,64,300,0,amd-epyc-9v74,0,,2.0098
+e8ads-v7,eadsv7,e8ads v7,memory,8,64,440,0,amd-epyc-9005,0,,2.0098
 e8as-v4,easv4,e8as v4,memory,8,64,128,0,"amd-epyc-7452,amd-epyc-7763v",0,,2.0098
 e8as-v5,easv5,e8as v5,memory,8,64,0,0,amd-epyc-7763v,0,,2.0098
 e8as-v6,easv6,e8as v6,memory,8,64,0,0,amd-epyc-9v74,0,,2.0098
+e8as-v7,easv7,e8as v7,memory,8,64,0,0,amd-epyc-9005,0,,2.0098
 e8bds-v5,ebdsv5,e8bds v5,memory,8,64,300,0,intel-xeon-8370c,0,,1.8768
 e8bs-v5,ebsv5,e8bs v5,memory,8,64,0,0,intel-xeon-8272cl,0,,2.0098
 e8d-v4,edv4,e8d v4,memory,8,64,300,0,"intel-xeon-8370c,intel-xeon-8272cl",0,,1.8768
@@ -607,9 +645,11 @@ e96-v5,ev5,e96 v5,memory,96,672,0,0,"intel-xeon-8473c,intel-xeon-8370c",0,,2.009
 e96a-v4,eav4,e96a v4,memory,96,672,2400,0,"amd-epyc-7452,amd-epyc-7763v",0,,1.9598
 e96ads-v5,eadsv5,e96ads v5,memory,96,672,3600,0,amd-epyc-7763v,0,,2.0098
 e96ads-v6,eadsv6,e96ads v6,memory,96,672,3400,0,amd-epyc-9v74,0,,2.0098
+e96ads-v7,eadsv7,e96ads v7,memory,96,768,880,0,amd-epyc-9005,0,,2.0098
 e96as-v4,easv4,e96as v4,memory,96,672,1344,0,"amd-epyc-7452,amd-epyc-7763v",0,,2.0098
 e96as-v5,easv5,e96as v5,memory,96,672,0,0,amd-epyc-7763v,0,,2.0098
 e96as-v6,easv6,e96as v6,memory,96,672,0,0,amd-epyc-9v74,0,,2.0098
+e96as-v7,easv7,e96as v7,memory,96,768,0,0,amd-epyc-9005,0,,2.0098
 e96bds-v5,ebdsv5,e96bds v5,memory,96,672,3600,0,intel-xeon-8370c,0,,2.0098
 e96bs-v5,ebsv5,e96bs v5,memory,96,672,0,0,intel-xeon-8272cl,0,,2.0098
 e96d-v5,edv5,e96d v5,memory,96,672,3600,0,intel-xeon-8370c,0,,2.0098
@@ -673,41 +713,59 @@ ec96iads-v5,ecadsv5,ec96iads v5,memory,96,672,2400,0,amd-epyc-7763v,0,,2.0098
 ec96ias-v5,ecasv5,ec96ias v5,memory,96,672,0,0,amd-epyc-7763v,0,,2.0098
 f1,fv1,f1,compute,1,2,16,0,intel-xeon-e52673v4,0,,1.6383
 f16,fv1,f16,compute,16,32,256,0,intel-xeon-e52673v4,0,,1.2222
+f16ads-v7,fadsv7,f16ads v7,compute,16,64,440,0,amd-epyc-9005,0,,1.5604
 f16als-v6,falsv6,f16als v6,compute,16,32,0,0,amd-epyc-9v74,0,,1.2999
 f16ams-v6,famsv6,f16ams v6,compute,16,128,0,0,amd-epyc-9v74,0,,2.0098
 f16as-v6,fasv6,f16as v6,compute,16,64,0,0,amd-epyc-9v74,0,,1.5604
+f16as-v7,fasv7,f16as v7,compute,16,64,0,0,amd-epyc-9005,0,,1.5604
 f16s,fsv1,f16s,compute,16,32,64,0,intel-xeon-8272cl,0,,1.2222
 f16s-v2,fsv2,f16s v2,compute,16,32,128,0,"intel-xeon-8370c,intel-xeon-8272cl,intel-xeon-8168",0,,1.2999
+f1ads-v7,fadsv7,f1ads v7,compute,1,4,110,0,amd-epyc-9005,0,,1.5604
+f1as-v7,fasv7,f1as v7,compute,1,4,0,0,amd-epyc-9005,0,,1.5604
 f1s,fsv1,f1s,compute,1,2,4,0,intel-xeon-8272cl,0,,1.2222
 f2,fv1,f2,compute,2,4,32,0,intel-xeon-e52673v4,0,,1.2222
+f2ads-v7,fadsv7,f2ads v7,compute,2,8,220,0,amd-epyc-9005,0,,1.5604
 f2als-v6,falsv6,f2als v6,compute,2,4,0,0,amd-epyc-9v74,0,,1.3775
 f2ams-v6,famsv6,f2ams v6,compute,2,16,0,0,amd-epyc-9v74,0,,2.0098
 f2as-v6,fasv6,f2as v6,compute,2,8,0,0,amd-epyc-9v74,0,,1.5604
+f2as-v7,fasv7,f2as v7,compute,2,8,0,0,amd-epyc-9005,0,,1.5604
 f2s,fsv1,f2s,compute,2,4,8,0,intel-xeon-e52673v4,0,,1.2222
 f2s-v2,fsv2,f2s v2,compute,2,4,16,0,"intel-xeon-8370c,intel-xeon-8272cl,intel-xeon-8168",0,,1.3775
+f32ads-v7,fadsv7,f32ads v7,compute,32,128,880,0,amd-epyc-9005,0,,1.5604
 f32als-v6,falsv6,f32als v6,compute,32,64,0,0,amd-epyc-9v74,0,,1.3775
 f32ams-v6,famsv6,f32ams v6,compute,32,256,0,0,amd-epyc-9v74,0,,2.0098
 f32as-v6,fasv6,f32as v6,compute,32,128,0,0,amd-epyc-9v74,0,,1.5604
+f32as-v7,fasv7,f32as v7,compute,32,128,0,0,amd-epyc-9005,0,,1.5604
 f32s-v2,fsv2,f32s v2,compute,32,64,256,0,"intel-xeon-8370c,intel-xeon-8272cl,intel-xeon-8168",0,,1.3775
 f4,fv1,f4,compute,4,8,64,0,intel-xeon-e52673v4,0,,1.2222
+f48ads-v7,fadsv7,f48ads v7,compute,48,192,880,0,amd-epyc-9005,0,,1.5604
 f48als-v6,falsv6,f48als v6,compute,48,96,0,0,amd-epyc-9v74,0,,1.3775
 f48ams-v6,famsv6,f48ams v6,compute,48,384,0,0,amd-epyc-9v74,0,,2.0098
 f48as-v6,fasv6,f48as v6,compute,48,192,0,0,amd-epyc-9v74,0,,1.5604
+f48as-v7,fasv7,f48as v7,compute,48,192,0,0,amd-epyc-9005,0,,1.5604
 f48s-v2,fsv2,f48s v2,compute,48,96,384,0,"intel-xeon-8370c,intel-xeon-8272cl,intel-xeon-8168",0,,1.3775
+f4ads-v7,fadsv7,f4ads v7,compute,4,16,440,0,amd-epyc-9005,0,,1.5604
 f4als-v6,falsv6,f4als v6,compute,4,8,0,0,amd-epyc-9v74,0,,1.3775
 f4ams-v6,famsv6,f4ams v6,compute,4,32,0,0,amd-epyc-9v74,0,,2.0098
 f4as-v6,fasv6,f4as v6,compute,4,16,0,0,amd-epyc-9v74,0,,1.5604
+f4as-v7,fasv7,f4as v7,compute,4,16,0,0,amd-epyc-9005,0,,1.5604
 f4s,fsv1,f4s,compute,4,8,16,0,intel-xeon-e52673v4,0,,1.2222
 f4s-v2,fsv2,f4s v2,compute,4,8,32,0,"intel-xeon-8370c,intel-xeon-8272cl,intel-xeon-8168",0,,1.3775
+f64ads-v7,fadsv7,f64ads v7,compute,64,256,1760,0,amd-epyc-9005,0,,1.5604
 f64als-v6,falsv6,f64als v6,compute,64,128,0,0,amd-epyc-9v74,0,,1.3775
 f64ams-v6,famsv6,f64ams v6,compute,64,512,0,0,amd-epyc-9v74,0,,2.0098
 f64as-v6,fasv6,f64as v6,compute,64,256,0,0,amd-epyc-9v74,0,,1.5604
+f64as-v7,fasv7,f64as v7,compute,64,256,0,0,amd-epyc-9005,0,,1.5604
 f64s-v2,fsv2,f64s v2,compute,64,128,512,0,"intel-xeon-8370c,intel-xeon-8272cl,intel-xeon-8168",0,,1.3775
 f72s-v2,fsv2,f72s v2,compute,72,144,576,0,"intel-xeon-8370c,intel-xeon-8272cl,intel-xeon-8168",0,,1.3775
 f8,fv1,f8,compute,8,16,128,0,intel-xeon-e52673v4,0,,1.2222
+f80ads-v7,fadsv7,f80ads v7,compute,80,320,2200,0,amd-epyc-9005,0,,1.5604
+f80as-v7,fasv7,f80as v7,compute,80,320,0,0,amd-epyc-9005,0,,1.5604
+f8ads-v7,fadsv7,f8ads v7,compute,8,32,440,0,amd-epyc-9005,0,,1.5604
 f8als-v6,falsv6,f8als v6,compute,8,16,0,0,amd-epyc-9v74,0,,1.5883
 f8ams-v6,famsv6,f8ams v6,compute,8,64,0,0,amd-epyc-9v74,0,,2.0098
 f8as-v6,fasv6,f8as v6,compute,8,32,0,0,amd-epyc-9v74,0,,1.5604
+f8as-v7,fasv7,f8as v7,compute,8,32,0,0,amd-epyc-9005,0,,1.5604
 f8s,fsv1,f8s,compute,8,16,32,0,intel-xeon-8171m,0,,1.2222
 f8s-v2,fsv2,f8s v2,compute,8,16,64,0,"intel-xeon-8370c,intel-xeon-8272cl,intel-xeon-8168",0,,1.5883
 fx12mds,fx,fx12mds,compute,12,252,504,0,intel-xeon-6246r,0,,2.3491
@@ -852,7 +910,6 @@ m48ds1-v3,mdsv3,m48ds1 v3,memory,48,974,400,0,intel-xeon-8480c,0,,2.1929
 m48s1-v3,msv3,m48s1 v3,memory,48,974,0,0,intel-xeon-8480c,0,,2.1929
 m624ds12-v3,mdsv3,m624ds12 v3,memory,624,11400,400,0,intel-xeon-8480c,0,,17.7706
 m624s12-v3,msv3,m624s12 v3,memory,624,11400,0,0,intel-xeon-8480c,0,,17.7706
-m624s12-v3,msv3,m624s12 v3,memory,624,11400,0,0,intel-xeon-8480c,0,,17.7706
 m64bds-v3,mbdsv3,m64bds v3,memory,64,512,400,0,intel-xeon-8480c,0,,2.0098
 m64bds1-v3,mbdsv3,m64bds1 v3,memory,64,1397,3000,0,intel-xeon-8480c,0,,6.8086
 m64bs-v3,mbsv3,m64bs v3,memory,64,512,0,0,intel-xeon-8480c,0,,2.0098
@@ -868,7 +925,6 @@ m832ds12-v3,mdsv3,m832ds12 v3,memory,832,15200,400,0,intel-xeon-8480c,0,,52.2545
 m832ids16-v3,mdsv3,m832ids16 v3,memory,832,11400,400,0,intel-xeon-8480c,0,,52.2545
 m832is16-v3,msv3,m832is16 v3,memory,832,15200,0,0,intel-xeon-8480c,0,,52.2545
 m832is168-v3,msv3,m832is168 v3,memory,832,15200,0,0,intel-xeon-8480c,0,,52.2545
-m832s12-v3,msv3,m832s12 v3,memory,832,11400,0,0,intel-xeon-8480c,0,,52.2545
 m832s12-v3,msv3,m832s12 v3,memory,832,11400,0,0,intel-xeon-8480c,0,,52.2545
 m896ixds32-v3,mdsv3,m896ixds32 v3,memory,896,30400,4096,0,intel-xeon-8490h,0,,52.2545
 m8ms,mv1,m8ms,memory,8,219,256,0,"intel-xeon-e78890v3,intel-xeon-8280m",0,,6.8086

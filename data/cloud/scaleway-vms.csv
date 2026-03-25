@@ -50,8 +50,8 @@ em-i220e-nvme,em,em-i220e-nvme,general,32,128,1920,0,amd-epyc-8124p,0,,1
 em-i320e-nvme,em,em-i320e-nvme,general,48,192,3840,0,amd-epyc-8224p,0,,1
 em-i420e-nvme,em,em-i420e-nvme,general,64,256,3840,0,amd-epyc-8324p,0,,1
 em-i520e-nvme,em,em-i520e-nvme,general,96,384,7680,0,amd-epyc-8434p,0,,1
-em-i620e-nvme,em,em-i620e-nvme,general,128,576,7680,0,amd-epyc-8534p,0,,1
 em-i525e-nvme,em,em-i525e-nvme,general,96,384,15360,0,amd-epyc-8434p,0,,1
+em-i620e-nvme,em,em-i620e-nvme,general,128,576,7680,0,amd-epyc-8534p,0,,1
 em-l101x-sata,em,em-l101x-sata,general,8,96,0,12000,intel-xeon-e51410v2,0,,1
 em-l105x-sata,em,em-l105x-sata,general,8,96,0,24000,intel-xeon-e51410v2,0,,1
 em-l110x-sata,em,em-l110x-sata,general,8,96,0,48000,intel-xeon-e51410v2,0,,1
@@ -84,6 +84,9 @@ h100-1-80g,h100,h100-1-80g,accelerated,24,240,0,0,amd-epyc-9334,1,nvidia-tesla-h
 h100-1-m,h100,h100-1-m,accelerated,24,240,0,0,amd-epyc-9334,1,nvidia-tesla-h10080,1
 h100-2-80g,h100,h100-2-80g,accelerated,48,480,0,0,amd-epyc-9334,2,nvidia-tesla-h10080,1
 h100-2-m,h100,h100-2-m,accelerated,48,480,0,0,amd-epyc-9334,2,nvidia-tesla-h10080,1
+h100-sxm-2-80g,h100-sxm,h100-sxm-2-80g,accelerated,32,240,0,0,intel-xeon-8452y,2,nvidia-tesla-h10080,1
+h100-sxm-4-80g,h100-sxm,h100-sxm-4-80g,accelerated,64,480,0,0,intel-xeon-8452y,4,nvidia-tesla-h10080,1
+h100-sxm-8-80g,h100-sxm,h100-sxm-8-80g,accelerated,128,960,0,0,intel-xeon-8452y,8,nvidia-tesla-h10080,1
 l4-1-24g,l4,l4-1-24g,accelerated,8,48,0,0,amd-epyc-7413,1,nvidia-tesla-l4,1
 l4-2-24g,l4,l4-2-24g,accelerated,16,96,0,0,amd-epyc-7413,2,nvidia-tesla-l4,1
 l4-4-24g,l4,l4-4-24g,accelerated,32,192,0,0,amd-epyc-7413,4,nvidia-tesla-l4,1
@@ -123,7 +126,7 @@ pro2-m,pro2,pro2-m,general,16,64,0,0,amd-epyc-7543,0,,1
 pro2-s,pro2,pro2-s,general,8,32,0,0,amd-epyc-7543,0,,1
 pro2-xs,pro2,pro2-xs,general,4,16,0,0,amd-epyc-7543,0,,1
 pro2-xxs,pro2,pro2-xxs,general,2,8,0,0,amd-epyc-7543,0,,1
-render-s,render,render-s,accelerated,400,42,400,0,intel-xeon-6148,1,nvidia-tesla-p10016,1
+render-s,render,render-s,accelerated,10,42,400,0,intel-xeon-6148,1,nvidia-tesla-p10016,1
 stardust1-s,stardust1,stardust1-s,general,1,1,0,0,amd-epyc-7281,0,,1
 start1-l,start1,start1-l,general,8,8,0,0,amd-epyc-7281,0,,1
 start1-m,start1,start1-m,general,4,4,0,0,amd-epyc-7281,0,,1
