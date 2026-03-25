@@ -2896,6 +2896,198 @@
     "embodied": 1.3440944
   },
   {
+    "id": "c8a-12xlarge",
+    "family": "c8a",
+    "name": "c8a.12xlarge",
+    "category": "compute",
+    "vcpus": 48,
+    "memory": 96,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.2440944
+  },
+  {
+    "id": "c8a-16xlarge",
+    "family": "c8a",
+    "name": "c8a.16xlarge",
+    "category": "compute",
+    "vcpus": 64,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.2440944
+  },
+  {
+    "id": "c8a-24xlarge",
+    "family": "c8a",
+    "name": "c8a.24xlarge",
+    "category": "compute",
+    "vcpus": 96,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.2440944
+  },
+  {
+    "id": "c8a-2xlarge",
+    "family": "c8a",
+    "name": "c8a.2xlarge",
+    "category": "compute",
+    "vcpus": 8,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.2440944
+  },
+  {
+    "id": "c8a-48xlarge",
+    "family": "c8a",
+    "name": "c8a.48xlarge",
+    "category": "compute",
+    "vcpus": 192,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "c8a-4xlarge",
+    "family": "c8a",
+    "name": "c8a.4xlarge",
+    "category": "compute",
+    "vcpus": 16,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.2440944
+  },
+  {
+    "id": "c8a-8xlarge",
+    "family": "c8a",
+    "name": "c8a.8xlarge",
+    "category": "compute",
+    "vcpus": 32,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.2440944
+  },
+  {
+    "id": "c8a-large",
+    "family": "c8a",
+    "name": "c8a.large",
+    "category": "compute",
+    "vcpus": 2,
+    "memory": 4,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.2440944
+  },
+  {
+    "id": "c8a-medium",
+    "family": "c8a",
+    "name": "c8a.medium",
+    "category": "compute",
+    "vcpus": 1,
+    "memory": 2,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.1553328
+  },
+  {
+    "id": "c8a-metal-24xl",
+    "family": "c8a",
+    "name": "c8a.metal-24xl",
+    "category": "compute",
+    "vcpus": 96,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": false,
+    "embodied": 1.2440944
+  },
+  {
+    "id": "c8a-metal-48xl",
+    "family": "c8a",
+    "name": "c8a.metal-48xl",
+    "category": "compute",
+    "vcpus": 192,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": false,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "c8a-xlarge",
+    "family": "c8a",
+    "name": "c8a.xlarge",
+    "category": "compute",
+    "vcpus": 4,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.2440944
+  },
+  {
     "id": "c8g-12xlarge",
     "family": "c8g",
     "name": "c8g.12xlarge",
@@ -3086,6 +3278,1110 @@
     ],
     "virtual": true,
     "embodied": 1.1553328
+  },
+  {
+    "id": "c8gb-12xlarge",
+    "family": "c8gb",
+    "name": "c8gb.12xlarge",
+    "category": "compute",
+    "vcpus": 48,
+    "memory": 96,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.1553328
+  },
+  {
+    "id": "c8gb-16xlarge",
+    "family": "c8gb",
+    "name": "c8gb.16xlarge",
+    "category": "compute",
+    "vcpus": 64,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.1553328
+  },
+  {
+    "id": "c8gb-24xlarge",
+    "family": "c8gb",
+    "name": "c8gb.24xlarge",
+    "category": "compute",
+    "vcpus": 96,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8gb-2xlarge",
+    "family": "c8gb",
+    "name": "c8gb.2xlarge",
+    "category": "compute",
+    "vcpus": 8,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.1553328
+  },
+  {
+    "id": "c8gb-48xlarge",
+    "family": "c8gb",
+    "name": "c8gb.48xlarge",
+    "category": "compute",
+    "vcpus": 192,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8gb-4xlarge",
+    "family": "c8gb",
+    "name": "c8gb.4xlarge",
+    "category": "compute",
+    "vcpus": 16,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.1553328
+  },
+  {
+    "id": "c8gb-8xlarge",
+    "family": "c8gb",
+    "name": "c8gb.8xlarge",
+    "category": "compute",
+    "vcpus": 32,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.1553328
+  },
+  {
+    "id": "c8gb-large",
+    "family": "c8gb",
+    "name": "c8gb.large",
+    "category": "compute",
+    "vcpus": 2,
+    "memory": 4,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.1553328
+  },
+  {
+    "id": "c8gb-medium",
+    "family": "c8gb",
+    "name": "c8gb.medium",
+    "category": "compute",
+    "vcpus": 1,
+    "memory": 2,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.1553328
+  },
+  {
+    "id": "c8gb-metal-24xl",
+    "family": "c8gb",
+    "name": "c8gb.metal-24xl",
+    "category": "compute",
+    "vcpus": 96,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8gb-metal-48xl",
+    "family": "c8gb",
+    "name": "c8gb.metal-48xl",
+    "category": "compute",
+    "vcpus": 192,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8gb-xlarge",
+    "family": "c8gb",
+    "name": "c8gb.xlarge",
+    "category": "compute",
+    "vcpus": 4,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.1553328
+  },
+  {
+    "id": "c8gd-12xlarge",
+    "family": "c8gd",
+    "name": "c8gd.12xlarge",
+    "category": "compute",
+    "vcpus": 48,
+    "memory": 96,
+    "accelerators": 0,
+    "ssd": 950,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.3553328
+  },
+  {
+    "id": "c8gd-16xlarge",
+    "family": "c8gd",
+    "name": "c8gd.16xlarge",
+    "category": "compute",
+    "vcpus": 64,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.3553328
+  },
+  {
+    "id": "c8gd-24xlarge",
+    "family": "c8gd",
+    "name": "c8gd.24xlarge",
+    "category": "compute",
+    "vcpus": 96,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8gd-2xlarge",
+    "family": "c8gd",
+    "name": "c8gd.2xlarge",
+    "category": "compute",
+    "vcpus": 8,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 474,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.3553328
+  },
+  {
+    "id": "c8gd-48xlarge",
+    "family": "c8gd",
+    "name": "c8gd.48xlarge",
+    "category": "compute",
+    "vcpus": 192,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8gd-4xlarge",
+    "family": "c8gd",
+    "name": "c8gd.4xlarge",
+    "category": "compute",
+    "vcpus": 16,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 950,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.3553328
+  },
+  {
+    "id": "c8gd-8xlarge",
+    "family": "c8gd",
+    "name": "c8gd.8xlarge",
+    "category": "compute",
+    "vcpus": 32,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.3553328
+  },
+  {
+    "id": "c8gd-large",
+    "family": "c8gd",
+    "name": "c8gd.large",
+    "category": "compute",
+    "vcpus": 2,
+    "memory": 4,
+    "accelerators": 0,
+    "ssd": 118,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.3553328
+  },
+  {
+    "id": "c8gd-medium",
+    "family": "c8gd",
+    "name": "c8gd.medium",
+    "category": "compute",
+    "vcpus": 1,
+    "memory": 2,
+    "accelerators": 0,
+    "ssd": 59,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.3553328
+  },
+  {
+    "id": "c8gd-metal-24xl",
+    "family": "c8gd",
+    "name": "c8gd.metal-24xl",
+    "category": "compute",
+    "vcpus": 96,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8gd-metal-48xl",
+    "family": "c8gd",
+    "name": "c8gd.metal-48xl",
+    "category": "compute",
+    "vcpus": 192,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8gd-xlarge",
+    "family": "c8gd",
+    "name": "c8gd.xlarge",
+    "category": "compute",
+    "vcpus": 4,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 237,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.3553328
+  },
+  {
+    "id": "c8gn-12xlarge",
+    "family": "c8gn",
+    "name": "c8gn.12xlarge",
+    "category": "compute",
+    "vcpus": 48,
+    "memory": 96,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.1553328
+  },
+  {
+    "id": "c8gn-16xlarge",
+    "family": "c8gn",
+    "name": "c8gn.16xlarge",
+    "category": "compute",
+    "vcpus": 64,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.1553328
+  },
+  {
+    "id": "c8gn-24xlarge",
+    "family": "c8gn",
+    "name": "c8gn.24xlarge",
+    "category": "compute",
+    "vcpus": 96,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8gn-2xlarge",
+    "family": "c8gn",
+    "name": "c8gn.2xlarge",
+    "category": "compute",
+    "vcpus": 8,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.1553328
+  },
+  {
+    "id": "c8gn-48xlarge",
+    "family": "c8gn",
+    "name": "c8gn.48xlarge",
+    "category": "compute",
+    "vcpus": 192,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "c8gn-4xlarge",
+    "family": "c8gn",
+    "name": "c8gn.4xlarge",
+    "category": "compute",
+    "vcpus": 16,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.1553328
+  },
+  {
+    "id": "c8gn-8xlarge",
+    "family": "c8gn",
+    "name": "c8gn.8xlarge",
+    "category": "compute",
+    "vcpus": 32,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.1553328
+  },
+  {
+    "id": "c8gn-large",
+    "family": "c8gn",
+    "name": "c8gn.large",
+    "category": "compute",
+    "vcpus": 2,
+    "memory": 4,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.1553328
+  },
+  {
+    "id": "c8gn-medium",
+    "family": "c8gn",
+    "name": "c8gn.medium",
+    "category": "compute",
+    "vcpus": 1,
+    "memory": 2,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.1553328
+  },
+  {
+    "id": "c8gn-metal-24xl",
+    "family": "c8gn",
+    "name": "c8gn.metal-24xl",
+    "category": "compute",
+    "vcpus": 96,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8gn-metal-48xl",
+    "family": "c8gn",
+    "name": "c8gn.metal-48xl",
+    "category": "compute",
+    "vcpus": 192,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "c8gn-xlarge",
+    "family": "c8gn",
+    "name": "c8gn.xlarge",
+    "category": "compute",
+    "vcpus": 4,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.1553328
+  },
+  {
+    "id": "c8i-12xlarge",
+    "family": "c8i",
+    "name": "c8i.12xlarge",
+    "category": "compute",
+    "vcpus": 48,
+    "memory": 96,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8i-16xlarge",
+    "family": "c8i",
+    "name": "c8i.16xlarge",
+    "category": "compute",
+    "vcpus": 64,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.2440944
+  },
+  {
+    "id": "c8i-24xlarge",
+    "family": "c8i",
+    "name": "c8i.24xlarge",
+    "category": "compute",
+    "vcpus": 96,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8i-2xlarge",
+    "family": "c8i",
+    "name": "c8i.2xlarge",
+    "category": "compute",
+    "vcpus": 8,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8i-32xlarge",
+    "family": "c8i",
+    "name": "c8i.32xlarge",
+    "category": "compute",
+    "vcpus": 128,
+    "memory": 256,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "c8i-48xlarge",
+    "family": "c8i",
+    "name": "c8i.48xlarge",
+    "category": "compute",
+    "vcpus": 192,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "c8i-4xlarge",
+    "family": "c8i",
+    "name": "c8i.4xlarge",
+    "category": "compute",
+    "vcpus": 16,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8i-8xlarge",
+    "family": "c8i",
+    "name": "c8i.8xlarge",
+    "category": "compute",
+    "vcpus": 32,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.2440944
+  },
+  {
+    "id": "c8i-96xlarge",
+    "family": "c8i",
+    "name": "c8i.96xlarge",
+    "category": "compute",
+    "vcpus": 384,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "c8i-flex-12xlarge",
+    "family": "c8i-flex",
+    "name": "c8i-flex.12xlarge",
+    "category": "compute",
+    "vcpus": 48,
+    "memory": 96,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8i-flex-16xlarge",
+    "family": "c8i-flex",
+    "name": "c8i-flex.16xlarge",
+    "category": "compute",
+    "vcpus": 64,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.2440944
+  },
+  {
+    "id": "c8i-flex-2xlarge",
+    "family": "c8i-flex",
+    "name": "c8i-flex.2xlarge",
+    "category": "compute",
+    "vcpus": 8,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8i-flex-4xlarge",
+    "family": "c8i-flex",
+    "name": "c8i-flex.4xlarge",
+    "category": "compute",
+    "vcpus": 16,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8i-flex-8xlarge",
+    "family": "c8i-flex",
+    "name": "c8i-flex.8xlarge",
+    "category": "compute",
+    "vcpus": 32,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.2440944
+  },
+  {
+    "id": "c8i-flex-large",
+    "family": "c8i-flex",
+    "name": "c8i-flex.large",
+    "category": "compute",
+    "vcpus": 2,
+    "memory": 4,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8i-flex-xlarge",
+    "family": "c8i-flex",
+    "name": "c8i-flex.xlarge",
+    "category": "compute",
+    "vcpus": 4,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8i-large",
+    "family": "c8i",
+    "name": "c8i.large",
+    "category": "compute",
+    "vcpus": 2,
+    "memory": 4,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8i-metal-48xl",
+    "family": "c8i",
+    "name": "c8i.metal-48xl",
+    "category": "compute",
+    "vcpus": 192,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": false,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "c8i-metal-96xl",
+    "family": "c8i",
+    "name": "c8i.metal-96xl",
+    "category": "compute",
+    "vcpus": 384,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": false,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "c8i-xlarge",
+    "family": "c8i",
+    "name": "c8i.xlarge",
+    "category": "compute",
+    "vcpus": 4,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8id-12xlarge",
+    "family": "c8id",
+    "name": "c8id.12xlarge",
+    "category": "compute",
+    "vcpus": 48,
+    "memory": 96,
+    "accelerators": 0,
+    "ssd": 2850,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8id-16xlarge",
+    "family": "c8id",
+    "name": "c8id.16xlarge",
+    "category": "compute",
+    "vcpus": 64,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.2440944
+  },
+  {
+    "id": "c8id-24xlarge",
+    "family": "c8id",
+    "name": "c8id.24xlarge",
+    "category": "compute",
+    "vcpus": 96,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 2850,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8id-2xlarge",
+    "family": "c8id",
+    "name": "c8id.2xlarge",
+    "category": "compute",
+    "vcpus": 8,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 474,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8id-32xlarge",
+    "family": "c8id",
+    "name": "c8id.32xlarge",
+    "category": "compute",
+    "vcpus": 128,
+    "memory": 256,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "c8id-48xlarge",
+    "family": "c8id",
+    "name": "c8id.48xlarge",
+    "category": "compute",
+    "vcpus": 192,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "c8id-4xlarge",
+    "family": "c8id",
+    "name": "c8id.4xlarge",
+    "category": "compute",
+    "vcpus": 16,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 950,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8id-8xlarge",
+    "family": "c8id",
+    "name": "c8id.8xlarge",
+    "category": "compute",
+    "vcpus": 32,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.2440944
+  },
+  {
+    "id": "c8id-96xlarge",
+    "family": "c8id",
+    "name": "c8id.96xlarge",
+    "category": "compute",
+    "vcpus": 384,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "c8id-large",
+    "family": "c8id",
+    "name": "c8id.large",
+    "category": "compute",
+    "vcpus": 2,
+    "memory": 4,
+    "accelerators": 0,
+    "ssd": 118,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
+  },
+  {
+    "id": "c8id-metal-48xl",
+    "family": "c8id",
+    "name": "c8id.metal-48xl",
+    "category": "compute",
+    "vcpus": 192,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": false,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "c8id-metal-96xl",
+    "family": "c8id",
+    "name": "c8id.metal-96xl",
+    "category": "compute",
+    "vcpus": 384,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": false,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "c8id-xlarge",
+    "family": "c8id",
+    "name": "c8id.xlarge",
+    "category": "compute",
+    "vcpus": 4,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 237,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.3440944
   },
   {
     "id": "d2-2xlarge",
@@ -3312,22 +4608,6 @@
     "embodied": 2.5440944
   },
   {
-    "id": "dc2-large",
-    "family": "dc2",
-    "name": "dc2.large",
-    "category": "compute",
-    "vcpus": 2,
-    "memory": 15,
-    "accelerators": 0,
-    "ssd": 160,
-    "hdd": 0,
-    "cpu": [
-      "intel-xeon-e52670v2"
-    ],
-    "virtual": true,
-    "embodied": 2.5440944
-  },
-  {
     "id": "dc2-8xlarge",
     "family": "dc2",
     "name": "dc2.8xlarge",
@@ -3336,6 +4616,22 @@
     "memory": 244,
     "accelerators": 0,
     "ssd": 2560,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52670v2"
+    ],
+    "virtual": true,
+    "embodied": 2.5440944
+  },
+  {
+    "id": "dc2-large",
+    "family": "dc2",
+    "name": "dc2.large",
+    "category": "compute",
+    "vcpus": 2,
+    "memory": 15,
+    "accelerators": 0,
+    "ssd": 160,
     "hdd": 0,
     "cpu": [
       "intel-xeon-e52670v2"
@@ -4279,40 +5575,6 @@
     "embodied": 1.6879024
   },
   {
-    "id": "g6f-large",
-    "family": "g6f",
-    "name": "g6f.large",
-    "category": "accelerated",
-    "vcpus": 2,
-    "memory": 8,
-    "accelerators": 0.125,
-    "accelerator": "nvidia-tesla-l4",
-    "ssd": 100,
-    "hdd": 0,
-    "cpu": [
-      "amd-epyc-7r13"
-    ],
-    "virtual": true,
-    "embodied": 1.6879024
-  },
-  {
-    "id": "g6f-xlarge",
-    "family": "g6f",
-    "name": "g6f.xlarge",
-    "category": "accelerated",
-    "vcpus": 4,
-    "memory": 16,
-    "accelerators": 0.125,
-    "accelerator": "nvidia-tesla-l4",
-    "ssd": 100,
-    "hdd": 0,
-    "cpu": [
-      "amd-epyc-7r13"
-    ],
-    "virtual": true,
-    "embodied": 1.6879024
-  },
-  {
     "id": "g6f-2xlarge",
     "family": "g6f",
     "name": "g6f.2xlarge",
@@ -4347,6 +5609,142 @@
     "embodied": 1.6879024
   },
   {
+    "id": "g6f-large",
+    "family": "g6f",
+    "name": "g6f.large",
+    "category": "accelerated",
+    "vcpus": 2,
+    "memory": 8,
+    "accelerators": 0.125,
+    "accelerator": "nvidia-tesla-l4",
+    "ssd": 100,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r13"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "g6f-xlarge",
+    "family": "g6f",
+    "name": "g6f.xlarge",
+    "category": "accelerated",
+    "vcpus": 4,
+    "memory": 16,
+    "accelerators": 0.125,
+    "accelerator": "nvidia-tesla-l4",
+    "ssd": 100,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r13"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "g7e-12xlarge",
+    "family": "g7e",
+    "name": "g7e.12xlarge",
+    "category": "accelerated",
+    "vcpus": 48,
+    "memory": 512,
+    "accelerators": 2,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server",
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-emerald-rapids-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "g7e-24xlarge",
+    "family": "g7e",
+    "name": "g7e.24xlarge",
+    "category": "accelerated",
+    "vcpus": 96,
+    "memory": 1024,
+    "accelerators": 4,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server",
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-emerald-rapids-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.9429488
+  },
+  {
+    "id": "g7e-2xlarge",
+    "family": "g7e",
+    "name": "g7e.2xlarge",
+    "category": "accelerated",
+    "vcpus": 8,
+    "memory": 64,
+    "accelerators": 1,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server",
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-emerald-rapids-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "g7e-48xlarge",
+    "family": "g7e",
+    "name": "g7e.48xlarge",
+    "category": "accelerated",
+    "vcpus": 192,
+    "memory": 2048,
+    "accelerators": 8,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server",
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-emerald-rapids-aws"
+    ],
+    "virtual": true,
+    "embodied": 4.1850384
+  },
+  {
+    "id": "g7e-4xlarge",
+    "family": "g7e",
+    "name": "g7e.4xlarge",
+    "category": "accelerated",
+    "vcpus": 16,
+    "memory": 128,
+    "accelerators": 1,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server",
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-emerald-rapids-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "g7e-8xlarge",
+    "family": "g7e",
+    "name": "g7e.8xlarge",
+    "category": "accelerated",
+    "vcpus": 32,
+    "memory": 256,
+    "accelerators": 1,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server",
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-emerald-rapids-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
     "id": "gr6-4xlarge",
     "family": "gr6",
     "name": "gr6.4xlarge",
@@ -4373,6 +5771,23 @@
     "accelerators": 1,
     "accelerator": "nvidia-tesla-l4",
     "ssd": 900,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "gr6f-4xlarge",
+    "family": "gr6f",
+    "name": "gr6f.4xlarge",
+    "category": "accelerated",
+    "vcpus": 16,
+    "memory": 128,
+    "accelerators": 0.5,
+    "accelerator": "nvidia-tesla-l4",
+    "ssd": 450,
     "hdd": 0,
     "cpu": [
       "amd-epyc-7r32"
@@ -4587,6 +6002,22 @@
     ],
     "virtual": true,
     "embodied": 2.632856
+  },
+  {
+    "id": "hpc8a-96xlarge",
+    "family": "hpc",
+    "name": "hpc8a.96xlarge",
+    "category": "compute",
+    "vcpus": 192,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
   },
   {
     "id": "i2-2xlarge",
@@ -5451,6 +6882,182 @@
     ],
     "virtual": true,
     "embodied": 1.6879024
+  },
+  {
+    "id": "i8ge-12xlarge",
+    "family": "i8ge",
+    "name": "i8ge.12xlarge",
+    "category": "storage",
+    "vcpus": 48,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 30000,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 2.9429488
+  },
+  {
+    "id": "i8ge-18xlarge",
+    "family": "i8ge",
+    "name": "i8ge.18xlarge",
+    "category": "storage",
+    "vcpus": 72,
+    "memory": 576,
+    "accelerators": 0,
+    "ssd": 45000,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 2.5879024
+  },
+  {
+    "id": "i8ge-24xlarge",
+    "family": "i8ge",
+    "name": "i8ge.24xlarge",
+    "category": "storage",
+    "vcpus": 96,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 60000,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 2.9429488
+  },
+  {
+    "id": "i8ge-2xlarge",
+    "family": "i8ge",
+    "name": "i8ge.2xlarge",
+    "category": "storage",
+    "vcpus": 8,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 5000,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 2.9429488
+  },
+  {
+    "id": "i8ge-3xlarge",
+    "family": "i8ge",
+    "name": "i8ge.3xlarge",
+    "category": "storage",
+    "vcpus": 12,
+    "memory": 96,
+    "accelerators": 0,
+    "ssd": 7500,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 2.9429488
+  },
+  {
+    "id": "i8ge-48xlarge",
+    "family": "i8ge",
+    "name": "i8ge.48xlarge",
+    "category": "storage",
+    "vcpus": 192,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 120000,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 4.1850384
+  },
+  {
+    "id": "i8ge-6xlarge",
+    "family": "i8ge",
+    "name": "i8ge.6xlarge",
+    "category": "storage",
+    "vcpus": 24,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 15000,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 2.9429488
+  },
+  {
+    "id": "i8ge-large",
+    "family": "i8ge",
+    "name": "i8ge.large",
+    "category": "storage",
+    "vcpus": 2,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 1250,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 2.9429488
+  },
+  {
+    "id": "i8ge-metal-24xl",
+    "family": "i8ge",
+    "name": "i8ge.metal-24xl",
+    "category": "storage",
+    "vcpus": 96,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 60000,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 2.9429488
+  },
+  {
+    "id": "i8ge-metal-48xl",
+    "family": "i8ge",
+    "name": "i8ge.metal-48xl",
+    "category": "storage",
+    "vcpus": 192,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 120000,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 4.1850384
+  },
+  {
+    "id": "i8ge-xlarge",
+    "family": "i8ge",
+    "name": "i8ge.xlarge",
+    "category": "storage",
+    "vcpus": 4,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 2500,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 2.9429488
   },
   {
     "id": "im4gn-16xlarge",
@@ -8597,22 +10204,6 @@
     "embodied": 1.7879024
   },
   {
-    "id": "m7i-flex-12xlarge",
-    "family": "m7i",
-    "name": "m7i-flex.12xlarge",
-    "category": "general",
-    "vcpus": 48,
-    "memory": 192,
-    "accelerators": 0,
-    "ssd": 0,
-    "hdd": 0,
-    "cpu": [
-      "intel-xeon-8488c"
-    ],
-    "virtual": true,
-    "embodied": 1.7879024
-  },
-  {
     "id": "m7i-16xlarge",
     "family": "m7i",
     "name": "m7i.16xlarge",
@@ -8699,6 +10290,22 @@
     "category": "general",
     "vcpus": 32,
     "memory": 128,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8488c"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m7i-flex-12xlarge",
+    "family": "m7i",
+    "name": "m7i-flex.12xlarge",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
     "accelerators": 0,
     "ssd": 0,
     "hdd": 0,
@@ -8851,6 +10458,342 @@
     ],
     "virtual": true,
     "embodied": 1.7879024
+  },
+  {
+    "id": "m8a-12xlarge",
+    "family": "m8a",
+    "name": "m8a.12xlarge",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8a-16xlarge",
+    "family": "m8a",
+    "name": "m8a.16xlarge",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 256,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8a-24xlarge",
+    "family": "m8a",
+    "name": "m8a.24xlarge",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8a-2xlarge",
+    "family": "m8a",
+    "name": "m8a.2xlarge",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8a-48xlarge",
+    "family": "m8a",
+    "name": "m8a.48xlarge",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8a-4xlarge",
+    "family": "m8a",
+    "name": "m8a.4xlarge",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8a-8xlarge",
+    "family": "m8a",
+    "name": "m8a.8xlarge",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8a-large",
+    "family": "m8a",
+    "name": "m8a.large",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8a-medium",
+    "family": "m8a",
+    "name": "m8a.medium",
+    "category": "general",
+    "vcpus": 1,
+    "memory": 4,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.332856
+  },
+  {
+    "id": "m8a-metal-24xl",
+    "family": "m8a",
+    "name": "m8a.metal-24xl",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": false,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8a-metal-48xl",
+    "family": "m8a",
+    "name": "m8a.metal-48xl",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": false,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8a-xlarge",
+    "family": "m8a",
+    "name": "m8a.xlarge",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8azn-12xlarge",
+    "family": "m8azn",
+    "name": "m8azn.12xlarge",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9575f"
+    ],
+    "virtual": true,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8azn-24xlarge",
+    "family": "m8azn",
+    "name": "m8azn.24xlarge",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9575f"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8azn-3xlarge",
+    "family": "m8azn",
+    "name": "m8azn.3xlarge",
+    "category": "general",
+    "vcpus": 12,
+    "memory": 48,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9575f"
+    ],
+    "virtual": true,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8azn-6xlarge",
+    "family": "m8azn",
+    "name": "m8azn.6xlarge",
+    "category": "general",
+    "vcpus": 24,
+    "memory": 96,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9575f"
+    ],
+    "virtual": true,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8azn-large",
+    "family": "m8azn",
+    "name": "m8azn.large",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9575f"
+    ],
+    "virtual": true,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8azn-medium",
+    "family": "m8azn",
+    "name": "m8azn.medium",
+    "category": "general",
+    "vcpus": 1,
+    "memory": 4,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9575f"
+    ],
+    "virtual": true,
+    "embodied": 1.332856
+  },
+  {
+    "id": "m8azn-metal-12xl",
+    "family": "m8azn",
+    "name": "m8azn.metal-12xl",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9575f"
+    ],
+    "virtual": false,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8azn-metal-24xl",
+    "family": "m8azn",
+    "name": "m8azn.metal-24xl",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9575f"
+    ],
+    "virtual": false,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8azn-xlarge",
+    "family": "m8azn",
+    "name": "m8azn.xlarge",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9575f"
+    ],
+    "virtual": true,
+    "embodied": 1.6103792
   },
   {
     "id": "m8g-12xlarge",
@@ -9043,6 +10986,1142 @@
     ],
     "virtual": true,
     "embodied": 1.332856
+  },
+  {
+    "id": "m8gb-12xlarge",
+    "family": "m8gb",
+    "name": "m8gb.12xlarge",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.332856
+  },
+  {
+    "id": "m8gb-16xlarge",
+    "family": "m8gb",
+    "name": "m8gb.16xlarge",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 256,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.332856
+  },
+  {
+    "id": "m8gb-24xlarge",
+    "family": "m8gb",
+    "name": "m8gb.24xlarge",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8gb-2xlarge",
+    "family": "m8gb",
+    "name": "m8gb.2xlarge",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.332856
+  },
+  {
+    "id": "m8gb-48xlarge",
+    "family": "m8gb",
+    "name": "m8gb.48xlarge",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8gb-4xlarge",
+    "family": "m8gb",
+    "name": "m8gb.4xlarge",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.332856
+  },
+  {
+    "id": "m8gb-8xlarge",
+    "family": "m8gb",
+    "name": "m8gb.8xlarge",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.332856
+  },
+  {
+    "id": "m8gb-large",
+    "family": "m8gb",
+    "name": "m8gb.large",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.332856
+  },
+  {
+    "id": "m8gb-medium",
+    "family": "m8gb",
+    "name": "m8gb.medium",
+    "category": "general",
+    "vcpus": 1,
+    "memory": 4,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.332856
+  },
+  {
+    "id": "m8gb-metal-24xl",
+    "family": "m8gb",
+    "name": "m8gb.metal-24xl",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8gb-metal-48xl",
+    "family": "m8gb",
+    "name": "m8gb.metal-48xl",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8gb-xlarge",
+    "family": "m8gb",
+    "name": "m8gb.xlarge",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.332856
+  },
+  {
+    "id": "m8gd-12xlarge",
+    "family": "m8gd",
+    "name": "m8gd.12xlarge",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 950,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.532856
+  },
+  {
+    "id": "m8gd-16xlarge",
+    "family": "m8gd",
+    "name": "m8gd.16xlarge",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 256,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.532856
+  },
+  {
+    "id": "m8gd-24xlarge",
+    "family": "m8gd",
+    "name": "m8gd.24xlarge",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8gd-2xlarge",
+    "family": "m8gd",
+    "name": "m8gd.2xlarge",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 474,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.532856
+  },
+  {
+    "id": "m8gd-48xlarge",
+    "family": "m8gd",
+    "name": "m8gd.48xlarge",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8gd-4xlarge",
+    "family": "m8gd",
+    "name": "m8gd.4xlarge",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 950,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.532856
+  },
+  {
+    "id": "m8gd-8xlarge",
+    "family": "m8gd",
+    "name": "m8gd.8xlarge",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.532856
+  },
+  {
+    "id": "m8gd-large",
+    "family": "m8gd",
+    "name": "m8gd.large",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 118,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.532856
+  },
+  {
+    "id": "m8gd-medium",
+    "family": "m8gd",
+    "name": "m8gd.medium",
+    "category": "general",
+    "vcpus": 1,
+    "memory": 4,
+    "accelerators": 0,
+    "ssd": 59,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.532856
+  },
+  {
+    "id": "m8gd-metal-24xl",
+    "family": "m8gd",
+    "name": "m8gd.metal-24xl",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8gd-metal-48xl",
+    "family": "m8gd",
+    "name": "m8gd.metal-48xl",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8gd-xlarge",
+    "family": "m8gd",
+    "name": "m8gd.xlarge",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 237,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.532856
+  },
+  {
+    "id": "m8gn-12xlarge",
+    "family": "m8gn",
+    "name": "m8gn.12xlarge",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.332856
+  },
+  {
+    "id": "m8gn-16xlarge",
+    "family": "m8gn",
+    "name": "m8gn.16xlarge",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 256,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.332856
+  },
+  {
+    "id": "m8gn-24xlarge",
+    "family": "m8gn",
+    "name": "m8gn.24xlarge",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8gn-2xlarge",
+    "family": "m8gn",
+    "name": "m8gn.2xlarge",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.332856
+  },
+  {
+    "id": "m8gn-48xlarge",
+    "family": "m8gn",
+    "name": "m8gn.48xlarge",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8gn-4xlarge",
+    "family": "m8gn",
+    "name": "m8gn.4xlarge",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.332856
+  },
+  {
+    "id": "m8gn-8xlarge",
+    "family": "m8gn",
+    "name": "m8gn.8xlarge",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.332856
+  },
+  {
+    "id": "m8gn-large",
+    "family": "m8gn",
+    "name": "m8gn.large",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.332856
+  },
+  {
+    "id": "m8gn-medium",
+    "family": "m8gn",
+    "name": "m8gn.medium",
+    "category": "general",
+    "vcpus": 1,
+    "memory": 4,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.332856
+  },
+  {
+    "id": "m8gn-metal-24xl",
+    "family": "m8gn",
+    "name": "m8gn.metal-24xl",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "m8gn-metal-48xl",
+    "family": "m8gn",
+    "name": "m8gn.metal-48xl",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8gn-xlarge",
+    "family": "m8gn",
+    "name": "m8gn.xlarge",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.332856
+  },
+  {
+    "id": "m8i-12xlarge",
+    "family": "m8i",
+    "name": "m8i.12xlarge",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-16xlarge",
+    "family": "m8i",
+    "name": "m8i.16xlarge",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 256,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-24xlarge",
+    "family": "m8i",
+    "name": "m8i.24xlarge",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-2xlarge",
+    "family": "m8i",
+    "name": "m8i.2xlarge",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-32xlarge",
+    "family": "m8i",
+    "name": "m8i.32xlarge",
+    "category": "general",
+    "vcpus": 128,
+    "memory": 512,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-48xlarge",
+    "family": "m8i",
+    "name": "m8i.48xlarge",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-4xlarge",
+    "family": "m8i",
+    "name": "m8i.4xlarge",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-8xlarge",
+    "family": "m8i",
+    "name": "m8i.8xlarge",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-96xlarge",
+    "family": "m8i",
+    "name": "m8i.96xlarge",
+    "category": "general",
+    "vcpus": 384,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-flex-12xlarge",
+    "family": "m8i-flex",
+    "name": "m8i-flex.12xlarge",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-flex-16xlarge",
+    "family": "m8i-flex",
+    "name": "m8i-flex.16xlarge",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 256,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-flex-2xlarge",
+    "family": "m8i-flex",
+    "name": "m8i-flex.2xlarge",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-flex-4xlarge",
+    "family": "m8i-flex",
+    "name": "m8i-flex.4xlarge",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-flex-8xlarge",
+    "family": "m8i-flex",
+    "name": "m8i-flex.8xlarge",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-flex-large",
+    "family": "m8i-flex",
+    "name": "m8i-flex.large",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-flex-xlarge",
+    "family": "m8i-flex",
+    "name": "m8i-flex.xlarge",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-large",
+    "family": "m8i",
+    "name": "m8i.large",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-metal-48xl",
+    "family": "m8i",
+    "name": "m8i.metal-48xl",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": false,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-metal-96xl",
+    "family": "m8i",
+    "name": "m8i.metal-96xl",
+    "category": "general",
+    "vcpus": 384,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": false,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8i-xlarge",
+    "family": "m8i",
+    "name": "m8i.xlarge",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8id-12xlarge",
+    "family": "m8id",
+    "name": "m8id.12xlarge",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "accelerators": 0,
+    "ssd": 2850,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8id-16xlarge",
+    "family": "m8id",
+    "name": "m8id.16xlarge",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 256,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8id-24xlarge",
+    "family": "m8id",
+    "name": "m8id.24xlarge",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 2850,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8id-2xlarge",
+    "family": "m8id",
+    "name": "m8id.2xlarge",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 474,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8id-32xlarge",
+    "family": "m8id",
+    "name": "m8id.32xlarge",
+    "category": "general",
+    "vcpus": 128,
+    "memory": 512,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8id-48xlarge",
+    "family": "m8id",
+    "name": "m8id.48xlarge",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8id-4xlarge",
+    "family": "m8id",
+    "name": "m8id.4xlarge",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 950,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8id-8xlarge",
+    "family": "m8id",
+    "name": "m8id.8xlarge",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8id-96xlarge",
+    "family": "m8id",
+    "name": "m8id.96xlarge",
+    "category": "general",
+    "vcpus": 384,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8id-large",
+    "family": "m8id",
+    "name": "m8id.large",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 118,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8id-metal-48xl",
+    "family": "m8id",
+    "name": "m8id.metal-48xl",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": false,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8id-metal-96xl",
+    "family": "m8id",
+    "name": "m8id.metal-96xl",
+    "category": "general",
+    "vcpus": 384,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": false,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "m8id-xlarge",
+    "family": "m8id",
+    "name": "m8id.xlarge",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 237,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 1.7879024
+  },
+  {
+    "id": "mac-m4-metal",
+    "family": "mac",
+    "name": "mac-m4.metal",
+    "category": "general",
+    "vcpus": 10,
+    "memory": 24,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "apple-m4"
+    ],
+    "virtual": false,
+    "embodied": 1.6103792
+  },
+  {
+    "id": "mac-m4pro-metal",
+    "family": "mac",
+    "name": "mac-m4pro.metal",
+    "category": "general",
+    "vcpus": 14,
+    "memory": 48,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "apple-m4-pro"
+    ],
+    "virtual": false,
+    "embodied": 1.6103792
   },
   {
     "id": "mac1-metal",
@@ -9327,6 +12406,57 @@
     ],
     "virtual": true,
     "embodied": 4.1850384
+  },
+  {
+    "id": "p6-b200-48xlarge",
+    "family": "p6-b200",
+    "name": "p6-b200.48xlarge",
+    "category": "accelerated",
+    "vcpus": 192,
+    "memory": 2048,
+    "accelerators": 8,
+    "accelerator": "nvidia-blackwell-b200",
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-emerald-rapids-aws"
+    ],
+    "virtual": true,
+    "embodied": 4.1850384
+  },
+  {
+    "id": "p6-b300-48xlarge",
+    "family": "p6-b300",
+    "name": "p6-b300.48xlarge",
+    "category": "accelerated",
+    "vcpus": 192,
+    "memory": 4096,
+    "accelerators": 8,
+    "accelerator": "nvidia-blackwell-b300",
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-emerald-rapids-aws"
+    ],
+    "virtual": true,
+    "embodied": 6.8922672
+  },
+  {
+    "id": "p6e-gb200-36xlarge",
+    "family": "p6e-gb200",
+    "name": "p6e-gb200.36xlarge",
+    "category": "accelerated",
+    "vcpus": 144,
+    "memory": 960,
+    "accelerators": 36,
+    "accelerator": "nvidia-blackwell-b200",
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "nvidia-grace"
+    ],
+    "virtual": true,
+    "embodied": 6.8922672
   },
   {
     "id": "r3-2xlarge",
@@ -12401,6 +15531,198 @@
     "embodied": 2.1429488
   },
   {
+    "id": "r8a-12xlarge",
+    "family": "r8a",
+    "name": "r8a.12xlarge",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8a-16xlarge",
+    "family": "r8a",
+    "name": "r8a.16xlarge",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 512,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8a-24xlarge",
+    "family": "r8a",
+    "name": "r8a.24xlarge",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8a-2xlarge",
+    "family": "r8a",
+    "name": "r8a.2xlarge",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8a-48xlarge",
+    "family": "r8a",
+    "name": "r8a.48xlarge",
+    "category": "memory",
+    "vcpus": 192,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 4.1850384
+  },
+  {
+    "id": "r8a-4xlarge",
+    "family": "r8a",
+    "name": "r8a.4xlarge",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8a-8xlarge",
+    "family": "r8a",
+    "name": "r8a.8xlarge",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 256,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8a-large",
+    "family": "r8a",
+    "name": "r8a.large",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8a-medium",
+    "family": "r8a",
+    "name": "r8a.medium",
+    "category": "memory",
+    "vcpus": 1,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "r8a-metal-24xl",
+    "family": "r8a",
+    "name": "r8a.metal-24xl",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": false,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8a-metal-48xl",
+    "family": "r8a",
+    "name": "r8a.metal-48xl",
+    "category": "memory",
+    "vcpus": 192,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": false,
+    "embodied": 4.1850384
+  },
+  {
+    "id": "r8a-xlarge",
+    "family": "r8a",
+    "name": "r8a.xlarge",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
     "id": "r8g-12xlarge",
     "family": "r8g",
     "name": "r8g.12xlarge",
@@ -12591,6 +15913,1110 @@
     ],
     "virtual": true,
     "embodied": 1.6879024
+  },
+  {
+    "id": "r8gb-12xlarge",
+    "family": "r8gb",
+    "name": "r8gb.12xlarge",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "r8gb-16xlarge",
+    "family": "r8gb",
+    "name": "r8gb.16xlarge",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 512,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "r8gb-24xlarge",
+    "family": "r8gb",
+    "name": "r8gb.24xlarge",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8gb-2xlarge",
+    "family": "r8gb",
+    "name": "r8gb.2xlarge",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "r8gb-48xlarge",
+    "family": "r8gb",
+    "name": "r8gb.48xlarge",
+    "category": "memory",
+    "vcpus": 192,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8gb-4xlarge",
+    "family": "r8gb",
+    "name": "r8gb.4xlarge",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "r8gb-8xlarge",
+    "family": "r8gb",
+    "name": "r8gb.8xlarge",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 256,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "r8gb-large",
+    "family": "r8gb",
+    "name": "r8gb.large",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "r8gb-medium",
+    "family": "r8gb",
+    "name": "r8gb.medium",
+    "category": "memory",
+    "vcpus": 1,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "r8gb-metal-24xl",
+    "family": "r8gb",
+    "name": "r8gb.metal-24xl",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8gb-metal-48xl",
+    "family": "r8gb",
+    "name": "r8gb.metal-48xl",
+    "category": "memory",
+    "vcpus": 192,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8gb-xlarge",
+    "family": "r8gb",
+    "name": "r8gb.xlarge",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "r8gd-12xlarge",
+    "family": "r8gd",
+    "name": "r8gd.12xlarge",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 950,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.8879024
+  },
+  {
+    "id": "r8gd-16xlarge",
+    "family": "r8gd",
+    "name": "r8gd.16xlarge",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 512,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.8879024
+  },
+  {
+    "id": "r8gd-24xlarge",
+    "family": "r8gd",
+    "name": "r8gd.24xlarge",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8gd-2xlarge",
+    "family": "r8gd",
+    "name": "r8gd.2xlarge",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 474,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.8879024
+  },
+  {
+    "id": "r8gd-48xlarge",
+    "family": "r8gd",
+    "name": "r8gd.48xlarge",
+    "category": "memory",
+    "vcpus": 192,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8gd-4xlarge",
+    "family": "r8gd",
+    "name": "r8gd.4xlarge",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 950,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.8879024
+  },
+  {
+    "id": "r8gd-8xlarge",
+    "family": "r8gd",
+    "name": "r8gd.8xlarge",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 256,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.8879024
+  },
+  {
+    "id": "r8gd-large",
+    "family": "r8gd",
+    "name": "r8gd.large",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 118,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.8879024
+  },
+  {
+    "id": "r8gd-medium",
+    "family": "r8gd",
+    "name": "r8gd.medium",
+    "category": "memory",
+    "vcpus": 1,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 59,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.8879024
+  },
+  {
+    "id": "r8gd-metal-24xl",
+    "family": "r8gd",
+    "name": "r8gd.metal-24xl",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8gd-metal-48xl",
+    "family": "r8gd",
+    "name": "r8gd.metal-48xl",
+    "category": "memory",
+    "vcpus": 192,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8gd-xlarge",
+    "family": "r8gd",
+    "name": "r8gd.xlarge",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 237,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.8879024
+  },
+  {
+    "id": "r8gn-12xlarge",
+    "family": "r8gn",
+    "name": "r8gn.12xlarge",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "r8gn-16xlarge",
+    "family": "r8gn",
+    "name": "r8gn.16xlarge",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 512,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "r8gn-24xlarge",
+    "family": "r8gn",
+    "name": "r8gn.24xlarge",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8gn-2xlarge",
+    "family": "r8gn",
+    "name": "r8gn.2xlarge",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "r8gn-48xlarge",
+    "family": "r8gn",
+    "name": "r8gn.48xlarge",
+    "category": "memory",
+    "vcpus": 192,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 4.1850384
+  },
+  {
+    "id": "r8gn-4xlarge",
+    "family": "r8gn",
+    "name": "r8gn.4xlarge",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "r8gn-8xlarge",
+    "family": "r8gn",
+    "name": "r8gn.8xlarge",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 256,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "r8gn-large",
+    "family": "r8gn",
+    "name": "r8gn.large",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "r8gn-medium",
+    "family": "r8gn",
+    "name": "r8gn.medium",
+    "category": "memory",
+    "vcpus": 1,
+    "memory": 8,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "r8gn-metal-24xl",
+    "family": "r8gn",
+    "name": "r8gn.metal-24xl",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8gn-metal-48xl",
+    "family": "r8gn",
+    "name": "r8gn.metal-48xl",
+    "category": "memory",
+    "vcpus": 192,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": false,
+    "embodied": 4.1850384
+  },
+  {
+    "id": "r8gn-xlarge",
+    "family": "r8gn",
+    "name": "r8gn.xlarge",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 1.6879024
+  },
+  {
+    "id": "r8i-12xlarge",
+    "family": "r8i",
+    "name": "r8i.12xlarge",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8i-16xlarge",
+    "family": "r8i",
+    "name": "r8i.16xlarge",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 512,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8i-24xlarge",
+    "family": "r8i",
+    "name": "r8i.24xlarge",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8i-2xlarge",
+    "family": "r8i",
+    "name": "r8i.2xlarge",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8i-32xlarge",
+    "family": "r8i",
+    "name": "r8i.32xlarge",
+    "category": "memory",
+    "vcpus": 128,
+    "memory": 1024,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 4.1850384
+  },
+  {
+    "id": "r8i-48xlarge",
+    "family": "r8i",
+    "name": "r8i.48xlarge",
+    "category": "memory",
+    "vcpus": 192,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 4.1850384
+  },
+  {
+    "id": "r8i-4xlarge",
+    "family": "r8i",
+    "name": "r8i.4xlarge",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8i-8xlarge",
+    "family": "r8i",
+    "name": "r8i.8xlarge",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 256,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8i-96xlarge",
+    "family": "r8i",
+    "name": "r8i.96xlarge",
+    "category": "memory",
+    "vcpus": 384,
+    "memory": 3072,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 4.1850384
+  },
+  {
+    "id": "r8i-flex-12xlarge",
+    "family": "r8i-flex",
+    "name": "r8i-flex.12xlarge",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8i-flex-16xlarge",
+    "family": "r8i-flex",
+    "name": "r8i-flex.16xlarge",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 512,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8i-flex-2xlarge",
+    "family": "r8i-flex",
+    "name": "r8i-flex.2xlarge",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8i-flex-4xlarge",
+    "family": "r8i-flex",
+    "name": "r8i-flex.4xlarge",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8i-flex-8xlarge",
+    "family": "r8i-flex",
+    "name": "r8i-flex.8xlarge",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 256,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8i-flex-large",
+    "family": "r8i-flex",
+    "name": "r8i-flex.large",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8i-flex-xlarge",
+    "family": "r8i-flex",
+    "name": "r8i-flex.xlarge",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8i-large",
+    "family": "r8i",
+    "name": "r8i.large",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8i-metal-48xl",
+    "family": "r8i",
+    "name": "r8i.metal-48xl",
+    "category": "memory",
+    "vcpus": 192,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": false,
+    "embodied": 4.1850384
+  },
+  {
+    "id": "r8i-metal-96xl",
+    "family": "r8i",
+    "name": "r8i.metal-96xl",
+    "category": "memory",
+    "vcpus": 384,
+    "memory": 3072,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": false,
+    "embodied": 4.1850384
+  },
+  {
+    "id": "r8i-xlarge",
+    "family": "r8i",
+    "name": "r8i.xlarge",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8id-12xlarge",
+    "family": "r8id",
+    "name": "r8id.12xlarge",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 2850,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8id-16xlarge",
+    "family": "r8id",
+    "name": "r8id.16xlarge",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 512,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8id-24xlarge",
+    "family": "r8id",
+    "name": "r8id.24xlarge",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 2850,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8id-2xlarge",
+    "family": "r8id",
+    "name": "r8id.2xlarge",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 474,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8id-32xlarge",
+    "family": "r8id",
+    "name": "r8id.32xlarge",
+    "category": "memory",
+    "vcpus": 128,
+    "memory": 1024,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 4.1850384
+  },
+  {
+    "id": "r8id-48xlarge",
+    "family": "r8id",
+    "name": "r8id.48xlarge",
+    "category": "memory",
+    "vcpus": 192,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 4.1850384
+  },
+  {
+    "id": "r8id-4xlarge",
+    "family": "r8id",
+    "name": "r8id.4xlarge",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 950,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8id-8xlarge",
+    "family": "r8id",
+    "name": "r8id.8xlarge",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 256,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8id-96xlarge",
+    "family": "r8id",
+    "name": "r8id.96xlarge",
+    "category": "memory",
+    "vcpus": 384,
+    "memory": 3072,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 4.1850384
+  },
+  {
+    "id": "r8id-large",
+    "family": "r8id",
+    "name": "r8id.large",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 16,
+    "accelerators": 0,
+    "ssd": 118,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
+  },
+  {
+    "id": "r8id-metal-48xl",
+    "family": "r8id",
+    "name": "r8id.metal-48xl",
+    "category": "memory",
+    "vcpus": 192,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": false,
+    "embodied": 4.1850384
+  },
+  {
+    "id": "r8id-metal-96xl",
+    "family": "r8id",
+    "name": "r8id.metal-96xl",
+    "category": "memory",
+    "vcpus": 384,
+    "memory": 3072,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": false,
+    "embodied": 4.1850384
+  },
+  {
+    "id": "r8id-xlarge",
+    "family": "r8id",
+    "name": "r8id.xlarge",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 237,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.1429488
   },
   {
     "id": "t1-micro",
@@ -13430,20 +17856,20 @@
     "embodied": 35.762264
   },
   {
-    "id": "ultrawarm1-medium",
-    "family": "ultrawarm1",
-    "name": "ultrawarm1.medium",
+    "id": "u7inh-32tb-480xlarge",
+    "family": "u-1",
+    "name": "u7inh-32tb.480xlarge",
     "category": "memory",
-    "vcpus": 2,
-    "memory": 15.25,
+    "vcpus": 1920,
+    "memory": 32768,
     "accelerators": 0,
-    "ssd": 1500,
+    "ssd": 0,
     "hdd": 0,
     "cpu": [
-      "aws-graviton-2"
+      "intel-xeon-8477c"
     ],
     "virtual": true,
-    "embodied": 2
+    "embodied": 35.762264
   },
   {
     "id": "ultrawarm1-large",
@@ -13454,6 +17880,22 @@
     "memory": 122,
     "accelerators": 0,
     "ssd": 20000,
+    "hdd": 0,
+    "cpu": [
+      "aws-graviton-2"
+    ],
+    "virtual": true,
+    "embodied": 2
+  },
+  {
+    "id": "ultrawarm1-medium",
+    "family": "ultrawarm1",
+    "name": "ultrawarm1.medium",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 15.25,
+    "accelerators": 0,
+    "ssd": 1500,
     "hdd": 0,
     "cpu": [
       "aws-graviton-2"
@@ -14073,6 +18515,134 @@
     "embodied": 6.6922672
   },
   {
+    "id": "x8aedz-12xlarge",
+    "family": "x8aedz",
+    "name": "x8aedz.12xlarge",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 4.6755184
+  },
+  {
+    "id": "x8aedz-24xlarge",
+    "family": "x8aedz",
+    "name": "x8aedz.24xlarge",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 3072,
+    "accelerators": 0,
+    "ssd": 7600,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 6.8922672
+  },
+  {
+    "id": "x8aedz-3xlarge",
+    "family": "x8aedz",
+    "name": "x8aedz.3xlarge",
+    "category": "memory",
+    "vcpus": 12,
+    "memory": 384,
+    "accelerators": 0,
+    "ssd": 950,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 2.5979952
+  },
+  {
+    "id": "x8aedz-6xlarge",
+    "family": "x8aedz",
+    "name": "x8aedz.6xlarge",
+    "category": "memory",
+    "vcpus": 24,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 1900,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 2.5979952
+  },
+  {
+    "id": "x8aedz-large",
+    "family": "x8aedz",
+    "name": "x8aedz.large",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 158,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 2.5979952
+  },
+  {
+    "id": "x8aedz-metal-12xl",
+    "family": "x8aedz",
+    "name": "x8aedz.metal-12xl",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 3800,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": false,
+    "embodied": 4.6755184
+  },
+  {
+    "id": "x8aedz-metal-24xl",
+    "family": "x8aedz",
+    "name": "x8aedz.metal-24xl",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 3072,
+    "accelerators": 0,
+    "ssd": 7600,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": false,
+    "embodied": 6.8922672
+  },
+  {
+    "id": "x8aedz-xlarge",
+    "family": "x8aedz",
+    "name": "x8aedz.xlarge",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 316,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9r45"
+    ],
+    "virtual": true,
+    "embodied": 2.5979952
+  },
+  {
     "id": "x8g-12xlarge",
     "family": "x8g",
     "name": "x8g.12xlarge",
@@ -14260,6 +18830,230 @@
     "hdd": 0,
     "cpu": [
       "aws-graviton-4"
+    ],
+    "virtual": true,
+    "embodied": 2.5979952
+  },
+  {
+    "id": "x8i-12xlarge",
+    "family": "x8i",
+    "name": "x8i.12xlarge",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 768,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.5979952
+  },
+  {
+    "id": "x8i-16xlarge",
+    "family": "x8i",
+    "name": "x8i.16xlarge",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 1024,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.5979952
+  },
+  {
+    "id": "x8i-24xlarge",
+    "family": "x8i",
+    "name": "x8i.24xlarge",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 1536,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 4.6755184
+  },
+  {
+    "id": "x8i-2xlarge",
+    "family": "x8i",
+    "name": "x8i.2xlarge",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 128,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.5979952
+  },
+  {
+    "id": "x8i-32xlarge",
+    "family": "x8i",
+    "name": "x8i.32xlarge",
+    "category": "memory",
+    "vcpus": 128,
+    "memory": 2048,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 6.8922672
+  },
+  {
+    "id": "x8i-48xlarge",
+    "family": "x8i",
+    "name": "x8i.48xlarge",
+    "category": "memory",
+    "vcpus": 192,
+    "memory": 3072,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 6.8922672
+  },
+  {
+    "id": "x8i-4xlarge",
+    "family": "x8i",
+    "name": "x8i.4xlarge",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 256,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.5979952
+  },
+  {
+    "id": "x8i-64xlarge",
+    "family": "x8i",
+    "name": "x8i.64xlarge",
+    "category": "memory",
+    "vcpus": 256,
+    "memory": 4096,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 35.762264
+  },
+  {
+    "id": "x8i-8xlarge",
+    "family": "x8i",
+    "name": "x8i.8xlarge",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 512,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.5979952
+  },
+  {
+    "id": "x8i-96xlarge",
+    "family": "x8i",
+    "name": "x8i.96xlarge",
+    "category": "memory",
+    "vcpus": 384,
+    "memory": 6144,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 35.762264
+  },
+  {
+    "id": "x8i-large",
+    "family": "x8i",
+    "name": "x8i.large",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 32,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": true,
+    "embodied": 2.5979952
+  },
+  {
+    "id": "x8i-metal-48xl",
+    "family": "x8i",
+    "name": "x8i.metal-48xl",
+    "category": "memory",
+    "vcpus": 192,
+    "memory": 3072,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": false,
+    "embodied": 6.8922672
+  },
+  {
+    "id": "x8i-metal-96xl",
+    "family": "x8i",
+    "name": "x8i.metal-96xl",
+    "category": "memory",
+    "vcpus": 384,
+    "memory": 6144,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
+    ],
+    "virtual": false,
+    "embodied": 35.762264
+  },
+  {
+    "id": "x8i-xlarge",
+    "family": "x8i",
+    "name": "x8i.xlarge",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 64,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6-custom-aws"
     ],
     "virtual": true,
     "embodied": 2.5979952

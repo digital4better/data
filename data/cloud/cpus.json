@@ -405,6 +405,21 @@
     "smp": 1
   },
   {
+    "id": "amd-epyc-9005",
+    "manufacturer": "amd",
+    "serie": "epyc",
+    "model": "9005",
+    "architecture": "x86-64",
+    "platform": "turin",
+    "cores": 192,
+    "threads": 384,
+    "tdp": 500,
+    "process": 4,
+    "die": 0,
+    "transistors": 0,
+    "smp": 2
+  },
+  {
     "id": "amd-epyc-9334",
     "manufacturer": "amd",
     "serie": "epyc",
@@ -417,6 +432,21 @@
     "process": 5,
     "die": 288,
     "transistors": 52560,
+    "smp": 2
+  },
+  {
+    "id": "amd-epyc-9575f",
+    "manufacturer": "amd",
+    "serie": "epyc",
+    "model": "9575f",
+    "architecture": "x86-64",
+    "platform": "turin",
+    "cores": 64,
+    "threads": 128,
+    "tdp": 400,
+    "process": 4,
+    "die": 0,
+    "transistors": 66520,
     "smp": 2
   },
   {
@@ -435,6 +465,21 @@
     "smp": 2
   },
   {
+    "id": "amd-epyc-9b45",
+    "manufacturer": "amd",
+    "serie": "epyc",
+    "model": "9b45",
+    "architecture": "x86-64",
+    "platform": "turin",
+    "cores": 96,
+    "threads": 192,
+    "tdp": 400,
+    "process": 4,
+    "die": 0,
+    "transistors": 0,
+    "smp": 2
+  },
+  {
     "id": "amd-epyc-9r14",
     "manufacturer": "amd",
     "serie": "epyc",
@@ -447,6 +492,21 @@
     "process": 5,
     "die": 864,
     "transistors": 78840,
+    "smp": 2
+  },
+  {
+    "id": "amd-epyc-9r45",
+    "manufacturer": "amd",
+    "serie": "epyc",
+    "model": "9r45",
+    "architecture": "x86-64",
+    "platform": "turin",
+    "cores": 96,
+    "threads": 192,
+    "tdp": 400,
+    "process": 4,
+    "die": 0,
+    "transistors": 0,
     "smp": 2
   },
   {
@@ -492,6 +552,21 @@
     "process": 5,
     "die": 864,
     "transistors": 78840,
+    "smp": 2
+  },
+  {
+    "id": "amd-epyc-turin",
+    "manufacturer": "amd",
+    "serie": "epyc",
+    "model": "turin",
+    "architecture": "x86-64",
+    "platform": "turin",
+    "cores": 192,
+    "threads": 384,
+    "tdp": 500,
+    "process": 4,
+    "die": 0,
+    "transistors": 0,
     "smp": 2
   },
   {
@@ -615,6 +690,36 @@
     "smp": 1
   },
   {
+    "id": "apple-m4",
+    "manufacturer": "apple",
+    "serie": "m4",
+    "model": "",
+    "architecture": "arm-64",
+    "platform": "apple silicon",
+    "cores": 10,
+    "threads": 10,
+    "tdp": 20,
+    "process": 3,
+    "die": 0,
+    "transistors": 0,
+    "smp": 1
+  },
+  {
+    "id": "apple-m4-pro",
+    "manufacturer": "apple",
+    "serie": "m4",
+    "model": "pro",
+    "architecture": "arm-64",
+    "platform": "apple silicon",
+    "cores": 14,
+    "threads": 14,
+    "tdp": 45,
+    "process": 3,
+    "die": 0,
+    "transistors": 0,
+    "smp": 1
+  },
+  {
     "id": "aws-graviton-1",
     "manufacturer": "aws",
     "serie": "graviton",
@@ -733,6 +838,21 @@
     "die": 154,
     "transistors": 3000,
     "smp": 1
+  },
+  {
+    "id": "intel-xeon-6-custom-aws",
+    "manufacturer": "intel",
+    "serie": "xeon",
+    "model": "6-custom-aws",
+    "architecture": "x86-64",
+    "platform": "granite rapids",
+    "cores": 96,
+    "threads": 192,
+    "tdp": 500,
+    "process": 5,
+    "die": 0,
+    "transistors": 0,
+    "smp": 2
   },
   {
     "id": "intel-xeon-6148",
@@ -870,21 +990,6 @@
     "smp": 8
   },
   {
-    "id": "intel-xeon-8175",
-    "manufacturer": "intel",
-    "serie": "xeon",
-    "model": 8175,
-    "architecture": "x86-64",
-    "platform": "skylake",
-    "cores": 24,
-    "threads": 48,
-    "tdp": 165,
-    "process": 14,
-    "die": 694,
-    "transistors": 8000,
-    "smp": 8
-  },
-  {
     "id": "intel-xeon-8173m",
     "manufacturer": "intel",
     "serie": "xeon",
@@ -893,6 +998,21 @@
     "platform": "skylake",
     "cores": 28,
     "threads": 56,
+    "tdp": 165,
+    "process": 14,
+    "die": 694,
+    "transistors": 8000,
+    "smp": 8
+  },
+  {
+    "id": "intel-xeon-8175",
+    "manufacturer": "intel",
+    "serie": "xeon",
+    "model": 8175,
+    "architecture": "x86-64",
+    "platform": "skylake",
+    "cores": 24,
+    "threads": 48,
     "tdp": 165,
     "process": 14,
     "die": 694,
@@ -1107,6 +1227,21 @@
     "process": 10,
     "die": 954,
     "transistors": 28600,
+    "smp": 2
+  },
+  {
+    "id": "intel-xeon-8452y",
+    "manufacturer": "intel",
+    "serie": "xeon",
+    "model": "8452y",
+    "architecture": "x86-64",
+    "platform": "sapphire rapids",
+    "cores": 36,
+    "threads": 72,
+    "tdp": 300,
+    "process": 10,
+    "die": 1908,
+    "transistors": 48000,
     "smp": 2
   },
   {
@@ -1693,5 +1828,35 @@
     "die": 456,
     "transistors": 7200,
     "smp": 8
+  },
+  {
+    "id": "intel-xeon-emerald-rapids-aws",
+    "manufacturer": "intel",
+    "serie": "xeon",
+    "model": "emerald-rapids-aws",
+    "architecture": "x86-64",
+    "platform": "emerald rapids",
+    "cores": 48,
+    "threads": 96,
+    "tdp": 350,
+    "process": 10,
+    "die": 1526,
+    "transistors": 57000,
+    "smp": 2
+  },
+  {
+    "id": "nvidia-grace",
+    "manufacturer": "nvidia",
+    "serie": "grace",
+    "model": "",
+    "architecture": "arm-64",
+    "platform": "grace",
+    "cores": 144,
+    "threads": 144,
+    "tdp": 500,
+    "process": 4,
+    "die": 774,
+    "transistors": 0,
+    "smp": 1
   }
 ]

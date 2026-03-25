@@ -14,20 +14,6 @@
     "transistors": 0
   },
   {
-    "id": "amd-alveo-u30",
-    "type": "asic",
-    "manufacturer": "amd",
-    "serie": "alveo",
-    "model": "u30",
-    "platform": "ultrascale",
-    "cores": 0,
-    "memory": 8,
-    "tdp": 25,
-    "process": 16,
-    "die": 0,
-    "transistors": 0
-  },
-  {
     "id": "amd-alveo-u250",
     "type": "fpga",
     "manufacturer": "amd",
@@ -37,6 +23,20 @@
     "cores": 0,
     "memory": 64,
     "tdp": 225,
+    "process": 16,
+    "die": 0,
+    "transistors": 0
+  },
+  {
+    "id": "amd-alveo-u30",
+    "type": "asic",
+    "manufacturer": "amd",
+    "serie": "alveo",
+    "model": "u30",
+    "platform": "ultrascale",
+    "cores": 0,
+    "memory": 8,
+    "tdp": 25,
     "process": 16,
     "die": 0,
     "transistors": 0
@@ -196,6 +196,34 @@
     "transistors": 0
   },
   {
+    "id": "nvidia-blackwell-b200",
+    "type": "gpu",
+    "manufacturer": "nvidia",
+    "serie": "blackwell",
+    "model": "b200",
+    "platform": "blackwell",
+    "cores": 18432,
+    "memory": 180,
+    "tdp": 1000,
+    "process": 4,
+    "die": 0,
+    "transistors": 0
+  },
+  {
+    "id": "nvidia-blackwell-b300",
+    "type": "gpu",
+    "manufacturer": "nvidia",
+    "serie": "blackwell",
+    "model": "b300",
+    "platform": "blackwell ultra",
+    "cores": 18432,
+    "memory": 288,
+    "tdp": 1400,
+    "process": 4,
+    "die": 0,
+    "transistors": 0
+  },
+  {
     "id": "nvidia-grid-k520",
     "type": "gpu",
     "manufacturer": "nvidia",
@@ -210,6 +238,20 @@
     "transistors": 3540
   },
   {
+    "id": "nvidia-quadro-rtx5000",
+    "type": "gpu",
+    "manufacturer": "nvidia",
+    "serie": "quadro",
+    "model": "rtx 5000",
+    "platform": "turing",
+    "cores": 3072,
+    "memory": 16,
+    "tdp": 230,
+    "process": 12,
+    "die": 545,
+    "transistors": 13600
+  },
+  {
     "id": "nvidia-rtx-3070",
     "type": "gpu",
     "manufacturer": "nvidia",
@@ -222,6 +264,20 @@
     "process": 8,
     "die": 392,
     "transistors": 17400
+  },
+  {
+    "id": "nvidia-rtx-pro-6000-blackwell-server",
+    "type": "gpu",
+    "manufacturer": "nvidia",
+    "serie": "rtx pro",
+    "model": "6000 blackwell server",
+    "platform": "blackwell",
+    "cores": 24064,
+    "memory": 96,
+    "tdp": 600,
+    "process": 4,
+    "die": 0,
+    "transistors": 0
   },
   {
     "id": "nvidia-tesla-a10",
@@ -446,20 +502,6 @@
     "process": 12,
     "die": 815,
     "transistors": 21100
-  },
-  {
-    "id": "nvidia-quadro-rtx5000",
-    "type": "gpu",
-    "manufacturer": "nvidia",
-    "serie": "quadro",
-    "model": "rtx 5000",
-    "platform": "turing",
-    "cores": 3072,
-    "memory": 16,
-    "tdp": 230,
-    "process": 12,
-    "die": 545,
-    "transistors": 13600
   },
   {
     "id": "qualcomm-ai100-standard",
