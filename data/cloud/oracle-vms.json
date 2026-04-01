@@ -1,0 +1,2759 @@
+[
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-standard3-64",
+    "family": "standard3",
+    "name": "BM.Standard3.64",
+    "shape": "BM.Standard3.64",
+    "category": "general",
+    "ocpus": 64,
+    "vcpus": 128,
+    "memory": 1024,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8358"
+    ],
+    "accelerators": 0,
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-standard-e4-128",
+    "family": "standarde4",
+    "name": "BM.Standard.E4.128",
+    "shape": "BM.Standard.E4.128",
+    "category": "general",
+    "ocpus": 128,
+    "vcpus": 256,
+    "memory": 2048,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7j13"
+    ],
+    "accelerators": 0,
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-standard-e5-192",
+    "family": "standarde5",
+    "name": "BM.Standard.E5.192",
+    "shape": "BM.Standard.E5.192",
+    "category": "general",
+    "ocpus": 192,
+    "vcpus": 384,
+    "memory": 2304,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "accelerators": 0,
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-standard-e6-256",
+    "family": "standarde6",
+    "name": "BM.Standard.E6.256",
+    "shape": "BM.Standard.E6.256",
+    "category": "general",
+    "ocpus": 256,
+    "vcpus": 512,
+    "memory": 3072,
+    "ssd": 1920,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j45"
+    ],
+    "accelerators": 0,
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-standard-a1-160",
+    "family": "standarda1",
+    "name": "BM.Standard.A1.160",
+    "shape": "BM.Standard.A1.160",
+    "category": "general",
+    "ocpus": 160,
+    "vcpus": 160,
+    "memory": 1024,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-altra-q8030"
+    ],
+    "accelerators": 0,
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-standard-a4-48",
+    "family": "standarda4",
+    "name": "BM.Standard.A4.48",
+    "shape": "BM.Standard.A4.48",
+    "category": "general",
+    "ocpus": 48,
+    "vcpus": 96,
+    "memory": 768,
+    "ssd": 3840,
+    "hdd": 0,
+    "cpu": [
+      "ampere-ampereone-m-a0636m"
+    ],
+    "accelerators": 0,
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-denseio-e4-128",
+    "family": "denseioe4",
+    "name": "BM.DenseIO.E4.128",
+    "shape": "BM.DenseIO.E4.128",
+    "category": "storage",
+    "ocpus": 128,
+    "vcpus": 256,
+    "memory": 2048,
+    "ssd": 54400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7j13"
+    ],
+    "accelerators": 0,
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-denseio-e5-128",
+    "family": "denseioe5",
+    "name": "BM.DenseIO.E5.128",
+    "shape": "BM.DenseIO.E5.128",
+    "category": "storage",
+    "ocpus": 128,
+    "vcpus": 256,
+    "memory": 1536,
+    "ssd": 81600,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "accelerators": 0,
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-gpu2-2",
+    "family": "gpu2",
+    "name": "BM.GPU2.2",
+    "shape": "BM.GPU2.2",
+    "category": "accelerated",
+    "ocpus": 28,
+    "vcpus": 56,
+    "memory": 192,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-p10016",
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-gpu3-8",
+    "family": "gpu3",
+    "name": "BM.GPU3.8",
+    "shape": "BM.GPU3.8",
+    "category": "accelerated",
+    "ocpus": 52,
+    "vcpus": 104,
+    "memory": 768,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "accelerators": 8,
+    "accelerator": "nvidia-tesla-v10016",
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-gpu4-8",
+    "family": "gpu4",
+    "name": "BM.GPU4.8",
+    "shape": "BM.GPU4.8",
+    "category": "accelerated",
+    "ocpus": 64,
+    "vcpus": 128,
+    "memory": 2048,
+    "ssd": 27200,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7542"
+    ],
+    "accelerators": 8,
+    "accelerator": "nvidia-tesla-a10040",
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-gpu-a10-4",
+    "family": "gpua10",
+    "name": "BM.GPU.A10.4",
+    "shape": "BM.GPU.A10.4",
+    "category": "accelerated",
+    "ocpus": 64,
+    "vcpus": 128,
+    "memory": 1024,
+    "ssd": 7680,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8358"
+    ],
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-a10",
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-gpu-a100-v2-8",
+    "family": "gpua100v2",
+    "name": "BM.GPU.A100-v2.8",
+    "shape": "BM.GPU.A100-v2.8",
+    "category": "accelerated",
+    "ocpus": 128,
+    "vcpus": 256,
+    "memory": 2048,
+    "ssd": 27200,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7j13"
+    ],
+    "accelerators": 8,
+    "accelerator": "nvidia-tesla-a10080",
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-gpu-mi300x-8",
+    "family": "gpumi300x",
+    "name": "BM.GPU.MI300X.8",
+    "shape": "BM.GPU.MI300X.8",
+    "category": "accelerated",
+    "ocpus": 112,
+    "vcpus": 224,
+    "memory": 2048,
+    "ssd": 30720,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8480plus"
+    ],
+    "accelerators": 8,
+    "accelerator": "amd-radeon-mi300x",
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-gpu-mi355x-8",
+    "family": "gpumi355x",
+    "name": "BM.GPU.MI355X.8",
+    "shape": "BM.GPU.MI355X.8",
+    "category": "accelerated",
+    "ocpus": 128,
+    "vcpus": 256,
+    "memory": 3072,
+    "ssd": 61440,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-5thgen-64c"
+    ],
+    "accelerators": 8,
+    "accelerator": "amd-radeon-mi355x",
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-gpu-l40s-4",
+    "family": "gpul40s",
+    "name": "BM.GPU.L40S.4",
+    "shape": "BM.GPU.L40S.4",
+    "category": "accelerated",
+    "ocpus": 112,
+    "vcpus": 224,
+    "memory": 1024,
+    "ssd": 7680,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8480plus"
+    ],
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-l40s",
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-gpu-h100-8",
+    "family": "gpuh100",
+    "name": "BM.GPU.H100.8",
+    "shape": "BM.GPU.H100.8",
+    "category": "accelerated",
+    "ocpus": 112,
+    "vcpus": 224,
+    "memory": 2048,
+    "ssd": 61440,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8480plus"
+    ],
+    "accelerators": 8,
+    "accelerator": "nvidia-tesla-h10080",
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-gpu-h200-8",
+    "family": "gpuh200",
+    "name": "BM.GPU.H200.8",
+    "shape": "BM.GPU.H200.8",
+    "category": "accelerated",
+    "ocpus": 112,
+    "vcpus": 224,
+    "memory": 3072,
+    "ssd": 30720,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8480plus"
+    ],
+    "accelerators": 8,
+    "accelerator": "nvidia-tesla-h200",
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-gpu-b200-8",
+    "family": "gpub200",
+    "name": "BM.GPU.B200.8",
+    "shape": "BM.GPU.B200.8",
+    "category": "accelerated",
+    "ocpus": 128,
+    "vcpus": 256,
+    "memory": 4096,
+    "ssd": 30720,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8592plus"
+    ],
+    "accelerators": 8,
+    "accelerator": "nvidia-blackwell-b200",
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-gpu-gb200-4",
+    "family": "gpugb200",
+    "name": "BM.GPU.GB200.4",
+    "shape": "BM.GPU.GB200.4",
+    "category": "accelerated",
+    "ocpus": 144,
+    "vcpus": 144,
+    "memory": 960,
+    "ssd": 30720,
+    "hdd": 0,
+    "cpu": [
+      "nvidia-grace"
+    ],
+    "accelerators": 4,
+    "accelerator": "nvidia-blackwell-b200",
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-gpu-gb300-4",
+    "family": "gpugb300",
+    "name": "BM.GPU.GB300.4",
+    "shape": "BM.GPU.GB300.4",
+    "category": "accelerated",
+    "ocpus": 144,
+    "vcpus": 144,
+    "memory": 960,
+    "ssd": 30720,
+    "hdd": 0,
+    "cpu": [
+      "nvidia-grace"
+    ],
+    "accelerators": 4,
+    "accelerator": "nvidia-blackwell-b300",
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-optimized3-36",
+    "family": "optimized3",
+    "name": "BM.Optimized3.36",
+    "shape": "BM.Optimized3.36",
+    "category": "performance",
+    "ocpus": 36,
+    "vcpus": 72,
+    "memory": 512,
+    "ssd": 3840,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6354"
+    ],
+    "accelerators": 0,
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-hpc-e5-144",
+    "family": "hpce5",
+    "name": "BM.HPC.E5.144",
+    "shape": "BM.HPC.E5.144",
+    "category": "performance",
+    "ocpus": 144,
+    "vcpus": 288,
+    "memory": 768,
+    "ssd": 3840,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "accelerators": 0,
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e2-1-micro",
+    "family": "standarde2",
+    "name": "VM.Standard.E2.1.Micro",
+    "shape": "VM.Standard.E2.1.Micro",
+    "category": "general",
+    "ocpus": 1,
+    "vcpus": 2,
+    "memory": 1,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7551",
+      "amd-epyc-7742",
+      "amd-epyc-7j13"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard3-flex-1ocpu-16gb",
+    "family": "standard3flex",
+    "name": "VM.Standard3.Flex (1 OCPU / 16 GB)",
+    "shape": "VM.Standard3.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 1,
+    "vcpus": 2,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8358"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard3-flex-2ocpu-32gb",
+    "family": "standard3flex",
+    "name": "VM.Standard3.Flex (2 OCPU / 32 GB)",
+    "shape": "VM.Standard3.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 2,
+    "vcpus": 4,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8358"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard3-flex-4ocpu-64gb",
+    "family": "standard3flex",
+    "name": "VM.Standard3.Flex (4 OCPU / 64 GB)",
+    "shape": "VM.Standard3.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 4,
+    "vcpus": 8,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8358"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard3-flex-8ocpu-128gb",
+    "family": "standard3flex",
+    "name": "VM.Standard3.Flex (8 OCPU / 128 GB)",
+    "shape": "VM.Standard3.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 8,
+    "vcpus": 16,
+    "memory": 128,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8358"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard3-flex-16ocpu-256gb",
+    "family": "standard3flex",
+    "name": "VM.Standard3.Flex (16 OCPU / 256 GB)",
+    "shape": "VM.Standard3.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 16,
+    "vcpus": 32,
+    "memory": 256,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8358"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard3-flex-32ocpu-512gb",
+    "family": "standard3flex",
+    "name": "VM.Standard3.Flex (32 OCPU / 512 GB)",
+    "shape": "VM.Standard3.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 32,
+    "vcpus": 64,
+    "memory": 512,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8358"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e4-flex-1ocpu-16gb",
+    "family": "standarde4flex",
+    "name": "VM.Standard.E4.Flex (1 OCPU / 16 GB)",
+    "shape": "VM.Standard.E4.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 1,
+    "vcpus": 2,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7j13"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e4-flex-2ocpu-32gb",
+    "family": "standarde4flex",
+    "name": "VM.Standard.E4.Flex (2 OCPU / 32 GB)",
+    "shape": "VM.Standard.E4.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 2,
+    "vcpus": 4,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7j13"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e4-flex-4ocpu-64gb",
+    "family": "standarde4flex",
+    "name": "VM.Standard.E4.Flex (4 OCPU / 64 GB)",
+    "shape": "VM.Standard.E4.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 4,
+    "vcpus": 8,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7j13"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e4-flex-8ocpu-128gb",
+    "family": "standarde4flex",
+    "name": "VM.Standard.E4.Flex (8 OCPU / 128 GB)",
+    "shape": "VM.Standard.E4.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 8,
+    "vcpus": 16,
+    "memory": 128,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7j13"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e4-flex-16ocpu-256gb",
+    "family": "standarde4flex",
+    "name": "VM.Standard.E4.Flex (16 OCPU / 256 GB)",
+    "shape": "VM.Standard.E4.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 16,
+    "vcpus": 32,
+    "memory": 256,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7j13"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e4-flex-32ocpu-512gb",
+    "family": "standarde4flex",
+    "name": "VM.Standard.E4.Flex (32 OCPU / 512 GB)",
+    "shape": "VM.Standard.E4.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 32,
+    "vcpus": 64,
+    "memory": 512,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7j13"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e4-flex-64ocpu-1024gb",
+    "family": "standarde4flex",
+    "name": "VM.Standard.E4.Flex (64 OCPU / 1024 GB)",
+    "shape": "VM.Standard.E4.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 64,
+    "vcpus": 128,
+    "memory": 1024,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7j13"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e5-flex-1ocpu-8gb",
+    "family": "standarde5flex",
+    "name": "VM.Standard.E5.Flex (1 OCPU / 8 GB)",
+    "shape": "VM.Standard.E5.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 1,
+    "vcpus": 2,
+    "memory": 8,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e5-flex-2ocpu-16gb",
+    "family": "standarde5flex",
+    "name": "VM.Standard.E5.Flex (2 OCPU / 16 GB)",
+    "shape": "VM.Standard.E5.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 2,
+    "vcpus": 4,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e5-flex-4ocpu-32gb",
+    "family": "standarde5flex",
+    "name": "VM.Standard.E5.Flex (4 OCPU / 32 GB)",
+    "shape": "VM.Standard.E5.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 4,
+    "vcpus": 8,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e5-flex-8ocpu-64gb",
+    "family": "standarde5flex",
+    "name": "VM.Standard.E5.Flex (8 OCPU / 64 GB)",
+    "shape": "VM.Standard.E5.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 8,
+    "vcpus": 16,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e5-flex-16ocpu-128gb",
+    "family": "standarde5flex",
+    "name": "VM.Standard.E5.Flex (16 OCPU / 128 GB)",
+    "shape": "VM.Standard.E5.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 16,
+    "vcpus": 32,
+    "memory": 128,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e5-flex-32ocpu-256gb",
+    "family": "standarde5flex",
+    "name": "VM.Standard.E5.Flex (32 OCPU / 256 GB)",
+    "shape": "VM.Standard.E5.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 32,
+    "vcpus": 64,
+    "memory": 256,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e5-flex-64ocpu-512gb",
+    "family": "standarde5flex",
+    "name": "VM.Standard.E5.Flex (64 OCPU / 512 GB)",
+    "shape": "VM.Standard.E5.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 64,
+    "vcpus": 128,
+    "memory": 512,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e5-flex-96ocpu-768gb",
+    "family": "standarde5flex",
+    "name": "VM.Standard.E5.Flex (96 OCPU / 768 GB)",
+    "shape": "VM.Standard.E5.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 96,
+    "vcpus": 192,
+    "memory": 768,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e5-flex-126ocpu-1008gb",
+    "family": "standarde5flex",
+    "name": "VM.Standard.E5.Flex (126 OCPU / 1008 GB)",
+    "shape": "VM.Standard.E5.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 126,
+    "vcpus": 252,
+    "memory": 1008,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e6-flex-1ocpu-11gb",
+    "family": "standarde6flex",
+    "name": "VM.Standard.E6.Flex (1 OCPU / 11 GB)",
+    "shape": "VM.Standard.E6.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 1,
+    "vcpus": 2,
+    "memory": 11,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j45"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e6-flex-2ocpu-22gb",
+    "family": "standarde6flex",
+    "name": "VM.Standard.E6.Flex (2 OCPU / 22 GB)",
+    "shape": "VM.Standard.E6.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 2,
+    "vcpus": 4,
+    "memory": 22,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j45"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e6-flex-4ocpu-44gb",
+    "family": "standarde6flex",
+    "name": "VM.Standard.E6.Flex (4 OCPU / 44 GB)",
+    "shape": "VM.Standard.E6.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 4,
+    "vcpus": 8,
+    "memory": 44,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j45"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e6-flex-8ocpu-88gb",
+    "family": "standarde6flex",
+    "name": "VM.Standard.E6.Flex (8 OCPU / 88 GB)",
+    "shape": "VM.Standard.E6.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 8,
+    "vcpus": 16,
+    "memory": 88,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j45"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e6-flex-16ocpu-176gb",
+    "family": "standarde6flex",
+    "name": "VM.Standard.E6.Flex (16 OCPU / 176 GB)",
+    "shape": "VM.Standard.E6.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 16,
+    "vcpus": 32,
+    "memory": 176,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j45"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e6-flex-32ocpu-352gb",
+    "family": "standarde6flex",
+    "name": "VM.Standard.E6.Flex (32 OCPU / 352 GB)",
+    "shape": "VM.Standard.E6.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 32,
+    "vcpus": 64,
+    "memory": 352,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j45"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e6-flex-64ocpu-704gb",
+    "family": "standarde6flex",
+    "name": "VM.Standard.E6.Flex (64 OCPU / 704 GB)",
+    "shape": "VM.Standard.E6.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 64,
+    "vcpus": 128,
+    "memory": 704,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j45"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e6-flex-96ocpu-1056gb",
+    "family": "standarde6flex",
+    "name": "VM.Standard.E6.Flex (96 OCPU / 1056 GB)",
+    "shape": "VM.Standard.E6.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 96,
+    "vcpus": 192,
+    "memory": 1056,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j45"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e6-flex-126ocpu-1386gb",
+    "family": "standarde6flex",
+    "name": "VM.Standard.E6.Flex (126 OCPU / 1386 GB)",
+    "shape": "VM.Standard.E6.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 126,
+    "vcpus": 252,
+    "memory": 1386,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j45"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a1-flex-1ocpu-6gb",
+    "family": "standarda1flex",
+    "name": "VM.Standard.A1.Flex (1 OCPU / 6 GB)",
+    "shape": "VM.Standard.A1.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 1,
+    "vcpus": 1,
+    "memory": 6,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-altra-q8030"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a1-flex-2ocpu-12gb",
+    "family": "standarda1flex",
+    "name": "VM.Standard.A1.Flex (2 OCPU / 12 GB)",
+    "shape": "VM.Standard.A1.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 2,
+    "vcpus": 2,
+    "memory": 12,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-altra-q8030"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a1-flex-4ocpu-24gb",
+    "family": "standarda1flex",
+    "name": "VM.Standard.A1.Flex (4 OCPU / 24 GB)",
+    "shape": "VM.Standard.A1.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 4,
+    "vcpus": 4,
+    "memory": 24,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-altra-q8030"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a1-flex-8ocpu-48gb",
+    "family": "standarda1flex",
+    "name": "VM.Standard.A1.Flex (8 OCPU / 48 GB)",
+    "shape": "VM.Standard.A1.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 8,
+    "vcpus": 8,
+    "memory": 48,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-altra-q8030"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a1-flex-16ocpu-96gb",
+    "family": "standarda1flex",
+    "name": "VM.Standard.A1.Flex (16 OCPU / 96 GB)",
+    "shape": "VM.Standard.A1.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 16,
+    "vcpus": 16,
+    "memory": 96,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-altra-q8030"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a1-flex-32ocpu-192gb",
+    "family": "standarda1flex",
+    "name": "VM.Standard.A1.Flex (32 OCPU / 192 GB)",
+    "shape": "VM.Standard.A1.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 32,
+    "vcpus": 32,
+    "memory": 192,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-altra-q8030"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a1-flex-64ocpu-384gb",
+    "family": "standarda1flex",
+    "name": "VM.Standard.A1.Flex (64 OCPU / 384 GB)",
+    "shape": "VM.Standard.A1.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 64,
+    "vcpus": 64,
+    "memory": 384,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-altra-q8030"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a1-flex-76ocpu-456gb",
+    "family": "standarda1flex",
+    "name": "VM.Standard.A1.Flex (76 OCPU / 456 GB)",
+    "shape": "VM.Standard.A1.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 76,
+    "vcpus": 76,
+    "memory": 456,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-altra-q8030"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a2-flex-1ocpu-12gb",
+    "family": "standarda2flex",
+    "name": "VM.Standard.A2.Flex (1 OCPU / 12 GB)",
+    "shape": "VM.Standard.A2.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 1,
+    "vcpus": 2,
+    "memory": 12,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-ampereone-a16030"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a2-flex-2ocpu-24gb",
+    "family": "standarda2flex",
+    "name": "VM.Standard.A2.Flex (2 OCPU / 24 GB)",
+    "shape": "VM.Standard.A2.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 2,
+    "vcpus": 4,
+    "memory": 24,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-ampereone-a16030"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a2-flex-4ocpu-48gb",
+    "family": "standarda2flex",
+    "name": "VM.Standard.A2.Flex (4 OCPU / 48 GB)",
+    "shape": "VM.Standard.A2.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 4,
+    "vcpus": 8,
+    "memory": 48,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-ampereone-a16030"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a2-flex-8ocpu-96gb",
+    "family": "standarda2flex",
+    "name": "VM.Standard.A2.Flex (8 OCPU / 96 GB)",
+    "shape": "VM.Standard.A2.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 8,
+    "vcpus": 16,
+    "memory": 96,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-ampereone-a16030"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a2-flex-16ocpu-192gb",
+    "family": "standarda2flex",
+    "name": "VM.Standard.A2.Flex (16 OCPU / 192 GB)",
+    "shape": "VM.Standard.A2.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 16,
+    "vcpus": 32,
+    "memory": 192,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-ampereone-a16030"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a2-flex-32ocpu-384gb",
+    "family": "standarda2flex",
+    "name": "VM.Standard.A2.Flex (32 OCPU / 384 GB)",
+    "shape": "VM.Standard.A2.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 32,
+    "vcpus": 64,
+    "memory": 384,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-ampereone-a16030"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a2-flex-64ocpu-768gb",
+    "family": "standarda2flex",
+    "name": "VM.Standard.A2.Flex (64 OCPU / 768 GB)",
+    "shape": "VM.Standard.A2.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 64,
+    "vcpus": 128,
+    "memory": 768,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-ampereone-a16030"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a2-flex-78ocpu-936gb",
+    "family": "standarda2flex",
+    "name": "VM.Standard.A2.Flex (78 OCPU / 936 GB)",
+    "shape": "VM.Standard.A2.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 78,
+    "vcpus": 156,
+    "memory": 936,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-ampereone-a16030"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a4-flex-1ocpu-15gb",
+    "family": "standarda4flex",
+    "name": "VM.Standard.A4.Flex (1 OCPU / 15 GB)",
+    "shape": "VM.Standard.A4.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 1,
+    "vcpus": 2,
+    "memory": 15,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-ampereone-m-a0636m"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a4-flex-2ocpu-30gb",
+    "family": "standarda4flex",
+    "name": "VM.Standard.A4.Flex (2 OCPU / 30 GB)",
+    "shape": "VM.Standard.A4.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 2,
+    "vcpus": 4,
+    "memory": 30,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-ampereone-m-a0636m"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a4-flex-4ocpu-60gb",
+    "family": "standarda4flex",
+    "name": "VM.Standard.A4.Flex (4 OCPU / 60 GB)",
+    "shape": "VM.Standard.A4.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 4,
+    "vcpus": 8,
+    "memory": 60,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-ampereone-m-a0636m"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a4-flex-8ocpu-120gb",
+    "family": "standarda4flex",
+    "name": "VM.Standard.A4.Flex (8 OCPU / 120 GB)",
+    "shape": "VM.Standard.A4.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 8,
+    "vcpus": 16,
+    "memory": 120,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-ampereone-m-a0636m"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a4-flex-16ocpu-240gb",
+    "family": "standarda4flex",
+    "name": "VM.Standard.A4.Flex (16 OCPU / 240 GB)",
+    "shape": "VM.Standard.A4.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 16,
+    "vcpus": 32,
+    "memory": 240,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-ampereone-m-a0636m"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a4-flex-32ocpu-480gb",
+    "family": "standarda4flex",
+    "name": "VM.Standard.A4.Flex (32 OCPU / 480 GB)",
+    "shape": "VM.Standard.A4.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 32,
+    "vcpus": 64,
+    "memory": 480,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-ampereone-m-a0636m"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-a4-flex-45ocpu-675gb",
+    "family": "standarda4flex",
+    "name": "VM.Standard.A4.Flex (45 OCPU / 675 GB)",
+    "shape": "VM.Standard.A4.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 45,
+    "vcpus": 90,
+    "memory": 675,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "ampere-ampereone-m-a0636m"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-denseio-e4-flex-8ocpu-128gb",
+    "family": "denseioe4flex",
+    "name": "VM.DenseIO.E4.Flex (8 OCPU / 128 GB)",
+    "shape": "VM.DenseIO.E4.Flex (8 OCPU / 128 GB)",
+    "category": "storage",
+    "flex": true,
+    "ocpus": 8,
+    "vcpus": 16,
+    "memory": 128,
+    "ssd": 6800,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7j13"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-denseio-e4-flex-16ocpu-256gb",
+    "family": "denseioe4flex",
+    "name": "VM.DenseIO.E4.Flex (16 OCPU / 256 GB)",
+    "shape": "VM.DenseIO.E4.Flex (16 OCPU / 256 GB)",
+    "category": "storage",
+    "flex": true,
+    "ocpus": 16,
+    "vcpus": 32,
+    "memory": 256,
+    "ssd": 13600,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7j13"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-denseio-e4-flex-32ocpu-512gb",
+    "family": "denseioe4flex",
+    "name": "VM.DenseIO.E4.Flex (32 OCPU / 512 GB)",
+    "shape": "VM.DenseIO.E4.Flex (32 OCPU / 512 GB)",
+    "category": "storage",
+    "flex": true,
+    "ocpus": 32,
+    "vcpus": 64,
+    "memory": 512,
+    "ssd": 27200,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7j13"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-denseio-e5-flex-8ocpu-96gb",
+    "family": "denseioe5flex",
+    "name": "VM.DenseIO.E5.Flex (8 OCPU / 96 GB)",
+    "shape": "VM.DenseIO.E5.Flex (8 OCPU / 96 GB)",
+    "category": "storage",
+    "flex": true,
+    "ocpus": 8,
+    "vcpus": 16,
+    "memory": 96,
+    "ssd": 6800,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-denseio-e5-flex-16ocpu-192gb",
+    "family": "denseioe5flex",
+    "name": "VM.DenseIO.E5.Flex (16 OCPU / 192 GB)",
+    "shape": "VM.DenseIO.E5.Flex (16 OCPU / 192 GB)",
+    "category": "storage",
+    "flex": true,
+    "ocpus": 16,
+    "vcpus": 32,
+    "memory": 192,
+    "ssd": 13600,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-denseio-e5-flex-24ocpu-288gb",
+    "family": "denseioe5flex",
+    "name": "VM.DenseIO.E5.Flex (24 OCPU / 288 GB)",
+    "shape": "VM.DenseIO.E5.Flex (24 OCPU / 288 GB)",
+    "category": "storage",
+    "flex": true,
+    "ocpus": 24,
+    "vcpus": 48,
+    "memory": 288,
+    "ssd": 20400,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-denseio-e5-flex-32ocpu-384gb",
+    "family": "denseioe5flex",
+    "name": "VM.DenseIO.E5.Flex (32 OCPU / 384 GB)",
+    "shape": "VM.DenseIO.E5.Flex (32 OCPU / 384 GB)",
+    "category": "storage",
+    "flex": true,
+    "ocpus": 32,
+    "vcpus": 64,
+    "memory": 384,
+    "ssd": 27200,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-denseio-e5-flex-40ocpu-480gb",
+    "family": "denseioe5flex",
+    "name": "VM.DenseIO.E5.Flex (40 OCPU / 480 GB)",
+    "shape": "VM.DenseIO.E5.Flex (40 OCPU / 480 GB)",
+    "category": "storage",
+    "flex": true,
+    "ocpus": 40,
+    "vcpus": 80,
+    "memory": 480,
+    "ssd": 34000,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-denseio-e5-flex-48ocpu-576gb",
+    "family": "denseioe5flex",
+    "name": "VM.DenseIO.E5.Flex (48 OCPU / 576 GB)",
+    "shape": "VM.DenseIO.E5.Flex (48 OCPU / 576 GB)",
+    "category": "storage",
+    "flex": true,
+    "ocpus": 48,
+    "vcpus": 96,
+    "memory": 576,
+    "ssd": 40800,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-gpu2-1",
+    "family": "gpu2",
+    "name": "VM.GPU2.1",
+    "shape": "VM.GPU2.1",
+    "category": "accelerated",
+    "ocpus": 12,
+    "vcpus": 24,
+    "memory": 72,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-p10016",
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-gpu3-1",
+    "family": "gpu3",
+    "name": "VM.GPU3.1",
+    "shape": "VM.GPU3.1",
+    "category": "accelerated",
+    "ocpus": 6,
+    "vcpus": 12,
+    "memory": 90,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-v10016",
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-gpu3-2",
+    "family": "gpu3",
+    "name": "VM.GPU3.2",
+    "shape": "VM.GPU3.2",
+    "category": "accelerated",
+    "ocpus": 12,
+    "vcpus": 24,
+    "memory": 180,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-v10016",
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-gpu3-4",
+    "family": "gpu3",
+    "name": "VM.GPU3.4",
+    "shape": "VM.GPU3.4",
+    "category": "accelerated",
+    "ocpus": 24,
+    "vcpus": 48,
+    "memory": 360,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "accelerators": 4,
+    "accelerator": "nvidia-tesla-v10016",
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-gpu-a10-1",
+    "family": "gpua10",
+    "name": "VM.GPU.A10.1",
+    "shape": "VM.GPU.A10.1",
+    "category": "accelerated",
+    "ocpus": 15,
+    "vcpus": 30,
+    "memory": 240,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8358"
+    ],
+    "accelerators": 1,
+    "accelerator": "nvidia-tesla-a10",
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-gpu-a10-2",
+    "family": "gpua10",
+    "name": "VM.GPU.A10.2",
+    "shape": "VM.GPU.A10.2",
+    "category": "accelerated",
+    "ocpus": 30,
+    "vcpus": 60,
+    "memory": 480,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8358"
+    ],
+    "accelerators": 2,
+    "accelerator": "nvidia-tesla-a10",
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-optimized3-flex-1ocpu-14gb",
+    "family": "optimized3flex",
+    "name": "VM.Optimized3.Flex (1 OCPU / 14 GB)",
+    "shape": "VM.Optimized3.Flex",
+    "category": "performance",
+    "flex": true,
+    "ocpus": 1,
+    "vcpus": 2,
+    "memory": 14,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6354"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-optimized3-flex-2ocpu-28gb",
+    "family": "optimized3flex",
+    "name": "VM.Optimized3.Flex (2 OCPU / 28 GB)",
+    "shape": "VM.Optimized3.Flex",
+    "category": "performance",
+    "flex": true,
+    "ocpus": 2,
+    "vcpus": 4,
+    "memory": 28,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6354"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-optimized3-flex-4ocpu-56gb",
+    "family": "optimized3flex",
+    "name": "VM.Optimized3.Flex (4 OCPU / 56 GB)",
+    "shape": "VM.Optimized3.Flex",
+    "category": "performance",
+    "flex": true,
+    "ocpus": 4,
+    "vcpus": 8,
+    "memory": 56,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6354"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-optimized3-flex-8ocpu-112gb",
+    "family": "optimized3flex",
+    "name": "VM.Optimized3.Flex (8 OCPU / 112 GB)",
+    "shape": "VM.Optimized3.Flex",
+    "category": "performance",
+    "flex": true,
+    "ocpus": 8,
+    "vcpus": 16,
+    "memory": 112,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6354"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-optimized3-flex-16ocpu-224gb",
+    "family": "optimized3flex",
+    "name": "VM.Optimized3.Flex (16 OCPU / 224 GB)",
+    "shape": "VM.Optimized3.Flex",
+    "category": "performance",
+    "flex": true,
+    "ocpus": 16,
+    "vcpus": 32,
+    "memory": 224,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6354"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-optimized3-flex-18ocpu-252gb",
+    "family": "optimized3flex",
+    "name": "VM.Optimized3.Flex (18 OCPU / 252 GB)",
+    "shape": "VM.Optimized3.Flex",
+    "category": "performance",
+    "flex": true,
+    "ocpus": 18,
+    "vcpus": 36,
+    "memory": 252,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-6354"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-standard1-36",
+    "family": "standard1",
+    "name": "BM.Standard1.36",
+    "shape": "BM.Standard1.36",
+    "category": "general",
+    "ocpus": 36,
+    "vcpus": 72,
+    "memory": 256,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52699v3"
+    ],
+    "accelerators": 0,
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-standard-b1-44",
+    "family": "standardb1",
+    "name": "BM.Standard.B1.44",
+    "shape": "BM.Standard.B1.44",
+    "category": "general",
+    "ocpus": 44,
+    "vcpus": 88,
+    "memory": 512,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52699v4"
+    ],
+    "accelerators": 0,
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-standard2-52",
+    "family": "standard2",
+    "name": "BM.Standard2.52",
+    "shape": "BM.Standard2.52",
+    "category": "general",
+    "ocpus": 52,
+    "vcpus": 104,
+    "memory": 768,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "accelerators": 0,
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-standard-e2-64",
+    "family": "standarde2",
+    "name": "BM.Standard.E2.64",
+    "shape": "BM.Standard.E2.64",
+    "category": "general",
+    "ocpus": 64,
+    "vcpus": 128,
+    "memory": 512,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7551"
+    ],
+    "accelerators": 0,
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-standard-e3-128",
+    "family": "standarde3",
+    "name": "BM.Standard.E3.128",
+    "shape": "BM.Standard.E3.128",
+    "category": "general",
+    "ocpus": 128,
+    "vcpus": 256,
+    "memory": 2048,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7742"
+    ],
+    "accelerators": 0,
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-denseio1-36",
+    "family": "denseio1",
+    "name": "BM.DenseIO1.36",
+    "shape": "BM.DenseIO1.36",
+    "category": "storage",
+    "ocpus": 36,
+    "vcpus": 72,
+    "memory": 512,
+    "ssd": 28800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52699v3"
+    ],
+    "accelerators": 0,
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-denseio2-52",
+    "family": "denseio2",
+    "name": "BM.DenseIO2.52",
+    "shape": "BM.DenseIO2.52",
+    "category": "storage",
+    "ocpus": 52,
+    "vcpus": 104,
+    "memory": 768,
+    "ssd": 51200,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "accelerators": 0,
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "bm-hpc2-36",
+    "family": "hpc2",
+    "name": "BM.HPC2.36",
+    "shape": "BM.HPC2.36",
+    "category": "performance",
+    "ocpus": 36,
+    "vcpus": 72,
+    "memory": 384,
+    "ssd": 6400,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-gold-6154"
+    ],
+    "accelerators": 0,
+    "virtual": false
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard1-1",
+    "family": "standard1",
+    "name": "VM.Standard1.1",
+    "shape": "VM.Standard1.1",
+    "category": "general",
+    "ocpus": 1,
+    "vcpus": 2,
+    "memory": 7,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52699v3"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard1-2",
+    "family": "standard1",
+    "name": "VM.Standard1.2",
+    "shape": "VM.Standard1.2",
+    "category": "general",
+    "ocpus": 2,
+    "vcpus": 4,
+    "memory": 14,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52699v3"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard1-4",
+    "family": "standard1",
+    "name": "VM.Standard1.4",
+    "shape": "VM.Standard1.4",
+    "category": "general",
+    "ocpus": 4,
+    "vcpus": 8,
+    "memory": 28,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52699v3"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard1-8",
+    "family": "standard1",
+    "name": "VM.Standard1.8",
+    "shape": "VM.Standard1.8",
+    "category": "general",
+    "ocpus": 8,
+    "vcpus": 16,
+    "memory": 56,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52699v3"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard1-16",
+    "family": "standard1",
+    "name": "VM.Standard1.16",
+    "shape": "VM.Standard1.16",
+    "category": "general",
+    "ocpus": 16,
+    "vcpus": 32,
+    "memory": 112,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52699v3"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-b1-1",
+    "family": "standardb1",
+    "name": "VM.Standard.B1.1",
+    "shape": "VM.Standard.B1.1",
+    "category": "general",
+    "ocpus": 1,
+    "vcpus": 2,
+    "memory": 12,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52699v4"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-b1-2",
+    "family": "standardb1",
+    "name": "VM.Standard.B1.2",
+    "shape": "VM.Standard.B1.2",
+    "category": "general",
+    "ocpus": 2,
+    "vcpus": 4,
+    "memory": 24,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52699v4"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-b1-4",
+    "family": "standardb1",
+    "name": "VM.Standard.B1.4",
+    "shape": "VM.Standard.B1.4",
+    "category": "general",
+    "ocpus": 4,
+    "vcpus": 8,
+    "memory": 48,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52699v4"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-b1-8",
+    "family": "standardb1",
+    "name": "VM.Standard.B1.8",
+    "shape": "VM.Standard.B1.8",
+    "category": "general",
+    "ocpus": 8,
+    "vcpus": 16,
+    "memory": 96,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52699v4"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-b1-16",
+    "family": "standardb1",
+    "name": "VM.Standard.B1.16",
+    "shape": "VM.Standard.B1.16",
+    "category": "general",
+    "ocpus": 16,
+    "vcpus": 32,
+    "memory": 192,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52699v4"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard2-1",
+    "family": "standard2",
+    "name": "VM.Standard2.1",
+    "shape": "VM.Standard2.1",
+    "category": "general",
+    "ocpus": 1,
+    "vcpus": 2,
+    "memory": 15,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard2-2",
+    "family": "standard2",
+    "name": "VM.Standard2.2",
+    "shape": "VM.Standard2.2",
+    "category": "general",
+    "ocpus": 2,
+    "vcpus": 4,
+    "memory": 30,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard2-4",
+    "family": "standard2",
+    "name": "VM.Standard2.4",
+    "shape": "VM.Standard2.4",
+    "category": "general",
+    "ocpus": 4,
+    "vcpus": 8,
+    "memory": 60,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard2-8",
+    "family": "standard2",
+    "name": "VM.Standard2.8",
+    "shape": "VM.Standard2.8",
+    "category": "general",
+    "ocpus": 8,
+    "vcpus": 16,
+    "memory": 120,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard2-16",
+    "family": "standard2",
+    "name": "VM.Standard2.16",
+    "shape": "VM.Standard2.16",
+    "category": "general",
+    "ocpus": 16,
+    "vcpus": 32,
+    "memory": 240,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard2-24",
+    "family": "standard2",
+    "name": "VM.Standard2.24",
+    "shape": "VM.Standard2.24",
+    "category": "general",
+    "ocpus": 24,
+    "vcpus": 48,
+    "memory": 320,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e2-1",
+    "family": "standarde2",
+    "name": "VM.Standard.E2.1",
+    "shape": "VM.Standard.E2.1",
+    "category": "general",
+    "ocpus": 1,
+    "vcpus": 2,
+    "memory": 8,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7551"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e2-2",
+    "family": "standarde2",
+    "name": "VM.Standard.E2.2",
+    "shape": "VM.Standard.E2.2",
+    "category": "general",
+    "ocpus": 2,
+    "vcpus": 4,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7551"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e2-4",
+    "family": "standarde2",
+    "name": "VM.Standard.E2.4",
+    "shape": "VM.Standard.E2.4",
+    "category": "general",
+    "ocpus": 4,
+    "vcpus": 8,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7551"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e2-8",
+    "family": "standarde2",
+    "name": "VM.Standard.E2.8",
+    "shape": "VM.Standard.E2.8",
+    "category": "general",
+    "ocpus": 8,
+    "vcpus": 16,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7551"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-denseio1-4",
+    "family": "denseio1",
+    "name": "VM.DenseIO1.4",
+    "shape": "VM.DenseIO1.4",
+    "category": "storage",
+    "ocpus": 4,
+    "vcpus": 8,
+    "memory": 60,
+    "ssd": 3200,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52699v3"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-denseio1-8",
+    "family": "denseio1",
+    "name": "VM.DenseIO1.8",
+    "shape": "VM.DenseIO1.8",
+    "category": "storage",
+    "ocpus": 8,
+    "vcpus": 16,
+    "memory": 120,
+    "ssd": 6400,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52699v3"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-denseio1-16",
+    "family": "denseio1",
+    "name": "VM.DenseIO1.16",
+    "shape": "VM.DenseIO1.16",
+    "category": "storage",
+    "ocpus": 16,
+    "vcpus": 32,
+    "memory": 240,
+    "ssd": 12800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-e52699v3"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-denseio2-8",
+    "family": "denseio2",
+    "name": "VM.DenseIO2.8",
+    "shape": "VM.DenseIO2.8",
+    "category": "storage",
+    "ocpus": 8,
+    "vcpus": 16,
+    "memory": 120,
+    "ssd": 6400,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-denseio2-16",
+    "family": "denseio2",
+    "name": "VM.DenseIO2.16",
+    "shape": "VM.DenseIO2.16",
+    "category": "storage",
+    "ocpus": 16,
+    "vcpus": 32,
+    "memory": 240,
+    "ssd": 12800,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-denseio2-24",
+    "family": "denseio2",
+    "name": "VM.DenseIO2.24",
+    "shape": "VM.DenseIO2.24",
+    "category": "storage",
+    "ocpus": 24,
+    "vcpus": 48,
+    "memory": 320,
+    "ssd": 25600,
+    "hdd": 0,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e3-flex-1ocpu-16gb",
+    "family": "standarde3flex",
+    "name": "VM.Standard.E3.Flex (1 OCPU / 16 GB)",
+    "shape": "VM.Standard.E3.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 1,
+    "vcpus": 2,
+    "memory": 16,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7742"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e3-flex-2ocpu-32gb",
+    "family": "standarde3flex",
+    "name": "VM.Standard.E3.Flex (2 OCPU / 32 GB)",
+    "shape": "VM.Standard.E3.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 2,
+    "vcpus": 4,
+    "memory": 32,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7742"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e3-flex-4ocpu-64gb",
+    "family": "standarde3flex",
+    "name": "VM.Standard.E3.Flex (4 OCPU / 64 GB)",
+    "shape": "VM.Standard.E3.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 4,
+    "vcpus": 8,
+    "memory": 64,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7742"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e3-flex-8ocpu-128gb",
+    "family": "standarde3flex",
+    "name": "VM.Standard.E3.Flex (8 OCPU / 128 GB)",
+    "shape": "VM.Standard.E3.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 8,
+    "vcpus": 16,
+    "memory": 128,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7742"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e3-flex-16ocpu-256gb",
+    "family": "standarde3flex",
+    "name": "VM.Standard.E3.Flex (16 OCPU / 256 GB)",
+    "shape": "VM.Standard.E3.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 16,
+    "vcpus": 32,
+    "memory": 256,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7742"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e3-flex-32ocpu-512gb",
+    "family": "standarde3flex",
+    "name": "VM.Standard.E3.Flex (32 OCPU / 512 GB)",
+    "shape": "VM.Standard.E3.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 32,
+    "vcpus": 64,
+    "memory": 512,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7742"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "embodied": 1,
+    "id": "vm-standard-e3-flex-64ocpu-1024gb",
+    "family": "standarde3flex",
+    "name": "VM.Standard.E3.Flex (64 OCPU / 1024 GB)",
+    "shape": "VM.Standard.E3.Flex",
+    "category": "general",
+    "flex": true,
+    "ocpus": 64,
+    "vcpus": 128,
+    "memory": 1024,
+    "ssd": 0,
+    "hdd": 0,
+    "cpu": [
+      "amd-epyc-7742"
+    ],
+    "accelerators": 0,
+    "virtual": true
+  }
+]

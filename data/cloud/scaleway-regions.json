@@ -7,8 +7,8 @@
     "lon": 2.411816,
     "location": "Vitry-sur-Seine",
     "country": "fr",
-    "pue": 1.415,
-    "wue": 0.0075,
+    "pue": 1.45,
+    "wue": 0.009,
     "ref": 1
   },
   {
@@ -19,8 +19,8 @@
     "lon": 2.296075,
     "location": "Paris",
     "country": "fr",
-    "pue": 1.440,
-    "wue": 0,
+    "pue": 1.44,
+    "wue": 0.001,
     "ref": 1
   },
   {
@@ -32,7 +32,7 @@
     "location": "Saint-Ouen-l'Aumone",
     "country": "fr",
     "pue": 1.16,
-    "wue": 0.214,
+    "wue": 0.25,
     "ref": 1
   },
   {
@@ -40,11 +40,11 @@
     "name": "ams1",
     "provider": "scaleway",
     "lat": 52.377956,
-    "lon": 4.897070,
+    "lon": 4.89707,
     "location": "Amsterdam",
     "country": "nl",
-    "pue": 1.40,
-    "wue": 0.850,
+    "pue": 1.38,
+    "wue": 0.85,
     "ref": 1
   },
   {
@@ -52,11 +52,11 @@
     "name": "ams2",
     "provider": "scaleway",
     "lat": 52.377956,
-    "lon": 4.897070,
+    "lon": 4.89707,
     "location": "Amsterdam",
     "country": "nl",
-    "pue": 1.40,
-    "wue": 0.216,
+    "pue": 1.4,
+    "wue": 0.22,
     "ref": 1
   },
   {
@@ -64,11 +64,11 @@
     "name": "ams3",
     "provider": "scaleway",
     "lat": 52.377956,
-    "lon": 4.897070,
+    "lon": 4.89707,
     "location": "Amsterdam",
     "country": "nl",
-    "pue": 1.20,
-    "wue": 0.216,
+    "pue": 1.2,
+    "wue": 0.22,
     "ref": 1
   },
   {
@@ -79,8 +79,8 @@
     "lon": 21.017532,
     "location": "Warsaw",
     "country": "pl",
-    "pue": 1.510,
-    "wue": 0.216,
+    "pue": 1.5,
+    "wue": 0.22,
     "ref": 1
   },
   {
@@ -91,9 +91,9 @@
     "lon": 21.017532,
     "location": "Warsaw",
     "country": "pl",
-    "pue": 1.320,
-    "wue": 0.216,
-    "ref": 1
+    "pue": 1.24,
+    "wue": 0.22,
+    "ref": 0.3035
   },
   {
     "id": "pl-waw-3",
@@ -103,8 +103,8 @@
     "lon": 21.017532,
     "location": "Warsaw",
     "country": "pl",
-    "pue": 1.430,
-    "wue": 0.216,
+    "pue": 1.5,
+    "wue": 0.22,
     "ref": 1
   }
 ]

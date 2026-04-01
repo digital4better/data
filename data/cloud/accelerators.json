@@ -516,5 +516,14 @@
     "process": 7,
     "die": 0,
     "transistors": 0
+  },
+  {
+    "id": "amd-radeon-mi355x",
+    "type": "gpu",
+    "manufacturer": "amd",
+    "serie": "radeon",
+    "model": "mi355x",
+    "platform": "instinct",
+    "memory": 288
   }
 ]

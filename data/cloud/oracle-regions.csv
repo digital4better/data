@@ -1,0 +1,46 @@
+id,name,provider,lat,lon,location,country,subdivision,pue,wue,ref
+ap-sydney-1,Australia East (Sydney),oracle,-33.869844,151.208285,Sydney,au,,1.07,0,0
+ap-melbourne-1,Australia Southeast (Melbourne),oracle,-37.814245,144.963173,Melbourne,au,,1.07,0,0
+sa-saopaulo-1,Brazil East (Sao Paulo),oracle,-23.550651,-46.633382,Sao Paulo,br,,1.07,0,0
+sa-vinhedo-1,Brazil Southeast (Vinhedo),oracle,-23.029854,-46.974985,Vinhedo,br,,1.07,0,0
+ca-montreal-1,Canada Southeast (Montreal),oracle,45.503182,-73.569807,Montreal,ca,qc,1.07,0,0
+ca-toronto-1,Canada Southeast (Toronto),oracle,43.653482,-79.383935,Toronto,ca,on,1.07,0,0
+sa-santiago-1,Chile Central (Santiago),oracle,-33.4377,-70.651067,Santiago,cl,,1.07,0,0
+sa-valparaiso-1,Chile West (Valparaiso),oracle,-33.045846,-71.619675,Valparaiso,cl,,1.07,0,0
+sa-bogota-1,Colombia Central (Bogota),oracle,4.653382,-74.083633,Bogota,co,,1.07,0,0
+eu-paris-1,France Central (Paris),oracle,48.85889,2.320041,Paris,fr,,1.07,0,0
+eu-marseille-1,France South (Marseille),oracle,43.296174,5.369953,Marseille,fr,,1.07,0,0
+eu-frankfurt-1,Germany Central (Frankfurt),oracle,50.110644,8.682092,Frankfurt,de,,1.07,0,0
+ap-hyderabad-1,India South (Hyderabad),oracle,17.360589,78.474061,Hyderabad,in,,1.07,0,0
+ap-mumbai-1,India West (Mumbai),oracle,19.054999,72.869204,Mumbai,in,,1.07,0,0
+ap-batam-1,Indonesia North (Batam),oracle,1.103082,104.03837,Batam,id,,1.07,0,0
+il-jerusalem-1,Israel Central (Jerusalem),oracle,31.778847,35.225786,Jerusalem,il,,1.07,0,0
+eu-milan-1,Italy Northwest (Milan),oracle,45.464194,9.189635,Milan,it,,1.07,0,0
+eu-turin-1,Italy North (Turin),oracle,45.067755,7.682489,Turin,it,,1.07,0,0
+ap-osaka-1,Japan Central (Osaka),oracle,34.693757,135.501454,Osaka,jp,,1.07,0,0
+ap-tokyo-1,Japan East (Tokyo),oracle,35.67686,139.763895,Tokyo,jp,,1.07,0,0
+ap-kulai-2,Malaysia West 2 (Kulai),oracle,1.656937,103.605879,Kulai,my,,1.07,0,0
+mx-queretaro-1,Mexico Central (Queretaro),oracle,20.5923,-100.391742,Queretaro,mx,,1.07,0,0
+mx-monterrey-1,Mexico Northeast (Monterrey),oracle,25.680202,-100.315258,Monterrey,mx,,1.07,0,0
+af-casablanca-1,Morocco West (Casablanca),oracle,33.594514,-7.620028,Casablanca,ma,,1.07,0,0
+eu-amsterdam-1,Netherlands Northwest (Amsterdam),oracle,52.37308,4.892453,Amsterdam,nl,,1.07,0,0
+me-riyadh-1,Saudi Arabia Central (Riyadh),oracle,24.638916,46.71601,Riyadh,sa,,1.07,0,0
+me-jeddah-1,Saudi Arabia West (Jeddah),oracle,21.550443,39.174236,Jeddah,sa,,1.07,0,0
+eu-jovanovac-1,Serbia Central (Jovanovac),oracle,44.049689,20.951035,Jovanovac,rs,,1.07,0,0
+ap-singapore-1,Singapore (Singapore),oracle,1.357107,103.819499,Singapore,sg,,1.07,0,0
+ap-singapore-2,Singapore West (Singapore),oracle,1.357107,103.819499,Singapore,sg,,1.07,0,0
+af-johannesburg-1,South Africa Central (Johannesburg),oracle,-26.205,28.049722,Johannesburg,za,,1.07,0,0
+ap-seoul-1,South Korea Central (Seoul),oracle,37.566679,126.978291,Seoul,kr,,1.07,0,0
+ap-chuncheon-1,South Korea North (Chuncheon),oracle,37.881057,127.729764,Chuncheon,kr,,1.07,0,0
+eu-madrid-1,Spain Central (Madrid),oracle,40.416782,-3.703507,Madrid,es,,1.07,0,0
+eu-madrid-3,Spain Central (Madrid 3),oracle,40.416782,-3.703507,Madrid,es,,1.07,0,0
+eu-stockholm-1,Sweden Central (Stockholm),oracle,59.325117,18.071094,Stockholm,se,,1.07,0,0
+eu-zurich-1,Switzerland North (Zurich),oracle,47.374449,8.541042,Zurich,ch,,1.07,0,0
+me-abudhabi-1,UAE Central (Abu Dhabi),oracle,24.453835,54.377401,Abu Dhabi,ae,,1.07,0,0
+me-dubai-1,UAE East (Dubai),oracle,25.074282,55.188539,Dubai,ae,,1.07,0,0
+uk-london-1,UK South (London),oracle,51.507446,-0.127765,London,gb,,1.07,0,0
+uk-cardiff-1,UK West (Newport),oracle,51.588233,-2.997497,Newport,gb,,1.07,0,0
+us-ashburn-1,US East (Ashburn),oracle,39.043719,-77.48749,Ashburn,us,va,1.07,0,0
+us-chicago-1,US Midwest (Chicago),oracle,41.875562,-87.624421,Chicago,us,il,1.07,0,0
+us-phoenix-1,US West (Phoenix),oracle,33.448437,-112.074141,Phoenix,us,az,1.07,0,0
+us-sanjose-1,US West (San Jose),oracle,37.336166,-121.890591,San Jose,us,ca,1.07,0,0

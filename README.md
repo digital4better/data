@@ -47,7 +47,7 @@ Main source families:
 
 ### Cloud Infrastructure
 
-The cloud referentials in [`data/cloud`](./data/cloud) provide structured information for major providers including AWS, Azure, GCP, OVHcloud, and Scaleway.
+The cloud referentials in [`data/cloud`](./data/cloud) provide structured information for major providers including AWS, Azure, GCP, Oracle Cloud Infrastructure, OVHcloud, and Scaleway.
 
 Typical use cases:
 
@@ -57,9 +57,18 @@ Typical use cases:
 
 Main source families:
 
-- provider region and infrastructure documentation from [AWS](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/), [Microsoft Azure](https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/), [Google Cloud](https://cloud.google.com/compute/docs/regions-zones), [OVHcloud](https://eco.ovhcloud.com/en-ie/our-commitments/global-infrastructure/), and [Scaleway](https://www.scaleway.com/en/docs/console/my-project/how-to/view-the-list-of-scaleway-regions-and-availability-zones/)
+- provider region and infrastructure documentation from [AWS](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/), [Microsoft Azure](https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/), [Google Cloud](https://cloud.google.com/compute/docs/regions-zones), [Oracle Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm), [OVHcloud](https://eco.ovhcloud.com/en-ie/our-commitments/global-infrastructure/), and [Scaleway](https://www.scaleway.com/en/docs/console/my-project/how-to/view-the-list-of-scaleway-regions-and-availability-zones/)
 - manufacturer and hardware reference sources for CPUs and accelerators
-- curated cross-checking from provider instance catalogs and infrastructure specification pages
+- provider sustainability disclosures used for `pue`, `wue`, and `ref`, including [AWS regional PUE/WUE](https://sustainability.aboutamazon.com/aws-wue-pue.csv), Microsoft regional fact sheets via [datacenters.microsoft.com](https://datacenters.microsoft.com/sustainability/efficiency/), [Google Cloud regional CFE%](https://cloud.google.com/sustainability/region-carbon), Oracle's [Corporate Citizenship Report](https://www.oracle.com/a/ocom/docs/corporate/citizenship/oracle-corp-citizenship-report-3941904.pdf), [OVHcloud FY25 KPIs](https://www.ovhcloud.com/sites/default/files/external_files/kpis_fy25.pdf) and [methodology note](https://corporate.ovhcloud.com/sites/default/files/2025-10/methodology_-_environmental_impact_tracker_fr.pdf), and Scaleway's [calculation reference values](https://www.scaleway.com/en/docs/environmental-footprint/additional-content/calculation-values-reference/) and [impact reports](https://www-uploads.scaleway.com/Impact_Report2024_A4_EN_9a7bd88445.pdf)
+
+Current cloud assumptions kept in the datasets:
+
+- `aws`: `pue` and `wue` come from the 2024 AWS regional CSV; `ref` stays at `0` because AWS public renewable matching disclosures are not used as a region-level factor in this referential
+- `azure`: values come from Microsoft regional fact sheets, combining still-live PDFs with previously curated factsheet values for regions whose older PDFs are no longer publicly retrievable
+- `gcp`: `ref` comes from regional `CFE%`; `wue` comes from previously derived values based on Google environmental reporting and is kept until Google publishes a clearer general regional water metric
+- `oracle`: use a uniform `pue = 1.07` and provisional `wue = 0` until OCI publishes region-level metrics
+- `ovhcloud`: follow FY25 KPI values for `pue`, `wue`, and `ref`
+- `scaleway`: values come from documented datacenter figures, completed where needed with the provider's impact reports
 
 ### Electricity Mix And Impact Factors
 

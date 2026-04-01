@@ -36,3 +36,4 @@ nvidia-tesla-t4,gpu,nvidia,tesla,t4,turing,2560,16,70,12,545,13600
 nvidia-tesla-v10016,gpu,nvidia,tesla,v100,volta,5120,16,250,12,815,21100
 nvidia-tesla-v10032,gpu,nvidia,tesla,v100,volta,5120,32,250,12,815,21100
 qualcomm-ai100-standard,asic,qualcomm,ai100,standard,cloud ai,16,16,75,7,0,0
+amd-radeon-mi355x,gpu,amd,radeon,mi355x,instinct,,288,,,,

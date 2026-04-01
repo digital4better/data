@@ -123,3 +123,19 @@ intel-xeon-e78890v3,intel,xeon,e7-8890 v3,x86-64,haswell,18,36,165,22,662,5690,8
 intel-xeon-e78890v4,intel,xeon,e7-8890 v4,x86-64,broadwell,24,48,165,14,456,7200,8
 intel-xeon-emerald-rapids-aws,intel,xeon,emerald-rapids-aws,x86-64,emerald rapids,48,96,350,10,1526,57000,2
 nvidia-grace,nvidia,grace,,arm-64,grace,144,144,500,4,774,0,1
+amd-epyc-5thgen-64c,amd,epyc,5th gen 64-core,x86-64,turin,64,128,,,,,2
+amd-epyc-7542,amd,epyc,7542,x86-64,rome,32,64,225,7,,,2
+amd-epyc-7742,amd,epyc,7742,x86-64,rome,64,128,225,7,,,2
+amd-epyc-7j13,amd,epyc,7j13,x86-64,milan,64,128,,,,,2
+amd-epyc-9j14,amd,epyc,9j14,x86-64,genoa,96,192,,,,,2
+amd-epyc-9j45,amd,epyc,9j45,x86-64,turin,128,256,,,,,2
+ampere-ampereone-a16030,ampere,ampereone,a160-30,arm-64,ampereone,160,160,,,,,1
+ampere-ampereone-m-a0636m,ampere,ampereone-m,a06-36m,arm-64,ampereone-m,96,96,,,,,1
+intel-xeon-6354,intel,xeon,6354,x86-64,ice lake,18,36,205,10,,,2
+intel-xeon-8167m,intel,xeon,8167m,x86-64,skylake,26,52,165,14,,,2
+intel-xeon-8358,intel,xeon,8358,x86-64,ice lake,32,64,250,10,,,2
+intel-xeon-8480plus,intel,xeon,8480+,x86-64,sapphire rapids,56,112,350,10,,,2
+intel-xeon-8592plus,intel,xeon,8592+,x86-64,emerald rapids,64,128,,,,,2
+intel-xeon-e52699v3,intel,xeon,e5-2699 v3,x86-64,haswell,18,36,145,22,,,2
+intel-xeon-e52699v4,intel,xeon,e5-2699 v4,x86-64,broadwell,22,44,145,14,,,2
+intel-xeon-gold-6154,intel,xeon,gold 6154,x86-64,skylake,18,36,200,14,,,2

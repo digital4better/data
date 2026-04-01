@@ -1,0 +1,141 @@
+id,family,name,category,vcpus,memory,ssd,hdd,cpu,accelerators,accelerator,embodied
+bm-standard3-64,standard3,BM.Standard3.64,general,128,1024,0,0,intel-xeon-8358,0,,1
+bm-standard-e4-128,standarde4,BM.Standard.E4.128,general,256,2048,0,0,amd-epyc-7j13,0,,1
+bm-standard-e5-192,standarde5,BM.Standard.E5.192,general,384,2304,0,0,amd-epyc-9j14,0,,1
+bm-standard-e6-256,standarde6,BM.Standard.E6.256,general,512,3072,1920,0,amd-epyc-9j45,0,,1
+bm-standard-a1-160,standarda1,BM.Standard.A1.160,general,160,1024,0,0,ampere-altra-q8030,0,,1
+bm-standard-a4-48,standarda4,BM.Standard.A4.48,general,96,768,3840,0,ampere-ampereone-m-a0636m,0,,1
+bm-denseio-e4-128,denseioe4,BM.DenseIO.E4.128,storage,256,2048,54400,0,amd-epyc-7j13,0,,1
+bm-denseio-e5-128,denseioe5,BM.DenseIO.E5.128,storage,256,1536,81600,0,amd-epyc-9j14,0,,1
+bm-gpu2-2,gpu2,BM.GPU2.2,accelerated,56,192,0,0,intel-xeon-8167m,2,nvidia-tesla-p10016,1
+bm-gpu3-8,gpu3,BM.GPU3.8,accelerated,104,768,0,0,intel-xeon-8167m,8,nvidia-tesla-v10016,1
+bm-gpu4-8,gpu4,BM.GPU4.8,accelerated,128,2048,27200,0,amd-epyc-7542,8,nvidia-tesla-a10040,1
+bm-gpu-a10-4,gpua10,BM.GPU.A10.4,accelerated,128,1024,7680,0,intel-xeon-8358,4,nvidia-tesla-a10,1
+bm-gpu-a100-v2-8,gpua100v2,BM.GPU.A100-v2.8,accelerated,256,2048,27200,0,amd-epyc-7j13,8,nvidia-tesla-a10080,1
+bm-gpu-mi300x-8,gpumi300x,BM.GPU.MI300X.8,accelerated,224,2048,30720,0,intel-xeon-8480plus,8,amd-radeon-mi300x,1
+bm-gpu-mi355x-8,gpumi355x,BM.GPU.MI355X.8,accelerated,256,3072,61440,0,amd-epyc-5thgen-64c,8,amd-radeon-mi355x,1
+bm-gpu-l40s-4,gpul40s,BM.GPU.L40S.4,accelerated,224,1024,7680,0,intel-xeon-8480plus,4,nvidia-tesla-l40s,1
+bm-gpu-h100-8,gpuh100,BM.GPU.H100.8,accelerated,224,2048,61440,0,intel-xeon-8480plus,8,nvidia-tesla-h10080,1
+bm-gpu-h200-8,gpuh200,BM.GPU.H200.8,accelerated,224,3072,30720,0,intel-xeon-8480plus,8,nvidia-tesla-h200,1
+bm-gpu-b200-8,gpub200,BM.GPU.B200.8,accelerated,256,4096,30720,0,intel-xeon-8592plus,8,nvidia-blackwell-b200,1
+bm-gpu-gb200-4,gpugb200,BM.GPU.GB200.4,accelerated,144,960,30720,0,nvidia-grace,4,nvidia-blackwell-b200,1
+bm-gpu-gb300-4,gpugb300,BM.GPU.GB300.4,accelerated,144,960,30720,0,nvidia-grace,4,nvidia-blackwell-b300,1
+bm-optimized3-36,optimized3,BM.Optimized3.36,performance,72,512,3840,0,intel-xeon-6354,0,,1
+bm-hpc-e5-144,hpce5,BM.HPC.E5.144,performance,288,768,3840,0,amd-epyc-9j14,0,,1
+vm-standard-e2-1-micro,standarde2,VM.Standard.E2.1.Micro,general,2,1,0,0,"amd-epyc-7551,amd-epyc-7742,amd-epyc-7j13",0,,1
+vm-standard3-flex-1ocpu-16gb,standard3flex,VM.Standard3.Flex (1 OCPU / 16 GB),general,2,16,0,0,intel-xeon-8358,0,,1
+vm-standard3-flex-2ocpu-32gb,standard3flex,VM.Standard3.Flex (2 OCPU / 32 GB),general,4,32,0,0,intel-xeon-8358,0,,1
+vm-standard3-flex-4ocpu-64gb,standard3flex,VM.Standard3.Flex (4 OCPU / 64 GB),general,8,64,0,0,intel-xeon-8358,0,,1
+vm-standard3-flex-8ocpu-128gb,standard3flex,VM.Standard3.Flex (8 OCPU / 128 GB),general,16,128,0,0,intel-xeon-8358,0,,1
+vm-standard3-flex-16ocpu-256gb,standard3flex,VM.Standard3.Flex (16 OCPU / 256 GB),general,32,256,0,0,intel-xeon-8358,0,,1
+vm-standard3-flex-32ocpu-512gb,standard3flex,VM.Standard3.Flex (32 OCPU / 512 GB),general,64,512,0,0,intel-xeon-8358,0,,1
+vm-standard-e4-flex-1ocpu-16gb,standarde4flex,VM.Standard.E4.Flex (1 OCPU / 16 GB),general,2,16,0,0,amd-epyc-7j13,0,,1
+vm-standard-e4-flex-2ocpu-32gb,standarde4flex,VM.Standard.E4.Flex (2 OCPU / 32 GB),general,4,32,0,0,amd-epyc-7j13,0,,1
+vm-standard-e4-flex-4ocpu-64gb,standarde4flex,VM.Standard.E4.Flex (4 OCPU / 64 GB),general,8,64,0,0,amd-epyc-7j13,0,,1
+vm-standard-e4-flex-8ocpu-128gb,standarde4flex,VM.Standard.E4.Flex (8 OCPU / 128 GB),general,16,128,0,0,amd-epyc-7j13,0,,1
+vm-standard-e4-flex-16ocpu-256gb,standarde4flex,VM.Standard.E4.Flex (16 OCPU / 256 GB),general,32,256,0,0,amd-epyc-7j13,0,,1
+vm-standard-e4-flex-32ocpu-512gb,standarde4flex,VM.Standard.E4.Flex (32 OCPU / 512 GB),general,64,512,0,0,amd-epyc-7j13,0,,1
+vm-standard-e4-flex-64ocpu-1024gb,standarde4flex,VM.Standard.E4.Flex (64 OCPU / 1024 GB),general,128,1024,0,0,amd-epyc-7j13,0,,1
+vm-standard-e5-flex-1ocpu-8gb,standarde5flex,VM.Standard.E5.Flex (1 OCPU / 8 GB),general,2,8,0,0,amd-epyc-9j14,0,,1
+vm-standard-e5-flex-2ocpu-16gb,standarde5flex,VM.Standard.E5.Flex (2 OCPU / 16 GB),general,4,16,0,0,amd-epyc-9j14,0,,1
+vm-standard-e5-flex-4ocpu-32gb,standarde5flex,VM.Standard.E5.Flex (4 OCPU / 32 GB),general,8,32,0,0,amd-epyc-9j14,0,,1
+vm-standard-e5-flex-8ocpu-64gb,standarde5flex,VM.Standard.E5.Flex (8 OCPU / 64 GB),general,16,64,0,0,amd-epyc-9j14,0,,1
+vm-standard-e5-flex-16ocpu-128gb,standarde5flex,VM.Standard.E5.Flex (16 OCPU / 128 GB),general,32,128,0,0,amd-epyc-9j14,0,,1
+vm-standard-e5-flex-32ocpu-256gb,standarde5flex,VM.Standard.E5.Flex (32 OCPU / 256 GB),general,64,256,0,0,amd-epyc-9j14,0,,1
+vm-standard-e5-flex-64ocpu-512gb,standarde5flex,VM.Standard.E5.Flex (64 OCPU / 512 GB),general,128,512,0,0,amd-epyc-9j14,0,,1
+vm-standard-e5-flex-96ocpu-768gb,standarde5flex,VM.Standard.E5.Flex (96 OCPU / 768 GB),general,192,768,0,0,amd-epyc-9j14,0,,1
+vm-standard-e5-flex-126ocpu-1008gb,standarde5flex,VM.Standard.E5.Flex (126 OCPU / 1008 GB),general,252,1008,0,0,amd-epyc-9j14,0,,1
+vm-standard-e6-flex-1ocpu-11gb,standarde6flex,VM.Standard.E6.Flex (1 OCPU / 11 GB),general,2,11,0,0,amd-epyc-9j45,0,,1
+vm-standard-e6-flex-2ocpu-22gb,standarde6flex,VM.Standard.E6.Flex (2 OCPU / 22 GB),general,4,22,0,0,amd-epyc-9j45,0,,1
+vm-standard-e6-flex-4ocpu-44gb,standarde6flex,VM.Standard.E6.Flex (4 OCPU / 44 GB),general,8,44,0,0,amd-epyc-9j45,0,,1
+vm-standard-e6-flex-8ocpu-88gb,standarde6flex,VM.Standard.E6.Flex (8 OCPU / 88 GB),general,16,88,0,0,amd-epyc-9j45,0,,1
+vm-standard-e6-flex-16ocpu-176gb,standarde6flex,VM.Standard.E6.Flex (16 OCPU / 176 GB),general,32,176,0,0,amd-epyc-9j45,0,,1
+vm-standard-e6-flex-32ocpu-352gb,standarde6flex,VM.Standard.E6.Flex (32 OCPU / 352 GB),general,64,352,0,0,amd-epyc-9j45,0,,1
+vm-standard-e6-flex-64ocpu-704gb,standarde6flex,VM.Standard.E6.Flex (64 OCPU / 704 GB),general,128,704,0,0,amd-epyc-9j45,0,,1
+vm-standard-e6-flex-96ocpu-1056gb,standarde6flex,VM.Standard.E6.Flex (96 OCPU / 1056 GB),general,192,1056,0,0,amd-epyc-9j45,0,,1
+vm-standard-e6-flex-126ocpu-1386gb,standarde6flex,VM.Standard.E6.Flex (126 OCPU / 1386 GB),general,252,1386,0,0,amd-epyc-9j45,0,,1
+vm-standard-a1-flex-1ocpu-6gb,standarda1flex,VM.Standard.A1.Flex (1 OCPU / 6 GB),general,1,6,0,0,ampere-altra-q8030,0,,1
+vm-standard-a1-flex-2ocpu-12gb,standarda1flex,VM.Standard.A1.Flex (2 OCPU / 12 GB),general,2,12,0,0,ampere-altra-q8030,0,,1
+vm-standard-a1-flex-4ocpu-24gb,standarda1flex,VM.Standard.A1.Flex (4 OCPU / 24 GB),general,4,24,0,0,ampere-altra-q8030,0,,1
+vm-standard-a1-flex-8ocpu-48gb,standarda1flex,VM.Standard.A1.Flex (8 OCPU / 48 GB),general,8,48,0,0,ampere-altra-q8030,0,,1
+vm-standard-a1-flex-16ocpu-96gb,standarda1flex,VM.Standard.A1.Flex (16 OCPU / 96 GB),general,16,96,0,0,ampere-altra-q8030,0,,1
+vm-standard-a1-flex-32ocpu-192gb,standarda1flex,VM.Standard.A1.Flex (32 OCPU / 192 GB),general,32,192,0,0,ampere-altra-q8030,0,,1
+vm-standard-a1-flex-64ocpu-384gb,standarda1flex,VM.Standard.A1.Flex (64 OCPU / 384 GB),general,64,384,0,0,ampere-altra-q8030,0,,1
+vm-standard-a1-flex-76ocpu-456gb,standarda1flex,VM.Standard.A1.Flex (76 OCPU / 456 GB),general,76,456,0,0,ampere-altra-q8030,0,,1
+vm-standard-a2-flex-1ocpu-12gb,standarda2flex,VM.Standard.A2.Flex (1 OCPU / 12 GB),general,2,12,0,0,ampere-ampereone-a16030,0,,1
+vm-standard-a2-flex-2ocpu-24gb,standarda2flex,VM.Standard.A2.Flex (2 OCPU / 24 GB),general,4,24,0,0,ampere-ampereone-a16030,0,,1
+vm-standard-a2-flex-4ocpu-48gb,standarda2flex,VM.Standard.A2.Flex (4 OCPU / 48 GB),general,8,48,0,0,ampere-ampereone-a16030,0,,1
+vm-standard-a2-flex-8ocpu-96gb,standarda2flex,VM.Standard.A2.Flex (8 OCPU / 96 GB),general,16,96,0,0,ampere-ampereone-a16030,0,,1
+vm-standard-a2-flex-16ocpu-192gb,standarda2flex,VM.Standard.A2.Flex (16 OCPU / 192 GB),general,32,192,0,0,ampere-ampereone-a16030,0,,1
+vm-standard-a2-flex-32ocpu-384gb,standarda2flex,VM.Standard.A2.Flex (32 OCPU / 384 GB),general,64,384,0,0,ampere-ampereone-a16030,0,,1
+vm-standard-a2-flex-64ocpu-768gb,standarda2flex,VM.Standard.A2.Flex (64 OCPU / 768 GB),general,128,768,0,0,ampere-ampereone-a16030,0,,1
+vm-standard-a2-flex-78ocpu-936gb,standarda2flex,VM.Standard.A2.Flex (78 OCPU / 936 GB),general,156,936,0,0,ampere-ampereone-a16030,0,,1
+vm-standard-a4-flex-1ocpu-15gb,standarda4flex,VM.Standard.A4.Flex (1 OCPU / 15 GB),general,2,15,0,0,ampere-ampereone-m-a0636m,0,,1
+vm-standard-a4-flex-2ocpu-30gb,standarda4flex,VM.Standard.A4.Flex (2 OCPU / 30 GB),general,4,30,0,0,ampere-ampereone-m-a0636m,0,,1
+vm-standard-a4-flex-4ocpu-60gb,standarda4flex,VM.Standard.A4.Flex (4 OCPU / 60 GB),general,8,60,0,0,ampere-ampereone-m-a0636m,0,,1
+vm-standard-a4-flex-8ocpu-120gb,standarda4flex,VM.Standard.A4.Flex (8 OCPU / 120 GB),general,16,120,0,0,ampere-ampereone-m-a0636m,0,,1
+vm-standard-a4-flex-16ocpu-240gb,standarda4flex,VM.Standard.A4.Flex (16 OCPU / 240 GB),general,32,240,0,0,ampere-ampereone-m-a0636m,0,,1
+vm-standard-a4-flex-32ocpu-480gb,standarda4flex,VM.Standard.A4.Flex (32 OCPU / 480 GB),general,64,480,0,0,ampere-ampereone-m-a0636m,0,,1
+vm-standard-a4-flex-45ocpu-675gb,standarda4flex,VM.Standard.A4.Flex (45 OCPU / 675 GB),general,90,675,0,0,ampere-ampereone-m-a0636m,0,,1
+vm-denseio-e4-flex-8ocpu-128gb,denseioe4flex,VM.DenseIO.E4.Flex (8 OCPU / 128 GB),storage,16,128,6800,0,amd-epyc-7j13,0,,1
+vm-denseio-e4-flex-16ocpu-256gb,denseioe4flex,VM.DenseIO.E4.Flex (16 OCPU / 256 GB),storage,32,256,13600,0,amd-epyc-7j13,0,,1
+vm-denseio-e4-flex-32ocpu-512gb,denseioe4flex,VM.DenseIO.E4.Flex (32 OCPU / 512 GB),storage,64,512,27200,0,amd-epyc-7j13,0,,1
+vm-denseio-e5-flex-8ocpu-96gb,denseioe5flex,VM.DenseIO.E5.Flex (8 OCPU / 96 GB),storage,16,96,6800,0,amd-epyc-9j14,0,,1
+vm-denseio-e5-flex-16ocpu-192gb,denseioe5flex,VM.DenseIO.E5.Flex (16 OCPU / 192 GB),storage,32,192,13600,0,amd-epyc-9j14,0,,1
+vm-denseio-e5-flex-24ocpu-288gb,denseioe5flex,VM.DenseIO.E5.Flex (24 OCPU / 288 GB),storage,48,288,20400,0,amd-epyc-9j14,0,,1
+vm-denseio-e5-flex-32ocpu-384gb,denseioe5flex,VM.DenseIO.E5.Flex (32 OCPU / 384 GB),storage,64,384,27200,0,amd-epyc-9j14,0,,1
+vm-denseio-e5-flex-40ocpu-480gb,denseioe5flex,VM.DenseIO.E5.Flex (40 OCPU / 480 GB),storage,80,480,34000,0,amd-epyc-9j14,0,,1
+vm-denseio-e5-flex-48ocpu-576gb,denseioe5flex,VM.DenseIO.E5.Flex (48 OCPU / 576 GB),storage,96,576,40800,0,amd-epyc-9j14,0,,1
+vm-gpu2-1,gpu2,VM.GPU2.1,accelerated,24,72,0,0,intel-xeon-8167m,1,nvidia-tesla-p10016,1
+vm-gpu3-1,gpu3,VM.GPU3.1,accelerated,12,90,0,0,intel-xeon-8167m,1,nvidia-tesla-v10016,1
+vm-gpu3-2,gpu3,VM.GPU3.2,accelerated,24,180,0,0,intel-xeon-8167m,2,nvidia-tesla-v10016,1
+vm-gpu3-4,gpu3,VM.GPU3.4,accelerated,48,360,0,0,intel-xeon-8167m,4,nvidia-tesla-v10016,1
+vm-gpu-a10-1,gpua10,VM.GPU.A10.1,accelerated,30,240,0,0,intel-xeon-8358,1,nvidia-tesla-a10,1
+vm-gpu-a10-2,gpua10,VM.GPU.A10.2,accelerated,60,480,0,0,intel-xeon-8358,2,nvidia-tesla-a10,1
+vm-optimized3-flex-1ocpu-14gb,optimized3flex,VM.Optimized3.Flex (1 OCPU / 14 GB),performance,2,14,0,0,intel-xeon-6354,0,,1
+vm-optimized3-flex-2ocpu-28gb,optimized3flex,VM.Optimized3.Flex (2 OCPU / 28 GB),performance,4,28,0,0,intel-xeon-6354,0,,1
+vm-optimized3-flex-4ocpu-56gb,optimized3flex,VM.Optimized3.Flex (4 OCPU / 56 GB),performance,8,56,0,0,intel-xeon-6354,0,,1
+vm-optimized3-flex-8ocpu-112gb,optimized3flex,VM.Optimized3.Flex (8 OCPU / 112 GB),performance,16,112,0,0,intel-xeon-6354,0,,1
+vm-optimized3-flex-16ocpu-224gb,optimized3flex,VM.Optimized3.Flex (16 OCPU / 224 GB),performance,32,224,0,0,intel-xeon-6354,0,,1
+vm-optimized3-flex-18ocpu-252gb,optimized3flex,VM.Optimized3.Flex (18 OCPU / 252 GB),performance,36,252,0,0,intel-xeon-6354,0,,1
+bm-standard1-36,standard1,BM.Standard1.36,general,72,256,0,0,intel-xeon-e52699v3,0,,1
+bm-standard-b1-44,standardb1,BM.Standard.B1.44,general,88,512,0,0,intel-xeon-e52699v4,0,,1
+bm-standard2-52,standard2,BM.Standard2.52,general,104,768,0,0,intel-xeon-8167m,0,,1
+bm-standard-e2-64,standarde2,BM.Standard.E2.64,general,128,512,0,0,amd-epyc-7551,0,,1
+bm-standard-e3-128,standarde3,BM.Standard.E3.128,general,256,2048,0,0,amd-epyc-7742,0,,1
+bm-denseio1-36,denseio1,BM.DenseIO1.36,storage,72,512,28800,0,intel-xeon-e52699v3,0,,1
+bm-denseio2-52,denseio2,BM.DenseIO2.52,storage,104,768,51200,0,intel-xeon-8167m,0,,1
+bm-hpc2-36,hpc2,BM.HPC2.36,performance,72,384,6400,0,intel-xeon-gold-6154,0,,1
+vm-standard1-1,standard1,VM.Standard1.1,general,2,7,0,0,intel-xeon-e52699v3,0,,1
+vm-standard1-2,standard1,VM.Standard1.2,general,4,14,0,0,intel-xeon-e52699v3,0,,1
+vm-standard1-4,standard1,VM.Standard1.4,general,8,28,0,0,intel-xeon-e52699v3,0,,1
+vm-standard1-8,standard1,VM.Standard1.8,general,16,56,0,0,intel-xeon-e52699v3,0,,1
+vm-standard1-16,standard1,VM.Standard1.16,general,32,112,0,0,intel-xeon-e52699v3,0,,1
+vm-standard-b1-1,standardb1,VM.Standard.B1.1,general,2,12,0,0,intel-xeon-e52699v4,0,,1
+vm-standard-b1-2,standardb1,VM.Standard.B1.2,general,4,24,0,0,intel-xeon-e52699v4,0,,1
+vm-standard-b1-4,standardb1,VM.Standard.B1.4,general,8,48,0,0,intel-xeon-e52699v4,0,,1
+vm-standard-b1-8,standardb1,VM.Standard.B1.8,general,16,96,0,0,intel-xeon-e52699v4,0,,1
+vm-standard-b1-16,standardb1,VM.Standard.B1.16,general,32,192,0,0,intel-xeon-e52699v4,0,,1
+vm-standard2-1,standard2,VM.Standard2.1,general,2,15,0,0,intel-xeon-8167m,0,,1
+vm-standard2-2,standard2,VM.Standard2.2,general,4,30,0,0,intel-xeon-8167m,0,,1
+vm-standard2-4,standard2,VM.Standard2.4,general,8,60,0,0,intel-xeon-8167m,0,,1
+vm-standard2-8,standard2,VM.Standard2.8,general,16,120,0,0,intel-xeon-8167m,0,,1
+vm-standard2-16,standard2,VM.Standard2.16,general,32,240,0,0,intel-xeon-8167m,0,,1
+vm-standard2-24,standard2,VM.Standard2.24,general,48,320,0,0,intel-xeon-8167m,0,,1
+vm-standard-e2-1,standarde2,VM.Standard.E2.1,general,2,8,0,0,amd-epyc-7551,0,,1
+vm-standard-e2-2,standarde2,VM.Standard.E2.2,general,4,16,0,0,amd-epyc-7551,0,,1
+vm-standard-e2-4,standarde2,VM.Standard.E2.4,general,8,32,0,0,amd-epyc-7551,0,,1
+vm-standard-e2-8,standarde2,VM.Standard.E2.8,general,16,64,0,0,amd-epyc-7551,0,,1
+vm-denseio1-4,denseio1,VM.DenseIO1.4,storage,8,60,3200,0,intel-xeon-e52699v3,0,,1
+vm-denseio1-8,denseio1,VM.DenseIO1.8,storage,16,120,6400,0,intel-xeon-e52699v3,0,,1
+vm-denseio1-16,denseio1,VM.DenseIO1.16,storage,32,240,12800,0,intel-xeon-e52699v3,0,,1
+vm-denseio2-8,denseio2,VM.DenseIO2.8,storage,16,120,6400,0,intel-xeon-8167m,0,,1
+vm-denseio2-16,denseio2,VM.DenseIO2.16,storage,32,240,12800,0,intel-xeon-8167m,0,,1
+vm-denseio2-24,denseio2,VM.DenseIO2.24,storage,48,320,25600,0,intel-xeon-8167m,0,,1
+vm-standard-e3-flex-1ocpu-16gb,standarde3flex,VM.Standard.E3.Flex (1 OCPU / 16 GB),general,2,16,0,0,amd-epyc-7742,0,,1
+vm-standard-e3-flex-2ocpu-32gb,standarde3flex,VM.Standard.E3.Flex (2 OCPU / 32 GB),general,4,32,0,0,amd-epyc-7742,0,,1
+vm-standard-e3-flex-4ocpu-64gb,standarde3flex,VM.Standard.E3.Flex (4 OCPU / 64 GB),general,8,64,0,0,amd-epyc-7742,0,,1
+vm-standard-e3-flex-8ocpu-128gb,standarde3flex,VM.Standard.E3.Flex (8 OCPU / 128 GB),general,16,128,0,0,amd-epyc-7742,0,,1
+vm-standard-e3-flex-16ocpu-256gb,standarde3flex,VM.Standard.E3.Flex (16 OCPU / 256 GB),general,32,256,0,0,amd-epyc-7742,0,,1
+vm-standard-e3-flex-32ocpu-512gb,standarde3flex,VM.Standard.E3.Flex (32 OCPU / 512 GB),general,64,512,0,0,amd-epyc-7742,0,,1
+vm-standard-e3-flex-64ocpu-1024gb,standarde3flex,VM.Standard.E3.Flex (64 OCPU / 1024 GB),general,128,1024,0,0,amd-epyc-7742,0,,1
