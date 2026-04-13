@@ -2384,6 +2384,39 @@
     ]
   },
   {
+    "name": "gemini-2.5-flash-tts",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?2(?:\\.5|[\\s._-]?5)[\\s._-]?flash(?:[\\s._-]?preview)?[\\s._-]?(?:text[\\s._-]?to[\\s._-]?speech|tts)",
+    "type": "speech",
+    "architecture": "moe",
+    "parameters": {
+      "active": 88,
+      "total": 440
+    },
+    "context": 8192,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "Gemini 2.5 Flash Text-to-Speech"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog",
+      "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-preview-tts"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
     "name": "gemini-2.5-pro",
     "vendor": "google",
     "open": false,
@@ -2421,6 +2454,39 @@
       "parameters",
       "context",
       "corpus"
+    ]
+  },
+  {
+    "name": "gemini-2.5-pro-tts",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?2(?:\\.5|[\\s._-]?5)[\\s._-]?pro(?:[\\s._-]?preview)?[\\s._-]?(?:text[\\s._-]?to[\\s._-]?speech|tts)",
+    "type": "speech",
+    "architecture": "moe",
+    "parameters": {
+      "active": 400,
+      "total": 2000
+    },
+    "context": 8192,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "Gemini 2.5 Pro Text-to-Speech"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog",
+      "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-pro-preview-tts"
+    ],
+    "estimated": [
+      "parameters"
     ]
   },
   {
@@ -2611,6 +2677,43 @@
     ]
   },
   {
+    "name": "gemini-3.1-flash-live",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?3(?:\\.1|[\\s._-]?1)[\\s._-]?flash[\\s._-]?live(?:[\\s._-]?preview)?",
+    "type": "speech",
+    "architecture": "moe",
+    "parameters": {
+      "active": 65,
+      "total": 300
+    },
+    "context": 131072,
+    "input": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "output": [
+      "text",
+      "audio"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Gemini 3.1 Flash Live"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog",
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-live-preview"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
     "name": "gemini-3.1-pro",
     "vendor": "google",
     "open": false,
@@ -2717,6 +2820,109 @@
     "estimated": [
       "corpus"
     ]
+  },
+  {
+    "name": "gemma-3n-e4b-it",
+    "vendor": "google",
+    "open": true,
+    "pattern": "gemma[\\s._-]?3n[\\s._-]?e4b[\\s._-]?it",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 4,
+      "total": 8
+    },
+    "context": 32000,
+    "input": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "gemma-3n-e4b-it"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog",
+      "https://ai.google.dev/gemma/docs/gemma-3n",
+      "https://developers.googleblog.com/introducing-gemma-3n-developer-guide/"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "gemma-4-26b-a4b-it",
+    "vendor": "google",
+    "open": true,
+    "pattern": "gemma[\\s._-]?4[\\s._-]?26b[\\s._-]?a4b[\\s._-]?it",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 3.8,
+      "total": 25.2
+    },
+    "context": 256000,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "gemma-4-26b-a4b-it"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog",
+      "https://ai.google.dev/gemma/docs/core",
+      "https://huggingface.co/google/gemma-4-26B-A4B-it"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "gemma-4-31b-it",
+    "vendor": "google",
+    "open": true,
+    "pattern": "gemma[\\s._-]?4[\\s._-]?31b[\\s._-]?it",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 30.7,
+      "total": 30.7
+    },
+    "context": 256000,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "gemma-4-31b-it"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog",
+      "https://ai.google.dev/gemma/docs/core",
+      "https://huggingface.co/google/gemma-4-31B-it"
+    ],
+    "estimated": []
   },
   {
     "name": "gpt-35-turbo",
@@ -7941,6 +8147,74 @@
     "estimated": [
       "parameters",
       "context"
+    ]
+  },
+  {
+    "name": "veo-3.1",
+    "vendor": "google",
+    "open": false,
+    "pattern": "veo[\\s._-]?3(?:\\.1|[\\s._-]?1)(?![\\s._-]?lite)",
+    "type": "video",
+    "architecture": "dense",
+    "parameters": {
+      "active": 32,
+      "total": 32
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "video",
+      "audio"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "Veo 3.1"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://ai.google.dev/gemini-api/docs/models/veo-3.1-generate-preview"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "veo-3.1-lite",
+    "vendor": "google",
+    "open": false,
+    "pattern": "veo[\\s._-]?3(?:\\.1|[\\s._-]?1)[\\s._-]?lite",
+    "type": "video",
+    "architecture": "dense",
+    "parameters": {
+      "active": 16,
+      "total": 16
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "video",
+      "audio"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "Veo 3.1 Lite"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog",
+      "https://ai.google.dev/gemini-api/docs/models/veo-3.1-lite-generate-preview"
+    ],
+    "estimated": [
+      "parameters"
     ]
   },
   {
