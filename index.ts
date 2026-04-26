@@ -55,12 +55,20 @@ const REGION_FILTERS = {
 };
 
 const fetchToBuffer = async (url: string): Promise<Buffer> => {
-  const response = await fetch(url, {
-    agent: new (require("https").Agent)({ rejectUnauthorized: false }),
-  } as any);
+  const response = await fetch(url);
 
   if (!response.ok) {
-    throw new Error(`Request failed with status code ${response.status}`);
+    const contentType = response.headers.get("content-type") ?? "?";
+    const location = response.headers.get("location") ?? "";
+    const server = response.headers.get("server") ?? "?";
+    const body = await response.text().catch(() => "<unreadable>");
+    throw new Error(
+      `Request to ${url} failed: ${response.status} ${response.statusText}\n` +
+        `  server: ${server}\n` +
+        `  content-type: ${contentType}\n` +
+        (location ? `  location: ${location}\n` : "") +
+        `  body (first 800 chars): ${body.slice(0, 800)}`
+    );
   }
 
   const arrayBuffer = await response.arrayBuffer();
@@ -671,7 +679,11 @@ const generateFactors = async () => {
   await fetchWorldMix(aggregates);
   await sanitizeData(aggregates);
   process.stdout.write(`Generating canada province energy mix...`);
-  await fetchCanadianMix(aggregates);
+  try {
+    await fetchCanadianMix(aggregates);
+  } catch (err) {
+    console.warn(`\n⚠️  Skipping Canadian provinces, upstream source unavailable:\n${(err as Error).message}`);
+  }
   process.stdout.write(`Generating US states energy mix...`);
   await fetchUSMix(aggregates);
   await sanitizeData(aggregates);
