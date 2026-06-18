@@ -2,8 +2,8 @@
   "Africa": {
     "2019": {
       "Bioenergy": 0.0193,
-      "Hydro": 0.9237,
-      "Solar": 0.0305,
+      "Hydro": 0.9238,
+      "Solar": 0.0304,
       "Wind": 0.0265
     },
     "2020": {
@@ -14,7 +14,7 @@
     },
     "2021": {
       "Bioenergy": 0.0192,
-      "Hydro": 0.9214,
+      "Hydro": 0.9215,
       "Solar": 0.0336,
       "Wind": 0.0257
     },
@@ -38,14 +38,14 @@
     },
     "2025": {
       "Bioenergy": 0.019,
-      "Hydro": 0.9068,
+      "Hydro": 0.9067,
       "Solar": 0.042,
       "Wind": 0.0322
     },
     "2026": {
       "Bioenergy": 0.0192,
-      "Hydro": 0.9098,
-      "Solar": 0.0425,
+      "Hydro": 0.9103,
+      "Solar": 0.0421,
       "Wind": 0.0285
     }
   },
@@ -77,76 +77,76 @@
     "2023": {
       "Bioenergy": 0.0898,
       "Hydro": 0.4992,
-      "Solar": 0.2043,
+      "Solar": 0.2044,
       "Wind": 0.2067
     },
     "2024": {
       "Bioenergy": 0.0827,
       "Hydro": 0.4762,
-      "Solar": 0.236,
+      "Solar": 0.2361,
       "Wind": 0.2051
     },
     "2025": {
       "Bioenergy": 0.0745,
-      "Hydro": 0.4369,
-      "Solar": 0.2784,
+      "Hydro": 0.4368,
+      "Solar": 0.2786,
       "Wind": 0.2101
     },
     "2026": {
-      "Bioenergy": 0.0766,
-      "Hydro": 0.3825,
-      "Solar": 0.3124,
-      "Wind": 0.2285
+      "Bioenergy": 0.0752,
+      "Hydro": 0.3908,
+      "Solar": 0.3089,
+      "Wind": 0.2251
     }
   },
   "Europe": {
     "2019": {
-      "Bioenergy": 0.0757,
-      "Hydro": 0.5864,
-      "Solar": 0.0825,
-      "Wind": 0.2554
+      "Bioenergy": 0.0784,
+      "Hydro": 0.5718,
+      "Solar": 0.0853,
+      "Wind": 0.2645
     },
     "2020": {
-      "Bioenergy": 0.0728,
-      "Hydro": 0.5664,
-      "Solar": 0.0912,
-      "Wind": 0.2695
+      "Bioenergy": 0.0753,
+      "Hydro": 0.552,
+      "Solar": 0.0942,
+      "Wind": 0.2786
     },
     "2021": {
-      "Bioenergy": 0.078,
-      "Hydro": 0.5564,
-      "Solar": 0.102,
-      "Wind": 0.2636
+      "Bioenergy": 0.0806,
+      "Hydro": 0.5416,
+      "Solar": 0.1053,
+      "Wind": 0.2725
     },
     "2022": {
-      "Bioenergy": 0.0757,
-      "Hydro": 0.5087,
-      "Solar": 0.127,
-      "Wind": 0.2886
+      "Bioenergy": 0.0782,
+      "Hydro": 0.4926,
+      "Solar": 0.131,
+      "Wind": 0.2982
     },
     "2023": {
-      "Bioenergy": 0.0639,
-      "Hydro": 0.4964,
-      "Solar": 0.1425,
-      "Wind": 0.2972
+      "Bioenergy": 0.0659,
+      "Hydro": 0.4809,
+      "Solar": 0.147,
+      "Wind": 0.3063
     },
     "2024": {
-      "Bioenergy": 0.0618,
-      "Hydro": 0.4884,
-      "Solar": 0.1631,
-      "Wind": 0.2866
+      "Bioenergy": 0.0636,
+      "Hydro": 0.474,
+      "Solar": 0.1675,
+      "Wind": 0.2949
     },
     "2025": {
-      "Bioenergy": 0.0617,
-      "Hydro": 0.4548,
-      "Solar": 0.1994,
-      "Wind": 0.284
+      "Bioenergy": 0.0645,
+      "Hydro": 0.4391,
+      "Solar": 0.2042,
+      "Wind": 0.2921
     },
     "2026": {
-      "Bioenergy": 0.0633,
-      "Hydro": 0.4516,
-      "Solar": 0.1767,
-      "Wind": 0.3085
+      "Bioenergy": 0.0644,
+      "Hydro": 0.4434,
+      "Solar": 0.1895,
+      "Wind": 0.3027
     }
   },
   "North America": {
@@ -193,16 +193,16 @@
       "Wind": 0.2994
     },
     "2026": {
-      "Bioenergy": 0.0564,
-      "Hydro": 0.4146,
-      "Solar": 0.212,
-      "Wind": 0.317
+      "Bioenergy": 0.056,
+      "Hydro": 0.4117,
+      "Solar": 0.2205,
+      "Wind": 0.3117
     }
   },
   "Oceania": {
     "2019": {
       "Bioenergy": 0.0178,
-      "Hydro": 0.5838,
+      "Hydro": 0.5837,
       "Solar": 0.1981,
       "Wind": 0.2004
     },
@@ -232,21 +232,21 @@
     },
     "2024": {
       "Bioenergy": 0.0133,
-      "Hydro": 0.4072,
+      "Hydro": 0.4071,
       "Solar": 0.3364,
       "Wind": 0.2432
     },
     "2025": {
-      "Bioenergy": 0.0114,
-      "Hydro": 0.3755,
-      "Solar": 0.3481,
-      "Wind": 0.265
+      "Bioenergy": 0.0113,
+      "Hydro": 0.3746,
+      "Solar": 0.3494,
+      "Wind": 0.2647
     },
     "2026": {
-      "Bioenergy": 0.0125,
-      "Hydro": 0.3575,
-      "Solar": 0.3804,
-      "Wind": 0.2496
+      "Bioenergy": 0.0122,
+      "Hydro": 0.3678,
+      "Solar": 0.3655,
+      "Wind": 0.2545
     }
   },
   "South America": {
@@ -294,9 +294,9 @@
     },
     "2026": {
       "Bioenergy": 0.0287,
-      "Hydro": 0.8224,
-      "Solar": 0.0789,
-      "Wind": 0.07
+      "Hydro": 0.8231,
+      "Solar": 0.0786,
+      "Wind": 0.0696
     }
   }
 }
