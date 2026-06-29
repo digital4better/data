@@ -1147,6 +1147,48 @@
     ]
   },
   {
+    "name": "claude-opus-4.8",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?opus[\\s._-]?4(?:\\.8|[\\s._-]?8)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 1000,
+      "total": 5000
+    },
+    "context": 1000000,
+    "corpus": 100000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "anthropic.claude-opus-4-8"
+      ],
+      "gcp": [
+        "Claude Opus 4.8"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-4-8.html",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
+      "https://lifearchitect.ai/models-table/",
+      "https://apxml.com/models"
+    ],
+    "estimated": [
+      "parameters",
+      "corpus"
+    ]
+  },
+  {
     "name": "claude-sonnet-4",
     "vendor": "anthropic",
     "open": false,
@@ -2714,6 +2756,39 @@
     ]
   },
   {
+    "name": "gemini-3.1-flash-tts",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?3(?:\\.1|[\\s._-]?1)[\\s._-]?flash[\\s._-]?tts(?:[\\s._-]?preview)?",
+    "type": "speech",
+    "architecture": "moe",
+    "parameters": {
+      "active": 65,
+      "total": 300
+    },
+    "context": 8192,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "Gemini 3.1 Flash TTS"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog",
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-tts-preview"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
     "name": "gemini-3.1-pro",
     "vendor": "google",
     "open": false,
@@ -2750,6 +2825,45 @@
     "estimated": [
       "parameters",
       "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gemini-3.5-flash",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?3(?:\\.5|[\\s._-]?5)[\\s._-]?flash",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 100,
+      "total": 500
+    },
+    "context": 1048576,
+    "corpus": 100000,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "Gemini 3.5 Flash"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog",
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash",
+      "https://lifearchitect.ai/models-table/",
+      "https://apxml.com/models"
+    ],
+    "estimated": [
+      "parameters",
       "corpus"
     ]
   },
@@ -4721,6 +4835,78 @@
     ]
   },
   {
+    "name": "gpt-5.5",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5(?:\\.5|[\\s._-]?5)(?![\\s._-]?(?:instant|mini|nano|pro|cyber))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 600,
+      "total": 3000
+    },
+    "context": 1050000,
+    "corpus": 114000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-5.5"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models/gpt-5.5",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://lifearchitect.ai/models-table/",
+      "https://apxml.com/models/gpt-55"
+    ],
+    "estimated": [
+      "parameters",
+      "corpus"
+    ]
+  },
+  {
+    "name": "gpt-5.5-pro",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5(?:\\.5|[\\s._-]?5)[\\s._-]?pro",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 1200,
+      "total": 6000
+    },
+    "context": 1050000,
+    "corpus": 114000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {},
+    "sources": [
+      "https://platform.openai.com/docs/models",
+      "https://apxml.com/models/gpt-55-pro",
+      "https://lifearchitect.ai/models-table/"
+    ],
+    "estimated": [
+      "parameters",
+      "context",
+      "corpus"
+    ]
+  },
+  {
     "name": "gpt-audio",
     "vendor": "openai",
     "open": false,
@@ -6225,6 +6411,36 @@
     ]
   },
   {
+    "name": "mistral-medium-3.5",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "mistral[\\s._-]?medium[\\s._-]?3(?:\\.5|[\\s._-]?5)",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 128,
+      "total": 128
+    },
+    "context": 256000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {},
+    "sources": [
+      "https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04",
+      "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
+      "https://lifearchitect.ai/models-table/",
+      "https://apxml.com/models"
+    ],
+    "estimated": []
+  },
+  {
     "name": "mistral-nemo-instruct-2407",
     "vendor": "mistral",
     "open": true,
@@ -6289,6 +6505,36 @@
       "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
     ],
     "estimated": []
+  },
+  {
+    "name": "mistral-ocr-4",
+    "vendor": "mistral",
+    "open": false,
+    "pattern": "mistral[\\s._-]?ocr[\\s._-]?4",
+    "type": "vision",
+    "architecture": "dense",
+    "parameters": {
+      "active": 24,
+      "total": 24
+    },
+    "input": [
+      "document",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {},
+    "sources": [
+      "https://docs.mistral.ai/models/overview",
+      "https://docs.mistral.ai/capabilities/document_ai/overview/",
+      "https://apxml.com/models"
+    ],
+    "estimated": [
+      "parameters"
+    ]
   },
   {
     "name": "mistral-small-3.1",
@@ -6387,6 +6633,36 @@
       "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models",
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "mistral-small-4",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "mistral[\\s._-]?small[\\s._-]?4",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 6.5,
+      "total": 119
+    },
+    "context": 256000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {},
+    "sources": [
+      "https://docs.mistral.ai/models/overview",
+      "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
+      "https://lifearchitect.ai/models-table/",
+      "https://apxml.com/models"
     ],
     "estimated": []
   },
@@ -6794,6 +7070,45 @@
     ]
   },
   {
+    "name": "o3",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "o3(?![\\s._-]?(?:mini|pro|deep))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 120,
+      "total": 600
+    },
+    "context": 200000,
+    "corpus": 20000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "o3"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models/o3",
+      "https://openai.com/index/introducing-o3-and-o4-mini/",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://lifearchitect.ai/models-table/",
+      "https://apxml.com/models/o3"
+    ],
+    "estimated": [
+      "parameters",
+      "corpus"
+    ]
+  },
+  {
     "name": "o3-mini",
     "vendor": "openai",
     "open": false,
@@ -6828,6 +7143,45 @@
     "estimated": [
       "parameters",
       "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "o4-mini",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "o4[\\s._-]?mini",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 8,
+      "total": 200
+    },
+    "context": 200000,
+    "corpus": 13000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "o4-mini"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models/o4-mini",
+      "https://openai.com/index/introducing-o3-and-o4-mini/",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://lifearchitect.ai/models-table/",
+      "https://apxml.com/models/o4-mini"
+    ],
+    "estimated": [
+      "parameters",
       "corpus"
     ]
   },
@@ -8184,6 +8538,40 @@
     ]
   },
   {
+    "name": "veo-3.1-fast",
+    "vendor": "google",
+    "open": false,
+    "pattern": "veo[\\s._-]?3(?:\\.1|[\\s._-]?1)[\\s._-]?fast",
+    "type": "video",
+    "architecture": "dense",
+    "parameters": {
+      "active": 24,
+      "total": 24
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "video",
+      "audio"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "Veo 3.1 Fast"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/changelog",
+      "https://ai.google.dev/gemini-api/docs/video"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
     "name": "veo-3.1-lite",
     "vendor": "google",
     "open": false,
@@ -8251,6 +8639,64 @@
     ]
   },
   {
+    "name": "voxtral-mini-transcribe",
+    "vendor": "mistral",
+    "open": false,
+    "pattern": "voxtral[\\s._-]?mini[\\s._-]?transcribe(?![\\s._-]?realtime)",
+    "type": "transcription",
+    "architecture": "dense",
+    "parameters": {
+      "active": 4,
+      "total": 4
+    },
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {},
+    "sources": [
+      "https://docs.mistral.ai/models/overview",
+      "https://docs.mistral.ai/models/model-cards/voxtral-mini-transcribe-26-02",
+      "https://mistral.ai/news/voxtral-transcribe-2/",
+      "https://apxml.com/models"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "voxtral-mini-transcribe-realtime",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "voxtral[\\s._-]?mini[\\s._-]?transcribe[\\s._-]?realtime",
+    "type": "transcription",
+    "architecture": "dense",
+    "parameters": {
+      "active": 4,
+      "total": 4
+    },
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {},
+    "sources": [
+      "https://docs.mistral.ai/models/model-cards/voxtral-mini-transcribe-realtime-26-02",
+      "https://mistral.ai/news/voxtral-transcribe-2/",
+      "https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602",
+      "https://apxml.com/models"
+    ],
+    "estimated": []
+  },
+  {
     "name": "voxtral-small-24b-2507",
     "vendor": "mistral",
     "open": true,
@@ -8287,6 +8733,33 @@
     "estimated": [
       "parameters"
     ]
+  },
+  {
+    "name": "voxtral-tts",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "voxtral(?:[\\s._-]?4b)?[\\s._-]?tts(?:[\\s._-]?2603)?|voxtral[\\s._-]?mini[\\s._-]?tts(?:[\\s._-]?2603)?",
+    "type": "speech",
+    "architecture": "dense",
+    "parameters": {
+      "active": 4,
+      "total": 4
+    },
+    "input": [
+      "text"
+    ],
+    "output": [
+      "audio"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {},
+    "sources": [
+      "https://docs.mistral.ai/models/model-cards/voxtral-tts-26-03",
+      "https://huggingface.co/mistralai/Voxtral-4B-TTS-2603",
+      "https://apxml.com/models"
+    ],
+    "estimated": []
   },
   {
     "name": "whisper-large-v3",
