@@ -1030,12 +1030,12 @@
     "name": "claude-opus-4",
     "vendor": "anthropic",
     "open": false,
-    "pattern": "claude[\\s._-]?opus[\\s._-]?4(?![\\s._-]?(?:\\.1|\\.5|\\.6|1|5|6))",
+    "pattern": "claude[\\s._-]?opus[\\s._-]?4(?![\\s._-]?(?:\\.1|\\.5|\\.6|\\.7|\\.8|1|5|6|7|8))",
     "type": "text",
     "architecture": "moe",
     "parameters": {
-      "active": 400,
-      "total": 2000
+      "active": 1200,
+      "total": 6000
     },
     "context": 200000,
     "corpus": 100000,
@@ -1065,6 +1065,48 @@
     ]
   },
   {
+    "name": "claude-opus-4.1",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?opus[\\s._-]?4(?:\\.1|[\\s._-]?1)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 1000,
+      "total": 5000
+    },
+    "context": 200000,
+    "corpus": 100000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "anthropic.claude-opus-4-1-20250805-v1:0"
+      ],
+      "gcp": [
+        "Claude Opus 4.1"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-4-1.html",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-claude",
+      "https://lifearchitect.ai/models-table/",
+      "https://apxml.com/models"
+    ],
+    "estimated": [
+      "parameters",
+      "corpus"
+    ]
+  },
+  {
     "name": "claude-opus-4.5",
     "vendor": "anthropic",
     "open": false,
@@ -1072,8 +1114,8 @@
     "type": "text",
     "architecture": "moe",
     "parameters": {
-      "active": 135,
-      "total": 670
+      "active": 1000,
+      "total": 5000
     },
     "context": 200000,
     "corpus": 100000,
@@ -1113,8 +1155,8 @@
     "type": "text",
     "architecture": "moe",
     "parameters": {
-      "active": 135,
-      "total": 670
+      "active": 1000,
+      "total": 5000
     },
     "context": 200000,
     "corpus": 100000,
@@ -1143,6 +1185,48 @@
     "estimated": [
       "parameters",
       "context",
+      "corpus"
+    ]
+  },
+  {
+    "name": "claude-opus-4.7",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?opus[\\s._-]?4(?:\\.7|[\\s._-]?7)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 1000,
+      "total": 5000
+    },
+    "context": 1000000,
+    "corpus": 100000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "anthropic.claude-opus-4-7"
+      ],
+      "gcp": [
+        "Claude Opus 4.7"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-4-7.html",
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-claude",
+      "https://lifearchitect.ai/models-table/",
+      "https://apxml.com/models"
+    ],
+    "estimated": [
+      "parameters",
       "corpus"
     ]
   },
