@@ -22,8 +22,12 @@ jobs:
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.MAIN_PUSH_TOKEN }}
+      # Held at v6: v7 stopped exporting the placeholder NODE_AUTH_TOKEN, and
+      # registry-url writes an .npmrc referencing ${NODE_AUTH_TOKEN}. yarn 1
+      # errors out on an undefined variable, so every yarn call fails, starting
+      # with the cache lookup inside this step.
       - name: Setup Node
-        uses: actions/setup-node@v7
+        uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
           registry-url: 'https://registry.npmjs.org'
