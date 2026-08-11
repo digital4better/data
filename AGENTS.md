@@ -15,7 +15,7 @@ Open-data repository by Digital4Better providing geographic and environmental da
 - **Build site only**: `yarn build:site`
 - **Version bump**: `npm version patch` (auto-updates `releaseDate` in package.json via preversion hook)
 
-Node version: 20 (see `.nvmrc`, used by CI via `node-version-file`). Package manager: **yarn 1.x**, pinned via `packageManager` for corepack.
+Node version: 20 (see `.nvmrc`, used by CI via `node-version-file`). Package manager: **yarn 1.x**. The `packageManager` field records the exact version, but nothing enforces it: CI does not enable corepack and `actions/setup-node@v3` ignores the field, so the workflow runs whatever yarn the runner image ships. Locally the pin only applies if you have corepack enabled yourself.
 
 There is no `engines` field on purpose: the published package contains data files only, so build-time requirements must not leak to consumers.
 
