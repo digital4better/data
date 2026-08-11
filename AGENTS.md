@@ -15,10 +15,6 @@ Open-data repository by Digital4Better providing geographic and environmental da
 - **Build site only**: `yarn build:site`
 - **Version bump**: `npm version patch` (auto-updates `releaseDate` in package.json via preversion hook)
 
-Node version: 20 (see `.nvmrc`, used by CI via `node-version-file`). Package manager: **yarn 1.x**, pinned to the exact version by the `packageManager` field.
-
-CI applies that pin through an explicit `corepack enable yarn` step (`actions/setup-node` has no corepack input, in any version). Locally the pin only applies if you enabled corepack yourself, otherwise you get whatever yarn is on your PATH.
-
 There is no `engines` field on purpose: the published package contains data files only, so build-time requirements must not leak to consumers.
 
 ## Architecture
@@ -58,7 +54,7 @@ React + Vite app for data visualization. Uses MUI for styling. Vite config sets 
 
 Runs daily (cron) + on-demand. On `main`: generates data, bumps version if changes detected, publishes to npm, deploys site to GitHub Pages.
 
-Publishing runs on npm OIDC trusted publishing, so it needs no personal npm account. To release a change that does not touch `data/` (a `package.json` fix, for instance), run the workflow manually on `main` with the `force_publish` input enabled: it skips the data commit and still bumps, tags and publishes. Scheduled runs ignore that input and keep their data-change condition.
+Publishing goes through npm OIDC trusted publishing: the repository is the publisher, no personal npm account is involved.
 
 ## Key Data Concepts
 
