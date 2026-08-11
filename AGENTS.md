@@ -56,6 +56,8 @@ React + Vite app for data visualization. Uses MUI for styling. Vite config sets 
 
 Runs daily (cron) + on-demand. On `main`: generates data, bumps version if changes detected, publishes to npm, deploys site to GitHub Pages.
 
+Publishing runs on npm OIDC trusted publishing, so it needs no personal npm account. To release a change that does not touch `data/` (a `package.json` fix, for instance), run the workflow manually on `main` with the `force_publish` input enabled: it skips the data commit and still bumps, tags and publishes. Scheduled runs ignore that input and keep their data-change condition.
+
 ## Key Data Concepts
 
 - **Regions** are identified by ISO 3166-1 alpha-2 codes (countries) or `XX-YY` format (subdivisions, e.g. `US-CA`, `CA-QC`)
