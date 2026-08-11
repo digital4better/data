@@ -2,6 +2,11 @@ name: Data generation
 
 on:
   workflow_dispatch:
+    inputs:
+      force_publish:
+        description: 'Publish a new version even when data/ has not changed'
+        type: boolean
+        default: false
   schedule:
     - cron: '0 0 * * *'
 
@@ -18,11 +23,13 @@ jobs:
         with:
           token: ${{ secrets.MAIN_PUSH_TOKEN }}
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v7
         with:
-          node-version: 20.x
+          node-version-file: .nvmrc
           registry-url: 'https://registry.npmjs.org'
           cache: 'yarn'
+      - name: Enable corepack
+        run: corepack enable yarn
       - name: Upgrade npm for OIDC
         run: npm install -g npm@latest
       - run: git config user.name "GitHub Actions Bot"
@@ -31,15 +38,21 @@ jobs:
       - run: yarn build
       - name: Version, push & publish if changes
         if: github.ref == 'refs/heads/main'
+        env:
+          FORCE_PUBLISH: ${{ inputs.force_publish }}
         run: |
           set -e
           git add data/
           if git diff --cached --quiet; then
-            echo "No changes detected → no version bump, no publish"
-            exit 0
+            if [ "$FORCE_PUBLISH" != "true" ]; then
+              echo "No changes detected → no version bump, no publish"
+              exit 0
+            fi
+            echo "No data change, but force_publish requested → publish anyway"
+          else
+            echo "Changes detected → commit generated data"
+            git commit -m "chore: update generated data"
           fi
-          echo "Changes detected → commit generated data"
-          git commit -m "chore: update generated data"
           echo "Bump version"
           npm version patch
           echo "Push commits and tags"

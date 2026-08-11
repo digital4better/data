@@ -15,7 +15,7 @@ Open-data repository by Digital4Better providing geographic and environmental da
 - **Build site only**: `yarn build:site`
 - **Version bump**: `npm version patch` (auto-updates `releaseDate` in package.json via preversion hook)
 
-Node version: 20 (see `.nvmrc`). Package manager: **yarn 1.x** (npm is blocked via `engines`).
+There is no `engines` field on purpose: the published package contains data files only, so build-time requirements must not leak to consumers.
 
 ## Architecture
 
@@ -53,6 +53,8 @@ React + Vite app for data visualization. Uses MUI for styling. Vite config sets 
 ### CI/CD (`.github/workflows/main.yml`)
 
 Runs daily (cron) + on-demand. On `main`: generates data, bumps version if changes detected, publishes to npm, deploys site to GitHub Pages.
+
+Publishing goes through npm OIDC trusted publishing: the repository is the publisher, no personal npm account is involved.
 
 ## Key Data Concepts
 
