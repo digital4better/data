@@ -30,8 +30,12 @@ jobs:
           cache: 'yarn'
       - name: Enable corepack
         run: corepack enable yarn
+      # npm@latest is 12.x, which requires node >= 22.22.2. Pinned to 11.x,
+      # the last line that runs on node 20 while satisfying the npm >= 11.5.1
+      # that OIDC trusted publishing needs. Drop the pin once .nvmrc moves off
+      # node 20.
       - name: Upgrade npm for OIDC
-        run: npm install -g npm@latest
+        run: npm install -g npm@11
       - run: git config user.name "GitHub Actions Bot"
       - run: git config user.email "<>"
       - run: yarn --frozen-lockfile
