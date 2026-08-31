@@ -1,0 +1,227 @@
+[
+  {
+    "id": "plane-short",
+    "location": "FR",
+    "period": "2026",
+    "unit": "pkm",
+    "gwp": 0.2242,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=500&displayAll=1"
+  },
+  {
+    "id": "plane-medium",
+    "location": "FR",
+    "period": "2026",
+    "unit": "pkm",
+    "gwp": 0.1843,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1500&displayAll=1"
+  },
+  {
+    "id": "plane-medium-long",
+    "location": "FR",
+    "period": "2026",
+    "unit": "pkm",
+    "gwp": 0.1665,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=3000&displayAll=1"
+  },
+  {
+    "id": "plane-long",
+    "location": "FR",
+    "period": "2026",
+    "unit": "pkm",
+    "gwp": 0.1776,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=6000&displayAll=1"
+  },
+  {
+    "id": "train-tgv",
+    "location": "FR",
+    "period": "2026",
+    "unit": "pkm",
+    "gwp": 0.0023,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "train-intercity",
+    "location": "FR",
+    "period": "2026",
+    "unit": "pkm",
+    "gwp": 0.0058,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "train-ter",
+    "location": "FR",
+    "period": "2026",
+    "unit": "pkm",
+    "gwp": 0.0229,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "train-rer",
+    "location": "FR",
+    "period": "2026",
+    "unit": "pkm",
+    "gwp": 0.0066,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "coach",
+    "location": "FR",
+    "period": "2026",
+    "unit": "pkm",
+    "gwp": 0.03314,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "bus-thermal",
+    "location": "FR",
+    "period": "2026",
+    "unit": "pkm",
+    "gwp": 0.1135,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "bus-electric",
+    "location": "FR",
+    "period": "2026",
+    "unit": "pkm",
+    "gwp": 0.0095,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "tram",
+    "location": "FR",
+    "period": "2026",
+    "unit": "pkm",
+    "gwp": 0.0038,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "metro",
+    "location": "FR",
+    "period": "2026",
+    "unit": "pkm",
+    "gwp": 0.0042,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "car-petrol",
+    "location": "FR",
+    "period": "2025",
+    "unit": "vkm",
+    "gwp": 0.1380123725556303,
+    "source": "Impact CO2 average car model (ADEME), 2025",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "car-diesel",
+    "location": "FR",
+    "period": "2025",
+    "unit": "vkm",
+    "gwp": 0.1105577600556303,
+    "source": "Impact CO2 average car model (ADEME), 2025",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "car-electric",
+    "location": "FR",
+    "period": "2025",
+    "unit": "vkm",
+    "gwp": 0.01208836005563031,
+    "source": "Impact CO2 average car model (ADEME), 2025",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "car-hybrid",
+    "location": "FR",
+    "period": "2025",
+    "unit": "vkm",
+    "gwp": 0.1134194350556303,
+    "source": "Impact CO2 average car model (ADEME), 2025",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "car-plug-in-hybrid",
+    "location": "FR",
+    "period": "2025",
+    "unit": "vkm",
+    "gwp": 0.0931681350556303,
+    "source": "Impact CO2 average car model (ADEME), 2025",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "scooter-thermal",
+    "location": "FR",
+    "period": "2026",
+    "unit": "vkm",
+    "gwp": 0.0604,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "scooter-electric",
+    "location": "FR",
+    "period": "2026",
+    "unit": "vkm",
+    "gwp": 0.0207,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "motorcycle-small",
+    "location": "FR",
+    "period": "2026",
+    "unit": "vkm",
+    "gwp": 0.053,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "motorcycle-large",
+    "location": "FR",
+    "period": "2026",
+    "unit": "vkm",
+    "gwp": 0.14,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "walking",
+    "location": "FR",
+    "period": "2026",
+    "unit": "pkm",
+    "gwp": 0,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "bicycle",
+    "location": "FR",
+    "period": "2026",
+    "unit": "pkm",
+    "gwp": 0,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  },
+  {
+    "id": "electric-bicycle",
+    "location": "FR",
+    "period": "2026",
+    "unit": "pkm",
+    "gwp": 0.00223,
+    "source": "Impact CO2 transport API (ADEME), 2026 snapshot",
+    "sourceUrl": "https://impactco2.fr/api/v1/transport?km=1&displayAll=1"
+  }
+]

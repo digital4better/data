@@ -216,6 +216,120 @@ const exportToCsv = (file: string, values: Record<string, CsvValue>[], headers?:
     appendFileSync(file, headers.map((header) => escapeCsvValue(line[header])).join(",") + "\r\n");
 };
 
+const REFERENCE_FACTOR_HEADERS = [
+  "id",
+  "location",
+  "period",
+  "unit",
+  "adpe",
+  "ap",
+  "ctue",
+  "ctuh-c",
+  "ctuh-nc",
+  "gwp",
+  "ir",
+  "pm",
+  "wu",
+  "source",
+  "sourceUrl",
+] as const;
+const REFERENCE_FACTOR_IMPACTS = ["adpe", "ap", "ctue", "ctuh-c", "ctuh-nc", "gwp", "ir", "pm", "wu"] as const;
+const REFERENCE_FACTOR_UNITS = ["pkm", "vkm", "kWh"] as const;
+const REFERENCE_FACTOR_DIRECTORIES = ["transport", "facility"] as const;
+
+type ReferenceFactorImpact = (typeof REFERENCE_FACTOR_IMPACTS)[number];
+type ReferenceFactor = {
+  id: string;
+  location: string;
+  period: string;
+  unit: (typeof REFERENCE_FACTOR_UNITS)[number];
+  source: string;
+  sourceUrl: string;
+} & Partial<Record<ReferenceFactorImpact, number>>;
+
+const validateReferenceFactors = (directory: string, input: unknown): ReferenceFactor[] => {
+  if (!Array.isArray(input) || input.length === 0) throw new Error(`${directory} factors must be a non-empty array`);
+
+  const keys = new Set<string>();
+  const allowedFields = new Set<string>(REFERENCE_FACTOR_HEADERS);
+
+  return input.map((value, index) => {
+    if (value == null || typeof value !== "object" || Array.isArray(value)) {
+      throw new Error(`${directory} factor #${index + 1} must be an object`);
+    }
+
+    const factor = value as ReferenceFactor;
+    const prefix = `${directory} factor #${index + 1}`;
+    const unknownFields = Object.keys(factor).filter((field) => !allowedFields.has(field));
+    if (unknownFields.length) throw new Error(`${prefix} has unknown fields: ${unknownFields.join(", ")}`);
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(factor.id)) throw new Error(`${prefix} has an invalid id`);
+    if (!/^[A-Z]{2}$/.test(factor.location)) throw new Error(`${prefix} has an invalid location`);
+    if (!/^\d{4}$/.test(factor.period)) throw new Error(`${prefix} has an invalid annual period`);
+    if (!REFERENCE_FACTOR_UNITS.includes(factor.unit)) throw new Error(`${prefix} has an invalid unit`);
+    if (typeof factor.source !== "string" || factor.source.trim() === "") throw new Error(`${prefix} has no source`);
+    if (typeof factor.sourceUrl !== "string") throw new Error(`${prefix} has no sourceUrl`);
+
+    let sourceUrl: URL;
+    try {
+      sourceUrl = new URL(factor.sourceUrl);
+    } catch {
+      throw new Error(`${prefix} has an invalid sourceUrl`);
+    }
+    if (sourceUrl.protocol !== "https:") throw new Error(`${prefix} sourceUrl must use HTTPS`);
+
+    for (const impact of REFERENCE_FACTOR_IMPACTS) {
+      const impactValue = factor[impact];
+      if (impact === "gwp" && impactValue == null) throw new Error(`${prefix} has no gwp`);
+      if (impactValue != null && (!Number.isFinite(impactValue) || impactValue < 0)) {
+        throw new Error(`${prefix} has an invalid ${impact}`);
+      }
+    }
+
+    const key = `${factor.id}:${factor.location}:${factor.period}`;
+    if (keys.has(key)) throw new Error(`${directory} factors contain duplicate key ${key}`);
+    keys.add(key);
+    return factor;
+  });
+};
+
+const validateElectricityFactors = (factors: ReferenceFactor[]) => {
+  const sources = {
+    FR: JSON.parse(readFileSync("./data/factor/country-yearly.json", "utf-8")).FR,
+    EU: JSON.parse(readFileSync("./data/factor/continent-yearly.json", "utf-8")).Europe,
+  } as Record<string, Record<string, Partial<Record<ReferenceFactorImpact, number>>>>;
+
+  for (const [location, periods] of Object.entries(sources)) {
+    const electricityFactors = factors.filter(
+      ({ id, location: factorLocation }) => id === "electricity-grid" && factorLocation === location
+    );
+    const actualPeriods = electricityFactors.map(({ period }) => period).sort();
+    const expectedPeriods = Object.keys(periods).sort();
+    if (actualPeriods.join(",") !== expectedPeriods.join(",")) {
+      throw new Error(`facility electricity periods for ${location} do not match their source`);
+    }
+
+    for (const factor of electricityFactors) {
+      for (const impact of REFERENCE_FACTOR_IMPACTS) {
+        if (factor[impact] !== periods[factor.period]?.[impact]) {
+          throw new Error(`facility electricity ${impact} for ${location}:${factor.period} does not match its source`);
+        }
+      }
+    }
+  }
+};
+
+const generateReferenceFactors = async () => {
+  process.stdout.write(`Exporting reference factors...\n`);
+  for (const directory of REFERENCE_FACTOR_DIRECTORIES) {
+    const factors = validateReferenceFactors(
+      directory,
+      JSON.parse(readFileSync(`./data/${directory}/factors.json`, "utf-8"))
+    );
+    if (directory === "facility") validateElectricityFactors(factors);
+    exportToCsv(`./data/${directory}/factors.csv`, factors, [...REFERENCE_FACTOR_HEADERS]);
+  }
+};
+
 const degToRad = (deg: number) => deg * (Math.PI / 180.0);
 const computeDistance = (
   origin: { lat: number; lon: number },
@@ -917,5 +1031,6 @@ const generateAi = async () => {
   await generateClouds();
   await generateCountries();
   await generateFactors();
+  await generateReferenceFactors();
   console.log(`Done in ${Math.round((Date.now() - start) / 1000)}s`);
 })();
