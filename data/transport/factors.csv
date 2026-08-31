@@ -1,0 +1,26 @@
+id,location,period,unit,adpe,ap,ctue,ctuh-c,ctuh-nc,gwp,ir,pm,wu,source,sourceUrl
+plane-short,FR,2026,pkm,,,,,,0.2242,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=500&displayAll=1
+plane-medium,FR,2026,pkm,,,,,,0.1843,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=1500&displayAll=1
+plane-medium-long,FR,2026,pkm,,,,,,0.1665,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=3000&displayAll=1
+plane-long,FR,2026,pkm,,,,,,0.1776,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=6000&displayAll=1
+train-tgv,FR,2026,pkm,,,,,,0.0023,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+train-intercity,FR,2026,pkm,,,,,,0.0058,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+train-ter,FR,2026,pkm,,,,,,0.0229,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+train-rer,FR,2026,pkm,,,,,,0.0066,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+coach,FR,2026,pkm,,,,,,0.03314,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+bus-thermal,FR,2026,pkm,,,,,,0.1135,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+bus-electric,FR,2026,pkm,,,,,,0.0095,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+tram,FR,2026,pkm,,,,,,0.0038,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+metro,FR,2026,pkm,,,,,,0.0042,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+car-petrol,FR,2025,vkm,,,,,,0.1380123725556303,,,,"Impact CO2 average car model (ADEME), 2025",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+car-diesel,FR,2025,vkm,,,,,,0.1105577600556303,,,,"Impact CO2 average car model (ADEME), 2025",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+car-electric,FR,2025,vkm,,,,,,0.01208836005563031,,,,"Impact CO2 average car model (ADEME), 2025",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+car-hybrid,FR,2025,vkm,,,,,,0.1134194350556303,,,,"Impact CO2 average car model (ADEME), 2025",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+car-plug-in-hybrid,FR,2025,vkm,,,,,,0.0931681350556303,,,,"Impact CO2 average car model (ADEME), 2025",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+scooter-thermal,FR,2026,vkm,,,,,,0.0604,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+scooter-electric,FR,2026,vkm,,,,,,0.0207,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+motorcycle-small,FR,2026,vkm,,,,,,0.053,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+motorcycle-large,FR,2026,vkm,,,,,,0.14,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+walking,FR,2026,pkm,,,,,,0,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+bicycle,FR,2026,pkm,,,,,,0,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
+electric-bicycle,FR,2026,pkm,,,,,,0.00223,,,,"Impact CO2 transport API (ADEME), 2026 snapshot",https://impactco2.fr/api/v1/transport?km=1&displayAll=1
