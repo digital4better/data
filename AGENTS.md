@@ -15,7 +15,7 @@ Open-data repository by Digital4Better providing geographic and environmental da
 - **Build site only**: `yarn build:site`
 - **Version bump**: `npm version patch` (auto-updates `releaseDate` in package.json via the `version` hook)
 
-The hook has to stay on `version`, not `preversion`: npm loads package.json before running `preversion` and rewrites it afterwards, discarding whatever the hook wrote. Yarn 1, which the workflow used until February 2026, reloaded the manifest instead, which is why the old hook worked.
+Keep that update on the `version` hook: npm rewrites package.json after `preversion` runs, discarding anything that hook wrote.
 
 There is no `engines` field on purpose: the published package contains data files only, so build-time requirements must not leak to consumers.
 
