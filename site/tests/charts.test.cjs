@@ -56,3 +56,29 @@ test("mix map disables unavailable territories and history is visible with annua
     assert.ok(history.includes("Monde"));
   } finally { await server.close(); }
 });
+
+test("factor maps accept grouped territories and trend preserves zeros and gaps", async () => {
+  const { createServer } = await import("vite");
+  const server = await createServer({ server: { middlewareMode: true, watch: null } });
+  try {
+    const { FactorMap, Trend } = await server.ssrLoadModule("/src/app.tsx");
+    for (const territory of ["Europe", "world", "US-CA"]) {
+      const map = renderToStaticMarkup(React.createElement(FactorMap, {
+        paths: { [territory]: "M0 0L1 1Z", missing: "M2 2L3 3Z" },
+        rows: [{ key: territory, period: "2026-08", values: { gwp: 0 } }],
+        metric: "gwp", period: "2026-08", names: {}, lang: "fr", selected: territory, onSelect() {},
+      }));
+      assert.equal((map.match(/aria-pressed=/g) || []).length, 1);
+      assert.match(map, /aria-pressed="true"/);
+      assert.match(map, /pointer-events="none"/);
+      assert.match(map, /2026-08/);
+    }
+    const rows = [0, 0.002, null, 0.003, 0.004].map((value, i) => ({ key: "world", period: String(2022 + i), values: { gwp: value } }));
+    const trend = renderToStaticMarkup(React.createElement(Trend, { rows, metric: "gwp", lang: "en", name: "World", unit: "kg CO₂e / kWh" }));
+    assert.equal((trend.match(/<polyline/g) || []).length, 2, "missing periods break the curve");
+    assert.equal((trend.match(/<circle/g) || []).length, 4, "zero is plotted, missing value is not");
+    for (const row of rows) assert.ok(trend.includes(`>${row.period}</text>`));
+    assert.match(trend, /World/);
+    assert.match(trend, />0\.004<\/text>/);
+  } finally { await server.close(); }
+});

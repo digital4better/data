@@ -4,8 +4,8 @@ import { termLabel, regionLabel, languageStorageKey } from "./localization";
 import React, { useEffect, useMemo, useState, useRef, useId } from "react";
 import { collections, guides, impacts, fieldLabels, repository, license, tr, datasetTitle, renewableFactorExplanation } from "./content.mjs";
 import { rowsOf, subsetOf, csvSubset, cloudRows, cloudExportRows, Row } from "./data";
-import { Bars, CloudMap, CatalogCharts, MixMap, MixHistory, useTooltip } from "./charts";
-import { selectedTerritory, rowsAtPeriod, allowedFilters, displayPaths, mixPaths } from "./chart-data";
+import { CloudMap, CatalogCharts, MixMap, MixHistory, useTooltip } from "./charts";
+import { rowsAtPeriod, allowedFilters, mixPaths } from "./chart-data";
 import { Logo } from "./assets/logo";
 import "./style.css";
 export type Dataset = {
@@ -634,7 +634,7 @@ function Explorer({
   const world = d.id.startsWith("world-");
   const [geographicScale, frequency] = d.id.split("-");
   const renewablesOnly = d.id.endsWith("-green");
-  const mixWorldFile = `world-${frequency}${renewablesOnly ? "-green" : ""}.json`;
+  const worldFile = `world-${frequency}${renewablesOnly ? "-green" : ""}.json`;
   const [worldSource, setWorldSource] = useState<any>(null);
   const [worldError, setWorldError] = useState(false);
   const [geography, setGeography] = useState<any[]>([]);
@@ -683,11 +683,11 @@ function Explorer({
     return () => controller.abort();
   }, [d.id, d.file]);
   useEffect(() => {
-    if (d.collection !== "mix" || world) return;
+    if (!temporal || world) return;
     const controller = new AbortController();
     setWorldSource(null);
     setWorldError(false);
-    fetch(`${base}mix/${mixWorldFile}`, { signal: controller.signal })
+    fetch(`${base}${d.collection}/${worldFile}`, { signal: controller.signal })
       .then((response) => { if (!response.ok) throw new Error(); return response.json(); })
       .then(setWorldSource)
       .catch((error) => { if (error.name !== "AbortError") setWorldError(true); });
@@ -712,7 +712,6 @@ function Explorer({
         }
       })
       .catch(() => {});
-    if (d.collection === "mix" || (d.collection === "factor" && /^(country|subdivision)-/.test(d.id)))
       fetch(`${base}country/regions-paths.json`)
         .then((r) => r.json())
         .then((p) => {
@@ -731,7 +730,7 @@ function Explorer({
   }, [source, allCloud, d.id]);
   const arraySource = allCloud || Array.isArray(source);
   const worldRows = useMemo(() => worldSource ? rowsOf(worldSource, true, true) : [], [worldSource]);
-  const mixDisplayPaths = useMemo(() => d.collection === "mix" ? mixPaths(paths, geographicScale, geography) : {}, [paths, geographicScale, geography]);
+  const geographicPaths = useMemo(() => temporal ? mixPaths(paths, geographicScale, geography) : {}, [paths, geographicScale, geography]);
   useEffect(() => {
     if (temporal && ready && source && region && !rows.some((row) => row.key === region)) setRegion("");
   }, [source, ready, region, rows]);
@@ -837,9 +836,8 @@ function Explorer({
       ? regionLabel(a.toUpperCase(), a, lang).localeCompare(regionLabel(b.toUpperCase(), b, lang), lang)
       : a.localeCompare(b, lang)) as string[];
   const regions = Array.from(new Set(rows.map((r) => r.key))).sort(compareTerritories);
-  const chartRegion = d.collection === "mix" ? (world ? "world" : region || "world") : selectedTerritory(region, world);
-  const selectedRow = periodRows.find((r) => r.key === chartRegion && matches(r));
-  const historyRows = (d.collection === "mix" && chartRegion === "world" && !world ? worldRows : rows)
+  const chartRegion = world ? "world" : region || "world";
+  const historyRows = (temporal && chartRegion === "world" && !world ? worldRows : rows)
     .filter((r) => r.key === chartRegion).sort((a, b) => a.period!.localeCompare(b.period!));
   async function download(ext: string, exportDataset = d) {
     setExportError("");
@@ -981,7 +979,7 @@ function Explorer({
                   <label>
                     {t("Territoire", "Territory")}
                     <select value={region} onChange={(e) => setRegion(e.target.value)}>
-                      <option value="">{d.collection === "mix" ? t("Aucun — évolution mondiale", "None — world history") : t("Tous", "All")}</option>
+                      <option value="">{t("Aucun — évolution mondiale", "None — world history")}</option>
                       {region && !regions.includes(region) && <option value={region}>{names[region] || region}</option>}
                       {regions.map((r) => (
                         <option key={r} value={r}>
@@ -1042,9 +1040,9 @@ function Explorer({
               {t("Réinitialiser", "Reset")}
             </button>
           </div>
-          {d.collection === "factor" && /^(country|subdivision)-/.test(d.id) && (
+          {d.collection === "factor" && (
             <FactorMap
-              paths={paths}
+              paths={geographicPaths}
               rows={mapRows}
               metric={activeMetric}
               lang={lang}
@@ -1052,13 +1050,12 @@ function Explorer({
               period={activePeriod}
               selected={region}
               onSelect={setRegion}
-              countryLevel={d.id.startsWith("country-")}
             />
           )}
           {d.collection === "cloud" && d.id.endsWith("regions") && <CloudMap rows={filtered} lang={lang} />}
           {d.collection === "mix" && (
             <MixMap
-              paths={mixDisplayPaths}
+              paths={geographicPaths}
               rows={mapRows}
               period={activePeriod}
               names={names}
@@ -1087,47 +1084,6 @@ function Explorer({
               </a>
             </aside>
           )}
-          {d.collection === "factor" && !world && !chartRegion && (
-            <p className="selection-prompt">
-              {t(
-                "Sélectionnez un territoire sur la carte ou dans le filtre pour explorer son détail et son évolution.",
-                "Select a territory on the map or in the filter to explore its detail and history."
-              )}
-            </p>
-          )}
-          {d.collection === "factor" && chartRegion && (
-            <section className="selected-territory">
-              <div className="section-heading">
-                <h3>
-                  {world ? t("Monde", "World") : names[chartRegion] || chartRegion} · {activePeriod}
-                </h3>
-                {!world && (
-                  <button onClick={() => setRegion("")}>{t("Effacer la sélection", "Clear selection")}</button>
-                )}
-              </div>
-              {!selectedRow ? (
-                <p role="status">
-                  {t(
-                    "Aucune donnée pour ce territoire avec la période et les filtres sélectionnés.",
-                    "No data for this territory with the selected period and filters."
-                  )}
-                </p>
-              ) : (
-                <p>
-                  {label(activeMetric, lang)} / kWh : <strong>{format(selectedRow.values[activeMetric], lang)}</strong>
-                </p>
-              )}
-            </section>
-          )}
-          {d.collection === "factor" && d.id.startsWith("continent-") && (
-            <Bars
-              title={`${label(activeMetric, lang)} / kWh · ${activePeriod}`}
-              items={mapRows
-                .filter((r) => typeof r.values[activeMetric] === "number")
-                .map((r) => ({ name: names[r.key] || r.key, value: r.values[activeMetric] }))}
-              lang={lang}
-            />
-          )}
           {!temporal && d.collection !== "cloud" && filtered.length > 0 && (
             <CatalogCharts
               rows={filtered}
@@ -1143,20 +1099,15 @@ function Explorer({
               <h3>{t("Évolution du mix électrique", "Electricity mix over time")} · {chartRegion === "world" ? t("Monde", "World") : names[chartRegion!] || chartRegion!}</h3>
               <p role="status">{worldError ? t("Impossible de charger l’évolution mondiale. Réessayez en rechargeant la page.", "Unable to load world history. Reload the page to try again.") : t("Chargement de l’évolution…", "Loading history…")}</p>
             </section>)}
-          {d.collection === "factor" && historyRows.length > 0 && (
-            <details className="history">
-              <summary>
-                {t("Évolution temporelle", "Time evolution")} ·{" "}
-                {chartRegion === "world" ? t("Monde", "World") : names[chartRegion!] || chartRegion} ·{" "}
-                {label(activeMetric, lang)}
-              </summary>
-              <Trend
-                rows={historyRows}
-                metric={activeMetric}
-                lang={lang}
-                unit={label(activeMetric, lang) + " / kWh"}
-              />
-            </details>
+          {d.collection === "factor" && (
+            <section className="data-chart factor-history">
+              <h3>{t("Évolution des facteurs d’impact", "Impact factors over time")} · {chartRegion === "world" ? t("Monde", "World") : names[chartRegion] || chartRegion}</h3>
+              <p>{label(activeMetric, lang)} / kWh · {t("Survolez, touchez ou sélectionnez une période au clavier pour lire sa valeur.", "Hover, tap or focus a period to read its value.")}</p>
+              {historyRows.length ? <Trend rows={historyRows} metric={activeMetric} lang={lang}
+                name={chartRegion === "world" ? t("Monde", "World") : names[chartRegion] || chartRegion}
+                unit={label(activeMetric, lang) + " / kWh"} />
+                : <p role="status">{worldError ? t("Impossible de charger l’évolution mondiale. Réessayez en rechargeant la page.", "Unable to load world history. Reload the page to try again.") : t("Chargement de l’évolution…", "Loading history…")}</p>}
+            </section>
           )}
           <div className={`section-heading${allCloud ? " cloud-export-heading" : ""}`}>
             <p role="status">
@@ -1343,7 +1294,7 @@ function DetailPanel({ row, lang, onClose }: { row: Row; lang: string; onClose: 
     </tbody></table>
   </dialog>;
 }
-function FactorMap({
+export function FactorMap({
   paths,
   rows,
   metric,
@@ -1352,9 +1303,7 @@ function FactorMap({
   period,
   selected,
   onSelect,
-  countryLevel,
 }: {
-  countryLevel: boolean;
   selected: string;
   onSelect: (key: string) => void;
   paths: Record<string, string>;
@@ -1383,10 +1332,11 @@ function FactorMap({
         }}
       >
         <g className="map-layer" style={{ transform: zoom.transform }}>
-        {Object.entries(displayPaths(paths, countryLevel)).map(([key, path]) => {
-          const targetKey = countryLevel ? key.slice(0, 2) : key;
+        {Object.entries(paths).map(([key, path]) => {
+          const targetKey = key;
+          if (!rows.some(row => row.key === key)) return <path key={key} d={path} fill="#eef1f4" stroke="white" strokeWidth={0.4} pointerEvents="none" aria-hidden="true" />;
           const value = values[targetKey];
-          const message = `${names[key] || names[key.slice(0, 2)] || key} (${key})\n${period} · ${label(
+          const message = `${key === "world" ? text("Monde", "World", lang) : names[key] || key} (${key})\n${period} · ${label(
             metric,
             lang
           )} / kWh\n${format(value, lang)}`;
@@ -1432,14 +1382,18 @@ function FactorMap({
     </figure>
   );
 }
-function Trend({ rows, metric, lang, unit }: { rows: Row[]; metric: string; lang: string; unit: string }) {
-  const tip = useTooltip(rows);
+export function Trend({ rows, metric, lang, unit, name }: { rows: Row[]; metric: string; lang: string; unit: string; name: string }) {
+  const tip = useTooltip(useMemo(() => ({ rows, metric }), [rows, metric]));
   const values = rows.map((r) => r.values[metric]);
   const max = Math.max(0, ...values.filter((v) => typeof v === "number"));
   let points = "";
   const segments: string[] = [];
-  const x = (i: number) => 20 + (i * 560) / Math.max(1, values.length - 1);
-  const y = (v: number) => 130 - (max ? v / max : 0) * 110;
+  const left = 100, width = 640, top = 15, height = 205;
+  const x = (i: number) => left + (i * width) / Math.max(1, values.length - 1);
+  const y = (v: number) => top + height * (1 - (max ? v / max : 0));
+  const tickCount = Math.min(rows.every(row => row.period?.length === 4) ? 12 : 7, rows.length);
+  const ticks = new Set(Array.from({ length: tickCount }, (_, i) => Math.round(i * (rows.length - 1) / Math.max(1, tickCount - 1))));
+  const axisNumber = (value: number) => new Intl.NumberFormat(lang, { maximumSignificantDigits: 3, notation: value !== 0 && (Math.abs(value) < 0.001 || Math.abs(value) >= 10000) ? "scientific" : "standard" }).format(value);
   values.forEach((v, i) => {
     if (typeof v === "number") {
       points += `${x(i)},${y(v)} `;
@@ -1451,8 +1405,11 @@ function Trend({ rows, metric, lang, unit }: { rows: Row[]; metric: string; lang
   if (points) segments.push(points);
   return (
     <figure className="trend" onPointerLeave={tip.close}>
-      <svg viewBox="0 0 600 160" role="group" aria-label={text("Évolution temporelle", "Time evolution", lang)}>
-        <line x1="20" x2="580" y1="130" y2="130" stroke="#ddd" />
+      <svg viewBox="0 0 770 255" role="group" aria-label={`${text("Évolution temporelle", "Time evolution", lang)} · ${name} · ${unit}`}>
+        {(max ? [0, 0.25, 0.5, 0.75, 1] : [0]).map(ratio => <g key={ratio} aria-hidden="true">
+          <line x1={left} x2={left + width} y1={y(max * ratio)} y2={y(max * ratio)} stroke="#dce5ef" />
+          <text x={left - 8} y={y(max * ratio) + 4} textAnchor="end">{axisNumber(max * ratio)}</text>
+        </g>)}
         {segments.map((s, i) => (
           <polyline key={i} points={s} fill="none" stroke="#003878" strokeWidth="3" />
         ))}
@@ -1465,16 +1422,11 @@ function Trend({ rows, metric, lang, unit }: { rows: Row[]; metric: string; lang
               r="4"
               fill="#f15842"
               stroke="white"
-              {...tip.bind(`${rows[i].period}\n${format(v, lang)} · ${unit}`)}
+              {...tip.bind(`${name} · ${rows[i].period}\n${format(v, lang)} · ${unit}`)}
             />
           ) : null
         )}
-        <text x="20" y="153">
-          {rows[0]?.period}
-        </text>
-        <text x="580" y="153" textAnchor="end">
-          {rows[rows.length - 1]?.period}
-        </text>
+        {[...ticks].map(i => <text key={i} x={x(i)} y={top + height + 24} textAnchor={i === 0 ? "start" : i === rows.length - 1 ? "end" : "middle"}>{rows[i].period}</text>)}
       </svg>
       {tip.tooltip}
     </figure>

@@ -446,8 +446,9 @@ td summary {
   margin: 0;
 }
 .trend svg {
-  max-height: 200px;
+  display: block;
   width: 100%;
+  height: auto;
 }
 .trend text {
   font-size: 11px;
