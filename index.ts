@@ -778,7 +778,7 @@ const exportFactorsAndMixes = (aggregates: Aggregates) => {
     writeFileSync(`./data/mix/${exp.name}.json`, JSON.stringify(groupBy(mixes.global, exp.group), null, 2));
     exportToCsv(`./data/mix/${exp.name}.csv`, mixes.global);
     writeFileSync(`./data/mix/${exp.name}-green.json`, JSON.stringify(groupBy(mixes.green, exp.group), null, 2));
-    exportToCsv(`./data/mix/${exp.name}-green.csv`, mixes.global);
+    exportToCsv(`./data/mix/${exp.name}-green.csv`, mixes.green);
     writeFileSync(`./data/factor/${exp.name}.json`, JSON.stringify(groupBy(impacts.global, exp.group), null, 2));
     exportToCsv(`./data/factor/${exp.name}.csv`, impacts.global);
     writeFileSync(`./data/factor/${exp.name}-green.json`, JSON.stringify(groupBy(impacts.green, exp.group), null, 2));

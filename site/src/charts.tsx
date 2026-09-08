@@ -1,0 +1,431 @@
+import React, { useEffect, useId, useState } from "react";
+import type { Row } from "./data";
+import { countsBy, numericBars, groupedLocations, displayPaths } from "./chart-data";
+const t = (lang: string, fr: string, en: string) => (lang === "fr" ? fr : en);
+const number = (v: unknown, lang: string) =>
+  typeof v === "number" && Number.isFinite(v)
+    ? new Intl.NumberFormat(lang, { maximumSignificantDigits: 6 }).format(v)
+    : "—";
+export function useTooltip(resetKey?: unknown) {
+  const id = useId();
+  const [tip, setTip] = useState<{ text: string; content?: React.ReactNode; x: number; y: number } | null>(null);
+  useEffect(() => setTip(null), [resetKey]);
+  useEffect(() => {
+    const dismiss = (event: Event) => {
+      if (event.type === "keydown" && (event as KeyboardEvent).key !== "Escape") return;
+      if (event.target instanceof Element && event.target.closest(".chart-tooltip")) return;
+      setTip(null);
+    };
+    window.addEventListener("keydown", dismiss);
+    window.addEventListener("resize", dismiss);
+    window.addEventListener("scroll", dismiss, true);
+    return () => {
+      window.removeEventListener("keydown", dismiss);
+      window.removeEventListener("resize", dismiss);
+      window.removeEventListener("scroll", dismiss, true);
+    };
+  }, []);
+  function show(target: Element, text: string, content?: React.ReactNode) {
+    const rect = target.getBoundingClientRect();
+    setTip({
+      text,
+      content,
+      x: Math.max(8, Math.min(window.innerWidth - 300, rect.left + rect.width / 2 - 140)),
+      y: Math.max(8, Math.min(window.innerHeight - Math.min(380, window.innerHeight - 8), rect.bottom + 10)),
+    });
+  }
+  return {
+    bind: (message: string, content?: React.ReactNode) => ({
+      tabIndex: 0,
+      role: "button" as const,
+      "aria-label": message,
+      "aria-describedby": tip?.text === message ? id : undefined,
+      onPointerEnter: (e: React.PointerEvent<Element>) => show(e.currentTarget, message, content),
+      onFocus: (e: React.FocusEvent<Element>) => {
+        const target = e.currentTarget;
+        requestAnimationFrame(() => {
+          if (document.activeElement === target) show(target, message, content);
+        });
+      },
+      onBlur: () => setTip(null),
+      onClick: (e: React.MouseEvent<Element>) => show(e.currentTarget, message, content),
+      onKeyDown: (e: React.KeyboardEvent<Element>) => {
+        if (e.key === "Escape") setTip(null);
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          show(e.currentTarget, message, content);
+        }
+      },
+    }),
+    close: () => setTip(null),
+    tooltip: tip ? (
+      <div id={id} role="tooltip" className="chart-tooltip" style={{ left: tip.x, top: tip.y }}>
+        {tip.content || tip.text}
+      </div>
+    ) : null,
+  };
+}
+export function Bars({
+  title,
+  items,
+  lang,
+  unit = "",
+  note,
+  initialLimit,
+}: {
+  initialLimit?: number;
+  title: string;
+  items: { name: string; value: number; unit?: string }[];
+  lang: string;
+  unit?: string;
+  note?: string;
+}) {
+  const tip = useTooltip(items);
+  const [expanded, setExpanded] = useState(false);
+  const data = items.filter((item) => Number.isFinite(item.value));
+  const max = Math.max(0, ...data.map((x) => Math.abs(x.value)));
+  return (
+    <figure className="data-chart" onPointerLeave={tip.close}>
+      <figcaption>
+        <h3>{title}</h3>
+        {note && <p className="muted">{note}</p>}
+      </figcaption>
+      {data.length ? (
+        <div className="bars-list">
+          {(initialLimit && !expanded ? data.slice(0, initialLimit) : data).map((item, i) => (
+            <div
+              className="interactive-bar"
+              key={`${item.name}-${i}`}
+              {...tip.bind(`${item.name}\n${title}\n${number(item.value, lang)} ${item.unit || unit}`)}
+            >
+              <span className="bar-name">{item.name}</span>
+              <span className="bar-track">
+                <span
+                  style={{
+                    width: `${max ? (Math.abs(item.value) / max) * 100 : 0}%`,
+                    background: item.value < 0 ? "#b44838" : undefined,
+                  }}
+                />
+              </span>
+              <strong>
+                {number(item.value, lang)} {item.unit || unit}
+              </strong>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <p>{t(lang, "Aucune valeur numérique disponible.", "No numeric values available.")}</p>
+      )}
+      {initialLimit && data.length > initialLimit && (
+        <button onClick={() => setExpanded(!expanded)}>
+          {expanded
+            ? t(lang, "Réduire à ", "Show top ") + initialLimit
+            : t(lang, "Afficher les ", "Show all ") + data.length + t(lang, " valeurs", " values")}
+        </button>
+      )}
+      {tip.tooltip}
+    </figure>
+  );
+}
+export function CloudMap({ rows, lang }: { rows: Row[]; lang: string }) {
+  const [paths, setPaths] = useState<string[]>([]);
+  const [failed, setFailed] = useState(false);
+  const tip = useTooltip(rows);
+  useEffect(() => {
+    const controller = new AbortController();
+    fetch(new URL("./assets/world-map.json", import.meta.url).href, { signal: controller.signal })
+      .then((r) => {
+        if (!r.ok) throw new Error();
+        return r.json();
+      })
+      .then(setPaths)
+      .catch((e) => {
+        if (e.name !== "AbortError") setFailed(true);
+      });
+    return () => controller.abort();
+  }, []);
+  const points = groupedLocations(rows);
+  const missing = rows.length - points.reduce((sum, p) => sum + p.rows.length, 0);
+  return (
+    <figure className="data-chart cloud-map" onPointerLeave={tip.close}>
+      <figcaption>
+        <h3>{t(lang, "Régions cloud dans le monde", "Cloud regions around the world")}</h3>
+        <p className="muted">
+          {t(
+            lang,
+            "Survolez, touchez ou sélectionnez un point au clavier pour consulter les régions.",
+            "Hover, tap or focus a point to inspect its regions."
+          )}
+        </p>
+      </figcaption>
+      <svg viewBox="0 0 800 400" role="group" aria-label={t(lang, "Carte des régions cloud", "Cloud region map")}>
+        <rect width="800" height="400" fill="#f6f9fc" />
+        {paths.map((path, i) => (
+          <path key={i} d={path} fill="#dce5ef" stroke="#fff" strokeWidth=".6" />
+        ))}
+        {points.map(({ point, rows: group }, i) => {
+          const description = group
+            .map(
+              ({ values: v }) =>
+                `${v.id} · ${v.location || v.name}\n${String(v.provider || "").toUpperCase()} · ${String(
+                  v.country || ""
+                ).toUpperCase()}\nPUE ${number(v.pue, lang)} · WUE ${number(v.wue, lang)} · REF ${number(v.ref, lang)}`
+            )
+            .join("\n\n");
+          return (
+            <g key={i} {...tip.bind(description)} className="map-marker">
+              <circle cx={point[0]} cy={point[1]} r="10" fill="transparent" />
+              <circle
+                cx={point[0]}
+                cy={point[1]}
+                r={group.length > 1 ? 6 : 4.5}
+                fill="#f15842"
+                stroke="white"
+                strokeWidth="1.5"
+              />
+              {group.length > 1 && (
+                <text x={point[0]} y={point[1] + 2} textAnchor="middle" fill="white" fontSize="6" aria-hidden="true">
+                  {group.length}
+                </text>
+              )}
+            </g>
+          );
+        })}
+      </svg>
+      {tip.tooltip}
+      <p className="muted">
+        {points.reduce((s, p) => s + p.rows.length, 0)}{" "}
+        {t(
+          lang,
+          "régions localisées. Les régions de mêmes coordonnées sont regroupées.",
+          "located regions. Regions sharing coordinates are grouped."
+        )}{" "}
+        {missing > 0 ? `${missing} ${t(lang, "sans coordonnées valides.", "without valid coordinates.")}` : ""}{" "}
+        {failed
+          ? t(
+              lang,
+              "Fond de carte indisponible ; coordonnées et tableau conservés.",
+              "Basemap unavailable; coordinates and table retained."
+            )
+          : ""}
+      </p>
+      <p className="muted">
+        {t(
+          lang,
+          "PUE : ratio · WUE : unité et périmètre de la source · REF : fraction. Les zéros peuvent être des conventions ; voir les sources.",
+          "PUE: ratio · WUE: source unit and boundary · REF: fraction. Zeros may be conventions; see sources."
+        )}{" "}
+        <a href="https://www.naturalearthdata.com/about/terms-of-use/">Natural Earth</a>
+      </p>
+    </figure>
+  );
+}
+export function CatalogCharts({
+  rows,
+  collection,
+  metric,
+  metricLabel,
+  lang,
+}: {
+  rows: Row[];
+  collection: string;
+  metric: string;
+  metricLabel: string;
+  lang: string;
+}) {
+  if (collection === "ai")
+    return (
+      <div className="chart-grid">
+        <Bars
+          title={t(lang, "Modèles par éditeur", "Models by vendor")}
+          items={countsBy(rows, "vendor")}
+          lang={lang}
+          unit={t(lang, "modèles", "models")}
+        />
+        <Bars
+          title={t(lang, "Capacités répertoriées", "Recorded capabilities")}
+          items={["reasoning", "tools", "open"].map((key, i) => ({
+            name: [
+              t(lang, "Raisonnement", "Reasoning"),
+              t(lang, "Outils", "Tools"),
+              t(lang, "Indicateur open", "Open flag"),
+            ][i],
+            value: rows.filter((r) => r.values[key] === true).length,
+          }))}
+          unit={t(lang, "modèles", "models")}
+          lang={lang}
+          note={t(
+            lang,
+            "Comptages sur les modèles filtrés, pour les capacités explicitement renseignées à true. Les catégories se recoupent ; les valeurs absentes ne signifient pas non. « Open » ne remplace pas la lecture de la licence.",
+            "Counts use filtered models and capabilities explicitly recorded as true. Categories overlap; missing values do not mean false. “Open” does not replace reading the license."
+          )}
+        />
+      </div>
+    );
+  const bars = numericBars(rows, metric);
+  const units = [...new Set(bars.map((b) => b.unit))];
+  return (
+    <div>
+      {units.map((unit) => {
+        const entries = bars.filter((b) => b.unit === unit);
+        return (
+          <Bars
+            key={unit}
+            title={`${metricLabel}${unit ? " · " + unit : ""}`}
+            items={entries.map((b) => ({ ...b, unit: "" }))}
+            initialLimit={20}
+            lang={lang}
+            note={`${
+              entries.length > 20
+                ? t(lang, "Par défaut : 20 valeurs les plus élevées sur ", "Default: 20 highest values out of ") +
+                  entries.length +
+                  ". "
+                : ""
+            }${unit ? t(lang, "Unité commune : ", "Shared unit: ") + unit + ". " : ""}${t(
+              lang,
+              "Comparaison des valeurs de référence filtrées. Les unités et hypothèses sont détaillées dans les sources.",
+              "Comparison of filtered reference values. Units and assumptions are detailed in the sources."
+            )}`}
+          />
+        );
+      })}
+    </div>
+  );
+}
+
+const energyColors: Record<string, string> = {
+  Bioenergy: "#7a9957",
+  Coal: "#505763",
+  Gas: "#bc855a",
+  Hydro: "#498bae",
+  Nuclear: "#9865ab",
+  "Other Fossil": "#8d776b",
+  "Other Renewables": "#6c9b89",
+  Solar: "#dbb145",
+  Wind: "#77b3b0",
+};
+export function MixComposition({ values, lang }: { values: Record<string, any>; lang: string }) {
+  const entries = Object.entries(values).filter(([, v]) => typeof v === "number" && Number.isFinite(v));
+  return (
+    <>
+      <div className="mix-stack" aria-hidden="true">
+        {entries.map(([key, value]) => (
+          <span
+            key={key}
+            style={{ width: `${Math.max(0, value) * 100}%`, background: energyColors[key] || "#64748b" }}
+          />
+        ))}
+      </div>
+      <div className="mix-values">
+        {entries.map(([key, value]) => (
+          <div key={key}>
+            <span>
+              <i style={{ background: energyColors[key] || "#64748b" }} />
+              {key}
+            </span>
+            <strong>{number(value * 100, lang)} %</strong>
+          </div>
+        ))}
+      </div>
+    </>
+  );
+}
+export function MixMap({
+  paths,
+  rows,
+  metric,
+  period,
+  names,
+  lang,
+  selected,
+  onSelect,
+  countryLevel,
+  green,
+}: {
+  paths: Record<string, string>;
+  rows: Row[];
+  metric: string;
+  period: string;
+  names: Record<string, string>;
+  lang: string;
+  selected?: string;
+  onSelect: (key: string) => void;
+  countryLevel: boolean;
+  green: boolean;
+}) {
+  const tip = useTooltip(rows);
+  const byKey = new Map(rows.map((row) => [row.key, row]));
+  return (
+    <figure className="map mix-map" onPointerLeave={tip.close}>
+      <figcaption>
+        <h3>
+          {t(lang, "Part de ", "Share of ")}
+          {metric} · {period}
+        </h3>
+        <p>
+          {t(
+            lang,
+            "Survolez un territoire pour voir son mix complet. Cliquez pour sélectionner son détail et son évolution.",
+            "Hover over a territory for its full mix. Click to select its detail and history."
+          )}
+        </p>
+        {green && (
+          <p className="notice">
+            {t(lang, "Scénario green : mix renouvelable renormalisé.", "Green scenario: renormalized renewable mix.")}
+          </p>
+        )}
+      </figcaption>
+      <svg viewBox="0 130 800 400" role="group" aria-label={t(lang, "Carte du mix électrique", "Electricity mix map")}>
+        {Object.entries(displayPaths(paths, countryLevel)).map(([pathKey, path]) => {
+          const key = countryLevel ? pathKey.slice(0, 2) : pathKey;
+          const row = byKey.get(key);
+          const value = row?.values[metric];
+          const name = names[key] || key;
+          const content = (
+            <>
+              <strong>
+                {name} · {period}
+              </strong>
+              {row ? (
+                <MixComposition values={row.values} lang={lang} />
+              ) : (
+                <p>{t(lang, "Aucune donnée pour cette période.", "No data for this period.")}</p>
+              )}
+            </>
+          );
+          const message = `${name} (${key}) · ${period} · ${
+            typeof value === "number"
+              ? number(value * 100, lang) + " % " + metric
+              : t(lang, "donnée absente", "no data")
+          }`;
+          const bindings = tip.bind(message, content);
+          return (
+            <path
+              key={pathKey}
+              d={path}
+              fill={
+                typeof value === "number" ? `hsl(212 60% ${94 - Math.max(0, Math.min(1, value)) * 62}%)` : "#e5e7eb"
+              }
+              stroke={selected === key ? "#f15842" : "white"}
+              strokeWidth={selected === key ? 2 : 0.4}
+              {...bindings}
+              onClick={(e) => {
+                bindings.onClick(e);
+                onSelect(key);
+              }}
+              onKeyDown={(e) => {
+                bindings.onKeyDown(e);
+                if (e.key === "Enter" || e.key === " ") onSelect(key);
+              }}
+            />
+          );
+        })}
+      </svg>
+      <p className="muted">
+        0 % <span className="gradient" /> 100 % ·{" "}
+        {t(lang, "Gris : donnée absente à la période choisie.", "Gray: no data for the selected period.")}
+      </p>
+      {tip.tooltip}
+    </figure>
+  );
+}

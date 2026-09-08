@@ -9,12 +9,15 @@
   },
   "author": "Stefan <stefan@digital4better.com>",
   "scripts": {
-    "start": "vite",
+    "start": "yarn build:site && vite preview --host 127.0.0.1",
     "build": "yarn build:data && yarn build:site",
     "build:data": "ts-node .",
-    "build:site": "vite build --base=/data/",
+    "build:site": "node site/scripts/build.mjs",
     "version": "node .github/workflows/update-release-date.js",
-    "postversion": "git push --tags"
+    "postversion": "git push --tags",
+    "preview:site": "vite preview --host 127.0.0.1",
+    "test:site": "node --test site/tests/*.test.cjs",
+    "check:site": "tsc --noEmit -p site/tsconfig.json"
   },
   "devDependencies": {
     "@emotion/react": "^11.11.3",
