@@ -343,9 +343,12 @@ select {
 }
 .notice {
   padding: 12px 16px;
-  border-left: 3px solid #f15842;
-  background: #fff6f2;
+  background: #edf3f9;
+  border-radius: 8px;
   font-size: 13px;
+}
+.notice p {
+  margin: 6px 0;
 }
 .table-wrap {
   overflow: auto;
@@ -748,9 +751,8 @@ td dt {
   gap: 8px;
 }
 .selection-prompt {
-  border-left: 3px solid #f15842;
-  padding: 12px 16px;
-  background: #edf3f9;
+  color: #526278;
+  font-size: 14px;
 }
 
 /* Reserve the initial viewport while the explorer loads its data. */

@@ -487,7 +487,7 @@ function Downloads({ dataset: d, base, lang }: { dataset: Dataset; base: string;
 }
 function Notes({ collection: c, lang }: { collection: any; lang: string }) {
   return (
-    <section className="card prose">
+    <section className="card prose" id={`sources-${c.id}`}>
       <h2>{text("Sources et précautions", "Sources and limitations", lang)}</h2>
       <h3>{tr(c.title, lang)}</h3>
       <p>{tr(c.limits, lang)}</p>
@@ -1019,15 +1019,21 @@ function Explorer({
             </p>
           )}
           {temporal && (
-            <p className="notice">
-              {activePeriod.startsWith(String(new Date().getUTCFullYear()))
-                ? t("Année en cours : couverture annuelle partielle. ", "Current year: partial annual coverage. ")
-                : ""}
-              {t(
-                "Les périodes disponibles peuvent contenir des valeurs complétées ou reconduites. La complétude des observations n’est pas renseignée.",
-                "Available periods may contain filled or carried-forward values. Observational completeness is not recorded."
-              )}
-            </p>
+            <aside className="notice" aria-label={t("À propos des données", "About the data")}>
+              <strong>{t("À propos des données", "About the data")}</strong>
+              <p>
+                {activePeriod === String(new Date().getUTCFullYear())
+                  ? t("Année en cours : données annuelles partielles. ", "Current year: partial annual data. ")
+                  : ""}
+                {t(
+                  "Certaines valeurs manquantes sont complétées, notamment en reprenant une période précédente. Les données ne permettent pas de vérifier que toutes les observations sont disponibles.",
+                  "Some missing values are filled in, including by carrying forward values from a previous period. The data does not indicate whether all observations are available."
+                )}
+              </p>
+              <a href={`#sources-${d.collection}`}>
+                {t("Comprendre les sources et les limites", "Understand the sources and limitations")}
+              </a>
+            </aside>
           )}
           {temporal && !world && !chartRegion && (
             <p className="selection-prompt">
