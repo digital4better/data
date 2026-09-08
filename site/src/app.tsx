@@ -463,7 +463,7 @@ export function App({
             <a href={`${base}sitemap.xml`}>{t("Plan du site", "Sitemap")}</a>
             <a href={repository + "/issues"}>{t("Signaler une erreur", "Report an issue")}</a>
             <a href="https://digital4better.com">Digital4Better ↗</a>
-            <a href="https://www.fruggr.io">fruggr ↗</a>
+            <a href="https://www.fruggr.io">Fruggr ↗</a>
           </div>
         </div>
       </footer>
