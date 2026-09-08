@@ -163,6 +163,7 @@ export function CloudMap({ rows, lang }: { rows: Row[]; lang: string }) {
           )}
         </p>
       </figcaption>
+      <div className="map-viewport">
       {zoom.controls}
       <svg viewBox={zoom.viewBox} role="group" aria-label={t(lang, "Carte des régions cloud", "Cloud region map")}>
 
@@ -196,6 +197,7 @@ export function CloudMap({ rows, lang }: { rows: Row[]; lang: string }) {
           );
         })}
       </svg>
+      </div>
       {tip.tooltip}
       <p className="muted">
         {points.reduce((s, p) => s + p.rows.length, 0)}{" "}
@@ -376,6 +378,7 @@ export function MixMap({
           </p>
         )}
       </figcaption>
+      <div className="map-viewport">
       {zoom.controls}
       <svg viewBox={zoom.viewBox} role="group" aria-label={t(lang, "Carte du mix électrique", "Electricity mix map")}
         onClick={(event) => {
@@ -428,6 +431,7 @@ export function MixMap({
           );
         })}
       </svg>
+      </div>
       {tip.tooltip}
     </figure>
   );

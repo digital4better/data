@@ -1313,6 +1313,7 @@ function FactorMap({
   const max = Math.max(0, ...numbers);
   return (
     <figure className="map" onPointerLeave={tip.close}>
+      <div className="map-viewport">
       {zoom.controls}
       <svg
         viewBox={zoom.viewBox}
@@ -1354,6 +1355,7 @@ function FactorMap({
           );
         })}
       </svg>
+      </div>
       {tip.tooltip}
       <figcaption>
         {label(metric, lang)} / kWh · {text("Impact faible", "Low impact", lang)} (0){" "}
