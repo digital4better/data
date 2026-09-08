@@ -635,28 +635,26 @@ td dt {
   gap: 28px;
 }
 .bars-list {
-  max-height: 420px;
-  overflow: auto;
-  padding: 4px;
-}
-.interactive-bar {
   display: grid;
   grid-template-columns: minmax(85px, 1fr) minmax(60px, 1.4fr) minmax(55px, auto);
-  gap: 12px;
+  column-gap: 12px;
+  max-height: 420px;
+  overflow: auto;
+  padding: 4px 8px;
+}
+.chart-bar {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
   align-items: center;
-  padding: 8px 4px;
+  padding: 8px 0;
   font-size: 12px;
   border-radius: 6px;
-  cursor: pointer;
-}
-.interactive-bar:hover,
-.interactive-bar:focus {
-  background: #edf3fa;
 }
 .bar-name {
   overflow-wrap: anywhere;
 }
-.interactive-bar strong {
+.chart-bar strong {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
@@ -675,10 +673,11 @@ td dt {
 .map path[role="button"] {
   cursor: pointer;
 }
-.map path[role="button"]:hover,
-.map path[role="button"]:focus {
-  stroke: #f15842;
-  stroke-width: 2;
+.map svg path[role="button"]:hover,
+.map svg path[role="button"]:focus,
+.map svg path[role="button"][aria-pressed="true"] {
+  fill: #80b7be;
+  outline: none;
 }
 .trend circle {
   cursor: pointer;
@@ -693,9 +692,9 @@ td dt {
     grid-template-columns: 1fr;
     gap: 0;
   }
-  .interactive-bar {
+  .bars-list {
     grid-template-columns: minmax(70px, 1fr) minmax(45px, 1fr) minmax(48px, auto);
-    gap: 8px;
+    column-gap: 8px;
   }
 }
 .chart-tooltip {
@@ -750,11 +749,6 @@ td dt {
   border-left: 3px solid #f15842;
   padding: 12px 16px;
   background: #edf3f9;
-}
-.map svg path[role="button"]:focus-visible {
-  outline: none;
-  stroke: #f15842;
-  stroke-width: 2.5;
 }
 
 /* Reserve the initial viewport while the explorer loads its data. */

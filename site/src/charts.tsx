@@ -81,12 +81,11 @@ export function Bars({
   unit?: string;
   note?: string;
 }) {
-  const tip = useTooltip(items);
   const [expanded, setExpanded] = useState(false);
   const data = items.filter((item) => Number.isFinite(item.value));
   const max = Math.max(0, ...data.map((x) => Math.abs(x.value)));
   return (
-    <figure className="data-chart" onPointerLeave={tip.close}>
+    <figure className="data-chart">
       <figcaption>
         <h3>{title}</h3>
         {note && <p className="muted">{note}</p>}
@@ -94,11 +93,7 @@ export function Bars({
       {data.length ? (
         <div className="bars-list">
           {(initialLimit && !expanded ? data.slice(0, initialLimit) : data).map((item, i) => (
-            <div
-              className="interactive-bar"
-              key={`${item.name}-${i}`}
-              {...tip.bind(`${item.name}\n${title}\n${number(item.value, lang)} ${item.unit || unit}`)}
-            >
+            <div className="chart-bar" key={`${item.name}-${i}`}>
               <span className="bar-name">{item.name}</span>
               <span className="bar-track">
                 <span
@@ -124,7 +119,6 @@ export function Bars({
             : t(lang, "Afficher les ", "Show all ") + data.length + t(lang, " valeurs", " values")}
         </button>
       )}
-      {tip.tooltip}
     </figure>
   );
 }
@@ -405,8 +399,9 @@ export function MixMap({
               fill={
                 typeof value === "number" ? `hsl(212 60% ${94 - Math.max(0, Math.min(1, value)) * 62}%)` : "#e5e7eb"
               }
-              stroke={selected === key ? "#f15842" : "white"}
-              strokeWidth={selected === key ? 2 : 0.4}
+              stroke="white"
+              strokeWidth={0.4}
+              aria-pressed={selected === key}
               {...bindings}
               onClick={(e) => {
                 bindings.onClick(e);
