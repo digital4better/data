@@ -39,12 +39,12 @@ export function useTooltip(resetKey?: unknown) {
   }, []);
   function show(target: Element, text: string, content?: React.ReactNode, pointer?: { clientX: number; clientY: number }) {
     const rect = target.getBoundingClientRect();
-    setTip({
+    setTip((current) => pointer && current?.text === text ? current : ({
       text,
       content,
       x: pointer ? pointer.clientX : rect.left + rect.width / 2,
       y: pointer ? pointer.clientY : rect.bottom,
-    });
+    }));
   }
   return {
     bind: (message: string, content?: React.ReactNode) => ({
@@ -53,7 +53,6 @@ export function useTooltip(resetKey?: unknown) {
       "aria-label": message,
       "aria-describedby": tip?.text === message ? id : undefined,
       onPointerEnter: (e: React.PointerEvent<Element>) => show(e.currentTarget, message, content, e),
-      onPointerMove: (e: React.PointerEvent<Element>) => show(e.currentTarget, message, content, e),
       onFocus: (e: React.FocusEvent<Element>) => {
         const target = e.currentTarget;
         requestAnimationFrame(() => {
