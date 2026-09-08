@@ -413,6 +413,7 @@ export function App({
                   "Missing values appear as a dash and are never converted to zero. Zeros already in files are preserved; some collections use zero as a convention. Filled and carried-forward values are not individually flagged in the current series."
                 )}
               </p>
+              <p><ImpactMethodologyLink lang={lang} /></p>
               <a href={repository + "/blob/main/index.ts"}>
                 {t("Consulter la méthode de génération", "Read the generation method")} ↗
               </a>
@@ -485,6 +486,13 @@ function Downloads({ dataset: d, base, lang }: { dataset: Dataset; base: string;
     </div>
   );
 }
+function ImpactMethodologyLink({ lang }: { lang: string }) {
+  return (
+    <a href={`https://digital4better.github.io/methodology/${lang === "en" ? "en/" : ""}`}>
+      {text("Méthodologie d’évaluation des impacts environnementaux", "Environmental impact assessment methodology", lang)} ↗
+    </a>
+  );
+}
 function Notes({ collection: c, lang }: { collection: any; lang: string }) {
   return (
     <section className="card prose" id={`sources-${c.id}`}>
@@ -501,6 +509,7 @@ function Notes({ collection: c, lang }: { collection: any; lang: string }) {
         </p>
       )}
       <ul>
+        {c.id === "factor" && <li><ImpactMethodologyLink lang={lang} /></li>}
         {c.sources.map(([title, url]: string[]) => (
           <li key={url}>
             <a href={url}>{title.includes(" / ") ? title.split(" / ")[lang === "fr" ? 0 : 1] : title} ↗</a>
