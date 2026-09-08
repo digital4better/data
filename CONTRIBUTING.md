@@ -38,6 +38,20 @@ Good contributions usually come with one or more of the following:
 
 Please prefer primary sources when available. Secondary sources can still be useful, especially for synthesis or cross-checking, but they should not silently replace stronger evidence.
 
+## Building Locally
+
+Use the latest Node.js 24 LTS release, selected by `.nvmrc` for both local builds and GitHub Actions:
+
+```sh
+nvm install
+nvm use
+corepack enable yarn
+yarn --frozen-lockfile
+yarn build
+```
+
+Node.js is a build requirement only. The published npm package contains datasets and intentionally has no `engines` constraint for consumers.
+
 ## Before Opening A Pull Request
 
 Please make sure:
