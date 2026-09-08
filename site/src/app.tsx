@@ -940,7 +940,7 @@ function Explorer({
             )}
             {numeric.length > 0 && d.collection !== "ai" && !(d.collection === "cloud" && d.id.endsWith("regions")) && (
               <label>
-                {d.collection === "mix" ? t("Technologie", "Technology") : t("Indicateur", "Indicator")}
+                {d.collection === "mix" ? t("Technologie", "Technology") : d.collection === "cloud" ? t("Colonne à afficher", "Column to display") : t("Indicateur", "Indicator")}
                 <select value={activeMetric} onChange={(e) => setMetric(e.target.value)}>
                   {numeric.map((k) => (
                     <option key={k} value={k}>
@@ -1055,7 +1055,7 @@ function Explorer({
               lang={lang}
             />
           )}
-          {!temporal && !(d.collection === "cloud" && d.id.endsWith("regions")) && filtered.length > 0 && (
+          {!temporal && d.collection !== "cloud" && filtered.length > 0 && (
             <CatalogCharts
               rows={filtered}
               collection={d.collection}
