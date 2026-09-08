@@ -189,3 +189,14 @@ test('tooltip follows its anchor and flips at viewport edges using its actual si
   assert.deepEqual(tooltipPosition(200, 400, 374, 360, 390, 844), {left:8, top:416});
   assert.deepEqual(tooltipPosition(5, 5, 280, 200, 300, 220), {left:8, top:8});
 });
+
+const { impactColor, impactColors } = require('../src/chart-data.ts');
+test('impact scale uses the original green-to-black palette with bounded endpoints', () => {
+  assert.equal(impactColor(0, 10), '#2AA364');
+  assert.equal(impactColor(10, 10), '#000000');
+  assert.equal(impactColor(20, 10), '#000000');
+  assert.equal(impactColor(0, 0), '#2AA364');
+  assert.equal(impactColor(null, 10), '#e5e7eb');
+  assert.equal(impactColor(NaN, 10), '#e5e7eb');
+  assert.ok(impactColors.includes(impactColor(5, 10)));
+});

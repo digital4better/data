@@ -73,3 +73,11 @@ export function displayPaths(paths: Record<string, string>, countryLevel: boolea
   }
   return merged;
 }
+
+// Original impact palette: lower impact is green, higher impact is black.
+export const impactColors = ["#2AA364", "#46B46A", "#84BB78", "#9FC17F", "#D6D98D", "#E6D27E", "#D2A63E", "#C28A3C", "#B16E3A", "#9F5238", "#8E3636", "#6F241F", "#4F1217", "#2F010F", "#0F0007", "#000000"];
+export function impactColor(value: unknown, max: number): string {
+  if (typeof value !== "number" || !Number.isFinite(value)) return "#e5e7eb";
+  const ratio = max > 0 ? Math.max(0, Math.min(1, value / max)) : 0;
+  return impactColors[Math.round(ratio * (impactColors.length - 1))];
+}

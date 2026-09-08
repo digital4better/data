@@ -1,3 +1,4 @@
+import { impactColors, impactColor } from "./chart-data";
 import { termLabel, regionLabel, languageStorageKey } from "./localization";
 import React, { useEffect, useMemo, useState } from "react";
 import { collections, guides, impacts, fieldLabels, repository, license, tr, datasetTitle } from "./content.mjs";
@@ -1264,11 +1265,7 @@ function FactorMap({
             <path
               key={key}
               d={path}
-              fill={
-                typeof value === "number"
-                  ? `hsl(212 60% ${94 - (max ? Math.max(0, value) / max : 0) * 62}%)`
-                  : "#e5e7eb"
-              }
+              fill={impactColor(value, max)}
               stroke="white"
               strokeWidth={0.4}
               aria-pressed={selected === targetKey}
@@ -1284,7 +1281,9 @@ function FactorMap({
       </svg>
       {tip.tooltip}
       <figcaption>
-        {label(metric, lang)} / kWh · 0 <span className="gradient" /> {format(max, lang)} ·{" "}
+        {label(metric, lang)} / kWh · {text("Impact faible", "Low impact", lang)} (0){" "}
+        <span className="gradient" style={{ background: `linear-gradient(to right, ${impactColors.join(", ")})` }} />{" "}
+        {text("Impact élevé", "High impact", lang)} ({format(max, lang)}) ·{" "}
         {text(
           "Gris : donnée absente. Survolez, touchez ou sélectionnez un territoire au clavier.",
           "Gray: no data. Hover, tap or focus a territory.",
