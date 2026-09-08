@@ -1,6 +1,6 @@
 import { impactColors, impactColor } from "./chart-data";
 import { termLabel, regionLabel, languageStorageKey } from "./localization";
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState, useRef, useId } from "react";
 import { collections, guides, impacts, fieldLabels, repository, license, tr, datasetTitle } from "./content.mjs";
 import { rowsOf, subsetOf, csvSubset, Row } from "./data";
 import { Bars, CloudMap, CatalogCharts, MixMap, MixComposition, useTooltip } from "./charts";
@@ -613,6 +613,8 @@ function Explorer({
       href(collectionView ? d.collection : `${d.collection}/${id}`) + (params.size ? "?" + params.toString() : "")
     );
   };
+  const hardware = d.collection === "equipment" || (d.collection === "cloud" && !d.id.endsWith("regions"));
+  const [detailRow, setDetailRow] = useState<Row | null>(null);
   const temporal = ["factor", "mix"].includes(d.collection);
   const world = d.id.startsWith("world-");
   const [source, setSource] = useState<any>(null);
@@ -753,10 +755,10 @@ function Explorer({
     ? d.id.endsWith("regions")
       ? ["id", "country", "location", "pue", "wue", "ref"]
       : d.id.endsWith("vms")
-      ? ["name", "category", "vcpus", "memory", "cpu", "accelerators", "embodied", "details"]
+      ? ["name", "category", "vcpus", "memory", "cpu", "accelerators", "embodied"]
       : d.id === "cpus"
-      ? ["id", "manufacturer", "architecture", "cores", "threads", "tdp", "process", "details"]
-      : ["id", "manufacturer", "type", "memory", "tdp", "process", "details"]
+      ? ["id", "manufacturer", "architecture", "cores", "threads", "tdp", "process"]
+      : ["id", "manufacturer", "type", "memory", "tdp", "process"]
     : d.fields.filter((k) => !numeric.includes(k) || k === activeMetric);
   const columns =
     d.collection === "cloud" && !d.id.endsWith("regions") && numeric.includes(metric) && !baseColumns.includes(metric)
@@ -1174,11 +1176,21 @@ function Explorer({
               </thead>
               <tbody>
                 {sorted.slice(page * 25, (page + 1) * 25).map((r) => (
-                  <tr key={`${r.key}-${r.period}`}>
-                    {!Array.isArray(source) && <th scope="row">{names[r.key] || termLabel(r.key, lang)}</th>}
+                  <tr key={`${r.key}-${r.period}`} className={hardware ? "hardware-row" : undefined}
+                    onClick={hardware ? (event) => {
+                      if (!(event.target as Element).closest("button, a, input, select")) {
+                        event.currentTarget.querySelector<HTMLButtonElement>(".detail-link")?.focus();
+                        setDetailRow(r);
+                      }
+                    } : undefined}>
+                    {!Array.isArray(source) && <th scope="row">{hardware
+                      ? <button className="detail-link" aria-haspopup="dialog" onClick={() => setDetailRow(r)}>{names[r.key] || termLabel(r.key, lang)}</button>
+                      : names[r.key] || termLabel(r.key, lang)}</th>}
                     {columns.map((k) => (
                       <td key={k}>
-                        {k === "details" ? (
+                        {hardware && k === (d.id.endsWith("vms") ? "name" : "id") ? (
+                          <button className="detail-link" onClick={() => setDetailRow(r)} aria-haspopup="dialog">{format(r.values[k], lang)}</button>
+                        ) : k === "details" ? (
                           <details>
                             <summary>{t("Tous les champs", "All fields")}</summary>
                             <dl>
@@ -1233,8 +1245,40 @@ function Explorer({
           )}
         </>
       )}
+      {detailRow && <HardwarePanel row={detailRow} lang={lang} onClose={() => setDetailRow(null)} />}
     </section>
   );
+}
+function HardwarePanel({ row, lang, onClose }: { row: Row; lang: string; onClose: () => void }) {
+  const ref = useRef<HTMLDialogElement>(null);
+  const heading = useId();
+  const title = termLabel(String(row.values.name || row.values.id || row.key), lang);
+  useEffect(() => {
+    const dialog = ref.current!;
+    const previous = document.activeElement as HTMLElement | null;
+    const overflow = document.body.style.overflow;
+    dialog.showModal();
+    document.body.style.overflow = "hidden";
+    return () => { dialog.close(); document.body.style.overflow = overflow; previous?.focus(); };
+  }, []);
+  return <dialog ref={ref} className="hardware-panel" aria-labelledby={heading} onClose={onClose}
+    onClick={(event) => {
+      const rect = event.currentTarget.getBoundingClientRect();
+      if (event.target === event.currentTarget && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) event.currentTarget.close();
+    }}>
+    <header className="hardware-panel-header">
+      <div><p className="eyebrow">{text("CARACTÉRISTIQUES", "SPECIFICATIONS", lang)}</p><h2 id={heading}>{title}</h2></div>
+      <button autoFocus onClick={() => ref.current?.close()} aria-label={text("Fermer le panneau", "Close panel", lang)}>×</button>
+    </header>
+    <dl className="hardware-properties">
+      {Object.entries(row.values).map(([key, value]) => <React.Fragment key={key}>
+        <dt>{label(key, lang)}</dt>
+        <dd>{typeof value === "string" && /^https?:\/\//.test(value)
+          ? <a href={value}>{value}</a>
+          : format(["type", "category", "architecture"].includes(key) && typeof value === "string" ? termLabel(value, lang) : value, lang)}</dd>
+      </React.Fragment>)}
+    </dl>
+  </dialog>;
 }
 function FactorMap({
   paths,
