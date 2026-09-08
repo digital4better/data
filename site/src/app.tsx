@@ -740,7 +740,7 @@ function Explorer({
       dataset: collectionView ? d.id : "",
       q,
       period: d.collection === "factor" ? activePeriod : "",
-      metric: d.collection === "mix" || d.collection === "ai" || (d.collection === "cloud" && d.id.endsWith("regions")) ? "" : d.collection === "cloud" ? (numeric.includes(metric) ? metric : "") : activeMetric,
+      metric: d.collection === "mix" || d.collection === "ai" || (d.collection === "cloud" && ["regions", "vms"].includes(cloudSection)) ? "" : d.collection === "cloud" ? (numeric.includes(metric) ? metric : "") : activeMetric,
       region: world ? "" : region,
       ...filters,
       sort: sort.key,
@@ -798,7 +798,7 @@ function Explorer({
       : ["id", "manufacturer", "type", "memory", "tdp", "process"]
     : d.fields.filter((k) => !numeric.includes(k) || k === activeMetric);
   const columns =
-    d.collection === "cloud" && !d.id.endsWith("regions") && numeric.includes(metric) && !baseColumns.includes(metric)
+    d.collection === "cloud" && !["regions", "vms"].includes(cloudSection) && numeric.includes(metric) && !baseColumns.includes(metric)
       ? [...baseColumns, metric]
       : baseColumns;
   const tableColumns = d.collection === "cloud" && ["regions", "vms"].includes(cloudSection) ? ["_provider", ...columns] : columns;
@@ -967,7 +967,7 @@ function Explorer({
                 )}
               </>
             )}
-            {numeric.length > 0 && d.collection !== "mix" && d.collection !== "ai" && !(d.collection === "cloud" && d.id.endsWith("regions")) && (
+            {numeric.length > 0 && d.collection !== "mix" && d.collection !== "ai" && !(d.collection === "cloud" && ["regions", "vms"].includes(cloudSection)) && (
               <label>
                 {d.collection === "cloud" ? t("Colonne complémentaire", "Additional column") : t("Indicateur", "Indicator")}
                 <select value={d.collection === "cloud" ? (numeric.includes(metric) ? metric : "") : activeMetric} onChange={(e) => setMetric(e.target.value)}>
