@@ -1103,7 +1103,7 @@ function Explorer({
             <section className="data-chart factor-history">
               <h3>{t("Évolution des facteurs d’impact", "Impact factors over time")} · {chartRegion === "world" ? t("Monde", "World") : names[chartRegion] || chartRegion}</h3>
               <p>{label(activeMetric, lang)} / kWh · {t("Survolez, touchez ou sélectionnez une période au clavier pour lire sa valeur.", "Hover, tap or focus a period to read its value.")}</p>
-              {historyRows.length ? <Trend rows={historyRows} metric={activeMetric} lang={lang}
+              {historyRows.length ? <FactorHistory rows={historyRows} metric={activeMetric} lang={lang}
                 name={chartRegion === "world" ? t("Monde", "World") : names[chartRegion] || chartRegion}
                 unit={label(activeMetric, lang) + " / kWh"} />
                 : <p role="status">{worldError ? t("Impossible de charger l’évolution mondiale. Réessayez en rechargeant la page.", "Unable to load world history. Reload the page to try again.") : t("Chargement de l’évolution…", "Loading history…")}</p>}
@@ -1382,27 +1382,17 @@ export function FactorMap({
     </figure>
   );
 }
-export function Trend({ rows, metric, lang, unit, name }: { rows: Row[]; metric: string; lang: string; unit: string; name: string }) {
+export function FactorHistory({ rows, metric, lang, unit, name }: { rows: Row[]; metric: string; lang: string; unit: string; name: string }) {
   const tip = useTooltip(useMemo(() => ({ rows, metric }), [rows, metric]));
   const values = rows.map((r) => r.values[metric]);
   const max = Math.max(0, ...values.filter((v) => typeof v === "number"));
-  let points = "";
-  const segments: string[] = [];
   const left = 100, width = 640, top = 15, height = 205;
-  const x = (i: number) => left + (i * width) / Math.max(1, values.length - 1);
+  const step = width / Math.max(1, values.length);
+  const x = (i: number) => left + (i + 0.5) * step;
   const y = (v: number) => top + height * (1 - (max ? v / max : 0));
   const tickCount = Math.min(rows.every(row => row.period?.length === 4) ? 12 : 7, rows.length);
   const ticks = new Set(Array.from({ length: tickCount }, (_, i) => Math.round(i * (rows.length - 1) / Math.max(1, tickCount - 1))));
   const axisNumber = (value: number) => new Intl.NumberFormat(lang, { maximumSignificantDigits: 3, notation: value !== 0 && (Math.abs(value) < 0.001 || Math.abs(value) >= 10000) ? "scientific" : "standard" }).format(value);
-  values.forEach((v, i) => {
-    if (typeof v === "number") {
-      points += `${x(i)},${y(v)} `;
-    } else {
-      if (points) segments.push(points);
-      points = "";
-    }
-  });
-  if (points) segments.push(points);
   return (
     <figure className="trend" onPointerLeave={tip.close}>
       <svg viewBox="0 0 770 255" role="group" aria-label={`${text("Évolution temporelle", "Time evolution", lang)} · ${name} · ${unit}`}>
@@ -1410,22 +1400,15 @@ export function Trend({ rows, metric, lang, unit, name }: { rows: Row[]; metric:
           <line x1={left} x2={left + width} y1={y(max * ratio)} y2={y(max * ratio)} stroke="#dce5ef" />
           <text x={left - 8} y={y(max * ratio) + 4} textAnchor="end">{axisNumber(max * ratio)}</text>
         </g>)}
-        {segments.map((s, i) => (
-          <polyline key={i} points={s} fill="none" stroke="#003878" strokeWidth="3" />
-        ))}
-        {values.map((v, i) =>
-          typeof v === "number" ? (
-            <circle
-              key={i}
-              cx={x(i)}
-              cy={y(v)}
-              r="4"
-              fill="#f15842"
-              stroke="white"
-              {...tip.bind(`${name} · ${rows[i].period}\n${format(v, lang)} · ${unit}`)}
-            />
-          ) : null
-        )}
+        {values.map((v, i) => {
+          const available = typeof v === "number" && Number.isFinite(v);
+          const barWidth = Math.max(1, step - Math.min(4, step * 0.15));
+          return <g key={rows[i].period} className="factor-period"
+            {...tip.bind(`${name} · ${rows[i].period}\n${available ? format(v, lang) : text("Valeur absente", "Missing value", lang)} · ${unit}`)}>
+            <rect className="period-background" x={x(i) - step / 2} y={top} width={step} height={height} fill={available ? "transparent" : "#edf1f5"} />
+            {available && <rect className="period-value" x={x(i) - barWidth / 2} y={y(v)} width={barWidth} height={top + height - y(v)} fill="#003878" />}
+          </g>;
+        })}
         {[...ticks].map(i => <text key={i} x={x(i)} y={top + height + 24} textAnchor={i === 0 ? "start" : i === rows.length - 1 ? "end" : "middle"}>{rows[i].period}</text>)}
       </svg>
       {tip.tooltip}

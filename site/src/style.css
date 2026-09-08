@@ -685,14 +685,11 @@ td dt {
   fill: #f15842;
   outline: none;
 }
-.trend circle {
-  cursor: pointer;
-}
-.trend circle:hover,
-.trend circle:focus {
-  stroke: #003878;
-  stroke-width: 3;
-}
+.factor-period { cursor: pointer; outline: none; }
+.factor-period:hover .period-value,
+.factor-period:focus-visible .period-value { fill: #f15842; }
+.factor-period:hover .period-background,
+.factor-period:focus-visible .period-background { fill: #e6edf6; }
 @media (max-width: 700px) {
   .chart-grid {
     grid-template-columns: 1fr;

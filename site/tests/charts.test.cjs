@@ -57,11 +57,11 @@ test("mix map disables unavailable territories and history is visible with annua
   } finally { await server.close(); }
 });
 
-test("factor maps accept grouped territories and trend preserves zeros and gaps", async () => {
+test("factor maps accept grouped territories and histogram distinguishes zeros and missing values", async () => {
   const { createServer } = await import("vite");
   const server = await createServer({ server: { middlewareMode: true, watch: null } });
   try {
-    const { FactorMap, Trend } = await server.ssrLoadModule("/src/app.tsx");
+    const { FactorMap, FactorHistory } = await server.ssrLoadModule("/src/app.tsx");
     for (const territory of ["Europe", "world", "US-CA"]) {
       const map = renderToStaticMarkup(React.createElement(FactorMap, {
         paths: { [territory]: "M0 0L1 1Z", missing: "M2 2L3 3Z" },
@@ -74,9 +74,12 @@ test("factor maps accept grouped territories and trend preserves zeros and gaps"
       assert.match(map, /2026-08/);
     }
     const rows = [0, 0.002, null, 0.003, 0.004].map((value, i) => ({ key: "world", period: String(2022 + i), values: { gwp: value } }));
-    const trend = renderToStaticMarkup(React.createElement(Trend, { rows, metric: "gwp", lang: "en", name: "World", unit: "kg CO₂e / kWh" }));
-    assert.equal((trend.match(/<polyline/g) || []).length, 2, "missing periods break the curve");
-    assert.equal((trend.match(/<circle/g) || []).length, 4, "zero is plotted, missing value is not");
+    const trend = renderToStaticMarkup(React.createElement(FactorHistory, { rows, metric: "gwp", lang: "en", name: "World", unit: "kg CO₂e / kWh" }));
+    assert.doesNotMatch(trend, /<polyline|<circle/);
+    assert.equal((trend.match(/class="factor-period"/g) || []).length, 5, "all periods remain accessible");
+    assert.equal((trend.match(/class="period-value"/g) || []).length, 4, "no value bar for missing data");
+    assert.match(trend, /class="period-value"[^>]*height="0"/, "zero is a zero-height bar");
+    assert.match(trend, /Missing value/);
     for (const row of rows) assert.ok(trend.includes(`>${row.period}</text>`));
     assert.match(trend, /World/);
     assert.match(trend, />0\.004<\/text>/);
