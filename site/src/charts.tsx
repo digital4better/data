@@ -1,5 +1,6 @@
+import { tooltipPosition } from "./tooltip-position";
 import { termLabel, regionLabel } from "./localization";
-import React, { useEffect, useId, useState } from "react";
+import React, { useEffect, useId, useState, useRef, useLayoutEffect } from "react";
 import type { Row } from "./data";
 import { countsBy, numericBars, groupedLocations, displayPaths } from "./chart-data";
 const t = (lang: string, fr: string, en: string) => (lang === "fr" ? fr : en);
@@ -7,9 +8,19 @@ const number = (v: unknown, lang: string) =>
   typeof v === "number" && Number.isFinite(v)
     ? new Intl.NumberFormat(lang, { maximumSignificantDigits: 6 }).format(v)
     : "—";
+type TooltipData = { text: string; content?: React.ReactNode; x: number; y: number };
+function Tooltip({ id, tip }: { id: string; tip: TooltipData }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [position, setPosition] = useState({ left: tip.x, top: tip.y });
+  useLayoutEffect(() => {
+    const rect = ref.current!.getBoundingClientRect();
+    setPosition(tooltipPosition(tip.x, tip.y, rect.width, rect.height, window.innerWidth, window.innerHeight));
+  }, [tip]);
+  return <div ref={ref} id={id} role="tooltip" className="chart-tooltip" style={position}>{tip.content || tip.text}</div>;
+}
 export function useTooltip(resetKey?: unknown) {
   const id = useId();
-  const [tip, setTip] = useState<{ text: string; content?: React.ReactNode; x: number; y: number } | null>(null);
+  const [tip, setTip] = useState<TooltipData | null>(null);
   useEffect(() => setTip(null), [resetKey]);
   useEffect(() => {
     const dismiss = (event: Event) => {
@@ -26,13 +37,13 @@ export function useTooltip(resetKey?: unknown) {
       window.removeEventListener("scroll", dismiss, true);
     };
   }, []);
-  function show(target: Element, text: string, content?: React.ReactNode) {
+  function show(target: Element, text: string, content?: React.ReactNode, pointer?: { clientX: number; clientY: number }) {
     const rect = target.getBoundingClientRect();
     setTip({
       text,
       content,
-      x: Math.max(8, Math.min(window.innerWidth - 300, rect.left + rect.width / 2 - 140)),
-      y: Math.max(8, Math.min(window.innerHeight - Math.min(380, window.innerHeight - 8), rect.bottom + 10)),
+      x: pointer ? pointer.clientX : rect.left + rect.width / 2,
+      y: pointer ? pointer.clientY : rect.bottom,
     });
   }
   return {
@@ -41,15 +52,16 @@ export function useTooltip(resetKey?: unknown) {
       role: "button" as const,
       "aria-label": message,
       "aria-describedby": tip?.text === message ? id : undefined,
-      onPointerEnter: (e: React.PointerEvent<Element>) => show(e.currentTarget, message, content),
+      onPointerEnter: (e: React.PointerEvent<Element>) => show(e.currentTarget, message, content, e),
+      onPointerMove: (e: React.PointerEvent<Element>) => show(e.currentTarget, message, content, e),
       onFocus: (e: React.FocusEvent<Element>) => {
         const target = e.currentTarget;
         requestAnimationFrame(() => {
-          if (document.activeElement === target) show(target, message, content);
+          if (document.activeElement === target && target.matches(":focus-visible")) show(target, message, content);
         });
       },
       onBlur: () => setTip(null),
-      onClick: (e: React.MouseEvent<Element>) => show(e.currentTarget, message, content),
+      onClick: (e: React.MouseEvent<Element>) => show(e.currentTarget, message, content, e.detail ? e : undefined),
       onKeyDown: (e: React.KeyboardEvent<Element>) => {
         if (e.key === "Escape") setTip(null);
         if (e.key === "Enter" || e.key === " ") {
@@ -59,11 +71,7 @@ export function useTooltip(resetKey?: unknown) {
       },
     }),
     close: () => setTip(null),
-    tooltip: tip ? (
-      <div id={id} role="tooltip" className="chart-tooltip" style={{ left: tip.x, top: tip.y }}>
-        {tip.content || tip.text}
-      </div>
-    ) : null,
+    tooltip: tip ? <Tooltip id={id} tip={tip} /> : null,
   };
 }
 export function Bars({

@@ -181,3 +181,11 @@ test('source energy and equipment keys have localized presentation without chang
   assert.equal(regionLabel('DE', 'Germany', 'fr'), 'Allemagne');
   assert.equal(termLabel('text', 'fr'), 'Texte');
 });
+
+const { tooltipPosition } = require('../src/tooltip-position.ts');
+test('tooltip follows its anchor and flips at viewport edges using its actual size', () => {
+  assert.deepEqual(tooltipPosition(100, 100, 280, 200, 1200, 800), {left:116, top:116});
+  assert.deepEqual(tooltipPosition(1100, 700, 280, 350, 1200, 800), {left:804, top:334});
+  assert.deepEqual(tooltipPosition(200, 400, 374, 360, 390, 844), {left:8, top:416});
+  assert.deepEqual(tooltipPosition(5, 5, 280, 200, 300, 220), {left:8, top:8});
+});
