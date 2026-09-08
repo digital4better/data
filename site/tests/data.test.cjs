@@ -201,3 +201,22 @@ test('impact scale uses the original green-to-black palette with bounded endpoin
   assert.equal(impactColor(NaN, 10), '#e5e7eb');
   assert.ok(impactColors.includes(impactColor(5, 10)));
 });
+
+test("combined cloud filters keep provider identity and export original schemas", () => {
+  const { cloudRows, cloudExportRows } = require("../src/data.ts");
+  const aws = [{ id: "shared", country: "fr", pue: 0 }, { id: "other", country: "de", pue: 1.2 }];
+  const azure = [{ id: "shared", country: "fr", pue: null, aliases: ["alias"] }];
+  const rows = cloudRows({ "aws-regions": aws, "azure-regions": azure });
+  assert.equal(new Set(rows.map(r => r.key)).size, 3);
+  const france = rows.filter(r => r.values.country === "fr");
+  const exportedAws = cloudExportRows(france, "aws-regions");
+  const exportedAzure = cloudExportRows(france, "azure-regions");
+  assert.deepEqual(subsetOf(aws, exportedAws, false, false), [aws[0]]);
+  assert.deepEqual(subsetOf(azure, exportedAzure, false, false), azure);
+  assert.deepEqual(parseCsv(csvSubset("id,country,pue\nother,de,1.2\nshared,fr,0\n", aws, exportedAws, false, false)), [
+    ["id", "country", "pue"], ["shared", "fr", "0"]
+  ]);
+  assert.equal(aws[0].datasetId, undefined);
+  assert.equal(aws[0].provider, undefined);
+  assert.deepEqual(cloudExportRows(france, "gcp-regions"), []);
+});

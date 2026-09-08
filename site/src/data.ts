@@ -1,4 +1,4 @@
-export type Row = { key: string; period?: string; values: Record<string, any> };
+export type Row = { key: string; period?: string; datasetId?: string; sourceKey?: string; values: Record<string, any> };
 export function rowsOf(data: any, temporal: boolean, world: boolean): Row[] {
   if (Array.isArray(data)) return data.map((values, i) => ({ key: String(i), values }));
   if (!temporal) return Object.entries(data).map(([key, values]) => ({ key, values: values as Record<string, any> }));
@@ -75,4 +75,14 @@ export function csvSubset(csv: string, source: any, selected: Row[], temporal: b
     [headers, ...filtered].map((row) => row.map((v) => '"' + v.replace(/"/g, '""') + '"').join(",")).join("\r\n") +
     "\r\n"
   );
+}
+
+// Source metadata stays outside values so exports never gain synthetic fields.
+export function cloudRows(sources: Record<string, any>): Row[] {
+  return Object.entries(sources).flatMap(([datasetId, source]) => rowsOf(source, false, false).map((row) => ({
+    ...row, key: `${datasetId}:${row.key}`, sourceKey: row.key, datasetId,
+  })));
+}
+export function cloudExportRows(rows: Row[], datasetId: string): Row[] {
+  return rows.filter((row) => row.datasetId === datasetId).map((row) => ({ key: row.sourceKey!, values: row.values }));
 }

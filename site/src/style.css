@@ -797,3 +797,10 @@ td dt {
 .mix-legend { display:flex; flex-wrap:wrap; gap:8px 16px; font-size:.85rem; }
 .mix-legend span { display:inline-flex; align-items:center; gap:6px; }
 .mix-legend i { display:inline-block; width:10px; height:10px; border-radius:2px; }
+
+.cloud-exports { max-width: 100%; }
+.cloud-exports summary { cursor: pointer; color: #003878; font-weight: 600; }
+.cloud-exports > div { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+.cloud-exports strong { min-width: 130px; }
+
+.cloud-export-heading, .cloud-export-heading .downloads { align-items: flex-start; }

@@ -3,7 +3,7 @@ import { impactColors, impactColor } from "./chart-data";
 import { termLabel, regionLabel, languageStorageKey } from "./localization";
 import React, { useEffect, useMemo, useState, useRef, useId } from "react";
 import { collections, guides, impacts, fieldLabels, repository, license, tr, datasetTitle } from "./content.mjs";
-import { rowsOf, subsetOf, csvSubset, Row } from "./data";
+import { rowsOf, subsetOf, csvSubset, cloudRows, cloudExportRows, Row } from "./data";
 import { Bars, CloudMap, CatalogCharts, MixMap, MixHistory, useTooltip } from "./charts";
 import { selectedTerritory, rowsAtPeriod, allowedFilters, resolvePeriod, displayPaths } from "./chart-data";
 import { Logo } from "./assets/logo";
@@ -38,6 +38,7 @@ const shortLabels: Record<string, string[]> = {
   wue: ["WUE", "WUE"],
   ref: ["REF", "REF"],
   country: ["Pays", "Country"],
+  _provider: ["Fournisseur", "Provider"],
   memory: ["Mémoire (GB)", "Memory (GB)"],
   embodied: ["Fabrication (tCO₂e)", "Embodied impact (tCO₂e)"],
   vcpus: ["vCPU", "vCPU"],
@@ -55,7 +56,7 @@ const shortLabel = (key: string, lang: string) => (shortLabels[key] ? tr(shortLa
 const mixPercent = (value: unknown, lang: string) => typeof value === "number" && Number.isFinite(value)
   ? new Intl.NumberFormat(lang, { style: "percent", maximumFractionDigits: 2 }).format(value) : "—";
 const tableValue = (row: Row, key: string) =>
-  key === "period" ? row.period : key.startsWith("parameters.") ? row.values.parameters?.[key.split(".")[1]] : row.values[key];
+  key === "_provider" ? cloudProviderLabel(row.datasetId || "") : key === "period" ? row.period : key.startsWith("parameters.") ? row.values.parameters?.[key.split(".")[1]] : row.values[key];
 const label = (key: string, lang: string) => key === "period" ? text("Période", "Period", lang) : tr((impacts as any)[key] || (fieldLabels as any)[key] || [termLabel(key, lang), termLabel(key, lang)], lang);
 const format = (value: any, lang: string): string =>
   value === null || value === undefined
@@ -69,6 +70,14 @@ const format = (value: any, lang: string): string =>
     : typeof value === "object"
     ? JSON.stringify(value)
     : String(value);
+const cloudProviderLabel = (id: string) => ({ aws: "AWS", azure: "Microsoft Azure", gcp: "Google Cloud", oracle: "Oracle Cloud", ovhcloud: "OVHcloud", scaleway: "Scaleway" }[id.split("-")[0]] || id);
+// Combined views are explorer-only: no synthetic files or catalog pages are published.
+function cloudCombinedDatasets(catalog: Catalog): Dataset[] {
+  return ["regions", "vms"].flatMap((section) => {
+    const datasets = catalog.datasets.filter((d) => d.collection === "cloud" && d.id.endsWith(`-${section}`));
+    return datasets.length ? [{ ...datasets[0], id: `all-${section}`, file: "", count: datasets.reduce((n, d) => n + d.count, 0), fields: [...new Set(datasets.flatMap((d) => d.fields))] }] : [];
+  });
+}
 export function App({
   lang = "en",
   route = "",
@@ -94,18 +103,19 @@ export function App({
   const defaults: Record<string, string> = {
     factor: "country-yearly",
     mix: "country-yearly",
-    cloud: "aws-regions",
+    cloud: "all-regions",
     ai: "models",
     equipment: "energy",
     energy: "energy-impacts",
   };
+  const explorerDatasets = [...catalog.datasets, ...cloudCombinedDatasets(catalog)];
   const collectionDataset =
     collection && !dataset
-      ? catalog.datasets.find(
+      ? explorerDatasets.find(
           (d) =>
             d.collection === collection.id &&
             d.id === (new URLSearchParams(search).get("dataset") || defaults[collection.id])
-        ) || catalog.datasets.find((d) => d.collection === collection.id && d.id === defaults[collection.id])
+        ) || explorerDatasets.find((d) => d.collection === collection.id && d.id === defaults[collection.id])
       : undefined;
   const title = dataset
     ? datasetTitle(dataset.file, lang)
@@ -603,9 +613,11 @@ function Explorer({
   const cloudSection = d.id.endsWith("regions") ? "regions" : d.id.endsWith("vms") ? "vms" : d.id;
   const cloudDatasets = catalog.datasets.filter((x) => x.collection === "cloud");
   const providerDatasets = cloudDatasets.filter((x) => x.id.endsWith(`-${cloudSection}`));
-  const providerLabel = (id: string) => ({ aws: "AWS", azure: "Microsoft Azure", gcp: "Google Cloud", oracle: "Oracle Cloud", ovhcloud: "OVHcloud", scaleway: "Scaleway" }[id.split("-")[0]] || id);
+  const providerLabel = cloudProviderLabel;
+  const allCloud = d.collection === "cloud" && d.id.startsWith("all-");
   const sectionDataset = (section: string) => {
     const matching = cloudDatasets.filter((x) => x.id === section || x.id.endsWith(`-${section}`));
+    if (["regions", "vms"].includes(section) && (allCloud || !["regions", "vms"].includes(cloudSection))) return `all-${section}`;
     return matching.find((x) => x.id.split("-")[0] === d.id.split("-")[0])?.id || matching[0]?.id;
   };
   const changeDataset = (id: string) => {
@@ -619,10 +631,11 @@ function Explorer({
       params.delete("region");
       params.delete("period");
     }
-    if (collectionView) params.set("dataset", id);
+    const useCollection = collectionView || id.startsWith("all-");
+    if (useCollection) params.set("dataset", id);
     else params.delete("dataset");
     location.assign(
-      href(collectionView ? d.collection : `${d.collection}/${id}`) + (params.size ? "?" + params.toString() : "")
+      href(useCollection ? d.collection : `${d.collection}/${id}`) + (params.size ? "?" + params.toString() : "")
     );
   };
   const hasDetailPanel = d.collection === "ai" || d.collection === "equipment" || (d.collection === "cloud" && !d.id.endsWith("regions"));
@@ -655,11 +668,14 @@ function Explorer({
   useEffect(() => {
     const controller = new AbortController();
     setError("");
-    fetch(`${base}${d.collection}/${d.file}`, { signal: controller.signal })
-      .then((r) => {
-        if (!r.ok) throw new Error(String(r.status));
-        return r.json();
-      })
+    const load = async (dataset: Dataset) => {
+      const response = await fetch(`${base}${dataset.collection}/${dataset.file}`, { signal: controller.signal });
+      if (!response.ok) throw new Error(String(response.status));
+      return response.json();
+    };
+    (allCloud
+      ? Promise.all(providerDatasets.map(async (dataset) => [dataset.id, await load(dataset)] as const)).then(Object.fromEntries)
+      : load(d))
       .then(setSource)
       .catch((e) => {
         if (e.name !== "AbortError")
@@ -671,7 +687,7 @@ function Explorer({
           );
       });
     return () => controller.abort();
-  }, [d.file]);
+  }, [d.id, d.file]);
   useEffect(() => {
     if (!temporal) return;
     let active = true;
@@ -700,7 +716,13 @@ function Explorer({
       active = false;
     };
   }, [d.id]);
-  const rows = useMemo(() => (source ? rowsOf(source, temporal, world) : []), [source]);
+  const rows = useMemo(() => {
+    if (!source) return [];
+    if (allCloud) return cloudRows(source);
+    const loaded = rowsOf(source, temporal, world);
+    return d.collection === "cloud" ? loaded.map((row) => ({ ...row, datasetId: d.id })) : loaded;
+  }, [source, allCloud, d.id]);
+  const arraySource = allCloud || Array.isArray(source);
   const periods = useMemo(
     () =>
       Array.from(new Set(rows.map((r) => r.period).filter(Boolean)))
@@ -732,7 +754,7 @@ function Explorer({
     });
   }, [q, activePeriod, activeMetric, metric, region, filters, sort, ready, source]);
   const matches = (r: Row, includeRegion = true) => {
-    if (q && !`${r.key} ${names[r.key] || ""} ${termLabel(r.key, lang)} ${Object.values(r.values).flat().map((v) => typeof v === "string" ? termLabel(v, lang) : "").join(" ")} ${JSON.stringify(r.values)}`.toLowerCase().includes(q.toLowerCase()))
+    if (q && !`${r.key} ${r.datasetId ? providerLabel(r.datasetId) : ""} ${names[r.key] || ""} ${termLabel(r.key, lang)} ${Object.values(r.values).flat().map((v) => typeof v === "string" ? termLabel(v, lang) : "").join(" ")} ${JSON.stringify(r.values)}`.toLowerCase().includes(q.toLowerCase()))
       return false;
     if (includeRegion && region && !world && r.key !== region) return false;
     return Object.entries(filters).every(
@@ -779,6 +801,7 @@ function Explorer({
     d.collection === "cloud" && !d.id.endsWith("regions") && numeric.includes(metric) && !baseColumns.includes(metric)
       ? [...baseColumns, metric]
       : baseColumns;
+  const tableColumns = d.collection === "cloud" && ["regions", "vms"].includes(cloudSection) ? ["_provider", ...columns] : columns;
   const filterFields =
     d.collection === "ai"
       ? ["vendor", "input", "output", "open", "reasoning", "tools"]
@@ -797,22 +820,24 @@ function Explorer({
   const chartRegion = selectedTerritory(region, world);
   const selectedRow = periodRows.find((r) => r.key === chartRegion && matches(r));
   const historyRows = rows.filter((r) => r.key === chartRegion).sort((a, b) => a.period!.localeCompare(b.period!));
-  async function download(ext: string) {
+  async function download(ext: string, exportDataset = d) {
     setExportError("");
     try {
+      const exportSource = allCloud ? source[exportDataset.id] : source;
+      const exportRows = allCloud ? cloudExportRows(filtered, exportDataset.id) : filtered;
       let content: string;
-      if (ext === "json") content = JSON.stringify(subsetOf(source, filtered, temporal, world), null, 2);
+      if (ext === "json") content = JSON.stringify(subsetOf(exportSource, exportRows, temporal, world), null, 2);
       else {
-        const response = await fetch(`${base}${d.collection}/${d.id}.csv`);
+        const response = await fetch(`${base}${exportDataset.collection}/${exportDataset.id}.csv`);
         if (!response.ok) throw new Error();
-        content = csvSubset(await response.text(), source, filtered, temporal, world);
+        content = csvSubset(await response.text(), exportSource, exportRows, temporal, world);
       }
       const url = URL.createObjectURL(
         new Blob([content], { type: ext === "json" ? "application/json" : "text/csv;charset=utf-8" })
       );
       const a = document.createElement("a");
       a.href = url;
-      a.download = `${d.id}-filtered.${ext}`;
+      a.download = `${exportDataset.id}-filtered.${ext}`;
       a.click();
       setTimeout(() => URL.revokeObjectURL(url), 1000);
     } catch {
@@ -847,7 +872,7 @@ function Explorer({
             {cloudSections.map((section) => {
               const target = sectionDataset(section.id);
               return target ? <a key={section.id}
-                href={collectionView ? `${href("cloud")}?dataset=${target}` : href(`cloud/${target}`)}
+                href={collectionView || target.startsWith("all-") ? `${href("cloud")}?dataset=${target}` : href(`cloud/${target}`)}
                 aria-current={cloudSection === section.id ? "page" : undefined}
                 onClick={(event) => {
                   if (event.button || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
@@ -859,6 +884,7 @@ function Explorer({
           {providerDatasets.length > 1 && <label className="cloud-provider">
             {t("Fournisseur", "Provider")}
             <select value={d.id} onChange={(event) => changeDataset(event.target.value)}>
+              <option value={`all-${cloudSection}`}>{t("Tous", "All")}</option>
               {providerDatasets.map((x) => <option key={x.id} value={x.id}>{providerLabel(x.id)}</option>)}
             </select>
           </label>}
@@ -879,33 +905,6 @@ function Explorer({
         <p className="preview-loading" role="status">{t("Chargement de l’aperçu…", "Loading preview…")}</p>
       ) : (
         <>
-          {d.collection === "factor" && /^(country|subdivision)-/.test(d.id) && (
-            <FactorMap
-              paths={paths}
-              rows={mapRows}
-              metric={activeMetric}
-              lang={lang}
-              names={names}
-              period={activePeriod}
-              selected={region}
-              onSelect={setRegion}
-              countryLevel={d.id.startsWith("country-")}
-            />
-          )}
-          {d.collection === "cloud" && d.id.endsWith("regions") && <CloudMap rows={filtered} lang={lang} />}
-          {d.collection === "mix" && /^(country|subdivision)-/.test(d.id) && (
-            <MixMap
-              paths={paths}
-              rows={mapRows}
-              period={activePeriod}
-              names={names}
-              lang={lang}
-              selected={region}
-              onSelect={setRegion}
-              countryLevel={d.id.startsWith("country-")}
-              green={d.id.endsWith("-green")}
-            />
-          )}
           <div className="filters">
             <label>
               {t("Rechercher", "Search")}
@@ -1018,6 +1017,33 @@ function Explorer({
               {t("Réinitialiser", "Reset")}
             </button>
           </div>
+          {d.collection === "factor" && /^(country|subdivision)-/.test(d.id) && (
+            <FactorMap
+              paths={paths}
+              rows={mapRows}
+              metric={activeMetric}
+              lang={lang}
+              names={names}
+              period={activePeriod}
+              selected={region}
+              onSelect={setRegion}
+              countryLevel={d.id.startsWith("country-")}
+            />
+          )}
+          {d.collection === "cloud" && d.id.endsWith("regions") && <CloudMap rows={filtered} lang={lang} />}
+          {d.collection === "mix" && /^(country|subdivision)-/.test(d.id) && (
+            <MixMap
+              paths={paths}
+              rows={mapRows}
+              period={activePeriod}
+              names={names}
+              lang={lang}
+              selected={region}
+              onSelect={setRegion}
+              countryLevel={d.id.startsWith("country-")}
+              green={d.id.endsWith("-green")}
+            />
+          )}
           {d.collection === "factor" && period && period !== activePeriod && (
             <p role="status">
               {t(
@@ -1129,11 +1155,24 @@ function Explorer({
               </div>
             </details>
           )}
-          <div className="section-heading">
+          <div className={`section-heading${allCloud ? " cloud-export-heading" : ""}`}>
             <p role="status">
               {filtered.length.toLocaleString(lang)} {t("résultats", "results")}
             </p>
             <div className="downloads">
+              {allCloud ? <details className="cloud-exports">
+                <summary>{t("Exporter la sélection par fournisseur", "Export selection by provider")}</summary>
+                <p>{t("Chaque fichier conserve le format de sa source et les filtres actifs.", "Each file preserves its source format and the active filters.")}</p>
+                {providerDatasets.map((dataset) => <div key={dataset.id}>
+                  <strong>{providerLabel(dataset.id)}</strong>{" "}
+                  {["json", ...(dataset.csv ? ["csv"] : [])].map((ext) => <button key={ext}
+                    disabled={!filtered.some((row) => row.datasetId === dataset.id)}
+                    onClick={() => download(ext, dataset)}
+                    aria-label={`${t("Exporter", "Export")} ${providerLabel(dataset.id)} ${ext.toUpperCase()}`}>
+                    {ext.toUpperCase()}
+                  </button>)}
+                </div>)}
+              </details> : <>
               <button disabled={!filtered.length} onClick={() => download("json")}>
                 {t("Exporter la sélection JSON", "Export selection JSON")}
               </button>
@@ -1142,6 +1181,7 @@ function Explorer({
                   {t("Exporter la sélection CSV", "Export selection CSV")}
                 </button>
               )}
+              </>}
               <button
                 onClick={async () => {
                   try {
@@ -1171,7 +1211,7 @@ function Explorer({
               </caption>
               <thead>
                 <tr>
-                  {[...(!Array.isArray(source) ? ["_key"] : []), ...columns].map((k) => (
+                  {[...(!arraySource ? ["_key"] : []), ...tableColumns].map((k) => (
                     <th
                       key={k}
                       aria-sort={sort.key === k ? (sort.direction === 1 ? "ascending" : "descending") : "none"}
@@ -1197,10 +1237,10 @@ function Explorer({
                         setDetailRow(r);
                       }
                     } : undefined}>
-                    {!Array.isArray(source) && <th scope="row">{hasDetailPanel
+                    {!arraySource && <th scope="row">{hasDetailPanel
                       ? <button className="detail-link" aria-haspopup="dialog" onClick={() => setDetailRow(r)}>{names[r.key] || termLabel(r.key, lang)}</button>
                       : names[r.key] || termLabel(r.key, lang)}</th>}
-                    {columns.map((k) => (
+                    {tableColumns.map((k) => (
                       <td key={k}>
                         {hasDetailPanel && k === (d.collection === "ai" || d.id.endsWith("vms") ? "name" : "id") ? (
                           <button className="detail-link" onClick={() => setDetailRow(r)} aria-haspopup="dialog">{format(r.values[k], lang)}</button>
