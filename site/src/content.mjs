@@ -247,6 +247,8 @@ export const fieldLabels = {
   architecture: ["Architecture", "Architecture"],
   context: ["Fenêtre de contexte (tokens)", "Context window (tokens)"],
   parameters: ["Paramètres actifs / totaux (milliards)", "Active / total parameters (billions)"],
+  "parameters.active": ["Paramètres actifs (milliards)", "Active parameters (billions)"],
+  "parameters.total": ["Paramètres totaux (milliards)", "Total parameters (billions)"],
   input: ["Modalités d’entrée", "Input modalities"],
   output: ["Modalités de sortie", "Output modalities"],
   reasoning: ["Capacité de raisonnement répertoriée", "Recorded reasoning capability"],
