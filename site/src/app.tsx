@@ -1133,33 +1133,21 @@ function Explorer({
                 : <p role="status">{historyStatus}</p>}
             </section>
           )}
-          <div className={`section-heading${allCloud ? " cloud-export-heading" : ""}`}>
+          <div className="section-heading">
             <p role="status">
               {filtered.length.toLocaleString(lang)} {t("résultats", "results")}
             </p>
             <div className="downloads">
-              {allCloud ? <details className="cloud-exports">
-                <summary>{t("Exporter la sélection par fournisseur", "Export selection by provider")}</summary>
-                <p>{t("Chaque fichier conserve le format de sa source et les filtres actifs.", "Each file preserves its source format and the active filters.")}</p>
-                {providerDatasets.map((dataset) => <div key={dataset.id}>
-                  <strong>{providerLabel(dataset.id)}</strong>{" "}
-                  {["json", ...(dataset.csv ? ["csv"] : [])].map((ext) => <button key={ext}
-                    disabled={!filtered.some((row) => row.datasetId === dataset.id)}
-                    onClick={() => download(ext, dataset)}
-                    aria-label={`${t("Exporter", "Export")} ${providerLabel(dataset.id)} ${ext.toUpperCase()}`}>
-                    {ext.toUpperCase()}
-                  </button>)}
-                </div>)}
-              </details> : <>
-              <button disabled={!filtered.length} onClick={() => download("json")}>
+              <button disabled={allCloud || !filtered.length} onClick={() => download("json")}
+                title={allCloud ? t("Sélectionnez un fournisseur pour exporter.", "Select a provider to export.") : undefined}>
                 {t("Exporter la sélection JSON", "Export selection JSON")}
               </button>
-              {d.csv && (
-                <button disabled={!filtered.length} onClick={() => download("csv")}>
+              {(allCloud || d.csv) && (
+                <button disabled={allCloud || !filtered.length} onClick={() => download("csv")}
+                  title={allCloud ? t("Sélectionnez un fournisseur pour exporter.", "Select a provider to export.") : undefined}>
                   {t("Exporter la sélection CSV", "Export selection CSV")}
                 </button>
               )}
-              </>}
               <button
                 onClick={async () => {
                   try {
