@@ -334,7 +334,6 @@ export function MixComposition({ values, lang }: { values: Record<string, any>; 
 export function MixMap({
   paths,
   rows,
-  metric,
   period,
   names,
   lang,
@@ -345,7 +344,6 @@ export function MixMap({
 }: {
   paths: Record<string, string>;
   rows: Row[];
-  metric: string;
   period: string;
   names: Record<string, string>;
   lang: string;
@@ -359,10 +357,7 @@ export function MixMap({
   return (
     <figure className="map mix-map" onPointerLeave={tip.close}>
       <figcaption>
-        <h3>
-          {t(lang, "Part de ", "Share of ")}
-          {termLabel(metric, lang)} · {period}
-        </h3>
+        <h3>{t(lang, "Choisir un territoire", "Choose a territory")}</h3>
         <p>
           {t(
             lang,
@@ -383,7 +378,6 @@ export function MixMap({
         {Object.entries(displayPaths(paths, countryLevel)).map(([pathKey, path]) => {
           const key = countryLevel ? pathKey.slice(0, 2) : pathKey;
           const row = byKey.get(key);
-          const value = row?.values[metric];
           const name = names[key] || key;
           const content = (
             <>
@@ -398,8 +392,8 @@ export function MixMap({
             </>
           );
           const message = `${name} (${key}) · ${period} · ${
-            typeof value === "number"
-              ? number(value * 100, lang) + " % " + termLabel(metric, lang)
+            row
+              ? Object.entries(row.values).map(([energy, value]) => `${termLabel(energy, lang)} : ${typeof value === "number" ? number(value * 100, lang) + " %" : t(lang, "donnée absente", "no data")}`).join(" · ")
               : t(lang, "donnée absente", "no data")
           }`;
           const bindings = tip.bind(message, content);
@@ -407,9 +401,7 @@ export function MixMap({
             <path
               key={pathKey}
               d={path}
-              fill={
-                typeof value === "number" ? `hsl(212 60% ${94 - Math.max(0, Math.min(1, value)) * 62}%)` : "#e5e7eb"
-              }
+              fill="#dce5ef"
               stroke="white"
               strokeWidth={0.4}
               aria-pressed={selected === key}
@@ -426,10 +418,6 @@ export function MixMap({
           );
         })}
       </svg>
-      <p className="muted">
-        0 % <span className="gradient" /> 100 % ·{" "}
-        {t(lang, "Gris : donnée absente à la période choisie.", "Gray: no data for the selected period.")}
-      </p>
       {tip.tooltip}
     </figure>
   );

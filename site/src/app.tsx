@@ -866,7 +866,6 @@ function Explorer({
             <MixMap
               paths={paths}
               rows={mapRows}
-              metric={activeMetric}
               period={activePeriod}
               names={names}
               lang={lang}
