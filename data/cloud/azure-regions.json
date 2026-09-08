@@ -1051,5 +1051,68 @@
     "pue": 1.125,
     "wue": 0.23,
     "ref": 0.47
+  },
+  {
+    "id": "be-central",
+    "name": "Belgium Central",
+    "provider": "azure",
+    "lat": 50.85,
+    "lon": 4.35,
+    "location": "Brussels",
+    "country": "be",
+    "pue": 1.16,
+    "wue": 0.03,
+    "ref": 0,
+    "aliases": [
+      "belgiumcentral",
+      "belgium-central"
+    ],
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-list",
+      "https://datacenters.microsoft.com/sustainability/efficiency/"
+    ],
+    "notes": "PUE and WUE (L/kWh) are estimates using Microsoft's published FY25 Europe, Middle East & Africa aggregate, not measurements of this cloud region. FY25 covers July 2024 to June 2025 and fully owned and controlled datacenters operational for 12 months; local performance may differ. Coordinates approximate the locality, not a datacenter address. REF=0 is a conservative fallback: no renewable-energy share is credited without region-specific evidence; it is not a measured value."
+  },
+  {
+    "id": "cl-central",
+    "name": "Chile Central",
+    "provider": "azure",
+    "lat": -33.45,
+    "lon": -70.67,
+    "location": "Santiago",
+    "country": "cl",
+    "pue": 1.16,
+    "wue": 0.34,
+    "ref": 0,
+    "aliases": [
+      "chilecentral",
+      "chile-central"
+    ],
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-list",
+      "https://datacenters.microsoft.com/sustainability/efficiency/"
+    ],
+    "notes": "PUE and WUE (L/kWh) are estimates using Microsoft's published FY25 Americas aggregate, not measurements of this cloud region. FY25 covers July 2024 to June 2025 and fully owned and controlled datacenters operational for 12 months; local performance may differ. Coordinates approximate the locality, not a datacenter address. REF=0 is a conservative fallback: no renewable-energy share is credited without region-specific evidence; it is not a measured value."
+  },
+  {
+    "id": "my-west",
+    "name": "Malaysia West",
+    "provider": "azure",
+    "lat": 3.14,
+    "lon": 101.69,
+    "location": "Kuala Lumpur",
+    "country": "my",
+    "pue": 1.28,
+    "wue": 0.25,
+    "ref": 0,
+    "aliases": [
+      "malaysiawest",
+      "malaysia-west"
+    ],
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/reliability/regions-list",
+      "https://datacenters.microsoft.com/sustainability/efficiency/"
+    ],
+    "notes": "PUE and WUE (L/kWh) are estimates using Microsoft's published FY25 Asia Pacific aggregate, not measurements of this cloud region. FY25 covers July 2024 to June 2025 and fully owned and controlled datacenters operational for 12 months; local performance may differ. Coordinates approximate the locality, not a datacenter address. REF=0 is a conservative fallback: no renewable-energy share is credited without region-specific evidence; it is not a measured value."
   }
 ]

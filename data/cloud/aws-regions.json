@@ -388,5 +388,91 @@
     "pue": 1.12,
     "wue": 0.16,
     "ref": 0
+  },
+  {
+    "id": "ap-east-2",
+    "name": "ap-east-2",
+    "provider": "aws",
+    "lat": 25.03,
+    "lon": 121.57,
+    "location": "Taipei",
+    "country": "tw",
+    "pue": 1.27,
+    "wue": 0.98,
+    "ref": 0,
+    "sources": [
+      "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
+      "https://sustainability.aboutamazon.com/aws-wue-pue.csv"
+    ],
+    "notes": "PUE and WUE (L/kWh) are estimates using AWS's published 2024 Asia Pacific (excl. China) aggregate, not measurements of this cloud region. The source predates this region's launch; local performance may differ. Coordinates approximate the locality, not a datacenter address. REF=0 follows the existing AWS dataset convention, not a measured renewable-energy share."
+  },
+  {
+    "id": "ap-southeast-6",
+    "name": "ap-southeast-6",
+    "provider": "aws",
+    "lat": -36.85,
+    "lon": 174.76,
+    "location": "Auckland",
+    "country": "nz",
+    "pue": 1.27,
+    "wue": 0.98,
+    "ref": 0,
+    "sources": [
+      "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
+      "https://sustainability.aboutamazon.com/aws-wue-pue.csv"
+    ],
+    "notes": "PUE and WUE (L/kWh) are estimates using AWS's published 2024 Asia Pacific (excl. China) aggregate, not measurements of this cloud region. The source predates this region's launch; local performance may differ. Coordinates approximate the locality, not a datacenter address. REF=0 follows the existing AWS dataset convention, not a measured renewable-energy share."
+  },
+  {
+    "id": "ap-southeast-7",
+    "name": "ap-southeast-7",
+    "provider": "aws",
+    "lat": 13.75,
+    "lon": 100.5,
+    "location": "Thailand",
+    "country": "th",
+    "pue": 1.27,
+    "wue": 0.98,
+    "ref": 0,
+    "sources": [
+      "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
+      "https://sustainability.aboutamazon.com/aws-wue-pue.csv"
+    ],
+    "notes": "PUE and WUE (L/kWh) are estimates using AWS's published 2024 Asia Pacific (excl. China) aggregate, not measurements of this cloud region. The source predates this region's launch; local performance may differ. Coordinates approximate the locality, not a datacenter address. REF=0 follows the existing AWS dataset convention, not a measured renewable-energy share."
+  },
+  {
+    "id": "mx-central-1",
+    "name": "mx-central-1",
+    "provider": "aws",
+    "lat": 20.59,
+    "lon": -100.39,
+    "location": "Queretaro",
+    "country": "mx",
+    "pue": 1.14,
+    "wue": 0.13,
+    "ref": 0,
+    "sources": [
+      "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
+      "https://sustainability.aboutamazon.com/aws-wue-pue.csv"
+    ],
+    "notes": "PUE and WUE (L/kWh) are estimates using AWS's published 2024 North America aggregate, not measurements of this cloud region. The source predates this region's launch; local performance may differ. Coordinates approximate the locality, not a datacenter address. REF=0 follows the existing AWS dataset convention, not a measured renewable-energy share."
+  },
+  {
+    "id": "eusc-de-east-1",
+    "name": "eusc-de-east-1",
+    "provider": "aws",
+    "lat": 52.4,
+    "lon": 13,
+    "location": "Brandenburg",
+    "country": "de",
+    "pue": 1.11,
+    "wue": 0.04,
+    "ref": 0,
+    "partition": "aws-eusc",
+    "sources": [
+      "https://aws.amazon.com/blogs/aws/opening-the-aws-european-sovereign-cloud/",
+      "https://sustainability.aboutamazon.com/aws-wue-pue.csv"
+    ],
+    "notes": "PUE and WUE (L/kWh) are estimates using AWS's published 2024 Europe aggregate, not measurements of this cloud region. The source predates this region's launch; local performance may differ. Coordinates approximate the locality, not a datacenter address. REF=0 follows the existing AWS dataset convention, not a measured renewable-energy share."
   }
 ]
