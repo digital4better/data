@@ -67,9 +67,10 @@ test("filtered temporal CSV has same selection as JSON", () => {
 
 const { projectLocation, groupedLocations, numericBars, countsBy } = require("../src/chart-data.ts");
 test("cloud projection validates coordinates and keeps zero coordinates", () => {
-  assert.deepEqual(projectLocation(0, 0), [400, 200]);
-  assert.deepEqual(projectLocation(-180, 90), [0, 0]);
-  assert.deepEqual(projectLocation(180, -90), [800, 400]);
+  assert.equal(projectLocation(0, 0)[0], 400);
+  assert.ok(Math.abs(projectLocation(0, -59)[1] - 530) < 1e-8);
+  assert.equal(projectLocation(-180, 90), null);
+  assert.equal(projectLocation(180, -90), null);
   for (const coords of [
     [null, 0],
     [0, undefined],
@@ -79,7 +80,7 @@ test("cloud projection validates coordinates and keeps zero coordinates", () => 
   ])
     assert.equal(projectLocation(...coords), null);
   const paris = projectLocation(2.35, 48.86);
-  assert.ok(paris[0] > 400 && paris[1] < 200);
+  assert.ok(paris[0] > 400 && paris[1] > 240 && paris[1] < 250);
 });
 test("co-located cloud regions remain inspectable as a group", () => {
   const rows = rowsOf(

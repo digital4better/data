@@ -1,3 +1,4 @@
+import { useMapZoom } from "./map-zoom";
 import { tooltipPosition } from "./tooltip-position";
 import { termLabel, regionLabel } from "./localization";
 import React, { useEffect, useId, useState, useRef, useLayoutEffect } from "react";
@@ -131,12 +132,13 @@ export function Bars({
   );
 }
 export function CloudMap({ rows, lang }: { rows: Row[]; lang: string }) {
-  const [paths, setPaths] = useState<string[]>([]);
+  const [paths, setPaths] = useState<Record<string, string>>({});
   const [failed, setFailed] = useState(false);
   const tip = useTooltip(rows);
+  const zoom = useMapZoom(lang, tip.close);
   useEffect(() => {
     const controller = new AbortController();
-    fetch(new URL("./assets/world-map.json", import.meta.url).href, { signal: controller.signal })
+    fetch("/data/country/regions-paths.json", { signal: controller.signal })
       .then((r) => {
         if (!r.ok) throw new Error();
         return r.json();
@@ -161,9 +163,10 @@ export function CloudMap({ rows, lang }: { rows: Row[]; lang: string }) {
           )}
         </p>
       </figcaption>
-      <svg viewBox="0 0 800 400" role="group" aria-label={t(lang, "Carte des régions cloud", "Cloud region map")}>
-        <rect width="800" height="400" fill="#f6f9fc" />
-        {paths.map((path, i) => (
+      {zoom.controls}
+      <svg viewBox={zoom.viewBox} role="group" aria-label={t(lang, "Carte des régions cloud", "Cloud region map")}>
+
+        {Object.entries(displayPaths(paths, true)).map(([i, path]) => (
           <path key={i} d={path} fill="#dce5ef" stroke="#fff" strokeWidth=".6" />
         ))}
         {points.map(({ point, rows: group }, i) => {
@@ -175,17 +178,17 @@ export function CloudMap({ rows, lang }: { rows: Row[]; lang: string }) {
             .join("\n\n");
           return (
             <g key={i} {...tip.bind(description)} className="map-marker">
-              <circle cx={point[0]} cy={point[1]} r="10" fill="transparent" />
+              <circle cx={point[0]} cy={point[1]} r={10 / zoom.scale} fill="transparent" />
               <circle
                 cx={point[0]}
                 cy={point[1]}
-                r={group.length > 1 ? 6 : 4.5}
+                r={(group.length > 1 ? 6 : 4.5) / zoom.scale}
                 fill="#f15842"
                 stroke="white"
                 strokeWidth="1.5"
               />
               {group.length > 1 && (
-                <text x={point[0]} y={point[1] + 2} textAnchor="middle" fill="white" fontSize="6" aria-hidden="true">
+                <text x={point[0]} y={point[1] + 2 / zoom.scale} textAnchor="middle" fill="white" fontSize={6 / zoom.scale} aria-hidden="true">
                   {group.length}
                 </text>
               )}
@@ -216,7 +219,7 @@ export function CloudMap({ rows, lang }: { rows: Row[]; lang: string }) {
           "PUE : ratio · WUE : unité et périmètre de la source · REF : fraction. Les zéros peuvent être des conventions ; voir les sources.",
           "PUE: ratio · WUE: source unit and boundary · REF: fraction. Zeros may be conventions; see sources."
         )}{" "}
-        <a href="https://www.naturalearthdata.com/about/terms-of-use/">Natural Earth</a>
+        <a href="https://github.com/digital4better/data/blob/main/data/country/regions-paths.json">{t(lang, "Fond de carte commun", "Shared map background")}</a>
       </p>
     </figure>
   );
@@ -353,6 +356,7 @@ export function MixMap({
   green: boolean;
 }) {
   const tip = useTooltip(rows);
+  const zoom = useMapZoom(lang, tip.close);
   const [suppressed, setSuppressed] = useState("");
   const byKey = new Map(rows.map((row) => [row.key, row]));
   return (
@@ -372,7 +376,8 @@ export function MixMap({
           </p>
         )}
       </figcaption>
-      <svg viewBox="0 130 800 400" role="group" aria-label={t(lang, "Carte du mix électrique", "Electricity mix map")}
+      {zoom.controls}
+      <svg viewBox={zoom.viewBox} role="group" aria-label={t(lang, "Carte du mix électrique", "Electricity mix map")}
         onClick={(event) => {
           if (event.target === event.currentTarget) { onSelect(""); tip.close(); }
         }}>

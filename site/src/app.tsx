@@ -1,3 +1,4 @@
+import { useMapZoom } from "./map-zoom";
 import { impactColors, impactColor } from "./chart-data";
 import { termLabel, regionLabel, languageStorageKey } from "./localization";
 import React, { useEffect, useMemo, useState, useRef, useId } from "react";
@@ -1196,7 +1197,7 @@ function Explorer({
                             <dl>
                               {Object.entries(r.values).map(([key, v]) => (
                                 <React.Fragment key={key}>
-                                  <dt>{label(key, lang)}</dt>
+                                  <th scope="row">{label(key, lang)}</th>
                                   <dd>{format(v, lang)}</dd>
                                 </React.Fragment>
                               ))}
@@ -1270,14 +1271,14 @@ function HardwarePanel({ row, lang, onClose }: { row: Row; lang: string; onClose
       <div><p className="eyebrow">{text("CARACTÉRISTIQUES", "SPECIFICATIONS", lang)}</p><h2 id={heading}>{title}</h2></div>
       <button autoFocus onClick={() => ref.current?.close()} aria-label={text("Fermer le panneau", "Close panel", lang)}>×</button>
     </header>
-    <dl className="hardware-properties">
-      {Object.entries(row.values).map(([key, value]) => <React.Fragment key={key}>
-        <dt>{label(key, lang)}</dt>
-        <dd>{typeof value === "string" && /^https?:\/\//.test(value)
+    <table className="hardware-properties" aria-labelledby={heading}><tbody>
+      {Object.entries(row.values).map(([key, value]) => <tr key={key}>
+        <th scope="row">{label(key, lang)}</th>
+        <td>{typeof value === "string" && /^https?:\/\//.test(value)
           ? <a href={value}>{value}</a>
-          : format(["type", "category", "architecture"].includes(key) && typeof value === "string" ? termLabel(value, lang) : value, lang)}</dd>
-      </React.Fragment>)}
-    </dl>
+          : format(["type", "category", "architecture"].includes(key) && typeof value === "string" ? termLabel(value, lang) : value, lang)}</td>
+      </tr>)}
+    </tbody></table>
   </dialog>;
 }
 function FactorMap({
@@ -1302,14 +1303,16 @@ function FactorMap({
   period: string;
 }) {
   const tip = useTooltip(useMemo(() => ({ rows, metric }), [rows, metric]));
+  const zoom = useMapZoom(lang, tip.close);
   const [suppressed, setSuppressed] = useState("");
   const values = Object.fromEntries(rows.map((r) => [r.key, r.values[metric]]));
   const numbers = Object.values(values).filter((v) => typeof v === "number" && Number.isFinite(v));
   const max = Math.max(0, ...numbers);
   return (
     <figure className="map" onPointerLeave={tip.close}>
+      {zoom.controls}
       <svg
-        viewBox="0 130 800 400"
+        viewBox={zoom.viewBox}
         role="group"
         aria-label={text("Carte des facteurs d’impact", "Impact factor map", lang)}
         onClick={(event) => {

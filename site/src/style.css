@@ -771,7 +771,11 @@ td dt {
 .hardware-panel-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; background: white; padding: 0 0 20px; }
 .hardware-panel-header h2 { margin: 0; overflow-wrap: anywhere; }
 .hardware-panel-header button { font-size: 26px; min-width: 44px; min-height: 44px; }
-.hardware-properties { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 12px 20px; }
-.hardware-properties dt { font-weight: 600; }
-.hardware-properties dd { margin: 0; overflow-wrap: anywhere; }
-@media (max-width: 480px) { .hardware-properties { grid-template-columns: minmax(0, 1fr); gap: 6px; } .hardware-properties dd { margin-bottom: 14px; } }
+.hardware-properties { width:100%; table-layout:fixed; border-collapse:collapse; font-size:.9rem; }
+.hardware-properties th, .hardware-properties td { padding:12px; text-align:left; vertical-align:top; border-bottom:1px solid #dce5ef; white-space:normal; overflow-wrap:anywhere; }
+.hardware-properties th { width:44%; font-weight:600; }
+.hardware-properties tr:nth-child(odd) { background:#f3f6fa; }
+.map-controls { display:flex; align-items:center; flex-wrap:wrap; gap:8px; margin:12px 0; }
+.map-controls select { width:auto; min-width:150px; }
+.map-controls button { min-width:40px; min-height:40px; }
+.map svg path, .cloud-map svg path, .cloud-map svg circle { vector-effect:non-scaling-stroke; }

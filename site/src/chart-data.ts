@@ -6,10 +6,12 @@ export function projectLocation(lon: unknown, lat: unknown): [number, number] | 
     !Number.isFinite(lon) ||
     !Number.isFinite(lat) ||
     Math.abs(lon) > 180 ||
-    Math.abs(lat) > 90
+    Math.abs(lat) >= 90
   )
     return null;
-  return [((lon + 180) / 360) * 800, ((90 - lat) / 180) * 400];
+  // Mercator projection used by regions-paths.json and the Fruggr map.
+  const mercator = (degrees: number) => Math.log(Math.tan(Math.PI / 4 + degrees * Math.PI / 360));
+  return [((lon + 180) / 360) * 800, 530 - 800 / (2 * Math.PI) * (mercator(lat) - mercator(-59))];
 }
 export function countsBy(rows: Row[], key: string) {
   const counts = new Map<string, number>();
