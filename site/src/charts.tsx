@@ -167,6 +167,7 @@ export function CloudMap({ rows, lang }: { rows: Row[]; lang: string }) {
       {zoom.controls}
       <svg viewBox={zoom.viewBox} role="group" aria-label={t(lang, "Carte des régions cloud", "Cloud region map")}>
 
+        <g className="map-layer" style={{ transform: zoom.transform }}>
         {Object.entries(displayPaths(paths, true)).map(([i, path]) => (
           <path key={i} d={path} fill="#dce5ef" stroke="#fff" strokeWidth=".6" />
         ))}
@@ -196,6 +197,7 @@ export function CloudMap({ rows, lang }: { rows: Row[]; lang: string }) {
             </g>
           );
         })}
+      </g>
       </svg>
       </div>
       {tip.tooltip}
@@ -384,6 +386,7 @@ export function MixMap({
         onClick={(event) => {
           if (event.target === event.currentTarget) { onSelect(""); tip.close(); }
         }}>
+        <g className="map-layer" style={{ transform: zoom.transform }}>
         {Object.entries(displayPaths(paths, countryLevel)).map(([pathKey, path]) => {
           const key = countryLevel ? pathKey.slice(0, 2) : pathKey;
           const row = byKey.get(key);
@@ -430,6 +433,7 @@ export function MixMap({
             />
           );
         })}
+      </g>
       </svg>
       </div>
       {tip.tooltip}

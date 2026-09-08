@@ -1,4 +1,4 @@
-import React, { useId, useState } from "react";
+import React, { useState } from "react";
 
 // Same continent framing as the Fruggr infrastructure map.
 const views = [
@@ -11,16 +11,12 @@ const views = [
   ["Océanie", "Oceania", 3.2, -1860, -1050],
 ] as const;
 export function useMapZoom(lang: string, closeTooltip: () => void) {
-  const id = useId();
   const [area, setArea] = useState(0);
-  const [view, setView] = useState([0, 130, 800, 400]);
-  const scale = 800 / view[2];
-  const change = (next: number[]) => { closeTooltip(); setView(next); };
-  return { viewBox: view.join(" "), scale, controls: <div className="map-controls">
-    <label htmlFor={id}>{lang === "fr" ? "Vue" : "View"}</label>
-    <select id={id} value={area} onChange={e => {
-      const index = Number(e.target.value); setArea(index);
-      const [, , s, x, y] = views[index]; change([-x / s, (130 - y) / s, 800 / s, 400 / s]);
+  const [, , scale, x, y] = views[area];
+  return { viewBox: "0 130 800 400", scale, transform: `translate(${x}px, ${y}px) scale(${scale})`, controls: <div className="map-controls">
+    <select aria-label={lang === "fr" ? "Vue" : "View"} value={area} onChange={e => {
+      closeTooltip();
+      setArea(Number(e.target.value));
     }}>{views.map((v, i) => <option key={i} value={i}>{v[lang === "fr" ? 0 : 1]}</option>)}</select>
   </div> };
 }

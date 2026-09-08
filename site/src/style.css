@@ -776,9 +776,14 @@ td dt {
 .hardware-properties th { width:44%; font-weight:600; }
 .hardware-properties tr:nth-child(odd) { background:#f3f6fa; }
 .map-viewport { position:relative; }
-.map-controls { position:absolute; top:10px; right:10px; z-index:1; display:flex; align-items:center; gap:8px; padding:4px 8px; border:1px solid #dce5ef; border-radius:8px; background:#fff; box-shadow:0 2px 8px #23364d15; max-width:calc(100% - 20px); }
-.map-controls label { margin:0; }
-.map-controls select { width:auto; min-width:0; max-width:100%; margin:0; }
+.map-controls { position:absolute; top:8px; right:8px; z-index:1; max-width:calc(100% - 16px); }
+.map-controls select { width:auto; min-width:0; max-width:100%; min-height:30px; margin:0; padding:4px 24px 4px 8px; font-size:.8rem; line-height:1.2; border:1px solid #d4dfe9; border-radius:6px; background-color:#fffffff0; color:#42566d; box-shadow:0 1px 4px #23364d0d; }
+.map-layer { transform-origin:0 0; transition:transform 500ms ease; }
+.cloud-map .map-marker circle { transition:r 500ms ease; }
+.cloud-map .map-marker text { transition:font-size 500ms ease; }
+@media (prefers-reduced-motion:reduce) {
+  .map-layer, .cloud-map .map-marker circle, .cloud-map .map-marker text { transition:none; }
+}
 .map svg path, .cloud-map svg path, .cloud-map svg circle { vector-effect:non-scaling-stroke; }
 
 .detail-values { margin:0; padding-left:18px; }

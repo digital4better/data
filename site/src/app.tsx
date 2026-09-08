@@ -1323,6 +1323,7 @@ function FactorMap({
           if (event.target === event.currentTarget) { onSelect(""); tip.close(); }
         }}
       >
+        <g className="map-layer" style={{ transform: zoom.transform }}>
         {Object.entries(displayPaths(paths, countryLevel)).map(([key, path]) => {
           const targetKey = countryLevel ? key.slice(0, 2) : key;
           const value = values[targetKey];
@@ -1354,6 +1355,7 @@ function FactorMap({
             />
           );
         })}
+      </g>
       </svg>
       </div>
       {tip.tooltip}
