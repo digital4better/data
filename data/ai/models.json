@@ -34,6 +34,80 @@
     ]
   },
   {
+    "name": "amazon-nova-2-lite",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "(?:amazon[\\s._-]?)?nova[\\s._-]?2[\\s._-]?lite",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 64,
+      "total": 64
+    },
+    "context": 1000000,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "amazon.nova-2-lite-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-lite.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards.html",
+      "https://docs.aws.amazon.com/nova/latest/nova2-userguide/extended-thinking.html"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "amazon-nova-2-sonic",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "(?:amazon[\\s._-]?)?nova[\\s._-]?2[\\s._-]?sonic",
+    "type": "speech",
+    "architecture": "dense",
+    "parameters": {
+      "active": 24,
+      "total": 24
+    },
+    "context": 1000000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "amazon.nova-2-sonic-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-sonic.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards.html",
+      "https://aws.amazon.com/blogs/aws/introducing-amazon-nova-2-sonic-next-generation-speech-to-speech-model-for-conversational-ai/"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
     "name": "amazon-nova-canvas",
     "vendor": "amazon",
     "open": false,
@@ -59,10 +133,12 @@
       ]
     },
     "sources": [
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-canvas.html"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -93,11 +169,13 @@
       ]
     },
     "sources": [
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-lite.html"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -126,11 +204,13 @@
       ]
     },
     "sources": [
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-micro.html"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -159,10 +239,12 @@
       ]
     },
     "sources": [
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-amazon-nova-multimodal-embeddings.html"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -193,11 +275,13 @@
       ]
     },
     "sources": [
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-premier.html"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -231,12 +315,14 @@
     "sources": [
       "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
       "https://lifearchitect.ai/models-table",
-      "https://www.amazon.science/publications/the-amazon-nova-family-of-models-technical-report-and-model-card"
+      "https://www.amazon.science/publications/the-amazon-nova-family-of-models-technical-report-and-model-card",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-pro.html"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -266,10 +352,12 @@
       ]
     },
     "sources": [
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-reel.html"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -300,11 +388,13 @@
       ]
     },
     "sources": [
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-sonic.html"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -335,7 +425,8 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -363,10 +454,12 @@
       ]
     },
     "sources": [
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-image-generator-g1-v2.html"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -396,11 +489,13 @@
       ]
     },
     "sources": [
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-multimodal-embeddings-g1.html"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -429,11 +524,13 @@
       ]
     },
     "sources": [
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-embeddings-g1---text.html"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -458,16 +555,18 @@
     "tools": false,
     "providers": {
       "aws": [
-        "amazon.titan-embed-text-v2:0",
-        "amazon.titan-embed-g1-text-02"
+        "amazon.titan-embed-text-v2:0"
       ]
     },
     "sources": [
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-text-embeddings-v2-2.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-text-embeddings-v2.html"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -500,7 +599,8 @@
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -568,7 +668,8 @@
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -629,7 +730,8 @@
       ]
     },
     "sources": [
-      "https://huggingface.co/BAAI/bge-m3"
+      "https://huggingface.co/BAAI/bge-m3",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
     ],
     "estimated": []
   },
@@ -663,7 +765,9 @@
       ]
     },
     "sources": [
-      "https://huggingface.co/BAAI/bge-multilingual-gemma2"
+      "https://huggingface.co/BAAI/bge-multilingual-gemma2",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
     ],
     "estimated": []
   },
@@ -671,7 +775,7 @@
     "name": "claude",
     "vendor": "anthropic",
     "open": false,
-    "pattern": "claude",
+    "pattern": "(?:^|[^a-z0-9])claude(?:[\\s._-]?v?1(?:[\\s._-]?\\d+)?)?(?:$|[\\s._])",
     "type": "text",
     "architecture": "dense",
     "parameters": {
@@ -693,7 +797,8 @@
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -720,15 +825,21 @@
     "providers": {
       "aws": [
         "anthropic.claude-3-haiku-20240307-v1:0"
+      ],
+      "gcp": [
+        "claude-3-haiku"
       ]
     },
     "sources": [
       "https://docs.anthropic.com/en/docs/about-claude/models/overview",
-      "https://lifearchitect.substack.com/p/the-memo-special-edition-claude-3"
+      "https://lifearchitect.substack.com/p/the-memo-special-edition-claude-3",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-3-haiku.html",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -754,20 +865,26 @@
     "reasoning": false,
     "tools": true,
     "providers": {
+      "aws": [
+        "anthropic.claude-3-opus-20240229-v1:0"
+      ],
       "gcp": [
-        "Claude 3 Opus"
+        "claude-3-opus"
       ]
     },
     "sources": [
       "https://docs.anthropic.com/en/docs/about-claude/models/overview",
       "https://lifearchitect.ai/models-table",
       "https://www.anthropic.com/claude-3-model-card",
-      "https://lifearchitect.substack.com/p/the-memo-special-edition-claude-3"
+      "https://lifearchitect.substack.com/p/the-memo-special-edition-claude-3",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -796,16 +913,19 @@
         "anthropic.claude-3-sonnet-20240229-v1:0"
       ],
       "gcp": [
-        "Claude 3 Sonnet"
+        "claude-3-sonnet"
       ]
     },
     "sources": [
       "https://docs.anthropic.com/en/docs/about-claude/models/overview",
-      "https://lifearchitect.substack.com/p/the-memo-special-edition-claude-3"
+      "https://lifearchitect.substack.com/p/the-memo-special-edition-claude-3",
+      "https://cloud.google.com/blog/products/ai-machine-learning/anthropics-claude-3-models-go-ga-on-vertex-ai/",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -832,14 +952,20 @@
     "providers": {
       "aws": [
         "anthropic.claude-3-5-haiku-20241022-v1:0"
+      ],
+      "gcp": [
+        "claude-3-5-haiku"
       ]
     },
     "sources": [
-      "https://docs.anthropic.com/en/docs/about-claude/models/overview"
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-3-5-haiku.html",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -865,19 +991,25 @@
     "reasoning": false,
     "tools": true,
     "providers": {
+      "aws": [
+        "anthropic.claude-3-5-sonnet-20240620-v1:0"
+      ],
       "gcp": [
-        "Claude 3.5 Sonnet v2"
+        "claude-3-5-sonnet"
       ]
     },
     "sources": [
       "https://docs.anthropic.com/en/docs/about-claude/models/overview",
       "https://lifearchitect.ai/models-table",
-      "https://www.anthropic.com/news/claude-3-5-sonnet"
+      "https://www.anthropic.com/news/claude-3-5-sonnet",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -903,19 +1035,25 @@
     "reasoning": false,
     "tools": true,
     "providers": {
+      "aws": [
+        "anthropic.claude-3-5-sonnet-20241022-v2:0"
+      ],
       "gcp": [
-        "Claude 3.5 Sonnet v2"
+        "claude-3-5-sonnet-v2"
       ]
     },
     "sources": [
       "https://docs.anthropic.com/en/docs/about-claude/models/overview",
       "https://lifearchitect.ai/models-table",
-      "https://assets.anthropic.com/m/61e7d27f8c8f5919/original/Claude-3-Model-Card.pdf#page=51"
+      "https://assets.anthropic.com/m/61e7d27f8c8f5919/original/Claude-3-Model-Card.pdf#page=51",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -941,19 +1079,117 @@
     "reasoning": true,
     "tools": true,
     "providers": {
+      "aws": [
+        "anthropic.claude-3-7-sonnet-20250219-v1:0"
+      ],
       "gcp": [
-        "Claude 3.7 Sonnet"
+        "claude-3-7-sonnet"
       ]
     },
     "sources": [
       "https://docs.anthropic.com/en/docs/about-claude/models/overview",
       "https://lifearchitect.ai/models-table",
-      "https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf"
+      "https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
+    ]
+  },
+  {
+    "name": "claude-fable-5",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?fable[\\s._-]?5(?![\\s._-]?(?:\\.1|1))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 600,
+      "total": 3000
+    },
+    "context": 1000000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "anthropic.claude-fable-5"
+      ],
+      "azure": [
+        "claude-fable-5"
+      ],
+      "gcp": [
+        "claude-fable-5"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/models/fable-5/overview",
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-fable-5.html",
+      "https://apxml.com/models",
+      "https://models.dev/models/anthropic/claude-fable-5",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "claude-fable-5.1",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?fable[\\s._-]?5(?:\\.1|[\\s._-]?1)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 600,
+      "total": 3000
+    },
+    "context": 1000000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "anthropic.claude-fable-5-1"
+      ],
+      "azure": [
+        "claude-fable-5-1"
+      ],
+      "gcp": [
+        "claude-fable-5-1"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/models/fable-5-1/overview",
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-fable-5-1.html",
+      "https://apxml.com/models/claude-fable-51",
+      "https://models.dev/models/anthropic/claude-fable-5-1",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
     ]
   },
   {
@@ -979,18 +1215,27 @@
     "tools": true,
     "providers": {
       "aws": [
-        "anthropic.claude-haiku-4-5-20251001-v1:0"
+        "anthropic.claude-haiku-4-5-20251001-v1:0",
+        "anthropic.claude-haiku-4-5"
+      ],
+      "azure": [
+        "claude-haiku-4-5"
       ],
       "gcp": [
-        "Claude Haiku 4.5"
+        "claude-haiku-4-5"
       ]
     },
     "sources": [
-      "https://docs.anthropic.com/en/docs/about-claude/models/overview"
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://models.dev/models/anthropic/claude-haiku-4-5",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-haiku-4-5.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -1023,7 +1268,91 @@
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
+    ]
+  },
+  {
+    "name": "claude-mythos-5",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?mythos[\\s._-]?5(?![\\s._-]?(?:\\.1|1))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 2000,
+      "total": 10000
+    },
+    "context": 1000000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "anthropic.claude-mythos-5"
+      ],
+      "azure": [
+        "claude-mythos-5"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/models/mythos-5/overview",
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-mythos-5.html",
+      "https://lifearchitect.ai/models-table/",
+      "https://models.dev/models/anthropic/claude-mythos-5",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "claude-mythos-5.1",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?mythos[\\s._-]?5(?:\\.1|[\\s._-]?1)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 2000,
+      "total": 10000
+    },
+    "context": 1000000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "anthropic.claude-mythos-5-1"
+      ],
+      "azure": [
+        "claude-mythos-5-1"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/models/mythos-5-1/overview",
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-mythos-5-1.html",
+      "https://lifearchitect.ai/models-table/",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
     ]
   },
   {
@@ -1049,19 +1378,26 @@
     "reasoning": true,
     "tools": true,
     "providers": {
+      "aws": [
+        "anthropic.claude-opus-4-20250514-v1:0"
+      ],
       "gcp": [
-        "Claude Opus 4"
+        "claude-opus-4"
       ]
     },
     "sources": [
       "https://docs.anthropic.com/en/docs/about-claude/models/overview",
       "https://lifearchitect.ai/models-table",
-      "https://www-cdn.anthropic.com/6be99a52cb68eb70eb9572b4cafad13df32ed995.pdf"
+      "https://www-cdn.anthropic.com/6be99a52cb68eb70eb9572b4cafad13df32ed995.pdf",
+      "https://models.dev/models/anthropic/claude-opus-4-0",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -1090,8 +1426,11 @@
       "aws": [
         "anthropic.claude-opus-4-1-20250805-v1:0"
       ],
+      "azure": [
+        "claude-opus-4-1"
+      ],
       "gcp": [
-        "Claude Opus 4.1"
+        "claude-opus-4-1"
       ]
     },
     "sources": [
@@ -1099,11 +1438,15 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-4-1.html",
       "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-claude",
       "https://lifearchitect.ai/models-table/",
-      "https://apxml.com/models"
+      "https://apxml.com/models",
+      "https://models.dev/models/anthropic/claude-opus-4-1",
+      "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
     ],
     "estimated": [
       "parameters",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -1132,19 +1475,27 @@
       "aws": [
         "anthropic.claude-opus-4-5-20251101-v1:0"
       ],
+      "azure": [
+        "claude-opus-4-5"
+      ],
       "gcp": [
-        "Claude Opus 4.5"
+        "claude-opus-4-5"
       ]
     },
     "sources": [
       "https://docs.anthropic.com/en/docs/about-claude/models/overview",
       "https://lifearchitect.ai/models-table",
-      "https://assets.anthropic.com/m/64823ba7485345a7/Claude-Opus-4-5-System-Card.pdf"
+      "https://assets.anthropic.com/m/64823ba7485345a7/Claude-Opus-4-5-System-Card.pdf",
+      "https://models.dev/models/anthropic/claude-opus-4-5",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-4-5.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -1173,19 +1524,27 @@
       "aws": [
         "anthropic.claude-opus-4-6-v1"
       ],
+      "azure": [
+        "claude-opus-4-6"
+      ],
       "gcp": [
-        "Claude Opus 4.6"
+        "claude-opus-4-6"
       ]
     },
     "sources": [
       "https://docs.anthropic.com/en/docs/about-claude/models/overview",
       "https://lifearchitect.ai/models-table",
-      "https://www-cdn.anthropic.com/0dd865075ad3132672ee0ab40b05a53f14cf5288.pdf"
+      "https://www-cdn.anthropic.com/0dd865075ad3132672ee0ab40b05a53f14cf5288.pdf",
+      "https://models.dev/models/anthropic/claude-opus-4-6",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-4-6.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -1214,8 +1573,11 @@
       "aws": [
         "anthropic.claude-opus-4-7"
       ],
+      "azure": [
+        "claude-opus-4-7"
+      ],
       "gcp": [
-        "Claude Opus 4.7"
+        "claude-opus-4-7"
       ]
     },
     "sources": [
@@ -1223,11 +1585,15 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-4-7.html",
       "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-claude",
       "https://lifearchitect.ai/models-table/",
-      "https://apxml.com/models"
+      "https://apxml.com/models",
+      "https://models.dev/models/anthropic/claude-opus-4-7",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
     ],
     "estimated": [
       "parameters",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -1256,8 +1622,11 @@
       "aws": [
         "anthropic.claude-opus-4-8"
       ],
+      "azure": [
+        "claude-opus-4-8"
+      ],
       "gcp": [
-        "Claude Opus 4.8"
+        "claude-opus-4-8"
       ]
     },
     "sources": [
@@ -1265,11 +1634,61 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-4-8.html",
       "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
       "https://lifearchitect.ai/models-table/",
-      "https://apxml.com/models"
+      "https://apxml.com/models",
+      "https://models.dev/models/anthropic/claude-opus-4-8",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
     ],
     "estimated": [
       "parameters",
-      "corpus"
+      "corpus",
+      "architecture"
+    ]
+  },
+  {
+    "name": "claude-opus-5",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?opus[\\s._-]?5(?![\\s._-]?\\d{1,2}(?!\\d))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 1000,
+      "total": 5000
+    },
+    "context": 1000000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "anthropic.claude-opus-5"
+      ],
+      "azure": [
+        "claude-opus-5"
+      ],
+      "gcp": [
+        "claude-opus-5"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/models/opus-5/overview",
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-opus-5.html",
+      "https://apxml.com/models/claude-opus-5",
+      "https://models.dev/models/anthropic/claude-opus-5",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
     ]
   },
   {
@@ -1299,18 +1718,22 @@
         "anthropic.claude-sonnet-4-20250514-v1:0"
       ],
       "gcp": [
-        "Claude Sonnet 4"
+        "claude-sonnet-4"
       ]
     },
     "sources": [
       "https://docs.anthropic.com/en/docs/about-claude/models/overview",
       "https://lifearchitect.ai/models-table",
-      "https://www.anthropic.com/news/claude-4"
+      "https://www.anthropic.com/news/claude-4",
+      "https://models.dev/models/anthropic/claude-sonnet-4-0",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-4.html",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -1339,19 +1762,27 @@
       "aws": [
         "anthropic.claude-sonnet-4-5-20250929-v1:0"
       ],
+      "azure": [
+        "claude-sonnet-4-5"
+      ],
       "gcp": [
-        "Claude Sonnet 4.5"
+        "claude-sonnet-4-5"
       ]
     },
     "sources": [
       "https://docs.anthropic.com/en/docs/about-claude/models/overview",
       "https://lifearchitect.ai/models-table",
-      "https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf"
+      "https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf",
+      "https://models.dev/models/anthropic/claude-sonnet-4-5",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-4-5.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -1362,8 +1793,8 @@
     "type": "text",
     "architecture": "moe",
     "parameters": {
-      "active": 88,
-      "total": 440
+      "active": 200,
+      "total": 1000
     },
     "context": 1000000,
     "corpus": 80000,
@@ -1380,19 +1811,74 @@
       "aws": [
         "anthropic.claude-sonnet-4-6"
       ],
+      "azure": [
+        "claude-sonnet-4-6"
+      ],
       "gcp": [
-        "Claude Sonnet 4.6"
+        "claude-sonnet-4-6"
       ]
     },
     "sources": [
       "https://docs.anthropic.com/en/docs/about-claude/models/overview",
       "https://lifearchitect.ai/models-table",
-      "https://www-cdn.anthropic.com/78073f739564e986ff3e28522761a7a0b4484f84.pdf"
+      "https://www-cdn.anthropic.com/78073f739564e986ff3e28522761a7a0b4484f84.pdf",
+      "https://models.dev/models/anthropic/claude-sonnet-4-6",
+      "https://lifearchitect.ai/models-table/",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-4-6.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
     ],
     "estimated": [
-      "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "parameters",
+      "architecture"
+    ]
+  },
+  {
+    "name": "claude-sonnet-5",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "claude[\\s._-]?sonnet[\\s._-]?5(?![\\s._-]?\\d{1,2}(?!\\d))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 200,
+      "total": 1000
+    },
+    "context": 1000000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "anthropic.claude-sonnet-5"
+      ],
+      "azure": [
+        "claude-sonnet-5"
+      ],
+      "gcp": [
+        "claude-sonnet-5"
+      ]
+    },
+    "sources": [
+      "https://docs.anthropic.com/en/docs/models/sonnet-5/overview",
+      "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-5.html",
+      "https://apxml.com/models/claude-sonnet-5",
+      "https://models.dev/models/anthropic/claude-sonnet-5",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
     ]
   },
   {
@@ -1455,19 +1941,20 @@
     "tools": true,
     "providers": {
       "gcp": [
-        "Codestral 2"
+        "codestral-2"
       ]
     },
     "sources": [
       "https://docs.mistral.ai/getting-started/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/mistral/codestral-2"
     ],
     "estimated": []
   },
   {
     "name": "cohere-command-a",
     "vendor": "cohere",
-    "open": false,
+    "open": true,
     "pattern": "(?:cohere[\\s._-]?)?command[\\s._-]?a",
     "type": "text",
     "architecture": "dense",
@@ -1475,7 +1962,7 @@
       "active": 111,
       "total": 111
     },
-    "context": 256000,
+    "context": 262144,
     "input": [
       "text"
     ],
@@ -1490,17 +1977,16 @@
       ]
     },
     "sources": [
-      "https://docs.cohere.com/docs/models"
+      "https://docs.cohere.com/docs/models",
+      "https://huggingface.co/CohereLabs/c4ai-command-a-03-2025",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "parameters",
-      "context"
-    ]
+    "estimated": []
   },
   {
     "name": "cohere-command-r",
     "vendor": "cohere",
-    "open": false,
+    "open": true,
     "pattern": "command[\\s._-]?r(?![\\s._-]?plus|\\+)",
     "type": "text",
     "architecture": "dense",
@@ -1508,7 +1994,7 @@
       "active": 35,
       "total": 35
     },
-    "context": 128000,
+    "context": 131072,
     "input": [
       "text"
     ],
@@ -1520,20 +2006,23 @@
     "providers": {
       "aws": [
         "cohere.command-r-v1:0"
+      ],
+      "azure": [
+        "Cohere-command-r"
       ]
     },
     "sources": [
-      "https://docs.cohere.com/docs/models"
+      "https://docs.cohere.com/docs/models",
+      "https://huggingface.co/CohereLabs/c4ai-command-r-v01",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohere-command-r.html",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
-    "estimated": [
-      "parameters",
-      "context"
-    ]
+    "estimated": []
   },
   {
     "name": "cohere-command-r-plus",
     "vendor": "cohere",
-    "open": false,
+    "open": true,
     "pattern": "command[\\s._-]?r\\+|command[\\s._-]?r[\\s._-]?plus",
     "type": "text",
     "architecture": "dense",
@@ -1541,7 +2030,7 @@
       "active": 104,
       "total": 104
     },
-    "context": 128000,
+    "context": 131072,
     "input": [
       "text"
     ],
@@ -1553,15 +2042,18 @@
     "providers": {
       "aws": [
         "cohere.command-r-plus-v1:0"
+      ],
+      "azure": [
+        "Cohere-command-r-plus"
       ]
     },
     "sources": [
-      "https://docs.cohere.com/docs/models"
+      "https://docs.cohere.com/docs/models",
+      "https://huggingface.co/CohereLabs/c4ai-command-r-plus",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohere-command-r-plus.html",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
-    "estimated": [
-      "parameters",
-      "context"
-    ]
+    "estimated": []
   },
   {
     "name": "cohere-embed-english-v3",
@@ -1586,14 +2078,20 @@
     "providers": {
       "aws": [
         "cohere.embed-english-v3"
+      ],
+      "azure": [
+        "Cohere-embed-v3-english"
       ]
     },
     "sources": [
-      "https://docs.cohere.com/docs/models"
+      "https://docs.cohere.com/docs/models",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohere-embed-english.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -1620,14 +2118,20 @@
     "providers": {
       "aws": [
         "cohere.embed-multilingual-v3"
+      ],
+      "azure": [
+        "Cohere-embed-v3-multilingual"
       ]
     },
     "sources": [
-      "https://docs.cohere.com/docs/models"
+      "https://docs.cohere.com/docs/models",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohere-embed-multilingual.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -1653,14 +2157,20 @@
     "providers": {
       "aws": [
         "cohere.embed-multilingual-v3"
+      ],
+      "azure": [
+        "Cohere-embed-v3-multilingual"
       ]
     },
     "sources": [
-      "https://docs.cohere.com/docs/models"
+      "https://docs.cohere.com/docs/models",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohere-embed-multilingual.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -1693,11 +2203,14 @@
       ]
     },
     "sources": [
-      "https://docs.cohere.com/docs/models"
+      "https://docs.cohere.com/docs/models",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohere-embed-v4.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -1723,14 +2236,20 @@
     "providers": {
       "aws": [
         "cohere.rerank-v3-5:0"
+      ],
+      "azure": [
+        "Cohere-rerank-v3.5"
       ]
     },
     "sources": [
-      "https://docs.cohere.com/docs/models"
+      "https://docs.cohere.com/docs/models",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohere-rerank-3-5.html",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -1759,11 +2278,13 @@
       ]
     },
     "sources": [
-      "https://docs.cohere.com/docs/models"
+      "https://docs.cohere.com/docs/models",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -1792,11 +2313,13 @@
       ]
     },
     "sources": [
-      "https://docs.cohere.com/docs/models"
+      "https://docs.cohere.com/docs/models",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -1898,7 +2421,8 @@
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -1923,11 +2447,12 @@
     "tools": false,
     "providers": {
       "gcp": [
-        "DeepSeek-OCR"
+        "deepseek-ocr-maas"
       ]
     },
     "sources": [
-      "https://huggingface.co/deepseek-ai/DeepSeek-OCR"
+      "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/deepseek/deepseek-ocr"
     ],
     "estimated": []
   },
@@ -1960,7 +2485,10 @@
       ]
     },
     "sources": [
-      "https://api-docs.deepseek.com"
+      "https://api-docs.deepseek.com",
+      "https://huggingface.co/deepseek-ai/DeepSeek-R1",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-r1.html",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
     "estimated": [
       "context"
@@ -1991,11 +2519,14 @@
         "DeepSeek-R1-0528"
       ],
       "gcp": [
-        "DeepSeek-R1-0528"
+        "deepseek-r1-0528-maas"
       ]
     },
     "sources": [
-      "https://api-docs.deepseek.com"
+      "https://api-docs.deepseek.com",
+      "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528",
+      "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/deepseek/r1-0528"
     ],
     "estimated": [
       "context"
@@ -2030,7 +2561,8 @@
       ]
     },
     "sources": [
-      "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B"
+      "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
     "estimated": []
   },
@@ -2056,16 +2588,21 @@
     "tools": true,
     "providers": {
       "azure": [
+        "DeepSeek-V3",
         "DeepSeek-V3-0324"
       ]
     },
     "sources": [
-      "https://api-docs.deepseek.com"
+      "https://api-docs.deepseek.com",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V3",
+      "https://arxiv.org/abs/2412.19437",
+      "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
     "estimated": [
-      "parameters",
       "context"
-    ]
+    ],
+    "corpus": 14800
   },
   {
     "name": "deepseek-v3.1",
@@ -2089,17 +2626,22 @@
     "tools": true,
     "providers": {
       "aws": [
-        "deepseek.v3-v1:0"
+        "deepseek.v3-v1:0",
+        "deepseek.v3.1"
       ],
       "azure": [
-        "DeepSeek-V3.1"
+        "DeepSeek-V3.1",
+        "FW-DeepSeek-V3.1"
       ],
       "gcp": [
-        "DeepSeek-V3.1"
+        "deepseek-v3.1-maas"
       ]
     },
     "sources": [
-      "https://api-docs.deepseek.com"
+      "https://api-docs.deepseek.com",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-1.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/deepseek/deepseek-v31"
     ],
     "estimated": [
       "context"
@@ -2131,14 +2673,19 @@
         "deepseek.v3.2"
       ],
       "azure": [
-        "DeepSeek-V3.2"
+        "DeepSeek-V3.2",
+        "FW-DeepSeek-V3.2"
       ],
       "gcp": [
-        "DeepSeek-V3.2"
+        "deepseek-v3.2-maas"
       ]
     },
     "sources": [
-      "https://api-docs.deepseek.com"
+      "https://api-docs.deepseek.com",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/deepseek/deepseek-v32",
+      "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement"
     ],
     "estimated": [
       "parameters",
@@ -2172,7 +2719,8 @@
       ]
     },
     "sources": [
-      "https://api-docs.deepseek.com"
+      "https://api-docs.deepseek.com",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
@@ -2212,7 +2760,9 @@
     "sources": [
       "https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
-      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models"
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-devstral-2-123b.html",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
     "estimated": []
   },
@@ -2245,11 +2795,11 @@
     },
     "sources": [
       "https://docs.mistral.ai/getting-started/models",
-      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models"
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models",
+      "https://huggingface.co/mistralai/Devstral-Small-2505",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
-    "estimated": [
-      "parameters"
-    ]
+    "estimated": []
   },
   {
     "name": "embedding-ada",
@@ -2279,11 +2829,13 @@
     },
     "sources": [
       "https://platform.openai.com/docs/models",
-      "https://ai.azure.com/catalog/models"
+      "https://ai.azure.com/catalog/models",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -2310,16 +2862,18 @@
     "tools": true,
     "providers": {
       "gcp": [
-        "Gemini 2.0 Flash"
+        "gemini-2.0-flash"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+      "https://models.dev/models/google/gemini-2.0-flash",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -2346,16 +2900,18 @@
     "tools": true,
     "providers": {
       "gcp": [
-        "Gemini 2.0 Flash-Lite"
+        "gemini-2.0-flash-lite"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+      "https://models.dev/models/google/gemini-2.0-flash-lite",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -2383,14 +2939,16 @@
     "tools": true,
     "providers": {
       "gcp": [
-        "Gemini 2.5 Flash"
+        "gemini-2.5-flash"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
       "https://lifearchitect.ai/models-table",
-      "https://deepmind.google/technologies/gemini/flash"
+      "https://deepmind.google/technologies/gemini/flash",
+      "https://models.dev/models/google/gemini-2.5-flash",
+      "https://storage.googleapis.com/deepmind-media/gemini/gemini_v2_5_report.pdf",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions"
     ],
     "estimated": [
       "parameters",
@@ -2420,18 +2978,20 @@
     "tools": false,
     "providers": {
       "gcp": [
-        "Gemini 2.5 Flash Image"
+        "gemini-2.5-flash-image"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
       "https://lifearchitect.ai/models-table",
-      "https://deepmind.google/technologies/gemini/flash"
+      "https://deepmind.google/technologies/gemini/flash",
+      "https://models.dev/models/google/gemini-2.5-flash-image",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions"
     ],
     "estimated": [
       "parameters",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -2458,16 +3018,18 @@
     "tools": true,
     "providers": {
       "gcp": [
-        "Gemini 2.5 Flash-Lite"
+        "gemini-2.5-flash-lite"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+      "https://models.dev/models/google/gemini-2.5-flash-lite",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -2494,19 +3056,20 @@
     "tools": true,
     "providers": {
       "gcp": [
-        "Gemini 2.5 Flash Live API"
+        "gemini-live-2.5-flash-native-audio"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
       "https://lifearchitect.ai/models-table",
-      "https://deepmind.google/technologies/gemini/flash"
+      "https://deepmind.google/technologies/gemini/flash",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash-live-api"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -2531,15 +3094,18 @@
     "tools": false,
     "providers": {
       "gcp": [
-        "Gemini 2.5 Flash Text-to-Speech"
+        "gemini-2.5-flash-tts"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/changelog",
-      "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-preview-tts"
+      "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash-preview-tts",
+      "https://models.dev/models/google/gemini-2.5-flash-tts",
+      "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -2567,14 +3133,15 @@
     "tools": true,
     "providers": {
       "gcp": [
-        "Gemini 2.5 Pro"
+        "gemini-2.5-pro"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
       "https://lifearchitect.ai/models-table",
-      "https://storage.googleapis.com/deepmind-media/gemini/gemini_v2_5_report.pdf"
+      "https://storage.googleapis.com/deepmind-media/gemini/gemini_v2_5_report.pdf",
+      "https://models.dev/models/google/gemini-2.5-pro",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions"
     ],
     "estimated": [
       "parameters",
@@ -2604,15 +3171,18 @@
     "tools": false,
     "providers": {
       "gcp": [
-        "Gemini 2.5 Pro Text-to-Speech"
+        "gemini-2.5-pro-tts"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/changelog",
-      "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-pro-preview-tts"
+      "https://ai.google.dev/gemini-api/docs/models/gemini-2.5-pro-preview-tts",
+      "https://models.dev/models/google/gemini-2.5-pro-tts",
+      "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -2640,19 +3210,20 @@
     "tools": true,
     "providers": {
       "gcp": [
-        "Gemini 3 Flash"
+        "gemini-3-flash-preview"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
       "https://lifearchitect.ai/models-table",
-      "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Flash-Model-Card.pdf"
+      "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Flash-Model-Card.pdf",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-flash"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -2680,19 +3251,20 @@
     "tools": true,
     "providers": {
       "gcp": [
-        "Gemini 3 Pro"
+        "gemini-3-pro-preview"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
       "https://lifearchitect.ai/models-table",
-      "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf"
+      "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-pro"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -2717,18 +3289,19 @@
     "tools": false,
     "providers": {
       "gcp": [
-        "Gemini 3 Pro Image"
+        "gemini-3-pro-image"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
       "https://lifearchitect.ai/models-table",
-      "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf"
+      "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions"
     ],
     "estimated": [
       "parameters",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -2752,15 +3325,16 @@
     "tools": false,
     "providers": {
       "gcp": [
-        "Gemini 3.1 Flash Image"
+        "gemini-3.1-flash-image"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -2788,18 +3362,60 @@
     "tools": true,
     "providers": {
       "gcp": [
-        "Gemini 3.1 Flash-Lite"
+        "gemini-3.1-flash-lite"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
-      "https://lifearchitect.ai/models-table"
+      "https://lifearchitect.ai/models-table",
+      "https://models.dev/models/google/gemini-3.1-flash-lite",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
+    ]
+  },
+  {
+    "name": "gemini-3.1-flash-lite-image",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?3(?:\\.1|[\\s._-]?1)[\\s._-]?flash[\\s._-]?lite[\\s._-]?image|nano[\\s._-]?banana[\\s._-]?2[\\s._-]?lite",
+    "type": "image",
+    "architecture": "moe",
+    "parameters": {
+      "active": 65,
+      "total": 300
+    },
+    "context": 65536,
+    "hidden_dimension": 4096,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text",
+      "image"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "gemini-3.1-flash-lite-image"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-lite-image",
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://models.dev/models/google/gemini-3.1-flash-lite-image",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions"
+    ],
+    "estimated": [
+      "architecture",
+      "hidden_dimension",
+      "parameters"
     ]
   },
   {
@@ -2828,15 +3444,17 @@
     "tools": true,
     "providers": {
       "gcp": [
-        "Gemini 3.1 Flash Live"
+        "gemini-3.1-flash-live"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/changelog",
-      "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-live-preview"
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-live-preview",
+      "https://docs.cloud.google.com/gemini-enterprise-cx/cx-agent-studio/resources/release-notes"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -2861,15 +3479,17 @@
     "tools": false,
     "providers": {
       "gcp": [
-        "Gemini 3.1 Flash TTS"
+        "gemini-3.1-flash-tts-preview"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/changelog",
-      "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-tts-preview"
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-tts-preview",
+      "https://docs.cloud.google.com/text-to-speech/docs/gemini-tts"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -2897,26 +3517,27 @@
     "tools": true,
     "providers": {
       "gcp": [
-        "Gemini 3.1 Pro"
+        "gemini-3.1-pro-preview"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
       "https://lifearchitect.ai/models-table",
-      "https://deepmind.google/models/model-cards/gemini-3-1-pro"
+      "https://deepmind.google/models/model-cards/gemini-3-1-pro",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-pro"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
     "name": "gemini-3.5-flash",
     "vendor": "google",
     "open": false,
-    "pattern": "gemini[\\s._-]?3(?:\\.5|[\\s._-]?5)[\\s._-]?flash",
+    "pattern": "gemini[\\s._-]?3(?:\\.5|[\\s._-]?5)[\\s._-]?flash(?![\\s._-]?lite)",
     "type": "text",
     "architecture": "moe",
     "parameters": {
@@ -2928,7 +3549,8 @@
     "input": [
       "text",
       "image",
-      "video"
+      "video",
+      "audio"
     ],
     "output": [
       "text"
@@ -2937,18 +3559,255 @@
     "tools": true,
     "providers": {
       "gcp": [
-        "Gemini 3.5 Flash"
+        "gemini-3.5-flash"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/changelog",
       "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash",
       "https://lifearchitect.ai/models-table/",
-      "https://apxml.com/models"
+      "https://apxml.com/models",
+      "https://models.dev/models/google/gemini-3.5-flash",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions"
     ],
     "estimated": [
+      "corpus",
       "parameters",
-      "corpus"
+      "architecture"
+    ]
+  },
+  {
+    "name": "gemini-3.5-flash-lite",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?3(?:\\.5|[\\s._-]?5)[\\s._-]?flash[\\s._-]?lite",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 68,
+      "total": 68
+    },
+    "context": 1048576,
+    "input": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "gemini-3.5-flash-lite"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash-lite",
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "https://models.dev/models/google/gemini-3.5-flash-lite",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "gemini-3.5-live-translate",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?3(?:\\.5|[\\s._-]?5)[\\s._-]?live[\\s._-]?translate(?:[\\s._-]?preview)?",
+    "type": "speech",
+    "architecture": "moe",
+    "parameters": {
+      "active": 65,
+      "total": 300
+    },
+    "context": 131072,
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "gemini-3.5-live-translate-preview"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-live-translate-preview",
+      "https://models.dev/models/google/gemini-3.5-live-translate-preview",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-live-translate"
+    ],
+    "estimated": [
+      "architecture",
+      "context",
+      "parameters"
+    ]
+  },
+  {
+    "name": "gemini-3.5-transcribe",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?3(?:\\.5|[\\s._-]?5)[\\s._-]?transcribe(?:[\\s._-]?live)?",
+    "type": "transcription",
+    "architecture": "dense",
+    "parameters": {
+      "active": 8,
+      "total": 8
+    },
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "gemini-3.5-transcribe-preview",
+        "gemini-3.5-transcribe-live-preview"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-transcribe",
+      "https://models.dev/models/google/gemini-3.5-transcribe-live",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-transcribe"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "gemini-3.6-flash",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?3(?:\\.6|[\\s._-]?6)[\\s._-]?flash",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 100,
+      "total": 500
+    },
+    "context": 1048576,
+    "input": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "gemini-3.6-flash"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.6-flash",
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "https://models.dev/models/google/gemini-3.6-flash",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "gemini-3.7-flash",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?3(?:\\.7|[\\s._-]?7)[\\s._-]?flash",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 100,
+      "total": 500
+    },
+    "context": 1048576,
+    "input": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "gemini-3.7-flash"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash",
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "https://models.dev/models/google/gemini-3.7-flash",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "gemini-3.8-flash",
+    "vendor": "google",
+    "open": false,
+    "pattern": "gemini[\\s._-]?3(?:\\.8|[\\s._-]?8)[\\s._-]?flash",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 100,
+      "total": 500
+    },
+    "context": 1048576,
+    "input": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "gemini-3.8-flash"
+      ]
+    },
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash",
+      "https://ai.google.dev/gemini-api/docs/models",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "https://apxml.com/models",
+      "https://models.dev/models/google/gemini-3.8-flash",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
     ]
   },
   {
@@ -2973,16 +3832,17 @@
     "tools": false,
     "providers": {
       "gcp": [
-        "Gemini Embedding 2"
+        "gemini-embedding-2"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -3007,13 +3867,18 @@
     "reasoning": false,
     "tools": false,
     "providers": {
+      "aws": [
+        "google.gemma-3-27b-it"
+      ],
       "scaleway": [
         "gemma-3-27b-it"
       ]
     },
     "sources": [
       "https://huggingface.co/google/gemma-3-27b-it",
-      "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf"
+      "https://storage.googleapis.com/deepmind-media/gemma/Gemma3Report.pdf",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-google-gemma-3-27b-pt.html"
     ],
     "estimated": [
       "corpus"
@@ -3025,10 +3890,10 @@
     "open": true,
     "pattern": "gemma[\\s._-]?3n[\\s._-]?e4b[\\s._-]?it",
     "type": "text",
-    "architecture": "moe",
+    "architecture": "dense",
     "parameters": {
-      "active": 4,
-      "total": 8
+      "active": 7.85,
+      "total": 7.85
     },
     "context": 32000,
     "input": [
@@ -3050,7 +3915,10 @@
     "sources": [
       "https://ai.google.dev/gemini-api/docs/changelog",
       "https://ai.google.dev/gemma/docs/gemma-3n",
-      "https://developers.googleblog.com/introducing-gemma-3n-developer-guide/"
+      "https://developers.googleblog.com/introducing-gemma-3n-developer-guide/",
+      "https://huggingface.co/google/gemma-3n-E4B-it",
+      "https://huggingface.co/api/models/google/gemma-3n-E4B-it",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/open-models/use-gemma"
     ],
     "estimated": []
   },
@@ -3077,14 +3945,24 @@
     "reasoning": true,
     "tools": true,
     "providers": {
+      "aws": [
+        "google.gemma-4-26b-a4b"
+      ],
       "gcp": [
+        "gemma-4-26b-a4b-it-maas"
+      ],
+      "scaleway": [
         "gemma-4-26b-a4b-it"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/changelog",
       "https://ai.google.dev/gemma/docs/core",
-      "https://huggingface.co/google/gemma-4-26B-A4B-it"
+      "https://huggingface.co/google/gemma-4-26B-A4B-it",
+      "https://models.dev/models/google/gemma-4-26b-a4b-it",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-google-gemma-4-26b-a4b.html",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it"
     ],
     "estimated": []
   },
@@ -3111,14 +3989,24 @@
     "reasoning": true,
     "tools": true,
     "providers": {
+      "aws": [
+        "google.gemma-4-31b"
+      ],
       "gcp": [
+        "gemma-4-31b-it"
+      ],
+      "scaleway": [
         "gemma-4-31b-it"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/changelog",
       "https://ai.google.dev/gemma/docs/core",
-      "https://huggingface.co/google/gemma-4-31B-it"
+      "https://huggingface.co/google/gemma-4-31B-it",
+      "https://models.dev/models/google/gemma-4-31b-it",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-google-gemma-4-31b.html",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/open-models/use-gemma"
     ],
     "estimated": []
   },
@@ -3155,7 +4043,8 @@
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -3191,7 +4080,8 @@
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -3202,8 +4092,8 @@
     "type": "text",
     "architecture": "moe",
     "parameters": {
-      "total": 1760,
-      "active": 280
+      "active": 280,
+      "total": 1800
     },
     "context": 8192,
     "corpus": 13000,
@@ -3225,12 +4115,17 @@
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
       "https://cdn.openai.com/papers/gpt-4.pdf",
-      "https://lifearchitect.ai/gpt-4"
+      "https://lifearchitect.ai/gpt-4",
+      "https://models.dev/models/openai/gpt-4",
+      "https://epoch.ai/data/all_ai_models.csv",
+      "https://newsletter.semianalysis.com/p/gpt-4-architecture-infrastructure",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3241,8 +4136,8 @@
     "type": "text",
     "architecture": "moe",
     "parameters": {
-      "total": 1760,
-      "active": 280
+      "active": 280,
+      "total": 1800
     },
     "context": 32768,
     "corpus": 13000,
@@ -3264,12 +4159,15 @@
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
       "https://cdn.openai.com/papers/gpt-4.pdf",
-      "https://lifearchitect.ai/gpt-4"
+      "https://lifearchitect.ai/gpt-4",
+      "https://epoch.ai/data/all_ai_models.csv",
+      "https://newsletter.semianalysis.com/p/gpt-4-architecture-infrastructure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3295,7 +4193,7 @@
     "tools": true,
     "providers": {
       "azure": [
-        "gpt-4-turbo"
+        "gpt-4"
       ]
     },
     "sources": [
@@ -3303,12 +4201,15 @@
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
       "https://cdn.openai.com/papers/gpt-4.pdf",
-      "https://lifearchitect.ai/gpt-4"
+      "https://lifearchitect.ai/gpt-4",
+      "https://models.dev/models/openai/gpt-4-turbo",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3335,7 +4236,7 @@
     "tools": true,
     "providers": {
       "azure": [
-        "gpt-4-turbo-vision"
+        "gpt-4"
       ]
     },
     "sources": [
@@ -3343,12 +4244,14 @@
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
       "https://cdn.openai.com/papers/gpt-4.pdf",
-      "https://lifearchitect.ai/gpt-4"
+      "https://lifearchitect.ai/gpt-4",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3382,12 +4285,15 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4-1"
+      "https://openai.com/index/gpt-4-1",
+      "https://models.dev/models/openai/gpt-4.1",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3421,12 +4327,15 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4-1"
+      "https://openai.com/index/gpt-4-1",
+      "https://models.dev/models/openai/gpt-4.1-mini",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3460,12 +4369,15 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4-1"
+      "https://openai.com/index/gpt-4-1",
+      "https://models.dev/models/openai/gpt-4.1-nano",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3503,7 +4415,8 @@
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3537,12 +4450,15 @@
       "https://ai.azure.com/catalog/models",
       "https://platform.openai.com/docs/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4o-system-card"
+      "https://openai.com/index/gpt-4o-system-card",
+      "https://models.dev/models/openai/gpt-4o",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3577,12 +4493,14 @@
       "https://ai.azure.com/catalog/models",
       "https://platform.openai.com/docs/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4o-system-card"
+      "https://openai.com/index/gpt-4o-system-card",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3617,12 +4535,14 @@
       "https://ai.azure.com/catalog/models",
       "https://platform.openai.com/docs/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4o-system-card"
+      "https://openai.com/index/gpt-4o-system-card",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3656,12 +4576,15 @@
       "https://ai.azure.com/catalog/models",
       "https://platform.openai.com/docs/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence"
+      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence",
+      "https://models.dev/models/openai/gpt-4o-mini",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3696,12 +4619,14 @@
       "https://ai.azure.com/catalog/models",
       "https://platform.openai.com/docs/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence"
+      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3736,12 +4661,14 @@
       "https://ai.azure.com/catalog/models",
       "https://platform.openai.com/docs/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence"
+      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3776,12 +4703,14 @@
       "https://ai.azure.com/catalog/models",
       "https://platform.openai.com/docs/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence"
+      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3809,19 +4738,21 @@
     "tools": true,
     "providers": {
       "azure": [
-        "gpt-4o-mini-realtime-audio"
+        "gpt-4o-mini-realtime-preview"
       ]
     },
     "sources": [
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence"
+      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3856,12 +4787,14 @@
       "https://ai.azure.com/catalog/models",
       "https://platform.openai.com/docs/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence"
+      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3894,12 +4827,14 @@
       "https://ai.azure.com/catalog/models",
       "https://platform.openai.com/docs/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence"
+      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3931,11 +4866,13 @@
       "https://ai.azure.com/catalog/models",
       "https://platform.openai.com/docs/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence"
+      "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -3970,12 +4907,14 @@
       "https://ai.azure.com/catalog/models",
       "https://platform.openai.com/docs/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4o-system-card"
+      "https://openai.com/index/gpt-4o-system-card",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4003,19 +4942,21 @@
     "tools": true,
     "providers": {
       "azure": [
-        "gpt-4o-realtime-audio"
+        "gpt-4o-realtime-preview"
       ]
     },
     "sources": [
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4o-system-card"
+      "https://openai.com/index/gpt-4o-system-card",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4050,12 +4991,14 @@
       "https://ai.azure.com/catalog/models",
       "https://platform.openai.com/docs/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4o-system-card"
+      "https://openai.com/index/gpt-4o-system-card",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4088,12 +5031,14 @@
       "https://ai.azure.com/catalog/models",
       "https://platform.openai.com/docs/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4o-system-card"
+      "https://openai.com/index/gpt-4o-system-card",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4126,12 +5071,14 @@
       "https://ai.azure.com/catalog/models",
       "https://platform.openai.com/docs/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-4o-system-card"
+      "https://openai.com/index/gpt-4o-system-card",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4167,12 +5114,15 @@
       "https://openai.com/index/gpt-5-system-card",
       "https://lifearchitect.ai/gpt-5",
       "https://lifearchitect.substack.com/p/the-memo-special-edition-gpt-5-aug2025",
-      "https://arxiv.org/abs/2601.03267"
+      "https://arxiv.org/abs/2601.03267",
+      "https://models.dev/models/openai/gpt-5",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4208,12 +5158,14 @@
       "https://openai.com/index/gpt-5-system-card",
       "https://lifearchitect.ai/gpt-5",
       "https://lifearchitect.substack.com/p/the-memo-special-edition-gpt-5-aug2025",
-      "https://arxiv.org/abs/2601.03267"
+      "https://arxiv.org/abs/2601.03267",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4251,12 +5203,15 @@
       "https://openai.com/index/gpt-5-system-card",
       "https://lifearchitect.ai/gpt-5",
       "https://lifearchitect.substack.com/p/the-memo-special-edition-gpt-5-aug2025",
-      "https://arxiv.org/abs/2601.03267"
+      "https://arxiv.org/abs/2601.03267",
+      "https://models.dev/models/openai/gpt-5-codex",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4290,12 +5245,15 @@
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
       "https://openai.com/index/gpt-5-system-card",
-      "https://arxiv.org/abs/2601.03267"
+      "https://arxiv.org/abs/2601.03267",
+      "https://models.dev/models/openai/gpt-5-mini",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4329,12 +5287,15 @@
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
       "https://openai.com/index/gpt-5-system-card",
-      "https://arxiv.org/abs/2601.03267"
+      "https://arxiv.org/abs/2601.03267",
+      "https://models.dev/models/openai/gpt-5-nano",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4368,12 +5329,15 @@
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
       "https://openai.com/index/gpt-5-system-card",
-      "https://arxiv.org/abs/2601.03267"
+      "https://arxiv.org/abs/2601.03267",
+      "https://models.dev/models/openai/gpt-5-pro",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4406,12 +5370,15 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-5-1"
+      "https://openai.com/index/gpt-5-1",
+      "https://models.dev/models/openai/gpt-5.1",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4444,12 +5411,14 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-5-1"
+      "https://openai.com/index/gpt-5-1",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4484,12 +5453,15 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-5-1"
+      "https://openai.com/index/gpt-5-1",
+      "https://models.dev/models/openai/gpt-5.1-codex",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4524,12 +5496,15 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-5-1"
+      "https://openai.com/index/gpt-5-1",
+      "https://models.dev/models/openai/gpt-5.1-codex-max",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4564,12 +5539,15 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/gpt-5-1"
+      "https://openai.com/index/gpt-5-1",
+      "https://models.dev/models/openai/gpt-5.1-codex-mini",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4602,12 +5580,15 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://cdn.openai.com/pdf/3a4153c8-c748-4b71-8e31-aecbde944f8d/oai_5_2_system-card.pdf"
+      "https://cdn.openai.com/pdf/3a4153c8-c748-4b71-8e31-aecbde944f8d/oai_5_2_system-card.pdf",
+      "https://models.dev/models/openai/gpt-5.2",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4640,12 +5621,14 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://cdn.openai.com/pdf/3a4153c8-c748-4b71-8e31-aecbde944f8d/oai_5_2_system-card.pdf"
+      "https://cdn.openai.com/pdf/3a4153c8-c748-4b71-8e31-aecbde944f8d/oai_5_2_system-card.pdf",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4680,12 +5663,15 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://cdn.openai.com/pdf/3a4153c8-c748-4b71-8e31-aecbde944f8d/oai_5_2_system-card.pdf"
+      "https://cdn.openai.com/pdf/3a4153c8-c748-4b71-8e31-aecbde944f8d/oai_5_2_system-card.pdf",
+      "https://models.dev/models/openai/gpt-5.2-codex",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4718,12 +5704,14 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://deploymentsafety.openai.com/gpt-5-3-instant/introduction"
+      "https://deploymentsafety.openai.com/gpt-5-3-instant/introduction",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4758,12 +5746,15 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://deploymentsafety.openai.com/gpt-5-3-instant/introduction"
+      "https://deploymentsafety.openai.com/gpt-5-3-instant/introduction",
+      "https://models.dev/models/openai/gpt-5.3-codex",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4788,6 +5779,9 @@
     "reasoning": true,
     "tools": true,
     "providers": {
+      "aws": [
+        "openai.gpt-5.4"
+      ],
       "azure": [
         "gpt-5.4"
       ]
@@ -4796,12 +5790,16 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://deploymentsafety.openai.com/gpt-5-4-thinking"
+      "https://deploymentsafety.openai.com/gpt-5-4-thinking",
+      "https://models.dev/models/openai/gpt-5.4",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-54.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4834,12 +5832,15 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://deploymentsafety.openai.com/gpt-5-4-thinking"
+      "https://deploymentsafety.openai.com/gpt-5-4-thinking",
+      "https://models.dev/models/openai/gpt-5.4-mini",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4872,12 +5873,15 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://deploymentsafety.openai.com/gpt-5-4-thinking"
+      "https://deploymentsafety.openai.com/gpt-5-4-thinking",
+      "https://models.dev/models/openai/gpt-5.4-nano",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4910,12 +5914,15 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://deploymentsafety.openai.com/gpt-5-4-thinking"
+      "https://deploymentsafety.openai.com/gpt-5-4-thinking",
+      "https://models.dev/models/openai/gpt-5.4-pro",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4941,6 +5948,9 @@
     "reasoning": true,
     "tools": true,
     "providers": {
+      "aws": [
+        "openai.gpt-5.5"
+      ],
       "azure": [
         "gpt-5.5"
       ]
@@ -4949,11 +5959,14 @@
       "https://platform.openai.com/docs/models/gpt-5.5",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://lifearchitect.ai/models-table/",
-      "https://apxml.com/models/gpt-55"
+      "https://apxml.com/models/gpt-55",
+      "https://models.dev/models/openai/gpt-5.5",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-55.html"
     ],
     "estimated": [
       "parameters",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -4982,12 +5995,173 @@
     "sources": [
       "https://platform.openai.com/docs/models",
       "https://apxml.com/models/gpt-55-pro",
-      "https://lifearchitect.ai/models-table/"
+      "https://lifearchitect.ai/models-table/",
+      "https://models.dev/models/openai/gpt-5.5-pro"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
+    ]
+  },
+  {
+    "name": "gpt-5.6-luna",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5(?:\\.6|[\\s._-]?6)[\\s._-]?luna(?:[\\s._-]?\\d{4}[\\s._-]?\\d{2}[\\s._-]?\\d{2})?",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 60,
+      "total": 300
+    },
+    "context": 1050000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "openai.gpt-5.6-luna"
+      ],
+      "azure": [
+        "gpt-5.6-luna"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models/gpt-5.6-luna",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://models.dev/models/openai/gpt-5.6-luna",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-luna.html"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "gpt-5.6-sol",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5(?:\\.6|[\\s._-]?6)[\\s._-]?sol(?:[\\s._-]?\\d{4}[\\s._-]?\\d{2}[\\s._-]?\\d{2})?",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 600,
+      "total": 3000
+    },
+    "context": 1050000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "openai.gpt-5.6-sol"
+      ],
+      "azure": [
+        "gpt-5.6-sol"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models/gpt-5.6-sol",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://apxml.com/models",
+      "https://models.dev/models/openai/gpt-5.6-sol",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-sol.html"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "gpt-5.6-terra",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?5(?:\\.6|[\\s._-]?6)[\\s._-]?terra(?:[\\s._-]?\\d{4}[\\s._-]?\\d{2}[\\s._-]?\\d{2})?",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 300,
+      "total": 1500
+    },
+    "context": 1050000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "openai.gpt-5.6-terra"
+      ],
+      "azure": [
+        "gpt-5.6-terra"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models/gpt-5.6-terra",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://apxml.com/models",
+      "https://models.dev/models/openai/gpt-5.6-terra",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-terra.html"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "gpt-6-astra",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?6[\\s._-]?astra(?![\\s._-]?fast)(?:[\\s._-]?\\d{4}[\\s._-]?\\d{2}[\\s._-]?\\d{2})?",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 1200,
+      "total": 6000
+    },
+    "context": 1050000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-6-astra"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models/gpt-6-astra",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://apxml.com/models/gpt-6-astra",
+      "https://models.dev/models/openai/gpt-6-astra"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
     ]
   },
   {
@@ -5019,11 +6193,13 @@
     },
     "sources": [
       "https://platform.openai.com/docs/models",
-      "https://ai.azure.com/catalog/models"
+      "https://ai.azure.com/catalog/models",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -5055,11 +6231,13 @@
     },
     "sources": [
       "https://platform.openai.com/docs/models",
-      "https://ai.azure.com/catalog/models"
+      "https://ai.azure.com/catalog/models",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -5091,11 +6269,13 @@
     },
     "sources": [
       "https://platform.openai.com/docs/models",
-      "https://ai.azure.com/catalog/models"
+      "https://ai.azure.com/catalog/models",
+      "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -5125,10 +6305,13 @@
     },
     "sources": [
       "https://platform.openai.com/docs/models",
-      "https://ai.azure.com/catalog/models"
+      "https://ai.azure.com/catalog/models",
+      "https://models.dev/models/openai/gpt-image-1",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -5158,10 +6341,12 @@
     },
     "sources": [
       "https://platform.openai.com/docs/models",
-      "https://ai.azure.com/catalog/models"
+      "https://ai.azure.com/catalog/models",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -5191,9 +6376,84 @@
     },
     "sources": [
       "https://platform.openai.com/docs/models",
-      "https://ai.azure.com/catalog/models"
+      "https://ai.azure.com/catalog/models",
+      "https://models.dev/models/openai/gpt-image-1.5",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
+      "parameters",
+      "architecture"
+    ]
+  },
+  {
+    "name": "gpt-image-2",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?image[\\s._-]?2(?:[\\s._-]?\\d{4}[\\s._-]?\\d{2}[\\s._-]?\\d{2})?",
+    "type": "image",
+    "architecture": "moe",
+    "parameters": {
+      "active": 80,
+      "total": 320
+    },
+    "hidden_dimension": 8192,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "gpt-image-2"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models/gpt-image-2",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://models.dev/models/openai/gpt-image-2"
+    ],
+    "estimated": [
+      "architecture",
+      "hidden_dimension",
+      "parameters"
+    ]
+  },
+  {
+    "name": "gpt-live-transcribe",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?live[\\s._-]?transcribe(?:[\\s._-]?\\d{4}[\\s._-]?\\d{2}[\\s._-]?\\d{2})?",
+    "type": "transcription",
+    "architecture": "dense",
+    "parameters": {
+      "active": 8,
+      "total": 8
+    },
+    "context": 32000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "gpt-live-transcribe"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models/gpt-live-transcribe",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
+    ],
+    "estimated": [
+      "architecture",
       "parameters"
     ]
   },
@@ -5208,7 +6468,7 @@
       "active": 5.1,
       "total": 117
     },
-    "context": 128000,
+    "context": 131072,
     "input": [
       "text"
     ],
@@ -5219,13 +6479,15 @@
     "tools": false,
     "providers": {
       "aws": [
-        "openai.gpt-oss-120b-1:0"
+        "openai.gpt-oss-120b-1:0",
+        "openai.gpt-oss-120b"
       ],
       "azure": [
-        "gpt-oss-120b"
+        "gpt-oss-120b",
+        "FW-GPT-OSS-120B"
       ],
       "gcp": [
-        "OpenAI gpt-oss-120b"
+        "gpt-oss-120b-maas"
       ],
       "ovhcloud": [
         "gpt-oss-120b"
@@ -5236,12 +6498,18 @@
     },
     "sources": [
       "https://platform.openai.com/docs/models",
-      "https://ai.azure.com/catalog/models"
+      "https://ai.azure.com/catalog/models",
+      "https://models.dev/models/openai/gpt-oss-120b",
+      "https://developers.openai.com/api/docs/models/gpt-oss-120b",
+      "https://huggingface.co/openai/gpt-oss-120b",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-120b.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/openai/gpt-oss-120b",
+      "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement"
     ],
-    "estimated": [
-      "parameters",
-      "context"
-    ]
+    "estimated": []
   },
   {
     "name": "gpt-oss-20b",
@@ -5254,7 +6522,7 @@
       "active": 3.6,
       "total": 21
     },
-    "context": 128000,
+    "context": 131072,
     "input": [
       "text"
     ],
@@ -5265,32 +6533,41 @@
     "tools": false,
     "providers": {
       "aws": [
-        "openai.gpt-oss-20b-1:0"
+        "openai.gpt-oss-20b-1:0",
+        "openai.gpt-oss-20b"
       ],
       "azure": [
         "gpt-oss-20b"
       ],
       "gcp": [
-        "OpenAI gpt-oss-20b"
+        "gpt-oss-20b-maas"
       ],
       "ovhcloud": [
+        "gpt-oss-20b"
+      ],
+      "scaleway": [
         "gpt-oss-20b"
       ]
     },
     "sources": [
       "https://platform.openai.com/docs/models",
-      "https://ai.azure.com/catalog/models"
+      "https://ai.azure.com/catalog/models",
+      "https://models.dev/models/openai/gpt-oss-20b",
+      "https://developers.openai.com/api/docs/models/gpt-oss-20b",
+      "https://huggingface.co/openai/gpt-oss-20b",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-20b.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/openai/gpt-oss-20b"
     ],
-    "estimated": [
-      "parameters",
-      "context"
-    ]
+    "estimated": []
   },
   {
     "name": "gpt-realtime",
     "vendor": "openai",
     "open": false,
-    "pattern": "gpt[\\s._-]?realtime(?![\\s._-]?(?:mini|1\\.5))",
+    "pattern": "gpt[\\s._-]?realtime(?![\\s._-]?(?:mini|1(?:\\.5|[\\s._-]?5)|2))",
     "type": "speech",
     "architecture": "moe",
     "parameters": {
@@ -5315,11 +6592,13 @@
     },
     "sources": [
       "https://platform.openai.com/docs/models",
-      "https://ai.azure.com/catalog/models"
+      "https://ai.azure.com/catalog/models",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -5351,11 +6630,126 @@
     },
     "sources": [
       "https://platform.openai.com/docs/models",
-      "https://ai.azure.com/catalog/models"
+      "https://ai.azure.com/catalog/models",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
+    ]
+  },
+  {
+    "name": "gpt-realtime-2",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?realtime[\\s._-]?2(?![\\s._-]?(?:\\.1|1|mini))(?:[\\s._-]?\\d{4}[\\s._-]?\\d{2}[\\s._-]?\\d{2})?",
+    "type": "speech",
+    "architecture": "moe",
+    "parameters": {
+      "active": 80,
+      "total": 320
+    },
+    "context": 128000,
+    "input": [
+      "audio",
+      "image",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-realtime-2"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models/gpt-realtime-2",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "gpt-realtime-2.1",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?realtime[\\s._-]?2(?:\\.1|[\\s._-]?1)(?![\\s._-]?mini)(?:[\\s._-]?\\d{4}[\\s._-]?\\d{2}[\\s._-]?\\d{2})?",
+    "type": "speech",
+    "architecture": "moe",
+    "parameters": {
+      "active": 80,
+      "total": 320
+    },
+    "context": 128000,
+    "input": [
+      "audio",
+      "image",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-realtime-2.1"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models/gpt-realtime-2.1",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://models.dev/models/openai/gpt-realtime-2.1"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "gpt-realtime-2.1-mini",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?realtime[\\s._-]?2(?:\\.1|[\\s._-]?1)[\\s._-]?mini(?:[\\s._-]?\\d{4}[\\s._-]?\\d{2}[\\s._-]?\\d{2})?",
+    "type": "speech",
+    "architecture": "moe",
+    "parameters": {
+      "active": 24,
+      "total": 96
+    },
+    "context": 128000,
+    "input": [
+      "audio",
+      "image",
+      "text"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "gpt-realtime-2.1-mini"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models/gpt-realtime-2.1-mini",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
     ]
   },
   {
@@ -5387,11 +6781,117 @@
     },
     "sources": [
       "https://platform.openai.com/docs/models",
-      "https://ai.azure.com/catalog/models"
+      "https://ai.azure.com/catalog/models",
+      "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
+    ]
+  },
+  {
+    "name": "gpt-realtime-translate",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?realtime[\\s._-]?translate(?:[\\s._-]?\\d{4}[\\s._-]?\\d{2}[\\s._-]?\\d{2})?",
+    "type": "speech",
+    "architecture": "dense",
+    "parameters": {
+      "active": 8,
+      "total": 8
+    },
+    "context": 16000,
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "audio",
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "gpt-realtime-translate"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models/gpt-realtime-translate",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "gpt-realtime-whisper",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?realtime[\\s._-]?whisper(?:[\\s._-]?\\d{4}[\\s._-]?\\d{2}[\\s._-]?\\d{2})?",
+    "type": "transcription",
+    "architecture": "dense",
+    "parameters": {
+      "active": 8,
+      "total": 8
+    },
+    "context": 16000,
+    "input": [
+      "audio",
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "gpt-realtime-whisper"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models/gpt-realtime-whisper",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://models.dev/models/openai/gpt-realtime-whisper"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "gpt-transcribe",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "gpt[\\s._-]?transcribe(?:[\\s._-]?\\d{4}[\\s._-]?\\d{2}[\\s._-]?\\d{2})?",
+    "type": "transcription",
+    "architecture": "dense",
+    "parameters": {
+      "active": 8,
+      "total": 8
+    },
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "azure": [
+        "gpt-transcribe"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models/gpt-transcribe",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
     ]
   },
   {
@@ -5422,7 +6922,8 @@
     },
     "sources": [
       "https://huggingface.co/Hcompany/Holo2-30B-A3B",
-      "https://hub.hcompany.ai/models/Holo2/aboutholo2"
+      "https://hub.hcompany.ai/models/Holo2/aboutholo2",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
     "estimated": []
   },
@@ -5447,15 +6948,17 @@
     "tools": false,
     "providers": {
       "gcp": [
-        "Imagen 3"
+        "imagen-3.0-generate-001",
+        "imagen-3.0-generate-002"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+      "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/provisioned-throughput/supported-models?hl=es"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -5479,15 +6982,16 @@
     "tools": false,
     "providers": {
       "gcp": [
-        "Imagen 4"
+        "imagen-4.0-generate-001"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+      "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/provisioned-throughput/supported-models?hl=es"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -5501,7 +7005,7 @@
       "active": 94,
       "total": 398
     },
-    "context": 256000,
+    "context": 262144,
     "corpus": 1200,
     "input": [
       "text"
@@ -5514,16 +7018,24 @@
     "providers": {
       "aws": [
         "ai21.jamba-1-5-large-v1:0"
+      ],
+      "azure": [
+        "AI21-Jamba-1.5-Large"
+      ],
+      "gcp": [
+        "jamba-1.5-large"
       ]
     },
     "sources": [
       "https://docs.ai21.com",
       "https://lifearchitect.ai/models-table",
-      "https://arxiv.org/abs/2408.12570"
+      "https://arxiv.org/abs/2408.12570",
+      "https://huggingface.co/ai21labs/AI21-Jamba-Large-1.5",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-ai21-labs-jamba-1-5-large.html",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/partner-models"
     ],
     "estimated": [
-      "parameters",
-      "context",
       "corpus"
     ]
   },
@@ -5538,7 +7050,7 @@
       "active": 12,
       "total": 52
     },
-    "context": 256000,
+    "context": 262144,
     "corpus": 1200,
     "input": [
       "text"
@@ -5551,16 +7063,24 @@
     "providers": {
       "aws": [
         "ai21.jamba-1-5-mini-v1:0"
+      ],
+      "azure": [
+        "AI21-Jamba-1.5-Mini"
+      ],
+      "gcp": [
+        "jamba-1.5-mini"
       ]
     },
     "sources": [
       "https://docs.ai21.com",
       "https://lifearchitect.ai/models-table",
-      "https://arxiv.org/abs/2408.12570"
+      "https://arxiv.org/abs/2408.12570",
+      "https://huggingface.co/ai21labs/AI21-Jamba-Mini-1.5",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-ai21-labs-jamba-1-5-mini.html",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/partner-models"
     ],
     "estimated": [
-      "parameters",
-      "context",
       "corpus"
     ]
   },
@@ -5590,12 +7110,18 @@
         "meta.llama3-70b-instruct-v1:0"
       ],
       "azure": [
-        "Llama-3-70B-Instruct"
+        "Meta-Llama-3-70B-Instruct"
+      ],
+      "scaleway": [
+        "llama-3-70b-instruct"
       ]
     },
     "sources": [
       "https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct",
-      "https://github.com/meta-llama/llama-models/blob/main/models/llama3/MODEL_CARD.md"
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3/MODEL_CARD.md",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-70b-instruct.html",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
     "estimated": [
       "corpus"
@@ -5625,11 +7151,20 @@
     "providers": {
       "aws": [
         "meta.llama3-8b-instruct-v1:0"
+      ],
+      "azure": [
+        "Meta-Llama-3-8B-Instruct"
+      ],
+      "scaleway": [
+        "llama-3-8b-instruct"
       ]
     },
     "sources": [
       "https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct",
-      "https://github.com/meta-llama/llama-models/blob/main/models/llama3/MODEL_CARD.md"
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3/MODEL_CARD.md",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-8b-instruct.html",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
     "estimated": [
       "corpus"
@@ -5659,11 +7194,16 @@
     "providers": {
       "aws": [
         "meta.llama3-1-405b-instruct-v1:0"
+      ],
+      "azure": [
+        "Meta-Llama-3.1-405B-Instruct"
       ]
     },
     "sources": [
       "https://huggingface.co/meta-llama/Llama-3.1-405B-Instruct",
-      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md"
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-1-405b-instruct.html",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
     "estimated": [
       "corpus"
@@ -5694,13 +7234,19 @@
       "aws": [
         "meta.llama3-1-70b-instruct-v1:0"
       ],
+      "azure": [
+        "Meta-Llama-3.1-70B-Instruct"
+      ],
       "scaleway": [
         "llama-3.1-70b-instruct"
       ]
     },
     "sources": [
       "https://huggingface.co/meta-llama/Llama-3.1-70B-Instruct",
-      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md"
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-1-70b-instruct.html",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
     "estimated": [
       "corpus"
@@ -5731,13 +7277,19 @@
       "aws": [
         "meta.llama3-1-8b-instruct-v1:0"
       ],
+      "azure": [
+        "Meta-Llama-3.1-8B-Instruct"
+      ],
       "scaleway": [
         "llama-3.1-8b-instruct"
       ]
     },
     "sources": [
       "https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct",
-      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md"
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-1-8b-instruct.html",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
     "estimated": [
       "corpus"
@@ -5768,11 +7320,16 @@
     "providers": {
       "aws": [
         "meta.llama3-2-11b-instruct-v1:0"
+      ],
+      "azure": [
+        "Llama-3.2-11B-Vision-Instruct"
       ]
     },
     "sources": [
       "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct",
-      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md"
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-2-11b-instruct.html",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
     "estimated": [
       "corpus"
@@ -5786,8 +7343,8 @@
     "type": "text",
     "architecture": "dense",
     "parameters": {
-      "active": 1.24,
-      "total": 1.24
+      "active": 1.236,
+      "total": 1.236
     },
     "context": 131072,
     "corpus": 9000,
@@ -5802,7 +7359,8 @@
     "providers": {},
     "sources": [
       "https://huggingface.co/meta-llama/Llama-3.2-1B",
-      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md"
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md",
+      "https://huggingface.co/api/models/meta-llama/Llama-3.2-1B"
     ],
     "estimated": [
       "corpus"
@@ -5816,8 +7374,8 @@
     "type": "text",
     "architecture": "dense",
     "parameters": {
-      "active": 1,
-      "total": 1
+      "active": 1.236,
+      "total": 1.236
     },
     "context": 131072,
     "corpus": 9000,
@@ -5836,7 +7394,9 @@
     },
     "sources": [
       "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct",
-      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md"
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md",
+      "https://huggingface.co/api/models/meta-llama/Llama-3.2-1B-Instruct",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-2-1b-instruct.html"
     ],
     "estimated": [
       "corpus"
@@ -5850,8 +7410,8 @@
     "type": "text",
     "architecture": "dense",
     "parameters": {
-      "active": 3.21,
-      "total": 3.21
+      "active": 3.213,
+      "total": 3.213
     },
     "context": 131072,
     "corpus": 9000,
@@ -5866,7 +7426,8 @@
     "providers": {},
     "sources": [
       "https://huggingface.co/meta-llama/Llama-3.2-3B",
-      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md"
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md",
+      "https://huggingface.co/api/models/meta-llama/Llama-3.2-3B"
     ],
     "estimated": [
       "corpus"
@@ -5880,8 +7441,8 @@
     "type": "text",
     "architecture": "dense",
     "parameters": {
-      "active": 3,
-      "total": 3
+      "active": 3.213,
+      "total": 3.213
     },
     "context": 131072,
     "corpus": 9000,
@@ -5900,7 +7461,9 @@
     },
     "sources": [
       "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct",
-      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md"
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md",
+      "https://huggingface.co/api/models/meta-llama/Llama-3.2-3B-Instruct",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-2-3b-instruct.html"
     ],
     "estimated": [
       "corpus"
@@ -5931,11 +7494,16 @@
     "providers": {
       "aws": [
         "meta.llama3-2-90b-instruct-v1:0"
+      ],
+      "azure": [
+        "Llama-3.2-90B-Vision-Instruct"
       ]
     },
     "sources": [
       "https://huggingface.co/meta-llama/Llama-3.2-90B-Vision-Instruct",
-      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md"
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-2-90b-instruct.html",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
     "estimated": [
       "corpus"
@@ -5970,7 +7538,7 @@
         "Llama-3.3-70B-Instruct"
       ],
       "gcp": [
-        "Llama 3.3"
+        "llama-3.3-70b-instruct-maas"
       ],
       "ovhcloud": [
         "llama-3-3-70b-instruct"
@@ -5981,7 +7549,13 @@
     },
     "sources": [
       "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct",
-      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/MODEL_CARD.md"
+      "https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/MODEL_CARD.md",
+      "https://models.dev/models/meta/llama-3.3-70b-instruct",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-3-70b-instruct.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/llama/llama3-3"
     ],
     "estimated": [
       "corpus"
@@ -6016,12 +7590,16 @@
         "Llama-4-Maverick-17B-128E-Instruct-FP8"
       ],
       "gcp": [
-        "Llama 4 Maverick"
+        "llama-4-maverick-17b-128e-instruct-maas"
       ]
     },
     "sources": [
       "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
-      "https://ai.meta.com/blog/llama-4-multimodal-intelligence"
+      "https://ai.meta.com/blog/llama-4-multimodal-intelligence",
+      "https://models.dev/models/meta/llama-4-maverick-17b-instruct",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-4-maverick-17b-instruct.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/llama/llama4-maverick"
     ],
     "estimated": [
       "corpus"
@@ -6052,13 +7630,20 @@
       "aws": [
         "meta.llama4-scout-17b-instruct-v1:0"
       ],
+      "azure": [
+        "Llama-4-Scout-17B-16E-Instruct"
+      ],
       "gcp": [
-        "Llama 4 Scout"
+        "llama-4-scout-17b-16e-instruct-maas"
       ]
     },
     "sources": [
       "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
-      "https://ai.meta.com/blog/llama-4-multimodal-intelligence"
+      "https://ai.meta.com/blog/llama-4-multimodal-intelligence",
+      "https://models.dev/models/meta/llama-4-scout-17b-instruct",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-4-scout-17b-instruct.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/llama/llama4-scout"
     ],
     "estimated": [
       "corpus"
@@ -6092,11 +7677,11 @@
     },
     "sources": [
       "https://docs.mistral.ai/getting-started/models",
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://huggingface.co/mistralai/Magistral-Small-2509",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-magistral-small-2509.html"
     ],
-    "estimated": [
-      "parameters"
-    ]
+    "estimated": []
   },
   {
     "name": "ministral-3-14b",
@@ -6106,8 +7691,8 @@
     "type": "text",
     "architecture": "dense",
     "parameters": {
-      "active": 14,
-      "total": 14
+      "active": 13.945,
+      "total": 13.945
     },
     "context": 256000,
     "input": [
@@ -6126,11 +7711,12 @@
     },
     "sources": [
       "https://apxml.com/models",
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
+      "https://huggingface.co/api/models/mistralai/Ministral-3-14B-Instruct-2512",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-ministral-14b-3-0.html"
     ],
-    "estimated": [
-      "parameters"
-    ]
+    "estimated": []
   },
   {
     "name": "ministral-3-8b",
@@ -6140,8 +7726,8 @@
     "type": "text",
     "architecture": "dense",
     "parameters": {
-      "active": 8,
-      "total": 8
+      "active": 8.918,
+      "total": 8.918
     },
     "context": 256000,
     "input": [
@@ -6160,11 +7746,12 @@
     },
     "sources": [
       "https://apxml.com/models",
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512",
+      "https://huggingface.co/api/models/mistralai/Ministral-3-8B-Instruct-2512",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-ministral-3-8b.html"
     ],
-    "estimated": [
-      "parameters"
-    ]
+    "estimated": []
   },
   {
     "name": "ministral-3b",
@@ -6194,7 +7781,8 @@
     },
     "sources": [
       "https://apxml.com/models",
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-ministral-3b.html"
     ],
     "estimated": [
       "parameters"
@@ -6225,7 +7813,8 @@
       "https://docs.mistral.ai/getting-started/models"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -6275,17 +7864,19 @@
     "reasoning": false,
     "tools": true,
     "providers": {
-      "aws": [
-        "mistral.mistral-7b-instruct-v0:2"
-      ],
       "ovhcloud": [
         "mistral-7b-instruct-v0-3"
+      ],
+      "scaleway": [
+        "mistral-7b-instruct-v0.3"
       ]
     },
     "sources": [
       "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
-      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog"
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mistral-7b-instruct.html"
     ],
     "estimated": []
   },
@@ -6315,9 +7906,13 @@
       ]
     },
     "sources": [
-      "https://docs.mistral.ai/getting-started/models"
+      "https://docs.mistral.ai/getting-started/models",
+      "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement"
     ],
-    "estimated": []
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
   },
   {
     "name": "mistral-document-ai-2512",
@@ -6345,9 +7940,13 @@
       ]
     },
     "sources": [
-      "https://docs.mistral.ai/getting-started/models"
+      "https://docs.mistral.ai/getting-started/models",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": []
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
   },
   {
     "name": "mistral-large-2402",
@@ -6372,14 +7971,20 @@
     "providers": {
       "aws": [
         "mistral.mistral-large-2402-v1:0"
+      ],
+      "azure": [
+        "Mistral-large"
       ]
     },
     "sources": [
       "https://docs.mistral.ai/getting-started/models",
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mistral-large.html",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -6406,16 +8011,21 @@
     "providers": {
       "aws": [
         "mistral.mistral-large-2407-v1:0"
+      ],
+      "azure": [
+        "Mistral-large-2407"
       ]
     },
     "sources": [
       "https://docs.mistral.ai/getting-started/models",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
       "https://lifearchitect.ai/models-table",
-      "https://mistral.ai/news/mistral-large-2407"
+      "https://mistral.ai/news/mistral-large-2407",
+      "https://huggingface.co/mistralai/Mistral-Large-Instruct-2407",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html"
     ],
     "estimated": [
-      "parameters",
       "corpus"
     ]
   },
@@ -6447,16 +8057,22 @@
       ],
       "azure": [
         "Mistral-Large-3"
+      ],
+      "scaleway": [
+        "mistral-large-3-675b-instruct-2512"
       ]
     },
     "sources": [
       "https://apxml.com/models",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
       "https://lifearchitect.ai/models-table",
-      "https://mistral.ai/news/mistral-3"
+      "https://mistral.ai/news/mistral-3",
+      "https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mistral-large-3.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
     "estimated": [
-      "parameters",
       "corpus"
     ]
   },
@@ -6482,16 +8098,22 @@
     "reasoning": false,
     "tools": true,
     "providers": {
+      "azure": [
+        "mistral-medium-2505"
+      ],
       "gcp": [
-        "Mistral Medium 3"
+        "mistral-medium-3"
       ]
     },
     "sources": [
       "https://docs.mistral.ai/getting-started/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/mistral/mistral-medium-3"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -6515,12 +8137,21 @@
     ],
     "reasoning": true,
     "tools": true,
-    "providers": {},
+    "providers": {
+      "azure": [
+        "mistral-medium-3-5"
+      ],
+      "scaleway": [
+        "mistral-medium-3.5-128b"
+      ]
+    },
     "sources": [
       "https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04",
       "https://huggingface.co/mistralai/Mistral-Medium-3.5-128B",
       "https://lifearchitect.ai/models-table/",
-      "https://apxml.com/models"
+      "https://apxml.com/models",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
     "estimated": []
   },
@@ -6545,6 +8176,9 @@
     "reasoning": false,
     "tools": true,
     "providers": {
+      "azure": [
+        "Mistral-Nemo"
+      ],
       "ovhcloud": [
         "mistral-nemo-instruct-2407"
       ],
@@ -6555,7 +8189,9 @@
     "sources": [
       "https://docs.mistral.ai/getting-started/models",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models",
-      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog"
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
     "estimated": []
   },
@@ -6581,14 +8217,18 @@
     "tools": false,
     "providers": {
       "gcp": [
-        "Mistral OCR (25.05)"
+        "mistral-ocr-2505"
       ]
     },
     "sources": [
       "https://docs.mistral.ai/getting-started/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/mistral/mistral-ocr"
     ],
-    "estimated": []
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
   },
   {
     "name": "mistral-ocr-4",
@@ -6610,14 +8250,20 @@
     ],
     "reasoning": false,
     "tools": false,
-    "providers": {},
+    "providers": {
+      "azure": [
+        "mistral-ocr-4-0"
+      ]
+    },
     "sources": [
       "https://docs.mistral.ai/models/overview",
       "https://docs.mistral.ai/capabilities/document_ai/overview/",
-      "https://apxml.com/models"
+      "https://apxml.com/models",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -6642,13 +8288,22 @@
     "reasoning": false,
     "tools": true,
     "providers": {
+      "azure": [
+        "mistral-small-2503"
+      ],
       "gcp": [
-        "Mistral Small 3.1 (25.03)"
+        "mistral-small-2503"
+      ],
+      "scaleway": [
+        "mistral-small-3.1-24b-instruct-2503"
       ]
     },
     "sources": [
       "https://docs.mistral.ai/getting-started/models",
-      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models"
+      "https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/mistral/mistral-small-3-1"
     ],
     "estimated": []
   },
@@ -6674,13 +8329,22 @@
     "reasoning": false,
     "tools": true,
     "providers": {
+      "azure": [
+        "mistral-small-2503"
+      ],
+      "gcp": [
+        "mistral-small-2503"
+      ],
       "scaleway": [
         "mistral-small-3.1-24b-instruct-2503"
       ]
     },
     "sources": [
       "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
-      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models"
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/mistral/mistral-small-3-1"
     ],
     "estimated": []
   },
@@ -6716,7 +8380,8 @@
     "sources": [
       "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models",
-      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog"
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
     "estimated": []
   },
@@ -6758,8 +8423,8 @@
     "type": "text",
     "architecture": "moe",
     "parameters": {
-      "active": 14,
-      "total": 56
+      "active": 12.9,
+      "total": 46.7
     },
     "context": 32000,
     "input": [
@@ -6772,7 +8437,9 @@
     "tools": false,
     "providers": {},
     "sources": [
-      "https://docs.mistral.ai/getting-started/models"
+      "https://docs.mistral.ai/getting-started/models",
+      "https://arxiv.org/abs/2401.04088",
+      "https://huggingface.co/mistralai/Mixtral-8x7B-v0.1"
     ],
     "estimated": []
   },
@@ -6784,7 +8451,7 @@
     "type": "text",
     "architecture": "moe",
     "parameters": {
-      "active": 13,
+      "active": 12.9,
       "total": 46.7
     },
     "context": 32000,
@@ -6799,11 +8466,21 @@
     "providers": {
       "aws": [
         "mistral.mixtral-8x7b-instruct-v0:1"
+      ],
+      "azure": [
+        "mistralai-Mixtral-8x7B-Instruct-v01"
+      ],
+      "scaleway": [
+        "mixtral-8x7b-instruct-v0.1"
       ]
     },
     "sources": [
       "https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://arxiv.org/abs/2401.04088",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mixtral-8x7b-instruct.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
     "estimated": []
   },
@@ -6835,11 +8512,13 @@
       ]
     },
     "sources": [
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-lite.html"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -6868,11 +8547,13 @@
       ]
     },
     "sources": [
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-micro.html"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -6906,12 +8587,14 @@
     "sources": [
       "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
       "https://lifearchitect.ai/models-table",
-      "https://www.amazon.science/publications/the-amazon-nova-family-of-models-technical-report-and-model-card"
+      "https://www.amazon.science/publications/the-amazon-nova-family-of-models-technical-report-and-model-card",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-pro.html"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -6939,10 +8622,12 @@
       ]
     },
     "sources": [
-      "https://build.nvidia.com"
+      "https://build.nvidia.com",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -6970,10 +8655,12 @@
       ]
     },
     "sources": [
-      "https://build.nvidia.com"
+      "https://build.nvidia.com",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -7001,10 +8688,12 @@
       ]
     },
     "sources": [
-      "https://build.nvidia.com"
+      "https://build.nvidia.com",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -7032,10 +8721,12 @@
       ]
     },
     "sources": [
-      "https://build.nvidia.com"
+      "https://build.nvidia.com",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -7069,12 +8760,15 @@
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
       "https://openai.com/index/introducing-chatgpt-pro",
-      "https://lifearchitect.substack.com/p/the-memo-1oct2024"
+      "https://lifearchitect.substack.com/p/the-memo-1oct2024",
+      "https://models.dev/models/openai/o1",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -7107,12 +8801,14 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/o1-and-new-tools-for-developers"
+      "https://openai.com/index/o1-and-new-tools-for-developers",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -7145,12 +8841,15 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/introducing-chatgpt-pro"
+      "https://openai.com/index/introducing-chatgpt-pro",
+      "https://models.dev/models/openai/o1-pro",
+      "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -7185,11 +8884,13 @@
       "https://openai.com/index/introducing-o3-and-o4-mini/",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://lifearchitect.ai/models-table/",
-      "https://apxml.com/models/o3"
+      "https://apxml.com/models/o3",
+      "https://models.dev/models/openai/o3"
     ],
     "estimated": [
       "parameters",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -7222,12 +8923,51 @@
       "https://platform.openai.com/docs/models",
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table",
-      "https://openai.com/index/o3-mini-system-card"
+      "https://openai.com/index/o3-mini-system-card",
+      "https://models.dev/models/openai/o3-mini",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
       "context",
-      "corpus"
+      "corpus",
+      "architecture"
+    ]
+  },
+  {
+    "name": "o3-pro",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "o3[\\s._-]?pro(?:[\\s._-]?\\d{4}[\\s._-]?\\d{2}[\\s._-]?\\d{2})?",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 120,
+      "total": 600
+    },
+    "context": 200000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "azure": [
+        "o3-pro"
+      ]
+    },
+    "sources": [
+      "https://platform.openai.com/docs/models/o3-pro",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://models.dev/models/openai/o3-pro"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
     ]
   },
   {
@@ -7262,11 +9002,13 @@
       "https://openai.com/index/introducing-o3-and-o4-mini/",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://lifearchitect.ai/models-table/",
-      "https://apxml.com/models/o4-mini"
+      "https://apxml.com/models/o4-mini",
+      "https://models.dev/models/openai/o4-mini"
     ],
     "estimated": [
       "parameters",
-      "corpus"
+      "corpus",
+      "architecture"
     ]
   },
   {
@@ -7292,12 +9034,13 @@
     "tools": false,
     "providers": {
       "azure": [
-        "phi-3-medium"
+        "Phi-3-medium-128k-instruct"
       ]
     },
     "sources": [
       "https://huggingface.co/microsoft/Phi-3-medium-128k-instruct",
-      "https://arxiv.org/abs/2404.14219"
+      "https://arxiv.org/abs/2404.14219",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
     "estimated": []
   },
@@ -7324,12 +9067,13 @@
     "tools": false,
     "providers": {
       "azure": [
-        "phi-3-mini"
+        "Phi-3-mini-128k-instruct"
       ]
     },
     "sources": [
       "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
-      "https://arxiv.org/abs/2404.14219"
+      "https://arxiv.org/abs/2404.14219",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
     "estimated": []
   },
@@ -7341,8 +9085,8 @@
     "type": "text",
     "architecture": "dense",
     "parameters": {
-      "active": 7,
-      "total": 7
+      "active": 7.392,
+      "total": 7.392
     },
     "context": 128000,
     "corpus": 4800,
@@ -7356,12 +9100,14 @@
     "tools": false,
     "providers": {
       "azure": [
-        "phi-3-small"
+        "Phi-3-small-128k-instruct"
       ]
     },
     "sources": [
       "https://huggingface.co/microsoft/Phi-3-small-128k-instruct",
-      "https://arxiv.org/abs/2404.14219"
+      "https://arxiv.org/abs/2404.14219",
+      "https://huggingface.co/api/models/microsoft/Phi-3-small-128k-instruct",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
     "estimated": []
   },
@@ -7388,12 +9134,13 @@
     "tools": false,
     "providers": {
       "azure": [
-        "phi-3.5-mini"
+        "Phi-3.5-mini-instruct"
       ]
     },
     "sources": [
       "https://huggingface.co/microsoft/Phi-3.5-mini-instruct",
-      "https://arxiv.org/abs/2407.13833"
+      "https://arxiv.org/abs/2407.13833",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
     "estimated": [
       "corpus"
@@ -7422,12 +9169,13 @@
     "tools": false,
     "providers": {
       "azure": [
-        "phi-3.5-moe"
+        "Phi-3.5-MoE-instruct"
       ]
     },
     "sources": [
       "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct",
-      "https://arxiv.org/abs/2407.13833"
+      "https://arxiv.org/abs/2407.13833",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
     "estimated": [
       "corpus"
@@ -7457,12 +9205,13 @@
     "tools": false,
     "providers": {
       "azure": [
-        "phi-3.5-vision"
+        "Phi-3.5-vision-instruct"
       ]
     },
     "sources": [
       "https://huggingface.co/microsoft/Phi-3.5-vision-instruct",
-      "https://arxiv.org/abs/2407.13833"
+      "https://arxiv.org/abs/2407.13833",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
     "estimated": [
       "corpus"
@@ -7476,8 +9225,8 @@
     "type": "text",
     "architecture": "dense",
     "parameters": {
-      "active": 14,
-      "total": 14
+      "active": 14.66,
+      "total": 14.66
     },
     "context": 16384,
     "corpus": 10000,
@@ -7491,12 +9240,14 @@
     "tools": false,
     "providers": {
       "azure": [
-        "phi-4"
+        "Phi-4"
       ]
     },
     "sources": [
       "https://huggingface.co/microsoft/phi-4",
-      "https://arxiv.org/abs/2412.08905"
+      "https://arxiv.org/abs/2412.08905",
+      "https://huggingface.co/api/models/microsoft/phi-4",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
     ],
     "estimated": [
       "corpus"
@@ -7525,12 +9276,13 @@
     "tools": false,
     "providers": {
       "azure": [
-        "phi-4-mini"
+        "Phi-4-mini-instruct"
       ]
     },
     "sources": [
       "https://huggingface.co/microsoft/Phi-4-mini-instruct",
-      "https://huggingface.co/microsoft/Phi-4-multimodal-instruct/blob/main/phi_4_mm.tech_report.02252025.pdf"
+      "https://huggingface.co/microsoft/Phi-4-multimodal-instruct/blob/main/phi_4_mm.tech_report.02252025.pdf",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
     ],
     "estimated": [
       "corpus"
@@ -7544,11 +9296,11 @@
     "type": "text",
     "architecture": "dense",
     "parameters": {
-      "active": 3.8,
-      "total": 3.8
+      "active": 5.6,
+      "total": 5.6
     },
     "context": 128000,
-    "corpus": 6100,
+    "corpus": 5000,
     "input": [
       "text",
       "image"
@@ -7560,16 +9312,17 @@
     "tools": true,
     "providers": {
       "azure": [
-        "phi-4-mini-multimodal"
+        "Phi-4-multimodal-instruct"
       ]
     },
     "sources": [
       "https://huggingface.co/microsoft/Phi-4-multimodal-instruct",
-      "https://huggingface.co/microsoft/Phi-4-multimodal-instruct/blob/main/phi_4_mm.tech_report.02252025.pdf"
+      "https://huggingface.co/microsoft/Phi-4-multimodal-instruct/blob/main/phi_4_mm.tech_report.02252025.pdf",
+      "https://huggingface.co/api/models/microsoft/Phi-4-multimodal-instruct",
+      "https://huggingface.co/microsoft/Phi-4-multimodal-instruct/blob/main/config.json",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "estimated": []
   },
   {
     "name": "pixtral-12b-2409",
@@ -7579,8 +9332,8 @@
     "type": "text",
     "architecture": "dense",
     "parameters": {
-      "active": 12,
-      "total": 12
+      "active": 12.4,
+      "total": 12.4
     },
     "context": 128000,
     "input": [
@@ -7599,11 +9352,11 @@
     },
     "sources": [
       "https://docs.mistral.ai/getting-started/models",
-      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models"
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models",
+      "https://huggingface.co/mistralai/Pixtral-12B-2409",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
-    "estimated": [
-      "parameters"
-    ]
+    "estimated": []
   },
   {
     "name": "pixtral-large-25.02",
@@ -7633,7 +9386,8 @@
     },
     "sources": [
       "https://docs.mistral.ai/getting-started/models",
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-pixtral-large.html"
     ],
     "estimated": [
       "parameters"
@@ -7667,7 +9421,8 @@
     },
     "sources": [
       "https://docs.mistral.ai/getting-started/models",
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-pixtral-large.html"
     ],
     "estimated": [
       "parameters"
@@ -7699,7 +9454,8 @@
       ]
     },
     "sources": [
-      "https://huggingface.co/Qwen/Qwen-Guard-Gen-0.6B"
+      "https://huggingface.co/Qwen/Qwen-Guard-Gen-0.6B",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
     ],
     "estimated": []
   },
@@ -7729,7 +9485,8 @@
       ]
     },
     "sources": [
-      "https://huggingface.co/Qwen/Qwen-Guard-Gen-8B"
+      "https://huggingface.co/Qwen/Qwen-Guard-Gen-8B",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
     ],
     "estimated": []
   },
@@ -7763,7 +9520,8 @@
     },
     "sources": [
       "https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct",
-      "https://arxiv.org/abs/2412.15115"
+      "https://arxiv.org/abs/2412.15115",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
     "estimated": [
       "corpus"
@@ -7798,7 +9556,8 @@
     "sources": [
       "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct",
       "https://arxiv.org/abs/2412.15115",
-      "https://arxiv.org/abs/2502.13923"
+      "https://arxiv.org/abs/2502.13923",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
     ],
     "estimated": [
       "corpus"
@@ -7815,19 +9574,25 @@
       "active": 22,
       "total": 235
     },
-    "context": 250000,
+    "context": 262144,
     "corpus": 36000,
     "input": [
-      "text"
+      "text",
+      "code"
     ],
     "output": [
-      "text"
+      "text",
+      "code"
     ],
-    "reasoning": false,
-    "tools": false,
+    "reasoning": true,
+    "tools": true,
     "providers": {
+      "aws": [
+        "qwen.qwen3-235b-a22b-2507-v1:0",
+        "qwen.qwen3-235b-a22b-2507"
+      ],
       "gcp": [
-        "Qwen 3 235B"
+        "qwen3-235b-a22b-instruct-2507-maas"
       ],
       "scaleway": [
         "qwen3-235b-a22b-instruct-2507"
@@ -7835,7 +9600,12 @@
     },
     "sources": [
       "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
-      "https://arxiv.org/abs/2505.09388"
+      "https://arxiv.org/abs/2505.09388",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-235b-a22b-2507.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-235b-a22b-2507.md",
+      "https://models.dev/models/alibaba/qwen3-235b-a22b-instruct-2507",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/qwen/qwen3-235b"
     ],
     "estimated": []
   },
@@ -7861,13 +9631,18 @@
     "reasoning": false,
     "tools": false,
     "providers": {
+      "aws": [
+        "qwen.qwen3-32b-v1:0",
+        "qwen.qwen3-32b"
+      ],
       "ovhcloud": [
         "qwen-3-32b"
       ]
     },
     "sources": [
       "https://huggingface.co/Qwen/Qwen3-32B",
-      "https://arxiv.org/abs/2505.09388"
+      "https://arxiv.org/abs/2505.09388",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-32b.html"
     ],
     "estimated": []
   },
@@ -7882,7 +9657,7 @@
       "active": 3,
       "total": 30
     },
-    "context": 128000,
+    "context": 262144,
     "corpus": 36000,
     "input": [
       "text",
@@ -7893,10 +9668,11 @@
       "code"
     ],
     "reasoning": false,
-    "tools": false,
+    "tools": true,
     "providers": {
-      "gcp": [
-        "Qwen 3 Coder"
+      "aws": [
+        "qwen.qwen3-coder-30b-a3b-v1:0",
+        "qwen.qwen3-coder-30b-a3b-instruct"
       ],
       "ovhcloud": [
         "qwen-3-coder-30b-a3b-instruct"
@@ -7907,7 +9683,57 @@
     },
     "sources": [
       "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
-      "https://qwenlm.github.io/blog/qwen3-coder"
+      "https://qwenlm.github.io/blog/qwen3-coder",
+      "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/raw/main/README.md",
+      "https://models.dev/models/alibaba/qwen3-coder-30b-a3b-instruct",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-coder-30b-a3b-instruct.html",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/qwen/qwen3-coder"
+    ],
+    "estimated": [
+      "corpus"
+    ]
+  },
+  {
+    "name": "qwen3-coder-480b-a35b-instruct",
+    "vendor": "qwen",
+    "open": true,
+    "pattern": "qwen[\\s._-]?3[\\s._-]?coder[\\s._-]?480b[\\s._-]?a35b[\\s._-]?instruct|qwen[\\s._-]?3[\\s._-]?480b[\\s._-]?a35b[\\s._-]?instruct",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 35,
+      "total": 480
+    },
+    "context": 262144,
+    "corpus": 36000,
+    "input": [
+      "text",
+      "code"
+    ],
+    "output": [
+      "text",
+      "code"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "qwen.qwen3-coder-480b-a35b-v1:0",
+        "qwen.qwen3-coder-480b-a35b-instruct"
+      ],
+      "gcp": [
+        "qwen3-coder-480b-a35b-instruct-maas"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct",
+      "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct/raw/main/README.md",
+      "https://qwenlm.github.io/blog/qwen3-coder/",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-coder-480b-a35b-instruct.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-coder-480b-a35b-instruct.md",
+      "https://models.dev/models/alibaba/qwen3-coder-480b-a35b-instruct",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/qwen/qwen3-coder"
     ],
     "estimated": [
       "corpus"
@@ -7921,8 +9747,8 @@
     "type": "embedding",
     "architecture": "dense",
     "parameters": {
-      "active": 8,
-      "total": 8
+      "active": 7.567,
+      "total": 7.567
     },
     "context": 32000,
     "corpus": 36000,
@@ -7936,13 +9762,19 @@
     "reasoning": false,
     "tools": false,
     "providers": {
+      "ovhcloud": [
+        "qwen3-embedding-8b"
+      ],
       "scaleway": [
         "qwen3-embedding-8b"
       ]
     },
     "sources": [
       "https://huggingface.co/Qwen/Qwen3-Embedding-8B",
-      "https://arxiv.org/abs/2505.09388"
+      "https://arxiv.org/abs/2505.09388",
+      "https://huggingface.co/api/models/Qwen/Qwen3-Embedding-8B",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
     ],
     "estimated": [
       "corpus"
@@ -7952,11 +9784,11 @@
     "name": "qwen3-next-instruct-80b",
     "vendor": "qwen",
     "open": true,
-    "pattern": "qwen[\\s._-]?3[\\s._-]?next[\\s._-]?instruct[\\s._-]?80b",
+    "pattern": "qwen[\\s._-]?3[\\s._-]?next[\\s._-]?(?:instruct[\\s._-]?80b|80b[\\s._-]?a3b[\\s._-]?instruct)",
     "type": "text",
-    "architecture": "dense",
+    "architecture": "moe",
     "parameters": {
-      "active": 80,
+      "active": 3,
       "total": 80
     },
     "context": 262144,
@@ -7970,27 +9802,33 @@
     "reasoning": false,
     "tools": false,
     "providers": {
+      "aws": [
+        "qwen.qwen3-next-80b-a3b",
+        "qwen.qwen3-next-80b-a3b-instruct"
+      ],
       "gcp": [
-        "Qwen 3 Next Instruct 80B"
+        "qwen3-next-80b-a3b-instruct-maas"
       ]
     },
     "sources": [
       "https://qwenlm.github.io",
-      "https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list"
+      "https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list",
+      "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct",
+      "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/main/config.json",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-next-80b-a3b.html",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/qwen/qwen3-next-instruct"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "estimated": []
   },
   {
     "name": "qwen3-next-thinking-80b",
     "vendor": "qwen",
     "open": true,
-    "pattern": "qwen[\\s._-]?3[\\s._-]?next[\\s._-]?thinking[\\s._-]?80b",
+    "pattern": "qwen[\\s._-]?3[\\s._-]?next[\\s._-]?(?:thinking[\\s._-]?80b|80b[\\s._-]?a3b[\\s._-]?thinking)",
     "type": "text",
-    "architecture": "dense",
+    "architecture": "moe",
     "parameters": {
-      "active": 80,
+      "active": 3,
       "total": 80
     },
     "context": 262144,
@@ -8005,16 +9843,17 @@
     "tools": false,
     "providers": {
       "gcp": [
-        "Qwen 3 Next Thinking 80B"
+        "qwen3-next-80b-a3b-thinking-maas"
       ]
     },
     "sources": [
       "https://qwenlm.github.io",
-      "https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list"
+      "https://qwen.ai/blog?id=4074cca80393150c248e508aa62983f9cb7d27cd&from=research.latest-advancements-list",
+      "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking",
+      "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/main/config.json",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/qwen/qwen3-next-thinking"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "estimated": []
   },
   {
     "name": "qwen3.5-397b-a17b",
@@ -8038,13 +9877,22 @@
     "reasoning": false,
     "tools": false,
     "providers": {
+      "azure": [
+        "FW-Qwen3.5-397B-A17B"
+      ],
+      "ovhcloud": [
+        "qwen-3-5-397b"
+      ],
       "scaleway": [
         "qwen3.5-397b-a17b"
       ]
     },
     "sources": [
       "https://huggingface.co/Qwen/Qwen3.5-397B-A17B",
-      "https://qwen.ai/blog?id=qwen3.5"
+      "https://qwen.ai/blog?id=qwen3.5",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/",
+      "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement"
     ],
     "estimated": [
       "corpus"
@@ -8058,8 +9906,8 @@
     "type": "embedding",
     "architecture": "dense",
     "parameters": {
-      "active": 11,
-      "total": 11
+      "active": 4.865,
+      "total": 4.865
     },
     "context": 512,
     "input": [
@@ -8076,7 +9924,9 @@
       ]
     },
     "sources": [
-      "https://huggingface.co/sentence-transformers/sentence-t5-xxl"
+      "https://huggingface.co/sentence-transformers/sentence-t5-xxl",
+      "https://huggingface.co/api/models/sentence-transformers/sentence-t5-xxl",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
     "estimated": []
   },
@@ -8103,10 +9953,14 @@
     "providers": {
       "aws": [
         "stability.stable-diffusion-xl-v1"
+      ],
+      "ovhcloud": [
+        "stable-diffusion-xl"
       ]
     },
     "sources": [
-      "https://apxml.com/models"
+      "https://apxml.com/models",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
     ],
     "estimated": []
   },
@@ -8138,7 +9992,8 @@
       ]
     },
     "sources": [
-      "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0"
+      "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
     ],
     "estimated": []
   },
@@ -8340,11 +10195,13 @@
     },
     "sources": [
       "https://platform.openai.com/docs/models",
-      "https://ai.azure.com/catalog/models"
+      "https://ai.azure.com/catalog/models",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -8375,11 +10232,13 @@
     },
     "sources": [
       "https://platform.openai.com/docs/models",
-      "https://ai.azure.com/catalog/models"
+      "https://ai.azure.com/catalog/models",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -8410,11 +10269,13 @@
     },
     "sources": [
       "https://platform.openai.com/docs/models",
-      "https://ai.azure.com/catalog/models"
+      "https://ai.azure.com/catalog/models",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -8445,11 +10306,13 @@
     },
     "sources": [
       "https://platform.openai.com/docs/models",
-      "https://ai.azure.com/catalog/models"
+      "https://ai.azure.com/catalog/models",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -8479,11 +10342,13 @@
       ]
     },
     "sources": [
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-embeddings-g1---text.html"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -8509,16 +10374,18 @@
     "tools": false,
     "providers": {
       "aws": [
-        "amazon.titan-embed-text-v2:0",
-        "amazon.titan-embed-g1-text-02"
+        "amazon.titan-embed-text-v2:0"
       ]
     },
     "sources": [
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-text-embeddings-v2-2.html",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-text-embeddings-v2.html"
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -8551,7 +10418,8 @@
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -8584,7 +10452,8 @@
     ],
     "estimated": [
       "parameters",
-      "context"
+      "context",
+      "architecture"
     ]
   },
   {
@@ -8610,15 +10479,17 @@
     "tools": false,
     "providers": {
       "gcp": [
-        "Veo 3.1"
+        "veo-3.1-generate-001"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/models",
-      "https://ai.google.dev/gemini-api/docs/models/veo-3.1-generate-preview"
+      "https://ai.google.dev/gemini-api/docs/models/veo-3.1-generate-preview",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-1-generate"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -8644,15 +10515,17 @@
     "tools": false,
     "providers": {
       "gcp": [
-        "Veo 3.1 Fast"
+        "veo-3.1-fast-generate-001"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/changelog",
-      "https://ai.google.dev/gemini-api/docs/video"
+      "https://ai.google.dev/gemini-api/docs/video",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-1-generate"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -8678,15 +10551,17 @@
     "tools": false,
     "providers": {
       "gcp": [
-        "Veo 3.1 Lite"
+        "veo-3.1-lite-generate-001"
       ]
     },
     "sources": [
       "https://ai.google.dev/gemini-api/docs/changelog",
-      "https://ai.google.dev/gemini-api/docs/models/veo-3.1-lite-generate-preview"
+      "https://ai.google.dev/gemini-api/docs/models/veo-3.1-lite-generate-preview",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-1-generate"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -8697,8 +10572,8 @@
     "type": "speech",
     "architecture": "dense",
     "parameters": {
-      "active": 3,
-      "total": 3
+      "active": 4.676,
+      "total": 4.676
     },
     "context": 32000,
     "input": [
@@ -8716,11 +10591,12 @@
       ]
     },
     "sources": [
-      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html"
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
+      "https://huggingface.co/mistralai/Voxtral-Mini-3B-2507",
+      "https://huggingface.co/api/models/mistralai/Voxtral-Mini-3B-2507",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-voxtral-mini-3b-2507.html"
     ],
-    "estimated": [
-      "parameters"
-    ]
+    "estimated": []
   },
   {
     "name": "voxtral-mini-transcribe",
@@ -8749,7 +10625,8 @@
       "https://apxml.com/models"
     ],
     "estimated": [
-      "parameters"
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -8760,8 +10637,8 @@
     "type": "transcription",
     "architecture": "dense",
     "parameters": {
-      "active": 4,
-      "total": 4
+      "active": 4.43,
+      "total": 4.43
     },
     "input": [
       "audio"
@@ -8776,7 +10653,8 @@
       "https://docs.mistral.ai/models/model-cards/voxtral-mini-transcribe-realtime-26-02",
       "https://mistral.ai/news/voxtral-transcribe-2/",
       "https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602",
-      "https://apxml.com/models"
+      "https://apxml.com/models",
+      "https://huggingface.co/api/models/mistralai/Voxtral-Mini-4B-Realtime-2602"
     ],
     "estimated": []
   },
@@ -8788,8 +10666,8 @@
     "type": "speech",
     "architecture": "dense",
     "parameters": {
-      "active": 24.3,
-      "total": 24.3
+      "active": 24.262,
+      "total": 24.262
     },
     "context": 32000,
     "input": [
@@ -8812,11 +10690,13 @@
     "sources": [
       "https://docs.mistral.ai/getting-started/models",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
-      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models"
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models",
+      "https://huggingface.co/mistralai/Voxtral-Small-24B-2507",
+      "https://huggingface.co/api/models/mistralai/Voxtral-Small-24B-2507",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-voxtral-small-24b-2507.html",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
-    "estimated": [
-      "parameters"
-    ]
+    "estimated": []
   },
   {
     "name": "voxtral-tts",
@@ -8873,7 +10753,10 @@
       ]
     },
     "sources": [
-      "https://huggingface.co/openai/whisper-large-v3"
+      "https://huggingface.co/openai/whisper-large-v3",
+      "https://models.dev/models/openai/whisper-large-v3",
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
     ],
     "estimated": []
   },
@@ -8902,7 +10785,9 @@
       ]
     },
     "sources": [
-      "https://huggingface.co/openai/whisper-large-v3-turbo"
+      "https://huggingface.co/openai/whisper-large-v3-turbo",
+      "https://models.dev/models/openai/whisper-large-v3-turbo",
+      "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
     ],
     "estimated": []
   }
