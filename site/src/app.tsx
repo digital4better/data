@@ -4,7 +4,7 @@ import { termLabel, regionLabel, languageStorageKey } from "./localization";
 import React, { useEffect, useMemo, useState, useRef, useId } from "react";
 import { collections, guides, impacts, fieldLabels, repository, license, tr, datasetTitle } from "./content.mjs";
 import { rowsOf, subsetOf, csvSubset, Row } from "./data";
-import { Bars, CloudMap, CatalogCharts, MixMap, MixComposition, useTooltip } from "./charts";
+import { Bars, CloudMap, CatalogCharts, MixMap, useTooltip } from "./charts";
 import { selectedTerritory, rowsAtPeriod, allowedFilters, resolvePeriod, displayPaths } from "./chart-data";
 import { Logo } from "./assets/logo";
 import "./style.css";
@@ -52,6 +52,8 @@ const shortLabels: Record<string, string[]> = {
 
 };
 const shortLabel = (key: string, lang: string) => (shortLabels[key] ? tr(shortLabels[key], lang) : label(key, lang));
+const mixPercent = (value: unknown, lang: string) => typeof value === "number" && Number.isFinite(value)
+  ? new Intl.NumberFormat(lang, { style: "percent", maximumFractionDigits: 2 }).format(value) : "—";
 const tableValue = (row: Row, key: string) =>
   key.startsWith("parameters.") ? row.values.parameters?.[key.split(".")[1]] : row.values[key];
 const label = (key: string, lang: string) => tr((impacts as any)[key] || (fieldLabels as any)[key] || [termLabel(key, lang), termLabel(key, lang)], lang);
@@ -707,7 +709,7 @@ function Explorer({
       dataset: collectionView ? d.id : "",
       q,
       period: temporal ? activePeriod : "",
-      metric: d.collection === "ai" || (d.collection === "cloud" && d.id.endsWith("regions")) ? "" : d.collection === "cloud" ? (numeric.includes(metric) ? metric : "") : activeMetric,
+      metric: d.collection === "mix" || d.collection === "ai" || (d.collection === "cloud" && d.id.endsWith("regions")) ? "" : d.collection === "cloud" ? (numeric.includes(metric) ? metric : "") : activeMetric,
       region: world ? "" : region,
       ...filters,
       sort: sort.key,
@@ -748,7 +750,9 @@ function Explorer({
     );
   });
   useEffect(() => setPage(0), [q, activePeriod, activeMetric, region, filters, sort]);
-  const baseColumns = temporal
+  const baseColumns = d.collection === "mix"
+    ? d.fields
+    : temporal
     ? [activeMetric]
     : d.collection === "ai"
     ? ["name", "vendor", "open", "architecture", "parameters.active", "parameters.total", "context", "input", "output", "reasoning", "tools"]
@@ -954,9 +958,9 @@ function Explorer({
                 )}
               </>
             )}
-            {numeric.length > 0 && d.collection !== "ai" && !(d.collection === "cloud" && d.id.endsWith("regions")) && (
+            {numeric.length > 0 && d.collection !== "mix" && d.collection !== "ai" && !(d.collection === "cloud" && d.id.endsWith("regions")) && (
               <label>
-                {d.collection === "mix" ? t("Technologie", "Technology") : d.collection === "cloud" ? t("Colonne complémentaire", "Additional column") : t("Indicateur", "Indicator")}
+                {d.collection === "cloud" ? t("Colonne complémentaire", "Additional column") : t("Indicateur", "Indicator")}
                 <select value={d.collection === "cloud" ? (numeric.includes(metric) ? metric : "") : activeMetric} onChange={(e) => setMetric(e.target.value)}>
                   {d.collection === "cloud" && <option value="">{t("Aucune", "None")}</option>}
                   {numeric.map((k) => (
@@ -1054,9 +1058,7 @@ function Explorer({
                     "No data for this territory with the selected period and filters."
                   )}
                 </p>
-              ) : d.collection === "mix" ? (
-                <MixComposition values={selectedRow.values} lang={lang} />
-              ) : (
+              ) : d.collection === "mix" ? null : (
                 <p>
                   {label(activeMetric, lang)} / kWh : <strong>{format(selectedRow.values[activeMetric], lang)}</strong>
                 </p>
@@ -1086,27 +1088,27 @@ function Explorer({
               <summary>
                 {t("Évolution temporelle", "Time evolution")} ·{" "}
                 {chartRegion === "world" ? t("Monde", "World") : names[chartRegion!] || chartRegion} ·{" "}
-                {label(activeMetric, lang)}
+                {d.collection === "mix" ? t("Toutes les énergies (%)", "All energy sources (%)") : label(activeMetric, lang)}
               </summary>
-              <Trend
+              {d.collection !== "mix" && <Trend
                 rows={historyRows}
                 metric={activeMetric}
                 lang={lang}
-                unit={d.collection === "mix" ? t("part du mix", "mix share") : label(activeMetric, lang) + " / kWh"}
-              />
+                unit={label(activeMetric, lang) + " / kWh"}
+              />}
               <div className="table-wrap">
                 <table>
                   <thead>
                     <tr>
                       <th>{t("Période", "Period")}</th>
-                      <th>{label(activeMetric, lang)}</th>
+                      {(d.collection === "mix" ? columns : [activeMetric]).map(k => <th key={k} scope="col">{label(k, lang)}{d.collection === "mix" ? " (%)" : ""}</th>)}
                     </tr>
                   </thead>
                   <tbody>
                     {historyRows.map((r) => (
                       <tr key={r.period}>
                         <td>{r.period}</td>
-                        <td>{format(r.values[activeMetric], lang)}</td>
+                        {(d.collection === "mix" ? columns : [activeMetric]).map(k => <td key={k}>{d.collection === "mix" ? mixPercent(r.values[k], lang) : format(r.values[k], lang)}</td>)}
                       </tr>
                     ))}
                   </tbody>
@@ -1165,7 +1167,7 @@ function Explorer({
                         {k === "_key"
                           ? t("Identifiant / territoire", "Identifier / territory")
                           : temporal
-                          ? label(k, lang)
+                          ? label(k, lang) + (d.collection === "mix" ? " (%)" : "")
                           : shortLabel(k, lang)}{" "}
                         {sort.key === k ? (sort.direction === 1 ? "↑" : "↓") : "↕"}
                       </button>
@@ -1201,7 +1203,7 @@ function Explorer({
                                 </li>
                               ))}
                           </ul>
-                        ) : (
+                        ) : d.collection === "mix" ? mixPercent(r.values[k], lang) : (
                           format(
                             ["input", "output", "type", "architecture", "category"].includes(k)
                               ? Array.isArray(r.values[k]) ? r.values[k].map((v: string) => termLabel(v, lang)) : termLabel(r.values[k], lang)
