@@ -141,6 +141,10 @@ export const collections = [
     ],
   },
 ];
+export const renewableFactorExplanation = [
+  "La variante « Renouvelables uniquement » (fichiers « -green ») conserve la bioénergie, l’hydraulique, le solaire et l’éolien, puis recalcule leurs parts pour totaliser 100 %. Les facteurs d’impact sont calculés à partir de ce mix hypothétique. Ce scénario ne décrit ni le mix réel du territoire, ni une offre d’électricité verte, et ses impacts ne sont pas nuls.",
+  "The ‘Renewables only’ variant (‘-green’ files) keeps bioenergy, hydro, solar and wind, then recalculates their shares to total 100%. Impact factors are calculated from this hypothetical mix. This scenario describes neither the territory’s actual mix nor a green electricity offer, and its impacts are not zero.",
+];
 export const guides = [
   {
     id: "electricity",
@@ -164,10 +168,11 @@ export const guides = [
       [
         ["Interpréter les résultats", "Interpret the results"],
         [
-          "Le carbone n’est qu’un indicateur parmi neuf. Consultez les unités, les sources et les hypothèses. Une période disponible ne garantit pas des observations nouvelles : le générateur peut compléter les données manquantes. La variante green est un scénario renormalisé, pas la preuve d’un contrat d’énergie verte.",
-          "Carbon is only one of nine indicators. Review units, sources and assumptions. An available period does not guarantee new observations: the generator may fill gaps. The green variant is a renormalized scenario, not evidence of a green-energy contract.",
+          "Le carbone n’est qu’un indicateur parmi neuf. Consultez les unités, les sources et les hypothèses. Une période disponible ne garantit pas des observations nouvelles : le générateur peut compléter les données manquantes.",
+          "Carbon is only one of nine indicators. Review units, sources and assumptions. An available period does not guarantee new observations: the generator may fill gaps.",
         ],
       ],
+      [["Comprendre la variante renouvelable", "Understanding the renewable variant"], renewableFactorExplanation],
     ],
   },
   {
@@ -291,7 +296,7 @@ export function datasetTitle(file, lang) {
     subdivision: ["Subdivisions", "Subdivisions"],
     yearly: ["Annuel", "Annual"],
     monthly: ["Mensuel", "Monthly"],
-    green: ["Scénario renouvelable (green)", "Renewable scenario (green)"],
+    green: ["Renouvelables uniquement (green)", "Renewables only (green)"],
     regions: ["Régions", "Regions"],
     vms: ["Machines virtuelles", "Virtual machines"],
     cpus: ["Processeurs", "Processors"],
@@ -301,10 +306,13 @@ export function datasetTitle(file, lang) {
     energy: ["Consommation", "Energy use"],
     impacts: ["Impacts", "Impacts"],
   };
-  return stem
+  const title = stem
     .split("-")
     .map((p) => (tokens[p] ? tr(tokens[p], lang) : p.toUpperCase()))
     .join(" · ");
+  return /^(world|continent|country|subdivision)-(yearly|monthly)$/.test(stem)
+    ? `${title} · ${tr(["Toutes les énergies", "All energy sources"], lang)}`
+    : title;
 }
 Object.assign(fieldLabels, {
   aliases: ["Autres identifiants connus", "Other known identifiers"],

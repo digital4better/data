@@ -2,7 +2,7 @@ import { useMapZoom } from "./map-zoom";
 import { impactColors, impactColor } from "./chart-data";
 import { termLabel, regionLabel, languageStorageKey } from "./localization";
 import React, { useEffect, useMemo, useState, useRef, useId } from "react";
-import { collections, guides, impacts, fieldLabels, repository, license, tr, datasetTitle } from "./content.mjs";
+import { collections, guides, impacts, fieldLabels, repository, license, tr, datasetTitle, renewableFactorExplanation } from "./content.mjs";
 import { rowsOf, subsetOf, csvSubset, cloudRows, cloudExportRows, Row } from "./data";
 import { Bars, CloudMap, CatalogCharts, MixMap, MixHistory, useTooltip } from "./charts";
 import { selectedTerritory, rowsAtPeriod, allowedFilters, resolvePeriod, displayPaths, mixPaths } from "./chart-data";
@@ -509,15 +509,7 @@ function Notes({ collection: c, lang }: { collection: any; lang: string }) {
       <h2>{text("Sources et précautions", "Sources and limitations", lang)}</h2>
       <h3>{tr(c.title, lang)}</h3>
       <p>{tr(c.limits, lang)}</p>
-      {c.id === "factor" && (
-        <p>
-          {text(
-            "La variante green utilise le mix renouvelable renormalisé. Elle ne représente pas une mesure contractuelle ni un impact nul.",
-            "The green variant uses the renormalized renewable mix. It does not represent contractual measurements or zero impact.",
-            lang
-          )}
-        </p>
-      )}
+      {c.id === "factor" && <p>{tr(renewableFactorExplanation, lang)}</p>}
       <ul>
         {c.id === "factor" && <li><ImpactMethodologyLink lang={lang} /></li>}
         {c.sources.map(([title, url]: string[]) => (
@@ -794,10 +786,17 @@ function Explorer({
   const periodRows = useMemo(() => temporal ? rowsAtPeriod(rows, activePeriod) : rows, [rows, activePeriod, temporal]);
   const mapRows = useMemo(() => periodRows.filter((r) => matches(r, false)), [periodRows, q, names, filters, lang]);
   const filtered = (d.collection === "mix" ? rows : periodRows).filter((r) => matches(r));
+  const territoryName = (key: string) => names[key] || termLabel(key, lang);
+  const compareTerritories = (a: string, b: string) => territoryName(a).localeCompare(territoryName(b), lang);
+  const sortValue = (row: Row) => {
+    if (sort.key === "_key") return territoryName(row.key);
+    const value = tableValue(row, sort.key);
+    return sort.key === "country" && typeof value === "string" ? regionLabel(value.toUpperCase(), value, lang) : value;
+  };
   const sorted = [...filtered].sort((a, b) => {
-    if (!sort.key && d.collection === "mix") return (b.period || "").localeCompare(a.period || "") || a.key.localeCompare(b.key);
-    const av = sort.key === "_key" ? a.key : tableValue(a, sort.key);
-    const bv = sort.key === "_key" ? b.key : tableValue(b, sort.key);
+    if (!sort.key && temporal) return (d.collection === "mix" ? (b.period || "").localeCompare(a.period || "") : 0) || compareTerritories(a.key, b.key);
+    const av = sortValue(a);
+    const bv = sortValue(b);
     if (av == null) return bv == null ? 0 : 1;
     if (bv == null) return -1;
     return (
@@ -839,8 +838,10 @@ function Explorer({
           r.values[k] == null ? [] : Array.isArray(r.values[k]) ? r.values[k].map(String) : [String(r.values[k])]
         )
       )
-    ).sort() as string[];
-  const regions = Array.from(new Set(rows.map((r) => r.key))).sort();
+    ).sort((a: string, b: string) => k === "country"
+      ? regionLabel(a.toUpperCase(), a, lang).localeCompare(regionLabel(b.toUpperCase(), b, lang), lang)
+      : a.localeCompare(b, lang)) as string[];
+  const regions = Array.from(new Set(rows.map((r) => r.key))).sort(compareTerritories);
   const chartRegion = d.collection === "mix" ? (world ? "world" : region || "world") : selectedTerritory(region, world);
   const selectedRow = periodRows.find((r) => r.key === chartRegion && matches(r));
   const historyRows = (d.collection === "mix" && chartRegion === "world" && !world ? worldRows : rows)
@@ -1114,6 +1115,7 @@ function Explorer({
                   "Some missing values are filled in, including by carrying forward values from a previous period. The data does not indicate whether all observations are available."
                 )}
               </p>
+              {d.collection === "factor" && d.id.endsWith("-green") && <p>{tr(renewableFactorExplanation, lang)}</p>}
               <a href={`#sources-${d.collection}`}>
                 {t("Comprendre les sources et les limites", "Understand the sources and limitations")}
               </a>
