@@ -353,6 +353,7 @@ export function MixMap({
   green: boolean;
 }) {
   const tip = useTooltip(rows);
+  const [suppressed, setSuppressed] = useState("");
   const byKey = new Map(rows.map((row) => [row.key, row]));
   return (
     <figure className="map mix-map" onPointerLeave={tip.close}>
@@ -405,9 +406,13 @@ export function MixMap({
               stroke="white"
               strokeWidth={0.4}
               aria-pressed={selected === key}
+              data-hover-suppressed={suppressed === key ? "true" : undefined}
               {...bindings}
+              onPointerEnter={(event) => { setSuppressed(""); bindings.onPointerEnter(event); }}
+              onPointerLeave={() => { setSuppressed(""); tip.close(); }}
               onClick={(e) => {
                 bindings.onClick(e);
+                setSuppressed(selected === key ? key : "");
                 onSelect(selected === key ? "" : key);
               }}
               onKeyDown={(e) => {

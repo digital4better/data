@@ -731,8 +731,8 @@ function Explorer({
           : String(r.values[k]) === v)
     );
   };
-  const periodRows = temporal ? rowsAtPeriod(rows, activePeriod) : rows;
-  const mapRows = periodRows.filter((r) => matches(r, false));
+  const periodRows = useMemo(() => temporal ? rowsAtPeriod(rows, activePeriod) : rows, [rows, activePeriod, temporal]);
+  const mapRows = useMemo(() => periodRows.filter((r) => matches(r, false)), [periodRows, q, names, filters, lang]);
   const filtered = periodRows.filter((r) => matches(r));
   const sorted = [...filtered].sort((a, b) => {
     const av = sort.key === "_key" ? a.key : tableValue(a, sort.key);
@@ -1257,7 +1257,8 @@ function FactorMap({
   names: Record<string, string>;
   period: string;
 }) {
-  const tip = useTooltip(rows);
+  const tip = useTooltip(useMemo(() => ({ rows, metric }), [rows, metric]));
+  const [suppressed, setSuppressed] = useState("");
   const values = Object.fromEntries(rows.map((r) => [r.key, r.values[metric]]));
   const numbers = Object.values(values).filter((v) => typeof v === "number" && Number.isFinite(v));
   const max = Math.max(0, ...numbers);
@@ -1286,8 +1287,15 @@ function FactorMap({
               stroke="white"
               strokeWidth={0.4}
               aria-pressed={selected === targetKey}
+              data-hover-suppressed={suppressed === targetKey ? "true" : undefined}
               {...tip.bind(message)}
-              onClick={() => onSelect(selected === targetKey ? "" : targetKey)}
+              onPointerEnter={(event) => { setSuppressed(""); tip.bind(message).onPointerEnter(event); }}
+              onPointerLeave={() => { setSuppressed(""); tip.close(); }}
+              onClick={(event) => {
+                tip.bind(message).onClick(event);
+                setSuppressed(selected === targetKey ? targetKey : "");
+                onSelect(selected === targetKey ? "" : targetKey);
+              }}
               onKeyDown={(e) => {
                 tip.bind(message).onKeyDown(e);
                 if (e.key === "Enter" || e.key === " ") onSelect(selected === targetKey ? "" : targetKey);

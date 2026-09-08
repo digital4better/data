@@ -672,10 +672,11 @@ td dt {
   background: #426a99;
 }
 .map path[role="button"] {
+  outline: none;
   cursor: pointer;
 }
-.map svg path[role="button"]:hover,
-.map svg path[role="button"]:focus,
+.map svg path[role="button"]:not([data-hover-suppressed="true"]):hover,
+.map svg path[role="button"]:not([data-hover-suppressed="true"]):focus-visible,
 .map svg path[role="button"][aria-pressed="true"] {
   fill: #80b7be;
   outline: none;
