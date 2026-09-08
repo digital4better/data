@@ -376,7 +376,10 @@ export function MixMap({
           </p>
         )}
       </figcaption>
-      <svg viewBox="0 130 800 400" role="group" aria-label={t(lang, "Carte du mix électrique", "Electricity mix map")}>
+      <svg viewBox="0 130 800 400" role="group" aria-label={t(lang, "Carte du mix électrique", "Electricity mix map")}
+        onClick={(event) => {
+          if (event.target === event.currentTarget) { onSelect(""); tip.close(); }
+        }}>
         {Object.entries(displayPaths(paths, countryLevel)).map(([pathKey, path]) => {
           const key = countryLevel ? pathKey.slice(0, 2) : pathKey;
           const row = byKey.get(key);
@@ -413,11 +416,11 @@ export function MixMap({
               {...bindings}
               onClick={(e) => {
                 bindings.onClick(e);
-                onSelect(key);
+                onSelect(selected === key ? "" : key);
               }}
               onKeyDown={(e) => {
                 bindings.onKeyDown(e);
-                if (e.key === "Enter" || e.key === " ") onSelect(key);
+                if (e.key === "Enter" || e.key === " ") onSelect(selected === key ? "" : key);
               }}
             />
           );

@@ -1253,6 +1253,9 @@ function FactorMap({
         viewBox="0 130 800 400"
         role="group"
         aria-label={text("Carte des facteurs d’impact", "Impact factor map", lang)}
+        onClick={(event) => {
+          if (event.target === event.currentTarget) { onSelect(""); tip.close(); }
+        }}
       >
         {Object.entries(displayPaths(paths, countryLevel)).map(([key, path]) => {
           const targetKey = countryLevel ? key.slice(0, 2) : key;
@@ -1270,10 +1273,10 @@ function FactorMap({
               strokeWidth={0.4}
               aria-pressed={selected === targetKey}
               {...tip.bind(message)}
-              onClick={() => onSelect(targetKey)}
+              onClick={() => onSelect(selected === targetKey ? "" : targetKey)}
               onKeyDown={(e) => {
                 tip.bind(message).onKeyDown(e);
-                if (e.key === "Enter" || e.key === " ") onSelect(targetKey);
+                if (e.key === "Enter" || e.key === " ") onSelect(selected === targetKey ? "" : targetKey);
               }}
             />
           );
