@@ -53,6 +53,7 @@ export function useTooltip(resetKey?: unknown) {
       "aria-label": message,
       "aria-describedby": tip?.text === message ? id : undefined,
       onPointerEnter: (e: React.PointerEvent<Element>) => show(e.currentTarget, message, content, e),
+      onPointerLeave: () => setTip(null),
       onFocus: (e: React.FocusEvent<Element>) => {
         const target = e.currentTarget;
         requestAnimationFrame(() => {
