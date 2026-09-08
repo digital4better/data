@@ -4,7 +4,7 @@ import { termLabel, regionLabel, languageStorageKey } from "./localization";
 import React, { useEffect, useMemo, useState, useRef, useId } from "react";
 import { collections, guides, impacts, fieldLabels, repository, license, tr, datasetTitle } from "./content.mjs";
 import { rowsOf, subsetOf, csvSubset, Row } from "./data";
-import { Bars, CloudMap, CatalogCharts, MixMap, useTooltip } from "./charts";
+import { Bars, CloudMap, CatalogCharts, MixMap, MixHistory, useTooltip } from "./charts";
 import { selectedTerritory, rowsAtPeriod, allowedFilters, resolvePeriod, displayPaths } from "./chart-data";
 import { Logo } from "./assets/logo";
 import "./style.css";
@@ -55,8 +55,8 @@ const shortLabel = (key: string, lang: string) => (shortLabels[key] ? tr(shortLa
 const mixPercent = (value: unknown, lang: string) => typeof value === "number" && Number.isFinite(value)
   ? new Intl.NumberFormat(lang, { style: "percent", maximumFractionDigits: 2 }).format(value) : "—";
 const tableValue = (row: Row, key: string) =>
-  key.startsWith("parameters.") ? row.values.parameters?.[key.split(".")[1]] : row.values[key];
-const label = (key: string, lang: string) => tr((impacts as any)[key] || (fieldLabels as any)[key] || [termLabel(key, lang), termLabel(key, lang)], lang);
+  key === "period" ? row.period : key.startsWith("parameters.") ? row.values.parameters?.[key.split(".")[1]] : row.values[key];
+const label = (key: string, lang: string) => key === "period" ? text("Période", "Period", lang) : tr((impacts as any)[key] || (fieldLabels as any)[key] || [termLabel(key, lang), termLabel(key, lang)], lang);
 const format = (value: any, lang: string): string =>
   value === null || value === undefined
     ? "—"
@@ -699,7 +699,7 @@ function Explorer({
         .reverse() as string[],
     [rows]
   );
-  const activePeriod = resolvePeriod(period, periods);
+  const activePeriod = d.collection === "mix" ? periods[0] || "" : resolvePeriod(period, periods);
   const numeric = d.fields.filter((k) => rows.some((r) => typeof r.values[k] === "number"));
   const activeMetric = numeric.includes(metric) ? metric : numeric.includes("gwp") ? "gwp" : numeric[0] || "";
   useEffect(() => {
@@ -708,7 +708,7 @@ function Explorer({
     Object.entries({
       dataset: collectionView ? d.id : "",
       q,
-      period: temporal ? activePeriod : "",
+      period: d.collection === "factor" ? activePeriod : "",
       metric: d.collection === "mix" || d.collection === "ai" || (d.collection === "cloud" && d.id.endsWith("regions")) ? "" : d.collection === "cloud" ? (numeric.includes(metric) ? metric : "") : activeMetric,
       region: world ? "" : region,
       ...filters,
@@ -738,8 +738,9 @@ function Explorer({
   };
   const periodRows = useMemo(() => temporal ? rowsAtPeriod(rows, activePeriod) : rows, [rows, activePeriod, temporal]);
   const mapRows = useMemo(() => periodRows.filter((r) => matches(r, false)), [periodRows, q, names, filters, lang]);
-  const filtered = periodRows.filter((r) => matches(r));
+  const filtered = (d.collection === "mix" ? rows : periodRows).filter((r) => matches(r));
   const sorted = [...filtered].sort((a, b) => {
+    if (!sort.key && d.collection === "mix") return (b.period || "").localeCompare(a.period || "") || a.key.localeCompare(b.key);
     const av = sort.key === "_key" ? a.key : tableValue(a, sort.key);
     const bv = sort.key === "_key" ? b.key : tableValue(b, sort.key);
     if (av == null) return bv == null ? 0 : 1;
@@ -751,7 +752,7 @@ function Explorer({
   });
   useEffect(() => setPage(0), [q, activePeriod, activeMetric, region, filters, sort]);
   const baseColumns = d.collection === "mix"
-    ? d.fields
+    ? ["period", ...d.fields]
     : temporal
     ? [activeMetric]
     : d.collection === "ai"
@@ -785,7 +786,7 @@ function Explorer({
     ).sort() as string[];
   const regions = Array.from(new Set(rows.map((r) => r.key))).sort();
   const chartRegion = selectedTerritory(region, world);
-  const selectedRow = filtered.find((r) => r.key === chartRegion);
+  const selectedRow = periodRows.find((r) => r.key === chartRegion && matches(r));
   const historyRows = rows.filter((r) => r.key === chartRegion).sort((a, b) => a.period!.localeCompare(b.period!));
   async function download(ext: string) {
     setExportError("");
@@ -934,14 +935,14 @@ function Explorer({
                       ))}
                   </select>
                 </label>
-                <label>
+                {d.collection !== "mix" && <label>
                   {t("Période", "Period")}
                   <select value={activePeriod} onChange={(e) => setPeriod(e.target.value)}>
                     {periods.map((p) => (
                       <option key={p}>{p}</option>
                     ))}
                   </select>
-                </label>
+                </label>}
                 {!world && (
                   <label>
                     {t("Territoire", "Territory")}
@@ -1008,7 +1009,7 @@ function Explorer({
               {t("Réinitialiser", "Reset")}
             </button>
           </div>
-          {temporal && period && period !== activePeriod && (
+          {d.collection === "factor" && period && period !== activePeriod && (
             <p role="status">
               {t(
                 "Période demandée indisponible dans ce jeu ; période affichée : ",
@@ -1036,7 +1037,7 @@ function Explorer({
               )}
             </p>
           )}
-          {temporal && chartRegion && (
+          {d.collection === "factor" && chartRegion && (
             <section className="selected-territory">
               <div className="section-heading">
                 <h3>
@@ -1046,11 +1047,6 @@ function Explorer({
                   <button onClick={() => setRegion("")}>{t("Effacer la sélection", "Clear selection")}</button>
                 )}
               </div>
-              {d.collection === "mix" && d.id.endsWith("-green") && (
-                <p className="notice">
-                  {t("Scénario green : mix renouvelable renormalisé.", "Green scenario: renormalized renewable mix.")}
-                </p>
-              )}
               {!selectedRow ? (
                 <p role="status">
                   {t(
@@ -1058,7 +1054,7 @@ function Explorer({
                     "No data for this territory with the selected period and filters."
                   )}
                 </p>
-              ) : d.collection === "mix" ? null : (
+              ) : (
                 <p>
                   {label(activeMetric, lang)} / kWh : <strong>{format(selectedRow.values[activeMetric], lang)}</strong>
                 </p>
@@ -1083,32 +1079,34 @@ function Explorer({
               lang={lang}
             />
           )}
-          {temporal && historyRows.length > 0 && (
+          {d.collection === "mix" && historyRows.length > 0 && <MixHistory rows={historyRows} lang={lang}
+            name={chartRegion === "world" ? t("Monde", "World") : names[chartRegion!] || chartRegion!} />}
+          {d.collection === "factor" && historyRows.length > 0 && (
             <details className="history">
               <summary>
                 {t("Évolution temporelle", "Time evolution")} ·{" "}
                 {chartRegion === "world" ? t("Monde", "World") : names[chartRegion!] || chartRegion} ·{" "}
-                {d.collection === "mix" ? t("Toutes les énergies (%)", "All energy sources (%)") : label(activeMetric, lang)}
+                {label(activeMetric, lang)}
               </summary>
-              {d.collection !== "mix" && <Trend
+              <Trend
                 rows={historyRows}
                 metric={activeMetric}
                 lang={lang}
                 unit={label(activeMetric, lang) + " / kWh"}
-              />}
+              />
               <div className="table-wrap">
                 <table>
                   <thead>
                     <tr>
                       <th>{t("Période", "Period")}</th>
-                      {(d.collection === "mix" ? columns : [activeMetric]).map(k => <th key={k} scope="col">{label(k, lang)}{d.collection === "mix" ? " (%)" : ""}</th>)}
+                      {[activeMetric].map(k => <th key={k} scope="col">{label(k, lang)}</th>)}
                     </tr>
                   </thead>
                   <tbody>
                     {historyRows.map((r) => (
                       <tr key={r.period}>
                         <td>{r.period}</td>
-                        {(d.collection === "mix" ? columns : [activeMetric]).map(k => <td key={k}>{d.collection === "mix" ? mixPercent(r.values[k], lang) : format(r.values[k], lang)}</td>)}
+                        {[activeMetric].map(k => <td key={k}>{format(r.values[k], lang)}</td>)}
                       </tr>
                     ))}
                   </tbody>
@@ -1167,7 +1165,7 @@ function Explorer({
                         {k === "_key"
                           ? t("Identifiant / territoire", "Identifier / territory")
                           : temporal
-                          ? label(k, lang) + (d.collection === "mix" ? " (%)" : "")
+                          ? label(k, lang) + (d.collection === "mix" && k !== "period" ? " (%)" : "")
                           : shortLabel(k, lang)}{" "}
                         {sort.key === k ? (sort.direction === 1 ? "↑" : "↓") : "↕"}
                       </button>
@@ -1203,7 +1201,7 @@ function Explorer({
                                 </li>
                               ))}
                           </ul>
-                        ) : d.collection === "mix" ? mixPercent(r.values[k], lang) : (
+                        ) : d.collection === "mix" ? k === "period" ? r.period : mixPercent(r.values[k], lang) : (
                           format(
                             ["input", "output", "type", "architecture", "category"].includes(k)
                               ? Array.isArray(r.values[k]) ? r.values[k].map((v: string) => termLabel(v, lang)) : termLabel(r.values[k], lang)

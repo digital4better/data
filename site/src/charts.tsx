@@ -338,6 +338,45 @@ export function MixComposition({ values, lang }: { values: Record<string, any>; 
     </>
   );
 }
+function MixTooltipContent({ name, period, row, lang }: { name: string; period: string; row?: Row; lang: string }) {
+  return <><strong>{name} · {period}</strong>{row ? <MixComposition values={row.values} lang={lang} />
+    : <p>{t(lang, "Aucune donnée pour cette période.", "No data for this period.")}</p>}</>;
+}
+export function MixHistory({ rows, name, lang }: { rows: Row[]; name: string; lang: string }) {
+  const tip = useTooltip(rows);
+  const keys = [...new Set(rows.flatMap(row => Object.keys(row.values)))];
+  const width = 700, top = 15, height = 210, left = 48;
+  const step = width / Math.max(1, rows.length);
+  const ticks = new Set(Array.from({ length: Math.min(7, rows.length) }, (_, i) => Math.round(i * (rows.length - 1) / Math.max(1, Math.min(7, rows.length) - 1))));
+  return <figure className="data-chart mix-history" onPointerLeave={tip.close}>
+    <figcaption><h3>{t(lang, "Évolution du mix électrique", "Electricity mix over time")} · {name}</h3>
+      <p>{t(lang, "Parts par période (%). Survolez, touchez ou sélectionnez une période au clavier. Le tableau ci-dessous fournit les valeurs détaillées.", "Shares by period (%). Hover, tap or focus a period. Detailed values are available in the table below.")}</p></figcaption>
+    <svg viewBox="0 0 770 260" role="group" aria-label={t(lang, "Évolution empilée du mix électrique", "Stacked electricity mix history")}>
+      {[0, 25, 50, 75, 100].map(value => <g key={value} aria-hidden="true">
+        <line x1={left} x2={left + width} y1={top + height * (1 - value / 100)} y2={top + height * (1 - value / 100)} stroke="#dce5ef" />
+        <text x={left - 6} y={top + height * (1 - value / 100) + 4} textAnchor="end" fontSize="11">{value} %</text>
+      </g>)}
+      {rows.map((row, i) => {
+        let total = 0;
+        const description = `${name} · ${row.period} · ` + keys.map(key => `${termLabel(key, lang)} : ${number(typeof row.values[key] === "number" ? row.values[key] * 100 : undefined, lang)} %`).join(" · ");
+        return <g key={row.period} className="mix-period" {...tip.bind(description,
+          <MixTooltipContent name={name} period={row.period || ""} row={row} lang={lang} />)}>
+          <rect x={left + i * step} y={top} width={Math.max(1, step - 1)} height={height} fill="#edf1f5" />
+          {keys.map(key => {
+            const value = row.values[key];
+            if (typeof value !== "number" || !Number.isFinite(value) || value < 0) return null;
+            const bottom = total; total += value;
+            return <rect key={key} x={left + i * step} y={top + height * (1 - total)} width={Math.max(1, step - 1)} height={height * (total - bottom)} fill={energyColors[key] || "#64748b"} />;
+          })}
+          {ticks.has(i) &&
+            <text x={left + (i + .5) * step} y={top + height + 22} textAnchor="middle" fontSize="10" aria-hidden="true">{row.period}</text>}
+        </g>;
+      })}
+    </svg>
+    <div className="mix-legend">{keys.map(key => <span key={key}><i style={{ background: energyColors[key] || "#64748b" }} />{termLabel(key, lang)}</span>)}</div>
+    {tip.tooltip}
+  </figure>;
+}
 export function MixMap({
   paths,
   rows,
@@ -367,6 +406,7 @@ export function MixMap({
     <figure className="map mix-map" onPointerLeave={tip.close}>
       <figcaption>
         <h3>{t(lang, "Choisir un territoire", "Choose a territory")}</h3>
+        <p>{t(lang, "Dernière période du jeu : ", "Latest dataset period: ")}{period}</p>
         <p>
           {t(
             lang,
@@ -391,18 +431,7 @@ export function MixMap({
           const key = countryLevel ? pathKey.slice(0, 2) : pathKey;
           const row = byKey.get(key);
           const name = names[key] || key;
-          const content = (
-            <>
-              <strong>
-                {name} · {period}
-              </strong>
-              {row ? (
-                <MixComposition values={row.values} lang={lang} />
-              ) : (
-                <p>{t(lang, "Aucune donnée pour cette période.", "No data for this period.")}</p>
-              )}
-            </>
-          );
+          const content = <MixTooltipContent name={name} period={period} row={row} lang={lang} />;
           const message = `${name} (${key}) · ${period} · ${
             row
               ? Object.entries(row.values).map(([energy, value]) => `${termLabel(energy, lang)} : ${typeof value === "number" ? number(value * 100, lang) + " %" : t(lang, "donnée absente", "no data")}`).join(" · ")

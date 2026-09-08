@@ -788,3 +788,10 @@ td dt {
 
 .detail-values { margin:0; padding-left:18px; }
 .detail-values li + li { margin-top:8px; }
+
+.mix-history svg { width:100%; display:block; }
+.mix-period { cursor:pointer; }
+.mix-period:hover rect, .mix-period:focus-visible rect { filter:brightness(1.08); }
+.mix-legend { display:flex; flex-wrap:wrap; gap:8px 16px; font-size:.85rem; }
+.mix-legend span { display:inline-flex; align-items:center; gap:6px; }
+.mix-legend i { display:inline-block; width:10px; height:10px; border-radius:2px; }
