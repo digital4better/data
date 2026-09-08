@@ -5,7 +5,7 @@ import React, { useEffect, useMemo, useState, useRef, useId } from "react";
 import { collections, guides, impacts, fieldLabels, repository, license, tr, datasetTitle, renewableFactorExplanation } from "./content.mjs";
 import { rowsOf, subsetOf, csvSubset, cloudRows, cloudExportRows, Row } from "./data";
 import { Bars, CloudMap, CatalogCharts, MixMap, MixHistory, useTooltip } from "./charts";
-import { selectedTerritory, rowsAtPeriod, allowedFilters, resolvePeriod, displayPaths, mixPaths } from "./chart-data";
+import { selectedTerritory, rowsAtPeriod, allowedFilters, displayPaths, mixPaths } from "./chart-data";
 import { Logo } from "./assets/logo";
 import "./style.css";
 export type Dataset = {
@@ -619,10 +619,8 @@ function Explorer({
     for (const key of ["vendor", "input", "output", "open", "reasoning", "tools", "context", "country"])
       if (!allowedFilters(d.collection, id).includes(key)) params.delete(key);
     if (d.id.split("-")[0] !== id.split("-")[0]) params.delete("region");
-    if (!["factor", "mix"].includes(d.collection)) {
-      params.delete("region");
-      params.delete("period");
-    }
+    params.delete("period");
+    if (!["factor", "mix"].includes(d.collection)) params.delete("region");
     const useCollection = collectionView || id.startsWith("all-");
     if (useCollection) params.set("dataset", id);
     else params.delete("dataset");
@@ -634,16 +632,15 @@ function Explorer({
   const [detailRow, setDetailRow] = useState<Row | null>(null);
   const temporal = ["factor", "mix"].includes(d.collection);
   const world = d.id.startsWith("world-");
-  const [mixScale, mixFrequency] = d.id.split("-");
-  const mixGreen = d.id.endsWith("-green");
-  const mixWorldFile = `world-${mixFrequency}${mixGreen ? "-green" : ""}.json`;
+  const [geographicScale, frequency] = d.id.split("-");
+  const renewablesOnly = d.id.endsWith("-green");
+  const mixWorldFile = `world-${frequency}${renewablesOnly ? "-green" : ""}.json`;
   const [worldSource, setWorldSource] = useState<any>(null);
   const [worldError, setWorldError] = useState(false);
   const [geography, setGeography] = useState<any[]>([]);
   const [source, setSource] = useState<any>(null);
   const [error, setError] = useState("");
   const [q, setQ] = useState("");
-  const [period, setPeriod] = useState("");
   const [metric, setMetric] = useState("");
   const [region, setRegion] = useState("");
   const [filters, setFilters] = useState<Record<string, string>>({});
@@ -656,7 +653,6 @@ function Explorer({
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     setQ(params.get("q") || "");
-    setPeriod(params.get("period") || "");
     setMetric(params.get("metric") || "");
     setRegion(params.get("region") || "");
     setSort({ key: params.get("sort") || "", direction: params.get("direction") === "-1" ? -1 : 1 });
@@ -735,9 +731,9 @@ function Explorer({
   }, [source, allCloud, d.id]);
   const arraySource = allCloud || Array.isArray(source);
   const worldRows = useMemo(() => worldSource ? rowsOf(worldSource, true, true) : [], [worldSource]);
-  const mixDisplayPaths = useMemo(() => d.collection === "mix" ? mixPaths(paths, mixScale, geography) : {}, [paths, mixScale, geography]);
+  const mixDisplayPaths = useMemo(() => d.collection === "mix" ? mixPaths(paths, geographicScale, geography) : {}, [paths, geographicScale, geography]);
   useEffect(() => {
-    if (d.collection === "mix" && ready && source && region && !rows.some((row) => row.key === region)) setRegion("");
+    if (temporal && ready && source && region && !rows.some((row) => row.key === region)) setRegion("");
   }, [source, ready, region, rows]);
   const periods = useMemo(
     () =>
@@ -746,7 +742,7 @@ function Explorer({
         .reverse() as string[],
     [rows]
   );
-  const activePeriod = d.collection === "mix" ? periods[0] || "" : resolvePeriod(period, periods);
+  const activePeriod = periods[0] || "";
   const numeric = d.fields.filter((k) => rows.some((r) => typeof r.values[k] === "number"));
   const activeMetric = numeric.includes(metric) ? metric : numeric.includes("gwp") ? "gwp" : numeric[0] || "";
   useEffect(() => {
@@ -755,7 +751,6 @@ function Explorer({
     Object.entries({
       dataset: collectionView ? d.id : "",
       q,
-      period: d.collection === "factor" ? activePeriod : "",
       metric: d.collection === "mix" || d.collection === "ai" || (d.collection === "cloud" && ["regions", "vms"].includes(cloudSection)) ? "" : d.collection === "cloud" ? (numeric.includes(metric) ? metric : "") : activeMetric,
       region: world ? "" : region,
       ...filters,
@@ -785,7 +780,7 @@ function Explorer({
   };
   const periodRows = useMemo(() => temporal ? rowsAtPeriod(rows, activePeriod) : rows, [rows, activePeriod, temporal]);
   const mapRows = useMemo(() => periodRows.filter((r) => matches(r, false)), [periodRows, q, names, filters, lang]);
-  const filtered = (d.collection === "mix" ? rows : periodRows).filter((r) => matches(r));
+  const filtered = rows.filter((r) => matches(r));
   const territoryName = (key: string) => names[key] || termLabel(key, lang);
   const compareTerritories = (a: string, b: string) => territoryName(a).localeCompare(territoryName(b), lang);
   const sortValue = (row: Row) => {
@@ -794,7 +789,7 @@ function Explorer({
     return sort.key === "country" && typeof value === "string" ? regionLabel(value.toUpperCase(), value, lang) : value;
   };
   const sorted = [...filtered].sort((a, b) => {
-    if (!sort.key && temporal) return (d.collection === "mix" ? (b.period || "").localeCompare(a.period || "") : 0) || compareTerritories(a.key, b.key);
+    if (!sort.key && temporal) return (b.period || "").localeCompare(a.period || "") || compareTerritories(a.key, b.key);
     const av = sortValue(a);
     const bv = sortValue(b);
     if (av == null) return bv == null ? 0 : 1;
@@ -808,7 +803,7 @@ function Explorer({
   const baseColumns = d.collection === "mix"
     ? ["period", ...d.fields]
     : temporal
-    ? [activeMetric]
+    ? ["period", activeMetric]
     : d.collection === "ai"
     ? ["name", "vendor", "open", "architecture", "parameters.active", "parameters.total", "context", "input", "output", "reasoning", "tools"]
     : d.collection === "cloud"
@@ -957,10 +952,10 @@ function Explorer({
             )}
             {temporal && (
               <>
-                {d.collection === "mix" ? <>
+                <>
                   <label>
                     {t("Échelle géographique", "Geographic level")}
-                    <select value={mixScale} onChange={(event) => changeDataset(`${event.target.value}-${mixFrequency}${mixGreen ? "-green" : ""}`)}>
+                    <select value={geographicScale} onChange={(event) => changeDataset(`${event.target.value}-${frequency}${renewablesOnly ? "-green" : ""}`)}>
                       {world && <option value="world">{t("Monde", "World")}</option>}
                       <option value="continent">{t("Continents", "Continents")}</option>
                       <option value="country">{t("Pays", "Countries")}</option>
@@ -969,38 +964,19 @@ function Explorer({
                   </label>
                   <label>
                     {t("Fréquence", "Frequency")}
-                    <select value={mixFrequency} onChange={(event) => changeDataset(`${mixScale}-${event.target.value}${mixGreen ? "-green" : ""}`)}>
+                    <select value={frequency} onChange={(event) => changeDataset(`${geographicScale}-${event.target.value}${renewablesOnly ? "-green" : ""}`)}>
                       <option value="yearly">{t("Annuelle", "Annual")}</option>
                       <option value="monthly">{t("Mensuelle", "Monthly")}</option>
                     </select>
                   </label>
                   <label>
-                    {t("Mix affiché", "Displayed mix")}
-                    <select value={mixGreen ? "green" : "all"} onChange={(event) => changeDataset(`${mixScale}-${mixFrequency}${event.target.value === "green" ? "-green" : ""}`)}>
+                    {d.collection === "factor" ? t("Mix de référence", "Reference mix") : t("Mix affiché", "Displayed mix")}
+                    <select value={renewablesOnly ? "green" : "all"} onChange={(event) => changeDataset(`${geographicScale}-${frequency}${event.target.value === "green" ? "-green" : ""}`)}>
                       <option value="all">{t("Toutes les énergies", "All energy sources")}</option>
                       <option value="green">{t("Renouvelables uniquement", "Renewables only")}</option>
                     </select>
                   </label>
-                </> : <label>
-                  {t("Jeu / fréquence", "Dataset / frequency")}
-                  <select value={d.id} onChange={(e) => changeDataset(e.target.value)}>
-                    {catalog.datasets
-                      .filter((x) => x.collection === d.collection)
-                      .map((x) => (
-                        <option key={x.id} value={x.id}>
-                          {datasetTitle(x.file, lang)}
-                        </option>
-                      ))}
-                  </select>
-                </label>}
-                {d.collection !== "mix" && <label>
-                  {t("Période", "Period")}
-                  <select value={activePeriod} onChange={(e) => setPeriod(e.target.value)}>
-                    {periods.map((p) => (
-                      <option key={p}>{p}</option>
-                    ))}
-                  </select>
-                </label>}
+                </>
                 {!world && (
                   <label>
                     {t("Territoire", "Territory")}
@@ -1057,7 +1033,6 @@ function Explorer({
             <button
               onClick={() => {
                 setQ("");
-                setPeriod("");
                 setRegion("");
                 setMetric("");
                 setFilters({});
@@ -1090,18 +1065,9 @@ function Explorer({
               lang={lang}
               selected={region}
               onSelect={setRegion}
-              green={mixGreen}
-              subdivisionLevel={mixScale === "subdivision"}
+              green={renewablesOnly}
+              subdivisionLevel={geographicScale === "subdivision"}
             />
-          )}
-          {d.collection === "factor" && period && period !== activePeriod && (
-            <p role="status">
-              {t(
-                "Période demandée indisponible dans ce jeu ; période affichée : ",
-                "Requested period unavailable in this dataset; showing: "
-              )}
-              {activePeriod}.
-            </p>
           )}
           {temporal && (
             <aside className="notice" aria-label={t("À propos des données", "About the data")}>
@@ -1190,24 +1156,6 @@ function Explorer({
                 lang={lang}
                 unit={label(activeMetric, lang) + " / kWh"}
               />
-              <div className="table-wrap">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>{t("Période", "Period")}</th>
-                      {[activeMetric].map(k => <th key={k} scope="col">{label(k, lang)}</th>)}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {historyRows.map((r) => (
-                      <tr key={r.period}>
-                        <td>{r.period}</td>
-                        {[activeMetric].map(k => <td key={k}>{format(r.values[k], lang)}</td>)}
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
             </details>
           )}
           <div className={`section-heading${allCloud ? " cloud-export-heading" : ""}`}>
@@ -1263,6 +1211,7 @@ function Explorer({
             <table>
               <caption>
                 {t("Aperçu des données — tiret : valeur absente", "Data preview — dash: missing value")}
+                {temporal && <> · {t("Toutes les périodes", "All periods")}</>}
               </caption>
               <thead>
                 <tr>
@@ -1470,6 +1419,7 @@ function FactorMap({
       </div>
       {tip.tooltip}
       <figcaption>
+        {text("Dernière période du jeu", "Latest dataset period", lang)} : {period} ·{" "}
         {label(metric, lang)} / kWh · {text("Impact faible", "Low impact", lang)} (0){" "}
         <span className="gradient" style={{ background: `linear-gradient(to right, ${impactColors.join(", ")})` }} />{" "}
         {text("Impact élevé", "High impact", lang)} ({format(max, lang)}) ·{" "}
