@@ -292,40 +292,52 @@ const validateReferenceFactors = (directory: string, input: unknown): ReferenceF
   });
 };
 
-const validateElectricityFactors = (factors: ReferenceFactor[]) => {
+const synchronizeElectricityFactors = (factors: ReferenceFactor[]): ReferenceFactor[] => {
   const sources = {
     FR: JSON.parse(readFileSync("./data/factor/country-yearly.json", "utf-8")).FR,
     EU: JSON.parse(readFileSync("./data/factor/continent-yearly.json", "utf-8")).Europe,
   } as Record<string, Record<string, Partial<Record<ReferenceFactorImpact, number>>>>;
+  const synchronized: ReferenceFactor[] = [];
 
   for (const [location, periods] of Object.entries(sources)) {
-    const electricityFactors = factors.filter(
+    const template = factors.find(
       ({ id, location: factorLocation }) => id === "electricity-grid" && factorLocation === location
     );
-    const actualPeriods = electricityFactors.map(({ period }) => period).sort();
-    const expectedPeriods = Object.keys(periods).sort();
-    if (actualPeriods.join(",") !== expectedPeriods.join(",")) {
-      throw new Error(`facility electricity periods for ${location} do not match their source`);
+    if (!template) throw new Error(`facility electricity metadata for ${location} is missing`);
+    if (!periods || Object.keys(periods).length === 0) {
+      throw new Error(`facility electricity source for ${location} is empty`);
     }
 
-    for (const factor of electricityFactors) {
+    for (const [period, impacts] of Object.entries(periods)) {
+      const factor = { ...template, period };
       for (const impact of REFERENCE_FACTOR_IMPACTS) {
-        if (factor[impact] !== periods[factor.period]?.[impact]) {
-          throw new Error(`facility electricity ${impact} for ${location}:${factor.period} does not match its source`);
+        const value = impacts?.[impact];
+        if (!Number.isFinite(value) || value < 0) {
+          throw new Error(`facility electricity source has an invalid ${impact} for ${location}:${period}`);
         }
+        factor[impact] = value;
       }
+      synchronized.push(factor);
     }
   }
+
+  return [
+    ...synchronized,
+    ...factors.filter(({ id, location }) => id !== "electricity-grid" || !Object.keys(sources).includes(location)),
+  ];
 };
 
 const generateReferenceFactors = async () => {
   process.stdout.write(`Exporting reference factors...\n`);
   for (const directory of REFERENCE_FACTOR_DIRECTORIES) {
-    const factors = validateReferenceFactors(
+    let factors = validateReferenceFactors(
       directory,
       JSON.parse(readFileSync(`./data/${directory}/factors.json`, "utf-8"))
     );
-    if (directory === "facility") validateElectricityFactors(factors);
+    if (directory === "facility") {
+      factors = validateReferenceFactors(directory, synchronizeElectricityFactors(factors));
+      writeFileSync(`./data/${directory}/factors.json`, JSON.stringify(factors, null, 2) + "\n");
+    }
     exportToCsv(`./data/${directory}/factors.csv`, factors, [...REFERENCE_FACTOR_HEADERS]);
   }
 };

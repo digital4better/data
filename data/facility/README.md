@@ -9,7 +9,7 @@ Annual environmental impact factors for purchased building energy. Values are ex
 - `FR`: [`data/factor/country-yearly.json`](../factor/country-yearly.json), key `FR`;
 - `EU`: [`data/factor/continent-yearly.json`](../factor/continent-yearly.json), key `Europe`.
 
-All nine supported impacts are retained. The build validates that these records remain identical to their source files, so an upstream electricity update must be reviewed and copied explicitly.
+All nine supported impacts are retained. Each build synchronizes these records with the freshly generated annual factors, including new periods, and exports both JSON and CSV. Missing or invalid source impacts still fail the build. Combustible factors remain manually maintained.
 
 ## Combustibles
 
