@@ -165,3 +165,19 @@ test("country maps combine subdivision outlines into one selectable territory", 
   assert.ok(combined.US.includes(paths["US-CA"]) && combined.US.includes(paths["US-NY"]));
   assert.deepEqual(displayPaths(paths, false), paths);
 });
+
+const { termLabel, regionLabel } = require('../src/localization.ts');
+test('source energy and equipment keys have localized presentation without changing identifiers', () => {
+  for (const file of ['data/energy/energy-impacts.json', 'data/equipment/energy.json']) {
+    const source = JSON.parse(fs.readFileSync(file, 'utf8'));
+    for (const key of Object.keys(source)) {
+      assert.ok(termLabel(key, 'fr'));
+      assert.ok(termLabel(key, 'en'));
+      if (!['smartphone'].includes(key)) assert.notEqual(termLabel(key, 'fr'), key);
+    }
+  }
+  assert.equal(termLabel('Other Renewables', 'fr'), 'Autres énergies renouvelables');
+  assert.equal(termLabel('claude-opus-4', 'fr'), 'claude-opus-4');
+  assert.equal(regionLabel('DE', 'Germany', 'fr'), 'Allemagne');
+  assert.equal(termLabel('text', 'fr'), 'Texte');
+});

@@ -44,7 +44,7 @@ export const collections = [
       "Shares between 0 and 1 in the files; percentages in charts.",
     ],
     limits: [
-      "Le mix combine production et importations selon la méthode du générateur. « Green » sélectionne Bioenergy, Hydro, Solar et Wind et renormalise leurs parts ; ce n’est pas une mesure contractuelle d’électricité renouvelable.",
+      "Le mix combine production et importations selon la méthode du générateur. Le scénario « green » sélectionne la bioénergie, l’hydraulique, le solaire et l’éolien et renormalise leurs parts ; ce n’est pas une mesure contractuelle d’électricité renouvelable.",
       "The mix combines generation and imports using the generator methodology. “Green” selects Bioenergy, Hydro, Solar and Wind and renormalizes their shares; it is not a contractual renewable-electricity measurement.",
     ],
     sources: [["Ember", "https://ember-climate.org/data-catalogue/"]],
@@ -289,7 +289,7 @@ export function datasetTitle(file, lang) {
     subdivision: ["Subdivisions", "Subdivisions"],
     yearly: ["Annuel", "Annual"],
     monthly: ["Mensuel", "Monthly"],
-    green: ["Green", "Green"],
+    green: ["Scénario renouvelable (green)", "Renewable scenario (green)"],
     regions: ["Régions", "Regions"],
     vms: ["Machines virtuelles", "Virtual machines"],
     cpus: ["Processeurs", "Processors"],

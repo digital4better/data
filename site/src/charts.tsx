@@ -1,3 +1,4 @@
+import { termLabel, regionLabel } from "./localization";
 import React, { useEffect, useId, useState } from "react";
 import type { Row } from "./data";
 import { countsBy, numericBars, groupedLocations, displayPaths } from "./chart-data";
@@ -167,9 +168,7 @@ export function CloudMap({ rows, lang }: { rows: Row[]; lang: string }) {
           const description = group
             .map(
               ({ values: v }) =>
-                `${v.id} · ${v.location || v.name}\n${String(v.provider || "").toUpperCase()} · ${String(
-                  v.country || ""
-                ).toUpperCase()}\nPUE ${number(v.pue, lang)} · WUE ${number(v.wue, lang)} · REF ${number(v.ref, lang)}`
+                `${v.id} · ${v.location || v.name}\n${String(v.provider || "").toUpperCase()} · ${regionLabel(String(v.country || "").toUpperCase(), String(v.country || ""), lang)}\nPUE ${number(v.pue, lang)} · WUE ${number(v.wue, lang)} · REF ${number(v.ref, lang)}`
             )
             .join("\n\n");
           return (
@@ -248,7 +247,7 @@ export function CatalogCharts({
             name: [
               t(lang, "Raisonnement", "Reasoning"),
               t(lang, "Outils", "Tools"),
-              t(lang, "Indicateur open", "Open flag"),
+              t(lang, "Indicateur d’ouverture", "Open flag"),
             ][i],
             value: rows.filter((r) => r.values[key] === true).length,
           }))}
@@ -272,7 +271,7 @@ export function CatalogCharts({
           <Bars
             key={unit}
             title={`${metricLabel}${unit ? " · " + unit : ""}`}
-            items={entries.map((b) => ({ ...b, unit: "" }))}
+            items={entries.map((b) => ({ ...b, name: termLabel(b.name, lang), unit: "" }))}
             initialLimit={20}
             lang={lang}
             note={`${
@@ -321,7 +320,7 @@ export function MixComposition({ values, lang }: { values: Record<string, any>; 
           <div key={key}>
             <span>
               <i style={{ background: energyColors[key] || "#64748b" }} />
-              {key}
+              {termLabel(key, lang)}
             </span>
             <strong>{number(value * 100, lang)} %</strong>
           </div>
@@ -360,7 +359,7 @@ export function MixMap({
       <figcaption>
         <h3>
           {t(lang, "Part de ", "Share of ")}
-          {metric} · {period}
+          {termLabel(metric, lang)} · {period}
         </h3>
         <p>
           {t(
@@ -395,7 +394,7 @@ export function MixMap({
           );
           const message = `${name} (${key}) · ${period} · ${
             typeof value === "number"
-              ? number(value * 100, lang) + " % " + metric
+              ? number(value * 100, lang) + " % " + termLabel(metric, lang)
               : t(lang, "donnée absente", "no data")
           }`;
           const bindings = tip.bind(message, content);

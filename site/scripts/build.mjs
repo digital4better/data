@@ -155,7 +155,7 @@ for (const lang of ["fr", "en"])
     writeFileSync(`${dir}/index.html`, html);
   }
 // GitHub Pages serves static files: an immediate refresh also works without JavaScript.
-writeFileSync(`${out}/index.html`, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Digital4Better Open Data</title><link rel="canonical" href="${url("en", "")}"><meta http-equiv="refresh" content="0; url=${base}en/"></head><body><p><a href="${base}en/">Continue to the English catalog</a> · <a href="${base}fr/" lang="fr">Catalogue français</a></p></body></html>`);
+writeFileSync(`${out}/index.html`, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Digital4Better Open Data</title><link rel="canonical" href="${url("en", "")}"><script>try { var saved = localStorage.getItem('d4b-data-language'); } catch (_) {} var language = saved === 'fr' || saved === 'en' ? saved : ((navigator.languages && navigator.languages[0]) || navigator.language || 'en').toLowerCase().split('-')[0] === 'fr' ? 'fr' : 'en'; location.replace('${base}' + language + '/' + location.search + location.hash);</script><noscript><meta http-equiv="refresh" content="0; url=${base}en/"></noscript></head><body><p><a href="${base}en/">Continue to the English catalog</a> · <a href="${base}fr/" lang="fr">Catalogue français</a></p></body></html>`);
 writeFileSync(
   `${out}/sitemap.xml`,
   `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${["fr", "en"]

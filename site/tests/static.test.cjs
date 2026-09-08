@@ -67,7 +67,8 @@ test("project root redirects without JavaScript and missing pages are not indexe
   assert.ok(html.includes('http-equiv="refresh" content="0; url=/data/en/"'));
   assert.ok(html.includes(`rel="canonical" href="${origin}/data/en/"`));
   assert.ok(html.includes('href="/data/fr/"'));
-  assert.ok(!html.includes('<script'));
+  assert.ok(html.includes('<noscript><meta http-equiv="refresh"'));
+  assert.ok(html.includes('location.replace'));
   assert.ok(fs.readFileSync(`${root}/404.html`, "utf8").includes('name="robots" content="noindex"'));
 });
 
@@ -93,5 +94,24 @@ test("unique descriptions and complete machine discovery across all pages", () =
   }
   for (const d of catalog.datasets) {
     assert.ok(d.pages.fr && d.pages.en && d.distribution.length);
+  }
+});
+
+test("root language routing respects saved choice, browser preference and storage failures", () => {
+  const vm = require('node:vm');
+  const html = fs.readFileSync(`${root}/index.html`, 'utf8');
+  const script = html.match(/<script>(.*?)<\/script>/s)[1];
+  for (const [saved, languages, expected, blocked] of [
+    [null, ['fr-FR', 'en'], 'fr'], [null, ['en-US', 'fr'], 'en'],
+    ['en', ['fr'], 'en'], ['fr', ['en'], 'fr'],
+    ['invalid', ['fr-CA'], 'fr'], [null, ['de'], 'en'], [null, ['fr'], 'fr', true],
+  ]) {
+    let destination;
+    vm.runInNewContext(script, {
+      localStorage: { getItem: () => { if (blocked) throw new Error('denied'); return saved; } },
+      navigator: { languages },
+      location: { search: '?q=test', hash: '#main', replace: (value) => { destination = value; } },
+    });
+    assert.equal(destination, `/data/${expected}/?q=test#main`);
   }
 });

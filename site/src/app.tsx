@@ -1,3 +1,4 @@
+import { termLabel, regionLabel, languageStorageKey } from "./localization";
 import React, { useEffect, useMemo, useState } from "react";
 import { collections, guides, impacts, fieldLabels, repository, license, tr, datasetTitle } from "./content.mjs";
 import { rowsOf, subsetOf, csvSubset, Row } from "./data";
@@ -36,8 +37,8 @@ const shortLabels: Record<string, string[]> = {
   ref: ["REF", "REF"],
   country: ["Pays", "Country"],
 };
-const shortLabel = (key: string, lang: string) => (shortLabels[key] ? tr(shortLabels[key], lang) : key);
-const label = (key: string, lang: string) => tr((impacts as any)[key] || (fieldLabels as any)[key] || [key, key], lang);
+const shortLabel = (key: string, lang: string) => (shortLabels[key] ? tr(shortLabels[key], lang) : label(key, lang));
+const label = (key: string, lang: string) => tr((impacts as any)[key] || (fieldLabels as any)[key] || [termLabel(key, lang), termLabel(key, lang)], lang);
 const format = (value: any, lang: string): string =>
   value === null || value === undefined
     ? "—"
@@ -121,6 +122,7 @@ export function App({
                   <a
                     key={l}
                     href={`${base}${l}/${route ? route + "/" : ""}${search}`}
+                    onClick={() => { try { localStorage.setItem(languageStorageKey, l); } catch {} }}
                     hrefLang={l}
                     lang={l}
                     aria-current={lang === l ? "page" : undefined}
@@ -439,7 +441,7 @@ export function App({
             <a href={license}>ODbL 1.0</a>
             <a href={`${base}catalog.json`}>{t("Catalogue JSON", "JSON catalog")}</a>
             <a href={`${base}llms.txt`}>llms.txt</a>
-            <a href={`${base}sitemap.xml`}>Sitemap</a>
+            <a href={`${base}sitemap.xml`}>{t("Plan du site", "Sitemap")}</a>
             <a href={repository + "/issues"}>{t("Signaler une erreur", "Report an issue")}</a>
             <a href="https://digital4better.com">Digital4Better ↗</a>
             <a href="https://www.fruggr.io">fruggr ↗</a>
@@ -636,7 +638,7 @@ function Explorer({
             Object.fromEntries(
               rows.map((r: any) => [
                 r.type === "continent" ? r.name : r.subdivision ? `${r["alpha-2"]}-${r.subdivision}` : r["alpha-2"],
-                r.name,
+                regionLabel(r.type === "continent" ? r.name : r.subdivision ? `${r["alpha-2"]}-${r.subdivision}` : r["alpha-2"], r.name, lang),
               ])
             )
           );
@@ -685,7 +687,7 @@ function Explorer({
     });
   }, [q, activePeriod, activeMetric, region, filters, sort, ready, source]);
   const matches = (r: Row, includeRegion = true) => {
-    if (q && !`${r.key} ${names[r.key] || ""} ${JSON.stringify(r.values)}`.toLowerCase().includes(q.toLowerCase()))
+    if (q && !`${r.key} ${names[r.key] || ""} ${termLabel(r.key, lang)} ${Object.values(r.values).flat().map((v) => typeof v === "string" ? termLabel(v, lang) : "").join(" ")} ${JSON.stringify(r.values)}`.toLowerCase().includes(q.toLowerCase()))
       return false;
     if (includeRegion && region && !world && r.key !== region) return false;
     return Object.entries(filters).every(
@@ -915,7 +917,7 @@ function Explorer({
                   <option value="">{t("Tous", "All")}</option>
                   {options(k).map((v) => (
                     <option key={v} value={v}>
-                      {v === "true" ? t("Oui", "Yes") : v === "false" ? t("Non", "No") : v}
+                      {v === "true" ? t("Oui", "Yes") : v === "false" ? t("Non", "No") : k === "country" ? regionLabel(v.toUpperCase(), v, lang) : termLabel(v, lang)}
                     </option>
                   ))}
                 </select>
@@ -1119,7 +1121,7 @@ function Explorer({
               <tbody>
                 {sorted.slice(page * 25, (page + 1) * 25).map((r) => (
                   <tr key={`${r.key}-${r.period}`}>
-                    {!Array.isArray(source) && <th scope="row">{names[r.key] || r.key}</th>}
+                    {!Array.isArray(source) && <th scope="row">{names[r.key] || termLabel(r.key, lang)}</th>}
                     {columns.map((k) => (
                       <td key={k}>
                         {k === "details" ? (
@@ -1147,7 +1149,12 @@ function Explorer({
                               ))}
                           </ul>
                         ) : (
-                          format(r.values[k], lang)
+                          format(
+                            ["input", "output", "type", "architecture", "category"].includes(k)
+                              ? Array.isArray(r.values[k]) ? r.values[k].map((v: string) => termLabel(v, lang)) : termLabel(r.values[k], lang)
+                              : k === "country" && typeof r.values[k] === "string" ? regionLabel(r.values[k].toUpperCase(), r.values[k], lang)
+                              : k === "estimated" && Array.isArray(r.values[k]) ? r.values[k].map((v: string) => label(v, lang))
+                              : r.values[k], lang)
                         )}
                       </td>
                     ))}
