@@ -346,7 +346,31 @@ export function MixHistory({ rows, name, lang }: { rows: Row[]; name: string; la
   const tip = useTooltip(rows);
   const keys = [...new Set(rows.flatMap(row => Object.keys(row.values)))];
   const width = 700, top = 15, height = 210, left = 48;
-  const step = width / Math.max(1, rows.length);
+  const step = width / Math.max(1, rows.length - 1);
+  const x = (i: number) => left + (rows.length === 1 ? width / 2 : i * step);
+  const y = (share: number) => top + height * (1 - share);
+  const totals = rows.map(row => {
+    let total = 0;
+    if (keys.some(key => typeof row.values[key] !== "number" || !Number.isFinite(row.values[key]) || row.values[key] < 0)) return null;
+    return keys.map(key => { const bottom = total; total += row.values[key]; return [bottom, total]; });
+  });
+  const areas = keys.map((key, layer) => {
+    const segments: string[] = [];
+    let run: number[] = [];
+    const flush = () => {
+      if (!run.length) return;
+      const points = run.length === 1 ? [
+        [Math.max(left, x(run[0]) - step / 2), run[0]],
+        [Math.min(left + width, x(run[0]) + step / 2), run[0]],
+      ] : run.map(i => [x(i), i]);
+      segments.push("M" + points.map(([px, i]) => `${px},${y(totals[i]![layer][1])}`).join(" L") +
+        " L" + [...points].reverse().map(([px, i]) => `${px},${y(totals[i]![layer][0])}`).join(" L") + " Z");
+      run = [];
+    };
+    totals.forEach((values, i) => { if (values) run.push(i); else flush(); });
+    flush();
+    return <path key={key} d={segments.join(" ")} fill={energyColors[key] || "#64748b"} />;
+  });
   const ticks = new Set(Array.from({ length: Math.min(7, rows.length) }, (_, i) => Math.round(i * (rows.length - 1) / Math.max(1, Math.min(7, rows.length) - 1))));
   return <figure className="data-chart mix-history" onPointerLeave={tip.close}>
     <figcaption><h3>{t(lang, "Évolution du mix électrique", "Electricity mix over time")} · {name}</h3>
@@ -356,20 +380,19 @@ export function MixHistory({ rows, name, lang }: { rows: Row[]; name: string; la
         <line x1={left} x2={left + width} y1={top + height * (1 - value / 100)} y2={top + height * (1 - value / 100)} stroke="#dce5ef" />
         <text x={left - 6} y={top + height * (1 - value / 100) + 4} textAnchor="end" fontSize="11">{value} %</text>
       </g>)}
+      <g aria-hidden="true" pointerEvents="none" className="mix-areas">
+        <rect x={left} y={top} width={width} height={height} fill="#edf1f5" />
+        {areas}
+      </g>
       {rows.map((row, i) => {
-        let total = 0;
         const description = `${name} · ${row.period} · ` + keys.map(key => `${termLabel(key, lang)} : ${number(typeof row.values[key] === "number" ? row.values[key] * 100 : undefined, lang)} %`).join(" · ");
         return <g key={row.period} className="mix-period" {...tip.bind(description,
           <MixTooltipContent name={name} period={row.period || ""} row={row} lang={lang} />)}>
-          <rect x={left + i * step} y={top} width={Math.max(1, step - 1)} height={height} fill="#edf1f5" />
-          {keys.map(key => {
-            const value = row.values[key];
-            if (typeof value !== "number" || !Number.isFinite(value) || value < 0) return null;
-            const bottom = total; total += value;
-            return <rect key={key} x={left + i * step} y={top + height * (1 - total)} width={Math.max(1, step - 1)} height={height * (total - bottom)} fill={energyColors[key] || "#64748b"} />;
-          })}
+          <rect x={Math.max(left, x(i) - step / 2)} y={top}
+            width={Math.min(left + width, x(i) + step / 2) - Math.max(left, x(i) - step / 2)} height={height} fill="transparent" />
+          <line className="mix-period-guide" x1={x(i)} x2={x(i)} y1={top} y2={top + height} pointerEvents="none" />
           {ticks.has(i) &&
-            <text x={left + (i + .5) * step} y={top + height + 22} textAnchor="middle" fontSize="10" aria-hidden="true">{row.period}</text>}
+            <text x={x(i)} y={top + height + 22} textAnchor="middle" fontSize="10" aria-hidden="true">{row.period}</text>}
         </g>;
       })}
     </svg>
