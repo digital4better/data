@@ -614,7 +614,7 @@ function Explorer({
       href(collectionView ? d.collection : `${d.collection}/${id}`) + (params.size ? "?" + params.toString() : "")
     );
   };
-  const hardware = d.collection === "equipment" || (d.collection === "cloud" && !d.id.endsWith("regions"));
+  const hasDetailPanel = d.collection === "ai" || d.collection === "equipment" || (d.collection === "cloud" && !d.id.endsWith("regions"));
   const [detailRow, setDetailRow] = useState<Row | null>(null);
   const temporal = ["factor", "mix"].includes(d.collection);
   const world = d.id.startsWith("world-");
@@ -751,7 +751,7 @@ function Explorer({
   const baseColumns = temporal
     ? [activeMetric]
     : d.collection === "ai"
-    ? ["name", "vendor", "open", "architecture", "parameters.active", "parameters.total", "context", "input", "output", "reasoning", "tools", "estimated", "sources", "details"]
+    ? ["name", "vendor", "open", "architecture", "parameters.active", "parameters.total", "context", "input", "output", "reasoning", "tools"]
     : d.collection === "cloud"
     ? d.id.endsWith("regions")
       ? ["id", "country", "location", "pue", "wue", "ref"]
@@ -1164,8 +1164,6 @@ function Explorer({
                       <button onClick={() => setSort({ key: k, direction: sort.key === k ? -sort.direction : 1 })}>
                         {k === "_key"
                           ? t("Identifiant / territoire", "Identifier / territory")
-                          : k === "details"
-                          ? t("Fiche", "Details")
                           : temporal
                           ? label(k, lang)
                           : shortLabel(k, lang)}{" "}
@@ -1177,32 +1175,20 @@ function Explorer({
               </thead>
               <tbody>
                 {sorted.slice(page * 25, (page + 1) * 25).map((r) => (
-                  <tr key={`${r.key}-${r.period}`} className={hardware ? "hardware-row" : undefined}
-                    onClick={hardware ? (event) => {
+                  <tr key={`${r.key}-${r.period}`} className={hasDetailPanel ? "hardware-row" : undefined}
+                    onClick={hasDetailPanel ? (event) => {
                       if (!(event.target as Element).closest("button, a, input, select")) {
                         event.currentTarget.querySelector<HTMLButtonElement>(".detail-link")?.focus();
                         setDetailRow(r);
                       }
                     } : undefined}>
-                    {!Array.isArray(source) && <th scope="row">{hardware
+                    {!Array.isArray(source) && <th scope="row">{hasDetailPanel
                       ? <button className="detail-link" aria-haspopup="dialog" onClick={() => setDetailRow(r)}>{names[r.key] || termLabel(r.key, lang)}</button>
                       : names[r.key] || termLabel(r.key, lang)}</th>}
                     {columns.map((k) => (
                       <td key={k}>
-                        {hardware && k === (d.id.endsWith("vms") ? "name" : "id") ? (
+                        {hasDetailPanel && k === (d.collection === "ai" || d.id.endsWith("vms") ? "name" : "id") ? (
                           <button className="detail-link" onClick={() => setDetailRow(r)} aria-haspopup="dialog">{format(r.values[k], lang)}</button>
-                        ) : k === "details" ? (
-                          <details>
-                            <summary>{t("Tous les champs", "All fields")}</summary>
-                            <dl>
-                              {Object.entries(r.values).map(([key, v]) => (
-                                <React.Fragment key={key}>
-                                  <th scope="row">{label(key, lang)}</th>
-                                  <dd>{format(v, lang)}</dd>
-                                </React.Fragment>
-                              ))}
-                            </dl>
-                          </details>
                         ) : k === "sources" && Array.isArray(r.values[k]) ? (
                           <ul>
                             {r.values[k]
@@ -1246,11 +1232,28 @@ function Explorer({
           )}
         </>
       )}
-      {detailRow && <HardwarePanel row={detailRow} lang={lang} onClose={() => setDetailRow(null)} />}
+      {detailRow && <DetailPanel row={detailRow} lang={lang} onClose={() => setDetailRow(null)} />}
     </section>
   );
 }
-function HardwarePanel({ row, lang, onClose }: { row: Row; lang: string; onClose: () => void }) {
+function DetailValue({ field, value, lang }: { field: string; value: unknown; lang: string }): React.ReactElement {
+  if (Array.isArray(value)) {
+    if (!value.length) return <>{"—"}</>;
+    if (field === "sources") return <ul className="detail-values">{value.map((entry, i) =>
+      <li key={i}><DetailValue field={field} value={entry} lang={lang} /></li>)}</ul>;
+    return <>{value.map((entry, i) => <React.Fragment key={i}>{i > 0 ? " · " : ""}
+      <DetailValue field={field} value={entry} lang={lang} /></React.Fragment>)}</>;
+  }
+  if (value && typeof value === "object") return <ul className="detail-values">{Object.entries(value).map(([key, entry]) =>
+    <li key={key}><strong>{label(key, lang)}</strong> : <DetailValue field={key} value={entry} lang={lang} /></li>)}</ul>;
+  if (typeof value === "string" && /^https?:\/\//.test(value)) return <a href={value}>{value}</a>;
+  const translated = typeof value === "string"
+    ? field === "estimated" ? label(value, lang)
+      : ["input", "output", "type", "category", "architecture"].includes(field) ? termLabel(value, lang) : value
+    : value;
+  return <>{format(translated, lang)}</>;
+}
+function DetailPanel({ row, lang, onClose }: { row: Row; lang: string; onClose: () => void }) {
   const ref = useRef<HTMLDialogElement>(null);
   const heading = useId();
   const title = termLabel(String(row.values.name || row.values.id || row.key), lang);
@@ -1272,11 +1275,11 @@ function HardwarePanel({ row, lang, onClose }: { row: Row; lang: string; onClose
       <button autoFocus onClick={() => ref.current?.close()} aria-label={text("Fermer le panneau", "Close panel", lang)}>×</button>
     </header>
     <table className="hardware-properties" aria-labelledby={heading}><tbody>
-      {Object.entries(row.values).map(([key, value]) => <tr key={key}>
+      {Object.entries(row.values).flatMap(([key, value]) => key === "parameters" && value && typeof value === "object"
+        ? Object.entries(value).map(([part, amount]) => [`parameters.${part}`, amount] as const)
+        : [[key, value] as const]).map(([key, value]) => <tr key={key}>
         <th scope="row">{label(key, lang)}</th>
-        <td>{typeof value === "string" && /^https?:\/\//.test(value)
-          ? <a href={value}>{value}</a>
-          : format(["type", "category", "architecture"].includes(key) && typeof value === "string" ? termLabel(value, lang) : value, lang)}</td>
+        <td><DetailValue field={key} value={value} lang={lang} /></td>
       </tr>)}
     </tbody></table>
   </dialog>;
