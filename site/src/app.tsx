@@ -619,7 +619,7 @@ function Explorer({
     for (const key of ["vendor", "input", "output", "open", "reasoning", "tools", "context", "country"])
       if (!allowedFilters(d.collection, id).includes(key)) params.delete(key);
     if (d.id.split("-")[0] !== id.split("-")[0]) params.delete("region");
-    params.delete("period");
+    if (!["factor", "mix"].includes(d.collection) || d.id.split("-")[1] !== id.split("-")[1]) params.delete("period");
     if (!["factor", "mix"].includes(d.collection)) params.delete("region");
     const useCollection = collectionView || id.startsWith("all-");
     if (useCollection) params.set("dataset", id);
@@ -641,6 +641,7 @@ function Explorer({
   const [source, setSource] = useState<any>(null);
   const [error, setError] = useState("");
   const [q, setQ] = useState("");
+  const [period, setPeriod] = useState("");
   const [metric, setMetric] = useState("");
   const [region, setRegion] = useState("");
   const [filters, setFilters] = useState<Record<string, string>>({});
@@ -653,6 +654,7 @@ function Explorer({
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     setQ(params.get("q") || "");
+    setPeriod(params.get("period") || "");
     setMetric(params.get("metric") || "");
     setRegion(params.get("region") || "");
     setSort({ key: params.get("sort") || "", direction: params.get("direction") === "-1" ? -1 : 1 });
@@ -741,7 +743,11 @@ function Explorer({
         .reverse() as string[],
     [rows]
   );
-  const activePeriod = periods[0] || "";
+  const periodFilter = temporal && periods.includes(period) ? period : "";
+  const activePeriod = periodFilter || periods[0] || "";
+  useEffect(() => {
+    if (ready && source && period && !periods.includes(period)) setPeriod("");
+  }, [ready, source, period, periods]);
   const numeric = d.fields.filter((k) => rows.some((r) => typeof r.values[k] === "number"));
   const activeMetric = numeric.includes(metric) ? metric : numeric.includes("gwp") ? "gwp" : numeric[0] || "";
   useEffect(() => {
@@ -750,6 +756,7 @@ function Explorer({
     Object.entries({
       dataset: collectionView ? d.id : "",
       q,
+      period: periodFilter,
       metric: d.collection === "mix" || d.collection === "ai" || (d.collection === "cloud" && ["regions", "vms"].includes(cloudSection)) ? "" : d.collection === "cloud" ? (numeric.includes(metric) ? metric : "") : activeMetric,
       region: world ? "" : region,
       ...filters,
@@ -762,7 +769,7 @@ function Explorer({
     document.querySelectorAll<HTMLAnchorElement>(".languages a").forEach((a) => {
       a.href = a.href.split("?")[0] + (params.size ? "?" + params.toString() : "");
     });
-  }, [q, activePeriod, activeMetric, metric, region, filters, sort, ready, source]);
+  }, [q, periodFilter, activePeriod, activeMetric, metric, region, filters, sort, ready, source]);
   const matches = (r: Row, includeRegion = true) => {
     if (q && !`${r.key} ${r.datasetId ? providerLabel(r.datasetId) : ""} ${names[r.key] || ""} ${termLabel(r.key, lang)} ${Object.values(r.values).flat().map((v) => typeof v === "string" ? termLabel(v, lang) : "").join(" ")} ${JSON.stringify(r.values)}`.toLowerCase().includes(q.toLowerCase()))
       return false;
@@ -779,7 +786,7 @@ function Explorer({
   };
   const periodRows = useMemo(() => temporal ? rowsAtPeriod(rows, activePeriod) : rows, [rows, activePeriod, temporal]);
   const mapRows = useMemo(() => periodRows.filter((r) => matches(r, false)), [periodRows, q, names, filters, lang]);
-  const filtered = rows.filter((r) => matches(r));
+  const filtered = rows.filter((r) => (!periodFilter || r.period === periodFilter) && matches(r));
   const territoryName = (key: string) => names[key] || termLabel(key, lang);
   const compareTerritories = (a: string, b: string) => territoryName(a).localeCompare(territoryName(b), lang);
   const sortValue = (row: Row) => {
@@ -798,7 +805,7 @@ function Explorer({
       (typeof av === "number" && typeof bv === "number" ? av - bv : String(av).localeCompare(String(bv), lang))
     );
   });
-  useEffect(() => setPage(0), [q, activePeriod, activeMetric, region, filters, sort]);
+  useEffect(() => setPage(0), [q, periodFilter, activePeriod, activeMetric, region, filters, sort]);
   const baseColumns = d.collection === "mix"
     ? ["period", ...d.fields]
     : temporal
@@ -838,7 +845,12 @@ function Explorer({
   const regions = Array.from(new Set(rows.map((r) => r.key))).sort(compareTerritories);
   const chartRegion = world ? "world" : region || "world";
   const historyRows = (temporal && chartRegion === "world" && !world ? worldRows : rows)
-    .filter((r) => r.key === chartRegion).sort((a, b) => a.period!.localeCompare(b.period!));
+    .filter((r) => r.key === chartRegion && (!periodFilter || r.period === periodFilter)).sort((a, b) => a.period!.localeCompare(b.period!));
+  const historyStatus = worldError && chartRegion === "world" && !world
+    ? t("Impossible de charger l’évolution mondiale. Réessayez en rechargeant la page.", "Unable to load world history. Reload the page to try again.")
+    : chartRegion === "world" && !world && !worldSource
+    ? t("Chargement de l’évolution…", "Loading history…")
+    : t("Aucune donnée pour ce territoire et cette période.", "No data for this territory and period.");
   async function download(ext: string, exportDataset = d) {
     setExportError("");
     try {
@@ -975,6 +987,13 @@ function Explorer({
                     </select>
                   </label>
                 </>
+                <label>
+                  {t("Période", "Period")}
+                  <select value={periodFilter} onChange={(event) => setPeriod(event.target.value)}>
+                    <option value="">{t("Toutes", "All")}</option>
+                    {periods.map(value => <option key={value} value={value}>{value}</option>)}
+                  </select>
+                </label>
                 {!world && (
                   <label>
                     {t("Territoire", "Territory")}
@@ -1031,6 +1050,7 @@ function Explorer({
             <button
               onClick={() => {
                 setQ("");
+                setPeriod("");
                 setRegion("");
                 setMetric("");
                 setFilters({});
@@ -1097,7 +1117,7 @@ function Explorer({
             name={chartRegion === "world" ? t("Monde", "World") : names[chartRegion!] || chartRegion!} />
             : <section className="data-chart mix-history">
               <h3>{t("Évolution du mix électrique", "Electricity mix over time")} · {chartRegion === "world" ? t("Monde", "World") : names[chartRegion!] || chartRegion!}</h3>
-              <p role="status">{worldError ? t("Impossible de charger l’évolution mondiale. Réessayez en rechargeant la page.", "Unable to load world history. Reload the page to try again.") : t("Chargement de l’évolution…", "Loading history…")}</p>
+              <p role="status">{historyStatus}</p>
             </section>)}
           {d.collection === "factor" && (
             <section className="data-chart factor-history">
@@ -1106,7 +1126,7 @@ function Explorer({
               {historyRows.length ? <FactorHistory rows={historyRows} metric={activeMetric} lang={lang}
                 name={chartRegion === "world" ? t("Monde", "World") : names[chartRegion] || chartRegion}
                 unit={label(activeMetric, lang) + " / kWh"} />
-                : <p role="status">{worldError ? t("Impossible de charger l’évolution mondiale. Réessayez en rechargeant la page.", "Unable to load world history. Reload the page to try again.") : t("Chargement de l’évolution…", "Loading history…")}</p>}
+                : <p role="status">{historyStatus}</p>}
             </section>
           )}
           <div className={`section-heading${allCloud ? " cloud-export-heading" : ""}`}>
@@ -1162,7 +1182,7 @@ function Explorer({
             <table>
               <caption>
                 {t("Aperçu des données — tiret : valeur absente", "Data preview — dash: missing value")}
-                {temporal && <> · {t("Toutes les périodes", "All periods")}</>}
+                {temporal && <> · {periodFilter || t("Toutes les périodes", "All periods")}</>}
               </caption>
               <thead>
                 <tr>
@@ -1369,7 +1389,7 @@ export function FactorMap({
       </div>
       {tip.tooltip}
       <figcaption>
-        {text("Dernière période du jeu", "Latest dataset period", lang)} : {period} ·{" "}
+        {text("Période affichée", "Displayed period", lang)} : {period} ·{" "}
         {label(metric, lang)} / kWh · {text("Impact faible", "Low impact", lang)} (0){" "}
         <span className="gradient" style={{ background: `linear-gradient(to right, ${impactColors.join(", ")})` }} />{" "}
         {text("Impact élevé", "High impact", lang)} ({format(max, lang)}) ·{" "}

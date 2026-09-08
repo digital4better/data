@@ -407,7 +407,7 @@ export function MixMap({
     <figure className="map mix-map" onPointerLeave={tip.close}>
       <figcaption>
         <h3>{t(lang, "Choisir un territoire", "Choose a territory")}</h3>
-        <p>{t(lang, "Dernière période du jeu : ", "Latest dataset period: ")}{period}</p>
+        <p>{t(lang, "Période affichée : ", "Displayed period: ")}{period}</p>
         <p>
           {t(
             lang,
