@@ -38,8 +38,6 @@ const shortLabels: Record<string, string[]> = {
   country: ["Pays", "Country"],
 };
 const shortLabel = (key: string, lang: string) => (shortLabels[key] ? tr(shortLabels[key], lang) : label(key, lang));
-const tableValue = (row: Row, key: string) =>
-  key.startsWith("parameters.") ? row.values.parameters?.[key.split(".")[1]] : row.values[key];
 const label = (key: string, lang: string) => tr((impacts as any)[key] || (fieldLabels as any)[key] || [termLabel(key, lang), termLabel(key, lang)], lang);
 const format = (value: any, lang: string): string =>
   value === null || value === undefined
@@ -706,8 +704,8 @@ function Explorer({
   const mapRows = periodRows.filter((r) => matches(r, false));
   const filtered = periodRows.filter((r) => matches(r));
   const sorted = [...filtered].sort((a, b) => {
-    const av = sort.key === "_key" ? a.key : tableValue(a, sort.key);
-    const bv = sort.key === "_key" ? b.key : tableValue(b, sort.key);
+    const av = sort.key === "_key" ? a.key : a.values[sort.key];
+    const bv = sort.key === "_key" ? b.key : b.values[sort.key];
     if (av == null) return bv == null ? 0 : 1;
     if (bv == null) return -1;
     return (
@@ -719,7 +717,7 @@ function Explorer({
   const baseColumns = temporal
     ? [activeMetric]
     : d.collection === "ai"
-    ? ["name", "vendor", "open", "architecture", "parameters.active", "parameters.total", "context", "input", "output", "reasoning", "tools", "estimated", "sources", "details"]
+    ? ["name", "vendor", "open", "context", "input", "output", "reasoning", "tools", "estimated", "sources", "details"]
     : d.collection === "cloud"
     ? d.id.endsWith("regions")
       ? ["id", "country", "location", "pue", "wue", "ref"]
@@ -1156,7 +1154,7 @@ function Explorer({
                               ? Array.isArray(r.values[k]) ? r.values[k].map((v: string) => termLabel(v, lang)) : termLabel(r.values[k], lang)
                               : k === "country" && typeof r.values[k] === "string" ? regionLabel(r.values[k].toUpperCase(), r.values[k], lang)
                               : k === "estimated" && Array.isArray(r.values[k]) ? r.values[k].map((v: string) => label(v, lang))
-                              : tableValue(r, k), lang)
+                              : r.values[k], lang)
                         )}
                       </td>
                     ))}

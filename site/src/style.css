@@ -635,26 +635,28 @@ td dt {
   gap: 28px;
 }
 .bars-list {
-  display: grid;
-  grid-template-columns: minmax(85px, 1fr) minmax(60px, 1.4fr) minmax(55px, auto);
-  column-gap: 12px;
   max-height: 420px;
   overflow: auto;
-  padding: 4px 8px;
+  padding: 4px;
 }
-.chart-bar {
+.interactive-bar {
   display: grid;
-  grid-column: 1 / -1;
-  grid-template-columns: subgrid;
+  grid-template-columns: minmax(85px, 1fr) minmax(60px, 1.4fr) minmax(55px, auto);
+  gap: 12px;
   align-items: center;
-  padding: 8px 0;
+  padding: 8px 4px;
   font-size: 12px;
   border-radius: 6px;
+  cursor: pointer;
+}
+.interactive-bar:hover,
+.interactive-bar:focus {
+  background: #edf3fa;
 }
 .bar-name {
   overflow-wrap: anywhere;
 }
-.chart-bar strong {
+.interactive-bar strong {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
@@ -692,9 +694,9 @@ td dt {
     grid-template-columns: 1fr;
     gap: 0;
   }
-  .bars-list {
+  .interactive-bar {
     grid-template-columns: minmax(70px, 1fr) minmax(45px, 1fr) minmax(48px, auto);
-    column-gap: 8px;
+    gap: 8px;
   }
 }
 .chart-tooltip {
