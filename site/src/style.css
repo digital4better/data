@@ -678,7 +678,7 @@ td dt {
 .map svg path[role="button"]:not([data-hover-suppressed="true"]):hover,
 .map svg path[role="button"]:not([data-hover-suppressed="true"]):focus-visible,
 .map svg path[role="button"][aria-pressed="true"] {
-  fill: #80b7be;
+  fill: #f15842;
   outline: none;
 }
 .trend circle {
@@ -791,8 +791,7 @@ td dt {
 
 .mix-history svg { width:100%; display:block; }
 .mix-period { cursor:pointer; }
-.mix-period-guide { opacity:0; stroke:#42566d; stroke-width:1; stroke-dasharray:3 3; }
-.mix-period:hover .mix-period-guide, .mix-period:focus-visible .mix-period-guide { opacity:1; }
+.mix-period:hover rect, .mix-period:focus-visible rect { filter:brightness(1.08); }
 .mix-legend { display:flex; flex-wrap:wrap; gap:8px 16px; font-size:.85rem; }
 .mix-legend span { display:inline-flex; align-items:center; gap:6px; }
 .mix-legend i { display:inline-block; width:10px; height:10px; border-radius:2px; }
