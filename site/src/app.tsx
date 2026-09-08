@@ -569,8 +569,24 @@ function Explorer({
   href: (p: string) => string;
 }) {
   const t = (fr: string, en: string) => text(fr, en, lang);
+  const cloudSections = [
+    { id: "regions", title: t("Régions", "Regions") },
+    { id: "vms", title: t("Machines virtuelles", "Virtual machines") },
+    { id: "cpus", title: t("Processeurs", "Processors") },
+    { id: "accelerators", title: t("Accélérateurs", "Accelerators") },
+  ];
+  const cloudSection = d.id.endsWith("regions") ? "regions" : d.id.endsWith("vms") ? "vms" : d.id;
+  const cloudDatasets = catalog.datasets.filter((x) => x.collection === "cloud");
+  const providerDatasets = cloudDatasets.filter((x) => x.id.endsWith(`-${cloudSection}`));
+  const providerLabel = (id: string) => ({ aws: "AWS", azure: "Microsoft Azure", gcp: "Google Cloud", oracle: "Oracle Cloud", ovhcloud: "OVHcloud", scaleway: "Scaleway" }[id.split("-")[0]] || id);
+  const sectionDataset = (section: string) => {
+    const matching = cloudDatasets.filter((x) => x.id === section || x.id.endsWith(`-${section}`));
+    return matching.find((x) => x.id.split("-")[0] === d.id.split("-")[0])?.id || matching[0]?.id;
+  };
   const changeDataset = (id: string) => {
     const params = new URLSearchParams(location.search);
+    if (d.collection === "cloud" && !id.endsWith(`-${cloudSection}`) && id !== cloudSection)
+      for (const key of ["q", "metric", "sort", "direction"]) params.delete(key);
     for (const key of ["vendor", "input", "output", "open", "reasoning", "tools", "context", "country"])
       if (!allowedFilters(d.collection, id).includes(key)) params.delete(key);
     if (d.id.split("-")[0] !== id.split("-")[0]) params.delete("region");
@@ -793,6 +809,29 @@ function Explorer({
           </a>
         )}
       </div>
+      {d.collection === "cloud" && (
+        <div className="cloud-navigation">
+          <nav className="cloud-sections" aria-label={t("Catégories d’infrastructure", "Infrastructure categories")}>
+            {cloudSections.map((section) => {
+              const target = sectionDataset(section.id);
+              return target ? <a key={section.id}
+                href={collectionView ? `${href("cloud")}?dataset=${target}` : href(`cloud/${target}`)}
+                aria-current={cloudSection === section.id ? "page" : undefined}
+                onClick={(event) => {
+                  if (event.button || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+                  event.preventDefault();
+                  changeDataset(target);
+                }}>{section.title}</a> : null;
+            })}
+          </nav>
+          {providerDatasets.length > 1 && <label className="cloud-provider">
+            {t("Fournisseur", "Provider")}
+            <select value={d.id} onChange={(event) => changeDataset(event.target.value)}>
+              {providerDatasets.map((x) => <option key={x.id} value={x.id}>{providerLabel(x.id)}</option>)}
+            </select>
+          </label>}
+        </div>
+      )}
       <noscript>
         <style>{`.preview-loading { display: none; }`}</style>
         <p>
@@ -846,11 +885,9 @@ function Explorer({
                 placeholder={t("Nom, identifiant, pays…", "Name, identifier, country…")}
               />
             </label>
-            {["cloud", "equipment"].includes(d.collection) && (
+            {d.collection === "equipment" && (
               <label>
-                {d.collection === "cloud"
-                  ? t("Fournisseur / matériel", "Provider / hardware")
-                  : t("Jeu de données", "Dataset")}
+                {t("Jeu de données", "Dataset")}
                 <select value={d.id} onChange={(e) => changeDataset(e.target.value)}>
                   {catalog.datasets
                     .filter((x) => x.collection === d.collection)
