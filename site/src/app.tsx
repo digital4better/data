@@ -881,13 +881,6 @@ function Explorer({
                 }}>{section.title}</a> : null;
             })}
           </nav>
-          {providerDatasets.length > 1 && <label className="cloud-provider">
-            {t("Fournisseur", "Provider")}
-            <select value={d.id} onChange={(event) => changeDataset(event.target.value)}>
-              <option value={`all-${cloudSection}`}>{t("Tous", "All")}</option>
-              {providerDatasets.map((x) => <option key={x.id} value={x.id}>{providerLabel(x.id)}</option>)}
-            </select>
-          </label>}
         </div>
       )}
       <noscript>
@@ -906,6 +899,13 @@ function Explorer({
       ) : (
         <>
           <div className="filters">
+            {d.collection === "cloud" && providerDatasets.length > 1 && <label className="cloud-provider">
+              {t("Fournisseur", "Provider")}
+              <select value={d.id} onChange={(event) => changeDataset(event.target.value)}>
+                <option value={`all-${cloudSection}`}>{t("Tous", "All")}</option>
+                {providerDatasets.map((x) => <option key={x.id} value={x.id}>{providerLabel(x.id)}</option>)}
+              </select>
+            </label>}
             <label>
               {t("Rechercher", "Search")}
               <input

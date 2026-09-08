@@ -763,7 +763,6 @@ td dt {
 .cloud-sections a { padding: 10px 16px; border-radius: 8px; background: #edf3f9; text-decoration: none; }
 .cloud-sections a[aria-current="page"] { background: #244b76; color: white; }
 .cloud-sections a:hover { background: #dce7f2; color: #244b76; }
-.cloud-provider { display: grid; gap: 8px; max-width: 300px; font-weight: 600; }
 
 .hardware-row { cursor: pointer; }
 .hardware-row:hover { background: #edf3f9; }
