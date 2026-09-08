@@ -37,6 +37,18 @@ const shortLabels: Record<string, string[]> = {
   wue: ["WUE", "WUE"],
   ref: ["REF", "REF"],
   country: ["Pays", "Country"],
+  memory: ["Mémoire (GB)", "Memory (GB)"],
+  embodied: ["Fabrication (tCO₂e)", "Embodied impact (tCO₂e)"],
+  vcpus: ["vCPU", "vCPU"],
+  cpu: ["Processeur(s)", "Processor(s)"],
+  accelerators: ["Accélérateurs", "Accelerators"],
+  cores: ["Cœurs", "Cores"],
+  threads: ["Threads", "Threads"],
+  tdp: ["TDP (W)", "TDP (W)"],
+  process: ["Gravure (nm)", "Process (nm)"],
+  id: ["Référence", "Reference"],
+  type: ["Type", "Type"],
+
 };
 const shortLabel = (key: string, lang: string) => (shortLabels[key] ? tr(shortLabels[key], lang) : label(key, lang));
 const tableValue = (row: Row, key: string) =>
@@ -692,7 +704,7 @@ function Explorer({
       dataset: collectionView ? d.id : "",
       q,
       period: temporal ? activePeriod : "",
-      metric: d.collection === "ai" || (d.collection === "cloud" && d.id.endsWith("regions")) ? "" : activeMetric,
+      metric: d.collection === "ai" || (d.collection === "cloud" && d.id.endsWith("regions")) ? "" : d.collection === "cloud" ? (numeric.includes(metric) ? metric : "") : activeMetric,
       region: world ? "" : region,
       ...filters,
       sort: sort.key,
@@ -704,7 +716,7 @@ function Explorer({
     document.querySelectorAll<HTMLAnchorElement>(".languages a").forEach((a) => {
       a.href = a.href.split("?")[0] + (params.size ? "?" + params.toString() : "");
     });
-  }, [q, activePeriod, activeMetric, region, filters, sort, ready, source]);
+  }, [q, activePeriod, activeMetric, metric, region, filters, sort, ready, source]);
   const matches = (r: Row, includeRegion = true) => {
     if (q && !`${r.key} ${names[r.key] || ""} ${termLabel(r.key, lang)} ${Object.values(r.values).flat().map((v) => typeof v === "string" ? termLabel(v, lang) : "").join(" ")} ${JSON.stringify(r.values)}`.toLowerCase().includes(q.toLowerCase()))
       return false;
@@ -741,12 +753,14 @@ function Explorer({
     ? d.id.endsWith("regions")
       ? ["id", "country", "location", "pue", "wue", "ref"]
       : d.id.endsWith("vms")
-      ? ["name", "vcpus", "memory", "cpu", "embodied"]
-      : ["id", "manufacturer", "cores", "memory", "tdp", "details"]
+      ? ["name", "category", "vcpus", "memory", "cpu", "accelerators", "embodied", "details"]
+      : d.id === "cpus"
+      ? ["id", "manufacturer", "architecture", "cores", "threads", "tdp", "process", "details"]
+      : ["id", "manufacturer", "type", "memory", "tdp", "process", "details"]
     : d.fields.filter((k) => !numeric.includes(k) || k === activeMetric);
   const columns =
-    d.collection === "cloud" && !d.id.endsWith("regions") && activeMetric && !baseColumns.includes(activeMetric)
-      ? [...baseColumns, activeMetric]
+    d.collection === "cloud" && !d.id.endsWith("regions") && numeric.includes(metric) && !baseColumns.includes(metric)
+      ? [...baseColumns, metric]
       : baseColumns;
   const filterFields =
     d.collection === "ai"
@@ -939,8 +953,9 @@ function Explorer({
             )}
             {numeric.length > 0 && d.collection !== "ai" && !(d.collection === "cloud" && d.id.endsWith("regions")) && (
               <label>
-                {d.collection === "mix" ? t("Technologie", "Technology") : d.collection === "cloud" ? t("Colonne à afficher", "Column to display") : t("Indicateur", "Indicator")}
-                <select value={activeMetric} onChange={(e) => setMetric(e.target.value)}>
+                {d.collection === "mix" ? t("Technologie", "Technology") : d.collection === "cloud" ? t("Colonne complémentaire", "Additional column") : t("Indicateur", "Indicator")}
+                <select value={d.collection === "cloud" ? (numeric.includes(metric) ? metric : "") : activeMetric} onChange={(e) => setMetric(e.target.value)}>
+                  {d.collection === "cloud" && <option value="">{t("Aucune", "None")}</option>}
                   {numeric.map((k) => (
                     <option key={k} value={k}>
                       {label(k, lang)}

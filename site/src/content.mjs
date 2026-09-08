@@ -268,7 +268,7 @@ export const fieldLabels = {
   country: ["Code pays source", "Source country code"],
   location: ["Localisation source", "Source location"],
   provider: ["Fournisseur cloud", "Cloud provider"],
-  memory: ["Mémoire ; unité à vérifier dans la source matérielle", "Memory; verify unit in hardware source"],
+  memory: ["Mémoire (GB)", "Memory (GB)"],
   vcpus: ["Nombre de processeurs virtuels", "Virtual CPU count"],
   cores: ["Nombre de cœurs", "Core count"],
   threads: ["Nombre de threads", "Thread count"],
@@ -279,7 +279,7 @@ export const fieldLabels = {
   family: ["Famille", "Family"],
   model: ["Modèle", "Model"],
   category: ["Catégorie", "Category"],
-  embodied: ["Facteur de fabrication ; voir la méthode du générateur", "Embodied factor; see generator method"],
+  embodied: ["Impact de fabrication (tCO₂e)", "Embodied impact (tCO₂e)"],
 };
 export const tr = (pair, lang) => pair[lang === "fr" ? 0 : 1];
 export function datasetTitle(file, lang) {

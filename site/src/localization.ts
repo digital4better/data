@@ -1,5 +1,10 @@
 export const languageStorageKey = 'd4b-data-language';
 const terms: Record<string, [string, string]> = {
+  general: ['Usage général', 'General purpose'], compute: ['Calcul', 'Compute'], storage: ['Stockage', 'Storage'],
+  accelerated: ['Calcul accéléré', 'Accelerated computing'], performance: ['Haute performance', 'High performance'],
+  memory: ['Mémoire', 'Memory'], encoding: ['Encodage', 'Encoding'],
+  gpu: ['GPU', 'GPU'], fpga: ['FPGA', 'FPGA'], asic: ['ASIC', 'ASIC'],
+
   Bioenergy: ['Bioénergie', 'Bioenergy'], Coal: ['Charbon', 'Coal'], Gas: ['Gaz', 'Gas'],
   Hydro: ['Hydraulique', 'Hydro'], Nuclear: ['Nucléaire', 'Nuclear'],
   'Other Fossil': ['Autres énergies fossiles', 'Other fossil fuels'],
