@@ -347,10 +347,11 @@ export function MixHistory({ rows, name, lang }: { rows: Row[]; name: string; la
   const keys = [...new Set(rows.flatMap(row => Object.keys(row.values)))];
   const width = 700, top = 15, height = 210, left = 48;
   const step = width / Math.max(1, rows.length);
-  const ticks = new Set(Array.from({ length: Math.min(7, rows.length) }, (_, i) => Math.round(i * (rows.length - 1) / Math.max(1, Math.min(7, rows.length) - 1))));
+  const tickCount = Math.min(rows.every(row => row.period?.length === 4) ? 12 : 7, rows.length);
+  const ticks = new Set(Array.from({ length: tickCount }, (_, i) => Math.round(i * (rows.length - 1) / Math.max(1, tickCount - 1))));
   return <figure className="data-chart mix-history" onPointerLeave={tip.close}>
     <figcaption><h3>{t(lang, "Évolution du mix électrique", "Electricity mix over time")} · {name}</h3>
-      <p>{t(lang, "Parts par période (%). Survolez, touchez ou sélectionnez une période au clavier. Le tableau ci-dessous fournit les valeurs détaillées.", "Shares by period (%). Hover, tap or focus a period. Detailed values are available in the table below.")}</p></figcaption>
+      <p>{t(lang, "Parts par période (%). Survolez, touchez ou sélectionnez une période au clavier pour lire son mix détaillé.", "Shares by period (%). Hover, tap or focus a period to read its detailed mix.")}</p></figcaption>
     <svg viewBox="0 0 770 260" role="group" aria-label={t(lang, "Évolution empilée du mix électrique", "Stacked electricity mix history")}>
       {[0, 25, 50, 75, 100].map(value => <g key={value} aria-hidden="true">
         <line x1={left} x2={left + width} y1={top + height * (1 - value / 100)} y2={top + height * (1 - value / 100)} stroke="#dce5ef" />
@@ -385,7 +386,7 @@ export function MixMap({
   lang,
   selected,
   onSelect,
-  countryLevel,
+  subdivisionLevel,
   green,
 }: {
   paths: Record<string, string>;
@@ -395,7 +396,7 @@ export function MixMap({
   lang: string;
   selected?: string;
   onSelect: (key: string) => void;
-  countryLevel: boolean;
+  subdivisionLevel: boolean;
   green: boolean;
 }) {
   const tip = useTooltip(rows);
@@ -410,13 +411,16 @@ export function MixMap({
         <p>
           {t(
             lang,
-            "Survolez un territoire pour voir son mix complet. Cliquez pour sélectionner son détail et son évolution.",
-            "Hover over a territory for its full mix. Click to select its detail and history."
+            "Survolez un territoire pour voir son mix. Cliquez pour afficher son évolution ; cliquez à nouveau ou dans l’eau pour revenir au monde.",
+            "Hover over a territory to see its mix. Click to show its history; click again or on the ocean to return to the world."
           )}
         </p>
+        <p className="muted">{subdivisionLevel
+          ? t(lang, "Seules les subdivisions couvertes par les données sont sélectionnables. Les autres zones apparaissent en gris clair.", "Only subdivisions covered by the data can be selected. Other areas appear in light grey.")
+          : t(lang, "Les territoires disponibles sont en bleu clair ; les zones sans données pour cette période sont en gris clair.", "Available territories are light blue; areas without data for this period are light grey.")}</p>
         {green && (
           <p className="notice">
-            {t(lang, "Scénario green : mix renouvelable renormalisé.", "Green scenario: renormalized renewable mix.")}
+            {t(lang, "Renouvelables uniquement : les parts de la bioénergie, de l’hydraulique, du solaire et de l’éolien sont recalculées pour totaliser 100 %. Ce n’est pas leur part dans le mix électrique réel.", "Renewables only: the shares of bioenergy, hydro, solar and wind are rescaled to total 100%. This is not their share of the actual electricity mix.")}
           </p>
         )}
       </figcaption>
@@ -427,10 +431,10 @@ export function MixMap({
           if (event.target === event.currentTarget) { onSelect(""); tip.close(); }
         }}>
         <g className="map-layer" style={{ transform: zoom.transform }}>
-        {Object.entries(displayPaths(paths, countryLevel)).map(([pathKey, path]) => {
-          const key = countryLevel ? pathKey.slice(0, 2) : pathKey;
+        {Object.entries(paths).map(([key, path]) => {
           const row = byKey.get(key);
-          const name = names[key] || key;
+          if (!row) return <path key={key} d={path} fill="#eef1f4" stroke="white" strokeWidth={0.4} pointerEvents="none" aria-hidden="true" />;
+          const name = key === "world" ? t(lang, "Monde", "World") : names[key] || key;
           const content = <MixTooltipContent name={name} period={period} row={row} lang={lang} />;
           const message = `${name} (${key}) · ${period} · ${
             row
@@ -440,7 +444,7 @@ export function MixMap({
           const bindings = tip.bind(message, content);
           return (
             <path
-              key={pathKey}
+              key={key}
               d={path}
               fill="#dce5ef"
               stroke="white"

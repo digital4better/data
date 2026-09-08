@@ -220,3 +220,22 @@ test("combined cloud filters keep provider identity and export original schemas"
   assert.equal(aws[0].provider, undefined);
   assert.deepEqual(cloudExportRows(france, "gcp-regions"), []);
 });
+
+test("mix map groups countries into source continents and retains subdivision coverage", () => {
+  const { mixPaths } = require("../src/chart-data.ts");
+  const paths = { FR: "fr", DE: "de", "CA-QC": "qc", "CA-ON": "on", ZZ: "unknown" };
+  const regions = [
+    { type: "continent", continent: "EU", name: "Europe" },
+    { type: "continent", continent: "NA", name: "North America" },
+    { type: "country", "alpha-2": "FR", continent: "EU" },
+    { type: "country", "alpha-2": "DE", continent: "EU" },
+    { type: "country", "alpha-2": "CA", continent: "NA" },
+  ];
+  const grouped = mixPaths(paths, "continent", regions);
+  assert.equal(grouped.Europe.trim().replace(/ +/g, " "), "fr de");
+  assert.equal(grouped["North America"].trim().replace(/ +/g, " "), "qc on");
+  assert.equal(grouped["unmapped-ZZ"].trim(), "unknown");
+  assert.deepEqual(mixPaths(paths, "subdivision", regions), paths);
+  assert.ok(mixPaths(paths, "country", regions).CA.includes("qc"));
+  assert.equal(Object.keys(mixPaths(paths, "world", regions)).join(), "world");
+});

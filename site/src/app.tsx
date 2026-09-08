@@ -5,7 +5,7 @@ import React, { useEffect, useMemo, useState, useRef, useId } from "react";
 import { collections, guides, impacts, fieldLabels, repository, license, tr, datasetTitle } from "./content.mjs";
 import { rowsOf, subsetOf, csvSubset, cloudRows, cloudExportRows, Row } from "./data";
 import { Bars, CloudMap, CatalogCharts, MixMap, MixHistory, useTooltip } from "./charts";
-import { selectedTerritory, rowsAtPeriod, allowedFilters, resolvePeriod, displayPaths } from "./chart-data";
+import { selectedTerritory, rowsAtPeriod, allowedFilters, resolvePeriod, displayPaths, mixPaths } from "./chart-data";
 import { Logo } from "./assets/logo";
 import "./style.css";
 export type Dataset = {
@@ -642,6 +642,12 @@ function Explorer({
   const [detailRow, setDetailRow] = useState<Row | null>(null);
   const temporal = ["factor", "mix"].includes(d.collection);
   const world = d.id.startsWith("world-");
+  const [mixScale, mixFrequency] = d.id.split("-");
+  const mixGreen = d.id.endsWith("-green");
+  const mixWorldFile = `world-${mixFrequency}${mixGreen ? "-green" : ""}.json`;
+  const [worldSource, setWorldSource] = useState<any>(null);
+  const [worldError, setWorldError] = useState(false);
+  const [geography, setGeography] = useState<any[]>([]);
   const [source, setSource] = useState<any>(null);
   const [error, setError] = useState("");
   const [q, setQ] = useState("");
@@ -689,12 +695,24 @@ function Explorer({
     return () => controller.abort();
   }, [d.id, d.file]);
   useEffect(() => {
+    if (d.collection !== "mix" || world) return;
+    const controller = new AbortController();
+    setWorldSource(null);
+    setWorldError(false);
+    fetch(`${base}mix/${mixWorldFile}`, { signal: controller.signal })
+      .then((response) => { if (!response.ok) throw new Error(); return response.json(); })
+      .then(setWorldSource)
+      .catch((error) => { if (error.name !== "AbortError") setWorldError(true); });
+    return () => controller.abort();
+  }, [d.id]);
+  useEffect(() => {
     if (!temporal) return;
     let active = true;
     fetch(`${base}country/regions.json`)
       .then((r) => r.json())
       .then((rows) => {
-        if (active)
+        if (active) {
+          setGeography(rows);
           setNames(
             Object.fromEntries(
               rows.map((r: any) => [
@@ -703,9 +721,10 @@ function Explorer({
               ])
             )
           );
+        }
       })
       .catch(() => {});
-    if (["factor", "mix"].includes(d.collection) && /^(country|subdivision)-/.test(d.id))
+    if (d.collection === "mix" || (d.collection === "factor" && /^(country|subdivision)-/.test(d.id)))
       fetch(`${base}country/regions-paths.json`)
         .then((r) => r.json())
         .then((p) => {
@@ -723,6 +742,11 @@ function Explorer({
     return d.collection === "cloud" ? loaded.map((row) => ({ ...row, datasetId: d.id })) : loaded;
   }, [source, allCloud, d.id]);
   const arraySource = allCloud || Array.isArray(source);
+  const worldRows = useMemo(() => worldSource ? rowsOf(worldSource, true, true) : [], [worldSource]);
+  const mixDisplayPaths = useMemo(() => d.collection === "mix" ? mixPaths(paths, mixScale, geography) : {}, [paths, mixScale, geography]);
+  useEffect(() => {
+    if (d.collection === "mix" && ready && source && region && !rows.some((row) => row.key === region)) setRegion("");
+  }, [source, ready, region, rows]);
   const periods = useMemo(
     () =>
       Array.from(new Set(rows.map((r) => r.period).filter(Boolean)))
@@ -817,9 +841,10 @@ function Explorer({
       )
     ).sort() as string[];
   const regions = Array.from(new Set(rows.map((r) => r.key))).sort();
-  const chartRegion = selectedTerritory(region, world);
+  const chartRegion = d.collection === "mix" ? (world ? "world" : region || "world") : selectedTerritory(region, world);
   const selectedRow = periodRows.find((r) => r.key === chartRegion && matches(r));
-  const historyRows = rows.filter((r) => r.key === chartRegion).sort((a, b) => a.period!.localeCompare(b.period!));
+  const historyRows = (d.collection === "mix" && chartRegion === "world" && !world ? worldRows : rows)
+    .filter((r) => r.key === chartRegion).sort((a, b) => a.period!.localeCompare(b.period!));
   async function download(ext: string, exportDataset = d) {
     setExportError("");
     try {
@@ -931,7 +956,31 @@ function Explorer({
             )}
             {temporal && (
               <>
-                <label>
+                {d.collection === "mix" ? <>
+                  <label>
+                    {t("Échelle géographique", "Geographic level")}
+                    <select value={mixScale} onChange={(event) => changeDataset(`${event.target.value}-${mixFrequency}${mixGreen ? "-green" : ""}`)}>
+                      {world && <option value="world">{t("Monde", "World")}</option>}
+                      <option value="continent">{t("Continents", "Continents")}</option>
+                      <option value="country">{t("Pays", "Countries")}</option>
+                      <option value="subdivision">{t("Subdivisions", "Subdivisions")}</option>
+                    </select>
+                  </label>
+                  <label>
+                    {t("Fréquence", "Frequency")}
+                    <select value={mixFrequency} onChange={(event) => changeDataset(`${mixScale}-${event.target.value}${mixGreen ? "-green" : ""}`)}>
+                      <option value="yearly">{t("Annuelle", "Annual")}</option>
+                      <option value="monthly">{t("Mensuelle", "Monthly")}</option>
+                    </select>
+                  </label>
+                  <label>
+                    {t("Mix affiché", "Displayed mix")}
+                    <select value={mixGreen ? "green" : "all"} onChange={(event) => changeDataset(`${mixScale}-${mixFrequency}${event.target.value === "green" ? "-green" : ""}`)}>
+                      <option value="all">{t("Toutes les énergies", "All energy sources")}</option>
+                      <option value="green">{t("Renouvelables uniquement", "Renewables only")}</option>
+                    </select>
+                  </label>
+                </> : <label>
                   {t("Jeu / fréquence", "Dataset / frequency")}
                   <select value={d.id} onChange={(e) => changeDataset(e.target.value)}>
                     {catalog.datasets
@@ -942,7 +991,7 @@ function Explorer({
                         </option>
                       ))}
                   </select>
-                </label>
+                </label>}
                 {d.collection !== "mix" && <label>
                   {t("Période", "Period")}
                   <select value={activePeriod} onChange={(e) => setPeriod(e.target.value)}>
@@ -955,7 +1004,7 @@ function Explorer({
                   <label>
                     {t("Territoire", "Territory")}
                     <select value={region} onChange={(e) => setRegion(e.target.value)}>
-                      <option value="">{t("Tous", "All")}</option>
+                      <option value="">{d.collection === "mix" ? t("Aucun — évolution mondiale", "None — world history") : t("Tous", "All")}</option>
                       {region && !regions.includes(region) && <option value={region}>{names[region] || region}</option>}
                       {regions.map((r) => (
                         <option key={r} value={r}>
@@ -1031,17 +1080,17 @@ function Explorer({
             />
           )}
           {d.collection === "cloud" && d.id.endsWith("regions") && <CloudMap rows={filtered} lang={lang} />}
-          {d.collection === "mix" && /^(country|subdivision)-/.test(d.id) && (
+          {d.collection === "mix" && (
             <MixMap
-              paths={paths}
+              paths={mixDisplayPaths}
               rows={mapRows}
               period={activePeriod}
               names={names}
               lang={lang}
               selected={region}
               onSelect={setRegion}
-              countryLevel={d.id.startsWith("country-")}
-              green={d.id.endsWith("-green")}
+              green={mixGreen}
+              subdivisionLevel={mixScale === "subdivision"}
             />
           )}
           {d.collection === "factor" && period && period !== activePeriod && (
@@ -1070,7 +1119,7 @@ function Explorer({
               </a>
             </aside>
           )}
-          {temporal && !world && !chartRegion && (
+          {d.collection === "factor" && !world && !chartRegion && (
             <p className="selection-prompt">
               {t(
                 "Sélectionnez un territoire sur la carte ou dans le filtre pour explorer son détail et son évolution.",
@@ -1120,8 +1169,12 @@ function Explorer({
               lang={lang}
             />
           )}
-          {d.collection === "mix" && historyRows.length > 0 && <MixHistory rows={historyRows} lang={lang}
-            name={chartRegion === "world" ? t("Monde", "World") : names[chartRegion!] || chartRegion!} />}
+          {d.collection === "mix" && (historyRows.length > 0 ? <MixHistory rows={historyRows} lang={lang}
+            name={chartRegion === "world" ? t("Monde", "World") : names[chartRegion!] || chartRegion!} />
+            : <section className="data-chart mix-history">
+              <h3>{t("Évolution du mix électrique", "Electricity mix over time")} · {chartRegion === "world" ? t("Monde", "World") : names[chartRegion!] || chartRegion!}</h3>
+              <p role="status">{worldError ? t("Impossible de charger l’évolution mondiale. Réessayez en rechargeant la page.", "Unable to load world history. Reload the page to try again.") : t("Chargement de l’évolution…", "Loading history…")}</p>
+            </section>)}
           {d.collection === "factor" && historyRows.length > 0 && (
             <details className="history">
               <summary>

@@ -35,3 +35,24 @@ test("fully labelled bars are noninteractive and retain their values and expand 
     await server.close();
   }
 });
+
+test("mix map disables unavailable territories and history is visible with annual and percent axes", async () => {
+  const { createServer } = await import("vite");
+  const server = await createServer({ server: { middlewareMode: true, watch: null } });
+  try {
+    const { MixMap, MixHistory } = await server.ssrLoadModule("/src/charts.tsx");
+    const map = renderToStaticMarkup(React.createElement(MixMap, {
+      paths: { Europe: "M0 0L1 1Z", missing: "M2 2L3 3Z" },
+      rows: [{ key: "Europe", period: "2026", values: { Solar: 1 } }],
+      period: "2026", names: { Europe: "Europe" }, lang: "fr", onSelect() {}, green: false, subdivisionLevel: false,
+    }));
+    assert.equal((map.match(/aria-pressed=/g) || []).length, 1);
+    assert.match(map, /pointer-events="none"/);
+    const rows = Array.from({ length: 8 }, (_, i) => ({ key: "world", period: String(2019 + i), values: { Hydro: 0.25, Solar: 0.75 } }));
+    const history = renderToStaticMarkup(React.createElement(MixHistory, { rows, lang: "fr", name: "Monde" }));
+    assert.ok(!history.includes("<details"));
+    for (const row of rows) assert.ok(history.includes(`>${row.period}</text>`));
+    for (const percent of [0, 25, 50, 75, 100]) assert.ok(history.includes(`>${percent} %</text>`));
+    assert.ok(history.includes("Monde"));
+  } finally { await server.close(); }
+});

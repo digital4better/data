@@ -83,3 +83,19 @@ export function impactColor(value: unknown, max: number): string {
   const ratio = max > 0 ? Math.max(0, Math.min(1, value / max)) : 0;
   return impactColors[Math.round(ratio * (impactColors.length - 1))];
 }
+
+// Keep the existing Mercator geometry, grouping countries for continental selection.
+export function mixPaths(paths: Record<string, string>, scale: string, regions: any[]): Record<string, string> {
+  if (scale === "subdivision") return paths;
+  const countries = displayPaths(paths, true);
+  if (scale === "country") return countries;
+  if (scale === "world") return { world: Object.values(countries).join(" ") };
+  const continents = Object.fromEntries(regions.filter((r) => r.type === "continent").map((r) => [r.continent, r.name]));
+  const countryContinents = Object.fromEntries(regions.filter((r) => r.type === "country").map((r) => [r["alpha-2"], continents[r.continent]]));
+  const grouped: Record<string, string> = {};
+  for (const [country, path] of Object.entries(countries)) {
+    const key = countryContinents[country] || `unmapped-${country}`;
+    grouped[key] = (grouped[key] || "") + " " + path;
+  }
+  return grouped;
+}
