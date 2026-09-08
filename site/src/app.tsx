@@ -70,6 +70,7 @@ const format = (value: any, lang: string): string =>
     : typeof value === "object"
     ? JSON.stringify(value)
     : String(value);
+const cloudSectionId = (id: string) => id.endsWith("-regions") ? "regions" : id.endsWith("-vms") ? "vms" : id;
 const cloudProviderLabel = (id: string) => ({ aws: "AWS", azure: "Microsoft Azure", gcp: "Google Cloud", oracle: "Oracle Cloud", ovhcloud: "OVHcloud", scaleway: "Scaleway" }[id.split("-")[0]] || id);
 // Combined views are explorer-only: no synthetic files or catalog pages are published.
 function cloudCombinedDatasets(catalog: Catalog): Dataset[] {
@@ -99,7 +100,8 @@ export function App({
   const guide = parts[0] === "guides" ? guides.find((g) => g.id === parts[1]) : undefined;
   const [query, setQuery] = useState("");
   const [search, setSearch] = useState("");
-  useEffect(() => setSearch(window.location.search), []);
+  const [interactive, setInteractive] = useState(false);
+  useEffect(() => { setSearch(window.location.search); setInteractive(true); }, []);
   const defaults: Record<string, string> = {
     factor: "country-yearly",
     mix: "country-yearly",
@@ -276,7 +278,9 @@ export function App({
               </div>
               <div className="dataset-list">
                 {catalog.datasets
-                  .filter((d) => d.collection === collection.id)
+                  // Keep every download in the static HTML; filter by section once the explorer is active.
+                  .filter((d) => d.collection === collection.id && (collection.id !== "cloud" || !interactive ||
+                    cloudSectionId(d.id) === cloudSectionId(collectionDataset?.id || defaults.cloud)))
                   .map((d) => (
                     <div className="card dataset-row" key={d.id}>
                       <div>
@@ -602,7 +606,7 @@ function Explorer({
     { id: "cpus", title: t("Processeurs", "Processors") },
     { id: "accelerators", title: t("Accélérateurs", "Accelerators") },
   ];
-  const cloudSection = d.id.endsWith("regions") ? "regions" : d.id.endsWith("vms") ? "vms" : d.id;
+  const cloudSection = cloudSectionId(d.id);
   const cloudDatasets = catalog.datasets.filter((x) => x.collection === "cloud");
   const providerDatasets = cloudDatasets.filter((x) => x.id.endsWith(`-${cloudSection}`));
   const providerLabel = cloudProviderLabel;
