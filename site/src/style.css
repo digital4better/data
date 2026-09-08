@@ -612,6 +612,7 @@ td dt {
   stroke-width: 3;
 }
 .chart-tooltip {
+  pointer-events: none;
   position: fixed;
   z-index: 1000;
   width: 280px;
