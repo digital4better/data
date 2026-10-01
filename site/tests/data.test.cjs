@@ -44,7 +44,8 @@ test("all temporal CSV files agree with JSON including green variants", () => {
         for (const [k, v] of Object.entries(values)) {
           const actual = cells[header.indexOf(k)];
           assert.notEqual(actual, undefined, `${file} ${k}`);
-          if (v !== null)
+          if (v === null) assert.equal(actual, "", `${file} ${k}: missing values must be empty in CSV`);
+          else
             assert.ok(
               Math.abs(Number(actual) - v) <= Math.max(1e-14, Math.abs(v) * 1e-8),
               `${file} ${k}: ${actual} != ${v}`

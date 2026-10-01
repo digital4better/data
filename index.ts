@@ -211,6 +211,14 @@ const escapeCsvValue = (value: CsvValue): string => {
 
 const exportToCsv = (file: string, values: Record<string, CsvValue>[], headers?: string[]) => {
   headers = headers ?? Object.keys(values[0]);
+  for (const [index, line] of values.entries()) {
+    for (const header of headers) {
+      const value = line[header];
+      if (typeof value === "number" && !Number.isFinite(value)) {
+        throw new Error(`${file}: non-finite ${header} at row ${index + 2}: ${value}`);
+      }
+    }
+  }
   writeFileSync(file, headers.join(",") + "\r\n");
   for (const line of values)
     appendFileSync(file, headers.map((header) => escapeCsvValue(line[header])).join(",") + "\r\n");
@@ -348,21 +356,20 @@ const computeDistance = (
   destination: { lat: number; lon: number },
   precision = 3
 ) => {
+  const cosine =
+    Math.cos(degToRad(90 - origin.lat)) * Math.cos(degToRad(90 - destination.lat)) +
+    Math.sin(degToRad(90 - origin.lat)) *
+      Math.sin(degToRad(90 - destination.lat)) *
+      Math.cos(degToRad(origin.lon - destination.lon));
+  // Floating-point rounding can put identical or antipodal points outside acos's domain.
   return (
-    Math.round(
-      Math.acos(
-        Math.cos(degToRad(90 - origin.lat)) * Math.cos(degToRad(90 - destination.lat)) +
-          Math.sin(degToRad(90 - origin.lat)) *
-            Math.sin(degToRad(90 - destination.lat)) *
-            Math.cos(degToRad(origin.lon - destination.lon))
-      ) *
-        6371 *
-        Math.pow(10, precision)
-    ) / Math.pow(10, precision)
+    Math.round(Math.acos(Math.max(-1, Math.min(1, cosine))) * 6371 * Math.pow(10, precision)) /
+    Math.pow(10, precision)
   );
 };
 
 const roundNumber = (value: number, significationDigits = 6): number => {
+  if (value === 0) return 0;
   const exp = Math.floor(Math.log10(Math.abs(value)));
   const coeff = value / Math.pow(10, exp);
   return parseFloat(coeff.toFixed(significationDigits - 1) + "e" + exp);
@@ -728,7 +735,9 @@ const exportFactorsAndMixes = (aggregates: Aggregates) => {
       mixes.global.push(globalMix);
       // Green mix normalization
       const greenRatio = GREEN_ENERGIES.reduce((a, v) => a + greenMix[v], 0);
-      for (const energy of GREEN_ENERGIES) greenMix[energy] = greenMix[energy] / greenRatio;
+      // A renewable-only mix cannot be inferred when no renewable generation is present.
+      for (const energy of GREEN_ENERGIES)
+        greenMix[energy] = greenRatio === 0 ? null : greenMix[energy] / greenRatio;
       mixes.green.push(greenMix);
       // Global energy impacts
       impacts.global.push(
@@ -760,7 +769,8 @@ const exportFactorsAndMixes = (aggregates: Aggregates) => {
       );
       GREEN_ENERGIES.forEach(
         (energy) =>
-          (mixes.green[mixes.green.length - 1][energy] = roundRatio(mixes.green[mixes.green.length - 1][energy]))
+          (mixes.green[mixes.green.length - 1][energy] =
+            greenMix[energy] === null ? null : roundRatio(greenMix[energy]))
       );
       Object.keys(EMPTY_IMPACTS).forEach(
         (impact) =>
@@ -774,6 +784,9 @@ const exportFactorsAndMixes = (aggregates: Aggregates) => {
             impacts.green[impacts.green.length - 1][impact]
           ))
       );
+      if (greenRatio === 0) {
+        for (const impact of Object.keys(EMPTY_IMPACTS)) impacts.green[impacts.green.length - 1][impact] = null;
+      }
     }
     writeFileSync(`./data/mix/${exp.name}.json`, JSON.stringify(groupBy(mixes.global, exp.group), null, 2));
     exportToCsv(`./data/mix/${exp.name}.csv`, mixes.global);
@@ -1037,7 +1050,9 @@ const generateAi = async () => {
   ]);
 };
 
-(async () => {
+export { computeDistance, roundNumber, exportToCsv, exportFactorsAndMixes, generateCountries };
+
+const main = async () => {
   const start = Date.now();
   await generateAi();
   await generateClouds();
@@ -1045,4 +1060,11 @@ const generateAi = async () => {
   await generateFactors();
   await generateReferenceFactors();
   console.log(`Done in ${Math.round((Date.now() - start) / 1000)}s`);
-})();
+};
+
+if (require.main === module) {
+  main().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}

@@ -93,6 +93,9 @@ And across different time granularities:
 - monthly
 
 Green-only variants are also available through files ending with `-green`.
+When the source mix contains no bioenergy, hydro, solar or wind, the green-only
+mix and its impact factors are unavailable (`null` in JSON, empty cells in CSV),
+not zero-impact electricity.
 
 Main source families:
 
