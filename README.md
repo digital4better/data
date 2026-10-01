@@ -47,6 +47,9 @@ Main source families:
 - official model vendor documentation such as [OpenAI](https://platform.openai.com/docs/models), [Anthropic](https://docs.anthropic.com/en/docs/about-claude/models/overview), [Mistral](https://docs.mistral.ai/getting-started/models/), [Qwen](https://qwen.ai/), and [DeepSeek](https://api-docs.deepseek.com/)
 - model cards and open model hubs such as [Hugging Face](https://huggingface.co/)
 - technical reports and synthesis sources such as [LifeArchitect](https://lifearchitect.ai/models-table/) and [ApXML Models](https://apxml.com/models/)
+- [EcoLogits](https://ecologits.ai/latest/methodology/proprietary_models/) for retained proprietary-model estimates where no independent replacement was verified; the [model provenance and coverage audit](./data/ai/README.md) identifies these adaptations explicitly
+
+Closed-model sizes are estimates, not vendor disclosures. The audit distinguishes published estimates, family-level assumptions, and historical values that still need verification. Cloud references include historical and restricted-access offerings; they are not a guarantee of availability in every region.
 
 ### Cloud Infrastructure
 
