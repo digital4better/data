@@ -1,0 +1,141 @@
+id,manufacturer,serie,model,architecture,platform,cores,threads,tdp,process,die,transistors,smp,status,source,missing
+amd-epyc-7232p,amd,epyc,7232p,x86-64,rome,8,16,120,7,74,3800,1,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7272,amd,epyc,7272,x86-64,rome,12,24,120,7,74,3800,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7281,amd,epyc,7281,x86-64,naples,16,32,170,14,213,4800,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7313p,amd,epyc,7313p,x86-64,milan,16,32,155,7,324,16600,1,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7371,amd,epyc,7371,x86-64,naples,16,32,170,14,213,4800,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7401p,amd,epyc,7401p,x86-64,naples,24,48,170,14,213,4800,1,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7413,amd,epyc,7413,x86-64,milan,24,48,180,7,324,16600,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7452,amd,epyc,7452,x86-64,rome,32,64,155,7,74,3800,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-74f3v,amd,epyc,74f3v,x86-64,milan,24,48,240,7,324,16600,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7543,amd,epyc,7543,x86-64,milan,32,64,225,7,648,33200,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7551,amd,epyc,7551,x86-64,naples,32,64,180,14,852,19200,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7571,amd,epyc,7571,x86-64,naples,32,64,200,14,852,19200,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7763,amd,epyc,7763,x86-64,milan,64,128,280,7,648,33200,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7763v,amd,epyc,7763v,x86-64,milan,64,128,280,7,648,33200,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7b12,amd,epyc,7b12,x86-64,rome,64,128,240,7,648,33200,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7b13,amd,epyc,7b13,x86-64,milan,64,128,280,7,648,33200,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7r13,amd,epyc,7r13,x86-64,milan,48,96,225,7,648,33200,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7r32,amd,epyc,7r32,x86-64,rome,48,96,280,7,648,33200,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7v12,amd,epyc,7v12,x86-64,rome,64,128,240,7,648,33200,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7v13,amd,epyc,7v13,x86-64,milan,64,128,240,7,648,33200,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-7v73x,amd,epyc,7v73x,x86-64,milan-x,64,128,280,7,648,33200,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-8024p,amd,epyc,8024p,x86-64,siena,8,16,90,5,73,8875,1,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-8124p,amd,epyc,8124p,x86-64,siena,16,32,125,5,146,17750,1,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-8224p,amd,epyc,8224p,x86-64,siena,24,48,160,5,146,17750,1,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-8324p,amd,epyc,8324p,x86-64,siena,32,64,180,5,292,35500,1,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-8434p,amd,epyc,8434p,x86-64,siena,48,96,200,5,292,35500,1,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-8534p,amd,epyc,8534p,x86-64,siena,64,128,200,5,292,35500,1,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-9005,amd,epyc,9005,x86-64,turin,192,384,500,4,,,2,legacy-unverified,../cloud/cpus.json,"{""die"":""legacy-zero-unspecified"",""transistors"":""legacy-zero-unspecified""}"
+amd-epyc-9334,amd,epyc,9334,x86-64,genoa,32,64,210,5,288,52560,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-9575f,amd,epyc,9575f,x86-64,turin,64,128,400,4,,66520,2,legacy-unverified,../cloud/cpus.json,"{""die"":""legacy-zero-unspecified""}"
+amd-epyc-9b14,amd,epyc,9b14,x86-64,genoa,96,192,360,5,864,78840,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-9b45,amd,epyc,9b45,x86-64,turin,96,192,400,4,,,2,legacy-unverified,../cloud/cpus.json,"{""die"":""legacy-zero-unspecified"",""transistors"":""legacy-zero-unspecified""}"
+amd-epyc-9r14,amd,epyc,9r14,x86-64,genoa,96,192,360,5,864,78840,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-9r45,amd,epyc,9r45,x86-64,turin,96,192,400,4,,,2,legacy-unverified,../cloud/cpus.json,"{""die"":""legacy-zero-unspecified"",""transistors"":""legacy-zero-unspecified""}"
+amd-epyc-9v33x,amd,epyc,9v33x,x86-64,genoa-x,96,192,400,5,864,135240,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-9v64f,amd,epyc,9v64f,x86-64,genoa,16,32,320,5,576,52560,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-9v74,amd,epyc,9v74,x86-64,genoa,80,160,400,5,864,78840,2,legacy-unverified,../cloud/cpus.json,{}
+amd-epyc-turin,amd,epyc,turin,x86-64,turin,192,384,500,4,,,2,legacy-unverified,../cloud/cpus.json,"{""die"":""legacy-zero-unspecified"",""transistors"":""legacy-zero-unspecified""}"
+amd-ryzen-3600,amd,ryzen,3600,x86-64,matisse,6,12,65,7,74,3800,1,legacy-unverified,../cloud/cpus.json,{}
+ampere-altra-m12830,ampere,altra,m12830,arm-64,neoverse n1,128,128,250,7,650,65000,2,legacy-unverified,../cloud/cpus.json,{}
+ampere-altra-q6430,ampere,altra,q64-30,arm-64,neoverse n1,64,64,124,7,574,52000,1,legacy-unverified,../cloud/cpus.json,{}
+ampere-altra-q8030,ampere,altra,q80-30,arm-64,neoverse n1,80,80,161,7,574,45000,1,legacy-unverified,../cloud/cpus.json,{}
+apple-m1,apple,m1,,arm-64,apple silicon,8,8,15,5,119,16000,1,legacy-unverified,../cloud/cpus.json,{}
+apple-m1-ultra,apple,m1,ultra,arm-64,apple silicon,20,20,110,5,854,114000,1,legacy-unverified,../cloud/cpus.json,{}
+apple-m2,apple,m2,,arm-64,apple silicon,8,8,15,5,153,20000,1,legacy-unverified,../cloud/cpus.json,{}
+apple-m2-pro,apple,m2,pro,arm-64,apple silicon,12,12,40,5,245,40000,1,legacy-unverified,../cloud/cpus.json,{}
+apple-m4,apple,m4,,arm-64,apple silicon,10,10,20,3,,,1,legacy-unverified,../cloud/cpus.json,"{""die"":""legacy-zero-unspecified"",""transistors"":""legacy-zero-unspecified""}"
+apple-m4-pro,apple,m4,pro,arm-64,apple silicon,14,14,45,3,,,1,legacy-unverified,../cloud/cpus.json,"{""die"":""legacy-zero-unspecified"",""transistors"":""legacy-zero-unspecified""}"
+aws-graviton-1,aws,graviton,1,arm-64,cortex a72,16,16,40,16,200,5000,1,legacy-unverified,../cloud/cpus.json,{}
+aws-graviton-2,aws,graviton,2,arm-64,neoverse n1,64,64,120,7,400,30000,1,legacy-unverified,../cloud/cpus.json,{}
+aws-graviton-3,aws,graviton,3,arm-64,neoverse v1,64,64,150,7,600,55000,1,legacy-unverified,../cloud/cpus.json,{}
+aws-graviton-4,aws,graviton,4,arm-64,neoverse v2,96,96,180,7,800,85000,1,legacy-unverified,../cloud/cpus.json,{}
+azure-cobalt-100,azure,cobalt,100,arm-64,neoverse n2,96,96,180,7,800,85000,1,legacy-unverified,../cloud/cpus.json,{}
+cavium-thunderx-cn8890,cavium,thunderx,cn8890,arm-64,thunderx1,48,48,125,28,375,562,2,legacy-unverified,../cloud/cpus.json,{}
+google-axion,google,axion,,arm-64,neoverse n2,96,96,180,7,800,85000,1,legacy-unverified,../cloud/cpus.json,{}
+intel-core-i78700b,intel,core,i7-8700b,x86-64,coffee lake,6,12,65,14,154,3000,1,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-6-custom-aws,intel,xeon,6-custom-aws,x86-64,granite rapids,96,192,500,5,,,2,legacy-unverified,../cloud/cpus.json,"{""die"":""legacy-zero-unspecified"",""transistors"":""legacy-zero-unspecified""}"
+intel-xeon-6148,intel,xeon,6148,x86-64,skylake,20,40,150,14,694,8000,4,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-6246r,intel,xeon,6246r,x86-64,cascade lake,16,32,205,14,694,8000,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-6253cl,intel,xeon,6253cl,x86-64,cascade lake,16,32,205,14,694,8000,4,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-6268cl,intel,xeon,6268cl,x86-64,cascade lake,24,48,205,14,694,8000,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-6455b,intel,xeon,6455b,x86-64,sapphire rapids,32,64,350,10,954,28600,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8124m,intel,xeon,8124m,x86-64,skylake,18,36,200,14,694,8000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8151,intel,xeon,8151,x86-64,skylake,12,24,240,14,694,8000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8168,intel,xeon,8168,x86-64,skylake,24,48,205,14,694,8000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8171m,intel,xeon,8171m,x86-64,skylake,26,52,205,14,694,8000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8173m,intel,xeon,8173m,x86-64,skylake,28,56,165,14,694,8000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8175,intel,xeon,8175,x86-64,skylake,24,48,165,14,694,8000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8176m,intel,xeon,8176m,x86-64,skylake,28,56,165,14,694,8000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8180m,intel,xeon,8180m,x86-64,skylake,28,56,205,14,694,8000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8252c,intel,xeon,8252c,x86-64,cascade lake,12,24,240,14,694,8000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8259cl,intel,xeon,8259cl,x86-64,cascade lake,24,48,210,14,694,8000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8272cl,intel,xeon,8272cl,x86-64,cascade lake,26,52,195,14,694,8000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8273cl,intel,xeon,8273cl,x86-64,cascade lake,28,56,165,14,694,8000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8275cl,intel,xeon,8275cl,x86-64,cascade lake,24,48,240,14,694,8000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8276,intel,xeon,8276,x86-64,cascade lake,28,56,165,14,694,8000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8280,intel,xeon,8280,x86-64,cascade lake,28,56,205,14,694,8000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8280l,intel,xeon,8280l,x86-64,cascade lake,28,56,205,14,694,8000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8280m,intel,xeon,8280m,x86-64,cascade lake,28,56,205,14,694,8000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8370c,intel,xeon,8370c,x86-64,ice lake,32,64,270,10,954,28600,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8373c,intel,xeon,8373c,x86-64,ice lake,36,72,300,10,954,28600,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8375c,intel,xeon,8375c,x86-64,ice lake,32,64,300,10,954,28600,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8452y,intel,xeon,8452y,x86-64,sapphire rapids,36,72,300,10,1908,48000,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8473c,intel,xeon,8473c,x86-64,sapphire rapids,52,104,350,10,1908,48000,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8477c,intel,xeon,8477c,x86-64,sapphire rapids,56,112,350,10,1908,48000,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8480c,intel,xeon,8480c,x86-64,sapphire rapids,56,112,350,10,1908,48000,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8481c,intel,xeon,8481c,x86-64,sapphire rapids,56,112,350,10,1908,48000,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8488c,intel,xeon,8488c,x86-64,sapphire rapids,48,96,350,10,1908,48000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8490h,intel,xeon,8490h,x86-64,sapphire rapids,60,120,350,10,1908,48000,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8559c,intel,xeon,8559c,x86-64,emerald rapids,48,96,350,10,1526,57000,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8573c,intel,xeon,8573c,x86-64,emerald rapids,52,104,350,10,1526,57000,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-8581c,intel,xeon,8581c,x86-64,emerald rapids,60,120,350,10,1526,57000,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e2274g,intel,xeon,e-2274g,x86-64,coffee lake,4,8,83,14,126,1400,1,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e2288g,intel,xeon,e-2288g,x86-64,coffee lake,8,16,95,14,180,2900,1,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e31220,intel,xeon,e3-1220,x86-64,sandy bridge,4,4,80,32,216,1160,1,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e51410v2,intel,xeon,e5-1410 v2,x86-64,ivy bridge,4,8,80,22,257,1860,1,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e51650,intel,xeon,e5-1650,x86-64,sandy bridge,6,12,130,32,435,2270,1,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52620,intel,xeon,e5-2620,x86-64,sandy bridge,6,12,95,32,435,2270,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52650,intel,xeon,e5-2650,x86-64,sandy bridge,8,16,95,32,435,2270,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52651v2,intel,xeon,e5-2651 v2,x86-64,ivy bridge,12,24,95,22,541,4310,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52660,intel,xeon,e5-2660,x86-64,sandy bridge,8,16,95,32,416,2270,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52665,intel,xeon,e5-2665,x86-64,sandy bridge,8,16,115,32,416,2270,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52666v3,intel,xeon,e5-2666 v3,x86-64,haswell,10,20,135,22,492,3840,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52667v3,intel,xeon,e5-2667 v3,x86-64,haswell,8,16,135,22,356,2600,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52670,intel,xeon,e5-2670,x86-64,sandy bridge,8,16,115,32,416,2270,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52670v2,intel,xeon,e5-2670 v2,x86-64,ivy bridge,10,20,115,22,341,2890,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52673v3,intel,xeon,e5-2673 v3,x86-64,haswell,12,24,105,22,492,3840,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52673v4,intel,xeon,e5-2673 v4,x86-64,broadwell,20,40,135,14,456,7200,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52676v3,intel,xeon,e5-2676 v3,x86-64,haswell,12,24,120,22,492,3840,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52680v2,intel,xeon,e5-2680 v2,x86-64,ivy bridge,10,20,115,22,341,2890,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52686v4,intel,xeon,e5-2686 v4,x86-64,broadwell,18,36,145,14,456,7200,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52689,intel,xeon,e5-2689,x86-64,sandy bridge,8,16,115,32,416,2270,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52690v3,intel,xeon,e5-2690 v3,x86-64,haswell,12,24,135,22,492,3840,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52690v4,intel,xeon,e5-2690 v4,x86-64,broadwell,14,28,135,14,306,4700,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52696v2,intel,xeon,e5-2696 v2,x86-64,ivy bridge,12,24,130,22,541,4310,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52696v3,intel,xeon,e5-2696 v3,x86-64,haswell,18,36,145,22,662,5690,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52696v4,intel,xeon,e5-2696 v4,x86-64,broadwell,22,44,150,14,456,7200,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e52698bv3,intel,xeon,e5-2698b v3,x86-64,haswell,16,32,135,22,662,5690,2,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e78880v3,intel,xeon,e7-8880 v3,x86-64,haswell,18,36,140,22,662,5690,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e78880v4,intel,xeon,e7-8880 v4,x86-64,broadwell,22,44,150,14,456,7200,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e78890v3,intel,xeon,e7-8890 v3,x86-64,haswell,18,36,165,22,662,5690,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-e78890v4,intel,xeon,e7-8890 v4,x86-64,broadwell,24,48,165,14,456,7200,8,legacy-unverified,../cloud/cpus.json,{}
+intel-xeon-emerald-rapids-aws,intel,xeon,emerald-rapids-aws,x86-64,emerald rapids,48,96,350,10,1526,57000,2,legacy-unverified,../cloud/cpus.json,{}
+nvidia-grace,nvidia,grace,,arm-64,grace,144,144,500,4,774,,1,legacy-unverified,../cloud/cpus.json,"{""transistors"":""legacy-zero-unspecified""}"
+amd-epyc-5thgen-64c,amd,epyc,5th gen 64-core,x86-64,turin,64,128,,,,,2,legacy-unverified,../cloud/cpus.json,"{""tdp"":""not-provided"",""process"":""not-provided"",""die"":""not-provided"",""transistors"":""not-provided""}"
+amd-epyc-7542,amd,epyc,7542,x86-64,rome,32,64,225,7,,,2,legacy-unverified,../cloud/cpus.json,"{""die"":""not-provided"",""transistors"":""not-provided""}"
+amd-epyc-7742,amd,epyc,7742,x86-64,rome,64,128,225,7,,,2,legacy-unverified,../cloud/cpus.json,"{""die"":""not-provided"",""transistors"":""not-provided""}"
+amd-epyc-7j13,amd,epyc,7j13,x86-64,milan,64,128,,,,,2,legacy-unverified,../cloud/cpus.json,"{""tdp"":""not-provided"",""process"":""not-provided"",""die"":""not-provided"",""transistors"":""not-provided""}"
+amd-epyc-9j14,amd,epyc,9j14,x86-64,genoa,96,192,,,,,2,legacy-unverified,../cloud/cpus.json,"{""tdp"":""not-provided"",""process"":""not-provided"",""die"":""not-provided"",""transistors"":""not-provided""}"
+amd-epyc-9j45,amd,epyc,9j45,x86-64,turin,128,256,,,,,2,legacy-unverified,../cloud/cpus.json,"{""tdp"":""not-provided"",""process"":""not-provided"",""die"":""not-provided"",""transistors"":""not-provided""}"
+ampere-ampereone-a16030,ampere,ampereone,a160-30,arm-64,ampereone,160,160,,,,,1,legacy-unverified,../cloud/cpus.json,"{""tdp"":""not-provided"",""process"":""not-provided"",""die"":""not-provided"",""transistors"":""not-provided""}"
+ampere-ampereone-m-a0636m,ampere,ampereone-m,a06-36m,arm-64,ampereone-m,96,96,,,,,1,legacy-unverified,../cloud/cpus.json,"{""tdp"":""not-provided"",""process"":""not-provided"",""die"":""not-provided"",""transistors"":""not-provided""}"
+intel-xeon-6354,intel,xeon,6354,x86-64,ice lake,18,36,205,10,,,2,legacy-unverified,../cloud/cpus.json,"{""die"":""not-provided"",""transistors"":""not-provided""}"
+intel-xeon-8167m,intel,xeon,8167m,x86-64,skylake,26,52,165,14,,,2,legacy-unverified,../cloud/cpus.json,"{""die"":""not-provided"",""transistors"":""not-provided""}"
+intel-xeon-8358,intel,xeon,8358,x86-64,ice lake,32,64,250,10,,,2,legacy-unverified,../cloud/cpus.json,"{""die"":""not-provided"",""transistors"":""not-provided""}"
+intel-xeon-8480plus,intel,xeon,8480+,x86-64,sapphire rapids,56,112,350,10,,,2,legacy-unverified,../cloud/cpus.json,"{""die"":""not-provided"",""transistors"":""not-provided""}"
+intel-xeon-8592plus,intel,xeon,8592+,x86-64,emerald rapids,64,128,,,,,2,legacy-unverified,../cloud/cpus.json,"{""tdp"":""not-provided"",""process"":""not-provided"",""die"":""not-provided"",""transistors"":""not-provided""}"
+intel-xeon-e52699v3,intel,xeon,e5-2699 v3,x86-64,haswell,18,36,145,22,,,2,legacy-unverified,../cloud/cpus.json,"{""die"":""not-provided"",""transistors"":""not-provided""}"
+intel-xeon-e52699v4,intel,xeon,e5-2699 v4,x86-64,broadwell,22,44,145,14,,,2,legacy-unverified,../cloud/cpus.json,"{""die"":""not-provided"",""transistors"":""not-provided""}"
+intel-xeon-gold-6154,intel,xeon,gold 6154,x86-64,skylake,18,36,200,14,,,2,legacy-unverified,../cloud/cpus.json,"{""die"":""not-provided"",""transistors"":""not-provided""}"

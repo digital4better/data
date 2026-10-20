@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "status": "experimental",
+  "updatedAt": "2026-10-20",
+  "license": "ODbL-1.0; upstream attribution and rights retained",
+  "catalogs": {
+    "cpus": {
+      "source": "../cloud/cpus.json",
+      "status": "legacy-unverified",
+      "scope": "Processor specifications, not manufacturing impact factors"
+    },
+    "accelerators": {
+      "source": "../cloud/accelerators.json",
+      "status": "legacy-unverified",
+      "scope": "Accelerator specifications; card, module and die boundaries require verification"
+    }
+  },
+  "snapshots": [
+    {
+      "id": "hardware-models",
+      "file": "methodology/hardware-models.json",
+      "sha256": "ff3f4814c457d1e86682a256c37267b547661b0fbd0a266e0a932c1e0aaa66b3",
+      "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+      "revision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+      "importedAt": "2026-10-20",
+      "status": "illustrative-not-calibrated"
+    },
+    {
+      "id": "hardware-configurations",
+      "file": "methodology/hardware-configurations.json",
+      "sha256": "9a0405c700f2317ed14dc025b23d8094a182fe540898014c42ee7f42aa6d4eb2",
+      "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+      "revision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+      "importedAt": "2026-10-20",
+      "status": "fictional-configurations-not-product-inventories"
+    },
+    {
+      "id": "ai-hardware-profiles",
+      "file": "methodology/ai-hardware-profiles.json",
+      "sha256": "8fb7fc2e4f905e84957fc6c110a175eae17d4c061b1d15605e9dc98c2165d8e8",
+      "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+      "revision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+      "importedAt": "2026-10-20",
+      "status": "illustrative-historical-profiles-not-calibrated"
+    }
+  ],
+  "catalogUnits": {
+    "cores": "count",
+    "threads": "count",
+    "tdp": "W",
+    "process": "nm",
+    "die": "mm2",
+    "transistors": "million transistors",
+    "smp": "sockets",
+    "memory": "GB (legacy convention; GB/GiB not independently verified)"
+  },
+  "catalogCaveats": [
+    "Every numeric specification needs primary, product-specific verification before promotion to verified status.",
+    "Legacy zero numeric specifications become null with a missing reason; original data/cloud files are unchanged.",
+    "Die area may refer to one chiplet rather than a complete package. Do not multiply it by a manufacturing factor without checking the physical boundary.",
+    "TDP is a thermal design specification, not a measurement of average electricity consumption."
+  ]
+}

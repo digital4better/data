@@ -1,0 +1,28 @@
+{
+  "version": "d4b-components-illustration-2026.10.19",
+  "status": "illustrative-not-calibrated",
+  "units": {"gwp": "kg CO2e per component", "die": "mm2 for CPU; cm2 for memory and SSD", "capacity": "decimal GB", "power": "W", "battery": "Wh"},
+  "sources": {
+    "cpu": "https://doc.api.boavizta.org/Explanations/components/cpu/",
+    "memory": "https://doc.api.boavizta.org/Explanations/components/ram/",
+    "storage": "https://doc.api.boavizta.org/Explanations/components/ssd/",
+    "power": "https://www.cloudcarbonfootprint.org/docs/methodology/"
+  },
+  "boundary": "Historical manufacturing proxies. Transport, end of life and assembly coverage require source-specific verification. Node, packaging, display, battery, structural and power profiles are illustrative assumptions, not calibrated product factors.",
+  "cpu": {"dieGwp": 0.0197, "baseGwp": 9.14, "dieAdpe": 5.87e-9, "baseAdpe": 0.0204},
+  "nodeFactors": {"3": 2.8, "4": 2.5, "5": 2.2, "7": 1.8, "10": 1.4, "14": 1.2, "22": 1.05, "28": 1, "32": 0.95},
+  "processorPackaging": {"cpu": 1, "gpu": 1.5, "gpu_consumer": 1.1},
+  "acceleratorBoundary": "Die and packaging proxy only. Accelerator memory, board and cooling are not inferred from the multiplier. A complete-card inventory must replace this proxy, not be added to it.",
+  "memory": {
+    "dieGwp": 2.2, "baseGwp": 5.22, "powerPerGb": 0.392,
+    "density": {"ddr4": 0.625, "ddr5": 1, "hbm2e": 0.5, "hbm3": 0.8},
+    "packaging": {"ddr4": 1, "ddr5": 1.1, "hbm2e": 3, "hbm3": 3.5}
+  },
+  "storage": {"dieGwp": 2.2, "baseGwp": 6.34, "density": 48.5, "hddGwp": 31.11, "powerPerTb": {"ssd_sata": 1.2, "ssd_nvme": 1.2, "hdd": 0.65}},
+  "display": {"gwpPerCm2": {"lcd": 0.07, "oled": 0.12, "eink": 0.03}, "baseGwp": {"lcd": 3, "oled": 2.5, "eink": 1.5}, "powerPerCm2": {"lcd": 0.003, "oled": 0.002, "eink": 0.0001}},
+  "battery": {"gwpPerKwh": {"lco": 75, "nmc": 65, "lfp": 50}, "cobaltGramsPerKwh": {"lco": 600, "nmc": 200, "lfp": 0}, "lithiumGramsPerKwh": {"lco": 110, "nmc": 90, "lfp": 80}},
+  "structuralGwp": {"smartphone": 4, "tablet": 5, "laptop": 8, "desktop": 12, "custom": 8, "server": 50},
+  "powerAssumptions": {"terminalCpuLoad": 0.5, "terminalAuxiliaryW": 2, "serverAuxiliaryW": 50},
+  "assemblyAssumptions": {"serverMemoryModuleGb": 32, "serverSsdDriveTb": 2, "serverHddDriveTb": 4},
+  "coverage": {"gwp": "partial manufacturing model", "ap": "unassessed", "ctue": "unassessed", "ctuh-c": "unassessed", "ctuh-nc": "unassessed", "ir": "unassessed", "pm": "unassessed", "wu": "unassessed", "adpe": "historical component values only; no complete equipment total"}
+}

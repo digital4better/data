@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "inputs": {
+    "../cloud/cpus.json": "c58965c283ce00394d99ac90b926bed65c778ffa6f0e6c726c6899ae1c42f2b9",
+    "../cloud/accelerators.json": "dce6b661fd7c4dddaea03a2f520a636ce532014fd946bf845f4f32b2d4b77c9c"
+  },
+  "snapshots": [
+    {
+      "id": "hardware-models",
+      "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+      "revision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+      "sha256": "ff3f4814c457d1e86682a256c37267b547661b0fbd0a266e0a932c1e0aaa66b3"
+    },
+    {
+      "id": "hardware-configurations",
+      "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+      "revision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+      "sha256": "9a0405c700f2317ed14dc025b23d8094a182fe540898014c42ee7f42aa6d4eb2"
+    },
+    {
+      "id": "ai-hardware-profiles",
+      "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+      "revision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+      "sha256": "8fb7fc2e4f905e84957fc6c110a175eae17d4c061b1d15605e9dc98c2165d8e8"
+    }
+  ]
+}

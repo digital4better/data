@@ -41,6 +41,7 @@ jobs:
       - run: git config user.email "<>"
       - run: yarn --frozen-lockfile
       - run: yarn build
+      - run: yarn test:hardware
       - run: yarn check:site
       - run: yarn test:site
       - name: Version, push & publish if changes

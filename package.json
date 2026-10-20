@@ -11,13 +11,15 @@
   "scripts": {
     "start": "yarn build:site && vite preview --host 127.0.0.1",
     "build": "yarn build:data && yarn build:site",
-    "build:data": "ts-node .",
+    "build:data": "yarn build:hardware && ts-node .",
     "build:site": "node site/scripts/build.mjs",
     "version": "node .github/workflows/update-release-date.js",
     "postversion": "git push --tags",
     "preview:site": "vite preview --host 127.0.0.1",
     "test:site": "node --test site/tests/*.test.cjs",
-    "check:site": "tsc --noEmit -p site/tsconfig.json"
+    "check:site": "tsc --noEmit -p site/tsconfig.json",
+    "build:hardware": "node scripts/hardware.cjs",
+    "test:hardware": "node --test scripts/hardware.test.cjs && node scripts/hardware.cjs --check"
   },
   "devDependencies": {
     "@emotion/react": "^11.11.3",

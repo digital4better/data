@@ -1,0 +1,25 @@
+name: Validate hardware data
+on:
+  pull_request:
+    paths:
+      - "data/hardware/**"
+      - "data/cloud/cpus.json"
+      - "data/cloud/accelerators.json"
+      - "scripts/hardware*"
+      - ".github/workflows/hardware.yml"
+      - "package.json"
+  push:
+    branches: ["codex/hardware-catalog"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+      - run: node --test scripts/hardware.test.cjs
+      - run: node scripts/hardware.cjs --check

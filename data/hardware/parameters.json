@@ -1,0 +1,2252 @@
+[
+  {
+    "dataset": "hardware-models",
+    "id": "cpu.dieGwp",
+    "value": 0.0197,
+    "unit": "kg CO2e/mm2",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "cpu.baseGwp",
+    "value": 9.14,
+    "unit": "kg CO2e/component",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "cpu.dieAdpe",
+    "value": 5.87e-9,
+    "unit": "kg Sb eq/mm2",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "cpu.baseAdpe",
+    "value": 0.0204,
+    "unit": "kg Sb eq/component",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "nodeFactors.3",
+    "value": 2.8,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "nodeFactors.4",
+    "value": 2.5,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "nodeFactors.5",
+    "value": 2.2,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "nodeFactors.7",
+    "value": 1.8,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "nodeFactors.10",
+    "value": 1.4,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "nodeFactors.14",
+    "value": 1.2,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "nodeFactors.22",
+    "value": 1.05,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "nodeFactors.28",
+    "value": 1,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "nodeFactors.32",
+    "value": 0.95,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "processorPackaging.cpu",
+    "value": 1,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "processorPackaging.gpu",
+    "value": 1.5,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "processorPackaging.gpu_consumer",
+    "value": 1.1,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "memory.dieGwp",
+    "value": 2.2,
+    "unit": "kg CO2e/cm2",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "memory.baseGwp",
+    "value": 5.22,
+    "unit": "kg CO2e/component",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "memory.powerPerGb",
+    "value": 0.392,
+    "unit": "W/GB",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "memory.density.ddr4",
+    "value": 0.625,
+    "unit": "GB/cm2",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "memory.density.ddr5",
+    "value": 1,
+    "unit": "GB/cm2",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "memory.density.hbm2e",
+    "value": 0.5,
+    "unit": "GB/cm2",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "memory.density.hbm3",
+    "value": 0.8,
+    "unit": "GB/cm2",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "memory.packaging.ddr4",
+    "value": 1,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "memory.packaging.ddr5",
+    "value": 1.1,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "memory.packaging.hbm2e",
+    "value": 3,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "memory.packaging.hbm3",
+    "value": 3.5,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "storage.dieGwp",
+    "value": 2.2,
+    "unit": "kg CO2e/cm2",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "storage.baseGwp",
+    "value": 6.34,
+    "unit": "kg CO2e/component",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "storage.density",
+    "value": 48.5,
+    "unit": "GB/cm2",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "storage.hddGwp",
+    "value": 31.11,
+    "unit": "kg CO2e/component",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "storage.powerPerTb.ssd_sata",
+    "value": 1.2,
+    "unit": "W/TB",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "storage.powerPerTb.ssd_nvme",
+    "value": 1.2,
+    "unit": "W/TB",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "storage.powerPerTb.hdd",
+    "value": 0.65,
+    "unit": "W/TB",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "display.gwpPerCm2.lcd",
+    "value": 0.07,
+    "unit": "kg CO2e/cm2",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "display.gwpPerCm2.oled",
+    "value": 0.12,
+    "unit": "kg CO2e/cm2",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "display.gwpPerCm2.eink",
+    "value": 0.03,
+    "unit": "kg CO2e/cm2",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "display.baseGwp.lcd",
+    "value": 3,
+    "unit": "kg CO2e/display",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "display.baseGwp.oled",
+    "value": 2.5,
+    "unit": "kg CO2e/display",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "display.baseGwp.eink",
+    "value": 1.5,
+    "unit": "kg CO2e/display",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "display.powerPerCm2.lcd",
+    "value": 0.003,
+    "unit": "W/cm2",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "display.powerPerCm2.oled",
+    "value": 0.002,
+    "unit": "W/cm2",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "display.powerPerCm2.eink",
+    "value": 0.0001,
+    "unit": "W/cm2",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "battery.gwpPerKwh.lco",
+    "value": 75,
+    "unit": "kg CO2e/kWh capacity",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "battery.gwpPerKwh.nmc",
+    "value": 65,
+    "unit": "kg CO2e/kWh capacity",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "battery.gwpPerKwh.lfp",
+    "value": 50,
+    "unit": "kg CO2e/kWh capacity",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "battery.cobaltGramsPerKwh.lco",
+    "value": 600,
+    "unit": "g/kWh capacity",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "battery.cobaltGramsPerKwh.nmc",
+    "value": 200,
+    "unit": "g/kWh capacity",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "battery.cobaltGramsPerKwh.lfp",
+    "value": 0,
+    "unit": "g/kWh capacity",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "battery.lithiumGramsPerKwh.lco",
+    "value": 110,
+    "unit": "g/kWh capacity",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "battery.lithiumGramsPerKwh.nmc",
+    "value": 90,
+    "unit": "g/kWh capacity",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "battery.lithiumGramsPerKwh.lfp",
+    "value": 80,
+    "unit": "g/kWh capacity",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "structuralGwp.smartphone",
+    "value": 4,
+    "unit": "kg CO2e/equipment",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "structuralGwp.tablet",
+    "value": 5,
+    "unit": "kg CO2e/equipment",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "structuralGwp.laptop",
+    "value": 8,
+    "unit": "kg CO2e/equipment",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "structuralGwp.desktop",
+    "value": 12,
+    "unit": "kg CO2e/equipment",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "structuralGwp.custom",
+    "value": 8,
+    "unit": "kg CO2e/equipment",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "structuralGwp.server",
+    "value": 50,
+    "unit": "kg CO2e/equipment",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "powerAssumptions.terminalCpuLoad",
+    "value": 0.5,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "powerAssumptions.terminalAuxiliaryW",
+    "value": 2,
+    "unit": "W",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "powerAssumptions.serverAuxiliaryW",
+    "value": 50,
+    "unit": "W",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "assemblyAssumptions.serverMemoryModuleGb",
+    "value": 32,
+    "unit": "GB/module",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "assemblyAssumptions.serverSsdDriveTb",
+    "value": 2,
+    "unit": "TB/drive",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "assemblyAssumptions.serverHddDriveTb",
+    "value": 4,
+    "unit": "TB/drive",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.smartphone.cpuDie",
+    "value": 100,
+    "unit": "mm2",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.smartphone.cpuNode",
+    "value": 4,
+    "unit": "nm",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.smartphone.cpuTdp",
+    "value": 5,
+    "unit": "W",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.smartphone.ram",
+    "value": 8,
+    "unit": "GB",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.smartphone.storage",
+    "value": 128,
+    "unit": "GB",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.smartphone.screenDiag",
+    "value": 6.5,
+    "unit": "inch",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.smartphone.battery",
+    "value": 18,
+    "unit": "Wh",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.smartphone.lifetime",
+    "value": 3,
+    "unit": "year",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.smartphone.usageHours",
+    "value": 4,
+    "unit": "h/day",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.tablet.cpuDie",
+    "value": 100,
+    "unit": "mm2",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.tablet.cpuNode",
+    "value": 4,
+    "unit": "nm",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.tablet.cpuTdp",
+    "value": 8,
+    "unit": "W",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.tablet.ram",
+    "value": 8,
+    "unit": "GB",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.tablet.storage",
+    "value": 256,
+    "unit": "GB",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.tablet.screenDiag",
+    "value": 11,
+    "unit": "inch",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.tablet.battery",
+    "value": 30,
+    "unit": "Wh",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.tablet.lifetime",
+    "value": 4,
+    "unit": "year",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.tablet.usageHours",
+    "value": 4,
+    "unit": "h/day",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.laptop.cpuDie",
+    "value": 150,
+    "unit": "mm2",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.laptop.cpuNode",
+    "value": 7,
+    "unit": "nm",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.laptop.cpuTdp",
+    "value": 28,
+    "unit": "W",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.laptop.ram",
+    "value": 16,
+    "unit": "GB",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.laptop.storage",
+    "value": 512,
+    "unit": "GB",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.laptop.screenDiag",
+    "value": 14,
+    "unit": "inch",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.laptop.battery",
+    "value": 56,
+    "unit": "Wh",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.laptop.lifetime",
+    "value": 5,
+    "unit": "year",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.laptop.usageHours",
+    "value": 8,
+    "unit": "h/day",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.desktop.cpuDie",
+    "value": 200,
+    "unit": "mm2",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.desktop.cpuNode",
+    "value": 10,
+    "unit": "nm",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.desktop.cpuTdp",
+    "value": 65,
+    "unit": "W",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.desktop.ram",
+    "value": 32,
+    "unit": "GB",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.desktop.storage",
+    "value": 1000,
+    "unit": "GB",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.desktop.screenDiag",
+    "value": 27,
+    "unit": "inch",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.desktop.battery",
+    "value": 0,
+    "unit": "Wh",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.desktop.lifetime",
+    "value": 6,
+    "unit": "year",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "terminals.desktop.usageHours",
+    "value": 8,
+    "unit": "h/day",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_1u.cpuCount",
+    "value": 1,
+    "unit": "count",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_1u.cpuDie",
+    "value": 400,
+    "unit": "mm2",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_1u.cpuNode",
+    "value": 10,
+    "unit": "nm",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_1u.cpuTdp",
+    "value": 200,
+    "unit": "W",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_1u.gpuCount",
+    "value": 0,
+    "unit": "count",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_1u.gpuDie",
+    "value": 0,
+    "unit": "mm2",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_1u.gpuNode",
+    "value": 5,
+    "unit": "nm",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_1u.gpuTdp",
+    "value": 0,
+    "unit": "W",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_1u.ram",
+    "value": 128,
+    "unit": "GB",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_1u.storage",
+    "value": 2,
+    "unit": "TB",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_1u.lifetime",
+    "value": 5,
+    "unit": "year",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_1u.pue",
+    "value": 1.58,
+    "unit": "dimensionless",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_2u.cpuCount",
+    "value": 2,
+    "unit": "count",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_2u.cpuDie",
+    "value": 400,
+    "unit": "mm2",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_2u.cpuNode",
+    "value": 10,
+    "unit": "nm",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_2u.cpuTdp",
+    "value": 200,
+    "unit": "W",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_2u.gpuCount",
+    "value": 0,
+    "unit": "count",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_2u.gpuDie",
+    "value": 0,
+    "unit": "mm2",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_2u.gpuNode",
+    "value": 5,
+    "unit": "nm",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_2u.gpuTdp",
+    "value": 0,
+    "unit": "W",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_2u.ram",
+    "value": 512,
+    "unit": "GB",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_2u.storage",
+    "value": 8,
+    "unit": "TB",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_2u.lifetime",
+    "value": 5,
+    "unit": "year",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.standard_2u.pue",
+    "value": 1.58,
+    "unit": "dimensionless",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_4.cpuCount",
+    "value": 2,
+    "unit": "count",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_4.cpuDie",
+    "value": 400,
+    "unit": "mm2",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_4.cpuNode",
+    "value": 10,
+    "unit": "nm",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_4.cpuTdp",
+    "value": 200,
+    "unit": "W",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_4.gpuCount",
+    "value": 4,
+    "unit": "count",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_4.gpuDie",
+    "value": 814,
+    "unit": "mm2",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_4.gpuNode",
+    "value": 5,
+    "unit": "nm",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_4.gpuTdp",
+    "value": 700,
+    "unit": "W",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_4.ram",
+    "value": 1024,
+    "unit": "GB",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_4.storage",
+    "value": 16,
+    "unit": "TB",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_4.lifetime",
+    "value": 5,
+    "unit": "year",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_4.pue",
+    "value": 1.3,
+    "unit": "dimensionless",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_8.cpuCount",
+    "value": 2,
+    "unit": "count",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_8.cpuDie",
+    "value": 400,
+    "unit": "mm2",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_8.cpuNode",
+    "value": 10,
+    "unit": "nm",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_8.cpuTdp",
+    "value": 350,
+    "unit": "W",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_8.gpuCount",
+    "value": 8,
+    "unit": "count",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_8.gpuDie",
+    "value": 814,
+    "unit": "mm2",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_8.gpuNode",
+    "value": 5,
+    "unit": "nm",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_8.gpuTdp",
+    "value": 700,
+    "unit": "W",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_8.ram",
+    "value": 2048,
+    "unit": "GB",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_8.storage",
+    "value": 30,
+    "unit": "TB",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_8.lifetime",
+    "value": 5,
+    "unit": "year",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-configurations",
+    "id": "servers.gpu_8.pue",
+    "value": 1.2,
+    "unit": "dimensionless",
+    "status": "fictional-configurations-not-product-inventories",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.cpu_count",
+    "value": 2,
+    "unit": "count",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.cpu_power",
+    "value": 350,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.cpu_embodied",
+    "value": 25000,
+    "unit": "g CO2e/CPU",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.gpu_count",
+    "value": 8,
+    "unit": "count",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.gpu_flops",
+    "value": 989000000000000,
+    "unit": "FLOP/s",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.gpu_power",
+    "value": 700,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.gpu_embodied",
+    "value": 250000,
+    "unit": "g CO2e/accelerator",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.ram",
+    "value": 2000000000000,
+    "unit": "byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.ram_power",
+    "value": 3.92e-10,
+    "unit": "W/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.ram_embodied",
+    "value": 0.0000013880208333333333,
+    "unit": "g CO2e/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.ssd",
+    "value": 30000000000000,
+    "unit": "byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.ssd_power",
+    "value": 1.2e-12,
+    "unit": "W/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.ssd_embodied",
+    "value": 1.6e-7,
+    "unit": "g CO2e/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.enclosure_units",
+    "value": 8,
+    "unit": "rack unit",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.enclosure_power",
+    "value": 0,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.enclosure_embodied",
+    "value": 250000,
+    "unit": "g CO2e/enclosure",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.mfu",
+    "value": 0.4,
+    "unit": "dimensionless",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.cpu_count",
+    "value": 2,
+    "unit": "count",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.cpu_power",
+    "value": 225,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.cpu_embodied",
+    "value": 25000,
+    "unit": "g CO2e/CPU",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.gpu_count",
+    "value": 8,
+    "unit": "count",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.gpu_flops",
+    "value": 312000000000000,
+    "unit": "FLOP/s",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.gpu_power",
+    "value": 400,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.gpu_embodied",
+    "value": 143000,
+    "unit": "g CO2e/accelerator",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.ram",
+    "value": 1000000000000,
+    "unit": "byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.ram_power",
+    "value": 3.92e-10,
+    "unit": "W/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.ram_embodied",
+    "value": 0.0000013880208333333333,
+    "unit": "g CO2e/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.ssd",
+    "value": 30000000000000,
+    "unit": "byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.ssd_power",
+    "value": 1.2e-12,
+    "unit": "W/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.ssd_embodied",
+    "value": 1.6e-7,
+    "unit": "g CO2e/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.enclosure_units",
+    "value": 8,
+    "unit": "rack unit",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.enclosure_power",
+    "value": 0,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.enclosure_embodied",
+    "value": 250000,
+    "unit": "g CO2e/enclosure",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.mfu",
+    "value": 0.4,
+    "unit": "dimensionless",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.cpu_count",
+    "value": 1,
+    "unit": "count",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.cpu_power",
+    "value": 250,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.cpu_embodied",
+    "value": 25000,
+    "unit": "g CO2e/CPU",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.gpu_count",
+    "value": 1,
+    "unit": "count",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.gpu_flops",
+    "value": 312000000000000,
+    "unit": "FLOP/s",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.gpu_power",
+    "value": 400,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.gpu_embodied",
+    "value": 143000,
+    "unit": "g CO2e/accelerator",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.ram",
+    "value": 128000000000,
+    "unit": "byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.ram_power",
+    "value": 3.92e-10,
+    "unit": "W/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.ram_embodied",
+    "value": 0.0000013880208333333333,
+    "unit": "g CO2e/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.ssd",
+    "value": 2000000000000,
+    "unit": "byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.ssd_power",
+    "value": 1.2e-12,
+    "unit": "W/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.ssd_embodied",
+    "value": 1.6e-7,
+    "unit": "g CO2e/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.enclosure_units",
+    "value": 1,
+    "unit": "rack unit",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.enclosure_power",
+    "value": 0,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.enclosure_embodied",
+    "value": 250000,
+    "unit": "g CO2e/enclosure",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.mfu",
+    "value": 0.4,
+    "unit": "dimensionless",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.cpu_count",
+    "value": 2,
+    "unit": "count",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.cpu_power",
+    "value": 350,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.cpu_embodied",
+    "value": 25000,
+    "unit": "g CO2e/CPU",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.gpu_count",
+    "value": 4,
+    "unit": "count",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.gpu_flops",
+    "value": 989000000000000,
+    "unit": "FLOP/s",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.gpu_power",
+    "value": 700,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.gpu_embodied",
+    "value": 250000,
+    "unit": "g CO2e/accelerator",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.ram",
+    "value": 2000000000000,
+    "unit": "byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.ram_power",
+    "value": 3.92e-10,
+    "unit": "W/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.ram_embodied",
+    "value": 0.0000013880208333333333,
+    "unit": "g CO2e/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.ssd",
+    "value": 30000000000000,
+    "unit": "byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.ssd_power",
+    "value": 1.2e-12,
+    "unit": "W/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.ssd_embodied",
+    "value": 1.6e-7,
+    "unit": "g CO2e/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.enclosure_units",
+    "value": 8,
+    "unit": "rack unit",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.enclosure_power",
+    "value": 0,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.enclosure_embodied",
+    "value": 250000,
+    "unit": "g CO2e/enclosure",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.mfu",
+    "value": 0.4,
+    "unit": "dimensionless",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.cpu_count",
+    "value": 2,
+    "unit": "count",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.cpu_power",
+    "value": 350,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.cpu_embodied",
+    "value": 25000,
+    "unit": "g CO2e/CPU",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.gpu_count",
+    "value": 8,
+    "unit": "count",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.gpu_flops",
+    "value": 2200000000000000,
+    "unit": "FLOP/s",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.gpu_power",
+    "value": 1200,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.gpu_embodied",
+    "value": 750000,
+    "unit": "g CO2e/accelerator",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.ram",
+    "value": 2000000000000,
+    "unit": "byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.ram_power",
+    "value": 3.92e-10,
+    "unit": "W/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.ram_embodied",
+    "value": 0.0000013880208333333333,
+    "unit": "g CO2e/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.ssd",
+    "value": 30000000000000,
+    "unit": "byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.ssd_power",
+    "value": 1.2e-12,
+    "unit": "W/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.ssd_embodied",
+    "value": 1.6e-7,
+    "unit": "g CO2e/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.enclosure_units",
+    "value": 10,
+    "unit": "rack unit",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.enclosure_power",
+    "value": 0,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.enclosure_embodied",
+    "value": 250000,
+    "unit": "g CO2e/enclosure",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.mfu",
+    "value": 0.4,
+    "unit": "dimensionless",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.cpu_count",
+    "value": 36,
+    "unit": "count",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.cpu_power",
+    "value": 250,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.cpu_embodied",
+    "value": 25000,
+    "unit": "g CO2e/CPU",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.gpu_count",
+    "value": 72,
+    "unit": "count",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.gpu_flops",
+    "value": 2200000000000000,
+    "unit": "FLOP/s",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.gpu_power",
+    "value": 1200,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.gpu_embodied",
+    "value": 750000,
+    "unit": "g CO2e/accelerator",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.ram",
+    "value": 18000000000000,
+    "unit": "byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.ram_power",
+    "value": 3.92e-10,
+    "unit": "W/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.ram_embodied",
+    "value": 0.0000013880208333333333,
+    "unit": "g CO2e/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.ssd",
+    "value": 30000000000000,
+    "unit": "byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.ssd_power",
+    "value": 1.2e-12,
+    "unit": "W/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.ssd_embodied",
+    "value": 1.6e-7,
+    "unit": "g CO2e/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.enclosure_units",
+    "value": 10,
+    "unit": "rack unit",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.enclosure_power",
+    "value": 0,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.enclosure_embodied",
+    "value": 250000,
+    "unit": "g CO2e/enclosure",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.mfu",
+    "value": 0.4,
+    "unit": "dimensionless",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  }
+]
