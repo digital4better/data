@@ -1,81 +1,86 @@
-# Hardware reference data — experimental
+# Hardware — experimental
 
-This first collection brings together hardware specifications and the parameters used by the D4B methodology v2 beta. It does **not** certify the specifications, calibrate the models or provide complete product life-cycle assessments.
+The collection follows the hardware-family layout of the original D4B data repository. Each family has two separate JSON arrays, with equivalent CSV exports:
 
-## Collections
+- **`<family>.json`**: hardware references, generic technologies or explicitly labelled example configurations.
+- **`<family>-factors.json`**: numerical coefficients and assumptions used to estimate impacts or power.
 
-| Collection | JSON | CSV | Status |
-| --- | --- | --- | --- |
-| 140 processors | [cpus.json](./cpus.json) | [cpus.csv](./cpus.csv) | Inherited specifications, not independently verified |
-| 38 accelerators | [accelerators.json](./accelerators.json) | [accelerators.csv](./accelerators.csv) | Inherited specifications, not independently verified |
-| Component coefficients | [original snapshot](./methodology/hardware-models.json) | [hardware-models.csv](./hardware-models.csv) | Historical proxies and illustrative assumptions |
-| Terminal and server configurations | [original snapshot](./methodology/hardware-configurations.json) | [hardware-configurations.csv](./hardware-configurations.csv) | Fictional examples, not manufacturer inventories |
-| AI hardware scenarios | [original snapshot](./methodology/ai-hardware-profiles.json) | [ai-hardware-profiles.csv](./ai-hardware-profiles.csv) | Historical illustrative profiles, not calibrated |
+Specifications are not impact factors. A reference does not acquire a certified footprint by being linked to a model.
 
-[parameters.json](./parameters.json) combines the numeric parameters into records with `dataset`, `id`, `value`, `unit`, `status`, `source` and `sourceRevision`. It is an alternative representation of the three snapshots, **not an additional set of impacts to sum**. Categorical configuration fields (memory technology, display type, etc.) remain in the original JSON snapshots.
+## Files by family
 
-[manifest.json](./manifest.json) defines source files, units, status and snapshot hashes. [provenance.json](./provenance.json) records the exact input hashes used to generate the exports. Source rights and attribution remain applicable alongside the repository's ODbL license.
+| Family         | References                                                                              | Factors                                                                                                           |
+| -------------- | --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| CPUs           | [cpus.json](./cpus.json): 140 inherited product specifications                          | [cpus-factors.json](./cpus-factors.json): base manufacturing, packaging and AI scenario assumptions               |
+| Accelerators   | [accelerators.json](./accelerators.json): 38 inherited product specifications           | [accelerators-factors.json](./accelerators-factors.json): packaging and AI scenario assumptions                   |
+| Semiconductors | [semiconductors.json](./semiconductors.json): nine illustrative processor process nodes | [semiconductors-factors.json](./semiconductors-factors.json): silicon coefficients and processor node multipliers |
+| Memory         | [memories.json](./memories.json): DDR4, DDR5, HBM2e, HBM3                               | [memories-factors.json](./memories-factors.json): density, packaging, base manufacturing and power                |
+| Storage        | [storages.json](./storages.json): SATA SSD, NVMe SSD, HDD                               | [storages-factors.json](./storages-factors.json): capacity, manufacturing and power                               |
+| Screens        | [screens.json](./screens.json): LCD, OLED, e-ink                                        | [screens-factors.json](./screens-factors.json): area-based manufacturing and power                                |
+| Batteries      | [batteries.json](./batteries.json): LCO, NMC, LFP                                       | [batteries-factors.json](./batteries-factors.json): capacity-based manufacturing and material content             |
+| Devices        | [devices.json](./devices.json): desktop example                                         | [devices-factors.json](./devices-factors.json): desktop/custom structure and shared terminal assumptions          |
+| Mobiles        | [mobiles.json](./mobiles.json): smartphone example                                      | [mobiles-factors.json](./mobiles-factors.json): structural allowance                                              |
+| Tablets        | [tablets.json](./tablets.json): tablet example                                          | [tablets-factors.json](./tablets-factors.json): structural allowance                                              |
+| Laptops        | [laptops.json](./laptops.json): laptop example                                          | [laptops-factors.json](./laptops-factors.json): structural allowance                                              |
+| Servers        | [servers.json](./servers.json): four component configurations and six AI scenarios      | [servers-factors.json](./servers-factors.json): enclosure, auxiliary power and assembly assumptions               |
 
-## Existing hardware example and cloud catalogs
+Every listed JSON has a CSV counterpart. Network hardware is not populated yet: the original `networks.json` was empty, and the imported methodology datasets do not contain a dedicated network hardware model. No fabricated product catalog or empty placeholder is added.
 
-The initial local `data/data/hardware` example contained 111 processors and 33 accelerators. Every record is already present unchanged in the current cloud catalogs, which include additional entries. Its other hardware files were empty. This collection therefore derives specifications from [`../cloud/cpus.json`](../cloud/cpus.json) and [`../cloud/accelerators.json`](../cloud/accelerators.json), without maintaining another independent list or creating empty category files.
+## How references and factors coexist
 
-The existing cloud files and their IDs are preserved for consumers. Edit those source catalogs and regenerate `hardware` to keep both views synchronized. A later migration to a shared hardware source can be planned separately.
+A link has the form **`file.json#record-id`**. The fragment identifies a record's `id`, not an array index. `manifest.json#models.processor` identifies a model definition in the manifest.
 
-The initial cloud baseline is revision `77cae4a58fadd5deb3b8d4e5577020da08f780d8`; subsequent generated views are identified by their input hashes and the containing data-repository revision. Local example inspected at revision `00097b17193d88fe0fa4609d476aa6b8a809f4eb`.
+- CPU and accelerator IDs and specifications remain compatible with their cloud source catalogs. Their family entries in [manifest.json](./manifest.json) point to the candidate processor model; applying it requires checking the product's physical boundary.
+- Technology references contain `factorRefs`. For example, `memories.json#ddr5` links to its density and packaging factors and to `semiconductors-factors.json#memory.dieGwp`.
+- Example configurations contain `properties`, `technologyRefs` and `modelRef`. Numeric properties carry `value`, `unit` and `sourcePath`; categorical properties retain their original strings.
+- AI server scenarios contain `factorRefs` keyed by role, such as `gpu_embodied`. That link targets the scenario-specific coefficient in `accelerators-factors.json`. Its `appliesTo` points back to the server scenario. These coefficients are not automatically assigned to similarly named catalog products.
+- Each factor records `id`, `dataset`, `value`, `unit`, `status`, `source` and `sourceRevision`. Identical values from different source assumptions remain separate records when their applicability differs.
 
-## Reading specifications
+For example, `servers.json#nvidia-dgx-h100-8` has eight GPUs and references `accelerators-factors.json#nvidia-dgx-h100-8.gpu_embodied` (250,000 g CO₂e per accelerator). The scenario GPU subtotal is therefore 2,000,000 g CO₂e. This is an inherited illustrative manufacturing proxy, not a newly verified product footprint. Do not add the processor die model to this aggregate proxy.
 
-- `id` remains stable; `model` is consistently a string. An empty model suffix is retained when the family (`serie`) identifies the base product, such as Apple M1.
-- Every record carries `status: legacy-unverified` and a relative `source` path. That status means product-specific numerical evidence has not been attached in this migration.
-- `tdp` is in W, `process` in nm, `die` in mm², `transistors` in millions, and counts are unitless counts. Accelerator `memory` follows the inherited GB convention; the distinction between GB and GiB still needs verification.
-- Missing values and legacy zero specifications are `null`, with a reason in `missing`. CSV uses an empty cell for null. The source catalog is not modified. A null does not mean zero impact or that a feature is absent.
-- `cores` has different meanings across CPUs, GPUs and programmable accelerators. Compare only like-for-like quantities.
-- A die area can describe a chiplet rather than a full processor package. A TDP is not average measured power. Do not directly turn either into a product footprint without resolving that boundary.
+### Semiconductors and model boundaries
 
-## Reading model parameters
+Silicon coefficients are centralized without being treated as universal:
 
-The three JSON snapshots are copied byte-for-byte from the published methodology commit recorded in the manifest. Their SHA-256 hashes are checked. They retain original metadata, categorical parameters and, for configurations, numeric values originally stored as strings. CSV and `parameters.json` normalize numeric values to numbers and attach explicit units.
+- Logic die: `cpu.dieGwp` in **kg CO₂e/mm²** and historical `cpu.dieAdpe` in **kg Sb eq/mm²**.
+- Memory and SSD die: separate `memory.dieGwp` and `storage.dieGwp` records in **kg CO₂e/cm²**.
+- `nodeFactors.*`: illustrative multipliers for the **processor model only**. They do not apply automatically to memory, storage or all semiconductor processes.
 
-| Status | Meaning |
-| --- | --- |
-| `historical-proxy-not-revalidated` | Coefficient inherited from the methodology; its source and technological representativeness still need rechecking |
-| `illustrative-not-calibrated` | Assumption for an illustration or sensitivity scenario |
-| `fictional-configurations-not-product-inventories` | Example device or server configuration, not a measured or manufacturer-certified inventory |
-| `illustrative-historical-profiles-not-calibrated` | AI scenario mixing nominal specifications and historical impact assumptions |
+The [manifest](./manifest.json) describes the processor, memory, storage, display, battery, component-assembly and AI-profile models. Base manufacturing and packaging factors stay with their hardware family. Semiconductor factors are referenced rather than copied into every family.
 
-A zero in an illustrative configuration may intentionally mean an absent component, for example no battery in the desktop example. Unlike legacy catalog zero sentinels, these explicit scenario zeros are preserved.
+The processor proxy covers die and packaging, not a complete accelerator card with memory and cooling. A die specification may describe one chiplet rather than the whole package. TDP is a thermal design specification, not measured average power. AI scenarios use a separate aggregate approach; they must not be summed with an overlapping component inventory.
 
-### Units and equations
+## Status and units
 
-The numeric exports distinguish kg from g CO₂e, mm² from cm², decimal GB from TB and bytes, and W from energy. Terminal storage configurations use GB; server storage configurations use TB. No allocation over a lifetime is applied during export.
+| Status                                             | Meaning                                                                           |
+| -------------------------------------------------- | --------------------------------------------------------------------------------- |
+| `legacy-unverified`                                | Inherited product specifications without newly attached product-specific evidence |
+| `historical-proxy-not-revalidated`                 | Existing coefficient whose source and representativeness still need checking      |
+| `illustrative-not-calibrated`                      | Technology/model assumption for an illustration or sensitivity scenario           |
+| `fictional-configurations-not-product-inventories` | Example configuration, not a manufacturer inventory                               |
+| `illustrative-historical-profiles-not-calibrated`  | AI scenario combining nominal characteristics and historical assumptions          |
 
-The component GWP models inherited from the methodology are:
+CPU and accelerator numeric unknowns are `null`, with a reason in `missing`; CSV cells are empty. Explicit zero values in scenarios remain zero (for example, no battery in the desktop example). Catalog `model` is a string; an empty suffix can identify a base model through `serie`, such as Apple M1.
 
-- Processor: `(die_mm2 × cpu.dieGwp + cpu.baseGwp) × node_factor × packaging_factor × count`.
-- Memory module: `(capacity_GB / density_GB_per_cm2 × memory.dieGwp + memory.baseGwp) × packaging_factor`; multiply by the number of modules, using capacity **per module**.
-- SSD: `capacity_GB / storage.density × storage.dieGwp + storage.baseGwp` per drive. HDD uses a per-drive fixed proxy.
-- Display: `area_cm2 × gwp_per_cm2 + base_gwp`. Battery: `capacity_Wh / 1000 × gwp_per_kWh`.
+Catalog units are recorded in the manifest. Accelerator memory retains the legacy GB convention; GB versus GiB needs verification. Configuration storage is **GB for terminals and TB for servers**. AI capacities are in bytes, and AI manufacturing assumptions in **g CO₂e**, while component model GWP factors are in **kg CO₂e**. No lifetime allocation or implicit unit conversion is applied during export.
 
-These equations describe the inherited implementation, not newly established physical laws. Manufacturing boundaries need source-specific verification. The CPU's historical ADPe constants are included for traceability; they do not establish an ADPe result for an entire device. The other environmental indicators remain unassessed when no compatible factor exists.
+AI names such as “DGX H100 (4 GPU)” and the inherited “BG300 NVL72” label identify illustrative scenarios, not confirmed marketed configurations. FLOP/s requires a precision and sparsity convention before comparison. The historical CPU ADPe coefficients do not establish a whole-equipment ADPe footprint. Indicators without compatible factors remain unassessed.
 
-The aggregate accelerator manufacturing proxies in the AI scenarios must not be added to a second die, HBM or card inventory. Host enclosure allowances are distinct. The AI snapshots retain historical names such as “DGX H100 (4 GPU)” and the label “BG300 NVL72”: treat their IDs as scenario identifiers, **not confirmation of a marketed system configuration**. FLOP/s values also require a precision and sparsity convention before comparison. No current vendor specification has been newly certified here.
+Existing time-normalized whole-equipment factors in [`../equipment`](../equipment) remain separate and must not be added to overlapping component estimates.
 
-The existing [`equipment`](../equipment) collection remains separate. Its time-normalized whole-equipment factors are not interchangeable with the component manufacturing parameters here, and must not be added to the same components.
+## Sources and regeneration
 
-## Regenerate and validate
+The source catalogs remain [`../cloud/cpus.json`](../cloud/cpus.json) and [`../cloud/accelerators.json`](../cloud/accelerators.json). The original local hardware example contained 111 CPUs and 33 accelerators, all already present in these expanded catalogs. Its other hardware files were empty.
 
-From the repository root, using Node 24:
+The three methodology source snapshots are stored under `scripts/hardware-sources/` in the Git checkout, outside the distributed hardware collections. Their exact pinned upstream URLs, revisions and SHA-256 hashes are in the manifest. They preserve the original metadata and remain the source for generation; the family files replace the former public catch-all `parameters.json` and snapshot CSVs. [provenance.json](./provenance.json) records the inputs used for the exports. Source attribution and rights remain applicable alongside ODbL.
+
+From the repository checkout with Node 24:
 
 ```sh
 yarn build:hardware
 yarn test:hardware
 ```
 
-These commands work offline without installing third-party packages. The hardware export also runs before the main data-generation pipeline. `test:hardware` checks null handling, invalid and duplicate specifications, explicit units, snapshot integrity, deterministic CSV/JSON generation and export freshness. The dedicated hardware CI is read-only and does not publish the branch.
+These commands run offline without third-party dependencies. Edit the cloud catalogs or deliberately update a source snapshot and its manifest hash, then regenerate. Do not hand-edit generated family JSON/CSV files. The npm data package contains the family exports and provenance; regeneration requires the Git checkout with its scripts and source snapshots.
 
-Generated files: `cpus.*`, `accelerators.*`, the three parameter CSVs, `parameters.json`, `provenance.json`. Update source catalogs or deliberately replace a methodology snapshot together with its manifest entry, then regenerate. Do not edit generated files manually.
-
-## Next qualification work
-
-Attach a product-specific primary source to each retained specification, including date, exact variant, units and physical boundary. For impact parameters, add the indicator method, life-cycle phases, applicability, uncertainty and independent calibration evidence. Promote records individually only when that evidence exists; do not silently convert inherited values into verified data.
+Validation covers input checksums, explicit units, unknown values, duplicate IDs, complete migration of all numeric parameters, resolvable cross-file references, deterministic generation and export freshness. The dedicated branch CI validates without publishing.

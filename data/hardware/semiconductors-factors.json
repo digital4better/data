@@ -1,0 +1,119 @@
+[
+  {
+    "dataset": "hardware-models",
+    "id": "cpu.dieGwp",
+    "value": 0.0197,
+    "unit": "kg CO2e/mm2",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "cpu.dieAdpe",
+    "value": 5.87e-9,
+    "unit": "kg Sb eq/mm2",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "nodeFactors.3",
+    "value": 2.8,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "nodeFactors.4",
+    "value": 2.5,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "nodeFactors.5",
+    "value": 2.2,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "nodeFactors.7",
+    "value": 1.8,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "nodeFactors.10",
+    "value": 1.4,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "nodeFactors.14",
+    "value": 1.2,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "nodeFactors.22",
+    "value": 1.05,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "nodeFactors.28",
+    "value": 1,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "nodeFactors.32",
+    "value": 0.95,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "memory.dieGwp",
+    "value": 2.2,
+    "unit": "kg CO2e/cm2",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "storage.dieGwp",
+    "value": 2.2,
+    "unit": "kg CO2e/cm2",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  }
+]

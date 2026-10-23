@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ddr4",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {},
+    "factorRefs": [
+      "semiconductors-factors.json#memory.dieGwp",
+      "memories-factors.json#memory.baseGwp",
+      "memories-factors.json#memory.powerPerGb",
+      "memories-factors.json#memory.density.ddr4",
+      "memories-factors.json#memory.packaging.ddr4"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "id": "ddr5",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {},
+    "factorRefs": [
+      "semiconductors-factors.json#memory.dieGwp",
+      "memories-factors.json#memory.baseGwp",
+      "memories-factors.json#memory.powerPerGb",
+      "memories-factors.json#memory.density.ddr5",
+      "memories-factors.json#memory.packaging.ddr5"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "id": "hbm2e",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {},
+    "factorRefs": [
+      "semiconductors-factors.json#memory.dieGwp",
+      "memories-factors.json#memory.baseGwp",
+      "memories-factors.json#memory.powerPerGb",
+      "memories-factors.json#memory.density.hbm2e",
+      "memories-factors.json#memory.packaging.hbm2e"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "id": "hbm3",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {},
+    "factorRefs": [
+      "semiconductors-factors.json#memory.dieGwp",
+      "memories-factors.json#memory.baseGwp",
+      "memories-factors.json#memory.powerPerGb",
+      "memories-factors.json#memory.density.hbm3",
+      "memories-factors.json#memory.packaging.hbm3"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  }
+]

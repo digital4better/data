@@ -1,0 +1,176 @@
+[
+  {
+    "dataset": "hardware-models",
+    "id": "storage.baseGwp",
+    "value": 6.34,
+    "unit": "kg CO2e/component",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "storage.density",
+    "value": 48.5,
+    "unit": "GB/cm2",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "storage.hddGwp",
+    "value": 31.11,
+    "unit": "kg CO2e/component",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "storage.powerPerTb.ssd_sata",
+    "value": 1.2,
+    "unit": "W/TB",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "storage.powerPerTb.ssd_nvme",
+    "value": 1.2,
+    "unit": "W/TB",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "storage.powerPerTb.hdd",
+    "value": 0.65,
+    "unit": "W/TB",
+    "status": "historical-proxy-not-revalidated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.ssd_power",
+    "value": 1.2e-12,
+    "unit": "W/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-dgx-h100-8"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.ssd_embodied",
+    "value": 1.6e-7,
+    "unit": "g CO2e/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-dgx-h100-8"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.ssd_power",
+    "value": 1.2e-12,
+    "unit": "W/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-dgx-a100-8"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.ssd_embodied",
+    "value": 1.6e-7,
+    "unit": "g CO2e/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-dgx-a100-8"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.ssd_power",
+    "value": 1.2e-12,
+    "unit": "W/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-a100-sxm4-1"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.ssd_embodied",
+    "value": 1.6e-7,
+    "unit": "g CO2e/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-a100-sxm4-1"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.ssd_power",
+    "value": 1.2e-12,
+    "unit": "W/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-dgx-h100-4"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.ssd_embodied",
+    "value": 1.6e-7,
+    "unit": "g CO2e/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-dgx-h100-4"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.ssd_power",
+    "value": 1.2e-12,
+    "unit": "W/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-dgx-b300-8"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.ssd_embodied",
+    "value": 1.6e-7,
+    "unit": "g CO2e/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-dgx-b300-8"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.ssd_power",
+    "value": 1.2e-12,
+    "unit": "W/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-gb300-nvl72"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.ssd_embodied",
+    "value": 1.6e-7,
+    "unit": "g CO2e/byte",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-gb300-nvl72"
+  }
+]

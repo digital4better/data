@@ -1,0 +1,83 @@
+[
+  {
+    "dataset": "hardware-models",
+    "id": "display.gwpPerCm2.lcd",
+    "value": 0.07,
+    "unit": "kg CO2e/cm2",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "display.gwpPerCm2.oled",
+    "value": 0.12,
+    "unit": "kg CO2e/cm2",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "display.gwpPerCm2.eink",
+    "value": 0.03,
+    "unit": "kg CO2e/cm2",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "display.baseGwp.lcd",
+    "value": 3,
+    "unit": "kg CO2e/display",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "display.baseGwp.oled",
+    "value": 2.5,
+    "unit": "kg CO2e/display",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "display.baseGwp.eink",
+    "value": 1.5,
+    "unit": "kg CO2e/display",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "display.powerPerCm2.lcd",
+    "value": 0.003,
+    "unit": "W/cm2",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "display.powerPerCm2.oled",
+    "value": 0.002,
+    "unit": "W/cm2",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "display.powerPerCm2.eink",
+    "value": 0.0001,
+    "unit": "W/cm2",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  }
+]

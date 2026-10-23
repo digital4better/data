@@ -20,7 +20,7 @@ The repository is organized as a set of reusable data collections:
 | [`data/factor`](./data/factor) | Electricity impact factors derived from energy mix data | `world-*`, `continent-*`, `country-*`, `subdivision-*` |
 | [`data/facility`](./data/facility) | Building electricity and fuel impact factors | `factors.*` |
 | [`data/transport`](./data/transport) | Passenger and vehicle transport impact factors | `factors.*` |
-| [`data/hardware`](./data/hardware) | Experimental hardware specifications, component parameters and illustrative configurations | `cpus.*`, `accelerators.*`, `parameters.json`, `manifest.json` |
+| [`data/hardware`](./data/hardware) | Experimental hardware specifications, component parameters and illustrative configurations | `cpus.*`, `cpus-factors.*`, `semiconductors-factors.*`, one pair per hardware family |
 | [`data/equipment`](./data/equipment) | Equipment energy and embodied impact reference data | `energy.*`, `embodied.*` |
 
 ## Why This Repository Exists

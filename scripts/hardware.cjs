@@ -159,25 +159,151 @@ function parameterRows(snapshot, data) {
   return rows;
 }
 
+// Family routing is explicit: new parameters must be assigned deliberately.
+function factorFamily(id) {
+  if (/^(nodeFactors\.|cpu\.die|memory\.dieGwp$|storage\.dieGwp$)/.test(id)) return "semiconductors";
+  if (/^(cpu\.|processorPackaging\.cpu$)/.test(id)) return "cpus";
+  if (/^processorPackaging\.gpu/.test(id)) return "accelerators";
+  if (id.startsWith("memory.")) return "memories";
+  if (id.startsWith("storage.")) return "storages";
+  if (id.startsWith("display.")) return "screens";
+  if (id.startsWith("battery.")) return "batteries";
+  if (id === "structuralGwp.smartphone") return "mobiles";
+  if (id === "structuralGwp.tablet") return "tablets";
+  if (id === "structuralGwp.laptop") return "laptops";
+  if (
+    id === "structuralGwp.server" ||
+    id.startsWith("assemblyAssumptions.") ||
+    id === "powerAssumptions.serverAuxiliaryW"
+  )
+    return "servers";
+  if (/^(structuralGwp\.(desktop|custom)|powerAssumptions\.terminal)/.test(id)) return "devices";
+  throw new Error(`Family missing for ${id}`);
+}
+function familyCollections(snapshots) {
+  const collections = {};
+  const add = (file, row) => (collections[file] ??= []).push(row);
+  const ref = (row) => `${factorFamily(row.id)}-factors.json#${row.id}`;
+  const models = snapshots.find(({ snapshot }) => snapshot.id === "hardware-models");
+  const rows = parameterRows(models.snapshot, models.data);
+  for (const row of rows) add(`${factorFamily(row.id)}-factors`, { dataset: models.snapshot.id, ...row });
+  // Technology references are not manufacturer products.
+  const technology = (family, id, ids, properties = {}) =>
+    add(family, {
+      id,
+      kind: "technology",
+      status: models.snapshot.status,
+      properties,
+      factorRefs: rows.filter((r) => ids.includes(r.id)).map(ref),
+      source: models.snapshot.source,
+      sourceRevision: models.snapshot.revision,
+    });
+  for (const node of Object.keys(models.data.nodeFactors))
+    technology("semiconductors", `logic-${node}nm`, [`nodeFactors.${node}`], {
+      process: { value: Number(node), unit: "nm" },
+      application: "processor-die-model-only",
+    });
+  for (const type of Object.keys(models.data.memory.density))
+    technology("memories", type, [
+      "memory.dieGwp",
+      "memory.baseGwp",
+      "memory.powerPerGb",
+      `memory.density.${type}`,
+      `memory.packaging.${type}`,
+    ]);
+  for (const type of Object.keys(models.data.storage.powerPerTb))
+    technology(
+      "storages",
+      type,
+      type === "hdd"
+        ? ["storage.hddGwp", "storage.powerPerTb.hdd"]
+        : ["storage.dieGwp", "storage.baseGwp", "storage.density", `storage.powerPerTb.${type}`]
+    );
+  for (const type of Object.keys(models.data.display.baseGwp))
+    technology(
+      "screens",
+      type,
+      ["gwpPerCm2", "baseGwp", "powerPerCm2"].map((field) => `display.${field}.${type}`)
+    );
+  for (const type of Object.keys(models.data.battery.gwpPerKwh))
+    technology(
+      "batteries",
+      type,
+      ["gwpPerKwh", "cobaltGramsPerKwh", "lithiumGramsPerKwh"].map((field) => `battery.${field}.${type}`)
+    );
+
+  const configs = snapshots.find(({ snapshot }) => snapshot.id === "hardware-configurations");
+  const configRows = parameterRows(configs.snapshot, configs.data);
+  const terminalFamilies = { smartphone: "mobiles", tablet: "tablets", laptop: "laptops", desktop: "devices" };
+  for (const group of ["terminals", "servers"])
+    for (const [id, values] of Object.entries(configs.data[group])) {
+      const family = group === "servers" ? "servers" : terminalFamilies[id];
+      assert(family, `Family missing for configuration ${id}`);
+      const properties = {};
+      for (const [key, raw] of Object.entries(values)) {
+        const row = configRows.find((r) => r.id === `${group}.${id}.${key}`);
+        properties[key] = row ? { value: row.value, unit: row.unit, sourcePath: row.id } : raw;
+      }
+      add(family, {
+        id,
+        kind: "configuration",
+        status: configs.snapshot.status,
+        properties,
+        source: configs.snapshot.source,
+        sourceRevision: configs.snapshot.revision,
+        dataset: configs.snapshot.id,
+        modelRef: "manifest.json#models.component-assembly",
+        technologyRefs: [
+          `memories.json#${values.ramType}`,
+          `storages.json#${values.storageType}`,
+          ...(group === "terminals"
+            ? [`screens.json#${values.screenTech}`, `batteries.json#${values.batteryChem}`]
+            : []),
+        ],
+      });
+    }
+  const ai = snapshots.find(({ snapshot }) => snapshot.id === "ai-hardware-profiles");
+  const aiRows = parameterRows(ai.snapshot, ai.data);
+  const componentFamilies = {
+    cpu: "cpus",
+    gpu: "accelerators",
+    ram: "memories",
+    ssd: "storages",
+    enclosure: "servers",
+  };
+  for (const profile of ai.data.profiles) {
+    const properties = {},
+      factorRefs = {};
+    for (const row of aiRows.filter((r) => r.id.startsWith(`${profile.value}.`))) {
+      const key = row.id.slice(profile.value.length + 1);
+      if (/_(power|embodied)$/.test(key)) {
+        const family = componentFamilies[key.split("_")[0]];
+        add(`${family}-factors`, { dataset: ai.snapshot.id, ...row, appliesTo: `servers.json#${profile.value}` });
+        factorRefs[key] = `${family}-factors.json#${row.id}`;
+      } else properties[key] = { value: row.value, unit: row.unit, sourcePath: row.id };
+    }
+    add("servers", {
+      id: profile.value,
+      label: profile.label,
+      kind: "scenario",
+      status: ai.snapshot.status,
+      dataset: ai.snapshot.id,
+      properties,
+      factorRefs,
+      modelRef: "manifest.json#models.ai-profile",
+      source: ai.snapshot.source,
+      sourceRevision: ai.snapshot.revision,
+    });
+  }
+  return collections;
+}
 function outputs() {
   const manifest = read(path.join(HARDWARE, "manifest.json"));
-  assert.equal(manifest.schemaVersion, 1);
+  assert.equal(manifest.schemaVersion, 2);
   assert.equal(manifest.status, "experimental");
-  const out = {};
-  const inputs = {};
-  for (const kind of ["cpus", "accelerators"]) {
-    assert.equal(manifest.catalogs[kind].status, "legacy-unverified");
-    const sourcePath = path.resolve(HARDWARE, manifest.catalogs[kind].source);
-    inputs[manifest.catalogs[kind].source] = crypto
-      .createHash("sha256")
-      .update(fs.readFileSync(sourcePath))
-      .digest("hex");
-    const rows = normalizeCatalog(read(sourcePath), manifest, kind);
-    out[`${kind}.json`] = json(rows);
-    const columns = [...new Set(rows.flatMap(Object.keys))];
-    out[`${kind}.csv`] = csv(rows, columns);
-  }
-  const parameters = [];
+  const out = {},
+    inputs = {},
+    snapshots = [];
   for (const snapshot of manifest.snapshots) {
     assert(snapshot.source.startsWith(`https://github.com/digital4better/methodology/blob/${snapshot.revision}/`));
     const buffer = fs.readFileSync(path.join(HARDWARE, snapshot.file));
@@ -188,13 +314,25 @@ function outputs() {
     );
     const data = JSON.parse(buffer);
     assert.equal(data.status, snapshot.status);
-    const rows = parameterRows(snapshot, data);
-    out[`${snapshot.id}.csv`] = csv(rows, ["id", "value", "unit", "status", "source", "sourceRevision"]);
-    parameters.push(...rows.map((row) => ({ dataset: snapshot.id, ...row })));
+    snapshots.push({ snapshot, data });
   }
-  out["parameters.json"] = json(parameters);
+  const collections = familyCollections(snapshots);
+  for (const kind of ["cpus", "accelerators"]) {
+    assert.equal(manifest.catalogs[kind].status, "legacy-unverified");
+    const sourcePath = path.resolve(HARDWARE, manifest.catalogs[kind].source);
+    inputs[manifest.catalogs[kind].source] = crypto
+      .createHash("sha256")
+      .update(fs.readFileSync(sourcePath))
+      .digest("hex");
+    collections[kind] = normalizeCatalog(read(sourcePath), manifest, kind);
+  }
+  for (const [file, rows] of Object.entries(collections)) {
+    assert.equal(new Set(rows.map((r) => r.id)).size, rows.length, `Duplicate ids in ${file}`);
+    out[`${file}.json`] = json(rows);
+    out[`${file}.csv`] = csv(rows, [...new Set(rows.flatMap(Object.keys))]);
+  }
   out["provenance.json"] = json({
-    schemaVersion: 1,
+    schemaVersion: 2,
     inputs,
     snapshots: manifest.snapshots.map(({ id, source, revision, sha256 }) => ({ id, source, revision, sha256 })),
   });
@@ -210,4 +348,4 @@ function run(check) {
   console.log(`Hardware: ${Object.keys(out).length} generated files ${check ? "verified" : "written"}.`);
 }
 if (require.main === module) run(process.argv.includes("--check"));
-module.exports = { csv, normalizeCatalog, modelUnit, parameterRows, outputs, run };
+module.exports = { csv, normalizeCatalog, modelUnit, parameterRows, outputs, run, factorFamily, familyCollections };

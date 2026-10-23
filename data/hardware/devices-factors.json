@@ -1,0 +1,38 @@
+[
+  {
+    "dataset": "hardware-models",
+    "id": "structuralGwp.desktop",
+    "value": 12,
+    "unit": "kg CO2e/equipment",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "structuralGwp.custom",
+    "value": 8,
+    "unit": "kg CO2e/equipment",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "powerAssumptions.terminalCpuLoad",
+    "value": 0.5,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "powerAssumptions.terminalAuxiliaryW",
+    "value": 2,
+    "unit": "W",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  }
+]

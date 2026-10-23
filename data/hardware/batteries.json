@@ -1,0 +1,41 @@
+[
+  {
+    "id": "lco",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {},
+    "factorRefs": [
+      "batteries-factors.json#battery.gwpPerKwh.lco",
+      "batteries-factors.json#battery.cobaltGramsPerKwh.lco",
+      "batteries-factors.json#battery.lithiumGramsPerKwh.lco"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "id": "nmc",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {},
+    "factorRefs": [
+      "batteries-factors.json#battery.gwpPerKwh.nmc",
+      "batteries-factors.json#battery.cobaltGramsPerKwh.nmc",
+      "batteries-factors.json#battery.lithiumGramsPerKwh.nmc"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "id": "lfp",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {},
+    "factorRefs": [
+      "batteries-factors.json#battery.gwpPerKwh.lfp",
+      "batteries-factors.json#battery.cobaltGramsPerKwh.lfp",
+      "batteries-factors.json#battery.lithiumGramsPerKwh.lfp"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  }
+]

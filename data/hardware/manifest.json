@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "status": "experimental",
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-23",
   "license": "ODbL-1.0; upstream attribution and rights retained",
   "catalogs": {
     "cpus": {
@@ -18,7 +18,7 @@
   "snapshots": [
     {
       "id": "hardware-models",
-      "file": "methodology/hardware-models.json",
+      "file": "../../scripts/hardware-sources/hardware-models.json",
       "sha256": "ff3f4814c457d1e86682a256c37267b547661b0fbd0a266e0a932c1e0aaa66b3",
       "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
       "revision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
@@ -27,7 +27,7 @@
     },
     {
       "id": "hardware-configurations",
-      "file": "methodology/hardware-configurations.json",
+      "file": "../../scripts/hardware-sources/hardware-configurations.json",
       "sha256": "9a0405c700f2317ed14dc025b23d8094a182fe540898014c42ee7f42aa6d4eb2",
       "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
       "revision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
@@ -36,7 +36,7 @@
     },
     {
       "id": "ai-hardware-profiles",
-      "file": "methodology/ai-hardware-profiles.json",
+      "file": "../../scripts/hardware-sources/ai-hardware-profiles.json",
       "sha256": "8fb7fc2e4f905e84957fc6c110a175eae17d4c061b1d15605e9dc98c2165d8e8",
       "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
       "revision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
@@ -59,5 +59,116 @@
     "Legacy zero numeric specifications become null with a missing reason; original data/cloud files are unchanged.",
     "Die area may refer to one chiplet rather than a complete package. Do not multiply it by a manufacturing factor without checking the physical boundary.",
     "TDP is a thermal design specification, not a measurement of average electricity consumption."
-  ]
+  ],
+  "models": {
+    "processor": {
+      "status": "illustrative-not-calibrated",
+      "equation": "(die_mm2 * dieGwp + baseGwp) * nodeFactor * packagingFactor * count",
+      "factorRefs": [
+        "semiconductors-factors.json#cpu.dieGwp",
+        "cpus-factors.json#cpu.baseGwp",
+        "cpus-factors.json#processorPackaging.cpu",
+        "accelerators-factors.json#processorPackaging.gpu",
+        "accelerators-factors.json#processorPackaging.gpu_consumer"
+      ],
+      "technologyFile": "semiconductors.json",
+      "boundary": "Die and packaging proxy only. Verify total die versus chiplet area before applying to a catalog product. Accelerator memory, board and cooling are not inferred. Whole-card inventories replace this proxy."
+    },
+    "memory": {
+      "status": "illustrative-not-calibrated",
+      "equation": "(capacity_GB_per_module / density_GB_per_cm2 * dieGwp + baseGwp) * packagingFactor * moduleCount",
+      "technologyFile": "memories.json",
+      "boundary": "Factors are selected through the memory technology reference. cm2, not mm2."
+    },
+    "storage": {
+      "status": "historical-proxy-not-revalidated",
+      "equation": "SSD: capacity_GB_per_drive / density_GB_per_cm2 * dieGwp + baseGwp; HDD: hddGwp per drive",
+      "technologyFile": "storages.json"
+    },
+    "display": {
+      "status": "illustrative-not-calibrated",
+      "equation": "area_cm2 * gwpPerCm2 + baseGwp",
+      "technologyFile": "screens.json"
+    },
+    "battery": {
+      "status": "illustrative-not-calibrated",
+      "equation": "capacity_Wh / 1000 * gwpPerKwh",
+      "technologyFile": "batteries.json"
+    },
+    "component-assembly": {
+      "status": "fictional-configurations-not-product-inventories",
+      "modelRefs": [
+        "manifest.json#models.processor",
+        "manifest.json#models.memory",
+        "manifest.json#models.storage",
+        "manifest.json#models.display",
+        "manifest.json#models.battery"
+      ],
+      "factorFiles": [
+        "devices-factors.json",
+        "mobiles-factors.json",
+        "tablets-factors.json",
+        "laptops-factors.json",
+        "servers-factors.json"
+      ],
+      "boundary": "Select only factors applicable to the configuration and component counts. These example configurations are not manufacturer inventories. Storage is GB for terminals, TB for servers."
+    },
+    "ai-profile": {
+      "status": "illustrative-historical-profiles-not-calibrated",
+      "boundary": "Scenario-specific aggregate manufacturing and power proxies. Follow factorRefs on the server scenario; do not add a second die, HBM, card or component-assembly estimate. Enclosure is a separate host allowance. These identifiers do not certify marketed configurations."
+    }
+  },
+  "families": {
+    "cpus": {
+      "references": "cpus.json",
+      "factors": "cpus-factors.json",
+      "modelRef": "manifest.json#models.processor"
+    },
+    "accelerators": {
+      "references": "accelerators.json",
+      "factors": "accelerators-factors.json",
+      "modelRef": "manifest.json#models.processor"
+    },
+    "semiconductors": {
+      "references": "semiconductors.json",
+      "factors": "semiconductors-factors.json",
+      "scope": "Silicon coefficients are specific to logic, memory or SSD; equal numeric values do not make them interchangeable. Node multipliers apply only to the illustrative processor model, not all semiconductors."
+    },
+    "memories": {
+      "references": "memories.json",
+      "factors": "memories-factors.json"
+    },
+    "storages": {
+      "references": "storages.json",
+      "factors": "storages-factors.json"
+    },
+    "screens": {
+      "references": "screens.json",
+      "factors": "screens-factors.json"
+    },
+    "batteries": {
+      "references": "batteries.json",
+      "factors": "batteries-factors.json"
+    },
+    "devices": {
+      "references": "devices.json",
+      "factors": "devices-factors.json"
+    },
+    "mobiles": {
+      "references": "mobiles.json",
+      "factors": "mobiles-factors.json"
+    },
+    "tablets": {
+      "references": "tablets.json",
+      "factors": "tablets-factors.json"
+    },
+    "laptops": {
+      "references": "laptops.json",
+      "factors": "laptops-factors.json"
+    },
+    "servers": {
+      "references": "servers.json",
+      "factors": "servers-factors.json"
+    }
+  }
 }

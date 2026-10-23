@@ -1,0 +1,68 @@
+[
+  {
+    "id": "tablet",
+    "kind": "configuration",
+    "status": "fictional-configurations-not-product-inventories",
+    "properties": {
+      "cpuDie": {
+        "value": 100,
+        "unit": "mm2",
+        "sourcePath": "terminals.tablet.cpuDie"
+      },
+      "cpuNode": {
+        "value": 4,
+        "unit": "nm",
+        "sourcePath": "terminals.tablet.cpuNode"
+      },
+      "cpuTdp": {
+        "value": 8,
+        "unit": "W",
+        "sourcePath": "terminals.tablet.cpuTdp"
+      },
+      "ram": {
+        "value": 8,
+        "unit": "GB",
+        "sourcePath": "terminals.tablet.ram"
+      },
+      "ramType": "ddr5",
+      "storage": {
+        "value": 256,
+        "unit": "GB",
+        "sourcePath": "terminals.tablet.storage"
+      },
+      "storageType": "ssd_nvme",
+      "screenDiag": {
+        "value": 11,
+        "unit": "inch",
+        "sourcePath": "terminals.tablet.screenDiag"
+      },
+      "screenTech": "lcd",
+      "battery": {
+        "value": 30,
+        "unit": "Wh",
+        "sourcePath": "terminals.tablet.battery"
+      },
+      "batteryChem": "nmc",
+      "lifetime": {
+        "value": 4,
+        "unit": "year",
+        "sourcePath": "terminals.tablet.lifetime"
+      },
+      "usageHours": {
+        "value": 4,
+        "unit": "h/day",
+        "sourcePath": "terminals.tablet.usageHours"
+      }
+    },
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-configurations.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "dataset": "hardware-configurations",
+    "modelRef": "manifest.json#models.component-assembly",
+    "technologyRefs": [
+      "memories.json#ddr5",
+      "storages.json#ssd_nvme",
+      "screens.json#lcd",
+      "batteries.json#nmc"
+    ]
+  }
+]

@@ -6,6 +6,7 @@ on:
       - "data/cloud/cpus.json"
       - "data/cloud/accelerators.json"
       - "scripts/hardware*"
+      - "scripts/hardware-sources/**"
       - ".github/workflows/hardware.yml"
       - "package.json"
   push:

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "ssd_sata",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {},
+    "factorRefs": [
+      "semiconductors-factors.json#storage.dieGwp",
+      "storages-factors.json#storage.baseGwp",
+      "storages-factors.json#storage.density",
+      "storages-factors.json#storage.powerPerTb.ssd_sata"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "id": "ssd_nvme",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {},
+    "factorRefs": [
+      "semiconductors-factors.json#storage.dieGwp",
+      "storages-factors.json#storage.baseGwp",
+      "storages-factors.json#storage.density",
+      "storages-factors.json#storage.powerPerTb.ssd_nvme"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "id": "hdd",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {},
+    "factorRefs": [
+      "storages-factors.json#storage.hddGwp",
+      "storages-factors.json#storage.powerPerTb.hdd"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  }
+]

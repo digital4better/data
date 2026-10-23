@@ -1,0 +1,5 @@
+dataset,id,value,unit,status,source,sourceRevision
+hardware-models,structuralGwp.desktop,12,kg CO2e/equipment,illustrative-not-calibrated,https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json,9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d
+hardware-models,structuralGwp.custom,8,kg CO2e/equipment,illustrative-not-calibrated,https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json,9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d
+hardware-models,powerAssumptions.terminalCpuLoad,0.5,dimensionless,illustrative-not-calibrated,https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json,9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d
+hardware-models,powerAssumptions.terminalAuxiliaryW,2,W,illustrative-not-calibrated,https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json,9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d

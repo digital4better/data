@@ -1,0 +1,140 @@
+[
+  {
+    "dataset": "hardware-models",
+    "id": "processorPackaging.gpu",
+    "value": 1.5,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "hardware-models",
+    "id": "processorPackaging.gpu_consumer",
+    "value": 1.1,
+    "unit": "dimensionless",
+    "status": "illustrative-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.gpu_power",
+    "value": 700,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-dgx-h100-8"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-8.gpu_embodied",
+    "value": 250000,
+    "unit": "g CO2e/accelerator",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-dgx-h100-8"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.gpu_power",
+    "value": 400,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-dgx-a100-8"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-a100-8.gpu_embodied",
+    "value": 143000,
+    "unit": "g CO2e/accelerator",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-dgx-a100-8"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.gpu_power",
+    "value": 400,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-a100-sxm4-1"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-a100-sxm4-1.gpu_embodied",
+    "value": 143000,
+    "unit": "g CO2e/accelerator",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-a100-sxm4-1"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.gpu_power",
+    "value": 700,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-dgx-h100-4"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-h100-4.gpu_embodied",
+    "value": 250000,
+    "unit": "g CO2e/accelerator",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-dgx-h100-4"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.gpu_power",
+    "value": 1200,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-dgx-b300-8"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-dgx-b300-8.gpu_embodied",
+    "value": 750000,
+    "unit": "g CO2e/accelerator",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-dgx-b300-8"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.gpu_power",
+    "value": 1200,
+    "unit": "W",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-gb300-nvl72"
+  },
+  {
+    "dataset": "ai-hardware-profiles",
+    "id": "nvidia-gb300-nvl72.gpu_embodied",
+    "value": 750000,
+    "unit": "g CO2e/accelerator",
+    "status": "illustrative-historical-profiles-not-calibrated",
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/ai-hardware-profiles.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d",
+    "appliesTo": "servers.json#nvidia-gb300-nvl72"
+  }
+]

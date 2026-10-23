@@ -1,0 +1,155 @@
+[
+  {
+    "id": "logic-3nm",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {
+      "process": {
+        "value": 3,
+        "unit": "nm"
+      },
+      "application": "processor-die-model-only"
+    },
+    "factorRefs": [
+      "semiconductors-factors.json#nodeFactors.3"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "id": "logic-4nm",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {
+      "process": {
+        "value": 4,
+        "unit": "nm"
+      },
+      "application": "processor-die-model-only"
+    },
+    "factorRefs": [
+      "semiconductors-factors.json#nodeFactors.4"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "id": "logic-5nm",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {
+      "process": {
+        "value": 5,
+        "unit": "nm"
+      },
+      "application": "processor-die-model-only"
+    },
+    "factorRefs": [
+      "semiconductors-factors.json#nodeFactors.5"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "id": "logic-7nm",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {
+      "process": {
+        "value": 7,
+        "unit": "nm"
+      },
+      "application": "processor-die-model-only"
+    },
+    "factorRefs": [
+      "semiconductors-factors.json#nodeFactors.7"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "id": "logic-10nm",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {
+      "process": {
+        "value": 10,
+        "unit": "nm"
+      },
+      "application": "processor-die-model-only"
+    },
+    "factorRefs": [
+      "semiconductors-factors.json#nodeFactors.10"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "id": "logic-14nm",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {
+      "process": {
+        "value": 14,
+        "unit": "nm"
+      },
+      "application": "processor-die-model-only"
+    },
+    "factorRefs": [
+      "semiconductors-factors.json#nodeFactors.14"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "id": "logic-22nm",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {
+      "process": {
+        "value": 22,
+        "unit": "nm"
+      },
+      "application": "processor-die-model-only"
+    },
+    "factorRefs": [
+      "semiconductors-factors.json#nodeFactors.22"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "id": "logic-28nm",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {
+      "process": {
+        "value": 28,
+        "unit": "nm"
+      },
+      "application": "processor-die-model-only"
+    },
+    "factorRefs": [
+      "semiconductors-factors.json#nodeFactors.28"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  },
+  {
+    "id": "logic-32nm",
+    "kind": "technology",
+    "status": "illustrative-not-calibrated",
+    "properties": {
+      "process": {
+        "value": 32,
+        "unit": "nm"
+      },
+      "application": "processor-die-model-only"
+    },
+    "factorRefs": [
+      "semiconductors-factors.json#nodeFactors.32"
+    ],
+    "source": "https://github.com/digital4better/methodology/blob/9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d/src/data/hardware-models.json",
+    "sourceRevision": "9143c03c6f89c1ec8d8376d5bb6f9a3d4135201d"
+  }
+]
