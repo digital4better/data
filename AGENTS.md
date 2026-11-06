@@ -88,6 +88,8 @@ Keep the short files concise and link to the full reference for detail. The full
 
 `site/scripts/build.mjs` copies the website variants unchanged to `site/dist/`. Do not edit build output. Ensure the package variants remain in the `package.json` publish allowlist. Do not replace these files with a skill or assume agents load them automatically.
 
+`skills/digital4better-data/SKILL.md` is an optional agent skill that points to the package variants. Its description says when to read them, its body says where they are. Keep data facts out of it so that it never needs a review when the data or the documentation change; edit it only if `llms.txt` or `llms-full.txt` are renamed or moved. Keep `skills` in the publish allowlist. `site/tests/skill.test.cjs` checks both.
+
 After changes, run `yarn build:site`, `yarn check:site` and `yarn test:site`. Check that package-relative links resolve in the packed npm artifact, public documentation/download links resolve in the built website, and both website files are exact copies of their source files. Do not run `yarn build:data` just to validate documentation: it fetches upstream sources and rewrites data.
 
 ## Historical territory coverage

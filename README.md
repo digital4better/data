@@ -12,6 +12,8 @@ Start with the package's [short documentation index](./llms.txt), then read the 
 
 The [public website](https://digital4better.github.io/data/) has its own [short index](https://digital4better.github.io/data/llms.txt) and [complete reference](https://digital4better.github.io/data/llms-full.txt), with public download and documentation URLs. The website may contain newer data than an installed package. These documents are entry points; their presence does not guarantee automatic loading by an assistant.
 
+The package also ships an agent skill, [`skills/digital4better-data`](./skills/digital4better-data/SKILL.md). It holds no documentation of its own: it tells a coding agent when to read the files above. Installing it is optional. With pnpm, approve the package once (`pnpm approve`) and pnpm links the skill into the project's agent folders; see [pnpm agent skills](https://pnpm.io/agent-skills). npm and yarn projects can use [skills-npm](https://github.com/antfu/skills-npm).
+
 ## What You Can Find Here
 
 The repository is organized as a set of reusable data collections:
