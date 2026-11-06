@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "method": "preserve-last-published-series",
+  "description": "Territories absent from current Ember exports retain published historical values. Later periods carry the last reference forward; they are not new observations. Current Ember data takes precedence when a territory returns.",
+  "sourceSnapshot": {
+    "version": "1.3.68",
+    "commit": "9dc09cb8ebabaff6220a089fb3c6972218d18d0e",
+    "releaseDate": "2026-11-06T13:43:16.631Z",
+    "upstreamObservationDate": null,
+    "description": "Last published Digital4Better outputs, not raw Ember observations. These series may already contain modeled or carried-forward periods."
+  },
+  "territories": {
+    "BM": {
+      "name": "Bermuda",
+      "status": "historical-reference",
+      "reason": "absent-from-current-ember-export",
+      "upstreamObservationDate": null
+    },
+    "GI": {
+      "name": "Gibraltar",
+      "status": "historical-reference",
+      "reason": "absent-from-current-ember-export",
+      "upstreamObservationDate": null
+    },
+    "NU": {
+      "name": "Niue",
+      "status": "historical-reference",
+      "reason": "absent-from-current-ember-export",
+      "upstreamObservationDate": null
+    },
+    "SH": {
+      "name": "Saint Helena",
+      "status": "historical-reference",
+      "reason": "absent-from-current-ember-export",
+      "upstreamObservationDate": null
+    },
+    "TL": {
+      "name": "Timor-Leste",
+      "status": "historical-reference",
+      "reason": "absent-from-current-ember-export",
+      "upstreamObservationDate": null
+    }
+  },
+  "datasets": {
+    "factor/country-yearly": {
+      "through": "2026",
+      "lastPublishedPeriod": {
+        "BM": "2026",
+        "GI": "2026",
+        "NU": "2026",
+        "SH": "2026",
+        "TL": "2026"
+      }
+    },
+    "factor/country-yearly-green": {
+      "through": "2026",
+      "lastPublishedPeriod": {
+        "BM": "2026",
+        "GI": "2026",
+        "NU": "2026",
+        "SH": "2026",
+        "TL": "2026"
+      }
+    },
+    "factor/country-monthly": {
+      "through": "2026-10",
+      "lastPublishedPeriod": {
+        "BM": "2026-10",
+        "GI": "2026-10",
+        "NU": "2026-10",
+        "SH": "2026-10",
+        "TL": "2026-10"
+      }
+    },
+    "factor/country-monthly-green": {
+      "through": "2026-10",
+      "lastPublishedPeriod": {
+        "BM": "2026-10",
+        "GI": "2026-10",
+        "NU": "2026-10",
+        "SH": "2026-10",
+        "TL": "2026-10"
+      }
+    },
+    "mix/country-yearly": {
+      "through": "2026",
+      "lastPublishedPeriod": {
+        "BM": "2026",
+        "GI": "2026",
+        "NU": "2026",
+        "SH": "2026",
+        "TL": "2026"
+      }
+    },
+    "mix/country-yearly-green": {
+      "through": "2026",
+      "lastPublishedPeriod": {
+        "BM": "2026",
+        "GI": "2026",
+        "NU": "2026",
+        "SH": "2026",
+        "TL": "2026"
+      }
+    },
+    "mix/country-monthly": {
+      "through": "2026-10",
+      "lastPublishedPeriod": {
+        "BM": "2026-10",
+        "GI": "2026-10",
+        "NU": "2026-10",
+        "SH": "2026-10",
+        "TL": "2026-10"
+      }
+    },
+    "mix/country-monthly-green": {
+      "through": "2026-10",
+      "lastPublishedPeriod": {
+        "BM": "2026-10",
+        "GI": "2026-10",
+        "NU": "2026-10",
+        "SH": "2026-10",
+        "TL": "2026-10"
+      }
+    }
+  }
+}

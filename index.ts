@@ -6,6 +6,7 @@ import IMPACTS from "./data/energy/energy-impacts.json";
 import { PassThrough } from "stream";
 import ReadableStream = NodeJS.ReadableStream;
 import { Readable } from "node:stream";
+import { restoreLegacyElectricity, LegacyElectricitySnapshot } from "./scripts/electricity-history";
 
 const MIN_YEAR = 2019;
 const CURRENT_MONTH = new Date().getUTCMonth();
@@ -854,6 +855,9 @@ const generateFactors = async () => {
   }
   process.stdout.write(`${updates} updates\n`);
   exportFactorsAndMixes(aggregates);
+  const legacy: LegacyElectricitySnapshot = JSON.parse(readFileSync("sources/ember-legacy-territories.json", "utf8"));
+  const provenance = restoreLegacyElectricity(Object.keys(aggregates), legacy, exportToCsv);
+  console.log(`Preserved historical electricity references: ${Object.keys(provenance.territories).join(", ") || "none"}`);
 };
 
 const generateCountries = async () => {

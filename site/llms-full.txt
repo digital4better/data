@@ -23,6 +23,12 @@ JSON preserves nested objects, arrays and source keys. CSV is a tabular projecti
 
 Use the exact identifiers in each source file. Cloud files can use lowercase country codes and aliases; electricity country keys use source country identifiers. Do not apply one collection's identifier normalization blindly to another. Geographic mappings are provided in `data/country/`; confirm membership from the actual records.
 
+## Historical electricity references
+
+BM (Bermuda), GI (Gibraltar), NU (Niue), SH (Saint Helena) and TL (Timor-Leste) are absent from the current Ember global generation exports. When a territory is entirely absent from the import, its previously published country mix and factor series are retained from Digital4Better version 1.3.68. This applies to yearly/monthly and full-mix/green variants in both collections. Existing historical values are preserved; later periods carry the last available reference forward. These are historical references, not new Ember observations.
+
+Consult [electricity provenance](https://digital4better.github.io/data/electricity-provenance.json) for the pinned source commit/release, affected territories, last published periods and carried-through periods. Original upstream observation dates are unknown; a package release date must not be interpreted as a measurement date. Current Ember data takes precedence if a territory returns. Preserved outputs are restored after global/continental aggregation, because historical raw generation/import volumes are unavailable for weighting. The website labels these references on country explorer pages.
+
 ## Missing values, zero and time
 
 - A missing property, `null` or an empty CSV cell denotes unavailable data. Preserve that distinction in calculations and exports.

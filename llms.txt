@@ -11,6 +11,7 @@ Before reporting missing data, inspect the relevant collection and check the exa
 - [Complete package reference](./llms-full.txt): File inventory, schemas, lookup procedure, examples, sources and limitations; readable offline.
 - [Package overview](./README.md): Collections, source families and provider assumptions.
 - [Package metadata](./package.json): Installed version and release metadata.
+- [Electricity provenance](./data/electricity-provenance.json): Historical references retained for territories absent from current Ember exports, including carry-forward limits.
 - [License](./LICENCE): ODbL 1.0 terms.
 
 ## Data collections

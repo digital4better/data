@@ -100,6 +100,8 @@ And across different time granularities:
 
 The generator reads Ember’s July 2026 wide CSV exports (one row per area, period and electricity source), using technology shares, total generation and signed net imports. Aggregate source rows are excluded from fuel shares to avoid double counting. The previous long-format download URLs now return a migration notice.
 
+BM, GI, NU, SH and TL disappeared from the current Ember generation exports. When a territory is entirely absent, its historical mix and factor series from version `1.3.68` are preserved; later periods carry the last reference forward. These are historical references, not new observations. Their source and coverage are recorded in [`data/electricity-provenance.json`](./data/electricity-provenance.json). Current Ember observations take precedence if a territory returns. Missing historical energy volumes are not invented for global or continental weighting.
+
 Green-only variants are also available through files ending with `-green`.
 When the source mix contains no bioenergy, hydro, solar or wind, the green-only
 mix and its impact factors are unavailable (`null` in JSON, empty cells in CSV),
