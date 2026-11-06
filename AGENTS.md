@@ -58,6 +58,8 @@ Runs daily (cron) + on-demand. On `main`: generates data, bumps version if chang
 
 Publishing goes through npm OIDC trusted publishing: the repository is the publisher, no personal npm account is involved.
 
+For a documentation-only release, dispatch `main.yml` on `main` with `force_publish: true` and `refresh_data: false`. This validates and publishes the committed dataset snapshot without fetching upstream sources. Scheduled generation and normal manual runs refresh data by default.
+
 ## Key Data Concepts
 
 - **Regions** are identified by ISO 3166-1 alpha-2 codes (countries) or `XX-YY` format (subdivisions, e.g. `US-CA`, `CA-QC`)
