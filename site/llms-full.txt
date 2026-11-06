@@ -135,7 +135,7 @@ The `-green` variant keeps Bioenergy, Hydro, Solar and Wind and renormalizes the
 
 ### Sources and boundaries
 
-Electricity series are derived from [Ember](https://ember-climate.org/data-catalogue/) and lifecycle references including [UNECE 2021](https://unece.org/sed/documents/2021/10/reports/life-cycle-assessment-electricity-generation-options). Generation and imports are processed by the repository's methodology. Factors are modeled lifecycle references, not instantaneous grid measurements, marginal emissions or a guarantee of hourly coverage. The [impact assessment methodology](https://digital4better.github.io/methodology/en/) provides further context.
+Electricity series are derived from [Ember](https://ember-climate.org/data-catalogue/) and lifecycle references including [UNECE 2021](https://unece.org/sed/documents/2021/10/reports/life-cycle-assessment-electricity-generation-options). The generator reads Ember’s wide CSV generation exports, with one row per area, period and electricity source. It uses source shares, total generation and signed net imports; aggregate rows are not counted again as fuels. The old long-format URLs have been replaced by the yearly/monthly exports at `files.ember-energy.org`. Generation and imports are processed by the repository's methodology. Factors are modeled lifecycle references, not instantaneous grid measurements, marginal emissions or a guarantee of hourly coverage. The [impact assessment methodology](https://digital4better.github.io/methodology/en/) provides further context.
 
 ## Electricity mixes: `data/mix/`
 

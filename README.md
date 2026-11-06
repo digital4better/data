@@ -98,6 +98,8 @@ And across different time granularities:
 - yearly
 - monthly
 
+The generator reads Ember’s July 2026 wide CSV exports (one row per area, period and electricity source), using technology shares, total generation and signed net imports. Aggregate source rows are excluded from fuel shares to avoid double counting. The previous long-format download URLs now return a migration notice.
+
 Green-only variants are also available through files ending with `-green`.
 When the source mix contains no bioenergy, hydro, solar or wind, the green-only
 mix and its impact factors are unavailable (`null` in JSON, empty cells in CSV),
@@ -105,7 +107,7 @@ not zero-impact electricity.
 
 Main source families:
 
-- electricity generation data from [Ember monthly electricity data](https://ember-climate.org/data-catalogue/monthly-electricity-data/) and [Ember yearly electricity data](https://ember-climate.org/data-catalogue/yearly-electricity-data/)
+- electricity generation data from [Ember monthly electricity data](https://ember-energy.org/data/monthly-electricity-data/) and [Ember yearly electricity data](https://ember-energy.org/data/yearly-electricity-data/)
 - impact factors built from lifecycle assessment literature, including [UNECE 2021 - Life cycle assessment of electricity generation options](https://unece.org/sed/documents/2021/10/reports/life-cycle-assessment-electricity-generation-options) and related academic work such as [this Energy paper](https://www.sciencedirect.com/science/article/pii/S0196890422008159#b0530)
 
 ### Facility Impact Factors

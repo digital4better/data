@@ -28,7 +28,7 @@ Single entry point that fetches external data, computes metrics, and exports CSV
 1. **`generateClouds()`** — reads cloud provider JSON from `data/cloud/` and exports CSV equivalents
 2. **`generateCountries()`** — computes geographic distances (country-to-country, region-to-region, user-to-datacenter) from `data/country/regions.json`
 3. **`generateFactors()`** — the main pipeline:
-   - Fetches global energy mix data from Ember Climate (monthly + yearly CSVs)
+   - Fetches global energy mix data from Ember (monthly + yearly wide generation CSVs at `files.ember-energy.org`; legacy long-format URLs return a migration notice)
    - Fetches Canadian province data from StatCan (ZIP/CSV)
    - Fetches US state data from EIA API
    - Sanitizes data (fills missing periods by extrapolating from parent regions)
