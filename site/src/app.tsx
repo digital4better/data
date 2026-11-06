@@ -474,6 +474,7 @@ export function App({
             <a href={license}>ODbL 1.0</a>
             <a href={`${base}catalog.json`}>{t("Catalogue JSON", "JSON catalog")}</a>
             <a href={`${base}llms.txt`}>llms.txt</a>
+            <a href={`${base}llms-full.txt`}>llms-full.txt</a>
             <a href={`${base}sitemap.xml`}>{t("Plan du site", "Sitemap")}</a>
             <a href={repository + "/issues"}>{t("Signaler une erreur", "Report an issue")}</a>
             <a href="https://digital4better.com">Digital4Better ↗</a>

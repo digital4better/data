@@ -6,6 +6,12 @@ This repository is meant to be used as a data source, not as developer documenta
 
 These reference datasets are used, among other things, by [fruggr](https://www.fruggr.io), Digital4Better's platform for measuring and managing the environmental footprint of digital services.
 
+## Documentation for AI assistants
+
+Start with the package's [short documentation index](./llms.txt), then read the [complete usage reference](./llms-full.txt) for file selection, schemas, units, examples and limitations. Both files are included in the npm package and can be read offline. They describe the installed package; check `package.json` for its version.
+
+The [public website](https://digital4better.github.io/data/) has its own [short index](https://digital4better.github.io/data/llms.txt) and [complete reference](https://digital4better.github.io/data/llms-full.txt), with public download and documentation URLs. The website may contain newer data than an installed package. These documents are entry points; their presence does not guarantee automatic loading by an assistant.
+
 ## What You Can Find Here
 
 The repository is organized as a set of reusable data collections:
