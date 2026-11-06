@@ -1,0 +1,463 @@
+# Digital4Better Open Data — complete website reference
+
+> Plain-text usage documentation for the deployed Digital4Better Open Data website. The site offers six bilingual editorial collections and original JSON/CSV downloads, plus raw geographic reference assets. Data support environmental modeling; many values are references or estimates rather than direct measurements.
+
+## Scope and website access
+
+This reference describes the deployed website at https://digital4better.github.io/data/. Its short index is [llms.txt](https://digital4better.github.io/data/llms.txt). Consult [catalog.json](https://digital4better.github.io/data/catalog.json) for the current published dataset inventory, fields, coverage summaries, bilingual dataset pages and absolute JSON/CSV download URLs. Record counts and period ranges summarize files; they do not guarantee a record for every territory/period combination. The catalog covers the six editorial collections. Geographic references, building energy (`facility`) and transport factors remain raw assets and have no editorial collection pages. The JSON catalog covers only the six editorial collections; use the additional raw-download sections below for the others.
+
+French and English editorial pages are under `fr/` and `en/`. Dataset pages use `<language>/<collection>/<filename-without-extension>/`. Raw downloads use `https://digital4better.github.io/data/<collection>/<filename>`, with no extra `data/` segment or language prefix. The descriptions and original downloads are static and accessible without JavaScript or an account.
+
+Public download URLs can change. Preserve the downloaded files and a Git commit or other exact snapshot for reproducibility. A package release date, a committed file modification date and a source observation date have different meanings. Users of an installed `@digital4better/data` package should use its local `llms.txt`, `llms-full.txt` and `package.json`: the deployed site may be newer than their package.
+
+JSON preserves nested objects, arrays and source keys. CSV is a tabular projection: some nested fields are omitted and lists can use `|` separators. Use JSON for complete structured records. Filtered website exports retain their original JSON structure or original CSV records; some charts limit visible values or omit missing values, so inspect full tables and downloads before drawing conclusions about coverage.
+
+## Finding the right data
+
+1. Identify the collection matching the question. Electricity impact factors are in `factor`; electricity technology shares are in `mix`; cloud regions are in `cloud`; geographic identifiers are in `country`.
+2. Inspect the collection's file inventory. Opening one file does not establish the coverage of the published data.
+3. For temporal data, select geography, yearly or monthly granularity, and actual-mix or renewable-only scenario explicitly.
+4. Check that the exact source key, requested period and requested indicator are present and usable. File-level availability is not record-level availability. Inspect each file rather than assuming all variants have identical coverage.
+5. If the requested record is unavailable, report the file and keys checked. A result can be absent even when the collection exists. Do not silently turn an absent value into zero or use another territory, period or scenario.
+6. If the consuming application authorizes a fallback, record the requested and selected geography/period, source file, indicator and reason. A search may proceed from subdivision to country, continent and world, but broader averages are substitutions, not equivalent observations. There is no universally correct fallback order across time and geography.
+
+Use the exact identifiers in each source file. Cloud files can use lowercase country codes and aliases; electricity country keys use source country identifiers. Do not apply one collection's identifier normalization blindly to another. Geographic mappings are provided in `data/country/`; confirm membership from the actual records.
+
+## Missing values, zero and time
+
+- A missing property, `null` or an empty CSV cell denotes unavailable data. Preserve that distinction in calculations and exports.
+- An explicit numeric zero must be preserved. Some provider or hardware zeros are dataset conventions, not independently verified zero environmental impacts; review the relevant assumptions.
+- Do not use truthiness checks such as `if (!value)` to detect absence: that also rejects numeric zero. Check null/undefined and the value's type explicitly.
+- Years are string keys such as `2025`; months are string keys such as `2025-01`. Do not silently mix annual and monthly series.
+- The current year can be partial. Available periods may contain estimated or carried-forward values; they do not guarantee new observations. The current series do not individually flag all filled values.
+- File modification dates, package release dates and source observation dates have different meanings. A daily rebuild does not mean every source was refreshed.
+- For reproducibility, retain the exact package version or file snapshot, source keys, period, indicator, unit and any fallback. Public download URLs can change.
+
+## Units and environmental impact indicators
+
+Impact values combine an indicator-specific unit with a functional unit. For example, a `gwp` value in a transport record whose `unit` is `pkm` is expressed in `kg CO2 eq/pkm`. The `unit` field is therefore the denominator of every impact present in that record, not the unit of the impact indicator itself.
+
+### Functional units by collection
+
+| Files | Functional unit | Meaning |
+| --- | --- | --- |
+| [`data/energy/energy-impacts.*`](https://digital4better.github.io/data/en/energy/) | `kWh` | Impact per kilowatt-hour of electricity generated by the specified technology. The fixed functional unit is not repeated in each record. |
+| [`data/factor/*`](https://digital4better.github.io/data/en/factor/) | `kWh` | Impact per kilowatt-hour of electricity consumed for the specified geography and period. The fixed functional unit is not repeated in each record. |
+| [`data/facility/factors.*`](https://digital4better.github.io/data/facility/README.md) | `kWh` | Impact per kilowatt-hour of electricity or fuel energy. For fuels, `-pci` and `-pcs` in the factor ID identify the lower or higher calorific value basis. |
+| [`data/transport/factors.*`](https://digital4better.github.io/data/transport/README.md) | `pkm` or `vkm` | Impact per passenger-kilometre for collective and active transport, or per vehicle-kilometre for individual motor vehicles. |
+| [`data/equipment/embodied.*`](https://digital4better.github.io/data/en/equipment/) | `/s` or `/GB/km` | Embodied impact allocated per second for equipment and virtual machines, or per gigabyte-kilometre for networks. |
+| [`data/equipment/energy.*`](https://digital4better.github.io/data/en/equipment/) | `W` or `Wh/GB/km` | Operational power for equipment and virtual machines, or electricity used per gigabyte-kilometre for networks. These fields are energy values, not environmental impacts. |
+
+`pkm` means one passenger transported over one kilometre. `vkm` means one vehicle travelling one kilometre, independently of its passenger count. `GB/km` means one gigabyte transferred over one kilometre.
+
+### Common impact indicators
+
+The following indicators and native units are shared by the energy, electricity factor, facility, transport, and equipment collections. They follow the Environmental Footprint impact-category conventions documented by the [European Commission Joint Research Centre](https://publications.jrc.ec.europa.eu/repository/bitstream/JRC130796/JRC130796_01.pdf).
+
+| Field | Environmental impact | Native unit |
+| --- | --- | --- |
+| `adpe` | Resource use, minerals and metals | `kg Sb eq` |
+| `ap` | Acidification | `mol H+ eq` |
+| `ctue` | Freshwater ecotoxicity | `CTUe` |
+| `ctuh-c` | Human toxicity, cancer | `CTUh` |
+| `ctuh-nc` | Human toxicity, non-cancer | `CTUh` |
+| `gwp` | Climate change, global warming potential over 100 years | `kg CO2 eq` |
+| `ir` | Ionising radiation, human health | `kBq U-235 eq` |
+| `pm` | Particulate matter, human health | `disease incidence` |
+| `wu` | Water use | `m3 world eq` |
+
+The complete unit is obtained by dividing the native unit by the collection's functional unit. Examples include `kg CO2 eq/kWh`, `mol H+ eq/kWh`, `kg CO2 eq/pkm`, and `kg CO2 eq/vkm`.
+
+An absent JSON property or an empty CSV cell means that the indicator is not available for that factor. It must not be interpreted as zero. An explicit numeric `0` is a known zero value.
+
+### Additional equipment indicators
+
+[`data/equipment/embodied.*`](https://digital4better.github.io/data/en/equipment/) also contains the following indicators. Their native units are divided by the `unit` stored in the same equipment record.
+
+| Field | Environmental impact | Native unit |
+| --- | --- | --- |
+| `adpf` | Resource use, fossils | `MJ` |
+| `epf` | Eutrophication, freshwater | `kg P eq` |
+| `epm` | Eutrophication, marine | `kg N eq` |
+| `ept` | Eutrophication, terrestrial | `mol N eq` |
+| `gwpb` | Climate change, biogenic | `kg CO2 eq` |
+| `gwpt` | Climate change, total | `kg CO2 eq` |
+| `gwplu` | Climate change, land use and land-use change | `kg CO2 eq` |
+| `lu` | Land use, soil quality index | `Pt` (dimensionless) |
+| `odp` | Ozone depletion | `kg CFC-11 eq` |
+| `pocp` | Photochemical ozone formation | `kg NMVOC eq` |
+| `mips` | Material input per service unit | `kg` |
+
+### Cloud sustainability metrics
+
+Cloud region files use additional operational indicators which are not life-cycle impact categories:
+
+| Field | Metric | Unit |
+| --- | --- | --- |
+| `pue` | Power Usage Effectiveness | Ratio, dimensionless |
+| `wue` | Water Usage Effectiveness | `L/kWh` |
+| `ref` | Renewable Energy Factor | Ratio from `0` to `1` |
+
+## Electricity impact factors: `data/factor/`
+
+Files use `<geography>-<frequency>[-green].json`, with matching CSV files:
+
+- Geography: `subdivision`, `country`, `continent`, `world`.
+- Frequency: `yearly`, `monthly`.
+- Scenario: no suffix for the modeled full mix; `-green` for the renewable-only scenario.
+
+For example, [subdivision-yearly.json](https://digital4better.github.io/data/factor/subdivision-yearly.json) and [subdivision-monthly.json](https://digital4better.github.io/data/factor/subdivision-monthly.json) contain sub-national series. Reading only [country-yearly.json](https://digital4better.github.io/data/factor/country-yearly.json) is insufficient to determine whether sub-national factors exist. Coverage of one subdivision does not imply coverage of all subdivisions or periods.
+
+Country, continent and subdivision JSON use `{ territory: { period: { indicator: value } } }`. World JSON uses `{ period: { indicator: value } }`, without an extra world wrapper. Check the existing continent names instead of assuming continent codes are used as time-series keys.
+
+The shared indicators are `adpe` (resource use, minerals and metals), `ap` (acidification), `ctue` (freshwater ecotoxicity), `ctuh-c` and `ctuh-nc` (human toxicity, cancer and non-cancer), `gwp` (climate change), `ir` (ionising radiation), `pm` (particulate matter) and `wu` (water use). These are distinct impact categories with different native units. Electricity factors are per kWh; `gwp` is in kg CO2 equivalent/kWh. Check the source methodology for other indicator units and characterization methods before combining datasets. Do not infer physical liters of water from a water-impact indicator or add different impact categories together.
+
+Impact = electricity consumption in kWh × factor per kWh. Educational example: 100 kWh × 0.05 kg CO2e/kWh = 5 kg CO2e. The example factor is fictional; read the dataset value for a real calculation.
+
+JavaScript example using a public download (available in modern browsers or Node.js with fetch):
+
+```js
+const response = await fetch('https://digital4better.github.io/data/factor/subdivision-yearly.json');
+if (!response.ok) throw new Error(`Download failed: ${response.status}`);
+const factors = await response.json();
+const territory = 'CA-QC';
+const period = '2023';
+const factor = factors[territory]?.[period]?.gwp;
+if (typeof factor !== 'number' || !Number.isFinite(factor)) {
+  throw new Error(`No usable gwp factor for ${territory} / ${period}`);
+}
+const result = { territory, period, factor, kWh: 100, kgCO2e: 100 * factor };
+```
+
+### Renewable-only scenario
+
+The `-green` variant keeps Bioenergy, Hydro, Solar and Wind and renormalizes their shares to total 100%. Factors are computed from this hypothetical mix. It describes neither the territory's actual electricity mix nor a green electricity contract, and its lifecycle impacts are not zero. If no selected renewable source is available, a green value can be unavailable. Do not silently use `-green` as a replacement for the full mix.
+
+### Sources and boundaries
+
+Electricity series are derived from [Ember](https://ember-climate.org/data-catalogue/) and lifecycle references including [UNECE 2021](https://unece.org/sed/documents/2021/10/reports/life-cycle-assessment-electricity-generation-options). Generation and imports are processed by the repository's methodology. Factors are modeled lifecycle references, not instantaneous grid measurements, marginal emissions or a guarantee of hourly coverage. The [impact assessment methodology](https://digital4better.github.io/methodology/en/) provides further context.
+
+## Electricity mixes: `data/mix/`
+
+The same 16 geography/frequency/scenario filename combinations and temporal JSON nesting apply. For example, [country-yearly.json](https://digital4better.github.io/data/mix/country-yearly.json) contains country series and [world-monthly.json](https://digital4better.github.io/data/mix/world-monthly.json) contains period-keyed world values.
+
+Values are shares, normally between 0 and 1, rather than percentages or impact factors. Technology keys include `Bioenergy`, `Coal`, `Gas`, `Hydro`, `Nuclear`, `Other Fossil`, `Other Renewables`, `Solar` and `Wind`. Preserve their spelling. Shares can differ slightly from a total of 1 because of rounding. Missing values must not be filled with zero without justification. Renewable-only variants follow the scenario definition above.
+
+## Cloud infrastructure: `data/cloud/`
+
+The provider prefixes are `aws`, `azure`, `gcp`, `oracle`, `ovhcloud` and `scaleway`. Each has `<provider>-regions.json` and `<provider>-vms.json`, with matching CSV files. Shared [cpus.json](https://digital4better.github.io/data/cloud/cpus.json) and [accelerators.json](https://digital4better.github.io/data/cloud/accelerators.json) describe hardware. JSON roots are arrays of records. Provider catalogs describe reference offerings and may include historical entries, not a real-time availability check.
+
+### Regions
+
+Common fields include `id`, `name`, optional `aliases`, `provider`, `location`, `country`, `lat`, `lon`, `pue`, `wue` and `ref`. Match provider-specific identifiers and aliases before joining to another catalog. Coordinates are reference locations, not exact datacenter addresses.
+
+- `pue`: total datacenter energy divided by IT energy, dimensionless.
+- `wue`: water use relative to energy; check the provider's reporting boundary and source unit before comparison.
+- `ref`: renewable-energy-related fraction from 0 to 1 in this referential. Regional CFE figures are used for Google; CFE and renewable matching are not interchangeable measures.
+
+Provider conventions retained in this website snapshot:
+
+- AWS: regional 2024 PUE/WUE disclosures; REF remains zero by convention. It does not establish that AWS uses no renewable electricity.
+- Azure: regional fact sheets, including previously curated values where old PDFs are no longer retrievable.
+- GCP: regional CFE for REF and previously derived water figures pending clearer regional disclosures.
+- Oracle: uniform PUE 1.07 and provisional WUE zero, which does not establish no water use.
+- OVHcloud: FY25 published KPI assumptions.
+- Scaleway: datacenter figures supplemented by impact reports.
+
+Check reporting year, regional versus global scope, method and units before comparing providers. Lower PUE alone does not establish lower total environmental impact. The [README cloud section](https://github.com/digital4better/data/blob/main/README.md#cloud-infrastructure) links source disclosures and detailed assumptions.
+
+### Machines and hardware
+
+Machine fields can include `id`, `name`, `family`, `category`, `vcpus`, `ocpus`, `memory`, `ssd`, `hdd`, `cpu`, `accelerator`, `accelerators`, `virtual` and `embodied`. Not every field occurs in every provider. Some provider machine files include bare-metal entries: check `virtual` rather than treating every entry as virtual. Memory and storage are documented in GB. `embodied` describes a modeled embodied climate impact in tCO2e, not electricity use or a per-kWh factor.
+
+CPU references include manufacturer, series/model, architecture/platform, cores, threads, TDP, process, die area, transistors and socket support where available. Accelerator references include type, manufacturer, model, memory and hardware characteristics. TDP is a thermal design envelope in W, not a workload-specific electricity measurement. Check the actual record types: some source fields are strings or lists. Do not silently reinterpret zero placeholders, comma decimal strings, scalar CPU references or arrays.
+
+## AI models: `data/ai/`
+
+[models.json](https://digital4better.github.io/data/ai/models.json) is an array of model records; [models.csv](https://digital4better.github.io/data/ai/models.csv) is its tabular projection.
+
+- `name`, `vendor`, `type`, `architecture`: source identifiers and model classification.
+- `pattern`: a name-recognition expression, not a provider API endpoint.
+- `parameters.active` and `parameters.total`: active and total parameters in billions. Distinguish these for mixture-of-experts architectures.
+- `context`: context capacity in tokens, not a guaranteed output length.
+- `input`, `output`: supported modalities.
+- `reasoning`, `tools`: recorded capabilities.
+- `providers`: hosting-provider identifiers and variants, not universal identifiers.
+- `estimated`: fields identified as estimates. Check it before presenting parameters or context as vendor disclosures.
+- `sources`: URLs for provenance and further verification.
+- `open`: an openness flag; it does not substitute for the model's license.
+
+Not every model has every field. Legacy models and historical/restricted provider references can remain. Check current provider availability separately. Model size alone is insufficient to calculate environmental impacts; no per-model environmental footprint is supplied. Preserve upstream attribution for adapted estimates. This includes EcoLogits contributors and Samuel Rince where their estimates or family proxies are retained; do not present these as vendor disclosures. Read the [AI audit](https://digital4better.github.io/data/ai/README.md), [parameter provenance](https://digital4better.github.io/data/ai/provenance.md) and [cloud coverage inventory](https://digital4better.github.io/data/ai/cloud-coverage.md) for their boundaries and unresolved historical assumptions.
+
+The [README AI section](https://github.com/digital4better/data/blob/main/README.md#ai-models) links provider catalogs, vendor documentation, model cards and technical sources.
+
+## Equipment: `data/equipment/`
+
+[energy.json](https://digital4better.github.io/data/equipment/energy.json) and [embodied.json](https://digital4better.github.io/data/equipment/embodied.json) are objects keyed by equipment or infrastructure category, with corresponding CSV files. These are modeling references, not measurements of every device.
+
+Energy entries contain `description`, `value` and `unit`. A value in W is operational power: divide by 1000 and multiply by operating hours to obtain kWh. Some network entries use `Wh/GB/km`; preserve their stated convention and check the model's traffic/distance allocation before use.
+
+Embodied entries contain a description, `unit` and environmental indicators. Many factors use `/s` to allocate embodied impacts per second of use, while network factors can use `/GB/km`. A `/s` factor is not a device's total manufacturing impact. Keep allocation duration and the model's network unit convention explicit. Additional indicators include `adpf`, `epf`, `epm`, `ept`, `gwpb`, `gwpt`, `gwplu`, `lu`, `odp`, `pocp` and `mips`. Verify their source units before comparison; do not treat energy values as environmental impact factors.
+
+## Energy technologies: `data/energy/`
+
+[energy-impacts.json](https://digital4better.github.io/data/energy/energy-impacts.json) maps generation technology names to the nine shared environmental indicators, with a matching CSV file. Factors are lifecycle impacts per kWh of electricity generation. They are inputs to electricity mix modeling and do not describe instantaneous emissions of an individual power plant. Use the exact technology keys and preserve indicator-specific units. See the electricity source references above and the [README energy section](https://github.com/digital4better/data/blob/main/README.md#electricity-mix-and-impact-factors).
+
+## Additional raw downloads: building energy (`facility`)
+
+[factors.json](https://digital4better.github.io/data/facility/factors.json) is an array of annual records, with a matching CSV file. Select by `id`, `location` and `period`. Each record provides a functional `unit` of `kWh`, available environmental indicators, `source` and `sourceUrl`.
+
+`electricity-grid` records for France (`FR`) and Europe (`EU`) retain all nine annual electricity impacts. The generator synchronizes them with `factor/country-yearly.json` at `FR` and `factor/continent-yearly.json` at `Europe`. Combustible factors are maintained separately from ADEME Base Carbone total records: upstream and combustion components are included, and only GWP is published when the other indicators cannot be verified on the same boundary.
+
+Fuel identifiers such as `natural-gas-pci`, `natural-gas-pcs`, `heating-oil-pci`, `propane-pci` and `wood-pellets-pci` encode lower (PCI) or higher (PCS) calorific value bases. Match the base of the input energy to the selected factor. Periods vary by fuel and location; do not assume all factors have the latest electricity year. District heating/cooling and an EU wood-pellet equivalent are absent. See the [facility source notes](https://digital4better.github.io/data/facility/README.md) for exact records and boundaries.
+
+## Additional raw downloads: transport (`transport`)
+
+[factors.json](https://digital4better.github.io/data/transport/factors.json) is an array of annual employee travel references, with a matching CSV file. Select by `id`, `location` and `period`; read `unit`, available indicators, `source` and `sourceUrl` from that record.
+
+Collective and active transport uses passenger-kilometres (`pkm`), while individual motor vehicles use vehicle-kilometres (`vkm`). GWP is therefore kg CO2 equivalent/pkm or kg CO2 equivalent/vkm respectively. Do not multiply a vehicle-kilometre factor by passenger-kilometres without an explicit occupancy conversion. Missing non-GWP indicators are unavailable, not zero.
+
+The French catalogue covers four flight distance bands, rail, coach, bus, tram, metro, cars, two-wheelers and active travel. ADEME Impact CO2 source requests exclude vehicle construction; flight factors retain radiative forcing. Source periods and transport mode assumptions vary. `location` describes the reference context, not the origin/destination of a trip. There is no published European equivalent or implicit French-to-European fallback. See the [transport source notes](https://digital4better.github.io/data/transport/README.md) for mode identifiers, aviation bands and source mappings.
+
+## Geographic references: `data/country/`
+
+- [continents.json](https://digital4better.github.io/data/country/continents.json): array of continent codes and names.
+- [countries.json](https://digital4better.github.io/data/country/countries.json): array of country names, alpha-2/alpha-3 codes and continent names.
+- [regions.json](https://digital4better.github.io/data/country/regions.json): array of world, continent, country or subdivision reference records with type-specific identifiers, geographic mappings and coordinates. Inspect `type` and the record's actual fields before joining.
+- [regions-paths.json](https://digital4better.github.io/data/country/regions-paths.json): SVG path geometry keyed by source territory identifiers; a visualization asset, not emission factors.
+- [country-to-country-distances.json](https://digital4better.github.io/data/country/country-to-country-distances.json): approximate distances keyed by concatenated origin/destination country identifiers.
+- [region-to-region-distances.json](https://digital4better.github.io/data/country/region-to-region-distances.json): approximate distances keyed by concatenated region identifiers; identifier lengths can vary.
+- [user-to-datacenter-distances.json](https://digital4better.github.io/data/country/user-to-datacenter-distances.json): approximate distance references keyed by source region identifier.
+
+Distance values use kilometers and are modeling approximations, not measured internet routes, latency or routing guarantees. Confirm origin/destination membership before splitting composite keys; do not assume every identifier is two characters long. Matching CSV files exist for these references except `regions-paths.json`. A geographic record or map outline does not prove electricity factor coverage for that geography.
+
+## Reuse, attribution and online references
+
+The database is licensed under [ODbL 1.0](https://opendatacommons.org/licenses/odbl/1-0/). Read the license for reuse, attribution and sharing conditions. Preserve source URLs, assumptions and any upstream credits accompanying adapted data. Suggested dataset attribution: Digital4Better Open Data — collection/file — file snapshot or Git commit — ODbL 1.0 — https://github.com/digital4better/data.
+
+Useful online entry points:
+
+- [Website documentation index](https://digital4better.github.io/data/llms.txt).
+- [Complete website reference](https://digital4better.github.io/data/llms-full.txt).
+- [Current website catalog](https://digital4better.github.io/data/catalog.json), with dataset fields, coverage summaries and absolute download URLs. It describes the currently deployed site.
+- [English methodology](https://digital4better.github.io/data/en/methodology/) and [French methodology](https://digital4better.github.io/data/fr/methodology/).
+- [English electricity guide](https://digital4better.github.io/data/en/guides/electricity/), [cloud metrics guide](https://digital4better.github.io/data/en/guides/cloud-metrics/) and [AI models guide](https://digital4better.github.io/data/en/guides/ai-models/).
+- [Repository and issue tracker](https://github.com/digital4better/data).
+
+## Website collection reference
+
+The following descriptions, units, limitations and guide text also appear in the site’s editorial pages. The English text is reproduced here; each collection and guide links its French version.
+
+### Electricity impact factors
+
+[English page](https://digital4better.github.io/data/en/factor/) · [Page française](https://digital4better.github.io/data/fr/factor/)
+
+Translate electricity consumption into environmental impacts by territory and period.
+
+Use: Estimate the impacts of 100 kWh consumed in a country and track their evolution.
+
+Units: Impacts per kWh consumed; each indicator has its own unit.
+
+Limitations: Factors modeled from electricity mixes and lifecycle references. Available periods may include carried-forward or estimated values.
+
+- [Ember](https://ember-climate.org/data-catalogue/)
+- [UNECE · Analyse du cycle de vie / Lifecycle assessment](https://unece.org/sed/documents/2021/10/reports/life-cycle-assessment-electricity-generation-options)
+
+### Electricity mix
+
+[English page](https://digital4better.github.io/data/en/mix/) · [Page française](https://digital4better.github.io/data/fr/mix/)
+
+Explore the share of electricity generation technologies and how it changes over time.
+
+Use: Understand the electricity mix behind environmental impact factors.
+
+Units: Shares between 0 and 1 in the files; percentages in charts.
+
+Limitations: The mix combines generation and imports using the generator methodology. “Green” selects Bioenergy, Hydro, Solar and Wind and renormalizes their shares; it is not a contractual renewable-electricity measurement.
+
+- [Ember](https://ember-climate.org/data-catalogue/)
+
+### Cloud infrastructure
+
+[English page](https://digital4better.github.io/data/en/cloud/) · [Page française](https://digital4better.github.io/data/fr/cloud/)
+
+Browse regions, virtual machines, processors and accelerators across six cloud providers.
+
+Use: Identify a region and hardware characteristics to inform a footprint model.
+
+Units: PUE: ratio; WUE: check the source boundary; REF: fraction. Hardware units depend on the fields.
+
+Limitations: Provider disclosures differ in boundary and reporting year. Zero may represent a dataset convention rather than no impact. REF and CFE are not interchangeable metrics.
+
+- [Sources et hypothèses par fournisseur / Provider sources and assumptions](https://github.com/digital4better/data#cloud-infrastructure)
+
+### AI models
+
+[English page](https://digital4better.github.io/data/en/ai/) · [Page française](https://digital4better.github.io/data/fr/ai/)
+
+Discover AI model characteristics, modalities and capabilities, with sources and estimates.
+
+Use: Build a model inventory and identify models supporting a modality or tools.
+
+Units: Context in tokens; parameters in billions. Identifiers and technical fields retain their source language.
+
+Limitations: The catalog may include legacy models. The open field is not a license. estimated flags estimated fields; no per-model environmental footprint is provided.
+
+- [Sources de chaque modèle / Per-model sources](https://github.com/digital4better/data/blob/main/data/ai/models.json)
+
+### Digital equipment
+
+[English page](https://digital4better.github.io/data/en/equipment/) · [Page française](https://digital4better.github.io/data/fr/equipment/)
+
+Reuse operational energy and embodied impact references for digital equipment.
+
+Use: Associate an equipment category with energy consumption or an embodied impact factor.
+
+Units: Read the unit field of each entry. Embodied factors may be allocated per second of use (/s).
+
+Limitations: Modeling references, not measurements of individual devices. Do not interpret a /s factor as the total embodied impact of a device.
+
+- [Références et contribution / References and contribution](https://github.com/digital4better/data#equipment-reference-data)
+
+### Energy technologies
+
+[English page](https://digital4better.github.io/data/en/energy/) · [Page française](https://digital4better.github.io/data/fr/energy/)
+
+Browse nine environmental indicators for electricity generation technologies.
+
+Use: Compare lifecycle factors across technologies with consistent units.
+
+Units: Impacts per kWh; indicator-specific units.
+
+Limitations: Lifecycle factors from literature references. They do not describe instantaneous power-plant emissions.
+
+- [UNECE · Lifecycle assessment](https://unece.org/sed/documents/2021/10/reports/life-cycle-assessment-electricity-generation-options)
+
+## Website guides
+
+### Using an electricity impact factor
+
+[English guide](https://digital4better.github.io/data/en/guides/electricity/) · [Guide français](https://digital4better.github.io/data/fr/guides/electricity/)
+
+#### Choose the right boundary
+
+Select the territory, period and indicator matching your consumption. Do not mix annual and monthly files. The current year is partial.
+
+#### Apply the factor
+
+Impact = consumption in kWh × factor per kWh. Educational example: 100 kWh × 0.05 kg CO₂e/kWh = 5 kg CO₂e. This example factor is fictional; use the dataset value for your calculation.
+
+#### Interpret the results
+
+Carbon is only one of nine indicators. Review units, sources and assumptions. An available period does not guarantee new observations: the generator may fill gaps.
+
+#### Understanding the renewable variant
+
+The ‘Renewables only’ variant (‘-green’ files) keeps bioenergy, hydro, solar and wind, then recalculates their shares to total 100%. Impact factors are calculated from this hypothetical mix. This scenario describes neither the territory’s actual mix nor a green electricity offer, and its impacts are not zero.
+
+### Understanding PUE, WUE and REF
+
+[English guide](https://digital4better.github.io/data/en/guides/cloud-metrics/) · [Guide français](https://digital4better.github.io/data/fr/guides/cloud-metrics/)
+
+#### Three distinct measures
+
+PUE relates total datacenter energy to IT equipment energy. WUE describes water use relative to energy, with a boundary to check in the source. REF here expresses a renewable-energy-related fraction; Google uses regional CFE data in this dataset.
+
+#### Compare carefully
+
+Check year, site, boundary and methodology before comparing regions. A provider-wide value may substitute for a regional value. Lower PUE alone does not establish a lower total footprint.
+
+#### Dataset conventions
+
+AWS keeps REF at zero by convention. Oracle notably uses a provisional zero WUE. These do not mean no renewable energy or no water use. Full assumptions are linked from the collection.
+
+### Reading AI model characteristics
+
+[English guide](https://digital4better.github.io/data/en/guides/ai-models/) · [Guide français](https://digital4better.github.io/data/fr/guides/ai-models/)
+
+#### Characteristics and capabilities
+
+Context indicates capacity in tokens, not guaranteed response length. input and output describe modalities; reasoning and tools record capabilities. providers identifiers help locate hosted variants.
+
+#### Estimates and openness
+
+Check estimated before using parameters or context. For MoE architectures, distinguish active and total parameters. The open boolean does not replace reading the model license.
+
+#### Reuse limits
+
+Legacy models may remain in the catalog. Check availability with the provider. Parameter count alone cannot determine environmental footprint, which this catalog does not provide.
+
+## Website field dictionary
+
+These descriptions cover common fields across the published datasets. Presence and types vary by file; read the original record and the collection-specific schema above. The nine environmental impact indicator names and unit precautions are described in the electricity section.
+
+- `name`: Source name.
+- `id`: Stable identifier.
+- `vendor`: Model vendor.
+- `open`: Openness indicator; check the license.
+- `type`: Model or hardware type.
+- `architecture`: Architecture.
+- `context`: Context window (tokens).
+- `parameters`: Active / total parameters (billions).
+- `parameters.active`: Active parameters (billions).
+- `parameters.total`: Total parameters (billions).
+- `input`: Input modalities.
+- `output`: Output modalities.
+- `reasoning`: Recorded reasoning capability.
+- `tools`: Tool support.
+- `sources`: Source URLs.
+- `estimated`: Estimated fields.
+- `providers`: Hosted identifiers by provider.
+- `pattern`: Name-matching expression.
+- `unit`: Unit applying to this entry.
+- `value`: Value in the stated unit.
+- `description`: Source description.
+- `pue`: Total energy / IT energy.
+- `wue`: Water use / energy; see source.
+- `ref`: Fraction; check provider convention.
+- `lat`: Latitude (degrees).
+- `lon`: Longitude (degrees).
+- `country`: Source country code.
+- `location`: Source location.
+- `provider`: Cloud provider.
+- `memory`: Memory (GB).
+- `vcpus`: Virtual CPU count.
+- `cores`: Core count.
+- `threads`: Thread count.
+- `tdp`: Thermal design power (W).
+- `virtual`: Virtual machine.
+- `cpu`: Processor identifiers.
+- `manufacturer`: Manufacturer.
+- `family`: Family.
+- `model`: Model.
+- `category`: Category.
+- `embodied`: Embodied impact (tCO₂e).
+- `aliases`: Other known identifiers.
+- `accelerator`: Accelerator identifier.
+- `accelerators`: Accelerator count.
+- `corpus`: Corpus size; check source unit.
+- `dimension`: Representation dimension.
+- `hidden_dimension`: Model hidden dimension.
+- `die`: Die area (mm²).
+- `transistors`: Transistor count (millions).
+- `process`: Process node (nm).
+- `serie`: Hardware series.
+- `platform`: Hardware platform.
+- `smp`: Supported socket count.
+- `ssd`: SSD storage (GB).
+- `hdd`: HDD storage (GB).
+- `ocpus`: Oracle OCPU count.
+- `shape`: Provider instance shape.
+- `flex`: Flexible configuration.
+- `subdivision`: Subdivision code.
+- `adpf`: Fossil resource depletion; verify source unit.
+- `epf`: Freshwater eutrophication; verify source unit.
+- `epm`: Marine eutrophication; verify source unit.
+- `ept`: Terrestrial eutrophication; verify source unit.
+- `gwpb`: Biogenic climate change; verify source unit.
+- `gwpt`: Total climate change; verify source unit.
+- `gwplu`: Land-use climate change; verify source unit.
+- `lu`: Land use; verify source unit.
+- `odp`: Ozone depletion; verify source unit.
+- `pocp`: Photochemical ozone formation; verify source unit.
+- `mips`: Material intensity; verify source unit.

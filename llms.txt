@@ -1,0 +1,31 @@
+# Digital4Better Open Data — npm package
+
+> Reference JSON and CSV datasets for digital sustainability: electricity impacts and mixes, cloud infrastructure, AI models, equipment, energy technologies, building energy, transport and geography.
+
+This file describes the installed `@digital4better/data` package. Read files by path; there is no query API. Check the installed `package.json` for its version. Local files are authoritative for that version; the website may describe newer data.
+
+Before reporting missing data, inspect the relevant collection and check the exact territory, period and indicator. Electricity factors and mixes include subdivision, country, continent and world files, with yearly, monthly and `-green` variants. The existence of a subdivision file does not guarantee coverage of every subdivision. Missing values are not zero; never silently substitute another geography or period. Green variants describe a hypothetical renewable-only mix. Preserve source identifiers, units, estimates and attribution. License: ODbL 1.0.
+
+## Local documentation
+
+- [Complete package reference](./llms-full.txt): File inventory, schemas, lookup procedure, examples, sources and limitations; readable offline.
+- [Package overview](./README.md): Collections, source families and provider assumptions.
+- [Package metadata](./package.json): Installed version and release metadata.
+- [License](./LICENCE): ODbL 1.0 terms.
+
+## Data collections
+
+- [Electricity impact factors](./data/factor/): Impacts per kWh, by geography and period. For sub-national data inspect `subdivision-yearly.json` or `subdivision-monthly.json`.
+- [Electricity mixes](./data/mix/): Technology shares using the same geography/period naming scheme.
+- [Cloud infrastructure](./data/cloud/): Provider regions and machines, CPU and accelerator references.
+- [AI models](./data/ai/): Model characteristics, provider identifiers, estimates and source URLs.
+- [Equipment](./data/equipment/): Operational energy and allocated embodied impacts; read each entry's `unit`.
+- [Energy technologies](./data/energy/): Lifecycle impact factors by electricity generation technology.
+- [Building energy](./data/facility/): Purchased electricity and fuel factors per kWh, with explicit PCI/PCS bases.
+- [Transport](./data/transport/): Employee travel factors per passenger-kilometre or vehicle-kilometre.
+- [Geography](./data/country/): Country, continent and subdivision references, SVG paths and approximate distances.
+
+## Optional online documentation
+
+- [Website documentation index](https://digital4better.github.io/data/llms.txt): Bilingual collection pages and guides for the current website snapshot.
+- [Website catalog](https://digital4better.github.io/data/catalog.json): Current published dataset metadata and download URLs; check against the installed package before use.

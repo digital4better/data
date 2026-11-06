@@ -1,0 +1,49 @@
+# Digital4Better Open Data — website
+
+> Static bilingual documentation and JSON/CSV downloads for digital sustainability: electricity factors and mixes, cloud infrastructure, AI models, equipment and energy technologies.
+
+This index describes the deployed website. Downloads require no JavaScript or account. The website can differ from an installed `@digital4better/data` package; use that package's own `llms.txt` and `llms-full.txt` when working with local data. Preserve source schemas, units, estimates and attribution. License: ODbL 1.0. Missing values are not zero. Green variants are hypothetical renewable-only scenarios. A file's existence does not guarantee coverage of every territory or period.
+
+## Reference and catalog
+
+- [Complete website reference](https://digital4better.github.io/data/llms-full.txt): Schemas, file selection, methodology, examples, sources, limitations and guide content in plain text.
+- [Machine-readable catalog](https://digital4better.github.io/data/catalog.json): Published dataset inventory, fields, record counts, period ranges, bilingual pages and absolute download URLs. Check exact record coverage in the downloaded file.
+- [Sitemap](https://digital4better.github.io/data/sitemap.xml): Published editorial and dataset pages.
+
+## Collections
+
+- [Electricity impact factors (en)](https://digital4better.github.io/data/en/factor/): Impacts per kWh, by subdivision, country, continent or world and yearly/monthly period, with full-mix and green variants.
+- [Facteurs d’impact électrique (fr)](https://digital4better.github.io/data/fr/factor/): Facteurs par territoire, période et indicateur ; les subdivisions ont leurs propres fichiers.
+- [Electricity mixes (en)](https://digital4better.github.io/data/en/mix/): Technology shares and renewable-only scenarios.
+- [Mix électrique (fr)](https://digital4better.github.io/data/fr/mix/): Parts des technologies de production par territoire et période.
+- [Cloud infrastructure (en)](https://digital4better.github.io/data/en/cloud/): Provider regions, machines, CPUs and accelerators.
+- [Infrastructure cloud (fr)](https://digital4better.github.io/data/fr/cloud/): Régions et matériel de six fournisseurs cloud.
+- [AI models (en)](https://digital4better.github.io/data/en/ai/): Model characteristics, capabilities, estimates and provenance.
+- [Modèles d’IA (fr)](https://digital4better.github.io/data/fr/ai/): Caractéristiques des modèles ; aucune empreinte environnementale par modèle n’est fournie.
+- [Equipment (en)](https://digital4better.github.io/data/en/equipment/): Operational energy and allocated embodied impact references.
+- [Équipements numériques (fr)](https://digital4better.github.io/data/fr/equipment/): Consommation et facteurs de fabrication ; lire l’unité de chaque entrée.
+- [Energy technologies (en)](https://digital4better.github.io/data/en/energy/): Lifecycle impact references by electricity generation technology.
+- [Technologies énergétiques (fr)](https://digital4better.github.io/data/fr/energy/): Impacts de cycle de vie par kWh et par technologie.
+
+## Methodology and reuse
+
+- [Methodology (en)](https://digital4better.github.io/data/en/methodology/): Sources, estimates, carry-forwards and limitations.
+- [Méthodologie (fr)](https://digital4better.github.io/data/fr/methodology/): Sources, estimations, reports et limites.
+- [Reuse (en)](https://digital4better.github.io/data/en/reuse/): Formats, attribution and reproducibility.
+- [Réutilisation (fr)](https://digital4better.github.io/data/fr/reuse/): Formats, attribution et reproductibilité.
+
+## Guides
+
+- [Electricity factors (en)](https://digital4better.github.io/data/en/guides/electricity/): Select a boundary and apply a per-kWh factor.
+- [Facteurs électriques (fr)](https://digital4better.github.io/data/fr/guides/electricity/): Choisir le périmètre et appliquer un facteur par kWh.
+- [PUE, WUE and REF (en)](https://digital4better.github.io/data/en/guides/cloud-metrics/): Definitions and provider conventions.
+- [PUE, WUE et REF (fr)](https://digital4better.github.io/data/fr/guides/cloud-metrics/): Définitions et conventions fournisseurs.
+- [AI model characteristics (en)](https://digital4better.github.io/data/en/guides/ai-models/): Parameters, context, modalities and estimates.
+- [Caractéristiques des modèles d’IA (fr)](https://digital4better.github.io/data/fr/guides/ai-models/): Paramètres, contexte, modalités et estimations.
+
+## Optional additional downloads
+
+- [Geographic reference files](https://digital4better.github.io/data/llms-full.txt): The full reference links raw country, region, distance and map assets. These assets have no geography collection pages on the site.
+
+- [Building energy factors](https://digital4better.github.io/data/facility/factors.json): Electricity and fuel impacts per kWh; [source notes](https://digital4better.github.io/data/facility/README.md).
+- [Transport factors](https://digital4better.github.io/data/transport/factors.json): Employee travel impacts per passenger-kilometre or vehicle-kilometre; [source notes](https://digital4better.github.io/data/transport/README.md). These additional collections have no editorial pages on the site.

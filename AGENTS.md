@@ -70,3 +70,20 @@ Publishing goes through npm OIDC trusted publishing: the repository is the publi
 - TypeScript with `ts-node` (no separate build step for data generation)
 - Indentation: 2 spaces, UTF-8, LF line endings (see `.editorconfig`)
 - Formatter: Prettier
+
+## Maintain the LLM documentation
+
+The following files are static, version-controlled documentation maintained by contributors and agents. They are not generated from the datasets or website pages:
+
+- `llms.txt`: short entry point for the installed npm package, with package-relative links.
+- `llms-full.txt`: complete package usage reference, readable offline.
+- `site/llms.txt`: short entry point for the public website, with absolute public URLs.
+- `site/llms-full.txt`: complete website usage reference, with absolute public URLs.
+
+Review and update the affected files whenever a change adds, removes or renames collections or files; changes schemas, identifiers, units, geography/period coverage rules, missing-value semantics, estimation or fallback rules; changes sources, attribution or licensing; or changes public documentation/download routes. Keep shared facts consistent across the package and website variants. Ordinary data refreshes that preserve the documented contract do not require a documentation edit. Avoid hard-coded release versions, record counts and date ranges that would become stale on each refresh.
+
+Keep the short files concise and link to the full reference for detail. The full files document schemas, methodology, examples and limitations; do not concatenate raw datasets into them. Describe only files present in this checkout. The website currently has six editorial collections; geographic reference files are downloads, not geography collection pages.
+
+`site/scripts/build.mjs` copies the website variants unchanged to `site/dist/`. Do not edit build output. Ensure the package variants remain in the `package.json` publish allowlist. Do not replace these files with a skill or assume agents load them automatically.
+
+After changes, run `yarn build:site`, `yarn check:site` and `yarn test:site`. Check that package-relative links resolve in the packed npm artifact, public documentation/download links resolve in the built website, and both website files are exact copies of their source files. Do not run `yarn build:data` just to validate documentation: it fetches upstream sources and rewrites data.

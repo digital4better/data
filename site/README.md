@@ -35,4 +35,8 @@ Temporal maps use only the selected period. Hover/focus previews a territory; cl
 
 ## Machine access
 
-`/data/llms.txt` describes the project and links its six collections, guides and a JSON catalog with absolute download URLs. Every editorial page advertises these resources in HTML link elements. This is discovery assistance, not a guarantee that all LLMs use this emerging format. SSR HTML and source downloads remain the primary interfaces.
+`site/llms.txt` and `site/llms-full.txt` are static, version-controlled documentation. The build copies them unchanged to `/data/llms.txt` and `/data/llms-full.txt`. The short index links the six editorial collections, bilingual guides and generated JSON catalog; the full reference documents schemas, examples, methodology and the geographic assets available as raw downloads. Public links are absolute. Every editorial page advertises both files in HTML link elements and the footer.
+
+The repository-root `llms.txt` and `llms-full.txt` are separate npm package references with local paths and offline usage examples. Keep shared facts consistent across all four files. Follow `../AGENTS.md` when schemas, file inventory, interpretation rules, sources or public URLs change. No generation script keeps these documents in sync automatically; ordinary value refreshes do not require editing them.
+
+This is discovery assistance, not a guarantee that all LLMs use this emerging format. SSR HTML and source downloads remain the primary interfaces.

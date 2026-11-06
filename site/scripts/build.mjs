@@ -127,7 +127,7 @@ for (const lang of ["fr", "en"])
               }
             : {}),
         };
-    const head = `<link rel="describedby" href="${origin}${base}llms.txt" type="text/plain"/><link rel="alternate" href="${origin}${base}catalog.json" type="application/json" title="Dataset catalog"/><title>${escape(title)} | Digital4Better Open Data</title><meta name="description" content="${escape(
+    const head = `<link rel="describedby" href="${origin}${base}llms.txt" type="text/plain"/><link rel="describedby" href="${origin}${base}llms-full.txt" type="text/plain" title="Complete usage reference"/><link rel="alternate" href="${origin}${base}catalog.json" type="application/json" title="Dataset catalog"/><title>${escape(title)} | Digital4Better Open Data</title><meta name="description" content="${escape(
       description
     )}"/><link rel="canonical" href="${url(lang, route)}"/>${["fr", "en"]
       .map((l) => `<link rel="alternate" hreflang="${l}" href="${url(l, route)}"/>`)
@@ -155,7 +155,7 @@ for (const lang of ["fr", "en"])
     writeFileSync(`${dir}/index.html`, html);
   }
 // GitHub Pages serves static files: an immediate refresh also works without JavaScript.
-writeFileSync(`${out}/index.html`, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Digital4Better Open Data</title><link rel="canonical" href="${url("en", "")}"><script>try { var saved = localStorage.getItem('d4b-data-language'); } catch (_) {} var language = saved === 'fr' || saved === 'en' ? saved : ((navigator.languages && navigator.languages[0]) || navigator.language || 'en').toLowerCase().split('-')[0] === 'fr' ? 'fr' : 'en'; location.replace('${base}' + language + '/' + location.search + location.hash);</script><noscript><meta http-equiv="refresh" content="0; url=${base}en/"></noscript></head><body><p><a href="${base}en/">Continue to the English catalog</a> · <a href="${base}fr/" lang="fr">Catalogue français</a></p></body></html>`);
+writeFileSync(`${out}/index.html`, `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Digital4Better Open Data</title><link rel="describedby" href="${origin}${base}llms.txt" type="text/plain"/><link rel="describedby" href="${origin}${base}llms-full.txt" type="text/plain"/><link rel="canonical" href="${url("en", "")}"><script>try { var saved = localStorage.getItem('d4b-data-language'); } catch (_) {} var language = saved === 'fr' || saved === 'en' ? saved : ((navigator.languages && navigator.languages[0]) || navigator.language || 'en').toLowerCase().split('-')[0] === 'fr' ? 'fr' : 'en'; location.replace('${base}' + language + '/' + location.search + location.hash);</script><noscript><meta http-equiv="refresh" content="0; url=${base}en/"></noscript></head><body><p><a href="${base}en/">Continue to the English catalog</a> · <a href="${base}fr/" lang="fr">Catalogue français</a></p></body></html>`);
 writeFileSync(
   `${out}/sitemap.xml`,
   `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${["fr", "en"]
@@ -178,23 +178,6 @@ writeFileSync(
 );
 console.log(`Generated ${routes.length * 2} bilingual pages; ${datasets.length} datasets. No geography pages.`);
 
-writeFileSync(`${out}/llms.txt`, `# Digital4Better Open Data
-
-> Six bilingual collections of reusable data on digital sustainability. Static descriptions and original JSON/CSV downloads require no JavaScript or account.
-
-License: ODbL 1.0 (${license}). Preserve original schemas and cite sources. Missing values are not zero. File modification dates are not source refresh dates. Green variants are scenarios described on collection pages. AI specifications and estimates do not establish an environmental footprint.
-
-## Catalog
-
-- [Machine-readable catalog](${origin}${base}catalog.json): All datasets, absolute download URLs, bilingual pages, fields and coverage.
-- [Sitemap](${origin}${base}sitemap.xml): Canonical editorial and dataset pages.
-${collections.flatMap((c) => ["fr", "en"].map((lang) => `- [${tr(c.title, lang)} (${lang})](${url(lang, c.id)}): ${tr(c.description, lang)}`)).join("\n")}
-
-## Methodology and reuse
-
-${["fr", "en"].flatMap((lang) => ["methodology", "reuse"].map((route) => `- [${route} (${lang})](${url(lang, route)})`)).join("\n")}
-
-## Guides
-
-${guides.flatMap((g) => ["fr", "en"].map((lang) => `- [${tr(g.title, lang)} (${lang})](${url(lang, `guides/${g.id}`)})`)).join("\n")}
-`);
+// Static documentation is maintained alongside the source (see AGENTS.md).
+for (const file of ["llms.txt", "llms-full.txt"])
+  copyFileSync(`site/${file}`, `${out}/${file}`);
