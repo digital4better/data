@@ -1,0 +1,11 @@
+# Historical electricity references
+
+`ember-legacy-territories.json` preserves the last published Digital4Better mix and factor series for BM, GI, NU, SH and TL, which disappeared from Ember's current global generation exports during the November 2026 migration.
+
+The snapshot is extracted from the immutable Git tag `v1.3.68`, commit `9dc09cb` (the complete commit and release date are recorded in the JSON). It contains the five country series from the eight `factor/country-*` and `mix/country-*` JSON files, including yearly/monthly and full-mix/green variants. The original files remain available at https://github.com/digital4better/data/tree/v1.3.68/data and in npm package `@digital4better/data@1.3.68`.
+
+These are previously computed outputs, **not archived raw Ember observations**. Some periods were already modeled or carried forward. Their upstream observation dates cannot be recovered from these files and remain unknown.
+
+The generator uses these series only when the territory is entirely absent from the current Ember import. It preserves historical values, carries the last available value forward to the current export period, and publishes `data/electricity-provenance.json`. When current Ember observations return for a territory, the current import takes precedence and historical fallback is disabled for it. Historical country series are restored after aggregation: absent raw generation/import volumes are not invented for global or continental weighting.
+
+Do not update this snapshot by copying generated output back into it: doing so would erase its provenance and could compound previous fallbacks. A future replacement requires a verified source and an explicit provenance update.

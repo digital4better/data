@@ -23,6 +23,12 @@ JSON preserves nested objects, arrays and source keys. CSV is a tabular projecti
 
 Use the exact identifiers in each source file. Cloud files can use lowercase country codes and aliases; electricity country keys use source country identifiers. Do not apply one collection's identifier normalization blindly to another. Geographic mappings are provided in `data/country/`; confirm membership from the actual records.
 
+## Historical electricity references
+
+BM (Bermuda), GI (Gibraltar), NU (Niue), SH (Saint Helena) and TL (Timor-Leste) are absent from the current Ember global generation exports. When a territory is entirely absent from the import, its previously published country mix and factor series are retained from Digital4Better version 1.3.68. This applies to yearly/monthly and full-mix/green variants in both collections. Existing historical values are preserved; later periods carry the last available reference forward. These are historical references, not new Ember observations.
+
+Consult [electricity provenance](https://digital4better.github.io/data/electricity-provenance.json) for the pinned source commit/release, affected territories, last published periods and carried-through periods. Original upstream observation dates are unknown; a package release date must not be interpreted as a measurement date. Current Ember data takes precedence if a territory returns. Preserved outputs are restored after global/continental aggregation, because historical raw generation/import volumes are unavailable for weighting. The website labels these references on country explorer pages.
+
 ## Missing values, zero and time
 
 - A missing property, `null` or an empty CSV cell denotes unavailable data. Preserve that distinction in calculations and exports.
@@ -135,7 +141,7 @@ The `-green` variant keeps Bioenergy, Hydro, Solar and Wind and renormalizes the
 
 ### Sources and boundaries
 
-Electricity series are derived from [Ember](https://ember-climate.org/data-catalogue/) and lifecycle references including [UNECE 2021](https://unece.org/sed/documents/2021/10/reports/life-cycle-assessment-electricity-generation-options). Generation and imports are processed by the repository's methodology. Factors are modeled lifecycle references, not instantaneous grid measurements, marginal emissions or a guarantee of hourly coverage. The [impact assessment methodology](https://digital4better.github.io/methodology/en/) provides further context.
+Electricity series are derived from [Ember](https://ember-climate.org/data-catalogue/) and lifecycle references including [UNECE 2021](https://unece.org/sed/documents/2021/10/reports/life-cycle-assessment-electricity-generation-options). The generator reads Ember’s wide CSV generation exports, with one row per area, period and electricity source. It uses source shares, total generation and signed net imports; aggregate rows are not counted again as fuels. The old long-format URLs have been replaced by the yearly/monthly exports at `files.ember-energy.org`. Generation and imports are processed by the repository's methodology. Factors are modeled lifecycle references, not instantaneous grid measurements, marginal emissions or a guarantee of hourly coverage. The [impact assessment methodology](https://digital4better.github.io/methodology/en/) provides further context.
 
 ## Electricity mixes: `data/mix/`
 

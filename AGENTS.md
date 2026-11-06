@@ -28,7 +28,7 @@ Single entry point that fetches external data, computes metrics, and exports CSV
 1. **`generateClouds()`** — reads cloud provider JSON from `data/cloud/` and exports CSV equivalents
 2. **`generateCountries()`** — computes geographic distances (country-to-country, region-to-region, user-to-datacenter) from `data/country/regions.json`
 3. **`generateFactors()`** — the main pipeline:
-   - Fetches global energy mix data from Ember Climate (monthly + yearly CSVs)
+   - Fetches global energy mix data from Ember (monthly + yearly wide generation CSVs at `files.ember-energy.org`; legacy long-format URLs return a migration notice)
    - Fetches Canadian province data from StatCan (ZIP/CSV)
    - Fetches US state data from EIA API
    - Sanitizes data (fills missing periods by extrapolating from parent regions)
@@ -89,3 +89,7 @@ Keep the short files concise and link to the full reference for detail. The full
 `site/scripts/build.mjs` copies the website variants unchanged to `site/dist/`. Do not edit build output. Ensure the package variants remain in the `package.json` publish allowlist. Do not replace these files with a skill or assume agents load them automatically.
 
 After changes, run `yarn build:site`, `yarn check:site` and `yarn test:site`. Check that package-relative links resolve in the packed npm artifact, public documentation/download links resolve in the built website, and both website files are exact copies of their source files. Do not run `yarn build:data` just to validate documentation: it fetches upstream sources and rewrites data.
+
+## Historical territory coverage
+
+The five territories absent from the current Ember export are retained from the immutable snapshot in `sources/ember-legacy-territories.json`. `scripts/electricity-history.ts` restores country-level mix/factor outputs after aggregation, exports matching CSV files and writes `data/electricity-provenance.json`. Do not feed these already modeled outputs back into energy aggregation or overwrite the pinned source with generated files. Retain unknown upstream observation dates as unknown; review `sources/README.md` before changing this policy.

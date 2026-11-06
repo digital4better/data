@@ -20,7 +20,7 @@ export type Dataset = {
   modified: string | null;
   size: number;
 };
-export type Catalog = { datasets: Dataset[] };
+export type Catalog = { datasets: Dataset[]; historicalTerritories?: string[] };
 export const languages = ["fr", "en"];
 const text = (fr: string, en: string, lang: string) => (lang === "fr" ? fr : en);
 const shortLabels: Record<string, string[]> = {
@@ -1103,6 +1103,17 @@ function Explorer({
                   "Some missing values are filled in, including by carrying forward values from a previous period. The data does not indicate whether all observations are available."
                 )}
               </p>
+              {geographicScale === "country" && !!catalog.historicalTerritories?.length && (
+                <p>
+                  <strong>{t("Références historiques : ", "Historical references: ")}</strong>
+                  {catalog.historicalTerritories.map(code => names[code] || code).join(", ")}.{" "}
+                  {t(
+                    "Ces territoires ne figurent plus dans l’export Ember actuel. Leurs dernières références publiées sont conservées et reconduites, sans nouvelle observation.",
+                    "These territories are absent from the current Ember export. Their last published references are retained and carried forward, without new observations."
+                  )}{" "}
+                  <a href={`${base}electricity-provenance.json`}>{t("Provenance des données", "Data provenance")}</a>
+                </p>
+              )}
               {d.collection === "factor" && d.id.endsWith("-green") && <p>{tr(renewableFactorExplanation, lang)}</p>}
               <a href={`#sources-${d.collection}`}>
                 {t("Comprendre les sources et les limites", "Understand the sources and limitations")}

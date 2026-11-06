@@ -6,6 +6,7 @@ import IMPACTS from "./data/energy/energy-impacts.json";
 import { PassThrough } from "stream";
 import ReadableStream = NodeJS.ReadableStream;
 import { Readable } from "node:stream";
+import { restoreLegacyElectricity, LegacyElectricitySnapshot } from "./scripts/electricity-history";
 
 const MIN_YEAR = 2019;
 const CURRENT_MONTH = new Date().getUTCMonth();
@@ -26,8 +27,8 @@ type Energy = (typeof ENERGIES)[number];
 type GreenEnergy = (typeof GREEN_ENERGIES)[number];
 const FOSSIL_FUELS: Energy[] = ["Bioenergy", "Coal", "Gas", "Other Fossil", "Other Renewables"];
 
-const EMBER_MONTHLY_DATA = `https://storage.googleapis.com/emb-prod-bkt-publicdata/public-downloads/monthly_full_release_long_format.csv`;
-const EMBER_YEARLY_DATA = `https://storage.googleapis.com/emb-prod-bkt-publicdata/public-downloads/yearly_full_release_long_format.csv`;
+const EMBER_MONTHLY_DATA = `https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_monthly_global.csv`;
+const EMBER_YEARLY_DATA = `https://files.ember-energy.org/public-downloads/generation/outputs/release_generation_yearly_global.csv`;
 const EMBER_WORLD = "World";
 const EMBER_REGIONS = [
   "Africa",
@@ -67,43 +68,73 @@ const fetchToBuffer = async (url: string): Promise<Buffer> => {
   return Buffer.from(arrayBuffer);
 };
 
-const processData = async (
+const processData = (
   input: ReadableStream,
-  process: (values: Record<string, string | number | Date>) => void
-) => {
-  const rl = createInterface({
-    input,
-    crlfDelay: Infinity,
-  });
+  process: (values: Record<string, string | number | Date>) => void,
+  requiredHeaders: string[] = []
+): Promise<void> => new Promise((resolve, reject) => {
   const headers: string[] = [];
-  for await (const line of rl) {
-    const values = line.split(/,(?=(?:[^"]*"[^"]*")*[^"]*$)/);
-    if (headers.length === 0) {
-      headers.push(
-        ...values.map((header) => header.trim().toLowerCase().replace(/^"|"$/g, "").trim().replace(/\s+/g, "_"))
-      );
-    } else {
-      process(
-        headers.reduce<Record<string, string | number | Date>>((acc, header, index) => {
-          const value = values[index]?.trim().replace(/^"|"$/g, "").trim();
-          if (value === "") acc[header] = null;
-          else if (/^\d{4}-\d{2}-\d{2}$/i.test(value)) acc[header] = new Date(value);
-          else if (/^-?\d+(?:\.\d+)?$/i.test(value)) acc[header] = parseFloat(value);
-          else acc[header] = value;
-          return acc;
-        }, {})
-      );
+  const rl = createInterface({ input, crlfDelay: Infinity });
+  let failed = false;
+  const fail = (error: unknown) => {
+    if (failed) return;
+    failed = true;
+    reject(error);
+    rl.close();
+  };
+  input.once("error", fail);
+  rl.once("error", fail);
+  // Consume lines synchronously: a buffered ZIP entry can close readline before
+  // Node 24's async iterator drains its queue and tries to resume the closed interface.
+  rl.on("line", (line) => {
+    if (failed || !line.trim()) return;
+    try {
+      const values = line.split(/,(?=(?:[^"]*"[^"]*")*[^"]*$)/);
+      if (headers.length === 0) {
+        headers.push(
+          ...values.map((header) => header.trim().toLowerCase().replace(/^"|"$/g, "").trim().replace(/\s+/g, "_"))
+        );
+        const missing = requiredHeaders.filter((header) => !headers.includes(header));
+        if (missing.length) throw new Error(`Unexpected CSV schema: missing columns ${missing.join(", ")}`);
+      } else {
+        process(
+          headers.reduce<Record<string, string | number | Date>>((acc, header, index) => {
+            const value = values[index]?.trim().replace(/^"|"$/g, "").trim();
+            if (value === "") acc[header] = null;
+            else if (/^\d{4}-\d{2}-\d{2}$/i.test(value)) acc[header] = new Date(value);
+            else if (/^-?\d+(?:\.\d+)?$/i.test(value)) acc[header] = parseFloat(value);
+            else acc[header] = value;
+            return acc;
+          }, {})
+        );
+      }
+    } catch (error) {
+      fail(error);
     }
-  }
-};
+  });
+  rl.once("close", () => {
+    input.removeListener("error", fail);
+    rl.removeListener("error", fail);
+    if (failed) return;
+    if (!headers.length && requiredHeaders.length) reject(new Error("Unexpected CSV schema: empty response"));
+    else resolve();
+  });
+});
 
 const fetchAndProcess = async (
   url: string,
-  onProcess: (values: Record<string, string | number | Date>) => void
+  onProcess: (values: Record<string, string | number | Date>) => void,
+  requiredHeaders: string[]
 ): Promise<boolean> => {
   const response = await fetch(url);
+  if (!response.ok) throw new Error(`Request failed with status code ${response.status}: ${url}`);
+  if (!response.body) throw new Error(`Empty response body: ${url}`);
   const nodeStream = Readable.fromWeb(response.body as any);
-  await processData(nodeStream, onProcess);
+  try {
+    await processData(nodeStream, onProcess, requiredHeaders);
+  } finally {
+    nodeStream.destroy();
+  }
   return true;
 };
 
@@ -445,53 +476,47 @@ const sanitizeData = async (aggregates: Aggregates) => {
 
 const fetchWorldMix = async (aggregates: Aggregates) => {
   process.stdout.write(`Fetching energy data\n`);
-  for (const url of [EMBER_YEARLY_DATA, EMBER_MONTHLY_DATA]) {
+  for (const [url, yearly] of [[EMBER_YEARLY_DATA, true], [EMBER_MONTHLY_DATA, false]] as const) {
     let lines = 0;
     process.stdout.write(`- reading from ${url}... `);
+    // Ember's July 2026 export has one row per area/period/source, with metrics in columns.
     await fetchAndProcess(url, (data) => {
-      const {
-        country_code,
-        iso_3_code,
-        ember_region,
-        area,
-        area_type,
-        year,
-        date,
-        category,
-        subcategory,
-        variable,
-        unit,
-        value,
-      } = data as {
-        country_code: string; // Deprecated
-        iso_3_code: string;
-        area: string;
-        ember_region: (typeof COUNTRY_EMBER_REGIONS)[string];
-        area_type: string;
-        year: number;
-        date: Date;
-        category: string;
-        subcategory: string;
-        variable: keyof typeof IMPACTS;
-        unit: string;
-        value: number;
-      };
-      const yearly = !!year;
-      const period = yearly ? `${year}` : date.toISOString().substring(0, 7);
-      const country = area_type.startsWith("Country");
+      const source = data.electricity_source;
+      if (typeof source !== "string") throw new Error(`Invalid Ember electricity source for ${data.area}`);
+      const sourceName = source.toLowerCase();
+      const energy = ENERGIES.find((energy) => energy.toLowerCase() === sourceName);
+      if (!energy && sourceName !== "total generation" && sourceName !== "net imports") {
+        if (String(data.is_aggregated_source).toLowerCase() === "false") {
+          throw new Error(`Unsupported Ember electricity source: ${source}`);
+        }
+        return;
+      }
+      const value = energy ? data["share_of_generation_(%)"] : data["generation_(twh)"];
+      // Undefined shares (for example when total generation is zero) are not numeric zero.
+      if (value == null) return;
+      if (typeof value !== "number" || !Number.isFinite(value)) {
+        throw new Error(`Invalid Ember value for ${data.area} / ${source}: ${value}`);
+      }
+      const date = data.date;
+      const year = data.year;
+      if (yearly ? typeof year !== "number" || !Number.isInteger(year)
+        : !(date instanceof Date) || !Number.isFinite(date.getTime())) {
+        throw new Error(`Invalid Ember ${yearly ? "year" : "date"} for ${data.area}`);
+      }
+      const period = yearly ? `${year}` : (date as Date).toISOString().substring(0, 7);
+      if (Number(period.substring(0, 4)) < MIN_YEAR) return;
+      const country = String(data.area_type).startsWith("Country");
       const region = country
-        ? REGIONS.find(({ "alpha-3": alpha3 }) => alpha3 === (iso_3_code ?? country_code))?.["alpha-2"]
-        : area;
-      // Unknown area, stopping process
-      if (!region) throw new Error(`Unknown area: ${country_code ?? area}`);
-      // Dropping early years
-      if (year && year < MIN_YEAR) return;
-      if (date && date.getUTCFullYear() < MIN_YEAR) return;
-      // Dropping unknown regions
+        ? REGIONS.find(({ "alpha-3": alpha3 }) => alpha3 === data.iso_3_code)?.["alpha-2"]
+        : data.area as string;
+      if (!region) throw new Error(`Unknown Ember area: ${data.iso_3_code ?? data.area}`);
+      // Ignore regional groupings outside the existing world/continent referential.
       if (!country && isCountry(region)) return;
-      // Filling country continent association
-      if (country) COUNTRY_EMBER_REGIONS[region] = ember_region;
-      // Initializing default values
+      if (country) {
+        const emberRegion = data.ember_region as string;
+        if (!EMBER_REGIONS.includes(emberRegion)) throw new Error(`Unknown Ember region for ${region}: ${emberRegion}`);
+        COUNTRY_EMBER_REGIONS[region] = emberRegion;
+      }
       if (!aggregates[region]) aggregates[region] = {};
       if (!aggregates[region][period])
         aggregates[region][period] = {
@@ -499,18 +524,13 @@ const fetchWorldMix = async (aggregates: Aggregates) => {
           importedTWh: 0,
           generatedTWh: 0,
         };
-      if (category === "Electricity generation") {
-        if (subcategory === "Fuel" && unit === "%") {
-          aggregates[region][period].mix[variable as keyof Mix<Energy>] = value / 100;
-        }
-        if (subcategory === "Total" && unit === "TWh") {
-          aggregates[region][period].generatedTWh = value;
-        }
-      } else if (category === "Electricity imports" && unit === "TWh") {
-        aggregates[region][period].importedTWh = value;
-      }
+      if (energy) aggregates[region][period].mix[energy] = value / 100;
+      else if (sourceName === "total generation") aggregates[region][period].generatedTWh = value;
+      else aggregates[region][period].importedTWh = value; // Signed net imports; downstream handling is unchanged.
       lines++;
-    });
+    }, ["area", "iso_3_code", "area_type", yearly ? "year" : "date", "ember_region",
+      "electricity_source", "is_aggregated_source", "generation_(twh)", "share_of_generation_(%)"]);
+    if (!lines) throw new Error(`No usable Ember data: ${url}`);
     process.stdout.write(`${lines} lines processed\n`);
   }
 };
@@ -835,6 +855,9 @@ const generateFactors = async () => {
   }
   process.stdout.write(`${updates} updates\n`);
   exportFactorsAndMixes(aggregates);
+  const legacy: LegacyElectricitySnapshot = JSON.parse(readFileSync("sources/ember-legacy-territories.json", "utf8"));
+  const provenance = restoreLegacyElectricity(Object.keys(aggregates), legacy, exportToCsv);
+  console.log(`Preserved historical electricity references: ${Object.keys(provenance.territories).join(", ") || "none"}`);
 };
 
 const generateCountries = async () => {
@@ -1050,7 +1073,7 @@ const generateAi = async () => {
   ]);
 };
 
-export { computeDistance, roundNumber, exportToCsv, exportFactorsAndMixes, generateCountries };
+export { computeDistance, roundNumber, exportToCsv, exportFactorsAndMixes, generateCountries, fetchWorldMix, processData };
 
 const main = async () => {
   const start = Date.now();
