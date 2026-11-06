@@ -41,7 +41,8 @@ export const restoreLegacyElectricity = (
           const id = `${collection}/country-${frequency}${suffix}`;
           const file = `data/${id}`;
           const current: Dataset = JSON.parse(readFileSync(`${file}.json`, "utf8"));
-          const through = Object.values(current).flatMap((series) => Object.keys(series)).sort().at(-1);
+          const periods = Object.values(current).flatMap((series) => Object.keys(series)).sort();
+          const through = periods[periods.length - 1];
           if (!through) throw new Error(`Cannot restore historical references into an empty dataset: ${id}`);
           const monthly = frequency === "monthly";
           const lastPublishedPeriod: Record<string, string> = {};
@@ -49,7 +50,7 @@ export const restoreLegacyElectricity = (
             const original = snapshot.datasets[id]?.[code];
             if (!original) throw new Error(`Historical electricity snapshot is missing ${id} / ${code}`);
             const entries = Object.entries(original).filter(([period]) => period <= through).sort(([a], [b]) => a.localeCompare(b));
-            const last = entries.at(-1);
+            const last = entries[entries.length - 1];
             if (!last) throw new Error(`No historical reference before ${through}: ${id} / ${code}`);
             const series: Series = Object.fromEntries(entries.map(([period, values]) => [period, { ...values }]));
             lastPublishedPeriod[code] = last[0];
