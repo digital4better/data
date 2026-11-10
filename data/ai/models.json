@@ -111,6 +111,43 @@
     ]
   },
   {
+    "name": "amazon-nova-2.5-sonic",
+    "vendor": "amazon",
+    "open": false,
+    "pattern": "(?:amazon[\\s._-]?nova[\\s._-]?2[\\s._-]?5[\\s._-]?sonic|nova[\\s._-]?2[\\s._-]?5[\\s._-]?sonic)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "speech",
+    "architecture": "dense",
+    "parameters": {
+      "active": 24,
+      "total": 24
+    },
+    "context": 256000,
+    "input": [
+      "text",
+      "audio"
+    ],
+    "output": [
+      "text",
+      "audio"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "aws": [
+        "amazon.nova-2-5-sonic"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-5-sonic.html",
+      "https://huggingface.co/mistralai/Voxtral-Small-24B-2507",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
+    ],
+    "estimated": [
+      "parameters",
+      "architecture"
+    ]
+  },
+  {
     "name": "amazon-nova-canvas",
     "vendor": "amazon",
     "open": false,
@@ -689,6 +726,34 @@
     ]
   },
   {
+    "name": "beam-1.0-501b-a23b",
+    "vendor": "reflection",
+    "open": true,
+    "pattern": "(?:beam[\\s._-]?1[\\s._-]?0[\\s._-]?501b[\\s._-]?a23b)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 23.4,
+      "total": 501.3
+    },
+    "context": 1048576,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {},
+    "sources": [
+      "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+      "https://huggingface.co/reflection/Beam-1.0-501B-A23B/blob/main/config.json",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries"
+    ],
+    "estimated": []
+  },
+  {
     "name": "bge-base-en-v1.5",
     "vendor": "baai",
     "open": true,
@@ -777,7 +842,8 @@
         "bge-multilingual-gemma2"
       ],
       "scaleway": [
-        "bge-multilingual-gemma2"
+        "bge-multilingual-gemma2",
+        "baai/bge-multilingual-gemma2:fp32"
       ]
     },
     "sources": [
@@ -1215,6 +1281,54 @@
     ]
   },
   {
+    "name": "claude-fable-5.2",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "(?:claude[\\s._-]?fable[\\s._-]?5[\\s._-]?2)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 150,
+      "total": 10000
+    },
+    "context": 1000000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "anthropic": [
+        "claude-fable-5-2"
+      ],
+      "aws": [
+        "anthropic.claude-fable-5-2"
+      ],
+      "azure": [
+        "claude-fable-5-2",
+        "claude-fable-5-2-fast"
+      ],
+      "gcp": [
+        "claude-fable-5-2"
+      ]
+    },
+    "sources": [
+      "https://platform.claude.com/docs/en/models/fable-5-2/overview",
+      "https://lifearchitect.ai/models-table/",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-fable-5-2.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/fable-5-2"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
     "name": "claude-haiku-4.5",
     "vendor": "anthropic",
     "open": false,
@@ -1261,6 +1375,53 @@
     "estimated": [
       "parameters",
       "architecture"
+    ]
+  },
+  {
+    "name": "claude-haiku-5.5",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "(?:claude[\\s._-]?haiku[\\s._-]?5[\\s._-]?5)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 15,
+      "total": 400
+    },
+    "context": 1000000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "anthropic": [
+        "claude-haiku-5-5"
+      ],
+      "aws": [
+        "anthropic.claude-haiku-5-5"
+      ],
+      "azure": [
+        "claude-haiku-5-5"
+      ],
+      "gcp": [
+        "claude-haiku-5-5"
+      ]
+    },
+    "sources": [
+      "https://platform.claude.com/docs/en/models/haiku-5-5/overview",
+      "https://lifearchitect.ai/models-table/",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-haiku-5-5.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/haiku-5-5"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
     ]
   },
   {
@@ -1373,6 +1534,52 @@
       "https://docs.anthropic.com/en/docs/models/mythos-5-1/overview",
       "https://docs.anthropic.com/en/docs/about-claude/models/overview",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-mythos-5-1.html",
+      "https://lifearchitect.ai/models-table/",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "claude-mythos-5.2",
+    "vendor": "anthropic",
+    "open": false,
+    "pattern": "(?:claude[\\s._-]?mythos[\\s._-]?5[\\s._-]?2)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 150,
+      "total": 10000
+    },
+    "context": 1000000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "anthropic": [
+        "claude-mythos-5-2"
+      ],
+      "aws": [
+        "anthropic.claude-mythos-5-2"
+      ],
+      "azure": [
+        "claude-mythos-5-2",
+        "claude-mythos-5-2-fast"
+      ],
+      "gcp": [
+        "claude-mythos-5-2"
+      ]
+    },
+    "sources": [
+      "https://platform.claude.com/docs/en/models/mythos-5-2/overview",
       "https://lifearchitect.ai/models-table/",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
     ],
@@ -2458,6 +2665,86 @@
     ]
   },
   {
+    "name": "cohere-embed-v5.0-fast",
+    "vendor": "cohere",
+    "open": false,
+    "pattern": "(?:cohere[\\s._-]?)?embed[\\s._-]?v?5(?:[\\s._-]?0)?[\\s._-]?fast(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1,
+      "total": 1
+    },
+    "context": 128000,
+    "dimension": 2048,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "cohere": [
+        "embed-v5.0-fast"
+      ],
+      "azure": [
+        "Cohere-embed-v5-Fast"
+      ]
+    },
+    "sources": [
+      "https://docs.cohere.com/docs/cohere-embed",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "cohere-embed-v5.0-pro",
+    "vendor": "cohere",
+    "open": false,
+    "pattern": "(?:cohere[\\s._-]?)?embed[\\s._-]?v?5(?:[\\s._-]?0)?[\\s._-]?pro(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 2.4,
+      "total": 2.4
+    },
+    "context": 128000,
+    "dimension": 2048,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "cohere": [
+        "embed-v5.0-pro"
+      ],
+      "azure": [
+        "Cohere-embed-v5-Pro"
+      ]
+    },
+    "sources": [
+      "https://docs.cohere.com/docs/cohere-embed",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
     "name": "cohere-parse-v5",
     "vendor": "cohere",
     "open": false,
@@ -2602,6 +2889,82 @@
       "parameters",
       "context",
       "architecture"
+    ]
+  },
+  {
+    "name": "cohere-rerank-v5.0-fast",
+    "vendor": "cohere",
+    "open": false,
+    "pattern": "(?:cohere[\\s._-]?)?rerank[\\s._-]?v?5(?:[\\s._-]?0)?[\\s._-]?fast(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "ranking",
+    "architecture": "dense",
+    "parameters": {
+      "active": 0.5,
+      "total": 0.5
+    },
+    "context": 32768,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "score"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "cohere": [
+        "rerank-v5.0-fast"
+      ],
+      "azure": [
+        "Cohere-rerank-v5-fast"
+      ]
+    },
+    "sources": [
+      "https://docs.cohere.com/docs/rerank",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "cohere-rerank-v5.0-pro",
+    "vendor": "cohere",
+    "open": false,
+    "pattern": "(?:cohere[\\s._-]?)?rerank[\\s._-]?v?5(?:[\\s._-]?0)?[\\s._-]?pro(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "ranking",
+    "architecture": "dense",
+    "parameters": {
+      "active": 2,
+      "total": 2
+    },
+    "context": 32768,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "score"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "cohere": [
+        "rerank-v5.0-pro"
+      ],
+      "azure": [
+        "Cohere-rerank-v5-pro"
+      ]
+    },
+    "sources": [
+      "https://docs.cohere.com/docs/rerank",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
     ]
   },
   {
@@ -2883,7 +3246,9 @@
         "deepseek-r1-distill-llama-70b"
       ],
       "scaleway": [
-        "deepseek-r1-distill-llama-70b"
+        "deepseek-r1-distill-llama-70b",
+        "deepseek/deepseek-r1-distill-llama-70b:fp8",
+        "deepseek/deepseek-r1-distill-llama-70b:bf16"
       ]
     },
     "sources": [
@@ -2914,7 +3279,9 @@
     "tools": false,
     "providers": {
       "scaleway": [
-        "deepseek-r1-distill-llama-8b"
+        "deepseek-r1-distill-llama-8b",
+        "deepseek/deepseek-r1-distill-llama-8b:fp8",
+        "deepseek/deepseek-r1-distill-llama-8b:bf16"
       ]
     },
     "sources": [
@@ -3174,10 +3541,24 @@
     ],
     "reasoning": true,
     "tools": true,
-    "providers": {},
+    "providers": {
+      "azure": [
+        "DeepSeek-V4.1-Flash"
+      ],
+      "gcp": [
+        "deepseek-v4.1-flash-maas"
+      ],
+      "mistral": [
+        "deepseek-v4-1-flash-1017"
+      ]
+    },
     "sources": [
       "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
-      "https://github.com/digital4better/data/blob/main/data/ai/README.md#component-counts"
+      "https://github.com/digital4better/data/blob/main/data/ai/README.md#component-counts",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/deepseek/deepseek-v41-flash",
+      "https://docs.mistral.ai/models/deepseek-v4-flash-1017"
     ],
     "estimated": [
       "parameters"
@@ -3210,7 +3591,8 @@
         "mistral.devstral-2-123b"
       ],
       "scaleway": [
-        "devstral-2-123b-instruct-2512"
+        "devstral-2-123b-instruct-2512",
+        "mistral/devstral-2-123b-instruct-2512:fp8"
       ]
     },
     "sources": [
@@ -3246,7 +3628,9 @@
     "tools": true,
     "providers": {
       "scaleway": [
-        "devstral-small-2505"
+        "devstral-small-2505",
+        "mistral/devstral-small-2505:fp8",
+        "mistral/devstral-small-2505:bf16"
       ]
     },
     "sources": [
@@ -3293,6 +3677,40 @@
       "parameters",
       "context",
       "architecture"
+    ]
+  },
+  {
+    "name": "embeddinggemma-2",
+    "vendor": "google",
+    "open": true,
+    "pattern": "(?:embeddinggemma[\\s._-]?2)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "embedding",
+    "architecture": "dense",
+    "parameters": {
+      "active": 0.74,
+      "total": 0.74
+    },
+    "context": 8192,
+    "dimension": 768,
+    "input": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "output": [
+      "embedding"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {},
+    "sources": [
+      "https://huggingface.co/google/embeddinggemma-2",
+      "https://huggingface.co/google/embeddinggemma-2/blob/main/config.json",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
+    ],
+    "estimated": [
+      "parameters"
     ]
   },
   {
@@ -4574,6 +4992,82 @@
     ]
   },
   {
+    "name": "gemini-4-argon",
+    "vendor": "google",
+    "open": false,
+    "pattern": "(?:gemini[\\s._-]?4[\\s._-]?argon)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))(?![\\s._-]?cyber)",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 150,
+      "total": 6000
+    },
+    "context": 1048576,
+    "input": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "gemini-4-argon"
+      ]
+    },
+    "sources": [
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/4-argon",
+      "https://lifearchitect.ai/models-table/",
+      "https://apxml.com/models/gemini-4-argon"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "gemini-4-argon-cyber-permissive",
+    "vendor": "google",
+    "open": false,
+    "pattern": "(?:gemini[\\s._-]?4[\\s._-]?argon[\\s._-]?cyber[\\s._-]?permissive)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 150,
+      "total": 6000
+    },
+    "context": 1048576,
+    "input": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "gemini-4-argon-cyber-permissive"
+      ]
+    },
+    "sources": [
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/4-argon",
+      "https://lifearchitect.ai/models-table/",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
     "name": "gemini-embedding-001",
     "vendor": "google",
     "open": false,
@@ -4654,6 +5148,44 @@
     ]
   },
   {
+    "name": "gemini-nano-banana-2.1",
+    "vendor": "google",
+    "open": false,
+    "pattern": "(?:gemini[\\s._-]?nano[\\s._-]?banana[\\s._-]?2[\\s._-]?1)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "image",
+    "architecture": "moe",
+    "parameters": {
+      "active": 25,
+      "total": 500
+    },
+    "context": 131072,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text",
+      "image"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "gemini-nano-banana-2.1"
+      ]
+    },
+    "sources": [
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/nano-banana-2-1",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses",
+      "https://lifearchitect.ai/models-table/"
+    ],
+    "estimated": [
+      "parameters",
+      "architecture"
+    ]
+  },
+  {
     "name": "gemini-omni-1.1-flash",
     "vendor": "google",
     "open": false,
@@ -4685,6 +5217,44 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/omni-1-1-flash",
       "https://lifearchitect.ai/models-table/",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
+    ],
+    "estimated": [
+      "parameters",
+      "architecture"
+    ]
+  },
+  {
+    "name": "gemini-omni-1.2-flash",
+    "vendor": "google",
+    "open": false,
+    "pattern": "(?:gemini[\\s._-]?omni[\\s._-]?1[\\s._-]?2[\\s._-]?flash)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "video",
+    "architecture": "moe",
+    "parameters": {
+      "active": 25,
+      "total": 500
+    },
+    "context": 131072,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text",
+      "video"
+    ],
+    "reasoning": true,
+    "tools": false,
+    "providers": {
+      "gcp": [
+        "gemini-omni-1.2-flash"
+      ]
+    },
+    "sources": [
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/omni-1-2-flash",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses",
+      "https://lifearchitect.ai/models-table/"
     ],
     "estimated": [
       "parameters",
@@ -4787,7 +5357,8 @@
         "google.gemma-3-27b-it"
       ],
       "scaleway": [
-        "gemma-3-27b-it"
+        "gemma-3-27b-it",
+        "google/gemma-3-27b-it:bf16"
       ]
     },
     "sources": [
@@ -4884,7 +5455,8 @@
     "context": 262144,
     "input": [
       "text",
-      "image"
+      "image",
+      "audio"
     ],
     "output": [
       "text"
@@ -4893,7 +5465,8 @@
     "tools": true,
     "providers": {},
     "sources": [
-      "https://huggingface.co/google/gemma-4-12B-it"
+      "https://huggingface.co/google/gemma-4-12B-it",
+      "https://huggingface.co/google/gemma-4-E4B-it"
     ],
     "estimated": []
   },
@@ -4908,7 +5481,7 @@
       "active": 3.8,
       "total": 25.2
     },
-    "context": 256000,
+    "context": 262144,
     "input": [
       "text",
       "image",
@@ -4927,7 +5500,8 @@
         "gemma-4-26b-a4b-it-maas"
       ],
       "scaleway": [
-        "gemma-4-26b-a4b-it"
+        "gemma-4-26b-a4b-it",
+        "google/gemma-4-26b-a4b-it:bf16"
       ]
     },
     "sources": [
@@ -4938,7 +5512,8 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-google-gemma-4-26b-a4b.html",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it",
-      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google"
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google",
+      "https://huggingface.co/google/gemma-4-26B-A4B-it/blob/main/config.json"
     ],
     "estimated": []
   },
@@ -4953,7 +5528,7 @@
       "active": 30.7,
       "total": 30.7
     },
-    "context": 256000,
+    "context": 262144,
     "input": [
       "text",
       "image",
@@ -4972,7 +5547,8 @@
         "gemma-4-31b-it"
       ],
       "scaleway": [
-        "gemma-4-31b-it"
+        "gemma-4-31b-it",
+        "google/gemma-4-31b-it:bf16"
       ]
     },
     "sources": [
@@ -4982,7 +5558,8 @@
       "https://models.dev/models/google/gemma-4-31b-it",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-google-gemma-4-31b.html",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
-      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/open-models/use-gemma"
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/open-models/use-gemma",
+      "https://huggingface.co/google/gemma-4-31B-it/blob/main/config.json"
     ],
     "estimated": []
   },
@@ -5017,6 +5594,37 @@
     "sources": [
       "https://huggingface.co/google/gemma-4-E2B-it",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-google-gemma-4-e2b.html"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "gemma-4-e4b-it",
+    "vendor": "google",
+    "open": true,
+    "pattern": "(?:gemma[\\s._-]?4[\\s._-]?e4b[\\s._-]?it)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 8,
+      "total": 8
+    },
+    "context": 131072,
+    "input": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {},
+    "sources": [
+      "https://huggingface.co/google/gemma-4-E4B-it",
+      "https://huggingface.co/google/gemma-4-E4B-it/blob/main/config.json",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries"
     ],
     "estimated": []
   },
@@ -5177,7 +5785,7 @@
     "name": "glm-5.3",
     "vendor": "zai",
     "open": true,
-    "pattern": "(?:glm[\\s._-]?5[\\s._-]?3)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "pattern": "(?:glm[\\s._-]?5[\\s._-]?3)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))(?![\\s._-]?flash)",
     "type": "text",
     "architecture": "moe",
     "parameters": {
@@ -5196,13 +5804,22 @@
     "providers": {
       "zai": [
         "glm-5.3"
+      ],
+      "mistral": [
+        "zai-glm-5-3"
+      ],
+      "aws": [
+        "us.zai.glm-5.3",
+        "global.zai.glm-5.3"
       ]
     },
     "sources": [
       "https://huggingface.co/zai-org/GLM-5.3",
       "https://huggingface.co/zai-org/GLM-5",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
-      "https://docs.z.ai/guides/llm/glm-5.3"
+      "https://docs.z.ai/guides/llm/glm-5.3",
+      "https://docs.mistral.ai/models/zai-glm-5-3",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-glm-5-3.html"
     ],
     "estimated": [
       "parameters"
@@ -5235,11 +5852,15 @@
       "zai": [
         "glm-5.3-flash",
         "glm-5.3-flashx"
+      ],
+      "mistral": [
+        "zai-glm-5-3-flash"
       ]
     },
     "sources": [
       "https://huggingface.co/zai-org/GLM-5.3-Flash",
-      "https://docs.z.ai/guides/vlm/glm-5.3-flash"
+      "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "https://docs.mistral.ai/models/zai-glm-5-3-flash"
     ],
     "estimated": []
   },
@@ -7652,6 +8273,52 @@
     ]
   },
   {
+    "name": "gpt-6.1-terra",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "(?:gpt[\\s._-]?6[\\s._-]?1[\\s._-]?terra)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 75,
+      "total": 1200
+    },
+    "context": 1050000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "openai": [
+        "gpt-6.1-terra"
+      ],
+      "aws": [
+        "openai.gpt-6.1-terra"
+      ],
+      "azure": [
+        "gpt-6.1-terra"
+      ],
+      "gcp": [
+        "gpt-6.1-terra"
+      ]
+    },
+    "sources": [
+      "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+      "https://lifearchitect.ai/models-table/",
+      "https://apxml.com/models/gpt-6-1-terra",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
     "name": "gpt-audio",
     "vendor": "openai",
     "open": false,
@@ -8078,7 +8745,8 @@
         "gpt-oss-120b"
       ],
       "scaleway": [
-        "gpt-oss-120b"
+        "gpt-oss-120b",
+        "openai/gpt-oss-120b:fp4"
       ]
     },
     "sources": [
@@ -8132,7 +8800,8 @@
         "gpt-oss-20b"
       ],
       "scaleway": [
-        "gpt-oss-20b"
+        "gpt-oss-20b",
+        "openai/gpt-oss-20b:fp4"
       ]
     },
     "sources": [
@@ -8968,7 +9637,8 @@
     "tools": false,
     "providers": {
       "scaleway": [
-        "holo2-30b-a3b"
+        "holo2-30b-a3b",
+        "hcompany/holo2-30b-a3b:bf16"
       ]
     },
     "sources": [
@@ -9309,6 +9979,72 @@
     "estimated": []
   },
   {
+    "name": "kimi-k3.1-pro",
+    "vendor": "moonshot",
+    "open": true,
+    "pattern": "(?:kimi[\\s._-]?k3[\\s._-]?1[\\s._-]?pro|moonshotai[\\s._-]?kimi[\\s._-]?k3[\\s._-]?1)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 104,
+      "total": 2800
+    },
+    "context": 1048576,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "moonshot": [
+        "kimi-k3.1-pro"
+      ],
+      "aws": [
+        "moonshotai.kimi-k3.1"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/config.json",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k3-1-highspeed.html"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "lfm3-1.7b",
+    "vendor": "liquidai",
+    "open": true,
+    "pattern": "(?:lfm3[\\s._-]?1[\\s._-]?7b)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1.7,
+      "total": 1.7
+    },
+    "context": 262144,
+    "corpus": 22000,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {},
+    "sources": [
+      "https://huggingface.co/LiquidAI/LFM3-1.7B",
+      "https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/config.json",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries"
+    ],
+    "estimated": []
+  },
+  {
     "name": "llama-3-70b-instruct",
     "vendor": "meta",
     "open": true,
@@ -9337,7 +10073,8 @@
         "Meta-Llama-3-70B-Instruct"
       ],
       "scaleway": [
-        "llama-3-70b-instruct"
+        "llama-3-70b-instruct",
+        "meta/llama-3-70b-instruct:fp8"
       ]
     },
     "sources": [
@@ -9380,7 +10117,8 @@
         "Meta-Llama-3-8B-Instruct"
       ],
       "scaleway": [
-        "llama-3-8b-instruct"
+        "llama-3-8b-instruct",
+        "meta/llama-3-8b-instruct:bf16"
       ]
     },
     "sources": [
@@ -9462,7 +10200,9 @@
         "Meta-Llama-3.1-70B-Instruct"
       ],
       "scaleway": [
-        "llama-3.1-70b-instruct"
+        "llama-3.1-70b-instruct",
+        "meta/llama-3.1-70b-instruct:fp8",
+        "meta/llama-3.1-70b-instruct:bf16"
       ]
     },
     "sources": [
@@ -9505,7 +10245,9 @@
         "Meta-Llama-3.1-8B-Instruct"
       ],
       "scaleway": [
-        "llama-3.1-8b-instruct"
+        "llama-3.1-8b-instruct",
+        "meta/llama-3.1-8b-instruct:fp8",
+        "meta/llama-3.1-8b-instruct:bf16"
       ]
     },
     "sources": [
@@ -9541,7 +10283,8 @@
     "tools": false,
     "providers": {
       "scaleway": [
-        "llama-3.1-nemotron-70b-instruct"
+        "llama-3.1-nemotron-70b-instruct",
+        "nvidia/llama-3.1-nemotron-70b-instruct:fp8"
       ]
     },
     "sources": [
@@ -9800,7 +10543,9 @@
         "Meta-Llama-3_3-70B-Instruct"
       ],
       "scaleway": [
-        "llama-3.3-70b-instruct"
+        "llama-3.3-70b-instruct",
+        "meta/llama-3.3-70b-instruct:fp8",
+        "meta/llama-3.3-70b-instruct:bf16"
       ]
     },
     "sources": [
@@ -9903,6 +10648,41 @@
     ],
     "estimated": [
       "corpus"
+    ]
+  },
+  {
+    "name": "luma-ray-2",
+    "vendor": "luma",
+    "open": false,
+    "pattern": "(?:luma[\\s._-]?ray[\\s._-]?2|luma[\\s._-]?ray[\\s._-]?v2)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "video",
+    "architecture": "dense",
+    "parameters": {
+      "active": 14,
+      "total": 14
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "video"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "luma.ray-v2:0"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-luma-ai-ray2.html",
+      "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
+    ],
+    "estimated": [
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -10036,7 +10816,9 @@
     "tools": true,
     "providers": {
       "scaleway": [
-        "magistral-small-2506"
+        "magistral-small-2506",
+        "mistral/magistral-small-2506:fp8",
+        "mistral/magistral-small-2506:bf16"
       ]
     },
     "sources": [
@@ -10485,7 +11267,8 @@
         "minimax.minimax-m2.5"
       ],
       "scaleway": [
-        "minimax-m2.5"
+        "minimax-m2.5",
+        "minimaxai/minimax-m2.5:nvfp4"
       ]
     },
     "sources": [
@@ -10493,6 +11276,111 @@
       "https://arxiv.org/abs/2605.26494",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-minimax-minimax-m2-5.html",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "minimax-m2.7",
+    "vendor": "minimax",
+    "open": true,
+    "pattern": "(?:minimax[\\s._-]?m2[\\s._-]?7)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 10,
+      "total": 230
+    },
+    "context": 204800,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "minimax": [
+        "MiniMax-M2.7"
+      ]
+    },
+    "sources": [
+      "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+      "https://huggingface.co/MiniMaxAI/MiniMax-M2.7/blob/main/config.json",
+      "https://lifearchitect.ai/models-table/",
+      "https://www.minimax.io/models/text/m27"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
+    "name": "minimax-m3",
+    "vendor": "minimax",
+    "open": true,
+    "pattern": "(?:minimax[\\s._-]?m3)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 23,
+      "total": 428
+    },
+    "context": 1048576,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "minimax": [
+        "MiniMax-M3"
+      ]
+    },
+    "sources": [
+      "https://platform.minimax.io/docs/guides/text-generation",
+      "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+      "https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/config.json",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "minimax-m3.1-flash",
+    "vendor": "minimax",
+    "open": true,
+    "pattern": "(?:minimax[\\s._-]?m3[\\s._-]?1[\\s._-]?flash)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 23,
+      "total": 428
+    },
+    "context": 1048576,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "minimax": [
+        "MiniMax-M3.1-Flash"
+      ]
+    },
+    "sources": [
+      "https://platform.minimax.io/docs/guides/text-generation",
+      "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
+      "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/blob/main/config.json",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries"
     ],
     "estimated": []
   },
@@ -10788,7 +11676,8 @@
         "mistral-7b-instruct-v0-3"
       ],
       "scaleway": [
-        "mistral-7b-instruct-v0.3"
+        "mistral-7b-instruct-v0.3",
+        "mistral/mistral-7b-instruct-v0.3:bf16"
       ]
     },
     "sources": [
@@ -10982,7 +11871,8 @@
         "Mistral-Large-3"
       ],
       "scaleway": [
-        "mistral-large-3-675b-instruct-2512"
+        "mistral-large-3-675b-instruct-2512",
+        "mistral/mistral-large-3-675b-instruct-2512:fp4"
       ]
     },
     "sources": [
@@ -10998,6 +11888,40 @@
     "estimated": [
       "corpus"
     ]
+  },
+  {
+    "name": "mistral-large-4",
+    "vendor": "mistral",
+    "open": true,
+    "pattern": "(?:mistral[\\s._-]?large[\\s._-]?4)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 52,
+      "total": 1050
+    },
+    "context": 1048576,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "mistral": [
+        "mistral-large-4"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/models/mistral-large-4-0",
+      "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
+      "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/config.json",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries"
+    ],
+    "estimated": []
   },
   {
     "name": "mistral-medium-3",
@@ -11068,7 +11992,8 @@
         "mistral-medium-3-5"
       ],
       "scaleway": [
-        "mistral-medium-3.5-128b"
+        "mistral-medium-3.5-128b",
+        "mistral/mistral-medium-3.5-128b:fp8"
       ]
     },
     "sources": [
@@ -11109,7 +12034,8 @@
         "mistral-nemo-instruct-2407"
       ],
       "scaleway": [
-        "mistral-nemo-instruct-2407"
+        "mistral-nemo-instruct-2407",
+        "mistral/mistral-nemo-instruct-2407:fp8"
       ]
     },
     "sources": [
@@ -11162,7 +12088,7 @@
     "name": "mistral-ocr-4",
     "vendor": "mistral",
     "open": false,
-    "pattern": "mistral[\\s._-]?ocr[\\s._-]?4",
+    "pattern": "mistral[\\s._-]?ocr[\\s._-]?4(?![\\s._-]?[1-9]\\b)",
     "type": "vision",
     "architecture": "dense",
     "parameters": {
@@ -11188,6 +12114,41 @@
       "https://docs.mistral.ai/capabilities/document_ai/overview/",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
+    ],
+    "estimated": [
+      "parameters",
+      "architecture"
+    ]
+  },
+  {
+    "name": "mistral-ocr-4.1",
+    "vendor": "mistral",
+    "open": false,
+    "pattern": "(?:mistral[\\s._-]?ocr[\\s._-]?4[\\s._-]?1)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "vision",
+    "architecture": "dense",
+    "parameters": {
+      "active": 24,
+      "total": 24
+    },
+    "input": [
+      "document",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "mistral": [
+        "mistral-ocr-4-1"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/models/ocr-4-1",
+      "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
     ],
     "estimated": [
       "parameters",
@@ -11253,7 +12214,9 @@
     "tools": true,
     "providers": {
       "scaleway": [
-        "mistral-small-24b-instruct-2501"
+        "mistral-small-24b-instruct-2501",
+        "mistral/mistral-small-24b-instruct-2501:fp8",
+        "mistral/mistral-small-24b-instruct-2501:bf16"
       ]
     },
     "sources": [
@@ -11333,7 +12296,9 @@
         "mistral-small-2503"
       ],
       "scaleway": [
-        "mistral-small-3.1-24b-instruct-2503"
+        "mistral-small-3.1-24b-instruct-2503",
+        "mistral/mistral-small-3.1-24b-instruct-2503:bf16",
+        "mistral/mistral-small-3.1-24b-instruct-2503:fp8"
       ]
     },
     "sources": [
@@ -11372,10 +12337,12 @@
         "mistral-small-3-2-24b-instruct-2506"
       ],
       "scaleway": [
-        "mistral-small-3.2-24b-instruct-2506"
+        "mistral-small-3.2-24b-instruct-2506",
+        "mistral/mistral-small-3.2-24b-instruct-2506:fp8"
       ]
     },
     "sources": [
+      "https://catalog.endpoints.ai.ovh.net/rest/v1/models_v2",
       "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models",
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog",
@@ -11500,7 +12467,9 @@
         "mistralai-Mixtral-8x7B-Instruct-v01"
       ],
       "scaleway": [
-        "mixtral-8x7b-instruct-v0.1"
+        "mixtral-8x7b-instruct-v0.1",
+        "mistral/mixtral-8x7b-instruct-v0.1:fp8",
+        "mistral/mixtral-8x7b-instruct-v0.1:bf16"
       ]
     },
     "sources": [
@@ -11536,7 +12505,8 @@
     "tools": false,
     "providers": {
       "scaleway": [
-        "molmo-72b-0924"
+        "molmo-72b-0924",
+        "allenai/molmo-72b-0924:fp8"
       ]
     },
     "sources": [
@@ -11649,6 +12619,41 @@
     ]
   },
   {
+    "name": "muse-ember-1.0",
+    "vendor": "meta",
+    "open": false,
+    "pattern": "(?:muse[\\s._-]?ember[\\s._-]?1[\\s._-]?0)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 8,
+      "total": 120
+    },
+    "context": 1048576,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "meta/muse-ember-1.0"
+      ]
+    },
+    "sources": [
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-ember-1-0",
+      "https://lifearchitect.ai/models-table/"
+    ],
+    "estimated": [
+      "parameters",
+      "architecture"
+    ]
+  },
+  {
     "name": "muse-spark-1.3",
     "vendor": "meta",
     "open": false,
@@ -11680,6 +12685,74 @@
     "estimated": [
       "architecture",
       "parameters"
+    ]
+  },
+  {
+    "name": "muse-spark-open",
+    "vendor": "meta",
+    "open": true,
+    "pattern": "(?:muse[\\s._-]?spark[\\s._-]?open)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 42,
+      "total": 816
+    },
+    "context": 1000000,
+    "input": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {},
+    "sources": [
+      "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+      "https://ollama.com/library/muse-spark-open"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "muse-wonder-1.0",
+    "vendor": "meta",
+    "open": false,
+    "pattern": "(?:muse[\\s._-]?wonder[\\s._-]?1[\\s._-]?0)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 42,
+      "total": 816
+    },
+    "context": 1048576,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "gcp": [
+        "meta/muse-wonder-1.0"
+      ]
+    },
+    "sources": [
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-wonder-1-0",
+      "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses",
+      "https://lifearchitect.ai/models-table/",
+      "https://apxml.com/models/muse-wonder"
+    ],
+    "estimated": [
+      "parameters",
+      "architecture"
     ]
   },
   {
@@ -11742,6 +12815,36 @@
     "sources": [
       "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-nvidia-nemotron-super-3-120b.html"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "nemotron-3.5-super-vl",
+    "vendor": "nvidia",
+    "open": true,
+    "pattern": "(?:nemotron[\\s._-]?3[\\s._-]?5[\\s._-]?super[\\s._-]?vl)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 12,
+      "total": 120
+    },
+    "context": 1048576,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {},
+    "sources": [
+      "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
+      "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/main/config.json",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries"
     ],
     "estimated": []
   },
@@ -12536,6 +13639,43 @@
     ]
   },
   {
+    "name": "pegasus-1.5",
+    "vendor": "twelvelabs",
+    "open": false,
+    "pattern": "(?:pegasus[\\s._-]?1[\\s._-]?5)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "vision",
+    "architecture": "dense",
+    "parameters": {
+      "active": 32,
+      "total": 32
+    },
+    "context": 261120,
+    "input": [
+      "text",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "us.twelvelabs.pegasus-1-5-v1:0",
+        "global.twelvelabs.pegasus-1-5-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-twelvelabs-pegasus-v1-5.html",
+      "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
+    ],
+    "estimated": [
+      "parameters",
+      "architecture"
+    ]
+  },
+  {
     "name": "phi-3-medium",
     "vendor": "microsoft",
     "open": true,
@@ -12934,7 +14074,8 @@
     "tools": true,
     "providers": {
       "scaleway": [
-        "pixtral-12b-2409"
+        "pixtral-12b-2409",
+        "mistral/pixtral-12b-2409:bf16"
       ]
     },
     "sources": [
@@ -13104,7 +14245,8 @@
     "tools": false,
     "providers": {
       "scaleway": [
-        "qwen2.5-coder-32b-instruct"
+        "qwen2.5-coder-32b-instruct",
+        "qwen/qwen2.5-coder-32b-instruct:int8"
       ]
     },
     "sources": [
@@ -13185,7 +14327,8 @@
         "qwen3-235b-a22b-instruct-2507-maas"
       ],
       "scaleway": [
-        "qwen3-235b-a22b-instruct-2507"
+        "qwen3-235b-a22b-instruct-2507",
+        "qwen/qwen3-235b-a22b-instruct-2507"
       ]
     },
     "sources": [
@@ -13221,7 +14364,8 @@
     "tools": true,
     "providers": {
       "scaleway": [
-        "qwen3-235b-a22b-thinking-2507"
+        "qwen3-235b-a22b-thinking-2507",
+        "qwen/qwen3-235b-a22b-thinking-2507:awq"
       ]
     },
     "sources": [
@@ -13299,7 +14443,8 @@
         "qwen-3-coder-30b-a3b-instruct"
       ],
       "scaleway": [
-        "qwen3-coder-30b-a3b-instruct"
+        "qwen3-coder-30b-a3b-instruct",
+        "qwen/qwen3-coder-30b-a3b-instruct:fp8"
       ]
     },
     "sources": [
@@ -13566,7 +14711,8 @@
     "tools": true,
     "providers": {
       "scaleway": [
-        "qwen3.5-122b-a10b"
+        "qwen3.5-122b-a10b",
+        "qwen/qwen3.5-122b-a10b:int4"
       ]
     },
     "sources": [
@@ -13599,7 +14745,8 @@
     "tools": true,
     "providers": {
       "scaleway": [
-        "qwen3.5-35b-a3b"
+        "qwen3.5-35b-a3b",
+        "qwen/qwen3.5-35b-a3b:int4"
       ]
     },
     "sources": [
@@ -13638,7 +14785,8 @@
         "Qwen3.5-397B-A17B"
       ],
       "scaleway": [
-        "qwen3.5-397b-a17b"
+        "qwen3.5-397b-a17b",
+        "qwen/qwen3.5-397b-a17b:int4"
       ]
     },
     "sources": [
@@ -13742,12 +14890,42 @@
     "tools": true,
     "providers": {
       "scaleway": [
-        "qwen3.6-35b-a3b"
+        "qwen3.6-35b-a3b",
+        "qwen/qwen3.6-35b-a3b:bf16",
+        "qwen/qwen3.6-35b-a3b:fp8"
       ]
     },
     "sources": [
       "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
+    ],
+    "estimated": []
+  },
+  {
+    "name": "qwen3.8-2.4t-a95b",
+    "vendor": "qwen",
+    "open": true,
+    "pattern": "(?:qwen3[\\s._-]?8[\\s._-]?2[\\s._-]?4t[\\s._-]?a95b)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 95,
+      "total": 2400
+    },
+    "context": 262144,
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {},
+    "sources": [
+      "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+      "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/blob/main/config.json",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries"
     ],
     "estimated": []
   },
@@ -13789,6 +14967,38 @@
     "estimated": []
   },
   {
+    "name": "qwen3.8-flash-next",
+    "vendor": "qwen",
+    "open": true,
+    "pattern": "(?:qwen3[\\s._-]?8[\\s._-]?flash[\\s._-]?next)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 6,
+      "total": 176
+    },
+    "context": 262144,
+    "input": [
+      "text",
+      "image",
+      "video"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {},
+    "sources": [
+      "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/config.json",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries"
+    ],
+    "estimated": [
+      "parameters"
+    ]
+  },
+  {
     "name": "sentence-t5-xxl",
     "vendor": "google",
     "open": true,
@@ -13810,7 +15020,8 @@
     "tools": false,
     "providers": {
       "scaleway": [
-        "sentence-t5-xxl"
+        "sentence-t5-xxl",
+        "sentence-transformers/sentence-t5-xxl:fp32"
       ]
     },
     "sources": [
@@ -13860,6 +15071,37 @@
       "parameters",
       "architecture"
     ]
+  },
+  {
+    "name": "stable-diffusion-3.5-large",
+    "vendor": "stability-ai",
+    "open": true,
+    "pattern": "(?:stable[\\s._-]?diffusion[\\s._-]?3[\\s._-]?5[\\s._-]?large|stability[\\s._-]?sd3[\\s._-]?5[\\s._-]?large)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "image",
+    "architecture": "dense",
+    "parameters": {
+      "active": 8,
+      "total": 8
+    },
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "image"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "stability.sd3-5-large-v1:0"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-stability-ai-stable-diffusion-3-5-large.html",
+      "https://huggingface.co/stabilityai/stable-diffusion-3.5-large"
+    ],
+    "estimated": []
   },
   {
     "name": "stable-diffusion-xl",
@@ -13927,6 +15169,74 @@
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
     ],
     "estimated": []
+  },
+  {
+    "name": "stable-image-core",
+    "vendor": "stability-ai",
+    "open": false,
+    "pattern": "(?:stable[\\s._-]?image[\\s._-]?core)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "image",
+    "architecture": "dense",
+    "parameters": {
+      "active": 2.6,
+      "total": 2.6
+    },
+    "input": [
+      "text"
+    ],
+    "output": [
+      "image"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "stability.stable-image-core-v1:1"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-stability-ai-stable-image-core-1-0.html",
+      "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
+  },
+  {
+    "name": "stable-image-ultra",
+    "vendor": "stability-ai",
+    "open": false,
+    "pattern": "(?:stable[\\s._-]?image[\\s._-]?ultra)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "image",
+    "architecture": "dense",
+    "parameters": {
+      "active": 8,
+      "total": 8
+    },
+    "input": [
+      "text"
+    ],
+    "output": [
+      "image"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "aws": [
+        "stability.stable-image-ultra-v1:1"
+      ]
+    },
+    "sources": [
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-stability-ai-stable-image-ultra-1-0.html",
+      "https://huggingface.co/stabilityai/stable-diffusion-3.5-large",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
+    ],
+    "estimated": [
+      "architecture",
+      "parameters"
+    ]
   },
   {
     "name": "text-ada-001",
@@ -14814,7 +16124,7 @@
     "name": "voxtral-mini-transcribe",
     "vendor": "mistral",
     "open": false,
-    "pattern": "voxtral[\\s._-]?mini[\\s._-]?transcribe(?![\\s._-]?realtime)",
+    "pattern": "voxtral[\\s._-]?mini[\\s._-]?transcribe(?![\\s._-]?realtime|[\\s._-]?3\\b)",
     "type": "transcription",
     "architecture": "dense",
     "parameters": {
@@ -14842,10 +16152,45 @@
     ]
   },
   {
+    "name": "voxtral-mini-transcribe-3",
+    "vendor": "mistral",
+    "open": false,
+    "pattern": "(?:voxtral[\\s._-]?mini[\\s._-]?transcribe[\\s._-]?3)(?:[\\s._-]?0)?(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "transcription",
+    "architecture": "dense",
+    "parameters": {
+      "active": 4.676,
+      "total": 4.676
+    },
+    "context": 32768,
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "mistral": [
+        "voxtral-mini-transcribe-3-0"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/models/voxtral-mini-transcribe-3-0",
+      "https://huggingface.co/mistralai/Voxtral-Mini-3B-2507",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
+    ],
+    "estimated": [
+      "parameters",
+      "architecture"
+    ]
+  },
+  {
     "name": "voxtral-mini-transcribe-realtime",
     "vendor": "mistral",
     "open": true,
-    "pattern": "voxtral[\\s._-]?mini[\\s._-]?transcribe[\\s._-]?realtime",
+    "pattern": "voxtral[\\s._-]?mini[\\s._-]?transcribe[\\s._-]?realtime(?![\\s._-]?3\\b)",
     "type": "transcription",
     "architecture": "dense",
     "parameters": {
@@ -14869,6 +16214,75 @@
       "https://huggingface.co/api/models/mistralai/Voxtral-Mini-4B-Realtime-2602"
     ],
     "estimated": []
+  },
+  {
+    "name": "voxtral-mini-transcribe-realtime-3",
+    "vendor": "mistral",
+    "open": false,
+    "pattern": "(?:voxtral[\\s._-]?mini[\\s._-]?transcribe[\\s._-]?realtime[\\s._-]?3)(?:[\\s._-]?0)?(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "transcription",
+    "architecture": "dense",
+    "parameters": {
+      "active": 4.43,
+      "total": 4.43
+    },
+    "input": [
+      "audio"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "mistral": [
+        "voxtral-mini-transcribe-realtime-3-0"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-3-0",
+      "https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
+    ],
+    "estimated": [
+      "parameters",
+      "architecture"
+    ]
+  },
+  {
+    "name": "voxtral-mini-tts-3",
+    "vendor": "mistral",
+    "open": false,
+    "pattern": "(?:voxtral[\\s._-]?mini[\\s._-]?tts[\\s._-]?3)(?:[\\s._-]?0)?(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "speech",
+    "architecture": "dense",
+    "parameters": {
+      "active": 4,
+      "total": 4
+    },
+    "input": [
+      "text",
+      "audio"
+    ],
+    "output": [
+      "audio"
+    ],
+    "reasoning": false,
+    "tools": false,
+    "providers": {
+      "mistral": [
+        "voxtral-mini-tts-3-0"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/models/voxtral-mini-tts-3-0",
+      "https://huggingface.co/mistralai/Voxtral-4B-TTS-2603",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
+    ],
+    "estimated": [
+      "parameters",
+      "architecture"
+    ]
   },
   {
     "name": "voxtral-small-24b-2507",
@@ -14896,7 +16310,9 @@
         "mistral.voxtral-small-24b-2507"
       ],
       "scaleway": [
-        "voxtral-small-24b-2507"
+        "voxtral-small-24b-2507",
+        "mistral/voxtral-small-24b-2507:bf16",
+        "mistral/voxtral-small-24b-2507:fp8"
       ]
     },
     "sources": [
@@ -14911,10 +16327,46 @@
     "estimated": []
   },
   {
+    "name": "voxtral-small-transcribe-3",
+    "vendor": "mistral",
+    "open": false,
+    "pattern": "(?:voxtral[\\s._-]?small[\\s._-]?transcribe[\\s._-]?3)(?:[\\s._-]?0)?(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "type": "transcription",
+    "architecture": "dense",
+    "parameters": {
+      "active": 24.262,
+      "total": 24.262
+    },
+    "context": 32768,
+    "input": [
+      "text",
+      "audio"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": false,
+    "tools": true,
+    "providers": {
+      "mistral": [
+        "voxtral-small-transcribe-3-0"
+      ]
+    },
+    "sources": [
+      "https://docs.mistral.ai/models/voxtral-small-transcribe-3-0",
+      "https://huggingface.co/mistralai/Voxtral-Small-24B-2507",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
+    ],
+    "estimated": [
+      "parameters",
+      "architecture"
+    ]
+  },
+  {
     "name": "voxtral-tts",
     "vendor": "mistral",
     "open": true,
-    "pattern": "voxtral(?:[\\s._-]?4b)?[\\s._-]?tts(?:[\\s._-]?2603)?|voxtral[\\s._-]?mini[\\s._-]?tts(?:[\\s._-]?2603)?",
+    "pattern": "(?:voxtral(?:[\\s._-]?4b)?[\\s._-]?tts|voxtral[\\s._-]?mini[\\s._-]?tts)(?![\\s._-]?3\\b)",
     "type": "speech",
     "architecture": "dense",
     "parameters": {
@@ -14995,7 +16447,8 @@
         "whisper-large-v3"
       ],
       "scaleway": [
-        "whisper-large-v3"
+        "whisper-large-v3",
+        "openai/whisper-large-v3:bf16"
       ]
     },
     "sources": [

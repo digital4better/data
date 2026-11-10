@@ -46,9 +46,9 @@ d2-8,d2,d2-8,general,4,8,0,50,amd-epyc-7r32,0,,1
 l40s-90,l40s,l40s-90,accelerated,15,90,400,0,amd-epyc-9r14,1,nvidia-tesla-l40s,1
 l40s-180,l40s,l40s-180,accelerated,30,180,400,0,amd-epyc-9r14,2,nvidia-tesla-l40s,1
 l40s-360,l40s,l40s-360,accelerated,60,360,400,0,amd-epyc-9r14,4,nvidia-tesla-l40s,1
-a10-45,a10,a10-45,accelerated,30,45,400,0,amd-epyc-7r32,1,nvidia-tesla-a10,1
-a10-90,a10,a10-90,accelerated,60,90,400,0,amd-epyc-7r32,2,nvidia-tesla-a10,1
-a10-180,a10,a10-180,accelerated,120,180,400,0,amd-epyc-7r32,4,nvidia-tesla-a10,1
+a10-45,a10,a10-45,accelerated,30,42,400,0,amd-epyc-7r32,1,nvidia-tesla-a10,1
+a10-90,a10,a10-90,accelerated,60,85,400,0,amd-epyc-7r32,2,nvidia-tesla-a10,1
+a10-180,a10,a10-180,accelerated,120,170,400,0,amd-epyc-7r32,4,nvidia-tesla-a10,1
 a100-180,a100,a100-180,accelerated,15,180,300,0,amd-epyc-9r14,1,nvidia-tesla-a10080,1
 a100-360,a100,a100-360,accelerated,30,360,500,0,amd-epyc-9r14,2,nvidia-tesla-a10080,1
 a100-720,a100,a100-720,accelerated,60,720,500,0,amd-epyc-9r14,4,nvidia-tesla-a10080,1
@@ -67,3 +67,14 @@ t1-le-180,t1-le,t1-le-180,accelerated,32,180,400,0,amd-epyc-7371,4,nvidia-tesla-
 bm-s1,bm,bm-s1,performance,4,32,1920,0,intel-xeon-e2274g,0,,1
 bm-m1,bm,bm-m1,performance,8,64,1920,0,intel-xeon-e2288g,0,,1
 bm-l1,bm,bm-l1,performance,16,128,1920,0,amd-epyc-7371,0,,1
+h200-1920,h200,h200-1920,accelerated,224,1920,31120,0,,8,nvidia-tesla-h200,
+h200-1920-eph,h200,h200-1920-eph,accelerated,224,1920,20400,0,,8,nvidia-tesla-h200,
+t1-45,t1,t1-45,accelerated,8,45,400,0,,1,nvidia-tesla-v10016,
+t1-90,t1,t1-90,accelerated,18,90,800,0,,2,nvidia-tesla-v10016,
+t1-180,t1,t1-180,accelerated,36,180,4050,0,,4,nvidia-tesla-v10016,
+t2-45,t2,t2-45,accelerated,15,45,400,0,,1,,
+t2-le-45,t2,t2-le-45,accelerated,15,45,300,0,,1,,
+t2-90,t2,t2-90,accelerated,30,90,800,0,,2,,
+t2-le-90,t2,t2-le-90,accelerated,30,90,500,0,,2,,
+t2-180,t2,t2-180,accelerated,60,180,4050,0,,4,,
+t2-le-180,t2,t2-le-180,accelerated,60,180,500,0,,4,,

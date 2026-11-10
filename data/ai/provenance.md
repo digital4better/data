@@ -1,6 +1,6 @@
 # Parameter Provenance
 
-Audit date: 2026-10-01. Counts are in billions; columns always distinguish active from total parameters. See the [methodology and limitations](./README.md).
+Baseline audit: 2026-10-01. The November 2026 sections below record the 2026-11-10 refresh separately. Counts are in billions; columns always distinguish active from total parameters. See the [methodology and limitations](./README.md).
 
 This is a dated provenance record, not a claim that proprietary architectures have been disclosed. It covers the closed-model parameter estimates in this revision and three new open-weight family proxies. Open-weight model cards are linked directly in `models.json`.
 
@@ -306,3 +306,81 @@ Generic LifeArchitect/ApXML references were removed from these entries unless re
 | `voxtral-mini-transcribe` | 4 | 4 |
 
 Known legacy duplicate conflicts were not silently resolved: `nova-lite` / `amazon-nova-lite`, `nova-micro` / `amazon-nova-micro`, and the two Cohere multilingual-v3 entries still have conflicting historical estimates. Older names are retained for compatibility; do not count these as distinct underlying models. Canonical consolidation requires a separate compatibility decision.
+
+## November 2026 Source Review
+
+Checked on 2026-11-10. This refresh adds canonical models and deployment identifiers; it does not delete retired models or recalculate every historical estimate. The October sections above remain dated evidence, not a claim that all their sources were refreshed.
+
+| Source | Use and outcome |
+| --- | --- |
+| [Anthropic](https://platform.claude.com/docs/en/models/overview), [OpenAI](https://developers.openai.com/api/docs/models), [Google](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models), [Mistral](https://docs.mistral.ai/models), [Cohere](https://docs.cohere.com/docs/models) | Identity, public capabilities, native IDs and context. New closed weights remain undisclosed. Cohere does publish approximate totals for Embed 5 and Rerank 5. |
+| [AWS](https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards.html), [Azure](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure), [Azure partners](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners), [GCP](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models) | Compare the catalogs with existing mappings. Includes older missing Luma Ray2 and Stability generation models, not just November releases. See the cumulative cloud inventory. |
+| [OVHcloud](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/), [public catalog API](https://catalog.endpoints.ai.ovh.net/rest/v1/models_v2), [Scaleway](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) | Observed model families already represented. Add explicitly listed Scaleway deployment/quantization IDs to existing models, not new checkpoints. |
+| [LifeArchitect Models Table](https://lifearchitect.ai/models-table/) | The public table loaded in the browser, although direct access to its data feed returned HTTP 403. Read the public total, active, architecture and notes columns. Locked Pro fields and exports were not accessed or reconstructed. See the new numerical rows below. |
+| [ApXML](https://apxml.com/models) | Cross-check identity and context. Haiku 5.5, GPT-6.1 Terra, Gemini 4 Argon and Muse Wonder pages say parameters/architecture are undisclosed; they do not corroborate numerical estimates. |
+| [models.dev](https://models.dev/api.json), [Ollama](https://ollama.com/library?sort=newest) | Discovery and capability cross-checks, not independent measurements of hidden weights. Hosting aliases, quantization variants and speed tiers are not separate models. |
+| Publisher Hugging Face cards and configurations | Verify released artifacts and component counts for Mistral, Moonshot, MiniMax, Qwen, NVIDIA, Meta, Google, Reflection and Liquid AI. Exact per-checkpoint URLs are in the JSON. Gated weights still qualify as open-weight when the publisher offers an actual release under stated access/license terms. |
+| [xAI release notes](https://docs.x.ai/developers/release-notes) | Grok 4.7 was already present. Its Fast service is not separate weights. The November image-service retirement does not justify deleting historical records. |
+
+Scope remains canonical and conservative: do not add unannounced LifeArchitect placeholders, arbitrary fine-tunes, Pro effort settings, routers or every model in the Hugging Face/Ollama directories. Gemini 4 Carbon and Muse Wonder Full require separate primary-source identity/availability checks before inclusion; the latter is not silently equated with GCP's Muse Wonder 1.0. Forecasting models such as Timestral would require a schema/task decision. This pass is not a census of all released models worldwide.
+
+## November 2026 LifeArchitect
+
+These rows were read from the public browser table on 2026-11-10. Both numbers are copied from separate columns, not calculated from a total-only estimate. All sizes remain estimates, including MiniMax-M2.7's rounded secondary count. Closed-model architectures remain estimated; MiniMax's MoE architecture is independently established by its publisher configuration.
+
+| Model | Public row | Active | Total |
+| --- | --- | ---: | ---: |
+| `claude-fable-5.2` | Claude Fable 5.2 | 150 | 10000 |
+| `claude-haiku-5.5` | Claude Haiku 5.5 | 15 | 400 |
+| `claude-mythos-5.2` | Claude Mythos 5.2 | 150 | 10000 |
+| `gemini-4-argon` | Gemini 4 Argon | 150 | 6000 |
+| `gpt-6.1-terra` | GPT-6.1 Terra | 75 | 1200 |
+| `minimax-m2.7` | MiniMax-M2.7 | 10 | 230 |
+| `muse-ember-1.0` | Muse Ember | 8 | 120 |
+
+The source's Terra and Ember notes themselves use price/family assumptions. Their agreement with another price calculation would not be independent confirmation. Anthropic does not disclose Haiku 5.5's weight count. We do not infer the locked training-token or confidence fields from visible ratios. This refresh does not copy EcoLogits numbers into new entries or remove attribution from existing derived values.
+
+## November 2026 Local Hypotheses
+
+No checkpoint-specific published count was verified for the targets below, except the official total counts explicitly identified for Cohere and EmbeddingGemma. These are low-confidence operational proxies, not measurements or claims of shared weights. Public capabilities never come from these proxies. The existing field-level `estimated` schema cannot mark only `parameters.active`, so the whole `parameters` object is flagged when that component is assumed.
+
+| Model | Selected active / total (B) | Scenarios, selection and limits | Numerical anchors |
+| --- | ---: | --- | --- |
+| `amazon-nova-2.5-sonic` | 24 / 24 | Retain the 24 B previous Nova 2 Sonic family hypothesis. Compare open Voxtral Small's roughly 24 B audio-language core; neither establishes Nova's speech decoder or ancestry. Dense routing is assumed. | Previous Nova 2 Sonic entry; [Voxtral Small](https://huggingface.co/mistralai/Voxtral-Small-24B-2507) |
+| `cohere-embed-v5.0-fast` | 1 / 1 | Publisher states an approximate 1 B total. Only the active-equals-total/dense convention is assumed; this is not an independently disclosed active count or routing design. | [Cohere Embed](https://docs.cohere.com/docs/cohere-embed) |
+| `cohere-embed-v5.0-pro` | 2.4 / 2.4 | Publisher states an approximate 2.4 B total. Only the active-equals-total/dense convention is assumed; multimodal components may not all execute for a text-only request. | [Cohere Embed](https://docs.cohere.com/docs/cohere-embed) |
+| `cohere-rerank-v5.0-fast` | 0.5 / 0.5 | Publisher states an approximate 0.5 B total but describes the architecture as proprietary. Active-equals-total and dense are assumptions, not a parameter estimate inferred from token prices. | [Cohere Rerank](https://docs.cohere.com/docs/rerank) |
+| `cohere-rerank-v5.0-pro` | 2 / 2 | Publisher states an approximate 2 B total but describes the architecture as proprietary. Active-equals-total and dense are assumptions; no exposed reasoning API is inferred from reasoning-heavy retrieval benchmarks. | [Cohere Rerank](https://docs.cohere.com/docs/rerank) |
+| `embeddinggemma-2` | 0.74 / 0.74 | Official components sum to 0.74 B: text 0.27, vision 0.17, audio 0.30. Dense active-equals-total is an all-component ceiling, not text-only activation: text-only loads 0.27 B. One scalar cannot describe all modality combinations. | [Publisher card](https://huggingface.co/google/embeddinggemma-2) |
+| `gemini-4-argon-cyber-permissive` | 150 / 6000 | Officially a version of Argon with changed cybersecurity access and behavior. Use the Argon-size scenario; access policy and reasoning effort are not evidence of a larger or smaller checkpoint. | Argon LifeArchitect row above; [Google variant comparison](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/4-argon) |
+| `gemini-nano-banana-2.1` | 25 / 500 | Use the existing Gemini 3.8 Flash 25/500 proxy, not the older image entries' EcoLogits-derived 240/1200. That older scenario is materially larger but does not establish this new image checkpoint's ancestry. No price ratio between image and text units is used. | [Flash row in LifeArchitect](https://lifearchitect.ai/models-table/); [official identity](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/nano-banana-2-1) |
+| `gemini-omni-1.2-flash` | 25 / 500 | Retain the Omni 1.1 Flash family proxy anchored to Gemini Flash 25/500. New video-editing features do not establish a weight-count increase. Encoder, codec and audio generation costs are not separately accounted for. | Existing Omni 1.1 hypothesis; [official specifications](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/omni-1-2-flash) |
+| `luma-ray-2` | 14 / 14 | Select the published 14 B Wan video backbone as a task analogue. Smaller and larger video generators are plausible; neither Luma's compute claims nor a video price identifies its parameter count or density. | [Wan2.1 T2V 14B](https://huggingface.co/Wan-AI/Wan2.1-T2V-14B) |
+| `mistral-ocr-4.1` | 24 / 24 | Retain OCR 4's 24 B hypothesis, with open Mistral Small 3.1 as a vision-language analogue. Bounding boxes and confidence outputs do not prove unchanged weights; Pixtral Large 123 B is a much larger alternative, not the selected anchor. | [Mistral Small 3.1](https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503) |
+| `muse-wonder-1.0` | 42 / 816 | Select the public Muse Spark Open 42/816 as a conservative same-vendor analogue, not a documented parent. LifeArchitect lists Muse Wonder Full at 200/4000, about 4.8x larger on both axes; Full has not been verified as the same checkpoint as GCP's Wonder 1.0, so its size is not copied as fact. | [Muse Spark Open](https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B); [LifeArchitect](https://lifearchitect.ai/models-table/) |
+| `pegasus-1.5` | 32 / 32 | Retain Pegasus 1.2's intermediate Qwen2.5-VL 32 B analogue. The 7 B and 72 B family members remain useful sensitivity cases; better segmentation and a larger context do not establish a specific weight increase. | [Qwen2.5-VL-32B](https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct) |
+| `stable-image-core` | 2.6 / 2.6 | Use SDXL's approximately 2.6 B core denoiser as an image-generator analogue. This is not an official identification of Core's pipeline; encoders and hosted preprocessing are excluded. | [SDXL](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) |
+| `stable-image-ultra` | 8 / 8 | Use the published SD3.5 Large 8 B generator as a same-vendor analogue. Ultra is a closed service, not the downloadable checkpoint; extra service components and any routing remain unknown. | [SD3.5 Large](https://huggingface.co/stabilityai/stable-diffusion-3.5-large) |
+| `voxtral-mini-transcribe-3` | 4.676 / 4.676 | Borrow the full older Voxtral Mini 3B checkpoint count, including its audio components, rather than treating the marketing 3B as all weights. A new closed version need not retain this architecture or size. | [Voxtral Mini](https://huggingface.co/mistralai/Voxtral-Mini-3B-2507) |
+| `voxtral-mini-transcribe-realtime-3` | 4.43 / 4.43 | Use the previous open realtime checkpoint as a proxy. The new version is closed; configurable latency and turn detection do not establish equivalent weights. No token context is invented for the streaming API. | [Voxtral Realtime 2602](https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602) |
+| `voxtral-mini-tts-3` | 4 / 4 | Use the previous open Voxtral 4B TTS checkpoint as a proxy, not as evidence that version 3 is open or unchanged. Character pricing cannot be compared directly with transcription minutes or text-token prices. | [Voxtral TTS 2603](https://huggingface.co/mistralai/Voxtral-4B-TTS-2603) |
+| `voxtral-small-transcribe-3` | 24.262 / 24.262 | Use the previous open Voxtral Small checkpoint as a family analogue. It is not a published count for Transcribe 3; the new closed service's functions and modalities come only from its own documentation. | [Voxtral Small](https://huggingface.co/mistralai/Voxtral-Small-24B-2507) |
+
+## November 2026 Component Boundaries
+
+- Mistral Large 4: the vendor reports 52 B active and 1.05 T total, plus a separately described 1.6 B vision encoder. The HF headline rounds the core to 1 T and distinguishes 49 B active excluding embedding/output layers. Keep the vendor's 52/1050 core convention, not 49/1000 or a falsely exact all-component sum.
+- Kimi K3.1 Pro: the publisher reports 104/2800, with a separate 0.401 B vision encoder. Do not store the 3T marketing class as an exact total. The AWS Highspeed tier is the same canonical model.
+- MiniMax M3 and M3.1 Flash: use the publisher's nominal 23/428. HF's M3.1 packed-storage tensor count is about 220.49 B, including U8-packed low-bit tensors; it is not a count of unpacked learned scalar weights. The model configuration permits 1,048,576 positions; hosted APIs advertise a rounded 1M limit.
+- Qwen3.8-2.4T-A95B: 95/2400 and 262,144 native context come from the open checkpoint. The hosted Qwen3.8-Max supports additional modalities and extended context; it is not silently mapped to this text-only checkpoint.
+- Qwen3.8-Flash-Next: the publisher lists a 125 B backbone with 6 B active, 51 B n-gram embeddings and 4 B MTP. Store 176 B for backbone plus conditional memory, excluding the optional speculative head, consistent with the existing DeepSeek core-memory convention. `parameters` remains estimated because active memory/vision and exact component boundaries are not fully represented. Native context is 262,144, not the hosted/extended 1M limit.
+- Nemotron 3.5 Super VL: keep the publisher's 12/120 and 1,048,576 configuration. It is a hybrid Mamba/attention MoE; `moe` describes sparse routing, not an assertion that every layer is a Transformer. Do not add a separate record for its BF16 and NVFP4 releases.
+- Beam: the card's detailed table reports 23.4/501.3, more precise than its 23/501 headline. Liquid LFM3 remains `dense` in this schema because it has no MoE routing; it combines convolution and attention layers.
+- Gemma 4 E4B: use the 8 B embedding-inclusive language-model count, not the 4.5 B effective size. Dense active-equals-total is the existing catalog convention; it is not a per-token embedding lookup count. The shared Gemma 4 card also confirms audio input for 12B. Correct medium-model contexts to the 262,144 positions in their configurations.
+- GLM-5.3: keep the existing estimated 40/744 pending a complete component-level calculation. LifeArchitect still lists 40/744, ApXML lists about 753.9 B, and HF's artifact metadata counts about 753.33 B including auxiliary/quantization tensors. These do not yet justify calling a raw storage count a replacement architecture measurement.
+- DeepSeek-V4.1-Flash-1017 is described by its publisher as a minor update. Keep one canonical record, its previous parameter convention and the dated ID in `providers`; do not create a duplicate for the suffix.
+- Nano Banana 2.1 has text/image output and search grounding, but no function calling. `tools: true` includes the documented built-in search. Its hidden width remains absent because no checkpoint-specific width was verified. Do not substitute output resolution for hidden dimension.
+- Omni 1.2 Flash emits video with synchronized sound; its documented standalone output modalities are text/video, not an audio-only endpoint. `context` is the 131,072-token input limit, not the output budget. Muse Wonder/Ember contexts likewise record the published input capacity.
+- OCR, TTS, Ray2 and Stable Image APIs without a published token window omit `context`; durations, prompt characters and resolution are not token counts. Voxtral 3's published 32k budget is recorded as 32,768; no budget is inferred for its realtime variant.
+- Claude Haiku/Fable/Mythos outputs remain text per the vendor, despite Azure tables listing image/code among output modalities. Code is text and image generation through a separate tool is not a native image output.
+
+LFM3's `corpus: 22000` records the publisher's 22 T-token pre-training total, including mid-training, but excluding the separately reported 1.75 T SFT stage and unquantified later training. Other training corpus totals are omitted where no complete, scoped total was verified. In particular, do not add together Nemotron's partial training stages or infer locked LifeArchitect corpus values from ratios.

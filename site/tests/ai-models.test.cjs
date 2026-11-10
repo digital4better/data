@@ -60,13 +60,14 @@ test("provenance rows agree with model values and retain explicit EcoLogits attr
     assert.ok(model.estimated.includes("parameters"), model.name);
     const columns = row[2].split(" | ");
     const counts = section === "EcoLogits And Adaptations" ? columns[3].split(" / ")
-      : section === "Local Hypotheses" ? columns[0].split(" / ")
+      : section.endsWith("Local Hypotheses") ? columns[0].split(" / ")
       : columns.slice(-2);
     assert.deepEqual(counts.map(Number), [model.parameters.active, model.parameters.total], model.name);
     if (section === "EcoLogits And Adaptations") assert.ok(model.sources.some((s) => s.includes("mlco2/ecologits")), model.name);
-    if (section === "LifeArchitect") assert.ok(model.sources.includes("https://lifearchitect.ai/models-table/"), model.name);
-    if (section === "Local Hypotheses") {
-      assert.ok(model.sources.some((s) => s.endsWith("provenance.md#local-hypotheses")), model.name);
+    if (section.endsWith("LifeArchitect")) assert.ok(model.sources.includes("https://lifearchitect.ai/models-table/"), model.name);
+    if (section.endsWith("Local Hypotheses")) {
+      const anchor = section === "Local Hypotheses" ? "local-hypotheses" : "november-2026-local-hypotheses";
+      assert.ok(model.sources.some((s) => s.endsWith(`provenance.md#${anchor}`)), model.name);
       assert.ok(columns[1].length > 80, `${model.name}: missing calculation explanation`);
     }
     checked++;
@@ -98,7 +99,10 @@ test("dated cloud inventory resolves every mapped identifier and explains exclus
     } else assert.ok(row[2].length > 20, `${key}: missing exclusion reason`);
     totals.set(provider, total);
   }
-  assert.equal(observed.size, 452);
+  assert.ok(observed.size >= 452, "Preserve the historical inventory when adding new observations");
+  for (const id of ["aws/anthropic.claude-haiku-5-5", "azure/claude-haiku-5-5", "gcp/claude-haiku-5-5", "gcp/deepseek-v4.1-flash-maas"]) {
+    assert.ok(observed.has(id), id);
+  }
   for (const [p, t] of totals) assert.ok(coverage.includes(`| ${p} | ${t.observed} | ${t.mapped} | ${t.observed - t.mapped} |`), p);
 });
 
@@ -134,4 +138,66 @@ test("new version patterns recognize cloud IDs without swallowing adjacent versi
   assert.ok(!new RegExp(byName.get("grok-4.20-reasoning").pattern, "i").test("grok-4.20-non-reasoning"));
   assert.ok(new RegExp(byName.get("grok-4.20-reasoning").pattern, "i").test("grok-4.20-0309-reasoning"));
   assert.ok(!new RegExp(byName.get("ministral-3b").pattern, "i").test("ministral-3b-2512"));
+});
+
+test("November model additions retain their source-specific sizes and contexts", () => {
+  for (const [name, active, total, context] of [
+    ["claude-haiku-5.5", 15, 400, 1000000],
+    ["claude-fable-5.2", 150, 10000, 1000000],
+    ["claude-mythos-5.2", 150, 10000, 1000000],
+    ["gpt-6.1-terra", 75, 1200, 1050000],
+    ["gemini-4-argon", 150, 6000, 1048576],
+    ["muse-ember-1.0", 8, 120, 1048576],
+    ["mistral-large-4", 52, 1050, 1048576],
+    ["kimi-k3.1-pro", 104, 2800, 1048576],
+    ["minimax-m3.1-flash", 23, 428, 1048576],
+    ["qwen3.8-2.4t-a95b", 95, 2400, 262144],
+    ["qwen3.8-flash-next", 6, 176, 262144],
+    ["gemma-4-e4b-it", 8, 8, 131072],
+    ["embeddinggemma-2", 0.74, 0.74, 8192],
+  ]) {
+    const m = byName.get(name);
+    assert.ok(m, name);
+    assert.deepEqual(m.parameters, { active, total }, name);
+    assert.equal(m.context, context, name);
+    assert.ok(m.sources.length >= 2, `${name}: cross-check sources`);
+    for (const ids of Object.values(m.providers)) {
+      for (const id of ids) assert.ok(new RegExp(m.pattern, "i").test(id), `${name}: ${id}`);
+    }
+  }
+  assert.equal(byName.get("lfm3-1.7b").corpus, 22000);
+  assert.equal(byName.get("embeddinggemma-2").dimension, 768);
+  assert.ok(byName.get("qwen3.8-flash-next").estimated.includes("parameters"));
+  assert.ok(byName.get("cohere-rerank-v5.0-pro").estimated.includes("parameters"));
+  assert.ok(byName.get("claude-haiku-5.5").estimated.includes("architecture"));
+  assert.ok(!byName.get("mistral-large-4").estimated.includes("parameters"));
+  for (const provider of ["anthropic", "aws", "azure", "gcp"]) {
+    assert.ok(byName.get("claude-haiku-5.5").providers[provider].length, provider);
+  }
+});
+
+test("new releases do not inherit old weights, modalities or pattern aliases", () => {
+  for (const [oldName, newName, serviceId] of [
+    ["mistral-ocr-4", "mistral-ocr-4.1", "mistral-ocr-4-1"],
+    ["voxtral-mini-transcribe", "voxtral-mini-transcribe-3", "voxtral-mini-transcribe-3-0"],
+    ["voxtral-mini-transcribe-realtime", "voxtral-mini-transcribe-realtime-3", "voxtral-mini-transcribe-realtime-3-0"],
+    ["voxtral-tts", "voxtral-mini-tts-3", "voxtral-mini-tts-3-0"],
+    ["minimax-m3", "minimax-m3.1-flash", "MiniMax-M3.1-Flash"],
+    ["glm-5.3", "glm-5.3-flash", "zai-glm-5-3-flash"],
+    ["gemini-4-argon", "gemini-4-argon-cyber-permissive", "gemini-4-argon-cyber-permissive"],
+  ]) {
+    assert.ok(!new RegExp(byName.get(oldName).pattern, "i").test(serviceId), `${oldName} consumes ${serviceId}`);
+    assert.ok(new RegExp(byName.get(newName).pattern, "i").test(serviceId), `${newName}: ${serviceId}`);
+  }
+  assert.equal(byName.get("voxtral-mini-transcribe-realtime").open, true);
+  assert.equal(byName.get("voxtral-mini-transcribe-realtime-3").open, false);
+  assert.equal(byName.get("voxtral-mini-tts-3").open, false);
+  assert.equal(byName.get("muse-spark-open").open, true);
+  assert.equal(byName.get("voxtral-small-transcribe-3").tools, true);
+  assert.ok(!("context" in byName.get("voxtral-mini-transcribe-realtime-3")));
+  assert.deepEqual(byName.get("qwen3.8-2.4t-a95b").input, ["text"]);
+  assert.deepEqual(byName.get("gemini-nano-banana-2.1").output, ["text", "image"]);
+  assert.deepEqual(byName.get("gemini-omni-1.2-flash").output, ["text", "video"]);
+  assert.ok(!byName.has("kimi-k3.1-highspeed"));
+  assert.ok(!byName.has("deepseek-v4.1-flash-1017"));
 });

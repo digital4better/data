@@ -17137,5 +17137,3810 @@
     ],
     "virtual": false,
     "embodied": 52.2545
+  },
+  {
+    "id": "dc2eds-v6",
+    "family": "dcedsv6",
+    "name": "dc2eds v6",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "dc4eds-v6",
+    "family": "dcedsv6",
+    "name": "dc4eds v6",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "dc8eds-v6",
+    "family": "dcedsv6",
+    "name": "dc8eds v6",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "dc16eds-v6",
+    "family": "dcedsv6",
+    "name": "dc16eds v6",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "dc32eds-v6",
+    "family": "dcedsv6",
+    "name": "dc32eds v6",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "dc48eds-v6",
+    "family": "dcedsv6",
+    "name": "dc48eds v6",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "dc64eds-v6",
+    "family": "dcedsv6",
+    "name": "dc64eds v6",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 256,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "dc96eds-v6",
+    "family": "dcedsv6",
+    "name": "dc96eds v6",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "dc128eds-v6",
+    "family": "dcedsv6",
+    "name": "dc128eds v6",
+    "category": "general",
+    "vcpus": 128,
+    "memory": 512,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "d2ns-v6",
+    "family": "dnsv6",
+    "name": "d2ns v6",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 8,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d4ns-v6",
+    "family": "dnsv6",
+    "name": "d4ns v6",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 16,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d8ns-v6",
+    "family": "dnsv6",
+    "name": "d8ns v6",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 32,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d16ns-v6",
+    "family": "dnsv6",
+    "name": "d16ns v6",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 64,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d32ns-v6",
+    "family": "dnsv6",
+    "name": "d32ns v6",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 128,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d48ns-v6",
+    "family": "dnsv6",
+    "name": "d48ns v6",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 192,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d64ns-v6",
+    "family": "dnsv6",
+    "name": "d64ns v6",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 256,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d96ns-v6",
+    "family": "dnsv6",
+    "name": "d96ns v6",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 384,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d128ns-v6",
+    "family": "dnsv6",
+    "name": "d128ns v6",
+    "category": "memory",
+    "vcpus": 128,
+    "memory": 512,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d2nls-v6",
+    "family": "dnlsv6",
+    "name": "d2nls v6",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 4,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d4nls-v6",
+    "family": "dnlsv6",
+    "name": "d4nls v6",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 8,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d8nls-v6",
+    "family": "dnlsv6",
+    "name": "d8nls v6",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 16,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d16nls-v6",
+    "family": "dnlsv6",
+    "name": "d16nls v6",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 32,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d32nls-v6",
+    "family": "dnlsv6",
+    "name": "d32nls v6",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 64,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d48nls-v6",
+    "family": "dnlsv6",
+    "name": "d48nls v6",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 96,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d64nls-v6",
+    "family": "dnlsv6",
+    "name": "d64nls v6",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 128,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d96nls-v6",
+    "family": "dnlsv6",
+    "name": "d96nls v6",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 192,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d128nls-v6",
+    "family": "dnlsv6",
+    "name": "d128nls v6",
+    "category": "memory",
+    "vcpus": 128,
+    "memory": 256,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e2ns-v6",
+    "family": "ensv6",
+    "name": "e2ns v6",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 16,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e4ns-v6",
+    "family": "ensv6",
+    "name": "e4ns v6",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 32,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e8ns-v6",
+    "family": "ensv6",
+    "name": "e8ns v6",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 64,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e16ns-v6",
+    "family": "ensv6",
+    "name": "e16ns v6",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 128,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e32ns-v6",
+    "family": "ensv6",
+    "name": "e32ns v6",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 256,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e48ns-v6",
+    "family": "ensv6",
+    "name": "e48ns v6",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 384,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e64ns-v6",
+    "family": "ensv6",
+    "name": "e64ns v6",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 512,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e96ns-v6",
+    "family": "ensv6",
+    "name": "e96ns v6",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 768,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e128ns-v6",
+    "family": "ensv6",
+    "name": "e128ns v6",
+    "category": "memory",
+    "vcpus": 128,
+    "memory": 1024,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "l2aos-v5",
+    "family": "laosv5",
+    "name": "l2aos v5",
+    "category": "storage",
+    "vcpus": 2,
+    "memory": 16,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0,
+    "ssd": 1440,
+    "hdd": 0
+  },
+  {
+    "id": "l4aos-v5",
+    "family": "laosv5",
+    "name": "l4aos v5",
+    "category": "storage",
+    "vcpus": 4,
+    "memory": 32,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0,
+    "ssd": 2880,
+    "hdd": 0
+  },
+  {
+    "id": "l8aos-v5",
+    "family": "laosv5",
+    "name": "l8aos v5",
+    "category": "storage",
+    "vcpus": 8,
+    "memory": 64,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0,
+    "ssd": 5760,
+    "hdd": 0
+  },
+  {
+    "id": "l12aos-v5",
+    "family": "laosv5",
+    "name": "l12aos v5",
+    "category": "storage",
+    "vcpus": 12,
+    "memory": 96,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0,
+    "ssd": 8640,
+    "hdd": 0
+  },
+  {
+    "id": "l16aos-v5",
+    "family": "laosv5",
+    "name": "l16aos v5",
+    "category": "storage",
+    "vcpus": 16,
+    "memory": 128,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0,
+    "ssd": 11520,
+    "hdd": 0
+  },
+  {
+    "id": "l24aos-v5",
+    "family": "laosv5",
+    "name": "l24aos v5",
+    "category": "storage",
+    "vcpus": 24,
+    "memory": 192,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "l32aos-v5",
+    "family": "laosv5",
+    "name": "l32aos v5",
+    "category": "storage",
+    "vcpus": 32,
+    "memory": 256,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "l48aos-v5",
+    "family": "laosv5",
+    "name": "l48aos v5",
+    "category": "storage",
+    "vcpus": 48,
+    "memory": 384,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "l64aos-v5",
+    "family": "laosv5",
+    "name": "l64aos v5",
+    "category": "storage",
+    "vcpus": 64,
+    "memory": 512,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "l96aos-v5",
+    "family": "laosv5",
+    "name": "l96aos v5",
+    "category": "storage",
+    "vcpus": 96,
+    "memory": 768,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "l128aos-v5",
+    "family": "laosv5",
+    "name": "l128aos v5",
+    "category": "storage",
+    "vcpus": 128,
+    "memory": 1024,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "l160iaos-v5",
+    "family": "laosv5",
+    "name": "l160iaos v5",
+    "category": "storage",
+    "vcpus": 160,
+    "memory": 1040,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "l2as-v5",
+    "family": "lasv5",
+    "name": "l2as v5",
+    "category": "storage",
+    "vcpus": 2,
+    "memory": 16,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0,
+    "ssd": 480,
+    "hdd": 0
+  },
+  {
+    "id": "l4as-v5",
+    "family": "lasv5",
+    "name": "l4as v5",
+    "category": "storage",
+    "vcpus": 4,
+    "memory": 32,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0,
+    "ssd": 960,
+    "hdd": 0
+  },
+  {
+    "id": "l8as-v5",
+    "family": "lasv5",
+    "name": "l8as v5",
+    "category": "storage",
+    "vcpus": 8,
+    "memory": 64,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0,
+    "ssd": 1920,
+    "hdd": 0
+  },
+  {
+    "id": "l16as-v5",
+    "family": "lasv5",
+    "name": "l16as v5",
+    "category": "storage",
+    "vcpus": 16,
+    "memory": 128,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0,
+    "ssd": 3840,
+    "hdd": 0
+  },
+  {
+    "id": "l32as-v5",
+    "family": "lasv5",
+    "name": "l32as v5",
+    "category": "storage",
+    "vcpus": 32,
+    "memory": 256,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "l48as-v5",
+    "family": "lasv5",
+    "name": "l48as v5",
+    "category": "storage",
+    "vcpus": 48,
+    "memory": 384,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "l64as-v5",
+    "family": "lasv5",
+    "name": "l64as v5",
+    "category": "storage",
+    "vcpus": 64,
+    "memory": 512,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "l80as-v5",
+    "family": "lasv5",
+    "name": "l80as v5",
+    "category": "storage",
+    "vcpus": 80,
+    "memory": 640,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "l96as-v5",
+    "family": "lasv5",
+    "name": "l96as v5",
+    "category": "storage",
+    "vcpus": 96,
+    "memory": 768,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "l128as-v5",
+    "family": "lasv5",
+    "name": "l128as v5",
+    "category": "storage",
+    "vcpus": 128,
+    "memory": 1024,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "l160ias-v5",
+    "family": "lasv5",
+    "name": "l160ias v5",
+    "category": "storage",
+    "vcpus": 160,
+    "memory": 1280,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "l2s-v4",
+    "family": "lsv4",
+    "name": "l2s v4",
+    "category": "storage",
+    "vcpus": 2,
+    "memory": 16,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 480,
+    "hdd": 0
+  },
+  {
+    "id": "l4s-v4",
+    "family": "lsv4",
+    "name": "l4s v4",
+    "category": "storage",
+    "vcpus": 4,
+    "memory": 32,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l8s-v4",
+    "family": "lsv4",
+    "name": "l8s v4",
+    "category": "storage",
+    "vcpus": 8,
+    "memory": 64,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l16s-v4",
+    "family": "lsv4",
+    "name": "l16s v4",
+    "category": "storage",
+    "vcpus": 16,
+    "memory": 128,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l32s-v4",
+    "family": "lsv4",
+    "name": "l32s v4",
+    "category": "storage",
+    "vcpus": 32,
+    "memory": 256,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l48s-v4",
+    "family": "lsv4",
+    "name": "l48s v4",
+    "category": "storage",
+    "vcpus": 48,
+    "memory": 384,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l64s-v4",
+    "family": "lsv4",
+    "name": "l64s v4",
+    "category": "storage",
+    "vcpus": 64,
+    "memory": 512,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l80s-v4",
+    "family": "lsv4",
+    "name": "l80s v4",
+    "category": "storage",
+    "vcpus": 80,
+    "memory": 640,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l96s-v4",
+    "family": "lsv4",
+    "name": "l96s v4",
+    "category": "storage",
+    "vcpus": 96,
+    "memory": 768,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l2as-v4",
+    "family": "lasv4",
+    "name": "l2as v4",
+    "category": "storage",
+    "vcpus": 2,
+    "memory": 16,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 480,
+    "hdd": 0
+  },
+  {
+    "id": "l4as-v4",
+    "family": "lasv4",
+    "name": "l4as v4",
+    "category": "storage",
+    "vcpus": 4,
+    "memory": 32,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l8as-v4",
+    "family": "lasv4",
+    "name": "l8as v4",
+    "category": "storage",
+    "vcpus": 8,
+    "memory": 64,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l16as-v4",
+    "family": "lasv4",
+    "name": "l16as v4",
+    "category": "storage",
+    "vcpus": 16,
+    "memory": 128,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l32as-v4",
+    "family": "lasv4",
+    "name": "l32as v4",
+    "category": "storage",
+    "vcpus": 32,
+    "memory": 256,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l48as-v4",
+    "family": "lasv4",
+    "name": "l48as v4",
+    "category": "storage",
+    "vcpus": 48,
+    "memory": 384,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l64as-v4",
+    "family": "lasv4",
+    "name": "l64as v4",
+    "category": "storage",
+    "vcpus": 64,
+    "memory": 512,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l80as-v4",
+    "family": "lasv4",
+    "name": "l80as v4",
+    "category": "storage",
+    "vcpus": 80,
+    "memory": 640,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l96as-v4",
+    "family": "lasv4",
+    "name": "l96as v4",
+    "category": "storage",
+    "vcpus": 96,
+    "memory": 768,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l2aos-v4",
+    "family": "laosv4",
+    "name": "l2aos v4",
+    "category": "storage",
+    "vcpus": 2,
+    "memory": 16,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l4aos-v4",
+    "family": "laosv4",
+    "name": "l4aos v4",
+    "category": "storage",
+    "vcpus": 4,
+    "memory": 32,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l8aos-v4",
+    "family": "laosv4",
+    "name": "l8aos v4",
+    "category": "storage",
+    "vcpus": 8,
+    "memory": 64,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l12aos-v4",
+    "family": "laosv4",
+    "name": "l12aos v4",
+    "category": "storage",
+    "vcpus": 12,
+    "memory": 96,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l16aos-v4",
+    "family": "laosv4",
+    "name": "l16aos v4",
+    "category": "storage",
+    "vcpus": 16,
+    "memory": 128,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l24aos-v4",
+    "family": "laosv4",
+    "name": "l24aos v4",
+    "category": "storage",
+    "vcpus": 24,
+    "memory": 192,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "l32aos-v4",
+    "family": "laosv4",
+    "name": "l32aos v4",
+    "category": "storage",
+    "vcpus": 32,
+    "memory": 256,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "nc36ds-xl-rtxpro6000bse-v6",
+    "family": "ncrtxpro6000bsev6",
+    "name": "nc36ds xl rtxpro6000bse v6",
+    "category": "accelerated",
+    "vcpus": 36,
+    "memory": 132,
+    "virtual": true,
+    "accelerators": 0.25,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server"
+  },
+  {
+    "id": "nc72ds-xl-rtxpro6000bse-v6",
+    "family": "ncrtxpro6000bsev6",
+    "name": "nc72ds xl rtxpro6000bse v6",
+    "category": "accelerated",
+    "vcpus": 72,
+    "memory": 264,
+    "virtual": true,
+    "accelerators": 0.5,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server"
+  },
+  {
+    "id": "nc144ds-xl-rtxpro6000bse-v6",
+    "family": "ncrtxpro6000bsev6",
+    "name": "nc144ds xl rtxpro6000bse v6",
+    "category": "accelerated",
+    "vcpus": 144,
+    "memory": 516,
+    "virtual": true,
+    "accelerators": 1,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server"
+  },
+  {
+    "id": "nc288ds-xl-rtxpro6000bse-v6",
+    "family": "ncrtxpro6000bsev6",
+    "name": "nc288ds xl rtxpro6000bse v6",
+    "category": "accelerated",
+    "vcpus": 288,
+    "memory": 1032,
+    "virtual": true,
+    "accelerators": 2,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server"
+  },
+  {
+    "id": "nc24lds-xl-rtxpro6000bse-v6",
+    "family": "ncrtxpro6000bsev6",
+    "name": "nc24lds xl rtxpro6000bse v6",
+    "category": "accelerated",
+    "vcpus": 24,
+    "memory": 72,
+    "virtual": true,
+    "accelerators": 0.25,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server"
+  },
+  {
+    "id": "nc36lds-xl-rtxpro6000bse-v6",
+    "family": "ncrtxpro6000bsev6",
+    "name": "nc36lds xl rtxpro6000bse v6",
+    "category": "accelerated",
+    "vcpus": 36,
+    "memory": 72,
+    "virtual": true,
+    "accelerators": 0.25,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server"
+  },
+  {
+    "id": "nc72lds-xl-rtxpro6000bse-v6",
+    "family": "ncrtxpro6000bsev6",
+    "name": "nc72lds xl rtxpro6000bse v6",
+    "category": "accelerated",
+    "vcpus": 72,
+    "memory": 132,
+    "virtual": true,
+    "accelerators": 0.5,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server"
+  },
+  {
+    "id": "nc144lds-xl-rtxpro6000bse-v6",
+    "family": "ncrtxpro6000bsev6",
+    "name": "nc144lds xl rtxpro6000bse v6",
+    "category": "accelerated",
+    "vcpus": 144,
+    "memory": 264,
+    "virtual": true,
+    "accelerators": 1,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server"
+  },
+  {
+    "id": "nc288lds-xl-rtxpro6000bse-v6",
+    "family": "ncrtxpro6000bsev6",
+    "name": "nc288lds xl rtxpro6000bse v6",
+    "category": "accelerated",
+    "vcpus": 288,
+    "memory": 516,
+    "virtual": true,
+    "accelerators": 2,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server"
+  },
+  {
+    "id": "nd128isr-gb300-v6",
+    "family": "ndgb300v6",
+    "name": "nd128isr gb300 v6",
+    "category": "accelerated",
+    "vcpus": 128,
+    "memory": 864,
+    "virtual": true,
+    "cpu": [
+      "nvidia-grace"
+    ],
+    "accelerators": 4
+  },
+  {
+    "id": "nd128isrg5-gb300-v6",
+    "family": "ndgb300v6",
+    "name": "nd128isrg5 gb300 v6",
+    "category": "accelerated",
+    "vcpus": 128,
+    "memory": 864,
+    "virtual": true,
+    "cpu": [
+      "nvidia-grace"
+    ],
+    "accelerators": 4
+  },
+  {
+    "id": "nd128isr-ndr-gb200-v6",
+    "family": "ndgb200v6",
+    "name": "nd128isr ndr gb200 v6",
+    "category": "accelerated",
+    "vcpus": 128,
+    "memory": 900,
+    "virtual": true,
+    "cpu": [
+      "nvidia-grace"
+    ],
+    "accelerators": 4
+  },
+  {
+    "id": "hb368rs-v5",
+    "family": "hbv5",
+    "name": "hb368rs v5",
+    "category": "performance",
+    "vcpus": 368,
+    "memory": 432,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "hb368-336rs-v5",
+    "family": "hbv5",
+    "name": "hb368-336rs v5",
+    "category": "performance",
+    "vcpus": 336,
+    "memory": 432,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "hb368-288rs-v5",
+    "family": "hbv5",
+    "name": "hb368-288rs v5",
+    "category": "performance",
+    "vcpus": 288,
+    "memory": 432,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "hb368-240rs-v5",
+    "family": "hbv5",
+    "name": "hb368-240rs v5",
+    "category": "performance",
+    "vcpus": 240,
+    "memory": 432,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "hb368-192rs-v5",
+    "family": "hbv5",
+    "name": "hb368-192rs v5",
+    "category": "performance",
+    "vcpus": 192,
+    "memory": 432,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "hb368-144rs-v5",
+    "family": "hbv5",
+    "name": "hb368-144rs v5",
+    "category": "performance",
+    "vcpus": 144,
+    "memory": 432,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "hb368-96rs-v5",
+    "family": "hbv5",
+    "name": "hb368-96rs v5",
+    "category": "performance",
+    "vcpus": 96,
+    "memory": 432,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "hb368-48rs-v5",
+    "family": "hbv5",
+    "name": "hb368-48rs v5",
+    "category": "performance",
+    "vcpus": 48,
+    "memory": 432,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "d2s-v7",
+    "family": "dsv7",
+    "name": "d2s v7",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d4s-v7",
+    "family": "dsv7",
+    "name": "d4s v7",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d8s-v7",
+    "family": "dsv7",
+    "name": "d8s v7",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d16s-v7",
+    "family": "dsv7",
+    "name": "d16s v7",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d32s-v7",
+    "family": "dsv7",
+    "name": "d32s v7",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d48s-v7",
+    "family": "dsv7",
+    "name": "d48s v7",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d64s-v7",
+    "family": "dsv7",
+    "name": "d64s v7",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 256,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d96s-v7",
+    "family": "dsv7",
+    "name": "d96s v7",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d128s-v7",
+    "family": "dsv7",
+    "name": "d128s v7",
+    "category": "general",
+    "vcpus": 128,
+    "memory": 512,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d192s-v7",
+    "family": "dsv7",
+    "name": "d192s v7",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 768,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d248s-v7",
+    "family": "dsv7",
+    "name": "d248s v7",
+    "category": "general",
+    "vcpus": 248,
+    "memory": 992,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d372s-v7",
+    "family": "dsv7",
+    "name": "d372s v7",
+    "category": "general",
+    "vcpus": 372,
+    "memory": 1488,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d2ds-v7",
+    "family": "ddsv7",
+    "name": "d2ds v7",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 110,
+    "hdd": 0
+  },
+  {
+    "id": "d4ds-v7",
+    "family": "ddsv7",
+    "name": "d4ds v7",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 220,
+    "hdd": 0
+  },
+  {
+    "id": "d8ds-v7",
+    "family": "ddsv7",
+    "name": "d8ds v7",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 440,
+    "hdd": 0
+  },
+  {
+    "id": "d16ds-v7",
+    "family": "ddsv7",
+    "name": "d16ds v7",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 880,
+    "hdd": 0
+  },
+  {
+    "id": "d32ds-v7",
+    "family": "ddsv7",
+    "name": "d32ds v7",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 1760,
+    "hdd": 0
+  },
+  {
+    "id": "d48ds-v7",
+    "family": "ddsv7",
+    "name": "d48ds v7",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 2640,
+    "hdd": 0
+  },
+  {
+    "id": "d64ds-v7",
+    "family": "ddsv7",
+    "name": "d64ds v7",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 256,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 3520,
+    "hdd": 0
+  },
+  {
+    "id": "d96ds-v7",
+    "family": "ddsv7",
+    "name": "d96ds v7",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 5280,
+    "hdd": 0
+  },
+  {
+    "id": "d128ds-v7",
+    "family": "ddsv7",
+    "name": "d128ds v7",
+    "category": "general",
+    "vcpus": 128,
+    "memory": 512,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 7040,
+    "hdd": 0
+  },
+  {
+    "id": "d192ds-v7",
+    "family": "ddsv7",
+    "name": "d192ds v7",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 768,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 10560,
+    "hdd": 0
+  },
+  {
+    "id": "d248ds-v7",
+    "family": "ddsv7",
+    "name": "d248ds v7",
+    "category": "general",
+    "vcpus": 248,
+    "memory": 992,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 14080,
+    "hdd": 0
+  },
+  {
+    "id": "d372ds-v7",
+    "family": "ddsv7",
+    "name": "d372ds v7",
+    "category": "general",
+    "vcpus": 372,
+    "memory": 1488,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 21120,
+    "hdd": 0
+  },
+  {
+    "id": "d2ls-v7",
+    "family": "dlsv7",
+    "name": "d2ls v7",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 4,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d4ls-v7",
+    "family": "dlsv7",
+    "name": "d4ls v7",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 8,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d8ls-v7",
+    "family": "dlsv7",
+    "name": "d8ls v7",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 16,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d16ls-v7",
+    "family": "dlsv7",
+    "name": "d16ls v7",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 32,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d32ls-v7",
+    "family": "dlsv7",
+    "name": "d32ls v7",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 64,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d48ls-v7",
+    "family": "dlsv7",
+    "name": "d48ls v7",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 96,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d64ls-v7",
+    "family": "dlsv7",
+    "name": "d64ls v7",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 126,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d96ls-v7",
+    "family": "dlsv7",
+    "name": "d96ls v7",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d128ls-v7",
+    "family": "dlsv7",
+    "name": "d128ls v7",
+    "category": "general",
+    "vcpus": 128,
+    "memory": 256,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d192ls-v7",
+    "family": "dlsv7",
+    "name": "d192ls v7",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 384,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d248ls-v7",
+    "family": "dlsv7",
+    "name": "d248ls v7",
+    "category": "general",
+    "vcpus": 248,
+    "memory": 496,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d2lds-v7",
+    "family": "dldsv7",
+    "name": "d2lds v7",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 4,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 110,
+    "hdd": 0
+  },
+  {
+    "id": "d4lds-v7",
+    "family": "dldsv7",
+    "name": "d4lds v7",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 8,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 220,
+    "hdd": 0
+  },
+  {
+    "id": "d8lds-v7",
+    "family": "dldsv7",
+    "name": "d8lds v7",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 16,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 440,
+    "hdd": 0
+  },
+  {
+    "id": "d16lds-v7",
+    "family": "dldsv7",
+    "name": "d16lds v7",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 32,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 880,
+    "hdd": 0
+  },
+  {
+    "id": "d32lds-v7",
+    "family": "dldsv7",
+    "name": "d32lds v7",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 64,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 1760,
+    "hdd": 0
+  },
+  {
+    "id": "d48lds-v7",
+    "family": "dldsv7",
+    "name": "d48lds v7",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 96,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 2640,
+    "hdd": 0
+  },
+  {
+    "id": "d64lds-v7",
+    "family": "dldsv7",
+    "name": "d64lds v7",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 126,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 3520,
+    "hdd": 0
+  },
+  {
+    "id": "d96lds-v7",
+    "family": "dldsv7",
+    "name": "d96lds v7",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 5280,
+    "hdd": 0
+  },
+  {
+    "id": "d128lds-v7",
+    "family": "dldsv7",
+    "name": "d128lds v7",
+    "category": "general",
+    "vcpus": 128,
+    "memory": 256,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 7040,
+    "hdd": 0
+  },
+  {
+    "id": "d192lds-v7",
+    "family": "dldsv7",
+    "name": "d192lds v7",
+    "category": "general",
+    "vcpus": 192,
+    "memory": 384,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 10560,
+    "hdd": 0
+  },
+  {
+    "id": "d248lds-v7",
+    "family": "dldsv7",
+    "name": "d248lds v7",
+    "category": "general",
+    "vcpus": 248,
+    "memory": 496,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 14080,
+    "hdd": 0
+  },
+  {
+    "id": "d2als-v7",
+    "family": "dalsv7",
+    "name": "d2als v7",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 4,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d4als-v7",
+    "family": "dalsv7",
+    "name": "d4als v7",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 8,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d8als-v7",
+    "family": "dalsv7",
+    "name": "d8als v7",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 16,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d16als-v7",
+    "family": "dalsv7",
+    "name": "d16als v7",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 32,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d32als-v7",
+    "family": "dalsv7",
+    "name": "d32als v7",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 64,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d48als-v7",
+    "family": "dalsv7",
+    "name": "d48als v7",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 96,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d64als-v7",
+    "family": "dalsv7",
+    "name": "d64als v7",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 128,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d96als-v7",
+    "family": "dalsv7",
+    "name": "d96als v7",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 192,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d128als-v7",
+    "family": "dalsv7",
+    "name": "d128als v7",
+    "category": "general",
+    "vcpus": 128,
+    "memory": 256,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d160als-v7",
+    "family": "dalsv7",
+    "name": "d160als v7",
+    "category": "general",
+    "vcpus": 160,
+    "memory": 320,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "d2alds-v7",
+    "family": "daldsv7",
+    "name": "d2alds v7",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 4,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0,
+    "ssd": 110,
+    "hdd": 0
+  },
+  {
+    "id": "d4alds-v7",
+    "family": "daldsv7",
+    "name": "d4alds v7",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 8,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0,
+    "ssd": 220,
+    "hdd": 0
+  },
+  {
+    "id": "d8alds-v7",
+    "family": "daldsv7",
+    "name": "d8alds v7",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 16,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0,
+    "ssd": 440,
+    "hdd": 0
+  },
+  {
+    "id": "d16alds-v7",
+    "family": "daldsv7",
+    "name": "d16alds v7",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 32,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "d32alds-v7",
+    "family": "daldsv7",
+    "name": "d32alds v7",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 64,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "d48alds-v7",
+    "family": "daldsv7",
+    "name": "d48alds v7",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 96,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "d64alds-v7",
+    "family": "daldsv7",
+    "name": "d64alds v7",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 128,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "d96alds-v7",
+    "family": "daldsv7",
+    "name": "d96alds v7",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 192,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "d128alds-v7",
+    "family": "daldsv7",
+    "name": "d128alds v7",
+    "category": "general",
+    "vcpus": 128,
+    "memory": 256,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "d160alds-v7",
+    "family": "daldsv7",
+    "name": "d160alds v7",
+    "category": "general",
+    "vcpus": 160,
+    "memory": 320,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "dc2as-v6",
+    "family": "dcasv6",
+    "name": "dc2as v6",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "dc4as-v6",
+    "family": "dcasv6",
+    "name": "dc4as v6",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "dc8as-v6",
+    "family": "dcasv6",
+    "name": "dc8as v6",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "dc16as-v6",
+    "family": "dcasv6",
+    "name": "dc16as v6",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "dc32as-v6",
+    "family": "dcasv6",
+    "name": "dc32as v6",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "dc48as-v6",
+    "family": "dcasv6",
+    "name": "dc48as v6",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "dc64as-v6",
+    "family": "dcasv6",
+    "name": "dc64as v6",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 256,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "dc96as-v6",
+    "family": "dcasv6",
+    "name": "dc96as v6",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "dc2ads-v6",
+    "family": "dcadsv6",
+    "name": "dc2ads v6",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 75,
+    "hdd": 0
+  },
+  {
+    "id": "dc4ads-v6",
+    "family": "dcadsv6",
+    "name": "dc4ads v6",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 150,
+    "hdd": 0
+  },
+  {
+    "id": "dc8ads-v6",
+    "family": "dcadsv6",
+    "name": "dc8ads v6",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 300,
+    "hdd": 0
+  },
+  {
+    "id": "dc16ads-v6",
+    "family": "dcadsv6",
+    "name": "dc16ads v6",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 600,
+    "hdd": 0
+  },
+  {
+    "id": "dc32ads-v6",
+    "family": "dcadsv6",
+    "name": "dc32ads v6",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 1200,
+    "hdd": 0
+  },
+  {
+    "id": "dc48ads-v6",
+    "family": "dcadsv6",
+    "name": "dc48ads v6",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 1800,
+    "hdd": 0
+  },
+  {
+    "id": "dc64ads-v6",
+    "family": "dcadsv6",
+    "name": "dc64ads v6",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 256,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 2400,
+    "hdd": 0
+  },
+  {
+    "id": "dc96ads-v6",
+    "family": "dcadsv6",
+    "name": "dc96ads v6",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "virtual": true,
+    "accelerators": 0,
+    "ssd": 3600,
+    "hdd": 0
+  },
+  {
+    "id": "dc2es-v6",
+    "family": "dcesv6",
+    "name": "dc2es v6",
+    "category": "general",
+    "vcpus": 2,
+    "memory": 8,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "dc4es-v6",
+    "family": "dcesv6",
+    "name": "dc4es v6",
+    "category": "general",
+    "vcpus": 4,
+    "memory": 16,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "dc8es-v6",
+    "family": "dcesv6",
+    "name": "dc8es v6",
+    "category": "general",
+    "vcpus": 8,
+    "memory": 32,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "dc16es-v6",
+    "family": "dcesv6",
+    "name": "dc16es v6",
+    "category": "general",
+    "vcpus": 16,
+    "memory": 64,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "dc32es-v6",
+    "family": "dcesv6",
+    "name": "dc32es v6",
+    "category": "general",
+    "vcpus": 32,
+    "memory": 128,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "dc48es-v6",
+    "family": "dcesv6",
+    "name": "dc48es v6",
+    "category": "general",
+    "vcpus": 48,
+    "memory": 192,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "dc64es-v6",
+    "family": "dcesv6",
+    "name": "dc64es v6",
+    "category": "general",
+    "vcpus": 64,
+    "memory": 256,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "dc96es-v6",
+    "family": "dcesv6",
+    "name": "dc96es v6",
+    "category": "general",
+    "vcpus": 96,
+    "memory": 384,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "dc128es-v6",
+    "family": "dcesv6",
+    "name": "dc128es v6",
+    "category": "general",
+    "vcpus": 128,
+    "memory": 512,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f1ams-v7",
+    "family": "famsv7",
+    "name": "f1ams v7",
+    "category": "compute",
+    "vcpus": 1,
+    "memory": 8,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f2ams-v7",
+    "family": "famsv7",
+    "name": "f2ams v7",
+    "category": "compute",
+    "vcpus": 2,
+    "memory": 16,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f4ams-v7",
+    "family": "famsv7",
+    "name": "f4ams v7",
+    "category": "compute",
+    "vcpus": 4,
+    "memory": 32,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f8ams-v7",
+    "family": "famsv7",
+    "name": "f8ams v7",
+    "category": "compute",
+    "vcpus": 8,
+    "memory": 64,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f16ams-v7",
+    "family": "famsv7",
+    "name": "f16ams v7",
+    "category": "compute",
+    "vcpus": 16,
+    "memory": 128,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f32ams-v7",
+    "family": "famsv7",
+    "name": "f32ams v7",
+    "category": "compute",
+    "vcpus": 32,
+    "memory": 256,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f48ams-v7",
+    "family": "famsv7",
+    "name": "f48ams v7",
+    "category": "compute",
+    "vcpus": 48,
+    "memory": 384,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f64ams-v7",
+    "family": "famsv7",
+    "name": "f64ams v7",
+    "category": "compute",
+    "vcpus": 64,
+    "memory": 512,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f80ams-v7",
+    "family": "famsv7",
+    "name": "f80ams v7",
+    "category": "compute",
+    "vcpus": 80,
+    "memory": 640,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f1amds-v7",
+    "family": "famdsv7",
+    "name": "f1amds v7",
+    "category": "compute",
+    "vcpus": 1,
+    "memory": 8,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0,
+    "ssd": 110,
+    "hdd": 0
+  },
+  {
+    "id": "f2amds-v7",
+    "family": "famdsv7",
+    "name": "f2amds v7",
+    "category": "compute",
+    "vcpus": 2,
+    "memory": 16,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0,
+    "ssd": 220,
+    "hdd": 0
+  },
+  {
+    "id": "f4amds-v7",
+    "family": "famdsv7",
+    "name": "f4amds v7",
+    "category": "compute",
+    "vcpus": 4,
+    "memory": 32,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0,
+    "ssd": 440,
+    "hdd": 0
+  },
+  {
+    "id": "f8amds-v7",
+    "family": "famdsv7",
+    "name": "f8amds v7",
+    "category": "compute",
+    "vcpus": 8,
+    "memory": 64,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "f16amds-v7",
+    "family": "famdsv7",
+    "name": "f16amds v7",
+    "category": "compute",
+    "vcpus": 16,
+    "memory": 128,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "f32amds-v7",
+    "family": "famdsv7",
+    "name": "f32amds v7",
+    "category": "compute",
+    "vcpus": 32,
+    "memory": 256,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "f48amds-v7",
+    "family": "famdsv7",
+    "name": "f48amds v7",
+    "category": "compute",
+    "vcpus": 48,
+    "memory": 384,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "f64amds-v7",
+    "family": "famdsv7",
+    "name": "f64amds v7",
+    "category": "compute",
+    "vcpus": 64,
+    "memory": 512,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "f80amds-v7",
+    "family": "famdsv7",
+    "name": "f80amds v7",
+    "category": "compute",
+    "vcpus": 80,
+    "memory": 640,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "f1als-v7",
+    "family": "falsv7",
+    "name": "f1als v7",
+    "category": "compute",
+    "vcpus": 1,
+    "memory": 2,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f2als-v7",
+    "family": "falsv7",
+    "name": "f2als v7",
+    "category": "compute",
+    "vcpus": 2,
+    "memory": 4,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f4als-v7",
+    "family": "falsv7",
+    "name": "f4als v7",
+    "category": "compute",
+    "vcpus": 4,
+    "memory": 8,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f8als-v7",
+    "family": "falsv7",
+    "name": "f8als v7",
+    "category": "compute",
+    "vcpus": 8,
+    "memory": 16,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f16als-v7",
+    "family": "falsv7",
+    "name": "f16als v7",
+    "category": "compute",
+    "vcpus": 16,
+    "memory": 32,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f32als-v7",
+    "family": "falsv7",
+    "name": "f32als v7",
+    "category": "compute",
+    "vcpus": 32,
+    "memory": 64,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f48als-v7",
+    "family": "falsv7",
+    "name": "f48als v7",
+    "category": "compute",
+    "vcpus": 48,
+    "memory": 96,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f64als-v7",
+    "family": "falsv7",
+    "name": "f64als v7",
+    "category": "compute",
+    "vcpus": 64,
+    "memory": 128,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f80als-v7",
+    "family": "falsv7",
+    "name": "f80als v7",
+    "category": "compute",
+    "vcpus": 80,
+    "memory": 160,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "f1alds-v7",
+    "family": "faldsv7",
+    "name": "f1alds v7",
+    "category": "compute",
+    "vcpus": 1,
+    "memory": 2,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0,
+    "ssd": 110,
+    "hdd": 0
+  },
+  {
+    "id": "f2alds-v7",
+    "family": "faldsv7",
+    "name": "f2alds v7",
+    "category": "compute",
+    "vcpus": 2,
+    "memory": 4,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0,
+    "ssd": 220,
+    "hdd": 0
+  },
+  {
+    "id": "f4alds-v7",
+    "family": "faldsv7",
+    "name": "f4alds v7",
+    "category": "compute",
+    "vcpus": 4,
+    "memory": 8,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0,
+    "ssd": 440,
+    "hdd": 0
+  },
+  {
+    "id": "f8alds-v7",
+    "family": "faldsv7",
+    "name": "f8alds v7",
+    "category": "compute",
+    "vcpus": 8,
+    "memory": 16,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "f16alds-v7",
+    "family": "faldsv7",
+    "name": "f16alds v7",
+    "category": "compute",
+    "vcpus": 16,
+    "memory": 32,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "f32alds-v7",
+    "family": "faldsv7",
+    "name": "f32alds v7",
+    "category": "compute",
+    "vcpus": 32,
+    "memory": 64,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "f48alds-v7",
+    "family": "faldsv7",
+    "name": "f48alds v7",
+    "category": "compute",
+    "vcpus": 48,
+    "memory": 96,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "f64alds-v7",
+    "family": "faldsv7",
+    "name": "f64alds v7",
+    "category": "compute",
+    "vcpus": 64,
+    "memory": 128,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "f80alds-v7",
+    "family": "faldsv7",
+    "name": "f80alds v7",
+    "category": "compute",
+    "vcpus": 80,
+    "memory": 160,
+    "virtual": true,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "accelerators": 0
+  },
+  {
+    "id": "e2s-v7",
+    "family": "esv7",
+    "name": "e2s v7",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 16,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e4s-v7",
+    "family": "esv7",
+    "name": "e4s v7",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 32,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e8s-v7",
+    "family": "esv7",
+    "name": "e8s v7",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 64,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e16s-v7",
+    "family": "esv7",
+    "name": "e16s v7",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 128,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e20s-v7",
+    "family": "esv7",
+    "name": "e20s v7",
+    "category": "memory",
+    "vcpus": 20,
+    "memory": 160,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e32s-v7",
+    "family": "esv7",
+    "name": "e32s v7",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 256,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e48s-v7",
+    "family": "esv7",
+    "name": "e48s v7",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 384,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e64s-v7",
+    "family": "esv7",
+    "name": "e64s v7",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 512,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e96s-v7",
+    "family": "esv7",
+    "name": "e96s v7",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 768,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e128s-v7",
+    "family": "esv7",
+    "name": "e128s v7",
+    "category": "memory",
+    "vcpus": 128,
+    "memory": 1024,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e192s-v7",
+    "family": "esv7",
+    "name": "e192s v7",
+    "category": "memory",
+    "vcpus": 192,
+    "memory": 1536,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e248s-v7",
+    "family": "esv7",
+    "name": "e248s v7",
+    "category": "memory",
+    "vcpus": 248,
+    "memory": 1888,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e372is-v7",
+    "family": "esv7",
+    "name": "e372is v7",
+    "category": "memory",
+    "vcpus": 372,
+    "memory": 2832,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e2ds-v7",
+    "family": "edsv7",
+    "name": "e2ds v7",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 16,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e4ds-v7",
+    "family": "edsv7",
+    "name": "e4ds v7",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 32,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e8ds-v7",
+    "family": "edsv7",
+    "name": "e8ds v7",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 64,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e16ds-v7",
+    "family": "edsv7",
+    "name": "e16ds v7",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 128,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e20ds-v7",
+    "family": "edsv7",
+    "name": "e20ds v7",
+    "category": "memory",
+    "vcpus": 20,
+    "memory": 160,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e32ds-v7",
+    "family": "edsv7",
+    "name": "e32ds v7",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 256,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e48ds-v7",
+    "family": "edsv7",
+    "name": "e48ds v7",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 384,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e64ds-v7",
+    "family": "edsv7",
+    "name": "e64ds v7",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 512,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e96ds-v7",
+    "family": "edsv7",
+    "name": "e96ds v7",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 768,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e128ds-v7",
+    "family": "edsv7",
+    "name": "e128ds v7",
+    "category": "memory",
+    "vcpus": 128,
+    "memory": 1024,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e192ds-v7",
+    "family": "edsv7",
+    "name": "e192ds v7",
+    "category": "memory",
+    "vcpus": 192,
+    "memory": 1536,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e248ds-v7",
+    "family": "edsv7",
+    "name": "e248ds v7",
+    "category": "memory",
+    "vcpus": 248,
+    "memory": 1888,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e372ids-v7",
+    "family": "edsv7",
+    "name": "e372ids v7",
+    "category": "memory",
+    "vcpus": 372,
+    "memory": 2832,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e2bs-v6",
+    "family": "ebsv6",
+    "name": "e2bs v6",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 16,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e4bs-v6",
+    "family": "ebsv6",
+    "name": "e4bs v6",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 32,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e8bs-v6",
+    "family": "ebsv6",
+    "name": "e8bs v6",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 64,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e16bs-v6",
+    "family": "ebsv6",
+    "name": "e16bs v6",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 128,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e32bs-v6",
+    "family": "ebsv6",
+    "name": "e32bs v6",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 256,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e48bs-v6",
+    "family": "ebsv6",
+    "name": "e48bs v6",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 384,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e64bs-v6",
+    "family": "ebsv6",
+    "name": "e64bs v6",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 512,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e96bs-v6",
+    "family": "ebsv6",
+    "name": "e96bs v6",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 768,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e128bs-v6",
+    "family": "ebsv6",
+    "name": "e128bs v6",
+    "category": "memory",
+    "vcpus": 128,
+    "memory": 1024,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e192ibs-v6",
+    "family": "ebsv6",
+    "name": "e192ibs v6",
+    "category": "memory",
+    "vcpus": 192,
+    "memory": 1832,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "e2bds-v6",
+    "family": "ebdsv6",
+    "name": "e2bds v6",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 16,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e4bds-v6",
+    "family": "ebdsv6",
+    "name": "e4bds v6",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 32,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e8bds-v6",
+    "family": "ebdsv6",
+    "name": "e8bds v6",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 64,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e16bds-v6",
+    "family": "ebdsv6",
+    "name": "e16bds v6",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 128,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e32bds-v6",
+    "family": "ebdsv6",
+    "name": "e32bds v6",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 256,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e48bds-v6",
+    "family": "ebdsv6",
+    "name": "e48bds v6",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 384,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e64bds-v6",
+    "family": "ebdsv6",
+    "name": "e64bds v6",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 512,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e96bds-v6",
+    "family": "ebdsv6",
+    "name": "e96bds v6",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 768,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e128bds-v6",
+    "family": "ebdsv6",
+    "name": "e128bds v6",
+    "category": "memory",
+    "vcpus": 128,
+    "memory": 1024,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "e192ibds-v6",
+    "family": "ebdsv6",
+    "name": "e192ibds v6",
+    "category": "memory",
+    "vcpus": 192,
+    "memory": 1832,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "ec2as-v6",
+    "family": "ecasv6",
+    "name": "ec2as v6",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 16,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "ec4as-v6",
+    "family": "ecasv6",
+    "name": "ec4as v6",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 32,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "ec8as-v6",
+    "family": "ecasv6",
+    "name": "ec8as v6",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 64,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "ec16as-v6",
+    "family": "ecasv6",
+    "name": "ec16as v6",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 128,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "ec32as-v6",
+    "family": "ecasv6",
+    "name": "ec32as v6",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 256,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "ec48as-v6",
+    "family": "ecasv6",
+    "name": "ec48as v6",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 384,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "ec64as-v6",
+    "family": "ecasv6",
+    "name": "ec64as v6",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 512,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "ec96as-v6",
+    "family": "ecasv6",
+    "name": "ec96as v6",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 672,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "ec2ads-v6",
+    "family": "ecadsv6",
+    "name": "ec2ads v6",
+    "category": "memory",
+    "vcpus": 2,
+    "memory": 16,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "ec4ads-v6",
+    "family": "ecadsv6",
+    "name": "ec4ads v6",
+    "category": "memory",
+    "vcpus": 4,
+    "memory": 32,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "ec8ads-v6",
+    "family": "ecadsv6",
+    "name": "ec8ads v6",
+    "category": "memory",
+    "vcpus": 8,
+    "memory": 64,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "ec16ads-v6",
+    "family": "ecadsv6",
+    "name": "ec16ads v6",
+    "category": "memory",
+    "vcpus": 16,
+    "memory": 128,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "ec32ads-v6",
+    "family": "ecadsv6",
+    "name": "ec32ads v6",
+    "category": "memory",
+    "vcpus": 32,
+    "memory": 256,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "ec48ads-v6",
+    "family": "ecadsv6",
+    "name": "ec48ads v6",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 384,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "ec64ads-v6",
+    "family": "ecadsv6",
+    "name": "ec64ads v6",
+    "category": "memory",
+    "vcpus": 64,
+    "memory": 512,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "ec96ads-v6",
+    "family": "ecadsv6",
+    "name": "ec96ads v6",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 672,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "m48s-1-v3",
+    "family": "msv3mm",
+    "name": "m48s 1 v3",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 974,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "m96s-1-v3",
+    "family": "msv3mm",
+    "name": "m96s 1 v3",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 974,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "m96s-2-v3",
+    "family": "msv3mm",
+    "name": "m96s 2 v3",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 1946,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "m176s-3-v3",
+    "family": "msv3mm",
+    "name": "m176s 3 v3",
+    "category": "memory",
+    "vcpus": 176,
+    "memory": 2794,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "m176s-4-v3",
+    "family": "msv3mm",
+    "name": "m176s 4 v3",
+    "category": "memory",
+    "vcpus": 176,
+    "memory": 3892,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "m48ds-1-v3",
+    "family": "mdsv3mm",
+    "name": "m48ds 1 v3",
+    "category": "memory",
+    "vcpus": 48,
+    "memory": 974,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "m96ds-1-v3",
+    "family": "mdsv3mm",
+    "name": "m96ds 1 v3",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 974,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "m96ds-2-v3",
+    "family": "mdsv3mm",
+    "name": "m96ds 2 v3",
+    "category": "memory",
+    "vcpus": 96,
+    "memory": 1946,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "m176ds-3-v3",
+    "family": "mdsv3mm",
+    "name": "m176ds 3 v3",
+    "category": "memory",
+    "vcpus": 176,
+    "memory": 2794,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "m176ds-4-v3",
+    "family": "mdsv3mm",
+    "name": "m176ds 4 v3",
+    "category": "memory",
+    "vcpus": 176,
+    "memory": 3892,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "m416s-6-v3",
+    "family": "msv3hm",
+    "name": "m416s 6 v3",
+    "category": "memory",
+    "vcpus": 416,
+    "memory": 5696,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "m416s-8-v3",
+    "family": "msv3hm",
+    "name": "m416s 8 v3",
+    "category": "memory",
+    "vcpus": 416,
+    "memory": 7600,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "m624s-12-v3",
+    "family": "msv3hm",
+    "name": "m624s 12 v3",
+    "category": "memory",
+    "vcpus": 624,
+    "memory": 11400,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "m832s-12-v3",
+    "family": "msv3hm",
+    "name": "m832s 12 v3",
+    "category": "memory",
+    "vcpus": 832,
+    "memory": 11400,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "m832is-16-v3",
+    "family": "msv3hm",
+    "name": "m832is 16 v3",
+    "category": "memory",
+    "vcpus": 832,
+    "memory": 15200,
+    "virtual": true,
+    "ssd": 0,
+    "hdd": 0,
+    "accelerators": 0
+  },
+  {
+    "id": "m416ds-6-v3",
+    "family": "mdsv3hm",
+    "name": "m416ds 6 v3",
+    "category": "memory",
+    "vcpus": 416,
+    "memory": 5696,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "m416ds-8-v3",
+    "family": "mdsv3hm",
+    "name": "m416ds 8 v3",
+    "category": "memory",
+    "vcpus": 416,
+    "memory": 7600,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "m624ds-12-v3",
+    "family": "mdsv3hm",
+    "name": "m624ds 12 v3",
+    "category": "memory",
+    "vcpus": 624,
+    "memory": 11400,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "m832ds-12-v3",
+    "family": "mdsv3hm",
+    "name": "m832ds 12 v3",
+    "category": "memory",
+    "vcpus": 832,
+    "memory": 11400,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "m832ids-16-v3",
+    "family": "mdsv3hm",
+    "name": "m832ids 16 v3",
+    "category": "memory",
+    "vcpus": 832,
+    "memory": 15200,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "m896ixds-32-v3",
+    "family": "mdsv3vhm",
+    "name": "m896ixds 32 v3",
+    "category": "memory",
+    "vcpus": 896,
+    "memory": 30400,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "m896ixds-24-v3",
+    "family": "mdsv3vhm",
+    "name": "m896ixds 24 v3",
+    "category": "memory",
+    "vcpus": 896,
+    "memory": 23088,
+    "virtual": true,
+    "accelerators": 0
+  },
+  {
+    "id": "m1792ixds-32-v3",
+    "family": "mdsv3vhm",
+    "name": "m1792ixds 32 v3",
+    "category": "memory",
+    "vcpus": 1792,
+    "memory": 30400,
+    "virtual": true,
+    "accelerators": 0
   }
 ]

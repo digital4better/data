@@ -106,5 +106,26 @@
     "pue": 1.5,
     "wue": 0.22,
     "ref": 1
+  },
+  {
+    "id": "it-mil-1",
+    "name": "it-mil-1",
+    "provider": "scaleway",
+    "location": "Milan",
+    "country": "it"
+  },
+  {
+    "id": "it-mil-2",
+    "name": "it-mil-2",
+    "provider": "scaleway",
+    "location": "Milan",
+    "country": "it"
+  },
+  {
+    "id": "it-mil-3",
+    "name": "it-mil-3",
+    "provider": "scaleway",
+    "location": "Milan",
+    "country": "it"
   }
 ]

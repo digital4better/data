@@ -489,5 +489,28 @@
     "pue": 1.09,
     "wue": 0.785,
     "ref": 0.64
+  },
+  {
+    "id": "asia-southeast3",
+    "name": "asia-southeast3",
+    "provider": "gcp",
+    "location": "Bangkok",
+    "country": "th"
+  },
+  {
+    "id": "europe-north2",
+    "name": "europe-north2",
+    "provider": "gcp",
+    "location": "Stockholm",
+    "country": "se",
+    "ref": 1
+  },
+  {
+    "id": "northamerica-south1",
+    "name": "northamerica-south1",
+    "provider": "gcp",
+    "location": "Queretaro",
+    "country": "mx",
+    "ref": 0.25
   }
 ]

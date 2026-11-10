@@ -2755,5 +2755,102 @@
     ],
     "accelerators": 0,
     "virtual": true
+  },
+  {
+    "provider": "oracle",
+    "id": "bm-standard4-ax-120",
+    "family": "standard4ax",
+    "name": "BM.Standard4.Ax.120",
+    "shape": "BM.Standard4.Ax.120",
+    "category": "general",
+    "ocpus": 120,
+    "vcpus": 240,
+    "memory": 1152,
+    "virtual": false,
+    "accelerators": 0,
+    "ssd": 0,
+    "hdd": 0
+  },
+  {
+    "provider": "oracle",
+    "id": "bm-standard-e6-ax-192",
+    "family": "standarde6ax",
+    "name": "BM.Standard.E6.Ax.192",
+    "shape": "BM.Standard.E6.Ax.192",
+    "category": "general",
+    "ocpus": 192,
+    "vcpus": 384,
+    "memory": 1536,
+    "virtual": false,
+    "accelerators": 0,
+    "cpu": [
+      "amd-epyc-9j45"
+    ]
+  },
+  {
+    "provider": "oracle",
+    "id": "bm-standard-a4-ax-48",
+    "family": "standarda4ax",
+    "name": "BM.Standard.A4.Ax.48",
+    "shape": "BM.Standard.A4.Ax.48",
+    "category": "general",
+    "ocpus": 48,
+    "vcpus": 96,
+    "memory": 768,
+    "virtual": false,
+    "accelerators": 0
+  },
+  {
+    "provider": "oracle",
+    "id": "bm-denseio-e6-ax-192",
+    "family": "denseioe6ax",
+    "name": "BM.DenseIO.E6.Ax.192",
+    "shape": "BM.DenseIO.E6.Ax.192",
+    "category": "storage",
+    "ocpus": 192,
+    "vcpus": 384,
+    "memory": 2304,
+    "virtual": false,
+    "accelerators": 0,
+    "cpu": [
+      "amd-epyc-9j45"
+    ],
+    "ssd": 163200,
+    "hdd": 0
+  },
+  {
+    "provider": "oracle",
+    "id": "bm-gpu-rtxpro-8",
+    "family": "gpurtxpro",
+    "name": "BM.GPU.RTXPRO.8",
+    "shape": "BM.GPU.RTXPRO.8",
+    "category": "accelerated",
+    "ocpus": 144,
+    "vcpus": 288,
+    "memory": 3072,
+    "virtual": false,
+    "accelerators": 8,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server",
+    "ssd": 61440,
+    "hdd": 0
+  },
+  {
+    "provider": "oracle",
+    "id": "bm-gpu-b300-8",
+    "family": "gpub300",
+    "name": "BM.GPU.B300.8",
+    "shape": "BM.GPU.B300.8",
+    "category": "accelerated",
+    "ocpus": 128,
+    "vcpus": 256,
+    "memory": 4096,
+    "virtual": false,
+    "accelerators": 8,
+    "accelerator": "nvidia-blackwell-b300",
+    "cpu": [
+      "intel-xeon-8592plus"
+    ],
+    "ssd": 30720,
+    "hdd": 0
   }
 ]

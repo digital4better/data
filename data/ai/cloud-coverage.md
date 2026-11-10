@@ -1,6 +1,6 @@
 # Cloud Catalog Coverage
 
-Audit date: 2026-10-01. This inventory records each identifier or documentation label found in the inspected public catalog pages, its source, and its disposition. It is not an authenticated regional deployment inventory.
+Baseline audit: 2026-10-01; additive refresh: 2026-11-10. This inventory records each identifier or documentation label found in the inspected public catalog pages, its source, and its disposition. It is not an authenticated regional deployment inventory.
 
 Scope: Bedrock model cards; Azure directly sold and partner model documentation; Google managed Gemini, partner and open-model documentation; OVHcloud AI Endpoints; Scaleway Generative APIs. Arbitrary Hugging Face imports, the entire AWS Marketplace, and every Azure/Google self-deployable community model are not enumerated.
 
@@ -8,11 +8,11 @@ Historical, retired, preview and restricted-access entries are retained. Regiona
 
 | Provider | Observed entries | Linked to a model | Not integrated |
 | --- | ---: | ---: | ---: |
-| aws | 143 | 130 | 13 |
-| azure | 150 | 147 | 3 |
-| gcp | 95 | 92 | 3 |
-| ovhcloud | 20 | 20 | 0 |
-| scaleway | 44 | 44 | 0 |
+| aws | 157 | 144 | 13 |
+| azure | 161 | 158 | 3 |
+| gcp | 106 | 103 | 3 |
+| ovhcloud | 21 | 21 | 0 |
+| scaleway | 96 | 96 | 0 |
 
 All identifiable fixed models in this inspected scope are linked below, including models whose hidden size is represented by a [documented local hypothesis](./provenance.md#local-hypotheses). These assumptions do not establish actual parameter counts. Exclusions are service operations, dynamic routers, redundant documentation labels and an ambiguous fine-tuning label. This is exhaustive for the observed pages, not for every cloud marketplace or future release.
 
@@ -21,6 +21,18 @@ All identifiable fixed models in this inspected scope are linked below, includin
 The old text-only `ministral-3b` (Azure Ministral-3B / Mistral 2410) is separate from the open vision model `ministral-3-3b` (AWS Ministral 3 3B / Mistral 2512). Similarly, `o1-preview` is not mapped to the later `o1` endpoint.
 
 Context reflects the documented native model limit when available, not necessarily the lower cloud hosting limit. Examples: Palmyra X5 advertises 1M natively versus 128K on its Bedrock card; Grok 4.1 Fast advertises 2M versus smaller Azure/GCP limits. For Marengo/Pegasus and multimodalembedding, context is the text-input limit, not a tokenization of the allowed video duration. Sora 2 is retained as a historical model even though its native API was shut down on 2026-09-24.
+
+## November 2026 Review
+
+The totals below are cumulative observations, not a count of currently orderable deployments. All historical mappings and exclusion rows are preserved. The [source review](./provenance.md#november-2026-source-review) records the catalogs consulted on 2026-11-10.
+
+- Every new model-card link found in the AWS index was checked. New releases and older missing Ray2/Stable Image generation models are represented; cross-region-only GLM 5.3 and Pegasus 1.5 use the documented inference profile IDs.
+- Azure's new Cohere Embed/Rerank 5 models and Haiku/Fable/Mythos IDs are mapped. Fast tiers stay in the same canonical record. GPT-6.1 Terra's Google offering is a private preview; Mythos requires verification.
+- Google's new Argon, Nano Banana, Omni and Meta partner entries are mapped, along with DeepSeek-V4.1-Flash MaaS. Cyber Permissive requires allowlist access. Preview availability is not a guarantee of general regional access.
+- OVHcloud's current public catalog API returned 21 records, all already represented (including the two existing SDXL canonical duplicates). The Mistral Small 3.2 API row supplements the older 20-row website inventory.
+- Scaleway's explicit vendor-prefixed and quantization-suffixed deployment IDs are added to existing models. Dedicated-deployment options are not automatically serverless offerings.
+- Cohere documents Embed 5 and Rerank 5 on SageMaker, but its endpoint names are deployment-specific. No fake Bedrock ID is created; the JSON lists the verified native/Azure IDs. This is a known representation limit, not a claim that AWS cannot host them.
+- Mistral now hosts GLM 5.3, GLM 5.3 Flash and DeepSeek-V4.1-Flash-1017 unchanged. Native vendor cloud mappings are in the JSON; the five-provider inventory below retains its original scope.
 
 ## AWS
 
@@ -169,6 +181,21 @@ Context reflects the documented native model limit when available, not necessari
 | `zai.glm-4.7` | `glm-4.7` | [Official source](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-glm-4-7.html) |
 | `zai.glm-4.7-flash` | `glm-4.7-flash` | [Official source](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-glm-4-7-flash.html) |
 | `zai.glm-5` | `glm-5` | [Official source](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-glm-5.html) |
+| `anthropic.claude-haiku-5-5` | `claude-haiku-5.5` | [Official source](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-haiku-5-5.html) |
+| `anthropic.claude-fable-5-2` | `claude-fable-5.2` | [Official source](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-fable-5-2.html) |
+| `anthropic.claude-mythos-5-2` | `claude-mythos-5.2` | [Official source](https://platform.claude.com/docs/en/models/mythos-5-2/overview) |
+| `openai.gpt-6.1-terra` | `gpt-6.1-terra` | [Official source](https://developers.openai.com/api/docs/models/gpt-6.1-terra) |
+| `amazon.nova-2-5-sonic` | `amazon-nova-2.5-sonic` | [Official source](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-5-sonic.html) |
+| `us.twelvelabs.pegasus-1-5-v1:0` | `pegasus-1.5` | [Official source](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-twelvelabs-pegasus-v1-5.html) |
+| `global.twelvelabs.pegasus-1-5-v1:0` | `pegasus-1.5` | [Official source](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-twelvelabs-pegasus-v1-5.html) |
+| `moonshotai.kimi-k3.1` | `kimi-k3.1-pro` | [Official source](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k3-1-highspeed.html) |
+| `us.zai.glm-5.3` | `glm-5.3` | [Official source](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-glm-5-3.html) |
+| `global.zai.glm-5.3` | `glm-5.3` | [Official source](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-glm-5-3.html) |
+| `stability.sd3-5-large-v1:0` | `stable-diffusion-3.5-large` | [Official source](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-stability-ai-stable-diffusion-3-5-large.html) |
+| `stability.stable-image-ultra-v1:1` | `stable-image-ultra` | [Official source](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-stability-ai-stable-image-ultra-1-0.html) |
+| `stability.stable-image-core-v1:1` | `stable-image-core` | [Official source](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-stability-ai-stable-image-core-1-0.html) |
+| `luma.ray-v2:0` | `luma-ray-2` | [Official source](https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-luma-ai-ray2.html) |
+
 
 ## AZURE
 
@@ -324,6 +351,18 @@ Context reflects the documented native model limit when available, not necessari
 | `tts` | `tts-1` | [Official source](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure) |
 | `tts-hd` | `tts-1-hd` | [Official source](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure) |
 | `whisper` | `whisper-1` | [Official source](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure) |
+| `claude-haiku-5-5` | `claude-haiku-5.5` | [Official source](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners) |
+| `claude-fable-5-2` | `claude-fable-5.2` | [Official source](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners) |
+| `claude-fable-5-2-fast` | `claude-fable-5.2` | [Official source](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners) |
+| `claude-mythos-5-2` | `claude-mythos-5.2` | [Official source](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners) |
+| `claude-mythos-5-2-fast` | `claude-mythos-5.2` | [Official source](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners) |
+| `gpt-6.1-terra` | `gpt-6.1-terra` | [Official source](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure) |
+| `Cohere-rerank-v5-fast` | `cohere-rerank-v5.0-fast` | [Official source](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure) |
+| `Cohere-rerank-v5-pro` | `cohere-rerank-v5.0-pro` | [Official source](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure) |
+| `Cohere-embed-v5-Fast` | `cohere-embed-v5.0-fast` | [Official source](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure) |
+| `Cohere-embed-v5-Pro` | `cohere-embed-v5.0-pro` | [Official source](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure) |
+| `DeepSeek-V4.1-Flash` | `deepseek-v4.1-flash` | [Official source](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure) |
+
 
 ## GCP
 
@@ -424,11 +463,24 @@ Context reflects the documented native model limit when available, not necessari
 | `veo-3.1-fast-generate-001` | `veo-3.1-fast` | [Official source](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-0-generate#3.0-generate-001) |
 | `veo-3.1-generate-001` | `veo-3.1` | [Official source](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-0-generate#3.0-generate-001) |
 | `veo-3.1-lite-generate-001` | `veo-3.1-lite` | [Official source](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-1-generate#3.1-generate-001) |
+| `claude-haiku-5-5` | `claude-haiku-5.5` | [Official source](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/haiku-5-5) |
+| `claude-fable-5-2` | `claude-fable-5.2` | [Official source](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/fable-5-2) |
+| `claude-mythos-5-2` | `claude-mythos-5.2` | [Official source](https://platform.claude.com/docs/en/models/mythos-5-2/overview) |
+| `gpt-6.1-terra` | `gpt-6.1-terra` | [Official source](https://developers.openai.com/api/docs/models/gpt-6.1-terra) |
+| `gemini-4-argon` | `gemini-4-argon` | [Official source](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/4-argon) |
+| `gemini-4-argon-cyber-permissive` | `gemini-4-argon-cyber-permissive` | [Official source](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/4-argon) |
+| `gemini-nano-banana-2.1` | `gemini-nano-banana-2.1` | [Official source](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/nano-banana-2-1) |
+| `gemini-omni-1.2-flash` | `gemini-omni-1.2-flash` | [Official source](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/omni-1-2-flash) |
+| `meta/muse-ember-1.0` | `muse-ember-1.0` | [Official source](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-ember-1-0) |
+| `meta/muse-wonder-1.0` | `muse-wonder-1.0` | [Official source](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-wonder-1-0) |
+| `deepseek-v4.1-flash-maas` | `deepseek-v4.1-flash` | [Official source](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/deepseek/deepseek-v41-flash) |
+
 
 ## OVHCLOUD
 
 | Observed identifier | Canonical model or reason not integrated | Evidence |
 | --- | --- | --- |
+| `mistral-small-3-2-24b-instruct-2506` | `mistral-small-3.2-24b` | [Official source](https://catalog.endpoints.ai.ovh.net/rest/v1/models_v2) |
 | `bge-m3` | `bge-m3` | [Official source](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/) |
 | `bge-multilingual-gemma2` | `bge-multilingual-gemma2` | [Official source](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/) |
 | `gpt-oss-120b` | `gpt-oss-120b` | [Official source](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/) |
@@ -449,6 +501,7 @@ Context reflects the documented native model limit when available, not necessari
 | `stable-diffusion-xl-base-v10` | `stable-diffusion-xl-base-v1.0` | [Official source](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/) |
 | `whisper-large-v3` | `whisper-large-v3` | [Official source](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/) |
 | `whisper-large-v3-turbo` | `whisper-large-v3-turbo` | [Official source](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/) |
+
 
 ## SCALEWAY
 
@@ -498,3 +551,55 @@ Context reflects the documented native model limit when available, not necessari
 | `sentence-t5-xxl` | `sentence-t5-xxl` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
 | `voxtral-small-24b-2507` | `voxtral-small-24b-2507` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
 | `whisper-large-v3` | `whisper-large-v3` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `qwen/qwen3.6-35b-a3b:bf16` | `qwen3.6-35b-a3b` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `qwen/qwen3.6-35b-a3b:fp8` | `qwen3.6-35b-a3b` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `qwen/qwen3.5-397b-a17b:int4` | `qwen3.5-397b-a17b` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `qwen/qwen3.5-35b-a3b:int4` | `qwen3.5-35b-a3b` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `qwen/qwen3.5-122b-a10b:int4` | `qwen3.5-122b-a10b` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `google/gemma-4-31b-it:bf16` | `gemma-4-31b-it` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `google/gemma-3-27b-it:bf16` | `gemma-3-27b-it` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `google/gemma-4-26b-a4b-it:bf16` | `gemma-4-26b-a4b-it` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/mistral-large-3-675b-instruct-2512:fp4` | `mistral-large-3` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/mistral-medium-3.5-128b:fp8` | `mistral-medium-3.5` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/mistral-small-3.2-24b-instruct-2506:fp8` | `mistral-small-3.2-24b` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/mistral-small-3.1-24b-instruct-2503:bf16` | `mistral-small-3.1-24b-instruct-2503` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/mistral-small-3.1-24b-instruct-2503:fp8` | `mistral-small-3.1-24b-instruct-2503` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/pixtral-12b-2409:bf16` | `pixtral-12b-2409` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `hcompany/holo2-30b-a3b:bf16` | `holo2-30b-a3b` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `allenai/molmo-72b-0924:fp8` | `molmo-72b` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/voxtral-small-24b-2507:bf16` | `voxtral-small-24b-2507` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/voxtral-small-24b-2507:fp8` | `voxtral-small-24b-2507` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `openai/whisper-large-v3:bf16` | `whisper-large-v3` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `deepseek/deepseek-r1-distill-llama-70b:fp8` | `deepseek-r1-distill-llama-70b` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `deepseek/deepseek-r1-distill-llama-70b:bf16` | `deepseek-r1-distill-llama-70b` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `deepseek/deepseek-r1-distill-llama-8b:fp8` | `deepseek-r1-distill-llama-8b` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `deepseek/deepseek-r1-distill-llama-8b:bf16` | `deepseek-r1-distill-llama-8b` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `qwen/qwen3-235b-a22b-instruct-2507` | `qwen3-235b-a22b-instruct-2507` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `qwen/qwen3-235b-a22b-thinking-2507:awq` | `qwen3-235b-a22b-thinking` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `openai/gpt-oss-120b:fp4` | `gpt-oss-120b` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `openai/gpt-oss-20b:fp4` | `gpt-oss-20b` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `meta/llama-3.3-70b-instruct:fp8` | `llama-3.3-70b-instruct` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `meta/llama-3.3-70b-instruct:bf16` | `llama-3.3-70b-instruct` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `meta/llama-3.1-70b-instruct:fp8` | `llama-3.1-70b-instruct` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `meta/llama-3.1-70b-instruct:bf16` | `llama-3.1-70b-instruct` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `meta/llama-3.1-8b-instruct:fp8` | `llama-3.1-8b-instruct` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `meta/llama-3.1-8b-instruct:bf16` | `llama-3.1-8b-instruct` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `meta/llama-3-8b-instruct:bf16` | `llama-3-8b-instruct` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `meta/llama-3-70b-instruct:fp8` | `llama-3-70b-instruct` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `nvidia/llama-3.1-nemotron-70b-instruct:fp8` | `llama-3.1-nemotron-70b-instruct` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/mixtral-8x7b-instruct-v0.1:fp8` | `mixtral-8x7b-instruct` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/mixtral-8x7b-instruct-v0.1:bf16` | `mixtral-8x7b-instruct` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/mistral-7b-instruct-v0.3:bf16` | `mistral-7b-instruct-v0.3` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/mistral-small-24b-instruct-2501:fp8` | `mistral-small-3` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/mistral-small-24b-instruct-2501:bf16` | `mistral-small-3` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/mistral-nemo-instruct-2407:fp8` | `mistral-nemo-instruct-2407` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/magistral-small-2506:fp8` | `magistral-small-2506` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/magistral-small-2506:bf16` | `magistral-small-2506` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `qwen/qwen3-coder-30b-a3b-instruct:fp8` | `qwen3-coder-30b-a3b-instruct` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `qwen/qwen2.5-coder-32b-instruct:int8` | `qwen2.5-coder-32b-instruct` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/devstral-2-123b-instruct-2512:fp8` | `devstral-2-123b-instruct-2512` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/devstral-small-2505:fp8` | `devstral-small-2505` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `mistral/devstral-small-2505:bf16` | `devstral-small-2505` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `minimaxai/minimax-m2.5:nvfp4` | `minimax-m2.5` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `baai/bge-multilingual-gemma2:fp32` | `bge-multilingual-gemma2` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |
+| `sentence-transformers/sentence-t5-xxl:fp32` | `sentence-t5-xxl` | [Official source](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/) |

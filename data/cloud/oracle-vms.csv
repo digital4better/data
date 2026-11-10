@@ -139,3 +139,9 @@ vm-standard-e3-flex-8ocpu-128gb,standarde3flex,VM.Standard.E3.Flex (8 OCPU / 128
 vm-standard-e3-flex-16ocpu-256gb,standarde3flex,VM.Standard.E3.Flex (16 OCPU / 256 GB),general,32,256,0,0,amd-epyc-7742,0,,1
 vm-standard-e3-flex-32ocpu-512gb,standarde3flex,VM.Standard.E3.Flex (32 OCPU / 512 GB),general,64,512,0,0,amd-epyc-7742,0,,1
 vm-standard-e3-flex-64ocpu-1024gb,standarde3flex,VM.Standard.E3.Flex (64 OCPU / 1024 GB),general,128,1024,0,0,amd-epyc-7742,0,,1
+bm-standard4-ax-120,standard4ax,BM.Standard4.Ax.120,general,240,1152,0,0,,0,,
+bm-standard-e6-ax-192,standarde6ax,BM.Standard.E6.Ax.192,general,384,1536,,,amd-epyc-9j45,0,,
+bm-standard-a4-ax-48,standarda4ax,BM.Standard.A4.Ax.48,general,96,768,,,,0,,
+bm-denseio-e6-ax-192,denseioe6ax,BM.DenseIO.E6.Ax.192,storage,384,2304,163200,0,amd-epyc-9j45,0,,
+bm-gpu-rtxpro-8,gpurtxpro,BM.GPU.RTXPRO.8,accelerated,288,3072,61440,0,,8,nvidia-rtx-pro-6000-blackwell-server,
+bm-gpu-b300-8,gpub300,BM.GPU.B300.8,accelerated,256,4096,30720,0,intel-xeon-8592plus,8,nvidia-blackwell-b300,

@@ -153,6 +153,8 @@ Values are shares, normally between 0 and 1, rather than percentages or impact f
 
 The provider prefixes are `aws`, `azure`, `gcp`, `oracle`, `ovhcloud` and `scaleway`. Each has `<provider>-regions.json` and `<provider>-vms.json`, with matching CSV files. Shared [cpus.json](https://digital4better.github.io/data/cloud/cpus.json) and [accelerators.json](https://digital4better.github.io/data/cloud/accelerators.json) describe hardware. JSON roots are arrays of records. Provider catalogs describe reference offerings and may include historical entries, not a real-time availability check.
 
+The [cloud reference notes](https://digital4better.github.io/data/cloud/README.md) record refresh scope, source URLs, capacity units, limitations and approved before/after corrections. Git history provides the per-record changes. Old identifiers are retained even when offers retire. New unverified fields are omitted (empty CSV cells), never silently filled with zero or a neighboring offer's values. A missing coordinate prevents map placement, not use in tables; a missing environmental factor prevents that calculation unless a separately justified fallback is chosen.
+
 ### Regions
 
 Common fields include `id`, `name`, optional `aliases`, `provider`, `location`, `country`, `lat`, `lon`, `pue`, `wue` and `ref`. Match provider-specific identifiers and aliases before joining to another catalog. Coordinates are reference locations, not exact datacenter addresses.
@@ -174,7 +176,7 @@ Check reporting year, regional versus global scope, method and units before comp
 
 ### Machines and hardware
 
-Machine fields can include `id`, `name`, `family`, `category`, `vcpus`, `ocpus`, `memory`, `ssd`, `hdd`, `cpu`, `accelerator`, `accelerators`, `virtual` and `embodied`. Not every field occurs in every provider. Some provider machine files include bare-metal entries: check `virtual` rather than treating every entry as virtual. Memory and storage are documented in GB. `embodied` describes a modeled embodied climate impact in tCO2e, not electricity use or a per-kWh factor.
+Machine fields can include `id`, `name`, `family`, `category`, `vcpus`, `ocpus`, `memory`, `ssd`, `hdd`, `cpu`, `accelerator`, `accelerators`, `virtual` and `embodied`. Not every field occurs in every provider. Some provider machine files include bare-metal entries: check `virtual` rather than treating every entry as virtual. Capacity numbers retain the provider's published scale: GB and GiB are not interchangeable. For new additions, consult the unit table in the cloud reference notes; historical capacities were not globally converted. `ssd`/`hdd` do not include optional attachable network disks. Fractional `accelerators` denote documented GPU slices rather than physical board counts. `embodied` describes a modeled embodied climate impact in tCO2e, not electricity use or a per-kWh factor; new records omit it when no verified value is available.
 
 CPU references include manufacturer, series/model, architecture/platform, cores, threads, TDP, process, die area, transistors and socket support where available. Accelerator references include type, manufacturer, model, memory and hardware characteristics. TDP is a thermal design envelope in W, not a workload-specific electricity measurement. Check the actual record types: some source fields are strings or lists. Do not silently reinterpret zero placeholders, comma decimal strings, scalar CPU references or arrays.
 

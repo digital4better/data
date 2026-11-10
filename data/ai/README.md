@@ -2,7 +2,7 @@
 
 This catalog combines public model specifications with explicitly marked estimates for undisclosed properties. It is used for reference and calculation: a populated parameter count is **not** evidence that a vendor has published its weights or architecture.
 
-Audit date: **2026-10-01**. See the [model-by-model parameter provenance](./provenance.md) and the [cloud coverage inventory](./cloud-coverage.md). These documents distinguish published facts, third-party estimates, local hypotheses and unresolved historical values.
+Latest refresh: **2026-11-10**, supplementing the **2026-10-01** audit without removing historical records. See the [model-by-model parameter provenance](./provenance.md) and the [cloud coverage inventory](./cloud-coverage.md). These documents distinguish published facts, third-party estimates, local hypotheses and unresolved historical values.
 
 ## Sources And Attribution
 

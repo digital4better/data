@@ -61,6 +61,8 @@ Closed-model sizes are estimates, not vendor disclosures. The audit distinguishe
 
 The cloud referentials in [`data/cloud`](./data/cloud) provide structured information for major providers including AWS, Azure, GCP, Oracle Cloud Infrastructure, OVHcloud, and Scaleway.
 
+See the [cloud reference notes](./data/cloud/README.md) for dated refreshes, source evidence and coverage limits. Historical offers are retained. New entries omit unverified specifications and environmental values instead of copying assumptions from another offer; empty fields do not mean zero.
+
 Typical use cases:
 
 - mapping regions and datacenter footprints

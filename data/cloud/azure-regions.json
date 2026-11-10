@@ -1114,5 +1114,15 @@
       "https://datacenters.microsoft.com/sustainability/efficiency/"
     ],
     "notes": "PUE and WUE (L/kWh) are estimates using Microsoft's published FY25 Asia Pacific aggregate, not measurements of this cloud region. FY25 covers July 2024 to June 2025 and fully owned and controlled datacenters operational for 12 months; local performance may differ. Coordinates approximate the locality, not a datacenter address. REF=0 is a conservative fallback: no renewable-energy share is credited without region-specific evidence; it is not a measured value."
+  },
+  {
+    "id": "asia-south-east-3",
+    "aliases": [
+      "southeastasia3"
+    ],
+    "name": "Southeast Asia 3",
+    "provider": "azure",
+    "location": "Johor Bahru",
+    "country": "my"
   }
 ]
