@@ -32,4 +32,4 @@ Before reporting missing data, inspect the relevant collection and check the exa
 - [Website documentation index](https://digital4better.github.io/data/llms.txt): Bilingual collection pages and guides for the current website snapshot.
 - [Website catalog](https://digital4better.github.io/data/catalog.json): Current published dataset metadata and download URLs; check against the installed package before use.
 
-For cloud instances, prefer `embodied_allocated`; VM `embodied` is deprecated. Resolve `host` in the same provider's `*-hosts.json`. Host impacts and instance impacts are distinct; read the full reference before applying lifetime allocation.
+For cloud instances, prefer `embodied_allocated`; VM `embodied` is deprecated. Resolve `host` in the same provider's `*-hosts.json`. `host_instances` is the modeled maximum number of identical instances per host; allocated impact equals host impact divided by this count. Read the full reference before applying lifetime allocation.

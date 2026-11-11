@@ -994,7 +994,6 @@ const generateClouds = async () => {
       "embodied",
       "embodied_allocated",
       "host",
-      "host_share",
       "host_instances",
     ]);
     const hosts = JSON.parse(readFileSync(`./data/cloud/${cloud}-hosts.json`, "utf-8"));

@@ -33,11 +33,10 @@ test('all instances resolve a same-provider host and have complete allocated and
       assert.ok(h,key);
       assert.ok(Number.isFinite(v.embodied)&&v.embodied>0,key);
       assert.ok(Number.isFinite(v.embodied_allocated)&&v.embodied_allocated>0,key);
-      assert.ok(v.host_share>0&&v.host_share<=1,key);
+      assert.ok(!Object.hasOwn(v,'host_share'),key);
       assert.ok(Number.isInteger(v.host_instances)&&v.host_instances>=1,key);
-      assert.equal(v.host_share,1/v.host_instances,key);
-      assert.ok(Math.abs(v.embodied_allocated-h.embodied*v.host_share)<=1e-10,key);
-      if(v.virtual===false)assert.equal(v.host_share,1,key);
+      assert.ok(Math.abs(v.embodied_allocated-h.embodied/v.host_instances)<=1e-10,key);
+      if(v.virtual===false)assert.equal(v.host_instances,1,key);
       const legacy=inputs.legacyEmbodied[key];
       assert.equal(v.embodied,legacy??v.embodied_allocated,key);
     }
@@ -86,7 +85,7 @@ test('fallback profiles and non-GPU coefficients are explicit and never silently
   const all=providers.flatMap(p=>read(p,'hosts'));
   for(const h of all.filter(h=>['dedicated-equivalent-fallback','desktop-rack-equivalent'].includes(h.basis))){
     assert.ok(h.assumptions.some(s=>s.includes('fallback')));
-    for(const v of catalogs[h.provider].filter(v=>v.host===h.id))assert.equal(v.host_share,1);
+    for(const v of catalogs[h.provider].filter(v=>v.host===h.id))assert.equal(v.host_instances,1);
   }
   const h={id:'test',vcpus:32,memory:16,sockets:1,ssd_count:0,hdd_count:0,accelerators:1,accelerator_memory:32};
   assert.equal(calculateHost(h),1.1721904);
@@ -100,4 +99,13 @@ test('provider host and VM CSVs are flat and agree with every JSON record',()=>{
     records.forEach((r,i)=>assert.deepEqual(rows[i],header.map(k=>r[k]==null?'':kind==='hosts'&&['sources','assumptions'].includes(k)?r[k].join(' | '):String(r[k])),`${p}/${r.id}`));
     if(kind==='vms')for(const row of rows)for(const field of ['embodied','embodied_allocated'])assert.ok(Number(row[header.indexOf(field)])>0);
   }
+});
+
+test('generation removes the redundant host share without altering other fields',()=>{
+  const previous=structuredClone(catalogs);
+  for(const rows of Object.values(previous))for(const vm of rows)vm.host_share=1/vm.host_instances;
+  const result=generate(previous,inputs);
+  assert.deepEqual(result.vms,catalogs);
+  assert.ok(Object.hasOwn(previous.aws[0],'host_share'));
+  assert.ok(!Object.hasOwn(allocate({id:'v',vcpus:1,memory:16},{id:'h',vcpus:2,memory:32,embodied:1}),'host_share'));
 });

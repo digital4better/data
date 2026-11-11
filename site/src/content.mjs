@@ -287,7 +287,6 @@ export const fieldLabels = {
   embodied: ["Impact de fabrication (tCO₂e)", "Embodied impact (tCO₂e)"],
   embodied_allocated: ["Fabrication allouée à l'instance (tCO₂e)", "Instance-allocated manufacturing impact (tCO₂e)"],
   host: ["Identifiant du profil d'hôte", "Host profile identifier"],
-  host_share: ["Part de l'impact de l'hôte (0–1)", "Share of host impact (0–1)"],
   host_instances: ["Instances identiques par hôte (hypothèse)", "Identical instances per host (modeled)"],
   sockets: ["Sockets CPU physiques modélisés", "Modeled physical CPU sockets"],
   ssd_count: ["Nombre de SSD physiques modélisés", "Modeled physical SSD count"],

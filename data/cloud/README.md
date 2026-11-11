@@ -55,7 +55,6 @@ Every JSON file contains an array of objects; its CSV counterpart has one row pe
 | `embodied` | tCO2e | Deprecated compatibility value; historical allocation scope varies. |
 | `host` | ID | Profile in the same provider's host catalog. |
 | `host_instances` | Positive integer | Maximum modeled number of identical instances per host. |
-| `host_share` | Fraction, 0 to 1 | `1 / host_instances`. |
 | `virtual` | Boolean | `false` for bare metal (JSON-only). |
 | `provider`, `shape` | Text | Provider or original shape, when specified (JSON-only). |
 | `ocpus` | Oracle OCPU count | Provider allocation unit; conversion to vCPUs depends on platform (JSON-only). |
@@ -140,7 +139,6 @@ host kgCO2e = 1000
             + accelerator count × (150 + max(0, accelerator memory - 16) × 1.3869)
 
 embodied_allocated = host.embodied / host_instances
-host_share = 1 / host_instances
 ```
 
 Host RAM is at least 16 GB; the base already includes those 16 GB and one socket. Divide kgCO2e by 1000 for tCO2e. Accelerator memory is per modeled board. The VRAM extension and its application to ASIC/FPGA are D4B approximations; unknown accelerator memory uses a documented 16 GB placeholder.

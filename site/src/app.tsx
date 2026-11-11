@@ -822,7 +822,7 @@ function Explorer({
     ? d.id.endsWith("regions")
       ? ["id", "country", "location", "pue", "wue", "ref"]
       : d.id.endsWith("vms")
-      ? ["name", "category", "vcpus", "memory", "embodied_allocated", "host", "host_share"]
+      ? ["name", "category", "vcpus", "memory", "embodied_allocated", "host", "host_instances"]
       : d.id.endsWith("hosts")
       ? ["id", "basis", "vcpus", "memory", "sockets", "accelerators", "embodied"]
       : d.id === "cpus"

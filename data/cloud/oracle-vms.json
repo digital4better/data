@@ -19,7 +19,6 @@
     "virtual": false,
     "embodied_allocated": 2.4979952,
     "host": "oracle-bm-standard3-64-2c6ba9be0d",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -42,7 +41,6 @@
     "virtual": false,
     "embodied_allocated": 3.9181808,
     "host": "oracle-bm-standard-e4-128-0a547e4d06",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -65,7 +63,6 @@
     "virtual": false,
     "embodied_allocated": 4.2732272,
     "host": "oracle-bm-standard-e5-192-580e73f869",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -88,7 +85,6 @@
     "virtual": false,
     "embodied_allocated": 5.5383664,
     "host": "oracle-bm-standard-e6-256-11d709b605",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -111,7 +107,6 @@
     "virtual": false,
     "embodied_allocated": 2.4979952,
     "host": "oracle-bm-standard-a1-160-cd4f5cadb1",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -134,7 +129,6 @@
     "virtual": false,
     "embodied_allocated": 2.1429488,
     "host": "oracle-bm-standard-a4-48-6537547274",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -157,7 +151,6 @@
     "virtual": false,
     "embodied_allocated": 4.7181808,
     "host": "oracle-bm-denseio-e4-128-61ec7f049b",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -180,7 +173,6 @@
     "virtual": false,
     "embodied_allocated": 3.308088,
     "host": "oracle-bm-denseio-e5-128-d4a2855268",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -204,7 +196,6 @@
     "virtual": false,
     "embodied_allocated": 1.6440944,
     "host": "oracle-bm-gpu2-2-0c1f7ffc02",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -228,7 +219,6 @@
     "virtual": false,
     "embodied_allocated": 3.3429488,
     "host": "oracle-bm-gpu3-8-938c8d2684",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -252,7 +242,6 @@
     "virtual": false,
     "embodied_allocated": 5.7844656,
     "host": "oracle-bm-gpu4-8-65f495096d",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -276,7 +265,6 @@
     "virtual": false,
     "embodied_allocated": 3.342376,
     "host": "oracle-bm-gpu-a10-4-f6b1163f2b",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -300,7 +288,6 @@
     "virtual": false,
     "embodied_allocated": 6.2282736,
     "host": "oracle-bm-gpu-a100-v2-8-ec279bfa04",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -324,7 +311,6 @@
     "virtual": false,
     "embodied_allocated": 7.870936,
     "host": "oracle-bm-gpu-mi300x-8-e7c4b060e1",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -348,7 +334,6 @@
     "virtual": false,
     "embodied_allocated": 10.3562608,
     "host": "oracle-bm-gpu-mi355x-8-85ccae89cc",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -372,7 +357,6 @@
     "virtual": false,
     "embodied_allocated": 3.4755184,
     "host": "oracle-bm-gpu-l40s-4-49e024be07",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -396,7 +380,6 @@
     "virtual": false,
     "embodied_allocated": 7.4282736,
     "host": "oracle-bm-gpu-h100-8-5299f9cc70",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -420,7 +403,6 @@
     "virtual": false,
     "embodied_allocated": 8.7252664,
     "host": "oracle-bm-gpu-h200-8-17a135532d",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -444,7 +426,6 @@
     "virtual": false,
     "embodied_allocated": 10.5781648,
     "host": "oracle-bm-gpu-b200-8-2e632d67e3",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -468,7 +449,6 @@
     "virtual": false,
     "embodied_allocated": 4.2856112,
     "host": "oracle-bm-gpu-gb200-4-b0be41793b",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -492,7 +472,6 @@
     "virtual": false,
     "embodied_allocated": 4.8181808,
     "host": "oracle-bm-gpu-gb300-4-7d1a92c2df",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -515,7 +494,6 @@
     "virtual": false,
     "embodied_allocated": 1.8879024,
     "host": "oracle-bm-optimized3-36-8d657d91c3",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -538,7 +516,6 @@
     "virtual": false,
     "embodied_allocated": 2.2429488,
     "host": "oracle-bm-hpc-e5-144-c0ade8bb14",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -563,7 +540,6 @@
     "virtual": true,
     "embodied_allocated": 0.027935975,
     "host": "oracle-dvh-standard-e2-64-f9f20bae83",
-    "host_share": 0.015625,
     "host_instances": 64
   },
   {
@@ -587,7 +563,6 @@
     "virtual": true,
     "embodied_allocated": 0.039031175,
     "host": "oracle-dvh-standard3-64-54bee77558",
-    "host_share": 0.015625,
     "host_instances": 64
   },
   {
@@ -611,7 +586,6 @@
     "virtual": true,
     "embodied_allocated": 0.07806235,
     "host": "oracle-dvh-standard3-64-54bee77558",
-    "host_share": 0.03125,
     "host_instances": 32
   },
   {
@@ -635,7 +609,6 @@
     "virtual": true,
     "embodied_allocated": 0.1561247,
     "host": "oracle-dvh-standard3-64-54bee77558",
-    "host_share": 0.0625,
     "host_instances": 16
   },
   {
@@ -659,7 +632,6 @@
     "virtual": true,
     "embodied_allocated": 0.3122494,
     "host": "oracle-dvh-standard3-64-54bee77558",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -683,7 +655,6 @@
     "virtual": true,
     "embodied_allocated": 0.6244988,
     "host": "oracle-dvh-standard3-64-54bee77558",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -707,7 +678,6 @@
     "virtual": true,
     "embodied_allocated": 1.2489976,
     "host": "oracle-dvh-standard3-64-54bee77558",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -731,7 +701,6 @@
     "virtual": true,
     "embodied_allocated": 0.0306107875,
     "host": "oracle-dvh-standard-e4-128-ae46575324",
-    "host_share": 0.0078125,
     "host_instances": 128
   },
   {
@@ -755,7 +724,6 @@
     "virtual": true,
     "embodied_allocated": 0.061221575,
     "host": "oracle-dvh-standard-e4-128-ae46575324",
-    "host_share": 0.015625,
     "host_instances": 64
   },
   {
@@ -779,7 +747,6 @@
     "virtual": true,
     "embodied_allocated": 0.12244315,
     "host": "oracle-dvh-standard-e4-128-ae46575324",
-    "host_share": 0.03125,
     "host_instances": 32
   },
   {
@@ -803,7 +770,6 @@
     "virtual": true,
     "embodied_allocated": 0.2448863,
     "host": "oracle-dvh-standard-e4-128-ae46575324",
-    "host_share": 0.0625,
     "host_instances": 16
   },
   {
@@ -827,7 +793,6 @@
     "virtual": true,
     "embodied_allocated": 0.4897726,
     "host": "oracle-dvh-standard-e4-128-ae46575324",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -851,7 +816,6 @@
     "virtual": true,
     "embodied_allocated": 0.9795452,
     "host": "oracle-dvh-standard-e4-128-ae46575324",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -875,7 +839,6 @@
     "virtual": true,
     "embodied_allocated": 1.9590904,
     "host": "oracle-dvh-standard-e4-128-ae46575324",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -899,7 +862,6 @@
     "virtual": true,
     "embodied_allocated": 0.0222563917,
     "host": "oracle-dvh-standard-e5-192-15806037af",
-    "host_share": 0.005208333333333333,
     "host_instances": 192
   },
   {
@@ -923,7 +885,6 @@
     "virtual": true,
     "embodied_allocated": 0.0445127833,
     "host": "oracle-dvh-standard-e5-192-15806037af",
-    "host_share": 0.010416666666666666,
     "host_instances": 96
   },
   {
@@ -947,7 +908,6 @@
     "virtual": true,
     "embodied_allocated": 0.0890255667,
     "host": "oracle-dvh-standard-e5-192-15806037af",
-    "host_share": 0.020833333333333332,
     "host_instances": 48
   },
   {
@@ -971,7 +931,6 @@
     "virtual": true,
     "embodied_allocated": 0.1780511333,
     "host": "oracle-dvh-standard-e5-192-15806037af",
-    "host_share": 0.041666666666666664,
     "host_instances": 24
   },
   {
@@ -995,7 +954,6 @@
     "virtual": true,
     "embodied_allocated": 0.3561022667,
     "host": "oracle-dvh-standard-e5-192-15806037af",
-    "host_share": 0.08333333333333333,
     "host_instances": 12
   },
   {
@@ -1019,7 +977,6 @@
     "virtual": true,
     "embodied_allocated": 0.7122045333,
     "host": "oracle-dvh-standard-e5-192-15806037af",
-    "host_share": 0.16666666666666666,
     "host_instances": 6
   },
   {
@@ -1043,7 +1000,6 @@
     "virtual": true,
     "embodied_allocated": 1.4244090667,
     "host": "oracle-dvh-standard-e5-192-15806037af",
-    "host_share": 0.3333333333333333,
     "host_instances": 3
   },
   {
@@ -1067,7 +1023,6 @@
     "virtual": true,
     "embodied_allocated": 2.1366136,
     "host": "oracle-dvh-standard-e5-192-15806037af",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -1091,7 +1046,6 @@
     "virtual": true,
     "embodied_allocated": 4.2732272,
     "host": "oracle-dvh-standard-e5-192-15806037af",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1115,7 +1069,6 @@
     "virtual": true,
     "embodied_allocated": 0.0216342438,
     "host": "oracle-bm-standard-e6-256-5530da10ec",
-    "host_share": 0.00390625,
     "host_instances": 256
   },
   {
@@ -1139,7 +1092,6 @@
     "virtual": true,
     "embodied_allocated": 0.0432684875,
     "host": "oracle-bm-standard-e6-256-5530da10ec",
-    "host_share": 0.0078125,
     "host_instances": 128
   },
   {
@@ -1163,7 +1115,6 @@
     "virtual": true,
     "embodied_allocated": 0.086536975,
     "host": "oracle-bm-standard-e6-256-5530da10ec",
-    "host_share": 0.015625,
     "host_instances": 64
   },
   {
@@ -1187,7 +1138,6 @@
     "virtual": true,
     "embodied_allocated": 0.17307395,
     "host": "oracle-bm-standard-e6-256-5530da10ec",
-    "host_share": 0.03125,
     "host_instances": 32
   },
   {
@@ -1211,7 +1161,6 @@
     "virtual": true,
     "embodied_allocated": 0.3461479,
     "host": "oracle-bm-standard-e6-256-5530da10ec",
-    "host_share": 0.0625,
     "host_instances": 16
   },
   {
@@ -1235,7 +1184,6 @@
     "virtual": true,
     "embodied_allocated": 0.6922958,
     "host": "oracle-bm-standard-e6-256-5530da10ec",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -1259,7 +1207,6 @@
     "virtual": true,
     "embodied_allocated": 1.3845916,
     "host": "oracle-bm-standard-e6-256-5530da10ec",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -1283,7 +1230,6 @@
     "virtual": true,
     "embodied_allocated": 2.7691832,
     "host": "oracle-bm-standard-e6-256-5530da10ec",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -1307,7 +1253,6 @@
     "virtual": true,
     "embodied_allocated": 2.7691832,
     "host": "oracle-bm-standard-e6-256-5530da10ec",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -1331,7 +1276,6 @@
     "virtual": true,
     "embodied_allocated": 0.01561247,
     "host": "oracle-bm-standard-a1-160-4bcd44b30a",
-    "host_share": 0.00625,
     "host_instances": 160
   },
   {
@@ -1355,7 +1299,6 @@
     "virtual": true,
     "embodied_allocated": 0.03122494,
     "host": "oracle-bm-standard-a1-160-4bcd44b30a",
-    "host_share": 0.0125,
     "host_instances": 80
   },
   {
@@ -1379,7 +1322,6 @@
     "virtual": true,
     "embodied_allocated": 0.06244988,
     "host": "oracle-bm-standard-a1-160-4bcd44b30a",
-    "host_share": 0.025,
     "host_instances": 40
   },
   {
@@ -1403,7 +1345,6 @@
     "virtual": true,
     "embodied_allocated": 0.12489976,
     "host": "oracle-bm-standard-a1-160-4bcd44b30a",
-    "host_share": 0.05,
     "host_instances": 20
   },
   {
@@ -1427,7 +1368,6 @@
     "virtual": true,
     "embodied_allocated": 0.24979952,
     "host": "oracle-bm-standard-a1-160-4bcd44b30a",
-    "host_share": 0.1,
     "host_instances": 10
   },
   {
@@ -1451,7 +1391,6 @@
     "virtual": true,
     "embodied_allocated": 0.49959904,
     "host": "oracle-bm-standard-a1-160-4bcd44b30a",
-    "host_share": 0.2,
     "host_instances": 5
   },
   {
@@ -1475,7 +1414,6 @@
     "virtual": true,
     "embodied_allocated": 1.2489976,
     "host": "oracle-bm-standard-a1-160-4bcd44b30a",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -1499,7 +1437,6 @@
     "virtual": true,
     "embodied_allocated": 1.2489976,
     "host": "oracle-bm-standard-a1-160-4bcd44b30a",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -1523,7 +1460,6 @@
     "virtual": true,
     "embodied_allocated": 0.0291788205,
     "host": "oracle-vm-standard-a2-flex-78ocpu-936gb-71a4e8597b",
-    "host_share": 0.01282051282051282,
     "host_instances": 78
   },
   {
@@ -1547,7 +1483,6 @@
     "virtual": true,
     "embodied_allocated": 0.058357641,
     "host": "oracle-vm-standard-a2-flex-78ocpu-936gb-71a4e8597b",
-    "host_share": 0.02564102564102564,
     "host_instances": 39
   },
   {
@@ -1571,7 +1506,6 @@
     "virtual": true,
     "embodied_allocated": 0.1197867368,
     "host": "oracle-vm-standard-a2-flex-78ocpu-936gb-71a4e8597b",
-    "host_share": 0.05263157894736842,
     "host_instances": 19
   },
   {
@@ -1595,7 +1529,6 @@
     "virtual": true,
     "embodied_allocated": 0.2528831111,
     "host": "oracle-vm-standard-a2-flex-78ocpu-936gb-71a4e8597b",
-    "host_share": 0.1111111111111111,
     "host_instances": 9
   },
   {
@@ -1619,7 +1552,6 @@
     "virtual": true,
     "embodied_allocated": 0.568987,
     "host": "oracle-vm-standard-a2-flex-78ocpu-936gb-71a4e8597b",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -1643,7 +1575,6 @@
     "virtual": true,
     "embodied_allocated": 1.137974,
     "host": "oracle-vm-standard-a2-flex-78ocpu-936gb-71a4e8597b",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -1667,7 +1598,6 @@
     "virtual": true,
     "embodied_allocated": 2.275948,
     "host": "oracle-vm-standard-a2-flex-78ocpu-936gb-71a4e8597b",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1691,7 +1621,6 @@
     "virtual": true,
     "embodied_allocated": 2.275948,
     "host": "oracle-vm-standard-a2-flex-78ocpu-936gb-71a4e8597b",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1715,7 +1644,6 @@
     "virtual": true,
     "embodied_allocated": 0.0446447667,
     "host": "oracle-bm-standard-a4-48-3d9193d9ba",
-    "host_share": 0.020833333333333332,
     "host_instances": 48
   },
   {
@@ -1739,7 +1667,6 @@
     "virtual": true,
     "embodied_allocated": 0.0892895333,
     "host": "oracle-bm-standard-a4-48-3d9193d9ba",
-    "host_share": 0.041666666666666664,
     "host_instances": 24
   },
   {
@@ -1763,7 +1690,6 @@
     "virtual": true,
     "embodied_allocated": 0.1785790667,
     "host": "oracle-bm-standard-a4-48-3d9193d9ba",
-    "host_share": 0.08333333333333333,
     "host_instances": 12
   },
   {
@@ -1787,7 +1713,6 @@
     "virtual": true,
     "embodied_allocated": 0.3571581333,
     "host": "oracle-bm-standard-a4-48-3d9193d9ba",
-    "host_share": 0.16666666666666666,
     "host_instances": 6
   },
   {
@@ -1811,7 +1736,6 @@
     "virtual": true,
     "embodied_allocated": 0.7143162667,
     "host": "oracle-bm-standard-a4-48-3d9193d9ba",
-    "host_share": 0.3333333333333333,
     "host_instances": 3
   },
   {
@@ -1835,7 +1759,6 @@
     "virtual": true,
     "embodied_allocated": 2.1429488,
     "host": "oracle-bm-standard-a4-48-3d9193d9ba",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1859,7 +1782,6 @@
     "virtual": true,
     "embodied_allocated": 2.1429488,
     "host": "oracle-bm-standard-a4-48-3d9193d9ba",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1883,7 +1805,6 @@
     "virtual": true,
     "embodied_allocated": 0.5897726,
     "host": "oracle-bm-denseio-e4-128-4f0bfe4fab",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -1907,7 +1828,6 @@
     "virtual": true,
     "embodied_allocated": 1.1795452,
     "host": "oracle-bm-denseio-e4-128-4f0bfe4fab",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -1931,7 +1851,6 @@
     "virtual": true,
     "embodied_allocated": 2.3590904,
     "host": "oracle-bm-denseio-e4-128-4f0bfe4fab",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -1955,7 +1874,6 @@
     "virtual": true,
     "embodied_allocated": 0.275674,
     "host": "oracle-bm-denseio-e5-128-3cdabd719a",
-    "host_share": 0.08333333333333333,
     "host_instances": 12
   },
   {
@@ -1979,7 +1897,6 @@
     "virtual": true,
     "embodied_allocated": 0.551348,
     "host": "oracle-bm-denseio-e5-128-3cdabd719a",
-    "host_share": 0.16666666666666666,
     "host_instances": 6
   },
   {
@@ -2003,7 +1920,6 @@
     "virtual": true,
     "embodied_allocated": 0.827022,
     "host": "oracle-bm-denseio-e5-128-3cdabd719a",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -2027,7 +1943,6 @@
     "virtual": true,
     "embodied_allocated": 1.102696,
     "host": "oracle-bm-denseio-e5-128-3cdabd719a",
-    "host_share": 0.3333333333333333,
     "host_instances": 3
   },
   {
@@ -2051,7 +1966,6 @@
     "virtual": true,
     "embodied_allocated": 1.654044,
     "host": "oracle-bm-denseio-e5-128-3cdabd719a",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2075,7 +1989,6 @@
     "virtual": true,
     "embodied_allocated": 1.654044,
     "host": "oracle-bm-denseio-e5-128-3cdabd719a",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2099,7 +2012,6 @@
     "virtual": true,
     "embodied_allocated": 0.8220472,
     "host": "oracle-bm-gpu2-2-b1f655500d",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2123,7 +2035,6 @@
     "virtual": true,
     "embodied_allocated": 0.4178686,
     "host": "oracle-bm-gpu3-8-1f4efc1d1f",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -2147,7 +2058,6 @@
     "virtual": true,
     "embodied_allocated": 0.8357372,
     "host": "oracle-bm-gpu3-8-1f4efc1d1f",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -2171,7 +2081,6 @@
     "virtual": true,
     "embodied_allocated": 1.6714744,
     "host": "oracle-bm-gpu3-8-1f4efc1d1f",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2195,7 +2104,6 @@
     "virtual": true,
     "embodied_allocated": 0.835594,
     "host": "oracle-bm-gpu-a10-4-b03370c695",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -2219,7 +2127,6 @@
     "virtual": true,
     "embodied_allocated": 1.671188,
     "host": "oracle-bm-gpu-a10-4-b03370c695",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2243,7 +2150,6 @@
     "virtual": true,
     "embodied_allocated": 0.0524417333,
     "host": "oracle-dvh-optimized3-36-159233837e",
-    "host_share": 0.027777777777777776,
     "host_instances": 36
   },
   {
@@ -2267,7 +2173,6 @@
     "virtual": true,
     "embodied_allocated": 0.1048834667,
     "host": "oracle-dvh-optimized3-36-159233837e",
-    "host_share": 0.05555555555555555,
     "host_instances": 18
   },
   {
@@ -2291,7 +2196,6 @@
     "virtual": true,
     "embodied_allocated": 0.2097669333,
     "host": "oracle-dvh-optimized3-36-159233837e",
-    "host_share": 0.1111111111111111,
     "host_instances": 9
   },
   {
@@ -2315,7 +2219,6 @@
     "virtual": true,
     "embodied_allocated": 0.4719756,
     "host": "oracle-dvh-optimized3-36-159233837e",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -2339,7 +2242,6 @@
     "virtual": true,
     "embodied_allocated": 0.9439512,
     "host": "oracle-dvh-optimized3-36-159233837e",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2363,7 +2265,6 @@
     "virtual": true,
     "embodied_allocated": 0.9439512,
     "host": "oracle-dvh-optimized3-36-159233837e",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2386,7 +2287,6 @@
     "virtual": false,
     "embodied_allocated": 1.432856,
     "host": "oracle-bm-standard1-36-79b1e12eb7",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2409,7 +2309,6 @@
     "virtual": false,
     "embodied_allocated": 1.7879024,
     "host": "oracle-bm-standard-b1-44-6fa9a6acc4",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2432,7 +2331,6 @@
     "virtual": false,
     "embodied_allocated": 2.1429488,
     "host": "oracle-bm-standard2-52-d424140036",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2455,7 +2353,6 @@
     "virtual": false,
     "embodied_allocated": 1.7879024,
     "host": "oracle-bm-standard-e2-64-11701373f8",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2478,7 +2375,6 @@
     "virtual": false,
     "embodied_allocated": 3.9181808,
     "host": "oracle-bm-standard-e3-128-f0ad18d7ad",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2501,7 +2397,6 @@
     "virtual": false,
     "embodied_allocated": 2.6879024,
     "host": "oracle-bm-denseio1-36-85cd9f217f",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2524,7 +2419,6 @@
     "virtual": false,
     "embodied_allocated": 2.9429488,
     "host": "oracle-bm-denseio2-52-8b0df231fa",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2547,7 +2441,6 @@
     "virtual": false,
     "embodied_allocated": 1.7103792,
     "host": "oracle-bm-hpc2-36-9091acb2ad",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2570,7 +2463,6 @@
     "virtual": true,
     "embodied_allocated": 0.0398015556,
     "host": "oracle-bm-standard1-36-6e517038df",
-    "host_share": 0.027777777777777776,
     "host_instances": 36
   },
   {
@@ -2593,7 +2485,6 @@
     "virtual": true,
     "embodied_allocated": 0.0796031111,
     "host": "oracle-bm-standard1-36-6e517038df",
-    "host_share": 0.05555555555555555,
     "host_instances": 18
   },
   {
@@ -2616,7 +2507,6 @@
     "virtual": true,
     "embodied_allocated": 0.1592062222,
     "host": "oracle-bm-standard1-36-6e517038df",
-    "host_share": 0.1111111111111111,
     "host_instances": 9
   },
   {
@@ -2639,7 +2529,6 @@
     "virtual": true,
     "embodied_allocated": 0.358214,
     "host": "oracle-bm-standard1-36-6e517038df",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -2662,7 +2551,6 @@
     "virtual": true,
     "embodied_allocated": 0.716428,
     "host": "oracle-bm-standard1-36-6e517038df",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2685,7 +2573,6 @@
     "virtual": true,
     "embodied_allocated": 0.0425691048,
     "host": "oracle-bm-standard-b1-44-67a7f6a100",
-    "host_share": 0.023809523809523808,
     "host_instances": 42
   },
   {
@@ -2708,7 +2595,6 @@
     "virtual": true,
     "embodied_allocated": 0.0851382095,
     "host": "oracle-bm-standard-b1-44-67a7f6a100",
-    "host_share": 0.047619047619047616,
     "host_instances": 21
   },
   {
@@ -2731,7 +2617,6 @@
     "virtual": true,
     "embodied_allocated": 0.17879024,
     "host": "oracle-bm-standard-b1-44-67a7f6a100",
-    "host_share": 0.1,
     "host_instances": 10
   },
   {
@@ -2754,7 +2639,6 @@
     "virtual": true,
     "embodied_allocated": 0.35758048,
     "host": "oracle-bm-standard-b1-44-67a7f6a100",
-    "host_share": 0.2,
     "host_instances": 5
   },
   {
@@ -2777,7 +2661,6 @@
     "virtual": true,
     "embodied_allocated": 0.8939512,
     "host": "oracle-bm-standard-b1-44-67a7f6a100",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2800,7 +2683,6 @@
     "virtual": true,
     "embodied_allocated": 0.0420186039,
     "host": "oracle-dvh-standard2-52-1406ca5ff8",
-    "host_share": 0.0196078431372549,
     "host_instances": 51
   },
   {
@@ -2823,7 +2705,6 @@
     "virtual": true,
     "embodied_allocated": 0.085717952,
     "host": "oracle-dvh-standard2-52-1406ca5ff8",
-    "host_share": 0.04,
     "host_instances": 25
   },
   {
@@ -2846,7 +2727,6 @@
     "virtual": true,
     "embodied_allocated": 0.1785790667,
     "host": "oracle-dvh-standard2-52-1406ca5ff8",
-    "host_share": 0.08333333333333333,
     "host_instances": 12
   },
   {
@@ -2869,7 +2749,6 @@
     "virtual": true,
     "embodied_allocated": 0.3571581333,
     "host": "oracle-dvh-standard2-52-1406ca5ff8",
-    "host_share": 0.16666666666666666,
     "host_instances": 6
   },
   {
@@ -2892,7 +2771,6 @@
     "virtual": true,
     "embodied_allocated": 0.7143162667,
     "host": "oracle-dvh-standard2-52-1406ca5ff8",
-    "host_share": 0.3333333333333333,
     "host_instances": 3
   },
   {
@@ -2915,7 +2793,6 @@
     "virtual": true,
     "embodied_allocated": 1.0714744,
     "host": "oracle-dvh-standard2-52-1406ca5ff8",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2938,7 +2815,6 @@
     "virtual": true,
     "embodied_allocated": 0.027935975,
     "host": "oracle-dvh-standard-e2-64-f2ae7d425c",
-    "host_share": 0.015625,
     "host_instances": 64
   },
   {
@@ -2961,7 +2837,6 @@
     "virtual": true,
     "embodied_allocated": 0.05587195,
     "host": "oracle-dvh-standard-e2-64-f2ae7d425c",
-    "host_share": 0.03125,
     "host_instances": 32
   },
   {
@@ -2984,7 +2859,6 @@
     "virtual": true,
     "embodied_allocated": 0.1117439,
     "host": "oracle-dvh-standard-e2-64-f2ae7d425c",
-    "host_share": 0.0625,
     "host_instances": 16
   },
   {
@@ -3007,7 +2881,6 @@
     "virtual": true,
     "embodied_allocated": 0.2234878,
     "host": "oracle-dvh-standard-e2-64-f2ae7d425c",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -3030,7 +2903,6 @@
     "virtual": true,
     "embodied_allocated": 0.3359878,
     "host": "oracle-bm-denseio1-36-b00a114a9e",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -3053,7 +2925,6 @@
     "virtual": true,
     "embodied_allocated": 0.6719756,
     "host": "oracle-bm-denseio1-36-b00a114a9e",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -3076,7 +2947,6 @@
     "virtual": true,
     "embodied_allocated": 1.3439512,
     "host": "oracle-bm-denseio1-36-b00a114a9e",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -3099,7 +2969,6 @@
     "virtual": true,
     "embodied_allocated": 0.4904914667,
     "host": "oracle-dvh-denseio2-52-e1f2736d7c",
-    "host_share": 0.16666666666666666,
     "host_instances": 6
   },
   {
@@ -3122,7 +2991,6 @@
     "virtual": true,
     "embodied_allocated": 0.9809829333,
     "host": "oracle-dvh-denseio2-52-e1f2736d7c",
-    "host_share": 0.3333333333333333,
     "host_instances": 3
   },
   {
@@ -3145,7 +3013,6 @@
     "virtual": true,
     "embodied_allocated": 1.4714744,
     "host": "oracle-dvh-denseio2-52-e1f2736d7c",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -3169,7 +3036,6 @@
     "virtual": true,
     "embodied_allocated": 0.0306107875,
     "host": "oracle-dvh-standard-e3-128-2e48d7ce83",
-    "host_share": 0.0078125,
     "host_instances": 128
   },
   {
@@ -3193,7 +3059,6 @@
     "virtual": true,
     "embodied_allocated": 0.061221575,
     "host": "oracle-dvh-standard-e3-128-2e48d7ce83",
-    "host_share": 0.015625,
     "host_instances": 64
   },
   {
@@ -3217,7 +3082,6 @@
     "virtual": true,
     "embodied_allocated": 0.12244315,
     "host": "oracle-dvh-standard-e3-128-2e48d7ce83",
-    "host_share": 0.03125,
     "host_instances": 32
   },
   {
@@ -3241,7 +3105,6 @@
     "virtual": true,
     "embodied_allocated": 0.2448863,
     "host": "oracle-dvh-standard-e3-128-2e48d7ce83",
-    "host_share": 0.0625,
     "host_instances": 16
   },
   {
@@ -3265,7 +3128,6 @@
     "virtual": true,
     "embodied_allocated": 0.4897726,
     "host": "oracle-dvh-standard-e3-128-2e48d7ce83",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -3289,7 +3151,6 @@
     "virtual": true,
     "embodied_allocated": 0.9795452,
     "host": "oracle-dvh-standard-e3-128-2e48d7ce83",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -3313,7 +3174,6 @@
     "virtual": true,
     "embodied_allocated": 1.9590904,
     "host": "oracle-dvh-standard-e3-128-2e48d7ce83",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -3336,7 +3196,6 @@
     ],
     "embodied_allocated": 2.6755184,
     "host": "oracle-bm-standard4-ax-120-f80f27dc60",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -3357,7 +3216,6 @@
     "embodied": 3.408088,
     "embodied_allocated": 3.408088,
     "host": "oracle-bm-standard-e6-ax-192-3dc1442d28",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -3378,7 +3236,6 @@
     ],
     "embodied_allocated": 2.1429488,
     "host": "oracle-bm-standard-a4-ax-48-9f8ca7730c",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -3401,7 +3258,6 @@
     "embodied": 5.4732272,
     "embodied_allocated": 5.4732272,
     "host": "oracle-bm-denseio-e6-ax-192-8b0e32d077",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -3425,7 +3281,6 @@
     ],
     "embodied_allocated": 8.2259824,
     "host": "oracle-bm-gpu-rtxpro-8-9409281778",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -3449,7 +3304,6 @@
     "embodied": 11.7764464,
     "embodied_allocated": 11.7764464,
     "host": "oracle-bm-gpu-b300-8-e155f6a288",
-    "host_share": 1,
     "host_instances": 1
   }
 ]

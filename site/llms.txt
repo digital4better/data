@@ -50,4 +50,4 @@ This index describes the deployed website. Downloads require no JavaScript or ac
 - [Building energy factors](https://digital4better.github.io/data/facility/factors.json): Electricity and fuel impacts per kWh; [source notes](https://digital4better.github.io/data/facility/README.md).
 - [Transport factors](https://digital4better.github.io/data/transport/factors.json): Employee travel impacts per passenger-kilometre or vehicle-kilometre; [source notes](https://digital4better.github.io/data/transport/README.md). These additional collections have no editorial pages on the site.
 
-For cloud instances, prefer `embodied_allocated`; VM `embodied` is deprecated. Resolve `host` in the same provider's `*-hosts.json`. Host impacts and instance impacts are distinct; read the full reference before applying lifetime allocation.
+For cloud instances, prefer `embodied_allocated`; VM `embodied` is deprecated. Resolve `host` in the same provider's `*-hosts.json`. `host_instances` is the modeled maximum number of identical instances per host; allocated impact equals host impact divided by this count. Read the full reference before applying lifetime allocation.

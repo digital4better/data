@@ -6,7 +6,7 @@ const providers = ['aws', 'azure', 'gcp', 'oracle', 'ovhcloud', 'scaleway'];
 const num = value => Number(String(value).replace(',', '.'));
 const round = value => Number(value.toFixed(10));
 const hostHeaders = ['id','provider','name','basis','method','vcpus','memory','sockets','cpu','ssd_count','hdd_count','ssd_capacity','hdd_capacity','accelerator','accelerators','accelerator_memory','embodied','sources','assumptions'];
-const vmHeaders = ['id','family','name','category','vcpus','memory','ssd','hdd','cpu','accelerators','accelerator','embodied','embodied_allocated','host','host_share','host_instances'];
+const vmHeaders = ['id','family','name','category','vcpus','memory','ssd','hdd','cpu','accelerators','accelerator','embodied','embodied_allocated','host','host_instances'];
 
 function calculateHost(host) {
   for (const key of ['vcpus','memory','sockets','ssd_count','hdd_count','accelerators','accelerator_memory']) {
@@ -32,7 +32,7 @@ function allocate(vm,host,publishedLimit) {
   const count=vm.virtual===false || host.basis==='dedicated-equivalent-fallback' || host.basis==='desktop-rack-equivalent'
     ? 1 : Math.min(Math.floor(Math.min(...ratios)+1e-8),publishedLimit??Infinity);
   const share=1/count;
-  return { host_instances:count, host_share:share, embodied_allocated:round(host.embodied*share) };
+  return { host_instances:count, embodied_allocated:round(host.embodied*share) };
 }
 
 function generate(catalogs,inputs) {
@@ -53,7 +53,9 @@ function generate(catalogs,inputs) {
       const allocated=allocate(vm,host,assignment.published_limit);
       const legacy=inputs.legacyEmbodied[key];
       if(legacy!=null && vm.embodied!==legacy)throw Error(`Refusing historical change ${key}`);
-      return {...vm,embodied:legacy??allocated.embodied_allocated,embodied_allocated:allocated.embodied_allocated,host:host.id,host_share:allocated.host_share,host_instances:allocated.host_instances};
+      const record={...vm};
+      delete record.host_share;
+      return {...record,embodied:legacy??allocated.embodied_allocated,embodied_allocated:allocated.embodied_allocated,host:host.id,host_instances:allocated.host_instances};
     });
     for(const h of hosts[provider])if(!vms[provider].some(vm=>vm.host===h.id))throw Error(`Orphan host ${h.id}`);
   }

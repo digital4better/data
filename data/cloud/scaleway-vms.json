@@ -14,7 +14,6 @@
     "embodied": 1,
     "embodied_allocated": 0.0190648479,
     "host": "scaleway-amp2-c60-cd6e8fa68c",
-    "host_share": 0.016666666666666666,
     "host_instances": 60
   },
   {
@@ -32,7 +31,6 @@
     "embodied": 1,
     "embodied_allocated": 0.228778175,
     "host": "scaleway-amp2-c60-cd6e8fa68c",
-    "host_share": 0.2,
     "host_instances": 5
   },
   {
@@ -50,7 +48,6 @@
     "embodied": 1,
     "embodied_allocated": 0.0381296958,
     "host": "scaleway-amp2-c60-cd6e8fa68c",
-    "host_share": 0.03333333333333333,
     "host_instances": 30
   },
   {
@@ -68,7 +65,6 @@
     "embodied": 1,
     "embodied_allocated": 0.5719454375,
     "host": "scaleway-amp2-c60-cd6e8fa68c",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -86,7 +82,6 @@
     "embodied": 1,
     "embodied_allocated": 0.0762593917,
     "host": "scaleway-amp2-c60-cd6e8fa68c",
-    "host_share": 0.06666666666666667,
     "host_instances": 15
   },
   {
@@ -104,7 +99,6 @@
     "embodied": 1,
     "embodied_allocated": 1.143890875,
     "host": "scaleway-amp2-c60-cd6e8fa68c",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -122,7 +116,6 @@
     "embodied": 1,
     "embodied_allocated": 1.143890875,
     "host": "scaleway-amp2-c60-cd6e8fa68c",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -140,7 +133,6 @@
     "embodied": 1,
     "embodied_allocated": 0.1634129821,
     "host": "scaleway-amp2-c60-cd6e8fa68c",
-    "host_share": 0.14285714285714285,
     "host_instances": 7
   },
   {
@@ -158,7 +150,6 @@
     "embodied": 1,
     "embodied_allocated": 1.2553328,
     "host": "scaleway-arm64-128gb-0a8f1f5c0e",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -176,7 +167,6 @@
     "embodied": 1,
     "embodied_allocated": 0.3138332,
     "host": "scaleway-arm64-128gb-0a8f1f5c0e",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -194,7 +184,6 @@
     "embodied": 1,
     "embodied_allocated": 0.0784583,
     "host": "scaleway-arm64-128gb-0a8f1f5c0e",
-    "host_share": 0.0625,
     "host_instances": 16
   },
   {
@@ -212,7 +201,6 @@
     "embodied": 1,
     "embodied_allocated": 0.6276664,
     "host": "scaleway-arm64-128gb-0a8f1f5c0e",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -230,7 +218,6 @@
     "embodied": 1,
     "embodied_allocated": 0.12553328,
     "host": "scaleway-arm64-128gb-0a8f1f5c0e",
-    "host_share": 0.1,
     "host_instances": 10
   },
   {
@@ -248,7 +235,6 @@
     "embodied": 1,
     "embodied_allocated": 1.2553328,
     "host": "scaleway-arm64-128gb-0a8f1f5c0e",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -266,7 +252,6 @@
     "embodied": 1,
     "embodied_allocated": 0.1569166,
     "host": "scaleway-arm64-128gb-0a8f1f5c0e",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -284,7 +269,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-container-1024-cc90750a91",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -302,7 +286,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-container-128-cc90750a91",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -320,7 +303,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-container-2048-cc90750a91",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -338,7 +320,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-container-256-cc90750a91",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -356,7 +337,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-container-512-cc90750a91",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -374,7 +354,6 @@
     "embodied": 1,
     "embodied_allocated": 0.5776664,
     "host": "scaleway-coparm1-32c-128g-c56f7b0893",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -392,7 +371,6 @@
     "embodied": 1,
     "embodied_allocated": 0.0722083,
     "host": "scaleway-coparm1-32c-128g-c56f7b0893",
-    "host_share": 0.0625,
     "host_instances": 16
   },
   {
@@ -410,7 +388,6 @@
     "embodied": 1,
     "embodied_allocated": 1.1553328,
     "host": "scaleway-coparm1-32c-128g-c56f7b0893",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -428,7 +405,6 @@
     "embodied": 1,
     "embodied_allocated": 0.1444166,
     "host": "scaleway-coparm1-32c-128g-c56f7b0893",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -446,7 +422,6 @@
     "embodied": 1,
     "embodied_allocated": 0.2888332,
     "host": "scaleway-coparm1-32c-128g-c56f7b0893",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -464,7 +439,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-dev1-xl-1a85986240",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -482,7 +456,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-dev1-xl-1a85986240",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -500,7 +473,6 @@
     "embodied": 1,
     "embodied_allocated": 0.5,
     "host": "scaleway-dev1-xl-1a85986240",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -518,7 +490,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-dev1-xl-1a85986240",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -536,7 +507,6 @@
     "embodied": 1,
     "embodied_allocated": 1.1221904,
     "host": "scaleway-em-a115x-ssd-93200069e3",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -554,7 +524,6 @@
     "embodied": 1,
     "embodied_allocated": 1.1721904,
     "host": "scaleway-em-a610r-nvme-01b3f20cf7",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -572,7 +541,6 @@
     "embodied": 1,
     "embodied_allocated": 1.260952,
     "host": "scaleway-em-l101x-sata-12e6bf507b",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -590,7 +558,6 @@
     "embodied": 1,
     "embodied_allocated": 1.1665712,
     "host": "scaleway-em-a410x-ssd-9dfe1d750f",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -608,7 +575,6 @@
     "embodied": 1,
     "embodied_allocated": 1.1221904,
     "host": "scaleway-em-a610r-nvme-8c21d2bec7",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -626,7 +592,6 @@
     "embodied": 1,
     "embodied_allocated": 1.3940944,
     "host": "scaleway-em-b111x-sata-6191379e60",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -644,7 +609,6 @@
     "embodied": 1,
     "embodied_allocated": 1.4940944,
     "host": "scaleway-em-b111x-sata-30722528df",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -662,7 +626,6 @@
     "embodied": 1,
     "embodied_allocated": 1.482856,
     "host": "scaleway-em-b211x-sata-e9d19023d2",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -680,7 +643,6 @@
     "embodied": 1,
     "embodied_allocated": 1.582856,
     "host": "scaleway-em-b211x-sata-02b96a7c87",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -698,7 +660,6 @@
     "embodied": 1,
     "embodied_allocated": 1.2553328,
     "host": "scaleway-em-b320e-nvme-f2d91126e9",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -716,7 +677,6 @@
     "embodied": 1,
     "embodied_allocated": 1.482856,
     "host": "scaleway-em-b311x-sata-3663ffcc59",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -734,7 +694,6 @@
     "embodied": 1,
     "embodied_allocated": 1.582856,
     "host": "scaleway-em-b311x-sata-b1faaf0fc8",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -752,7 +711,6 @@
     "embodied": 1,
     "embodied_allocated": 1.2553328,
     "host": "scaleway-em-b320e-nvme-f2d91126e9",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -770,7 +728,6 @@
     "embodied": 1,
     "embodied_allocated": 1.432856,
     "host": "scaleway-em-b520e-nvme-62ce84fd9d",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -788,7 +745,6 @@
     "embodied": 1,
     "embodied_allocated": 1.432856,
     "host": "scaleway-em-b520e-nvme-62ce84fd9d",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -806,7 +762,6 @@
     "embodied": 1,
     "embodied_allocated": 1.1665712,
     "host": "scaleway-em-i120e-nvme-74d55d2e1b",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -824,7 +779,6 @@
     "embodied": 1,
     "embodied_allocated": 1.432856,
     "host": "scaleway-em-i215e-nvme-f02653630a",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -842,7 +796,6 @@
     "embodied": 1,
     "embodied_allocated": 1.432856,
     "host": "scaleway-em-i215e-nvme-f02653630a",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -860,7 +813,6 @@
     "embodied": 1,
     "embodied_allocated": 1.2553328,
     "host": "scaleway-em-i220e-nvme-96972462ed",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -878,7 +830,6 @@
     "embodied": 1,
     "embodied_allocated": 1.3440944,
     "host": "scaleway-em-i320e-nvme-5af5c9fe0d",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -896,7 +847,6 @@
     "embodied": 1,
     "embodied_allocated": 1.432856,
     "host": "scaleway-em-i420e-nvme-454892d853",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -914,7 +864,6 @@
     "embodied": 1,
     "embodied_allocated": 1.6103792,
     "host": "scaleway-em-i520e-nvme-7c1b296144",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -932,7 +881,6 @@
     "embodied": 1,
     "embodied_allocated": 1.6103792,
     "host": "scaleway-em-i520e-nvme-3cb6de0384",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -950,7 +898,6 @@
     "embodied": 1,
     "embodied_allocated": 1.876664,
     "host": "scaleway-em-i620e-nvme-93134279bf",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -968,7 +915,6 @@
     "embodied": 1,
     "embodied_allocated": 1.160952,
     "host": "scaleway-em-l101x-sata-50c40e1d1c",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -986,7 +932,6 @@
     "embodied": 1,
     "embodied_allocated": 1.160952,
     "host": "scaleway-em-l101x-sata-29f6af14ab",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1004,7 +949,6 @@
     "embodied": 1,
     "embodied_allocated": 1.160952,
     "host": "scaleway-em-l101x-sata-df8e44592b",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1022,7 +966,6 @@
     "embodied": 1,
     "embodied_allocated": 1.2553328,
     "host": "scaleway-em-b320e-nvme-5e751d2ddb",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1040,7 +983,6 @@
     "embodied": 1,
     "embodied_allocated": 1.432856,
     "host": "scaleway-em-b520e-nvme-607493b3dd",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1058,7 +1000,6 @@
     "embodied": 1,
     "embodied_allocated": 1.8216176,
     "host": "scaleway-em-t220e-l40s-7e4bb0a2be",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1076,7 +1017,6 @@
     "embodied": 1,
     "embodied_allocated": 2.2654256,
     "host": "scaleway-em-t620e-h100-c0bbe54f67",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1094,7 +1034,6 @@
     "embodied": 1,
     "embodied_allocated": 1.6103792,
     "host": "scaleway-ent1-2xl-2b8908f41f",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1112,7 +1051,6 @@
     "embodied": 1,
     "embodied_allocated": 0.5367930667,
     "host": "scaleway-ent1-2xl-2b8908f41f",
-    "host_share": 0.3333333333333333,
     "host_instances": 3
   },
   {
@@ -1130,7 +1068,6 @@
     "embodied": 1,
     "embodied_allocated": 0.2683965333,
     "host": "scaleway-ent1-2xl-2b8908f41f",
-    "host_share": 0.16666666666666666,
     "host_instances": 6
   },
   {
@@ -1148,7 +1085,6 @@
     "embodied": 1,
     "embodied_allocated": 0.1341982667,
     "host": "scaleway-ent1-2xl-2b8908f41f",
-    "host_share": 0.08333333333333333,
     "host_instances": 12
   },
   {
@@ -1166,7 +1102,6 @@
     "embodied": 1,
     "embodied_allocated": 1.6103792,
     "host": "scaleway-ent1-2xl-2b8908f41f",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1184,7 +1119,6 @@
     "embodied": 1,
     "embodied_allocated": 0.0670991333,
     "host": "scaleway-ent1-2xl-2b8908f41f",
-    "host_share": 0.041666666666666664,
     "host_instances": 24
   },
   {
@@ -1202,7 +1136,6 @@
     "embodied": 1,
     "embodied_allocated": 0.0335495667,
     "host": "scaleway-ent1-2xl-2b8908f41f",
-    "host_share": 0.020833333333333332,
     "host_instances": 48
   },
   {
@@ -1220,7 +1153,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-function-1024-cc90750a91",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1238,7 +1170,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-function-128-cc90750a91",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1256,7 +1187,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-function-2048-cc90750a91",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1274,7 +1204,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-function-256-cc90750a91",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1292,7 +1221,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-function-3072-cc90750a91",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1310,7 +1238,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-function-4096-cc90750a91",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1328,7 +1255,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-function-512-cc90750a91",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1346,7 +1272,6 @@
     "embodied": 1,
     "embodied_allocated": 1.332856,
     "host": "scaleway-gp1-xl-0b1ca3d0d5",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1364,7 +1289,6 @@
     "embodied": 1,
     "embodied_allocated": 0.4442853333,
     "host": "scaleway-gp1-xl-0b1ca3d0d5",
-    "host_share": 0.3333333333333333,
     "host_instances": 3
   },
   {
@@ -1382,7 +1306,6 @@
     "embodied": 1,
     "embodied_allocated": 0.2221426667,
     "host": "scaleway-gp1-xl-0b1ca3d0d5",
-    "host_share": 0.16666666666666666,
     "host_instances": 6
   },
   {
@@ -1400,7 +1323,6 @@
     "embodied": 1,
     "embodied_allocated": 0.2221426667,
     "host": "scaleway-gp1-xl-0b1ca3d0d5",
-    "host_share": 0.16666666666666666,
     "host_instances": 6
   },
   {
@@ -1418,7 +1340,6 @@
     "embodied": 1,
     "embodied_allocated": 1.332856,
     "host": "scaleway-gp1-xl-0b1ca3d0d5",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1436,7 +1357,6 @@
     "embodied": 1,
     "embodied_allocated": 0.1110713333,
     "host": "scaleway-gp1-xl-0b1ca3d0d5",
-    "host_share": 0.08333333333333333,
     "host_instances": 12
   },
   {
@@ -1454,7 +1374,6 @@
     "embodied": 1,
     "embodied_allocated": 1.15,
     "host": "scaleway-gpu-3070-s-10e2bd185f",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1472,7 +1391,6 @@
     "embodied": 1,
     "embodied_allocated": 1.0605224,
     "host": "scaleway-h100-2-80g-a83a051398",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -1490,7 +1408,6 @@
     "embodied": 1,
     "embodied_allocated": 1.0605224,
     "host": "scaleway-h100-2-80g-a83a051398",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -1508,7 +1425,6 @@
     "embodied": 1,
     "embodied_allocated": 2.1210448,
     "host": "scaleway-h100-2-80g-a83a051398",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1526,7 +1442,6 @@
     "embodied": 1,
     "embodied_allocated": 2.1210448,
     "host": "scaleway-h100-2-80g-a83a051398",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1544,7 +1459,6 @@
     "embodied": 1,
     "embodied_allocated": 1.0798316,
     "host": "scaleway-h100-sxm-8-80g-957c59d257",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -1562,7 +1476,6 @@
     "embodied": 1,
     "embodied_allocated": 2.1596632,
     "host": "scaleway-h100-sxm-8-80g-957c59d257",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -1580,7 +1493,6 @@
     "embodied": 1,
     "embodied_allocated": 4.3193264,
     "host": "scaleway-h100-sxm-8-80g-957c59d257",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1598,7 +1510,6 @@
     "embodied": 1,
     "embodied_allocated": 0.3623926,
     "host": "scaleway-l4-8-24g-e0668b82e2",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -1616,7 +1527,6 @@
     "embodied": 1,
     "embodied_allocated": 0.7247852,
     "host": "scaleway-l4-8-24g-e0668b82e2",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -1634,7 +1544,6 @@
     "embodied": 1,
     "embodied_allocated": 1.4495704,
     "host": "scaleway-l4-8-24g-e0668b82e2",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -1652,7 +1561,6 @@
     "embodied": 1,
     "embodied_allocated": 2.8991408,
     "host": "scaleway-l4-8-24g-e0668b82e2",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1670,7 +1578,6 @@
     "embodied": 1,
     "embodied_allocated": 0.4622494,
     "host": "scaleway-l40s-8-48g-64d9714fa8",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -1688,7 +1595,6 @@
     "embodied": 1,
     "embodied_allocated": 0.9244988,
     "host": "scaleway-l40s-8-48g-64d9714fa8",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -1706,7 +1612,6 @@
     "embodied": 1,
     "embodied_allocated": 1.8489976,
     "host": "scaleway-l40s-8-48g-64d9714fa8",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -1724,7 +1629,6 @@
     "embodied": 1,
     "embodied_allocated": 3.6979952,
     "host": "scaleway-l40s-8-48g-64d9714fa8",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1742,7 +1646,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-play2-micro-df949a1a4c",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1760,7 +1663,6 @@
     "embodied": 1,
     "embodied_allocated": 0.5,
     "host": "scaleway-play2-micro-df949a1a4c",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -1778,7 +1680,6 @@
     "embodied": 1,
     "embodied_allocated": 0.25,
     "host": "scaleway-play2-micro-df949a1a4c",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -1796,7 +1697,6 @@
     "embodied": 1,
     "embodied_allocated": 0.4219756,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -1814,7 +1714,6 @@
     "embodied": 1,
     "embodied_allocated": 0.4219756,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -1832,7 +1731,6 @@
     "embodied": 1,
     "embodied_allocated": 0.05274695,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.03125,
     "host_instances": 32
   },
   {
@@ -1850,7 +1748,6 @@
     "embodied": 1,
     "embodied_allocated": 0.05274695,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.03125,
     "host_instances": 32
   },
   {
@@ -1868,7 +1765,6 @@
     "embodied": 1,
     "embodied_allocated": 0.8439512,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -1886,7 +1782,6 @@
     "embodied": 1,
     "embodied_allocated": 0.8439512,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -1904,7 +1799,6 @@
     "embodied": 1,
     "embodied_allocated": 0.1054939,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.0625,
     "host_instances": 16
   },
   {
@@ -1922,7 +1816,6 @@
     "embodied": 1,
     "embodied_allocated": 0.1054939,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.0625,
     "host_instances": 16
   },
   {
@@ -1940,7 +1833,6 @@
     "embodied": 1,
     "embodied_allocated": 1.6879024,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -1958,7 +1850,6 @@
     "embodied": 1,
     "embodied_allocated": 0.2109878,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -1976,7 +1867,6 @@
     "embodied": 1,
     "embodied_allocated": 0.2109878,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -1994,7 +1884,6 @@
     "embodied": 1,
     "embodied_allocated": 0.4219756,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -2012,7 +1901,6 @@
     "embodied": 1,
     "embodied_allocated": 0.05274695,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.03125,
     "host_instances": 32
   },
   {
@@ -2030,7 +1918,6 @@
     "embodied": 1,
     "embodied_allocated": 0.8439512,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2048,7 +1935,6 @@
     "embodied": 1,
     "embodied_allocated": 0.1054939,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.0625,
     "host_instances": 16
   },
   {
@@ -2066,7 +1952,6 @@
     "embodied": 1,
     "embodied_allocated": 1.6879024,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2084,7 +1969,6 @@
     "embodied": 1,
     "embodied_allocated": 0.2109878,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -2102,7 +1986,6 @@
     "embodied": 1,
     "embodied_allocated": 0.4219756,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -2120,7 +2003,6 @@
     "embodied": 1,
     "embodied_allocated": 0.05274695,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.03125,
     "host_instances": 32
   },
   {
@@ -2138,7 +2020,6 @@
     "embodied": 1,
     "embodied_allocated": 0.8439512,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2156,7 +2037,6 @@
     "embodied": 1,
     "embodied_allocated": 0.1054939,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.0625,
     "host_instances": 16
   },
   {
@@ -2174,7 +2054,6 @@
     "embodied": 1,
     "embodied_allocated": 1.6879024,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2192,7 +2071,6 @@
     "embodied": 1,
     "embodied_allocated": 0.2109878,
     "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -2210,7 +2088,6 @@
     "embodied": 1,
     "embodied_allocated": 1.1553328,
     "host": "scaleway-pro2-l-a37cd5804f",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2228,7 +2105,6 @@
     "embodied": 1,
     "embodied_allocated": 0.5776664,
     "host": "scaleway-pro2-l-a37cd5804f",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2246,7 +2122,6 @@
     "embodied": 1,
     "embodied_allocated": 0.2888332,
     "host": "scaleway-pro2-l-a37cd5804f",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -2264,7 +2139,6 @@
     "embodied": 1,
     "embodied_allocated": 0.1444166,
     "host": "scaleway-pro2-l-a37cd5804f",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -2282,7 +2156,6 @@
     "embodied": 1,
     "embodied_allocated": 0.0722083,
     "host": "scaleway-pro2-l-a37cd5804f",
-    "host_share": 0.0625,
     "host_instances": 16
   },
   {
@@ -2300,7 +2173,6 @@
     "embodied": 1,
     "embodied_allocated": 1.2860594,
     "host": "scaleway-render-s-c4d96258d4",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2318,7 +2190,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-stardust1-s-0d3bd0c71e",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2336,7 +2207,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-start1-l-149cc00ccf",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2354,7 +2224,6 @@
     "embodied": 1,
     "embodied_allocated": 0.5,
     "host": "scaleway-start1-l-149cc00ccf",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2372,7 +2241,6 @@
     "embodied": 1,
     "embodied_allocated": 0.25,
     "host": "scaleway-start1-l-149cc00ccf",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -2390,7 +2258,6 @@
     "embodied": 1,
     "embodied_allocated": 0.125,
     "host": "scaleway-start1-l-149cc00ccf",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -2408,7 +2275,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-vc1l-95af26d8f6",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2426,7 +2292,6 @@
     "embodied": 1,
     "embodied_allocated": 1,
     "host": "scaleway-vc1l-95af26d8f6",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2444,7 +2309,6 @@
     "embodied": 1,
     "embodied_allocated": 0.3333333333,
     "host": "scaleway-vc1l-95af26d8f6",
-    "host_share": 0.3333333333333333,
     "host_instances": 3
   },
   {
@@ -2464,7 +2328,6 @@
     ],
     "embodied_allocated": 0.06384215,
     "host": "scaleway-standard3-x2c-8g-23664d586b",
-    "host_share": 0.03125,
     "host_instances": 32
   },
   {
@@ -2484,7 +2347,6 @@
     ],
     "embodied_allocated": 0.1276843,
     "host": "scaleway-standard3-x2c-8g-23664d586b",
-    "host_share": 0.0625,
     "host_instances": 16
   },
   {
@@ -2504,7 +2366,6 @@
     ],
     "embodied_allocated": 0.20429488,
     "host": "scaleway-standard3-x2c-8g-23664d586b",
-    "host_share": 0.1,
     "host_instances": 10
   },
   {
@@ -2524,7 +2385,6 @@
     ],
     "embodied_allocated": 0.2553686,
     "host": "scaleway-standard3-x2c-8g-23664d586b",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -2544,7 +2404,6 @@
     ],
     "embodied_allocated": 0.40858976,
     "host": "scaleway-standard3-x2c-8g-23664d586b",
-    "host_share": 0.2,
     "host_instances": 5
   },
   {
@@ -2564,7 +2423,6 @@
     ],
     "embodied_allocated": 0.5107372,
     "host": "scaleway-standard3-x2c-8g-23664d586b",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -2584,7 +2442,6 @@
     ],
     "embodied_allocated": 1.0214744,
     "host": "scaleway-standard3-x2c-8g-23664d586b",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2604,7 +2461,6 @@
     ],
     "embodied_allocated": 1.0214744,
     "host": "scaleway-standard3-x2c-8g-23664d586b",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2624,7 +2480,6 @@
     ],
     "embodied_allocated": 2.0429488,
     "host": "scaleway-standard3-x2c-8g-23664d586b",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2644,7 +2499,6 @@
     ],
     "embodied_allocated": 2.0429488,
     "host": "scaleway-standard3-x2c-8g-23664d586b",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2664,7 +2518,6 @@
     ],
     "embodied_allocated": 0.2553686,
     "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -2684,7 +2537,6 @@
     ],
     "embodied_allocated": 0.2553686,
     "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -2704,7 +2556,6 @@
     ],
     "embodied_allocated": 0.5107372,
     "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -2724,7 +2575,6 @@
     ],
     "embodied_allocated": 0.5107372,
     "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -2744,7 +2594,6 @@
     ],
     "embodied_allocated": 1.0214744,
     "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2764,7 +2613,6 @@
     ],
     "embodied_allocated": 1.0214744,
     "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2784,7 +2632,6 @@
     ],
     "embodied_allocated": 1.0214744,
     "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2804,7 +2651,6 @@
     ],
     "embodied_allocated": 1.0214744,
     "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -2824,7 +2670,6 @@
     ],
     "embodied_allocated": 2.0429488,
     "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2844,7 +2689,6 @@
     ],
     "embodied_allocated": 2.0429488,
     "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2864,7 +2708,6 @@
     ],
     "embodied_allocated": 2.0429488,
     "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2884,7 +2727,6 @@
     ],
     "embodied_allocated": 2.0429488,
     "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -2904,7 +2746,6 @@
     ],
     "embodied_allocated": 0.05274695,
     "host": "scaleway-standard2-a2c-8g-7fe869391e",
-    "host_share": 0.03125,
     "host_instances": 32
   },
   {
@@ -2924,7 +2765,6 @@
     ],
     "embodied_allocated": 0.1054939,
     "host": "scaleway-standard2-a2c-8g-7fe869391e",
-    "host_share": 0.0625,
     "host_instances": 16
   },
   {
@@ -2944,7 +2784,6 @@
     ],
     "embodied_allocated": 0.16879024,
     "host": "scaleway-standard2-a2c-8g-7fe869391e",
-    "host_share": 0.1,
     "host_instances": 10
   },
   {
@@ -2964,7 +2803,6 @@
     ],
     "embodied_allocated": 0.2109878,
     "host": "scaleway-standard2-a2c-8g-7fe869391e",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -2984,7 +2822,6 @@
     ],
     "embodied_allocated": 0.33758048,
     "host": "scaleway-standard2-a2c-8g-7fe869391e",
-    "host_share": 0.2,
     "host_instances": 5
   },
   {
@@ -3004,7 +2841,6 @@
     ],
     "embodied_allocated": 0.4219756,
     "host": "scaleway-standard2-a2c-8g-7fe869391e",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -3024,7 +2860,6 @@
     ],
     "embodied_allocated": 0.8439512,
     "host": "scaleway-standard2-a2c-8g-7fe869391e",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -3044,7 +2879,6 @@
     ],
     "embodied_allocated": 0.8439512,
     "host": "scaleway-standard2-a2c-8g-7fe869391e",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -3064,7 +2898,6 @@
     ],
     "embodied_allocated": 1.6879024,
     "host": "scaleway-standard2-a2c-8g-7fe869391e",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -3084,7 +2917,6 @@
     ],
     "embodied_allocated": 1.6879024,
     "host": "scaleway-standard2-a2c-8g-7fe869391e",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -3104,7 +2936,6 @@
     ],
     "embodied_allocated": 0.2109878,
     "host": "scaleway-basic2-a2c-4g-73813ccf85",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -3124,7 +2955,6 @@
     ],
     "embodied_allocated": 0.2109878,
     "host": "scaleway-basic2-a2c-4g-73813ccf85",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -3144,7 +2974,6 @@
     ],
     "embodied_allocated": 0.4219756,
     "host": "scaleway-basic2-a2c-4g-73813ccf85",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -3164,7 +2993,6 @@
     ],
     "embodied_allocated": 0.4219756,
     "host": "scaleway-basic2-a2c-4g-73813ccf85",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -3184,7 +3012,6 @@
     ],
     "embodied_allocated": 0.8439512,
     "host": "scaleway-basic2-a2c-4g-73813ccf85",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -3204,7 +3031,6 @@
     ],
     "embodied_allocated": 0.8439512,
     "host": "scaleway-basic2-a2c-4g-73813ccf85",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -3224,7 +3050,6 @@
     ],
     "embodied_allocated": 0.8439512,
     "host": "scaleway-basic2-a2c-4g-73813ccf85",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -3244,7 +3069,6 @@
     ],
     "embodied_allocated": 0.8439512,
     "host": "scaleway-basic2-a2c-4g-73813ccf85",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -3264,7 +3088,6 @@
     ],
     "embodied_allocated": 1.6879024,
     "host": "scaleway-basic2-a2c-4g-73813ccf85",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -3284,7 +3107,6 @@
     ],
     "embodied_allocated": 1.6879024,
     "host": "scaleway-basic2-a2c-4g-73813ccf85",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -3304,7 +3126,6 @@
     ],
     "embodied_allocated": 1.6879024,
     "host": "scaleway-basic2-a2c-4g-73813ccf85",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -3324,7 +3145,6 @@
     ],
     "embodied_allocated": 1.6879024,
     "host": "scaleway-basic2-a2c-4g-73813ccf85",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -3344,7 +3164,6 @@
     "embodied": 0.1887974,
     "embodied_allocated": 0.1887974,
     "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -3364,7 +3183,6 @@
     "embodied": 0.3775948,
     "embodied_allocated": 0.3775948,
     "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -3384,7 +3202,6 @@
     "embodied": 0.7551896,
     "embodied_allocated": 0.7551896,
     "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -3404,7 +3221,6 @@
     "embodied": 1.5103792,
     "embodied_allocated": 1.5103792,
     "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -3424,7 +3240,6 @@
     "embodied": 0.1887974,
     "embodied_allocated": 0.1887974,
     "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -3444,7 +3259,6 @@
     "embodied": 0.3775948,
     "embodied_allocated": 0.3775948,
     "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -3464,7 +3278,6 @@
     "embodied": 0.7551896,
     "embodied_allocated": 0.7551896,
     "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -3484,7 +3297,6 @@
     "embodied": 1.5103792,
     "embodied_allocated": 1.5103792,
     "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -3504,7 +3316,6 @@
     "embodied": 0.1887974,
     "embodied_allocated": 0.1887974,
     "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -3524,7 +3335,6 @@
     "embodied": 0.3775948,
     "embodied_allocated": 0.3775948,
     "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -3544,7 +3354,6 @@
     "embodied": 0.7551896,
     "embodied_allocated": 0.7551896,
     "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -3564,7 +3373,6 @@
     "embodied": 1.5103792,
     "embodied_allocated": 1.5103792,
     "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -3581,7 +3389,6 @@
     "embodied": 0.55,
     "embodied_allocated": 0.55,
     "host": "scaleway-pop2-hn-10-8e4bde0c27",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -3598,7 +3405,6 @@
     "embodied": 1.1,
     "embodied_allocated": 1.1,
     "host": "scaleway-pop2-hn-10-8e4bde0c27",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -3615,7 +3421,6 @@
     "embodied": 1.1,
     "embodied_allocated": 1.1,
     "host": "scaleway-pop2-hn-10-8e4bde0c27",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -3635,7 +3440,6 @@
     ],
     "embodied_allocated": 0.0425614333,
     "host": "scaleway-compute3-x2c-4g-c164b6bddd",
-    "host_share": 0.020833333333333332,
     "host_instances": 48
   },
   {
@@ -3655,7 +3459,6 @@
     ],
     "embodied_allocated": 0.0851228667,
     "host": "scaleway-compute3-x2c-4g-c164b6bddd",
-    "host_share": 0.041666666666666664,
     "host_instances": 24
   },
   {
@@ -3675,7 +3478,6 @@
     ],
     "embodied_allocated": 0.1276843,
     "host": "scaleway-compute3-x2c-4g-c164b6bddd",
-    "host_share": 0.0625,
     "host_instances": 16
   },
   {
@@ -3695,7 +3497,6 @@
     ],
     "embodied_allocated": 0.1702457333,
     "host": "scaleway-compute3-x2c-4g-c164b6bddd",
-    "host_share": 0.08333333333333333,
     "host_instances": 12
   },
   {
@@ -3715,7 +3516,6 @@
     ],
     "embodied_allocated": 0.2553686,
     "host": "scaleway-compute3-x2c-4g-c164b6bddd",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -3735,7 +3535,6 @@
     ],
     "embodied_allocated": 0.3404914667,
     "host": "scaleway-compute3-x2c-4g-c164b6bddd",
-    "host_share": 0.16666666666666666,
     "host_instances": 6
   },
   {
@@ -3755,7 +3554,6 @@
     ],
     "embodied_allocated": 0.5107372,
     "host": "scaleway-compute3-x2c-4g-c164b6bddd",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -3775,7 +3573,6 @@
     ],
     "embodied_allocated": 0.6809829333,
     "host": "scaleway-compute3-x2c-4g-c164b6bddd",
-    "host_share": 0.3333333333333333,
     "host_instances": 3
   },
   {
@@ -3795,7 +3592,6 @@
     ],
     "embodied_allocated": 1.0214744,
     "host": "scaleway-compute3-x2c-4g-c164b6bddd",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -3815,7 +3611,6 @@
     ],
     "embodied_allocated": 2.0429488,
     "host": "scaleway-compute3-x2c-4g-c164b6bddd",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -3835,7 +3630,6 @@
     ],
     "embodied_allocated": 2.0429488,
     "host": "scaleway-compute3-x2c-4g-c164b6bddd",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -3855,7 +3649,6 @@
     ],
     "embodied_allocated": 0.0851228667,
     "host": "scaleway-memory3-x2c-16g-2ce612cd86",
-    "host_share": 0.041666666666666664,
     "host_instances": 24
   },
   {
@@ -3875,7 +3668,6 @@
     ],
     "embodied_allocated": 0.1702457333,
     "host": "scaleway-memory3-x2c-16g-2ce612cd86",
-    "host_share": 0.08333333333333333,
     "host_instances": 12
   },
   {
@@ -3895,7 +3687,6 @@
     ],
     "embodied_allocated": 0.2553686,
     "host": "scaleway-memory3-x2c-16g-2ce612cd86",
-    "host_share": 0.125,
     "host_instances": 8
   },
   {
@@ -3915,7 +3706,6 @@
     ],
     "embodied_allocated": 0.3404914667,
     "host": "scaleway-memory3-x2c-16g-2ce612cd86",
-    "host_share": 0.16666666666666666,
     "host_instances": 6
   },
   {
@@ -3935,7 +3725,6 @@
     ],
     "embodied_allocated": 0.5107372,
     "host": "scaleway-memory3-x2c-16g-2ce612cd86",
-    "host_share": 0.25,
     "host_instances": 4
   },
   {
@@ -3955,7 +3744,6 @@
     ],
     "embodied_allocated": 0.6809829333,
     "host": "scaleway-memory3-x2c-16g-2ce612cd86",
-    "host_share": 0.3333333333333333,
     "host_instances": 3
   },
   {
@@ -3975,7 +3763,6 @@
     ],
     "embodied_allocated": 1.0214744,
     "host": "scaleway-memory3-x2c-16g-2ce612cd86",
-    "host_share": 0.5,
     "host_instances": 2
   },
   {
@@ -3995,7 +3782,6 @@
     ],
     "embodied_allocated": 2.0429488,
     "host": "scaleway-memory3-x2c-16g-2ce612cd86",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -4015,7 +3801,6 @@
     ],
     "embodied_allocated": 2.0429488,
     "host": "scaleway-memory3-x2c-16g-2ce612cd86",
-    "host_share": 1,
     "host_instances": 1
   },
   {
@@ -4034,7 +3819,6 @@
     ],
     "embodied_allocated": 11.7764464,
     "host": "scaleway-b300-sxm-8-288g-c86a8e507d",
-    "host_share": 1,
     "host_instances": 1
   }
 ]
