@@ -92,7 +92,7 @@ After changes, run `yarn build:site`, `yarn check:site` and `yarn test:site`. Ch
 
 ## Maintenance tools and evidence
 
-Keep only recurring generators and validators in `scripts/`. Cloud calculation inputs and source evidence belong in `sources/cloud/`; they are excluded from npm and website downloads. Validate host catalogs with `node scripts/cloud-hosts.cjs --check` without fetching upstream data.
+Keep only recurring generators and validators in `scripts/`. Cloud calculation inputs and source evidence belong in `sources/cloud/`; they are excluded from npm and website downloads. Validate host catalogs with `yarn ts-node scripts/cloud-hosts.ts --check` without fetching upstream data.
 
 Do not commit one-time migration tools or generated exploratory reports. Local `reports/` output is ignored; past studies remain in Git history. Preserve useful regression checks when retiring an experimental script, and never delete published historical dataset records as part of repository cleanup.
 

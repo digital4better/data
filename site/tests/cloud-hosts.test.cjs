@@ -1,12 +1,23 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
-const {generate,calculateHost,allocate,providers,hostHeaders,vmHeaders}=require('../../scripts/cloud-hosts.cjs');
-const inputs=require('../../sources/cloud/host-inputs.json');
-const {definitions}=require('../../scripts/cloud-host-assumptions.cjs');
 require('ts-node').register({transpileOnly:true,compilerOptions:{module:'CommonJS'}});
+const {generate,calculateHost,allocate,providers,hostHeaders,vmHeaders}=require('../../scripts/cloud-hosts.ts');
+const inputs=require('../../sources/cloud/host-inputs.json');
+const {definitions}=require('../../scripts/cloud-host-assumptions.ts');
 const {parseCsv}=require('../src/data.ts');
 const root=path.resolve(__dirname,'../../data/cloud');
 const read=(p,k)=>JSON.parse(fs.readFileSync(path.join(root,`${p}-${k}.json`)));
 const catalogs=Object.fromEntries(providers.map(p=>[p,read(p,'vms')]));
+
+test('TypeScript host CLI type-checks and verifies catalogs without writing',()=>{
+  const {execFileSync}=require('node:child_process');
+  const files=providers.flatMap(p=>['hosts','vms'].map(kind=>path.join(root,`${p}-${kind}.json`)));
+  const before=files.map(file=>fs.readFileSync(file));
+  const output=execFileSync(process.execPath,[require.resolve('ts-node/dist/bin.js'),path.resolve(__dirname,'../../scripts/cloud-hosts.ts'),'--check'],{
+    cwd:path.resolve(__dirname,'../..'),encoding:'utf8',env:{...process.env,TS_NODE_TRANSPILE_ONLY:'false'},
+  });
+  assert.equal(JSON.parse(output).changedFiles,0);
+  files.forEach((file,index)=>assert.ok(fs.readFileSync(file).equals(before[index]),file));
+});
 
 test('host manufacturing coefficients retain the RAM baseline and component units',()=>{
   const host={id:'test',vcpus:32,memory:16,sockets:1,ssd_count:0,hdd_count:0,accelerators:0,accelerator_memory:0};
