@@ -1,6 +1,6 @@
 # Historical electricity references
 
-`ember-legacy-territories.json` preserves the last published Digital4Better mix and factor series for BM, GI, NU, SH and TL, which disappeared from Ember's current global generation exports during the November 2026 migration.
+`ember-legacy-territories.json` preserves previously published Digital4Better mix and factor series for BM, GI, NU, SH and TL, which are absent from the current Ember generation exports.
 
 The snapshot is extracted from the immutable Git tag `v1.3.68`, commit `9dc09cb` (the complete commit and release date are recorded in the JSON). It contains the five country series from the eight `factor/country-*` and `mix/country-*` JSON files, including yearly/monthly and full-mix/green variants. The original files remain available at https://github.com/digital4better/data/tree/v1.3.68/data and in npm package `@digital4better/data@1.3.68`.
 

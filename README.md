@@ -1,276 +1,87 @@
 # Digital4Better Open Data
 
-Open datasets maintained by Digital4Better to describe the environmental footprint of digital services, cloud infrastructure, electricity systems, and AI models.
+Open reference data for understanding the environmental footprint of digital services, cloud infrastructure, electricity and AI.
 
-This repository is meant to be used as a data source, not as developer documentation. The main audience is analysts, sustainability teams, researchers, product teams, and anyone who needs reusable reference data in `JSON` or `CSV`.
+Available as **JSON and CSV** for analysts, sustainability teams, researchers and product teams. These datasets are used, among other tools, by [fruggr](https://www.fruggr.io).
 
-These reference datasets are used, among other things, by [fruggr](https://www.fruggr.io), Digital4Better's platform for measuring and managing the environmental footprint of digital services.
+**[Explore the data](https://digital4better.github.io/data/)** · **[npm package](https://www.npmjs.com/package/@digital4better/data)** · **[Usage reference](./llms-full.txt)** · **[Contribute](https://github.com/digital4better/data/blob/main/CONTRIBUTING.md)**
 
-## Documentation for AI assistants
+## Find Your Dataset
 
-Start with the package's [short documentation index](./llms.txt), then read the [complete usage reference](./llms-full.txt) for file selection, schemas, units, examples and limitations. Both files are included in the npm package and can be read offline. They describe the installed package; check `package.json` for its version.
-
-The [public website](https://digital4better.github.io/data/) has its own [short index](https://digital4better.github.io/data/llms.txt) and [complete reference](https://digital4better.github.io/data/llms-full.txt), with public download and documentation URLs. The website may contain newer data than an installed package. These documents are entry points; their presence does not guarantee automatic loading by an assistant.
-
-## What You Can Find Here
-
-The repository is organized as a set of reusable data collections:
-
-| Collection | What it covers | Main files |
-| --- | --- | --- |
-| [`data/ai`](./data/ai) | AI model catalog across vendors and cloud providers | `models.json` |
-| [`data/cloud`](./data/cloud) | Cloud regions, virtual machines, modeled hosts, CPUs, accelerators | `*-regions.*`, `*-vms.*`, `*-hosts.*`, `cpus.*`, `accelerators.*` |
-| [`data/country`](./data/country) | Countries, regions, continents, and distance referentials | `regions.*`, `countries.*`, `continents.*`, `*-distances.*` |
-| [`data/energy`](./data/energy) | Environmental impacts of electricity production technologies | `energy-impacts.*` |
-| [`data/mix`](./data/mix) | Electricity mix by geography and time period | `world-*`, `continent-*`, `country-*`, `subdivision-*` |
-| [`data/factor`](./data/factor) | Electricity impact factors derived from energy mix data | `world-*`, `continent-*`, `country-*`, `subdivision-*` |
-| [`data/facility`](./data/facility) | Building electricity and fuel impact factors | `factors.*` |
-| [`data/transport`](./data/transport) | Passenger and vehicle transport impact factors | `factors.*` |
-| [`data/equipment`](./data/equipment) | Equipment energy and embodied impact reference data | `energy.*`, `embodied.*` |
-
-## Why This Repository Exists
-
-These datasets are used to:
-
-- estimate the environmental footprint of digital services
-- compare cloud infrastructure options across providers and regions
-- model electricity-related impacts by country, continent, or subdivision
-- model building energy consumption and employee travel impacts
-- enrich internal or public sustainability dashboards
-- document AI models and their characteristics in a structured way
+| You want to... | Dataset |
+| --- | --- |
+| Compare AI models, capabilities and estimated sizes | [AI models](./data/ai/README.md) |
+| Identify cloud regions, VM hardware and manufacturing impacts | [Cloud infrastructure](./data/cloud/README.md) |
+| Convert electricity consumption into environmental impacts | [Electricity factors](./data/factor) |
+| Explore electricity generation by geography and period | [Electricity mixes](./data/mix) |
+| Compare electricity production technologies | [Energy impacts](./data/energy) |
+| Estimate building energy impacts | [Facility factors](./data/facility/README.md) |
+| Estimate employee travel impacts | [Transport factors](./data/transport/README.md) |
+| Model equipment power and manufacturing impacts | [Equipment references](./data/equipment) |
+| Match countries, subdivisions and estimated distances | [Geographic references](./data/country) |
 
 ## Highlights
 
 ### AI Models
 
-The AI catalog in [`data/ai/models.json`](./data/ai/models.json) documents model families from providers such as OpenAI, Anthropic, Google, Mistral, Meta, Qwen, DeepSeek, Amazon, Cohere, and others.
+Model characteristics, modalities, context windows and active/total parameters across vendors and cloud providers. Undisclosed properties are marked as estimates; historical models remain available.
 
-This makes it useful for market mapping, observatories, governance, and cloud/AI portfolio analysis.
+**Sources:** official vendor documentation, cloud catalogs such as [AWS Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html), [Azure Foundry](https://ai.azure.com/catalog/models/) and [Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models), plus [Hugging Face](https://huggingface.co/), [LifeArchitect](https://lifearchitect.ai/models-table/), [ApXML](https://apxml.com/models/) and [EcoLogits](https://ecologits.ai/latest/methodology/proprietary_models/) where its estimates are retained.
 
-Main source families:
-
-- cloud provider catalogs such as [AWS Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html), [Azure AI Foundry](https://ai.azure.com/catalog/models/), [Google Cloud Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/docs/partner-models/use-partner-models), [OVHcloud AI Endpoints](https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/), and [Scaleway Generative APIs](https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/)
-- official model vendor documentation such as [OpenAI](https://platform.openai.com/docs/models), [Anthropic](https://docs.anthropic.com/en/docs/about-claude/models/overview), [Mistral](https://docs.mistral.ai/getting-started/models/), [Qwen](https://qwen.ai/), and [DeepSeek](https://api-docs.deepseek.com/)
-- model cards and open model hubs such as [Hugging Face](https://huggingface.co/)
-- technical reports and synthesis sources such as [LifeArchitect](https://lifearchitect.ai/models-table/) and [ApXML Models](https://apxml.com/models/)
-- [EcoLogits](https://ecologits.ai/latest/methodology/proprietary_models/) for retained proprietary-model estimates where no independent replacement was verified; the [model provenance and coverage audit](./data/ai/README.md) identifies these adaptations explicitly
-
-Closed-model sizes are estimates, not vendor disclosures. The audit distinguishes published estimates, family-level assumptions, and historical values that still need verification. Cloud references include historical and restricted-access offerings; they are not a guarantee of availability in every region.
+See the [model guide](./data/ai/README.md) and [per-model provenance](./data/ai/provenance.md). Estimated sizes are not vendor disclosures.
 
 ### Cloud Infrastructure
 
-The cloud referentials in [`data/cloud`](./data/cloud) provide structured information for major providers including AWS, Azure, GCP, Oracle Cloud Infrastructure, OVHcloud, and Scaleway.
+Regions, VMs, CPUs, accelerators and modeled hosts for AWS, Azure, GCP, Oracle, OVHcloud and Scaleway. Use VM `embodied_allocated` for allocated manufacturing impact; the legacy VM `embodied` field is deprecated.
 
-See the [cloud reference notes](./data/cloud/README.md) for dated refreshes, source evidence and coverage limits. Historical offers are retained. Unknown published specifications and regional metrics remain absent; empty fields do not mean zero. VM manufacturing impacts use documented modeling assumptions where physical configurations are unavailable.
+**Sources:** official catalogs from [AWS](https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html), [Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview), [GCP](https://docs.cloud.google.com/compute/docs/machine-resource), [Oracle](https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm), [OVHcloud](https://www.ovhcloud.com/en/public-cloud/prices/) and [Scaleway](https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/), together with manufacturer specifications.
 
-Each provider has a JSON and flat CSV catalog of modeled host profiles, linked from its VM records. Use `embodied_allocated` for the manufacturing impact allocated to an instance (tCO2e, before time amortization). The legacy VM `embodied` field is deprecated and retained for compatibility. Host profiles describe calculation assumptions, not a verified inventory of deployed servers.
+Region indicators use provider environmental disclosures, including [AWS](https://sustainability.aboutamazon.com/aws-wue-pue.csv), [Microsoft](https://datacenters.microsoft.com/sustainability/efficiency/), [Google](https://cloud.google.com/sustainability/region-carbon), [Oracle](https://www.oracle.com/a/ocom/docs/corporate/citizenship/oracle-corp-citizenship-report-3941904.pdf), [OVHcloud](https://www.ovhcloud.com/sites/default/files/external_files/kpis_fy25.pdf) and [Scaleway](https://www.scaleway.com/en/docs/environmental-footprint/additional-content/calculation-values-reference/).
 
-Typical use cases:
-
-- mapping regions and datacenter footprints
-- comparing VM families and hardware characteristics
-- linking compute infrastructure to sustainability calculations
-
-Main source families:
-
-- provider region and infrastructure documentation from [AWS](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/), [Microsoft Azure](https://azure.microsoft.com/en-us/explore/global-infrastructure/geographies/), [Google Cloud](https://cloud.google.com/compute/docs/regions-zones), [Oracle Cloud Infrastructure](https://docs.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm), [OVHcloud](https://eco.ovhcloud.com/en-ie/our-commitments/global-infrastructure/), and [Scaleway](https://www.scaleway.com/en/docs/console/my-project/how-to/view-the-list-of-scaleway-regions-and-availability-zones/)
-- manufacturer and hardware reference sources for CPUs and accelerators
-- provider sustainability disclosures used for `pue`, `wue`, and `ref`, including [AWS regional PUE/WUE](https://sustainability.aboutamazon.com/aws-wue-pue.csv), Microsoft regional fact sheets via [datacenters.microsoft.com](https://datacenters.microsoft.com/sustainability/efficiency/), [Google Cloud regional CFE%](https://cloud.google.com/sustainability/region-carbon), Oracle's [Corporate Citizenship Report](https://www.oracle.com/a/ocom/docs/corporate/citizenship/oracle-corp-citizenship-report-3941904.pdf), [OVHcloud FY25 KPIs](https://www.ovhcloud.com/sites/default/files/external_files/kpis_fy25.pdf) and [methodology note](https://corporate.ovhcloud.com/sites/default/files/2025-10/methodology_-_environmental_impact_tracker_fr.pdf), and Scaleway's [calculation reference values](https://www.scaleway.com/en/docs/environmental-footprint/additional-content/calculation-values-reference/) and [impact reports](https://www-uploads.scaleway.com/Impact_Report2024_A4_EN_9a7bd88445.pdf)
-
-Current cloud assumptions kept in the datasets:
-
-- `aws`: `pue` and `wue` come from the 2024 AWS regional CSV; `ref` stays at `0` because AWS public renewable matching disclosures are not used as a region-level factor in this referential
-- `azure`: values come from Microsoft regional fact sheets, combining still-live PDFs with previously curated factsheet values for regions whose older PDFs are no longer publicly retrievable
-- `gcp`: `ref` comes from regional `CFE%`; `wue` comes from previously derived values based on Google environmental reporting and is kept until Google publishes a clearer general regional water metric
-- `oracle`: use a uniform `pue = 1.07` and provisional `wue = 0` until OCI publishes region-level metrics
-- `ovhcloud`: follow FY25 KPI values for `pue`, `wue`, and `ref`
-- `scaleway`: values come from documented datacenter figures, completed where needed with the provider's impact reports
+Read the [cloud guide](./data/cloud/README.md) for units, allocation and assumptions. Hosts are calculation profiles, not a verified server inventory. Regional indicators have different reporting boundaries; zero can be a dataset convention rather than a measured absence of impact.
 
 ### Electricity Mix And Impact Factors
 
-The datasets in [`data/mix`](./data/mix) and [`data/factor`](./data/factor) help translate electricity consumption into environmental impacts.
+Monthly and yearly data at world, continent, country and subdivision levels, with full-mix and renewable-only variants.
 
-They are available at several levels:
+**Sources:** [Ember](https://ember-energy.org/data/yearly-electricity-data/), [UNECE life-cycle assessments](https://unece.org/sed/documents/2021/10/reports/life-cycle-assessment-electricity-generation-options) and [academic literature](https://www.sciencedirect.com/science/article/pii/S0196890422008159#b0530).
 
-- world
-- continent
-- country
-- subdivision
+Historical territories absent from current source exports retain their previous reference series, with later values carried forward. These are not new observations; see [electricity provenance](./data/electricity-provenance.json). A renewable-only scenario with no eligible generation is unavailable, not zero-impact electricity.
 
-And across different time granularities:
+### Facility And Transport
 
-- yearly
-- monthly
+[Facility factors](./data/facility/README.md) cover building electricity and fuels, with explicit lower/higher calorific bases. [Transport factors](./data/transport/README.md) cover travel modes, including aviation, rail, road and active mobility.
 
-The generator reads Ember’s July 2026 wide CSV exports (one row per area, period and electricity source), using technology shares, total generation and signed net imports. Aggregate source rows are excluded from fuel shares to avoid double counting. The previous long-format download URLs now return a migration notice.
-
-BM, GI, NU, SH and TL disappeared from the current Ember generation exports. When a territory is entirely absent, its historical mix and factor series from version `1.3.68` are preserved; later periods carry the last reference forward. These are historical references, not new observations. Their source and coverage are recorded in [`data/electricity-provenance.json`](./data/electricity-provenance.json). Current Ember observations take precedence if a territory returns. Missing historical energy volumes are not invented for global or continental weighting.
-
-Green-only variants are also available through files ending with `-green`.
-When the source mix contains no bioenergy, hydro, solar or wind, the green-only
-mix and its impact factors are unavailable (`null` in JSON, empty cells in CSV),
-not zero-impact electricity.
-
-Main source families:
-
-- electricity generation data from [Ember monthly electricity data](https://ember-energy.org/data/monthly-electricity-data/) and [Ember yearly electricity data](https://ember-energy.org/data/yearly-electricity-data/)
-- impact factors built from lifecycle assessment literature, including [UNECE 2021 - Life cycle assessment of electricity generation options](https://unece.org/sed/documents/2021/10/reports/life-cycle-assessment-electricity-generation-options) and related academic work such as [this Energy paper](https://www.sciencedirect.com/science/article/pii/S0196890422008159#b0530)
-
-### Facility Impact Factors
-
-The annual factors in [`data/facility`](./data/facility) cover purchased building energy:
-
-- electricity for France and Europe, retaining all nine available environmental indicators
-- natural gas, heating oil, propane, and wood pellets when a verified ADEME factor is available
-- explicit lower (`-pci`) or higher (`-pcs`) calorific value bases in fuel factor identifiers
-
-Electricity values are synchronized with the annual factors already generated in [`data/factor`](./data/factor). Fuel values come from valid total records in the ADEME Base Carbone. District heating and cooling are not included because their factors depend on the local network.
-
-### Transport Impact Factors
-
-The annual factors in [`data/transport`](./data/transport) provide a French catalogue for employee travel, including:
-
-- four aviation distance bands
-- national and regional rail, coach, bus, tram, and metro
-- petrol, diesel, electric, hybrid, and plug-in hybrid cars
-- thermal and electric scooters, motorcycles, walking, and bicycles
-
-Collective and active modes are expressed per passenger-kilometre (`pkm`), while individual motor vehicles are expressed per vehicle-kilometre (`vkm`). Values come from the ADEME Impact CO2 transport API without vehicle construction; aviation retains radiative forcing. No European transport fallback is published when an equivalent factor cannot be verified.
-
-### Geography And Distances
-
-The datasets in [`data/country`](./data/country) provide geographic referentials used to map countries, continents, subdivisions, and estimated network distances.
-
-Typical use cases:
-
-- geographic normalization
-- country and subdivision mapping
-- rough estimation of distances between users, countries, regions, and datacenters
-
-Main source families:
-
-- ISO country and subdivision standards
-- internally maintained geographic referentials used to derive administrative mappings and distance approximations
+**Sources:** [ADEME Base Carbone](https://base-empreinte.ademe.fr/), [ADEME Impact CO2](https://impactco2.fr/outils/transport) and the repository's electricity factors. Transport excludes vehicle construction and retains aviation radiative forcing. Missing European equivalents are not replaced silently with French factors.
 
 ### Equipment Reference Data
 
-The datasets in [`data/equipment`](./data/equipment) provide reference values for embodied impacts and operational energy of common digital equipment categories.
+[Equipment references](./data/equipment) support simplified power and manufacturing-impact calculations. [Geographic references](./data/country) support location matching and approximate distance calculations.
 
-Typical use cases:
+**Sources:** Digital4Better modeling inputs, life-cycle assessment literature and [ISO country/subdivision conventions](https://www.iso.org/iso-3166-country-codes.html). Distances and equipment factors are reference estimates, not measurements of a specific deployment. See the [usage reference](./llms-full.txt) for their interpretation.
 
-- footprint modeling at equipment level
-- simplified lifecycle modeling for digital services
-- comparative analysis of device or infrastructure categories
+## Use the Data Safely
 
-Main source families:
+Choose JSON for structured data or CSV for spreadsheets and BI tools. Download files from the website or use a versioned npm package for reproducible calculations.
 
-- Digital4Better internal modeling inputs
-- lifecycle assessment literature and equipment reference datasets used for sustainability calculations
+| Check | Why it matters |
+| --- | --- |
+| Units | Electricity/facility factors are per kWh; transport uses passenger-km or vehicle-km. Cloud manufacturing impact is in tCO2e, not kgCO2e. |
+| Scope and period | A factor may describe a country, a source year, a modeled host or a complete lifecycle. These are not interchangeable. |
+| Missing values | An absent field, `null` or an empty CSV cell means unavailable, not zero. Explicit zeros must be read with the collection's conventions. |
+| Estimates and sources | Public specifications, observed configurations and calculation hypotheses have different evidential strength. |
+| Availability | Historical cloud offers and AI models remain listed after retirement. |
 
-## Formats
+The [complete reference](./llms-full.txt) documents schemas, all environmental indicators and units, examples and limitations. Source observation dates differ from file modification and package release dates.
 
-Most collections are published in both formats:
+## Documentation for AI Assistants
 
-- `JSON` for structured or nested data
-- `CSV` for tabular exploration, spreadsheets, and BI tools
+Use [llms.txt](./llms.txt) as the short package index and [llms-full.txt](./llms-full.txt) as the offline reference. The website provides its own [index](https://digital4better.github.io/data/llms.txt) and [full reference](https://digital4better.github.io/data/llms-full.txt).
 
-If a collection is only available in one format, it is usually because that format is the most natural one for the data structure.
+## Contributing and License
 
-## Units And Environmental Impact Indicators
+Corrections and documented sources are welcome: see [CONTRIBUTING.md](https://github.com/digital4better/data/blob/main/CONTRIBUTING.md).
 
-Impact values combine an indicator-specific unit with a functional unit. For example, a `gwp` value in a transport record whose `unit` is `pkm` is expressed in `kg CO2 eq/pkm`. The `unit` field is therefore the denominator of every impact present in that record, not the unit of the impact indicator itself.
+Published under the [Open Database License (ODbL)](./LICENCE). Preserve upstream attribution and notices where applicable.
 
-### Functional units by collection
-
-| Files | Functional unit | Meaning |
-| --- | --- | --- |
-| [`data/energy/energy-impacts.*`](./data/energy) | `kWh` | Impact per kilowatt-hour of electricity generated by the specified technology. The fixed functional unit is not repeated in each record. |
-| [`data/factor/*`](./data/factor) | `kWh` | Impact per kilowatt-hour of electricity consumed for the specified geography and period. The fixed functional unit is not repeated in each record. |
-| [`data/facility/factors.*`](./data/facility) | `kWh` | Impact per kilowatt-hour of electricity or fuel energy. For fuels, `-pci` and `-pcs` in the factor ID identify the lower or higher calorific value basis. |
-| [`data/transport/factors.*`](./data/transport) | `pkm` or `vkm` | Impact per passenger-kilometre for collective and active transport, or per vehicle-kilometre for individual motor vehicles. |
-| [`data/equipment/embodied.*`](./data/equipment) | `/s` or `/GB/km` | Embodied impact allocated per second for equipment and virtual machines, or per gigabyte-kilometre for networks. |
-| [`data/equipment/energy.*`](./data/equipment) | `W` or `Wh/GB/km` | Operational power for equipment and virtual machines, or electricity used per gigabyte-kilometre for networks. These fields are energy values, not environmental impacts. |
-
-`pkm` means one passenger transported over one kilometre. `vkm` means one vehicle travelling one kilometre, independently of its passenger count. `GB/km` means one gigabyte transferred over one kilometre.
-
-### Common impact indicators
-
-The following indicators and native units are shared by the energy, electricity factor, facility, transport, and equipment collections. They follow the Environmental Footprint impact-category conventions documented by the [European Commission Joint Research Centre](https://publications.jrc.ec.europa.eu/repository/bitstream/JRC130796/JRC130796_01.pdf).
-
-| Field | Environmental impact | Native unit |
-| --- | --- | --- |
-| `adpe` | Resource use, minerals and metals | `kg Sb eq` |
-| `ap` | Acidification | `mol H+ eq` |
-| `ctue` | Freshwater ecotoxicity | `CTUe` |
-| `ctuh-c` | Human toxicity, cancer | `CTUh` |
-| `ctuh-nc` | Human toxicity, non-cancer | `CTUh` |
-| `gwp` | Climate change, global warming potential over 100 years | `kg CO2 eq` |
-| `ir` | Ionising radiation, human health | `kBq U-235 eq` |
-| `pm` | Particulate matter, human health | `disease incidence` |
-| `wu` | Water use | `m3 world eq` |
-
-The complete unit is obtained by dividing the native unit by the collection's functional unit. Examples include `kg CO2 eq/kWh`, `mol H+ eq/kWh`, `kg CO2 eq/pkm`, and `kg CO2 eq/vkm`.
-
-An absent JSON property or an empty CSV cell means that the indicator is not available for that factor. It must not be interpreted as zero. An explicit numeric `0` is a known zero value.
-
-### Additional equipment indicators
-
-[`data/equipment/embodied.*`](./data/equipment) also contains the following indicators. Their native units are divided by the `unit` stored in the same equipment record.
-
-| Field | Environmental impact | Native unit |
-| --- | --- | --- |
-| `adpf` | Resource use, fossils | `MJ` |
-| `epf` | Eutrophication, freshwater | `kg P eq` |
-| `epm` | Eutrophication, marine | `kg N eq` |
-| `ept` | Eutrophication, terrestrial | `mol N eq` |
-| `gwpb` | Climate change, biogenic | `kg CO2 eq` |
-| `gwpt` | Climate change, total | `kg CO2 eq` |
-| `gwplu` | Climate change, land use and land-use change | `kg CO2 eq` |
-| `lu` | Land use, soil quality index | `Pt` (dimensionless) |
-| `odp` | Ozone depletion | `kg CFC-11 eq` |
-| `pocp` | Photochemical ozone formation | `kg NMVOC eq` |
-| `mips` | Material input per service unit | `kg` |
-
-### Cloud sustainability metrics
-
-Cloud region files use additional operational indicators which are not life-cycle impact categories:
-
-| Field | Metric | Unit |
-| --- | --- | --- |
-| `pue` | Power Usage Effectiveness | Ratio, dimensionless |
-| `wue` | Water Usage Effectiveness | `L/kWh` |
-| `ref` | Renewable Energy Factor | Ratio from `0` to `1` |
-
-## Quick Navigation
-
-- AI models: [`data/ai/models.json`](./data/ai/models.json)
-- Cloud regions: [`data/cloud`](./data/cloud)
-- Country and region referentials: [`data/country`](./data/country)
-- Energy impacts: [`data/energy/energy-impacts.json`](./data/energy/energy-impacts.json)
-- Electricity mix: [`data/mix`](./data/mix)
-- Electricity factors: [`data/factor`](./data/factor)
-- Facility factors: [`data/facility`](./data/facility)
-- Transport factors: [`data/transport`](./data/transport)
-- Equipment data: [`data/equipment`](./data/equipment)
-
-## Notes On Data Quality
-
-This repository aims to provide transparent and reusable reference data, but some values should be interpreted with care.
-
-- Some fields are derived from public documentation, model cards, technical reports, or literature rather than official disclosures.
-- Some collections include explicit uncertainty markers such as `estimated`.
-- AI and cloud catalogs evolve quickly, so historical and legacy entries may coexist with current ones.
-- Environmental factors are based on a mix of primary data, literature, and modeling assumptions.
-
-When available, source URLs are kept directly in the data files themselves.
-
-## Related Links
-
-- GitHub repository: [digital4better/data](https://github.com/digital4better/data)
-- Digital4Better: [digital4better.com](https://digital4better.com)
-- fruggr: [fruggr.io](https://www.fruggr.io)
-- Contributing guide: [CONTRIBUTING.md](./CONTRIBUTING.md)
-
-## License
-
-This repository is published under the [ODC Open Database License (ODbL)](./LICENCE).
+[Digital4Better](https://digital4better.com) · [fruggr](https://www.fruggr.io) · [GitHub](https://github.com/digital4better/data)

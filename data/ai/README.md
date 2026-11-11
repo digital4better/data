@@ -1,83 +1,98 @@
 # AI Model Reference Data
 
-This catalog combines public model specifications with explicitly marked estimates for undisclosed properties. It is used for reference and calculation: a populated parameter count is **not** evidence that a vendor has published its weights or architecture.
+AI models across vendors and cloud providers, combining public specifications with explicitly marked estimates. Historical, preview and restricted-access models are retained.
 
-Latest refresh: **2026-11-10**, supplementing the **2026-10-01** audit without removing historical records. See the [model-by-model parameter provenance](./provenance.md) and the [cloud coverage inventory](./cloud-coverage.md). These documents distinguish published facts, third-party estimates, local hypotheses and unresolved historical values.
+## Files
 
-## Sources And Attribution
-
-| Information | Preferred evidence |
+| File | Purpose |
 | --- | --- |
-| Identity, capabilities and context | Official vendor documentation and model cards |
-| Cloud identifiers and availability | Official AWS Bedrock, Azure Foundry, Google Cloud, OVHcloud and Scaleway catalogs |
-| Open-weight size and architecture | Publisher model cards, configurations and technical reports, including Hugging Face |
-| Proprietary size estimates | Version-specific secondary estimates, especially [LifeArchitect](https://lifearchitect.ai/models-table/) and its [methodology](https://lifearchitect.ai/models-table-methodology/) |
-| Additional cross-checks | [ApXML](https://apxml.com/models), [models.dev](https://models.dev), [Ollama](https://ollama.com/library), and research publications |
-| Remaining inherited estimates | [EcoLogits](https://ecologits.ai/latest/methodology/proprietary_models/), with its original source and our transformation identified |
+| [models.json](./models.json) · [models.csv](./models.csv) | Model characteristics and capabilities |
+| [provenance.md](./provenance.md) | Parameter estimates, calculations and disagreements by model |
+| [cloud-coverage.md](./cloud-coverage.md) | Observed cloud identifiers, mappings and coverage limits |
 
-Sources support different fields. A vendor URL proving context does not prove a parameter count. A generic catalog URL is not sufficient numerical provenance. A Hugging Face proxy describes that open checkpoint, not the hidden architecture of the closed model being estimated.
+## File Structure and Units
 
-Credit is retained for EcoLogits contributors, including Samuel Rince, wherever we keep estimates or family proxies derived from their work. The [provenance table](./provenance.md#ecologits-and-adaptations) links the pinned registry, calculation sheet and [upstream MPL-2.0 license](https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/LICENSE). The project's [license](../../LICENSE) does not remove upstream rights or notices. Changing an attribution without changing the derivation would not make data independent.
+JSON is an array of model objects; CSV has one row per model. Optional fields are omitted in JSON and empty in CSV. Lists use `|` in CSV. `parameters` is flattened into `parameters_active` and `parameters_total`; `pattern` and `providers` are JSON-only.
 
-## Reading Estimates
+| JSON field | Type / unit | Meaning |
+| --- | --- | --- |
+| `name` | Text | Canonical model identifier. |
+| `vendor` | Text | Model developer. |
+| `open` | Boolean | Weights are available, not necessarily unrestricted. |
+| `pattern` | Regex string | Recognizes model identifiers and variants. |
+| `type` | Text | Main task, such as text, image, speech or embedding. |
+| `architecture` | Text | Model architecture, such as dense or MoE. |
+| `parameters.active` | Billions of parameters | Weights active during inference. |
+| `parameters.total` | Billions of parameters | Total modeled weights; not an upper bound. |
+| `context` | Tokens | Model context or documented input-token limit. |
+| `corpus` | Billions of tokens for publisher-backed additions | Training corpus size; verify legacy units against the source. |
+| `dimension` | Integer count | Embedding output dimensions. |
+| `hidden_dimension` | Integer count | Core model hidden width, not embedding output size. |
+| `input`, `output` | Arrays of strings | Supported modalities, such as text, image, audio or code. |
+| `reasoning`, `tools` | Booleans | Reasoning and tool-use capabilities. |
+| `providers` | Object of string arrays | Provider name mapped to model identifiers. |
+| `sources` | Array of URLs | Evidence; each URL may support only some fields. |
+| `estimated` | Array of field names | Properties not established by version-specific primary evidence. |
 
-- `parameters.active` and `parameters.total` are in billions, not lower/upper bounds. Dense models conventionally use equal values; MoE active weights must not exceed total weights.
-- `estimated` lists fields not established by a version-specific primary source. Public `input`, `output`, `reasoning` and `tools` capabilities are not filled using pricing assumptions.
-- `sources` links public specifications, numerical anchors and, for local assumptions, this audit. An audit link explains a calculation; it is not external evidence that the calculated size is correct.
-- `context` is a token capacity, never requests per minute, output image resolution, prompt characters or video seconds. Native limits take priority over a narrower hosting tier. Where only a text-input limit is exposed, the provenance notes that scope. Media-only APIs without a meaningful exposed token budget can omit it.
-- `hidden_dimension` is the core model's hidden width. It is distinct from an embedding's output `dimension`; borrowed image-generator widths are marked estimated.
-- Existing `corpus` values are retained, not comprehensively re-audited. Newly added training corpus counts use billions of tokens from publisher cards; older entries still require checking their original source and units.
-- `open` means weights are available, not that a particular license permits every use. Dummy weights, API access and a public model card alone do not establish open-weight availability.
-- `type` describes the main task; `input` and `output` describe modalities. The `audio` category covers music generation, distinct from `speech`. A model that analyzes an image does not thereby generate images.
+## Using the Data
 
-## Calculation Rules
+Dense models conventionally use equal active and total counts. Analyzing images does not imply generating them: check both `input` and `output` rather than the main task alone.
 
-Use the following order, recording why a weaker hypothesis was retained or rejected:
+Public `input`, `output`, `reasoning` and `tools` capabilities are not inferred from prices. Context uses the native model limit rather than a narrower hosting tier; media-only APIs can omit it when no meaningful token budget is exposed.
 
-1. Prefer official checkpoint-specific counts or calculations from a published configuration.
-2. Otherwise retain an explicitly attributed external estimate, unless contradicted by stronger official architecture evidence.
-3. For a documented fine-tune, compare a same-size parent hypothesis with alternatives. Specialization, longer context, reasoning effort or a Pro label do not by themselves imply more weights.
-4. When ancestry is unknown, compare relevant open-model analogues, family-scale estimates and comparable prices. Identify assumptions separately from observations and keep large disagreements visible.
+A populated parameter count **does not mean the vendor disclosed it**. Check `estimated` and the provenance table before treating a number as a measurement.
+
+## Methodology
+
+### Calculation Rules
+
+1. Prefer checkpoint-specific counts or calculations from a published configuration.
+2. Otherwise use an explicitly attributed estimate, unless stronger official evidence contradicts it.
+3. For documented fine-tunes, consider the parent-size hypothesis. Reasoning effort, longer context or a Pro label do not by themselves imply more weights.
+4. When ancestry is unknown, compare open-model analogues, family estimates and comparable prices; document the selected hypothesis and disagreements.
 
 ### Price Scenarios
 
-For a reference model with an estimated active size `A_ref`, a deliberately simple scenario is:
-
 ```text
-r = standard output price_target / standard output price_reference
-A_price = A_ref * r
-T_price = A_price / assumed_active_fraction
+ratio = standard output price_target / standard output price_reference
+active_price = reference_active * ratio
+total_price = active_price / assumed_active_fraction
 ```
 
-This is a sensitivity model, **not a physical scaling law**. Scaling the total count by the same ratio additionally assumes the active fraction is unchanged. Prices cannot identify whether a model is dense or MoE, nor independently determine both active and total weights.
-
-Compare the same billing unit, modality and service class. Do not mix input/output prices, cached/batch/standard rates, dollars per character with dollars per token, or video seconds with text tokens. Even comparable rates contain margins, hardware costs, batching, quantization, utilization, routing and reasoning compute. Price dates and assumptions therefore belong in the provenance record.
-
-For example, Codex Mini is an official fine-tune of o4-mini. Their output-price ratio is `6 / 4.4 = 1.36`, but that is weaker evidence of weight count than the documented parent relationship. The registry retains the parent-size hypothesis and records the price alternative rather than multiplying automatically.
+This is a sensitivity scenario, **not a physical scaling law**. Compare identical billing units, modalities and service classes. Prices also reflect margins, hardware, batching, quantization and inference effort; they cannot establish architecture or independently identify both active and total parameters.
 
 ### Combining Scenarios
 
-Do not count several sites repeating the same estimate, or two calculations sharing the same size anchor, as independent confirmations. An architecture contradiction must be resolved before combining numerical sizes.
-
-When no hypothesis is preferred, a rounded geometric midpoint can provide an explicitly arbitrary operational point:
+Repeated estimates and scenarios sharing an anchor are not independent confirmations. Resolve architecture contradictions before combining sizes. When no scenario is preferred, a rounded geometric midpoint may supply an explicitly arbitrary operational value:
 
 ```text
 selected = exp(mean(log(scenario_sizes)))
 scenario_spread = max(scenario_sizes) / min(scenario_sizes)
 ```
 
-This treats multiplicative differences symmetrically. It is not a statistical estimator of hidden weights, and the scenario spread is not a confidence interval. The per-model table specifies when we instead choose a family anchor, an intermediate open checkpoint or a conservative rounded value. Values should not be used as high-precision measurements.
+This is not a statistical estimate or confidence interval. The provenance table explains when a family anchor or another selection is used instead.
 
-For dense/MoE order-of-magnitude comparisons only, one may calculate `sqrt(total * active)`. This is an effective-size heuristic, not a measured dense architecture or an independent way to recover unknown MoE active weights. The JSON always keeps physical active/total assumptions, not this effective size.
+For order-of-magnitude comparisons, `sqrt(total * active)` is an effective dense-size heuristic. It is not a physical parameter count and does not replace the active/total values.
 
-## Component Counts
+## Sources and Attribution
 
-DeepSeek-V4.1-Flash illustrates another ambiguity: its [publisher card](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash) describes a 552 B backbone plus 196 B of Engram conditional memory. We store their sum, 748 B, as an estimated core total rather than silently dropping that memory. Separate vision/projector and speculative-decoding components are not fully accounted for, so this is not an exact all-component weight count. The 16 B active value is the published decode value; prefill uses 8 B. A single active scalar cannot represent both phases.
+| Information | Sources |
+| --- | --- |
+| Identity, capabilities, context | Official vendor documentation and model cards |
+| Cloud availability | Official AWS Bedrock, Azure Foundry, Google Cloud, OVHcloud and Scaleway catalogs |
+| Open-weight size and architecture | Publisher configurations, technical reports and [Hugging Face](https://huggingface.co/) cards |
+| Proprietary size estimates | [LifeArchitect](https://lifearchitect.ai/models-table/) and its [methodology](https://lifearchitect.ai/models-table-methodology/) |
+| Cross-checks | [ApXML](https://apxml.com/models), [models.dev](https://models.dev), [Ollama](https://ollama.com/library) and research publications |
+| Retained inherited estimates | [EcoLogits](https://ecologits.ai/latest/methodology/proprietary_models/), with the derivation identified |
 
-Image/video hypotheses likewise refer to the core generator, not an entire deployed service including encoders, codecs, safety models and routers. Do not compare these totals as if every source used identical component boundaries.
+A source confirming context does not necessarily support parameter count. An open checkpoint used as an analogue does not reveal a closed model's hidden architecture.
 
-## Coverage And Remaining Limits
+Credit is retained for EcoLogits contributors, including Samuel Rince, wherever their estimates or family proxies are used. See the [attribution details](./provenance.md#ecologits-and-adaptations) and [upstream MPL-2.0 license](https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/LICENSE). The repository's [ODbL license](https://opendatacommons.org/licenses/odbl/1-0/) does not replace upstream rights or notices.
 
-The [cloud inventory](./cloud-coverage.md) accounts for every identifier observed in the inspected public pages. It is not a full authenticated regional availability matrix, nor a census of arbitrary marketplace imports and self-deployable community checkpoints. Historical, preview and restricted models are retained. Provider entries do not guarantee present access in every region.
+## Limitations
 
-Local hypotheses allow otherwise documented models to be included without pretending their hidden sizes are known. Unresolved historical estimates remain explicitly listed rather than silently converted into newly invented, supposedly independent values. No CSV is edited in this audit; the existing pipeline remains responsible for generating it.
+- Parameter estimates can differ greatly between sources. They are calculation hypotheses, not precise measurements or environmental footprints.
+- Component boundaries vary: counts may exclude encoders, projectors, safety models or routers. For example, DeepSeek-V4.1-Flash includes conditional memory in its estimated total; its active value describes decoding, not prefill.
+- Historical `corpus` values have not all been re-audited; check their original source and units.
+- Cloud coverage reflects inspected public catalogs, not every region, marketplace import or self-hosted checkpoint. A listed provider does not guarantee present access.
+- Missing fields remain unavailable. Unresolved historical estimates stay identified in the provenance table rather than being relabeled as independently verified.

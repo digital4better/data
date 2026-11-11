@@ -147,7 +147,7 @@ Values are shares, normally between 0 and 1, rather than percentages or impact f
 
 The provider prefixes are `aws`, `azure`, `gcp`, `oracle`, `ovhcloud` and `scaleway`. Each has `<provider>-regions.json`, `<provider>-vms.json` and `<provider>-hosts.json`, with matching CSV files. Shared [cpus.json](./data/cloud/cpus.json) and [accelerators.json](./data/cloud/accelerators.json) describe hardware. JSON roots are arrays of records. Provider catalogs describe reference offerings and may include historical entries, not a real-time availability check.
 
-The [cloud reference notes](./data/cloud/README.md) record refresh scope, source URLs, capacity units, limitations and approved before/after corrections. Git history provides the per-record changes. Old identifiers are retained even when offers retire. New unverified fields are omitted (empty CSV cells), never silently filled with zero or a neighboring offer's values. A missing coordinate prevents map placement, not use in tables; a missing environmental factor prevents that calculation unless a separately justified fallback is chosen.
+The [cloud reference notes](./data/cloud/README.md) explain file selection, capacity units, manufacturing-impact allocation, assumption codes, sources and limitations. Git history and the linked audit artifacts retain individual changes. Old identifiers remain available when offers retire. Unverified hardware specifications and regional metrics are omitted (empty CSV cells), not silently replaced with zero. Manufacturing impacts use documented modeling assumptions. A missing coordinate prevents map placement, not use in tables; a missing environmental factor prevents that calculation unless a separately justified fallback is chosen.
 
 ### Regions
 
