@@ -37,3 +37,6 @@ nvidia-tesla-v10016,gpu,nvidia,tesla,v100,volta,5120,16,250,12,815,21100
 nvidia-tesla-v10032,gpu,nvidia,tesla,v100,volta,5120,32,250,12,815,21100
 qualcomm-ai100-standard,asic,qualcomm,ai100,standard,cloud ai,16,16,75,7,0,0
 amd-radeon-mi355x,gpu,amd,radeon,mi355x,instinct,,288,,,,
+nvidia-rtx-pro-4500-blackwell-server,gpu,nvidia,rtx pro,4500 blackwell server,blackwell,10496,32,165,,,
+nvidia-tesla-v100s32,gpu,nvidia,tesla,v100s,volta,5120,32,250,,,
+nvidia-blackwell-b200-192,gpu,nvidia,blackwell,b200-192,blackwell,,192,,,,

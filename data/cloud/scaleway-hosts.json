@@ -1,0 +1,1903 @@
+[
+  {
+    "id": "scaleway-amp2-c60-cd6e8fa68c",
+    "provider": "scaleway",
+    "name": "amp2-c60",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 60,
+    "memory": 119.75,
+    "sockets": 1,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.143890875
+  },
+  {
+    "id": "scaleway-arm64-128gb-0a8f1f5c0e",
+    "provider": "scaleway",
+    "name": "arm64-128gb",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 128,
+    "sockets": 2,
+    "cpu": [
+      "cavium-thunderx-cn8890"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2553328
+  },
+  {
+    "id": "scaleway-b300-sxm-8-288g-c86a8e507d",
+    "provider": "scaleway",
+    "name": "b300-sxm-8-288g",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 4096,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6776p"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "accelerator": "nvidia-blackwell-b300",
+    "accelerators": 8,
+    "accelerator_memory": 288,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "gpu-host-proxy",
+      "inferred-sockets",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 11.7764464
+  },
+  {
+    "id": "scaleway-basic2-a2c-4g-73813ccf85",
+    "provider": "scaleway",
+    "name": "basic2-a2c-4g",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 16,
+    "memory": 512,
+    "sockets": 1,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "remote-storage-excluded"
+    ],
+    "embodied": 1.6879024
+  },
+  {
+    "id": "scaleway-basic3-x2c-4g-d7a31d93d7",
+    "provider": "scaleway",
+    "name": "basic3-x2c-4g",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 16,
+    "memory": 768,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "remote-storage-excluded"
+    ],
+    "embodied": 2.0429488
+  },
+  {
+    "id": "scaleway-compute3-x2c-4g-c164b6bddd",
+    "provider": "scaleway",
+    "name": "compute3-x2c-4g",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 768,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "remote-storage-excluded"
+    ],
+    "embodied": 2.0429488
+  },
+  {
+    "id": "scaleway-container-1024-cc90750a91",
+    "provider": "scaleway",
+    "name": "container-1024",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 1,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7543"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 1
+  },
+  {
+    "id": "scaleway-container-128-cc90750a91",
+    "provider": "scaleway",
+    "name": "container-128",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 1,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7543"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 1
+  },
+  {
+    "id": "scaleway-container-2048-cc90750a91",
+    "provider": "scaleway",
+    "name": "container-2048",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 1,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7543"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 1
+  },
+  {
+    "id": "scaleway-container-256-cc90750a91",
+    "provider": "scaleway",
+    "name": "container-256",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 1,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7543"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 1
+  },
+  {
+    "id": "scaleway-container-512-cc90750a91",
+    "provider": "scaleway",
+    "name": "container-512",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 1,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7543"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 1
+  },
+  {
+    "id": "scaleway-coparm1-32c-128g-c56f7b0893",
+    "provider": "scaleway",
+    "name": "coparm1-32c-128g",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 128,
+    "sockets": 1,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1553328
+  },
+  {
+    "id": "scaleway-dev1-xl-1a85986240",
+    "provider": "scaleway",
+    "name": "dev1-xl",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 4,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7281"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1
+  },
+  {
+    "id": "scaleway-em-a115x-ssd-93200069e3",
+    "provider": "scaleway",
+    "name": "em-a115x-ssd",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 4,
+    "memory": 32,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e31220"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2040,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1221904
+  },
+  {
+    "id": "scaleway-em-a410x-ssd-9dfe1d750f",
+    "provider": "scaleway",
+    "name": "em-a410x-ssd",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 12,
+    "memory": 64,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e51650"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2040,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1665712
+  },
+  {
+    "id": "scaleway-em-a610r-nvme-01b3f20cf7",
+    "provider": "scaleway",
+    "name": "em-a610r-nvme",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 12,
+    "memory": 32,
+    "sockets": 1,
+    "cpu": [
+      "amd-ryzen-3600"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 1,
+    "ssd_capacity": 2040,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-hdd",
+      "storage-proxy"
+    ],
+    "embodied": 1.1721904
+  },
+  {
+    "id": "scaleway-em-a610r-nvme-8c21d2bec7",
+    "provider": "scaleway",
+    "name": "em-a610r-nvme",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 12,
+    "memory": 32,
+    "sockets": 1,
+    "cpu": [
+      "amd-ryzen-3600"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2040,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1221904
+  },
+  {
+    "id": "scaleway-em-b111x-sata-30722528df",
+    "provider": "scaleway",
+    "name": "em-b111x-sata",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 24,
+    "memory": 192,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e52620"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 1,
+    "hdd_capacity": 16000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd",
+      "storage-proxy"
+    ],
+    "embodied": 1.4940944
+  },
+  {
+    "id": "scaleway-em-b111x-sata-6191379e60",
+    "provider": "scaleway",
+    "name": "em-b111x-sata",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 24,
+    "memory": 192,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e52620"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 1,
+    "hdd_capacity": 16000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.3940944
+  },
+  {
+    "id": "scaleway-em-b211x-sata-02b96a7c87",
+    "provider": "scaleway",
+    "name": "em-b211x-sata",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 256,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e52650"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 1,
+    "hdd_capacity": 16000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd",
+      "storage-proxy"
+    ],
+    "embodied": 1.582856
+  },
+  {
+    "id": "scaleway-em-b211x-sata-e9d19023d2",
+    "provider": "scaleway",
+    "name": "em-b211x-sata",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 256,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e52650"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 1,
+    "hdd_capacity": 16000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.482856
+  },
+  {
+    "id": "scaleway-em-b311x-sata-3663ffcc59",
+    "provider": "scaleway",
+    "name": "em-b311x-sata",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 40,
+    "memory": 256,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e52670v2"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 1,
+    "hdd_capacity": 24000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.482856
+  },
+  {
+    "id": "scaleway-em-b311x-sata-b1faaf0fc8",
+    "provider": "scaleway",
+    "name": "em-b311x-sata",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 40,
+    "memory": 256,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e52670v2"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 1,
+    "hdd_capacity": 24000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd",
+      "storage-proxy"
+    ],
+    "embodied": 1.582856
+  },
+  {
+    "id": "scaleway-em-b320e-nvme-5e751d2ddb",
+    "provider": "scaleway",
+    "name": "em-b320e-nvme",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 16,
+    "memory": 128,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7232p"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 8200,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2553328
+  },
+  {
+    "id": "scaleway-em-b320e-nvme-f2d91126e9",
+    "provider": "scaleway",
+    "name": "em-b320e-nvme",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 16,
+    "memory": 128,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7232p"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 4100,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2553328
+  },
+  {
+    "id": "scaleway-em-b520e-nvme-607493b3dd",
+    "provider": "scaleway",
+    "name": "em-b520e-nvme",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 24,
+    "memory": 256,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7272"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 16000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.432856
+  },
+  {
+    "id": "scaleway-em-b520e-nvme-62ce84fd9d",
+    "provider": "scaleway",
+    "name": "em-b520e-nvme",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 24,
+    "memory": 256,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7272"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 4100,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.432856
+  },
+  {
+    "id": "scaleway-em-i120e-nvme-74d55d2e1b",
+    "provider": "scaleway",
+    "name": "em-i120e-nvme",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 16,
+    "memory": 64,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-8024p"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 1920,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1665712
+  },
+  {
+    "id": "scaleway-em-i215e-nvme-f02653630a",
+    "provider": "scaleway",
+    "name": "em-i215e-nvme",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 256,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7313p"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3840,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.432856
+  },
+  {
+    "id": "scaleway-em-i220e-nvme-96972462ed",
+    "provider": "scaleway",
+    "name": "em-i220e-nvme",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 128,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-8124p"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 1920,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2553328
+  },
+  {
+    "id": "scaleway-em-i320e-nvme-5af5c9fe0d",
+    "provider": "scaleway",
+    "name": "em-i320e-nvme",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 48,
+    "memory": 192,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-8224p"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3840,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.3440944
+  },
+  {
+    "id": "scaleway-em-i420e-nvme-454892d853",
+    "provider": "scaleway",
+    "name": "em-i420e-nvme",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 256,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-8324p"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3840,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.432856
+  },
+  {
+    "id": "scaleway-em-i520e-nvme-3cb6de0384",
+    "provider": "scaleway",
+    "name": "em-i520e-nvme",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 384,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-8434p"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 15360,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.6103792
+  },
+  {
+    "id": "scaleway-em-i520e-nvme-7c1b296144",
+    "provider": "scaleway",
+    "name": "em-i520e-nvme",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 384,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-8434p"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 7680,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.6103792
+  },
+  {
+    "id": "scaleway-em-i620e-nvme-93134279bf",
+    "provider": "scaleway",
+    "name": "em-i620e-nvme",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 576,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-8534p"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 7680,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.876664
+  },
+  {
+    "id": "scaleway-em-l101x-sata-12e6bf507b",
+    "provider": "scaleway",
+    "name": "em-l101x-sata",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 8,
+    "memory": 96,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e51410v2"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 1,
+    "hdd_capacity": 12000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd",
+      "storage-proxy"
+    ],
+    "embodied": 1.260952
+  },
+  {
+    "id": "scaleway-em-l101x-sata-29f6af14ab",
+    "provider": "scaleway",
+    "name": "em-l101x-sata",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 8,
+    "memory": 96,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e51410v2"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 1,
+    "hdd_capacity": 24000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.160952
+  },
+  {
+    "id": "scaleway-em-l101x-sata-50c40e1d1c",
+    "provider": "scaleway",
+    "name": "em-l101x-sata",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 8,
+    "memory": 96,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e51410v2"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 1,
+    "hdd_capacity": 12000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.160952
+  },
+  {
+    "id": "scaleway-em-l101x-sata-df8e44592b",
+    "provider": "scaleway",
+    "name": "em-l101x-sata",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 8,
+    "memory": 96,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e51410v2"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 1,
+    "hdd_capacity": 48000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.160952
+  },
+  {
+    "id": "scaleway-em-t220e-l40s-7e4bb0a2be",
+    "provider": "scaleway",
+    "name": "em-t220e-l40s",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 256,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9334"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 7680,
+    "accelerator": "nvidia-tesla-l40s",
+    "accelerators": 2,
+    "accelerator_memory": 48,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.8216176
+  },
+  {
+    "id": "scaleway-em-t620e-h100-c0bbe54f67",
+    "provider": "scaleway",
+    "name": "em-t620e-h100",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 512,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9334"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 15360,
+    "accelerator": "nvidia-tesla-h10080",
+    "accelerators": 2,
+    "accelerator_memory": 80,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.2654256
+  },
+  {
+    "id": "scaleway-ent1-2xl-2b8908f41f",
+    "provider": "scaleway",
+    "name": "ent1-2xl",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 384,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-7543"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.6103792
+  },
+  {
+    "id": "scaleway-function-1024-cc90750a91",
+    "provider": "scaleway",
+    "name": "function-1024",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 1,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7543"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 1
+  },
+  {
+    "id": "scaleway-function-128-cc90750a91",
+    "provider": "scaleway",
+    "name": "function-128",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 1,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7543"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 1
+  },
+  {
+    "id": "scaleway-function-2048-cc90750a91",
+    "provider": "scaleway",
+    "name": "function-2048",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 1,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7543"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 1
+  },
+  {
+    "id": "scaleway-function-256-cc90750a91",
+    "provider": "scaleway",
+    "name": "function-256",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 1,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7543"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 1
+  },
+  {
+    "id": "scaleway-function-3072-cc90750a91",
+    "provider": "scaleway",
+    "name": "function-3072",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 1,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7543"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 1
+  },
+  {
+    "id": "scaleway-function-4096-cc90750a91",
+    "provider": "scaleway",
+    "name": "function-4096",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 1,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7543"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 1
+  },
+  {
+    "id": "scaleway-function-512-cc90750a91",
+    "provider": "scaleway",
+    "name": "function-512",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 1,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7543"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 1
+  },
+  {
+    "id": "scaleway-gp1-xl-0b1ca3d0d5",
+    "provider": "scaleway",
+    "name": "gp1-xl",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 48,
+    "memory": 256,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7401p"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.332856
+  },
+  {
+    "id": "scaleway-gpu-3070-s-10e2bd185f",
+    "provider": "scaleway",
+    "name": "gpu-3070-s",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 8,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7543"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerator": "nvidia-rtx-3070",
+    "accelerators": 1,
+    "accelerator_memory": 8,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.15
+  },
+  {
+    "id": "scaleway-h100-2-80g-a83a051398",
+    "provider": "scaleway",
+    "name": "h100-2-80g",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 48,
+    "memory": 480,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9334"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerator": "nvidia-tesla-h10080",
+    "accelerators": 2,
+    "accelerator_memory": 80,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.1210448
+  },
+  {
+    "id": "scaleway-h100-sxm-8-80g-957c59d257",
+    "provider": "scaleway",
+    "name": "h100-sxm-8-80g",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 960,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8452y"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerator": "nvidia-tesla-h10080",
+    "accelerators": 8,
+    "accelerator_memory": 80,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 4.3193264
+  },
+  {
+    "id": "scaleway-l4-8-24g-e0668b82e2",
+    "provider": "scaleway",
+    "name": "l4-8-24g",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 384,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-7413"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerator": "nvidia-tesla-l4",
+    "accelerators": 8,
+    "accelerator_memory": 24,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.8991408
+  },
+  {
+    "id": "scaleway-l40s-8-48g-64d9714fa8",
+    "provider": "scaleway",
+    "name": "l40s-8-48g",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 768,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-7413"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerator": "nvidia-tesla-l40s",
+    "accelerators": 8,
+    "accelerator_memory": 48,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 3.6979952
+  },
+  {
+    "id": "scaleway-memory3-x2c-16g-2ce612cd86",
+    "provider": "scaleway",
+    "name": "memory3-x2c-16g",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 48,
+    "memory": 768,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "remote-storage-excluded"
+    ],
+    "embodied": 2.0429488
+  },
+  {
+    "id": "scaleway-play2-micro-df949a1a4c",
+    "provider": "scaleway",
+    "name": "play2-micro",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 4,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7543"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1
+  },
+  {
+    "id": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
+    "provider": "scaleway",
+    "name": "pop2-hm-48c-384g",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 48,
+    "memory": 384,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7543"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.5103792
+  },
+  {
+    "id": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "provider": "scaleway",
+    "name": "pop2-hm-64c-512g",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 512,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7543"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.6879024
+  },
+  {
+    "id": "scaleway-pop2-hn-10-8e4bde0c27",
+    "provider": "scaleway",
+    "name": "pop2-hn-10",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 4,
+    "memory": 16,
+    "sockets": 2,
+    "cpu": [],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1
+  },
+  {
+    "id": "scaleway-pro2-l-a37cd5804f",
+    "provider": "scaleway",
+    "name": "pro2-l",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 128,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7543"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1553328
+  },
+  {
+    "id": "scaleway-render-s-c4d96258d4",
+    "provider": "scaleway",
+    "name": "render-s",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 10,
+    "memory": 42,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-6148"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 400,
+    "accelerator": "nvidia-tesla-p10016",
+    "accelerators": 1,
+    "accelerator_memory": 16,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2860594
+  },
+  {
+    "id": "scaleway-standard2-a2c-8g-7fe869391e",
+    "provider": "scaleway",
+    "name": "standard2-a2c-8g",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 512,
+    "sockets": 1,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "remote-storage-excluded"
+    ],
+    "embodied": 1.6879024
+  },
+  {
+    "id": "scaleway-standard3-x2c-8g-23664d586b",
+    "provider": "scaleway",
+    "name": "standard3-x2c-8g",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 768,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "remote-storage-excluded"
+    ],
+    "embodied": 2.0429488
+  },
+  {
+    "id": "scaleway-stardust1-s-0d3bd0c71e",
+    "provider": "scaleway",
+    "name": "stardust1-s",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 1,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7281"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1
+  },
+  {
+    "id": "scaleway-start1-l-149cc00ccf",
+    "provider": "scaleway",
+    "name": "start1-l",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 8,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7281"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1
+  },
+  {
+    "id": "scaleway-vc1l-95af26d8f6",
+    "provider": "scaleway",
+    "name": "vc1l",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 6,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7281"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1
+  }
+]

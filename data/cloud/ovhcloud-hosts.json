@@ -1,0 +1,623 @@
+[
+  {
+    "id": "ovhcloud-a10-180-a5ead5982f",
+    "provider": "ovhcloud",
+    "name": "a10-180",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 120,
+    "memory": 170,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 400,
+    "accelerator": "nvidia-tesla-a10",
+    "accelerators": 4,
+    "accelerator_memory": 24,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.0579634
+  },
+  {
+    "id": "ovhcloud-a100-720-535e48f26d",
+    "provider": "ovhcloud",
+    "name": "a100-720",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 60,
+    "memory": 720,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 500,
+    "accelerator": "nvidia-tesla-a10080",
+    "accelerators": 4,
+    "accelerator_memory": 80,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 3.031424
+  },
+  {
+    "id": "ovhcloud-b2-120-a262942e1c",
+    "provider": "ovhcloud",
+    "name": "b2-120",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 120,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2442376
+  },
+  {
+    "id": "ovhcloud-b3-640-cccb203647",
+    "provider": "ovhcloud",
+    "name": "b3-640",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 160,
+    "memory": 640,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.9654256
+  },
+  {
+    "id": "ovhcloud-bm-l1-916131b13f",
+    "provider": "ovhcloud",
+    "name": "bm-l1",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 16,
+    "memory": 128,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7371"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 1920,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2553328
+  },
+  {
+    "id": "ovhcloud-bm-m1-423495ad0c",
+    "provider": "ovhcloud",
+    "name": "bm-m1",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 8,
+    "memory": 64,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e2288g"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 1920,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1665712
+  },
+  {
+    "id": "ovhcloud-bm-s1-5202e99bab",
+    "provider": "ovhcloud",
+    "name": "bm-s1",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 4,
+    "memory": 32,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e2274g"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 1920,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1221904
+  },
+  {
+    "id": "ovhcloud-c2-120-a262942e1c",
+    "provider": "ovhcloud",
+    "name": "c2-120",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 120,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2442376
+  },
+  {
+    "id": "ovhcloud-c3-320-0f2e968419",
+    "provider": "ovhcloud",
+    "name": "c3-320",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 160,
+    "memory": 320,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.5216176
+  },
+  {
+    "id": "ovhcloud-d2-8-df02e9f47b",
+    "provider": "ovhcloud",
+    "name": "d2-8",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 4,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 1,
+    "hdd_capacity": 50,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.05
+  },
+  {
+    "id": "ovhcloud-h100-1520-542a399611",
+    "provider": "ovhcloud",
+    "name": "h100-1520",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 120,
+    "memory": 1520,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 15560,
+    "accelerator": "nvidia-tesla-h10080",
+    "accelerators": 4,
+    "accelerator_memory": 80,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 4.140944
+  },
+  {
+    "id": "ovhcloud-h200-1920-366dda1637",
+    "provider": "ovhcloud",
+    "name": "h200-1920",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 1920,
+    "sockets": 2,
+    "cpu": [],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "ssd_capacity": 31120,
+    "accelerator": "nvidia-tesla-h200",
+    "accelerators": 8,
+    "accelerator_memory": 141,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "gpu-host-proxy",
+      "inferred-sockets",
+      "installed-ram-proxy",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 7.1275576
+  },
+  {
+    "id": "ovhcloud-i1-180-60926f2ba9",
+    "provider": "ovhcloud",
+    "name": "i1-180",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 180,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 1,
+    "ssd_capacity": 50,
+    "hdd_capacity": 7600,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.3774516
+  },
+  {
+    "id": "ovhcloud-l4-360-bccc2d006d",
+    "provider": "ovhcloud",
+    "name": "l4-360",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 90,
+    "memory": 360,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 400,
+    "accelerator": "nvidia-tesla-l4",
+    "accelerators": 4,
+    "accelerator_memory": 24,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.2214744
+  },
+  {
+    "id": "ovhcloud-l40s-360-f0adcc7b38",
+    "provider": "ovhcloud",
+    "name": "l40s-360",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 60,
+    "memory": 360,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 400,
+    "accelerator": "nvidia-tesla-l40s",
+    "accelerators": 4,
+    "accelerator_memory": 48,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.3546168
+  },
+  {
+    "id": "ovhcloud-r2-240-b49c34da15",
+    "provider": "ovhcloud",
+    "name": "r2-240",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 16,
+    "memory": 240,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.4106656
+  },
+  {
+    "id": "ovhcloud-r3-1024-21df758f3c",
+    "provider": "ovhcloud",
+    "name": "r3-1024",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 1024,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9r14"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.4979952
+  },
+  {
+    "id": "ovhcloud-rtx5000-84-d60ac2d58f",
+    "provider": "ovhcloud",
+    "name": "rtx5000-84",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 16,
+    "memory": 84,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7r32"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 400,
+    "accelerator": "nvidia-quadro-rtx5000",
+    "accelerators": 3,
+    "accelerator_memory": 16,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.6443092
+  },
+  {
+    "id": "ovhcloud-t1-45-efc24b8417",
+    "provider": "ovhcloud",
+    "name": "t1-45",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 36,
+    "memory": 256,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-4214"
+    ],
+    "ssd_count": 4,
+    "hdd_count": 0,
+    "accelerator": "nvidia-tesla-v10016",
+    "accelerators": 4,
+    "accelerator_memory": 16,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "gpu-host-proxy",
+      "inferred-sockets",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.432856
+  },
+  {
+    "id": "ovhcloud-t1-le-180-77daae8f8c",
+    "provider": "ovhcloud",
+    "name": "t1-le-180",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 180,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7371"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 400,
+    "accelerator": "nvidia-tesla-v10016",
+    "accelerators": 4,
+    "accelerator_memory": 16,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.9274516
+  },
+  {
+    "id": "ovhcloud-t2-45-09047060c9",
+    "provider": "ovhcloud",
+    "name": "t2-45",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 60,
+    "memory": 256,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6226r"
+    ],
+    "ssd_count": 4,
+    "hdd_count": 0,
+    "accelerator": "nvidia-tesla-v100s32",
+    "accelerators": 4,
+    "accelerator_memory": 32,
+    "sources": [
+      "https://www.ovhcloud.com/en/public-cloud/prices/"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "gpu-host-proxy",
+      "inferred-sockets",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.5216176
+  }
+]

@@ -1,0 +1,6987 @@
+[
+  {
+    "id": "azure-a7-3f18836ab2",
+    "provider": "azure",
+    "name": "a7",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 8,
+    "memory": 56,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e52660"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 1,
+    "hdd_capacity": 605,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.105476
+  },
+  {
+    "id": "azure-a8m-v2-ffcbdcabaa",
+    "provider": "azure",
+    "name": "a8m-v2",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 8,
+    "memory": 64,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8370c",
+      "intel-xeon-8272cl",
+      "intel-xeon-8171m",
+      "intel-xeon-e52673v4",
+      "intel-xeon-e52673v3"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 1,
+    "hdd_capacity": 80,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1165712
+  },
+  {
+    "id": "azure-b16ps-v2-51db84ab5b",
+    "provider": "azure",
+    "name": "b16ps-v2",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 16,
+    "memory": 64,
+    "sockets": 1,
+    "cpu": [
+      "ampere-altra-q8030"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.0665712
+  },
+  {
+    "id": "azure-b20ms-b44609afd5",
+    "provider": "azure",
+    "name": "b20ms",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 20,
+    "memory": 80,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8370c",
+      "intel-xeon-8272cl",
+      "intel-xeon-8171m",
+      "intel-xeon-e52673v4",
+      "intel-xeon-e52673v3"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 160,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1887616
+  },
+  {
+    "id": "azure-b32as-v2-cdec8ffa44",
+    "provider": "azure",
+    "name": "b32as-v2",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 128,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7763v"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1553328
+  },
+  {
+    "id": "azure-b32s-v2-a84032861a",
+    "provider": "azure",
+    "name": "b32s-v2",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 128,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8473c",
+      "intel-xeon-8370c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1553328
+  },
+  {
+    "id": "azure-d128lds-v6-4de6db126d",
+    "provider": "azure",
+    "name": "d128lds-v6",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 256,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8573c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 7040,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.532856
+  },
+  {
+    "id": "azure-d128ls-v6-c4d00006cc",
+    "provider": "azure",
+    "name": "d128ls-v6",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 256,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8573c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.432856
+  },
+  {
+    "id": "azure-d12s-58b94d3749",
+    "provider": "azure",
+    "name": "d12s",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 4,
+    "memory": 28,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8171m"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 56,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1166428
+  },
+  {
+    "id": "azure-d13-608aee817f",
+    "provider": "azure",
+    "name": "d13",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 8,
+    "memory": 56,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8272cl"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.155476
+  },
+  {
+    "id": "azure-d14-c85e89d409",
+    "provider": "azure",
+    "name": "d14",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 16,
+    "memory": 112,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8171m"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 800,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2331424
+  },
+  {
+    "id": "azure-d14s-141711c3fb",
+    "provider": "azure",
+    "name": "d14s",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 16,
+    "memory": 112,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8272cl"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 224,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2331424
+  },
+  {
+    "id": "azure-d15-v2-f334e11243",
+    "provider": "azure",
+    "name": "d15-v2",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 20,
+    "memory": 140,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8370c",
+      "intel-xeon-8272cl",
+      "intel-xeon-8171m",
+      "intel-xeon-e52673v4",
+      "intel-xeon-e52673v3"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 1000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2719756
+  },
+  {
+    "id": "azure-d160ads-v7-40be952c8a",
+    "provider": "azure",
+    "name": "d160ads-v7",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 160,
+    "memory": 640,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2200,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.9654256
+  },
+  {
+    "id": "azure-d160as-v7-80dcbdfe5f",
+    "provider": "azure",
+    "name": "d160as-v7",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 160,
+    "memory": 640,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.8654256
+  },
+  {
+    "id": "azure-d2alds-v7-4e88af3426",
+    "provider": "azure",
+    "name": "d2alds-v7",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 160,
+    "memory": 640,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd_count": 6,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/daldsv7-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 2.5654256
+  },
+  {
+    "id": "azure-d2als-v7-720b04f8b9",
+    "provider": "azure",
+    "name": "d2als-v7",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 160,
+    "memory": 640,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dalsv7-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 1.9654256
+  },
+  {
+    "id": "azure-d2ds-v7-0ea64a0036",
+    "provider": "azure",
+    "name": "d2ds-v7",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 372,
+    "memory": 1488,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6973pc"
+    ],
+    "ssd_count": 6,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/ddsv7-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 3.7415168
+  },
+  {
+    "id": "azure-d2lds-v7-d33ddffe55",
+    "provider": "azure",
+    "name": "d2lds-v7",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 248,
+    "memory": 1488,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6973pc"
+    ],
+    "ssd_count": 6,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dldsv7-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 3.7415168
+  },
+  {
+    "id": "azure-d2ls-v7-df6098d267",
+    "provider": "azure",
+    "name": "d2ls-v7",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 248,
+    "memory": 1488,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6973pc"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dlsv7-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 3.1415168
+  },
+  {
+    "id": "azure-d2nls-v6-8dccedc2d2",
+    "provider": "azure",
+    "name": "d2nls-v6",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 512,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8573c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/dnlsv6-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 1.7879024
+  },
+  {
+    "id": "azure-d2ns-v6-8dccedc2d2",
+    "provider": "azure",
+    "name": "d2ns-v6",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 512,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8573c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/dnsv6-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 1.7879024
+  },
+  {
+    "id": "azure-d2s-v7-dd47d82a38",
+    "provider": "azure",
+    "name": "d2s-v7",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 372,
+    "memory": 1488,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6973pc"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv7-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 3.1415168
+  },
+  {
+    "id": "azure-d5-v2-75edf4ceda",
+    "provider": "azure",
+    "name": "d5-v2",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 16,
+    "memory": 56,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8370c",
+      "intel-xeon-8272cl",
+      "intel-xeon-8171m",
+      "intel-xeon-e52673v4",
+      "intel-xeon-e52673v3"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 800,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.155476
+  },
+  {
+    "id": "azure-d64-v3-e6eafa5e98",
+    "provider": "azure",
+    "name": "d64-v3",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 256,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8370c",
+      "intel-xeon-8272cl",
+      "intel-xeon-8171m",
+      "intel-xeon-e52673v4",
+      "intel-xeon-e52673v3"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 1600,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.432856
+  },
+  {
+    "id": "azure-d64-v4-1f0414b520",
+    "provider": "azure",
+    "name": "d64-v4",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 256,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8370c",
+      "intel-xeon-8272cl",
+      "intel-xeon-8473c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.332856
+  },
+  {
+    "id": "azure-d64d-v4-ba491d7386",
+    "provider": "azure",
+    "name": "d64d-v4",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 256,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8370c",
+      "intel-xeon-8272cl"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.432856
+  },
+  {
+    "id": "azure-d64pds-v5-58efad2205",
+    "provider": "azure",
+    "name": "d64pds-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 208,
+    "sockets": 1,
+    "cpu": [
+      "ampere-altra-q8030"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.3662848
+  },
+  {
+    "id": "azure-d64plds-v5-9898ac77b5",
+    "provider": "azure",
+    "name": "d64plds-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 128,
+    "sockets": 1,
+    "cpu": [
+      "ampere-altra-q8030"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2553328
+  },
+  {
+    "id": "azure-d64pls-v5-90286ece9b",
+    "provider": "azure",
+    "name": "d64pls-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 128,
+    "sockets": 1,
+    "cpu": [
+      "ampere-altra-q8030"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1553328
+  },
+  {
+    "id": "azure-d64ps-v5-61a4753d33",
+    "provider": "azure",
+    "name": "d64ps-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 208,
+    "sockets": 1,
+    "cpu": [
+      "ampere-altra-q8030"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2662848
+  },
+  {
+    "id": "azure-d96-v5-4f201be572",
+    "provider": "azure",
+    "name": "d96-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 384,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8473c",
+      "intel-xeon-8370c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.5103792
+  },
+  {
+    "id": "azure-d96a-v4-765acb6d92",
+    "provider": "azure",
+    "name": "d96a-v4",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 384,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7452",
+      "amd-epyc-7763v"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.6103792
+  },
+  {
+    "id": "azure-d96ads-v6-a60ad7cbdc",
+    "provider": "azure",
+    "name": "d96ads-v6",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 384,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9v74"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 5280,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.6103792
+  },
+  {
+    "id": "azure-d96alds-v6-ac29164ddf",
+    "provider": "azure",
+    "name": "d96alds-v6",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 192,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9v74"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 5280,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.3440944
+  },
+  {
+    "id": "azure-d96als-v6-5fa915d19e",
+    "provider": "azure",
+    "name": "d96als-v6",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 192,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9v74"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2440944
+  },
+  {
+    "id": "azure-d96d-v5-3ca20559a6",
+    "provider": "azure",
+    "name": "d96d-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 384,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8370c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3600,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.7103792
+  },
+  {
+    "id": "azure-d96lds-v5-70b07a83af",
+    "provider": "azure",
+    "name": "d96lds-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 192,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8473c",
+      "intel-xeon-8370c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3600,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.3440944
+  },
+  {
+    "id": "azure-d96ls-v5-5425a8654a",
+    "provider": "azure",
+    "name": "d96ls-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 192,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8473c",
+      "intel-xeon-8370c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2440944
+  },
+  {
+    "id": "azure-d96pds-v6-30e890bd63",
+    "provider": "azure",
+    "name": "d96pds-v6",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 384,
+    "sockets": 1,
+    "cpu": [
+      "azure-cobalt-100"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 5280,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.6103792
+  },
+  {
+    "id": "azure-d96plds-v6-84dc16ff82",
+    "provider": "azure",
+    "name": "d96plds-v6",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 192,
+    "sockets": 1,
+    "cpu": [
+      "azure-cobalt-100"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 5280,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.3440944
+  },
+  {
+    "id": "azure-d96pls-v6-03ea3480ca",
+    "provider": "azure",
+    "name": "d96pls-v6",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 192,
+    "sockets": 1,
+    "cpu": [
+      "azure-cobalt-100"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2440944
+  },
+  {
+    "id": "azure-d96ps-v6-f3a7d0b2a4",
+    "provider": "azure",
+    "name": "d96ps-v6",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 384,
+    "sockets": 1,
+    "cpu": [
+      "azure-cobalt-100"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.5103792
+  },
+  {
+    "id": "azure-d96s-v5-4f201be572",
+    "provider": "azure",
+    "name": "d96s-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 384,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8473c",
+      "intel-xeon-8370c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.5103792
+  },
+  {
+    "id": "azure-dadsv5-type1-3fe4ece394",
+    "provider": "azure",
+    "name": "Dadsv5-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 112,
+    "memory": 768,
+    "sockets": 1,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/general-purpose-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "azure-dasv4-type2-3fe4ece394",
+    "provider": "azure",
+    "name": "Dasv4-Type2",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 112,
+    "memory": 768,
+    "sockets": 1,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/general-purpose-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "azure-dasv5-type1-f59efe5e4a",
+    "provider": "azure",
+    "name": "Dasv5-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 112,
+    "memory": 768,
+    "sockets": 1,
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/general-purpose-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.0429488
+  },
+  {
+    "id": "azure-dasv6-type1-686304eb2d",
+    "provider": "azure",
+    "name": "Dasv6-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 144,
+    "memory": 768,
+    "sockets": 1,
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/general-purpose-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.0429488
+  },
+  {
+    "id": "azure-dc2ads-v6-7080f9fb12",
+    "provider": "azure",
+    "name": "dc2ads-v6",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 768,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9004"
+    ],
+    "ssd_count": 2,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcadsv6-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 2.3429488
+  },
+  {
+    "id": "azure-dc2as-v6-76308153ff",
+    "provider": "azure",
+    "name": "dc2as-v6",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 768,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9004"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcasv6-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "azure-dc2eds-v6-d9b8fcc572",
+    "provider": "azure",
+    "name": "dc2eds-v6",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 512,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8573c"
+    ],
+    "ssd_count": 4,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcedsv6-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 2.1879024
+  },
+  {
+    "id": "azure-dc2es-v6-8dccedc2d2",
+    "provider": "azure",
+    "name": "dc2es-v6",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 512,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8573c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dcesv6-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 1.7879024
+  },
+  {
+    "id": "azure-dc48ds-v3-2db025940f",
+    "provider": "azure",
+    "name": "dc48ds-v3",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 48,
+    "memory": 384,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8370c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.6103792
+  },
+  {
+    "id": "azure-dc48s-v3-92b354a276",
+    "provider": "azure",
+    "name": "dc48s-v3",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 48,
+    "memory": 384,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8370c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.5103792
+  },
+  {
+    "id": "azure-dc8s-v2-e457fc4f90",
+    "provider": "azure",
+    "name": "dc8s-v2",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 8,
+    "memory": 32,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e2288g"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1221904
+  },
+  {
+    "id": "azure-dc96ads-cc-v5-72b534a1a7",
+    "provider": "azure",
+    "name": "dc96ads-cc-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 384,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7763v"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3600,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.6103792
+  },
+  {
+    "id": "azure-dc96as-cc-v5-d260c3cc71",
+    "provider": "azure",
+    "name": "dc96as-cc-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 384,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7763v"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.5103792
+  },
+  {
+    "id": "azure-dc96eds-v5-e4511432ca",
+    "provider": "azure",
+    "name": "dc96eds-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 96,
+    "sockets": 4,
+    "cpu": [
+      "intel-xeon-8473c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2823,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.510952
+  },
+  {
+    "id": "azure-dc96es-v5-e886a7683b",
+    "provider": "azure",
+    "name": "dc96es-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 384,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8473c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.5103792
+  },
+  {
+    "id": "azure-dcadsv5-type1-3fe4ece394",
+    "provider": "azure",
+    "name": "DCadsv5-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 112,
+    "memory": 768,
+    "sockets": 1,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/general-purpose-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "azure-dcasv5-type1-f59efe5e4a",
+    "provider": "azure",
+    "name": "DCasv5-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 112,
+    "memory": 768,
+    "sockets": 1,
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/general-purpose-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.0429488
+  },
+  {
+    "id": "azure-dcdsv3-type1-96fc98e106",
+    "provider": "azure",
+    "name": "DCdsv3-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 48,
+    "memory": 384,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/general-purpose-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd"
+    ],
+    "embodied": 1.7103792
+  },
+  {
+    "id": "azure-dcsv3-type1-964eef484a",
+    "provider": "azure",
+    "name": "DCsv3-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 48,
+    "memory": 384,
+    "sockets": 2,
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/general-purpose-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 1.6103792
+  },
+  {
+    "id": "azure-ddsv4-type2-602494b2d4",
+    "provider": "azure",
+    "name": "Ddsv4-Type2",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 119,
+    "memory": 768,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/general-purpose-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.2429488
+  },
+  {
+    "id": "azure-ddsv5-type1-602494b2d4",
+    "provider": "azure",
+    "name": "Ddsv5-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 119,
+    "memory": 768,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/general-purpose-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd"
+    ],
+    "embodied": 2.2429488
+  },
+  {
+    "id": "azure-ddsv6-type1-92817184c1",
+    "provider": "azure",
+    "name": "Ddsv6-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 1024,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/general-purpose-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd"
+    ],
+    "embodied": 2.5979952
+  },
+  {
+    "id": "azure-ds15-v2-eb906c3d42",
+    "provider": "azure",
+    "name": "ds15-v2",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 20,
+    "memory": 140,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8370c",
+      "intel-xeon-8272cl",
+      "intel-xeon-8171m",
+      "intel-xeon-e52673v4",
+      "intel-xeon-e52673v3"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 280,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2719756
+  },
+  {
+    "id": "azure-ds5-v2-158984d163",
+    "provider": "azure",
+    "name": "ds5-v2",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 16,
+    "memory": 56,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8370c",
+      "intel-xeon-8272cl",
+      "intel-xeon-8171m",
+      "intel-xeon-e52673v4",
+      "intel-xeon-e52673v3"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 112,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.155476
+  },
+  {
+    "id": "azure-dsv3-type2-675344a5ec",
+    "provider": "azure",
+    "name": "Dsv3-Type2",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 76,
+    "memory": 504,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/general-purpose-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.8768072
+  },
+  {
+    "id": "azure-dsv3-type4-602494b2d4",
+    "provider": "azure",
+    "name": "Dsv3-Type4",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 119,
+    "memory": 768,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/general-purpose-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.2429488
+  },
+  {
+    "id": "azure-dsv4-type1-780d0d9aab",
+    "provider": "azure",
+    "name": "Dsv4-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 80,
+    "memory": 504,
+    "sockets": 1,
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/general-purpose-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 1.6768072
+  },
+  {
+    "id": "azure-dsv4-type2-e4c00ede21",
+    "provider": "azure",
+    "name": "Dsv4-Type2",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 119,
+    "memory": 768,
+    "sockets": 2,
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/general-purpose-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "azure-dsv5-type1-e4c00ede21",
+    "provider": "azure",
+    "name": "Dsv5-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 119,
+    "memory": 768,
+    "sockets": 2,
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/general-purpose-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "azure-dsv6-type1",
+    "provider": "azure",
+    "name": "Dsv6-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 1024,
+    "sockets": 2,
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/general-purpose-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.4979952
+  },
+  {
+    "id": "azure-e104i-v5-798d03bb62",
+    "provider": "azure",
+    "name": "e104i-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 104,
+    "memory": 672,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8473c",
+      "intel-xeon-8370c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.9098064
+  },
+  {
+    "id": "azure-e104id-v5-6f18887e0e",
+    "provider": "azure",
+    "name": "e104id-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 104,
+    "memory": 672,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8370c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3900,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.1098064
+  },
+  {
+    "id": "azure-e104ids-v5-6f18887e0e",
+    "provider": "azure",
+    "name": "e104ids-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 104,
+    "memory": 672,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8370c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3900,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.1098064
+  },
+  {
+    "id": "azure-e104is-v5-798d03bb62",
+    "provider": "azure",
+    "name": "e104is-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 104,
+    "memory": 672,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8473c",
+      "intel-xeon-8370c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.9098064
+  },
+  {
+    "id": "azure-e112iads-v5-428c32efec",
+    "provider": "azure",
+    "name": "e112iads-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 112,
+    "memory": 672,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7763v"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3800,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.0098064
+  },
+  {
+    "id": "azure-e112ias-v5-b3c26bb4f7",
+    "provider": "azure",
+    "name": "e112ias-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 112,
+    "memory": 672,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7763v"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.9098064
+  },
+  {
+    "id": "azure-e112ibds-v5-aa74f82338",
+    "provider": "azure",
+    "name": "e112ibds-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 112,
+    "memory": 672,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8370c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3800,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.1098064
+  },
+  {
+    "id": "azure-e112ibs-v5-d7777c4ac2",
+    "provider": "azure",
+    "name": "e112ibs-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 112,
+    "memory": 672,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8370c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.0098064
+  },
+  {
+    "id": "azure-e128ds-v6-e6f16aee55",
+    "provider": "azure",
+    "name": "e128ds-v6",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 1024,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8573c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 7040,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.5979952
+  },
+  {
+    "id": "azure-e128s-v6-f5c304302d",
+    "provider": "azure",
+    "name": "e128s-v6",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 1024,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8573c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.4979952
+  },
+  {
+    "id": "azure-e160ads-v7-29c6518166",
+    "provider": "azure",
+    "name": "e160ads-v7",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 160,
+    "memory": 1280,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2200,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.8530416
+  },
+  {
+    "id": "azure-e160as-v7-f9481ac4a5",
+    "provider": "azure",
+    "name": "e160as-v7",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 160,
+    "memory": 1280,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.7530416
+  },
+  {
+    "id": "azure-e2bds-v6-e82c5ce196",
+    "provider": "azure",
+    "name": "e2bds-v6",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 1832,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8573c"
+    ],
+    "ssd_count": 6,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ebdsv6-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 4.2186104
+  },
+  {
+    "id": "azure-e2bs-v6-6dc8ffe82a",
+    "provider": "azure",
+    "name": "e2bs-v6",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 1832,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8573c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ebsv6-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 3.6186104
+  },
+  {
+    "id": "azure-e2ds-v7-be72b4c04d",
+    "provider": "azure",
+    "name": "e2ds-v7",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 372,
+    "memory": 2832,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6973pc"
+    ],
+    "ssd_count": 6,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/edsv7-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 5.6055104
+  },
+  {
+    "id": "azure-e2ns-v6-629fae14c8",
+    "provider": "azure",
+    "name": "e2ns-v6",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 1024,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8573c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ensv6-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 2.4979952
+  },
+  {
+    "id": "azure-e2s-v7-d2e69b96ce",
+    "provider": "azure",
+    "name": "e2s-v7",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 372,
+    "memory": 2832,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6973pc"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/esv7-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 5.0055104
+  },
+  {
+    "id": "azure-e32pds-v5-bdacb2533a",
+    "provider": "azure",
+    "name": "e32pds-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 208,
+    "sockets": 1,
+    "cpu": [
+      "ampere-altra-q8030"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 1200,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.3662848
+  },
+  {
+    "id": "azure-e32ps-v5-3023b3f96b",
+    "provider": "azure",
+    "name": "e32ps-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 208,
+    "sockets": 1,
+    "cpu": [
+      "ampere-altra-q8030"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2662848
+  },
+  {
+    "id": "azure-e64-v3-4676e21e9b",
+    "provider": "azure",
+    "name": "e64-v3",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 432,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8370c",
+      "intel-xeon-8272cl",
+      "intel-xeon-8171m",
+      "intel-xeon-e52673v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 1600,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.6769504
+  },
+  {
+    "id": "azure-e64-v4-7e2ee7e4b5",
+    "provider": "azure",
+    "name": "e64-v4",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 504,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8473c",
+      "intel-xeon-8370c",
+      "intel-xeon-8272cl"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.6768072
+  },
+  {
+    "id": "azure-e64d-v4-3044667463",
+    "provider": "azure",
+    "name": "e64d-v4",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 504,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8370c",
+      "intel-xeon-8272cl"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.7768072
+  },
+  {
+    "id": "azure-e80ids-v4-6df73de051",
+    "provider": "azure",
+    "name": "e80ids-v4",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 80,
+    "memory": 504,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8370c",
+      "intel-xeon-8272cl"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.8768072
+  },
+  {
+    "id": "azure-e80is-v4-4b79deb9d3",
+    "provider": "azure",
+    "name": "e80is-v4",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 80,
+    "memory": 504,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8473c",
+      "intel-xeon-8370c",
+      "intel-xeon-8272cl"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.7768072
+  },
+  {
+    "id": "azure-e96a-v4-f54e311a79",
+    "provider": "azure",
+    "name": "e96a-v4",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 672,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7452",
+      "amd-epyc-7763v"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.0098064
+  },
+  {
+    "id": "azure-e96ads-v6-29aee18a7f",
+    "provider": "azure",
+    "name": "e96ads-v6",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 672,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9v74"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.0098064
+  },
+  {
+    "id": "azure-e96bs-v5-d8dfaf1b60",
+    "provider": "azure",
+    "name": "e96bs-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 672,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8272cl"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.0098064
+  },
+  {
+    "id": "azure-e96pds-v6-94e7b1e264",
+    "provider": "azure",
+    "name": "e96pds-v6",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 672,
+    "sockets": 1,
+    "cpu": [
+      "azure-cobalt-100"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 5280,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.0098064
+  },
+  {
+    "id": "azure-e96ps-v6-9f56f471bd",
+    "provider": "azure",
+    "name": "e96ps-v6",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 672,
+    "sockets": 1,
+    "cpu": [
+      "azure-cobalt-100"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.9098064
+  },
+  {
+    "id": "azure-eadsv5-type1-3fe4ece394",
+    "provider": "azure",
+    "name": "Eadsv5-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 112,
+    "memory": 768,
+    "sockets": 1,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "azure-easv4-type2-3fe4ece394",
+    "provider": "azure",
+    "name": "Easv4-Type2",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 112,
+    "memory": 768,
+    "sockets": 1,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "azure-easv5-type1-f59efe5e4a",
+    "provider": "azure",
+    "name": "Easv5-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 112,
+    "memory": 768,
+    "sockets": 1,
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.0429488
+  },
+  {
+    "id": "azure-easv6-type1-686304eb2d",
+    "provider": "azure",
+    "name": "Easv6-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 144,
+    "memory": 768,
+    "sockets": 1,
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.0429488
+  },
+  {
+    "id": "azure-ebdsv5-type1-602494b2d4",
+    "provider": "azure",
+    "name": "Ebdsv5-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 119,
+    "memory": 768,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd"
+    ],
+    "embodied": 2.2429488
+  },
+  {
+    "id": "azure-ebsv5-type1-c5564b0f8e",
+    "provider": "azure",
+    "name": "Ebsv5-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 119,
+    "memory": 768,
+    "sockets": 3,
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.2429488
+  },
+  {
+    "id": "azure-ec128eds-v5-0570fa15b4",
+    "provider": "azure",
+    "name": "ec128eds-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 768,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8473c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2832,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.2429488
+  },
+  {
+    "id": "azure-ec128es-v5-ee6973de24",
+    "provider": "azure",
+    "name": "ec128es-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 768,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8473c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "azure-ec2ads-v6-76308153ff",
+    "provider": "azure",
+    "name": "ec2ads-v6",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 768,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9004"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecadsv6-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "azure-ec2as-v6-76308153ff",
+    "provider": "azure",
+    "name": "ec2as-v6",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 768,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9004"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecasv6-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "azure-ec96ads-cc-v5-83e6cfaa8c",
+    "provider": "azure",
+    "name": "ec96ads-cc-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 672,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7763v"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3600,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.0098064
+  },
+  {
+    "id": "azure-ec96ads-v5-807f990e35",
+    "provider": "azure",
+    "name": "ec96ads-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 672,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7763v"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.0098064
+  },
+  {
+    "id": "azure-ec96as-cc-v5-c3b7b0befd",
+    "provider": "azure",
+    "name": "ec96as-cc-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 672,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7763v"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.9098064
+  },
+  {
+    "id": "azure-ec96as-v5-c3b7b0befd",
+    "provider": "azure",
+    "name": "ec96as-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 672,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7763v"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.9098064
+  },
+  {
+    "id": "azure-ecadsv5-type1-3fe4ece394",
+    "provider": "azure",
+    "name": "ECadsv5-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 112,
+    "memory": 768,
+    "sockets": 1,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "azure-ecasv5-type1-f59efe5e4a",
+    "provider": "azure",
+    "name": "ECasv5-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 112,
+    "memory": 768,
+    "sockets": 1,
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.0429488
+  },
+  {
+    "id": "azure-edsv4-type1-07e3f6fd25",
+    "provider": "azure",
+    "name": "Edsv4-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 80,
+    "memory": 504,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd"
+    ],
+    "embodied": 1.8768072
+  },
+  {
+    "id": "azure-edsv4-type2-602494b2d4",
+    "provider": "azure",
+    "name": "Edsv4-Type2",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 119,
+    "memory": 768,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.2429488
+  },
+  {
+    "id": "azure-edsv5-type1-602494b2d4",
+    "provider": "azure",
+    "name": "Edsv5-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 119,
+    "memory": 768,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd"
+    ],
+    "embodied": 2.2429488
+  },
+  {
+    "id": "azure-esv3-type1-5cba48ae66",
+    "provider": "azure",
+    "name": "Esv3-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 448,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd"
+    ],
+    "embodied": 1.7991408
+  },
+  {
+    "id": "azure-esv3-type2-675344a5ec",
+    "provider": "azure",
+    "name": "Esv3-Type2",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 76,
+    "memory": 504,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.8768072
+  },
+  {
+    "id": "azure-esv3-type4-602494b2d4",
+    "provider": "azure",
+    "name": "Esv3-Type4",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 119,
+    "memory": 768,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.2429488
+  },
+  {
+    "id": "azure-esv4-type1-e25b643a13",
+    "provider": "azure",
+    "name": "Esv4-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 80,
+    "memory": 504,
+    "sockets": 1,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd"
+    ],
+    "embodied": 1.7768072
+  },
+  {
+    "id": "azure-esv4-type2-602494b2d4",
+    "provider": "azure",
+    "name": "Esv4-Type2",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 119,
+    "memory": 768,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.2429488
+  },
+  {
+    "id": "azure-esv5-type1-e4c00ede21",
+    "provider": "azure",
+    "name": "Esv5-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 119,
+    "memory": 768,
+    "sockets": 2,
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "azure-esv6-type1-35d60f7759",
+    "provider": "azure",
+    "name": "Esv6-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 1024,
+    "sockets": 2,
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.4979952
+  },
+  {
+    "id": "azure-f16-ed5f340187",
+    "provider": "azure",
+    "name": "f16",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 16,
+    "memory": 32,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e52673v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 256,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1221904
+  },
+  {
+    "id": "azure-f16s-47eef24095",
+    "provider": "azure",
+    "name": "f16s",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 16,
+    "memory": 32,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8272cl"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 64,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1221904
+  },
+  {
+    "id": "azure-f1alds-v7-0aae1e879c",
+    "provider": "azure",
+    "name": "f1alds-v7",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 80,
+    "memory": 640,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd_count": 6,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/faldsv7-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 2.4654256
+  },
+  {
+    "id": "azure-f1als-v7-efaccecbd8",
+    "provider": "azure",
+    "name": "f1als-v7",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 80,
+    "memory": 640,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/falsv7-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 1.8654256
+  },
+  {
+    "id": "azure-f1amds-v7-0aae1e879c",
+    "provider": "azure",
+    "name": "f1amds-v7",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 80,
+    "memory": 640,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd_count": 6,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/famdsv7-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 2.4654256
+  },
+  {
+    "id": "azure-f1ams-v7-efaccecbd8",
+    "provider": "azure",
+    "name": "f1ams-v7",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 80,
+    "memory": 640,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/famsv7-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 1.8654256
+  },
+  {
+    "id": "azure-f4s-f4ec30b5e7",
+    "provider": "azure",
+    "name": "f4s",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 4,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e52673v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 16,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1
+  },
+  {
+    "id": "azure-f64als-v6-1f73d2d8dc",
+    "provider": "azure",
+    "name": "f64als-v6",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 128,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9v74"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1553328
+  },
+  {
+    "id": "azure-f64ams-v6-d19233592c",
+    "provider": "azure",
+    "name": "f64ams-v6",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 512,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9v74"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.6879024
+  },
+  {
+    "id": "azure-f64as-v6-5d98a3a2b8",
+    "provider": "azure",
+    "name": "f64as-v6",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 256,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9v74"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.332856
+  },
+  {
+    "id": "azure-f80ads-v7-e0486fbc42",
+    "provider": "azure",
+    "name": "f80ads-v7",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 80,
+    "memory": 320,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2200,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.5216176
+  },
+  {
+    "id": "azure-f80as-v7-2bd04a89a3",
+    "provider": "azure",
+    "name": "f80as-v7",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 80,
+    "memory": 320,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.4216176
+  },
+  {
+    "id": "azure-f8s-8cde0b9ecf",
+    "provider": "azure",
+    "name": "f8s",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 8,
+    "memory": 16,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8171m"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 32,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1
+  },
+  {
+    "id": "azure-fsv2-type3-07e3f6fd25",
+    "provider": "azure",
+    "name": "Fsv2-Type3",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 80,
+    "memory": 504,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/compute-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.8768072
+  },
+  {
+    "id": "azure-fsv2-type4-602494b2d4",
+    "provider": "azure",
+    "name": "Fsv2-Type4",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 119,
+    "memory": 768,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/compute-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.2429488
+  },
+  {
+    "id": "azure-fx96mds-v2-dc6171f82b",
+    "provider": "azure",
+    "name": "fx96mds-v2",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 1832,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8573c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 5280,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 3.6186104
+  },
+  {
+    "id": "azure-fx96ms-v2-b7f8a23756",
+    "provider": "azure",
+    "name": "fx96ms-v2",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 1832,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8573c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 3.5186104
+  },
+  {
+    "id": "azure-fxmds-type1-a6525edd18",
+    "provider": "azure",
+    "name": "FXmds-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 48,
+    "memory": 1152,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/compute-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd"
+    ],
+    "embodied": 2.7755184
+  },
+  {
+    "id": "azure-g5-bdbd8e603c",
+    "provider": "azure",
+    "name": "g5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 448,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e52698bv3"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 6144,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.6991408
+  },
+  {
+    "id": "azure-gs5-16-bdbd8e603c",
+    "provider": "azure",
+    "name": "gs5-16",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 448,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e52698bv3"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 6144,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.6991408
+  },
+  {
+    "id": "azure-h16m-b2adc4de31",
+    "provider": "azure",
+    "name": "h16m",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 16,
+    "memory": 224,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e52667v3"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.3884752
+  },
+  {
+    "id": "azure-hb120rs-v2-081d2cde1c",
+    "provider": "azure",
+    "name": "hb120rs-v2",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 120,
+    "memory": 456,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7v12"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 960,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.710236
+  },
+  {
+    "id": "azure-hb120rs-v3-9124e79b30",
+    "provider": "azure",
+    "name": "hb120rs-v3",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 120,
+    "memory": 448,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7v73x"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.6991408
+  },
+  {
+    "id": "azure-hb176rs-v4-eb1b77e72f",
+    "provider": "azure",
+    "name": "hb176rs-v4",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 176,
+    "memory": 768,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9v33x"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 4080,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "azure-hb368rs-v5-696bed7873",
+    "provider": "azure",
+    "name": "hb368rs-v5",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 368,
+    "memory": 432,
+    "sockets": 4,
+    "cpu": [
+      "amd-epyc-9004"
+    ],
+    "ssd_count": 9,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/high-performance-compute/hbv5-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "hbm-ram-proxy",
+      "max-impact"
+    ],
+    "embodied": 2.7769504
+  },
+  {
+    "id": "azure-hb60rs-0a4fb59044",
+    "provider": "azure",
+    "name": "hb60rs",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 60,
+    "memory": 263,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7551"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 700,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.4425643
+  },
+  {
+    "id": "azure-hc44rs-892151f9d9",
+    "provider": "azure",
+    "name": "hc44rs",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 44,
+    "memory": 352,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8168"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 700,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.5659984
+  },
+  {
+    "id": "azure-hx176rs-7132ad5902",
+    "provider": "azure",
+    "name": "hx176rs",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 176,
+    "memory": 1408,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9v33x"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 4080,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 3.0305648
+  },
+  {
+    "id": "azure-l2aos-v4-7ee1c08fe6",
+    "provider": "azure",
+    "name": "l2aos-v4",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 768,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9004"
+    ],
+    "ssd_count": 12,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/laosv4-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 3.3429488
+  },
+  {
+    "id": "azure-l2aos-v5-8beab75161",
+    "provider": "azure",
+    "name": "l2aos-v5",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 160,
+    "memory": 1040,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd_count": 9,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/laosv5-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 3.4201856
+  },
+  {
+    "id": "azure-l2as-v4-96d718f98b",
+    "provider": "azure",
+    "name": "l2as-v4",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 768,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9004"
+    ],
+    "ssd_count": 12,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lasv4-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 3.3429488
+  },
+  {
+    "id": "azure-l2as-v5-d58392fbe7",
+    "provider": "azure",
+    "name": "l2as-v5",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 160,
+    "memory": 1280,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9005"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lasv5-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 3.6530416
+  },
+  {
+    "id": "azure-l2s-v4-d9b76799c8",
+    "provider": "azure",
+    "name": "l2s-v4",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 768,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8573c"
+    ],
+    "ssd_count": 12,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lsv4-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 3.3429488
+  },
+  {
+    "id": "azure-l32s-c71824d0c1",
+    "provider": "azure",
+    "name": "l32s",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 256,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e52698bv3"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 5630,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.432856
+  },
+  {
+    "id": "azure-l80as-v3-17231c7825",
+    "provider": "azure",
+    "name": "l80as-v3",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 80,
+    "memory": 640,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7763v"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 800,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.9654256
+  },
+  {
+    "id": "azure-l80s-v2-a1ce0a0480",
+    "provider": "azure",
+    "name": "l80s-v2",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 80,
+    "memory": 640,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-7551"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 800,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.0654256
+  },
+  {
+    "id": "azure-l80s-v3-c64b2fe8d5",
+    "provider": "azure",
+    "name": "l80s-v3",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 80,
+    "memory": 640,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8370c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 800,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.0654256
+  },
+  {
+    "id": "azure-m176bds4-v3-e3796655a6",
+    "provider": "azure",
+    "name": "m176bds4-v3",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 176,
+    "memory": 3892,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8480c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 8000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 6.5756244
+  },
+  {
+    "id": "azure-m176bs-v3-3d82e8ea49",
+    "provider": "azure",
+    "name": "m176bs-v3",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 176,
+    "memory": 1536,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8480c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 3.208088
+  },
+  {
+    "id": "azure-m192idms-v2-5f1b9ee031",
+    "provider": "azure",
+    "name": "m192idms-v2",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 4096,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8480c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 4096,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 6.858552
+  },
+  {
+    "id": "azure-m192ims-v2-7720e5afd9",
+    "provider": "azure",
+    "name": "m192ims-v2",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 4096,
+    "sockets": 4,
+    "cpu": [
+      "intel-xeon-8280"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 6.958552
+  },
+  {
+    "id": "azure-m416ds-6-v3-79f9b7543d",
+    "provider": "azure",
+    "name": "m416ds-6-v3",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 832,
+    "memory": 16384,
+    "sockets": 8,
+    "cpu": [
+      "intel-xeon-sapphire-rapids"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mdsv3-hm-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 24.5007792
+  },
+  {
+    "id": "azure-m416ds-6-v3-9c2cc933f2",
+    "provider": "azure",
+    "name": "m416ds-6-v3",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 832,
+    "memory": 16384,
+    "sockets": 8,
+    "cpu": [
+      "intel-xeon-8480c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mdsv3-hm-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 24.5007792
+  },
+  {
+    "id": "azure-m416s-6-v3-03d1e5f6fe",
+    "provider": "azure",
+    "name": "m416s-6-v3",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 832,
+    "memory": 16384,
+    "sockets": 8,
+    "cpu": [
+      "intel-xeon-8480c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/msv3-hm-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 24.4007792
+  },
+  {
+    "id": "azure-m416s-6-v3-4bca5051af",
+    "provider": "azure",
+    "name": "m416s-6-v3",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 832,
+    "memory": 16384,
+    "sockets": 8,
+    "cpu": [
+      "intel-xeon-sapphire-rapids"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/msv3-hm-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 24.4007792
+  },
+  {
+    "id": "azure-m48ds-1-v3-a503cfda6e",
+    "provider": "azure",
+    "name": "m48ds-1-v3",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 176,
+    "memory": 4096,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8480c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mdsv3-mm-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 6.858552
+  },
+  {
+    "id": "azure-m48ds-1-v3-dcad6f1195",
+    "provider": "azure",
+    "name": "m48ds-1-v3",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 176,
+    "memory": 4096,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-sapphire-rapids"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mdsv3-mm-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 6.858552
+  },
+  {
+    "id": "azure-m48s-1-v3-227960e2d7",
+    "provider": "azure",
+    "name": "m48s-1-v3",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 176,
+    "memory": 4096,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8480c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/msv3-mm-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 6.758552
+  },
+  {
+    "id": "azure-m48s-1-v3-39dfa9c74b",
+    "provider": "azure",
+    "name": "m48s-1-v3",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 176,
+    "memory": 4096,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-sapphire-rapids"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/msv3-mm-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 6.758552
+  },
+  {
+    "id": "azure-m832ids16-v3-1297b8d573",
+    "provider": "azure",
+    "name": "m832ids16-v3",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 832,
+    "memory": 15200,
+    "sockets": 8,
+    "cpu": [
+      "intel-xeon-8480c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 22.8586896
+  },
+  {
+    "id": "azure-m832is16-v3-0572ccff34",
+    "provider": "azure",
+    "name": "m832is16-v3",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 832,
+    "memory": 15200,
+    "sockets": 8,
+    "cpu": [
+      "intel-xeon-8480c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 22.7586896
+  },
+  {
+    "id": "azure-m896ixds-32-v3-2cf952954a",
+    "provider": "azure",
+    "name": "m896ixds-32-v3",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 1792,
+    "memory": 32768,
+    "sockets": 16,
+    "cpu": [
+      "intel-xeon-8490h"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mdsv3-vhm-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 48.0237488
+  },
+  {
+    "id": "azure-mdmsv2medmem-type1-6013820daf",
+    "provider": "azure",
+    "name": "Mdmsv2MedMem-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 4096,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd",
+      "storage-proxy"
+    ],
+    "embodied": 6.858552
+  },
+  {
+    "id": "azure-mdsv2medmem-type1-e30d434f2d",
+    "provider": "azure",
+    "name": "Mdsv2MedMem-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 2048,
+    "sockets": 2,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd"
+    ],
+    "embodied": 4.0181808
+  },
+  {
+    "id": "azure-mmsv2medmem-type1-a0f958d438",
+    "provider": "azure",
+    "name": "Mmsv2MedMem-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 4096,
+    "sockets": 4,
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 6.958552
+  },
+  {
+    "id": "azure-msm-type1-655982a0d2",
+    "provider": "azure",
+    "name": "Msm-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 3892,
+    "sockets": 4,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd",
+      "storage-proxy"
+    ],
+    "embodied": 6.7756244
+  },
+  {
+    "id": "azure-msmv2-type1-35d355397a",
+    "provider": "azure",
+    "name": "Msmv2-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 416,
+    "memory": 11400,
+    "sockets": 8,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd",
+      "storage-proxy"
+    ],
+    "embodied": 17.5884696
+  },
+  {
+    "id": "azure-msv2-type1-6a2c2e3d6d",
+    "provider": "azure",
+    "name": "Msv2-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 416,
+    "memory": 5700,
+    "sockets": 8,
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd"
+    ],
+    "embodied": 9.6831396
+  },
+  {
+    "id": "azure-msv2medmem-type1-0fcdc5ed52",
+    "provider": "azure",
+    "name": "Msv2MedMem-Type1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 2048,
+    "sockets": 4,
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/dedicated-hosts/memory-optimized-skus"
+    ],
+    "assumptions": [
+      "dedicated-host-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 4.1181808
+  },
+  {
+    "id": "azure-nc24-efc2ac021e",
+    "provider": "azure",
+    "name": "nc24",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 24,
+    "memory": 224,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e52690v3"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 1440,
+    "accelerator": "nvidia-tesla-k80",
+    "accelerators": 4,
+    "accelerator_memory": 24,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.032856
+  },
+  {
+    "id": "azure-nc24rs-v2-3dcc73b8c3",
+    "provider": "azure",
+    "name": "nc24rs-v2",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 24,
+    "memory": 448,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e52690v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2948,
+    "accelerator": "nvidia-tesla-p10016",
+    "accelerators": 4,
+    "accelerator_memory": 16,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.2991408
+  },
+  {
+    "id": "azure-nc24rs-v3-71cb5963e5",
+    "provider": "azure",
+    "name": "nc24rs-v3",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 24,
+    "memory": 448,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e52690v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2948,
+    "accelerator": "nvidia-tesla-v10016",
+    "accelerators": 4,
+    "accelerator_memory": 16,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.2991408
+  },
+  {
+    "id": "azure-nc36ds-xl-rtxpro6000bse-v6-7e897665b3",
+    "provider": "azure",
+    "name": "nc36ds-xl-rtxpro6000bse-v6",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 288,
+    "memory": 1032,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-granite-rapids-ap"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server",
+    "accelerators": 2,
+    "accelerator_memory": 96,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nc-rtxpro6000-bse-v6-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 3.1309944
+  },
+  {
+    "id": "azure-nc64as-t4-v3-b7b17403ca",
+    "provider": "azure",
+    "name": "nc64as-t4-v3",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 440,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7v12"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2816,
+    "accelerator": "nvidia-tesla-t4",
+    "accelerators": 4,
+    "accelerator_memory": 16,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.2880456
+  },
+  {
+    "id": "azure-nc80adis-h100-v5-8be5f538df",
+    "provider": "azure",
+    "name": "nc80adis-h100-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 80,
+    "memory": 640,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9v74"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 7152,
+    "accelerator": "nvidia-tesla-h10094",
+    "accelerators": 2,
+    "accelerator_memory": 94,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.481782
+  },
+  {
+    "id": "azure-nc96ads-a100-v4-b12cbabf19",
+    "provider": "azure",
+    "name": "nc96ads-a100-v4",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 880,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7v13"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3832,
+    "accelerator": "nvidia-tesla-a10080",
+    "accelerators": 4,
+    "accelerator_memory": 80,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 3.253328
+  },
+  {
+    "id": "azure-ncc40ads-h100-v5-5f31c29c64",
+    "provider": "azure",
+    "name": "ncc40ads-h100-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 40,
+    "memory": 320,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9v74"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3576,
+    "accelerator": "nvidia-tesla-h10094",
+    "accelerators": 1,
+    "accelerator_memory": 94,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.7797958
+  },
+  {
+    "id": "azure-nd128isr-gb300-v6-e90c49475a",
+    "provider": "azure",
+    "name": "nd128isr-gb300-v6",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 864,
+    "sockets": 2,
+    "cpu": [
+      "nvidia-grace"
+    ],
+    "ssd_count": 4,
+    "hdd_count": 0,
+    "accelerator": "nvidia-blackwell-b300",
+    "accelerators": 4,
+    "accelerator_memory": 288,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-gb300-v6-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 4.7850384
+  },
+  {
+    "id": "azure-nd128isr-ndr-gb200-v6-cad46958a2",
+    "provider": "azure",
+    "name": "nd128isr-ndr-gb200-v6",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 900,
+    "sockets": 2,
+    "cpu": [
+      "nvidia-grace"
+    ],
+    "ssd_count": 4,
+    "hdd_count": 0,
+    "accelerator": "nvidia-blackwell-b200-192",
+    "accelerators": 4,
+    "accelerator_memory": 192,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-gb200-v6-series"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "family-proxy",
+      "max-impact"
+    ],
+    "embodied": 4.3023972
+  },
+  {
+    "id": "azure-nd24rs-c372238e79",
+    "provider": "azure",
+    "name": "nd24rs",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 24,
+    "memory": 448,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e52690v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2948,
+    "accelerator": "nvidia-tesla-p40",
+    "accelerators": 4,
+    "accelerator_memory": 24,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.3435216
+  },
+  {
+    "id": "azure-nd40rs-v2-5284335080",
+    "provider": "azure",
+    "name": "nd40rs-v2",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 40,
+    "memory": 672,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8168"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2900,
+    "accelerator": "nvidia-tesla-v10032",
+    "accelerators": 8,
+    "accelerator_memory": 32,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 3.3873296
+  },
+  {
+    "id": "azure-nd96amsr-a100-v4-006a402020",
+    "provider": "azure",
+    "name": "nd96amsr-a100-v4",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 1900,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7v12"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 6400,
+    "accelerator": "nvidia-tesla-a10080",
+    "accelerators": 8,
+    "accelerator_memory": 80,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 5.6230124
+  },
+  {
+    "id": "azure-nd96asr-a100-v4-b8f7aeeed4",
+    "provider": "azure",
+    "name": "nd96asr-a100-v4",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 900,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7v12"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 6500,
+    "accelerator": "nvidia-tesla-a10040",
+    "accelerators": 8,
+    "accelerator_memory": 40,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 3.7923044
+  },
+  {
+    "id": "azure-nd96isr-h100-v5-e83a971d54",
+    "provider": "azure",
+    "name": "nd96isr-h100-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 1900,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8480c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 28000,
+    "accelerator": "nvidia-tesla-h10080",
+    "accelerators": 8,
+    "accelerator_memory": 80,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 5.6230124
+  },
+  {
+    "id": "azure-nd96isr-h200-v5-4e89fdb4ce",
+    "provider": "azure",
+    "name": "nd96isr-h200-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 1900,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8480c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 28000,
+    "accelerator": "nvidia-tesla-h200",
+    "accelerators": 8,
+    "accelerator_memory": 141,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 6.2998196
+  },
+  {
+    "id": "azure-nd96isr-mi300x-v5-6c91dcc080",
+    "provider": "azure",
+    "name": "nd96isr-mi300x-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 1850,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8480c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 28000,
+    "accelerator": "amd-radeon-mi300x",
+    "accelerators": 8,
+    "accelerator_memory": 192,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 6.7963298
+  },
+  {
+    "id": "azure-ng32adms-v620-v1-c26b22818e",
+    "provider": "azure",
+    "name": "ng32adms-v620-v1",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 176,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7763"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 1024,
+    "accelerator": "amd-radeon-v620",
+    "accelerators": 1,
+    "accelerator_memory": 32,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.4940944
+  },
+  {
+    "id": "azure-nm16ads-ma35d-b531077bc8",
+    "provider": "azure",
+    "name": "nm16ads-ma35d",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 16,
+    "memory": 30,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9v64f"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 71,
+    "accelerator": "amd-alveo-ma35d",
+    "accelerators": 1,
+    "accelerator_memory": 16,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "non-gpu-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 1.2694166
+  },
+  {
+    "id": "azure-np40s-828bf6ad16",
+    "provider": "azure",
+    "name": "np40s",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 40,
+    "memory": 672,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8171m"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2948,
+    "accelerator": "amd-alveo-u250",
+    "accelerators": 4,
+    "accelerator_memory": 64,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "non-gpu-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 2.8760912
+  },
+  {
+    "id": "azure-nv24-7e45f4b29d",
+    "provider": "azure",
+    "name": "nv24",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 24,
+    "memory": 224,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e52690v3"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 1440,
+    "accelerator": "nvidia-tesla-m60",
+    "accelerators": 2,
+    "accelerator_memory": 16,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.6884752
+  },
+  {
+    "id": "azure-nv28ads-v710-v5-d3f6ca81f5",
+    "provider": "azure",
+    "name": "nv28ads-v710-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 28,
+    "memory": 160,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-9v64f"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 1536,
+    "accelerator": "amd-radeon-v710",
+    "accelerators": 1,
+    "accelerator_memory": 28,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.4663564
+  },
+  {
+    "id": "azure-nv32as-v4-dbd4a98cfe",
+    "provider": "azure",
+    "name": "nv32as-v4",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 112,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7v12"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 700,
+    "accelerator": "amd-radeon-mi25",
+    "accelerators": 1,
+    "accelerator_memory": 16,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.3831424
+  },
+  {
+    "id": "azure-nv48s-v3-22b0693bc7",
+    "provider": "azure",
+    "name": "nv48s-v3",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 48,
+    "memory": 448,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e52690v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 2948,
+    "accelerator": "nvidia-tesla-m60",
+    "accelerators": 4,
+    "accelerator_memory": 16,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.3991408
+  },
+  {
+    "id": "azure-nv72ads-a10-v5-6ba80d7765",
+    "provider": "azure",
+    "name": "nv72ads-a10-v5",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 72,
+    "memory": 880,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-74f3v"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 1400,
+    "accelerator": "nvidia-tesla-a10",
+    "accelerators": 2,
+    "accelerator_memory": 24,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.720472
+  },
+  {
+    "id": "azure-s144-7f49dc8a9c",
+    "provider": "azure",
+    "name": "s144",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 144,
+    "memory": 1536,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e78890v3"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 6144,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 3.308088
+  },
+  {
+    "id": "azure-s144m-59157c5050",
+    "provider": "azure",
+    "name": "s144m",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 144,
+    "memory": 3072,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e78890v3"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 12288,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 5.4383664
+  },
+  {
+    "id": "azure-s192-4fdc83e453",
+    "provider": "azure",
+    "name": "s192",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 2048,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e78890v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 8192,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 4.0181808
+  },
+  {
+    "id": "azure-s192m-65f489a006",
+    "provider": "azure",
+    "name": "s192m",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 4096,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e78890v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 16384,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 6.858552
+  },
+  {
+    "id": "azure-s192xm-a0def82fa5",
+    "provider": "azure",
+    "name": "s192xm",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 6144,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e78890v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 16384,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 9.6989232
+  },
+  {
+    "id": "azure-s224-fbb851da0b",
+    "provider": "azure",
+    "name": "s224",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 3072,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 6450,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 5.4383664
+  },
+  {
+    "id": "azure-s224m-753eef71e9",
+    "provider": "azure",
+    "name": "s224m",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 6144,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 10752,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 9.6989232
+  },
+  {
+    "id": "azure-s224om-753eef71e9",
+    "provider": "azure",
+    "name": "s224om",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 6144,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 10752,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 9.6989232
+  },
+  {
+    "id": "azure-s224oo-4ccafd4038",
+    "provider": "azure",
+    "name": "s224oo",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 4608,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 8600,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 7.5686448
+  },
+  {
+    "id": "azure-s224oom-50ce6af326",
+    "provider": "azure",
+    "name": "s224oom",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 9216,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 14375,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 13.95948
+  },
+  {
+    "id": "azure-s224ooo-951328a1ec",
+    "provider": "azure",
+    "name": "s224ooo",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 7680,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 12312,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 11.8292016
+  },
+  {
+    "id": "azure-s384-39c3528571",
+    "provider": "azure",
+    "name": "s384",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 4096,
+    "sockets": 3,
+    "cpu": [
+      "intel-xeon-e78890v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 16384,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 6.958552
+  },
+  {
+    "id": "azure-s384m-e4e08d020d",
+    "provider": "azure",
+    "name": "s384m",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 6144,
+    "sockets": 3,
+    "cpu": [
+      "intel-xeon-e78890v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 18432,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 9.7989232
+  },
+  {
+    "id": "azure-s384xm-a8c45a49f4",
+    "provider": "azure",
+    "name": "s384xm",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 8192,
+    "sockets": 3,
+    "cpu": [
+      "intel-xeon-e78890v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 22528,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 12.6392944
+  },
+  {
+    "id": "azure-s384xxm-3beed75516",
+    "provider": "azure",
+    "name": "s384xxm",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 12000,
+    "sockets": 3,
+    "cpu": [
+      "intel-xeon-e78890v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 28250,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 17.9206096
+  },
+  {
+    "id": "azure-s448-dd5e17594a",
+    "provider": "azure",
+    "name": "s448",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 448,
+    "memory": 6144,
+    "sockets": 4,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 10250,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 9.8989232
+  },
+  {
+    "id": "azure-s448m-d4f526a70f",
+    "provider": "azure",
+    "name": "s448m",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 448,
+    "memory": 12288,
+    "sockets": 4,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 18500,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 18.4200368
+  },
+  {
+    "id": "azure-s448om-d4f526a70f",
+    "provider": "azure",
+    "name": "s448om",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 448,
+    "memory": 12288,
+    "sockets": 4,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 18500,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 18.4200368
+  },
+  {
+    "id": "azure-s448oo-931a250453",
+    "provider": "azure",
+    "name": "s448oo",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 448,
+    "memory": 9216,
+    "sockets": 4,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 14375,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 14.15948
+  },
+  {
+    "id": "azure-s448oom-b595e8d15a",
+    "provider": "azure",
+    "name": "s448oom",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 448,
+    "memory": 18432,
+    "sockets": 4,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 26750,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 26.9411504
+  },
+  {
+    "id": "azure-s448ooo-104c75f07c",
+    "provider": "azure",
+    "name": "s448ooo",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 448,
+    "memory": 15360,
+    "sockets": 4,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 22625,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 22.6805936
+  },
+  {
+    "id": "azure-s576m-d570e4cf82",
+    "provider": "azure",
+    "name": "s576m",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 576,
+    "memory": 12000,
+    "sockets": 5,
+    "cpu": [
+      "intel-xeon-e78890v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 28250,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 18.1206096
+  },
+  {
+    "id": "azure-s576xm-3daa451752",
+    "provider": "azure",
+    "name": "s576xm",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 576,
+    "memory": 18432,
+    "sockets": 5,
+    "cpu": [
+      "intel-xeon-e78890v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 41984,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 27.0411504
+  },
+  {
+    "id": "azure-s672-09efca011c",
+    "provider": "azure",
+    "name": "s672",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 672,
+    "memory": 9216,
+    "sockets": 6,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 14375,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 14.35948
+  },
+  {
+    "id": "azure-s672m-2c68a5c17f",
+    "provider": "azure",
+    "name": "s672m",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 672,
+    "memory": 18432,
+    "sockets": 6,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 26750,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 27.1411504
+  },
+  {
+    "id": "azure-s672om-2c68a5c17f",
+    "provider": "azure",
+    "name": "s672om",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 672,
+    "memory": 18432,
+    "sockets": 6,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 26750,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 27.1411504
+  },
+  {
+    "id": "azure-s672oo-a58edaf226",
+    "provider": "azure",
+    "name": "s672oo",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 672,
+    "memory": 13824,
+    "sockets": 6,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 20563,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 20.7503152
+  },
+  {
+    "id": "azure-s672oom-bdae98f0f8",
+    "provider": "azure",
+    "name": "s672oom",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 672,
+    "memory": 27648,
+    "sockets": 6,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 39125,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 39.9228208
+  },
+  {
+    "id": "azure-s672ooo-fd06fd6990",
+    "provider": "azure",
+    "name": "s672ooo",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 672,
+    "memory": 23040,
+    "sockets": 6,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 32938,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 33.5319856
+  },
+  {
+    "id": "azure-s72-e4887be12d",
+    "provider": "azure",
+    "name": "s72",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 72,
+    "memory": 768,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e78890v3"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3072,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "azure-s72m-07af60cb7e",
+    "provider": "azure",
+    "name": "s72m",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 72,
+    "memory": 1536,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e78890v3"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 6144,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 3.208088
+  },
+  {
+    "id": "azure-s768m-afcea54b50",
+    "provider": "azure",
+    "name": "s768m",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 768,
+    "memory": 16384,
+    "sockets": 6,
+    "cpu": [
+      "intel-xeon-e78890v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 36864,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 24.3007792
+  },
+  {
+    "id": "azure-s768xm-ac23dc5f9a",
+    "provider": "azure",
+    "name": "s768xm",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 768,
+    "memory": 24576,
+    "sockets": 6,
+    "cpu": [
+      "intel-xeon-e78890v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 57344,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 35.662264
+  },
+  {
+    "id": "azure-s896-997ca34746",
+    "provider": "azure",
+    "name": "s896",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 896,
+    "memory": 12288,
+    "sockets": 7,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 18500,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 18.7200368
+  },
+  {
+    "id": "azure-s896m-9c80dd45a5",
+    "provider": "azure",
+    "name": "s896m",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 896,
+    "memory": 24576,
+    "sockets": 7,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 35000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 35.762264
+  },
+  {
+    "id": "azure-s896om-9c80dd45a5",
+    "provider": "azure",
+    "name": "s896om",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 896,
+    "memory": 24576,
+    "sockets": 7,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 35000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 35.762264
+  },
+  {
+    "id": "azure-s896oo-34c788ec0d",
+    "provider": "azure",
+    "name": "s896oo",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 896,
+    "memory": 18432,
+    "sockets": 7,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 26750,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 27.2411504
+  },
+  {
+    "id": "azure-s896oom-54dfa63163",
+    "provider": "azure",
+    "name": "s896oom",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 896,
+    "memory": 36864,
+    "sockets": 7,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 51500,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 52.8044912
+  },
+  {
+    "id": "azure-s896ooo-8be24e82f0",
+    "provider": "azure",
+    "name": "s896ooo",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 896,
+    "memory": 30720,
+    "sockets": 7,
+    "cpu": [
+      "intel-xeon-8276"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 43250,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 44.2833776
+  },
+  {
+    "id": "azure-s96-d261c8a4ee",
+    "provider": "azure",
+    "name": "s96",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 768,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-e78890v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3072,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "azure-s960m-d7995191b4",
+    "provider": "azure",
+    "name": "s960m",
+    "basis": "dedicated-equivalent-fallback",
+    "method": "d4b-host-v1",
+    "vcpus": 960,
+    "memory": 20480,
+    "sockets": 8,
+    "cpu": [
+      "intel-xeon-e78890v4"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 47104,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "dedicated-fallback",
+      "max-impact"
+    ],
+    "embodied": 30.1815216
+  }
+]

@@ -1,0 +1,1622 @@
+[
+  {
+    "id": "oracle-bm-denseio-e4-128-4f0bfe4fab",
+    "provider": "oracle",
+    "name": "BM.DenseIO.E4.128",
+    "basis": "family-bare-metal-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 256,
+    "memory": 2048,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-7j13"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "ssd_capacity": 54400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 4.7181808
+  },
+  {
+    "id": "oracle-bm-denseio-e4-128-61ec7f049b",
+    "provider": "oracle",
+    "name": "BM.DenseIO.E4.128",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 256,
+    "memory": 2048,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-7j13"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "ssd_capacity": 54400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 4.7181808
+  },
+  {
+    "id": "oracle-bm-denseio-e5-128-3cdabd719a",
+    "provider": "oracle",
+    "name": "BM.DenseIO.E5.128",
+    "basis": "family-bare-metal-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 256,
+    "memory": 1536,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 81600,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd"
+    ],
+    "embodied": 3.308088
+  },
+  {
+    "id": "oracle-bm-denseio-e5-128-d4a2855268",
+    "provider": "oracle",
+    "name": "BM.DenseIO.E5.128",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 256,
+    "memory": 1536,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 81600,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "one-ssd"
+    ],
+    "embodied": 3.308088
+  },
+  {
+    "id": "oracle-bm-denseio-e6-ax-192-8b0e32d077",
+    "provider": "oracle",
+    "name": "bm-denseio-e6-ax-192",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 2304,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9j45"
+    ],
+    "ssd_count": 12,
+    "hdd_count": 0,
+    "ssd_capacity": 163200,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 5.4732272
+  },
+  {
+    "id": "oracle-bm-denseio1-36-85cd9f217f",
+    "provider": "oracle",
+    "name": "BM.DenseIO1.36",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 72,
+    "memory": 512,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e52699v3"
+    ],
+    "ssd_count": 9,
+    "hdd_count": 0,
+    "ssd_capacity": 28800,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.6879024
+  },
+  {
+    "id": "oracle-bm-denseio1-36-b00a114a9e",
+    "provider": "oracle",
+    "name": "BM.DenseIO1.36",
+    "basis": "family-bare-metal-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 72,
+    "memory": 512,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e52699v3"
+    ],
+    "ssd_count": 9,
+    "hdd_count": 0,
+    "ssd_capacity": 28800,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.6879024
+  },
+  {
+    "id": "oracle-bm-denseio2-52-8b0df231fa",
+    "provider": "oracle",
+    "name": "BM.DenseIO2.52",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 104,
+    "memory": 768,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "ssd_capacity": 51200,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.9429488
+  },
+  {
+    "id": "oracle-bm-gpu-a10-4-b03370c695",
+    "provider": "oracle",
+    "name": "BM.GPU.A10.4",
+    "basis": "family-bare-metal-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 1024,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8358"
+    ],
+    "ssd_count": 2,
+    "hdd_count": 0,
+    "ssd_capacity": 7680,
+    "accelerator": "nvidia-tesla-a10",
+    "accelerators": 4,
+    "accelerator_memory": 24,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 3.342376
+  },
+  {
+    "id": "oracle-bm-gpu-a10-4-f6b1163f2b",
+    "provider": "oracle",
+    "name": "BM.GPU.A10.4",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 1024,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8358"
+    ],
+    "ssd_count": 2,
+    "hdd_count": 0,
+    "ssd_capacity": 7680,
+    "accelerator": "nvidia-tesla-a10",
+    "accelerators": 4,
+    "accelerator_memory": 24,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 3.342376
+  },
+  {
+    "id": "oracle-bm-gpu-a100-v2-8-ec279bfa04",
+    "provider": "oracle",
+    "name": "BM.GPU.A100-v2.8",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 256,
+    "memory": 2048,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-7j13"
+    ],
+    "ssd_count": 4,
+    "hdd_count": 0,
+    "ssd_capacity": 27200,
+    "accelerator": "nvidia-tesla-a10080",
+    "accelerators": 8,
+    "accelerator_memory": 80,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 6.2282736
+  },
+  {
+    "id": "oracle-bm-gpu-b200-8-2e632d67e3",
+    "provider": "oracle",
+    "name": "BM.GPU.B200.8",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 256,
+    "memory": 4096,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8592plus"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "ssd_capacity": 30720,
+    "accelerator": "nvidia-blackwell-b200",
+    "accelerators": 8,
+    "accelerator_memory": 180,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 10.5781648
+  },
+  {
+    "id": "oracle-bm-gpu-b300-8-e155f6a288",
+    "provider": "oracle",
+    "name": "bm-gpu-b300-8",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 256,
+    "memory": 4096,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8592plus"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "ssd_capacity": 30720,
+    "accelerator": "nvidia-blackwell-b300",
+    "accelerators": 8,
+    "accelerator_memory": 288,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm",
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/gpu-quick-start/nvidia/B300/README-B300.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "installed-vram",
+      "max-impact"
+    ],
+    "embodied": 11.7764464
+  },
+  {
+    "id": "oracle-bm-gpu-gb200-4-b0be41793b",
+    "provider": "oracle",
+    "name": "BM.GPU.GB200.4",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 144,
+    "memory": 960,
+    "sockets": 1,
+    "cpu": [
+      "nvidia-grace"
+    ],
+    "ssd_count": 4,
+    "hdd_count": 0,
+    "ssd_capacity": 30720,
+    "accelerator": "nvidia-blackwell-b200",
+    "accelerators": 4,
+    "accelerator_memory": 192,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 4.2856112
+  },
+  {
+    "id": "oracle-bm-gpu-gb300-4-7d1a92c2df",
+    "provider": "oracle",
+    "name": "BM.GPU.GB300.4",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 144,
+    "memory": 960,
+    "sockets": 1,
+    "cpu": [
+      "nvidia-grace"
+    ],
+    "ssd_count": 4,
+    "hdd_count": 0,
+    "ssd_capacity": 30720,
+    "accelerator": "nvidia-blackwell-b300",
+    "accelerators": 4,
+    "accelerator_memory": 288,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 4.8181808
+  },
+  {
+    "id": "oracle-bm-gpu-h100-8-5299f9cc70",
+    "provider": "oracle",
+    "name": "BM.GPU.H100.8",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 2048,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8480plus"
+    ],
+    "ssd_count": 16,
+    "hdd_count": 0,
+    "ssd_capacity": 61440,
+    "accelerator": "nvidia-tesla-h10080",
+    "accelerators": 8,
+    "accelerator_memory": 80,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 7.4282736
+  },
+  {
+    "id": "oracle-bm-gpu-h200-8-17a135532d",
+    "provider": "oracle",
+    "name": "BM.GPU.H200.8",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 3072,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8480plus"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "ssd_capacity": 30720,
+    "accelerator": "nvidia-tesla-h200",
+    "accelerators": 8,
+    "accelerator_memory": 141,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 8.7252664
+  },
+  {
+    "id": "oracle-bm-gpu-l40s-4-49e024be07",
+    "provider": "oracle",
+    "name": "BM.GPU.L40S.4",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 1024,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8480plus"
+    ],
+    "ssd_count": 2,
+    "hdd_count": 0,
+    "ssd_capacity": 7680,
+    "accelerator": "nvidia-tesla-l40s",
+    "accelerators": 4,
+    "accelerator_memory": 48,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 3.4755184
+  },
+  {
+    "id": "oracle-bm-gpu-mi300x-8-e7c4b060e1",
+    "provider": "oracle",
+    "name": "BM.GPU.MI300X.8",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 2048,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8480plus"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "ssd_capacity": 30720,
+    "accelerator": "amd-radeon-mi300x",
+    "accelerators": 8,
+    "accelerator_memory": 192,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 7.870936
+  },
+  {
+    "id": "oracle-bm-gpu-mi355x-8-85ccae89cc",
+    "provider": "oracle",
+    "name": "BM.GPU.MI355X.8",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 256,
+    "memory": 3072,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-5thgen-64c"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "ssd_capacity": 61440,
+    "accelerator": "amd-radeon-mi355x",
+    "accelerators": 8,
+    "accelerator_memory": 288,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 10.3562608
+  },
+  {
+    "id": "oracle-bm-gpu-rtxpro-8-9409281778",
+    "provider": "oracle",
+    "name": "bm-gpu-rtxpro-8",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 288,
+    "memory": 3072,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6-72c-oracle"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "ssd_capacity": 61440,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server",
+    "accelerators": 8,
+    "accelerator_memory": 96,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 8.2259824
+  },
+  {
+    "id": "oracle-bm-gpu2-2-0c1f7ffc02",
+    "provider": "oracle",
+    "name": "BM.GPU2.2",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 56,
+    "memory": 192,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerator": "nvidia-tesla-p10016",
+    "accelerators": 2,
+    "accelerator_memory": 16,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 1.6440944
+  },
+  {
+    "id": "oracle-bm-gpu2-2-b1f655500d",
+    "provider": "oracle",
+    "name": "BM.GPU2.2",
+    "basis": "family-bare-metal-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 56,
+    "memory": 192,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerator": "nvidia-tesla-p10016",
+    "accelerators": 2,
+    "accelerator_memory": 16,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 1.6440944
+  },
+  {
+    "id": "oracle-bm-gpu3-8-1f4efc1d1f",
+    "provider": "oracle",
+    "name": "BM.GPU3.8",
+    "basis": "family-bare-metal-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 104,
+    "memory": 768,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerator": "nvidia-tesla-v10016",
+    "accelerators": 8,
+    "accelerator_memory": 16,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 3.3429488
+  },
+  {
+    "id": "oracle-bm-gpu3-8-938c8d2684",
+    "provider": "oracle",
+    "name": "BM.GPU3.8",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 104,
+    "memory": 768,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerator": "nvidia-tesla-v10016",
+    "accelerators": 8,
+    "accelerator_memory": 16,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 3.3429488
+  },
+  {
+    "id": "oracle-bm-gpu4-8-65f495096d",
+    "provider": "oracle",
+    "name": "BM.GPU4.8",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 2048,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-7542"
+    ],
+    "ssd_count": 4,
+    "hdd_count": 0,
+    "ssd_capacity": 27200,
+    "accelerator": "nvidia-tesla-a10040",
+    "accelerators": 8,
+    "accelerator_memory": 40,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 5.7844656
+  },
+  {
+    "id": "oracle-bm-hpc-e5-144-c0ade8bb14",
+    "provider": "oracle",
+    "name": "BM.HPC.E5.144",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 288,
+    "memory": 768,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3840,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.2429488
+  },
+  {
+    "id": "oracle-bm-hpc2-36-9091acb2ad",
+    "provider": "oracle",
+    "name": "BM.HPC2.36",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 72,
+    "memory": 384,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-gold-6154"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 6400,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 1.7103792
+  },
+  {
+    "id": "oracle-bm-optimized3-36-8d657d91c3",
+    "provider": "oracle",
+    "name": "BM.Optimized3.36",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 72,
+    "memory": 512,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6354"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3840,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 1.8879024
+  },
+  {
+    "id": "oracle-bm-standard-a1-160-4bcd44b30a",
+    "provider": "oracle",
+    "name": "BM.Standard.A1.160",
+    "basis": "family-bare-metal-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 160,
+    "memory": 1024,
+    "sockets": 2,
+    "cpu": [
+      "ampere-altra-q8030"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.4979952
+  },
+  {
+    "id": "oracle-bm-standard-a1-160-cd4f5cadb1",
+    "provider": "oracle",
+    "name": "BM.Standard.A1.160",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 160,
+    "memory": 1024,
+    "sockets": 2,
+    "cpu": [
+      "ampere-altra-q8030"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.4979952
+  },
+  {
+    "id": "oracle-bm-standard-a4-48-3d9193d9ba",
+    "provider": "oracle",
+    "name": "BM.Standard.A4.48",
+    "basis": "family-bare-metal-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 768,
+    "sockets": 1,
+    "cpu": [
+      "ampere-ampereone-m-a0636m"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3840,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "oracle-bm-standard-a4-48-6537547274",
+    "provider": "oracle",
+    "name": "BM.Standard.A4.48",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 768,
+    "sockets": 1,
+    "cpu": [
+      "ampere-ampereone-m-a0636m"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 3840,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "oracle-bm-standard-a4-ax-48-9f8ca7730c",
+    "provider": "oracle",
+    "name": "bm-standard-a4-ax-48",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 768,
+    "sockets": 1,
+    "cpu": [
+      "ampere-ampereone-m-19236m"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "oracle-bm-standard-b1-44-67a7f6a100",
+    "provider": "oracle",
+    "name": "BM.Standard.B1.44",
+    "basis": "family-bare-metal-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 88,
+    "memory": 512,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e52699v4"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 1.7879024
+  },
+  {
+    "id": "oracle-bm-standard-b1-44-6fa9a6acc4",
+    "provider": "oracle",
+    "name": "BM.Standard.B1.44",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 88,
+    "memory": 512,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e52699v4"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 1.7879024
+  },
+  {
+    "id": "oracle-bm-standard-e2-64-11701373f8",
+    "provider": "oracle",
+    "name": "BM.Standard.E2.64",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 512,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-7551"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 1.7879024
+  },
+  {
+    "id": "oracle-bm-standard-e3-128-f0ad18d7ad",
+    "provider": "oracle",
+    "name": "BM.Standard.E3.128",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 256,
+    "memory": 2048,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-7742"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 3.9181808
+  },
+  {
+    "id": "oracle-bm-standard-e4-128-0a547e4d06",
+    "provider": "oracle",
+    "name": "BM.Standard.E4.128",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 256,
+    "memory": 2048,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-7j13"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 3.9181808
+  },
+  {
+    "id": "oracle-bm-standard-e5-192-580e73f869",
+    "provider": "oracle",
+    "name": "BM.Standard.E5.192",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 2304,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 4.2732272
+  },
+  {
+    "id": "oracle-bm-standard-e6-256-11d709b605",
+    "provider": "oracle",
+    "name": "BM.Standard.E6.256",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 512,
+    "memory": 3072,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9j45"
+    ],
+    "ssd_count": 2,
+    "hdd_count": 0,
+    "ssd_capacity": 1920,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 5.5383664
+  },
+  {
+    "id": "oracle-bm-standard-e6-256-5530da10ec",
+    "provider": "oracle",
+    "name": "BM.Standard.E6.256",
+    "basis": "family-bare-metal-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 512,
+    "memory": 3072,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9j45"
+    ],
+    "ssd_count": 2,
+    "hdd_count": 0,
+    "ssd_capacity": 1920,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 5.5383664
+  },
+  {
+    "id": "oracle-bm-standard-e6-ax-192-3dc1442d28",
+    "provider": "oracle",
+    "name": "bm-standard-e6-ax-192",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 1536,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9j45"
+    ],
+    "ssd_count": 2,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 3.408088
+  },
+  {
+    "id": "oracle-bm-standard1-36-6e517038df",
+    "provider": "oracle",
+    "name": "BM.Standard1.36",
+    "basis": "family-bare-metal-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 72,
+    "memory": 256,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e52699v3"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 1.432856
+  },
+  {
+    "id": "oracle-bm-standard1-36-79b1e12eb7",
+    "provider": "oracle",
+    "name": "BM.Standard1.36",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 72,
+    "memory": 256,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e52699v3"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 1.432856
+  },
+  {
+    "id": "oracle-bm-standard2-52-d424140036",
+    "provider": "oracle",
+    "name": "BM.Standard2.52",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 104,
+    "memory": 768,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "oracle-bm-standard3-64-2c6ba9be0d",
+    "provider": "oracle",
+    "name": "BM.Standard3.64",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 1024,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8358"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.4979952
+  },
+  {
+    "id": "oracle-bm-standard4-ax-120-f80f27dc60",
+    "provider": "oracle",
+    "name": "bm-standard4-ax-120",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 240,
+    "memory": 1152,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6987pc"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.6755184
+  },
+  {
+    "id": "oracle-dvh-denseio2-52-e1f2736d7c",
+    "provider": "oracle",
+    "name": "DVH.DenseIO2.52",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 104,
+    "memory": 768,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.9429488
+  },
+  {
+    "id": "oracle-dvh-optimized3-36-159233837e",
+    "provider": "oracle",
+    "name": "DVH.Optimized3.36",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 72,
+    "memory": 512,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6354"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 1.8879024
+  },
+  {
+    "id": "oracle-dvh-standard-e2-64-f2ae7d425c",
+    "provider": "oracle",
+    "name": "DVH.Standard.E2.64",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 512,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-7551"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 1.7879024
+  },
+  {
+    "id": "oracle-dvh-standard-e2-64-f9f20bae83",
+    "provider": "oracle",
+    "name": "DVH.Standard.E2.64",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 512,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-7551",
+      "amd-epyc-7742",
+      "amd-epyc-7j13"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 1.7879024
+  },
+  {
+    "id": "oracle-dvh-standard-e3-128-2e48d7ce83",
+    "provider": "oracle",
+    "name": "DVH.Standard.E3.128",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 256,
+    "memory": 2048,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-7742"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 3.9181808
+  },
+  {
+    "id": "oracle-dvh-standard-e4-128-ae46575324",
+    "provider": "oracle",
+    "name": "DVH.Standard.E4.128",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 256,
+    "memory": 2048,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-7j13"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 3.9181808
+  },
+  {
+    "id": "oracle-dvh-standard-e5-192-15806037af",
+    "provider": "oracle",
+    "name": "DVH.Standard.E5.192",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 2304,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9j14"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 4.2732272
+  },
+  {
+    "id": "oracle-dvh-standard2-52-1406ca5ff8",
+    "provider": "oracle",
+    "name": "DVH.Standard2.52",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 104,
+    "memory": 768,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8167m"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "oracle-dvh-standard3-64-54bee77558",
+    "provider": "oracle",
+    "name": "DVH.Standard3.64",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 1024,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8358"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact"
+    ],
+    "embodied": 2.4979952
+  },
+  {
+    "id": "oracle-vm-standard-a2-flex-78ocpu-936gb-71a4e8597b",
+    "provider": "oracle",
+    "name": "vm-standard-a2-flex-78ocpu-936gb",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 156,
+    "memory": 936,
+    "sockets": 1,
+    "cpu": [
+      "ampere-ampereone-a16030"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.275948
+  }
+]

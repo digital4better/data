@@ -13,7 +13,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.2456782,
+    "host": "ovhcloud-b3-640-cccb203647",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "b3-16",
@@ -29,7 +33,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.4913564,
+    "host": "ovhcloud-b3-640-cccb203647",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "b3-32",
@@ -45,7 +53,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.9827128,
+    "host": "ovhcloud-b3-640-cccb203647",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "b3-64",
@@ -61,7 +73,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.9654256,
+    "host": "ovhcloud-b3-640-cccb203647",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "b3-128",
@@ -77,7 +93,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.9654256,
+    "host": "ovhcloud-b3-640-cccb203647",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "b3-256",
@@ -93,7 +113,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.9654256,
+    "host": "ovhcloud-b3-640-cccb203647",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "b3-512",
@@ -109,7 +133,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.9654256,
+    "host": "ovhcloud-b3-640-cccb203647",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "b3-640",
@@ -125,7 +153,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.9654256,
+    "host": "ovhcloud-b3-640-cccb203647",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "b2-7",
@@ -141,7 +173,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.1555297,
+    "host": "ovhcloud-b2-120-a262942e1c",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "b2-15",
@@ -157,7 +193,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.3110594,
+    "host": "ovhcloud-b2-120-a262942e1c",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "b2-30",
@@ -173,7 +213,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.6221188,
+    "host": "ovhcloud-b2-120-a262942e1c",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "b2-60",
@@ -189,7 +233,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.2442376,
+    "host": "ovhcloud-b2-120-a262942e1c",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "b2-120",
@@ -205,7 +253,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.2442376,
+    "host": "ovhcloud-b2-120-a262942e1c",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "c3-4",
@@ -221,7 +273,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.1902022,
+    "host": "ovhcloud-c3-320-0f2e968419",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "c3-8",
@@ -237,7 +293,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.3804044,
+    "host": "ovhcloud-c3-320-0f2e968419",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "c3-16",
@@ -253,7 +313,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.7608088,
+    "host": "ovhcloud-c3-320-0f2e968419",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "c3-32",
@@ -269,7 +333,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.5216176,
+    "host": "ovhcloud-c3-320-0f2e968419",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "c3-64",
@@ -285,7 +353,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.5216176,
+    "host": "ovhcloud-c3-320-0f2e968419",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "c3-128",
@@ -301,7 +373,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.5216176,
+    "host": "ovhcloud-c3-320-0f2e968419",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "c3-256",
@@ -317,7 +393,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.5216176,
+    "host": "ovhcloud-c3-320-0f2e968419",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "c3-320",
@@ -333,7 +413,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.5216176,
+    "host": "ovhcloud-c3-320-0f2e968419",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "c2-7",
@@ -349,7 +433,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.1555297,
+    "host": "ovhcloud-c2-120-a262942e1c",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "c2-15",
@@ -365,7 +453,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.3110594,
+    "host": "ovhcloud-c2-120-a262942e1c",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "c2-30",
@@ -381,7 +473,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.6221188,
+    "host": "ovhcloud-c2-120-a262942e1c",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "c2-60",
@@ -397,7 +493,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.2442376,
+    "host": "ovhcloud-c2-120-a262942e1c",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "c2-120",
@@ -413,7 +513,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.2442376,
+    "host": "ovhcloud-c2-120-a262942e1c",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "r3-16",
@@ -429,7 +533,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.3122494,
+    "host": "ovhcloud-r3-1024-21df758f3c",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "r3-32",
@@ -445,7 +553,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.6244988,
+    "host": "ovhcloud-r3-1024-21df758f3c",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "r3-64",
@@ -461,7 +573,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.2489976,
+    "host": "ovhcloud-r3-1024-21df758f3c",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "r3-128",
@@ -477,7 +593,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 2.4979952,
+    "host": "ovhcloud-r3-1024-21df758f3c",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "r3-256",
@@ -493,7 +613,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 2.4979952,
+    "host": "ovhcloud-r3-1024-21df758f3c",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "r3-512",
@@ -509,7 +633,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 2.4979952,
+    "host": "ovhcloud-r3-1024-21df758f3c",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "r3-1024",
@@ -525,7 +653,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 2.4979952,
+    "host": "ovhcloud-r3-1024-21df758f3c",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "r2-15",
@@ -541,7 +673,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.1763332,
+    "host": "ovhcloud-r2-240-b49c34da15",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "r2-30",
@@ -557,7 +693,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.1763332,
+    "host": "ovhcloud-r2-240-b49c34da15",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "r2-60",
@@ -573,7 +713,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.3526664,
+    "host": "ovhcloud-r2-240-b49c34da15",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "r2-120",
@@ -589,7 +733,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.7053328,
+    "host": "ovhcloud-r2-240-b49c34da15",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "r2-240",
@@ -605,7 +753,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.4106656,
+    "host": "ovhcloud-r2-240-b49c34da15",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "i1-45",
@@ -621,7 +773,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.3774516,
+    "host": "ovhcloud-i1-180-60926f2ba9",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "i1-90",
@@ -637,7 +793,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.3774516,
+    "host": "ovhcloud-i1-180-60926f2ba9",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "i1-180",
@@ -653,7 +813,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.3774516,
+    "host": "ovhcloud-i1-180-60926f2ba9",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "d2-2",
@@ -669,7 +833,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.525,
+    "host": "ovhcloud-d2-8-df02e9f47b",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "d2-4",
@@ -685,7 +853,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.05,
+    "host": "ovhcloud-d2-8-df02e9f47b",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "d2-8",
@@ -701,7 +873,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.05,
+    "host": "ovhcloud-d2-8-df02e9f47b",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "l40s-90",
@@ -717,7 +893,11 @@
     ],
     "accelerators": 1,
     "accelerator": "nvidia-tesla-l40s",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 2.3546168,
+    "host": "ovhcloud-l40s-360-f0adcc7b38",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "l40s-180",
@@ -733,7 +913,11 @@
     ],
     "accelerators": 2,
     "accelerator": "nvidia-tesla-l40s",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 2.3546168,
+    "host": "ovhcloud-l40s-360-f0adcc7b38",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "l40s-360",
@@ -749,7 +933,11 @@
     ],
     "accelerators": 4,
     "accelerator": "nvidia-tesla-l40s",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 2.3546168,
+    "host": "ovhcloud-l40s-360-f0adcc7b38",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "a10-45",
@@ -765,7 +953,11 @@
     ],
     "accelerators": 1,
     "accelerator": "nvidia-tesla-a10",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 2.0579634,
+    "host": "ovhcloud-a10-180-a5ead5982f",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "a10-90",
@@ -781,7 +973,11 @@
     ],
     "accelerators": 2,
     "accelerator": "nvidia-tesla-a10",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 2.0579634,
+    "host": "ovhcloud-a10-180-a5ead5982f",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "a10-180",
@@ -797,7 +993,11 @@
     ],
     "accelerators": 4,
     "accelerator": "nvidia-tesla-a10",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 2.0579634,
+    "host": "ovhcloud-a10-180-a5ead5982f",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "a100-180",
@@ -813,7 +1013,11 @@
     ],
     "accelerators": 1,
     "accelerator": "nvidia-tesla-a10080",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 3.031424,
+    "host": "ovhcloud-a100-720-535e48f26d",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "a100-360",
@@ -829,7 +1033,11 @@
     ],
     "accelerators": 2,
     "accelerator": "nvidia-tesla-a10080",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 3.031424,
+    "host": "ovhcloud-a100-720-535e48f26d",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "a100-720",
@@ -845,7 +1053,11 @@
     ],
     "accelerators": 4,
     "accelerator": "nvidia-tesla-a10080",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 3.031424,
+    "host": "ovhcloud-a100-720-535e48f26d",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "h100-380",
@@ -861,7 +1073,11 @@
     ],
     "accelerators": 1,
     "accelerator": "nvidia-tesla-h10080",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.3803146667,
+    "host": "ovhcloud-h100-1520-542a399611",
+    "host_share": 0.3333333333333333,
+    "host_instances": 3
   },
   {
     "id": "h100-760",
@@ -877,7 +1093,11 @@
     ],
     "accelerators": 2,
     "accelerator": "nvidia-tesla-h10080",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 4.140944,
+    "host": "ovhcloud-h100-1520-542a399611",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "h100-1520",
@@ -893,7 +1113,11 @@
     ],
     "accelerators": 4,
     "accelerator": "nvidia-tesla-h10080",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 4.140944,
+    "host": "ovhcloud-h100-1520-542a399611",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "l4-90",
@@ -909,7 +1133,11 @@
     ],
     "accelerators": 1,
     "accelerator": "nvidia-tesla-l4",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 2.2214744,
+    "host": "ovhcloud-l4-360-bccc2d006d",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "l4-180",
@@ -925,7 +1153,11 @@
     ],
     "accelerators": 2,
     "accelerator": "nvidia-tesla-l4",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 2.2214744,
+    "host": "ovhcloud-l4-360-bccc2d006d",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "l4-360",
@@ -941,7 +1173,11 @@
     ],
     "accelerators": 4,
     "accelerator": "nvidia-tesla-l4",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 2.2214744,
+    "host": "ovhcloud-l4-360-bccc2d006d",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "rtx5000-28",
@@ -957,7 +1193,11 @@
     ],
     "accelerators": 1,
     "accelerator": "nvidia-quadro-rtx5000",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.6443092,
+    "host": "ovhcloud-rtx5000-84-d60ac2d58f",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "rtx5000-56",
@@ -973,7 +1213,11 @@
     ],
     "accelerators": 2,
     "accelerator": "nvidia-quadro-rtx5000",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.6443092,
+    "host": "ovhcloud-rtx5000-84-d60ac2d58f",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "rtx5000-84",
@@ -989,7 +1233,11 @@
     ],
     "accelerators": 3,
     "accelerator": "nvidia-quadro-rtx5000",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.6443092,
+    "host": "ovhcloud-rtx5000-84-d60ac2d58f",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "t1-le-45",
@@ -1005,7 +1253,11 @@
     ],
     "accelerators": 1,
     "accelerator": "nvidia-tesla-v10016",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.9274516,
+    "host": "ovhcloud-t1-le-180-77daae8f8c",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "t1-le-90",
@@ -1021,7 +1273,11 @@
     ],
     "accelerators": 2,
     "accelerator": "nvidia-tesla-v10016",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.9274516,
+    "host": "ovhcloud-t1-le-180-77daae8f8c",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "t1-le-180",
@@ -1037,7 +1293,11 @@
     ],
     "accelerators": 4,
     "accelerator": "nvidia-tesla-v10016",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.9274516,
+    "host": "ovhcloud-t1-le-180-77daae8f8c",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "bm-s1",
@@ -1053,7 +1313,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.1221904,
+    "host": "ovhcloud-bm-s1-5202e99bab",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "bm-m1",
@@ -1069,7 +1333,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.1665712,
+    "host": "ovhcloud-bm-m1-423495ad0c",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "bm-l1",
@@ -1085,7 +1353,11 @@
     ],
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.2553328,
+    "host": "ovhcloud-bm-l1-916131b13f",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "h200-1920",
@@ -1098,7 +1370,12 @@
     "accelerators": 8,
     "accelerator": "nvidia-tesla-h200",
     "ssd": 31120,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 7.1275576,
+    "embodied_allocated": 7.1275576,
+    "host": "ovhcloud-h200-1920-366dda1637",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "h200-1920-eph",
@@ -1111,7 +1388,12 @@
     "accelerators": 8,
     "accelerator": "nvidia-tesla-h200",
     "ssd": 20400,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 7.1275576,
+    "embodied_allocated": 7.1275576,
+    "host": "ovhcloud-h200-1920-366dda1637",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "t1-45",
@@ -1124,7 +1406,15 @@
     "accelerators": 1,
     "accelerator": "nvidia-tesla-v10016",
     "ssd": 400,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.608214,
+    "cpu": [
+      "intel-xeon-4214"
+    ],
+    "embodied_allocated": 0.608214,
+    "host": "ovhcloud-t1-45-efc24b8417",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "t1-90",
@@ -1137,7 +1427,15 @@
     "accelerators": 2,
     "accelerator": "nvidia-tesla-v10016",
     "ssd": 800,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.216428,
+    "cpu": [
+      "intel-xeon-4214"
+    ],
+    "embodied_allocated": 1.216428,
+    "host": "ovhcloud-t1-45-efc24b8417",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "t1-180",
@@ -1150,7 +1448,15 @@
     "accelerators": 4,
     "accelerator": "nvidia-tesla-v10016",
     "ssd": 4050,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 2.432856,
+    "cpu": [
+      "intel-xeon-4214"
+    ],
+    "embodied_allocated": 2.432856,
+    "host": "ovhcloud-t1-45-efc24b8417",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "t2-45",
@@ -1162,7 +1468,16 @@
     "virtual": true,
     "accelerators": 1,
     "ssd": 400,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.6304044,
+    "accelerator": "nvidia-tesla-v100s32",
+    "cpu": [
+      "intel-xeon-6226r"
+    ],
+    "embodied_allocated": 0.6304044,
+    "host": "ovhcloud-t2-45-09047060c9",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "t2-le-45",
@@ -1174,7 +1489,16 @@
     "virtual": true,
     "accelerators": 1,
     "ssd": 300,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.6304044,
+    "accelerator": "nvidia-tesla-v100s32",
+    "cpu": [
+      "intel-xeon-6226r"
+    ],
+    "embodied_allocated": 0.6304044,
+    "host": "ovhcloud-t2-45-09047060c9",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "t2-90",
@@ -1186,7 +1510,16 @@
     "virtual": true,
     "accelerators": 2,
     "ssd": 800,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.2608088,
+    "accelerator": "nvidia-tesla-v100s32",
+    "cpu": [
+      "intel-xeon-6226r"
+    ],
+    "embodied_allocated": 1.2608088,
+    "host": "ovhcloud-t2-45-09047060c9",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "t2-le-90",
@@ -1198,7 +1531,16 @@
     "virtual": true,
     "accelerators": 2,
     "ssd": 500,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.2608088,
+    "accelerator": "nvidia-tesla-v100s32",
+    "cpu": [
+      "intel-xeon-6226r"
+    ],
+    "embodied_allocated": 1.2608088,
+    "host": "ovhcloud-t2-45-09047060c9",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "t2-180",
@@ -1210,7 +1552,16 @@
     "virtual": true,
     "accelerators": 4,
     "ssd": 4050,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 2.5216176,
+    "accelerator": "nvidia-tesla-v100s32",
+    "cpu": [
+      "intel-xeon-6226r"
+    ],
+    "embodied_allocated": 2.5216176,
+    "host": "ovhcloud-t2-45-09047060c9",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "t2-le-180",
@@ -1222,6 +1573,15 @@
     "virtual": true,
     "accelerators": 4,
     "ssd": 500,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 2.5216176,
+    "accelerator": "nvidia-tesla-v100s32",
+    "cpu": [
+      "intel-xeon-6226r"
+    ],
+    "embodied_allocated": 2.5216176,
+    "host": "ovhcloud-t2-45-09047060c9",
+    "host_share": 1,
+    "host_instances": 1
   }
 ]

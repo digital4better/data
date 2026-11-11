@@ -70,11 +70,11 @@ const format = (value: any, lang: string): string =>
     : typeof value === "object"
     ? JSON.stringify(value)
     : String(value);
-const cloudSectionId = (id: string) => id.endsWith("-regions") ? "regions" : id.endsWith("-vms") ? "vms" : id;
+const cloudSectionId = (id: string) => id.endsWith("-regions") ? "regions" : id.endsWith("-vms") ? "vms" : id.endsWith("-hosts") ? "hosts" : id;
 const cloudProviderLabel = (id: string) => ({ aws: "AWS", azure: "Microsoft Azure", gcp: "Google Cloud", oracle: "Oracle Cloud", ovhcloud: "OVHcloud", scaleway: "Scaleway" }[id.split("-")[0]] || id);
 // Combined views are explorer-only: no synthetic files or catalog pages are published.
 function cloudCombinedDatasets(catalog: Catalog): Dataset[] {
-  return ["regions", "vms"].flatMap((section) => {
+  return ["regions", "vms", "hosts"].flatMap((section) => {
     const datasets = catalog.datasets.filter((d) => d.collection === "cloud" && d.id.endsWith(`-${section}`));
     return datasets.length ? [{ ...datasets[0], id: `all-${section}`, file: "", count: datasets.reduce((n, d) => n + d.count, 0), fields: [...new Set(datasets.flatMap((d) => d.fields))] }] : [];
   });
@@ -604,6 +604,7 @@ function Explorer({
   const cloudSections = [
     { id: "regions", title: t("Régions", "Regions") },
     { id: "vms", title: t("Machines virtuelles", "Virtual machines") },
+    { id: "hosts", title: t("Profils d'hôtes", "Host profiles") },
     { id: "cpus", title: t("Processeurs", "Processors") },
     { id: "accelerators", title: t("Accélérateurs", "Accelerators") },
   ];
@@ -614,7 +615,7 @@ function Explorer({
   const allCloud = d.collection === "cloud" && d.id.startsWith("all-");
   const sectionDataset = (section: string) => {
     const matching = cloudDatasets.filter((x) => x.id === section || x.id.endsWith(`-${section}`));
-    if (["regions", "vms"].includes(section) && (allCloud || !["regions", "vms"].includes(cloudSection))) return `all-${section}`;
+    if (["regions", "vms", "hosts"].includes(section) && (allCloud || !["regions", "vms", "hosts"].includes(cloudSection))) return `all-${section}`;
     return matching.find((x) => x.id.split("-")[0] === d.id.split("-")[0])?.id || matching[0]?.id;
   };
   const changeDataset = (id: string) => {
@@ -821,7 +822,9 @@ function Explorer({
     ? d.id.endsWith("regions")
       ? ["id", "country", "location", "pue", "wue", "ref"]
       : d.id.endsWith("vms")
-      ? ["name", "category", "vcpus", "memory", "cpu", "accelerators", "embodied"]
+      ? ["name", "category", "vcpus", "memory", "embodied_allocated", "host", "host_share"]
+      : d.id.endsWith("hosts")
+      ? ["id", "basis", "vcpus", "memory", "sockets", "accelerators", "embodied"]
       : d.id === "cpus"
       ? ["id", "manufacturer", "architecture", "cores", "threads", "tdp", "process"]
       : ["id", "manufacturer", "type", "memory", "tdp", "process"]
@@ -830,7 +833,7 @@ function Explorer({
     d.collection === "cloud" && !["regions", "vms"].includes(cloudSection) && numeric.includes(metric) && !baseColumns.includes(metric)
       ? [...baseColumns, metric]
       : baseColumns;
-  const tableColumns = d.collection === "cloud" && ["regions", "vms"].includes(cloudSection) ? ["_provider", ...columns] : columns;
+  const tableColumns = d.collection === "cloud" && ["regions", "vms", "hosts"].includes(cloudSection) ? ["_provider", ...columns] : columns;
   const filterFields =
     d.collection === "ai"
       ? ["vendor", "input", "output", "open", "reasoning", "tools"]
@@ -1076,6 +1079,12 @@ function Explorer({
               selected={region}
               onSelect={setRegion}
             />
+          )}
+          {d.collection === "cloud" && d.id.endsWith("vms") && (
+            <p>{t("L'impact alloué utilise la méthode D4B. L'ancien champ embodied est déprécié et conservé pour compatibilité.", "Allocated impact uses the D4B method. The legacy embodied field is deprecated and retained for compatibility.")} <a href={`${base}cloud/README.md`}>{t("Méthode et hypothèses", "Method and assumptions")}</a></p>
+          )}
+          {d.collection === "cloud" && d.id.endsWith("hosts") && (
+            <p>{t("Profils de calcul, pas un inventaire garanti des serveurs déployés. L'impact affiché porte sur l'hôte entier.", "Calculation profiles, not a guaranteed inventory of deployed servers. The displayed impact covers the complete host.")}</p>
           )}
           {d.collection === "cloud" && d.id.endsWith("regions") && <CloudMap rows={filtered} lang={lang} />}
           {d.collection === "mix" && (

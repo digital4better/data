@@ -17,7 +17,7 @@ test("cloud catalogs have unique identifiers and finite nonnegative capacities",
     const records = json(`${dataset}.json`);
     assert.equal(new Set(records.map((m) => m.id)).size, records.length, dataset);
     for (const m of records) {
-      for (const field of ["vcpus", "ocpus", "memory", "ssd", "hdd", "accelerators", "pue", "wue", "ref"]) {
+      for (const field of ["vcpus", "ocpus", "memory", "ssd", "hdd", "accelerators", "embodied", "pue", "wue", "ref"]) {
         if (!(field in m)) continue;
         let value = m[field];
         // Historical Scaleway entries retain their decimal-comma RAM strings.
@@ -36,6 +36,32 @@ test("approved cloud RAM corrections match the documented specifications", () =>
   assert.equal(lookup("ovhcloud-vms", "a10-45").memory, 42);
   assert.equal(lookup("ovhcloud-vms", "a10-90").memory, 85);
   assert.equal(lookup("ovhcloud-vms", "a10-180").memory, 170);
+});
+
+test("reviewed hardware corrections retain their official sources and corrected values", () => {
+  const { corrections } = require("../../scripts/cloud-hardware-corrections.json");
+  const seen = new Set();
+  const cpus = new Set(json("cpus.json").map((r) => r.id));
+  for (const correction of corrections) {
+    const key = `${correction.provider}/${correction.id}`;
+    assert.ok(!seen.has(key), key);
+    seen.add(key);
+    assert.ok(correction.sources.length > 0, key);
+    for (const source of correction.sources) {
+      assert.ok(["docs.aws.amazon.com", "learn.microsoft.com", "docs.cloud.google.com"].includes(new URL(source).hostname), key);
+    }
+    const record = lookup(`${correction.provider}-vms`, correction.id);
+    assert.ok(record, key);
+    assert.deepEqual(Object.keys(correction.before), Object.keys(correction.after), key);
+    assert.ok(!("embodied" in correction.after), key);
+    for (const [field, value] of Object.entries(correction.after)) {
+      assert.deepEqual(record[field], value, `${key}/${field}`);
+      assert.notDeepEqual(correction.before[field], value, `${key}/${field}`);
+    }
+    for (const cpu of record.cpu || []) assert.ok(cpus.has(cpu), `${key}/${cpu}`);
+  }
+  assert.equal(lookup("aws-vms", "p6e-gb200-36xlarge").accelerators, 4);
+  assert.equal(lookup("azure-vms", "nv6").accelerators, 0.5);
 });
 
 test("cloud exports preserve empty cells, fractional GPUs and every JSON row", () => {
@@ -62,6 +88,17 @@ test("cloud refresh keeps distinct physical configurations and missing regional 
   assert.equal(lookup("gcp-regions", "northamerica-south1").ref, 0.25);
   assert.ok(!("ref" in lookup("gcp-regions", "asia-southeast3")));
   for (const n of [1, 2, 3]) assert.ok(!("pue" in lookup("scaleway-regions", `it-mil-${n}`)));
+});
+
+test("shared hardware CSVs retain missing silicon properties and all JSON rows", () => {
+  for (const dataset of ["cpus", "accelerators"]) {
+    const records = json(`${dataset}.json`);
+    const [headers, ...rows] = parseCsv(read(`${dataset}.csv`));
+    assert.equal(rows.length, records.length, dataset);
+    for (let i = 0; i < records.length; i++) {
+      assert.deepEqual(rows[i], headers.map((key) => records[i][key] == null ? "" : String(records[i][key])), `${dataset}/${records[i].id}`);
+    }
+  }
 });
 
 test("cloud reference notes are published without a refresh dataset", () => {

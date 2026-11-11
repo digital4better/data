@@ -815,7 +815,7 @@
     "serie": "axion",
     "model": "",
     "architecture": "arm-64",
-    "platform": "neoverse n2",
+    "platform": "neoverse v2",
     "cores": 96,
     "threads": 96,
     "tdp": 180,
@@ -2052,5 +2052,161 @@
     "tdp": 200,
     "process": 14,
     "smp": 2
+  },
+  {
+    "id": "amd-epyc-9004",
+    "manufacturer": "amd",
+    "serie": "epyc",
+    "model": "9004",
+    "architecture": "x86-64",
+    "platform": "genoa"
+  },
+  {
+    "id": "amd-epyc-9555p",
+    "manufacturer": "amd",
+    "serie": "epyc",
+    "model": "9555p",
+    "architecture": "x86-64",
+    "platform": "turin",
+    "cores": 64,
+    "threads": 128,
+    "tdp": 360,
+    "smp": 1
+  },
+  {
+    "id": "apple-m3-ultra-28",
+    "manufacturer": "apple",
+    "serie": "m3",
+    "model": "ultra-28",
+    "architecture": "arm-64",
+    "platform": "apple silicon",
+    "cores": 28,
+    "threads": 28
+  },
+  {
+    "id": "apple-m4-max-16",
+    "manufacturer": "apple",
+    "serie": "m4",
+    "model": "max-16",
+    "architecture": "arm-64",
+    "platform": "apple silicon",
+    "cores": 16,
+    "threads": 16
+  },
+  {
+    "id": "aws-graviton-5",
+    "manufacturer": "aws",
+    "serie": "graviton",
+    "model": 5,
+    "architecture": "arm-64",
+    "platform": "neoverse v3",
+    "cores": 192,
+    "threads": 192
+  },
+  {
+    "id": "google-axion-n3",
+    "manufacturer": "google",
+    "serie": "axion",
+    "model": "n3",
+    "architecture": "arm-64",
+    "platform": "neoverse n3"
+  },
+  {
+    "id": "intel-xeon-6776p",
+    "manufacturer": "intel",
+    "serie": "xeon",
+    "model": "6776p",
+    "architecture": "x86-64",
+    "platform": "granite rapids",
+    "cores": 64,
+    "threads": 128,
+    "tdp": 350,
+    "smp": 2
+  },
+  {
+    "id": "intel-xeon-6788p",
+    "manufacturer": "intel",
+    "serie": "xeon",
+    "model": "6788p",
+    "architecture": "x86-64",
+    "platform": "granite rapids",
+    "cores": 86,
+    "threads": 172,
+    "tdp": 350
+  },
+  {
+    "id": "intel-xeon-6973pc",
+    "manufacturer": "intel",
+    "serie": "xeon",
+    "model": "6973pc",
+    "architecture": "x86-64",
+    "platform": "granite rapids"
+  },
+  {
+    "id": "intel-xeon-6985pc",
+    "manufacturer": "intel",
+    "serie": "xeon",
+    "model": "6985pc",
+    "architecture": "x86-64",
+    "platform": "granite rapids"
+  },
+  {
+    "id": "intel-xeon-6987pc",
+    "manufacturer": "intel",
+    "serie": "xeon",
+    "model": "6987pc",
+    "architecture": "x86-64",
+    "platform": "granite rapids"
+  },
+  {
+    "id": "intel-xeon-6-72c-oracle",
+    "manufacturer": "intel",
+    "serie": "xeon",
+    "model": "6-72c-oracle",
+    "architecture": "x86-64",
+    "platform": "granite rapids",
+    "cores": 72
+  },
+  {
+    "id": "intel-xeon-granite-rapids-ap",
+    "manufacturer": "intel",
+    "serie": "xeon",
+    "model": "granite-rapids-ap",
+    "architecture": "x86-64",
+    "platform": "granite rapids"
+  },
+  {
+    "id": "intel-xeon-sapphire-rapids",
+    "manufacturer": "intel",
+    "serie": "xeon",
+    "model": "sapphire-rapids",
+    "architecture": "x86-64",
+    "platform": "sapphire rapids"
+  },
+  {
+    "id": "ampere-ampereone-m-19236m",
+    "manufacturer": "ampere",
+    "serie": "ampereone-m",
+    "model": "192-36m",
+    "architecture": "arm-64",
+    "platform": "ampereone-m"
+  },
+  {
+    "id": "intel-xeon-4214",
+    "manufacturer": "intel",
+    "serie": "xeon",
+    "model": "4214",
+    "architecture": "x86-64",
+    "platform": "cascade lake",
+    "cores": 12,
+    "tdp": 85
+  },
+  {
+    "id": "intel-xeon-6226r",
+    "manufacturer": "intel",
+    "serie": "xeon",
+    "model": "6226r",
+    "architecture": "x86-64",
+    "platform": "cascade lake"
   }
 ]

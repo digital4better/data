@@ -285,6 +285,19 @@ export const fieldLabels = {
   model: ["Modèle", "Model"],
   category: ["Catégorie", "Category"],
   embodied: ["Impact de fabrication (tCO₂e)", "Embodied impact (tCO₂e)"],
+  embodied_allocated: ["Fabrication allouée à l'instance (tCO₂e)", "Instance-allocated manufacturing impact (tCO₂e)"],
+  host: ["Identifiant du profil d'hôte", "Host profile identifier"],
+  host_share: ["Part de l'impact de l'hôte (0–1)", "Share of host impact (0–1)"],
+  host_instances: ["Instances identiques par hôte (hypothèse)", "Identical instances per host (modeled)"],
+  sockets: ["Sockets CPU physiques modélisés", "Modeled physical CPU sockets"],
+  ssd_count: ["Nombre de SSD physiques modélisés", "Modeled physical SSD count"],
+  hdd_count: ["Nombre de HDD physiques modélisés", "Modeled physical HDD count"],
+  ssd_capacity: ["Capacité SSD locale du profil (unité source)", "Profile local SSD capacity (source unit)"],
+  hdd_capacity: ["Capacité HDD locale du profil (unité source)", "Profile local HDD capacity (source unit)"],
+  accelerator_memory: ["Mémoire par accélérateur modélisé (GB)", "Memory per modeled accelerator (GB)"],
+  basis: ["Base documentaire ou hypothèse du profil", "Profile evidence or assumption basis"],
+  method: ["Version de la méthode de calcul", "Calculation method version"],
+  assumptions: ["Hypothèses et limites", "Assumptions and limitations"],
 };
 export const tr = (pair, lang) => pair[lang === "fr" ? 0 : 1];
 export function datasetTitle(file, lang) {
@@ -299,6 +312,7 @@ export function datasetTitle(file, lang) {
     green: ["Renouvelables uniquement (green)", "Renewables only (green)"],
     regions: ["Régions", "Regions"],
     vms: ["Machines virtuelles", "Virtual machines"],
+    hosts: ["Profils d'hôtes", "Host profiles"],
     cpus: ["Processeurs", "Processors"],
     accelerators: ["Accélérateurs", "Accelerators"],
     models: ["Catalogue des modèles", "Model catalog"],

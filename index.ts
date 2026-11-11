@@ -992,6 +992,20 @@ const generateClouds = async () => {
       "accelerators",
       "accelerator",
       "embodied",
+      "embodied_allocated",
+      "host",
+      "host_share",
+      "host_instances",
+    ]);
+    const hosts = JSON.parse(readFileSync(`./data/cloud/${cloud}-hosts.json`, "utf-8"));
+    exportToCsv(`./data/cloud/${cloud}-hosts.csv`, hosts.map((host: Record<string, any>) => ({
+      ...host,
+      sources: (host.sources as string[]).join(" | "),
+      assumptions: (host.assumptions as string[]).join(" | "),
+    })), [
+      "id", "provider", "name", "basis", "method", "vcpus", "memory", "sockets", "cpu",
+      "ssd_count", "hdd_count", "ssd_capacity", "hdd_capacity", "accelerator", "accelerators",
+      "accelerator_memory", "embodied", "sources", "assumptions",
     ]);
   }
   const accelerators = JSON.parse(readFileSync(`./data/cloud/accelerators.json`, "utf-8"));
@@ -1073,7 +1087,7 @@ const generateAi = async () => {
   ]);
 };
 
-export { computeDistance, roundNumber, exportToCsv, exportFactorsAndMixes, generateCountries, fetchWorldMix, processData };
+export { computeDistance, roundNumber, exportToCsv, exportFactorsAndMixes, generateCountries, generateClouds, fetchWorldMix, processData };
 
 const main = async () => {
   const start = Date.now();

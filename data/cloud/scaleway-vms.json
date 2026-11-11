@@ -11,7 +11,11 @@
     "cpu": "ampere-altra-m12830",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.0190648479,
+    "host": "scaleway-amp2-c60-cd6e8fa68c",
+    "host_share": 0.016666666666666666,
+    "host_instances": 60
   },
   {
     "id": "amp2-c12",
@@ -25,7 +29,11 @@
     "cpu": "ampere-altra-m12830",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.228778175,
+    "host": "scaleway-amp2-c60-cd6e8fa68c",
+    "host_share": 0.2,
+    "host_instances": 5
   },
   {
     "id": "amp2-c2",
@@ -39,7 +47,11 @@
     "cpu": "ampere-altra-m12830",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.0381296958,
+    "host": "scaleway-amp2-c60-cd6e8fa68c",
+    "host_share": 0.03333333333333333,
+    "host_instances": 30
   },
   {
     "id": "amp2-c24",
@@ -53,7 +65,11 @@
     "cpu": "ampere-altra-m12830",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.5719454375,
+    "host": "scaleway-amp2-c60-cd6e8fa68c",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "amp2-c4",
@@ -67,7 +83,11 @@
     "cpu": "ampere-altra-m12830",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.0762593917,
+    "host": "scaleway-amp2-c60-cd6e8fa68c",
+    "host_share": 0.06666666666666667,
+    "host_instances": 15
   },
   {
     "id": "amp2-c48",
@@ -81,7 +101,11 @@
     "cpu": "ampere-altra-m12830",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.143890875,
+    "host": "scaleway-amp2-c60-cd6e8fa68c",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "amp2-c60",
@@ -95,7 +119,11 @@
     "cpu": "ampere-altra-m12830",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.143890875,
+    "host": "scaleway-amp2-c60-cd6e8fa68c",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "amp2-c8",
@@ -109,7 +137,11 @@
     "cpu": "ampere-altra-m12830",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.1634129821,
+    "host": "scaleway-amp2-c60-cd6e8fa68c",
+    "host_share": 0.14285714285714285,
+    "host_instances": 7
   },
   {
     "id": "arm64-128gb",
@@ -123,7 +155,11 @@
     "cpu": "cavium-thunderx-cn8890",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.2553328,
+    "host": "scaleway-arm64-128gb-0a8f1f5c0e",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "arm64-16gb",
@@ -137,7 +173,11 @@
     "cpu": "cavium-thunderx-cn8890",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.3138332,
+    "host": "scaleway-arm64-128gb-0a8f1f5c0e",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "arm64-2gb",
@@ -151,7 +191,11 @@
     "cpu": "cavium-thunderx-cn8890",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.0784583,
+    "host": "scaleway-arm64-128gb-0a8f1f5c0e",
+    "host_share": 0.0625,
+    "host_instances": 16
   },
   {
     "id": "arm64-32gb",
@@ -165,7 +209,11 @@
     "cpu": "cavium-thunderx-cn8890",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.6276664,
+    "host": "scaleway-arm64-128gb-0a8f1f5c0e",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "arm64-4gb",
@@ -179,7 +227,11 @@
     "cpu": "cavium-thunderx-cn8890",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.12553328,
+    "host": "scaleway-arm64-128gb-0a8f1f5c0e",
+    "host_share": 0.1,
+    "host_instances": 10
   },
   {
     "id": "arm64-64gb",
@@ -193,7 +245,11 @@
     "cpu": "cavium-thunderx-cn8890",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.2553328,
+    "host": "scaleway-arm64-128gb-0a8f1f5c0e",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "arm64-8gb",
@@ -207,7 +263,11 @@
     "cpu": "cavium-thunderx-cn8890",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.1569166,
+    "host": "scaleway-arm64-128gb-0a8f1f5c0e",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "container-1024",
@@ -221,7 +281,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-container-1024-cc90750a91",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "container-128",
@@ -235,7 +299,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-container-128-cc90750a91",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "container-2048",
@@ -249,7 +317,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-container-2048-cc90750a91",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "container-256",
@@ -263,7 +335,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-container-256-cc90750a91",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "container-512",
@@ -277,7 +353,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-container-512-cc90750a91",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "coparm1-16c-64g",
@@ -291,7 +371,11 @@
     "cpu": "ampere-altra-m12830",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.5776664,
+    "host": "scaleway-coparm1-32c-128g-c56f7b0893",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "coparm1-2c-8g",
@@ -305,7 +389,11 @@
     "cpu": "ampere-altra-m12830",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.0722083,
+    "host": "scaleway-coparm1-32c-128g-c56f7b0893",
+    "host_share": 0.0625,
+    "host_instances": 16
   },
   {
     "id": "coparm1-32c-128g",
@@ -319,7 +407,11 @@
     "cpu": "ampere-altra-m12830",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.1553328,
+    "host": "scaleway-coparm1-32c-128g-c56f7b0893",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "coparm1-4c-16g",
@@ -333,7 +425,11 @@
     "cpu": "ampere-altra-m12830",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.1444166,
+    "host": "scaleway-coparm1-32c-128g-c56f7b0893",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "coparm1-8c-32g",
@@ -347,7 +443,11 @@
     "cpu": "ampere-altra-m12830",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.2888332,
+    "host": "scaleway-coparm1-32c-128g-c56f7b0893",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "dev1-l",
@@ -361,7 +461,11 @@
     "cpu": "amd-epyc-7281",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-dev1-xl-1a85986240",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "dev1-m",
@@ -375,7 +479,11 @@
     "cpu": "amd-epyc-7281",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-dev1-xl-1a85986240",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "dev1-s",
@@ -389,7 +497,11 @@
     "cpu": "amd-epyc-7281",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.5,
+    "host": "scaleway-dev1-xl-1a85986240",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "dev1-xl",
@@ -403,7 +515,11 @@
     "cpu": "amd-epyc-7281",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-dev1-xl-1a85986240",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-a115x-ssd",
@@ -417,7 +533,11 @@
     "cpu": "intel-xeon-e31220",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.1221904,
+    "host": "scaleway-em-a115x-ssd-93200069e3",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-a215r-hdd",
@@ -431,7 +551,11 @@
     "cpu": "amd-ryzen-3600",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.1721904,
+    "host": "scaleway-em-a610r-nvme-01b3f20cf7",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-a315x-ssd",
@@ -445,7 +569,11 @@
     "cpu": "intel-xeon-e51410v2",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.260952,
+    "host": "scaleway-em-l101x-sata-12e6bf507b",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-a410x-ssd",
@@ -459,7 +587,11 @@
     "cpu": "intel-xeon-e51650",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.1665712,
+    "host": "scaleway-em-a410x-ssd-9dfe1d750f",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-a610r-nvme",
@@ -473,7 +605,11 @@
     "cpu": "amd-ryzen-3600",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.1221904,
+    "host": "scaleway-em-a610r-nvme-8c21d2bec7",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-b111x-sata",
@@ -487,7 +623,11 @@
     "cpu": "intel-xeon-e52620",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.3940944,
+    "host": "scaleway-em-b111x-sata-6191379e60",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-b112x-ssd",
@@ -501,7 +641,11 @@
     "cpu": "intel-xeon-e52620",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.4940944,
+    "host": "scaleway-em-b111x-sata-30722528df",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-b211x-sata",
@@ -515,7 +659,11 @@
     "cpu": "intel-xeon-e52650",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.482856,
+    "host": "scaleway-em-b211x-sata-e9d19023d2",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-b212x-ssd",
@@ -529,7 +677,11 @@
     "cpu": "intel-xeon-e52650",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.582856,
+    "host": "scaleway-em-b211x-sata-02b96a7c87",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-b220e-nvme",
@@ -543,7 +695,11 @@
     "cpu": "amd-epyc-7232p",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.2553328,
+    "host": "scaleway-em-b320e-nvme-f2d91126e9",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-b311x-sata",
@@ -557,7 +713,11 @@
     "cpu": "intel-xeon-e52670v2",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.482856,
+    "host": "scaleway-em-b311x-sata-3663ffcc59",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-b312x-ssd",
@@ -571,7 +731,11 @@
     "cpu": "intel-xeon-e52670v2",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.582856,
+    "host": "scaleway-em-b311x-sata-b1faaf0fc8",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-b320e-nvme",
@@ -585,7 +749,11 @@
     "cpu": "amd-epyc-7232p",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.2553328,
+    "host": "scaleway-em-b320e-nvme-f2d91126e9",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-b420e-nvme",
@@ -599,7 +767,11 @@
     "cpu": "amd-epyc-7272",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.432856,
+    "host": "scaleway-em-b520e-nvme-62ce84fd9d",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-b520e-nvme",
@@ -613,7 +785,11 @@
     "cpu": "amd-epyc-7272",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.432856,
+    "host": "scaleway-em-b520e-nvme-62ce84fd9d",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-i120e-nvme",
@@ -627,7 +803,11 @@
     "cpu": "amd-epyc-8024p",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.1665712,
+    "host": "scaleway-em-i120e-nvme-74d55d2e1b",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-i210e-nvme",
@@ -641,7 +821,11 @@
     "cpu": "amd-epyc-7313p",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.432856,
+    "host": "scaleway-em-i215e-nvme-f02653630a",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-i215e-nvme",
@@ -655,7 +839,11 @@
     "cpu": "amd-epyc-7313p",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.432856,
+    "host": "scaleway-em-i215e-nvme-f02653630a",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-i220e-nvme",
@@ -669,7 +857,11 @@
     "cpu": "amd-epyc-8124p",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.2553328,
+    "host": "scaleway-em-i220e-nvme-96972462ed",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-i320e-nvme",
@@ -683,7 +875,11 @@
     "cpu": "amd-epyc-8224p",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.3440944,
+    "host": "scaleway-em-i320e-nvme-5af5c9fe0d",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-i420e-nvme",
@@ -697,7 +893,11 @@
     "cpu": "amd-epyc-8324p",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.432856,
+    "host": "scaleway-em-i420e-nvme-454892d853",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-i520e-nvme",
@@ -711,7 +911,11 @@
     "cpu": "amd-epyc-8434p",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.6103792,
+    "host": "scaleway-em-i520e-nvme-7c1b296144",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-i525e-nvme",
@@ -725,7 +929,11 @@
     "cpu": "amd-epyc-8434p",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.6103792,
+    "host": "scaleway-em-i520e-nvme-3cb6de0384",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-i620e-nvme",
@@ -739,7 +947,11 @@
     "cpu": "amd-epyc-8534p",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.876664,
+    "host": "scaleway-em-i620e-nvme-93134279bf",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-l101x-sata",
@@ -753,7 +965,11 @@
     "cpu": "intel-xeon-e51410v2",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.160952,
+    "host": "scaleway-em-l101x-sata-50c40e1d1c",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-l105x-sata",
@@ -767,7 +983,11 @@
     "cpu": "intel-xeon-e51410v2",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.160952,
+    "host": "scaleway-em-l101x-sata-29f6af14ab",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-l110x-sata",
@@ -781,7 +1001,11 @@
     "cpu": "intel-xeon-e51410v2",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.160952,
+    "host": "scaleway-em-l101x-sata-df8e44592b",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-l220e-nvme",
@@ -795,7 +1019,11 @@
     "cpu": "amd-epyc-7232p",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.2553328,
+    "host": "scaleway-em-b320e-nvme-5e751d2ddb",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-l420e-nvme",
@@ -809,7 +1037,11 @@
     "cpu": "amd-epyc-7272",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.432856,
+    "host": "scaleway-em-b520e-nvme-607493b3dd",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-t220e-l40s",
@@ -823,7 +1055,11 @@
     "cpu": "amd-epyc-9334",
     "accelerators": 2,
     "accelerator": "nvidia-tesla-l40s",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.8216176,
+    "host": "scaleway-em-t220e-l40s-7e4bb0a2be",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "em-t620e-h100",
@@ -837,7 +1073,11 @@
     "cpu": "amd-epyc-9334",
     "accelerators": 2,
     "accelerator": "nvidia-tesla-h10080",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 2.2654256,
+    "host": "scaleway-em-t620e-h100-c0bbe54f67",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "ent1-2xl",
@@ -851,7 +1091,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.6103792,
+    "host": "scaleway-ent1-2xl-2b8908f41f",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "ent1-l",
@@ -865,7 +1109,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.5367930667,
+    "host": "scaleway-ent1-2xl-2b8908f41f",
+    "host_share": 0.3333333333333333,
+    "host_instances": 3
   },
   {
     "id": "ent1-m",
@@ -879,7 +1127,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.2683965333,
+    "host": "scaleway-ent1-2xl-2b8908f41f",
+    "host_share": 0.16666666666666666,
+    "host_instances": 6
   },
   {
     "id": "ent1-s",
@@ -893,7 +1145,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.1341982667,
+    "host": "scaleway-ent1-2xl-2b8908f41f",
+    "host_share": 0.08333333333333333,
+    "host_instances": 12
   },
   {
     "id": "ent1-xl",
@@ -907,7 +1163,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.6103792,
+    "host": "scaleway-ent1-2xl-2b8908f41f",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "ent1-xs",
@@ -921,7 +1181,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.0670991333,
+    "host": "scaleway-ent1-2xl-2b8908f41f",
+    "host_share": 0.041666666666666664,
+    "host_instances": 24
   },
   {
     "id": "ent1-xxs",
@@ -935,7 +1199,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.0335495667,
+    "host": "scaleway-ent1-2xl-2b8908f41f",
+    "host_share": 0.020833333333333332,
+    "host_instances": 48
   },
   {
     "id": "function-1024",
@@ -949,7 +1217,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-function-1024-cc90750a91",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "function-128",
@@ -963,7 +1235,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-function-128-cc90750a91",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "function-2048",
@@ -977,7 +1253,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-function-2048-cc90750a91",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "function-256",
@@ -991,7 +1271,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-function-256-cc90750a91",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "function-3072",
@@ -1005,7 +1289,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-function-3072-cc90750a91",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "function-4096",
@@ -1019,7 +1307,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-function-4096-cc90750a91",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "function-512",
@@ -1033,7 +1325,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-function-512-cc90750a91",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "gp1-l",
@@ -1047,7 +1343,11 @@
     "cpu": "amd-epyc-7401p",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.332856,
+    "host": "scaleway-gp1-xl-0b1ca3d0d5",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "gp1-m",
@@ -1061,7 +1361,11 @@
     "cpu": "amd-epyc-7401p",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.4442853333,
+    "host": "scaleway-gp1-xl-0b1ca3d0d5",
+    "host_share": 0.3333333333333333,
+    "host_instances": 3
   },
   {
     "id": "gp1-s",
@@ -1075,7 +1379,11 @@
     "cpu": "amd-epyc-7401p",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.2221426667,
+    "host": "scaleway-gp1-xl-0b1ca3d0d5",
+    "host_share": 0.16666666666666666,
+    "host_instances": 6
   },
   {
     "id": "gp1-viz",
@@ -1089,7 +1397,11 @@
     "cpu": "amd-epyc-7401p",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.2221426667,
+    "host": "scaleway-gp1-xl-0b1ca3d0d5",
+    "host_share": 0.16666666666666666,
+    "host_instances": 6
   },
   {
     "id": "gp1-xl",
@@ -1103,7 +1415,11 @@
     "cpu": "amd-epyc-7401p",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.332856,
+    "host": "scaleway-gp1-xl-0b1ca3d0d5",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "gp1-xs",
@@ -1117,7 +1433,11 @@
     "cpu": "amd-epyc-7401p",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.1110713333,
+    "host": "scaleway-gp1-xl-0b1ca3d0d5",
+    "host_share": 0.08333333333333333,
+    "host_instances": 12
   },
   {
     "id": "gpu-3070-s",
@@ -1131,7 +1451,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 1,
     "accelerator": "nvidia-rtx-3070",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.15,
+    "host": "scaleway-gpu-3070-s-10e2bd185f",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "h100-1-80g",
@@ -1145,7 +1469,11 @@
     "cpu": "amd-epyc-9334",
     "accelerators": 1,
     "accelerator": "nvidia-tesla-h10080",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.0605224,
+    "host": "scaleway-h100-2-80g-a83a051398",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "h100-1-m",
@@ -1159,7 +1487,11 @@
     "cpu": "amd-epyc-9334",
     "accelerators": 1,
     "accelerator": "nvidia-tesla-h10080",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.0605224,
+    "host": "scaleway-h100-2-80g-a83a051398",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "h100-2-80g",
@@ -1173,7 +1505,11 @@
     "cpu": "amd-epyc-9334",
     "accelerators": 2,
     "accelerator": "nvidia-tesla-h10080",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 2.1210448,
+    "host": "scaleway-h100-2-80g-a83a051398",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "h100-2-m",
@@ -1187,7 +1523,11 @@
     "cpu": "amd-epyc-9334",
     "accelerators": 2,
     "accelerator": "nvidia-tesla-h10080",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 2.1210448,
+    "host": "scaleway-h100-2-80g-a83a051398",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "h100-sxm-2-80g",
@@ -1201,7 +1541,11 @@
     "cpu": "intel-xeon-8452y",
     "accelerators": 2,
     "accelerator": "nvidia-tesla-h10080",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.0798316,
+    "host": "scaleway-h100-sxm-8-80g-957c59d257",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "h100-sxm-4-80g",
@@ -1215,7 +1559,11 @@
     "cpu": "intel-xeon-8452y",
     "accelerators": 4,
     "accelerator": "nvidia-tesla-h10080",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 2.1596632,
+    "host": "scaleway-h100-sxm-8-80g-957c59d257",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "h100-sxm-8-80g",
@@ -1229,7 +1577,11 @@
     "cpu": "intel-xeon-8452y",
     "accelerators": 8,
     "accelerator": "nvidia-tesla-h10080",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 4.3193264,
+    "host": "scaleway-h100-sxm-8-80g-957c59d257",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "l4-1-24g",
@@ -1243,7 +1595,11 @@
     "cpu": "amd-epyc-7413",
     "accelerators": 1,
     "accelerator": "nvidia-tesla-l4",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.3623926,
+    "host": "scaleway-l4-8-24g-e0668b82e2",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "l4-2-24g",
@@ -1257,7 +1613,11 @@
     "cpu": "amd-epyc-7413",
     "accelerators": 2,
     "accelerator": "nvidia-tesla-l4",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.7247852,
+    "host": "scaleway-l4-8-24g-e0668b82e2",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "l4-4-24g",
@@ -1271,7 +1631,11 @@
     "cpu": "amd-epyc-7413",
     "accelerators": 4,
     "accelerator": "nvidia-tesla-l4",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.4495704,
+    "host": "scaleway-l4-8-24g-e0668b82e2",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "l4-8-24g",
@@ -1285,7 +1649,11 @@
     "cpu": "amd-epyc-7413",
     "accelerators": 8,
     "accelerator": "nvidia-tesla-l4",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 2.8991408,
+    "host": "scaleway-l4-8-24g-e0668b82e2",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "l40s-1-48g",
@@ -1299,7 +1667,11 @@
     "cpu": "amd-epyc-7413",
     "accelerators": 1,
     "accelerator": "nvidia-tesla-l40s",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.4622494,
+    "host": "scaleway-l40s-8-48g-64d9714fa8",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "l40s-2-48g",
@@ -1313,7 +1685,11 @@
     "cpu": "amd-epyc-7413",
     "accelerators": 2,
     "accelerator": "nvidia-tesla-l40s",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.9244988,
+    "host": "scaleway-l40s-8-48g-64d9714fa8",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "l40s-4-48g",
@@ -1327,7 +1703,11 @@
     "cpu": "amd-epyc-7413",
     "accelerators": 4,
     "accelerator": "nvidia-tesla-l40s",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.8489976,
+    "host": "scaleway-l40s-8-48g-64d9714fa8",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "l40s-8-48g",
@@ -1341,7 +1721,11 @@
     "cpu": "amd-epyc-7413",
     "accelerators": 8,
     "accelerator": "nvidia-tesla-l40s",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 3.6979952,
+    "host": "scaleway-l40s-8-48g-64d9714fa8",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "play2-micro",
@@ -1355,7 +1739,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-play2-micro-df949a1a4c",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "play2-nano",
@@ -1369,7 +1757,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.5,
+    "host": "scaleway-play2-micro-df949a1a4c",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "play2-pico",
@@ -1383,7 +1775,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.25,
+    "host": "scaleway-play2-micro-df949a1a4c",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "pop2-16c-64g",
@@ -1397,7 +1793,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.4219756,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "pop2-16c-64g-win",
@@ -1411,7 +1811,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.4219756,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "pop2-2c-8g",
@@ -1425,7 +1829,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.05274695,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.03125,
+    "host_instances": 32
   },
   {
     "id": "pop2-2c-8g-win",
@@ -1439,7 +1847,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.05274695,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.03125,
+    "host_instances": 32
   },
   {
     "id": "pop2-32c-128g",
@@ -1453,7 +1865,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.8439512,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "pop2-32c-128g-win",
@@ -1467,7 +1883,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.8439512,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "pop2-4c-16g",
@@ -1481,7 +1901,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.1054939,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.0625,
+    "host_instances": 16
   },
   {
     "id": "pop2-4c-16g-win",
@@ -1495,7 +1919,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.1054939,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.0625,
+    "host_instances": 16
   },
   {
     "id": "pop2-64c-256g",
@@ -1509,7 +1937,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.6879024,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "pop2-8c-32g",
@@ -1523,7 +1955,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.2109878,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "pop2-8c-32g-win",
@@ -1537,7 +1973,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.2109878,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "pop2-hc-16c-32g",
@@ -1551,7 +1991,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.4219756,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "pop2-hc-2c-4g",
@@ -1565,7 +2009,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.05274695,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.03125,
+    "host_instances": 32
   },
   {
     "id": "pop2-hc-32c-64g",
@@ -1579,7 +2027,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.8439512,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "pop2-hc-4c-8g",
@@ -1593,7 +2045,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.1054939,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.0625,
+    "host_instances": 16
   },
   {
     "id": "pop2-hc-64c-128g",
@@ -1607,7 +2063,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.6879024,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "pop2-hc-8c-16g",
@@ -1621,7 +2081,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.2109878,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "pop2-hm-16c-128g",
@@ -1635,7 +2099,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.4219756,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "pop2-hm-2c-16g",
@@ -1649,7 +2117,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.05274695,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.03125,
+    "host_instances": 32
   },
   {
     "id": "pop2-hm-32c-256g",
@@ -1663,7 +2135,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.8439512,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "pop2-hm-4c-32g",
@@ -1677,7 +2153,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.1054939,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.0625,
+    "host_instances": 16
   },
   {
     "id": "pop2-hm-64c-512g",
@@ -1691,7 +2171,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.6879024,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "pop2-hm-8c-64g",
@@ -1705,7 +2189,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.2109878,
+    "host": "scaleway-pop2-hm-64c-512g-f8b47a12bb",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "pro2-l",
@@ -1719,7 +2207,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.1553328,
+    "host": "scaleway-pro2-l-a37cd5804f",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "pro2-m",
@@ -1733,7 +2225,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.5776664,
+    "host": "scaleway-pro2-l-a37cd5804f",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "pro2-s",
@@ -1747,7 +2243,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.2888332,
+    "host": "scaleway-pro2-l-a37cd5804f",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "pro2-xs",
@@ -1761,7 +2261,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.1444166,
+    "host": "scaleway-pro2-l-a37cd5804f",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "pro2-xxs",
@@ -1775,7 +2279,11 @@
     "cpu": "amd-epyc-7543",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.0722083,
+    "host": "scaleway-pro2-l-a37cd5804f",
+    "host_share": 0.0625,
+    "host_instances": 16
   },
   {
     "id": "render-s",
@@ -1789,7 +2297,11 @@
     "cpu": "intel-xeon-6148",
     "accelerators": 1,
     "accelerator": "nvidia-tesla-p10016",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1.2860594,
+    "host": "scaleway-render-s-c4d96258d4",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "stardust1-s",
@@ -1803,7 +2315,11 @@
     "cpu": "amd-epyc-7281",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-stardust1-s-0d3bd0c71e",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "start1-l",
@@ -1817,7 +2333,11 @@
     "cpu": "amd-epyc-7281",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-start1-l-149cc00ccf",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "start1-m",
@@ -1831,7 +2351,11 @@
     "cpu": "amd-epyc-7281",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.5,
+    "host": "scaleway-start1-l-149cc00ccf",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "start1-s",
@@ -1845,7 +2369,11 @@
     "cpu": "amd-epyc-7281",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.25,
+    "host": "scaleway-start1-l-149cc00ccf",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "start1-xs",
@@ -1859,7 +2387,11 @@
     "cpu": "amd-epyc-7281",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.125,
+    "host": "scaleway-start1-l-149cc00ccf",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "vc1l",
@@ -1873,7 +2405,11 @@
     "cpu": "amd-epyc-7281",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-vc1l-95af26d8f6",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "vc1m",
@@ -1887,7 +2423,11 @@
     "cpu": "amd-epyc-7281",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 1,
+    "host": "scaleway-vc1l-95af26d8f6",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "vc1s",
@@ -1901,7 +2441,11 @@
     "cpu": "amd-epyc-7281",
     "accelerators": 0,
     "accelerator": "",
-    "embodied": 1
+    "embodied": 1,
+    "embodied_allocated": 0.3333333333,
+    "host": "scaleway-vc1l-95af26d8f6",
+    "host_share": 0.3333333333333333,
+    "host_instances": 3
   },
   {
     "id": "standard3-x2c-8g",
@@ -1913,7 +2457,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.06384215,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.06384215,
+    "host": "scaleway-standard3-x2c-8g-23664d586b",
+    "host_share": 0.03125,
+    "host_instances": 32
   },
   {
     "id": "standard3-x4c-16g",
@@ -1925,7 +2477,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.1276843,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.1276843,
+    "host": "scaleway-standard3-x2c-8g-23664d586b",
+    "host_share": 0.0625,
+    "host_instances": 16
   },
   {
     "id": "standard3-x6c-24g",
@@ -1937,7 +2497,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.20429488,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.20429488,
+    "host": "scaleway-standard3-x2c-8g-23664d586b",
+    "host_share": 0.1,
+    "host_instances": 10
   },
   {
     "id": "standard3-x8c-32g",
@@ -1949,7 +2517,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.2553686,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.2553686,
+    "host": "scaleway-standard3-x2c-8g-23664d586b",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "standard3-x12c-48g",
@@ -1961,7 +2537,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.40858976,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.40858976,
+    "host": "scaleway-standard3-x2c-8g-23664d586b",
+    "host_share": 0.2,
+    "host_instances": 5
   },
   {
     "id": "standard3-x16c-64g",
@@ -1973,7 +2557,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.5107372,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.5107372,
+    "host": "scaleway-standard3-x2c-8g-23664d586b",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "standard3-x24c-96g",
@@ -1985,7 +2577,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.0214744,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 1.0214744,
+    "host": "scaleway-standard3-x2c-8g-23664d586b",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "standard3-x32c-128g",
@@ -1997,7 +2597,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.0214744,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 1.0214744,
+    "host": "scaleway-standard3-x2c-8g-23664d586b",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "standard3-x48c-192g",
@@ -2009,7 +2617,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 2.0429488,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 2.0429488,
+    "host": "scaleway-standard3-x2c-8g-23664d586b",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "standard3-x64c-256g",
@@ -2021,7 +2637,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 2.0429488,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 2.0429488,
+    "host": "scaleway-standard3-x2c-8g-23664d586b",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "basic3-x2c-4g",
@@ -2033,7 +2657,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.2553686,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.2553686,
+    "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "basic3-x2c-8g",
@@ -2045,7 +2677,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.2553686,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.2553686,
+    "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "basic3-x4c-8g",
@@ -2057,7 +2697,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.5107372,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.5107372,
+    "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "basic3-x4c-16g",
@@ -2069,7 +2717,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.5107372,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.5107372,
+    "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "basic3-x6c-12g",
@@ -2081,7 +2737,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.0214744,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 1.0214744,
+    "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "basic3-x6c-24g",
@@ -2093,7 +2757,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.0214744,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 1.0214744,
+    "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "basic3-x8c-16g",
@@ -2105,7 +2777,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.0214744,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 1.0214744,
+    "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "basic3-x8c-32g",
@@ -2117,7 +2797,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.0214744,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 1.0214744,
+    "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "basic3-x12c-24g",
@@ -2129,7 +2817,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 2.0429488,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 2.0429488,
+    "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "basic3-x12c-48g",
@@ -2141,7 +2837,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 2.0429488,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 2.0429488,
+    "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "basic3-x16c-32g",
@@ -2153,7 +2857,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 2.0429488,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 2.0429488,
+    "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "basic3-x16c-64g",
@@ -2165,7 +2877,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 2.0429488,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 2.0429488,
+    "host": "scaleway-basic3-x2c-4g-d7a31d93d7",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "standard2-a2c-8g",
@@ -2177,7 +2897,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.05274695,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 0.05274695,
+    "host": "scaleway-standard2-a2c-8g-7fe869391e",
+    "host_share": 0.03125,
+    "host_instances": 32
   },
   {
     "id": "standard2-a4c-16g",
@@ -2189,7 +2917,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.1054939,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 0.1054939,
+    "host": "scaleway-standard2-a2c-8g-7fe869391e",
+    "host_share": 0.0625,
+    "host_instances": 16
   },
   {
     "id": "standard2-a6c-24g",
@@ -2201,7 +2937,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.16879024,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 0.16879024,
+    "host": "scaleway-standard2-a2c-8g-7fe869391e",
+    "host_share": 0.1,
+    "host_instances": 10
   },
   {
     "id": "standard2-a8c-32g",
@@ -2213,7 +2957,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.2109878,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 0.2109878,
+    "host": "scaleway-standard2-a2c-8g-7fe869391e",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "standard2-a12c-48g",
@@ -2225,7 +2977,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.33758048,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 0.33758048,
+    "host": "scaleway-standard2-a2c-8g-7fe869391e",
+    "host_share": 0.2,
+    "host_instances": 5
   },
   {
     "id": "standard2-a16c-64g",
@@ -2237,7 +2997,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.4219756,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 0.4219756,
+    "host": "scaleway-standard2-a2c-8g-7fe869391e",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "standard2-a24c-96g",
@@ -2249,7 +3017,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.8439512,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 0.8439512,
+    "host": "scaleway-standard2-a2c-8g-7fe869391e",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "standard2-a32c-128g",
@@ -2261,7 +3037,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.8439512,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 0.8439512,
+    "host": "scaleway-standard2-a2c-8g-7fe869391e",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "standard2-a48c-192g",
@@ -2273,7 +3057,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.6879024,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 1.6879024,
+    "host": "scaleway-standard2-a2c-8g-7fe869391e",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "standard2-a64c-256g",
@@ -2285,7 +3077,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.6879024,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 1.6879024,
+    "host": "scaleway-standard2-a2c-8g-7fe869391e",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "basic2-a2c-4g",
@@ -2297,7 +3097,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.2109878,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 0.2109878,
+    "host": "scaleway-basic2-a2c-4g-73813ccf85",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "basic2-a2c-8g",
@@ -2309,7 +3117,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.2109878,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 0.2109878,
+    "host": "scaleway-basic2-a2c-4g-73813ccf85",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "basic2-a4c-8g",
@@ -2321,7 +3137,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.4219756,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 0.4219756,
+    "host": "scaleway-basic2-a2c-4g-73813ccf85",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "basic2-a4c-16g",
@@ -2333,7 +3157,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.4219756,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 0.4219756,
+    "host": "scaleway-basic2-a2c-4g-73813ccf85",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "basic2-a6c-12g",
@@ -2345,7 +3177,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.8439512,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 0.8439512,
+    "host": "scaleway-basic2-a2c-4g-73813ccf85",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "basic2-a6c-24g",
@@ -2357,7 +3197,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.8439512,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 0.8439512,
+    "host": "scaleway-basic2-a2c-4g-73813ccf85",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "basic2-a8c-16g",
@@ -2369,7 +3217,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.8439512,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 0.8439512,
+    "host": "scaleway-basic2-a2c-4g-73813ccf85",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "basic2-a8c-32g",
@@ -2381,7 +3237,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.8439512,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 0.8439512,
+    "host": "scaleway-basic2-a2c-4g-73813ccf85",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "basic2-a12c-24g",
@@ -2393,7 +3257,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.6879024,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 1.6879024,
+    "host": "scaleway-basic2-a2c-4g-73813ccf85",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "basic2-a12c-48g",
@@ -2405,7 +3277,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.6879024,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 1.6879024,
+    "host": "scaleway-basic2-a2c-4g-73813ccf85",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "basic2-a16c-32g",
@@ -2417,7 +3297,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.6879024,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 1.6879024,
+    "host": "scaleway-basic2-a2c-4g-73813ccf85",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "basic2-a16c-64g",
@@ -2429,7 +3317,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.6879024,
+    "cpu": [
+      "ampere-altra-m12830"
+    ],
+    "embodied_allocated": 1.6879024,
+    "host": "scaleway-basic2-a2c-4g-73813ccf85",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "pop2-6c-24g",
@@ -2444,7 +3340,12 @@
     ],
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.1887974,
+    "embodied_allocated": 0.1887974,
+    "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "pop2-12c-48g",
@@ -2459,7 +3360,12 @@
     ],
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.3775948,
+    "embodied_allocated": 0.3775948,
+    "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "pop2-24c-96g",
@@ -2474,7 +3380,12 @@
     ],
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.7551896,
+    "embodied_allocated": 0.7551896,
+    "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "pop2-48c-192g",
@@ -2489,7 +3400,12 @@
     ],
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.5103792,
+    "embodied_allocated": 1.5103792,
+    "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "pop2-hc-6c-12g",
@@ -2504,7 +3420,12 @@
     ],
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.1887974,
+    "embodied_allocated": 0.1887974,
+    "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "pop2-hc-12c-24g",
@@ -2519,7 +3440,12 @@
     ],
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.3775948,
+    "embodied_allocated": 0.3775948,
+    "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "pop2-hc-24c-48g",
@@ -2534,7 +3460,12 @@
     ],
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.7551896,
+    "embodied_allocated": 0.7551896,
+    "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "pop2-hc-48c-96g",
@@ -2549,7 +3480,12 @@
     ],
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.5103792,
+    "embodied_allocated": 1.5103792,
+    "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "pop2-hm-6c-48g",
@@ -2564,7 +3500,12 @@
     ],
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.1887974,
+    "embodied_allocated": 0.1887974,
+    "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "pop2-hm-12c-96g",
@@ -2579,7 +3520,12 @@
     ],
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.3775948,
+    "embodied_allocated": 0.3775948,
+    "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "pop2-hm-24c-192g",
@@ -2594,7 +3540,12 @@
     ],
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.7551896,
+    "embodied_allocated": 0.7551896,
+    "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "pop2-hm-48c-384g",
@@ -2609,7 +3560,12 @@
     ],
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.5103792,
+    "embodied_allocated": 1.5103792,
+    "host": "scaleway-pop2-hm-48c-384g-d7d309ea8b",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "pop2-hn-3",
@@ -2621,7 +3577,12 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.55,
+    "embodied_allocated": 0.55,
+    "host": "scaleway-pop2-hn-10-8e4bde0c27",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "pop2-hn-10",
@@ -2633,7 +3594,12 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.1,
+    "embodied_allocated": 1.1,
+    "host": "scaleway-pop2-hn-10-8e4bde0c27",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "pop2-hn-5",
@@ -2645,7 +3611,12 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.1,
+    "embodied_allocated": 1.1,
+    "host": "scaleway-pop2-hn-10-8e4bde0c27",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "compute3-x2c-4g",
@@ -2657,7 +3628,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.0425614333,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.0425614333,
+    "host": "scaleway-compute3-x2c-4g-c164b6bddd",
+    "host_share": 0.020833333333333332,
+    "host_instances": 48
   },
   {
     "id": "compute3-x4c-8g",
@@ -2669,7 +3648,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.0851228667,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.0851228667,
+    "host": "scaleway-compute3-x2c-4g-c164b6bddd",
+    "host_share": 0.041666666666666664,
+    "host_instances": 24
   },
   {
     "id": "compute3-x6c-12g",
@@ -2681,7 +3668,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.1276843,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.1276843,
+    "host": "scaleway-compute3-x2c-4g-c164b6bddd",
+    "host_share": 0.0625,
+    "host_instances": 16
   },
   {
     "id": "compute3-x8c-16g",
@@ -2693,7 +3688,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.1702457333,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.1702457333,
+    "host": "scaleway-compute3-x2c-4g-c164b6bddd",
+    "host_share": 0.08333333333333333,
+    "host_instances": 12
   },
   {
     "id": "compute3-x12c-24g",
@@ -2705,7 +3708,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.2553686,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.2553686,
+    "host": "scaleway-compute3-x2c-4g-c164b6bddd",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "compute3-x16c-32g",
@@ -2717,7 +3728,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.3404914667,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.3404914667,
+    "host": "scaleway-compute3-x2c-4g-c164b6bddd",
+    "host_share": 0.16666666666666666,
+    "host_instances": 6
   },
   {
     "id": "compute3-x24c-48g",
@@ -2729,7 +3748,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.5107372,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.5107372,
+    "host": "scaleway-compute3-x2c-4g-c164b6bddd",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "compute3-x32c-64g",
@@ -2741,7 +3768,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.6809829333,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.6809829333,
+    "host": "scaleway-compute3-x2c-4g-c164b6bddd",
+    "host_share": 0.3333333333333333,
+    "host_instances": 3
   },
   {
     "id": "compute3-x48c-96g",
@@ -2753,7 +3788,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.0214744,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 1.0214744,
+    "host": "scaleway-compute3-x2c-4g-c164b6bddd",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "compute3-x64c-128g",
@@ -2765,7 +3808,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 2.0429488,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 2.0429488,
+    "host": "scaleway-compute3-x2c-4g-c164b6bddd",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "compute3-x96c-192g",
@@ -2777,7 +3828,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 2.0429488,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 2.0429488,
+    "host": "scaleway-compute3-x2c-4g-c164b6bddd",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "memory3-x2c-16g",
@@ -2789,7 +3848,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.0851228667,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.0851228667,
+    "host": "scaleway-memory3-x2c-16g-2ce612cd86",
+    "host_share": 0.041666666666666664,
+    "host_instances": 24
   },
   {
     "id": "memory3-x4c-32g",
@@ -2801,7 +3868,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.1702457333,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.1702457333,
+    "host": "scaleway-memory3-x2c-16g-2ce612cd86",
+    "host_share": 0.08333333333333333,
+    "host_instances": 12
   },
   {
     "id": "memory3-x6c-48g",
@@ -2813,7 +3888,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.2553686,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.2553686,
+    "host": "scaleway-memory3-x2c-16g-2ce612cd86",
+    "host_share": 0.125,
+    "host_instances": 8
   },
   {
     "id": "memory3-x8c-64g",
@@ -2825,7 +3908,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.3404914667,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.3404914667,
+    "host": "scaleway-memory3-x2c-16g-2ce612cd86",
+    "host_share": 0.16666666666666666,
+    "host_instances": 6
   },
   {
     "id": "memory3-x12c-96g",
@@ -2837,7 +3928,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.5107372,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.5107372,
+    "host": "scaleway-memory3-x2c-16g-2ce612cd86",
+    "host_share": 0.25,
+    "host_instances": 4
   },
   {
     "id": "memory3-x16c-128g",
@@ -2849,7 +3948,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 0.6809829333,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 0.6809829333,
+    "host": "scaleway-memory3-x2c-16g-2ce612cd86",
+    "host_share": 0.3333333333333333,
+    "host_instances": 3
   },
   {
     "id": "memory3-x24c-192g",
@@ -2861,7 +3968,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 1.0214744,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 1.0214744,
+    "host": "scaleway-memory3-x2c-16g-2ce612cd86",
+    "host_share": 0.5,
+    "host_instances": 2
   },
   {
     "id": "memory3-x32c-256g",
@@ -2873,7 +3988,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 2.0429488,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 2.0429488,
+    "host": "scaleway-memory3-x2c-16g-2ce612cd86",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "memory3-x48c-384g",
@@ -2885,7 +4008,15 @@
     "virtual": true,
     "accelerators": 0,
     "ssd": 0,
-    "hdd": 0
+    "hdd": 0,
+    "embodied": 2.0429488,
+    "cpu": [
+      "amd-epyc-9555p"
+    ],
+    "embodied_allocated": 2.0429488,
+    "host": "scaleway-memory3-x2c-16g-2ce612cd86",
+    "host_share": 1,
+    "host_instances": 1
   },
   {
     "id": "b300-sxm-8-288g",
@@ -2896,6 +4027,14 @@
     "memory": 3840,
     "virtual": true,
     "accelerators": 8,
-    "accelerator": "nvidia-blackwell-b300"
+    "accelerator": "nvidia-blackwell-b300",
+    "embodied": 11.7764464,
+    "cpu": [
+      "intel-xeon-6776p"
+    ],
+    "embodied_allocated": 11.7764464,
+    "host": "scaleway-b300-sxm-8-288g-c86a8e507d",
+    "host_share": 1,
+    "host_instances": 1
   }
 ]

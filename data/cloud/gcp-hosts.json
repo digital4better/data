@@ -1,0 +1,2927 @@
+[
+  {
+    "id": "gcp-a2-highgpu-node-96-680-e7d03c14d8",
+    "provider": "gcp",
+    "name": "a2-highgpu-node-96-680",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 680,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8273cl"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerator": "nvidia-tesla-a10040",
+    "accelerators": 16,
+    "accelerator_memory": 40,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "gpu-host-proxy",
+      "max-impact",
+      "one-ssd",
+      "sole-tenant-proxy"
+    ],
+    "embodied": 5.0534712
+  },
+  {
+    "id": "gcp-a2-megagpu-node-96-1360-01e7c129ed",
+    "provider": "gcp",
+    "name": "a2-megagpu-node-96-1360",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 1360,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8273cl"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerator": "nvidia-tesla-a10040",
+    "accelerators": 16,
+    "accelerator_memory": 40,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "gpu-host-proxy",
+      "max-impact",
+      "one-ssd",
+      "sole-tenant-proxy"
+    ],
+    "embodied": 5.9965632
+  },
+  {
+    "id": "gcp-a2-ultragpu-node-96-1360-lssd-1-4a30f1413c",
+    "provider": "gcp",
+    "name": "a2-ultragpu-node-96-1360-lssd 1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 1360,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8273cl"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerator": "nvidia-tesla-a10080",
+    "accelerators": 8,
+    "accelerator_memory": 80,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "gpu-host-proxy",
+      "max-impact",
+      "one-ssd",
+      "sole-tenant-proxy"
+    ],
+    "embodied": 4.9740864
+  },
+  {
+    "id": "gcp-a3-edgegpu-8g-be0b5c38d5",
+    "provider": "gcp",
+    "name": "a3-edgegpu-8g",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 208,
+    "memory": 1872,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8481c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 6000,
+    "accelerator": "nvidia-tesla-h10080",
+    "accelerators": 8,
+    "accelerator_memory": 80,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/machine-resource"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 5.6841792
+  },
+  {
+    "id": "gcp-a3-highgpu-node-208-1872-lssd-1-fc006ad368",
+    "provider": "gcp",
+    "name": "a3-highgpu-node-208-1872-lssd 1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 208,
+    "memory": 1872,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8481c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerator": "nvidia-tesla-h10080",
+    "accelerators": 8,
+    "accelerator_memory": 80,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "gpu-host-proxy",
+      "max-impact",
+      "one-ssd",
+      "sole-tenant-proxy"
+    ],
+    "embodied": 5.6841792
+  },
+  {
+    "id": "gcp-a3-megagpu-node-208-1872-lssd-1-fc006ad368",
+    "provider": "gcp",
+    "name": "a3-megagpu-node-208-1872-lssd 1",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 208,
+    "memory": 1872,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8481c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerator": "nvidia-tesla-h10080",
+    "accelerators": 8,
+    "accelerator_memory": 80,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "gpu-host-proxy",
+      "max-impact",
+      "one-ssd",
+      "sole-tenant-proxy"
+    ],
+    "embodied": 5.6841792
+  },
+  {
+    "id": "gcp-a3-ultragpu-8g-c8055ee08e",
+    "provider": "gcp",
+    "name": "a3-ultragpu-8g",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 2952,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8581c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 12000,
+    "accelerator": "nvidia-tesla-h200",
+    "accelerators": 8,
+    "accelerator_memory": 141,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/machine-resource"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 7.8588384
+  },
+  {
+    "id": "gcp-a4-highgpu-8g-2f58c7d0af",
+    "provider": "gcp",
+    "name": "a4-highgpu-8g",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 3968,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8581c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 12000,
+    "accelerator": "nvidia-blackwell-b200",
+    "accelerators": 8,
+    "accelerator_memory": 180,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/machine-resource"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 9.7006416
+  },
+  {
+    "id": "gcp-a4x-highgpu-4g-a05be3baee",
+    "provider": "gcp",
+    "name": "a4x-highgpu-4g",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 140,
+    "memory": 884,
+    "sockets": 1,
+    "cpu": [
+      "nvidia-grace"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 12000,
+    "accelerator": "nvidia-blackwell-b200",
+    "accelerators": 4,
+    "accelerator_memory": 180,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/machine-resource"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 3.8136356
+  },
+  {
+    "id": "gcp-a4x-maxgpu-4g-metal-b18bca8c40",
+    "provider": "gcp",
+    "name": "a4x-maxgpu-4g-metal",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 144,
+    "memory": 960,
+    "sockets": 1,
+    "cpu": [
+      "nvidia-grace"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 12000,
+    "accelerator": "nvidia-blackwell-b300",
+    "accelerators": 4,
+    "accelerator_memory": 288,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/machine-resource"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 4.5181808
+  },
+  {
+    "id": "gcp-c2-node-60-240-d279dee10c",
+    "provider": "gcp",
+    "name": "c2-node-60-240",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 60,
+    "memory": 240,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6253cl"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "one-ssd",
+      "sole-tenant-proxy"
+    ],
+    "embodied": 1.5106656
+  },
+  {
+    "id": "gcp-c2d-highmem-112-016bedd1b8",
+    "provider": "gcp",
+    "name": "c2d-highmem-112",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 112,
+    "memory": 896,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7b13"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 375,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/machine-resource"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.320472
+  },
+  {
+    "id": "gcp-c3-highcpu-192-metal-1c5fd8614f",
+    "provider": "gcp",
+    "name": "c3-highcpu-192-metal",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 512,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8481c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/machine-resource"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.7879024
+  },
+  {
+    "id": "gcp-c3-highmem-192-metal-230bb5d3d5",
+    "provider": "gcp",
+    "name": "c3-highmem-192-metal",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 1536,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8481c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/machine-resource"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 3.208088
+  },
+  {
+    "id": "gcp-c3-node-176-1408-15201785f7",
+    "provider": "gcp",
+    "name": "c3-node-176-1408",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 176,
+    "memory": 1408,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8481c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 3.1305648
+  },
+  {
+    "id": "gcp-c3-node-176-1408-b244532465",
+    "provider": "gcp",
+    "name": "c3-node-176-1408",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 176,
+    "memory": 1408,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8481c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 3.0305648
+  },
+  {
+    "id": "gcp-c3-node-176-352-389e8fa260",
+    "provider": "gcp",
+    "name": "c3-node-176-352",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 176,
+    "memory": 352,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8481c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 1.6659984
+  },
+  {
+    "id": "gcp-c3-node-176-352-8808f18e76",
+    "provider": "gcp",
+    "name": "c3-node-176-352",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 176,
+    "memory": 352,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8481c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 1.5659984
+  },
+  {
+    "id": "gcp-c3-node-176-704-lssd-with-32-local-ssd-64045a3810",
+    "provider": "gcp",
+    "name": "c3-node-176-704-lssd (with 32 Local SSD)",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 176,
+    "memory": 704,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8481c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 2.0541872
+  },
+  {
+    "id": "gcp-c3-standard-192-metal-2e8abb1212",
+    "provider": "gcp",
+    "name": "c3-standard-192-metal",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 768,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8481c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/machine-resource"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 2.1429488
+  },
+  {
+    "id": "gcp-c3d-node-360-1440-18e5d03674",
+    "provider": "gcp",
+    "name": "c3d-node-360-1440",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 360,
+    "memory": 1440,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b14"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 3.1749456
+  },
+  {
+    "id": "gcp-c3d-node-360-1440-7323961519",
+    "provider": "gcp",
+    "name": "c3d-node-360-1440",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 360,
+    "memory": 1440,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b14"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 3.0749456
+  },
+  {
+    "id": "gcp-c3d-node-360-2880-708c92eb09",
+    "provider": "gcp",
+    "name": "c3d-node-360-2880",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 360,
+    "memory": 2880,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b14"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 5.0720816
+  },
+  {
+    "id": "gcp-c3d-node-360-2880-9794ee4817",
+    "provider": "gcp",
+    "name": "c3d-node-360-2880",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 360,
+    "memory": 2880,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b14"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "one-ssd",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 5.1720816
+  },
+  {
+    "id": "gcp-c3d-node-360-708-57adb69265",
+    "provider": "gcp",
+    "name": "c3d-node-360-708",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 360,
+    "memory": 708,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b14"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 2.1597348
+  },
+  {
+    "id": "gcp-c3d-node-360-708-82fd2064d8",
+    "provider": "gcp",
+    "name": "c3d-node-360-708",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 360,
+    "memory": 708,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b14"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 2.0597348
+  },
+  {
+    "id": "gcp-c4-highmem-288-lssd-metal-508bddb833",
+    "provider": "gcp",
+    "name": "c4-highmem-288-lssd-metal",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 288,
+    "memory": 2232,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6985pc"
+    ],
+    "ssd_count": 24,
+    "hdd_count": 0,
+    "ssd_capacity": 18000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/general-purpose-machines?hl=en"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "max-impact",
+      "storage-pools",
+      "storage-proxy"
+    ],
+    "embodied": 6.5733704
+  },
+  {
+    "id": "gcp-c4-highmem-288-metal-99de195182",
+    "provider": "gcp",
+    "name": "c4-highmem-288-metal",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 288,
+    "memory": 2232,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6985pc"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/general-purpose-machines?hl=en"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "max-impact",
+      "storage-pools",
+      "storage-proxy"
+    ],
+    "embodied": 4.1733704
+  },
+  {
+    "id": "gcp-c4-node-288-1080-lssd-with-48-local-ssd-b16ad25ac0",
+    "provider": "gcp",
+    "name": "c4-node-288-1080-lssd (with 48 Local SSD)",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 288,
+    "memory": 1080,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6985pc"
+    ],
+    "ssd_count": 24,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 4.9756616
+  },
+  {
+    "id": "gcp-c4-node-288-1080-lssd-with-48-local-ssd-db83fec68b",
+    "provider": "gcp",
+    "name": "c4-node-288-1080-lssd (with 48 Local SSD)",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 288,
+    "memory": 1080,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8581c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 2.5756616
+  },
+  {
+    "id": "gcp-c4-node-288-2232-lssd-with-48-local-ssd-d9a08988e8",
+    "provider": "gcp",
+    "name": "c4-node-288-2232-lssd (with 48 Local SSD)",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 288,
+    "memory": 2232,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8581c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 4.1733704
+  },
+  {
+    "id": "gcp-c4-node-288-576-051480a532",
+    "provider": "gcp",
+    "name": "c4-node-288-576",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 288,
+    "memory": 576,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6985pc"
+    ],
+    "ssd_count": 24,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 4.276664
+  },
+  {
+    "id": "gcp-c4-node-288-576-9ae67597bc",
+    "provider": "gcp",
+    "name": "c4-node-288-576",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 288,
+    "memory": 576,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8581c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 1.876664
+  },
+  {
+    "id": "gcp-c4-standard-144-62a8c8dff4",
+    "provider": "gcp",
+    "name": "c4-standard-144",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 288,
+    "memory": 2304,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6985pc"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/general-purpose-machines?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "storage-pools",
+      "storage-proxy"
+    ],
+    "embodied": 4.2732272
+  },
+  {
+    "id": "gcp-c4-standard-24-b4f301e2c9",
+    "provider": "gcp",
+    "name": "c4-standard-24",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 24,
+    "memory": 1536,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8581c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/general-purpose-machines?hl=en",
+      "https://docs.cloud.google.com/compute/docs/cpu-platforms"
+    ],
+    "assumptions": [
+      "cpu-generation-proxy",
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact"
+    ],
+    "embodied": 3.208088
+  },
+  {
+    "id": "gcp-c4-standard-288-lssd-metal-e5ea6aac2b",
+    "provider": "gcp",
+    "name": "c4-standard-288-lssd-metal",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 288,
+    "memory": 1080,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6985pc"
+    ],
+    "ssd_count": 24,
+    "hdd_count": 0,
+    "ssd_capacity": 18000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/general-purpose-machines?hl=en"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "max-impact",
+      "storage-pools",
+      "storage-proxy"
+    ],
+    "embodied": 4.9756616
+  },
+  {
+    "id": "gcp-c4-standard-288-metal-2246c21284",
+    "provider": "gcp",
+    "name": "c4-standard-288-metal",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 288,
+    "memory": 1080,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6985pc"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/general-purpose-machines?hl=en"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "max-impact",
+      "storage-pools",
+      "storage-proxy"
+    ],
+    "embodied": 2.5756616
+  },
+  {
+    "id": "gcp-c4-standard-4-lssd-91c708df78",
+    "provider": "gcp",
+    "name": "c4-standard-4-lssd",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 288,
+    "memory": 2304,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-6985pc"
+    ],
+    "ssd_count": 24,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/general-purpose-machines?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "storage-pools",
+      "storage-proxy"
+    ],
+    "embodied": 6.6732272
+  },
+  {
+    "id": "gcp-c4a-highmem-96-metal-50be34dcc2",
+    "provider": "gcp",
+    "name": "c4a-highmem-96-metal",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 768,
+    "sockets": 1,
+    "cpu": [
+      "google-axion"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/general-purpose-machines?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "max-impact",
+      "storage-pools",
+      "storage-proxy"
+    ],
+    "embodied": 2.0429488
+  },
+  {
+    "id": "gcp-c4a-node-72-144-171acb1ad9",
+    "provider": "gcp",
+    "name": "c4a-node-72-144",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 72,
+    "memory": 144,
+    "sockets": 1,
+    "cpu": [
+      "google-axion"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 1.1775232
+  },
+  {
+    "id": "gcp-c4a-node-72-144-2c611a4805",
+    "provider": "gcp",
+    "name": "c4a-node-72-144",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 72,
+    "memory": 144,
+    "sockets": 1,
+    "cpu": [
+      "google-axion"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 1.9775232
+  },
+  {
+    "id": "gcp-c4a-node-72-288-9e1384ac64",
+    "provider": "gcp",
+    "name": "c4a-node-72-288",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 72,
+    "memory": 288,
+    "sockets": 1,
+    "cpu": [
+      "google-axion"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 1.3772368
+  },
+  {
+    "id": "gcp-c4a-node-72-288-c11dd6c229",
+    "provider": "gcp",
+    "name": "c4a-node-72-288",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 72,
+    "memory": 288,
+    "sockets": 1,
+    "cpu": [
+      "google-axion"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 2.1772368
+  },
+  {
+    "id": "gcp-c4a-node-72-576-581d7dacd6",
+    "provider": "gcp",
+    "name": "c4a-node-72-576",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 72,
+    "memory": 576,
+    "sockets": 1,
+    "cpu": [
+      "google-axion"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 1.776664
+  },
+  {
+    "id": "gcp-c4a-standard-4-lssd-9156b0e826",
+    "provider": "gcp",
+    "name": "c4a-standard-4-lssd",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 72,
+    "memory": 768,
+    "sockets": 1,
+    "cpu": [
+      "google-axion"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/general-purpose-machines?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "storage-pools",
+      "storage-proxy"
+    ],
+    "embodied": 2.8429488
+  },
+  {
+    "id": "gcp-c4d-highmem-384-metal-6457f7487e",
+    "provider": "gcp",
+    "name": "c4d-highmem-384-metal",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 3072,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b45"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/machine-resource"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 5.3383664
+  },
+  {
+    "id": "gcp-c4d-node-384-1488-9d1df81338",
+    "provider": "gcp",
+    "name": "c4d-node-384-1488",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 1488,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b45"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 3.1415168
+  },
+  {
+    "id": "gcp-c4d-node-384-1488-fb6959b927",
+    "provider": "gcp",
+    "name": "c4d-node-384-1488",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 1488,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b45"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 3.2415168
+  },
+  {
+    "id": "gcp-c4d-node-384-3024-36aacd5c4a",
+    "provider": "gcp",
+    "name": "c4d-node-384-3024",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 3024,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b45"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 5.2717952
+  },
+  {
+    "id": "gcp-c4d-node-384-3024-73ce669667",
+    "provider": "gcp",
+    "name": "c4d-node-384-3024",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 3024,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b45"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "one-ssd",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 5.3717952
+  },
+  {
+    "id": "gcp-c4d-node-384-720-535e54d6f7",
+    "provider": "gcp",
+    "name": "c4d-node-384-720",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 720,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b45"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 2.0763776
+  },
+  {
+    "id": "gcp-c4d-node-384-720-da0ec52644",
+    "provider": "gcp",
+    "name": "c4d-node-384-720",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 720,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b45"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 2.1763776
+  },
+  {
+    "id": "gcp-c4n-highcpu-2-d191e9d5ef",
+    "provider": "gcp",
+    "name": "c4n-highcpu-2",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 1536,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8581c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/network-optimized-machines?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 3.208088
+  },
+  {
+    "id": "gcp-c4n-node-192-384-57bed36947",
+    "provider": "gcp",
+    "name": "c4n-node-192-384",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 384,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8581c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 1.6103792
+  },
+  {
+    "id": "gcp-c4n-node-192-384-70b45a974f",
+    "provider": "gcp",
+    "name": "c4n-node-192-384",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 384,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8581c"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 2.4103792
+  },
+  {
+    "id": "gcp-c4n-node-192-720-0e083f3729",
+    "provider": "gcp",
+    "name": "c4n-node-192-720",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 720,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8581c"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 2.8763776
+  },
+  {
+    "id": "gcp-c4n-node-192-720-5c216a4215",
+    "provider": "gcp",
+    "name": "c4n-node-192-720",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 720,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8581c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 2.0763776
+  },
+  {
+    "id": "gcp-c4n-standard-4-lssd-8da04531e3",
+    "provider": "gcp",
+    "name": "c4n-standard-4-lssd",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 1536,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8581c"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/network-optimized-machines?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 4.008088
+  },
+  {
+    "id": "gcp-e2-standard-32-b4566cef1f",
+    "provider": "gcp",
+    "name": "e2-standard-32",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 32,
+    "memory": 128,
+    "sockets": 1,
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/machine-resource"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.1553328
+  },
+  {
+    "id": "gcp-g2-node-96-384-83188cf0dd",
+    "provider": "gcp",
+    "name": "g2-node-96-384",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 384,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8273cl"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerator": "nvidia-tesla-l4",
+    "accelerators": 8,
+    "accelerator_memory": 24,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "gpu-host-proxy",
+      "max-impact",
+      "one-ssd",
+      "sole-tenant-proxy"
+    ],
+    "embodied": 2.9991408
+  },
+  {
+    "id": "gcp-g4-node-384-1440-6d5cfe86bc",
+    "provider": "gcp",
+    "name": "g4-node-384-1440",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 1440,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b45"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server",
+    "accelerators": 8,
+    "accelerator_memory": 96,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en",
+      "https://docs.cloud.google.com/compute/docs/accelerator-optimized-machines?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "gpu-host-proxy",
+      "max-impact",
+      "sole-tenant-proxy"
+    ],
+    "embodied": 5.1625616
+  },
+  {
+    "id": "gcp-g4-node-384-1440-960981a686",
+    "provider": "gcp",
+    "name": "g4-node-384-1440",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 1440,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b45"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerator": "nvidia-rtx-pro-6000-blackwell-server",
+    "accelerators": 8,
+    "accelerator_memory": 96,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "gpu-host-proxy",
+      "max-impact",
+      "one-ssd",
+      "sole-tenant-proxy"
+    ],
+    "embodied": 5.2625616
+  },
+  {
+    "id": "gcp-h3-node-88-352-8b372d95a1",
+    "provider": "gcp",
+    "name": "h3-node-88-352",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 88,
+    "memory": 352,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8481c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy"
+    ],
+    "embodied": 1.5659984
+  },
+  {
+    "id": "gcp-h4d-megamem-192-d5b4db7b6c",
+    "provider": "gcp",
+    "name": "h4d-megamem-192",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 3072,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b45"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/compute-optimized-machines?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 5.3383664
+  },
+  {
+    "id": "gcp-h4d-megamem-192-lssd-99a99e96cc",
+    "provider": "gcp",
+    "name": "h4d-megamem-192-lssd",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 3072,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b45"
+    ],
+    "ssd_count": 8,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/compute-optimized-machines?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 6.1383664
+  },
+  {
+    "id": "gcp-h4d-node-192-3024-lssd-26d55925c3",
+    "provider": "gcp",
+    "name": "h4d-node-192-3024-lssd",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 3024,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b45"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "one-ssd",
+      "sole-tenant-proxy"
+    ],
+    "embodied": 5.3717952
+  },
+  {
+    "id": "gcp-h4d-node-192-3024-lssd-be9335f778",
+    "provider": "gcp",
+    "name": "h4d-node-192-3024-lssd",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 3024,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b45"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 5.2717952
+  },
+  {
+    "id": "gcp-m1-node-160-3844-07042dd43d",
+    "provider": "gcp",
+    "name": "m1-node-160-3844",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 160,
+    "memory": 3844,
+    "sockets": 4,
+    "cpu": [
+      "intel-xeon-e78880v4"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy"
+    ],
+    "embodied": 6.6090532
+  },
+  {
+    "id": "gcp-m1-node-160-3844-20a4b1be25",
+    "provider": "gcp",
+    "name": "m1-node-160-3844",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 160,
+    "memory": 3844,
+    "sockets": 4,
+    "cpu": [
+      "intel-xeon-8173m"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "one-ssd",
+      "sole-tenant-proxy"
+    ],
+    "embodied": 6.7090532
+  },
+  {
+    "id": "gcp-m1-node-96-1433-d793c7e8d4",
+    "provider": "gcp",
+    "name": "m1-node-96-1433",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 1433,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-e78880v4"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 3.0652373
+  },
+  {
+    "id": "gcp-m2-node-416-11776-e7d52df4d1",
+    "provider": "gcp",
+    "name": "m2-node-416-11776",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 416,
+    "memory": 11776,
+    "sockets": 8,
+    "cpu": [
+      "intel-xeon-8280l"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 18.009944
+  },
+  {
+    "id": "gcp-m2-node-416-8832-da4a96da62",
+    "provider": "gcp",
+    "name": "m2-node-416-8832",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 416,
+    "memory": 8832,
+    "sockets": 8,
+    "cpu": [
+      "intel-xeon-8280l"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 13.9269104
+  },
+  {
+    "id": "gcp-m3-node-128-1952-3110c02c1e",
+    "provider": "gcp",
+    "name": "m3-node-128-1952",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 1952,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8373c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 3.8850384
+  },
+  {
+    "id": "gcp-m3-node-128-3904-18f7651ed9",
+    "provider": "gcp",
+    "name": "m3-node-128-3904",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 3904,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8373c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "one-ssd",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 6.5922672
+  },
+  {
+    "id": "gcp-m4-hypermem-2-e2fb508c37",
+    "provider": "gcp",
+    "name": "m4-hypermem-2",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 6144,
+    "sockets": 4,
+    "cpu": [
+      "intel-xeon-8581c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/memory-optimized-machines?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 9.7989232
+  },
+  {
+    "id": "gcp-m4-node-224-2976-a14e4e09c2",
+    "provider": "gcp",
+    "name": "m4-node-224-2976",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 2976,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8581c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 5.205224
+  },
+  {
+    "id": "gcp-m4n-hypermem-2-e2fb508c37",
+    "provider": "gcp",
+    "name": "m4n-hypermem-2",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 6144,
+    "sockets": 4,
+    "cpu": [
+      "intel-xeon-8581c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/memory-optimized-machines?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 9.7989232
+  },
+  {
+    "id": "gcp-n1-node-96-624-9d109e8ba7",
+    "provider": "gcp",
+    "name": "n1-node-96-624",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 624,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "one-ssd",
+      "sole-tenant-proxy"
+    ],
+    "embodied": 2.0432352
+  },
+  {
+    "id": "gcp-n1-node-96-624-c06e6be08e",
+    "provider": "gcp",
+    "name": "n1-node-96-624",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 624,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8173m",
+      "intel-xeon-e52696v4",
+      "intel-xeon-e52696v3",
+      "intel-xeon-e52696v2",
+      "intel-xeon-e52689"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy"
+    ],
+    "embodied": 1.9432352
+  },
+  {
+    "id": "gcp-n2-node-128-864-b2d8b921c6",
+    "provider": "gcp",
+    "name": "n2-node-128-864",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 128,
+    "memory": 864,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "one-ssd",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 2.3760912
+  },
+  {
+    "id": "gcp-n2-node-80-640-f710056027",
+    "provider": "gcp",
+    "name": "n2-node-80-640",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 80,
+    "memory": 640,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8373c",
+      "intel-xeon-6268cl"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "one-ssd",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 2.0654256
+  },
+  {
+    "id": "gcp-n2d-node-224-1792-c05b821ac4",
+    "provider": "gcp",
+    "name": "n2d-node-224-1792",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 1792,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 3.6631344
+  },
+  {
+    "id": "gcp-n2d-node-224-896-346bc63ba7",
+    "provider": "gcp",
+    "name": "n2d-node-224-896",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 896,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-7b13",
+      "amd-epyc-7b12"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 2.420472
+  },
+  {
+    "id": "gcp-n4-node-224-1372-5030e65bc5",
+    "provider": "gcp",
+    "name": "n4-node-224-1372",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 224,
+    "memory": 1372,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8581c"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy"
+    ],
+    "embodied": 2.9806364
+  },
+  {
+    "id": "gcp-n4a-node-96-624-c09b794b36",
+    "provider": "gcp",
+    "name": "n4a-node-96-624",
+    "basis": "documented-host-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 624,
+    "sockets": 1,
+    "cpu": [
+      "google-axion-n3"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/nodes/sole-tenant-nodes?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "max-impact",
+      "sole-tenant-proxy",
+      "storage-proxy"
+    ],
+    "embodied": 1.8432352
+  },
+  {
+    "id": "gcp-n4a-standard-1-8ba9e1a011",
+    "provider": "gcp",
+    "name": "n4a-standard-1",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 64,
+    "memory": 512,
+    "sockets": 1,
+    "cpu": [
+      "google-axion-n3"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/general-purpose-machines?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.6879024
+  },
+  {
+    "id": "gcp-n4d-standard-2-c618cec549",
+    "provider": "gcp",
+    "name": "n4d-standard-2",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 96,
+    "memory": 1536,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b45"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/general-purpose-machines?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 3.208088
+  },
+  {
+    "id": "gcp-t2a-standard-48-3ed0ff9977",
+    "provider": "gcp",
+    "name": "t2a-standard-48",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 48,
+    "memory": 192,
+    "sockets": 1,
+    "cpu": [
+      "ampere-altra-q6430"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/machine-resource"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.2440944
+  },
+  {
+    "id": "gcp-t2d-standard-60-4ab45f470a",
+    "provider": "gcp",
+    "name": "t2d-standard-60",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 60,
+    "memory": 240,
+    "sockets": 1,
+    "cpu": [
+      "amd-epyc-7b13"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/machine-resource"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 1.3106656
+  },
+  {
+    "id": "gcp-x4-1440-24t-metal-459f095207",
+    "provider": "gcp",
+    "name": "x4-1440-24t-metal",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 1440,
+    "memory": 24576,
+    "sockets": 12,
+    "cpu": [
+      "intel-xeon-8490h"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/memory-optimized-machines",
+      "https://docs.cloud.google.com/compute/docs/cpu-platforms"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "interconnect-excluded",
+      "max-impact"
+    ],
+    "embodied": 36.162264
+  },
+  {
+    "id": "gcp-x4-1920-32t-metal-60b55707fa",
+    "provider": "gcp",
+    "name": "x4-1920-32t-metal",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 1920,
+    "memory": 32768,
+    "sockets": 16,
+    "cpu": [
+      "intel-xeon-8490h"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/memory-optimized-machines",
+      "https://docs.cloud.google.com/compute/docs/cpu-platforms"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "interconnect-excluded",
+      "max-impact"
+    ],
+    "embodied": 47.9237488
+  },
+  {
+    "id": "gcp-x4-480-6t-metal-d47c7a2914",
+    "provider": "gcp",
+    "name": "x4-480-6t-metal",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 480,
+    "memory": 6144,
+    "sockets": 4,
+    "cpu": [
+      "intel-xeon-8490h"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/memory-optimized-machines",
+      "https://docs.cloud.google.com/compute/docs/cpu-platforms"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "interconnect-excluded",
+      "max-impact"
+    ],
+    "embodied": 9.7989232
+  },
+  {
+    "id": "gcp-x4-480-8t-metal-5c1dcd05a6",
+    "provider": "gcp",
+    "name": "x4-480-8t-metal",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 480,
+    "memory": 8192,
+    "sockets": 4,
+    "cpu": [
+      "intel-xeon-8490h"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/memory-optimized-machines",
+      "https://docs.cloud.google.com/compute/docs/cpu-platforms"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "interconnect-excluded",
+      "max-impact"
+    ],
+    "embodied": 12.6392944
+  },
+  {
+    "id": "gcp-x4-960-12t-metal-65c133f442",
+    "provider": "gcp",
+    "name": "x4-960-12t-metal",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 960,
+    "memory": 12288,
+    "sockets": 8,
+    "cpu": [
+      "intel-xeon-8490h"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/memory-optimized-machines",
+      "https://docs.cloud.google.com/compute/docs/cpu-platforms"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "interconnect-excluded",
+      "max-impact"
+    ],
+    "embodied": 18.7200368
+  },
+  {
+    "id": "gcp-x4-960-16t-metal-d9c613b68d",
+    "provider": "gcp",
+    "name": "x4-960-16t-metal",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 960,
+    "memory": 16384,
+    "sockets": 8,
+    "cpu": [
+      "intel-xeon-8490h"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/memory-optimized-machines",
+      "https://docs.cloud.google.com/compute/docs/cpu-platforms"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "interconnect-excluded",
+      "max-impact"
+    ],
+    "embodied": 24.4007792
+  },
+  {
+    "id": "gcp-x5-1376-24t-metal-d5d9dac43a",
+    "provider": "gcp",
+    "name": "x5-1376-24t-metal",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 1376,
+    "memory": 24576,
+    "sockets": 8,
+    "cpu": [
+      "intel-xeon-6788p"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/memory-optimized-machines",
+      "https://docs.cloud.google.com/compute/docs/cpu-platforms",
+      "https://docs.cloud.google.com/compute/docs/memory-optimized-machines?hl=en",
+      "https://www.intel.com/content/www/us/en/products/sku/241837/intel-xeon-6788p-processor-336m-cache-2-00-ghz/specifications.html"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "interconnect-excluded",
+      "max-impact"
+    ],
+    "embodied": 35.762264
+  },
+  {
+    "id": "gcp-x5-1376-32t-metal-227b8d96e7",
+    "provider": "gcp",
+    "name": "x5-1376-32t-metal",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 1376,
+    "memory": 32768,
+    "sockets": 8,
+    "cpu": [
+      "intel-xeon-6788p"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/memory-optimized-machines",
+      "https://docs.cloud.google.com/compute/docs/cpu-platforms",
+      "https://docs.cloud.google.com/compute/docs/memory-optimized-machines?hl=en",
+      "https://www.intel.com/content/www/us/en/products/sku/241837/intel-xeon-6788p-processor-336m-cache-2-00-ghz/specifications.html"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "interconnect-excluded",
+      "max-impact"
+    ],
+    "embodied": 47.1237488
+  },
+  {
+    "id": "gcp-x5-2064-48t-metal-4a980d4f61",
+    "provider": "gcp",
+    "name": "x5-2064-48t-metal",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 2064,
+    "memory": 49152,
+    "sockets": 12,
+    "cpu": [
+      "intel-xeon-6788p"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/memory-optimized-machines",
+      "https://docs.cloud.google.com/compute/docs/cpu-platforms",
+      "https://docs.cloud.google.com/compute/docs/memory-optimized-machines?hl=en",
+      "https://www.intel.com/content/www/us/en/products/sku/241837/intel-xeon-6788p-processor-336m-cache-2-00-ghz/specifications.html"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "interconnect-excluded",
+      "max-impact"
+    ],
+    "embodied": 70.2467184
+  },
+  {
+    "id": "gcp-x5-688-12t-metal-8c4594cf95",
+    "provider": "gcp",
+    "name": "x5-688-12t-metal",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 688,
+    "memory": 12288,
+    "sockets": 4,
+    "cpu": [
+      "intel-xeon-6788p"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/memory-optimized-machines",
+      "https://docs.cloud.google.com/compute/docs/cpu-platforms",
+      "https://docs.cloud.google.com/compute/docs/memory-optimized-machines?hl=en",
+      "https://www.intel.com/content/www/us/en/products/sku/241837/intel-xeon-6788p-processor-336m-cache-2-00-ghz/specifications.html"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "interconnect-excluded",
+      "max-impact"
+    ],
+    "embodied": 18.3200368
+  },
+  {
+    "id": "gcp-x5-688-16t-metal-02f4dd4b5f",
+    "provider": "gcp",
+    "name": "x5-688-16t-metal",
+    "basis": "documented-host-reconstruction",
+    "method": "d4b-host-v1",
+    "vcpus": 688,
+    "memory": 16384,
+    "sockets": 4,
+    "cpu": [
+      "intel-xeon-6788p"
+    ],
+    "ssd_count": 0,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/memory-optimized-machines",
+      "https://docs.cloud.google.com/compute/docs/cpu-platforms",
+      "https://docs.cloud.google.com/compute/docs/memory-optimized-machines?hl=en",
+      "https://www.intel.com/content/www/us/en/products/sku/241837/intel-xeon-6788p-processor-336m-cache-2-00-ghz/specifications.html"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "interconnect-excluded",
+      "max-impact"
+    ],
+    "embodied": 24.0007792
+  },
+  {
+    "id": "gcp-z3-highmem-14-standardlssd-b5cb7ac065",
+    "provider": "gcp",
+    "name": "z3-highmem-14-standardlssd",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 176,
+    "memory": 1536,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8481c"
+    ],
+    "ssd_count": 24,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/storage-optimized-machines?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "largest-size-vcpu",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 5.608088
+  },
+  {
+    "id": "gcp-z3-highmem-192-highlssd-metal-f567e0b9d5",
+    "provider": "gcp",
+    "name": "z3-highmem-192-highlssd-metal",
+    "basis": "catalog-family-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 1536,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8481c"
+    ],
+    "ssd_count": 1,
+    "hdd_count": 0,
+    "ssd_capacity": 72000,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/machine-resource"
+    ],
+    "assumptions": [
+      "catalog-proxy",
+      "cpu-proxy",
+      "inferred-sockets",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 3.308088
+  },
+  {
+    "id": "gcp-z4d-highmem-16-standardlssd-5415bc59b9",
+    "provider": "gcp",
+    "name": "z4d-highmem-16-standardlssd",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 384,
+    "memory": 3072,
+    "sockets": 2,
+    "cpu": [
+      "amd-epyc-9b45"
+    ],
+    "ssd_count": 24,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/storage-optimized-machines?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 7.7383664
+  },
+  {
+    "id": "gcp-z4m-highmem-16-65d327f4d0",
+    "provider": "gcp",
+    "name": "z4m-highmem-16",
+    "basis": "explicit-refresh-scenario",
+    "method": "d4b-host-v1",
+    "vcpus": 192,
+    "memory": 1536,
+    "sockets": 2,
+    "cpu": [
+      "intel-xeon-8581c"
+    ],
+    "ssd_count": 24,
+    "hdd_count": 0,
+    "accelerators": 0,
+    "accelerator_memory": 0,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/storage-optimized-machines?hl=en"
+    ],
+    "assumptions": [
+      "cpu-proxy",
+      "installed-ram-proxy",
+      "max-impact",
+      "storage-proxy"
+    ],
+    "embodied": 5.608088
+  }
+]

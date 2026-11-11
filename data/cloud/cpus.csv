@@ -53,7 +53,7 @@ aws-graviton-3,aws,graviton,3,arm-64,neoverse v1,64,64,150,7,600,55000,1
 aws-graviton-4,aws,graviton,4,arm-64,neoverse v2,96,96,180,7,800,85000,1
 azure-cobalt-100,azure,cobalt,100,arm-64,neoverse n2,96,96,180,7,800,85000,1
 cavium-thunderx-cn8890,cavium,thunderx,cn8890,arm-64,thunderx1,48,48,125,28,375,562,2
-google-axion,google,axion,,arm-64,neoverse n2,96,96,180,7,800,85000,1
+google-axion,google,axion,,arm-64,neoverse v2,96,96,180,7,800,85000,1
 intel-core-i78700b,intel,core,i7-8700b,x86-64,coffee lake,6,12,65,14,154,3000,1
 intel-xeon-6-custom-aws,intel,xeon,6-custom-aws,x86-64,granite rapids,96,192,500,5,0,0,2
 intel-xeon-6148,intel,xeon,6148,x86-64,skylake,20,40,150,14,694,8000,4
@@ -139,3 +139,20 @@ intel-xeon-8592plus,intel,xeon,8592+,x86-64,emerald rapids,64,128,,,,,2
 intel-xeon-e52699v3,intel,xeon,e5-2699 v3,x86-64,haswell,18,36,145,22,,,2
 intel-xeon-e52699v4,intel,xeon,e5-2699 v4,x86-64,broadwell,22,44,145,14,,,2
 intel-xeon-gold-6154,intel,xeon,gold 6154,x86-64,skylake,18,36,200,14,,,2
+amd-epyc-9004,amd,epyc,9004,x86-64,genoa,,,,,,,
+amd-epyc-9555p,amd,epyc,9555p,x86-64,turin,64,128,360,,,,1
+apple-m3-ultra-28,apple,m3,ultra-28,arm-64,apple silicon,28,28,,,,,
+apple-m4-max-16,apple,m4,max-16,arm-64,apple silicon,16,16,,,,,
+aws-graviton-5,aws,graviton,5,arm-64,neoverse v3,192,192,,,,,
+google-axion-n3,google,axion,n3,arm-64,neoverse n3,,,,,,,
+intel-xeon-6776p,intel,xeon,6776p,x86-64,granite rapids,64,128,350,,,,2
+intel-xeon-6788p,intel,xeon,6788p,x86-64,granite rapids,86,172,350,,,,
+intel-xeon-6973pc,intel,xeon,6973pc,x86-64,granite rapids,,,,,,,
+intel-xeon-6985pc,intel,xeon,6985pc,x86-64,granite rapids,,,,,,,
+intel-xeon-6987pc,intel,xeon,6987pc,x86-64,granite rapids,,,,,,,
+intel-xeon-6-72c-oracle,intel,xeon,6-72c-oracle,x86-64,granite rapids,72,,,,,,
+intel-xeon-granite-rapids-ap,intel,xeon,granite-rapids-ap,x86-64,granite rapids,,,,,,,
+intel-xeon-sapphire-rapids,intel,xeon,sapphire-rapids,x86-64,sapphire rapids,,,,,,,
+ampere-ampereone-m-19236m,ampere,ampereone-m,192-36m,arm-64,ampereone-m,,,,,,,
+intel-xeon-4214,intel,xeon,4214,x86-64,cascade lake,12,,85,,,,
+intel-xeon-6226r,intel,xeon,6226r,x86-64,cascade lake,,,,,,,

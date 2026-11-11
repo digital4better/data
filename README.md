@@ -19,7 +19,7 @@ The repository is organized as a set of reusable data collections:
 | Collection | What it covers | Main files |
 | --- | --- | --- |
 | [`data/ai`](./data/ai) | AI model catalog across vendors and cloud providers | `models.json` |
-| [`data/cloud`](./data/cloud) | Cloud regions, virtual machines, CPUs, accelerators | `*-regions.*`, `*-vms.*`, `cpus.*`, `accelerators.*` |
+| [`data/cloud`](./data/cloud) | Cloud regions, virtual machines, modeled hosts, CPUs, accelerators | `*-regions.*`, `*-vms.*`, `*-hosts.*`, `cpus.*`, `accelerators.*` |
 | [`data/country`](./data/country) | Countries, regions, continents, and distance referentials | `regions.*`, `countries.*`, `continents.*`, `*-distances.*` |
 | [`data/energy`](./data/energy) | Environmental impacts of electricity production technologies | `energy-impacts.*` |
 | [`data/mix`](./data/mix) | Electricity mix by geography and time period | `world-*`, `continent-*`, `country-*`, `subdivision-*` |
@@ -61,7 +61,9 @@ Closed-model sizes are estimates, not vendor disclosures. The audit distinguishe
 
 The cloud referentials in [`data/cloud`](./data/cloud) provide structured information for major providers including AWS, Azure, GCP, Oracle Cloud Infrastructure, OVHcloud, and Scaleway.
 
-See the [cloud reference notes](./data/cloud/README.md) for dated refreshes, source evidence and coverage limits. Historical offers are retained. New entries omit unverified specifications and environmental values instead of copying assumptions from another offer; empty fields do not mean zero.
+See the [cloud reference notes](./data/cloud/README.md) for dated refreshes, source evidence and coverage limits. Historical offers are retained. Unknown published specifications and regional metrics remain absent; empty fields do not mean zero. VM manufacturing impacts use documented modeling assumptions where physical configurations are unavailable.
+
+Each provider has a JSON and flat CSV catalog of modeled host profiles, linked from its VM records. Use `embodied_allocated` for the manufacturing impact allocated to an instance (tCO2e, before time amortization). The legacy VM `embodied` field is deprecated and retained for compatibility. Host profiles describe calculation assumptions, not a verified inventory of deployed servers.
 
 Typical use cases:
 

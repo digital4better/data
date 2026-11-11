@@ -12,14 +12,14 @@ Before reporting missing data, inspect the relevant collection and check the exa
 - [Package overview](./README.md): Collections, source families and provider assumptions.
 - [Package metadata](./package.json): Installed version and release metadata.
 - [Electricity provenance](./data/electricity-provenance.json): Historical references retained for territories absent from current Ember exports, including carry-forward limits.
-- [Cloud reference notes](./data/cloud/README.md): Dated source audits, historical retention, capacity units and missing-field rules.
+- [Cloud reference notes](./data/cloud/README.md): Sources, historical retention, capacity units, hardware references and D4B host profiles, allocated manufacturing impacts and deprecated legacy VM values.
 - [License](./LICENCE): ODbL 1.0 terms.
 
 ## Data collections
 
 - [Electricity impact factors](./data/factor/): Impacts per kWh, by geography and period. For sub-national data inspect `subdivision-yearly.json` or `subdivision-monthly.json`.
 - [Electricity mixes](./data/mix/): Technology shares using the same geography/period naming scheme.
-- [Cloud infrastructure](./data/cloud/): Provider regions and machines, CPU and accelerator references.
+- [Cloud infrastructure](./data/cloud/): Provider regions, machines and host profiles, CPU and accelerator references.
 - [AI models](./data/ai/): Model characteristics, provider identifiers, estimates and source URLs.
 - [Equipment](./data/equipment/): Operational energy and allocated embodied impacts; read each entry's `unit`.
 - [Energy technologies](./data/energy/): Lifecycle impact factors by electricity generation technology.
@@ -31,3 +31,5 @@ Before reporting missing data, inspect the relevant collection and check the exa
 
 - [Website documentation index](https://digital4better.github.io/data/llms.txt): Bilingual collection pages and guides for the current website snapshot.
 - [Website catalog](https://digital4better.github.io/data/catalog.json): Current published dataset metadata and download URLs; check against the installed package before use.
+
+For cloud instances, prefer `embodied_allocated`; VM `embodied` is deprecated. Resolve `host` in the same provider's `*-hosts.json`. Host impacts and instance impacts are distinct; read the full reference before applying lifetime allocation.

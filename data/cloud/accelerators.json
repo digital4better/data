@@ -525,5 +525,36 @@
     "model": "mi355x",
     "platform": "instinct",
     "memory": 288
+  },
+  {
+    "id": "nvidia-rtx-pro-4500-blackwell-server",
+    "type": "gpu",
+    "manufacturer": "nvidia",
+    "serie": "rtx pro",
+    "model": "4500 blackwell server",
+    "platform": "blackwell",
+    "cores": 10496,
+    "memory": 32,
+    "tdp": 165
+  },
+  {
+    "id": "nvidia-tesla-v100s32",
+    "type": "gpu",
+    "manufacturer": "nvidia",
+    "serie": "tesla",
+    "model": "v100s",
+    "platform": "volta",
+    "cores": 5120,
+    "memory": 32,
+    "tdp": 250
+  },
+  {
+    "id": "nvidia-blackwell-b200-192",
+    "type": "gpu",
+    "manufacturer": "nvidia",
+    "serie": "blackwell",
+    "model": "b200-192",
+    "platform": "blackwell",
+    "memory": 192
   }
 ]
