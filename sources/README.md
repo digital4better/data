@@ -1,4 +1,18 @@
-# Historical electricity references
+# Source Evidence
+
+These files support reproducibility and validation. They are maintenance inputs, not additional public datasets, and are excluded from the npm package and website downloads.
+
+## Cloud
+
+| File | Purpose |
+| --- | --- |
+| [cloud/host-inputs.json](./cloud/host-inputs.json) | Active host profiles, placement constraints and legacy impact values used by the [calculator](../scripts/cloud-hosts.cjs). |
+| [cloud/host-evidence.json](./cloud/host-evidence.json) | Source URLs, snapshot dates, hashes and hardware evidence behind the profiles. |
+| [cloud/hardware-corrections.json](./cloud/hardware-corrections.json) | Reviewed hardware corrections and their official sources, retained as regression-test evidence. |
+
+Check host catalogs without fetching external data using `node scripts/cloud-hosts.cjs --check`. Use `--write` after reviewing input changes. One-time migration tools and exploratory reports remain available in Git history, not in the active tree.
+
+## Historical Electricity References
 
 `ember-legacy-territories.json` preserves previously published Digital4Better mix and factor series for BM, GI, NU, SH and TL, which are absent from the current Ember generation exports.
 

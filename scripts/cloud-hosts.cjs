@@ -67,7 +67,7 @@ function generate(catalogs,inputs) {
 function main() {
   const mode=process.argv[2];
   if(!['--write','--check'].includes(mode))throw Error('Use --write or --check');
-  const inputs=require('./cloud-host-inputs.json');
+  const inputs=require('../sources/cloud/host-inputs.json');
   const catalogs=Object.fromEntries(providers.map(p=>[p,JSON.parse(fs.readFileSync(path.join(root,`data/cloud/${p}-vms.json`)))]));
   const result=generate(catalogs,inputs);
   let changes=0;

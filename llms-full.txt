@@ -189,6 +189,8 @@ Where mapping is unknown, managed services use an explicit dedicated-equivalent 
 
 Hardware references may identify an exact SKU or only a published family. Family-only references intentionally omit unverified core counts and TDP; absent fields do not mean zero. Selected OVHcloud T1/T2 CPU mappings are observed guest models from Spare Cores, not provider-wide guarantees. Manufacturer specifications, provider mappings and observation sources are documented in the cloud notes. CPU maximum socket support and guest NUMA/disk counts do not establish physical host topology.
 
+Reproducibility inputs and evidence are maintained in the repository's [sources/cloud](https://github.com/digital4better/data/tree/main/sources/cloud), separate from public datasets. The active calculator is [scripts/cloud-hosts.cjs](https://github.com/digital4better/data/blob/main/scripts/cloud-hosts.cjs). These maintenance files are not included in npm or website downloads; one-time migration scripts and exploratory reports remain in Git history.
+
 CPU references include manufacturer, series/model, architecture/platform, cores, threads, TDP, process, die area, transistors and socket support where available. Accelerator references include type, manufacturer, model, memory and hardware characteristics. TDP is a thermal design envelope in W, not a workload-specific electricity measurement. Check the actual record types: some source fields are strings or lists. Do not silently reinterpret zero placeholders, comma decimal strings, scalar CPU references or arrays.
 
 ## AI models: `data/ai/`

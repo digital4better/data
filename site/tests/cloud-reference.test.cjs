@@ -11,6 +11,26 @@ const json = (name) => JSON.parse(read(name));
 const providers = ["aws", "azure", "gcp", "oracle", "ovhcloud", "scaleway"];
 const lookup = (dataset, id) => json(`${dataset}.json`).find((m) => m.id === id);
 
+test("cloud hardware references resolve, with distinct CPU and GPU variants", () => {
+  const cpus = json("cpus.json"), accelerators = json("accelerators.json");
+  const cpuIds = new Set(cpus.map((r) => r.id)), acceleratorIds = new Set(accelerators.map((r) => r.id));
+  assert.equal(cpuIds.size, cpus.length);
+  assert.equal(acceleratorIds.size, accelerators.length);
+  for (const p of providers) for (const vm of json(`${p}-vms.json`)) {
+    for (const id of Array.isArray(vm.cpu) ? vm.cpu : vm.cpu ? [vm.cpu] : []) assert.ok(cpuIds.has(id), `${p}/${vm.id}/${id}`);
+    if (vm.accelerator) assert.ok(acceleratorIds.has(vm.accelerator), `${p}/${vm.id}/${vm.accelerator}`);
+  }
+  assert.equal(lookup("cpus", "google-axion").platform, "neoverse v2");
+  assert.equal(lookup("cpus", "google-axion-n3").platform, "neoverse n3");
+  assert.ok(!("tdp" in lookup("cpus", "intel-xeon-6973pc")));
+  assert.ok(!("cores" in lookup("cpus", "amd-epyc-9004")));
+  assert.equal(lookup("accelerators", "nvidia-blackwell-b200-192").memory, 192);
+  assert.equal(lookup("accelerators", "nvidia-blackwell-b200").memory, 180);
+  assert.equal(lookup("ovhcloud-vms", "t2-180").accelerator, "nvidia-tesla-v100s32");
+  assert.equal(lookup("gcp-vms", "c4-standard-24").cpu[0], "intel-xeon-8581c");
+  assert.equal(lookup("gcp-vms", "c4-standard-24-lssd").cpu[0], "intel-xeon-6985pc");
+});
+
 test("cloud catalogs have unique identifiers and finite nonnegative capacities", () => {
   for (const provider of providers) for (const kind of ["vms", "regions"]) {
     const dataset = `${provider}-${kind}`;
@@ -39,7 +59,7 @@ test("approved cloud RAM corrections match the documented specifications", () =>
 });
 
 test("reviewed hardware corrections retain their official sources and corrected values", () => {
-  const { corrections } = require("../../scripts/cloud-hardware-corrections.json");
+  const { corrections } = require("../../sources/cloud/hardware-corrections.json");
   const seen = new Set();
   const cpus = new Set(json("cpus.json").map((r) => r.id));
   for (const correction of corrections) {

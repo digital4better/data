@@ -90,6 +90,12 @@ Keep the short files concise and link to the full reference for detail. The full
 
 After changes, run `yarn build:site`, `yarn check:site` and `yarn test:site`. Check that package-relative links resolve in the packed npm artifact, public documentation/download links resolve in the built website, and both website files are exact copies of their source files. Do not run `yarn build:data` just to validate documentation: it fetches upstream sources and rewrites data.
 
+## Maintenance tools and evidence
+
+Keep only recurring generators and validators in `scripts/`. Cloud calculation inputs and source evidence belong in `sources/cloud/`; they are excluded from npm and website downloads. Validate host catalogs with `node scripts/cloud-hosts.cjs --check` without fetching upstream data.
+
+Do not commit one-time migration tools or generated exploratory reports. Local `reports/` output is ignored; past studies remain in Git history. Preserve useful regression checks when retiring an experimental script, and never delete published historical dataset records as part of repository cleanup.
+
 ## Historical territory coverage
 
 The five territories absent from the current Ember export are retained from the immutable snapshot in `sources/ember-legacy-territories.json`. `scripts/electricity-history.ts` restores country-level mix/factor outputs after aggregation, exports matching CSV files and writes `data/electricity-provenance.json`. Do not feed these already modeled outputs back into energy aggregation or overwrite the pinned source with generated files. Retain unknown upstream observation dates as unknown; review `sources/README.md` before changing this policy.

@@ -1,12 +1,35 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
 const {generate,calculateHost,allocate,providers,hostHeaders,vmHeaders}=require('../../scripts/cloud-hosts.cjs');
-const inputs=require('../../scripts/cloud-host-inputs.json');
-const {definitions,normalizeHost}=require('../../scripts/cloud-host-assumptions.cjs');
+const inputs=require('../../sources/cloud/host-inputs.json');
+const {definitions}=require('../../scripts/cloud-host-assumptions.cjs');
 require('ts-node').register({transpileOnly:true,compilerOptions:{module:'CommonJS'}});
 const {parseCsv}=require('../src/data.ts');
 const root=path.resolve(__dirname,'../../data/cloud');
 const read=(p,k)=>JSON.parse(fs.readFileSync(path.join(root,`${p}-${k}.json`)));
 const catalogs=Object.fromEntries(providers.map(p=>[p,read(p,'vms')]));
+
+test('host manufacturing coefficients retain the RAM baseline and component units',()=>{
+  const host={id:'test',vcpus:32,memory:16,sockets:1,ssd_count:0,hdd_count:0,accelerators:0,accelerator_memory:0};
+  assert.equal(calculateHost(host),1);
+  assert.equal(calculateHost({...host,memory:32}),1.0221904);
+  assert.equal(calculateHost({...host,memory:512,sockets:2}),1.7879024);
+  assert.equal(calculateHost({...host,sockets:2,ssd_count:2,hdd_count:1}),1.35);
+  assert.equal(calculateHost({...host,accelerators:1,accelerator_memory:16}),1.15);
+  assert.equal(calculateHost({...host,accelerators:1,accelerator_memory:96}),1.260952);
+  assert.equal(calculateHost({...host,accelerators:8,accelerator_memory:288}),5.2178944);
+  for(const change of [{accelerators:0.125},{sockets:0},{ssd_count:1.5},{memory:NaN},{hdd_count:-1}]){
+    assert.throws(()=>calculateHost({...host,...change}));
+  }
+});
+
+test('homogeneous allocation conserves the full host impact',()=>{
+  const host={id:'test',vcpus:192,memory:1024,accelerators:8,accelerator:'gpu',embodied:8};
+  const vm={id:'vm',vcpus:24,memory:128,accelerators:1,accelerator:'gpu',virtual:true};
+  const result=allocate(vm,host);
+  assert.equal(result.host_instances,8);
+  assert.equal(result.embodied_allocated*result.host_instances,host.embodied);
+  assert.equal(allocate({...vm,virtual:false},host).embodied_allocated,host.embodied);
+});
 
 test('all instances resolve a same-provider host and have complete allocated and legacy impacts',()=>{
   const keys=[];
@@ -20,7 +43,10 @@ test('all instances resolve a same-provider host and have complete allocated and
       assert.equal(h.embodied,calculateHost(h));
       assert.ok(h.sources.length&&h.assumptions.length);
       assert.doesNotMatch(JSON.stringify({...h,sources:undefined}),/teads/i);
-      assert.deepEqual(normalizeHost(h),h);
+      assert.deepEqual(h.assumptions,[...new Set(h.assumptions)].sort());
+      if(h.assumptions.includes('one-ssd'))assert.equal(h.ssd_count,1);
+      if(h.assumptions.includes('one-hdd'))assert.equal(h.hdd_count,1);
+      assert.ok(!(h.assumptions.includes('inferred-sockets')&&h.assumptions.includes('published-sockets')));
       for(const code of h.assumptions){
         assert.ok(Object.hasOwn(definitions,code),code);
         assert.ok(fs.readFileSync(path.join(root,'README.md'),'utf8').includes('`'+code+'`'),code);

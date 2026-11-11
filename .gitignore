@@ -5,3 +5,6 @@ site/dist
 
 site/.ssr
 site/.audit
+
+# Local exploratory reports are not maintained reference data.
+/reports/
