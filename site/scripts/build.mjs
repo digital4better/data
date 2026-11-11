@@ -186,3 +186,8 @@ console.log(`Generated ${routes.length * 2} bilingual pages; ${datasets.length} 
 // Static documentation is maintained alongside the source (see AGENTS.md).
 for (const file of ["llms.txt", "llms-full.txt"])
   copyFileSync(`site/${file}`, `${out}/${file}`);
+
+// Versioned source metadata is published independently of editorial collections.
+mkdirSync(`${out}/sources`, { recursive: true });
+for (const file of ["catalog.json", "README.md"])
+  copyFileSync(`sources/${file}`, `${out}/sources/${file}`);

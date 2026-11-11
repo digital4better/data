@@ -172,3 +172,9 @@ Useful online entry points:
 - [English methodology](https://digital4better.github.io/data/en/methodology/) and [French methodology](https://digital4better.github.io/data/fr/methodology/).
 - [English electricity guide](https://digital4better.github.io/data/en/guides/electricity/), [cloud metrics guide](https://digital4better.github.io/data/en/guides/cloud-metrics/) and [AI models guide](https://digital4better.github.io/data/en/guides/ai-models/).
 - [Repository and issue tracker](https://github.com/digital4better/data).
+
+## AI and cloud source registry
+
+The [source registry](https://digital4better.github.io/data/sources/catalog.json) has `version: 1` and a `sources` array. Each source records a stable `id`, URL, publisher, AI/cloud provider scopes, category (primary, secondary, observation or methodology), format, declarative collection hints, attribution, limitations and active/deprecated status. A deprecated source retains its ID, reason and optional replacement ID; historical datasets remain available. Read the registry and datasets from the same package or commit.
+
+Active means in scope for verification, not recently verified or currently available. The initial registry is seeded from published references and official discovery entry points. Source licensing and record-level attribution still apply, including EcoLogits and Samuel Rince where relevant. Collection hints specify HTTP/browser access, link or JSON pagination and discovery queries; they are not executable code or a guarantee of exhaustive Internet coverage. No attempts, retry counters or browser state are persisted. Transient failures never justify deprecation; positive evidence of withdrawal, confirmed disappearance or replacement is required. See the [registry guide](https://digital4better.github.io/data/sources/README.md). This metadata does not add an editorial collection or change data schemas and calculation rules.

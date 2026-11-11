@@ -1,6 +1,10 @@
 # Source Evidence
 
-These files support reproducibility and validation. They are maintenance inputs, not additional public datasets, and are excluded from the npm package and website downloads.
+The AI/cloud registry and its guide are published metadata. The cloud calculation evidence and historical electricity snapshot below remain repository-only maintenance inputs.
+
+## AI and cloud source registry
+
+See [catalog.json](./catalog.json) for the versioned registry. Its curated traversal contract is documented below as part of this PR.
 
 ## Cloud
 

@@ -83,3 +83,7 @@ Corrections and documented sources are welcome: see [CONTRIBUTING.md](https://gi
 Published under the [Open Database License (ODbL)](./LICENCE). Preserve upstream attribution and notices where applicable.
 
 [Digital4Better](https://digital4better.com) · [fruggr](https://www.fruggr.io) · [GitHub](https://github.com/digital4better/data)
+
+### Versioned AI and cloud sources
+
+The [source registry](sources/catalog.json) and [maintenance guide](sources/README.md) describe publisher references, collection hints, attribution and source lifecycle for AI and the six cloud providers. Read them at the same commit or package version as the datasets. Active sources are scheduled for verification; that status does not guarantee current availability. Transient collection errors are not stored in the registry.
