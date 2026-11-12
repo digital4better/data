@@ -15117,15 +15117,15 @@
     },
     {
       "id": "www.scaleway.com-0dda524c5c31",
-      "url": "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
+      "url": "https://raw.githubusercontent.com/scaleway/docs-content/main/pages/generative-apis/reference-content/supported-models.mdx",
       "publisher": "Scaleway",
       "scopes": [
         "ai"
       ],
       "category": "primary",
-      "format": "html",
+      "format": "text",
       "collection": {
-        "method": "browser",
+        "method": "http",
         "pagination": "none",
         "follow": [],
         "expect": [
@@ -15135,7 +15135,7 @@
         "discovery": [
           "site:www.scaleway.com availability models new releases official specifications"
         ],
-        "instructions": "Read the entire table and supported model identifiers. Public hosted availability and original model characteristics are distinct evidence."
+        "instructions": "Read the complete official Markdown catalog and lifecycle tables. Relative documentation links resolve against https://www.scaleway.com/en/docs/. Public hosted availability and original model characteristics are distinct evidence; retain historical aliases for EOL models."
       },
       "status": "active",
       "name": "Scaleway Generative APIs supported models",
@@ -15145,7 +15145,8 @@
         "models"
       ],
       "review": {
-        "date": "2026-11-12"
+        "date": "2026-11-12",
+        "notes": "Official source linked by the rendered page’s Edit on Github link. Collect Markdown directly; website access challenges do not imply source disappearance."
       }
     },
     {
