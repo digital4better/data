@@ -31,4 +31,4 @@ Before reporting missing data, inspect the relevant collection and check the exa
 - [Website documentation index](https://digital4better.github.io/data/llms.txt): Bilingual collection pages and guides for the current website snapshot.
 - [Website catalog](https://digital4better.github.io/data/catalog.json): Current published dataset metadata and download URLs; check against the installed package before use.
 
-- [AI and cloud source registry](./sources/catalog.json): versioned publisher metadata, collection hints, attribution and source lifecycle; active is not a recent availability check.
+- [AI and cloud source registry](./sources/catalog.json): versioned sources and coverage contract; mandatory catalogs/discovery are distinct from references checked on use. See the full reference for schema and lifecycle rules.

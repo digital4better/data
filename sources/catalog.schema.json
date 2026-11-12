@@ -1,0 +1,310 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://digital4better.github.io/data/sources/catalog.schema.json",
+  "title": "Digital4Better AI and cloud source registry",
+  "description": "Version 2. Roles define traversal obligations; categories describe evidence origin. Cross-reference and coverage-matrix constraints are additionally tested in the repository.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "coverage", "sources"],
+  "properties": {
+    "version": {
+      "const": 2
+    },
+    "coverage": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["scope", "topic", "sources"],
+        "properties": {
+          "scope": {
+            "enum": ["ai", "aws", "azure", "gcp", "oracle", "ovhcloud", "scaleway"]
+          },
+          "topic": {
+            "enum": [
+              "models",
+              "availability",
+              "instances",
+              "regions",
+              "sustainability",
+              "hardware",
+              "methodology"
+            ]
+          },
+          "sources": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "url",
+          "publisher",
+          "scopes",
+          "topics",
+          "role",
+          "category",
+          "format",
+          "collection",
+          "attribution",
+          "limitations",
+          "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9.-]{2,120}$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https?://"
+          },
+          "publisher": {
+            "type": "string",
+            "minLength": 1
+          },
+          "scopes": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": ["ai", "aws", "azure", "gcp", "oracle", "ovhcloud", "scaleway"]
+            }
+          },
+          "topics": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "models",
+                "availability",
+                "instances",
+                "regions",
+                "sustainability",
+                "hardware",
+                "methodology"
+              ]
+            }
+          },
+          "role": {
+            "enum": ["catalog", "discovery", "reference", "methodology"]
+          },
+          "category": {
+            "enum": ["primary", "secondary", "observation", "methodology"]
+          },
+          "format": {
+            "enum": ["html", "json", "csv", "pdf", "xml", "text"]
+          },
+          "collection": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["method", "pagination", "follow", "expect", "discovery", "instructions"],
+            "properties": {
+              "method": {
+                "enum": ["http", "browser"]
+              },
+              "pagination": {
+                "enum": ["none", "link", "json", "unreviewed"]
+              },
+              "next": {
+                "type": "string",
+                "minLength": 1
+              },
+              "follow": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "expect": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "discovery": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true
+              },
+              "instructions": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "pagination": {
+                      "enum": ["link", "json"]
+                    }
+                  }
+                },
+                "then": {
+                  "required": ["next"]
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "pagination": {
+                      "const": "link"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "method": {
+                      "const": "browser"
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "pagination": {
+                      "const": "json"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "method": {
+                      "const": "http"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "attribution": {
+            "type": "string",
+            "minLength": 1
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "status": {
+            "enum": ["active", "deprecated"]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "replacement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "review": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["date", "notes"],
+            "properties": {
+              "date": {
+                "type": "string",
+                "format": "date"
+              },
+              "notes": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "deprecated"
+                }
+              }
+            },
+            "then": {
+              "required": ["reason"]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "active"
+                },
+                "role": {
+                  "enum": ["catalog", "discovery"]
+                }
+              }
+            },
+            "then": {
+              "required": ["review"],
+              "properties": {
+                "collection": {
+                  "properties": {
+                    "pagination": {
+                      "enum": ["none", "link", "json"]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "role": {
+                  "enum": ["reference", "methodology"]
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "collection": {
+                  "properties": {
+                    "discovery": {
+                      "maxItems": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
