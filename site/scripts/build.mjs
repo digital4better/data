@@ -6,8 +6,8 @@ import { collections, guides, tr, datasetTitle, repository, license } from "../s
 const base = "/data/";
 const origin = "https://digital4better.github.io";
 const out = resolve("site/dist");
-const historicalTerritories = existsSync("data/electricity-provenance.json")
-  ? Object.keys(JSON.parse(readFileSync("data/electricity-provenance.json", "utf8")).territories)
+const historicalTerritories = existsSync("scripts/electricity-provenance.json")
+  ? Object.keys(JSON.parse(readFileSync("scripts/electricity-provenance.json", "utf8")).territories)
   : [];
 const datasets = [];
 for (const c of collections)
@@ -171,6 +171,8 @@ writeFileSync(
 );
 copyFileSync("site/social-card.png", `${out}/social-card.png`);
 copyFileSync("site/favicon.ico", `${out}/favicon.ico`);
+// Preserve the public metadata URL without treating provenance as a dataset.
+copyFileSync("scripts/electricity-provenance.json", `${out}/electricity-provenance.json`);
 writeFileSync(
   `${out}/catalog.json`,
   JSON.stringify({

@@ -124,7 +124,20 @@ Capacity numbers retain their source convention: **GB and GiB are not interchang
 
 Azure GB RAM exceptions include Dnsv6, Dnlsv6, Ensv6, HBv5, Esv7, Ebsv6, Ebdsv6, Ecasv6 and Ecadsv6. Local storage is GB for Lsv4, Lasv4 and Lasv5/Laosv5; GiB for Ddsv7, Dldsv7, Daldsv7, Dcadsv6, Famdsv7 and Faldsv7. TB/TiB totals are reduced to GB/GiB respectively.
 
-Region `pue` is a ratio, `wue` is L/kWh and `ref` is a fraction. Reporting boundaries differ: Google's CFE fraction is not interchangeable with renewable-energy matching. AWS `ref = 0` and Oracle `wue = 0` are dataset conventions, not verified absence of renewable energy or water use. See the [full reference](https://digital4better.github.io/data/llms-full.txt) for provider-specific rules.
+Region `pue` is a ratio, `wue` is L/kWh and `ref` is a fraction. Reporting boundaries differ: Google's CFE fraction is not interchangeable with renewable-energy matching. AWS `ref = 0` and Oracle `wue = 0` are dataset conventions, not verified absence of renewable energy or water use.
+
+### Regional Environmental References
+
+| Provider | Source and interpretation |
+| --- | --- |
+| AWS | [Regional PUE/WUE disclosures](https://sustainability.aboutamazon.com/aws-wue-pue.csv); retained 2024 reference values. REF remains zero by convention. |
+| Azure | [Datacenter efficiency disclosures](https://datacenters.microsoft.com/sustainability/efficiency/) and regional fact sheets, including curated historical values whose original PDFs may no longer be retrievable. |
+| GCP | [Regional carbon data](https://cloud.google.com/sustainability/region-carbon); CFE is used as the REF proxy. Previously derived water values remain pending clearer regional disclosures. |
+| Oracle | [Environmental reporting](https://www.oracle.com/a/ocom/docs/corporate/citizenship/oracle-corp-citizenship-report-3941904.pdf); uniform PUE 1.07 and provisional WUE zero are reference assumptions. |
+| OVHcloud | [FY25 environmental KPIs](https://www.ovhcloud.com/sites/default/files/external_files/kpis_fy25.pdf). |
+| Scaleway | [Calculation reference](https://www.scaleway.com/en/docs/environmental-footprint/additional-content/calculation-values-reference/) and datacenter impact reports. |
+
+Compare reporting periods and regional versus global boundaries before comparing providers. Lower PUE alone does not imply a lower total environmental impact.
 
 ## Methodology
 

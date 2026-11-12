@@ -6,7 +6,7 @@ This index describes the deployed website. Downloads require no JavaScript or ac
 
 ## Reference and catalog
 
-- [Complete website reference](https://digital4better.github.io/data/llms-full.txt): Schemas, file selection, methodology, examples, sources, limitations and guide content in plain text.
+- [Complete website reference](https://digital4better.github.io/data/llms-full.txt): File selection, schema summaries, examples and links to detailed collection guides.
 - [Machine-readable catalog](https://digital4better.github.io/data/catalog.json): Published dataset inventory, fields, record counts, period ranges, bilingual pages and absolute download URLs. Check exact record coverage in the downloaded file.
 - [Electricity provenance](https://digital4better.github.io/data/electricity-provenance.json): Historical territory references, pinned source snapshot and carry-forward coverage.
 - [Cloud reference notes](https://digital4better.github.io/data/cloud/README.md): Sources, historical retention, capacity units, hardware references and D4B host profiles, allocated manufacturing impacts and deprecated legacy VM values.
@@ -45,9 +45,7 @@ This index describes the deployed website. Downloads require no JavaScript or ac
 
 ## Optional additional downloads
 
-- [Geographic reference files](https://digital4better.github.io/data/llms-full.txt): The full reference links raw country, region, distance and map assets. These assets have no geography collection pages on the site.
+- [Geographic reference files](https://digital4better.github.io/data/country/README.md): File inventory, geographic identifiers, map assets, distance assumptions and units. These assets have no geography collection pages on the site.
 
 - [Building energy factors](https://digital4better.github.io/data/facility/factors.json): Electricity and fuel impacts per kWh; [source notes](https://digital4better.github.io/data/facility/README.md).
 - [Transport factors](https://digital4better.github.io/data/transport/factors.json): Employee travel impacts per passenger-kilometre or vehicle-kilometre; [source notes](https://digital4better.github.io/data/transport/README.md). These additional collections have no editorial pages on the site.
-
-For cloud instances, prefer `embodied_allocated`; VM `embodied` is deprecated. Resolve `host` in the same provider's `*-hosts.json`. `host_instances` is the modeled maximum number of identical instances per host; allocated impact equals host impact divided by this count. Read the full reference before applying lifetime allocation.

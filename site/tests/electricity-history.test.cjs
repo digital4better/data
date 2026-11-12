@@ -23,6 +23,7 @@ function fixtures(callback) {
     process.chdir(directory);
     fs.mkdirSync("data/factor", { recursive: true });
     fs.mkdirSync("data/mix", { recursive: true });
+    fs.mkdirSync("scripts", { recursive: true });
     const snapshot = { source, territories: { BM: "Bermuda", TL: "Timor-Leste" }, datasets: {} };
     for (const id of ids) {
       const monthly = id.includes("monthly");
@@ -49,6 +50,8 @@ test("historical references retain values, carry across years and expose their p
   assert.equal(JSON.stringify(snapshot), original, "the pinned snapshot is immutable");
   assert.deepEqual(Object.keys(result.territories), ["BM", "TL"]);
   assert.equal(result.sourceSnapshot.upstreamObservationDate, null);
+  assert.deepEqual(JSON.parse(fs.readFileSync("scripts/electricity-provenance.json", "utf8")), result);
+  assert.equal(fs.existsSync("data/electricity-provenance.json"), false);
   for (const id of ids) {
     const data = JSON.parse(fs.readFileSync(`data/${id}.json`, "utf8"));
     const monthly = id.includes("monthly");
@@ -83,7 +86,7 @@ test("no fallback rewrites native datasets when every territory is available", (
 
 test("published historical territories preserve the pinned series in every output variant", () => {
   const snapshot = JSON.parse(fs.readFileSync("sources/ember-legacy-territories.json", "utf8"));
-  const provenance = JSON.parse(fs.readFileSync("data/electricity-provenance.json", "utf8"));
+  const provenance = JSON.parse(fs.readFileSync("scripts/electricity-provenance.json", "utf8"));
   assert.equal(provenance.sourceSnapshot.commit, snapshot.source.commit);
   for (const [id, countries] of Object.entries(snapshot.datasets)) {
     const data = JSON.parse(fs.readFileSync(`data/${id}.json`, "utf8"));

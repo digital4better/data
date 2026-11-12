@@ -8,28 +8,25 @@ Before reporting missing data, inspect the relevant collection and check the exa
 
 ## Local documentation
 
-- [Complete package reference](./llms-full.txt): File inventory, schemas, lookup procedure, examples, sources and limitations; readable offline.
+- [Complete package reference](./llms-full.txt): Lookup procedure, examples and links to the collection guides; all are included for offline use.
 - [Package overview](./README.md): Collections, source families and provider assumptions.
 - [Package metadata](./package.json): Installed version and release metadata.
-- [Electricity provenance](./data/electricity-provenance.json): Historical references retained for territories absent from current Ember exports, including carry-forward limits.
-- [Cloud reference notes](./data/cloud/README.md): Sources, historical retention, capacity units, hardware references and D4B host profiles, allocated manufacturing impacts and deprecated legacy VM values.
+- [Electricity provenance](./scripts/electricity-provenance.json): Historical references retained for territories absent from current Ember exports, including carry-forward limits.
 - [License](./LICENCE): ODbL 1.0 terms.
 
 ## Data collections
 
-- [Electricity impact factors](./data/factor/): Impacts per kWh, by geography and period. For sub-national data inspect `subdivision-yearly.json` or `subdivision-monthly.json`.
-- [Electricity mixes](./data/mix/): Technology shares using the same geography/period naming scheme.
-- [Cloud infrastructure](./data/cloud/): Provider regions, machines and host profiles, CPU and accelerator references.
-- [AI models](./data/ai/): Model characteristics, provider identifiers, estimates and source URLs.
-- [Equipment](./data/equipment/): Operational energy and allocated embodied impacts; read each entry's `unit`.
-- [Energy technologies](./data/energy/): Lifecycle impact factors by electricity generation technology.
-- [Building energy](./data/facility/): Purchased electricity and fuel factors per kWh, with explicit PCI/PCS bases.
-- [Transport](./data/transport/): Employee travel factors per passenger-kilometre or vehicle-kilometre.
-- [Geography](./data/country/): Country, continent and subdivision references, SVG paths and approximate distances.
+- [Electricity impact factors](./data/factor/README.md): Impacts per kWh, by geography and period. For sub-national data inspect `subdivision-yearly.json` or `subdivision-monthly.json`.
+- [Electricity mixes](./data/mix/README.md): Technology shares using the same geography/period naming scheme.
+- [Cloud infrastructure](./data/cloud/README.md): Provider regions, machines and host profiles, CPU and accelerator references.
+- [AI models](./data/ai/README.md): Model characteristics, provider identifiers, estimates and source URLs.
+- [Equipment](./data/equipment/README.md): Operational energy and allocated embodied impacts; read each entry's `unit`.
+- [Energy technologies](./data/energy/README.md): Lifecycle impact factors by electricity generation technology.
+- [Building energy](./data/facility/README.md): Purchased electricity and fuel factors per kWh, with explicit PCI/PCS bases.
+- [Transport](./data/transport/README.md): Employee travel factors per passenger-kilometre or vehicle-kilometre.
+- [Geography](./data/country/README.md): Country, continent and subdivision references, SVG paths and approximate distances.
 
 ## Optional online documentation
 
 - [Website documentation index](https://digital4better.github.io/data/llms.txt): Bilingual collection pages and guides for the current website snapshot.
 - [Website catalog](https://digital4better.github.io/data/catalog.json): Current published dataset metadata and download URLs; check against the installed package before use.
-
-For cloud instances, prefer `embodied_allocated`; VM `embodied` is deprecated. Resolve `host` in the same provider's `*-hosts.json`. `host_instances` is the modeled maximum number of identical instances per host; allocated impact equals host impact divided by this count. Read the full reference before applying lifetime allocation.

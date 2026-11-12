@@ -56,7 +56,7 @@ jobs:
           FORCE_PUBLISH: ${{ inputs.force_publish }}
         run: |
           set -e
-          git add data/
+          git add data/ scripts/electricity-provenance.json
           if git diff --cached --quiet; then
             if [ "$FORCE_PUBLISH" != "true" ]; then
               echo "No changes detected → no version bump, no publish"

@@ -85,6 +85,6 @@ export const restoreLegacyElectricity = (
     }])),
     datasets,
   };
-  writeFileSync("data/electricity-provenance.json", JSON.stringify(provenance, null, 2));
+  writeFileSync("scripts/electricity-provenance.json", JSON.stringify(provenance, null, 2));
   return provenance;
 };

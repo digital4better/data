@@ -12,13 +12,13 @@ Available as **JSON and CSV** for analysts, sustainability teams, researchers an
 | --- | --- |
 | Compare AI models, capabilities and estimated sizes | [AI models](./data/ai/README.md) |
 | Identify cloud regions, VM hardware and manufacturing impacts | [Cloud infrastructure](./data/cloud/README.md) |
-| Convert electricity consumption into environmental impacts | [Electricity factors](./data/factor) |
-| Explore electricity generation by geography and period | [Electricity mixes](./data/mix) |
-| Compare electricity production technologies | [Energy impacts](./data/energy) |
+| Convert electricity consumption into environmental impacts | [Electricity factors](./data/factor/README.md) |
+| Explore electricity generation by geography and period | [Electricity mixes](./data/mix/README.md) |
+| Compare electricity production technologies | [Energy impacts](./data/energy/README.md) |
 | Estimate building energy impacts | [Facility factors](./data/facility/README.md) |
 | Estimate employee travel impacts | [Transport factors](./data/transport/README.md) |
-| Model equipment power and manufacturing impacts | [Equipment references](./data/equipment) |
-| Match countries, subdivisions and estimated distances | [Geographic references](./data/country) |
+| Model equipment power and manufacturing impacts | [Equipment references](./data/equipment/README.md) |
+| Match countries, subdivisions and estimated distances | [Geographic references](./data/country/README.md) |
 
 ## Highlights
 
@@ -36,9 +36,7 @@ Regions, VMs, CPUs, accelerators and modeled hosts for AWS, Azure, GCP, Oracle, 
 
 **Sources:** official catalogs from [AWS](https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html), [Azure](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview), [GCP](https://docs.cloud.google.com/compute/docs/machine-resource), [Oracle](https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm), [OVHcloud](https://www.ovhcloud.com/en/public-cloud/prices/) and [Scaleway](https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/), together with manufacturer specifications.
 
-Region indicators use provider environmental disclosures, including [AWS](https://sustainability.aboutamazon.com/aws-wue-pue.csv), [Microsoft](https://datacenters.microsoft.com/sustainability/efficiency/), [Google](https://cloud.google.com/sustainability/region-carbon), [Oracle](https://www.oracle.com/a/ocom/docs/corporate/citizenship/oracle-corp-citizenship-report-3941904.pdf), [OVHcloud](https://www.ovhcloud.com/sites/default/files/external_files/kpis_fy25.pdf) and [Scaleway](https://www.scaleway.com/en/docs/environmental-footprint/additional-content/calculation-values-reference/).
-
-Read the [cloud guide](./data/cloud/README.md) for units, allocation and assumptions. Hosts are calculation profiles, not a verified server inventory. Regional indicators have different reporting boundaries; zero can be a dataset convention rather than a measured absence of impact.
+The [cloud guide](./data/cloud/README.md) documents environmental disclosures, capacity units, host allocation and provider-specific assumptions.
 
 ### Electricity Mix And Impact Factors
 
@@ -46,7 +44,7 @@ Monthly and yearly data at world, continent, country and subdivision levels, wit
 
 **Sources:** [Ember](https://ember-energy.org/data/yearly-electricity-data/), [UNECE life-cycle assessments](https://unece.org/sed/documents/2021/10/reports/life-cycle-assessment-electricity-generation-options) and [academic literature](https://www.sciencedirect.com/science/article/pii/S0196890422008159#b0530).
 
-Historical territories absent from current source exports retain their previous reference series, with later values carried forward. These are not new observations; see [electricity provenance](./data/electricity-provenance.json). A renewable-only scenario with no eligible generation is unavailable, not zero-impact electricity.
+Read the [mix guide](./data/mix/README.md) for scenarios and historical references, and the [factor guide](./data/factor/README.md) for per-kWh calculations.
 
 ### Facility And Transport
 
@@ -56,7 +54,7 @@ Historical territories absent from current source exports retain their previous 
 
 ### Equipment Reference Data
 
-[Equipment references](./data/equipment) support simplified power and manufacturing-impact calculations. [Geographic references](./data/country) support location matching and approximate distance calculations.
+[Equipment references](./data/equipment/README.md) support simplified power and manufacturing-impact calculations. [Geographic references](./data/country/README.md) support location matching and approximate distance calculations.
 
 **Sources:** Digital4Better modeling inputs, life-cycle assessment literature and [ISO country/subdivision conventions](https://www.iso.org/iso-3166-country-codes.html). Distances and equipment factors are reference estimates, not measurements of a specific deployment. See the [usage reference](./llms-full.txt) for their interpretation.
 
@@ -72,7 +70,7 @@ Choose JSON for structured data or CSV for spreadsheets and BI tools. Download f
 | Estimates and sources | Public specifications, observed configurations and calculation hypotheses have different evidential strength. |
 | Availability | Historical cloud offers and AI models remain listed after retirement. |
 
-The [complete reference](./llms-full.txt) documents schemas, all environmental indicators and units, examples and limitations. Source observation dates differ from file modification and package release dates.
+Each dataset guide documents its files, columns, units, sources and limitations. The [usage reference](./llms-full.txt) explains cross-dataset selection and provides examples. Source observation dates differ from file modification and package release dates.
 
 ## Documentation for AI Assistants
 
