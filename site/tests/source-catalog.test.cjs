@@ -27,31 +27,39 @@ test('curated registry has a strict schema, stable identities, typed roles and n
       unique(s[k]);
       for (const v of s[k]) assert(sourceSchema.properties[k].items.enum.includes(v));
     }
-    assert(s.name && s.publisher && s.attribution && Array.isArray(s.limitations));
+    assert(s.publisher);
+    for (const k of ['name', 'attribution'])
+      if (s[k] !== undefined) assert(typeof s[k] === 'string' && s[k].trim());
+    if (s.limitations !== undefined) assert(Array.isArray(s.limitations));
+    if (['catalog', 'discovery'].includes(s.role)) assert(s.name && s.collection);
     const c = s.collection;
-    for (const k of sourceSchema.properties.collection.required) assert(Object.hasOwn(c, k));
-    for (const k of Object.keys(c))
-      assert(Object.hasOwn(sourceSchema.properties.collection.properties, k));
-    assert(['http', 'browser'].includes(c.method));
-    assert(['none', 'link', 'json', 'unreviewed'].includes(c.pagination));
-    for (const k of ['follow', 'expect', 'discovery']) {
-      assert(Array.isArray(c[k]));
-      unique(c[k]);
+    if (c) {
+      for (const k of sourceSchema.properties.collection.required) assert(Object.hasOwn(c, k));
+      for (const k of Object.keys(c))
+        assert(Object.hasOwn(sourceSchema.properties.collection.properties, k));
+      assert(['http', 'browser'].includes(c.method));
+      assert(['none', 'link', 'json', 'unreviewed'].includes(c.pagination));
+      for (const k of ['follow', 'expect', 'discovery']) {
+        assert(Array.isArray(c[k]));
+        unique(c[k]);
+      }
+      if (['link', 'json'].includes(c.pagination)) assert(c.next);
+      else assert(!c.next);
+      if (c.pagination === 'link') assert.equal(c.method, 'browser');
+      if (c.pagination === 'json') {
+        assert.equal(c.method, 'http');
+        assert.equal(s.format, 'json');
+      }
+      for (const u of c.follow) assert(['http:', 'https:'].includes(new URL(u).protocol));
     }
-    if (['link', 'json'].includes(c.pagination)) assert(c.next);
-    else assert(!c.next);
-    if (c.pagination === 'link') assert.equal(c.method, 'browser');
-    if (c.pagination === 'json') {
-      assert.equal(c.method, 'http');
-      assert.equal(s.format, 'json');
-    }
-    for (const u of c.follow) assert(['http:', 'https:'].includes(new URL(u).protocol));
     if (mandatory(s)) {
-      assert(s.review?.notes);
+      assert(s.review?.date);
+      if (s.review.notes !== undefined) assert(s.review.notes.trim());
       assert.match(s.review.date, /^\d{4}-\d{2}-\d{2}$/);
       assert.notEqual(c.pagination, 'unreviewed');
       if (s.format !== 'pdf') assert(c.expect.length);
-    } else if (['reference', 'methodology'].includes(s.role)) assert.equal(c.discovery.length, 0);
+    } else if (['reference', 'methodology'].includes(s.role))
+      assert.equal(c?.discovery.length ?? 0, 0);
     if (s.status === 'deprecated') assert(s.reason);
     const seen = new Set([s.id]);
     let next = s.replacement;

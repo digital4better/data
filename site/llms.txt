@@ -50,4 +50,4 @@ This index describes the deployed website. Downloads require no JavaScript or ac
 - [Building energy factors](https://digital4better.github.io/data/facility/factors.json): Electricity and fuel impacts per kWh; [source notes](https://digital4better.github.io/data/facility/README.md).
 - [Transport factors](https://digital4better.github.io/data/transport/factors.json): Employee travel impacts per passenger-kilometre or vehicle-kilometre; [source notes](https://digital4better.github.io/data/transport/README.md). These additional collections have no editorial pages on the site.
 
-- [AI and cloud source registry](https://digital4better.github.io/data/sources/catalog.json): versioned sources and coverage contract; mandatory catalogs/discovery are distinct from references checked on use. See the full reference for schema and lifecycle rules.
+- [AI and cloud source registry](https://digital4better.github.io/data/sources/catalog.json): compact source metadata and coverage contract; shared rules live in the registry guide, with explicit collection contracts for catalogs/discovery. See the full reference for schema and lifecycle rules.

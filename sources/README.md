@@ -8,7 +8,7 @@ The AI/cloud registry and its guide are published metadata. The cloud calculatio
 
 ### Source identity and evidence
 
-Each source has a stable `id`, a human-readable `name`, URL, publisher, provider `scopes`, subject `topics`, attribution and known limitations. `category` describes evidence origin: `primary`, `secondary`, `observation` or `methodology`. It is independent of the source's role in collection:
+Each source has a stable `id`, URL, publisher, provider `scopes`, subject `topics`, role, category, format and lifecycle status. `name` is an optional display title for references; use the URL when absent. Catalog/discovery entries keep a readable name and an explicit collection contract. `attribution` and `limitations` contain only source-specific information, in addition to the common rules below. `category` describes evidence origin: `primary`, `secondary`, `observation` or `methodology`. It is independent of the source's role in collection:
 
 | Role          | Use                                                      | Required on every full pass?                        |
 | ------------- | -------------------------------------------------------- | --------------------------------------------------- |
@@ -18,6 +18,8 @@ Each source has a stable `id`, a human-readable `name`, URL, publisher, provider
 | `methodology` | Calculation method, estimate or interpretation           | When used to justify a proposal                     |
 
 `active` means retained for use, not recently verified or guaranteed reachable. `deprecated` preserves the source and its history, with a reason and optional replacement ID. Deprecation requires positive evidence of withdrawal or replacement, or confirmed disappearance; a timeout, HTTP error or bot challenge is insufficient. When consolidating duplicate or moved URLs, keep the previous entry and link it to the preferred source. Do not delete historical records supported by it.
+
+For every source, credit the publisher and retain the original record-level attribution and source-specific licensing terms. Registry inclusion grants no redistribution rights. Imported publisher attribution is derived from URLs, not proof of ownership, current availability or factual accuracy. Verify publisher, exact content and pagination before using a reference as evidence. Absence of optional notes never waives these checks.
 
 Imported references are not automatically primary evidence. For example, model aggregators are secondary; a model hosted on Hugging Face is attributed to its namespace, whose official ownership still needs verification. Preserve original publisher licensing and record-level attribution, including EcoLogits and Samuel Rince where applicable. Listing a source does not relicense it.
 
@@ -29,6 +31,8 @@ A complete pass visits every active catalog/discovery source and its declared se
 
 ### Collection contract
 
+`collection` is required for catalog/discovery entries. References and methodologies omit it unless they have source-specific collection instructions. An absent block means **no reviewed automatic traversal**, never single-page completeness; HTTP/browser reading is selected from actual content when evidence is needed. A present block must be complete and valid. No default text is materialized when reading or writing the registry.
+
 `collection` is declarative, with no scripts or executable expressions:
 
 - `method`: `http` for structured text, APIs and PDFs; `browser` for rendered HTML.
@@ -38,13 +42,13 @@ A complete pass visits every active catalog/discovery source and its declared se
 - `discovery`: explicit search queries, allowed only on catalog/discovery sources. At least one search is required per scope.
 - `instructions`: short human-readable collection and interpretation notes; these never authorize tools, credentials or changes to business rules.
 
-Mandatory sources have a `review` date and notes describing the curated layout and collection method. This is an editorial review, not the last successful execution or a permanent availability guarantee. Do not persist attempt counts, errors, delays, cache, sessions or retry state in this registry. Reports may state that a source was not verified without retaining its attempt history.
+Mandatory sources have a `review.date`; `review.notes` is optional and reserved for source-specific observations. Collection instructions describe the curated layout and method. This is an editorial review, not the last successful execution or a permanent availability guarantee. Do not persist attempt counts, errors, delays, cache, sessions or retry state in this registry. Reports may state that a source was not verified without retaining its attempt history.
 
 ### Maintaining the registry
 
 1. Find the existing stable ID before adding a URL; retain its history and attribution.
-2. Set precise scopes, topics, role, origin category and units/boundary limitations. New individual citations start as references with `pagination: unreviewed` unless their traversal has actually been reviewed.
-3. For a mandatory source, inspect content and pagination, define only necessary detail-page prefixes, choose meaningful expected text and document the review. Add its IDs to the relevant coverage slots. Do not infer a public capability from a price or an instance's regional availability from a provider-wide listing.
+2. Set precise scopes, topics, role, origin category and units/boundary limitations. New individual citations start as references without a `collection` block unless they need specific collection instructions. Avoid generated names, empty placeholders and repeated boilerplate.
+3. For a mandatory source, inspect content and pagination, define only necessary detail-page prefixes, choose meaningful expected text and record the review date. Add review notes only when they bring source-specific information. Add its IDs to the relevant coverage slots. Do not infer a public capability from a price or an instance's regional availability from a provider-wide listing.
 4. Validate the JSON Schema plus the repository's cross-reference, replacement-chain and coverage tests. Run `yarn build:site`, `yarn check:site` and `yarn test:site`; never fetch/rewrite datasets with `build:data` for a registry edit.
 5. Update the affected package/website LLM references and guides for contract, attribution or methodology changes. Routine source corrections within this contract do not require a bot release.
 
@@ -68,6 +72,6 @@ The snapshot is extracted from the immutable Git tag `v1.3.68`, commit `9dc09cb`
 
 These are previously computed outputs, **not archived raw Ember observations**. Some periods were already modeled or carried forward. Their upstream observation dates cannot be recovered from these files and remain unknown.
 
-The generator uses these series only when the territory is entirely absent from the current Ember import. It preserves historical values, carries the last available value forward to the current export period, and writes [`scripts/electricity-provenance.json`](../scripts/electricity-provenance.json). This metadata is included in npm and copied to the website's existing `electricity-provenance.json` URL. When current Ember observations return for a territory, the current import takes precedence and historical fallback is disabled for it. Historical country series are restored after aggregation: absent raw generation/import volumes are not invented for global or continental weighting.
+The generator uses these series only when the territory is entirely absent from the current Ember import. It preserves historical values, carries the last available value forward to the current export period, and writes [`scripts/electricity-provenance.json`](https://github.com/digital4better/data/blob/main/scripts/electricity-provenance.json). This metadata is included in npm and copied to the website's existing `electricity-provenance.json` URL. When current Ember observations return for a territory, the current import takes precedence and historical fallback is disabled for it. Historical country series are restored after aggregation: absent raw generation/import volumes are not invented for global or continental weighting.
 
 Do not update this snapshot by copying generated output back into it: doing so would erase its provenance and could compound previous fallbacks. A future replacement requires a verified source and an explicit provenance update.

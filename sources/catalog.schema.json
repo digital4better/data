@@ -52,7 +52,6 @@
         "additionalProperties": false,
         "required": [
           "id",
-          "name",
           "url",
           "publisher",
           "scopes",
@@ -60,9 +59,6 @@
           "role",
           "category",
           "format",
-          "collection",
-          "attribution",
-          "limitations",
           "status"
         ],
         "properties": {
@@ -72,7 +68,8 @@
           },
           "name": {
             "type": "string",
-            "minLength": 1
+            "minLength": 1,
+            "description": "Optional display title; readers can use the URL when absent. Required for catalog/discovery entries."
           },
           "url": {
             "type": "string",
@@ -205,11 +202,13 @@
                   }
                 }
               }
-            ]
+            ],
+            "description": "Explicit collection contract. Optional for reference/methodology sources; absence means no reviewed automatic traversal."
           },
           "attribution": {
             "type": "string",
-            "minLength": 1
+            "minLength": 1,
+            "description": "Source-specific attribution in addition to the common publisher-credit and original-license rules in README.md."
           },
           "limitations": {
             "type": "array",
@@ -217,7 +216,8 @@
               "type": "string",
               "minLength": 1
             },
-            "uniqueItems": true
+            "uniqueItems": true,
+            "description": "Source-specific limitations. Absence never asserts verified ownership, availability or factual accuracy."
           },
           "status": {
             "enum": ["active", "deprecated"]
@@ -233,7 +233,7 @@
           "review": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["date", "notes"],
+            "required": ["date"],
             "properties": {
               "date": {
                 "type": "string",
@@ -241,7 +241,8 @@
               },
               "notes": {
                 "type": "string",
-                "minLength": 1
+                "minLength": 1,
+                "description": "Optional source-specific curation notes; the review date is not an availability guarantee."
               }
             }
           }
@@ -297,6 +298,46 @@
                   "properties": {
                     "discovery": {
                       "maxItems": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "role": {
+                  "enum": ["catalog", "discovery"]
+                }
+              }
+            },
+            "then": {
+              "required": ["name", "collection"]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "status": {
+                  "const": "active"
+                },
+                "role": {
+                  "enum": ["catalog", "discovery"]
+                },
+                "format": {
+                  "not": {
+                    "const": "pdf"
+                  }
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "collection": {
+                  "properties": {
+                    "expect": {
+                      "minItems": 1
                     }
                   }
                 }
