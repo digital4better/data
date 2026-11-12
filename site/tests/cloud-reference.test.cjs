@@ -58,30 +58,53 @@ test("approved cloud RAM corrections match the documented specifications", () =>
   assert.equal(lookup("ovhcloud-vms", "a10-180").memory, 170);
 });
 
-test("reviewed hardware corrections retain their official sources and corrected values", () => {
-  const { corrections } = require("../../sources/cloud/hardware-corrections.json");
-  const seen = new Set();
-  const cpus = new Set(json("cpus.json").map((r) => r.id));
-  for (const correction of corrections) {
-    const key = `${correction.provider}/${correction.id}`;
-    assert.ok(!seen.has(key), key);
-    seen.add(key);
-    assert.ok(correction.sources.length > 0, key);
-    for (const source of correction.sources) {
-      assert.ok(["docs.aws.amazon.com", "learn.microsoft.com", "docs.cloud.google.com"].includes(new URL(source).hostname), key);
-    }
-    const record = lookup(`${correction.provider}-vms`, correction.id);
-    assert.ok(record, key);
-    assert.deepEqual(Object.keys(correction.before), Object.keys(correction.after), key);
-    assert.ok(!("embodied" in correction.after), key);
-    for (const [field, value] of Object.entries(correction.after)) {
-      assert.deepEqual(record[field], value, `${key}/${field}`);
-      assert.notDeepEqual(correction.before[field], value, `${key}/${field}`);
-    }
-    for (const cpu of record.cpu || []) assert.ok(cpus.has(cpu), `${key}/${cpu}`);
+test("sourced hardware specifications do not regress", () => {
+  const cases = [
+    // https://docs.aws.amazon.com/ec2/latest/instancetypes/ac.html
+    // 4 B200 GPUs; 3 x 7500 GB local NVMe. The size suffix is not a GPU count.
+    ["aws", "p6e-gb200-36xlarge", { accelerators: 4, ssd: 22500 }],
+    // https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/m-series
+    ["azure", "m16ms", { memory: 437.5 }],
+    ["azure", "m8ms", { memory: 218.75 }],
+    // https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mdsv3-hm-series
+    ["azure", "m416ds6-v3", { memory: 5696 }],
+    ["azure", "m832ds12-v3", { memory: 11400 }],
+    ["azure", "m832ids16-v3", { memory: 15200 }],
+    // https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/msv3-hm-series
+    ["azure", "m416s6-v3", { memory: 5696 }],
+    // https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ncast4v3-series
+    ["azure", "nc4as-t4-v3", { ssd: 176, cpu: ["amd-epyc-7v12"] }],
+    ["azure", "nc8as-t4-v3", { ssd: 352, cpu: ["amd-epyc-7v12"] }],
+    ["azure", "nc16as-t4-v3", { ssd: 352, cpu: ["amd-epyc-7v12"] }],
+    ["azure", "nc64as-t4-v3", { memory: 440, ssd: 2816, cpu: ["amd-epyc-7v12"] }],
+    // https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ndma100v4-series
+    ["azure", "nd96amsr-a100-v4", { memory: 1900, ssd: 6400 }],
+    // https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ndmi300xv5-series
+    // Storage left unchanged: inconsistent GB/GiB/TiB labels across the official page require separate review.
+    ["azure", "nd96isr-mi300x-v5", { memory: 1850 }],
+    // https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/fpga-accelerated/np-series
+    ["azure", "np10s", { memory: 168, ssd: 736 }],
+    ["azure", "np20s", { memory: 336, ssd: 1474 }],
+    ["azure", "np40s", { memory: 672, ssd: 2948 }],
+    // https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nv-series
+    // Counts use physical dual-GPU 16 GB M60 boards; fractional VM allocations are retained.
+    ["azure", "nv6", { accelerators: 0.5 }],
+    ["azure", "nv12", { accelerators: 1 }],
+    ["azure", "nv24", { accelerators: 2 }],
+    // https://docs.cloud.google.com/compute/docs/cpu-platforms?hl=en
+    ["gcp", "x4-1440-24t-metal", { cpu: ["intel-xeon-8490h"] }],
+    ["gcp", "x4-1920-32t-metal", { cpu: ["intel-xeon-8490h"] }],
+    ["gcp", "x4-480-6t-metal", { cpu: ["intel-xeon-8490h"] }],
+    ["gcp", "x4-480-8t-metal", { cpu: ["intel-xeon-8490h"] }],
+    ["gcp", "x4-960-12t-metal", { cpu: ["intel-xeon-8490h"] }],
+    ["gcp", "x4-960-16t-metal", { cpu: ["intel-xeon-8490h"] }],
+  ];
+  for (const [provider, id, expected] of cases) {
+    const record = lookup(`${provider}-vms`, id);
+    assert.ok(record, `${provider}/${id}`);
+    for (const [field, value] of Object.entries(expected))
+      assert.deepEqual(record[field], value, `${provider}/${id}/${field}`);
   }
-  assert.equal(lookup("aws-vms", "p6e-gb200-36xlarge").accelerators, 4);
-  assert.equal(lookup("azure-vms", "nv6").accelerators, 0.5);
 });
 
 test("cloud exports preserve empty cells, fractional GPUs and every JSON row", () => {
