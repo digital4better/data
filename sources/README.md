@@ -60,7 +60,12 @@ The bootstrap preserves existing reference IDs, qualifies official catalog entry
 | --------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [cloud/host-inputs.json](https://github.com/digital4better/data/blob/main/sources/cloud/host-inputs.json)                   | Active host profiles, placement constraints and legacy impact values used by the [calculator](https://github.com/digital4better/data/blob/main/scripts/cloud-hosts.ts). |
 | [cloud/host-evidence.json](https://github.com/digital4better/data/blob/main/sources/cloud/host-evidence.json)               | Source URLs, snapshot dates, hashes and hardware evidence behind the profiles.                                                                                          |
-| [cloud/hardware-corrections.json](https://github.com/digital4better/data/blob/main/sources/cloud/hardware-corrections.json) | Reviewed hardware corrections and their official sources, retained as regression-test evidence.                                                                         |
+
+`host-inputs.json` is an active calculator input: profiles, VM-to-host assignments, placement limits and pinned historical impacts are required to reproduce the published outputs. Keep it with the calculator and datasets at the same commit.
+
+`host-evidence.json` is provenance, not an execution cache or a second calculator input. It retains source dates/hashes and extracted hardware observations behind the modeled profiles, including historical spreadsheet cells and dedicated-host capacities. Source URLs alone cannot recover that evidence after an upstream change; keep the observations and their attribution. These files do not contain retry logs or browser state.
+
+The one-time hardware correction journal was retired. Expected hardware values, official URLs and unit cautions remain in the [regression tests](https://github.com/digital4better/data/blob/main/site/tests/cloud-reference.test.cjs); before/after changes remain in Git history.
 
 Check host catalogs without fetching external data using `yarn ts-node scripts/cloud-hosts.ts --check`. Use `--write` after reviewing input changes. One-time migration tools and exploratory reports remain available in Git history, not in the active tree.
 

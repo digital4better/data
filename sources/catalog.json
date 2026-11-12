@@ -7650,19 +7650,15 @@
       "limitations": [
         "Repository maintenance input; not part of the installed data package."
       ],
-      "status": "active",
+      "status": "deprecated",
       "name": "Digital4Better sources/cloud/hardware-corrections.json",
       "topics": [
         "methodology"
       ],
       "role": "methodology",
-      "collection": {
-        "method": "browser",
-        "pagination": "none",
-        "follow": [],
-        "expect": [],
-        "discovery": [],
-        "instructions": "Use the file from the same Git snapshot as the data, rather than fetching GitHub HTML. This is reproducibility evidence, not an upstream discovery catalog."
+      "reason": "One-time correction journal retired; expected values and official references are retained in site/tests/cloud-reference.test.cjs. The before/after log remains in Git history.",
+      "review": {
+        "date": "2026-11-12"
       }
     },
     {
@@ -15313,6 +15309,118 @@
       "topics": [
         "models"
       ]
+    },
+    {
+      "id": "docs.cloud.google.com-ae39e4ec031a",
+      "url": "https://docs.cloud.google.com/compute/docs/cpu-platforms?hl=en",
+      "publisher": "Google",
+      "scopes": [
+        "gcp"
+      ],
+      "topics": [
+        "instances",
+        "hardware"
+      ],
+      "role": "reference",
+      "category": "primary",
+      "format": "html",
+      "status": "active"
+    },
+    {
+      "id": "learn.microsoft.com-a6063acad165",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/fpga-accelerated/np-series",
+      "publisher": "Microsoft",
+      "scopes": [
+        "azure"
+      ],
+      "topics": [
+        "instances",
+        "hardware"
+      ],
+      "role": "reference",
+      "category": "primary",
+      "format": "html",
+      "status": "active"
+    },
+    {
+      "id": "learn.microsoft.com-90fc8667c860",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ncast4v3-series",
+      "publisher": "Microsoft",
+      "scopes": [
+        "azure"
+      ],
+      "topics": [
+        "instances",
+        "hardware"
+      ],
+      "role": "reference",
+      "category": "primary",
+      "format": "html",
+      "status": "active"
+    },
+    {
+      "id": "learn.microsoft.com-351b3d994382",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ndma100v4-series",
+      "publisher": "Microsoft",
+      "scopes": [
+        "azure"
+      ],
+      "topics": [
+        "instances",
+        "hardware"
+      ],
+      "role": "reference",
+      "category": "primary",
+      "format": "html",
+      "status": "active"
+    },
+    {
+      "id": "learn.microsoft.com-1f6ca28011e2",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ndmi300xv5-series",
+      "publisher": "Microsoft",
+      "scopes": [
+        "azure"
+      ],
+      "topics": [
+        "instances",
+        "hardware"
+      ],
+      "role": "reference",
+      "category": "primary",
+      "format": "html",
+      "status": "active"
+    },
+    {
+      "id": "learn.microsoft.com-be53f3399c17",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nv-series",
+      "publisher": "Microsoft",
+      "scopes": [
+        "azure"
+      ],
+      "topics": [
+        "instances",
+        "hardware"
+      ],
+      "role": "reference",
+      "category": "primary",
+      "format": "html",
+      "status": "active"
+    },
+    {
+      "id": "learn.microsoft.com-665fbd61ac6d",
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/m-series",
+      "publisher": "Microsoft",
+      "scopes": [
+        "azure"
+      ],
+      "topics": [
+        "instances",
+        "hardware"
+      ],
+      "role": "reference",
+      "category": "primary",
+      "format": "html",
+      "status": "active"
     }
   ]
 }
