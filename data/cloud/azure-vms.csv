@@ -965,7 +965,7 @@ nd6s,ndv1,nd6s,accelerated,6,112,736,0,intel-xeon-e52690v4,1,nvidia-tesla-p40,2.
 nd96amsr-a100-v4,ndma100v4,nd96amsr a100 v4,accelerated,96,1900,6400,0,amd-epyc-7v12,8,nvidia-tesla-a10080,4.2705,5.6230124,azure-nd96amsr-a100-v4-006a402020,1
 nd96asr-a100-v4,ndasra100v4,nd96asr a100 v4,accelerated,96,900,6500,0,amd-epyc-7v12,8,nvidia-tesla-a10040,17.7706,3.7923044,azure-nd96asr-a100-v4-b8f7aeeed4,1
 nd96isr-h100-v5,ndh100v5,nd96isr h100 v5,accelerated,96,1900,28000,0,intel-xeon-8480c,8,nvidia-tesla-h10080,6.5256,5.6230124,azure-nd96isr-h100-v5-e83a971d54,1
-nd96isr-h200-v5,ndh200v5,nd96isr h200 v5,accelerated,96,1900,28000,0,intel-xeon-8480c,8,nvidia-tesla-h200,6.8086,6.2998196,azure-nd96isr-h200-v5-4e89fdb4ce,1
+nd96isr-h200-v5,ndh200v5,nd96isr h200 v5,accelerated,96,1850,28000,0,intel-xeon-8480c,8,nvidia-tesla-h200,6.8086,6.2998196,azure-nd96isr-h200-v5-4e89fdb4ce,1
 nd96isr-mi300x-v5,ndmi300xv5,nd96isr mi300x v5,accelerated,96,1850,28000,0,intel-xeon-8480c,8,amd-radeon-mi300x,6.8086,6.7963298,azure-nd96isr-mi300x-v5-6c91dcc080,1
 ng16ads-v620-v1,ngadsv620,ng16ads v620 v1,accelerated,16,32,512,0,amd-epyc-7763,0.5,amd-radeon-v620,1.2999,0.7470472,azure-ng32adms-v620-v1-c26b22818e,2
 ng32adms-v620-v1,ngadsv620,ng32adms v620 v1,accelerated,32,176,1024,0,amd-epyc-7763,1,amd-radeon-v620,6.5256,1.4940944,azure-ng32adms-v620-v1-c26b22818e,1
@@ -1353,3 +1353,115 @@ m832ids-16-v3,mdsv3hm,m832ids 16 v3,memory,832,15200,,,intel-xeon-sapphire-rapid
 m896ixds-32-v3,mdsv3vhm,m896ixds 32 v3,memory,896,30400,,,intel-xeon-8490h,0,,48.0237488,48.0237488,azure-m896ixds-32-v3-2cf952954a,1
 m896ixds-24-v3,mdsv3vhm,m896ixds 24 v3,memory,896,23088,,,intel-xeon-8490h,0,,48.0237488,48.0237488,azure-m896ixds-32-v3-2cf952954a,1
 m1792ixds-32-v3,mdsv3vhm,m1792ixds 32 v3,memory,1792,30400,,,intel-xeon-8490h,0,,48.0237488,48.0237488,azure-m896ixds-32-v3-2cf952954a,1
+d1ps-v7,dpsv7,d1ps v7,general,1,4,0,0,azure-cobalt-200,0,,0.0131867375,0.0131867375,azure-dpsv7-family-proxy-14b7afd90c,128
+d2ps-v7,dpsv7,d2ps v7,general,2,8,0,0,azure-cobalt-200,0,,0.026373475,0.026373475,azure-dpsv7-family-proxy-14b7afd90c,64
+d4ps-v7,dpsv7,d4ps v7,general,4,16,0,0,azure-cobalt-200,0,,0.05274695,0.05274695,azure-dpsv7-family-proxy-14b7afd90c,32
+d8ps-v7,dpsv7,d8ps v7,general,8,32,0,0,azure-cobalt-200,0,,0.1054939,0.1054939,azure-dpsv7-family-proxy-14b7afd90c,16
+d16ps-v7,dpsv7,d16ps v7,general,16,64,0,0,azure-cobalt-200,0,,0.2109878,0.2109878,azure-dpsv7-family-proxy-14b7afd90c,8
+d32ps-v7,dpsv7,d32ps v7,general,32,128,0,0,azure-cobalt-200,0,,0.4219756,0.4219756,azure-dpsv7-family-proxy-14b7afd90c,4
+d48ps-v7,dpsv7,d48ps v7,general,48,192,0,0,azure-cobalt-200,0,,0.8439512,0.8439512,azure-dpsv7-family-proxy-14b7afd90c,2
+d64ps-v7,dpsv7,d64ps v7,general,64,256,0,0,azure-cobalt-200,0,,0.8439512,0.8439512,azure-dpsv7-family-proxy-14b7afd90c,2
+d96ps-v7,dpsv7,d96ps v7,general,96,384,0,0,azure-cobalt-200,0,,1.6879024,1.6879024,azure-dpsv7-family-proxy-14b7afd90c,1
+d128ps-v7,dpsv7,d128ps v7,general,128,512,0,0,azure-cobalt-200,0,,1.6879024,1.6879024,azure-dpsv7-family-proxy-14b7afd90c,1
+d1pds-v7,dpdsv7,d1pds v7,general,1,4,55,0,azure-cobalt-200,0,,0.0178742375,0.0178742375,azure-dpdsv7-family-proxy-2eb2ad9f4b,128
+d2pds-v7,dpdsv7,d2pds v7,general,2,8,110,0,azure-cobalt-200,0,,0.035748475,0.035748475,azure-dpdsv7-family-proxy-2eb2ad9f4b,64
+d4pds-v7,dpdsv7,d4pds v7,general,4,16,220,0,azure-cobalt-200,0,,0.07149695,0.07149695,azure-dpdsv7-family-proxy-2eb2ad9f4b,32
+d8pds-v7,dpdsv7,d8pds v7,general,8,32,440,0,azure-cobalt-200,0,,0.1429939,0.1429939,azure-dpdsv7-family-proxy-2eb2ad9f4b,16
+d16pds-v7,dpdsv7,d16pds v7,general,16,64,880,0,azure-cobalt-200,0,,0.2859878,0.2859878,azure-dpdsv7-family-proxy-2eb2ad9f4b,8
+d32pds-v7,dpdsv7,d32pds v7,general,32,128,1760,0,azure-cobalt-200,0,,0.5719756,0.5719756,azure-dpdsv7-family-proxy-2eb2ad9f4b,4
+d48pds-v7,dpdsv7,d48pds v7,general,48,192,2640,0,azure-cobalt-200,0,,1.1439512,1.1439512,azure-dpdsv7-family-proxy-2eb2ad9f4b,2
+d64pds-v7,dpdsv7,d64pds v7,general,64,256,3520,0,azure-cobalt-200,0,,1.1439512,1.1439512,azure-dpdsv7-family-proxy-2eb2ad9f4b,2
+d96pds-v7,dpdsv7,d96pds v7,general,96,384,5280,0,azure-cobalt-200,0,,2.2879024,2.2879024,azure-dpdsv7-family-proxy-2eb2ad9f4b,1
+d128pds-v7,dpdsv7,d128pds v7,general,128,512,7040,0,azure-cobalt-200,0,,2.2879024,2.2879024,azure-dpdsv7-family-proxy-2eb2ad9f4b,1
+d1pls-v7,dplsv7,d1pls v7,general,1,2,0,0,azure-cobalt-200,0,,0.0104129375,0.0104129375,azure-dplsv7-family-proxy-fba1f1454f,128
+d2pls-v7,dplsv7,d2pls v7,general,2,4,0,0,azure-cobalt-200,0,,0.020825875,0.020825875,azure-dplsv7-family-proxy-fba1f1454f,64
+d4pls-v7,dplsv7,d4pls v7,general,4,8,0,0,azure-cobalt-200,0,,0.04165175,0.04165175,azure-dplsv7-family-proxy-fba1f1454f,32
+d8pls-v7,dplsv7,d8pls v7,general,8,16,0,0,azure-cobalt-200,0,,0.0833035,0.0833035,azure-dplsv7-family-proxy-fba1f1454f,16
+d16pls-v7,dplsv7,d16pls v7,general,16,32,0,0,azure-cobalt-200,0,,0.166607,0.166607,azure-dplsv7-family-proxy-fba1f1454f,8
+d32pls-v7,dplsv7,d32pls v7,general,32,64,0,0,azure-cobalt-200,0,,0.333214,0.333214,azure-dplsv7-family-proxy-fba1f1454f,4
+d48pls-v7,dplsv7,d48pls v7,general,48,96,0,0,azure-cobalt-200,0,,0.666428,0.666428,azure-dplsv7-family-proxy-fba1f1454f,2
+d64pls-v7,dplsv7,d64pls v7,general,64,128,0,0,azure-cobalt-200,0,,0.666428,0.666428,azure-dplsv7-family-proxy-fba1f1454f,2
+d96pls-v7,dplsv7,d96pls v7,general,96,192,0,0,azure-cobalt-200,0,,1.332856,1.332856,azure-dplsv7-family-proxy-fba1f1454f,1
+d128pls-v7,dplsv7,d128pls v7,general,128,256,0,0,azure-cobalt-200,0,,1.332856,1.332856,azure-dplsv7-family-proxy-fba1f1454f,1
+d1plds-v7,dpldsv7,d1plds v7,general,1,2,55,0,azure-cobalt-200,0,,0.0151004375,0.0151004375,azure-dpldsv7-family-proxy-152869a6d1,128
+d2plds-v7,dpldsv7,d2plds v7,general,2,4,110,0,azure-cobalt-200,0,,0.030200875,0.030200875,azure-dpldsv7-family-proxy-152869a6d1,64
+d4plds-v7,dpldsv7,d4plds v7,general,4,8,220,0,azure-cobalt-200,0,,0.06040175,0.06040175,azure-dpldsv7-family-proxy-152869a6d1,32
+d8plds-v7,dpldsv7,d8plds v7,general,8,16,440,0,azure-cobalt-200,0,,0.1208035,0.1208035,azure-dpldsv7-family-proxy-152869a6d1,16
+d16plds-v7,dpldsv7,d16plds v7,general,16,32,880,0,azure-cobalt-200,0,,0.241607,0.241607,azure-dpldsv7-family-proxy-152869a6d1,8
+d32plds-v7,dpldsv7,d32plds v7,general,32,64,1760,0,azure-cobalt-200,0,,0.483214,0.483214,azure-dpldsv7-family-proxy-152869a6d1,4
+d48plds-v7,dpldsv7,d48plds v7,general,48,96,2640,0,azure-cobalt-200,0,,0.966428,0.966428,azure-dpldsv7-family-proxy-152869a6d1,2
+d64plds-v7,dpldsv7,d64plds v7,general,64,128,3520,0,azure-cobalt-200,0,,0.966428,0.966428,azure-dpldsv7-family-proxy-152869a6d1,2
+d96plds-v7,dpldsv7,d96plds v7,general,96,192,5280,0,azure-cobalt-200,0,,1.932856,1.932856,azure-dpldsv7-family-proxy-152869a6d1,1
+d128plds-v7,dpldsv7,d128plds v7,general,128,256,7040,0,azure-cobalt-200,0,,1.932856,1.932856,azure-dpldsv7-family-proxy-152869a6d1,1
+e1ps-v7,epsv7,e1ps v7,memory,1,8,0,0,azure-cobalt-200,0,,0.0187343375,0.0187343375,azure-epsv7-family-proxy-7ed489faf2,128
+e2ps-v7,epsv7,e2ps v7,memory,2,16,0,0,azure-cobalt-200,0,,0.037468675,0.037468675,azure-epsv7-family-proxy-7ed489faf2,64
+e4ps-v7,epsv7,e4ps v7,memory,4,32,0,0,azure-cobalt-200,0,,0.07493735,0.07493735,azure-epsv7-family-proxy-7ed489faf2,32
+e8ps-v7,epsv7,e8ps v7,memory,8,64,0,0,azure-cobalt-200,0,,0.1498747,0.1498747,azure-epsv7-family-proxy-7ed489faf2,16
+e16ps-v7,epsv7,e16ps v7,memory,16,128,0,0,azure-cobalt-200,0,,0.2997494,0.2997494,azure-epsv7-family-proxy-7ed489faf2,8
+e32ps-v7,epsv7,e32ps v7,memory,32,256,0,0,azure-cobalt-200,0,,0.5994988,0.5994988,azure-epsv7-family-proxy-7ed489faf2,4
+e48ps-v7,epsv7,e48ps v7,memory,48,384,0,0,azure-cobalt-200,0,,1.1989976,1.1989976,azure-epsv7-family-proxy-7ed489faf2,2
+e64ps-v7,epsv7,e64ps v7,memory,64,512,0,0,azure-cobalt-200,0,,1.1989976,1.1989976,azure-epsv7-family-proxy-7ed489faf2,2
+e96ps-v7,epsv7,e96ps v7,memory,96,768,0,0,azure-cobalt-200,0,,2.3979952,2.3979952,azure-epsv7-family-proxy-7ed489faf2,1
+e128ps-v7,epsv7,e128ps v7,memory,128,1024,0,0,azure-cobalt-200,0,,2.3979952,2.3979952,azure-epsv7-family-proxy-7ed489faf2,1
+e1pds-v7,epdsv7,e1pds v7,memory,1,8,55,0,azure-cobalt-200,0,,0.0234218375,0.0234218375,azure-epdsv7-family-proxy-2655f696f2,128
+e2pds-v7,epdsv7,e2pds v7,memory,2,16,110,0,azure-cobalt-200,0,,0.046843675,0.046843675,azure-epdsv7-family-proxy-2655f696f2,64
+e4pds-v7,epdsv7,e4pds v7,memory,4,32,220,0,azure-cobalt-200,0,,0.09368735,0.09368735,azure-epdsv7-family-proxy-2655f696f2,32
+e8pds-v7,epdsv7,e8pds v7,memory,8,64,440,0,azure-cobalt-200,0,,0.1873747,0.1873747,azure-epdsv7-family-proxy-2655f696f2,16
+e16pds-v7,epdsv7,e16pds v7,memory,16,128,880,0,azure-cobalt-200,0,,0.3747494,0.3747494,azure-epdsv7-family-proxy-2655f696f2,8
+e32pds-v7,epdsv7,e32pds v7,memory,32,256,1760,0,azure-cobalt-200,0,,0.7494988,0.7494988,azure-epdsv7-family-proxy-2655f696f2,4
+e48pds-v7,epdsv7,e48pds v7,memory,48,384,2640,0,azure-cobalt-200,0,,1.4989976,1.4989976,azure-epdsv7-family-proxy-2655f696f2,2
+e64pds-v7,epdsv7,e64pds v7,memory,64,512,3520,0,azure-cobalt-200,0,,1.4989976,1.4989976,azure-epdsv7-family-proxy-2655f696f2,2
+e96pds-v7,epdsv7,e96pds v7,memory,96,768,5280,0,azure-cobalt-200,0,,2.9979952,2.9979952,azure-epdsv7-family-proxy-2655f696f2,1
+e128pds-v7,epdsv7,e128pds v7,memory,128,1024,7040,0,azure-cobalt-200,0,,2.9979952,2.9979952,azure-epdsv7-family-proxy-2655f696f2,1
+m1ps-v4,mpsv4,m1ps v4,memory,1,16,0,0,azure-cobalt-200,0,,0.0337538,0.0337538,azure-mpsv4-family-proxy-071b855c07,86
+m2ps-v4,mpsv4,m2ps v4,memory,2,32,0,0,azure-cobalt-200,0,,0.0675076,0.0675076,azure-mpsv4-family-proxy-071b855c07,43
+m4ps-v4,mpsv4,m4ps v4,memory,4,64,0,0,azure-cobalt-200,0,,0.1382298476,0.1382298476,azure-mpsv4-family-proxy-071b855c07,21
+m8ps-v4,mpsv4,m8ps v4,memory,8,128,0,0,azure-cobalt-200,0,,0.29028268,0.29028268,azure-mpsv4-family-proxy-071b855c07,10
+m16ps-v4,mpsv4,m16ps v4,memory,16,256,0,0,azure-cobalt-200,0,,0.58056536,0.58056536,azure-mpsv4-family-proxy-071b855c07,5
+m32ps-v4,mpsv4,m32ps v4,memory,32,512,0,0,azure-cobalt-200,0,,1.4514134,1.4514134,azure-mpsv4-family-proxy-071b855c07,2
+m48ps-v4,mpsv4,m48ps v4,memory,48,768,0,0,azure-cobalt-200,0,,2.9028268,2.9028268,azure-mpsv4-family-proxy-071b855c07,1
+m64ps-v4,mpsv4,m64ps v4,memory,64,1024,0,0,azure-cobalt-200,0,,2.9028268,2.9028268,azure-mpsv4-family-proxy-071b855c07,1
+m84ps-v4,mpsv4,m84ps v4,memory,84,1344,0,0,azure-cobalt-200,0,,2.9028268,2.9028268,azure-mpsv4-family-proxy-071b855c07,1
+m128ps-v4,mpsv4,m128ps v4,memory,128,1388,0,0,azure-cobalt-200,0,,2.9028268,2.9028268,azure-mpsv4-family-proxy-071b855c07,1
+m1pds-v4,mpdsv4,m1pds v4,memory,1,16,55,0,azure-cobalt-200,0,,0.0407305442,0.0407305442,azure-mpdsv4-family-proxy-d59e347c6f,86
+m2pds-v4,mpdsv4,m2pds v4,memory,2,32,110,0,azure-cobalt-200,0,,0.0814610884,0.0814610884,azure-mpdsv4-family-proxy-d59e347c6f,43
+m4pds-v4,mpdsv4,m4pds v4,memory,4,64,220,0,azure-cobalt-200,0,,0.1668012762,0.1668012762,azure-mpdsv4-family-proxy-d59e347c6f,21
+m8pds-v4,mpdsv4,m8pds v4,memory,8,128,440,0,azure-cobalt-200,0,,0.35028268,0.35028268,azure-mpdsv4-family-proxy-d59e347c6f,10
+m16pds-v4,mpdsv4,m16pds v4,memory,16,256,880,0,azure-cobalt-200,0,,0.70056536,0.70056536,azure-mpdsv4-family-proxy-d59e347c6f,5
+m32pds-v4,mpdsv4,m32pds v4,memory,32,512,1760,0,azure-cobalt-200,0,,1.7514134,1.7514134,azure-mpdsv4-family-proxy-d59e347c6f,2
+m48pds-v4,mpdsv4,m48pds v4,memory,48,768,2640,0,azure-cobalt-200,0,,3.5028268,3.5028268,azure-mpdsv4-family-proxy-d59e347c6f,1
+m64pds-v4,mpdsv4,m64pds v4,memory,64,1024,3520,0,azure-cobalt-200,0,,3.5028268,3.5028268,azure-mpdsv4-family-proxy-d59e347c6f,1
+m84pds-v4,mpdsv4,m84pds v4,memory,84,1344,4400,0,azure-cobalt-200,0,,3.5028268,3.5028268,azure-mpdsv4-family-proxy-d59e347c6f,1
+m128pds-v4,mpdsv4,m128pds v4,memory,128,1388,7040,0,azure-cobalt-200,0,,3.5028268,3.5028268,azure-mpdsv4-family-proxy-d59e347c6f,1
+l1ps-v5,lpsv5,l1ps v5,storage,1,8,240,0,azure-cobalt-200,0,,0.0312291167,0.0312291167,azure-lpsv5-family-proxy-fa36fa5f7d,96
+l2ps-v5,lpsv5,l2ps v5,storage,2,16,480,0,azure-cobalt-200,0,,0.0624582333,0.0624582333,azure-lpsv5-family-proxy-fa36fa5f7d,48
+l4ps-v5,lpsv5,l4ps v5,storage,4,32,960,0,azure-cobalt-200,0,,0.1249164667,0.1249164667,azure-lpsv5-family-proxy-fa36fa5f7d,24
+l8ps-v5,lpsv5,l8ps v5,storage,8,64,1920,0,azure-cobalt-200,0,,0.2498329333,0.2498329333,azure-lpsv5-family-proxy-fa36fa5f7d,12
+l16ps-v5,lpsv5,l16ps v5,storage,16,128,3840,0,azure-cobalt-200,0,,0.4996658667,0.4996658667,azure-lpsv5-family-proxy-fa36fa5f7d,6
+l32ps-v5,lpsv5,l32ps v5,storage,32,256,7680,0,azure-cobalt-200,0,,0.9993317333,0.9993317333,azure-lpsv5-family-proxy-fa36fa5f7d,3
+l48ps-v5,lpsv5,l48ps v5,storage,48,384,11520,0,azure-cobalt-200,0,,1.4989976,1.4989976,azure-lpsv5-family-proxy-fa36fa5f7d,2
+l64ps-v5,lpsv5,l64ps v5,storage,64,512,15360,0,azure-cobalt-200,0,,2.9979952,2.9979952,azure-lpsv5-family-proxy-fa36fa5f7d,1
+l96ps-v5,lpsv5,l96ps v5,storage,96,768,23040,0,azure-cobalt-200,0,,2.9979952,2.9979952,azure-lpsv5-family-proxy-fa36fa5f7d,1
+l128ps-v5,lpsv5,l128ps v5,storage,128,1024,23040,0,azure-cobalt-200,0,,2.9979952,2.9979952,azure-lpsv5-family-proxy-fa36fa5f7d,1
+e192is-v6,esv6,e192is v6,memory,192,1832,0,0,intel-xeon-8573c,0,,3.5186104,3.5186104,azure-e192is-v6-dedicated-estimate,1
+fx12mds-v2,fxmdsv2,fx12mds v2,compute,12,252,880,0,intel-xeon-8573c,0,,0.6031017333,0.6031017333,azure-fx96mds-v2-dc6171f82b,6
+fx24mds-v2,fxmdsv2,fx24mds v2,compute,24,504,1320,0,intel-xeon-8573c,0,,1.2062034667,1.2062034667,azure-fx96mds-v2-dc6171f82b,3
+d192s-v6,dsv6,d192s v6,general,192,768,0,0,intel-xeon-8573c,0,,2.4979952,2.4979952,azure-dsv6-type1,1
+fx12ms-v2,fxmsv2,fx12ms v2,compute,12,252,0,0,intel-xeon-8573c,0,,0.5026586286,0.5026586286,azure-fx96ms-v2-b7f8a23756,7
+fx24ms-v2,fxmsv2,fx24ms v2,compute,24,504,0,0,intel-xeon-8573c,0,,1.1728701333,1.1728701333,azure-fx96ms-v2-b7f8a23756,3
+m416bs-v3,mbsv3,m416bs v3,memory,416,3800,0,0,,0,,6.2480296,6.2480296,azure-m416bs-v3-dedicated-estimate,1
+ec2eds-v6,ecedsv6,ec2eds v6,memory,2,16,110,0,intel-xeon-8573c,0,,1.1,1.1,azure-ec2eds-v6-dedicated-estimate,1
+ec4eds-v6,ecedsv6,ec4eds v6,memory,4,32,220,0,intel-xeon-8573c,0,,1.1221904,1.1221904,azure-ec4eds-v6-dedicated-estimate,1
+ec8eds-v6,ecedsv6,ec8eds v6,memory,8,64,440,0,intel-xeon-8573c,0,,1.1665712,1.1665712,azure-ec8eds-v6-dedicated-estimate,1
+ec16eds-v6,ecedsv6,ec16eds v6,memory,16,128,880,0,intel-xeon-8573c,0,,1.3553328,1.3553328,azure-ec16eds-v6-dedicated-estimate,1
+ec32eds-v6,ecedsv6,ec32eds v6,memory,32,256,1760,0,intel-xeon-8573c,0,,1.732856,1.732856,azure-ec32eds-v6-dedicated-estimate,1
+ec48eds-v6,ecedsv6,ec48eds v6,memory,48,384,2640,0,intel-xeon-8573c,0,,2.1103792,2.1103792,azure-ec48eds-v6-dedicated-estimate,1
+ec64eds-v6,ecedsv6,ec64eds v6,memory,64,512,3520,0,intel-xeon-8573c,0,,2.0879024,2.0879024,azure-ec64eds-v6-dedicated-estimate,1
+m416s-8-v2,mv2,m416s 8 v2,memory,416,7600,4096,0,,0,,17.5884696,17.5884696,azure-msmv2-type1-35d355397a,1
+ec2es-v6,ecesv6,ec2es v6,memory,2,16,0,0,intel-xeon-8573c,0,,1,1,azure-ec2es-v6-dedicated-estimate,1
+ec4es-v6,ecesv6,ec4es v6,memory,4,32,0,0,intel-xeon-8573c,0,,1.0221904,1.0221904,azure-ec4es-v6-dedicated-estimate,1
+ec8es-v6,ecesv6,ec8es v6,memory,8,64,0,0,intel-xeon-8573c,0,,1.0665712,1.0665712,azure-ec8es-v6-dedicated-estimate,1
+ec16es-v6,ecesv6,ec16es v6,memory,16,128,0,0,intel-xeon-8573c,0,,1.1553328,1.1553328,azure-ec16es-v6-dedicated-estimate,1
+ec32es-v6,ecesv6,ec32es v6,memory,32,256,0,0,intel-xeon-8573c,0,,1.332856,1.332856,azure-ec32es-v6-dedicated-estimate,1
+ec48es-v6,ecesv6,ec48es v6,memory,48,384,0,0,intel-xeon-8573c,0,,1.5103792,1.5103792,azure-ec48es-v6-dedicated-estimate,1
+ec64es-v6,ecesv6,ec64es v6,memory,64,512,0,0,intel-xeon-8573c,0,,1.6879024,1.6879024,azure-ec64es-v6-dedicated-estimate,1

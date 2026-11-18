@@ -3954,7 +3954,7 @@
     "name": "gemini-2.5-flash",
     "vendor": "google",
     "open": false,
-    "pattern": "gemini[\\s._-]?2(?:\\.5|[\\s._-]?5)[\\s._-]?flash(?![\\s._-]?lite)",
+    "pattern": "gemini[\\s._-]?2(?:\\.5|[\\s._-]?5)[\\s._-]?flash(?![\\s._-]?lite)(?![\\s._-]?(?:preview[\\s._-]?)?tts)",
     "type": "text",
     "architecture": "moe",
     "parameters": {
@@ -4031,13 +4031,18 @@
       "https://docs.google.com/spreadsheets/d/1XkPTkrGxpwWpIVIxpVvgRJuInSZsqbndTQbFGcHhdd0/edit#gid=803926269",
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
-      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash-image"
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash-image",
+      "https://aistudio.google.com/docs/models/gemini-2.5-flash-image.md"
     ],
     "estimated": [
       "parameters",
       "corpus",
       "architecture"
-    ]
+    ],
+    "context": 65536,
+    "fields": {
+      "context": "supported"
+    }
   },
   {
     "name": "gemini-2.5-flash-lite",
@@ -4167,7 +4172,7 @@
     "name": "gemini-2.5-pro",
     "vendor": "google",
     "open": false,
-    "pattern": "gemini[\\s._-]?2(?:\\.5|[\\s._-]?5)[\\s._-]?pro",
+    "pattern": "gemini[\\s._-]?2(?:\\.5|[\\s._-]?5)[\\s._-]?pro(?![\\s._-]?(?:preview[\\s._-]?)?tts)",
     "type": "text",
     "architecture": "moe",
     "parameters": {
@@ -4365,13 +4370,18 @@
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-pro-image",
-      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-pro-image-preview"
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-pro-image-preview",
+      "https://aistudio.google.com/docs/models/gemini-3-pro-image.md"
     ],
     "estimated": [
       "parameters",
       "corpus",
       "architecture"
-    ]
+    ],
+    "context": 65536,
+    "fields": {
+      "context": "supported"
+    }
   },
   {
     "name": "gemini-3.1-flash-image",
@@ -4405,12 +4415,17 @@
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-image",
-      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-pro-image-preview"
+      "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-pro-image-preview",
+      "https://aistudio.google.com/docs/models/gemini-3.1-flash-image.md"
     ],
     "estimated": [
       "parameters",
       "architecture"
-    ]
+    ],
+    "context": 131072,
+    "fields": {
+      "context": "supported"
+    }
   },
   {
     "name": "gemini-3.1-flash-lite",
@@ -4875,7 +4890,7 @@
     "name": "gemini-3.8-flash",
     "vendor": "google",
     "open": false,
-    "pattern": "gemini[\\s._-]?3(?:\\.8|[\\s._-]?8)[\\s._-]?flash",
+    "pattern": "gemini[\\s._-]?3(?:\\.8|[\\s._-]?8)[\\s._-]?flash(?![\\s._-]?(?:lite|tts|cyber))",
     "type": "text",
     "architecture": "moe",
     "parameters": {
@@ -4962,7 +4977,7 @@
       "active": 25,
       "total": 500
     },
-    "context": 128000,
+    "context": 131072,
     "input": [
       "text",
       "image",
@@ -4984,12 +4999,16 @@
     "sources": [
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-live",
       "https://lifearchitect.ai/models-table/",
-      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses",
+      "https://aistudio.google.com/docs/models/gemini-3.8-live.md"
     ],
     "estimated": [
       "parameters",
       "architecture"
-    ]
+    ],
+    "fields": {
+      "context": "supported"
+    }
   },
   {
     "name": "gemini-4-argon",
@@ -7952,7 +7971,7 @@
       "active": 150,
       "total": 5000
     },
-    "context": 1050000,
+    "context": 400000,
     "input": [
       "text",
       "image"
@@ -7969,12 +7988,16 @@
     },
     "sources": [
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-cyber.html",
-      "https://lifearchitect.ai/models-table/"
+      "https://lifearchitect.ai/models-table/",
+      "https://developers.openai.com/api/docs/models/gpt-5.6-cyber"
     ],
     "estimated": [
       "architecture",
       "parameters"
-    ]
+    ],
+    "fields": {
+      "context": "supported"
+    }
   },
   {
     "name": "gpt-5.6-luna",
@@ -11927,7 +11950,7 @@
     "name": "mistral-medium-3",
     "vendor": "mistral",
     "open": false,
-    "pattern": "(?:mistral[\\s._-]?medium[\\s._-]?3|(?:Mistral[\\s._-]?medium[\\s._-]?2505)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$)))",
+    "pattern": "(?:mistral[\\s._-]?medium[\\s._-]?3(?![a-z0-9]|[._-]\\d)|mistral[\\s._-]?medium[\\s._-]?2505(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$)))",
     "type": "text",
     "architecture": "dense",
     "parameters": {
@@ -14787,16 +14810,18 @@
       "active": 17,
       "total": 397
     },
-    "context": 250000,
+    "context": 262144,
     "corpus": 36000,
     "input": [
-      "text"
+      "text",
+      "image",
+      "video"
     ],
     "output": [
       "text"
     ],
-    "reasoning": false,
-    "tools": false,
+    "reasoning": true,
+    "tools": true,
     "providers": {
       "azure": [
         "FW-Qwen3.5-397B-A17B"
@@ -14815,11 +14840,19 @@
       "https://qwen.ai/blog?id=qwen3.5",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/",
-      "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement"
+      "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement",
+      "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/raw/main/README.md",
+      "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/raw/main/config.json"
     ],
     "estimated": [
       "corpus"
-    ]
+    ],
+    "fields": {
+      "context": "supported",
+      "input": "supported",
+      "reasoning": "supported",
+      "tools": "supported"
+    }
   },
   {
     "name": "qwen3.5-9b",
@@ -15843,7 +15876,7 @@
     "name": "tts-1",
     "vendor": "openai",
     "open": false,
-    "pattern": "(?:tts[\\s._-]?1|tts)(?![a-z0-9]|[._-]\\d{1,2}(?:[^\\d]|$))",
+    "pattern": "^(?:openai[\\s./_-])?tts(?:[\\s._-]?1)?$",
     "type": "speech",
     "architecture": "dense",
     "parameters": {

@@ -295,6 +295,42 @@
     "embodied": 4.5181808
   },
   {
+    "id": "gcp-a5x-highgpu-4g-metal-412152211b",
+    "provider": "gcp",
+    "name": "A5X bare-metal modeled envelope",
+    "basis": "baremetal-proxy",
+    "method": "d4b-host-v1",
+    "vcpus": 176,
+    "memory": 1440,
+    "sockets": 2,
+    "cpu": [
+      "nvidia-vera"
+    ],
+    "ssd_count": 4,
+    "ssd_capacity": 48000,
+    "hdd_count": 0,
+    "hdd_capacity": 0,
+    "accelerator": "nvidia-rubin",
+    "accelerators": 4,
+    "accelerator_memory": 288,
+    "embodied": 5.5838928,
+    "sources": [
+      "https://docs.cloud.google.com/compute/docs/accelerator-optimized-machines",
+      "https://docs.cloud.google.com/compute/docs/instances/bare-metal-instances",
+      "https://docs.nvidia.com/dccpu/vera-perf-tuning-guide/vera-cpu-and-superchip.html",
+      "https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/"
+    ],
+    "assumptions": [
+      "baremetal-proxy",
+      "installed-vram",
+      "interconnect-excluded",
+      "max-impact",
+      "published-sockets",
+      "remote-storage-excluded",
+      "storage-proxy"
+    ]
+  },
+  {
     "id": "gcp-c2-node-60-240-d279dee10c",
     "provider": "gcp",
     "name": "c2-node-60-240",

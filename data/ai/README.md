@@ -98,3 +98,9 @@ Credit is retained for EcoLogits contributors, including Samuel Rince, wherever 
 - Historical `corpus` values have not all been re-audited; check their original source and units.
 - Cloud coverage reflects inspected public catalogs, not every region, marketplace import or self-hosted checkpoint. A listed provider does not guarantee present access.
 - Missing fields remain unavailable. Unresolved historical estimates stay identified in the provenance table rather than being relabeled as independently verified.
+
+### Reviewed native limits and identity matching
+
+Qwen3.5-397B-A17B uses its publisher's native 262,144-token context, text/image/video inputs, thinking mode and tool-use examples; the larger optional extrapolated context and the hosted Qwen3.5-Plus offer are distinct. GPT-5.6-Cyber uses the documented 400,000-token context. Gemini image-model contexts describe the documented input-token limit, not image output size; Gemini 3.8 Live uses its explicit 131,072-token limit.
+
+Patterns distinguish text models from separate speech models and adjacent releases. They are matching aids, not proof of equivalence: some historical records still share provider identifiers. If an identifier resolves to several records, retain the ambiguity and obtain version-specific evidence before consolidating them.

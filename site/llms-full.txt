@@ -117,7 +117,7 @@ Join VM `host` to the same provider's host `id`; CPU and accelerator references 
 
 Allocation is `embodied_allocated = host.embodied / host_instances`. The count describes modeled homogeneous packing, not observed occupancy. Do not allocate the host fraction twice. Apply lifetime and usage-duration allocation separately. The [methodology](https://digital4better.github.io/data/cloud/README.md#methodology) owns the calculation formula and conservative residual-capacity policy.
 
-Profiles are calculation scenarios, not a physical-server inventory. Native GB/GiB conventions are retained; CPU alternatives are not socket counts. Hardware TDP is a thermal envelope, not measured workload power. Provider zeros and proxies need interpretation, including Google's CFE rather than renewable matching. Historical listings do not guarantee availability. Missing values remain unavailable.
+Profiles are calculation scenarios, not a physical-server inventory. Native GB/GiB conventions are retained; CPU alternatives are not socket counts. Hardware TDP is a thermal envelope, not measured workload power. Provider zeros and proxies need interpretation, including Google's CFE rather than renewable matching. Regional measurement years and aggregate fallbacks are documented in the cloud guide; Oracle annual renewable matching is not hourly CFE. Historical listings do not guarantee availability. Missing values remain unavailable.
 
 Maintenance inputs and evidence are in the repository's [sources/cloud](https://github.com/digital4better/data/tree/main/sources/cloud), outside published datasets; the [calculator](https://github.com/digital4better/data/blob/main/scripts/cloud-hosts.ts) is not shipped in npm.
 
@@ -130,7 +130,7 @@ Maintenance inputs and evidence are in the repository's [sources/cloud](https://
 - `parameters.active` and `parameters.total`: active and total parameters in billions. Distinguish these for mixture-of-experts architectures.
 - `context`: context capacity in tokens, not a guaranteed output length.
 - `input`, `output`: supported modalities.
-- `reasoning`, `tools`: recorded capabilities.
+- `reasoning`, `tools`: recorded capabilities. Patterns are matching aids; shared historical provider identifiers may remain ambiguous.
 - `providers`: hosting-provider identifiers and variants, not universal identifiers.
 - `estimated`: fields identified as estimates. Check it before presenting parameters or context as vendor disclosures.
 - `sources`: URLs for provenance and further verification.

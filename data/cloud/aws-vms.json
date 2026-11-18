@@ -8794,7 +8794,10 @@
     "embodied": 1.6442376,
     "embodied_allocated": 0.052944925,
     "host": "aws-m1-host-profile-7c78a0b7b4",
-    "host_instances": 32
+    "host_instances": 32,
+    "fields": {
+      "memory": "tentative"
+    }
   },
   {
     "id": "m1-small",
@@ -14851,7 +14854,10 @@
     "embodied": 1.6162132,
     "embodied_allocated": 0.101013325,
     "host": "aws-r3-host-profile-af5c13e389",
-    "host_instances": 16
+    "host_instances": 16,
+    "fields": {
+      "memory": "tentative"
+    }
   },
   {
     "id": "r3-xlarge",
@@ -20209,7 +20215,10 @@
     "embodied": 1.2775232,
     "embodied_allocated": 0.0399226,
     "host": "aws-t1-host-profile-1ceff5a018",
-    "host_instances": 32
+    "host_instances": 32,
+    "fields": {
+      "memory": "tentative"
+    }
   },
   {
     "id": "t2-2xlarge",

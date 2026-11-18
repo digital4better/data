@@ -505,9 +505,9 @@ m4n-ultramem-28,m4n,m4n-ultramem-28,memory,28,744,0,0,intel-xeon-8581c,0,,1.2248
 m4n-ultramem-56,m4n,m4n-ultramem-56,memory,56,1488,0,0,intel-xeon-8581c,0,,2.4497308,2.4497308,gcp-m4n-hypermem-2-e2fb508c37,4
 m4n-ultramem-112,m4n,m4n-ultramem-112,memory,112,2976,0,0,intel-xeon-8581c,0,,4.8994616,4.8994616,gcp-m4n-hypermem-2-e2fb508c37,2
 m4n-ultramem-224,m4n,m4n-ultramem-224,memory,224,5952,0,0,intel-xeon-8581c,0,,9.7989232,9.7989232,gcp-m4n-hypermem-2-e2fb508c37,1
-m4-hypermem-2,m4,m4-hypermem-2,memory,2,248,0,0,intel-xeon-8581c,0,,0.4337686667,0.4337686667,gcp-m4-node-224-2976-a14e4e09c2,12
-m4-hypermem-4,m4,m4-hypermem-4,memory,4,248,0,0,intel-xeon-8581c,0,,0.4337686667,0.4337686667,gcp-m4-node-224-2976-a14e4e09c2,12
-m4-hypermem-8,m4,m4-hypermem-8,memory,8,248,0,0,intel-xeon-8581c,0,,0.4337686667,0.4337686667,gcp-m4-node-224-2976-a14e4e09c2,12
+m4-hypermem-2,m4,m4-hypermem-2,memory,2,31,0,0,intel-xeon-8581c,0,,0.4337686667,0.0542210833,gcp-m4-node-224-2976-a14e4e09c2,96
+m4-hypermem-4,m4,m4-hypermem-4,memory,4,62,0,0,intel-xeon-8581c,0,,0.4337686667,0.1084421667,gcp-m4-node-224-2976-a14e4e09c2,48
+m4-hypermem-8,m4,m4-hypermem-8,memory,8,124,0,0,intel-xeon-8581c,0,,0.4337686667,0.2168843333,gcp-m4-node-224-2976-a14e4e09c2,24
 m4-hypermem-16,m4,m4-hypermem-16,memory,16,248,0,0,intel-xeon-8581c,0,,0.6999230857,0.6999230857,gcp-m4-hypermem-2-e2fb508c37,14
 m4-hypermem-32,m4,m4-hypermem-32,memory,32,496,0,0,intel-xeon-8581c,0,,1.3998461714,1.3998461714,gcp-m4-hypermem-2-e2fb508c37,7
 m4-hypermem-64,m4,m4-hypermem-64,memory,64,992,0,0,intel-xeon-8581c,0,,3.2663077333,3.2663077333,gcp-m4-hypermem-2-e2fb508c37,3
@@ -590,3 +590,4 @@ c4n-highmem-96-lssd,c4n,c4n-highmem-96-lssd,general,96,744,6000,0,intel-xeon-858
 g4-standard-6,g4,g4-standard-6,accelerated,6,22,0,0,amd-epyc-9b45,0.125,nvidia-rtx-pro-6000-blackwell-server,0.080665025,0.080665025,gcp-g4-node-384-1440-6d5cfe86bc,64
 g4-standard-12,g4,g4-standard-12,accelerated,12,45,,,amd-epyc-9b45,0.25,nvidia-rtx-pro-6000-blackwell-server,0.16133005,0.16133005,gcp-g4-node-384-1440-6d5cfe86bc,32
 g4-standard-24,g4,g4-standard-24,accelerated,24,90,,,amd-epyc-9b45,0.5,nvidia-rtx-pro-6000-blackwell-server,0.3226601,0.3226601,gcp-g4-node-384-1440-6d5cfe86bc,16
+a5x-highgpu-4g-metal,a5x,a5x-highgpu-4g-metal,accelerated,176,1440,48000,0,nvidia-vera,4,nvidia-rubin,5.5838928,5.5838928,gcp-a5x-highgpu-4g-metal-412152211b,1

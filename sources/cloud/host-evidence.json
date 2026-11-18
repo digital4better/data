@@ -790,6 +790,121 @@
       "url": "https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/",
       "snapshotTime": "2026-11-10T15:32:56.042Z",
       "sha256": "c4985e7cd70c7c61e74066f406d4a0317340b6d4e9a0209dd026997d659394f5"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecedsv6-series",
+      "snapshotTime": "2026-11-18T16:54:21.049474+00:00",
+      "sha256": "e6581b3d6370dd94db0d349acaf0662febfc74ce4948d2c4ec299acd9a314e46"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpdsv7-series",
+      "snapshotTime": "2026-11-18T16:53:43.798753+00:00",
+      "sha256": "2b66a9054c5e1e664264b727f63faf4a5ae5560b08582674a8d85154af726c19"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mbsv3-series",
+      "snapshotTime": "2026-11-18T16:53:41.709682+00:00",
+      "sha256": "fcf7ffa8ae6fef3493a22817e1885496c72966d89d0fffe1299c52e9d0e716d9"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lpsv5-series",
+      "snapshotTime": "2026-11-18T16:53:11.471133+00:00",
+      "sha256": "65cb222562b3d92a2554f6a298e7477d58fcd7a542b99f9f9a708b9889add91b"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epdsv7-series",
+      "snapshotTime": "2026-11-18T16:53:38.655012+00:00",
+      "sha256": "dba3945287eb0b064aa96a98d2c55a0dbe521a970e0f46f8ee6d70730205807b"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mv2-series",
+      "snapshotTime": "2026-11-18T16:53:42.407526+00:00",
+      "sha256": "c2123391395c85b834eef01bb9af8104a0a553d58417e37fcb19ae0db41cfa11"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpldsv7-series",
+      "snapshotTime": "2026-11-18T16:53:43.606773+00:00",
+      "sha256": "d777c4ddf2505cf5d5e31d130e32d3434f22511c5f76f7c5839df8ef2630332e"
+    },
+    {
+      "url": "https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/",
+      "snapshotTime": "2026-11-18T17:01:54.412481+00:00",
+      "sha256": "a57ed4c74c6a9830e7fe691345a09770d6d99c4f13a00a3f4892245b3c51f1c0"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpsv7-series",
+      "snapshotTime": "2026-11-18T16:53:43.529225+00:00",
+      "sha256": "e39c5f6a3a1cbf2165af3518968eb1535f077fc73362dec3b50e7c18c0e774b1"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecesv6-series",
+      "snapshotTime": "2026-11-18T16:54:20.979218+00:00",
+      "sha256": "41d6dd8f023c342a7f4d95e1e98cacbc31e2254d240cea36feea36d70ff251a6"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dplsv7-series",
+      "snapshotTime": "2026-11-18T16:53:43.213497+00:00",
+      "sha256": "b9a0207d0c0a088c8118efa267e5300abe97933b468bc33ce4da8f7d5c6bea55"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv6-series",
+      "snapshotTime": "2026-11-18T16:53:10.094540+00:00",
+      "sha256": "cbdead65d4029a34a682fab689628642169f37b2c49a564c62e0abf76352caaa"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/esv6-series",
+      "snapshotTime": "2026-11-18T16:53:10.975077+00:00",
+      "sha256": "33c26d05aac21b613af9aaede0933b8044f2ac5924ffce802b2409036a4023db"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpsv4-series",
+      "snapshotTime": "2026-11-18T16:53:41.439171+00:00",
+      "sha256": "139d181a9df103e6c4b63b7847d1faf0feccbb0d2580372d6eafa809e137f25f"
+    },
+    {
+      "url": "https://docs.cloud.google.com/compute/docs/accelerator-optimized-machines",
+      "snapshotTime": "2026-11-18T16:53:10.176434+00:00",
+      "sha256": "762a2f0ff4cd415ec079a6cc1e67e67e76bdefc8ec650c1637e28acf70e1749d"
+    },
+    {
+      "url": "https://docs.cloud.google.com/compute/docs/memory-optimized-machines",
+      "snapshotTime": "2026-11-18T16:53:10.175979+00:00",
+      "sha256": "e2a5d1fec8816d5ba4f482d102bfe8a5013bd11d75f8b909981ca9ae76c017f2"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fxmdsv2-series",
+      "snapshotTime": "2026-11-18T16:53:10.816436+00:00",
+      "sha256": "2ed91462c18abd707aa7ab9eb88e29cf645c5d522b820650fbaf21c4283090f4"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epsv7-series",
+      "snapshotTime": "2026-11-18T16:53:38.561050+00:00",
+      "sha256": "16c2a0e8e82e31f937d2ac4fb6336a0af40ef4c142165bbb9a3fa16619032d15"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpdsv4-series",
+      "snapshotTime": "2026-11-18T16:53:41.560851+00:00",
+      "sha256": "379ddea913c6682f63bb783dc74f3bd9a82eb22c277891afa1baf2c5d4fc9943"
+    },
+    {
+      "url": "https://docs.nvidia.com/dccpu/vera-perf-tuning-guide/vera-cpu-and-superchip.html",
+      "snapshotTime": "2026-11-18T17:01:52.514839+00:00",
+      "sha256": "55f5dc1e9708100417105a476f39b916e0714b9c9297c8b43242776ec9d9b30c"
+    },
+    {
+      "url": "https://docs.cloud.google.com/compute/docs/instances/bare-metal-instances",
+      "snapshotTime": "2026-11-18T17:01:53.173696+00:00",
+      "sha256": "2f2dc8798265258413a26836fc6d9ae7277e809280725920233a21d6f9c86576"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-h200-v5-series",
+      "snapshotTime": "2026-11-18T16:53:12.347739+00:00",
+      "sha256": "d3e633b7264eeddccef29392b9d0c6e9912d374dbd902bc466e4ff5c5d3616fe"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fxmsv2-series",
+      "snapshotTime": "2026-11-18T16:53:10.757430+00:00",
+      "sha256": "6193ce1808e4245b29dbedd34608e3c94b44e0beae7653cce3d9fede9e67a7b3"
     }
   ],
   "teads": [
@@ -34557,6 +34672,1408 @@
       "vcpus": 32,
       "localVolumes": 1,
       "accelerators": 1
+    },
+    "d1ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpsv7-series"
+      ],
+      "vcpus": 1,
+      "memory": 4.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d2ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpsv7-series"
+      ],
+      "vcpus": 2,
+      "memory": 8.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d4ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpsv7-series"
+      ],
+      "vcpus": 4,
+      "memory": 16.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d8ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpsv7-series"
+      ],
+      "vcpus": 8,
+      "memory": 32.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d16ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpsv7-series"
+      ],
+      "vcpus": 16,
+      "memory": 64.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d32ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpsv7-series"
+      ],
+      "vcpus": 32,
+      "memory": 128.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d48ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpsv7-series"
+      ],
+      "vcpus": 48,
+      "memory": 192.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d64ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpsv7-series"
+      ],
+      "vcpus": 64,
+      "memory": 256.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d96ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpsv7-series"
+      ],
+      "vcpus": 96,
+      "memory": 384.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d128ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpsv7-series"
+      ],
+      "vcpus": 128,
+      "memory": 512.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d1pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpdsv7-series"
+      ],
+      "vcpus": 1,
+      "memory": 4.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 55.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d2pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpdsv7-series"
+      ],
+      "vcpus": 2,
+      "memory": 8.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 110.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d4pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpdsv7-series"
+      ],
+      "vcpus": 4,
+      "memory": 16.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 220.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d8pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpdsv7-series"
+      ],
+      "vcpus": 8,
+      "memory": 32.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 440.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d16pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpdsv7-series"
+      ],
+      "vcpus": 16,
+      "memory": 64.0,
+      "storage": {
+        "count": 2.0,
+        "capacity": 880.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d32pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpdsv7-series"
+      ],
+      "vcpus": 32,
+      "memory": 128.0,
+      "storage": {
+        "count": 4.0,
+        "capacity": 1760.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d48pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpdsv7-series"
+      ],
+      "vcpus": 48,
+      "memory": 192.0,
+      "storage": {
+        "count": 6.0,
+        "capacity": 2640.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d64pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpdsv7-series"
+      ],
+      "vcpus": 64,
+      "memory": 256.0,
+      "storage": {
+        "count": 4.0,
+        "capacity": 3520.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d96pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpdsv7-series"
+      ],
+      "vcpus": 96,
+      "memory": 384.0,
+      "storage": {
+        "count": 6.0,
+        "capacity": 5280.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d128pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpdsv7-series"
+      ],
+      "vcpus": 128,
+      "memory": 512.0,
+      "storage": {
+        "count": 4.0,
+        "capacity": 7040.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d1pls-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dplsv7-series"
+      ],
+      "vcpus": 1,
+      "memory": 2.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d2pls-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dplsv7-series"
+      ],
+      "vcpus": 2,
+      "memory": 4.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d4pls-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dplsv7-series"
+      ],
+      "vcpus": 4,
+      "memory": 8.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d8pls-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dplsv7-series"
+      ],
+      "vcpus": 8,
+      "memory": 16.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d16pls-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dplsv7-series"
+      ],
+      "vcpus": 16,
+      "memory": 32.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d32pls-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dplsv7-series"
+      ],
+      "vcpus": 32,
+      "memory": 64.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d48pls-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dplsv7-series"
+      ],
+      "vcpus": 48,
+      "memory": 96.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d64pls-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dplsv7-series"
+      ],
+      "vcpus": 64,
+      "memory": 128.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d96pls-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dplsv7-series"
+      ],
+      "vcpus": 96,
+      "memory": 192.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d128pls-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dplsv7-series"
+      ],
+      "vcpus": 128,
+      "memory": 256.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d1plds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpldsv7-series"
+      ],
+      "vcpus": 1,
+      "memory": 2.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 55.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d2plds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpldsv7-series"
+      ],
+      "vcpus": 2,
+      "memory": 4.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 110.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d4plds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpldsv7-series"
+      ],
+      "vcpus": 4,
+      "memory": 8.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 220.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d8plds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpldsv7-series"
+      ],
+      "vcpus": 8,
+      "memory": 16.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 440.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d16plds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpldsv7-series"
+      ],
+      "vcpus": 16,
+      "memory": 32.0,
+      "storage": {
+        "count": 2.0,
+        "capacity": 880.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d32plds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpldsv7-series"
+      ],
+      "vcpus": 32,
+      "memory": 64.0,
+      "storage": {
+        "count": 4.0,
+        "capacity": 1760.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d48plds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpldsv7-series"
+      ],
+      "vcpus": 48,
+      "memory": 96.0,
+      "storage": {
+        "count": 6.0,
+        "capacity": 2640.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d64plds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpldsv7-series"
+      ],
+      "vcpus": 64,
+      "memory": 128.0,
+      "storage": {
+        "count": 4.0,
+        "capacity": 3520.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d96plds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpldsv7-series"
+      ],
+      "vcpus": 96,
+      "memory": 192.0,
+      "storage": {
+        "count": 6.0,
+        "capacity": 5280.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "d128plds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpldsv7-series"
+      ],
+      "vcpus": 128,
+      "memory": 256.0,
+      "storage": {
+        "count": 4.0,
+        "capacity": 7040.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e1ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epsv7-series"
+      ],
+      "vcpus": 1,
+      "memory": 8.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e2ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epsv7-series"
+      ],
+      "vcpus": 2,
+      "memory": 16.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e4ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epsv7-series"
+      ],
+      "vcpus": 4,
+      "memory": 32.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e8ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epsv7-series"
+      ],
+      "vcpus": 8,
+      "memory": 64.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e16ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epsv7-series"
+      ],
+      "vcpus": 16,
+      "memory": 128.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e32ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epsv7-series"
+      ],
+      "vcpus": 32,
+      "memory": 256.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e48ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epsv7-series"
+      ],
+      "vcpus": 48,
+      "memory": 384.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e64ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epsv7-series"
+      ],
+      "vcpus": 64,
+      "memory": 512.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e96ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epsv7-series"
+      ],
+      "vcpus": 96,
+      "memory": 768.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e128ps-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epsv7-series"
+      ],
+      "vcpus": 128,
+      "memory": 1024.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e1pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epdsv7-series"
+      ],
+      "vcpus": 1,
+      "memory": 8.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 55.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e2pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epdsv7-series"
+      ],
+      "vcpus": 2,
+      "memory": 16.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 110.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e4pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epdsv7-series"
+      ],
+      "vcpus": 4,
+      "memory": 32.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 220.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e8pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epdsv7-series"
+      ],
+      "vcpus": 8,
+      "memory": 64.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 440.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e16pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epdsv7-series"
+      ],
+      "vcpus": 16,
+      "memory": 128.0,
+      "storage": {
+        "count": 2.0,
+        "capacity": 880.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e32pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epdsv7-series"
+      ],
+      "vcpus": 32,
+      "memory": 256.0,
+      "storage": {
+        "count": 4.0,
+        "capacity": 1760.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e48pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epdsv7-series"
+      ],
+      "vcpus": 48,
+      "memory": 384.0,
+      "storage": {
+        "count": 6.0,
+        "capacity": 2640.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e64pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epdsv7-series"
+      ],
+      "vcpus": 64,
+      "memory": 512.0,
+      "storage": {
+        "count": 4.0,
+        "capacity": 3520.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e96pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epdsv7-series"
+      ],
+      "vcpus": 96,
+      "memory": 768.0,
+      "storage": {
+        "count": 6.0,
+        "capacity": 5280.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e128pds-v7": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epdsv7-series"
+      ],
+      "vcpus": 128,
+      "memory": 1024.0,
+      "storage": {
+        "count": 4.0,
+        "capacity": 7040.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m1ps-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpsv4-series"
+      ],
+      "vcpus": 1,
+      "memory": 16.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m2ps-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpsv4-series"
+      ],
+      "vcpus": 2,
+      "memory": 32.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m4ps-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpsv4-series"
+      ],
+      "vcpus": 4,
+      "memory": 64.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m8ps-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpsv4-series"
+      ],
+      "vcpus": 8,
+      "memory": 128.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m16ps-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpsv4-series"
+      ],
+      "vcpus": 16,
+      "memory": 256.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m32ps-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpsv4-series"
+      ],
+      "vcpus": 32,
+      "memory": 512.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m48ps-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpsv4-series"
+      ],
+      "vcpus": 48,
+      "memory": 768.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m64ps-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpsv4-series"
+      ],
+      "vcpus": 64,
+      "memory": 1024.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m84ps-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpsv4-series"
+      ],
+      "vcpus": 84,
+      "memory": 1344.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m128ps-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpsv4-series"
+      ],
+      "vcpus": 128,
+      "memory": 1388.0,
+      "storage": {
+        "capacity": 0,
+        "basis": "Local Storage: None"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m1pds-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpdsv4-series"
+      ],
+      "vcpus": 1,
+      "memory": 16.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 55.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m2pds-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpdsv4-series"
+      ],
+      "vcpus": 2,
+      "memory": 32.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 110.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m4pds-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpdsv4-series"
+      ],
+      "vcpus": 4,
+      "memory": 64.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 220.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m8pds-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpdsv4-series"
+      ],
+      "vcpus": 8,
+      "memory": 128.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 440.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m16pds-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpdsv4-series"
+      ],
+      "vcpus": 16,
+      "memory": 256.0,
+      "storage": {
+        "count": 2.0,
+        "capacity": 880.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m32pds-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpdsv4-series"
+      ],
+      "vcpus": 32,
+      "memory": 512.0,
+      "storage": {
+        "count": 4.0,
+        "capacity": 1760.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m48pds-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpdsv4-series"
+      ],
+      "vcpus": 48,
+      "memory": 768.0,
+      "storage": {
+        "count": 6.0,
+        "capacity": 2640.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m64pds-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpdsv4-series"
+      ],
+      "vcpus": 64,
+      "memory": 1024.0,
+      "storage": {
+        "count": 4.0,
+        "capacity": 3520.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m84pds-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpdsv4-series"
+      ],
+      "vcpus": 84,
+      "memory": 1344.0,
+      "storage": {
+        "count": 5.0,
+        "capacity": 4400.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "m128pds-v4": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpdsv4-series"
+      ],
+      "vcpus": 128,
+      "memory": 1388.0,
+      "storage": {
+        "count": 4.0,
+        "capacity": 7040.0,
+        "unit": "GiB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "l1ps-v5": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lpsv5-series"
+      ],
+      "vcpus": 1,
+      "memory": 8.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 240.0,
+        "unit": "GB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "l2ps-v5": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lpsv5-series"
+      ],
+      "vcpus": 2,
+      "memory": 16.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 480.0,
+        "unit": "GB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "l4ps-v5": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lpsv5-series"
+      ],
+      "vcpus": 4,
+      "memory": 32.0,
+      "storage": {
+        "count": 2.0,
+        "capacity": 960.0,
+        "unit": "GB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "l8ps-v5": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lpsv5-series"
+      ],
+      "vcpus": 8,
+      "memory": 64.0,
+      "storage": {
+        "count": 4.0,
+        "capacity": 1920.0,
+        "unit": "GB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "l16ps-v5": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lpsv5-series"
+      ],
+      "vcpus": 16,
+      "memory": 128.0,
+      "storage": {
+        "count": 1.0,
+        "capacity": 3840.0,
+        "unit": "GB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "l32ps-v5": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lpsv5-series"
+      ],
+      "vcpus": 32,
+      "memory": 256.0,
+      "storage": {
+        "count": 2.0,
+        "capacity": 7680.0,
+        "unit": "GB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "l48ps-v5": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lpsv5-series"
+      ],
+      "vcpus": 48,
+      "memory": 384.0,
+      "storage": {
+        "count": 3.0,
+        "capacity": 11520.0,
+        "unit": "GB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "l64ps-v5": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lpsv5-series"
+      ],
+      "vcpus": 64,
+      "memory": 512.0,
+      "storage": {
+        "count": 4.0,
+        "capacity": 15360.0,
+        "unit": "GB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "l96ps-v5": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lpsv5-series"
+      ],
+      "vcpus": 96,
+      "memory": 768.0,
+      "storage": {
+        "count": 6.0,
+        "capacity": 23040.0,
+        "unit": "GB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "l128ps-v5": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lpsv5-series"
+      ],
+      "vcpus": 128,
+      "memory": 1024.0,
+      "storage": {
+        "count": 6.0,
+        "capacity": 23040.0,
+        "unit": "GB"
+      },
+      "allocation": "Modeled family envelope; one socket assumption; largest observed CPU, RAM and local disk limits, not a physical inventory. One candidate studied per family."
+    },
+    "e192is-v6": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/esv6-series"
+      ],
+      "vcpus": 192.0,
+      "memory": 1832.0,
+      "storage": {
+        "capacity": 0,
+        "count": 0,
+        "basis": "Local Storage: None"
+      }
+    },
+    "fx12mds-v2": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fxmdsv2-series"
+      ],
+      "vcpus": 12.0,
+      "memory": 252.0,
+      "storage": {
+        "count": 2,
+        "capacity": 880.0,
+        "unit": "GiB"
+      }
+    },
+    "fx24mds-v2": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fxmdsv2-series"
+      ],
+      "vcpus": 24.0,
+      "memory": 504.0,
+      "storage": {
+        "count": 3,
+        "capacity": 1320.0,
+        "unit": "GiB"
+      }
+    },
+    "d192s-v6": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv6-series"
+      ],
+      "vcpus": 192.0,
+      "memory": 768.0,
+      "storage": {
+        "capacity": 0,
+        "count": 0,
+        "basis": "Local Storage: None"
+      }
+    },
+    "fx12ms-v2": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fxmsv2-series"
+      ],
+      "vcpus": 12.0,
+      "memory": 252.0,
+      "storage": {
+        "capacity": 0,
+        "count": 0,
+        "basis": "Local Storage: None"
+      }
+    },
+    "fx24ms-v2": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/compute-optimized/fxmsv2-series"
+      ],
+      "vcpus": 24.0,
+      "memory": 504.0,
+      "storage": {
+        "capacity": 0,
+        "count": 0,
+        "basis": "Local Storage: None"
+      }
+    },
+    "m416bs-v3": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mbsv3-series"
+      ],
+      "vcpus": 416.0,
+      "memory": 3800.0,
+      "storage": {
+        "capacity": 0,
+        "count": 0,
+        "basis": "Local Storage: None"
+      }
+    },
+    "ec2eds-v6": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecedsv6-series"
+      ],
+      "vcpus": 2.0,
+      "memory": 16.0,
+      "storage": {
+        "count": 1,
+        "capacity": 110.0,
+        "unit": "GiB"
+      }
+    },
+    "ec4eds-v6": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecedsv6-series"
+      ],
+      "vcpus": 4.0,
+      "memory": 32.0,
+      "storage": {
+        "count": 1,
+        "capacity": 220.0,
+        "unit": "GiB"
+      }
+    },
+    "ec8eds-v6": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecedsv6-series"
+      ],
+      "vcpus": 8.0,
+      "memory": 64.0,
+      "storage": {
+        "count": 1,
+        "capacity": 440.0,
+        "unit": "GiB"
+      }
+    },
+    "ec16eds-v6": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecedsv6-series"
+      ],
+      "vcpus": 16.0,
+      "memory": 128.0,
+      "storage": {
+        "count": 2,
+        "capacity": 880.0,
+        "unit": "GiB"
+      }
+    },
+    "ec32eds-v6": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecedsv6-series"
+      ],
+      "vcpus": 32.0,
+      "memory": 256.0,
+      "storage": {
+        "count": 4,
+        "capacity": 1760.0,
+        "unit": "GiB"
+      }
+    },
+    "ec48eds-v6": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecedsv6-series"
+      ],
+      "vcpus": 48.0,
+      "memory": 384.0,
+      "storage": {
+        "count": 6,
+        "capacity": 2640.0,
+        "unit": "GiB"
+      }
+    },
+    "ec64eds-v6": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecedsv6-series"
+      ],
+      "vcpus": 64.0,
+      "memory": 512.0,
+      "storage": {
+        "count": 4,
+        "capacity": 3520.0,
+        "unit": "GiB"
+      }
+    },
+    "m416s-8-v2": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mv2-series"
+      ],
+      "vcpus": 416.0,
+      "memory": 7600.0,
+      "storage": {
+        "count": 1,
+        "capacity": 4096.0,
+        "unit": "GiB"
+      }
+    },
+    "ec2es-v6": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecesv6-series"
+      ],
+      "vcpus": 2.0,
+      "memory": 16.0,
+      "storage": {
+        "capacity": 0,
+        "count": 0,
+        "basis": "Local Storage: None"
+      }
+    },
+    "ec4es-v6": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecesv6-series"
+      ],
+      "vcpus": 4.0,
+      "memory": 32.0,
+      "storage": {
+        "capacity": 0,
+        "count": 0,
+        "basis": "Local Storage: None"
+      }
+    },
+    "ec8es-v6": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecesv6-series"
+      ],
+      "vcpus": 8.0,
+      "memory": 64.0,
+      "storage": {
+        "capacity": 0,
+        "count": 0,
+        "basis": "Local Storage: None"
+      }
+    },
+    "ec16es-v6": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecesv6-series"
+      ],
+      "vcpus": 16.0,
+      "memory": 128.0,
+      "storage": {
+        "capacity": 0,
+        "count": 0,
+        "basis": "Local Storage: None"
+      }
+    },
+    "ec32es-v6": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecesv6-series"
+      ],
+      "vcpus": 32.0,
+      "memory": 256.0,
+      "storage": {
+        "capacity": 0,
+        "count": 0,
+        "basis": "Local Storage: None"
+      }
+    },
+    "ec48es-v6": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecesv6-series"
+      ],
+      "vcpus": 48.0,
+      "memory": 384.0,
+      "storage": {
+        "capacity": 0,
+        "count": 0,
+        "basis": "Local Storage: None"
+      }
+    },
+    "ec64es-v6": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecesv6-series"
+      ],
+      "vcpus": 64.0,
+      "memory": 512.0,
+      "storage": {
+        "capacity": 0,
+        "count": 0,
+        "basis": "Local Storage: None"
+      }
+    },
+    "nd96isr-h200-v5": {
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-h200-v5-series"
+      ],
+      "memory": 1850.0,
+      "vcpus": 96.0,
+      "location": "Sizes in series"
     }
   },
   "azureHosts": [
@@ -38690,25 +40207,28 @@
       ]
     },
     "m4-hypermem-2": {
-      "memory": 248,
-      "vcpus": 2,
       "sources": [
         "https://docs.cloud.google.com/compute/docs/memory-optimized-machines"
-      ]
+      ],
+      "memory": 31.0,
+      "vcpus": 2.0,
+      "location": "M4 machine types"
     },
     "m4-hypermem-4": {
-      "memory": 248,
-      "vcpus": 4,
       "sources": [
         "https://docs.cloud.google.com/compute/docs/memory-optimized-machines"
-      ]
+      ],
+      "memory": 62.0,
+      "vcpus": 4.0,
+      "location": "M4 machine types"
     },
     "m4-hypermem-8": {
-      "memory": 248,
-      "vcpus": 8,
       "sources": [
         "https://docs.cloud.google.com/compute/docs/memory-optimized-machines"
-      ]
+      ],
+      "memory": 124.0,
+      "vcpus": 8.0,
+      "location": "M4 machine types"
     },
     "m4-hypermem-16": {
       "memory": 248,
@@ -39346,6 +40866,23 @@
       "sources": [
         "https://docs.cloud.google.com/compute/docs/network-optimized-machines"
       ]
+    },
+    "a5x-highgpu-4g-metal": {
+      "sources": [
+        "https://docs.cloud.google.com/compute/docs/accelerator-optimized-machines",
+        "https://docs.cloud.google.com/compute/docs/instances/bare-metal-instances",
+        "https://docs.nvidia.com/dccpu/vera-perf-tuning-guide/vera-cpu-and-superchip.html",
+        "https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/"
+      ],
+      "vcpus": 176,
+      "memory": 1440,
+      "ssd": 48000,
+      "accelerators": 4,
+      "accelerator": "nvidia-rubin",
+      "sockets": 2,
+      "ssd_count": 4,
+      "gpuMemory": 288,
+      "scope": "bare-metal instance exposed capacities; modeled impact excludes interconnect"
     }
   },
   "gcpNodes": [
