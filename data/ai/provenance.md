@@ -342,7 +342,7 @@ The source's Terra and Ember notes themselves use price/family assumptions. Thei
 
 ## November 2026 Local Hypotheses
 
-No checkpoint-specific published count was verified for the targets below, except the official total counts explicitly identified for Cohere and EmbeddingGemma. These are low-confidence operational proxies, not measurements or claims of shared weights. Public capabilities never come from these proxies. The existing field-level `estimated` schema cannot mark only `parameters.active`, so the whole `parameters` object is flagged when that component is assumed.
+No checkpoint-specific published count was verified for the targets below, except the official total counts explicitly identified for Cohere and EmbeddingGemma. These are low-confidence operational proxies, not measurements or claims of shared weights. Public capabilities never come from these proxies. The flat `fields.parameters="estimated"` state cannot mark only `parameters.active`, so the whole `parameters` object is flagged when that component is assumed.
 
 | Model | Selected active / total (B) | Scenarios, selection and limits | Numerical anchors |
 | --- | ---: | --- | --- |

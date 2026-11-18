@@ -29,10 +29,10 @@
       "https://ai.azure.com/catalog/models",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated"
+    }
   },
   {
     "name": "amazon-nova-2-lite",
@@ -67,10 +67,10 @@
       "https://docs.aws.amazon.com/nova/latest/nova2-userguide/extended-thinking.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "amazon-nova-2-sonic",
@@ -105,10 +105,10 @@
       "https://aws.amazon.com/blogs/aws/introducing-amazon-nova-2-sonic-next-generation-speech-to-speech-model-for-conversational-ai/",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "amazon-nova-2.5-sonic",
@@ -142,10 +142,10 @@
       "https://huggingface.co/mistralai/Voxtral-Small-24B-2507",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "amazon-nova-canvas",
@@ -177,10 +177,10 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-canvas.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "amazon-nova-lite",
@@ -214,10 +214,10 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-lite.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "amazon-nova-micro",
@@ -249,10 +249,10 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-micro.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "amazon-nova-multimodal-embeddings",
@@ -284,10 +284,10 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-amazon-nova-multimodal-embeddings.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "amazon-nova-premier",
@@ -321,10 +321,10 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-premier.html",
       "https://lifearchitect.ai/models-table/"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "amazon-nova-pro",
@@ -360,11 +360,11 @@
       "https://www.amazon.science/publications/the-amazon-nova-family-of-models-technical-report-and-model-card",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-pro.html"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "amazon-nova-reel",
@@ -397,10 +397,10 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-reel.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "amazon-nova-sonic",
@@ -434,11 +434,11 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-sonic.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "amazon-rerank-1.0",
@@ -468,10 +468,10 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "amazon-titan-image-generator-g1-v2",
@@ -502,10 +502,10 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-image-generator-g1-v2.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "amazon-titan-multimodal-embeddings-g1",
@@ -538,11 +538,11 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-multimodal-embeddings-g1.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "amazon-titan-text-embeddings-v1",
@@ -576,11 +576,11 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-text-embeddings-v2-2.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "amazon-titan-text-embeddings-v2",
@@ -613,11 +613,11 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-text-embeddings-v2.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "amazon-titan-text-large",
@@ -648,11 +648,11 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "babbage",
@@ -684,10 +684,10 @@
       "https://ai.azure.com/catalog/models",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated"
+    }
   },
   {
     "name": "babbage-002",
@@ -719,11 +719,11 @@
       "https://ai.azure.com/catalog/models",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "beam-1.0-501b-a23b",
@@ -750,8 +750,7 @@
       "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
       "https://huggingface.co/reflection/Beam-1.0-501B-A23B/blob/main/config.json",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "bge-base-en-v1.5",
@@ -781,8 +780,7 @@
     },
     "sources": [
       "https://huggingface.co/BAAI/bge-base-en-v1.5"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "bge-m3",
@@ -813,8 +811,7 @@
     "sources": [
       "https://huggingface.co/BAAI/bge-m3",
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "bge-multilingual-gemma2",
@@ -850,8 +847,7 @@
       "https://huggingface.co/BAAI/bge-multilingual-gemma2",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "claude",
@@ -878,11 +874,11 @@
       "https://docs.anthropic.com/en/docs/about-claude/models/overview",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-3-haiku",
@@ -919,10 +915,10 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-3-opus",
@@ -962,12 +958,12 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-3-sonnet",
@@ -1004,11 +1000,11 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-3.5-haiku",
@@ -1047,10 +1043,10 @@
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-3.5-sonnet",
@@ -1090,12 +1086,12 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude",
       "https://console.cloud.google.com/agent-platform/publishers/anthropic/model-garden/claude-3-5-sonnet"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-3.5-sonnet-v2",
@@ -1135,12 +1131,12 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude",
       "https://console.cloud.google.com/agent-platform/publishers/anthropic/model-garden/claude-3-5-sonnet-v2"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-3.7-sonnet",
@@ -1179,12 +1175,12 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-fable-5",
@@ -1228,10 +1224,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://console.cloud.google.com/agent-platform/publishers/anthropic/model-garden/claude-fable-5"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "claude-fable-5.1",
@@ -1275,10 +1271,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/fable-5-1"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "claude-fable-5.2",
@@ -1323,10 +1319,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/fable-5-2"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "claude-haiku-4.5",
@@ -1372,10 +1368,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://console.cloud.google.com/agent-platform/publishers/anthropic/model-garden/claude-haiku-4-5"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-haiku-5.5",
@@ -1419,10 +1415,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/haiku-5-5"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "claude-instant",
@@ -1453,11 +1449,11 @@
       "https://docs.anthropic.com/en/docs/about-claude/models/overview",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-mythos-5",
@@ -1496,10 +1492,10 @@
       "https://models.dev/models/anthropic/claude-mythos-5",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "claude-mythos-5.1",
@@ -1537,10 +1533,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "claude-mythos-5.2",
@@ -1583,10 +1579,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "claude-mythos-preview",
@@ -1622,10 +1618,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "claude-opus-4",
@@ -1666,12 +1662,12 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude",
       "https://console.cloud.google.com/agent-platform/publishers/anthropic/model-garden/claude-opus-4"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-opus-4.1",
@@ -1716,11 +1712,11 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/opus-4-1"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-opus-4.5",
@@ -1765,11 +1761,11 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude",
       "https://console.cloud.google.com/agent-platform/publishers/anthropic/model-garden/claude-opus-4-5"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-opus-4.6",
@@ -1815,11 +1811,11 @@
       "https://console.cloud.google.com/agent-platform/publishers/anthropic/model-garden/claude-opus-4-6",
       "https://platform.claude.com/docs/en/models/overview"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-opus-4.7",
@@ -1864,11 +1860,11 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude",
       "https://console.cloud.google.com/agent-platform/publishers/anthropic/model-garden/claude-opus-4-7"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-opus-4.8",
@@ -1913,11 +1909,11 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude",
       "https://console.cloud.google.com/agent-platform/publishers/anthropic/model-garden/claude-opus-4-8"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-opus-5",
@@ -1961,10 +1957,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://console.cloud.google.com/agent-platform/publishers/anthropic/model-garden/claude-opus-5"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "claude-opus-5.5",
@@ -2008,10 +2004,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
       "https://console.cloud.google.com/agent-platform/publishers/anthropic/model-garden/claude-opus-5-5"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "claude-sonnet-4",
@@ -2055,11 +2051,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://console.cloud.google.com/agent-platform/publishers/anthropic/model-garden/claude-sonnet-4"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-sonnet-4.5",
@@ -2104,11 +2100,11 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude",
       "https://console.cloud.google.com/agent-platform/publishers/anthropic/model-garden/claude-sonnet-4-5"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-sonnet-4.6",
@@ -2153,11 +2149,11 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/use-claude",
       "https://console.cloud.google.com/agent-platform/publishers/anthropic/model-garden/claude-sonnet-4-6"
     ],
-    "estimated": [
-      "corpus",
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "corpus": "estimated",
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "claude-sonnet-5",
@@ -2201,10 +2197,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://console.cloud.google.com/agent-platform/publishers/anthropic/model-garden/claude-sonnet-5"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "claude-sonnet-5.5",
@@ -2248,10 +2244,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/claude/sonnet-5-5"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "code-davinci-002",
@@ -2285,10 +2281,10 @@
       "https://ai.azure.com/catalog/models",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated"
+    }
   },
   {
     "name": "codestral-2",
@@ -2326,8 +2322,7 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/mistral/codestral-2",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
       "https://console.cloud.google.com/agent-platform/publishers/mistralai/model-garden/codestral-2"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "codex-mini",
@@ -2365,10 +2360,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "cohere-command-a",
@@ -2399,8 +2394,7 @@
       "https://docs.cohere.com/docs/models",
       "https://huggingface.co/CohereLabs/c4ai-command-a-03-2025",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "cohere-command-a-plus",
@@ -2431,8 +2425,7 @@
     "sources": [
       "https://huggingface.co/CohereLabs/command-a-plus-05-2026",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "cohere-command-r",
@@ -2467,8 +2460,7 @@
       "https://huggingface.co/CohereLabs/c4ai-command-r-v01",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohere-command-r.html",
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "cohere-command-r-plus",
@@ -2503,8 +2495,7 @@
       "https://huggingface.co/CohereLabs/c4ai-command-r-plus",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohere-command-r-plus.html",
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "cohere-embed-english-v3",
@@ -2540,10 +2531,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "cohere-embed-multilingual-3",
@@ -2580,10 +2571,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "cohere-embed-multilingual-v3",
@@ -2619,10 +2610,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "cohere-embed-v4",
@@ -2659,10 +2650,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "cohere-embed-v5.0-fast",
@@ -2699,10 +2690,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "cohere-embed-v5.0-pro",
@@ -2739,10 +2730,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "cohere-parse-v5",
@@ -2774,10 +2765,10 @@
       "https://huggingface.co/CohereLabs/aya-vision-32b",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "cohere-rerank-3.5",
@@ -2813,11 +2804,11 @@
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "cohere-rerank-v4.0-fast",
@@ -2849,11 +2840,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "cohere-rerank-v4.0-pro",
@@ -2885,11 +2876,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "cohere-rerank-v5.0-fast",
@@ -2924,10 +2915,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "cohere-rerank-v5.0-pro",
@@ -2962,10 +2953,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "computer-use-preview",
@@ -3003,10 +2994,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "curie",
@@ -3038,10 +3029,10 @@
       "https://ai.azure.com/catalog/models",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated"
+    }
   },
   {
     "name": "davinci",
@@ -3073,10 +3064,10 @@
       "https://ai.azure.com/catalog/models",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated"
+    }
   },
   {
     "name": "davinci-002",
@@ -3108,11 +3099,11 @@
       "https://ai.azure.com/catalog/models",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "deepseek-ocr",
@@ -3143,8 +3134,7 @@
       "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/deepseek/deepseek-ocr",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/deepseek"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "deepseek-r1",
@@ -3179,8 +3169,7 @@
       "https://huggingface.co/deepseek-ai/DeepSeek-R1",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-r1.html",
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "deepseek-r1-0528",
@@ -3217,9 +3206,9 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/deepseek/r1-0528",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/deepseek"
     ],
-    "estimated": [
-      "context"
-    ]
+    "fields": {
+      "context": "estimated"
+    }
   },
   {
     "name": "deepseek-r1-distill-llama-70b",
@@ -3254,8 +3243,7 @@
     "sources": [
       "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "deepseek-r1-distill-llama-8b",
@@ -3287,8 +3275,7 @@
     "sources": [
       "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "deepseek-v3",
@@ -3324,9 +3311,9 @@
       "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement",
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
-    "estimated": [
-      "context"
-    ]
+    "fields": {
+      "context": "estimated"
+    }
   },
   {
     "name": "deepseek-v3.1",
@@ -3368,8 +3355,7 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/deepseek/deepseek-v31",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/deepseek",
       "https://huggingface.co/deepseek-ai/DeepSeek-V3.1"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "deepseek-v3.2",
@@ -3412,10 +3398,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/deepseek"
     ],
-    "estimated": [
-      "parameters",
-      "context"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated"
+    }
   },
   {
     "name": "deepseek-v3.2-speciale",
@@ -3447,10 +3433,10 @@
       "https://api-docs.deepseek.com",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "parameters",
-      "context"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated"
+    }
   },
   {
     "name": "deepseek-v4-flash",
@@ -3485,8 +3471,7 @@
       "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "deepseek-v4-pro",
@@ -3516,8 +3501,7 @@
     "sources": [
       "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "deepseek-v4.1-flash",
@@ -3560,9 +3544,9 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/deepseek/deepseek-v41-flash",
       "https://docs.mistral.ai/models/deepseek-v4-flash-1017"
     ],
-    "estimated": [
-      "parameters"
-    ]
+    "fields": {
+      "parameters": "estimated"
+    }
   },
   {
     "name": "devstral-2-123b-instruct-2512",
@@ -3601,8 +3585,7 @@
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-devstral-2-123b.html",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "devstral-small-2505",
@@ -3638,8 +3621,7 @@
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models",
       "https://huggingface.co/mistralai/Devstral-Small-2505",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "embedding-ada",
@@ -3673,11 +3655,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "embeddinggemma-2",
@@ -3709,9 +3691,9 @@
       "https://huggingface.co/google/embeddinggemma-2/blob/main/config.json",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
     ],
-    "estimated": [
-      "parameters"
-    ]
+    "fields": {
+      "parameters": "estimated"
+    }
   },
   {
     "name": "flux-1-kontext-pro",
@@ -3746,11 +3728,11 @@
       "https://github.com/black-forest-labs/flux/blob/main/src/flux/util.py",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture",
-      "hidden_dimension"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated",
+      "hidden_dimension": "estimated"
+    }
   },
   {
     "name": "flux-1.1-pro",
@@ -3784,11 +3766,11 @@
       "https://github.com/black-forest-labs/flux/blob/main/src/flux/util.py",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture",
-      "hidden_dimension"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated",
+      "hidden_dimension": "estimated"
+    }
   },
   {
     "name": "flux-2-flex",
@@ -3823,11 +3805,11 @@
       "https://github.com/black-forest-labs/flux2/blob/main/src/flux2/model.py",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture",
-      "hidden_dimension"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated",
+      "hidden_dimension": "estimated"
+    }
   },
   {
     "name": "flux-2-pro",
@@ -3862,11 +3844,11 @@
       "https://github.com/black-forest-labs/flux2/blob/main/src/flux2/model.py",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture",
-      "hidden_dimension"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated",
+      "hidden_dimension": "estimated"
+    }
   },
   {
     "name": "gemini-2.0-flash",
@@ -3903,11 +3885,11 @@
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-2.0-flash-lite",
@@ -3944,11 +3926,11 @@
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-2.5-flash",
@@ -3991,11 +3973,11 @@
       "https://arxiv.org/abs/2507.06261",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated"
+    }
   },
   {
     "name": "gemini-2.5-flash-image",
@@ -4034,13 +4016,11 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash-image",
       "https://aistudio.google.com/docs/models/gemini-2.5-flash-image.md"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ],
     "context": 65536,
     "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated",
       "context": "supported"
     }
   },
@@ -4080,11 +4060,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-flash-lite"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-2.5-flash-live-api",
@@ -4122,12 +4102,12 @@
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-2.5-flash-tts",
@@ -4163,10 +4143,10 @@
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-2.5-pro",
@@ -4208,11 +4188,11 @@
       "https://arxiv.org/abs/2507.06261",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/2-5-pro"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated"
+    }
   },
   {
     "name": "gemini-2.5-pro-tts",
@@ -4248,10 +4228,10 @@
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-3-flash",
@@ -4287,12 +4267,12 @@
       "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Flash-Model-Card.pdf",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-flash"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-3-pro",
@@ -4328,12 +4308,12 @@
       "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Model-Card.pdf",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-pro"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-3-pro-image",
@@ -4373,13 +4353,11 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-pro-image-preview",
       "https://aistudio.google.com/docs/models/gemini-3-pro-image.md"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ],
     "context": 65536,
     "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated",
       "context": "supported"
     }
   },
@@ -4418,12 +4396,10 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-pro-image-preview",
       "https://aistudio.google.com/docs/models/gemini-3.1-flash-image.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ],
     "context": 131072,
     "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated",
       "context": "supported"
     }
   },
@@ -4465,12 +4441,12 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-lite"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-3.1-flash-lite-image",
@@ -4510,11 +4486,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-flash-lite-image"
     ],
-    "estimated": [
-      "architecture",
-      "hidden_dimension",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "hidden_dimension": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gemini-3.1-flash-live",
@@ -4553,10 +4529,10 @@
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-3.1-flash-tts",
@@ -4591,10 +4567,10 @@
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-3.1-pro",
@@ -4631,12 +4607,12 @@
       "https://deepmind.google/models/model-cards/gemini-3-1-pro",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-1-pro"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-3.5-flash",
@@ -4676,11 +4652,11 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash"
     ],
-    "estimated": [
-      "corpus",
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "corpus": "estimated",
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-3.5-flash-lite",
@@ -4721,10 +4697,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-flash-lite"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gemini-3.5-live-translate",
@@ -4760,11 +4736,11 @@
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "architecture",
-      "context",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "context": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gemini-3.5-transcribe",
@@ -4797,10 +4773,10 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-5-transcribe",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gemini-3.6-flash",
@@ -4839,10 +4815,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-6-flash"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gemini-3.7-flash",
@@ -4881,10 +4857,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-7-flash"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gemini-3.8-flash",
@@ -4923,10 +4899,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/3-8-flash"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gemini-3.8-flash-cyber",
@@ -4961,10 +4937,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-3.8-live",
@@ -5002,11 +4978,9 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses",
       "https://aistudio.google.com/docs/models/gemini-3.8-live.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ],
     "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated",
       "context": "supported"
     }
   },
@@ -5043,10 +5017,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://apxml.com/models/gemini-4-argon"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gemini-4-argon-cyber-permissive",
@@ -5081,10 +5055,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gemini-embedding-001",
@@ -5118,10 +5092,10 @@
       "https://huggingface.co/Qwen/Qwen3-Embedding-8B",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-embedding-2",
@@ -5161,10 +5135,10 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/embedding-2",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-nano-banana-2.1",
@@ -5199,10 +5173,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses",
       "https://lifearchitect.ai/models-table/"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-omni-1.1-flash",
@@ -5237,10 +5211,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-omni-1.2-flash",
@@ -5275,10 +5249,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses",
       "https://lifearchitect.ai/models-table/"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemini-omni-flash",
@@ -5313,10 +5287,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gemma-3-12b-it",
@@ -5347,8 +5321,7 @@
     "sources": [
       "https://huggingface.co/google/gemma-3-12b-it",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-google-gemma-3-12b-it.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "gemma-3-27b-it",
@@ -5386,9 +5359,9 @@
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-google-gemma-3-27b-pt.html"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "gemma-3-4b-it",
@@ -5419,8 +5392,7 @@
     "sources": [
       "https://huggingface.co/google/gemma-3-4b-it",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-google-gemma-3-4b-it.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "gemma-3n-e4b-it",
@@ -5457,8 +5429,7 @@
       "https://huggingface.co/google/gemma-3n-E4B-it",
       "https://huggingface.co/api/models/google/gemma-3n-E4B-it",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/open-models/use-gemma"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "gemma-4-12b-it",
@@ -5486,8 +5457,7 @@
     "sources": [
       "https://huggingface.co/google/gemma-4-12B-it",
       "https://huggingface.co/google/gemma-4-E4B-it"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "gemma-4-26b-a4b-it",
@@ -5533,8 +5503,7 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google/gemma-4-26b-a4b-it",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/google",
       "https://huggingface.co/google/gemma-4-26B-A4B-it/blob/main/config.json"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "gemma-4-31b-it",
@@ -5579,8 +5548,7 @@
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/open-models/use-gemma",
       "https://huggingface.co/google/gemma-4-31B-it/blob/main/config.json"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "gemma-4-e2b-it",
@@ -5613,8 +5581,7 @@
     "sources": [
       "https://huggingface.co/google/gemma-4-E2B-it",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-google-gemma-4-e2b.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "gemma-4-e4b-it",
@@ -5644,8 +5611,7 @@
       "https://huggingface.co/google/gemma-4-E4B-it",
       "https://huggingface.co/google/gemma-4-E4B-it/blob/main/config.json",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "glm-4.7",
@@ -5682,9 +5648,9 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-glm-4-7.html",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/zaiorg"
     ],
-    "estimated": [
-      "parameters"
-    ]
+    "fields": {
+      "parameters": "estimated"
+    }
   },
   {
     "name": "glm-4.7-flash",
@@ -5714,8 +5680,7 @@
     "sources": [
       "https://huggingface.co/zai-org/GLM-4.7-Flash",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-glm-4-7-flash.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "glm-5",
@@ -5754,8 +5719,7 @@
       "https://docs.z.ai/guides/llm/glm-5",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-glm-5.html",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/zaiorg"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "glm-5.2",
@@ -5796,9 +5760,9 @@
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/zaiorg"
     ],
-    "estimated": [
-      "parameters"
-    ]
+    "fields": {
+      "parameters": "estimated"
+    }
   },
   {
     "name": "glm-5.3",
@@ -5840,9 +5804,9 @@
       "https://docs.mistral.ai/models/zai-glm-5-3",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-glm-5-3.html"
     ],
-    "estimated": [
-      "parameters"
-    ]
+    "fields": {
+      "parameters": "estimated"
+    }
   },
   {
     "name": "glm-5.3-flash",
@@ -5880,8 +5844,7 @@
       "https://huggingface.co/zai-org/GLM-5.3-Flash",
       "https://docs.z.ai/guides/vlm/glm-5.3-flash",
       "https://docs.mistral.ai/models/zai-glm-5-3-flash"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "gpt-35-turbo",
@@ -5915,10 +5878,10 @@
       "https://openai.com/blog/chatgpt",
       "https://developers.openai.com/api/docs/models/gpt-3.5-turbo"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-35-turbo-16k",
@@ -5953,11 +5916,11 @@
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4",
@@ -5997,11 +5960,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://developers.openai.com/api/docs/models/gpt-4"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4-32k",
@@ -6038,12 +6001,12 @@
       "https://epoch.ai/data/all_ai_models.csv",
       "https://newsletter.semianalysis.com/p/gpt-4-architecture-infrastructure"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4-turbo",
@@ -6081,11 +6044,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://developers.openai.com/api/docs/models/gpt-4-turbo"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4-turbo-vision",
@@ -6125,12 +6088,12 @@
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4.1",
@@ -6168,11 +6131,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://developers.openai.com/api/docs/models/gpt-4.1"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4.1-mini",
@@ -6213,11 +6176,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-4.1-mini"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4.1-nano",
@@ -6258,11 +6221,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-4.1-nano"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4.5",
@@ -6296,12 +6259,12 @@
       "https://lifearchitect.ai/models-table/",
       "https://openai.com/index/gpt-4-5-system-card"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4o",
@@ -6339,11 +6302,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://developers.openai.com/api/docs/models/gpt-4o"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4o-audio",
@@ -6383,12 +6346,12 @@
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4o-audio-preview",
@@ -6429,11 +6392,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-4o-audio-preview"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4o-mini",
@@ -6471,11 +6434,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://developers.openai.com/api/docs/models/gpt-4o-mini"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4o-mini-audio",
@@ -6515,12 +6478,12 @@
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4o-mini-audio-preview",
@@ -6561,11 +6524,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-4o-mini-audio-preview"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4o-mini-realtime",
@@ -6605,12 +6568,12 @@
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4o-mini-realtime-audio",
@@ -6650,12 +6613,12 @@
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4o-mini-realtime-preview",
@@ -6696,11 +6659,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-4o-mini-realtime-preview"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4o-mini-transcribe",
@@ -6739,11 +6702,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-4o-mini-transcribe"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4o-mini-tts",
@@ -6780,11 +6743,11 @@
       "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4o-realtime",
@@ -6822,12 +6785,12 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4o-realtime-audio",
@@ -6865,12 +6828,12 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4o-realtime-preview",
@@ -6911,11 +6874,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-4o-realtime-preview"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4o-transcribe",
@@ -6954,11 +6917,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-4o-transcribe"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-4o-transcribe-diarize",
@@ -6997,11 +6960,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-4o-transcribe-diarize"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5",
@@ -7041,11 +7004,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://developers.openai.com/api/docs/models/gpt-5"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5-chat",
@@ -7086,11 +7049,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-5-chat-latest"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5-codex",
@@ -7134,11 +7097,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-5-codex"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5-mini",
@@ -7178,11 +7141,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-5-mini"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5-nano",
@@ -7222,11 +7185,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-5-nano"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5-pro",
@@ -7266,11 +7229,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-5-pro"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5.1",
@@ -7308,11 +7271,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://developers.openai.com/api/docs/models/gpt-5.1"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5.1-chat",
@@ -7349,11 +7312,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-5.1-chat-latest"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5.1-codex",
@@ -7393,11 +7356,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-5.1-codex"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5.1-codex-max",
@@ -7437,11 +7400,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-5.1-codex-max"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5.1-codex-mini",
@@ -7481,11 +7444,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-5.1-codex-mini"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5.2",
@@ -7523,11 +7486,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://developers.openai.com/api/docs/models/gpt-5.2"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5.2-chat",
@@ -7564,11 +7527,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-5.2-chat-latest"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5.2-codex",
@@ -7608,11 +7571,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-5.2-codex"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5.3-chat",
@@ -7648,11 +7611,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://developers.openai.com/api/docs/models/gpt-5.3-chat-latest"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5.3-codex",
@@ -7692,11 +7655,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-5.3-codex"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5.4",
@@ -7738,11 +7701,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://developers.openai.com/api/docs/models/gpt-5.4"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5.4-mini",
@@ -7782,11 +7745,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-5.4-mini"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5.4-nano",
@@ -7826,11 +7789,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-5.4-nano"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5.4-pro",
@@ -7870,11 +7833,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-5.4-pro"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5.5",
@@ -7913,11 +7876,11 @@
       "https://models.dev/models/openai/gpt-5.5",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-55.html"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5.5-pro",
@@ -7954,11 +7917,11 @@
       "https://developers.openai.com/api/docs/models/gpt-5.5-pro",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-5.6-cyber",
@@ -7991,11 +7954,9 @@
       "https://lifearchitect.ai/models-table/",
       "https://developers.openai.com/api/docs/models/gpt-5.6-cyber"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ],
     "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated",
       "context": "supported"
     }
   },
@@ -8035,10 +7996,10 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-luna.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gpt-5.6-sol",
@@ -8079,10 +8040,10 @@
       "https://developers.openai.com/api/docs/models/gpt-daybreak-blue-latest",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-daybreak-blue-56-sol.html"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gpt-5.6-terra",
@@ -8120,10 +8081,10 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-terra.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gpt-6-astra",
@@ -8161,10 +8122,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-astra.html"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gpt-6-luna",
@@ -8204,10 +8165,10 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-luna.html",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gpt-6-sol",
@@ -8247,10 +8208,10 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-sol.html",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gpt-6.1-sol",
@@ -8290,10 +8251,10 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-1-sol.html",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gpt-6.1-terra",
@@ -8336,10 +8297,10 @@
       "https://apxml.com/models/gpt-6-1-terra",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gpt-audio",
@@ -8375,10 +8336,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-audio"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-audio-1.5",
@@ -8414,10 +8375,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-audio-1.5"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-audio-mini",
@@ -8453,10 +8414,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-audio-mini"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-image-1",
@@ -8490,10 +8451,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-image-1-mini",
@@ -8526,10 +8487,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-image-1.5",
@@ -8563,10 +8524,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-image-2",
@@ -8600,11 +8561,11 @@
       "https://models.dev/models/openai/gpt-image-2",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "architecture",
-      "hidden_dimension",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "hidden_dimension": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gpt-image-2.5-flare",
@@ -8644,12 +8605,12 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture",
-      "context",
-      "hidden_dimension"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated",
+      "context": "estimated",
+      "hidden_dimension": "estimated"
+    }
   },
   {
     "name": "gpt-image-2.5-sunburst",
@@ -8689,12 +8650,12 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture",
-      "context",
-      "hidden_dimension"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated",
+      "context": "estimated",
+      "hidden_dimension": "estimated"
+    }
   },
   {
     "name": "gpt-live-transcribe",
@@ -8727,10 +8688,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gpt-oss-120b",
@@ -8785,8 +8746,7 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/openai/gpt-oss-120b",
       "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/openai"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "gpt-oss-20b",
@@ -8839,8 +8799,7 @@
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/openai/gpt-oss-20b",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/openai"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "gpt-oss-safeguard-120b",
@@ -8870,8 +8829,7 @@
     "sources": [
       "https://huggingface.co/openai/gpt-oss-safeguard-120b",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-safeguard-120b.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "gpt-oss-safeguard-20b",
@@ -8901,8 +8859,7 @@
     "sources": [
       "https://huggingface.co/openai/gpt-oss-safeguard-20b",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-safeguard-20b.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "gpt-realtime",
@@ -8938,10 +8895,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-realtime"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-realtime-1.5",
@@ -8977,10 +8934,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-realtime-1.5"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-realtime-2",
@@ -9015,10 +8972,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gpt-realtime-2.1",
@@ -9054,10 +9011,10 @@
       "https://models.dev/models/openai/gpt-realtime-2.1",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gpt-realtime-2.1-mini",
@@ -9093,10 +9050,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gpt-realtime-mini",
@@ -9132,10 +9089,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/gpt-realtime-mini"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "gpt-realtime-translate",
@@ -9168,10 +9125,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gpt-realtime-whisper",
@@ -9205,10 +9162,10 @@
       "https://models.dev/models/openai/gpt-realtime-whisper",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "gpt-transcribe",
@@ -9239,10 +9196,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "grok-4",
@@ -9275,10 +9232,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "grok-4.1-fast-non-reasoning",
@@ -9321,10 +9278,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://console.cloud.google.com/agent-platform/publishers/xai/model-garden/grok-4.1-fast-non-reasoning"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "grok-4.1-fast-reasoning",
@@ -9367,10 +9324,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://console.cloud.google.com/agent-platform/publishers/xai/model-garden/grok-4.1-fast-reasoning"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "grok-4.20-non-reasoning",
@@ -9413,10 +9370,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://console.cloud.google.com/agent-platform/publishers/xai/model-garden/grok-4.20-non-reasoning"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "grok-4.20-reasoning",
@@ -9459,10 +9416,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://console.cloud.google.com/agent-platform/publishers/xai/model-garden/grok-4.20-reasoning"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "grok-4.3",
@@ -9507,10 +9464,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://console.cloud.google.com/agent-platform/publishers/xai/model-garden/grok-4.3"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "grok-4.6",
@@ -9554,10 +9511,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://console.cloud.google.com/agent-platform/publishers/xai/model-garden/grok-4.6"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "grok-4.7",
@@ -9597,10 +9554,10 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-xai-grok-4-7.html",
       "https://console.cloud.google.com/agent-platform/publishers/xai/model-garden/grok-4.7"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "grok-code-fast-1",
@@ -9632,10 +9589,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "holo2-30b-a3b",
@@ -9668,8 +9625,7 @@
       "https://huggingface.co/Hcompany/Holo2-30B-A3B",
       "https://hub.hcompany.ai/models/Holo2/aboutholo2",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "imagen-3",
@@ -9701,10 +9657,10 @@
       "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/provisioned-throughput/supported-models?hl=es",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "imagen-4",
@@ -9735,10 +9691,10 @@
       "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/provisioned-throughput/supported-models?hl=es",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "jamba-1.5-large",
@@ -9782,9 +9738,9 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/partner-models",
       "https://console.cloud.google.com/agent-platform/publishers/ai21/model-garden/jamba-1.5-large"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "jamba-1.5-mini",
@@ -9828,9 +9784,9 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/deprecations/partner-models",
       "https://console.cloud.google.com/agent-platform/publishers/ai21/model-garden/jamba-1.5-mini"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "kimi-k2-thinking",
@@ -9865,8 +9821,7 @@
       "https://huggingface.co/moonshotai/Kimi-K2-Thinking",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k2-thinking.html",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/kimi"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "kimi-k2.5",
@@ -9901,8 +9856,7 @@
       "https://huggingface.co/moonshotai/Kimi-K2.5",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k2-5.html",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "kimi-k2.6",
@@ -9933,8 +9887,7 @@
     "sources": [
       "https://huggingface.co/moonshotai/Kimi-K2.6",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "kimi-k2.7-code",
@@ -9965,8 +9918,7 @@
     "sources": [
       "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "kimi-k3",
@@ -9998,8 +9950,7 @@
     "sources": [
       "https://huggingface.co/moonshotai/Kimi-K3",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k3.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "kimi-k3.1-pro",
@@ -10035,8 +9986,7 @@
       "https://huggingface.co/moonshotai/Kimi-K3.1-Pro/blob/main/config.json",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k3-1-highspeed.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "lfm3-1.7b",
@@ -10064,8 +10014,7 @@
       "https://huggingface.co/LiquidAI/LFM3-1.7B",
       "https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/config.json",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "llama-3-70b-instruct",
@@ -10107,9 +10056,9 @@
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "llama-3-8b-instruct",
@@ -10151,9 +10100,9 @@
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "llama-3.1-405b-instruct",
@@ -10190,9 +10139,9 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-1-405b-instruct.html",
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "llama-3.1-70b-instruct",
@@ -10235,9 +10184,9 @@
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "llama-3.1-8b-instruct",
@@ -10280,9 +10229,9 @@
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "llama-3.1-nemotron-70b-instruct",
@@ -10313,8 +10262,7 @@
     "sources": [
       "https://huggingface.co/nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "llama-3.2-11b-instruct",
@@ -10352,9 +10300,9 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-2-11b-instruct.html",
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "llama-3.2-1b",
@@ -10383,9 +10331,9 @@
       "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md",
       "https://huggingface.co/api/models/meta-llama/Llama-3.2-1B"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "llama-3.2-1b-instruct",
@@ -10419,9 +10367,9 @@
       "https://huggingface.co/api/models/meta-llama/Llama-3.2-1B-Instruct",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-2-1b-instruct.html"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "llama-3.2-3b",
@@ -10450,9 +10398,9 @@
       "https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md",
       "https://huggingface.co/api/models/meta-llama/Llama-3.2-3B"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "llama-3.2-3b-instruct",
@@ -10486,9 +10434,9 @@
       "https://huggingface.co/api/models/meta-llama/Llama-3.2-3B-Instruct",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-2-3b-instruct.html"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "llama-3.2-90b-instruct",
@@ -10526,9 +10474,9 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-2-90b-instruct.html",
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "llama-3.3-70b-instruct",
@@ -10581,9 +10529,9 @@
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/llama/llama3-3"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "llama-4-maverick-17b-instruct",
@@ -10625,9 +10573,9 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/llama/llama4-maverick"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "llama-4-scout-17b-instruct",
@@ -10669,9 +10617,9 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/llama/llama4-scout"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "luma-ray-2",
@@ -10703,10 +10651,10 @@
       "https://huggingface.co/Wan-AI/Wan2.1-T2V-14B",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "lyria-002",
@@ -10738,10 +10686,10 @@
       "https://huggingface.co/facebook/musicgen-large",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "lyria-3-clip",
@@ -10775,10 +10723,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/lyria/lyria-3#lyria-3-pro-preview"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "lyria-3-pro",
@@ -10812,10 +10760,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/lyria/lyria-3#lyria-3-pro-preview"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "magistral-small-2506",
@@ -10847,8 +10795,7 @@
     "sources": [
       "https://huggingface.co/mistralai/Magistral-Small-2506",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "magistral-small-2509",
@@ -10881,8 +10828,7 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
       "https://huggingface.co/mistralai/Magistral-Small-2509",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-magistral-small-2509.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "mai-image-2.5",
@@ -10918,11 +10864,11 @@
       "https://github.com/black-forest-labs/flux2/blob/main/src/flux2/model.py",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture",
-      "hidden_dimension"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated",
+      "hidden_dimension": "estimated"
+    }
   },
   {
     "name": "mai-image-2.5-flash",
@@ -10958,11 +10904,11 @@
       "https://github.com/black-forest-labs/flux2/blob/main/src/flux2/model.py",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture",
-      "hidden_dimension"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated",
+      "hidden_dimension": "estimated"
+    }
   },
   {
     "name": "mai-image-2.5-pro",
@@ -10998,11 +10944,11 @@
       "https://github.com/black-forest-labs/flux2/blob/main/src/flux2/model.py",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture",
-      "hidden_dimension"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated",
+      "hidden_dimension": "estimated"
+    }
   },
   {
     "name": "mai-image-2.6",
@@ -11038,11 +10984,11 @@
       "https://github.com/black-forest-labs/flux2/blob/main/src/flux2/model.py",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture",
-      "hidden_dimension"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated",
+      "hidden_dimension": "estimated"
+    }
   },
   {
     "name": "mai-image-2.6-flash",
@@ -11078,11 +11024,11 @@
       "https://github.com/black-forest-labs/flux2/blob/main/src/flux2/model.py",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture",
-      "hidden_dimension"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated",
+      "hidden_dimension": "estimated"
+    }
   },
   {
     "name": "mai-thinking-1",
@@ -11114,10 +11060,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "marengo-embed-2.7",
@@ -11155,10 +11101,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-twelvelabs-marengo-embed-v2-7.html"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "marengo-embed-3.0",
@@ -11196,10 +11142,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-twelvelabs-marengo-embed-3-0.html"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "minimax-m2",
@@ -11230,8 +11176,7 @@
       "https://huggingface.co/MiniMaxAI/MiniMax-M2",
       "https://arxiv.org/abs/2605.26494",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-minimax-minimax-m2.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "minimax-m2.1",
@@ -11262,8 +11207,7 @@
       "https://huggingface.co/MiniMaxAI/MiniMax-M2.1",
       "https://arxiv.org/abs/2605.26494",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-minimax-minimax-m2-1.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "minimax-m2.5",
@@ -11299,8 +11243,7 @@
       "https://arxiv.org/abs/2605.26494",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-minimax-minimax-m2-5.html",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "minimax-m2.7",
@@ -11333,9 +11276,9 @@
       "https://lifearchitect.ai/models-table/",
       "https://www.minimax.io/models/text/m27"
     ],
-    "estimated": [
-      "parameters"
-    ]
+    "fields": {
+      "parameters": "estimated"
+    }
   },
   {
     "name": "minimax-m3",
@@ -11369,8 +11312,7 @@
       "https://huggingface.co/MiniMaxAI/MiniMax-M3",
       "https://huggingface.co/MiniMaxAI/MiniMax-M3/blob/main/config.json",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "minimax-m3.1-flash",
@@ -11404,8 +11346,7 @@
       "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash",
       "https://huggingface.co/MiniMaxAI/MiniMax-M3.1-Flash/blob/main/config.json",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "ministral-3-14b",
@@ -11439,8 +11380,7 @@
       "https://huggingface.co/mistralai/Ministral-3-14B-Instruct-2512",
       "https://huggingface.co/api/models/mistralai/Ministral-3-14B-Instruct-2512",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-ministral-14b-3-0.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "ministral-3-3b",
@@ -11475,8 +11415,7 @@
       "https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512",
       "https://docs.mistral.ai/models/ministral-3-3b-25-12",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-ministral-3b.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "ministral-3-8b",
@@ -11510,8 +11449,7 @@
       "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512",
       "https://huggingface.co/api/models/mistralai/Ministral-3-8B-Instruct-2512",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-ministral-3-8b.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "ministral-3b",
@@ -11547,10 +11485,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "mistral large",
@@ -11577,10 +11515,10 @@
       "https://docs.mistral.ai/getting-started/models",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "mistral-7b",
@@ -11605,8 +11543,7 @@
     "providers": {},
     "sources": [
       "https://docs.mistral.ai/getting-started/models"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "mistral-7b-instruct-v0.1",
@@ -11636,8 +11573,7 @@
     "sources": [
       "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "mistral-7b-instruct-v0.2",
@@ -11671,8 +11607,7 @@
       "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mistral-7b-instruct.html",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "mistral-7b-instruct-v0.3",
@@ -11709,8 +11644,7 @@
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mistral-7b-instruct.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "mistral-document-ai-2505",
@@ -11742,10 +11676,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "mistral-document-ai-2512",
@@ -11777,10 +11711,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "mistral-large-2402",
@@ -11817,10 +11751,10 @@
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2",
       "https://lifearchitect.ai/models-table/"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "mistral-large-2407",
@@ -11860,9 +11794,9 @@
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-management-optimize.html"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "mistral-large-3",
@@ -11908,9 +11842,9 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "mistral-large-4",
@@ -11943,8 +11877,7 @@
       "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B",
       "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/config.json",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "mistral-medium-3",
@@ -11984,10 +11917,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://console.cloud.google.com/agent-platform/publishers/mistralai/model-garden/mistral-medium-3"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "mistral-medium-3.5",
@@ -12026,8 +11959,7 @@
       "https://apxml.com/models",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "mistral-nemo-instruct-2407",
@@ -12071,7 +12003,6 @@
       "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407/raw/main/config.json",
       "https://docs.mistral.ai/models/mistral-nemo-12b-24-07.md"
     ],
-    "estimated": [],
     "hidden_dimension": 5120,
     "fields": {
       "context": "supported",
@@ -12113,10 +12044,10 @@
       "https://console.cloud.google.com/agent-platform/publishers/mistralai/model-garden/mistral-ocr-2505",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "mistral-ocr-4",
@@ -12149,10 +12080,10 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "mistral-ocr-4.1",
@@ -12184,10 +12115,10 @@
       "https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "mistral-small-2402",
@@ -12221,10 +12152,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mistral-small.html"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "mistral-small-3",
@@ -12259,7 +12190,6 @@
       "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501/raw/main/config.json",
       "https://docs.mistral.ai/models/mistral-small-3-0-25-01.md"
     ],
-    "estimated": [],
     "hidden_dimension": 5120,
     "fields": {
       "context": "supported",
@@ -12307,8 +12237,7 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/mistral/mistral-small-3-1"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "mistral-small-3.1-24b-instruct-2503",
@@ -12352,8 +12281,7 @@
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/mistral/mistral-small-3-1",
       "https://console.cloud.google.com/agent-platform/publishers/mistralai/model-garden/mistral-small-2503"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "mistral-small-3.2-24b",
@@ -12391,8 +12319,7 @@
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models",
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "mistral-small-4",
@@ -12421,8 +12348,7 @@
       "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
       "https://lifearchitect.ai/models-table/",
       "https://apxml.com/models"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "mixtral-8x22b-instruct",
@@ -12452,8 +12378,7 @@
     "sources": [
       "https://huggingface.co/mistralai/Mixtral-8x22B-Instruct-v0.1",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "mixtral-8x7b",
@@ -12480,8 +12405,7 @@
       "https://docs.mistral.ai/getting-started/models",
       "https://arxiv.org/abs/2401.04088",
       "https://huggingface.co/mistralai/Mixtral-8x7B-v0.1"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "mixtral-8x7b-instruct",
@@ -12523,8 +12447,7 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mixtral-8x7b-instruct.html",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "molmo-72b",
@@ -12556,8 +12479,7 @@
     "sources": [
       "https://huggingface.co/allenai/Molmo-72B-0924",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "multilingual-e5-large-instruct",
@@ -12588,8 +12510,7 @@
     "sources": [
       "https://huggingface.co/intfloat/multilingual-e5-large-instruct",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/e5/multilingual-e5-large"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "multilingual-e5-small",
@@ -12620,8 +12541,7 @@
     "sources": [
       "https://huggingface.co/intfloat/multilingual-e5-small",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/e5/multilingual-e5-small"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "multimodalembedding-001",
@@ -12657,10 +12577,10 @@
       "https://huggingface.co/Qwen/Qwen3-VL-Embedding-2B",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "muse-ember-1.0",
@@ -12692,10 +12612,10 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-ember-1-0",
       "https://lifearchitect.ai/models-table/"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "muse-spark-1.3",
@@ -12726,10 +12646,10 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/partner-models/meta/muse-spark-1-3",
       "https://lifearchitect.ai/models-table/"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "muse-spark-open",
@@ -12758,8 +12678,7 @@
     "sources": [
       "https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B",
       "https://ollama.com/library/muse-spark-open"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "muse-wonder-1.0",
@@ -12794,10 +12713,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://apxml.com/models/muse-wonder"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "nemotron-3-nano-30b-a3b",
@@ -12828,8 +12747,7 @@
     "sources": [
       "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-nvidia-nemotron-nano-3-30b.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "nemotron-3-super-120b-a12b",
@@ -12859,8 +12777,7 @@
     "sources": [
       "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-nvidia-nemotron-super-3-120b.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "nemotron-3.5-super-vl",
@@ -12889,8 +12806,7 @@
       "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16",
       "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16/blob/main/config.json",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "nemotron-nano-12b-v2-vl",
@@ -12923,8 +12839,7 @@
       "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL-BF16",
       "https://docs.nvidia.com/nim/vision-language-models/1.5.0/examples/nemotron-nano-12b-v2-vl/api.html",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-nvidia-nvidia-nemotron-nano-12b-v2-vl-bf16.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "nemotron-nano-9b-v2",
@@ -12954,8 +12869,7 @@
     "sources": [
       "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-nvidia-nvidia-nemotron-nano-9b-v2.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "nova-lite",
@@ -12989,10 +12903,10 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-lite.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "nova-micro",
@@ -13024,10 +12938,10 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-micro.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "nova-pro",
@@ -13063,11 +12977,11 @@
       "https://www.amazon.science/publications/the-amazon-nova-family-of-models-technical-report-and-model-card",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-pro.html"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "nvr-tts-de-de",
@@ -13098,10 +13012,10 @@
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "nvr-tts-en-us",
@@ -13132,10 +13046,10 @@
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "nvr-tts-es-es",
@@ -13166,10 +13080,10 @@
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "nvr-tts-it-it",
@@ -13200,10 +13114,10 @@
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "o1",
@@ -13242,11 +13156,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://developers.openai.com/api/docs/models/o1"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "o1-mini",
@@ -13285,11 +13199,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/o1-mini"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "o1-preview",
@@ -13324,10 +13238,10 @@
       "https://lifearchitect.ai/models-table/",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "o1-pro",
@@ -13367,11 +13281,11 @@
       "https://github.com/digital4better/data/blob/main/data/ai/README.md",
       "https://developers.openai.com/api/docs/models/o1-pro"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "o3",
@@ -13407,11 +13321,11 @@
       "https://lifearchitect.ai/models-table/",
       "https://models.dev/models/openai/o3"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "o3-mini",
@@ -13448,11 +13362,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://developers.openai.com/api/docs/models/o3-mini"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "o3-pro",
@@ -13486,10 +13400,10 @@
       "https://models.dev/models/openai/o3-pro",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "o4-mini",
@@ -13525,11 +13439,11 @@
       "https://lifearchitect.ai/models-table/",
       "https://models.dev/models/openai/o4-mini"
     ],
-    "estimated": [
-      "parameters",
-      "corpus",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "corpus": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "palmyra-vision-7b",
@@ -13560,9 +13474,9 @@
     "sources": [
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-writer-palmyra-vision-7b.html"
     ],
-    "estimated": [
-      "architecture"
-    ]
+    "fields": {
+      "architecture": "estimated"
+    }
   },
   {
     "name": "palmyra-x4",
@@ -13598,10 +13512,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-writer-palmyra-x4.html"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "palmyra-x5",
@@ -13638,10 +13552,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-writer-palmyra-x5.html"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "pegasus-1.2",
@@ -13677,10 +13591,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-twelvelabs-pegasus-v1-2.html"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "pegasus-1.5",
@@ -13714,10 +13628,10 @@
       "https://huggingface.co/Qwen/Qwen2.5-VL-32B-Instruct",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "phi-3-medium",
@@ -13749,8 +13663,7 @@
       "https://huggingface.co/microsoft/Phi-3-medium-128k-instruct",
       "https://arxiv.org/abs/2404.14219",
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "phi-3-mini",
@@ -13782,8 +13695,7 @@
       "https://huggingface.co/microsoft/Phi-3-mini-128k-instruct",
       "https://arxiv.org/abs/2404.14219",
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "phi-3-small",
@@ -13816,8 +13728,7 @@
       "https://arxiv.org/abs/2404.14219",
       "https://huggingface.co/api/models/microsoft/Phi-3-small-128k-instruct",
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "phi-3.5-mini",
@@ -13850,9 +13761,9 @@
       "https://arxiv.org/abs/2407.13833",
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "phi-3.5-moe",
@@ -13885,9 +13796,9 @@
       "https://arxiv.org/abs/2407.13833",
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "phi-3.5-vision",
@@ -13921,9 +13832,9 @@
       "https://arxiv.org/abs/2407.13833",
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "phi-4",
@@ -13957,9 +13868,9 @@
       "https://huggingface.co/api/models/microsoft/phi-4",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "phi-4-mini",
@@ -13992,9 +13903,9 @@
       "https://huggingface.co/microsoft/Phi-4-multimodal-instruct/blob/main/phi_4_mm.tech_report.02252025.pdf",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "phi-4-mini-multimodal",
@@ -14030,8 +13941,7 @@
       "https://huggingface.co/api/models/microsoft/Phi-4-multimodal-instruct",
       "https://huggingface.co/microsoft/Phi-4-multimodal-instruct/blob/main/config.json",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "phi-4-mini-reasoning",
@@ -14061,8 +13971,7 @@
     "sources": [
       "https://huggingface.co/microsoft/Phi-4-mini-reasoning",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "phi-4-reasoning",
@@ -14092,8 +14001,7 @@
     "sources": [
       "https://huggingface.co/microsoft/Phi-4-reasoning",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "pixtral-12b-2409",
@@ -14127,8 +14035,7 @@
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models",
       "https://huggingface.co/mistralai/Pixtral-12B-2409",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "pixtral-large-25.02",
@@ -14161,9 +14068,9 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-pixtral-large.html"
     ],
-    "estimated": [
-      "parameters"
-    ]
+    "fields": {
+      "parameters": "estimated"
+    }
   },
   {
     "name": "pixtral-large-2502",
@@ -14196,9 +14103,9 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-pixtral-large.html"
     ],
-    "estimated": [
-      "parameters"
-    ]
+    "fields": {
+      "parameters": "estimated"
+    }
   },
   {
     "name": "qwen-guard-gen-0.6b",
@@ -14229,8 +14136,7 @@
     "sources": [
       "https://huggingface.co/Qwen/Qwen-Guard-Gen-0.6B",
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "qwen-guard-gen-8b",
@@ -14261,8 +14167,7 @@
     "sources": [
       "https://huggingface.co/Qwen/Qwen-Guard-Gen-8B",
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "qwen2.5-coder-32b-instruct",
@@ -14298,9 +14203,9 @@
       "https://arxiv.org/abs/2412.15115",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "qwen2.5-vl-72b-instruct",
@@ -14335,9 +14240,9 @@
       "https://arxiv.org/abs/2502.13923",
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "qwen3-235b-a22b-instruct-2507",
@@ -14383,8 +14288,7 @@
       "https://models.dev/models/alibaba/qwen3-235b-a22b-instruct-2507",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/qwen/qwen3-235b"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "qwen3-235b-a22b-thinking",
@@ -14415,8 +14319,7 @@
     "sources": [
       "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "qwen3-32b",
@@ -14452,8 +14355,7 @@
       "https://huggingface.co/Qwen/Qwen3-32B",
       "https://arxiv.org/abs/2505.09388",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-32b.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "qwen3-coder-30b-a3b-instruct",
@@ -14500,9 +14402,9 @@
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/qwen/qwen3-coder"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "qwen3-coder-480b-a35b-instruct",
@@ -14545,9 +14447,9 @@
       "https://models.dev/models/alibaba/qwen3-coder-480b-a35b-instruct",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/qwen/qwen3-coder"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "qwen3-coder-next",
@@ -14577,8 +14479,7 @@
     "sources": [
       "https://huggingface.co/Qwen/Qwen3-Coder-Next",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-coder-next.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "qwen3-embedding-8b",
@@ -14618,9 +14519,9 @@
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
     ],
-    "estimated": [
-      "corpus"
-    ]
+    "fields": {
+      "corpus": "estimated"
+    }
   },
   {
     "name": "qwen3-next-instruct-80b",
@@ -14659,8 +14560,7 @@
       "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct/blob/main/config.json",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-next-80b-a3b.html",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/qwen/qwen3-next-instruct"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "qwen3-next-thinking-80b",
@@ -14694,8 +14594,7 @@
       "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking",
       "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking/blob/main/config.json",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/maas/qwen/qwen3-next-thinking"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "qwen3-vl-235b-a22b-instruct",
@@ -14728,8 +14627,7 @@
     "sources": [
       "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-vl-235b-a22b.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "qwen3.5-122b-a10b",
@@ -14762,8 +14660,7 @@
     "sources": [
       "https://huggingface.co/Qwen/Qwen3.5-122B-A10B",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "qwen3.5-35b-a3b",
@@ -14796,8 +14693,7 @@
     "sources": [
       "https://huggingface.co/Qwen/Qwen3.5-35B-A3B",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "qwen3.5-397b-a17b",
@@ -14844,10 +14740,8 @@
       "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/raw/main/README.md",
       "https://huggingface.co/Qwen/Qwen3.5-397B-A17B/raw/main/config.json"
     ],
-    "estimated": [
-      "corpus"
-    ],
     "fields": {
+      "corpus": "estimated",
       "context": "supported",
       "input": "supported",
       "reasoning": "supported",
@@ -14884,8 +14778,7 @@
     "sources": [
       "https://huggingface.co/Qwen/Qwen3.5-9B",
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "qwen3.6-27b",
@@ -14917,8 +14810,7 @@
     "sources": [
       "https://huggingface.co/Qwen/Qwen3.6-27B",
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "qwen3.6-35b-a3b",
@@ -14952,8 +14844,7 @@
     "sources": [
       "https://huggingface.co/Qwen/Qwen3.6-35B-A3B",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "qwen3.8-2.4t-a95b",
@@ -14980,8 +14871,7 @@
       "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
       "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B/blob/main/config.json",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "qwen3.8-27b",
@@ -15017,8 +14907,7 @@
       "https://huggingface.co/Qwen/Qwen3.8-27B",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "qwen3.8-flash-next",
@@ -15048,9 +14937,9 @@
       "https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/config.json",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-component-boundaries"
     ],
-    "estimated": [
-      "parameters"
-    ]
+    "fields": {
+      "parameters": "estimated"
+    }
   },
   {
     "name": "sentence-t5-xxl",
@@ -15082,8 +14971,7 @@
       "https://huggingface.co/sentence-transformers/sentence-t5-xxl",
       "https://huggingface.co/api/models/sentence-transformers/sentence-t5-xxl",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "sora-2",
@@ -15121,10 +15009,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "stable-diffusion-3.5-large",
@@ -15154,8 +15042,7 @@
     "sources": [
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-stability-ai-stable-diffusion-3-5-large.html",
       "https://huggingface.co/stabilityai/stable-diffusion-3.5-large"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "stable-diffusion-xl",
@@ -15188,8 +15075,7 @@
     "sources": [
       "https://apxml.com/models",
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "stable-diffusion-xl-base-v1.0",
@@ -15221,8 +15107,7 @@
     "sources": [
       "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "stable-image-core",
@@ -15253,10 +15138,10 @@
       "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "stable-image-ultra",
@@ -15287,10 +15172,10 @@
       "https://huggingface.co/stabilityai/stable-diffusion-3.5-large",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
     ],
-    "estimated": [
-      "architecture",
-      "parameters"
-    ]
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
   },
   {
     "name": "text-ada-001",
@@ -15322,10 +15207,10 @@
       "https://ai.azure.com/catalog/models",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated"
+    }
   },
   {
     "name": "text-babbage-001",
@@ -15357,10 +15242,10 @@
       "https://ai.azure.com/catalog/models",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated"
+    }
   },
   {
     "name": "text-curie-001",
@@ -15392,10 +15277,10 @@
       "https://ai.azure.com/catalog/models",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated"
+    }
   },
   {
     "name": "text-davinci-002",
@@ -15427,10 +15312,10 @@
       "https://ai.azure.com/catalog/models",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated"
+    }
   },
   {
     "name": "text-davinci-003",
@@ -15462,11 +15347,11 @@
       "https://ai.azure.com/catalog/models",
       "https://lifearchitect.ai/models-table/"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "text-embedding-005",
@@ -15500,10 +15385,10 @@
       "https://huggingface.co/intfloat/multilingual-e5-large",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "text-embedding-3",
@@ -15537,11 +15422,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "text-embedding-3-large",
@@ -15575,11 +15460,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "text-embedding-3-small",
@@ -15613,11 +15498,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "text-embedding-ada-002",
@@ -15651,11 +15536,11 @@
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "text-multilingual-embedding-002",
@@ -15689,10 +15574,10 @@
       "https://huggingface.co/intfloat/multilingual-e5-large",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "titan-embeddings-g1",
@@ -15725,11 +15610,11 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-embeddings-g1---text.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "titan-embeddings-v2",
@@ -15763,11 +15648,11 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-text-embeddings-v2.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "titan-text-g1-express",
@@ -15798,11 +15683,11 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "titan-text-g1-lite",
@@ -15833,11 +15718,11 @@
       "https://docs.aws.amazon.com/bedrock/latest/userguide/models-supported.html",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "context",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "context": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "tsuzumi-7b",
@@ -15868,9 +15753,9 @@
       "https://www.rd.ntt/e/research/JN202406_26651.html",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-from-partners"
     ],
-    "estimated": [
-      "architecture"
-    ]
+    "fields": {
+      "architecture": "estimated"
+    }
   },
   {
     "name": "tts-1",
@@ -15906,10 +15791,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "tts-1-hd",
@@ -15945,10 +15830,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "veo-3.0",
@@ -15983,10 +15868,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-0-generate#3.0-generate-001"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "veo-3.0-fast",
@@ -16021,10 +15906,10 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#local-hypotheses",
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-0-generate#3.0-generate-001"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "veo-3.1",
@@ -16059,10 +15944,10 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-0-generate#3.0-generate-001",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "veo-3.1-fast",
@@ -16097,10 +15982,10 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-0-generate#3.0-generate-001",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "veo-3.1-lite",
@@ -16135,10 +16020,10 @@
       "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/veo/3-1-generate#3.1-generate-001",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "voxtral-mini-3b-2507",
@@ -16171,8 +16056,7 @@
       "https://huggingface.co/mistralai/Voxtral-Mini-3B-2507",
       "https://huggingface.co/api/models/mistralai/Voxtral-Mini-3B-2507",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-voxtral-mini-3b-2507.html"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "voxtral-mini-transcribe",
@@ -16200,10 +16084,10 @@
       "https://mistral.ai/news/voxtral-transcribe-2/",
       "https://github.com/digital4better/data/blob/main/data/ai/README.md"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "voxtral-mini-transcribe-3",
@@ -16235,10 +16119,10 @@
       "https://huggingface.co/mistralai/Voxtral-Mini-3B-2507",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "voxtral-mini-transcribe-realtime",
@@ -16266,8 +16150,7 @@
       "https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602",
       "https://apxml.com/models",
       "https://huggingface.co/api/models/mistralai/Voxtral-Mini-4B-Realtime-2602"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "voxtral-mini-transcribe-realtime-3",
@@ -16298,10 +16181,10 @@
       "https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "voxtral-mini-tts-3",
@@ -16333,10 +16216,10 @@
       "https://huggingface.co/mistralai/Voxtral-4B-TTS-2603",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "voxtral-small-24b-2507",
@@ -16377,8 +16260,7 @@
       "https://huggingface.co/api/models/mistralai/Voxtral-Small-24B-2507",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-voxtral-small-24b-2507.html",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "voxtral-small-transcribe-3",
@@ -16411,10 +16293,10 @@
       "https://huggingface.co/mistralai/Voxtral-Small-24B-2507",
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#november-2026-local-hypotheses"
     ],
-    "estimated": [
-      "parameters",
-      "architecture"
-    ]
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated"
+    }
   },
   {
     "name": "voxtral-tts",
@@ -16440,8 +16322,7 @@
       "https://docs.mistral.ai/models/model-cards/voxtral-tts-26-03",
       "https://huggingface.co/mistralai/Voxtral-4B-TTS-2603",
       "https://apxml.com/models"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "whisper-1",
@@ -16474,8 +16355,7 @@
       "https://developers.openai.com/api/docs/models/whisper-1",
       "https://huggingface.co/openai/whisper-large-v2",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "whisper-large-v3",
@@ -16510,8 +16390,7 @@
       "https://models.dev/models/openai/whisper-large-v3",
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
-    ],
-    "estimated": []
+    ]
   },
   {
     "name": "whisper-large-v3-turbo",
@@ -16541,7 +16420,6 @@
       "https://huggingface.co/openai/whisper-large-v3-turbo",
       "https://models.dev/models/openai/whisper-large-v3-turbo",
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog/"
-    ],
-    "estimated": []
+    ]
   }
 ]

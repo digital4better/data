@@ -6,9 +6,12 @@ AI models and cloud regions, VMs, hosts, CPUs and accelerators may contain an op
 
 | State | Meaning | Relationship to the record |
 | --- | --- | --- |
-| `supported` | The published value has been assessed against evidence or a documented estimation method. | A value must be present. This is not a guarantee of truth or a claim that an estimate was measured. |
+| `supported` | Version- and scope-specific evidence supports the published value. | A value must be present. This is not a guarantee of truth. |
+| `estimated` | The value is explicitly an estimate with a documented method or retained provenance. | A value must be present. The marker does not establish independent verification or measured accuracy. |
 | `tentative` | Evidence is insufficient or contradictory. | The property may be absent, or contain an explicitly retained historical value whose assessment is unresolved. New uncertain candidate values stay outside published data. |
 | `missing` | The review found no established value. | The property must be absent, `null` or an empty string, where the collection permits that representation. |
+
+Use exactly one string state per property; there is no nested status/origin object. When an estimate is also unresolved, `tentative` takes precedence and the estimation method remains in public provenance.
 
 An omitted entry means **not assessed**, never implicitly supported. An absent `fields` object means no field assessments were published. Do not add an empty object or mechanically label all existing values supported. Metadata does not exempt a record from required fields, valid types, identity rules, numerical constraints or source requirements.
 
@@ -25,14 +28,14 @@ Illustrative region fragment, not a newly verified geographic record:
   "id": "example-region",
   "pue": 1.25,
   "fields": {
-    "pue": "supported",
+    "pue": "estimated",
     "wue": "tentative",
     "ref": "missing"
   }
 }
 ```
 
-Here PUE has been assessed, WUE has unresolved evidence and no published candidate value, and REF was reviewed without finding a value. Unannotated properties have no assessment claim. This fragment does not replace the collection's complete record requirements.
+Here PUE is an illustrative estimate, WUE has unresolved evidence and no published candidate value, and REF was reviewed without finding a value. Unannotated properties have no assessment claim. This fragment does not replace the collection's complete record requirements.
 
 ## Evidence and estimates
 
@@ -40,7 +43,7 @@ Keep source, period, scope, unit, transformation and observation/estimation dist
 
 Dataset records do not contain free-text `notes`; `notes` and `fields.notes` are rejected for these AI/cloud collections. Keep evidence URLs in `sources` where supported, and interpretation, estimation methods, periods and unresolved disagreements in the public collection guide or provenance document, with the affected record IDs. Group shared explanations instead of duplicating them per record. Private reports may preserve additional evidence, but must not be the only place explaining a published estimate or limitation. Source-registry review notes are outside this record contract.
 
-For AI models, `estimated` remains independent: a supported parameter estimate must still appear in `estimated`. For hosts, `basis`, `method`, `sources` and `assumptions` retain their roles. A tentative historical value must remain visibly unresolved in the provenance; do not erase it or replace it with a private candidate solely to change its assessment.
+The former AI JSON `estimated` array is removed and rejected, including an empty array. Use `fields.<property> = "estimated"` instead. Migration preserves existing estimation flags and assessments without certifying historical values. A JSON consumer must migrate its reads; `fields.estimated` is not a valid assessed property. For hosts, `basis`, `method`, `sources` and `assumptions` retain their roles. A tentative historical value must remain visibly unresolved in the provenance; do not erase it or replace it with a private candidate solely to change its assessment.
 
 ## Editing and recalculation
 
@@ -48,8 +51,8 @@ Update or clear a field's assessment when changing its value; do not copy an old
 
 ## JSON and CSV compatibility
 
-The JSON property is optional and does not change historical identities or values. No bulk assessment of legacy records is implied by this contract addition.
+The JSON property is optional and does not change historical identities or values. Migrating existing estimation flags is not a fresh factual assessment; previously unannotated properties remain unassessed.
 
-CSV headers, order, cell values and projections are unchanged. Adding, removing or changing only `fields` has no effect on CSV bytes. CSV readers cannot recover assessment states, including uncertainty attached to retained historical values; use JSON and provenance for quality-sensitive decisions. Do not export `fields`, flattened state columns or private uncertain values to CSV.
+CSV headers and column order stay unchanged. The AI CSV retains its existing `estimated` column, derived from the keys whose `fields` state is `estimated`, in JSON key order and joined with `|`. Migration preserves the old list order and every CSV byte. Changing an estimation flag intentionally changes that cell; other assessment edits have no CSV effect. A `tentative` field is not included in that list, even when provenance describes an estimate. CSV readers cannot recover uncertainty or omitted estimation origin; use JSON and public provenance for quality-sensitive decisions. Cloud CSVs omit assessments entirely. Do not export a `fields` column, flattened state columns or private uncertain values.
 
-The export functions validate field assessments before projecting records. Repository tests check all AI/cloud catalogs, malformed annotations, presence consistency, calculator preservation/invalidation and byte-identical CSV projections with and without metadata. These are structural checks; evidence still requires review.
+The export functions validate field assessments before projecting records. Repository tests check all AI/cloud catalogs, malformed annotations, presence consistency, calculator preservation/invalidation and byte-identical CSV projections when estimation flags are unchanged, plus the AI estimation projection. These are structural checks; evidence still requires review.

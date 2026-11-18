@@ -22,13 +22,14 @@ test("AI registry is formatted, sorted and structurally consistent", () => {
     assert.ok(["dense", "moe"].includes(m.architecture), m.name);
     if (m.architecture === "dense") assert.equal(active, total, m.name);
     for (const key of ["open", "reasoning", "tools"]) assert.equal(typeof m[key], "boolean", `${m.name}: ${key}`);
-    for (const key of ["input", "output", "sources", "estimated"]) {
+    for (const key of ["input", "output", "sources"]) {
       assert.ok(Array.isArray(m[key]), `${m.name}: ${key}`);
       assert.equal(new Set(m[key]).size, m[key].length, `${m.name}: duplicate ${key}`);
     }
     assert.ok(m.input.length && m.output.length && m.sources.length, m.name);
     for (const source of m.sources) assert.equal(new URL(source).protocol, "https:", m.name);
-    for (const field of m.estimated) {
+    assert.ok(!Object.hasOwn(m, "estimated"), `${m.name}: obsolete estimated array`);
+    for (const field of Object.keys(m.fields ?? {}).filter((key) => m.fields[key] === "estimated")) {
       assert.ok(Object.hasOwn(m, field), `${m.name}: estimated absent field ${field}`);
       assert.ok(!["input", "output", "reasoning", "tools", "providers"].includes(field), m.name);
     }
@@ -57,7 +58,7 @@ test("provenance rows agree with model values and retain explicit EcoLogits attr
     if (!row) continue;
     const model = byName.get(row[1]);
     assert.ok(model, row[1]);
-    assert.ok(model.estimated.includes("parameters"), model.name);
+    assert.ok(["estimated", "tentative"].includes(model.fields?.parameters), model.name);
     const columns = row[2].split(" | ");
     const counts = section === "EcoLogits And Adaptations" ? columns[3].split(" / ")
       : section.endsWith("Local Hypotheses") ? columns[0].split(" / ")
@@ -110,7 +111,7 @@ test("sizing and public-capability corrections do not regress", () => {
   assert.deepEqual(byName.get("claude-sonnet-4.6").parameters, { active: 20, total: 1000 });
   assert.deepEqual(byName.get("gpt-5").parameters, { active: 150, total: 3000 });
   assert.equal(byName.get("gemini-2.5-pro").architecture, "moe");
-  assert.ok(!byName.get("gemini-2.5-pro").estimated.includes("architecture"));
+  assert.notEqual(byName.get("gemini-2.5-pro").fields?.architecture, "estimated");
   assert.deepEqual(byName.get("codex-mini").parameters, byName.get("o4-mini").parameters);
   assert.equal(byName.get("gpt-5.4").context, 1050000);
   assert.equal(byName.get("gpt-5.2-chat").context, 128000);
@@ -167,10 +168,10 @@ test("November model additions retain their source-specific sizes and contexts",
   }
   assert.equal(byName.get("lfm3-1.7b").corpus, 22000);
   assert.equal(byName.get("embeddinggemma-2").dimension, 768);
-  assert.ok(byName.get("qwen3.8-flash-next").estimated.includes("parameters"));
-  assert.ok(byName.get("cohere-rerank-v5.0-pro").estimated.includes("parameters"));
-  assert.ok(byName.get("claude-haiku-5.5").estimated.includes("architecture"));
-  assert.ok(!byName.get("mistral-large-4").estimated.includes("parameters"));
+  assert.equal(byName.get("qwen3.8-flash-next").fields?.parameters, "estimated");
+  assert.equal(byName.get("cohere-rerank-v5.0-pro").fields?.parameters, "estimated");
+  assert.equal(byName.get("claude-haiku-5.5").fields?.architecture, "estimated");
+  assert.notEqual(byName.get("mistral-large-4").fields?.parameters, "estimated");
   for (const provider of ["anthropic", "aws", "azure", "gcp"]) {
     assert.ok(byName.get("claude-haiku-5.5").providers[provider].length, provider);
   }

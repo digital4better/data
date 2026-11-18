@@ -12,7 +12,7 @@ AI models across vendors and cloud providers, combining public specifications wi
 
 ## File Structure and Units
 
-Records may include optional JSON-only [`fields` assessments](../field-assessments.md): `supported`, `tentative` or `missing` per top-level property. An unannotated field is not assessed. CSVs are unchanged; existing required fields, estimates and evidence rules still apply.
+Records may include optional JSON-only [`fields` assessments](../field-assessments.md): `supported`, `estimated`, `tentative` or `missing` per top-level property. An unannotated field is not assessed. CSV layouts are unchanged; the existing AI `estimated` column is derived from these states. Required fields and evidence rules still apply.
 
 JSON is an array of model objects; CSV has one row per model. Optional fields are omitted in JSON and empty in CSV. Lists use `|` in CSV. `parameters` is flattened into `parameters_active` and `parameters_total`; `pattern` and `providers` are JSON-only.
 
@@ -34,7 +34,8 @@ JSON is an array of model objects; CSV has one row per model. Optional fields ar
 | `reasoning`, `tools` | Booleans | Reasoning and tool-use capabilities. |
 | `providers` | Object of string arrays | Provider name mapped to model identifiers. |
 | `sources` | Array of URLs | Evidence; each URL may support only some fields. |
-| `estimated` | Array of field names | Properties not established by version-specific primary evidence. |
+| `fields` | Optional JSON object | Flat per-property states; estimates use `"estimated"`. |
+| `estimated` | CSV-only pipe-separated field names | Derived from `fields` entries equal to `"estimated"`, in key order; no separate JSON property. |
 
 ## Using the Data
 
@@ -42,7 +43,7 @@ Dense models conventionally use equal active and total counts. Analyzing images 
 
 Public `input`, `output`, `reasoning` and `tools` capabilities are not inferred from prices. Context uses the native model limit rather than a narrower hosting tier; media-only APIs can omit it when no meaningful token budget is exposed.
 
-A populated parameter count **does not mean the vendor disclosed it**. Check `estimated` and the provenance table before treating a number as a measurement.
+A populated parameter count **does not mean the vendor disclosed it**. Check `fields` (the `estimated` column in CSV) and the provenance table before treating a number as a measurement.
 
 ## Methodology
 

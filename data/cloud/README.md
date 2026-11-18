@@ -19,7 +19,9 @@ Shared hardware references: CPUs ([JSON](./cpus.json), [CSV](./cpus.csv)) and ac
 
 ## File Structure and Units
 
-Records may include optional JSON-only [`fields` assessments](../field-assessments.md): `supported`, `tentative` or `missing` per top-level property. An unannotated field is not assessed. CSVs are unchanged; existing required fields, estimates and evidence rules still apply.
+Records may include optional JSON-only [`fields` assessments](../field-assessments.md): `supported`, `estimated`, `tentative` or `missing` per top-level property. An unannotated field is not assessed. CSV layouts are unchanged; the existing AI `estimated` column is derived from these states. Required fields and evidence rules still apply.
+
+CPU and accelerator catalogs cover hardware referenced by cloud VMs and hosts, including historical records; they are not exhaustive manufacturer catalogs. Add hardware together with its evidenced VM/host reference. Existing orphan references require historical review, not automatic deletion.
 
 Every JSON file contains an array of objects; its CSV counterpart has one row per object. Optional fields may be absent or empty. Some historical numeric values are decimal strings: preserve their value when parsing. Hardware zeros can be legacy placeholders rather than verified measurements.
 

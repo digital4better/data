@@ -8,7 +8,7 @@ Before reporting missing data, inspect the relevant collection and check the exa
 
 ## Local documentation
 
-- [AI/cloud field assessments](./data/field-assessments.md): Optional JSON `fields` states; absent annotations mean unassessed. Interpretations belong in public guides, not record `notes`. CSVs remain unchanged.
+- [AI/cloud field assessments](./data/field-assessments.md): Flat JSON `fields`: supported, estimated, tentative or missing. Unannotated means unassessed; the AI CSV retains its derived `estimated` column. See the contract for migration and provenance.
 
 - [Complete package reference](./llms-full.txt): Lookup procedure, examples and links to the collection guides; all are included for offline use.
 - [Package overview](./README.md): Collections, source families and provider assumptions.

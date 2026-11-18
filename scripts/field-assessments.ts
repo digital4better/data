@@ -1,6 +1,6 @@
 import { isDeepStrictEqual } from "node:util";
 
-export type FieldState = "supported" | "tentative" | "missing";
+export type FieldState = "supported" | "estimated" | "tentative" | "missing";
 export type FieldAssessments = Record<string, FieldState>;
 
 // Public top-level fields, including optional fields absent from a particular record.
@@ -24,7 +24,6 @@ export const assessedFields = {
     "tools",
     "providers",
     "sources",
-    "estimated",
   ],
   regions: [
     "id",
@@ -124,6 +123,8 @@ export function validateFieldAssessments(
 ): void {
   if (Object.prototype.hasOwnProperty.call(record, "notes"))
     throw Error(`${label}: notes belongs in public collection documentation, not dataset records`);
+  if (Object.prototype.hasOwnProperty.call(record, "estimated"))
+    throw Error(`${label}: estimated belongs in fields as a flat state, not a separate property`);
   if (!Object.prototype.hasOwnProperty.call(record, "fields")) return;
   const fields = record.fields;
   if (!fields || typeof fields !== "object" || Array.isArray(fields) || !Object.keys(fields).length)
@@ -131,14 +132,15 @@ export function validateFieldAssessments(
   for (const [field, state] of Object.entries(fields)) {
     if (!(assessedFields[collection] as readonly string[]).includes(field))
       throw Error(`${label}: unknown assessed field ${field}`);
-    if (state !== "supported" && state !== "tentative" && state !== "missing")
+    if (state !== "supported" && state !== "estimated" && state !== "tentative" && state !== "missing")
       throw Error(`${label}/${field}: invalid field state ${String(state)}`);
     const present =
       Object.prototype.hasOwnProperty.call(record, field) &&
       record[field] !== undefined &&
       record[field] !== null &&
       record[field] !== "";
-    if (state === "supported" && !present) throw Error(`${label}/${field}: supported requires a present value`);
+    if ((state === "supported" || state === "estimated") && !present)
+      throw Error(`${label}/${field}: ${state} requires a present value`);
     if (state === "missing" && present) throw Error(`${label}/${field}: missing requires an absent value`);
   }
 }

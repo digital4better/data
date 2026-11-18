@@ -1069,7 +1069,7 @@ const generateAi = async () => {
     reasoning: model.reasoning,
     tools: model.tools,
     sources: toCsvList(model.sources),
-    estimated: toCsvList(model.estimated),
+    estimated: toCsvList(Object.keys(model.fields ?? {}).filter((field) => model.fields[field] === "estimated")),
   }));
 
   exportToCsv(`./data/ai/models.csv`, rows, [
