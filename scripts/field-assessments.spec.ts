@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { AssessedCollection, validateFieldAssessments, retainUnchangedAssessments } from "./field-assessments";
+import { assessedFields, AssessedCollection, validateFieldAssessments, retainUnchangedAssessments } from "./field-assessments";
 import { generateAi, generateClouds } from "../index";
 import { generate, providers, HostInputs, VirtualMachine } from "./cloud-hosts";
 
@@ -34,6 +34,16 @@ test("field assessments are optional and validate every public AI/cloud dataset"
   const before = structuredClone(record);
   validateFieldAssessments(record, "models");
   assert.deepEqual(record, before, "validation must not mutate values or annotate other fields");
+});
+
+test("record notes and notes assessments are rejected even without other metadata", () => {
+  for (const collection of Object.keys(assessedFields) as AssessedCollection[]) {
+    for (const notes of ["Regional estimate, not a measurement", "", null, undefined]) {
+      assert.throws(() => validateFieldAssessments({ notes }, collection), /public collection documentation/);
+    }
+    assert.throws(() => validateFieldAssessments({ fields: { notes: "missing" } }, collection), /unknown assessed field/);
+    assert.doesNotThrow(() => validateFieldAssessments({}, collection));
+  }
 });
 
 test("zero, false and empty lists are present; absent/null/empty-string retain their missing semantics", () => {
@@ -81,6 +91,8 @@ test("field annotations do not change CSV bytes for models, regions, VMs, hosts 
     await generateAi();
     await generateClouds();
     const before = new Map(datasets.map(([file]) => [file, fs.readFileSync(`data/${file}.csv`)]));
+    for (const [file] of datasets)
+      assert.deepEqual(before.get(file), fs.readFileSync(path.join(root, `data/${file}.csv`)), `${file}: published projection`);
     for (const [file, collection] of datasets) {
       const records = JSON.parse(fs.readFileSync(`data/${file}.json`, "utf8"));
       const identity = collection === "models" ? "name" : "id";

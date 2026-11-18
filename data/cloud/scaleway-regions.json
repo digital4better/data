@@ -20,8 +20,15 @@
     "location": "Paris",
     "country": "fr",
     "pue": 1.44,
-    "wue": 0.001,
-    "ref": 1
+    "wue": 2e-05,
+    "ref": 1,
+    "fields": {
+      "wue": "supported"
+    },
+    "sources": [
+      "https://www.scaleway.com/en/environmental-leadership/",
+      "https://www-uploads.scaleway.com/Impact_Report2025_22ee3a8232.pdf"
+    ]
   },
   {
     "id": "fr-par-2",
@@ -31,9 +38,16 @@
     "lon": 2.137967,
     "location": "Saint-Ouen-l'Aumone",
     "country": "fr",
-    "pue": 1.16,
+    "pue": 1.25,
     "wue": 0.25,
-    "ref": 1
+    "ref": 1,
+    "fields": {
+      "pue": "supported"
+    },
+    "sources": [
+      "https://www.scaleway.com/en/environmental-leadership/",
+      "https://www-uploads.scaleway.com/Impact_Report2025_22ee3a8232.pdf"
+    ]
   },
   {
     "id": "nl-ams-1",
@@ -45,7 +59,14 @@
     "country": "nl",
     "pue": 1.38,
     "wue": 0.85,
-    "ref": 1
+    "ref": 1,
+    "fields": {
+      "wue": "tentative"
+    },
+    "sources": [
+      "https://www.scaleway.com/en/environmental-leadership/",
+      "https://www-uploads.scaleway.com/Impact_Report2025_22ee3a8232.pdf"
+    ]
   },
   {
     "id": "nl-ams-2",
@@ -69,7 +90,14 @@
     "country": "nl",
     "pue": 1.2,
     "wue": 0.22,
-    "ref": 1
+    "ref": 1,
+    "fields": {
+      "pue": "tentative"
+    },
+    "sources": [
+      "https://www.scaleway.com/en/environmental-leadership/",
+      "https://www-uploads.scaleway.com/Impact_Report2025_22ee3a8232.pdf"
+    ]
   },
   {
     "id": "pl-waw-1",

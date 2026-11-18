@@ -41,7 +41,6 @@ export const assessedFields = {
     "aliases",
     "partition",
     "sources",
-    "notes",
   ],
   vms: [
     "id",
@@ -123,6 +122,8 @@ export function validateFieldAssessments(
   collection: AssessedCollection,
   label = String(record.id ?? record.name ?? collection)
 ): void {
+  if (Object.prototype.hasOwnProperty.call(record, "notes"))
+    throw Error(`${label}: notes belongs in public collection documentation, not dataset records`);
   if (!Object.prototype.hasOwnProperty.call(record, "fields")) return;
   const fields = record.fields;
   if (!fields || typeof fields !== "object" || Array.isArray(fields) || !Object.keys(fields).length)
