@@ -9857,7 +9857,7 @@
     "name": "m4-hypermem-2",
     "category": "memory",
     "vcpus": 2,
-    "memory": 248,
+    "memory": 31,
     "accelerators": 0,
     "virtual": true,
     "ssd": 0,
@@ -9866,9 +9866,12 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "embodied_allocated": 0.4337686667,
+    "embodied_allocated": 0.0542210833,
     "host": "gcp-m4-node-224-2976-a14e4e09c2",
-    "host_instances": 12
+    "host_instances": 96,
+    "fields": {
+      "memory": "supported"
+    }
   },
   {
     "id": "m4-hypermem-4",
@@ -9876,7 +9879,7 @@
     "name": "m4-hypermem-4",
     "category": "memory",
     "vcpus": 4,
-    "memory": 248,
+    "memory": 62,
     "accelerators": 0,
     "virtual": true,
     "ssd": 0,
@@ -9885,9 +9888,12 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "embodied_allocated": 0.4337686667,
+    "embodied_allocated": 0.1084421667,
     "host": "gcp-m4-node-224-2976-a14e4e09c2",
-    "host_instances": 12
+    "host_instances": 48,
+    "fields": {
+      "memory": "supported"
+    }
   },
   {
     "id": "m4-hypermem-8",
@@ -9895,7 +9901,7 @@
     "name": "m4-hypermem-8",
     "category": "memory",
     "vcpus": 8,
-    "memory": 248,
+    "memory": 124,
     "accelerators": 0,
     "virtual": true,
     "ssd": 0,
@@ -9904,9 +9910,12 @@
     "cpu": [
       "intel-xeon-8581c"
     ],
-    "embodied_allocated": 0.4337686667,
+    "embodied_allocated": 0.2168843333,
     "host": "gcp-m4-node-224-2976-a14e4e09c2",
-    "host_instances": 12
+    "host_instances": 24,
+    "fields": {
+      "memory": "supported"
+    }
   },
   {
     "id": "m4-hypermem-16",
@@ -11464,5 +11473,35 @@
     "embodied_allocated": 0.3226601,
     "host": "gcp-g4-node-384-1440-6d5cfe86bc",
     "host_instances": 16
+  },
+  {
+    "id": "a5x-highgpu-4g-metal",
+    "family": "a5x",
+    "name": "a5x-highgpu-4g-metal",
+    "category": "accelerated",
+    "vcpus": 176,
+    "memory": 1440,
+    "ssd": 48000,
+    "hdd": 0,
+    "cpu": [
+      "nvidia-vera"
+    ],
+    "accelerator": "nvidia-rubin",
+    "accelerators": 4,
+    "virtual": false,
+    "host": "gcp-a5x-highgpu-4g-metal-412152211b",
+    "fields": {
+      "id": "supported",
+      "vcpus": "supported",
+      "memory": "supported",
+      "ssd": "supported",
+      "cpu": "supported",
+      "accelerator": "supported",
+      "accelerators": "supported",
+      "virtual": "supported"
+    },
+    "embodied": 5.5838928,
+    "embodied_allocated": 5.5838928,
+    "host_instances": 1
   }
 ]

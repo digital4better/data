@@ -3297,9 +3297,9 @@
     "gcp/m4n-ultramem-56": null,
     "gcp/m4n-ultramem-112": null,
     "gcp/m4n-ultramem-224": null,
-    "gcp/m4-hypermem-2": null,
-    "gcp/m4-hypermem-4": null,
-    "gcp/m4-hypermem-8": null,
+    "gcp/m4-hypermem-2": 0.4337686667,
+    "gcp/m4-hypermem-4": 0.4337686667,
+    "gcp/m4-hypermem-8": 0.4337686667,
     "gcp/m4-hypermem-16": null,
     "gcp/m4-hypermem-32": null,
     "gcp/m4-hypermem-64": null,
@@ -3822,7 +3822,120 @@
     "scaleway/memory3-x24c-192g": null,
     "scaleway/memory3-x32c-256g": null,
     "scaleway/memory3-x48c-384g": null,
-    "scaleway/b300-sxm-8-288g": null
+    "scaleway/b300-sxm-8-288g": null,
+    "azure/d1ps-v7": null,
+    "azure/d2ps-v7": null,
+    "azure/d4ps-v7": null,
+    "azure/d8ps-v7": null,
+    "azure/d16ps-v7": null,
+    "azure/d32ps-v7": null,
+    "azure/d48ps-v7": null,
+    "azure/d64ps-v7": null,
+    "azure/d96ps-v7": null,
+    "azure/d128ps-v7": null,
+    "azure/d1pds-v7": null,
+    "azure/d2pds-v7": null,
+    "azure/d4pds-v7": null,
+    "azure/d8pds-v7": null,
+    "azure/d16pds-v7": null,
+    "azure/d32pds-v7": null,
+    "azure/d48pds-v7": null,
+    "azure/d64pds-v7": null,
+    "azure/d96pds-v7": null,
+    "azure/d128pds-v7": null,
+    "azure/d1pls-v7": null,
+    "azure/d2pls-v7": null,
+    "azure/d4pls-v7": null,
+    "azure/d8pls-v7": null,
+    "azure/d16pls-v7": null,
+    "azure/d32pls-v7": null,
+    "azure/d48pls-v7": null,
+    "azure/d64pls-v7": null,
+    "azure/d96pls-v7": null,
+    "azure/d128pls-v7": null,
+    "azure/d1plds-v7": null,
+    "azure/d2plds-v7": null,
+    "azure/d4plds-v7": null,
+    "azure/d8plds-v7": null,
+    "azure/d16plds-v7": null,
+    "azure/d32plds-v7": null,
+    "azure/d48plds-v7": null,
+    "azure/d64plds-v7": null,
+    "azure/d96plds-v7": null,
+    "azure/d128plds-v7": null,
+    "azure/e1ps-v7": null,
+    "azure/e2ps-v7": null,
+    "azure/e4ps-v7": null,
+    "azure/e8ps-v7": null,
+    "azure/e16ps-v7": null,
+    "azure/e32ps-v7": null,
+    "azure/e48ps-v7": null,
+    "azure/e64ps-v7": null,
+    "azure/e96ps-v7": null,
+    "azure/e128ps-v7": null,
+    "azure/e1pds-v7": null,
+    "azure/e2pds-v7": null,
+    "azure/e4pds-v7": null,
+    "azure/e8pds-v7": null,
+    "azure/e16pds-v7": null,
+    "azure/e32pds-v7": null,
+    "azure/e48pds-v7": null,
+    "azure/e64pds-v7": null,
+    "azure/e96pds-v7": null,
+    "azure/e128pds-v7": null,
+    "azure/m1ps-v4": null,
+    "azure/m2ps-v4": null,
+    "azure/m4ps-v4": null,
+    "azure/m8ps-v4": null,
+    "azure/m16ps-v4": null,
+    "azure/m32ps-v4": null,
+    "azure/m48ps-v4": null,
+    "azure/m64ps-v4": null,
+    "azure/m84ps-v4": null,
+    "azure/m128ps-v4": null,
+    "azure/m1pds-v4": null,
+    "azure/m2pds-v4": null,
+    "azure/m4pds-v4": null,
+    "azure/m8pds-v4": null,
+    "azure/m16pds-v4": null,
+    "azure/m32pds-v4": null,
+    "azure/m48pds-v4": null,
+    "azure/m64pds-v4": null,
+    "azure/m84pds-v4": null,
+    "azure/m128pds-v4": null,
+    "azure/l1ps-v5": null,
+    "azure/l2ps-v5": null,
+    "azure/l4ps-v5": null,
+    "azure/l8ps-v5": null,
+    "azure/l16ps-v5": null,
+    "azure/l32ps-v5": null,
+    "azure/l48ps-v5": null,
+    "azure/l64ps-v5": null,
+    "azure/l96ps-v5": null,
+    "azure/l128ps-v5": null,
+    "gcp/a5x-highgpu-4g-metal": null,
+    "azure/e192is-v6": null,
+    "azure/fx12mds-v2": null,
+    "azure/fx24mds-v2": null,
+    "azure/d192s-v6": null,
+    "azure/fx12ms-v2": null,
+    "azure/fx24ms-v2": null,
+    "azure/m416bs-v3": null,
+    "azure/ec2eds-v6": null,
+    "azure/ec4eds-v6": null,
+    "azure/ec8eds-v6": null,
+    "azure/ec16eds-v6": null,
+    "azure/ec32eds-v6": null,
+    "azure/ec48eds-v6": null,
+    "azure/ec64eds-v6": null,
+    "azure/m416s-8-v2": null,
+    "azure/ec2es-v6": null,
+    "azure/ec4es-v6": null,
+    "azure/ec8es-v6": null,
+    "azure/ec16es-v6": null,
+    "azure/ec32es-v6": null,
+    "azure/ec48es-v6": null,
+    "azure/ec64es-v6": null
   },
   "azurePacking": {
     "azure-host-general-0": {
@@ -28947,6 +29060,791 @@
         "storage-proxy"
       ],
       "embodied": 1
+    },
+    {
+      "id": "azure-dpsv7-family-proxy-14b7afd90c",
+      "provider": "azure",
+      "name": "dpsv7 modeled family envelope",
+      "basis": "family-proxy",
+      "method": "d4b-host-v1",
+      "vcpus": 128,
+      "memory": 512,
+      "ssd_count": 0,
+      "ssd_capacity": 0,
+      "sockets": 1,
+      "cpu": [
+        "azure-cobalt-200"
+      ],
+      "hdd_count": 0,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpsv7-series"
+      ],
+      "assumptions": [
+        "cpu-proxy",
+        "family-proxy",
+        "inferred-sockets",
+        "largest-size-vcpu",
+        "max-impact",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-dpdsv7-family-proxy-2eb2ad9f4b",
+      "provider": "azure",
+      "name": "dpdsv7 modeled family envelope",
+      "basis": "family-proxy",
+      "method": "d4b-host-v1",
+      "vcpus": 128,
+      "memory": 512,
+      "ssd_count": 6,
+      "ssd_capacity": 7040,
+      "sockets": 1,
+      "cpu": [
+        "azure-cobalt-200"
+      ],
+      "hdd_count": 0,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpdsv7-series"
+      ],
+      "assumptions": [
+        "cpu-proxy",
+        "family-proxy",
+        "inferred-sockets",
+        "largest-size-vcpu",
+        "max-impact",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-dplsv7-family-proxy-fba1f1454f",
+      "provider": "azure",
+      "name": "dplsv7 modeled family envelope",
+      "basis": "family-proxy",
+      "method": "d4b-host-v1",
+      "vcpus": 128,
+      "memory": 256,
+      "ssd_count": 0,
+      "ssd_capacity": 0,
+      "sockets": 1,
+      "cpu": [
+        "azure-cobalt-200"
+      ],
+      "hdd_count": 0,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dplsv7-series"
+      ],
+      "assumptions": [
+        "cpu-proxy",
+        "family-proxy",
+        "inferred-sockets",
+        "largest-size-vcpu",
+        "max-impact",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-dpldsv7-family-proxy-152869a6d1",
+      "provider": "azure",
+      "name": "dpldsv7 modeled family envelope",
+      "basis": "family-proxy",
+      "method": "d4b-host-v1",
+      "vcpus": 128,
+      "memory": 256,
+      "ssd_count": 6,
+      "ssd_capacity": 7040,
+      "sockets": 1,
+      "cpu": [
+        "azure-cobalt-200"
+      ],
+      "hdd_count": 0,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dpldsv7-series"
+      ],
+      "assumptions": [
+        "cpu-proxy",
+        "family-proxy",
+        "inferred-sockets",
+        "largest-size-vcpu",
+        "max-impact",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-epsv7-family-proxy-7ed489faf2",
+      "provider": "azure",
+      "name": "epsv7 modeled family envelope",
+      "basis": "family-proxy",
+      "method": "d4b-host-v1",
+      "vcpus": 128,
+      "memory": 1024,
+      "ssd_count": 0,
+      "ssd_capacity": 0,
+      "sockets": 1,
+      "cpu": [
+        "azure-cobalt-200"
+      ],
+      "hdd_count": 0,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epsv7-series"
+      ],
+      "assumptions": [
+        "cpu-proxy",
+        "family-proxy",
+        "inferred-sockets",
+        "largest-size-vcpu",
+        "max-impact",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-epdsv7-family-proxy-2655f696f2",
+      "provider": "azure",
+      "name": "epdsv7 modeled family envelope",
+      "basis": "family-proxy",
+      "method": "d4b-host-v1",
+      "vcpus": 128,
+      "memory": 1024,
+      "ssd_count": 6,
+      "ssd_capacity": 7040,
+      "sockets": 1,
+      "cpu": [
+        "azure-cobalt-200"
+      ],
+      "hdd_count": 0,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/epdsv7-series"
+      ],
+      "assumptions": [
+        "cpu-proxy",
+        "family-proxy",
+        "inferred-sockets",
+        "largest-size-vcpu",
+        "max-impact",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-mpsv4-family-proxy-071b855c07",
+      "provider": "azure",
+      "name": "mpsv4 modeled family envelope",
+      "basis": "family-proxy",
+      "method": "d4b-host-v1",
+      "vcpus": 128,
+      "memory": 1388,
+      "ssd_count": 0,
+      "ssd_capacity": 0,
+      "sockets": 1,
+      "cpu": [
+        "azure-cobalt-200"
+      ],
+      "hdd_count": 0,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpsv4-series"
+      ],
+      "assumptions": [
+        "cpu-proxy",
+        "family-proxy",
+        "inferred-sockets",
+        "largest-size-vcpu",
+        "max-impact",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-mpdsv4-family-proxy-d59e347c6f",
+      "provider": "azure",
+      "name": "mpdsv4 modeled family envelope",
+      "basis": "family-proxy",
+      "method": "d4b-host-v1",
+      "vcpus": 128,
+      "memory": 1388,
+      "ssd_count": 6,
+      "ssd_capacity": 7040,
+      "sockets": 1,
+      "cpu": [
+        "azure-cobalt-200"
+      ],
+      "hdd_count": 0,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mpdsv4-series"
+      ],
+      "assumptions": [
+        "cpu-proxy",
+        "family-proxy",
+        "inferred-sockets",
+        "largest-size-vcpu",
+        "max-impact",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-lpsv5-family-proxy-fa36fa5f7d",
+      "provider": "azure",
+      "name": "lpsv5 modeled family envelope",
+      "basis": "family-proxy",
+      "method": "d4b-host-v1",
+      "vcpus": 128,
+      "memory": 1024,
+      "ssd_count": 6,
+      "ssd_capacity": 23040,
+      "sockets": 1,
+      "cpu": [
+        "azure-cobalt-200"
+      ],
+      "hdd_count": 0,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/storage-optimized/lpsv5-series"
+      ],
+      "assumptions": [
+        "cpu-proxy",
+        "family-proxy",
+        "inferred-sockets",
+        "largest-size-vcpu",
+        "max-impact",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "gcp-a5x-highgpu-4g-metal-412152211b",
+      "provider": "gcp",
+      "name": "A5X bare-metal modeled envelope",
+      "basis": "baremetal-proxy",
+      "method": "d4b-host-v1",
+      "vcpus": 176,
+      "memory": 1440,
+      "sockets": 2,
+      "cpu": [
+        "nvidia-vera"
+      ],
+      "ssd_count": 4,
+      "ssd_capacity": 48000,
+      "hdd_count": 0,
+      "hdd_capacity": 0,
+      "accelerator": "nvidia-rubin",
+      "accelerators": 4,
+      "accelerator_memory": 288,
+      "embodied": 0,
+      "sources": [
+        "https://docs.cloud.google.com/compute/docs/accelerator-optimized-machines",
+        "https://docs.cloud.google.com/compute/docs/instances/bare-metal-instances",
+        "https://docs.nvidia.com/dccpu/vera-perf-tuning-guide/vera-cpu-and-superchip.html",
+        "https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/"
+      ],
+      "assumptions": [
+        "baremetal-proxy",
+        "installed-vram",
+        "interconnect-excluded",
+        "max-impact",
+        "published-sockets",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-e192is-v6-dedicated-estimate",
+      "provider": "azure",
+      "name": "e192is v6 dedicated-equivalent estimate",
+      "basis": "dedicated-equivalent-fallback",
+      "method": "d4b-host-v1",
+      "vcpus": 192,
+      "memory": 1832,
+      "sockets": 1,
+      "ssd_count": 0,
+      "hdd_count": 0,
+      "ssd_capacity": 0,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "cpu": [
+        "intel-xeon-8573c"
+      ],
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/esv6-series"
+      ],
+      "assumptions": [
+        "dedicated-fallback",
+        "inferred-sockets",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-m416bs-v3-dedicated-estimate",
+      "provider": "azure",
+      "name": "m416bs v3 dedicated-equivalent estimate",
+      "basis": "dedicated-equivalent-fallback",
+      "method": "d4b-host-v1",
+      "vcpus": 416,
+      "memory": 3800,
+      "sockets": 1,
+      "ssd_count": 0,
+      "hdd_count": 0,
+      "ssd_capacity": 0,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/mbsv3-series"
+      ],
+      "assumptions": [
+        "dedicated-fallback",
+        "inferred-sockets",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-ec2eds-v6-dedicated-estimate",
+      "provider": "azure",
+      "name": "ec2eds v6 dedicated-equivalent estimate",
+      "basis": "dedicated-equivalent-fallback",
+      "method": "d4b-host-v1",
+      "vcpus": 2,
+      "memory": 16,
+      "sockets": 1,
+      "ssd_count": 1,
+      "hdd_count": 0,
+      "ssd_capacity": 110,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "cpu": [
+        "intel-xeon-8573c"
+      ],
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecedsv6-series"
+      ],
+      "assumptions": [
+        "dedicated-fallback",
+        "inferred-sockets",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-ec4eds-v6-dedicated-estimate",
+      "provider": "azure",
+      "name": "ec4eds v6 dedicated-equivalent estimate",
+      "basis": "dedicated-equivalent-fallback",
+      "method": "d4b-host-v1",
+      "vcpus": 4,
+      "memory": 32,
+      "sockets": 1,
+      "ssd_count": 1,
+      "hdd_count": 0,
+      "ssd_capacity": 220,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "cpu": [
+        "intel-xeon-8573c"
+      ],
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecedsv6-series"
+      ],
+      "assumptions": [
+        "dedicated-fallback",
+        "inferred-sockets",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-ec8eds-v6-dedicated-estimate",
+      "provider": "azure",
+      "name": "ec8eds v6 dedicated-equivalent estimate",
+      "basis": "dedicated-equivalent-fallback",
+      "method": "d4b-host-v1",
+      "vcpus": 8,
+      "memory": 64,
+      "sockets": 1,
+      "ssd_count": 1,
+      "hdd_count": 0,
+      "ssd_capacity": 440,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "cpu": [
+        "intel-xeon-8573c"
+      ],
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecedsv6-series"
+      ],
+      "assumptions": [
+        "dedicated-fallback",
+        "inferred-sockets",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-ec16eds-v6-dedicated-estimate",
+      "provider": "azure",
+      "name": "ec16eds v6 dedicated-equivalent estimate",
+      "basis": "dedicated-equivalent-fallback",
+      "method": "d4b-host-v1",
+      "vcpus": 16,
+      "memory": 128,
+      "sockets": 1,
+      "ssd_count": 2,
+      "hdd_count": 0,
+      "ssd_capacity": 880,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "cpu": [
+        "intel-xeon-8573c"
+      ],
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecedsv6-series"
+      ],
+      "assumptions": [
+        "dedicated-fallback",
+        "inferred-sockets",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-ec32eds-v6-dedicated-estimate",
+      "provider": "azure",
+      "name": "ec32eds v6 dedicated-equivalent estimate",
+      "basis": "dedicated-equivalent-fallback",
+      "method": "d4b-host-v1",
+      "vcpus": 32,
+      "memory": 256,
+      "sockets": 1,
+      "ssd_count": 4,
+      "hdd_count": 0,
+      "ssd_capacity": 1760,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "cpu": [
+        "intel-xeon-8573c"
+      ],
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecedsv6-series"
+      ],
+      "assumptions": [
+        "dedicated-fallback",
+        "inferred-sockets",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-ec48eds-v6-dedicated-estimate",
+      "provider": "azure",
+      "name": "ec48eds v6 dedicated-equivalent estimate",
+      "basis": "dedicated-equivalent-fallback",
+      "method": "d4b-host-v1",
+      "vcpus": 48,
+      "memory": 384,
+      "sockets": 1,
+      "ssd_count": 6,
+      "hdd_count": 0,
+      "ssd_capacity": 2640,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "cpu": [
+        "intel-xeon-8573c"
+      ],
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecedsv6-series"
+      ],
+      "assumptions": [
+        "dedicated-fallback",
+        "inferred-sockets",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-ec64eds-v6-dedicated-estimate",
+      "provider": "azure",
+      "name": "ec64eds v6 dedicated-equivalent estimate",
+      "basis": "dedicated-equivalent-fallback",
+      "method": "d4b-host-v1",
+      "vcpus": 64,
+      "memory": 512,
+      "sockets": 1,
+      "ssd_count": 4,
+      "hdd_count": 0,
+      "ssd_capacity": 3520,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "cpu": [
+        "intel-xeon-8573c"
+      ],
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecedsv6-series"
+      ],
+      "assumptions": [
+        "dedicated-fallback",
+        "inferred-sockets",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-ec2es-v6-dedicated-estimate",
+      "provider": "azure",
+      "name": "ec2es v6 dedicated-equivalent estimate",
+      "basis": "dedicated-equivalent-fallback",
+      "method": "d4b-host-v1",
+      "vcpus": 2,
+      "memory": 16,
+      "sockets": 1,
+      "ssd_count": 0,
+      "hdd_count": 0,
+      "ssd_capacity": 0,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "cpu": [
+        "intel-xeon-8573c"
+      ],
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecesv6-series"
+      ],
+      "assumptions": [
+        "dedicated-fallback",
+        "inferred-sockets",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-ec4es-v6-dedicated-estimate",
+      "provider": "azure",
+      "name": "ec4es v6 dedicated-equivalent estimate",
+      "basis": "dedicated-equivalent-fallback",
+      "method": "d4b-host-v1",
+      "vcpus": 4,
+      "memory": 32,
+      "sockets": 1,
+      "ssd_count": 0,
+      "hdd_count": 0,
+      "ssd_capacity": 0,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "cpu": [
+        "intel-xeon-8573c"
+      ],
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecesv6-series"
+      ],
+      "assumptions": [
+        "dedicated-fallback",
+        "inferred-sockets",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-ec8es-v6-dedicated-estimate",
+      "provider": "azure",
+      "name": "ec8es v6 dedicated-equivalent estimate",
+      "basis": "dedicated-equivalent-fallback",
+      "method": "d4b-host-v1",
+      "vcpus": 8,
+      "memory": 64,
+      "sockets": 1,
+      "ssd_count": 0,
+      "hdd_count": 0,
+      "ssd_capacity": 0,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "cpu": [
+        "intel-xeon-8573c"
+      ],
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecesv6-series"
+      ],
+      "assumptions": [
+        "dedicated-fallback",
+        "inferred-sockets",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-ec16es-v6-dedicated-estimate",
+      "provider": "azure",
+      "name": "ec16es v6 dedicated-equivalent estimate",
+      "basis": "dedicated-equivalent-fallback",
+      "method": "d4b-host-v1",
+      "vcpus": 16,
+      "memory": 128,
+      "sockets": 1,
+      "ssd_count": 0,
+      "hdd_count": 0,
+      "ssd_capacity": 0,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "cpu": [
+        "intel-xeon-8573c"
+      ],
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecesv6-series"
+      ],
+      "assumptions": [
+        "dedicated-fallback",
+        "inferred-sockets",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-ec32es-v6-dedicated-estimate",
+      "provider": "azure",
+      "name": "ec32es v6 dedicated-equivalent estimate",
+      "basis": "dedicated-equivalent-fallback",
+      "method": "d4b-host-v1",
+      "vcpus": 32,
+      "memory": 256,
+      "sockets": 1,
+      "ssd_count": 0,
+      "hdd_count": 0,
+      "ssd_capacity": 0,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "cpu": [
+        "intel-xeon-8573c"
+      ],
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecesv6-series"
+      ],
+      "assumptions": [
+        "dedicated-fallback",
+        "inferred-sockets",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-ec48es-v6-dedicated-estimate",
+      "provider": "azure",
+      "name": "ec48es v6 dedicated-equivalent estimate",
+      "basis": "dedicated-equivalent-fallback",
+      "method": "d4b-host-v1",
+      "vcpus": 48,
+      "memory": 384,
+      "sockets": 1,
+      "ssd_count": 0,
+      "hdd_count": 0,
+      "ssd_capacity": 0,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "cpu": [
+        "intel-xeon-8573c"
+      ],
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecesv6-series"
+      ],
+      "assumptions": [
+        "dedicated-fallback",
+        "inferred-sockets",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
+    },
+    {
+      "id": "azure-ec64es-v6-dedicated-estimate",
+      "provider": "azure",
+      "name": "ec64es v6 dedicated-equivalent estimate",
+      "basis": "dedicated-equivalent-fallback",
+      "method": "d4b-host-v1",
+      "vcpus": 64,
+      "memory": 512,
+      "sockets": 1,
+      "ssd_count": 0,
+      "hdd_count": 0,
+      "ssd_capacity": 0,
+      "hdd_capacity": 0,
+      "accelerators": 0,
+      "accelerator_memory": 0,
+      "embodied": 0,
+      "cpu": [
+        "intel-xeon-8573c"
+      ],
+      "sources": [
+        "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/memory-optimized/ecesv6-series"
+      ],
+      "assumptions": [
+        "dedicated-fallback",
+        "inferred-sockets",
+        "remote-storage-excluded",
+        "storage-proxy"
+      ]
     }
   ],
   "assignments": [
@@ -52132,6 +53030,571 @@
       "id": "b300-sxm-8-288g",
       "host": "scaleway-b300-sxm-8-288g-c86a8e507d",
       "capacity_basis": "profile-largest-size-proxy"
+    },
+    {
+      "provider": "azure",
+      "id": "d1ps-v7",
+      "host": "azure-dpsv7-family-proxy-14b7afd90c"
+    },
+    {
+      "provider": "azure",
+      "id": "d2ps-v7",
+      "host": "azure-dpsv7-family-proxy-14b7afd90c"
+    },
+    {
+      "provider": "azure",
+      "id": "d4ps-v7",
+      "host": "azure-dpsv7-family-proxy-14b7afd90c"
+    },
+    {
+      "provider": "azure",
+      "id": "d8ps-v7",
+      "host": "azure-dpsv7-family-proxy-14b7afd90c"
+    },
+    {
+      "provider": "azure",
+      "id": "d16ps-v7",
+      "host": "azure-dpsv7-family-proxy-14b7afd90c"
+    },
+    {
+      "provider": "azure",
+      "id": "d32ps-v7",
+      "host": "azure-dpsv7-family-proxy-14b7afd90c"
+    },
+    {
+      "provider": "azure",
+      "id": "d48ps-v7",
+      "host": "azure-dpsv7-family-proxy-14b7afd90c"
+    },
+    {
+      "provider": "azure",
+      "id": "d64ps-v7",
+      "host": "azure-dpsv7-family-proxy-14b7afd90c"
+    },
+    {
+      "provider": "azure",
+      "id": "d96ps-v7",
+      "host": "azure-dpsv7-family-proxy-14b7afd90c"
+    },
+    {
+      "provider": "azure",
+      "id": "d128ps-v7",
+      "host": "azure-dpsv7-family-proxy-14b7afd90c"
+    },
+    {
+      "provider": "azure",
+      "id": "d1pds-v7",
+      "host": "azure-dpdsv7-family-proxy-2eb2ad9f4b"
+    },
+    {
+      "provider": "azure",
+      "id": "d2pds-v7",
+      "host": "azure-dpdsv7-family-proxy-2eb2ad9f4b"
+    },
+    {
+      "provider": "azure",
+      "id": "d4pds-v7",
+      "host": "azure-dpdsv7-family-proxy-2eb2ad9f4b"
+    },
+    {
+      "provider": "azure",
+      "id": "d8pds-v7",
+      "host": "azure-dpdsv7-family-proxy-2eb2ad9f4b"
+    },
+    {
+      "provider": "azure",
+      "id": "d16pds-v7",
+      "host": "azure-dpdsv7-family-proxy-2eb2ad9f4b"
+    },
+    {
+      "provider": "azure",
+      "id": "d32pds-v7",
+      "host": "azure-dpdsv7-family-proxy-2eb2ad9f4b"
+    },
+    {
+      "provider": "azure",
+      "id": "d48pds-v7",
+      "host": "azure-dpdsv7-family-proxy-2eb2ad9f4b"
+    },
+    {
+      "provider": "azure",
+      "id": "d64pds-v7",
+      "host": "azure-dpdsv7-family-proxy-2eb2ad9f4b"
+    },
+    {
+      "provider": "azure",
+      "id": "d96pds-v7",
+      "host": "azure-dpdsv7-family-proxy-2eb2ad9f4b"
+    },
+    {
+      "provider": "azure",
+      "id": "d128pds-v7",
+      "host": "azure-dpdsv7-family-proxy-2eb2ad9f4b"
+    },
+    {
+      "provider": "azure",
+      "id": "d1pls-v7",
+      "host": "azure-dplsv7-family-proxy-fba1f1454f"
+    },
+    {
+      "provider": "azure",
+      "id": "d2pls-v7",
+      "host": "azure-dplsv7-family-proxy-fba1f1454f"
+    },
+    {
+      "provider": "azure",
+      "id": "d4pls-v7",
+      "host": "azure-dplsv7-family-proxy-fba1f1454f"
+    },
+    {
+      "provider": "azure",
+      "id": "d8pls-v7",
+      "host": "azure-dplsv7-family-proxy-fba1f1454f"
+    },
+    {
+      "provider": "azure",
+      "id": "d16pls-v7",
+      "host": "azure-dplsv7-family-proxy-fba1f1454f"
+    },
+    {
+      "provider": "azure",
+      "id": "d32pls-v7",
+      "host": "azure-dplsv7-family-proxy-fba1f1454f"
+    },
+    {
+      "provider": "azure",
+      "id": "d48pls-v7",
+      "host": "azure-dplsv7-family-proxy-fba1f1454f"
+    },
+    {
+      "provider": "azure",
+      "id": "d64pls-v7",
+      "host": "azure-dplsv7-family-proxy-fba1f1454f"
+    },
+    {
+      "provider": "azure",
+      "id": "d96pls-v7",
+      "host": "azure-dplsv7-family-proxy-fba1f1454f"
+    },
+    {
+      "provider": "azure",
+      "id": "d128pls-v7",
+      "host": "azure-dplsv7-family-proxy-fba1f1454f"
+    },
+    {
+      "provider": "azure",
+      "id": "d1plds-v7",
+      "host": "azure-dpldsv7-family-proxy-152869a6d1"
+    },
+    {
+      "provider": "azure",
+      "id": "d2plds-v7",
+      "host": "azure-dpldsv7-family-proxy-152869a6d1"
+    },
+    {
+      "provider": "azure",
+      "id": "d4plds-v7",
+      "host": "azure-dpldsv7-family-proxy-152869a6d1"
+    },
+    {
+      "provider": "azure",
+      "id": "d8plds-v7",
+      "host": "azure-dpldsv7-family-proxy-152869a6d1"
+    },
+    {
+      "provider": "azure",
+      "id": "d16plds-v7",
+      "host": "azure-dpldsv7-family-proxy-152869a6d1"
+    },
+    {
+      "provider": "azure",
+      "id": "d32plds-v7",
+      "host": "azure-dpldsv7-family-proxy-152869a6d1"
+    },
+    {
+      "provider": "azure",
+      "id": "d48plds-v7",
+      "host": "azure-dpldsv7-family-proxy-152869a6d1"
+    },
+    {
+      "provider": "azure",
+      "id": "d64plds-v7",
+      "host": "azure-dpldsv7-family-proxy-152869a6d1"
+    },
+    {
+      "provider": "azure",
+      "id": "d96plds-v7",
+      "host": "azure-dpldsv7-family-proxy-152869a6d1"
+    },
+    {
+      "provider": "azure",
+      "id": "d128plds-v7",
+      "host": "azure-dpldsv7-family-proxy-152869a6d1"
+    },
+    {
+      "provider": "azure",
+      "id": "e1ps-v7",
+      "host": "azure-epsv7-family-proxy-7ed489faf2"
+    },
+    {
+      "provider": "azure",
+      "id": "e2ps-v7",
+      "host": "azure-epsv7-family-proxy-7ed489faf2"
+    },
+    {
+      "provider": "azure",
+      "id": "e4ps-v7",
+      "host": "azure-epsv7-family-proxy-7ed489faf2"
+    },
+    {
+      "provider": "azure",
+      "id": "e8ps-v7",
+      "host": "azure-epsv7-family-proxy-7ed489faf2"
+    },
+    {
+      "provider": "azure",
+      "id": "e16ps-v7",
+      "host": "azure-epsv7-family-proxy-7ed489faf2"
+    },
+    {
+      "provider": "azure",
+      "id": "e32ps-v7",
+      "host": "azure-epsv7-family-proxy-7ed489faf2"
+    },
+    {
+      "provider": "azure",
+      "id": "e48ps-v7",
+      "host": "azure-epsv7-family-proxy-7ed489faf2"
+    },
+    {
+      "provider": "azure",
+      "id": "e64ps-v7",
+      "host": "azure-epsv7-family-proxy-7ed489faf2"
+    },
+    {
+      "provider": "azure",
+      "id": "e96ps-v7",
+      "host": "azure-epsv7-family-proxy-7ed489faf2"
+    },
+    {
+      "provider": "azure",
+      "id": "e128ps-v7",
+      "host": "azure-epsv7-family-proxy-7ed489faf2"
+    },
+    {
+      "provider": "azure",
+      "id": "e1pds-v7",
+      "host": "azure-epdsv7-family-proxy-2655f696f2"
+    },
+    {
+      "provider": "azure",
+      "id": "e2pds-v7",
+      "host": "azure-epdsv7-family-proxy-2655f696f2"
+    },
+    {
+      "provider": "azure",
+      "id": "e4pds-v7",
+      "host": "azure-epdsv7-family-proxy-2655f696f2"
+    },
+    {
+      "provider": "azure",
+      "id": "e8pds-v7",
+      "host": "azure-epdsv7-family-proxy-2655f696f2"
+    },
+    {
+      "provider": "azure",
+      "id": "e16pds-v7",
+      "host": "azure-epdsv7-family-proxy-2655f696f2"
+    },
+    {
+      "provider": "azure",
+      "id": "e32pds-v7",
+      "host": "azure-epdsv7-family-proxy-2655f696f2"
+    },
+    {
+      "provider": "azure",
+      "id": "e48pds-v7",
+      "host": "azure-epdsv7-family-proxy-2655f696f2"
+    },
+    {
+      "provider": "azure",
+      "id": "e64pds-v7",
+      "host": "azure-epdsv7-family-proxy-2655f696f2"
+    },
+    {
+      "provider": "azure",
+      "id": "e96pds-v7",
+      "host": "azure-epdsv7-family-proxy-2655f696f2"
+    },
+    {
+      "provider": "azure",
+      "id": "e128pds-v7",
+      "host": "azure-epdsv7-family-proxy-2655f696f2"
+    },
+    {
+      "provider": "azure",
+      "id": "m1ps-v4",
+      "host": "azure-mpsv4-family-proxy-071b855c07"
+    },
+    {
+      "provider": "azure",
+      "id": "m2ps-v4",
+      "host": "azure-mpsv4-family-proxy-071b855c07"
+    },
+    {
+      "provider": "azure",
+      "id": "m4ps-v4",
+      "host": "azure-mpsv4-family-proxy-071b855c07"
+    },
+    {
+      "provider": "azure",
+      "id": "m8ps-v4",
+      "host": "azure-mpsv4-family-proxy-071b855c07"
+    },
+    {
+      "provider": "azure",
+      "id": "m16ps-v4",
+      "host": "azure-mpsv4-family-proxy-071b855c07"
+    },
+    {
+      "provider": "azure",
+      "id": "m32ps-v4",
+      "host": "azure-mpsv4-family-proxy-071b855c07"
+    },
+    {
+      "provider": "azure",
+      "id": "m48ps-v4",
+      "host": "azure-mpsv4-family-proxy-071b855c07"
+    },
+    {
+      "provider": "azure",
+      "id": "m64ps-v4",
+      "host": "azure-mpsv4-family-proxy-071b855c07"
+    },
+    {
+      "provider": "azure",
+      "id": "m84ps-v4",
+      "host": "azure-mpsv4-family-proxy-071b855c07"
+    },
+    {
+      "provider": "azure",
+      "id": "m128ps-v4",
+      "host": "azure-mpsv4-family-proxy-071b855c07"
+    },
+    {
+      "provider": "azure",
+      "id": "m1pds-v4",
+      "host": "azure-mpdsv4-family-proxy-d59e347c6f"
+    },
+    {
+      "provider": "azure",
+      "id": "m2pds-v4",
+      "host": "azure-mpdsv4-family-proxy-d59e347c6f"
+    },
+    {
+      "provider": "azure",
+      "id": "m4pds-v4",
+      "host": "azure-mpdsv4-family-proxy-d59e347c6f"
+    },
+    {
+      "provider": "azure",
+      "id": "m8pds-v4",
+      "host": "azure-mpdsv4-family-proxy-d59e347c6f"
+    },
+    {
+      "provider": "azure",
+      "id": "m16pds-v4",
+      "host": "azure-mpdsv4-family-proxy-d59e347c6f"
+    },
+    {
+      "provider": "azure",
+      "id": "m32pds-v4",
+      "host": "azure-mpdsv4-family-proxy-d59e347c6f"
+    },
+    {
+      "provider": "azure",
+      "id": "m48pds-v4",
+      "host": "azure-mpdsv4-family-proxy-d59e347c6f"
+    },
+    {
+      "provider": "azure",
+      "id": "m64pds-v4",
+      "host": "azure-mpdsv4-family-proxy-d59e347c6f"
+    },
+    {
+      "provider": "azure",
+      "id": "m84pds-v4",
+      "host": "azure-mpdsv4-family-proxy-d59e347c6f"
+    },
+    {
+      "provider": "azure",
+      "id": "m128pds-v4",
+      "host": "azure-mpdsv4-family-proxy-d59e347c6f"
+    },
+    {
+      "provider": "azure",
+      "id": "l1ps-v5",
+      "host": "azure-lpsv5-family-proxy-fa36fa5f7d"
+    },
+    {
+      "provider": "azure",
+      "id": "l2ps-v5",
+      "host": "azure-lpsv5-family-proxy-fa36fa5f7d"
+    },
+    {
+      "provider": "azure",
+      "id": "l4ps-v5",
+      "host": "azure-lpsv5-family-proxy-fa36fa5f7d"
+    },
+    {
+      "provider": "azure",
+      "id": "l8ps-v5",
+      "host": "azure-lpsv5-family-proxy-fa36fa5f7d"
+    },
+    {
+      "provider": "azure",
+      "id": "l16ps-v5",
+      "host": "azure-lpsv5-family-proxy-fa36fa5f7d"
+    },
+    {
+      "provider": "azure",
+      "id": "l32ps-v5",
+      "host": "azure-lpsv5-family-proxy-fa36fa5f7d"
+    },
+    {
+      "provider": "azure",
+      "id": "l48ps-v5",
+      "host": "azure-lpsv5-family-proxy-fa36fa5f7d"
+    },
+    {
+      "provider": "azure",
+      "id": "l64ps-v5",
+      "host": "azure-lpsv5-family-proxy-fa36fa5f7d"
+    },
+    {
+      "provider": "azure",
+      "id": "l96ps-v5",
+      "host": "azure-lpsv5-family-proxy-fa36fa5f7d"
+    },
+    {
+      "provider": "azure",
+      "id": "l128ps-v5",
+      "host": "azure-lpsv5-family-proxy-fa36fa5f7d"
+    },
+    {
+      "provider": "gcp",
+      "id": "a5x-highgpu-4g-metal",
+      "host": "gcp-a5x-highgpu-4g-metal-412152211b"
+    },
+    {
+      "provider": "azure",
+      "id": "e192is-v6",
+      "host": "azure-e192is-v6-dedicated-estimate"
+    },
+    {
+      "provider": "azure",
+      "id": "fx12mds-v2",
+      "host": "azure-fx96mds-v2-dc6171f82b"
+    },
+    {
+      "provider": "azure",
+      "id": "fx24mds-v2",
+      "host": "azure-fx96mds-v2-dc6171f82b"
+    },
+    {
+      "provider": "azure",
+      "id": "d192s-v6",
+      "host": "azure-dsv6-type1"
+    },
+    {
+      "provider": "azure",
+      "id": "fx12ms-v2",
+      "host": "azure-fx96ms-v2-b7f8a23756"
+    },
+    {
+      "provider": "azure",
+      "id": "fx24ms-v2",
+      "host": "azure-fx96ms-v2-b7f8a23756"
+    },
+    {
+      "provider": "azure",
+      "id": "m416bs-v3",
+      "host": "azure-m416bs-v3-dedicated-estimate"
+    },
+    {
+      "provider": "azure",
+      "id": "ec2eds-v6",
+      "host": "azure-ec2eds-v6-dedicated-estimate"
+    },
+    {
+      "provider": "azure",
+      "id": "ec4eds-v6",
+      "host": "azure-ec4eds-v6-dedicated-estimate"
+    },
+    {
+      "provider": "azure",
+      "id": "ec8eds-v6",
+      "host": "azure-ec8eds-v6-dedicated-estimate"
+    },
+    {
+      "provider": "azure",
+      "id": "ec16eds-v6",
+      "host": "azure-ec16eds-v6-dedicated-estimate"
+    },
+    {
+      "provider": "azure",
+      "id": "ec32eds-v6",
+      "host": "azure-ec32eds-v6-dedicated-estimate"
+    },
+    {
+      "provider": "azure",
+      "id": "ec48eds-v6",
+      "host": "azure-ec48eds-v6-dedicated-estimate"
+    },
+    {
+      "provider": "azure",
+      "id": "ec64eds-v6",
+      "host": "azure-ec64eds-v6-dedicated-estimate"
+    },
+    {
+      "provider": "azure",
+      "id": "m416s-8-v2",
+      "host": "azure-msmv2-type1-35d355397a"
+    },
+    {
+      "provider": "azure",
+      "id": "ec2es-v6",
+      "host": "azure-ec2es-v6-dedicated-estimate"
+    },
+    {
+      "provider": "azure",
+      "id": "ec4es-v6",
+      "host": "azure-ec4es-v6-dedicated-estimate"
+    },
+    {
+      "provider": "azure",
+      "id": "ec8es-v6",
+      "host": "azure-ec8es-v6-dedicated-estimate"
+    },
+    {
+      "provider": "azure",
+      "id": "ec16es-v6",
+      "host": "azure-ec16es-v6-dedicated-estimate"
+    },
+    {
+      "provider": "azure",
+      "id": "ec32es-v6",
+      "host": "azure-ec32es-v6-dedicated-estimate"
+    },
+    {
+      "provider": "azure",
+      "id": "ec48es-v6",
+      "host": "azure-ec48es-v6-dedicated-estimate"
+    },
+    {
+      "provider": "azure",
+      "id": "ec64es-v6",
+      "host": "azure-ec64es-v6-dedicated-estimate"
     }
   ]
 }

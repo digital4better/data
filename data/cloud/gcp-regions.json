@@ -21,7 +21,13 @@
     "country": "tw",
     "pue": 1.13,
     "wue": 0.785,
-    "ref": 0.17
+    "ref": 0.15,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "asia-east2",
@@ -33,7 +39,13 @@
     "country": "hk",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.01
+    "ref": 0.02,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "asia-northeast1",
@@ -45,7 +57,13 @@
     "country": "jp",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.17
+    "ref": 0.23,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "asia-northeast2",
@@ -57,7 +75,13 @@
     "country": "jp",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.46
+    "ref": 0.45,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "asia-northeast3",
@@ -81,7 +105,13 @@
     "country": "in",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.09
+    "ref": 0.2,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "asia-south2",
@@ -93,7 +123,13 @@
     "country": "in",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.29
+    "ref": 0.39,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "asia-southeast1",
@@ -105,7 +141,13 @@
     "country": "sg",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.04
+    "ref": 0.05,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "asia-southeast2",
@@ -117,7 +159,13 @@
     "country": "id",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.18
+    "ref": 0.15,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "australia-southeast1",
@@ -129,11 +177,17 @@
     "country": "au",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.34
+    "ref": 0.37,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "australia-southeast2",
-    "name": "australia-southeast1",
+    "name": "australia-southeast2",
     "provider": "gcp",
     "lat": -37.813628,
     "lon": 144.963058,
@@ -141,7 +195,15 @@
     "country": "au",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.39
+    "ref": 0.44,
+    "fields": {
+      "ref": "supported",
+      "name": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon",
+      "https://docs.cloud.google.com/compute/docs/regions-zones"
+    ]
   },
   {
     "id": "europe-central2",
@@ -153,7 +215,13 @@
     "country": "pl",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.4
+    "ref": 0.81,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "europe-north1",
@@ -189,7 +257,13 @@
     "country": "be",
     "pue": 1.08,
     "wue": 0.785,
-    "ref": 0.84
+    "ref": 0.79,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "europe-west2",
@@ -201,7 +275,13 @@
     "country": "gb",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.79
+    "ref": 0.75,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "europe-west3",
@@ -213,7 +293,13 @@
     "country": "de",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.68
+    "ref": 0.7,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "europe-west4",
@@ -225,7 +311,13 @@
     "country": "nl",
     "pue": 1.08,
     "wue": 0.785,
-    "ref": 0.83
+    "ref": 0.82,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "europe-west6",
@@ -237,7 +329,13 @@
     "country": "ch",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.98
+    "ref": 0.97,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "europe-west8",
@@ -249,7 +347,13 @@
     "country": "it",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.73
+    "ref": 0.79,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "europe-west9",
@@ -273,7 +377,13 @@
     "country": "de",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.68
+    "ref": 0.7,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "europe-west12",
@@ -285,7 +395,13 @@
     "country": "it",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.73
+    "ref": 0.79,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "me-central1",
@@ -297,7 +413,13 @@
     "country": "qa",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.01
+    "ref": 0.0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "me-central2",
@@ -321,7 +443,13 @@
     "country": "il",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.07
+    "ref": 0.13,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "northamerica-northeast1",
@@ -329,12 +457,18 @@
     "provider": "gcp",
     "lat": 45.5581968,
     "lon": -73.8703852,
-    "location": "Montr\u00e9al",
+    "location": "Montréal",
     "country": "ca",
     "subdivision": "qc",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.99
+    "ref": 0.97,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "northamerica-northeast2",
@@ -347,7 +481,13 @@
     "subdivision": "on",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.84
+    "ref": 0.8,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "southamerica-east1",
@@ -355,11 +495,17 @@
     "provider": "gcp",
     "lat": -23.286926,
     "lon": -46.627497,
-    "location": "S\u00e3o Paulo",
+    "location": "São Paulo",
     "country": "br",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.88
+    "ref": 0.87,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "southamerica-west1",
@@ -371,7 +517,13 @@
     "country": "cl",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.92
+    "ref": 0.9,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "us-central1",
@@ -384,7 +536,13 @@
     "subdivision": "ia",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.87
+    "ref": 0.88,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "us-east1",
@@ -410,7 +568,13 @@
     "subdivision": "va",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.62
+    "ref": 0.57,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "us-east5",
@@ -423,7 +587,13 @@
     "subdivision": "oh",
     "pue": 1.06,
     "wue": 0.785,
-    "ref": 0.62
+    "ref": 0.57,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "us-south1",
@@ -436,7 +606,13 @@
     "subdivision": "tx",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.94
+    "ref": 0.83,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "us-west1",
@@ -449,7 +625,13 @@
     "subdivision": "or",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.87
+    "ref": 0.83,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "us-west2",
@@ -462,7 +644,13 @@
     "subdivision": "ca",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.63
+    "ref": 0.66,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "us-west3",
@@ -475,7 +663,13 @@
     "subdivision": "ut",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.33
+    "ref": 0.36,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "us-west4",
@@ -488,7 +682,13 @@
     "subdivision": "nv",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.64
+    "ref": 0.65,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://cloud.google.com/sustainability/region-carbon"
+    ]
   },
   {
     "id": "asia-southeast3",

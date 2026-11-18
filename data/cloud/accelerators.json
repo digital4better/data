@@ -70,6 +70,15 @@
     "transistors": 153000
   },
   {
+    "id": "amd-radeon-mi355x",
+    "type": "gpu",
+    "manufacturer": "amd",
+    "serie": "radeon",
+    "model": "mi355x",
+    "platform": "instinct",
+    "memory": 288
+  },
+  {
     "id": "amd-radeon-v520",
     "type": "gpu",
     "manufacturer": "amd",
@@ -210,6 +219,15 @@
     "transistors": 0
   },
   {
+    "id": "nvidia-blackwell-b200-192",
+    "type": "gpu",
+    "manufacturer": "nvidia",
+    "serie": "blackwell",
+    "model": "b200-192",
+    "platform": "blackwell",
+    "memory": 192
+  },
+  {
     "id": "nvidia-blackwell-b300",
     "type": "gpu",
     "manufacturer": "nvidia",
@@ -266,6 +284,17 @@
     "transistors": 17400
   },
   {
+    "id": "nvidia-rtx-pro-4500-blackwell-server",
+    "type": "gpu",
+    "manufacturer": "nvidia",
+    "serie": "rtx pro",
+    "model": "4500 blackwell server",
+    "platform": "blackwell",
+    "cores": 10496,
+    "memory": 32,
+    "tdp": 165
+  },
+  {
     "id": "nvidia-rtx-pro-6000-blackwell-server",
     "type": "gpu",
     "manufacturer": "nvidia",
@@ -278,6 +307,22 @@
     "process": 4,
     "die": 0,
     "transistors": 0
+  },
+  {
+    "id": "nvidia-rubin",
+    "manufacturer": "nvidia",
+    "serie": "rubin",
+    "model": "rubin",
+    "platform": "rubin",
+    "type": "gpu",
+    "memory": 288,
+    "fields": {
+      "id": "supported",
+      "manufacturer": "supported",
+      "model": "supported",
+      "type": "supported",
+      "memory": "supported"
+    }
   },
   {
     "id": "nvidia-tesla-a10",
@@ -504,6 +549,17 @@
     "transistors": 21100
   },
   {
+    "id": "nvidia-tesla-v100s32",
+    "type": "gpu",
+    "manufacturer": "nvidia",
+    "serie": "tesla",
+    "model": "v100s",
+    "platform": "volta",
+    "cores": 5120,
+    "memory": 32,
+    "tdp": 250
+  },
+  {
     "id": "qualcomm-ai100-standard",
     "type": "asic",
     "manufacturer": "qualcomm",
@@ -516,45 +572,5 @@
     "process": 7,
     "die": 0,
     "transistors": 0
-  },
-  {
-    "id": "amd-radeon-mi355x",
-    "type": "gpu",
-    "manufacturer": "amd",
-    "serie": "radeon",
-    "model": "mi355x",
-    "platform": "instinct",
-    "memory": 288
-  },
-  {
-    "id": "nvidia-rtx-pro-4500-blackwell-server",
-    "type": "gpu",
-    "manufacturer": "nvidia",
-    "serie": "rtx pro",
-    "model": "4500 blackwell server",
-    "platform": "blackwell",
-    "cores": 10496,
-    "memory": 32,
-    "tdp": 165
-  },
-  {
-    "id": "nvidia-tesla-v100s32",
-    "type": "gpu",
-    "manufacturer": "nvidia",
-    "serie": "tesla",
-    "model": "v100s",
-    "platform": "volta",
-    "cores": 5120,
-    "memory": 32,
-    "tdp": 250
-  },
-  {
-    "id": "nvidia-blackwell-b200-192",
-    "type": "gpu",
-    "manufacturer": "nvidia",
-    "serie": "blackwell",
-    "model": "b200-192",
-    "platform": "blackwell",
-    "memory": 192
   }
 ]

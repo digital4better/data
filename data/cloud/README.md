@@ -19,7 +19,9 @@ Shared hardware references: CPUs ([JSON](./cpus.json), [CSV](./cpus.csv)) and ac
 
 ## File Structure and Units
 
-Records may include optional JSON-only [`fields` assessments](../field-assessments.md): `supported`, `tentative` or `missing` per top-level property. An unannotated field is not assessed. CSVs are unchanged; existing required fields, estimates and evidence rules still apply.
+Records may include optional JSON-only [`fields` assessments](../field-assessments.md): `supported`, `estimated`, `tentative` or `missing` per top-level property. An unannotated field is not assessed. CSV layouts are unchanged; the existing AI `estimated` column is derived from these states. Required fields and evidence rules still apply.
+
+CPU and accelerator catalogs cover hardware referenced by cloud VMs and hosts, including historical records; they are not exhaustive manufacturer catalogs. Add hardware together with its evidenced VM/host reference. Existing orphan references require historical review, not automatic deletion.
 
 Every JSON file contains an array of objects; its CSV counterpart has one row per object. Optional fields may be absent or empty. Some historical numeric values are decimal strings: preserve their value when parsing. Hardware zeros can be legacy placeholders rather than verified measurements.
 
@@ -132,14 +134,35 @@ Region `pue` is a ratio, `wue` is L/kWh and `ref` is a fraction. Reporting bound
 
 | Provider | Source and interpretation |
 | --- | --- |
-| AWS | [Regional PUE/WUE disclosures](https://sustainability.aboutamazon.com/aws-wue-pue.csv); retained 2024 reference values. REF remains zero by convention. |
+| AWS | [Regional PUE/WUE disclosures](https://sustainability.aboutamazon.com/products-services/aws-cloud); current regional measurements are used when published. The older CSV remains a historical reference. REF remains zero by convention. |
 | Azure | [Datacenter efficiency disclosures](https://datacenters.microsoft.com/sustainability/efficiency/) and regional fact sheets, including curated historical values whose original PDFs may no longer be retrievable. |
 | GCP | [Regional carbon data](https://cloud.google.com/sustainability/region-carbon); CFE is used as the REF proxy. Previously derived water values remain pending clearer regional disclosures. |
-| Oracle | [Environmental reporting](https://www.oracle.com/a/ocom/docs/corporate/citizenship/oracle-corp-citizenship-report-3941904.pdf); uniform PUE 1.07 and provisional WUE zero are reference assumptions. |
+| Oracle | [OCI environmental reporting](https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf); renewable matching is distinct from physical grid emissions. Uniform PUE 1.07 and provisional WUE zero remain reference assumptions. |
 | OVHcloud | [FY25 environmental KPIs](https://www.ovhcloud.com/sites/default/files/external_files/kpis_fy25.pdf). |
 | Scaleway | [Calculation reference](https://www.scaleway.com/en/docs/environmental-footprint/additional-content/calculation-values-reference/) and datacenter impact reports. |
 
 Compare reporting periods and regional versus global boundaries before comparing providers. Lower PUE alone does not imply a lower total environmental impact.
+
+
+#### Reviewed regional periods and limits
+
+AWS directly reported regional PUE/WUE values use calendar 2025 where available; absent disclosures retain their earlier reference or estimate. Aggregate-derived values in the table below still refer to 2024. Thailand (`ap-southeast-7`) now uses regional 2025 PUE 1.38; its WUE remains the earlier Asia-Pacific aggregate estimate. The source may revise earlier columns, so the retained CSV is not the latest annual feed.
+
+Google regional `ref` uses the published 2025 CFE percentage divided by 100. No new campus-to-region PUE or water mapping is inferred from the separate datacenter efficiency tables. `asia-southeast3` still lacks a regional CFE disclosure.
+
+Oracle `ref=1` for the 43 matched commercial-region keys represents FY2026 annual renewable electricity matching (June 2025–May 2026), not carbon-free supply every hour or zero physical grid emissions. `ap-kulai-2` and `af-casablanca-1` retain their historical zero placeholders: the former is key JBP while the report lists a different Kulai key FYV; the latter is absent from the regional table. Neither zero is a measured renewable share.
+
+#### Reviewed VM and hardware evidence
+
+Azure Cobalt 200 families `dpsv7`, `dpdsv7`, `dplsv7`, `dpldsv7`, `epsv7`, `epdsv7`, `mpsv4`, `mpdsv4` and `lpsv5` use the published sizes, not a Cartesian product. Family host envelopes use the largest observed vCPU, RAM and local-storage limits as an explicit scenario, with one assumed socket and modeled physical disks. These are not installed host inventories. Local disk totals are count × per-disk size; storage is GiB for the D/E/M variants and GB for Lpsv5. Cobalt 200 uses Arm Neoverse V3; undisclosed CPU die, TDP and physical core count remain absent.
+
+Other added Azure sizes use the maximum allocated result among compatible existing profiles of the same family; where none fits, a dedicated-equivalent scenario is allocated at 100%, with the socket and storage assumptions recorded in the input profile. The two M-family additions without an exact CPU SKU keep that field absent rather than assigning a processor from a generation label.
+
+GCP `a5x-highgpu-4g-metal` exposes 176 vCPUs, 1,440 GB RAM, four 12,000 GiB local SSDs and four Rubin GPUs. Its two Vera sockets each have 88 physical cores and support 176 hardware threads; those hardware specifications do not change the published guest vCPU count. Each Rubin GPU has 288 GB HBM4. The bare-metal impact scenario allocates the full envelope once and excludes additional interconnect hardware. Capacity requires coordination with the provider; inclusion does not guarantee an immediately allocatable instance.
+
+The corrected GCP M4 RAM values (31/62/124 GB for `m4-hypermem-2/-4/-8`) change placement counts and `embodied_allocated`; the historical `embodied` values are pinned in the calculator inputs. Azure `nd96isr-h200-v5` RAM is 1,850 GiB; its existing physical host scenario is retained.
+
+AWS `m1-medium`, `r3-large` and `t1-micro` RAM values remain historical and `tentative`: the [previous-generation product page](https://aws.amazon.com/ec2/previous-generation/) and [EC2 specification table](https://docs.aws.amazon.com/ec2/latest/instancetypes/pg.html) disagree or differ in rounding. No RAM or impact change is inferred from that disagreement.
 
 #### Regional estimate scope
 
@@ -147,7 +170,8 @@ The following regions retain PUE/WUE estimates from geographic aggregates, **not
 
 | Provider | Region IDs | Aggregate used | Reporting period |
 | --- | --- | --- | --- |
-| AWS | `ap-east-2`, `ap-southeast-6`, `ap-southeast-7` | Asia Pacific excluding China | 2024 |
+| AWS | `ap-east-2`, `ap-southeast-6` | Asia Pacific excluding China | 2024 |
+| AWS | `ap-southeast-7` (WUE only) | Asia Pacific excluding China | 2024 |
 | AWS | `mx-central-1` | North America | 2024 |
 | AWS | `eusc-de-east-1` | Europe | 2024 |
 | Azure | `be-central` | Europe, Middle East & Africa | FY25 |

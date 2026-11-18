@@ -1,7 +1,7 @@
 [
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "ap-sydney-1",
     "name": "Australia East (Sydney)",
     "location": "Sydney",
@@ -9,11 +9,17 @@
     "lat": -33.869844,
     "lon": 151.208285,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "ap-melbourne-1",
     "name": "Australia Southeast (Melbourne)",
     "location": "Melbourne",
@@ -21,11 +27,17 @@
     "lat": -37.814245,
     "lon": 144.963173,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "sa-saopaulo-1",
     "name": "Brazil East (Sao Paulo)",
     "location": "Sao Paulo",
@@ -33,11 +45,17 @@
     "lat": -23.550651,
     "lon": -46.633382,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "sa-vinhedo-1",
     "name": "Brazil Southeast (Vinhedo)",
     "location": "Vinhedo",
@@ -45,11 +63,17 @@
     "lat": -23.029854,
     "lon": -46.974985,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "ca-montreal-1",
     "name": "Canada Southeast (Montreal)",
     "location": "Montreal",
@@ -58,11 +82,17 @@
     "lat": 45.503182,
     "lon": -73.569807,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "ca-toronto-1",
     "name": "Canada Southeast (Toronto)",
     "location": "Toronto",
@@ -71,11 +101,17 @@
     "lat": 43.653482,
     "lon": -79.383935,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "sa-santiago-1",
     "name": "Chile Central (Santiago)",
     "location": "Santiago",
@@ -83,11 +119,17 @@
     "lat": -33.4377,
     "lon": -70.651067,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "sa-valparaiso-1",
     "name": "Chile West (Valparaiso)",
     "location": "Valparaiso",
@@ -95,11 +137,17 @@
     "lat": -33.045846,
     "lon": -71.619675,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "sa-bogota-1",
     "name": "Colombia Central (Bogota)",
     "location": "Bogota",
@@ -107,11 +155,17 @@
     "lat": 4.653382,
     "lon": -74.083633,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "eu-paris-1",
     "name": "France Central (Paris)",
     "location": "Paris",
@@ -119,11 +173,17 @@
     "lat": 48.85889,
     "lon": 2.320041,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "eu-marseille-1",
     "name": "France South (Marseille)",
     "location": "Marseille",
@@ -131,11 +191,17 @@
     "lat": 43.296174,
     "lon": 5.369953,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "eu-frankfurt-1",
     "name": "Germany Central (Frankfurt)",
     "location": "Frankfurt",
@@ -143,11 +209,17 @@
     "lat": 50.110644,
     "lon": 8.682092,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "ap-hyderabad-1",
     "name": "India South (Hyderabad)",
     "location": "Hyderabad",
@@ -155,11 +227,17 @@
     "lat": 17.360589,
     "lon": 78.474061,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "ap-mumbai-1",
     "name": "India West (Mumbai)",
     "location": "Mumbai",
@@ -167,11 +245,17 @@
     "lat": 19.054999,
     "lon": 72.869204,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "ap-batam-1",
     "name": "Indonesia North (Batam)",
     "location": "Batam",
@@ -179,11 +263,17 @@
     "lat": 1.103082,
     "lon": 104.03837,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "il-jerusalem-1",
     "name": "Israel Central (Jerusalem)",
     "location": "Jerusalem",
@@ -191,11 +281,17 @@
     "lat": 31.778847,
     "lon": 35.225786,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "eu-milan-1",
     "name": "Italy Northwest (Milan)",
     "location": "Milan",
@@ -203,11 +299,17 @@
     "lat": 45.464194,
     "lon": 9.189635,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "eu-turin-1",
     "name": "Italy North (Turin)",
     "location": "Turin",
@@ -215,11 +317,17 @@
     "lat": 45.067755,
     "lon": 7.682489,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "ap-osaka-1",
     "name": "Japan Central (Osaka)",
     "location": "Osaka",
@@ -227,11 +335,17 @@
     "lat": 34.693757,
     "lon": 135.501454,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "ap-tokyo-1",
     "name": "Japan East (Tokyo)",
     "location": "Tokyo",
@@ -239,7 +353,13 @@
     "lat": 35.67686,
     "lon": 139.763895,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
@@ -255,7 +375,7 @@
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "mx-queretaro-1",
     "name": "Mexico Central (Queretaro)",
     "location": "Queretaro",
@@ -263,11 +383,17 @@
     "lat": 20.5923,
     "lon": -100.391742,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "mx-monterrey-1",
     "name": "Mexico Northeast (Monterrey)",
     "location": "Monterrey",
@@ -275,7 +401,13 @@
     "lat": 25.680202,
     "lon": -100.315258,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
@@ -291,7 +423,7 @@
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "eu-amsterdam-1",
     "name": "Netherlands Northwest (Amsterdam)",
     "location": "Amsterdam",
@@ -299,11 +431,17 @@
     "lat": 52.37308,
     "lon": 4.892453,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "me-riyadh-1",
     "name": "Saudi Arabia Central (Riyadh)",
     "location": "Riyadh",
@@ -311,11 +449,17 @@
     "lat": 24.638916,
     "lon": 46.71601,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "me-jeddah-1",
     "name": "Saudi Arabia West (Jeddah)",
     "location": "Jeddah",
@@ -323,11 +467,17 @@
     "lat": 21.550443,
     "lon": 39.174236,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "eu-jovanovac-1",
     "name": "Serbia Central (Jovanovac)",
     "location": "Jovanovac",
@@ -335,11 +485,17 @@
     "lat": 44.049689,
     "lon": 20.951035,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "ap-singapore-1",
     "name": "Singapore (Singapore)",
     "location": "Singapore",
@@ -347,11 +503,17 @@
     "lat": 1.357107,
     "lon": 103.819499,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "ap-singapore-2",
     "name": "Singapore West (Singapore)",
     "location": "Singapore",
@@ -359,11 +521,17 @@
     "lat": 1.357107,
     "lon": 103.819499,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "af-johannesburg-1",
     "name": "South Africa Central (Johannesburg)",
     "location": "Johannesburg",
@@ -371,11 +539,17 @@
     "lat": -26.205,
     "lon": 28.049722,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "ap-seoul-1",
     "name": "South Korea Central (Seoul)",
     "location": "Seoul",
@@ -383,11 +557,17 @@
     "lat": 37.566679,
     "lon": 126.978291,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "ap-chuncheon-1",
     "name": "South Korea North (Chuncheon)",
     "location": "Chuncheon",
@@ -395,11 +575,17 @@
     "lat": 37.881057,
     "lon": 127.729764,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "eu-madrid-1",
     "name": "Spain Central (Madrid)",
     "location": "Madrid",
@@ -407,11 +593,17 @@
     "lat": 40.416782,
     "lon": -3.703507,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "eu-madrid-3",
     "name": "Spain Central (Madrid 3)",
     "location": "Madrid",
@@ -419,11 +611,17 @@
     "lat": 40.416782,
     "lon": -3.703507,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "eu-stockholm-1",
     "name": "Sweden Central (Stockholm)",
     "location": "Stockholm",
@@ -431,11 +629,17 @@
     "lat": 59.325117,
     "lon": 18.071094,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "eu-zurich-1",
     "name": "Switzerland North (Zurich)",
     "location": "Zurich",
@@ -443,11 +647,17 @@
     "lat": 47.374449,
     "lon": 8.541042,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "me-abudhabi-1",
     "name": "UAE Central (Abu Dhabi)",
     "location": "Abu Dhabi",
@@ -455,11 +665,17 @@
     "lat": 24.453835,
     "lon": 54.377401,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "me-dubai-1",
     "name": "UAE East (Dubai)",
     "location": "Dubai",
@@ -467,11 +683,17 @@
     "lat": 25.074282,
     "lon": 55.188539,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "uk-london-1",
     "name": "UK South (London)",
     "location": "London",
@@ -479,11 +701,17 @@
     "lat": 51.507446,
     "lon": -0.127765,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "uk-cardiff-1",
     "name": "UK West (Newport)",
     "location": "Newport",
@@ -491,11 +719,17 @@
     "lat": 51.588233,
     "lon": -2.997497,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "us-ashburn-1",
     "name": "US East (Ashburn)",
     "location": "Ashburn",
@@ -504,11 +738,17 @@
     "lat": 39.043719,
     "lon": -77.48749,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "us-chicago-1",
     "name": "US Midwest (Chicago)",
     "location": "Chicago",
@@ -517,11 +757,17 @@
     "lat": 41.875562,
     "lon": -87.624421,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "us-phoenix-1",
     "name": "US West (Phoenix)",
     "location": "Phoenix",
@@ -530,11 +776,17 @@
     "lat": 33.448437,
     "lon": -112.074141,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   },
   {
     "provider": "oracle",
-    "ref": 0,
+    "ref": 1,
     "id": "us-sanjose-1",
     "name": "US West (San Jose)",
     "location": "San Jose",
@@ -543,6 +795,12 @@
     "lat": 37.336166,
     "lon": -121.890591,
     "pue": 1.07,
-    "wue": 0
+    "wue": 0,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf"
+    ]
   }
 ]

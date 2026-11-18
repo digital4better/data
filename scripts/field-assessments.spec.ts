@@ -58,6 +58,16 @@ test("zero, false and empty lists are present; absent/null/empty-string retain t
   // Value types and collection-required fields are checked by the existing domain tests.
 });
 
+test("estimates require present values and cannot use the obsolete parallel metadata", () => {
+  for (const value of [0, false, [] as unknown[], { active: 7, total: 7 }])
+    assert.doesNotThrow(() => validateFieldAssessments({ parameters: value, fields: { parameters: "estimated" } }, "models"));
+  for (const record of [{}, { parameters: null }, { parameters: "" }])
+    assert.throws(() => validateFieldAssessments({ ...record, fields: { parameters: "estimated" } }, "models"), /estimated requires a present value/);
+  for (const estimated of [[], ["context"], null, undefined])
+    assert.throws(() => validateFieldAssessments({ context: 128, estimated }, "models"), /separate property/);
+  assert.throws(() => validateFieldAssessments({ fields: { estimated: "missing" } }, "models"), /unknown assessed field/);
+});
+
 test("malformed states, unknown fields, nested paths and recursive metadata are rejected", () => {
   for (const fields of [
     null,
@@ -81,7 +91,7 @@ test("malformed states, unknown fields, nested paths and recursive metadata are 
   assert.doesNotThrow(() => validateFieldAssessments({ fields: { reasoning: "tentative" } }, "models"));
 });
 
-test("field annotations do not change CSV bytes for models, regions, VMs, hosts or hardware", async () => {
+test("assessment edits preserve CSV bytes when estimation flags do not change", async () => {
   const temp = fs.mkdtempSync(path.join(os.tmpdir(), "d4b-fields-"));
   const cwd = process.cwd();
   try {
@@ -96,7 +106,7 @@ test("field annotations do not change CSV bytes for models, regions, VMs, hosts 
     for (const [file, collection] of datasets) {
       const records = JSON.parse(fs.readFileSync(`data/${file}.json`, "utf8"));
       const identity = collection === "models" ? "name" : "id";
-      records[0].fields = { [identity]: "supported" };
+      records[0].fields = { ...records[0].fields, [identity]: "supported" };
       fs.writeFileSync(`data/${file}.json`, JSON.stringify(records));
     }
     await generateAi();
@@ -115,6 +125,28 @@ test("field annotations do not change CSV bytes for models, regions, VMs, hosts 
       await assert.rejects(collection === "models" ? generateAi() : generateClouds(), /unknown assessed field/);
       fs.writeFileSync(jsonPath, saved);
     }
+  } finally {
+    process.chdir(cwd);
+    fs.rmSync(temp, { recursive: true, force: true });
+  }
+});
+
+test("AI CSV derives its existing estimated column only from flat estimated states", async () => {
+  const temp = fs.mkdtempSync(path.join(os.tmpdir(), "d4b-estimates-"));
+  const cwd = process.cwd();
+  try {
+    fs.mkdirSync(path.join(temp, "data/ai"), { recursive: true });
+    process.chdir(temp);
+    const model = { name: "example", context: 128, corpus: 50, fields: { context: "estimated", corpus: "tentative", reasoning: "missing" } };
+    fs.writeFileSync("data/ai/models.json", JSON.stringify([model]));
+    await generateAi();
+    const [header, row] = fs.readFileSync("data/ai/models.csv", "utf8").trim().split(/\r?\n/);
+    assert.equal(header.split(",").slice(-1)[0], "estimated");
+    assert.equal(row.split(",").slice(-1)[0], "context");
+    model.fields.context = "tentative";
+    fs.writeFileSync("data/ai/models.json", JSON.stringify([model]));
+    await generateAi();
+    assert.equal(fs.readFileSync("data/ai/models.csv", "utf8").trim().split(/\r?\n/)[1].split(",").slice(-1)[0], "");
   } finally {
     process.chdir(cwd);
     fs.rmSync(temp, { recursive: true, force: true });
@@ -148,6 +180,10 @@ test("host recalculation preserves unchanged assessments and clears those for ch
 });
 
 test("unassessed calculations stay unassessed, including after the last annotation is invalidated", () => {
+  assert.deepEqual(retainUnchangedAssessments({ context: 10, fields: { context: "estimated" } }, { context: 10 }), {
+    context: 10, fields: { context: "estimated" },
+  });
+  assert.deepEqual(retainUnchangedAssessments({ context: 10, fields: { context: "estimated" } }, { context: 20 }), { context: 20 });
   assert.deepEqual(retainUnchangedAssessments({ context: 10 }, { context: 20 }), { context: 20 });
   assert.deepEqual(retainUnchangedAssessments({ context: 10, fields: { context: "supported" } }, { context: 20 }), {
     context: 20,
