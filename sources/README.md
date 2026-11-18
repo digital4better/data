@@ -23,6 +23,8 @@ For every source, credit the publisher and retain the original record-level attr
 
 Imported references are not automatically primary evidence. For example, model aggregators are secondary; a model hosted on Hugging Face is attributed to its namespace, whose official ownership still needs verification. Preserve original publisher licensing and record-level attribution, including EcoLogits and Samuel Rince where applicable. Listing a source does not relicense it.
 
+TechPowerUp's [CPU database](https://www.techpowerup.com/cpu-specs/) and [GPU database](https://www.techpowerup.com/gpu-specs/) are secondary hardware references, alongside Spare Cores and Vantage. Match exact processor variants and distinguish GPU chips from complete boards; component specifications do not establish a cloud provider's installed hardware. Consult the publisher's [access and reuse terms](https://www.techpowerup.com/database-licensing/); its public API covers a curated subset. These entries do not add mandatory traversal or claim exhaustive accelerator coverage.
+
 ### Declared coverage
 
 The root `coverage` matrix explicitly maps every required scope/topic pair to active catalog or discovery IDs. AI requires `models` and hosted `availability`. AWS, Azure, GCP, Oracle, OVHcloud and Scaleway each require `instances`, `regions`, `sustainability` and `hardware`. A source can support several topics; a provider-specific URL must not inherit all providers merely because it appeared in a shared README.

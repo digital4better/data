@@ -11077,10 +11077,10 @@
       "scopes": [
         "ai"
       ],
-      "category": "secondary",
+      "category": "primary",
       "format": "html",
       "limitations": [
-        "Repository owner is the namespace in the URL. Verify original publisher versus community, conversion or quantization before treating a model card as primary evidence."
+        "Official author checkpoint linked by Mistral documentation. Generic reasoning claims do not resolve the catalog reasoning flag; model hosting availability needs separate evidence."
       ],
       "status": "active",
       "role": "reference",
@@ -15195,7 +15195,10 @@
       },
       "review": {
         "date": "2026-11-12"
-      }
+      },
+      "limitations": [
+        "The 2024 webpage and Impact Report 2025 disagree on AMS3 PUE (1.20 / 1.40) and AMS1 WUE (1.64 / 0.85 L/kWh IT). Webpage revision date is unknown; preserve unresolved values as tentative."
+      ]
     },
     {
       "id": "www.scaleway.com-325f08bd7d57",
@@ -15268,7 +15271,7 @@
         "discovery": [
           "site:www.scaleway.com instances hardware new releases official specifications"
         ],
-        "instructions": "Read all Instance ranges and their tables. The API uses pagination tokens; this HTML datasheet is a separate public collection method and must not inherit guessed API pagination."
+        "instructions": "Read all Instance ranges and tables. The linked documentation MDX is an equivalent readable representation. The separate public Instance API uses page/per_page pagination; do not infer HTML pagination from API behavior."
       },
       "status": "active",
       "name": "Scaleway Instances datasheet",
@@ -15422,6 +15425,203 @@
       "category": "primary",
       "format": "html",
       "status": "active"
+    },
+    {
+      "id": "mistral-nemo-2407-model-card",
+      "url": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407",
+      "publisher": "Mistral AI",
+      "scopes": [
+        "ai"
+      ],
+      "category": "primary",
+      "format": "html",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "models"
+      ],
+      "limitations": [
+        "Author checkpoint linked by Mistral documentation; hosting lifecycle and training corpus size require separate evidence."
+      ]
+    },
+    {
+      "id": "mistral-nemo-checkpoint-config",
+      "url": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407/raw/main/config.json",
+      "publisher": "Mistral AI",
+      "scopes": [
+        "ai"
+      ],
+      "category": "primary",
+      "format": "json",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "models"
+      ],
+      "limitations": [
+        "Mutable main revision; snapshot hash is retained in the private review. Native checkpoint limits do not establish a hosted service limit."
+      ]
+    },
+    {
+      "id": "mistral-nemo-model-documentation",
+      "url": "https://docs.mistral.ai/models/mistral-nemo-12b-24-07.md",
+      "publisher": "Mistral AI",
+      "scopes": [
+        "ai"
+      ],
+      "category": "primary",
+      "format": "text",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "models"
+      ],
+      "limitations": [
+        "Model lifecycle on the Mistral platform does not establish availability on other providers or invalidate the historical checkpoint."
+      ]
+    },
+    {
+      "id": "mistral-small-checkpoint-config",
+      "url": "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501/raw/main/config.json",
+      "publisher": "Mistral AI",
+      "scopes": [
+        "ai"
+      ],
+      "category": "primary",
+      "format": "json",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "models"
+      ],
+      "limitations": [
+        "Mutable main revision; snapshot hash is retained in the private review. Native checkpoint limits do not establish a hosted service limit."
+      ]
+    },
+    {
+      "id": "mistral-small-model-documentation",
+      "url": "https://docs.mistral.ai/models/mistral-small-3-0-25-01.md",
+      "publisher": "Mistral AI",
+      "scopes": [
+        "ai"
+      ],
+      "category": "primary",
+      "format": "text",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "models"
+      ],
+      "limitations": [
+        "Model lifecycle on the Mistral platform does not establish availability on other providers or invalidate the historical checkpoint."
+      ]
+    },
+    {
+      "id": "scaleway-instances-datasheet-mdx",
+      "url": "https://raw.githubusercontent.com/scaleway/docs-content/main/pages/instances/reference-content/instances-datasheet.mdx",
+      "publisher": "Scaleway",
+      "scopes": [
+        "scaleway"
+      ],
+      "category": "primary",
+      "format": "text",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "instances",
+        "hardware"
+      ],
+      "limitations": [
+        "Official documentation source; mutable main branch. Optional network disks and maximum local-volume capacities do not prove included local storage."
+      ]
+    },
+    {
+      "id": "scaleway-instances-api-fr-par-1",
+      "url": "https://api.scaleway.com/instance/v1/zones/fr-par-1/products/servers",
+      "publisher": "Scaleway",
+      "scopes": [
+        "scaleway"
+      ],
+      "category": "primary",
+      "format": "json",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "instances"
+      ],
+      "limitations": [
+        "Only fr-par-1. Read page/per_page pagination to an empty servers object; reviewed pages contain 100, 24 and 0 entries at per_page=100. No token-based pagination is asserted."
+      ]
+    },
+    {
+      "id": "scaleway-impact-report-2025",
+      "url": "https://www-uploads.scaleway.com/Impact_Report2025_22ee3a8232.pdf",
+      "publisher": "Scaleway",
+      "scopes": [
+        "scaleway"
+      ],
+      "category": "primary",
+      "format": "pdf",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "sustainability"
+      ],
+      "limitations": [
+        "Datacenter indicators on physical page 25 describe 2024. AMS3 PUE and AMS1 WUE conflict with the current environmental webpage; neither source revision order nor geographic aggregation is inferred."
+      ]
+    },
+    {
+      "id": "techpowerup-cpu-specs",
+      "name": "TechPowerUp CPU database",
+      "url": "https://www.techpowerup.com/cpu-specs/",
+      "publisher": "TechPowerUp",
+      "scopes": [
+        "aws",
+        "azure",
+        "gcp",
+        "oracle",
+        "ovhcloud",
+        "scaleway"
+      ],
+      "category": "secondary",
+      "format": "html",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "hardware"
+      ],
+      "attribution": "TechPowerUp hardware database; access and reuse terms: https://www.techpowerup.com/database-licensing/",
+      "limitations": [
+        "Match the exact processor model, platform and stepping; do not treat component specifications as evidence of a cloud host configuration.",
+        "The public API covers a curated subset; full database access is subject to the publisher's licensing terms."
+      ]
+    },
+    {
+      "id": "techpowerup-gpu-specs",
+      "name": "TechPowerUp GPU and accelerator database",
+      "url": "https://www.techpowerup.com/gpu-specs/",
+      "publisher": "TechPowerUp",
+      "scopes": [
+        "aws",
+        "azure",
+        "gcp",
+        "oracle",
+        "ovhcloud",
+        "scaleway"
+      ],
+      "category": "secondary",
+      "format": "html",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "hardware"
+      ],
+      "attribution": "TechPowerUp hardware database; access and reuse terms: https://www.techpowerup.com/database-licensing/",
+      "limitations": [
+        "Distinguish GPU chips, complete boards and product variants, including memory and power boundaries. GPU coverage does not imply coverage of all accelerator types or deployment by a cloud provider.",
+        "The public API covers a curated subset; full database access is subject to the publisher's licensing terms."
+      ]
     }
   ]
 }

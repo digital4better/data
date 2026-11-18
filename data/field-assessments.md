@@ -38,6 +38,8 @@ Here PUE has been assessed, WUE has unresolved evidence and no published candida
 
 Keep source, period, scope, unit, transformation and observation/estimation distinctions in the collection's existing provenance conventions. `fields` stores states, not confidence scores, citations, candidate values or approval records. Human acceptance alone does not establish a fact.
 
+Dataset records do not contain free-text `notes`; `notes` and `fields.notes` are rejected for these AI/cloud collections. Keep evidence URLs in `sources` where supported, and interpretation, estimation methods, periods and unresolved disagreements in the public collection guide or provenance document, with the affected record IDs. Group shared explanations instead of duplicating them per record. Private reports may preserve additional evidence, but must not be the only place explaining a published estimate or limitation. Source-registry review notes are outside this record contract.
+
 For AI models, `estimated` remains independent: a supported parameter estimate must still appear in `estimated`. For hosts, `basis`, `method`, `sources` and `assumptions` retain their roles. A tentative historical value must remain visibly unresolved in the provenance; do not erase it or replace it with a private candidate solely to change its assessment.
 
 ## Editing and recalculation

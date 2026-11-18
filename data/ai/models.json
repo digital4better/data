@@ -12017,7 +12017,7 @@
       "active": 12,
       "total": 12
     },
-    "context": 128000,
+    "context": 131072,
     "input": [
       "text"
     ],
@@ -12043,9 +12043,20 @@
       "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models",
       "https://www.ovhcloud.com/en/public-cloud/ai-endpoints/catalog",
       "https://learn.microsoft.com/en-us/azure/machine-learning/concept-models-featured?view=azureml-api-2",
-      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
+      "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407",
+      "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407/raw/main/config.json",
+      "https://docs.mistral.ai/models/mistral-nemo-12b-24-07.md"
     ],
-    "estimated": []
+    "estimated": [],
+    "hidden_dimension": 5120,
+    "fields": {
+      "context": "supported",
+      "hidden_dimension": "supported",
+      "tools": "supported",
+      "reasoning": "tentative",
+      "corpus": "missing"
+    }
   },
   {
     "name": "mistral-ocr-2505",
@@ -12221,9 +12232,19 @@
     },
     "sources": [
       "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501",
-      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/"
+      "https://www.scaleway.com/en/docs/generative-apis/reference-content/supported-models/",
+      "https://huggingface.co/mistralai/Mistral-Small-24B-Instruct-2501/raw/main/config.json",
+      "https://docs.mistral.ai/models/mistral-small-3-0-25-01.md"
     ],
-    "estimated": []
+    "estimated": [],
+    "hidden_dimension": 5120,
+    "fields": {
+      "context": "supported",
+      "hidden_dimension": "supported",
+      "tools": "supported",
+      "reasoning": "tentative",
+      "corpus": "missing"
+    }
   },
   {
     "name": "mistral-small-3.1",

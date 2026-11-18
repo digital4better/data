@@ -37,7 +37,7 @@ Every JSON file contains an array of objects; its CSV counterpart has one row pe
 | `ref` | Fraction, 0 to 1 | Renewable-energy reference or documented CFE proxy. |
 | `aliases` | String array | Alternative region identifiers (JSON-only). |
 | `partition` | Text | Provider partition, when specified (JSON-only). |
-| `sources`, `notes` | URL array / text | Evidence and interpretation limits (JSON-only). |
+| `sources` | URL array | Evidence references (JSON-only); interpretation and limits are documented below. |
 
 </details>
 
@@ -141,6 +141,23 @@ Region `pue` is a ratio, `wue` is L/kWh and `ref` is a fraction. Reporting bound
 
 Compare reporting periods and regional versus global boundaries before comparing providers. Lower PUE alone does not imply a lower total environmental impact.
 
+#### Regional estimate scope
+
+The following regions retain PUE/WUE estimates from geographic aggregates, **not measurements of the individual cloud region**. This table replaces their former JSON `notes`; values and CSV exports are unchanged. Records retain evidence URLs in `sources`; field assessments, when present, do not replace these methodological limits.
+
+| Provider | Region IDs | Aggregate used | Reporting period |
+| --- | --- | --- | --- |
+| AWS | `ap-east-2`, `ap-southeast-6`, `ap-southeast-7` | Asia Pacific excluding China | 2024 |
+| AWS | `mx-central-1` | North America | 2024 |
+| AWS | `eusc-de-east-1` | Europe | 2024 |
+| Azure | `be-central` | Europe, Middle East & Africa | FY25 |
+| Azure | `cl-central` | Americas | FY25 |
+| Azure | `my-west` | Asia Pacific | FY25 |
+
+For these AWS regions, the source predates the region's launch. For these Azure regions, FY25 covers July 2024–June 2025 and fully owned and controlled datacenters operational for 12 months. Actual local performance may differ from the aggregate in both cases. WUE is in L/kWh.
+
+For all regions in this table, coordinates approximate the locality rather than a datacenter address. AWS `ref=0` follows the dataset convention; Azure `ref=0` is a conservative fallback without region-specific renewable-energy evidence. Neither represents a measured zero renewable-energy share. Dataset records no longer carry free-text `notes`; retain these public explanations when using their values.
+
 ## Methodology
 
 The D4B method `d4b-host-v1` estimates host manufacturing impact from its modeled components:
@@ -226,3 +243,11 @@ Host profiles are calculation scenarios, **not a verified inventory of deployed 
 Regions may contain several datacenters; Scaleway uses availability-zone identifiers. Local/edge zones, private realms, quota-dependent availability and every customizable VM combination are not exhaustively covered. Maximum CPU and RAM for a flexible shape do not establish a default configuration.
 
 Environmental disclosures have different dates and boundaries. Missing metrics remain absent; existing estimates are not re-certified by a hardware catalog update. Apply lifetime and usage-time allocation separately when calculating a period's footprint.
+
+### Scaleway bounded review — 2026-11-18
+
+The [environmental disclosures](https://www.scaleway.com/en/environmental-leadership/) and [Impact Report 2025](https://www-uploads.scaleway.com/Impact_Report2025_22ee3a8232.pdf), physical page 25, report annual **2024** values: DC5 (`fr-par-2`) PUE 1.25 and DC4 (`fr-par-3`) WUE 0.00002 L/kWh IT (definition on page 28). The historical zone/datacenter mappings are retained. Record-level `sources` and `fields` identify the evidence and assessed properties; other metrics on these records were not revalidated.
+
+AMS3 (`nl-ams-3`) PUE conflicts (website 1.20, PDF 1.40); AMS1 (`nl-ams-1`) WUE conflicts (website 1.64, PDF 0.85 L/kWh IT). Historical PUE 1.20 and WUE 0.85 remain with `fields` marked `tentative`. The historical AMS3 WUE 0.22 was not revalidated. The PDF file was created/modified in February 2026, but the website revision date is unknown: document metadata cannot establish which 2024 table was revised last. Other environmental values are not revalidated by these corrections.
+
+The [official Instance datasheet](https://raw.githubusercontent.com/scaleway/docs-content/main/pages/instances/reference-content/instances-datasheet.mdx) and [Paris-1 API](https://api.scaleway.com/instance/v1/zones/fr-par-1/products/servers) agree with existing vCPU/RAM values within the reviewed Instance scope. This is not a review of all historical products or every zone. GP1 CPU identity remains tentative: the datasheet says EPYC 7281 or equivalent, while the historical records retain 7401P. No host assumptions or embodied values are changed. Optional disks and maximum volume limits are not included local-storage capacity.
