@@ -99,3 +99,7 @@ Do not commit one-time migration tools or generated exploratory reports. Local `
 ## Historical territory coverage
 
 The five territories absent from the current Ember export are retained from the immutable snapshot in `sources/ember-legacy-territories.json`. `scripts/electricity-history.ts` restores country-level mix/factor outputs after aggregation, exports matching CSV files and writes `scripts/electricity-provenance.json`. This metadata is included explicitly in npm and copied by the site build to the existing public `electricity-provenance.json` URL; the publication workflow stages it alongside generated data. Do not feed these already modeled outputs back into energy aggregation or overwrite the pinned source with generated files. Retain unknown upstream observation dates as unknown; review `sources/README.md` before changing this policy.
+
+## AI/cloud field assessments
+
+Optional JSON-only `fields` follows [the shared contract](data/field-assessments.md). Keep the collection-specific field names in `scripts/field-assessments.ts` synchronized with schema changes. Run `yarn test:contracts` for the colocated regression tests (also included in `yarn test:site`). Metadata never certifies legacy data automatically or changes CSV projections. Host annotations belong in calculator inputs; annotations for changed calculated values are cleared pending review.

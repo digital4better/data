@@ -1,3 +1,4 @@
+import { FieldAssessments, validateFieldAssessments, retainUnchangedAssessments } from "./field-assessments";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { definitions } from "./cloud-host-assumptions";
@@ -36,6 +37,7 @@ type HostCapacity = {
 };
 
 export type HostProfile = HostCapacity & {
+  fields?: FieldAssessments;
   provider: Provider;
   name: string;
   method: string;
@@ -164,6 +166,7 @@ export function generate(
   inputs: HostInputs
 ): { hosts: Record<Provider, HostProfile[]>; vms: Catalogs } {
   for (const host of inputs.profiles) {
+    validateFieldAssessments(host, "hosts");
     if (host.assumptions?.some((code) => !hasOwn(definitions, code))) throw Error(`Unknown assumption code ${host.id}`);
   }
   const hosts = {} as Record<Provider, HostProfile[]>;
@@ -173,11 +176,12 @@ export function generate(
   for (const provider of providers) {
     hosts[provider] = inputs.profiles
       .filter((h) => h.provider === provider)
-      .map((h) => ({ ...h, embodied: calculateHost(h) }))
+      .map((h) => retainUnchangedAssessments(h, { ...h, embodied: calculateHost(h) }))
       .sort((a, b) => a.id.localeCompare(b.id));
     const map = new Map(hosts[provider].map((h) => [h.id, h]));
     if (map.size !== hosts[provider].length) throw Error("Duplicate host");
     vms[provider] = catalogs[provider].map((vm) => {
+      validateFieldAssessments(vm, "vms");
       const key = `${provider}/${vm.id}`,
         assignment = assignments.get(key);
       if (!assignment) throw Error(`Missing host assignment ${key}`);
@@ -189,13 +193,13 @@ export function generate(
       if (legacy != null && vm.embodied !== legacy) throw Error(`Refusing historical change ${key}`);
       const record = { ...vm };
       delete record.host_share;
-      return {
+      return retainUnchangedAssessments(vm, {
         ...record,
         embodied: legacy ?? allocated.embodied_allocated,
         embodied_allocated: allocated.embodied_allocated,
         host: host.id,
         host_instances: allocated.host_instances,
-      };
+      });
     });
     for (const h of hosts[provider]) {
       if (!vms[provider].some((vm) => vm.host === h.id)) throw Error(`Orphan host ${h.id}`);

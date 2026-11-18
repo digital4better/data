@@ -12,6 +12,8 @@ AI models across vendors and cloud providers, combining public specifications wi
 
 ## File Structure and Units
 
+Records may include optional JSON-only [`fields` assessments](../field-assessments.md): `supported`, `tentative` or `missing` per top-level property. An unannotated field is not assessed. CSVs are unchanged; existing required fields, estimates and evidence rules still apply.
+
 JSON is an array of model objects; CSV has one row per model. Optional fields are omitted in JSON and empty in CSV. Lists use `|` in CSV. `parameters` is flattened into `parameters_active` and `parameters_total`; `pattern` and `providers` are JSON-only.
 
 | JSON field | Type / unit | Meaning |

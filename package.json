@@ -16,8 +16,9 @@
     "version": "node .github/workflows/update-release-date.js",
     "postversion": "git push --tags",
     "preview:site": "vite preview --host 127.0.0.1",
-    "test:site": "node --test site/tests/*.test.cjs",
-    "check:site": "tsc --noEmit -p site/tsconfig.json"
+    "test:site": "node --test site/tests/*.test.cjs && yarn test:contracts",
+    "check:site": "tsc --noEmit -p site/tsconfig.json",
+    "test:contracts": "node --require ts-node/register --test scripts/*.spec.ts"
   },
   "devDependencies": {
     "@emotion/react": "^11.11.3",

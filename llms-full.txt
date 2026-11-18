@@ -101,6 +101,8 @@ The [factor guide](./data/factor/README.md) documents columns and per-kWh units.
 
 The same geography/frequency/scenario filename combinations and temporal nesting apply. Values are dimensionless shares, normally between 0 and 1, not percentages. Use [country-yearly.json](./data/mix/country-yearly.json) for territorial series and [world-monthly.json](./data/mix/world-monthly.json) for period-keyed world values. The [mix guide](./data/mix/README.md) is the reference for technology names, sources and historical coverage limits.
 
+AI and cloud JSON records may include optional [`fields` assessments](./data/field-assessments.md), mapping known top-level property names to `supported`, `tentative` or `missing`. Omitted annotations mean unassessed. Supported values must be present; missing values must be absent/null/empty where the collection allows it. Tentative marks unresolved evidence, with candidate values kept private and any retained historical value explicitly qualified. These states do not waive required fields or validation, nor replace AI `estimated` or host modeling provenance. CSV projections omit the metadata and remain unchanged. Calculated values that change lose their prior annotations until reassessed.
+
 ## Cloud infrastructure: `data/cloud/`
 
 Each provider has `<provider>-regions`, `<provider>-vms` and `<provider>-hosts` files in JSON and CSV. Shared `cpus` and `accelerators` catalogs describe hardware. JSON roots are arrays. The [cloud guide](./data/cloud/README.md) maintains the complete schemas, provider-specific capacity conventions, regional metrics, source URLs and assumption codes.

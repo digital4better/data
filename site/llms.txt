@@ -6,6 +6,8 @@ This index describes the deployed website. Downloads require no JavaScript or ac
 
 ## Reference and catalog
 
+- [AI/cloud field assessments](https://digital4better.github.io/data/field-assessments.md): Optional JSON `fields` states; absent annotations mean unassessed. CSVs remain unchanged.
+
 - [Complete website reference](https://digital4better.github.io/data/llms-full.txt): File selection, schema summaries, examples and links to detailed collection guides.
 - [Machine-readable catalog](https://digital4better.github.io/data/catalog.json): Published dataset inventory, fields, record counts, period ranges, bilingual pages and absolute download URLs. Check exact record coverage in the downloaded file.
 - [Electricity provenance](https://digital4better.github.io/data/electricity-provenance.json): Historical territory references, pinned source snapshot and carry-forward coverage.

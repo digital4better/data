@@ -1,3 +1,4 @@
+import { validateFieldAssessments } from "./scripts/field-assessments";
 import { createInterface } from "readline";
 import { appendFileSync, readFileSync, writeFileSync } from "fs";
 import AdmZip from "adm-zip";
@@ -965,6 +966,7 @@ const generateClouds = async () => {
   process.stdout.write(`Exporting cloud data...\n`);
   for (const cloud of CLOUDS) {
     const data = JSON.parse(readFileSync(`./data/cloud/${cloud}-regions.json`, "utf-8"));
+    for (const record of data) validateFieldAssessments(record, "regions");
     exportToCsv(`./data/cloud/${cloud}-regions.csv`, data, [
       "id",
       "name",
@@ -979,6 +981,7 @@ const generateClouds = async () => {
       "ref",
     ]);
     const vms = JSON.parse(readFileSync(`./data/cloud/${cloud}-vms.json`, "utf-8"));
+    for (const record of vms) validateFieldAssessments(record, "vms");
     exportToCsv(`./data/cloud/${cloud}-vms.csv`, vms, [
       "id",
       "family",
@@ -997,6 +1000,7 @@ const generateClouds = async () => {
       "host_instances",
     ]);
     const hosts = JSON.parse(readFileSync(`./data/cloud/${cloud}-hosts.json`, "utf-8"));
+    for (const record of hosts) validateFieldAssessments(record, "hosts");
     exportToCsv(`./data/cloud/${cloud}-hosts.csv`, hosts.map((host: Record<string, any>) => ({
       ...host,
       sources: (host.sources as string[]).join(" | "),
@@ -1008,6 +1012,7 @@ const generateClouds = async () => {
     ]);
   }
   const accelerators = JSON.parse(readFileSync(`./data/cloud/accelerators.json`, "utf-8"));
+  for (const record of accelerators) validateFieldAssessments(record, "accelerators");
   exportToCsv(`./data/cloud/accelerators.csv`, accelerators, [
     "id",
     "type",
@@ -1023,6 +1028,7 @@ const generateClouds = async () => {
     "transistors",
   ]);
   const cpus = JSON.parse(readFileSync(`./data/cloud/cpus.json`, "utf-8"));
+  for (const record of cpus) validateFieldAssessments(record, "cpus");
   exportToCsv(`./data/cloud/cpus.csv`, cpus, [
     "id",
     "manufacturer",
@@ -1043,6 +1049,7 @@ const generateClouds = async () => {
 const generateAi = async () => {
   process.stdout.write(`Exporting AI data...\n`);
   const models = JSON.parse(readFileSync(`./data/ai/models.json`, "utf-8"));
+  for (const record of models) validateFieldAssessments(record, "models");
   const toCsvList = (values?: string[]) => (values?.length ? values.join("|") : "");
 
   const rows = models.map((model: any) => ({
@@ -1086,7 +1093,7 @@ const generateAi = async () => {
   ]);
 };
 
-export { computeDistance, roundNumber, exportToCsv, exportFactorsAndMixes, generateCountries, generateClouds, fetchWorldMix, processData };
+export { computeDistance, roundNumber, exportToCsv, exportFactorsAndMixes, generateCountries, generateClouds, generateAi, fetchWorldMix, processData };
 
 const main = async () => {
   const start = Date.now();
