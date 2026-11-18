@@ -15570,6 +15570,58 @@
       "limitations": [
         "Datacenter indicators on physical page 25 describe 2024. AMS3 PUE and AMS1 WUE conflict with the current environmental webpage; neither source revision order nor geographic aggregation is inferred."
       ]
+    },
+    {
+      "id": "techpowerup-cpu-specs",
+      "name": "TechPowerUp CPU database",
+      "url": "https://www.techpowerup.com/cpu-specs/",
+      "publisher": "TechPowerUp",
+      "scopes": [
+        "aws",
+        "azure",
+        "gcp",
+        "oracle",
+        "ovhcloud",
+        "scaleway"
+      ],
+      "category": "secondary",
+      "format": "html",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "hardware"
+      ],
+      "attribution": "TechPowerUp hardware database; access and reuse terms: https://www.techpowerup.com/database-licensing/",
+      "limitations": [
+        "Match the exact processor model, platform and stepping; do not treat component specifications as evidence of a cloud host configuration.",
+        "The public API covers a curated subset; full database access is subject to the publisher's licensing terms."
+      ]
+    },
+    {
+      "id": "techpowerup-gpu-specs",
+      "name": "TechPowerUp GPU and accelerator database",
+      "url": "https://www.techpowerup.com/gpu-specs/",
+      "publisher": "TechPowerUp",
+      "scopes": [
+        "aws",
+        "azure",
+        "gcp",
+        "oracle",
+        "ovhcloud",
+        "scaleway"
+      ],
+      "category": "secondary",
+      "format": "html",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "hardware"
+      ],
+      "attribution": "TechPowerUp hardware database; access and reuse terms: https://www.techpowerup.com/database-licensing/",
+      "limitations": [
+        "Distinguish GPU chips, complete boards and product variants, including memory and power boundaries. GPU coverage does not imply coverage of all accelerator types or deployment by a cloud provider.",
+        "The public API covers a curated subset; full database access is subject to the publisher's licensing terms."
+      ]
     }
   ]
 }
