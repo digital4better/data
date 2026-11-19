@@ -13348,6 +13348,57 @@
       ]
     },
     {
+      "id": "mlperf-oracle-epyc-9575f-v6-0",
+      "url": "https://github.com/mlcommons/inference_results_v6.0/blob/4d3916ac9cf474b679cdfcf492d43a0559418ad1/closed/ORACLE/systems/8xMI355X_2xEPYC_9575F.json",
+      "publisher": "MLCommons",
+      "scopes": [
+        "oracle"
+      ],
+      "category": "primary",
+      "format": "json",
+      "attribution": "Oracle, MLPerf Inference v6.0 system submission.",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "hardware"
+      ],
+      "limitations": [
+        "The approximate CPU clocks differ from the v6.1 submission and the AMD specification."
+      ]
+    },
+    {
+      "id": "mlperf-oracle-epyc-9575f-v6-1",
+      "url": "https://github.com/mlcommons/inference_results_v6.1/blob/6623c6c8bac460c46a8768ac261bc0889c9c7f13/closed/Oracle/systems/8xMI355X_2xEPYC-9575F.json",
+      "publisher": "MLCommons",
+      "scopes": [
+        "oracle"
+      ],
+      "category": "primary",
+      "format": "json",
+      "attribution": "Oracle, MLPerf Inference v6.1 system submission.",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
+      "id": "mlperf-oracle-xeon-6987pc-v6-1",
+      "url": "https://github.com/mlcommons/inference_results_v6.1/blob/6623c6c8bac460c46a8768ac261bc0889c9c7f13/closed/Oracle/systems/1-node-1S-GNR_120C.json",
+      "publisher": "MLCommons",
+      "scopes": [
+        "oracle"
+      ],
+      "category": "primary",
+      "format": "json",
+      "attribution": "Oracle, MLPerf Inference v6.1 system submission.",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "hardware"
+      ]
+    },
+    {
       "id": "models.dev-02909e436752",
       "url": "https://models.dev/models/anthropic/claude-haiku-4-5",
       "publisher": "models.dev",

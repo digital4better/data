@@ -17,6 +17,13 @@ For the three Oracle CPUs below, `fields.tdp` is `estimated`. Each value uses th
 - `amd-radeon-mi355x` uses the compute die’s 3 nm node. The module also includes 6 nm silicon. For `nvidia-blackwell-b200-192`, the power envelope is the configurable maximum per GPU in Azure’s GB200 NVL72 system. The HGX B200 uses a different limit.
 - The `nvidia-rubin` core count uses 224 streaming multiprocessors × 128 CUDA cores. The `amd-epyc-9004` family entry identifies a compute process shared across SKUs with different core counts and TDPs.
 
+## Processor evidence boundaries
+
+- Oracle submitted a BM.GPU.MI355X.8 system with two 64-core AMD EPYC 9575F processors and eight MI355X accelerators to MLPerf Inference. Its default 400 W TDP and 4 nm compute node are estimates for the generic 64-core catalog ID in this configuration. For BM.Standard4.Ax.120, Oracle's MLPerf submission identifies a single 120-core Xeon 6987P-C. Its TDP estimate uses the 6979P's default 500 W. Their base/maximum clocks are 2.2/3.2 GHz and 2.1/3.9 GHz respectively.
+- For the GCP 72-core Xeon 6985P-C, 550 W is the CPU-Z TDP reported on a matching processor outside Google Cloud. For Oracle's AmpereOne A160-30, 400 W is the distributor's rating for the named 160-core SKU. The cloud operators' actual configured limits are unknown.
+- The Rome 7542 and 7742 silicon totals use four and eight compute dies respectively, at 74 mm² and 3.8 billion transistors each. Milan 7J13 uses eight compute dies at 81 mm² and 4.15 billion transistors each. Genoa 9J14 uses twelve at an estimated 6.57 billion transistors each. All four estimates exclude the I/O die. Historical entries may use other boundaries.
+- Apple area and transistor counts describe the entire SoC. M3 Ultra area is the sum of two M3 Max dies. M4 Pro and M4 Max transistor counts use High Yield's rounded estimates.
+
 ## Capacity unit exceptions
 
 Azure GB RAM exceptions include Dnsv6, Dnlsv6, Ensv6, HBv5, Esv7, Ebsv6, Ebdsv6, Ecasv6 and Ecadsv6. Local storage is GB for Lsv4, Lasv4 and Lasv5/Laosv5; GiB for Ddsv7, Dldsv7, Daldsv7, Dcadsv6, Famdsv7 and Faldsv7.

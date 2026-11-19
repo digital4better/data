@@ -8,7 +8,19 @@
     "platform": "turin",
     "cores": 64,
     "threads": 128,
-    "smp": 2
+    "smp": 2,
+    "tdp": 400,
+    "process": 4,
+    "sources": [
+      "https://github.com/mlcommons/inference_results_v6.0/blob/4d3916ac9cf474b679cdfcf492d43a0559418ad1/closed/ORACLE/systems/8xMI355X_2xEPYC_9575F.json",
+      "https://github.com/mlcommons/inference_results_v6.1/blob/6623c6c8bac460c46a8768ac261bc0889c9c7f13/closed/Oracle/systems/8xMI355X_2xEPYC-9575F.json",
+      "https://www.amd.com/en/products/processors/server/epyc/9005-series/amd-epyc-9575f.html",
+      "https://docs.amd.com/api/khub/documents/UIqhAbjRhgnzgzzdVU4pUw/content"
+    ],
+    "fields": {
+      "tdp": "estimated",
+      "process": "estimated"
+    }
   },
   {
     "id": "amd-epyc-7232p",
@@ -156,7 +168,17 @@
     "threads": 64,
     "tdp": 225,
     "process": 7,
-    "smp": 2
+    "smp": 2,
+    "die": 296,
+    "transistors": 15200,
+    "sources": [
+      "https://people.montefiore.uliege.be/geuzaine/INFO0939/compenv/nic5/",
+      "https://www.slideshare.net/slideshow/amd-chiplet-architecture-for-highperformance-server-and-desktop-products/229049243"
+    ],
+    "fields": {
+      "die": "estimated",
+      "transistors": "estimated"
+    }
   },
   {
     "id": "amd-epyc-7543",
@@ -214,7 +236,17 @@
     "threads": 128,
     "tdp": 225,
     "process": 7,
-    "smp": 2
+    "smp": 2,
+    "die": 592,
+    "transistors": 30400,
+    "sources": [
+      "https://www.nas.nasa.gov/hecc/support/kb/amd-rome-processors_658.html",
+      "https://www.slideshare.net/slideshow/amd-chiplet-architecture-for-highperformance-server-and-desktop-products/229049243"
+    ],
+    "fields": {
+      "die": "estimated",
+      "transistors": "estimated"
+    }
   },
   {
     "id": "amd-epyc-7763",
@@ -292,11 +324,16 @@
       "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm",
       "https://blogs.oracle.com/cloud-infrastructure/e5-standard-instance-4th-gen-amd-epyc-processors",
       "https://www.amd.com/content/dam/amd/en/documents/products/epyc/4th-gen-epyc-processor-architecture-white-paper.pdf",
-      "https://www.amd.com/en/products/processors/server/epyc/7003-series/amd-epyc-7763.html"
+      "https://www.amd.com/en/products/processors/server/epyc/7003-series/amd-epyc-7763.html",
+      "https://doi.org/10.1109/ISSCC42614.2022.9731678"
     ],
+    "die": 648,
+    "transistors": 33200,
     "fields": {
       "process": "supported",
-      "tdp": "estimated"
+      "tdp": "estimated",
+      "die": "estimated",
+      "transistors": "estimated"
     }
   },
   {
@@ -592,11 +629,15 @@
       "https://www.amd.com/content/dam/amd/en/documents/products/epyc/4th-gen-epyc-processor-architecture-white-paper.pdf",
       "https://blogs.oracle.com/cloud-infrastructure/e5-standard-instance-4th-gen-amd-epyc-processors",
       "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm",
-      "https://www.amd.com/en/products/processors/server/epyc/4th-generation-9004-and-8004-series/amd-epyc-9654.html"
+      "https://www.amd.com/en/products/processors/server/epyc/4th-generation-9004-and-8004-series/amd-epyc-9654.html",
+      "https://blogs.oracle.com/linux/topology-matters-genoa-qemu",
+      "https://www.techpowerup.com/298338/amd-zen-4-dies-transistor-counts-cache-sizes-and-latencies-detailed"
     ],
+    "transistors": 78840,
     "fields": {
       "process": "supported",
-      "tdp": "estimated"
+      "tdp": "estimated",
+      "transistors": "estimated"
     }
   },
   {
@@ -781,10 +822,14 @@
     "process": 5,
     "sources": [
       "https://amperecomputing.com/en/briefs/ampereone-family-product-brief",
-      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm",
+      "https://www.serverparts.pl/en/ampereone-a160-30-i10992",
+      "https://amperecomputing.com/products/processors"
     ],
+    "tdp": 400,
     "fields": {
-      "process": "supported"
+      "process": "supported",
+      "tdp": "estimated"
     }
   },
   {
@@ -894,10 +939,15 @@
     "process": 3,
     "sources": [
       "https://www.apple.com/newsroom/2025/03/apple-reveals-m3-ultra-taking-apple-silicon-to-a-new-extreme/",
-      "https://www.apple.com/newsroom/2023/10/apple-unveils-m3-m3-pro-and-m3-max-the-most-advanced-chips-for-a-personal-computer/"
+      "https://www.apple.com/newsroom/2023/10/apple-unveils-m3-m3-pro-and-m3-max-the-most-advanced-chips-for-a-personal-computer/",
+      "https://high-yield.net/stats"
     ],
+    "transistors": 184000,
+    "die": 1034.8,
     "fields": {
-      "process": "supported"
+      "process": "supported",
+      "transistors": "supported",
+      "die": "estimated"
     }
   },
   {
@@ -911,9 +961,17 @@
     "threads": 10,
     "tdp": 20,
     "process": 3,
-    "die": 0,
-    "transistors": 0,
-    "smp": 1
+    "die": 168.57,
+    "transistors": 28000,
+    "smp": 1,
+    "sources": [
+      "https://www.apple.com/newsroom/2024/05/apple-introduces-m4-chip/",
+      "https://high-yield.net/stats"
+    ],
+    "fields": {
+      "transistors": "supported",
+      "die": "estimated"
+    }
   },
   {
     "id": "apple-m4-max-16",
@@ -926,10 +984,15 @@
     "threads": 16,
     "process": 3,
     "sources": [
-      "https://www.apple.com/newsroom/2024/10/apple-introduces-m4-pro-and-m4-max/"
+      "https://www.apple.com/newsroom/2024/10/apple-introduces-m4-pro-and-m4-max/",
+      "https://high-yield.net/stats"
     ],
+    "die": 454.27,
+    "transistors": 100000,
     "fields": {
-      "process": "supported"
+      "process": "supported",
+      "die": "estimated",
+      "transistors": "estimated"
     }
   },
   {
@@ -943,9 +1006,16 @@
     "threads": 14,
     "tdp": 45,
     "process": 3,
-    "die": 0,
-    "transistors": 0,
-    "smp": 1
+    "die": 331.54,
+    "transistors": 50000,
+    "smp": 1,
+    "sources": [
+      "https://high-yield.net/stats"
+    ],
+    "fields": {
+      "die": "estimated",
+      "transistors": "estimated"
+    }
   },
   {
     "id": "aws-graviton-1",
@@ -1049,8 +1119,10 @@
     "cores": 132,
     "process": 3,
     "sources": [
-      "https://azure.microsoft.com/en-us/blog/azure-cobalt-200-vms-now-available-proven-on-real-workloads-and-built-for-the-agentic-era/"
+      "https://azure.microsoft.com/en-us/blog/azure-cobalt-200-vms-now-available-proven-on-real-workloads-and-built-for-the-agentic-era/",
+      "https://azure.microsoft.com/en-us/blog/designing-azure-silicon-on-azure-silicon-eda-workloads-on-cobalt-200/"
     ],
+    "threads": 132,
     "fields": {
       "id": "supported",
       "manufacturer": "supported",
@@ -1058,7 +1130,8 @@
       "architecture": "supported",
       "platform": "supported",
       "cores": "supported",
-      "process": "supported"
+      "process": "supported",
+      "threads": "supported"
     }
   },
   {
@@ -1127,8 +1200,12 @@
     "sources": [
       "https://www.intel.com/content/www/us/en/products/sku/193385/intel-xeon-silver-4214-processor-16-5m-cache-2-20-ghz/specifications.html"
     ],
+    "threads": 24,
+    "smp": 2,
     "fields": {
-      "process": "supported"
+      "process": "supported",
+      "threads": "supported",
+      "smp": "supported"
     }
   },
   {
@@ -1183,10 +1260,14 @@
     "sources": [
       "https://www.intel.com/content/www/us/en/products/sku/199347/intel-xeon-gold-6226r-processor-22m-cache-2-90-ghz/specifications.html"
     ],
+    "threads": 32,
+    "smp": 2,
     "fields": {
       "cores": "supported",
       "tdp": "supported",
-      "process": "supported"
+      "process": "supported",
+      "threads": "supported",
+      "smp": "supported"
     }
   },
   {
@@ -1283,7 +1364,14 @@
     "platform": "granite rapids",
     "cores": 86,
     "threads": 172,
-    "tdp": 350
+    "tdp": 350,
+    "smp": 8,
+    "sources": [
+      "https://www.intel.com/content/www/us/en/products/sku/241837/intel-xeon-6788p-processor-336m-cache-2-00-ghz/specifications.html"
+    ],
+    "fields": {
+      "smp": "supported"
+    }
   },
   {
     "id": "intel-xeon-6973pc",
@@ -1303,10 +1391,16 @@
     "cores": 72,
     "sources": [
       "https://github.com/SpareCores/sc-inspector-data/blob/8498ce04b618d4589a63d6eff0b39e4e1bff33ab/data/gcp/c4-standard-288-metal/0/dmidecode/stdout",
-      "https://docs.cloud.google.com/compute/docs/general-purpose-machines"
+      "https://docs.cloud.google.com/compute/docs/general-purpose-machines",
+      "https://valid.x86.fr/llmz81",
+      "https://docs.cloud.google.com/compute/docs/cpu-platforms"
     ],
+    "threads": 144,
+    "tdp": 550,
     "fields": {
-      "cores": "supported"
+      "cores": "supported",
+      "threads": "supported",
+      "tdp": "estimated"
     }
   },
   {
@@ -1315,7 +1409,19 @@
     "serie": "xeon",
     "model": "6987pc",
     "architecture": "x86-64",
-    "platform": "granite rapids"
+    "platform": "granite rapids",
+    "cores": 120,
+    "sources": [
+      "https://github.com/mlcommons/inference_results_v6.1/blob/6623c6c8bac460c46a8768ac261bc0889c9c7f13/closed/Oracle/systems/1-node-1S-GNR_120C.json",
+      "https://blogs.oracle.com/cloud-infrastructure/run-ai-inference-without-gpus",
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm",
+      "https://www.intel.com/content/www/us/en/products/sku/240781/intel-xeon-6979p-processor-504m-cache-2-10-ghz/specifications.html"
+    ],
+    "tdp": 500,
+    "fields": {
+      "cores": "supported",
+      "tdp": "estimated"
+    }
   },
   {
     "id": "intel-xeon-8124m",
@@ -2229,7 +2335,17 @@
     "threads": 36,
     "tdp": 145,
     "process": 22,
-    "smp": 2
+    "smp": 2,
+    "die": 662,
+    "transistors": 5690,
+    "sources": [
+      "https://www.intel.com/content/www/us/en/products/sku/81061/intel-xeon-processor-e52699-v3-45m-cache-2-30-ghz/specifications.html",
+      "https://indico.cern.ch/event/304944/contributions/1672250/attachments/578499/796632/chep2015_haswell_szostek.pdf"
+    ],
+    "fields": {
+      "die": "supported",
+      "transistors": "supported"
+    }
   },
   {
     "id": "intel-xeon-e52699v4",
@@ -2242,7 +2358,16 @@
     "threads": 44,
     "tdp": 145,
     "process": 14,
-    "smp": 2
+    "smp": 2,
+    "die": 456,
+    "transistors": 7200,
+    "sources": [
+      "https://www.cis.upenn.edu/~cis5710/spring2019/slides/01_intro.pdf"
+    ],
+    "fields": {
+      "die": "supported",
+      "transistors": "supported"
+    }
   },
   {
     "id": "intel-xeon-e78880v3",
