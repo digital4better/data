@@ -76,7 +76,15 @@
     "serie": "radeon",
     "model": "mi355x",
     "platform": "instinct",
-    "memory": 288
+    "memory": 288,
+    "cores": 16384,
+    "tdp": 1400,
+    "process": 3,
+    "fields": {
+      "cores": "supported",
+      "tdp": "supported",
+      "process": "supported"
+    }
   },
   {
     "id": "amd-radeon-v520",
@@ -225,7 +233,13 @@
     "serie": "blackwell",
     "model": "b200-192",
     "platform": "blackwell",
-    "memory": 192
+    "memory": 192,
+    "process": 4,
+    "tdp": 1200,
+    "fields": {
+      "process": "supported",
+      "tdp": "supported"
+    }
   },
   {
     "id": "nvidia-blackwell-b300",
@@ -292,7 +306,11 @@
     "platform": "blackwell",
     "cores": 10496,
     "memory": 32,
-    "tdp": 165
+    "tdp": 165,
+    "process": 4,
+    "fields": {
+      "process": "supported"
+    }
   },
   {
     "id": "nvidia-rtx-pro-6000-blackwell-server",
@@ -316,12 +334,14 @@
     "platform": "rubin",
     "type": "gpu",
     "memory": 288,
+    "cores": 28672,
     "fields": {
       "id": "supported",
       "manufacturer": "supported",
       "model": "supported",
       "type": "supported",
-      "memory": "supported"
+      "memory": "supported",
+      "cores": "supported"
     }
   },
   {
@@ -557,7 +577,11 @@
     "platform": "volta",
     "cores": 5120,
     "memory": 32,
-    "tdp": 250
+    "tdp": 250,
+    "process": 12,
+    "fields": {
+      "process": "supported"
+    }
   },
   {
     "id": "qualcomm-ai100-standard",

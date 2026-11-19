@@ -285,7 +285,13 @@
     "platform": "milan",
     "cores": 64,
     "threads": 128,
-    "smp": 2
+    "smp": 2,
+    "process": 7,
+    "tdp": 280,
+    "fields": {
+      "process": "supported",
+      "tdp": "estimated"
+    }
   },
   {
     "id": "amd-epyc-7r13",
@@ -458,7 +464,11 @@
     "serie": "epyc",
     "model": "9004",
     "architecture": "x86-64",
-    "platform": "genoa"
+    "platform": "genoa",
+    "process": 5,
+    "fields": {
+      "process": "supported"
+    }
   },
   {
     "id": "amd-epyc-9005",
@@ -500,7 +510,11 @@
     "cores": 64,
     "threads": 128,
     "tdp": 360,
-    "smp": 1
+    "smp": 1,
+    "process": 4,
+    "fields": {
+      "process": "supported"
+    }
   },
   {
     "id": "amd-epyc-9575f",
@@ -556,7 +570,13 @@
     "platform": "genoa",
     "cores": 96,
     "threads": 192,
-    "smp": 2
+    "smp": 2,
+    "process": 5,
+    "tdp": 360,
+    "fields": {
+      "process": "supported",
+      "tdp": "estimated"
+    }
   },
   {
     "id": "amd-epyc-9j45",
@@ -567,7 +587,11 @@
     "platform": "turin",
     "cores": 128,
     "threads": 256,
-    "smp": 2
+    "smp": 2,
+    "tdp": 500,
+    "fields": {
+      "tdp": "estimated"
+    }
   },
   {
     "id": "amd-epyc-9r14",
@@ -728,7 +752,11 @@
     "platform": "ampereone",
     "cores": 160,
     "threads": 160,
-    "smp": 1
+    "smp": 1,
+    "process": 5,
+    "fields": {
+      "process": "supported"
+    }
   },
   {
     "id": "ampere-ampereone-m-19236m",
@@ -736,7 +764,11 @@
     "serie": "ampereone-m",
     "model": "192-36m",
     "architecture": "arm-64",
-    "platform": "ampereone-m"
+    "platform": "ampereone-m",
+    "process": 5,
+    "fields": {
+      "process": "supported"
+    }
   },
   {
     "id": "ampere-ampereone-m-a0636m",
@@ -747,7 +779,11 @@
     "platform": "ampereone-m",
     "cores": 96,
     "threads": 96,
-    "smp": 1
+    "smp": 1,
+    "process": 5,
+    "fields": {
+      "process": "supported"
+    }
   },
   {
     "id": "apple-m1",
@@ -817,7 +853,11 @@
     "architecture": "arm-64",
     "platform": "apple silicon",
     "cores": 28,
-    "threads": 28
+    "threads": 28,
+    "process": 3,
+    "fields": {
+      "process": "supported"
+    }
   },
   {
     "id": "apple-m4",
@@ -842,7 +882,11 @@
     "architecture": "arm-64",
     "platform": "apple silicon",
     "cores": 16,
-    "threads": 16
+    "threads": 16,
+    "process": 3,
+    "fields": {
+      "process": "supported"
+    }
   },
   {
     "id": "apple-m4-pro",
@@ -927,7 +971,11 @@
     "architecture": "arm-64",
     "platform": "neoverse v3",
     "cores": 192,
-    "threads": 192
+    "threads": 192,
+    "process": 3,
+    "fields": {
+      "process": "supported"
+    }
   },
   {
     "id": "azure-cobalt-100",
@@ -951,12 +999,16 @@
     "model": 200,
     "architecture": "arm-64",
     "platform": "neoverse v3",
+    "cores": 132,
+    "process": 3,
     "fields": {
       "id": "supported",
       "manufacturer": "supported",
       "model": "supported",
       "architecture": "supported",
-      "platform": "supported"
+      "platform": "supported",
+      "cores": "supported",
+      "process": "supported"
     }
   },
   {
@@ -1020,7 +1072,11 @@
     "architecture": "x86-64",
     "platform": "cascade lake",
     "cores": 12,
-    "tdp": 85
+    "tdp": 85,
+    "process": 14,
+    "fields": {
+      "process": "supported"
+    }
   },
   {
     "id": "intel-xeon-6-72c-oracle",
@@ -1067,7 +1123,15 @@
     "serie": "xeon",
     "model": "6226r",
     "architecture": "x86-64",
-    "platform": "cascade lake"
+    "platform": "cascade lake",
+    "cores": 16,
+    "tdp": 150,
+    "process": 14,
+    "fields": {
+      "cores": "supported",
+      "tdp": "supported",
+      "process": "supported"
+    }
   },
   {
     "id": "intel-xeon-6246r",
@@ -1179,7 +1243,11 @@
     "serie": "xeon",
     "model": "6985pc",
     "architecture": "x86-64",
-    "platform": "granite rapids"
+    "platform": "granite rapids",
+    "cores": 72,
+    "fields": {
+      "cores": "supported"
+    }
   },
   {
     "id": "intel-xeon-6987pc",
@@ -1687,7 +1755,13 @@
     "platform": "emerald rapids",
     "cores": 64,
     "threads": 128,
-    "smp": 2
+    "smp": 2,
+    "tdp": 350,
+    "process": 10,
+    "fields": {
+      "tdp": "supported",
+      "process": "supported"
+    }
   },
   {
     "id": "intel-xeon-e2274g",
@@ -2207,7 +2281,11 @@
     "serie": "xeon",
     "model": "sapphire-rapids",
     "architecture": "x86-64",
-    "platform": "sapphire rapids"
+    "platform": "sapphire rapids",
+    "process": 10,
+    "fields": {
+      "process": "supported"
+    }
   },
   {
     "id": "nvidia-grace",
