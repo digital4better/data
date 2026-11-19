@@ -19,6 +19,8 @@ Each source has a stable `id`, URL, publisher, provider `scopes`, subject `topic
 
 `active` means retained for use, not recently verified or guaranteed reachable. `deprecated` preserves the source and its history, with a reason and optional replacement ID. Deprecation requires positive evidence of withdrawal or replacement, or confirmed disappearance; a timeout, HTTP error or bot challenge is insufficient. When consolidating duplicate or moved URLs, keep the previous entry and link it to the preferred source. Do not delete historical records supported by it.
 
+Use GitHub issues to track requests. In published records, source registries and provenance, cite the underlying documentation, code, model card or dated observation directly.
+
 For every source, credit the publisher and retain the original record-level attribution and source-specific licensing terms. Registry inclusion grants no redistribution rights. Imported publisher attribution is derived from URLs, not proof of ownership, current availability or factual accuracy. Verify publisher, exact content and pagination before using a reference as evidence. Absence of optional notes never waives these checks.
 
 Imported references are not automatically primary evidence. For example, model aggregators are secondary; a model hosted on Hugging Face is attributed to its namespace, whose official ownership still needs verification. Preserve original publisher licensing and record-level attribution, including EcoLogits and Samuel Rince where applicable. Listing a source does not relicense it.
