@@ -9,7 +9,7 @@ const collections = ['ai', 'cloud', 'country', 'energy', 'equipment', 'facility'
 test('website reference files are exact source copies and their public links resolve', () => {
   const base = 'https://digital4better.github.io/data/';
   const dist = path.join(root, 'site/dist');
-  const files = ['llms.txt', 'llms-full.txt', 'field-assessments.md', ...collections.map(c => c + '/README.md')];
+  const files = ['llms.txt', 'llms-full.txt', 'field-assessments.md', 'cloud/provenance.md', ...collections.map(c => c + '/README.md')];
   for (const file of files) {
     const source = path.join(root, file.startsWith('llms') ? 'site' : 'data', file);
     const built = fs.readFileSync(path.join(dist, file), 'utf8');

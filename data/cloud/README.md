@@ -96,10 +96,11 @@ Every JSON file contains an array of objects; its CSV counterpart has one row pe
 | `type` | Text | Accelerator class, such as GPU, ASIC or FPGA. |
 | `cores`, `threads` | Counts | Hardware cores and CPU threads; accelerator cores are not CPU-equivalent. |
 | `memory` | GB | Accelerator memory; verify whether the reference describes a chip or a multi-chip board. |
-| `tdp` | W | Thermal design envelope, not measured workload power. |
-| `process` | nm convention | Reported process node, not a measured physical feature size. |
+| `tdp` | W | Design envelope per physical processor or accelerator module. A custom CPU may use a comparable catalog CPU’s default TDP with `fields.tdp = "estimated"`. |
+| `process` | nm convention | Nominal compute-die process node for reviewed hardware. |
 | `die` | mm2 | Reported die area; legacy chiplet/package boundaries can differ. |
 | `transistors` | Millions | Reported transistor count. |
+| `sources` | URL array, optional, JSON only | Evidence for the reviewed specifications. Record-specific estimation methods are in [cloud provenance](./provenance.md#hardware-estimates-and-conventions). |
 | `smp` | Socket count | CPU maximum socket support, not installed host sockets. |
 
 </details>
@@ -126,61 +127,11 @@ Capacity numbers retain their source convention: **GB and GiB are not interchang
 | OVHcloud | GB | GB |
 | Scaleway | GiB | Check the individual source |
 
-Azure GB RAM exceptions include Dnsv6, Dnlsv6, Ensv6, HBv5, Esv7, Ebsv6, Ebdsv6, Ecasv6 and Ecadsv6. Local storage is GB for Lsv4, Lasv4 and Lasv5/Laosv5; GiB for Ddsv7, Dldsv7, Daldsv7, Dcadsv6, Famdsv7 and Faldsv7. TB/TiB totals are reduced to GB/GiB respectively.
+Convert TB to GB and TiB to GiB within the source convention. See [capacity unit exceptions](./provenance.md#capacity-unit-exceptions) for individual series.
 
 Region `pue` is a ratio, `wue` is L/kWh and `ref` is a fraction. Reporting boundaries differ: Google's CFE fraction is not interchangeable with renewable-energy matching. AWS `ref = 0` and Oracle `wue = 0` are dataset conventions, not verified absence of renewable energy or water use.
 
-### Regional Environmental References
-
-| Provider | Source and interpretation |
-| --- | --- |
-| AWS | [Regional PUE/WUE disclosures](https://sustainability.aboutamazon.com/products-services/aws-cloud); current regional measurements are used when published. The older CSV remains a historical reference. REF remains zero by convention. |
-| Azure | [Datacenter efficiency disclosures](https://datacenters.microsoft.com/sustainability/efficiency/) and regional fact sheets, including curated historical values whose original PDFs may no longer be retrievable. |
-| GCP | [Regional carbon data](https://cloud.google.com/sustainability/region-carbon); CFE is used as the REF proxy. Previously derived water values remain pending clearer regional disclosures. |
-| Oracle | [OCI environmental reporting](https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf); renewable matching is distinct from physical grid emissions. Uniform PUE 1.07 and provisional WUE zero remain reference assumptions. |
-| OVHcloud | [FY25 environmental KPIs](https://www.ovhcloud.com/sites/default/files/external_files/kpis_fy25.pdf). |
-| Scaleway | [Calculation reference](https://www.scaleway.com/en/docs/environmental-footprint/additional-content/calculation-values-reference/) and datacenter impact reports. |
-
-Compare reporting periods and regional versus global boundaries before comparing providers. Lower PUE alone does not imply a lower total environmental impact.
-
-
-#### Reviewed regional periods and limits
-
-AWS directly reported regional PUE/WUE values use calendar 2025 where available; absent disclosures retain their earlier reference or estimate. Aggregate-derived values in the table below still refer to 2024. Thailand (`ap-southeast-7`) now uses regional 2025 PUE 1.38; its WUE remains the earlier Asia-Pacific aggregate estimate. The source may revise earlier columns, so the retained CSV is not the latest annual feed.
-
-Google regional `ref` uses the published 2025 CFE percentage divided by 100. No new campus-to-region PUE or water mapping is inferred from the separate datacenter efficiency tables. `asia-southeast3` still lacks a regional CFE disclosure.
-
-Oracle `ref=1` for the 43 matched commercial-region keys represents FY2026 annual renewable electricity matching (June 2025–May 2026), not carbon-free supply every hour or zero physical grid emissions. `ap-kulai-2` and `af-casablanca-1` retain their historical zero placeholders: the former is key JBP while the report lists a different Kulai key FYV; the latter is absent from the regional table. Neither zero is a measured renewable share.
-
-#### Reviewed VM and hardware evidence
-
-Azure Cobalt 200 families `dpsv7`, `dpdsv7`, `dplsv7`, `dpldsv7`, `epsv7`, `epdsv7`, `mpsv4`, `mpdsv4` and `lpsv5` use the published sizes, not a Cartesian product. Family host envelopes use the largest observed vCPU, RAM and local-storage limits as an explicit scenario, with one assumed socket and modeled physical disks. These are not installed host inventories. Local disk totals are count × per-disk size; storage is GiB for the D/E/M variants and GB for Lpsv5. Cobalt 200 uses Arm Neoverse V3; undisclosed CPU die, TDP and physical core count remain absent.
-
-Other added Azure sizes use the maximum allocated result among compatible existing profiles of the same family; where none fits, a dedicated-equivalent scenario is allocated at 100%, with the socket and storage assumptions recorded in the input profile. The two M-family additions without an exact CPU SKU keep that field absent rather than assigning a processor from a generation label.
-
-GCP `a5x-highgpu-4g-metal` exposes 176 vCPUs, 1,440 GB RAM, four 12,000 GiB local SSDs and four Rubin GPUs. Its two Vera sockets each have 88 physical cores and support 176 hardware threads; those hardware specifications do not change the published guest vCPU count. Each Rubin GPU has 288 GB HBM4. The bare-metal impact scenario allocates the full envelope once and excludes additional interconnect hardware. Capacity requires coordination with the provider; inclusion does not guarantee an immediately allocatable instance.
-
-The corrected GCP M4 RAM values (31/62/124 GB for `m4-hypermem-2/-4/-8`) change placement counts and `embodied_allocated`; the historical `embodied` values are pinned in the calculator inputs. Azure `nd96isr-h200-v5` RAM is 1,850 GiB; its existing physical host scenario is retained.
-
-AWS `m1-medium`, `r3-large` and `t1-micro` RAM values remain historical and `tentative`: the [previous-generation product page](https://aws.amazon.com/ec2/previous-generation/) and [EC2 specification table](https://docs.aws.amazon.com/ec2/latest/instancetypes/pg.html) disagree or differ in rounding. No RAM or impact change is inferred from that disagreement.
-
-#### Regional estimate scope
-
-The following regions retain PUE/WUE estimates from geographic aggregates, **not measurements of the individual cloud region**. This table replaces their former JSON `notes`; values and CSV exports are unchanged. Records retain evidence URLs in `sources`; field assessments, when present, do not replace these methodological limits.
-
-| Provider | Region IDs | Aggregate used | Reporting period |
-| --- | --- | --- | --- |
-| AWS | `ap-east-2`, `ap-southeast-6` | Asia Pacific excluding China | 2024 |
-| AWS | `ap-southeast-7` (WUE only) | Asia Pacific excluding China | 2024 |
-| AWS | `mx-central-1` | North America | 2024 |
-| AWS | `eusc-de-east-1` | Europe | 2024 |
-| Azure | `be-central` | Europe, Middle East & Africa | FY25 |
-| Azure | `cl-central` | Americas | FY25 |
-| Azure | `my-west` | Asia Pacific | FY25 |
-
-For these AWS regions, the source predates the region's launch. For these Azure regions, FY25 covers July 2024–June 2025 and fully owned and controlled datacenters operational for 12 months. Actual local performance may differ from the aggregate in both cases. WUE is in L/kWh.
-
-For all regions in this table, coordinates approximate the locality rather than a datacenter address. AWS `ref=0` follows the dataset convention; Azure `ref=0` is a conservative fallback without region-specific renewable-energy evidence. Neither represents a measured zero renewable-energy share. Dataset records no longer carry free-text `notes`; retain these public explanations when using their values.
+Compare reporting periods and regional versus global boundaries when using environmental indicators. See the [cloud provenance](./provenance.md) for provider disclosures, regional estimates and configuration-specific evidence.
 
 ## Methodology
 
@@ -245,16 +196,7 @@ Among compatible modeled hosts, the method selects the highest per-instance impa
 
 ## Sources and Attribution
 
-| Provider | Regions | Machines |
-| --- | --- | --- |
-| AWS | [Region catalog](https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html) | [EC2 specifications](https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-types.html) |
-| Azure | [Region catalog](https://learn.microsoft.com/en-us/azure/reliability/regions-list) | [VM sizes](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview) |
-| GCP | [Regions and zones](https://docs.cloud.google.com/compute/docs/regions-zones) | [Machine families](https://docs.cloud.google.com/compute/docs/machine-resource), [CPU platforms](https://docs.cloud.google.com/compute/docs/cpu-platforms) |
-| Oracle | [Regions](https://docs.oracle.com/en-us/iaas/Content/General/Concepts/regions.htm) | [Compute shapes](https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm) |
-| OVHcloud | [Public Cloud availability](https://www.ovhcloud.com/en/public-cloud/regions-availability/) | [Prices and specifications](https://www.ovhcloud.com/en/public-cloud/prices/) |
-| Scaleway | [Region identifiers](https://www.scaleway.com/en/developers/cli/config) | [Instance datasheet](https://www.scaleway.com/en/docs/instances/reference-content/instances-datasheet/) |
-
-Hardware references also use manufacturer specifications and, where explicitly identified, observed guest CPU models from [Spare Cores](https://sparecores.com/), [Vantage](https://instances.vantage.sh/) and [Cloud Mercato](https://pcr.cloud-mercato.com/). OVHcloud T1/T2 guest CPU observations are not provider-wide guarantees.
+Use the [source registry](https://github.com/digital4better/data/blob/main/sources/catalog.json) to discover provider catalogs and hardware references. On reviewed hardware records, `sources` links to the specifications or observations used. A guest CPU observation applies to the observed configuration.
 
 The manufacturing coefficients adapt Teads / Benjamin Davy's [article](https://medium.com/teads-engineering/building-an-aws-ec2-carbon-emissions-dataset-3f0fd76c98ac) and [Scope 3 Ratios spreadsheet](https://docs.google.com/spreadsheets/d/1DqYgQnEDLQVQm5acMAhLgHLD8xXCG9BIrk-_Nv6jF3k/edit), CC BY 4.0. Extensions and allocation rules are Digital4Better assumptions, not vendor-certified LCAs.
 
@@ -267,11 +209,3 @@ Host profiles are calculation scenarios, **not a verified inventory of deployed 
 Regions may contain several datacenters; Scaleway uses availability-zone identifiers. Local/edge zones, private realms, quota-dependent availability and every customizable VM combination are not exhaustively covered. Maximum CPU and RAM for a flexible shape do not establish a default configuration.
 
 Environmental disclosures have different dates and boundaries. Missing metrics remain absent; existing estimates are not re-certified by a hardware catalog update. Apply lifetime and usage-time allocation separately when calculating a period's footprint.
-
-### Scaleway bounded review — 2026-11-18
-
-The [environmental disclosures](https://www.scaleway.com/en/environmental-leadership/) and [Impact Report 2025](https://www-uploads.scaleway.com/Impact_Report2025_22ee3a8232.pdf), physical page 25, report annual **2024** values: DC5 (`fr-par-2`) PUE 1.25 and DC4 (`fr-par-3`) WUE 0.00002 L/kWh IT (definition on page 28). The historical zone/datacenter mappings are retained. Record-level `sources` and `fields` identify the evidence and assessed properties; other metrics on these records were not revalidated.
-
-AMS3 (`nl-ams-3`) PUE conflicts (website 1.20, PDF 1.40); AMS1 (`nl-ams-1`) WUE conflicts (website 1.64, PDF 0.85 L/kWh IT). Historical PUE 1.20 and WUE 0.85 remain with `fields` marked `tentative`. The historical AMS3 WUE 0.22 was not revalidated. The PDF file was created/modified in February 2026, but the website revision date is unknown: document metadata cannot establish which 2024 table was revised last. Other environmental values are not revalidated by these corrections.
-
-The [official Instance datasheet](https://raw.githubusercontent.com/scaleway/docs-content/main/pages/instances/reference-content/instances-datasheet.mdx) and [Paris-1 API](https://api.scaleway.com/instance/v1/zones/fr-par-1/products/servers) agree with existing vCPU/RAM values within the reviewed Instance scope. This is not a review of all historical products or every zone. GP1 CPU identity remains tentative: the datasheet says EPYC 7281 or equivalent, while the historical records retain 7401P. No host assumptions or embodied values are changed. Optional disks and maximum volume limits are not included local-storage capacity.

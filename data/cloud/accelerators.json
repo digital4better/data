@@ -76,7 +76,18 @@
     "serie": "radeon",
     "model": "mi355x",
     "platform": "instinct",
-    "memory": 288
+    "memory": 288,
+    "cores": 16384,
+    "tdp": 1400,
+    "process": 3,
+    "sources": [
+      "https://www.amd.com/en/products/accelerators/instinct/mi350/mi355x.html"
+    ],
+    "fields": {
+      "cores": "supported",
+      "tdp": "supported",
+      "process": "supported"
+    }
   },
   {
     "id": "amd-radeon-v520",
@@ -225,7 +236,18 @@
     "serie": "blackwell",
     "model": "b200-192",
     "platform": "blackwell",
-    "memory": 192
+    "memory": 192,
+    "process": 4,
+    "tdp": 1200,
+    "sources": [
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-gb200-v6-series",
+      "https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing/",
+      "https://productinformation.ocf.co.uk/media/nvldqqds/blackwell-datasheet-4204213.pdf"
+    ],
+    "fields": {
+      "process": "supported",
+      "tdp": "supported"
+    }
   },
   {
     "id": "nvidia-blackwell-b300",
@@ -292,7 +314,15 @@
     "platform": "blackwell",
     "cores": 10496,
     "memory": 32,
-    "tdp": 165
+    "tdp": 165,
+    "process": 4,
+    "sources": [
+      "https://docs.nvidia.com/datacenter/tesla/pdf/MIG_User_Guide.pdf",
+      "https://www.nvidia.com/content/dam/en-zz/Solutions/design-visualization/quadro-product-literature/NVIDIA-RTX-Blackwell-PRO-GPU-Architecture-v1.0.pdf"
+    ],
+    "fields": {
+      "process": "supported"
+    }
   },
   {
     "id": "nvidia-rtx-pro-6000-blackwell-server",
@@ -316,12 +346,18 @@
     "platform": "rubin",
     "type": "gpu",
     "memory": 288,
+    "cores": 28672,
+    "sources": [
+      "https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/",
+      "https://github.com/NVIDIA/cuda-samples/blob/0ec046d5e99d7214cc8e9fbac2cc1e66f3019878/Common/helper_cuda.h#L646-L681"
+    ],
     "fields": {
       "id": "supported",
       "manufacturer": "supported",
       "model": "supported",
       "type": "supported",
-      "memory": "supported"
+      "memory": "supported",
+      "cores": "supported"
     }
   },
   {
@@ -557,7 +593,15 @@
     "platform": "volta",
     "cores": 5120,
     "memory": 32,
-    "tdp": 250
+    "tdp": 250,
+    "process": 12,
+    "sources": [
+      "https://images.nvidia.com/content/technologies/volta/pdf/volta-v100-datasheet-update-us-1165301-r5.pdf",
+      "https://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf"
+    ],
+    "fields": {
+      "process": "supported"
+    }
   },
   {
     "id": "qualcomm-ai100-standard",

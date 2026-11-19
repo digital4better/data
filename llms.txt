@@ -20,7 +20,7 @@ Before reporting missing data, inspect the relevant collection and check the exa
 
 - [Electricity impact factors](./data/factor/README.md): Impacts per kWh, by geography and period. For sub-national data inspect `subdivision-yearly.json` or `subdivision-monthly.json`.
 - [Electricity mixes](./data/mix/README.md): Technology shares using the same geography/period naming scheme.
-- [Cloud infrastructure](./data/cloud/README.md): Provider regions, machines and host profiles, CPU and accelerator references.
+- [Cloud infrastructure](./data/cloud/README.md): Provider regions, machines and host profiles, CPU and accelerator references. Reviewed CPU and accelerator JSON records include source URLs.
 - [AI models](./data/ai/README.md): Model characteristics, provider identifiers, estimates and unknown fields.
 - [Equipment](./data/equipment/README.md): Operational energy and allocated embodied impacts; read each entry's `unit`.
 - [Energy technologies](./data/energy/README.md): Lifecycle impact factors by electricity generation technology.

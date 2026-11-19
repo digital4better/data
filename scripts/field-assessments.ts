@@ -98,6 +98,7 @@ export const assessedFields = {
     "die",
     "transistors",
     "smp",
+    "sources",
   ],
   accelerators: [
     "id",
@@ -112,6 +113,7 @@ export const assessedFields = {
     "process",
     "die",
     "transistors",
+    "sources",
   ],
 } as const;
 export type AssessedCollection = keyof typeof assessedFields;
