@@ -21,7 +21,11 @@ test("AI registry is formatted, sorted and structurally consistent", () => {
     assert.ok(Number.isFinite(active) && active > 0 && Number.isFinite(total) && total >= active, m.name);
     assert.ok(["dense", "moe"].includes(m.architecture), m.name);
     if (m.architecture === "dense") assert.equal(active, total, m.name);
-    for (const key of ["open", "reasoning", "tools"]) assert.equal(typeof m[key], "boolean", `${m.name}: ${key}`);
+    assert.equal(typeof m.open, "boolean", m.name);
+    for (const key of ["reasoning", "tools"]) {
+      if (m.type === "text" && !Object.hasOwn(m, key)) assert.equal(m.fields?.[key], "missing", m.name);
+      else assert.equal(typeof m[key], "boolean", `${m.name}: ${key}`);
+    }
     for (const key of ["input", "output", "sources"]) {
       assert.ok(Array.isArray(m[key]), `${m.name}: ${key}`);
       assert.equal(new Set(m[key]).size, m[key].length, `${m.name}: duplicate ${key}`);
@@ -36,7 +40,7 @@ test("AI registry is formatted, sorted and structurally consistent", () => {
     for (const field of ["context", "dimension", "hidden_dimension"]) {
       if (field in m) assert.ok(Number.isInteger(m[field]) && m[field] > 0, `${m.name}: ${field}`);
     }
-    if (m.type === "text") assert.ok(m.context, `${m.name}: text context`);
+    if (m.type === "text" && !Object.hasOwn(m, "context")) assert.equal(m.fields?.context, "missing", m.name);
     if (m.type === "embedding") assert.ok(m.output.includes("embedding"), m.name);
     if (m.type === "image") assert.ok(m.output.includes("image"), m.name);
     if (m.type === "video") assert.ok(m.output.includes("video"), m.name);
@@ -201,4 +205,26 @@ test("new releases do not inherit old weights, modalities or pattern aliases", (
   assert.deepEqual(byName.get("gemini-omni-1.2-flash").output, ["text", "video"]);
   assert.ok(!byName.has("kimi-k3.1-highspeed"));
   assert.ok(!byName.has("deepseek-v4.1-flash-1017"));
+});
+
+test("Copilot telemetry resolves by family and preserves the historical MAI deployment mapping", () => {
+  for (const [name, ids] of [
+    ["copilot-nes-lysithea", ["copilot-nes-lysithea-14", "copilot-nes-lysithea-24"]],
+    ["copilot-nes-pandia", ["copilot-nes-pandia-25"]],
+    ["nes-callisto", ["nes-callisto-003"]],
+    ["copilot-suggestions-himalia", ["copilot-suggestions-himalia-001"]],
+    ["mai-code-1.1-flash", ["mai-code-1.1-flash", "mai-code-1-flash-4th"]],
+  ]) {
+    const record = byName.get(name);
+    assert.equal(record.fields.parameters, "estimated");
+    for (const id of ids) {
+      assert.ok(record.providers["github-copilot"].includes(id), id);
+      assert.deepEqual(models.filter((m) => new RegExp(m.pattern, "i").test(id)).map((m) => m.name), [name], id);
+    }
+  }
+  const mai = byName.get("mai-code-1.1-flash");
+  assert.equal(mai.context, 256000);
+  for (const id of ["mai-code-1-flash", "mai-code-1-flash-picker", "mai-code-2-flash"]) {
+    assert.equal(new RegExp(mai.pattern, "i").test(id), false, id);
+  }
 });

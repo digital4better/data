@@ -216,6 +216,24 @@
       ]
     },
     {
+      "id": "ai.azure.com-eb4f41d8d20b",
+      "url": "https://ai.azure.com/catalog/models/MAI-Code-1.1-Flash-On-Device",
+      "publisher": "Microsoft",
+      "scopes": [
+        "ai"
+      ],
+      "category": "primary",
+      "format": "html",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "models"
+      ],
+      "review": {
+        "date": "2026-11-19"
+      }
+    },
+    {
       "id": "ai.google.dev-0d1d7e13b0fe",
       "url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-flash-live-preview",
       "publisher": "Google",
@@ -7761,6 +7779,24 @@
       ]
     },
     {
+      "id": "github.com-5ab91a5ab21d",
+      "url": "https://github.com/microsoft/MAI-Code",
+      "publisher": "Microsoft",
+      "scopes": [
+        "ai"
+      ],
+      "category": "primary",
+      "format": "html",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "models"
+      ],
+      "review": {
+        "date": "2026-11-19"
+      }
+    },
+    {
       "id": "github.com-6881d8b63cff",
       "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/MODEL_CARD.md",
       "publisher": "meta-llama",
@@ -7829,6 +7865,24 @@
       "review": {
         "date": "2026-11-12",
         "notes": "Reference relocated by public commits 13c8ccc and 5db93fc. Use the active TypeScript calculator and sources/cloud inputs at the same dataset commit; prior versions remain in Git history."
+      }
+    },
+    {
+      "id": "github.com-985eff823f15",
+      "url": "https://github.com/microsoft/vscode-copilot-chat/blob/5863f5a7088958050792b5dccbe8b46c6e13eccc/src/platform/configuration/common/configurationService.ts",
+      "publisher": "Microsoft",
+      "scopes": [
+        "ai"
+      ],
+      "category": "primary",
+      "format": "html",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "models"
+      ],
+      "review": {
+        "date": "2026-11-19"
       }
     },
     {
@@ -7924,6 +7978,42 @@
       "reason": "One-time correction journal retired; expected values and official references are retained in site/tests/cloud-reference.test.cjs. The before/after log remains in Git history.",
       "review": {
         "date": "2026-11-12"
+      }
+    },
+    {
+      "id": "github.com-c1cf82f194a8",
+      "url": "https://github.com/microsoft/vscode-copilot-chat/blob/5863f5a7088958050792b5dccbe8b46c6e13eccc/src/platform/inlineEdits/node/inlineEditsModelService.ts",
+      "publisher": "Microsoft",
+      "scopes": [
+        "ai"
+      ],
+      "category": "primary",
+      "format": "html",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "models"
+      ],
+      "review": {
+        "date": "2026-11-19"
+      }
+    },
+    {
+      "id": "github.com-caef4a2f12d9",
+      "url": "https://github.com/1291617594/interview_for_webox/blob/609cef0579cd1c309228accfe90d069690b9b1ef/ai-conversations/copilot-chat-models-2026-09-02.json",
+      "publisher": "Community capture of GitHub Copilot model metadata",
+      "scopes": [
+        "ai"
+      ],
+      "category": "observation",
+      "format": "html",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "models"
+      ],
+      "review": {
+        "date": "2026-11-19"
       }
     },
     {
@@ -9644,6 +9734,24 @@
       ]
     },
     {
+      "id": "huggingface.co-747fb51393ba",
+      "url": "https://huggingface.co/Salesforce/codet5-large/raw/main/config.json",
+      "publisher": "Salesforce",
+      "scopes": [
+        "ai"
+      ],
+      "category": "primary",
+      "format": "json",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "models"
+      ],
+      "review": {
+        "date": "2026-11-19"
+      }
+    },
+    {
       "id": "huggingface.co-7493987a544a",
       "url": "https://huggingface.co/CohereLabs/c4ai-command-r-v01",
       "publisher": "CohereLabs",
@@ -10832,6 +10940,24 @@
       ]
     },
     {
+      "id": "huggingface.co-cf2ecf379db5",
+      "url": "https://huggingface.co/sweepai/sweep-next-edit-1.5B",
+      "publisher": "Sweep AI",
+      "scopes": [
+        "ai"
+      ],
+      "category": "primary",
+      "format": "html",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "models"
+      ],
+      "review": {
+        "date": "2026-11-19"
+      }
+    },
+    {
       "id": "huggingface.co-d11ae4473ac0",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1",
       "publisher": "deepseek-ai",
@@ -11732,6 +11858,24 @@
       "topics": [
         "hardware"
       ]
+    },
+    {
+      "id": "jcst.ict.ac.cn-96748927beb9",
+      "url": "https://jcst.ict.ac.cn/fileup/1000-9000/PDF/JCST-2025-4-6-5139-980.pdf",
+      "publisher": "CoEdPilot authors",
+      "scopes": [
+        "ai"
+      ],
+      "category": "methodology",
+      "format": "pdf",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "models"
+      ],
+      "review": {
+        "date": "2026-11-19"
+      }
     },
     {
       "id": "learn.microsoft.com-09941dba9f31",
