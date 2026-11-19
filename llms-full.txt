@@ -122,7 +122,7 @@ Maintenance inputs and evidence are in the repository's [sources/cloud](https://
 - `name`, `vendor`, `type`, `architecture`: source identifiers and model classification.
 - `pattern`: a name-recognition expression, not a provider API endpoint.
 - `parameters.active` and `parameters.total`: active and total parameters in billions. Distinguish these for mixture-of-experts architectures.
-- `context`: context capacity in tokens, not a guaranteed output length.
+- `context`: native or explicitly scoped hosted capacity in tokens. Reviewed text records may omit unknown context, reasoning or tools with the corresponding JSON field marked `missing`.
 - `input`, `output`: supported modalities.
 - `reasoning`, `tools`: recorded capabilities. Patterns are matching aids; shared historical provider identifiers may remain ambiguous.
 - `providers`: hosting-provider identifiers and variants, not universal identifiers.

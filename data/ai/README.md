@@ -41,7 +41,7 @@ JSON is an array of model objects; CSV has one row per model. Optional fields ar
 
 Dense models conventionally use equal active and total counts. Analyzing images does not imply generating them: check both `input` and `output` rather than the main task alone.
 
-Public `input`, `output`, `reasoning` and `tools` capabilities are not inferred from prices. Context uses the native model limit rather than a narrower hosting tier; media-only APIs can omit it when no meaningful token budget is exposed.
+Public `input`, `output`, `reasoning` and `tools` capabilities are not inferred from prices. Prefer the native model limit. A hosted service record may use its documented total window when its provenance states the deployment scope. A reviewed text model can omit an unknown context, reasoning capability or tool capability with an explicit `missing` assessment for that field. Empty CSV cells represent these gaps. Media-only APIs can omit context when no meaningful token budget is exposed.
 
 A populated parameter count **does not mean the vendor disclosed it**. Check `fields` (the `estimated` column in CSV) and the provenance table before treating a number as a measurement.
 

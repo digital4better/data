@@ -3000,6 +3000,114 @@
     }
   },
   {
+    "name": "copilot-nes-lysithea",
+    "vendor": "github",
+    "open": false,
+    "pattern": "^copilot-nes-lysithea(?:-[0-9]+)?$",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1.5,
+      "total": 1.5
+    },
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "providers": {
+      "github-copilot": [
+        "copilot-nes-lysithea-14",
+        "copilot-nes-lysithea-24"
+      ]
+    },
+    "sources": [
+      "https://github.com/digital4better/data/issues/25",
+      "https://huggingface.co/sweepai/sweep-next-edit-1.5B",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#copilot-accounting-profiles"
+    ],
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated",
+      "context": "missing",
+      "reasoning": "missing",
+      "tools": "missing"
+    }
+  },
+  {
+    "name": "copilot-nes-pandia",
+    "vendor": "github",
+    "open": false,
+    "pattern": "^copilot-nes-pandia(?:-[0-9]+)?$",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1.5,
+      "total": 1.5
+    },
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "providers": {
+      "github-copilot": [
+        "copilot-nes-pandia-25"
+      ]
+    },
+    "sources": [
+      "https://github.com/digital4better/data/issues/25",
+      "https://huggingface.co/sweepai/sweep-next-edit-1.5B",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#copilot-accounting-profiles"
+    ],
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated",
+      "context": "missing",
+      "reasoning": "missing",
+      "tools": "missing"
+    }
+  },
+  {
+    "name": "copilot-suggestions-himalia",
+    "vendor": "github",
+    "open": false,
+    "pattern": "^copilot-suggestions-himalia(?:-[0-9]+)?$",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 0.335,
+      "total": 0.335
+    },
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "providers": {
+      "github-copilot": [
+        "copilot-suggestions-himalia-001"
+      ]
+    },
+    "sources": [
+      "https://github.com/digital4better/data/issues/25",
+      "https://github.com/microsoft/vscode-copilot-chat/blob/5863f5a7088958050792b5dccbe8b46c6e13eccc/src/platform/configuration/common/configurationService.ts#L780-L782",
+      "https://jcst.ict.ac.cn/fileup/1000-9000/PDF/JCST-2025-4-6-5139-980.pdf",
+      "https://huggingface.co/Salesforce/codet5-large/raw/main/config.json",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#copilot-accounting-profiles"
+    ],
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated",
+      "context": "missing",
+      "reasoning": "missing",
+      "tools": "missing"
+    }
+  },
+  {
     "name": "curie",
     "vendor": "openai",
     "open": false,
@@ -10831,6 +10939,45 @@
     ]
   },
   {
+    "name": "mai-code-1.1-flash",
+    "vendor": "microsoft",
+    "open": true,
+    "pattern": "^mai-code-(?:1\\.1-flash|1-flash-4th)$",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 6.8,
+      "total": 137.9
+    },
+    "context": 256000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "github-copilot": [
+        "mai-code-1.1-flash",
+        "mai-code-1-flash-4th"
+      ]
+    },
+    "sources": [
+      "https://github.com/microsoft/MAI-Code",
+      "https://ai.azure.com/catalog/models/MAI-Code-1.1-Flash-On-Device",
+      "https://github.com/1291617594/interview_for_webox/blob/609cef0579cd1c309228accfe90d069690b9b1ef/ai-conversations/copilot-chat-models-2026-09-02.json",
+      "https://github.com/anomalyco/models.dev/blob/91f500b1a867befd9ebeae9fba82154590745daa/providers/github-copilot/models/mai-code-1.1-flash.toml",
+      "https://github.com/digital4better/data/issues/26",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#copilot-accounting-profiles"
+    ],
+    "fields": {
+      "parameters": "estimated"
+    }
+  },
+  {
     "name": "mai-image-2.5",
     "vendor": "microsoft",
     "open": false,
@@ -12870,6 +13017,42 @@
       "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-nvidia-nvidia-nemotron-nano-9b-v2.html"
     ]
+  },
+  {
+    "name": "nes-callisto",
+    "vendor": "github",
+    "open": false,
+    "pattern": "^nes-callisto(?:-[0-9]+)?$",
+    "type": "text",
+    "architecture": "dense",
+    "parameters": {
+      "active": 1.5,
+      "total": 1.5
+    },
+    "input": [
+      "text"
+    ],
+    "output": [
+      "text"
+    ],
+    "providers": {
+      "github-copilot": [
+        "nes-callisto-003"
+      ]
+    },
+    "sources": [
+      "https://github.com/digital4better/data/issues/25",
+      "https://github.com/microsoft/vscode-copilot-chat/blob/5863f5a7088958050792b5dccbe8b46c6e13eccc/src/platform/inlineEdits/node/inlineEditsModelService.ts#L64-L70",
+      "https://huggingface.co/sweepai/sweep-next-edit-1.5B",
+      "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#copilot-accounting-profiles"
+    ],
+    "fields": {
+      "parameters": "estimated",
+      "architecture": "estimated",
+      "context": "missing",
+      "reasoning": "missing",
+      "tools": "missing"
+    }
   },
   {
     "name": "nova-lite",
