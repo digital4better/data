@@ -105,7 +105,7 @@ AI and cloud JSON records may include optional [`fields` assessments](./data/fie
 
 ## Cloud infrastructure: `data/cloud/`
 
-Each provider has `<provider>-regions`, `<provider>-vms` and `<provider>-hosts` files in JSON and CSV. Shared `cpus` and `accelerators` catalogs describe hardware. JSON roots are arrays. The [cloud guide](./data/cloud/README.md) maintains the complete schemas, provider-specific capacity conventions, regional metrics, source URLs and assumption codes.
+Each provider has `<provider>-regions`, `<provider>-vms` and `<provider>-hosts` files in JSON and CSV. Shared `cpus` and `accelerators` catalogs describe hardware. Reviewed hardware records carry optional JSON-only `sources` URL arrays. [Cloud provenance](./data/cloud/provenance.md) explains record-specific estimates and exceptions. JSON roots are arrays. The [cloud guide](./data/cloud/README.md) maintains the complete schemas, provider-specific capacity conventions, regional metrics, source URLs and assumption codes.
 
 Join VM `host` to the same provider's host `id`; CPU and accelerator references join to the shared catalogs. Prefer VM `embodied_allocated`, in tCO2e before time amortization. VM `embodied` is deprecated and has heterogeneous historical scope; host `embodied` is the total modeled host impact and is not deprecated.
 

@@ -288,6 +288,12 @@
     "smp": 2,
     "process": 7,
     "tdp": 280,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm",
+      "https://blogs.oracle.com/cloud-infrastructure/e5-standard-instance-4th-gen-amd-epyc-processors",
+      "https://www.amd.com/content/dam/amd/en/documents/products/epyc/4th-gen-epyc-processor-architecture-white-paper.pdf",
+      "https://www.amd.com/en/products/processors/server/epyc/7003-series/amd-epyc-7763.html"
+    ],
     "fields": {
       "process": "supported",
       "tdp": "estimated"
@@ -466,6 +472,11 @@
     "architecture": "x86-64",
     "platform": "genoa",
     "process": 5,
+    "sources": [
+      "https://www.amd.com/content/dam/amd/en/documents/products/epyc/4th-gen-epyc-processor-architecture-white-paper.pdf",
+      "https://blogs.oracle.com/cloud-infrastructure/e5-standard-instance-4th-gen-amd-epyc-processors",
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
     "fields": {
       "process": "supported"
     }
@@ -512,6 +523,10 @@
     "tdp": 360,
     "smp": 1,
     "process": 4,
+    "sources": [
+      "https://www.amd.com/content/dam/amd/en/documents/epyc-business-docs/datasheets/amd-epyc-9005-series-processor-datasheet.pdf",
+      "https://docs.amd.com/api/khub/documents/UIqhAbjRhgnzgzzdVU4pUw/content"
+    ],
     "fields": {
       "process": "supported"
     }
@@ -573,6 +588,12 @@
     "smp": 2,
     "process": 5,
     "tdp": 360,
+    "sources": [
+      "https://www.amd.com/content/dam/amd/en/documents/products/epyc/4th-gen-epyc-processor-architecture-white-paper.pdf",
+      "https://blogs.oracle.com/cloud-infrastructure/e5-standard-instance-4th-gen-amd-epyc-processors",
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm",
+      "https://www.amd.com/en/products/processors/server/epyc/4th-generation-9004-and-8004-series/amd-epyc-9654.html"
+    ],
     "fields": {
       "process": "supported",
       "tdp": "estimated"
@@ -589,6 +610,10 @@
     "threads": 256,
     "smp": 2,
     "tdp": 500,
+    "sources": [
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm",
+      "https://www.amd.com/en/products/processors/server/epyc/9005-series/amd-epyc-9755.html"
+    ],
     "fields": {
       "tdp": "estimated"
     }
@@ -754,6 +779,10 @@
     "threads": 160,
     "smp": 1,
     "process": 5,
+    "sources": [
+      "https://amperecomputing.com/en/briefs/ampereone-family-product-brief",
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
     "fields": {
       "process": "supported"
     }
@@ -766,6 +795,10 @@
     "architecture": "arm-64",
     "platform": "ampereone-m",
     "process": 5,
+    "sources": [
+      "https://amperecomputing.com/en/briefs/ampereone-m-product-brief",
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
     "fields": {
       "process": "supported"
     }
@@ -781,6 +814,10 @@
     "threads": 96,
     "smp": 1,
     "process": 5,
+    "sources": [
+      "https://amperecomputing.com/en/briefs/ampereone-m-product-brief",
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+    ],
     "fields": {
       "process": "supported"
     }
@@ -855,6 +892,10 @@
     "cores": 28,
     "threads": 28,
     "process": 3,
+    "sources": [
+      "https://www.apple.com/newsroom/2025/03/apple-reveals-m3-ultra-taking-apple-silicon-to-a-new-extreme/",
+      "https://www.apple.com/newsroom/2023/10/apple-unveils-m3-m3-pro-and-m3-max-the-most-advanced-chips-for-a-personal-computer/"
+    ],
     "fields": {
       "process": "supported"
     }
@@ -884,6 +925,9 @@
     "cores": 16,
     "threads": 16,
     "process": 3,
+    "sources": [
+      "https://www.apple.com/newsroom/2024/10/apple-introduces-m4-pro-and-m4-max/"
+    ],
     "fields": {
       "process": "supported"
     }
@@ -973,6 +1017,9 @@
     "cores": 192,
     "threads": 192,
     "process": 3,
+    "sources": [
+      "https://www.aboutamazon.com/news/aws/aws-graviton-5-cpu-amazon-ec2"
+    ],
     "fields": {
       "process": "supported"
     }
@@ -1001,6 +1048,9 @@
     "platform": "neoverse v3",
     "cores": 132,
     "process": 3,
+    "sources": [
+      "https://azure.microsoft.com/en-us/blog/azure-cobalt-200-vms-now-available-proven-on-real-workloads-and-built-for-the-agentic-era/"
+    ],
     "fields": {
       "id": "supported",
       "manufacturer": "supported",
@@ -1074,6 +1124,9 @@
     "cores": 12,
     "tdp": 85,
     "process": 14,
+    "sources": [
+      "https://www.intel.com/content/www/us/en/products/sku/193385/intel-xeon-silver-4214-processor-16-5m-cache-2-20-ghz/specifications.html"
+    ],
     "fields": {
       "process": "supported"
     }
@@ -1127,6 +1180,9 @@
     "cores": 16,
     "tdp": 150,
     "process": 14,
+    "sources": [
+      "https://www.intel.com/content/www/us/en/products/sku/199347/intel-xeon-gold-6226r-processor-22m-cache-2-90-ghz/specifications.html"
+    ],
     "fields": {
       "cores": "supported",
       "tdp": "supported",
@@ -1245,6 +1301,10 @@
     "architecture": "x86-64",
     "platform": "granite rapids",
     "cores": 72,
+    "sources": [
+      "https://github.com/SpareCores/sc-inspector-data/blob/8498ce04b618d4589a63d6eff0b39e4e1bff33ab/data/gcp/c4-standard-288-metal/0/dmidecode/stdout",
+      "https://docs.cloud.google.com/compute/docs/general-purpose-machines"
+    ],
     "fields": {
       "cores": "supported"
     }
@@ -1758,6 +1818,11 @@
     "smp": 2,
     "tdp": 350,
     "process": 10,
+    "sources": [
+      "https://www.intel.com/content/www/us/en/products/sku/237261/intel-xeon-platinum-8592-processor-320m-cache-1-90-ghz/specifications.html",
+      "https://download.intel.com/newsroom/2021/client-computing/intel-architecture-day-2021-fact-sheet.pdf",
+      "https://download.intel.com/newsroom/2021/client-computing/accelerating-process-innovation.pdf"
+    ],
     "fields": {
       "tdp": "supported",
       "process": "supported"
@@ -2283,6 +2348,11 @@
     "architecture": "x86-64",
     "platform": "sapphire rapids",
     "process": 10,
+    "sources": [
+      "https://www.intel.com/content/www/us/en/products/sku/237261/intel-xeon-platinum-8592-processor-320m-cache-1-90-ghz/specifications.html",
+      "https://download.intel.com/newsroom/2021/client-computing/intel-architecture-day-2021-fact-sheet.pdf",
+      "https://download.intel.com/newsroom/2021/client-computing/accelerating-process-innovation.pdf"
+    ],
     "fields": {
       "process": "supported"
     }

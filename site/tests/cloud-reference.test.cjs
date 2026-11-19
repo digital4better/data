@@ -133,6 +133,19 @@ test("cloud refresh keeps distinct physical configurations and missing regional 
   for (const n of [1, 2, 3]) assert.ok(!("pue" in lookup("scaleway-regions", `it-mil-${n}`)));
 });
 
+test("hardware evidence uses optional JSON-only source URL lists", () => {
+  for (const dataset of ["cpus", "accelerators"]) {
+    const [header] = parseCsv(read(`${dataset}.csv`));
+    assert.ok(!header.includes("sources"), dataset);
+    for (const record of json(`${dataset}.json`)) {
+      if (!("sources" in record)) continue;
+      assert.ok(Array.isArray(record.sources) && record.sources.length > 0, record.id);
+      assert.equal(new Set(record.sources).size, record.sources.length, record.id);
+      for (const url of record.sources) assert.equal(new URL(url).protocol, "https:", record.id);
+    }
+  }
+});
+
 test("shared hardware CSVs retain missing silicon properties and all JSON rows", () => {
   for (const dataset of ["cpus", "accelerators"]) {
     const records = json(`${dataset}.json`);
