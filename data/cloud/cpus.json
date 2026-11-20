@@ -1,28 +1,5 @@
 [
   {
-    "id": "amd-epyc-5thgen-64c",
-    "manufacturer": "amd",
-    "serie": "epyc",
-    "model": "5th gen 64-core",
-    "architecture": "x86-64",
-    "platform": "turin",
-    "cores": 64,
-    "threads": 128,
-    "smp": 2,
-    "tdp": 400,
-    "process": 4,
-    "sources": [
-      "https://github.com/mlcommons/inference_results_v6.0/blob/4d3916ac9cf474b679cdfcf492d43a0559418ad1/closed/ORACLE/systems/8xMI355X_2xEPYC_9575F.json",
-      "https://github.com/mlcommons/inference_results_v6.1/blob/6623c6c8bac460c46a8768ac261bc0889c9c7f13/closed/Oracle/systems/8xMI355X_2xEPYC-9575F.json",
-      "https://www.amd.com/en/products/processors/server/epyc/9005-series/amd-epyc-9575f.html",
-      "https://docs.amd.com/api/khub/documents/UIqhAbjRhgnzgzzdVU4pUw/content"
-    ],
-    "fields": {
-      "tdp": "estimated",
-      "process": "estimated"
-    }
-  },
-  {
     "id": "amd-epyc-7232p",
     "manufacturer": "amd",
     "serie": "epyc",
@@ -581,7 +558,15 @@
     "process": 4,
     "die": 0,
     "transistors": 66520,
-    "smp": 2
+    "smp": 2,
+    "sources": [
+      "https://www.amd.com/en/products/processors/server/epyc/9005-series/amd-epyc-9575f.html",
+      "https://docs.amd.com/api/khub/documents/UIqhAbjRhgnzgzzdVU4pUw/content"
+    ],
+    "fields": {
+      "tdp": "supported",
+      "process": "supported"
+    }
   },
   {
     "id": "amd-epyc-9b14",

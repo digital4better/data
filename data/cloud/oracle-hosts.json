@@ -556,7 +556,7 @@
     "memory": 3072,
     "sockets": 2,
     "cpu": [
-      "amd-epyc-5thgen-64c"
+      "amd-epyc-9575f"
     ],
     "ssd_count": 8,
     "hdd_count": 0,
@@ -565,12 +565,12 @@
     "accelerators": 8,
     "accelerator_memory": 288,
     "sources": [
-      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm"
+      "https://docs.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm",
+      "https://github.com/mlcommons/inference_results_v6.0/blob/4d3916ac9cf474b679cdfcf492d43a0559418ad1/closed/ORACLE/systems/8xMI355X_2xEPYC_9575F.json",
+      "https://github.com/mlcommons/inference_results_v6.1/blob/6623c6c8bac460c46a8768ac261bc0889c9c7f13/closed/Oracle/systems/8xMI355X_2xEPYC-9575F.json"
     ],
     "assumptions": [
       "baremetal-proxy",
-      "cpu-proxy",
-      "inferred-sockets",
       "max-impact"
     ],
     "embodied": 10.3562608
