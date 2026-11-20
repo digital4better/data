@@ -28,6 +28,8 @@ const shortLabels: Record<string, string[]> = {
   vendor: ["Éditeur", "Vendor"],
   open: ["Ouvert", "Open"],
   context: ["Contexte (tokens)", "Context (tokens)"],
+  "parameters.active": ["Param. actifs (milliards)", "Active params (billions)"],
+  "parameters.total": ["Param. totaux (milliards)", "Total params (billions)"],
   input: ["Entrées", "Inputs"],
   output: ["Sorties", "Outputs"],
   reasoning: ["Raisonnement", "Reasoning"],
@@ -50,9 +52,24 @@ const shortLabels: Record<string, string[]> = {
   process: ["Gravure (nm)", "Process (nm)"],
   id: ["Référence", "Reference"],
   type: ["Type", "Type"],
-
+  location: ["Localisation", "Location"],
+  description: ["Description", "Description"],
+  unit: ["Unité", "Unit"],
+  value: ["Valeur", "Value"],
+  die: ["Puce (mm²)", "Die (mm²)"],
+  transistors: ["Transistors (millions)", "Transistors (millions)"],
+  smp: ["Sockets", "Sockets"],
+  ocpus: ["OCPU", "OCPU"],
+  pattern: ["Motif du nom", "Name pattern"],
+  aliases: ["Alias", "Aliases"],
+  providers: ["Hébergeurs", "Hosting providers"],
 };
 const shortLabel = (key: string, lang: string) => (shortLabels[key] ? tr(shortLabels[key], lang) : label(key, lang));
+// Keep units visible on their own line without making them the minimum column width.
+function TableHeading({ children }: { children: string }) {
+  const parts = children.match(/^(.*?) (\([^()]+\))$/) || children.match(/^(.*?) · (.+)$/);
+  return <span className="column-label">{parts ? <>{parts[1]}<span className="column-unit">{parts[2]}</span></> : children}</span>;
+}
 const mixPercent = (value: unknown, lang: string) => typeof value === "number" && Number.isFinite(value)
   ? new Intl.NumberFormat(lang, { style: "percent", maximumFractionDigits: 2 }).format(value) : "—";
 const tableValue = (row: Row, key: string) =>
@@ -359,11 +376,11 @@ export function App({
                 </p>
               )}
               <div className="table-wrap">
-                <table>
+                <table className="field-dictionary">
                   <thead>
                     <tr>
-                      <th>{t("Champ", "Field")}</th>
-                      <th>{t("Définition", "Definition")}</th>
+                      <th scope="col">{t("Champ", "Field")}</th>
+                      <th scope="col">{t("Définition", "Definition")}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -834,6 +851,10 @@ function Explorer({
       ? [...baseColumns, metric]
       : baseColumns;
   const tableColumns = d.collection === "cloud" && ["regions", "vms", "hosts"].includes(cloudSection) ? ["_provider", ...columns] : columns;
+  const columnClass = (key: string) =>
+    numeric.includes(key) || key.startsWith("parameters.") ? "column-number"
+      : ["description", "sources", "estimated", "providers", "pattern", "aliases", "cpu"].includes(key) ? "column-text"
+      : "column-value";
   const filterFields =
     d.collection === "ai"
       ? ["vendor", "input", "output", "open", "reasoning", "tools"]
@@ -1192,7 +1213,7 @@ function Explorer({
             role="region"
             aria-label={t("Résultats de l’exploration", "Explorer results")}
           >
-            <table>
+            <table className="data-table">
               <caption>
                 {t("Aperçu des données — tiret : valeur absente", "Data preview — dash: missing value")}
                 {temporal && <> · {periodFilter || t("Toutes les périodes", "All periods")}</>}
@@ -1202,15 +1223,19 @@ function Explorer({
                   {[...(!arraySource ? ["_key"] : []), ...tableColumns].map((k) => (
                     <th
                       key={k}
+                      scope="col"
+                      className={columnClass(k)}
                       aria-sort={sort.key === k ? (sort.direction === 1 ? "ascending" : "descending") : "none"}
                     >
-                      <button onClick={() => setSort({ key: k, direction: sort.key === k ? -sort.direction : 1 })}>
-                        {k === "_key"
-                          ? t("Identifiant / territoire", "Identifier / territory")
+                      <button title={k === "_key" ? t("Identifiant / territoire", "Identifier / territory") : label(k, lang)}
+                        aria-label={k === "_key" ? t("Identifiant / territoire", "Identifier / territory") : label(k, lang) + (d.collection === "mix" && k !== "period" ? " (%)" : "")}
+                        onClick={() => setSort({ key: k, direction: sort.key === k ? -sort.direction : 1 })}>
+                        <TableHeading>{k === "_key"
+                          ? temporal ? t("Territoire", "Territory") : t("Référence", "Reference")
                           : temporal
                           ? label(k, lang) + (d.collection === "mix" && k !== "period" ? " (%)" : "")
-                          : shortLabel(k, lang)}{" "}
-                        {sort.key === k ? (sort.direction === 1 ? "↑" : "↓") : "↕"}
+                          : shortLabel(k, lang)}</TableHeading>
+                        <span className="sort-arrow" aria-hidden="true">{sort.key === k ? (sort.direction === 1 ? "↑" : "↓") : "↕"}</span>
                       </button>
                     </th>
                   ))}
@@ -1225,13 +1250,15 @@ function Explorer({
                         setDetailRow(r);
                       }
                     } : undefined}>
-                    {!arraySource && <th scope="row">{hasDetailPanel
+                    {!arraySource && <th scope="row" className="column-value">{hasDetailPanel
                       ? <button className="detail-link" aria-haspopup="dialog" onClick={() => setDetailRow(r)}>{names[r.key] || termLabel(r.key, lang)}</button>
                       : names[r.key] || termLabel(r.key, lang)}</th>}
                     {tableColumns.map((k) => (
-                      <td key={k}>
-                        {hasDetailPanel && k === (d.collection === "ai" || d.id.endsWith("vms") ? "name" : "id") ? (
+                      <td key={k} className={columnClass(k)}>
+                        <div className="cell-content">{hasDetailPanel && k === (d.collection === "ai" || d.id.endsWith("vms") ? "name" : "id") ? (
                           <button className="detail-link" onClick={() => setDetailRow(r)} aria-haspopup="dialog">{format(r.values[k], lang)}</button>
+                        ) : k === "architecture" && r.values[k] === "moe" ? (
+                          <abbr title={termLabel("moe", lang)}>MoE</abbr>
                         ) : k === "sources" && Array.isArray(r.values[k]) ? (
                           <ul>
                             {r.values[k]
@@ -1251,7 +1278,7 @@ function Explorer({
                               : k === "country" && typeof r.values[k] === "string" ? regionLabel(r.values[k].toUpperCase(), r.values[k], lang)
                               : k === "estimated" && Array.isArray(r.values[k]) ? r.values[k].map((v: string) => label(v, lang))
                               : tableValue(r, k), lang)
-                        )}
+                        )}</div>
                       </td>
                     ))}
                   </tr>
@@ -1321,7 +1348,7 @@ function DetailPanel({ row, lang, onClose }: { row: Row; lang: string; onClose: 
       {Object.entries(row.values).flatMap(([key, value]) => key === "parameters" && value && typeof value === "object"
         ? Object.entries(value).map(([part, amount]) => [`parameters.${part}`, amount] as const)
         : [[key, value] as const]).map(([key, value]) => <tr key={key}>
-        <th scope="row">{label(key, lang)}</th>
+        <th scope="row" title={label(key, lang)}><TableHeading>{shortLabel(key, lang)}</TableHeading></th>
         <td><DetailValue field={key} value={value} lang={lang} /></td>
       </tr>)}
     </tbody></table>

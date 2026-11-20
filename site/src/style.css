@@ -377,21 +377,42 @@ thead th {
   position: sticky;
   top: 0;
   z-index: 1;
+  vertical-align: middle;
 }
 thead button {
   border: 0;
   background: transparent;
   padding: 0;
   text-align: left;
-  white-space: nowrap;
+  white-space: normal;
 }
 tbody tr:nth-child(even) {
   background: #fafbfd;
 }
 td {
   max-width: 380px;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
+/* Size data columns from their values, not from unbroken explanatory headings. */
+.data-table { line-height: 1.45; }
+.data-table th, .data-table td { padding: 10px 12px; }
+.data-table thead button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: max-content;
+  min-width: 100%;
+  line-height: 1.35;
+}
+.column-label { display: inline-block; max-width: 19ch; white-space: normal; }
+.column-unit { display: block; font-size: .85em; font-weight: 400; }
+.sort-arrow { flex: none; }
+.data-table .column-value, .data-table .column-number { white-space: nowrap; }
+.data-table .column-number { text-align: right; font-variant-numeric: tabular-nums; }
+.data-table .column-number button { justify-content: flex-end; text-align: right; }
+.data-table .column-text .cell-content { min-width: 20ch; max-width: 40ch; white-space: normal; overflow-wrap: anywhere; }
+.field-dictionary td:first-child { width: 1%; white-space: nowrap; }
+.field-dictionary td:nth-child(2) { min-width: 24ch; }
 td ul {
   padding-left: 16px;
   margin: 0;
@@ -771,8 +792,9 @@ td dt {
 .hardware-panel-header h2 { margin: 0; overflow-wrap: anywhere; }
 .hardware-panel-header button { font-size: 26px; min-width: 44px; min-height: 44px; }
 .hardware-properties { width:100%; table-layout:fixed; border-collapse:collapse; font-size:.9rem; }
-.hardware-properties th, .hardware-properties td { padding:12px; text-align:left; vertical-align:top; border-bottom:1px solid #dce5ef; white-space:normal; overflow-wrap:anywhere; }
-.hardware-properties th { width:44%; font-weight:600; }
+.hardware-properties th, .hardware-properties td { padding:12px; text-align:left; vertical-align:top; border-bottom:1px solid #dce5ef; white-space:normal; overflow-wrap:break-word; }
+.hardware-properties td { overflow-wrap:anywhere; font-variant-numeric:tabular-nums; }
+.hardware-properties th { width:40%; font-weight:600; }
 .hardware-properties tr:nth-child(odd) { background:#f3f6fa; }
 .map-viewport { position:relative; }
 .map-controls { position:absolute; top:8px; right:8px; z-index:1; max-width:calc(100% - 16px); }
