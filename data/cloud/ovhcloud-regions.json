@@ -13,8 +13,15 @@
     "location": "Paris",
     "country": "fr",
     "pue": 1.24,
-    "wue": 0.34,
-    "ref": 1
+    "wue": 0.29,
+    "ref": 1,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "bhs",
@@ -37,7 +44,13 @@
     "subdivision": "qc",
     "pue": 1.21,
     "wue": 0.86,
-    "ref": 1
+    "ref": 0.97,
+    "fields": {
+      "ref": "supported"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "eri",
@@ -51,8 +64,16 @@
     "location": "Erith",
     "country": "gb",
     "pue": 1.19,
-    "wue": 0.18,
-    "ref": 1
+    "wue": 0.26,
+    "ref": 1,
+    "fields": {
+      "pue": "supported",
+      "wue": "supported",
+      "ref": "supported"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "gra",
@@ -69,8 +90,16 @@
     "location": "Gravelines",
     "country": "fr",
     "pue": 1.21,
-    "wue": 0.2,
-    "ref": 1
+    "wue": 0.15,
+    "ref": 1,
+    "fields": {
+      "pue": "supported",
+      "wue": "supported",
+      "ref": "supported"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "hil",
@@ -84,9 +113,17 @@
     "location": "Hillsboro",
     "country": "us",
     "subdivision": "or",
-    "pue": 1.27,
-    "wue": 1.31,
-    "ref": 1
+    "pue": 1.28,
+    "wue": 0.5,
+    "ref": 1,
+    "fields": {
+      "pue": "supported",
+      "wue": "supported",
+      "ref": "supported"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "lim",
@@ -100,9 +137,17 @@
     "lon": 8.079578,
     "location": "Limburg",
     "country": "de",
-    "pue": 1.19,
-    "wue": 0.21,
-    "ref": 1
+    "pue": 1.18,
+    "wue": 0.26,
+    "ref": 1,
+    "fields": {
+      "pue": "supported",
+      "wue": "supported",
+      "ref": "supported"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "rbx",
@@ -123,9 +168,17 @@
     "lon": 3.165532,
     "location": "Roubaix",
     "country": "fr",
-    "pue": 1.3,
-    "wue": 0.29,
-    "ref": 1
+    "pue": 1.27,
+    "wue": 0.22,
+    "ref": 1,
+    "fields": {
+      "pue": "supported",
+      "wue": "supported",
+      "ref": "supported"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "sbg",
@@ -140,8 +193,16 @@
     "location": "Strasbourg",
     "country": "fr",
     "pue": 1.19,
-    "wue": 0.39,
-    "ref": 1
+    "wue": 0.63,
+    "ref": 1,
+    "fields": {
+      "pue": "supported",
+      "wue": "supported",
+      "ref": "supported"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "vin",
@@ -155,9 +216,17 @@
     "location": "Vint Hill",
     "country": "us",
     "subdivision": "va",
-    "pue": 1.36,
-    "wue": 0.4,
-    "ref": 1
+    "pue": 1.44,
+    "wue": 0.2,
+    "ref": 1,
+    "fields": {
+      "pue": "supported",
+      "wue": "supported",
+      "ref": "supported"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "waw",
@@ -186,8 +255,15 @@
     "location": "Mumbai",
     "country": "in",
     "pue": 1.24,
-    "wue": 0.34,
-    "ref": 1
+    "wue": 0.29,
+    "ref": 1,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "sgp",
@@ -202,8 +278,15 @@
     "location": "Singapore",
     "country": "sg",
     "pue": 1.24,
-    "wue": 0.34,
-    "ref": 1
+    "wue": 0.29,
+    "ref": 1,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "syd",
@@ -219,8 +302,15 @@
     "location": "Sydney",
     "country": "au",
     "pue": 1.24,
-    "wue": 0.34,
-    "ref": 1
+    "wue": 0.29,
+    "ref": 1,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "yyz",
@@ -235,8 +325,15 @@
     "country": "ca",
     "subdivision": "on",
     "pue": 1.24,
-    "wue": 0.34,
-    "ref": 1
+    "wue": 0.29,
+    "ref": 1,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "ams",
@@ -250,8 +347,15 @@
     "location": "Amsterdam",
     "country": "nl",
     "pue": 1.24,
-    "wue": 0.34,
-    "ref": 1
+    "wue": 0.29,
+    "ref": 1,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "blr",
@@ -265,8 +369,15 @@
     "location": "Bengalore",
     "country": "in",
     "pue": 1.24,
-    "wue": 0.34,
-    "ref": 1
+    "wue": 0.29,
+    "ref": 1,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "mad",
@@ -280,8 +391,15 @@
     "location": "Madrid",
     "country": "es",
     "pue": 1.24,
-    "wue": 0.34,
-    "ref": 1
+    "wue": 0.29,
+    "ref": 1,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "mil",
@@ -297,8 +415,15 @@
     "location": "Milan",
     "country": "it",
     "pue": 1.24,
-    "wue": 0.34,
-    "ref": 1
+    "wue": 0.29,
+    "ref": 1,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "mrs",
@@ -309,8 +434,15 @@
     "location": "Marseille",
     "country": "fr",
     "pue": 1.24,
-    "wue": 0.34,
-    "ref": 1
+    "wue": 0.29,
+    "ref": 1,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "prg",
@@ -321,8 +453,15 @@
     "location": "Prague",
     "country": "cz",
     "pue": 1.24,
-    "wue": 0.34,
-    "ref": 1
+    "wue": 0.29,
+    "ref": 1,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   },
   {
     "id": "zrh",
@@ -333,7 +472,14 @@
     "location": "Zurich",
     "country": "ch",
     "pue": 1.24,
-    "wue": 0.34,
-    "ref": 1
+    "wue": 0.29,
+    "ref": 1,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated"
+    },
+    "sources": [
+      "https://ovhcloud.fr.digital-report.net/download/pdf/3572"
+    ]
   }
 ]

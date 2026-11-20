@@ -160,7 +160,8 @@
       "scope": "ovhcloud",
       "topic": "sustainability",
       "sources": [
-        "blog.ovhcloud.com-7e6500921281"
+        "blog.ovhcloud.com-7e6500921281",
+        "corporate.ovhcloud.com-6f509e388748"
       ]
     },
     {
@@ -1768,6 +1769,40 @@
       "topics": [
         "models"
       ]
+    },
+    {
+      "id": "corporate.ovhcloud.com-6f509e388748",
+      "url": "https://corporate.ovhcloud.com/en-gb/investor-relations/urd/",
+      "publisher": "OVHcloud",
+      "scopes": [
+        "ovhcloud"
+      ],
+      "category": "primary",
+      "format": "html",
+      "status": "active",
+      "name": "OVHcloud universal registration documents",
+      "topics": [
+        "sustainability"
+      ],
+      "role": "discovery",
+      "collection": {
+        "method": "browser",
+        "pagination": "none",
+        "follow": [
+          "https://corporate.ovhcloud.com/sites/default/files/",
+          "https://ovhcloud.fr.digital-report.net/"
+        ],
+        "expect": [
+          "Universal Registration Document"
+        ],
+        "discovery": [
+          "site:corporate.ovhcloud.com universal registration document sustainability"
+        ],
+        "instructions": "Open the latest annual report and its environmental tables. Check the reporting period and site coverage for each metric."
+      },
+      "review": {
+        "date": "2026-11-20"
+      }
     },
     {
       "id": "datacenters.microsoft.com-b2c6fd663404",

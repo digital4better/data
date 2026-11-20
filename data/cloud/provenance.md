@@ -36,12 +36,16 @@ Azure GB RAM exceptions include Dnsv6, Dnlsv6, Ensv6, HBv5, Esv7, Ebsv6, Ebdsv6,
 | Azure | [Datacenter efficiency disclosures](https://datacenters.microsoft.com/sustainability/efficiency/) and regional fact sheets, including curated historical values whose original PDFs may no longer be retrievable. |
 | GCP | [Regional carbon data](https://cloud.google.com/sustainability/region-carbon); CFE is used as the REF proxy. Previously derived water values remain pending clearer regional disclosures. |
 | Oracle | [OCI environmental reporting](https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf); renewable matching is distinct from physical grid emissions. Uniform PUE 1.07 and provisional WUE zero remain reference assumptions. |
-| OVHcloud | [FY25 environmental KPIs](https://www.ovhcloud.com/sites/default/files/external_files/kpis_fy25.pdf). |
+| OVHcloud | [FY2026 universal registration document](https://ovhcloud.fr.digital-report.net/download/pdf/3572), sections 3.2.1, 3.2.3 and 3.2.6. The [FY25 environmental KPIs](https://www.ovhcloud.com/sites/default/files/external_files/kpis_fy25.pdf) remain the source for retained historical values. |
 | Scaleway | [Calculation reference](https://www.scaleway.com/en/docs/environmental-footprint/additional-content/calculation-values-reference/) and datacenter impact reports. |
 
 ### Reviewed regional periods and limits
 
-AWS directly reported regional PUE/WUE values use calendar 2025 where available; absent disclosures retain their earlier reference or estimate. Aggregate-derived values in the table below still refer to 2024. Thailand (`ap-southeast-7`) now uses regional 2025 PUE 1.38; its WUE remains the earlier Asia-Pacific aggregate estimate. The source may revise earlier columns, so the retained CSV is not the latest annual feed.
+AWS reports geographic aggregates and individual region measurements separately. The [2025 disclosure](https://sustainability.aboutamazon.com/products-services/aws-cloud) supplies the geographic estimates below. Thailand (`ap-southeast-7`) has a regional PUE of 1.38 and uses the Asia Pacific WUE of 1.10 L/kWh IT. North America and Europe retained PUEs of 1.14 and 1.11 respectively in 2025. Other AWS regions retain their earlier values where no update was reviewed.
+
+OVHcloud's FY2026 environmental tables (section 3.2.6, pp. 115–116) report site-level PUE, WUE and REF for Roubaix, Gravelines, Strasbourg, Erith, Limburg, Vint Hill and Hillsboro. For Beauharnois the 97% REF covers the site, while the PUE and WUE tables cover BHS8 alone. The region therefore retains its earlier PUE and WUE. Warsaw retains its FY25 figures pending confirmation of the mapping to Ożarów.
+
+For `par`, `mum`, `sgp`, `syd`, `yyz`, `ams`, `blr`, `mad`, `mil`, `mrs`, `prg` and `zrh`, PUE 1.24 and WUE 0.29 L/kWh IT are FY2026 group estimates. Their scope includes facilities operated by OVHcloud and may differ from the infrastructure serving a particular region. This aggregate does not establish the local renewable share.
 
 Google regional `ref` uses the published 2025 CFE percentage divided by 100. No new campus-to-region PUE or water mapping is inferred from the separate datacenter efficiency tables. `asia-southeast3` still lacks a regional CFE disclosure.
 
@@ -71,19 +75,19 @@ AWS `m1-medium`, `r3-large` and `t1-micro` RAM values remain historical and `ten
 
 ### Regional estimate scope
 
-The following regions retain PUE/WUE estimates from geographic aggregates, **not measurements of the individual cloud region**. This table replaces their former JSON `notes`; values and CSV exports are unchanged. Records retain evidence URLs in `sources`; field assessments, when present, do not replace these methodological limits.
+The following regions retain PUE/WUE estimates from geographic aggregates, **not measurements of the individual cloud region**. The reporting period applies only to the named metrics. Records retain evidence URLs in `sources`; field assessments, when present, do not replace these methodological limits.
 
 | Provider | Region IDs | Aggregate used | Reporting period |
 | --- | --- | --- | --- |
-| AWS | `ap-east-2`, `ap-southeast-6` | Asia Pacific excluding China | 2024 |
-| AWS | `ap-southeast-7` (WUE only) | Asia Pacific excluding China | 2024 |
-| AWS | `mx-central-1` | North America | 2024 |
-| AWS | `eusc-de-east-1` | Europe | 2024 |
+| AWS | `ap-east-2`, `ap-southeast-6` | Asia Pacific | 2025 |
+| AWS | `ap-southeast-7` (WUE only) | Asia Pacific | 2025 |
+| AWS | `mx-central-1` | North America | 2025 |
+| AWS | `eusc-de-east-1` | Europe | 2025 |
 | Azure | `be-central` | Europe, Middle East & Africa | FY25 |
 | Azure | `cl-central` | Americas | FY25 |
 | Azure | `my-west` | Asia Pacific | FY25 |
 
-For these AWS regions, the source predates the region's launch. For these Azure regions, FY25 covers July 2024–June 2025 and fully owned and controlled datacenters operational for 12 months. Actual local performance may differ from the aggregate in both cases. WUE is in L/kWh.
+For these Azure regions, FY25 covers July 2024–June 2025 and fully owned and controlled datacenters operational for 12 months. Actual local performance may differ from the aggregate in both cases. WUE is in L/kWh.
 
 For all regions in this table, coordinates approximate the locality rather than a datacenter address. AWS `ref=0` follows the dataset convention; Azure `ref=0` is a conservative fallback without region-specific renewable-energy evidence. Neither represents a measured zero renewable-energy share. Dataset records no longer carry free-text `notes`; retain these public explanations when using their values.
 
