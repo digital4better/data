@@ -11,7 +11,8 @@
     "wue": 0.15,
     "ref": 0,
     "fields": {
-      "pue": "supported"
+      "pue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -27,7 +28,10 @@
     "country": "hk",
     "pue": 1.15,
     "wue": 0.15,
-    "ref": 0
+    "ref": 0,
+    "fields": {
+      "ref": "estimated"
+    }
   },
   {
     "id": "ap-south-1",
@@ -41,7 +45,8 @@
     "wue": 0.15,
     "ref": 0,
     "fields": {
-      "pue": "supported"
+      "pue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -59,7 +64,8 @@
     "wue": 0.15,
     "ref": 0,
     "fields": {
-      "pue": "supported"
+      "pue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -78,7 +84,8 @@
     "ref": 0,
     "fields": {
       "pue": "supported",
-      "wue": "supported"
+      "wue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -94,7 +101,10 @@
     "country": "kr",
     "pue": 1.15,
     "wue": 0.15,
-    "ref": 0
+    "ref": 0,
+    "fields": {
+      "ref": "estimated"
+    }
   },
   {
     "id": "ap-northeast-3",
@@ -108,7 +118,8 @@
     "wue": 0.15,
     "ref": 0,
     "fields": {
-      "pue": "supported"
+      "pue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -127,7 +138,8 @@
     "ref": 0,
     "fields": {
       "pue": "supported",
-      "wue": "supported"
+      "wue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -146,7 +158,8 @@
     "ref": 0,
     "fields": {
       "pue": "supported",
-      "wue": "supported"
+      "wue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -165,7 +178,8 @@
     "ref": 0,
     "fields": {
       "pue": "supported",
-      "wue": "supported"
+      "wue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -184,7 +198,8 @@
     "ref": 0,
     "fields": {
       "pue": "supported",
-      "wue": "supported"
+      "wue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -200,7 +215,10 @@
     "country": "my",
     "pue": 1.15,
     "wue": 0.15,
-    "ref": 0
+    "ref": 0,
+    "fields": {
+      "ref": "estimated"
+    }
   },
   {
     "id": "ca-central-1",
@@ -215,7 +233,8 @@
     "wue": 0.06,
     "ref": 0,
     "fields": {
-      "wue": "supported"
+      "wue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -235,7 +254,8 @@
     "ref": 0,
     "fields": {
       "pue": "supported",
-      "wue": "supported"
+      "wue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -251,7 +271,10 @@
     "country": "cn",
     "pue": 1.15,
     "wue": 0.15,
-    "ref": 0
+    "ref": 0,
+    "fields": {
+      "ref": "estimated"
+    }
   },
   {
     "id": "cn-northwest-1",
@@ -263,7 +286,10 @@
     "country": "cn",
     "pue": 1.25,
     "wue": 0.15,
-    "ref": 0
+    "ref": 0,
+    "fields": {
+      "ref": "estimated"
+    }
   },
   {
     "id": "eu-central-1",
@@ -278,7 +304,8 @@
     "ref": 0,
     "fields": {
       "pue": "supported",
-      "wue": "supported"
+      "wue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -294,7 +321,10 @@
     "country": "ch",
     "pue": 1.15,
     "wue": 0.15,
-    "ref": 0
+    "ref": 0,
+    "fields": {
+      "ref": "estimated"
+    }
   },
   {
     "id": "eu-north-1",
@@ -308,7 +338,8 @@
     "wue": 0.02,
     "ref": 0,
     "fields": {
-      "pue": "supported"
+      "pue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -324,7 +355,10 @@
     "country": "it",
     "pue": 1.15,
     "wue": 0.15,
-    "ref": 0
+    "ref": 0,
+    "fields": {
+      "ref": "estimated"
+    }
   },
   {
     "id": "eu-south-2",
@@ -339,7 +373,8 @@
     "ref": 0,
     "fields": {
       "pue": "supported",
-      "wue": "supported"
+      "wue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -358,7 +393,8 @@
     "ref": 0,
     "fields": {
       "pue": "supported",
-      "wue": "supported"
+      "wue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -377,7 +413,8 @@
     "ref": 0,
     "fields": {
       "pue": "supported",
-      "wue": "supported"
+      "wue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -395,7 +432,8 @@
     "wue": 0.15,
     "ref": 0,
     "fields": {
-      "pue": "supported"
+      "pue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -413,7 +451,8 @@
     "wue": 0.15,
     "ref": 0,
     "fields": {
-      "pue": "supported"
+      "pue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -431,7 +470,8 @@
     "wue": 0.15,
     "ref": 0,
     "fields": {
-      "pue": "supported"
+      "pue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -447,7 +487,10 @@
     "country": "bh",
     "pue": 1.33,
     "wue": 0.15,
-    "ref": 0
+    "ref": 0,
+    "fields": {
+      "ref": "estimated"
+    }
   },
   {
     "id": "sa-east-1",
@@ -462,7 +505,8 @@
     "ref": 0,
     "fields": {
       "pue": "supported",
-      "wue": "supported"
+      "wue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -481,7 +525,8 @@
     "wue": 0.06,
     "ref": 0,
     "fields": {
-      "wue": "supported"
+      "wue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -501,7 +546,8 @@
     "ref": 0,
     "fields": {
       "pue": "supported",
-      "wue": "supported"
+      "wue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -520,7 +566,8 @@
     "wue": 0.39,
     "ref": 0,
     "fields": {
-      "wue": "supported"
+      "wue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -539,7 +586,8 @@
     "wue": 0.12,
     "ref": 0,
     "fields": {
-      "wue": "supported"
+      "wue": "supported",
+      "ref": "estimated"
     },
     "sources": [
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
@@ -559,7 +607,12 @@
     "sources": [
       "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
       "https://sustainability.aboutamazon.com/aws-wue-pue.csv"
-    ]
+    ],
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated",
+      "ref": "estimated"
+    }
   },
   {
     "id": "ap-southeast-6",
@@ -575,7 +628,12 @@
     "sources": [
       "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
       "https://sustainability.aboutamazon.com/aws-wue-pue.csv"
-    ]
+    ],
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated",
+      "ref": "estimated"
+    }
   },
   {
     "id": "ap-southeast-7",
@@ -594,7 +652,9 @@
       "https://sustainability.aboutamazon.com/products-services/aws-cloud"
     ],
     "fields": {
-      "pue": "supported"
+      "pue": "supported",
+      "wue": "estimated",
+      "ref": "estimated"
     }
   },
   {
@@ -611,7 +671,12 @@
     "sources": [
       "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
       "https://sustainability.aboutamazon.com/aws-wue-pue.csv"
-    ]
+    ],
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated",
+      "ref": "estimated"
+    }
   },
   {
     "id": "eusc-de-east-1",
@@ -628,6 +693,11 @@
     "sources": [
       "https://aws.amazon.com/blogs/aws/opening-the-aws-european-sovereign-cloud/",
       "https://sustainability.aboutamazon.com/aws-wue-pue.csv"
-    ]
+    ],
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated",
+      "ref": "estimated"
+    }
   }
 ]

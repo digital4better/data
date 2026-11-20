@@ -107,6 +107,8 @@ AI and cloud JSON records may include optional [`fields` assessments](./data/fie
 
 Each provider has `<provider>-regions`, `<provider>-vms` and `<provider>-hosts` files in JSON and CSV. Shared `cpus` and `accelerators` catalogs describe hardware. Reviewed hardware records carry optional JSON-only `sources` URL arrays. [Cloud provenance](./data/cloud/provenance.md) explains record-specific estimates and exceptions. JSON roots are arrays. The [cloud guide](./data/cloud/README.md) maintains the complete schemas, provider-specific capacity conventions, regional metrics, source URLs and assumption codes.
 
+All cloud regions include numeric `pue`, `wue` and `ref`. PUE and WUE can use provider geographic or fleet averages. REF defaults to zero when regional evidence or an accepted proxy is unavailable. Consult the JSON `fields` assessments and cloud provenance for documented fallbacks.
+
 Join VM `host` to the same provider's host `id`; CPU and accelerator references join to the shared catalogs. Prefer VM `embodied_allocated`, in tCO2e before time amortization. VM `embodied` is deprecated and has heterogeneous historical scope; host `embodied` is the total modeled host impact and is not deprecated.
 
 Allocation is `embodied_allocated = host.embodied / host_instances`. The count describes modeled homogeneous packing, not observed occupancy. Do not allocate the host fraction twice. Apply lifetime and usage-duration allocation separately. The [methodology](./data/cloud/README.md#methodology) owns the calculation formula and conservative residual-capacity policy.

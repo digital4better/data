@@ -413,7 +413,7 @@
     "country": "qa",
     "pue": 1.09,
     "wue": 0.785,
-    "ref": 0.0,
+    "ref": 0,
     "fields": {
       "ref": "supported"
     },
@@ -695,7 +695,19 @@
     "name": "asia-southeast3",
     "provider": "gcp",
     "location": "Bangkok",
-    "country": "th"
+    "country": "th",
+    "pue": 1.09,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated",
+      "ref": "estimated"
+    },
+    "wue": 1.15,
+    "ref": 0,
+    "sources": [
+      "https://www.datacenters.google/efficiency/",
+      "https://services.google.com/fh/files/misc/measuring_the_environmental_impact_of_delivering_ai_at_google_scale.pdf"
+    ]
   },
   {
     "id": "europe-north2",
@@ -703,7 +715,17 @@
     "provider": "gcp",
     "location": "Stockholm",
     "country": "se",
-    "ref": 1
+    "ref": 1,
+    "pue": 1.09,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated"
+    },
+    "wue": 1.15,
+    "sources": [
+      "https://www.datacenters.google/efficiency/",
+      "https://services.google.com/fh/files/misc/measuring_the_environmental_impact_of_delivering_ai_at_google_scale.pdf"
+    ]
   },
   {
     "id": "northamerica-south1",
@@ -711,6 +733,16 @@
     "provider": "gcp",
     "location": "Queretaro",
     "country": "mx",
-    "ref": 0.25
+    "ref": 0.25,
+    "pue": 1.09,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated"
+    },
+    "wue": 1.15,
+    "sources": [
+      "https://www.datacenters.google/efficiency/",
+      "https://services.google.com/fh/files/misc/measuring_the_environmental_impact_of_delivering_ai_at_google_scale.pdf"
+    ]
   }
 ]
