@@ -16494,6 +16494,25 @@
       "topics": [
         "models"
       ]
+    },
+    {
+      "id": "microsoft.ai-358593e51878",
+      "url": "https://microsoft.ai/models/mai-code-2/",
+      "publisher": "Microsoft AI",
+      "scopes": [
+        "ai"
+      ],
+      "category": "primary",
+      "format": "html",
+      "status": "active",
+      "name": "Microsoft MAI Code model family",
+      "topics": [
+        "models"
+      ],
+      "role": "reference",
+      "review": {
+        "date": "2026-11-20"
+      }
     }
   ]
 }
