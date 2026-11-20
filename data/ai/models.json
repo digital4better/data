@@ -8408,6 +8408,104 @@
     }
   },
   {
+    "name": "gpt-6.2-astra",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "^(?:(?:(?:us|global)\\.)?openai\\.)?gpt-6\\.2-astra$",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 260,
+      "total": 1200
+    },
+    "context": 1050000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "openai": [
+        "gpt-6.2-astra"
+      ],
+      "aws": [
+        "openai.gpt-6.2-astra",
+        "us.openai.gpt-6.2-astra",
+        "global.openai.gpt-6.2-astra"
+      ],
+      "azure": [
+        "gpt-6.2-astra"
+      ],
+      "github-copilot": [
+        "gpt-6.2-astra"
+      ]
+    },
+    "sources": [
+      "https://developers.openai.com/api/docs/models/gpt-6.2-astra",
+      "https://github.com/mlco2/ecologits/blob/ddbd7591073c1c1bc5aac4c8f8aa267a99e864a5/ecologits/data/models.json",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-2-astra.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available/"
+    ],
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
+  },
+  {
+    "name": "gpt-6.2-sol",
+    "vendor": "openai",
+    "open": false,
+    "pattern": "^(?:(?:(?:us|global)\\.)?openai\\.)?gpt-6\\.2-sol$",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 75,
+      "total": 375
+    },
+    "context": 1050000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "openai": [
+        "gpt-6.2-sol"
+      ],
+      "aws": [
+        "openai.gpt-6.2-sol",
+        "us.openai.gpt-6.2-sol",
+        "global.openai.gpt-6.2-sol"
+      ],
+      "azure": [
+        "gpt-6.2-sol"
+      ],
+      "github-copilot": [
+        "gpt-6.2-sol"
+      ]
+    },
+    "sources": [
+      "https://developers.openai.com/api/docs/models/gpt-6.2-sol",
+      "https://github.com/mlco2/ecologits/blob/ddbd7591073c1c1bc5aac4c8f8aa267a99e864a5/ecologits/data/models.json",
+      "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-2-sol.html",
+      "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+      "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available/"
+    ],
+    "fields": {
+      "architecture": "estimated",
+      "parameters": "estimated"
+    }
+  },
+  {
     "name": "gpt-audio",
     "vendor": "openai",
     "open": false,
@@ -10971,6 +11069,80 @@
     ],
     "fields": {
       "parameters": "estimated"
+    }
+  },
+  {
+    "name": "mai-code-2",
+    "vendor": "microsoft",
+    "open": false,
+    "pattern": "^mai-code-2$",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 80,
+      "total": 2800
+    },
+    "context": 1050000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "github-copilot": [
+        "mai-code-2"
+      ]
+    },
+    "sources": [
+      "https://microsoft.ai/pdf/MAI-Code-2-And-MAI-Code-2-Flash-Model-Card.pdf?v=2",
+      "https://microsoft.ai/models/mai-code-2/",
+      "https://github.blog/changelog/2026-11-17-mai-code-2-and-mai-code-2-flash-in-github-copilot/",
+      "https://github.com/anomalyco/models.dev/blob/7096297c05ea065ed2813bb814e150ad9475c16c/providers/github-copilot/models/mai-code-2.toml"
+    ],
+    "fields": {
+      "architecture": "supported",
+      "parameters": "supported"
+    }
+  },
+  {
+    "name": "mai-code-2-flash",
+    "vendor": "microsoft",
+    "open": false,
+    "pattern": "^mai-code-2-flash$",
+    "type": "text",
+    "architecture": "moe",
+    "parameters": {
+      "active": 12,
+      "total": 398
+    },
+    "context": 1050000,
+    "input": [
+      "text",
+      "image"
+    ],
+    "output": [
+      "text"
+    ],
+    "reasoning": true,
+    "tools": true,
+    "providers": {
+      "github-copilot": [
+        "mai-code-2-flash"
+      ]
+    },
+    "sources": [
+      "https://microsoft.ai/pdf/MAI-Code-2-And-MAI-Code-2-Flash-Model-Card.pdf?v=2",
+      "https://microsoft.ai/models/mai-code-2/",
+      "https://github.blog/changelog/2026-11-17-mai-code-2-and-mai-code-2-flash-in-github-copilot/",
+      "https://github.com/anomalyco/models.dev/blob/7096297c05ea065ed2813bb814e150ad9475c16c/providers/github-copilot/models/mai-code-2-flash.toml"
+    ],
+    "fields": {
+      "architecture": "supported",
+      "parameters": "supported"
     }
   },
   {
