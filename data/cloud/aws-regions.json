@@ -601,12 +601,13 @@
     "lon": 121.57,
     "location": "Taipei",
     "country": "tw",
-    "pue": 1.27,
-    "wue": 0.98,
+    "pue": 1.25,
+    "wue": 1.1,
     "ref": 0,
     "sources": [
       "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
-      "https://sustainability.aboutamazon.com/aws-wue-pue.csv"
+      "https://sustainability.aboutamazon.com/aws-wue-pue.csv",
+      "https://sustainability.aboutamazon.com/products-services/aws-cloud"
     ],
     "fields": {
       "pue": "estimated",
@@ -622,12 +623,13 @@
     "lon": 174.76,
     "location": "Auckland",
     "country": "nz",
-    "pue": 1.27,
-    "wue": 0.98,
+    "pue": 1.25,
+    "wue": 1.1,
     "ref": 0,
     "sources": [
       "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
-      "https://sustainability.aboutamazon.com/aws-wue-pue.csv"
+      "https://sustainability.aboutamazon.com/aws-wue-pue.csv",
+      "https://sustainability.aboutamazon.com/products-services/aws-cloud"
     ],
     "fields": {
       "pue": "estimated",
@@ -644,7 +646,7 @@
     "location": "Thailand",
     "country": "th",
     "pue": 1.38,
-    "wue": 0.98,
+    "wue": 1.1,
     "ref": 0,
     "sources": [
       "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
@@ -666,11 +668,12 @@
     "location": "Queretaro",
     "country": "mx",
     "pue": 1.14,
-    "wue": 0.13,
+    "wue": 0.08,
     "ref": 0,
     "sources": [
       "https://docs.aws.amazon.com/global-infrastructure/latest/regions/aws-regions.html",
-      "https://sustainability.aboutamazon.com/aws-wue-pue.csv"
+      "https://sustainability.aboutamazon.com/aws-wue-pue.csv",
+      "https://sustainability.aboutamazon.com/products-services/aws-cloud"
     ],
     "fields": {
       "pue": "estimated",
@@ -687,12 +690,13 @@
     "location": "Brandenburg",
     "country": "de",
     "pue": 1.11,
-    "wue": 0.04,
+    "wue": 0.05,
     "ref": 0,
     "partition": "aws-eusc",
     "sources": [
       "https://aws.amazon.com/blogs/aws/opening-the-aws-european-sovereign-cloud/",
-      "https://sustainability.aboutamazon.com/aws-wue-pue.csv"
+      "https://sustainability.aboutamazon.com/aws-wue-pue.csv",
+      "https://sustainability.aboutamazon.com/products-services/aws-cloud"
     ],
     "fields": {
       "pue": "estimated",
