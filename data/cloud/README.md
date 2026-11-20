@@ -131,7 +131,7 @@ Convert TB to GB and TiB to GiB within the source convention. See [capacity unit
 
 Region `pue` is a ratio, `wue` is L/kWh and `ref` is a fraction. Reporting boundaries differ: Google's CFE fraction is not interchangeable with renewable-energy matching. AWS `ref = 0` and Oracle `wue = 0` are dataset conventions, not verified absence of renewable energy or water use.
 
-Compare reporting periods and regional versus global boundaries when using environmental indicators. See the [cloud provenance](./provenance.md) for provider disclosures, regional estimates and configuration-specific evidence.
+Every region has a numeric PUE, WUE and REF. For PUE and WUE, prefer a regional or explicitly mapped datacenter value, then the closest applicable provider geographic average, then the fleet average. Any other fallback requires a documented assumption. REF defaults to zero where regional evidence or an accepted regional proxy is unavailable. Record fallbacks as `estimated` under the corresponding JSON `fields` key and revisit them when more specific evidence becomes available. The CSV contains the numeric values only. Compare reporting periods and regional versus global boundaries when using environmental indicators. See the [cloud provenance](./provenance.md) for provider disclosures, regional estimates and configuration-specific evidence.
 
 ## Methodology
 

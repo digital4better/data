@@ -20,7 +20,7 @@
     "location": "Paris",
     "country": "fr",
     "pue": 1.44,
-    "wue": 2e-05,
+    "wue": 0.00002,
     "ref": 1,
     "fields": {
       "wue": "supported"
@@ -140,20 +140,53 @@
     "name": "it-mil-1",
     "provider": "scaleway",
     "location": "Milan",
-    "country": "it"
+    "country": "it",
+    "pue": 1.375,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated",
+      "ref": "estimated"
+    },
+    "wue": 0.222,
+    "ref": 0,
+    "sources": [
+      "https://www-uploads.scaleway.com/Impact_Report2025_22ee3a8232.pdf"
+    ]
   },
   {
     "id": "it-mil-2",
     "name": "it-mil-2",
     "provider": "scaleway",
     "location": "Milan",
-    "country": "it"
+    "country": "it",
+    "pue": 1.375,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated",
+      "ref": "estimated"
+    },
+    "wue": 0.222,
+    "ref": 0,
+    "sources": [
+      "https://www-uploads.scaleway.com/Impact_Report2025_22ee3a8232.pdf"
+    ]
   },
   {
     "id": "it-mil-3",
     "name": "it-mil-3",
     "provider": "scaleway",
     "location": "Milan",
-    "country": "it"
+    "country": "it",
+    "pue": 1.375,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated",
+      "ref": "estimated"
+    },
+    "wue": 0.222,
+    "ref": 0,
+    "sources": [
+      "https://www-uploads.scaleway.com/Impact_Report2025_22ee3a8232.pdf"
+    ]
   }
 ]

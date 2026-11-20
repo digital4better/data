@@ -493,7 +493,7 @@
     "location": "Hyderabad",
     "country": "in",
     "pue": 1.43,
-    "wue": 0.0,
+    "wue": 0,
     "ref": 0.46
   },
   {
@@ -808,7 +808,7 @@
     "location": "Taipei",
     "country": "tw",
     "pue": 1.2,
-    "wue": 1.0,
+    "wue": 1,
     "ref": 0
   },
   {
@@ -1070,7 +1070,12 @@
     "sources": [
       "https://learn.microsoft.com/en-us/azure/reliability/regions-list",
       "https://datacenters.microsoft.com/sustainability/efficiency/"
-    ]
+    ],
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated",
+      "ref": "estimated"
+    }
   },
   {
     "id": "cl-central",
@@ -1090,7 +1095,12 @@
     "sources": [
       "https://learn.microsoft.com/en-us/azure/reliability/regions-list",
       "https://datacenters.microsoft.com/sustainability/efficiency/"
-    ]
+    ],
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated",
+      "ref": "estimated"
+    }
   },
   {
     "id": "my-west",
@@ -1110,7 +1120,12 @@
     "sources": [
       "https://learn.microsoft.com/en-us/azure/reliability/regions-list",
       "https://datacenters.microsoft.com/sustainability/efficiency/"
-    ]
+    ],
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated",
+      "ref": "estimated"
+    }
   },
   {
     "id": "asia-south-east-3",
@@ -1120,6 +1135,17 @@
     "name": "Southeast Asia 3",
     "provider": "azure",
     "location": "Johor Bahru",
-    "country": "my"
+    "country": "my",
+    "pue": 1.28,
+    "fields": {
+      "pue": "estimated",
+      "wue": "estimated",
+      "ref": "estimated"
+    },
+    "wue": 0.25,
+    "ref": 0,
+    "sources": [
+      "https://datacenters.microsoft.com/sustainability/efficiency/"
+    ]
   }
 ]

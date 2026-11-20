@@ -121,7 +121,7 @@ test("cloud exports preserve empty cells, fractional GPUs and every JSON row", (
   assert.ok(!("ssd" in lookup("gcp-vms", "g4-standard-12")));
 });
 
-test("cloud refresh keeps distinct physical configurations and missing regional metrics", () => {
+test("cloud refresh keeps distinct physical configurations and regional CFE values", () => {
   assert.equal(lookup("aws-vms", "m9g-metal-48xl").virtual, false);
   assert.equal(lookup("azure-vms", "d16ds-v7").ssd, 880);
   assert.equal(lookup("oracle-vms", "bm-standard-a4-ax-48").vcpus, 96);
@@ -129,8 +129,33 @@ test("cloud refresh keeps distinct physical configurations and missing regional 
   assert.equal(lookup("scaleway-vms", "b300-sxm-8-288g").accelerators, 8);
   assert.equal(lookup("gcp-regions", "europe-north2").ref, 1);
   assert.equal(lookup("gcp-regions", "northamerica-south1").ref, 0.25);
-  assert.ok(!("ref" in lookup("gcp-regions", "asia-southeast3")));
-  for (const n of [1, 2, 3]) assert.ok(!("pue" in lookup("scaleway-regions", `it-mil-${n}`)));
+});
+
+test("every region provides usable PUE, WUE and REF values", () => {
+  for (const provider of providers) {
+    for (const { id, pue, wue, ref } of json(`${provider}-regions.json`)) {
+      assert.ok(Number.isFinite(pue) && pue >= 1, `${provider}/${id}/pue`);
+      assert.ok(Number.isFinite(wue) && wue >= 0, `${provider}/${id}/wue`);
+      assert.ok(Number.isFinite(ref) && ref >= 0 && ref <= 1, `${provider}/${id}/ref`);
+    }
+  }
+});
+
+test("documented geographic averages and conventional zeros carry field assessments", () => {
+  const cases = [
+    ["azure", "asia-south-east-3", { pue: 1.28, wue: 0.25, ref: 0 }],
+    ["gcp", "asia-southeast3", { pue: 1.09, wue: 1.15, ref: 0 }],
+    ["scaleway", "it-mil-1", { pue: 1.375, wue: 0.222, ref: 0 }],
+    ["aws", "ap-southeast-7", { ref: 0 }],
+    ["oracle", "af-casablanca-1", { pue: 1.07, wue: 0, ref: 0 }],
+  ];
+  for (const [provider, id, defaults] of cases) {
+    const record = lookup(`${provider}-regions`, id);
+    for (const [field, value] of Object.entries(defaults)) {
+      assert.equal(record[field], value);
+      assert.equal(record.fields[field], "estimated", `${id}/${field}`);
+    }
+  }
 });
 
 test("hardware evidence uses optional JSON-only source URL lists", () => {

@@ -47,6 +47,16 @@ Google regional `ref` uses the published 2025 CFE percentage divided by 100. No 
 
 Oracle `ref=1` for the 43 matched commercial-region keys represents FY2026 annual renewable electricity matching (June 2025–May 2026), not carbon-free supply every hour or zero physical grid emissions. `ap-kulai-2` and `af-casablanca-1` retain their historical zero placeholders: the former is key JBP while the report lists a different Kulai key FYV; the latter is absent from the regional table. Neither zero is a measured renewable share.
 
+### Regional fallback evidence
+
+| Region | PUE | WUE (L/kWh IT) | Reporting boundary |
+| --- | --- | --- | --- |
+| Azure Southeast Asia 3 (Johor Bahru) | 1.28 | 0.25 | [Microsoft Asia Pacific FY25](https://datacenters.microsoft.com/sustainability/efficiency/), fully owned and controlled datacenters operational for twelve months. |
+| GCP Bangkok, Stockholm and Mexico | 1.09 | 1.15 | [Google fleet PUE for 2025](https://www.datacenters.google/efficiency/) and [fleet WUE for 2024, section 3.3](https://services.google.com/fh/files/misc/measuring_the_environmental_impact_of_delivering_ai_at_google_scale.pdf). WUE category 2 counts water consumed on site after subtracting returns. |
+| Scaleway Milan, all three zones | 1.375 | 0.222 | [Scaleway Impact Report 2025](https://www-uploads.scaleway.com/Impact_Report2025_22ee3a8232.pdf), 2024 indicators. PUE covers France, the Netherlands and Poland. WUE covers four French sites and AMS1. Both aggregates predate the Milan region. |
+
+REF uses the conservative zero default for Johor Bahru, Bangkok and the three Milan zones. Stockholm and Mexico retain their region-specific CFE fractions. Oracle's provisional zero WUE and the two unmatched Oracle REF values above are also marked as estimates. A documented local zero can be supported independently.
+
 ### Reviewed VM and hardware evidence
 
 Azure Cobalt 200 families `dpsv7`, `dpdsv7`, `dplsv7`, `dpldsv7`, `epsv7`, `epdsv7`, `mpsv4`, `mpdsv4` and `lpsv5` use the published sizes, not a Cartesian product. Family host envelopes use the largest observed vCPU, RAM and local-storage limits as an explicit scenario, with one assumed socket and modeled physical disks. These are not installed host inventories. Local disk totals are count × per-disk size; storage is GiB for the D/E/M variants and GB for Lpsv5. Cobalt 200 uses 132 Arm Neoverse V3 cores per SoC on TSMC’s 3 nm process. Its die area and TDP remain unknown.
