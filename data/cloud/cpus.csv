@@ -1,5 +1,4 @@
 id,manufacturer,serie,model,architecture,platform,cores,threads,tdp,process,die,transistors,smp
-amd-epyc-5thgen-64c,amd,epyc,5th gen 64-core,x86-64,turin,64,128,400,4,,,2
 amd-epyc-7232p,amd,epyc,7232p,x86-64,rome,8,16,120,7,74,3800,1
 amd-epyc-7272,amd,epyc,7272,x86-64,rome,12,24,120,7,74,3800,2
 amd-epyc-7281,amd,epyc,7281,x86-64,naples,16,32,170,14,213,4800,2
