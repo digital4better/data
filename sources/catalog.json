@@ -7716,6 +7716,24 @@
       ]
     },
     {
+      "id": "github.blog-5c462ed03874",
+      "url": "https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026/",
+      "publisher": "GitHub",
+      "scopes": [
+        "ai"
+      ],
+      "category": "primary",
+      "format": "html",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "availability"
+      ],
+      "review": {
+        "date": "2026-11-25"
+      }
+    },
+    {
       "id": "github.com-1601ad00049a",
       "url": "https://github.com/mlco2/ecologits/blob/c739e8d61f6a12a85864adb698ab85623fe70f3c/ecologits/data/models.json",
       "publisher": "mlco2",
@@ -16512,6 +16530,24 @@
       "role": "reference",
       "review": {
         "date": "2026-11-20"
+      }
+    },
+    {
+      "id": "microsoft.ai-d13b77420608",
+      "url": "https://microsoft.ai/pdf/MAI-Code-1.1-Flash-Model-Card.PDF",
+      "publisher": "Microsoft AI",
+      "scopes": [
+        "ai"
+      ],
+      "category": "primary",
+      "format": "pdf",
+      "status": "active",
+      "role": "reference",
+      "topics": [
+        "models"
+      ],
+      "review": {
+        "date": "2026-11-25"
       }
     }
   ]
