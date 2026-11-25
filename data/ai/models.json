@@ -7794,6 +7794,9 @@
       ],
       "azure": [
         "gpt-5.4"
+      ],
+      "github-copilot": [
+        "gpt-5.4"
       ]
     },
     "sources": [
@@ -7804,7 +7807,9 @@
       "https://models.dev/models/openai/gpt-5.4",
       "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-54.html",
       "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
-      "https://developers.openai.com/api/docs/models/gpt-5.4"
+      "https://developers.openai.com/api/docs/models/gpt-5.4",
+      "https://github.com/1291617594/interview_for_webox/blob/609cef0579cd1c309228accfe90d069690b9b1ef/ai-conversations/copilot-chat-models-2026-09-02.json",
+      "https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026/"
     ],
     "fields": {
       "parameters": "estimated",
@@ -11041,8 +11046,8 @@
     "type": "text",
     "architecture": "moe",
     "parameters": {
-      "active": 6.8,
-      "total": 137.9
+      "active": 5,
+      "total": 138
     },
     "context": 256000,
     "input": [
@@ -11061,6 +11066,7 @@
       ]
     },
     "sources": [
+      "https://microsoft.ai/pdf/MAI-Code-1.1-Flash-Model-Card.PDF",
       "https://github.com/microsoft/MAI-Code",
       "https://ai.azure.com/catalog/models/MAI-Code-1.1-Flash-On-Device",
       "https://github.com/1291617594/interview_for_webox/blob/609cef0579cd1c309228accfe90d069690b9b1ef/ai-conversations/copilot-chat-models-2026-09-02.json",
@@ -11068,7 +11074,7 @@
       "https://github.com/digital4better/data/blob/main/data/ai/provenance.md#copilot-accounting-profiles"
     ],
     "fields": {
-      "parameters": "estimated"
+      "parameters": "supported"
     }
   },
   {

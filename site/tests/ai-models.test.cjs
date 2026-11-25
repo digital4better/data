@@ -117,7 +117,11 @@ test("sizing and public-capability corrections do not regress", () => {
   assert.equal(byName.get("gemini-2.5-pro").architecture, "moe");
   assert.notEqual(byName.get("gemini-2.5-pro").fields?.architecture, "estimated");
   assert.deepEqual(byName.get("codex-mini").parameters, byName.get("o4-mini").parameters);
-  assert.equal(byName.get("gpt-5.4").context, 1050000);
+  const gpt54 = byName.get("gpt-5.4");
+  assert.equal(gpt54.context, 1050000);
+  assert.deepEqual(gpt54.providers["github-copilot"], ["gpt-5.4"]);
+  assert.ok(gpt54.sources.includes("https://github.com/1291617594/interview_for_webox/blob/609cef0579cd1c309228accfe90d069690b9b1ef/ai-conversations/copilot-chat-models-2026-09-02.json"));
+  assert.ok(gpt54.sources.includes("https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026/"));
   assert.equal(byName.get("gpt-5.2-chat").context, 128000);
   assert.equal(byName.get("gemini-embedding-2").context, 8192);
   assert.equal(byName.get("gemini-3.8-flash-cyber").tools, false);
@@ -208,21 +212,23 @@ test("new releases do not inherit old weights, modalities or pattern aliases", (
 });
 
 test("Copilot telemetry resolves by family and preserves the historical MAI deployment mapping", () => {
-  for (const [name, ids] of [
-    ["copilot-nes-lysithea", ["copilot-nes-lysithea-14", "copilot-nes-lysithea-24"]],
-    ["copilot-nes-pandia", ["copilot-nes-pandia-25"]],
-    ["nes-callisto", ["nes-callisto-003"]],
-    ["copilot-suggestions-himalia", ["copilot-suggestions-himalia-001"]],
-    ["mai-code-1.1-flash", ["mai-code-1.1-flash", "mai-code-1-flash-4th"]],
+  for (const [name, ids, parameterStatus] of [
+    ["copilot-nes-lysithea", ["copilot-nes-lysithea-14", "copilot-nes-lysithea-24"], "estimated"],
+    ["copilot-nes-pandia", ["copilot-nes-pandia-25"], "estimated"],
+    ["nes-callisto", ["nes-callisto-003"], "estimated"],
+    ["copilot-suggestions-himalia", ["copilot-suggestions-himalia-001"], "estimated"],
+    ["mai-code-1.1-flash", ["mai-code-1.1-flash", "mai-code-1-flash-4th"], "supported"],
   ]) {
     const record = byName.get(name);
-    assert.equal(record.fields.parameters, "estimated");
+    assert.equal(record.fields.parameters, parameterStatus, name);
     for (const id of ids) {
       assert.ok(record.providers["github-copilot"].includes(id), id);
       assert.deepEqual(models.filter((m) => new RegExp(m.pattern, "i").test(id)).map((m) => m.name), [name], id);
     }
   }
   const mai = byName.get("mai-code-1.1-flash");
+  assert.deepEqual(mai.parameters, { active: 5, total: 138 });
+  assert.ok(mai.sources.includes("https://microsoft.ai/pdf/MAI-Code-1.1-Flash-Model-Card.PDF"));
   assert.equal(mai.context, 256000);
   for (const id of ["mai-code-1-flash", "mai-code-1-flash-picker", "mai-code-2-flash"]) {
     assert.equal(new RegExp(mai.pattern, "i").test(id), false, id);
